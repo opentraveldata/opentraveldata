@@ -1,3 +1,13 @@
 #!/bin/sh
 
-echo "Doing nothing for now..."
+LOG="$(git log -1)"
+echo $LOG
+
+#echo $OPTD_DEPLOY_KEY > .travis/deploy_key.pem
+#chmod 600 .travis/deploy_key.pem
+#ssh-add .travis/deploy_key.pem
+#git clone git@github.com:opentraveldata/optd.git /tmp/optd
+### copy files
+#cd /tmp/optd
+#git commit -a -m "$LOG"
+#git push
