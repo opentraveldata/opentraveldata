@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Master hook
+#
+# Runs all files in the hooks directory, in alphanumerical order, only if
+# they are executable. This file is not executable on purpose, such that
+# it does not self-runs.
+
+status=0
+
+for hook in hooks/* ; do
+  [ -x $hook ] || continue
+
+  echo "\nRunning hook ./$hook\n"
+  ./$hook
+  st=$?
+  if [ $st != 0 ] ; then
+    echo "hook ./$hook failed! (exited with status $st)"
+    status=1
+  else
+    echo "\nok!\n"
+  fi
+done
+
+exit $status
