@@ -15,10 +15,10 @@ for hook in .travis/hooks/* ; do
   ./$hook
   st=$?
   if [ $st != 0 ] ; then
-    echo "hook ./$hook failed! (exited with status $st)"
+    echo "The hook ./$hook failed! (exited with status $st)"
     status=1
   else
-    echo "\nok!\n"
+    echo "\nThe hook ./$hook was a success!\n"
   fi
 done
 
