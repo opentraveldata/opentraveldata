@@ -8,7 +8,7 @@
 
 status=0
 
-for hook in hooks/* ; do
+for hook in .travis/hooks/* ; do
   [ -x $hook ] || continue
 
   echo "\nRunning hook ./$hook\n"
