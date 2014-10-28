@@ -1,2 +1,4 @@
-script:
-    /bin/sh hooks/all
+script: "/bin/sh hooks/all"
+before_install:
+- openssl aes-256-cbc -K $encrypted_9b833f029019_key -iv $encrypted_9b833f029019_iv
+  -in .travis/id_rsa.enc -out .travis/id_rsa -d
