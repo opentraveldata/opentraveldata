@@ -11,13 +11,13 @@
 #
 
 # Starts an ssh-agent
-eval $(ssh-agent -s)
+eval $(ssh-agent -s) 2>/dev/null
 # The key is decrypted by travis (it is stored encrypted in our repo)
 chmod 600 .travis/id_rsa
 # Import the key
 ssh-add .travis/id_rsa
 # Clone the old repo
-git clone git@github.com:opentraveldata/optd.git /tmp/optd
+git clone git@github.com:opentraveldata/optd.git /tmp/optd >/dev/null
 
 # Synchronize the files
 n=0
