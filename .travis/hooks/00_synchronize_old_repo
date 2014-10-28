@@ -20,13 +20,26 @@ ssh-add .travis/id_rsa
 git clone git@github.com:opentraveldata/optd.git /tmp/optd
 
 # Synchronize the files
+n=0
 cat .travis/synchronization_file_map.csv | while read line ; do
+  n=$((n+1))
   old=$(echo $line | cut -d^ -f1)
   new=$(echo $line | cut -d^ -f2)
   if [ ! -f "$new" ] ; then
-    echo "The file '$new' (in this repo) is missing."
-    echo "It is needed to keep '$old' (in opentraveldata/optd) updated"
+    echo "In .travis/synchronization_file_map.csv:$n"
+    echo "\$old=$old"
+    echo "\$new=$new"
+    echo "The new file '$new' is missing in this repo"
+    echo "It is needed to update the old file '$old' in opentraveldata/optd"
     echo "If you moved this file, please update .travis/synchronization_file_map.csv"
+    exit 1
+  fi
+  if [ ! -f /tmp/optd/"$old"  ] ; then
+    echo "In .travis/synchronization_file_map.csv:$n"
+    echo "\$old=$old"
+    echo "\$new=$new"
+    echo "The file '$old' is missing in opentraveldata/optd"
+    echo "Please check .travis/synchronization_file_map.csv for mistakes"
     exit 1
   fi
   echo "copying '$new' in 'optd/$old'"
