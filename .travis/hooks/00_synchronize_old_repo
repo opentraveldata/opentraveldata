@@ -33,7 +33,7 @@ cat .travis/synchronization_file_map.csv | while read line ; do
     echo "The new file '$new' is missing in this repo"
     echo "It is needed to update the old file '$old' in opentraveldata/optd"
     echo "If you moved this file, please update .travis/synchronization_file_map.csv"
-    echo "\n#####"
+    echo "#####\n"
     exit 1
   fi
   if [ ! -f /tmp/optd/"$old"  ] ; then
