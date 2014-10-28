@@ -3,10 +3,10 @@
 LOG="$(git log -1)"
 echo $LOG
 
-#echo $OPTD_DEPLOY_KEY > .travis/deploy_key.pem
-#chmod 600 .travis/deploy_key.pem
-#ssh-add .travis/deploy_key.pem
-#git clone git@github.com:opentraveldata/optd.git /tmp/optd
+chmod 600 .travis/id_rsa
+ssh-add .travis/id_rsa
+git clone git@github.com:opentraveldata/optd.git /tmp/optd
+
 ### copy files
 #cd /tmp/optd
 #git commit -a -m "$LOG"
