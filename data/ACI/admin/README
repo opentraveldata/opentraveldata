@@ -1,0 +1,68 @@
+FIELDS:	
+REGION	Geographical Region
+COUNTRY	
+CITY	
+AIRPORT	Airport Name
+AIRPORT_CODE	3-Letter IATA Airport Code
+PER	Period.  If PER = 695, it is 12-months ending 695 and so on.
+ATMsA	Aircraft Movement:  Passenger and Combi Aircraft
+ATMsB	Aircraft Movement:  All Cargo Aircraft
+ATMsC	Total Air Transport Movement:  ATMsA + ATMsB
+ATMsD	General Aviation and Other Aircraft Movements
+TATMs	Total Aircraft Movements:  ATMs + ATMsB + ATMsD
+PAXA	Commercial Passengers:  International enplaned + deplaned
+PAXB	Commercial Passengers:  Domestic enplaned + deplaned
+PAXC	Total Terminal Passengers:  PAXA + PAXB
+PAXD	Direct Transit Passengers counted once
+TPAX	Total Passengers:  PAXA + PAXB + PAXD
+FRTA	Commercial Freight (metric tonnes):  International loaded + unloaded
+FRTB	Commercial Freight (metric tonnes):  Domestic loaded + unloaded
+TFRT	Total Commercial Freight (metric tonnes):  FRTA + FRTB
+TMAILONLY	Total Mail (metric tonnes):  International and Domestic loaded + unloaded
+FRT+MAIL	Total Commercial Cargo (metric tonnes):  FRTA + FRTB + TMAILONLY
+LATMsA	Aircraft Movement:  Passenger and Combi Aircraft  SAME PERIOD LAST YEAR
+LATMsB	Aircraft Movement:  All Cargo Aircraft  SAME PERIOD LAST YEAR
+LATMsC	Total Air Transport Movement:  ATMsA + ATMsB  SAME PERIOD LAST YEAR
+LATMsD	General Aviation and Other Aircraft Movements  SAME PERIOD LAST YEAR
+LTATMs	Total Aircraft Movements:  ATMs + ATMsB + ATMsD  SAME PERIOD LAST YEAR
+LPAXA	Commercial Passengers:  International enplaned + deplaned  SAME PERIOD LAST YEAR
+LPAXB	Commercial Passengers:  Domestic enplaned + deplaned  SAME PERIOD LAST YEAR
+LPAXC	Total Terminal Passengers:  PAXA + PAXB  SAME PERIOD LAST YEAR
+LPAXD	Direct Transit Passengers counted once  SAME PERIOD LAST YEAR
+LTPAX	Total Passengers:  PAXA + PAXB + PAXD  SAME PERIOD LAST YEAR
+LFRTA	Commercial Freight (metric tonnes):  International loaded + unloaded  SAME PERIOD LAST YEAR
+LFRTB	Commercial Freight (metric tonnes):  Domestic loaded + unloaded  SAME PERIOD LAST YEAR
+LTFRT	Total Commercial Freight (metric tonnes):  FRTA + FRTB  SAME PERIOD LAST YEAR
+LTMAILONLY	Total Mail (metric tonnes):  International and Domestic loaded + unloaded  SAME PERIOD LAST YEAR
+LFRT+MAIL	Total Commercial Cargo (metric tonnes):  FRTA + FRTB + TMAILONLY  SAME PERIOD LAST YEAR
+	
+Definition of Terms:	
+Movements	
+A movement is a landing and take-off of an aircraft at an airport.	
+Passenger and Combi (combination) Aircraft	
+Movements by aircraft and helicopters operated for commercial transport operations involving passengers, 	
+freight and mail.	
+All-Cargo  and Mail Aircraft	
+Movements by aircraft and helicopters operated for commercial transport operations involving goods and/or mail only.	
+Air Transport Movements	
+An air transport movement is a landing or take-off of an aircraft operating a scheduled or non-scheduled service.	
+General Aviation and Other Aircraft Movements	
+Movements of aircraft and helicopters belonging to:	
+ - companies with an air taxi or air work license	
+ - an individual, a flying club or a company whose main objective is not to provide revenue passenger transport	
+Positioning, test and training flights of airline, state and military aircraft.	
+Commercial Passengers	
+The number of revenue and non-revenue passengers arriving or departing via commercial aircraft and helicopters 	
+on a scheduled or non-scheduled flight.	
+Direct Transit  Passengers	
+Passengers who arrive at and depart from the airport on a flight bearing the same number.  They are counted only ONCE,	
+either upon arrival or upon departure.	
+Cargo	
+Cargo is freight + mail, including express, loaded and unloaded (arriving or departing) at the airport.  	
+Freight comprises goods, newspapers, diplomatic bags, parcel post and express parcel.  	
+Cargo does not include passenger baggage and trucked freight.	
+Mail comprises closed bags handed over by the postal service.  	
+Domestic	
+Traffic (passengers, freight and mail) performed between two airports located in the same country/territory.	
+International	
+Traffic (passengers, freight and mail) performed between the designated airport and an airport in another country/territory.	

@@ -1,0 +1,501 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title> Country Name and ISO 3166 Code MySQL Import File </title>
+
+<script language="JavaScript">
+<!--
+browserName = navigator.appName;
+browserVer = parseInt ( navigator.appVersion );
+version = "n2";
+if ( browserName == "Netscape" && browserVer >= 3 ) version = "n3";
+if ( browserName == "Microsoft Internet Explorer" && browserVer >=4 )
+version = "e4";
+
+if ( version == "n3" || version == "e4" )
+{
+  blank2 = new Image(106, 68);
+  blank2.src = "/images/pages/blank.gif";
+
+  one = new Image(106, 68);
+  one.src = "/images/pages/one.gif";
+
+  two = new Image(106, 68);
+  two.src = "/images/pages/two.gif";
+
+  three = new Image(106, 68);
+  three.src = "/images/pages/three.gif";
+
+  four = new Image(106, 68);
+  four.src = "/images/pages/four.gif";
+
+  five = new Image(106, 68);
+  five.src = "/images/pages/five.gif";
+
+  six = new Image(106, 68);
+  six.src = "/images/pages/six.gif";
+}
+
+function button_on ( imgName )
+{
+        if ( version == "n3" || version == "e4" )
+        {
+                butOn = eval ( imgName + "_on.src" );
+                document [imgName].src = butOn;
+        }
+}
+
+function button_off ( imgName )
+{
+        if ( version == "n3" || version == "e4" )
+        {
+                butOff = eval ( imgName + "_off.src" );
+                document [imgName].src = butOff;
+        }
+}
+// -->
+</script>
+
+</head><body link="#3df7ff" alink="#000000" bgcolor="#3b3b3b" 
+vlink="#3df7ff">
+
+<table border="0" cellpadding="30" cellspacing="0" height="98%" 
+width="98%"><tbody><tr><td align="left" valign="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td><a href="http://27.org/isocountrylist/index.html"><img 
+src="27org_Country_Name_and_ISO3166_Code_files/blank.gif" name="blank" 
+border="0"></a></td>
+
+<td><img src="27org_Country_Name_and_ISO3166_Code_files/teststitle.gif" 
+border="0"></td></tr>
+
+<tr>
+<td colspan="2">
+<table border="0" cellpadding="0" cellspacing="0">
+
+<tbody><tr>
+<td><a href="http://27.org/about.html" onmouseover="         blank.src =
+ one.src;
+         window.status='about'; return true" onmouseout="         
+blank.src = blank2.src;
+         window.status =' ';
+         return true">
+
+<img src="27org_Country_Name_and_ISO3166_Code_files/about.gif" 
+border="0"></a></td>
+
+
+<td>
+<a href="http://27.org/news.html" onmouseover="         blank.src = 
+two.src;
+         window.status='news'; return true" onmouseout="         
+blank.src = blank2.src;
+         window.status =' ';
+         return true">
+<img src="27org_Country_Name_and_ISO3166_Code_files/news.gif" border="0"></a></td>
+
+
+<td>
+<a href="http://27.org/gallery.html" onmouseover="         blank.src = 
+three.src;
+         window.status='gallery'; return true" onmouseout="         
+blank.src = blank2.src;
+         window.status =' ';
+         return true">
+<img src="27org_Country_Name_and_ISO3166_Code_files/gallery.gif" 
+border="0"></a></td>
+
+
+<td>
+<a href="http://27.org/tests.html" onmouseover="         blank.src = 
+four.src;
+         window.status='test'; return true" onmouseout="         
+blank.src = blank2.src;
+         window.status =' ';
+         return true">
+<img src="27org_Country_Name_and_ISO3166_Code_files/tests.gif" 
+border="0"></a></td>
+
+
+<td>
+<a href="http://27.org/coms.html" onmouseover="         blank.src = 
+five.src;
+         window.status='coms'; return true" onmouseout="         
+blank.src = blank2.src;
+         window.status =' ';
+         return true">
+<img src="27org_Country_Name_and_ISO3166_Code_files/coms.gif" border="0"></a></td>
+
+
+<td>
+<a href="mailto:zeus@27.org?subject=test" onmouseover="         
+blank.src = six.src;
+         window.status='email'; return true" onmouseout="         
+blank.src = blank2.src;
+         window.status =' ';
+         return true">
+
+<img src="27org_Country_Name_and_ISO3166_Code_files/email.gif" 
+border="0"></a></td></tr>
+
+
+
+</tbody></table>
+
+<p>
+
+<!-- content -->
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">
+
+</font></p><h2 align="center">
+<font color="#ffffff" face="arial, helvetica, sans-serif">Country Name 
+and ISO 3166 Code MySQL Import File
+</font></h2>
+<p>
+
+
+
+</p><center>
+<table border="0">
+
+
+<tbody><tr><td>
+<font color="#ffffff" face="arial, helvetica, sans-serif"> Download <a 
+href="http://27.org/isocountrylist/iso_country_list.sql">iso_country_list.sql</a>
+ (18662 bytes, Last updated Sat Dec 01 23:19:11 2007)
+</font></td></tr>
+
+
+<tr><td>
+<font color="#ffffff" face="arial, helvetica, sans-serif">Download <a 
+href="http://27.org/isocountrylist/usps_states_list.sql">usps_states_list.sql</a>
+ (4202 bytes, Last updated Sat Dec 01 23:19:11 2007)
+</font></td></tr>
+
+</tbody></table>
+</center>
+<p>
+
+</p><dl>
+<dt><font color="#ffffff" face="arial, helvetica, sans-serif"><b>Background:</b></font></dt><dd>
+<font color="#ffffff" face="arial, helvetica, sans-serif">I recently had
+ a project at work which required a web-based user registration sort of 
+feature.  Because the project
+had an international flavor, I had to let people from every country 
+register.  And since we were going to need to
+generate reports broken down by country and eventually make mailing 
+labels from the data stored in our MySQL database,
+I wanted the data to be pretty clean.  Thus, I didn't want people to 
+either have to or be able to type in their
+country of origin by hand.  I wanted a select list they could choose 
+from.
+</font><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">What I wound 
+up doing was making a table which listed the names and
+<a 
+href="http://www.iso.ch/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html">ISO
+ 3166 codes</a>
+of all the countries of the world.  I then referenced this table in my 
+main user registration table as a foreign key.
+This would allow us to look at all the people that had registered from 
+Europe, let's say, and then make graphs with the
+two-letter ISO codes on them for clarity.  It should work out pretty 
+well.
+</font></p><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">To make a long
+ story short, I realized that this was the fourth time I had made such a
+ table, and the fourth time
+I had done it from scratch (and it was the third time I had done it by 
+writing
+<a href="http://27.org/isocountrylist/getisocountrylist.pl.txt">a perl 
+script</a> which screen-scraped
+<a 
+href="http://www.iso.ch/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1-semic.txt">a
+ list off the
+web</a>).  This is silly and a waste of time.  So I decided to put my 
+SQL file up here where I can get it later if
+I needed it.  Since sharing is good, I made it public here so other 
+people can get it if they find it useful (I
+didn't find much when I went googling for such a list...).
+</font></p><p>
+
+
+
+</p></dd><dt><font color="#ffffff" face="arial, helvetica, sans-serif"><b>Updates:</b></font></dt><dd>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">11/14/06:<br>
+It's been brought to my attention that the SQL file shows Taiwan as a 
+"Province of China", and that some people (the Taiwanese in particular) 
+have some sensitivity towards the issue of Taiwan's sovereignty.
+</font><p>
+<font color="#ffffff" face="arial, helvetica, sans-serif">After some 
+consideration, I've decided that it's not my place to second-guess a 
+standards body and a world governing organization by editing information
+ coming from the U.N. and ISO.  Because the SQL file is generated 
+automatically from those sources, and because both bodies hold Taiwan to
+ be a province of China, I'm leaving the SQL as is with respect to 
+Taiwan.
+</font></p><p>
+<font color="#ffffff" face="arial, helvetica, sans-serif">If you have a 
+certain insight into the topic, or deal with those who may be sensitive 
+to the issue, you might want to edit the SQL file such that Taiwan is 
+listed simply as "Taiwan".
+</font></p><p>
+
+
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">3/16/04:<br>
+If you're looking for U.S. and Canada telephone area codes, try a site 
+called <a href="http://www.areacodedownload.com/">areacodedownload.com</a>.
+</font></p><p>
+
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">10/8/03:<br>
+
+More mail, more changes.  I got a couple requests for non-upper case 
+country names (like you'd use in text
+or something.  It's not really an easy thing to do in SQL, so I added it
+ to the perl script that makes the SQL
+insert file.  There's now another column called 'printable_name' and it 
+has the country names with their
+proper capitalization. This seems kind of redundant to me, but it's not a
+ very big file, and not a very big
+database table. Besides, the extra storage space needed by the 
+'redundant' column is probably preferrable
+to the CPU overhead caused by making printable names in code or SQL at 
+the time of the select.
+</font></p><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">5/20/03:<br>
+I've been getting a lot of email recently and ask if I have the 3-letter
+ and 3-digit codes for each country (this
+is what is contained in ISO 3166-2).
+ISO charges for 3166-2, and up until now I've just been grabbing the 
+free 3166-1 list off their web site.
+I did some
+looking into it, and I found a place that has the extra codes, for free.
+</font></p><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">It turns out 
+that ISO gets their country names from the
+<a href="http://unstats.un.org/unsd/methods/m49/m49alpha.htm">United 
+Nations' country list</a>. Well, it's really
+pretty easy for me to get that info and correlate it.  In fact, there's a
+ Perl module that helps make this happen.
+The Geography::Countries module aims to give you the county names, the 
+2-letter codes, the 3-letter codes,
+and the 3-digit numeric codes.  The country names were slightly 
+different than what ISO hands out,
+but the two-letter
+codes were the same. (I suspect that the module is slightly out of date,
+ another reason why I want to keep
+getting the data off the web.)
+  Because of this, and in the interests of backward compatibility, I 
+decided to keep the ISO names.
+</font></p><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">As an aside, 
+there are 12 countries (as of 5/20/03) that don't have the ISO 3166-2 
+data.
+Since the data are free,
+the price is right for what I did manage to get.
+Anyway, run <tt>SELECT name FROM
+country WHERE iso3 IS NULL;</tt> if you want to see which ones don't 
+have the 3-letter/digit codes.
+</font></p><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">I've updated 
+the perl script to create a SQL file which includes the new 3166-2 info 
+where available.
+</font></p><p>
+
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">1/1/03:<br>
+I've had a few people email me and ask if I had a similar SQL import 
+file for
+<a href="http://www.usps.com/ncsc/lookups/usps_abbreviations.html">U.S. 
+Postal Service state names and their
+abbreviations</a>.  I didn't have an actual downloadable file, but it 
+was made easily enough with mysqldump.
+It's linked up there at the top of the page.  You use
+it exactly like the country import file, and a select list can be made 
+with only a little bit of jiggering to the
+example code I've given below.
+</font></p><p>
+<font color="#ffffff" face="arial, helvetica, sans-serif">I did a little
+ googling for such a file and couldn't find much.  Oddly enough, the 
+ones that I did find were
+incomplete since they didn't have the Armed Forces "states" or 
+territories/protectorates like Samoa and Virgin
+Islands.  Granted, probably not many people do business with those in 
+Puerto Rico or the Republic of Palau, but
+if you want to have a drop-down of U.S. states and you don't provide the
+ lesser-known ones you make it hard for
+those people to use your site.  This SQL file has the names and 
+two-letter abbreviations for all the states that
+the USPS considers "domestic".
+</font></p><p>
+
+
+</p></dd><dt><font color="#ffffff" face="arial, helvetica, sans-serif"><b>Uses:</b></font></dt><dd>
+<font color="#ffffff" face="arial, helvetica, sans-serif">To import this
+ into a MySQL database, just do like so:
+</font><blockquote>
+<font color="#ffffff" face="arial, helvetica, sans-serif"><tt>mysql -u 
+username -ppassword database_name &lt; iso_country_list.sql</tt>
+</font></blockquote>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">If you have 
+create permissions on 'database_name', you'll then have a table called 
+'country' which has all your country info.
+You'd use this table in another table like so:
+
+</font><blockquote>
+<pre><font color="#ffffff" face="arial, helvetica, sans-serif">CREATE TABLE register (
+  name VARCHAR(255) NOT NULL,
+  address1 VARCHAR(255) NOT NULL,
+  address2 VARCHAR(255),
+  address3 VARCHAR(255),
+  city VARCHAR(150) NOT NULL,
+  state VARCHAR(100),
+  zip VARCHAR(20),
+  country_iso CHAR(2) REFERENCES country (iso)
+);
+</font></pre>
+</blockquote>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">Then you can 
+do selects and such against all the tables.  The table above is purely 
+hypothetical, by the way.  I made it
+just now off the top of my head, so you'll probably want to use 
+something which is better tailored to your specific needs
+(phone number, two-character states, indexes for faster selects with 
+'where' clauses, etc).
+</font><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">Some code also
+ might come in handy.  Here's a snippet of PHP which will make an HTML 
+select list from all the countries
+listed in your database:
+
+</font></p><blockquote>
+<pre><font color="#ffffff" face="arial, helvetica, sans-serif">@ $db = mysql_pconnect($hostname, $dbusername, $dbpasswd);
+if (!$db) {
+    print "Failed to connect to the database.  Please try again later.\n";
+    exit;
+}
+mysql_select_db($dbname);
+$sql = "select id,name from country order by iso";
+if (!(@ $result = mysql_query($sql))) {
+    print "There was an error running your query:&lt;p&gt;\n". $sql . "&lt;p&gt;\n";
+}
+print '&lt;select name="country"&gt;&lt;br&gt;\n';
+print '&lt;option value=""&gt;  Choose One   ';
+while ($row = mysql_fetch_row($result)) {
+    $country_iso   = $row[0];
+    $country_name  = $row[1];
+
+    print "&lt;option value=\"$country_iso\"";
+    if ($_REQUEST["country"] == $country_iso) { print " selected"; }
+    print "&gt; $country_name &lt;br&gt;\n";
+}
+print '&lt;/select&gt;\n';</font></pre></blockquote>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">Obviously, 
+you'll have to supply all the connection variables and such.  This code 
+is useful for PHP scripts which
+call themselves, by the way.  It checks the incoming $_REQUEST array for
+ value for the 'country' element and if it
+finds one which matches the value stored in the database, then it makes 
+that choice selected.  This is handy if you
+do error checking on your scripts.  I usually check for required fields 
+and if one is not found, I just call the
+PHP bits which made my form initially.  By "keeping" the original 
+values, the form elements will be set to what they
+were when the form was first filled out.  It's a nice feature and good 
+code re-use.  Oh yeah, your script can also
+check to see if the country has been left blank, since the "Choose One" 
+option has an explicitly empty value. Without it,
+the choice would literally be "Choose One".
+</font><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">One more side 
+effect of this snippet is that the value of the options in the select 
+list will be the id number of
+the country.  This is (mostly) good, because when you go to insert the 
+form contents into the database, you simply insert
+this numerical value in your main table (the 'country_id' field in my 
+pretend table above).  This avoids having to
+look up the numerical code of a two-letter code or a country name and 
+insert that.  It's one less trip to the
+database, and so quick and handy.  (Although it presents a race 
+condition which may make the choice of convenience
+one you don't want to make: if something updates the table between the 
+time the user loads the
+initial form and when they submit the form, they might be submitting the
+ wrong id number.)
+When you do selects on the 'register' table, you just do a plain natural
+ join on the country table,
+like so:
+</font></p><p>
+
+</p><blockquote>
+<pre><font color="#ffffff" face="arial, helvetica, sans-serif">select applicant.name,city,country.name
+from applicant,country
+where country_id=country.id and country.iso='my';
+
+select applicant.name,city,country.name
+from applicant,country
+where country_id=country.id and country.name='Malaysia';
+</font></pre>
+</blockquote>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">Those queries 
+will do the same thing: find the name, city and country name for all the
+ registrants from Malaysia.  The
+first one uses the country code (good if looping through like from an 
+array of ISO codes or something) and the second
+is by canonical country name (good if you're doing something like giving
+ someone a web-based form with a select list
+of country names --- although you could use the code snippet above to 
+access the id numbers directly).
+</font><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">If you wanted 
+to do this with Perl or Python, the concepts are identical, BTW.
+</font></p><p>
+
+
+
+</p></dd><dt><font color="#ffffff" face="arial, helvetica, sans-serif"><b>Contact
+ Info:</b></font></dt><dd>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">If you have 
+questions about any of this, you can get a hold of Bill Rhodes at
+<a href="mailto:iso_country_list@27.org">iso_country_list@27.org</a>.  I
+ can't really answer general code questions,
+but if you have something really specific about this stuff then I'll try
+ to help out.
+
+</font><p>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif">I've also got 
+some <a href="http://27.org/tests.html">more projects</a> you can look 
+at too if you're so inclined.
+
+</font></p></dd></dl>
+
+<font color="#ffffff" face="arial, helvetica, sans-serif"></font>
+
+<script src="27org_Country_Name_and_ISO3166_Code_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-91693-2";
+urchinTracker();
+</script>
+
+</td></tr></tbody></table></td></tr></tbody></table></body></html>

@@ -1,0 +1,534 @@
+
+####
+## Show case of how to maintain the ORI-curated list of
+## points of reference (POR)
+####
+
+##
+## =========================== Section 00 ===========================
+##
+
+##
+# A few variables
+#
+
+##
+# Today date
+SNAPSHOT_DATE=`date "+%Y%m%d"`
+SNAPSHOT_DATE_HUMAN=`date`
+
+
+##
+# Basics for ORI-curated RFD (in the private Data-Analysis project)
+DABASEDIRNAME=dev/dataanalysis
+DA_BASE_DIR=${HOME}/${DABASEDIRNAME}
+DADIRNAME=dataanalysisgit
+# Typically, DADIR=~/dev/dataanalysis/dataanalysisgit
+DADIR=${DA_BASE_DIR}/${DADIRNAME}
+#BITBUCKET_USER=<some_user>
+#DAGIT=https://${BITBUCKET_USER}@bitbucket.org/denis_arnaud/dataanalysis.git
+DAGIT=git://gitorious.orinet.nce.amadeus.net/dataanalysis/dataanalysis.git
+alias cddataanalysis='cd ~/${DABASEDIRNAME}/${DADIRNAME}'
+
+# RFD
+DADATAGENDIR=data_generation
+RFDDIRNAME=${DADATAGENDIR}/RFD
+RFDFETCHER=fetch_sqlite_rfd.sh
+
+# Tools
+DATOOLSDIRNAME=${DADATAGENDIR}/por
+RFDEXTRACTOR=extract_por_rfd_crb_city.sh
+
+
+##
+# Basics for Geonames and ORI tools
+GEODIRNAME=dev/geo
+GEO_BASE_DIR=${HOME}/${GEODIRNAME}
+OPTDDIRNAME=opentraveldatagit
+# Typically, OPTDDIR=~/dev/geo/opentraveldatagit
+OPTDDIR=${GEO_BASE_DIR}/${OPTDDIRNAME}
+#OPTDGIT=https://github.com/opentraveldata/optd.git
+OPTDGIT=git://gitorious.orinet.nce.amadeus.net/opentraveldata/opentraveldata.git
+RDDIRNAME=refdata
+alias cdopentraveldata='cd ~/${GEODIRNAME}/${OPTDDIRNAME}'
+
+# Geonames
+GEODIRNAME=${RDDIRNAME}/geonames/data
+GEOPORDIRNAME=${GEODIRNAME}/por/admin
+# Typically, GEODIR=~/dev/geo/opentraveldatagit/refdata/geonames
+GEODIR=${OPTDDIR}/${GEODIRNAME}
+# Typically, GEOPORDIR=~/dev/geo/opentraveldatagit/refdata/geonames/por/admin
+GEOPORDIR=${OPTDDIR}/${GEOPORDIRNAME}
+GEOGETTER=getDataFromGeonamesWebsite.sh
+GEOAGGREGATOR=aggregateGeonamesPor.sh
+
+# ORI
+TOOLDIRNAME=${RDDIRNAME}/tools
+ORIDIRNAME=${RDDIRNAME}/ORI
+GEOEXTRACTOR=extract_por_with_iata_icao.sh
+GEOPREPARATOR=preprepare_geonames_dump_file.sh
+GEODIFFCALCULATOR=compare_por_files.sh
+DEDUPLICATOR=ori_por_splitter.sh
+ORIMAKER=make_ori_por_public.sh
+
+
+##
+## =========================== Section 01 ===========================
+## ==                                                              ==
+## ==                             RFD                              ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Cloning the ORI RFD locally
+#
+mkdir -p ${DA_BASE_DIR}
+cd ${DA_BASE_DIR}
+git clone ${DAGIT} ${DADIRNAME} # ~40MB of (compressed) data to be downloaded
+
+#
+cd ${DADIR} # cddataanalysis
+
+# Fetch the RFD latest snapshots (from SQLite). The snapshots will have the
+# today date as part of their name.
+cd ${DADATAGENDIR}/RFD
+./${RFDFETCHER}
+
+# Reset the RFD MySQL data
+./create_rfd_db.sh
+
+# Load the RFD data into MySQL. The snapshot date is part of
+# the data file names; the snapshot date is usually the today date.
+./create_all_tables.sh rfd rfd_rfd ${SNAPSHOT_DATE} localhost
+
+# Dump the RFD-related MySQL content into a mere CSV data file
+cd ../por  # cd ${DADIR}/${DADATAGENDIR}/por
+./${RFDEXTRACTOR} rfd rfd_rfd localhost
+
+# Copy the RFD data snapshot with a more generic name
+\cp -f ./por_all_rfd_${SNAPSHOT_DATE}.csv ./dump_from_crb_city.csv
+
+
+##
+## =========================== Section 02 ===========================
+## ==                                                              ==
+## ==                           Geonames                           ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Cloning the OpenTravelData locally
+#
+mkdir -p ${GEO_BASE_DIR}
+cd ${GEO_BASE_DIR}
+git clone ${OPTDGIT} ${OPTDDIRNAME} # ~111MB of (compressed) data to download
+
+#
+cd ${OPTDDIRNAME} # cdopentraveldata
+
+# Copy the DataAnalysis RFD data snapshot into the OpenTravelData local clone
+\cp -f ${DADIRNAME}/${DATOOLSDIRNAME}/dump_from_crb_city.csv ${TOOLDIRNAME}
+
+
+##
+# Download the Geonames data files and aggregate them
+#
+cd ${OPTDDIR} # cdopentraveldata
+cd ${GEODIRNAME} # cd refdata/geonames/data
+time ./${GEOGETTER} # It may take 30mn with a 100kB/s Internet bandwidth
+
+cd ${OPTDDIR} # cdopentraveldata
+cd ${GEOPORDIRNAME} # cd refdata/geonames/data/por/admin
+./${GEOAGGREGATOR} # It may take 20mn on some good hardware (several GB of RAM)
+
+
+##
+# Extract the IATA-coded POR from the Geonames data
+#
+cd ${OPTDDIR}     # cdopentraveldata
+cd ${TOOLDIRNAME} # cd refdata/tools
+./${GEOEXTRACTOR}
+./${GEOPREPARATOR}
+
+##
+# Check that everything is going well
+#
+grep "^IEV" ../ORI/ori_por_best_known_so_far.csv \
+	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
+
+
+##
+## =========================== Section 03 ===========================
+## ==                                                              ==
+## ==                           PageRank                           ==
+## ==                                                              ==
+## ==================================================================
+##
+
+
+
+##
+## =========================== Section 04 ===========================
+## ==                                                              ==
+## ==                      ORI-maintained POR                      ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Generate the ORI public POR data file
+#
+cd ${OPTDDIR}    # cdopentraveldata
+cd ${ORIDIRNAME} # cd refdata/ORI
+./${ORIMAKER}
+# Clean temporary files
+./${ORIMAKER} --clean
+
+# Tell Git that it has a new friend to supervise
+git add ori_only_por.csv
+# Use Git to track the changes
+git diff --cached ori_only_por.csv
+# If everything is right, commit the new changes
+git commit -m "[RefData][ORI] Integrated the latest Geonames updates." ori_only_por.csv
+
+
+##
+## =========================== Section 05 ===========================
+## ==                                                              ==
+## ==                     De-duplication of ORI POR                ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# De-duplication of combined POR (point of reference) entries in ORI,
+# when Geonames has got the full details for every location type of the
+# combined entry. For instance, a 'CA' (city and airport) entry may be split
+# into a city and an airport when Geonames knows about those two POR
+# individually: they can therefore be distinguished.
+
+##
+# Calculate the differences, in terms of coordinates, between ORI,
+# RFD and Geonames.
+#
+cd ${OPTDDIR}     # cdopentraveldata
+cd ${TOOLDIRNAME} # cd refdata/tools
+./${DEDUPLICATOR} 3
+
+
+##
+## =========================== Section 06 ===========================
+## ==                                                              ==
+## ==                       Source comparison                      ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Calculate the differences, in terms of coordinates, between ORI,
+# RFD and Geonames.
+#
+cd ${OPTDDIR}     # cdopentraveldata
+cd ${TOOLDIRNAME} # cd refdata/tools
+./${GEODIFFCALCULATOR}
+
+
+
+##
+## =========================== Section 07 ===========================
+## ==                                                              ==
+## ==                       Difference analysis                    ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Analyse the file of main differences
+#
+cd ${OPTDDIR}     # cdopentraveldata
+cd ${TOOLDIRNAME} # cd refdata/tools
+
+less ./por_main_diff.csv
+
+# Iterate on the POR (points of reference). See Appendix C for a few examples.
+
+# When done, clean the temporary files
+./${GEODIFFCALCULATOR} --clean
+
+
+
+
+
+
+
+
+##
+## =========================== Appendix A ===========================
+## ==                                                              ==
+## ==                     Installing dependencies                  ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Requirements
+#
+
+# Basic calculator (bc)
+# On Fedora/CentOS/RedHat
+yum -y install bc
+
+# On Debian/Ubuntu
+# apt-get install bc
+
+
+##
+## =========================== Appendix B ===========================
+## ==                                                              ==
+## ==                        MySQL database                        ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# MySQL server
+#
+
+# Install the MySQL server package
+
+# On Fedora/CentOS/RedHat
+yum -y install mysql-server
+systemctl enable mysqld.service  # Systemd
+# chkconfig mysqld on            # SysVInit
+
+
+# On Debian/Ubuntu
+# apt-get install mysql-server
+
+# Configure the MySQL server
+mysql_install_db
+# Note that, for whatever reason, the mysql sub-directories may be created with
+# the access rights set to root's. In that case, just issue the following:
+chown -R mysql.mysql /var/lib/mysql
+
+# Start the MySQL server
+systemctl start mysqld.service  # Systemd
+# service mysqld start          # SysVInit
+
+# A few common variables
+MYSQL_SVR=localhost
+MYSQL_PORT=3306
+
+# Administrator account
+ROOT_PW=<root_pw>
+mysqladmin -u root password '${ROOT_PW}'
+mysqladmin -u root --password=${ROOT_PW} -h ${MYSQL_SVR} password '${ROOT_PW}'
+
+# Standard administrator account
+mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
+	  -e "GRANT ALL PRIVILEGES ON *.* TO 'sim'@'${MYSQL_SVR}' \
+	  IDENTIFIED BY '${SIM_PW}' WITH GRANT OPTION;"
+mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
+	  -e "GRANT ALL PRIVILEGES ON *.* TO 'sim'@'%' \
+	   IDENTIFIED BY '${SIM_PW}' WITH GRANT OPTION;"
+mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
+	  -e "flush privileges"
+
+# Standard non-administrator account for RFD 
+SIM_PW=${ROOT_PW}
+mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
+	  -e "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, FILE, INDEX, \
+	  ALTER, CREATE TEMPORARY TABLES, CREATE VIEW, EVENT, TRIGGER, SHOW VIEW, \
+      CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON *.* \
+      TO 'rfd'@'localhost' IDENTIFIED BY 'rfd';"
+mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
+	  -e "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, FILE, INDEX, \
+	  ALTER, CREATE TEMPORARY TABLES, CREATE VIEW, EVENT, TRIGGER, SHOW VIEW, \
+      CREATE ROUTINE, ALTER ROUTINE, EXECUTE ON *.* \
+      TO 'rfd'@'%' IDENTIFIED BY 'rfd';"
+mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
+	  -e "flush privileges"
+
+
+##
+## =========================== Appendix C ===========================
+## ==                                                              ==
+## ==                       Curating the POR                       ==
+## ==                                                              ==
+## ==================================================================
+##
+
+####
+# Interesting POR issues
+####
+
+##
+# Easy issues
+##
+
+##
+# [Recently added POR]
+awk -F'^' '{if ($6 != "") {print $0}}' ../ORI/ori_por_best_known_so_far.csv 
+# BUT
+# BUT-CA^BUT^27.5619^90.7469^BUT^2012-10-12
+
+##
+# [Recently deleted POR] / POR appearing in the ../ORI/ori_only_por.csv file
+# RAU (deleted as per IATA LIWG #33 2012)
+midori http://www.theairdb.com/airport/RAU.html
+midori http://www.flightstats.com/go/Airport/airportDetails.do?airport=RAU
+# KZK (deleted as per IATA LIWG #33 2012)
+midori http://www.theairdb.com/airport/KZK.html
+midori http://www.flightstats.com/go/Airport/airportDetails.do?airport=KZK
+# IIN (deleted as per IATA LIWG #39 2012)
+# => add the POR entry, as in the ori_por_public.csv file, into 
+#    ori_por_non_iata.csv, then suppress that POR entry from
+#    the ori_por_best_known_so_far.csv data file
+grep "^RAU" ori_por_public.csv # >> ori_por_non_iata.csv
+vi ori_por_best_known_so_far.csv
+./make_ori_por_public.sh
+git add ori_por_best_known_so_far.csv ori_por_public.csv ori_por_non_iata.csv
+git ci -m "[RefData][ORI] Suppressed the RAU/Rangpur (Bangladesh) POR (as per IATA LIWG #33, 2012)."
+
+
+##
+# [Difference analysis - Section 07]
+# MIL-C
+grep "^MIL" ../ORI/ori_por_best_known_so_far.csv \
+	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
+# => MIL corresponds to Milan, Italy, having got GeonameID=3173435
+midori http://www.geonames.org/3173435
+# Here, the Geonames coordinates are the good ones and those of 
+# ../ORI/ori_por_best_known_so_far.csv must be fixed:
+vi ../ORI/ori_por_best_known_so_far.csv
+git add ../ORI/ori_por_best_known_so_far.csv
+git ci -m "[RefData][ORI] Fixed the geographical coordinates of MIL (Milan, Italy)." ../ORI/ori_por_best_known_so_far.csv
+
+##
+# [De-duplication of ORI single POR - Section 05]
+# MBW
+# - ORI has got MBW-A^MBW^-37.975833^145.102222^MEL^
+# - where as Geonames has got:
+#   + MBW^YMMB^^6301316^Moorabbin Airport Aws
+#   + MBW^ZZZZ^^2157026^Moorabbin
+# - IATA states that there is no MBW city, and the served city is MEL.
+# So, the corresponding Geonames entry may be fixed: delete the MBW IATA code
+# from the Moorabbin city in Geonames:
+midori http://www.geonames.org/2157026
+#
+# SEN
+# - ORI has got MBW-A^MBW^-37.975833^145.102222^MEL^
+# - where as Geonames has got:
+#   + MBW^YMMB^^6301316^Moorabbin Airport Aws
+#   + MBW^ZZZZ^^2157026^Moorabbin
+# - IATA states that there is no SEN city, and the served city is LON.
+# IATA notification:
+midori https://docs.google.com/file/d/0BwKITpyjB9nJVWp0c2NMMkJzM0E/edit
+# So, the corresponding Geonames entry may be fixed: delete the SEN IATA code
+# from the Southend city in Geonames:
+midori http://www.geonames.org/2637434
+#
+# SPA
+# - ORI has got SPA-A^SPA^34.915722^-81.9565^GSP^
+# - where as Geonames has got:
+#   + SPA^KSPA^^4597209^Spartanburg Downtown Memorial Airport
+#   + SPA^ZZZZ^^4597200^Spartanburg
+# - IATA states that there is actually a SPA city, serving the SPA airport.
+# So, ORI needs to be fixed: transform the 'SPA-A' entry into 'SPA-CA' and
+# assign 'SPA' for its served city.
+
+
+##
+# Harder issues
+##
+
+##
+# [Difference analysis - Section 07]
+# BCV
+grep "^BCV" ../ORI/ori_por_best_known_so_far.csv \
+	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
+# The best known coordinates (61.416489 -149.50735) are very different
+# from the Geonames ones (17.26968 -88.77691), which seem to be consistent with
+# the RFD ones. However, in order to not lose any information, Google Maps has
+# to be checked on the corresponding "best known" coordinates:
+midori http://maps.google.com/?q=61.416489+-149.50735
+# Apparently, that airport corresponds to Birchwood airport. It has to be
+# confirmed in Geonames, e.g. by typing 61.416489 -149.50735 in the search field,
+# which leads to Birchwood (IATA: BCV), indeed:
+midori http://www.geonames.org/5857458/birchwood-airport.html
+# By clicking the "history" link, we see that Marc Wick, from Geonames, has made
+# the last changes, for the good, on that POR. Indeed, BCV was first reported
+# to be the IATA code, when in fact it was the FAA code. So, we now understand:
+# the ../ORI/ori_por_best_known_so_far.csv has got the coordinates of the
+# BCV FAA-coded airport (Birchwood) for the BCV IATA-coded airport (Belmopan).
+# The solution is simply to fix the coordinates in the
+# ../ORI/ori_por_best_known_so_far.csv file.
+vi ../ORI/ori_por_best_known_so_far.csv
+git add ../ORI/ori_por_best_known_so_far.csv
+git ci -m "[RefData][ORI] Fixed the geographical coordinates of BCV (Belmopan, Belize)." ../ORI/ori_por_best_known_so_far.csv
+
+##
+# [De-duplication of ORI single POR - Section 05]
+# BDL
+grep "^BDL" ../ORI/ori_por_best_known_so_far.csv \
+	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
+grep "^HFD" ../ORI/ori_por_best_known_so_far.csv \
+	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
+# When Geonames knows at least two POR entries when ORI knows only one
+# (which is current when ORI has a single 'CA' entry while Geonames
+# distinguishes between the airport and the city), the served city
+# has usually the same IATA code as the ORI POR entry.
+# If not, it means that Geonames has assigned the IATA code
+# of the current POR to the served city, where as that latter
+# should be assigned a different IATA code, as stated by ORI.
+#
+# For instance, say:
+#   - ORI has got BDL-CA^BDL^41.938889^-72.683222^HFD^
+#   - where as Geonames has got:
+#     + BDL^KBDL^^5282636^Bradley International Airport^
+#     + BDL^ZZZZ^^4845926^Windsor Locks^
+# One may assume that the city served by the BDL (Bradley) airport
+# is HFD (Hartford), as stated by ORI, and that no city should be
+# assigned the BDL IATA code. However, Geonames has got a city
+# with BDL for IATA code.
+#
+# Note that in this case, though, Geonames is right!
+# Indeed, ORI is not logical when specifying 'CA' for BDL while having no
+# BDL city. Moreover, http://www.iata.org/ps/publications/Pages/code-search.aspx
+# is clear for BDL and HFD: the BDL (Bradley) airport serves three cities:
+# BDL (Windsor Locks), HFD (Hartford) and SFY (Springfield).
+
+
+
+##
+## =========================== Appendix D ===========================
+## ==                                                              ==
+## ==                    Geonames and Wikipedia                    ==
+## ==                                                              ==
+## ==================================================================
+##
+
+##
+# Cheat sheet for Geonames, Wikipedia and BlogSpot
+#
+
+# To updates from Marc on Geonames:
+midori http://www.geonames.org/recent-changes/user/marc/
+midori http://www.geonames.org/recent-changes/user/geonames/
+
+# To updates from OurAirports on Geonames:
+midori http://www.geonames.org/recent-changes/user/ourairports/
+
+# To updates from Denis on Geonames:
+midori http://www.geonames.org/recent-changes/user/denis.arnaud/
+
+# To updates from Amadeus on Geonames:
+midori http://www.geonames.org/recent-changes/user/amadeus/
+midori http://www.geonames.org/recent-changes/user/amadeus.arnaud/
+
+# To create a new MapEdits blog entry:
+midori http://www.blogger.com/blogger.g?blogID=6053493198961095809#editor
+# Take inspiration from another similar blog entry:
+midori http://www.blogger.com/post-edit.g?blogID=6053493198961095809&postID=3454594981508296115&from=pencil

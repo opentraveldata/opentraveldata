@@ -1,0 +1,7 @@
+
+#
+# Hierarchical links between geographical places:
+# http://forum.geonames.org/gforum/posts/list/1415.page
+#
+wget http://download.geonames.org/ppl_pplx.csv.gz
+

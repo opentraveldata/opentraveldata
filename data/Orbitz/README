@@ -1,0 +1,8 @@
+
+A list of airports can be downloaded from:
+midori http://www.codediesel.com/data/international-airport-codes-download/
+
+Or, directly from Orbitz (as of April 2012):
+wget http://www.orbitz.com/App/global/airportCodes.jsp
+It needs some HTML scrapping.
+

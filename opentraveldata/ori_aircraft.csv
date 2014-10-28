@@ -1,0 +1,394 @@
+iata_code^manufacturer^model
+100^Fokker^100
+141^BAe^146-100
+142^BAe^146-200
+143^BAe^146-300
+146^BAe^146
+14F^BAe^146 Freighter (-100/200/300QT & QC)
+14X^BAe^146 Freighter (-100QT & QC)
+14Y^BAe^146 Freighter (-200QT & QC)
+14Z^BAe^146 Freighter (-300QT & QC)
+19D^Airbus^A319
+310^Airbus^A310
+312^Airbus^A310-200
+313^Airbus^A310-300
+318^Airbus^A318
+319^Airbus^A319
+31F^Airbus^A310F
+31W^Airbus^A319 (Sharklets)
+31X^Airbus^A310-200F
+31Y^Airbus^A310-300F
+320^Airbus^A320-100/200
+32A^Airbus^A320-200 (Sharklets)
+321^Airbus^A321-100/200
+32B^Airbus^A321-200 (Sharklets)
+330^Airbus^A330
+332^Airbus^A330-200
+333^Airbus^A330-300
+33F^Airbus^A330 Freighter
+33X^Airbus^A330-200 Freighter
+340^Airbus^A340
+342^Airbus^A340-200
+343^Airbus^A340-300
+345^Airbus^A340-500
+346^Airbus^A340-600
+350^Airbus^A350
+358^Airbus^A350-800
+359^Airbus^A350-900
+380^Airbus^A380
+388^Airbus^A380
+38F^Airbus^A380-800F Freighter
+703^Boeing^707-300
+707^Boeing^707/720
+70F^Boeing^707 Freighter
+70M^Boeing^707 Combi
+717^Boeing^717
+721^Boeing^727-100
+722^Boeing^727-200
+727^Boeing^727
+72A^Boeing^727-200 Advanced
+72B^Boeing^727-100 Mixed Configuration
+72C^Boeing^727-200 Mixed Configuration
+72F^Boeing^727 Freighter (-100/200)
+72M^Boeing^727 Mixed Configuration
+72S^Boeing^727-200 Advanced
+72W^Boeing^727-200 (winglets)
+72X^Boeing^727-100 Freighter
+72Y^Boeing^727-200 Freighter
+731^Boeing^737-100
+732^Boeing^737-200
+733^Boeing^737-300
+734^Boeing^737-400
+735^Boeing^737-500
+736^Boeing^737-600
+737^Boeing^737
+738^Boeing^737-800
+739^Boeing^737-900
+73A^Boeing^737-200 Advanced
+73C^Boeing^737-300 (winglets)
+73E^Boeing^737-500 (winglets)
+73F^Boeing^737 Freighter
+73G^Boeing^737-700
+73H^Boeing^737-800 (winglets)
+73J^Boeing^737-900 (winglets)
+73L^Boeing^737-200 Mixed Configuration
+73M^Boeing^737-200 Mixed Configuration
+73N^Boeing^737-300 Mixed Configuration
+73P^Boeing^737-400 Freighter
+73Q^Boeing^737-400 Mixed Configuration
+73R^Boeing^737-700 Mixed Configuration
+73S^Boeing^737-200 Advanced
+73W^Boeing^737-700 (winglets)
+73X^Boeing^737-200 Freighter
+73Y^Boeing^737-300 Freighter
+73Z^Boeing^737-400 Freighter
+741^Boeing^747-100
+742^Boeing^747-200
+743^Boeing^747-300
+744^Boeing^747-400
+747^Boeing^747
+74C^Boeing^747-200 Mixed Configuration
+74D^Boeing^747-300 Mixed Configuration
+74E^Boeing^747-400 Mixed Configuration
+74F^Boeing^747 Freighter
+74H^Boeing^747-8 Intercontinental
+74J^Boeing^747-400 (Domestic)
+74L^Boeing^747SP
+74M^Boeing^747 Combi
+74R^Boeing^747SR
+74T^Boeing^747-100 Freighter
+74U^Boeing^747-300 / 747-200 SUD Freighter
+74V^Boeing^747SR Freighter
+74X^Boeing^747-200 Freighter
+74Y^Boeing^747-400 Freighter
+752^Boeing^757-200
+753^Boeing^757-300
+757^Boeing^757
+75F^Boeing^757-200 Freighter
+75M^Boeing^757-200 Mixed Configuration
+75T^Boeing^757-300 (winglets)
+75W^Boeing^757-200 (winglets)
+762^Boeing^767-200
+763^Boeing^767-300
+764^Boeing^767-400
+767^Boeing^767
+76F^Boeing^767 Freighter
+76X^Boeing^767-200 Freighter
+76Y^Boeing^767-300 Freighter
+772^Boeing^777-200
+773^Boeing^777-300
+777^Boeing^777
+77F^Boeing^777 Freighter
+77L^Boeing^777-200LR
+77W^Boeing^777-300ER
+77X^Boeing^777-200F Freighter
+783^Boeing^787-300
+787^Boeing^787
+788^Boeing^787-8 Dreamliner
+789^Boeing^787-900
+A22^Antonov^An-22
+A26^Antonov^An-26
+A28^Antonov^An-28 / PZL Mielec M-28
+A30^Antonov^An-30
+A32^Antonov^An-32
+A38^Antonov^An-38
+A40^Antonov^An-140
+A4F^Antonov^An-124
+A58^Antonov^An-158
+A5F^Antonov^An-225
+A81^Antonov^An-148-100
+AB2^Airbus^A300B2
+AB3^Airbus^A300
+AB4^Airbus^A300B4/C4
+AB6^Airbus^A300-600/600C/601
+ABB^Airbus^A300-600ST Beluga
+ABF^Airbus^A300F Freighter
+ABM^Airbus^A300-600 Mixed Configuration
+ABX^Airbus^A300C4/F4 Freighter
+ABY^Airbus^A300-600F Freighter
+ACD^Rockwell^Commander/Turbo Commander
+ACP^Rockwell^Commander
+ACT^Rockwell^Turbo Commander
+AGH^Agusta / AgustaWestland^A-109
+ALM^Ayres^LM-200 Loadmaster
+AMD^Dassault^FALCON 10 / 20 / 50
+AN2^Antonov^An-2
+AN4^Antonov^An-24
+AN6^Antonov^An-26 / An-30 / An-32
+AN7^Antonov^An-72 / An-74
+ANF^Antonov^An-12 Freighter
+APH^Eurocopter^SA330 Puma / AS332 Super Puma
+AR1^BAe^Avro RJ100
+AR7^BAe^Avro RJ70
+AR8^BAe^Avro RJ85
+ARJ^BAe^Avro RJ70 / RJ85 / RJ100
+AT4^ATR^ATR 42-300 / 320
+AT5^ATR^ATR 42-500
+AT7^ATR^ATR 72
+ATD^ATR^ATR 42-400
+ATF^ATR^ATR 72 Freighter
+ATP^BAe^ATP
+ATR^ATR^ATR 42 / ATR 72
+B11^BAC^One Eleven
+B12^BAC^One Eleven 200
+B13^BAC^One Eleven 300
+B14^BAC^One Eleven 400/475
+B15^BAC^One Eleven 500
+B72^Boeing^720B
+BE1^Beechcraft^1900
+BE2^Beechcraft^Beechcraft 200/300 twin piston
+BE4^Beechcraft^Beechcraft 400
+BE9^Beechcraft^Beechcraft C99
+BEC^Beechcraft^Beech light aircraft
+BEH^Beechcraft^1900D
+BEP^Beechcraft^Beech singe piston
+BES^Beechcraft^1900/1900C
+BET^Beechcraft^Beech twin turboprop
+BH2^Bell Helicopter^Bell Helicopters
+BNI^Britten-Norman^BN-2A/B Islander
+BNT^Britten-Norman^BN-2A Mk III Trislander
+BUS^Surface Equipment^Bus
+C9B^Canadair^CRJ 900NG
+CCJ^Canadair^Challenger
+CCX^Bombardier^Global Express
+CD2^GAF^N22B / N24A Nomad
+CL4^Canadair^CL-44
+CN1^Cessna^Cessna single piston engine
+CN2^Cessna^Cessna twin piston engines
+CN7^Cessna^750 Citation X
+CNA^Cessna^Cessna light aircraft
+CNC^Cessna^Cessna single turboprop engine
+CNJ^Cessna^Citation
+CNT^Cessna^Cessna twin turboprop engines
+CR1^Canadair^CRJ 100
+CR2^Canadair^CRJ 200
+CR7^Canadair^CRJ 700
+CR9^Canadair^CRJ 900
+CRA^Canadair^CRJ 705
+CRF^Canadair^CRJ Freighter
+CRJ^Canadair^CRJ
+CRV^Sud-Est^SE.210 Caravelle
+CS1^Bombardier^CS100
+CS2^CASA^212 Aviocar
+CS3^Bombardier^CS300
+CS5^Airtech^CN-235
+CV2^Convair^CV-240
+CV4^Convair^CV-440 Metropolitan
+CV5^Convair^CV-580
+CV6^Convair^CV-600/640
+CVF^Convair^CV-240 / 440 / 580 / 600 / 640 Freighter
+CVR^Convair^CV-240 / 440 / 580 / 600 / 640
+CVV^Convair^CV-240 Freighter
+CVX^Convair^CV-440 Freighter
+CVY^Convair^CV-580 / 600 / 640 Freighter
+CWC^Curtiss^C-46 Commando
+D10^Douglas^DC-10
+D11^Douglas^DC-10-10/15
+D14^Douglas^DC-10-40
+D1C^Douglas^DC-10-30/30CF/30ER
+D1F^Douglas^DC-10 Freighter
+D1M^Douglas^DC-10 Combi
+D1X^Douglas^DC-10-10 Freighter
+D1Y^Douglas^DC-10-30 / 40 Freighter
+D28^Dornier^Do 228
+D38^Dornier^Do 328
+D3F^Douglas^DC-3 Freighter
+D6F^Douglas^DC-6A/B/C Freighter
+D85^Douglas^DC-8-50
+D86^Douglas^DC-8-61
+D87^Douglas^DC-8-71
+D8A^Douglas^DC-8-63
+D8B^Douglas^DC-8-73
+D8F^Douglas^DC-8 Freighter
+D8L^Douglas^DC-8-62
+D8M^Douglas^DC-8 Combi
+D8Q^Douglas^DC-8-72
+D8T^Douglas^DC-8-50 Freighter
+D8X^Douglas^DC-8-61 / 62 / 63 Freighter
+D8Y^Douglas^DC-8-71 / 72 / 73 Freighter
+D91^Douglas^DC-9-10
+D92^Douglas^DC-9-20
+D93^Douglas^DC-9-30
+D94^Douglas^DC-9-40
+D95^Douglas^DC-9-50
+D9C^Douglas^DC-9-30 Freighter
+D9D^Douglas^DC-9-40 Freighter
+D9F^Douglas^DC-9-40 Freighter
+D9X^Douglas^DC-9-10 Freighter
+DC3^Douglas^DC-3
+DC6^Douglas^DC6A/B
+DC8^Douglas^DC-8
+DC9^Douglas^DC-9
+DF2^Dassault^Falcon 10 / 100 / 20 / 200 / 2000
+DF3^Dassault^Falcon 50 / 900
+DFL^Dassault^Falcon
+DH1^De Havilland Canada^DHC-8-100 Dash 8 / 8Q
+DH2^De Havilland Canada^DHC-8-200 Dash 8 / 8Q
+DH3^De Havilland Canada^DHC-8-300 Dash 8 / 8Q
+DH4^De Havilland Canada^DHC-8-400 Dash 8Q
+DH7^De Havilland Canada^DHC-7 Dash 7
+DH8^De Havilland Canada^DHC-8 Dash 8
+DHB^De Havilland Canada^DHC-2 Beaver / Turbo Beaver
+DHC^De Havilland Canada^DHC-4 Caribou
+DHD^De Havilland^DH.104 Dove
+DHH^De Havilland^DH.114 Heron
+DHL^De Havilland Canada^DHC-3 Turbo Otter
+DHO^De Havilland Canada^DHC-3 Otter / Turbo Otter
+DHP^De Havilland Canada^DHC-2 Beaver
+DHR^De Havilland Canada^DHC-2 Turbo-Beaver
+DHS^De Havilland Canada^DHC-3 Otter
+DHT^De Havilland Canada^DHC-6 Twin Otter
+E70^Embraer^EMB 170
+E75^Embraer^EMB 175
+E90^Embraer^EMB 190
+E95^Embraer^EMB 195
+EM2^Embraer^EMB 120 Brasília
+EMB^Embraer^EMB 110 Bandeirante
+EMJ^Embraer^EMB 170 / EMB 190
+ER3^Embraer^ERJ 135
+ER4^Embraer^ERJ 145
+ERD^Embraer^ERJ 140
+ERJ^Embraer^ERJ 135 / ERJ 140 / ERJ 145
+F21^Fokker^F28 Fellowship 1000
+F22^Fokker^F28 Fellowship 2000
+F23^Fokker^F28 Fellowship 3000
+F24^Fokker^F28 Fellowship 4000
+F27^Fokker^F27 Friendship
+F28^Fokker^F28 Fellowship
+F50^Fokker^50
+F70^Fokker^70
+FK7^Fairchild-Hiller^FH-227
+FR3^Dornier^328JET
+FR4^Dornier^428JET
+FRJ^Dornier^328JET
+GRG^Grumman^G-21 Goose
+GRJ^Gulfstream^G-1159 Gulfstream II / III / IV / V
+GRM^Gulfstream^G-73 Turbo Mallard
+GRS^Gulfstream^G-159 Gulfstream I
+H25^Hawker-Siddeley^HS.125
+HEC^Helio^H-250 Courier / H-295 / 385 Super Courie
+HS7^BAe^HS.748
+I14^Ilyushin^IL-114
+I93^Ilyushin^IL-96-300
+I9F^Ilyushin^IL-96 Freighter
+I9M^Ilyushin^IL-96M
+I9X^Ilyushin^IL-96-300 Freighter
+I9Y^Ilyushin^IL-96T Freighter
+IL6^Ilyushin^IL-62
+IL7^Ilyushin^IL-76
+IL8^Ilyushin^IL-18
+IL9^Ilyushin^IL-96
+ILW^Ilyushin^IL-86
+J31^BAe^Jetstream 31
+J32^BAe^Jetstream 32
+J41^BAe^Jetstream 41
+JST^BAe^Jetstream 31 / 32 / 41
+JU5^Junkers^Ju 52/3M
+L10^Lockheed^L-1011 Tristar
+L11^Lockheed^L-1011 1 / 50 / 100 / 150 / 200 / 250 Tr
+L15^Lockheed^L-1011 500 Tristar
+L1F^Lockheed^L-1011 Tristar Freighter
+L49^Lockheed^L-1049 Super Constellation
+L4T^LET^L-410
+LCH^Surface Equipment^Launch/Boat
+LMO^Surface Equipment^Limousine
+LOE^Lockheed^L-188 Electra
+LOF^Lockheed^L-188 Electra Freighter
+LOH^Lockheed^L-182 / 282 / 382 (L-100) Hercules
+LOM^Lockheed^L-188 Electra Mixed
+LRJ^Learjet^Gates Learjet
+M11^McDonnell Douglas^MD-11
+M1F^McDonnell Douglas^MD-11 Freighter
+M1M^McDonnell Douglas^MD-11 Mixed
+M80^McDonnell Douglas^MD-80
+M81^McDonnell Douglas^MD-81
+M82^McDonnell Douglas^MD-82
+M83^McDonnell Douglas^MD-83
+M87^McDonnell Douglas^MD-87
+M88^McDonnell Douglas^MD-88
+M90^McDonnell Douglas^MD-90
+M95^McDonnell Douglas^MD-95
+MBH^MBB^Bo 105
+MD9^MD Helicopters^MD900 Explorer
+MIH^Mil^Mi-8 / Mi-17 / Mi-171 / Mil-172
+MU2^Mitsubishi^Mu-2
+ND2^Nord / SNCAN^N.262
+NDC^Aerospatiale / SNIAS^SN.601 Corvette
+NDE^Eurocopter^AS350 Ecureuil / AS355 Ecureuil 2
+NDH^Eurocopter^SA365C / SA365N Dauphin 2
+PA1^Piper^Piper single piston engine
+PA2^Piper^Piper twin piston engines
+PAG^Piper^Piper light aircraft
+PAT^Piper^Piper twin turboprop engines
+PL2^Pilatus^PC-12
+PL6^Pilatus^PC-6 Turbo Porter
+PN6^Partenavia^P.68
+S20^Saab^2000
+S58^Sikorsky^S-58T
+S61^Sikorsky^S-61
+S76^Sikorsky^S-76
+SF3^Saab^SF340A/B
+SFB^Saab^SF340B
+SFF^Saab^SF340 Freighter
+SH3^Shorts^SD.330
+SH6^Shorts^SD.360
+SHB^Shorts^SC-5 Belfast
+SHS^Shorts^SC-7 Skyvan
+SSC^Aerospatiale / SNIAS^Concorde
+SWM^Fairchild-Swearingen^SA26 / SA226 / SA227 Metro / Merlin
+SU1^Sukhoi^Superjet 100
+SU7^Sukhoi^Superjet 100-75
+SU9^Sukhoi^Superjet 100-95
+T20^Tupolev^Tu-204 / Tu-214
+T2F^Tupolev^Tu-204 Freighter
+TRN^Surface Equipment^Train
+TU3^Tupolev^Tu-134
+TU5^Tupolev^Tu-154
+VCV^Vickers^Viscount
+VCX^Vickers^VC-10
+WWP^IAI^1124 Westwind
+YK2^Yakovlev / Jakovlev^Yak 42
+YK4^Yakovlev / Jakovlev^Yak 40
+YN2^HAMC / Harbin^Y12
+YN7^Xian^Yunshuji Y7
+YS1^NAMC^YS-11

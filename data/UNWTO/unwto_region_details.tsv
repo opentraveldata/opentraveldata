@@ -1,0 +1,285 @@
+Region	Sub-region	Destination	Old Code	Code	Destination
+					
+Africa	Central Africa	Angola	8220	11AO	Angola
+		Cameroon	8270	11CM	Cameroon
+		Central African Republic	8290	11CF	Central African Republic
+		Chad	8300	11TD	Chad
+		"Congo, Republic of"	8320	11CG	"Congo, Republic of"
+		"Congo, the Democratic Republic of the"	8325	11CD	"Congo, the Democratic Republic of the"
+		Equatorial Guinea	8350	11GQ	Equatorial Guinea
+		Gabon	8380	11GA	Gabon
+		Sao Tome and Principe	8570	11ST	Sao Tome and Principe
+					
+	East Africa	Burundi	8260	12BI	Burundi
+		Comoros	8310	12KM	Comoros
+		Djibouti	8340	12DJ	Djibouti
+		Eritrea	8360	12ER	Eritrea
+		Ethiopia	8370	12ET	Ethiopia
+		Kenya	8430	12KE	Kenya
+		Madagascar	8460	12MG	Madagascar
+		Malawi	8470	12MW	Malawi
+		Mauritius	8030	12MU	Mauritius
+		Mayotte	8495	12YT	Mayotte
+		Mozambique	8510	12MZ	Mozambique
+		Reunion	8550	12RE	Reunion
+		Rwanda	8560	12RW	Rwanda
+		Seychelles	8590	12SC	Seychelles
+		Somalia	8610	12SO	Somalia
+		Tanzania	8640	12TZ	Tanzania
+		Uganda	8670	12UG	Uganda
+		Zambia	8700	12ZM	Zambia
+		Zimbabwe	8710	12ZW	Zimbabwe
+					
+	North Africa	Algeria	8210	13DZ	Algeria
+		Egypt	8010	13EG	Egypt
+		Libya	8020	13LY	Libya
+		Morocco	8500	13MA	Morocco
+		South Sudan	8615	13SS	South Sudan
+		Sudan	8620	13SD	Sudan
+		Tunisia	8660	13TN	Tunisia
+		Western Sahara	8680	13EH	Western Sahara
+					
+	South Africa	Botswana	8240	14BW	Botswana
+		Lesotho	8440	14LS	Lesotho
+		Namibia	8520	14NA	Namibia
+		Saint Helena	8565	14SH	Saint Helena
+		South Africa	8040	14ZA	South Africa
+		Swaziland	8630	14SZ	Swaziland
+					
+	West Africa	Benin	8230	15BJ	Benin (Dahomey)
+		Burkina Faso	8250	15BF	Burkina Faso
+		Cape Verde	8280	15CV	Cape Verde
+		Ivory Coast	8330	15CI	Cote d'Ivoire/ Ivory Coast
+		Gambia	8390	15GM	Gambia
+		Ghana	8400	15GH	Ghana
+		Guinea	8410	15GN	Guinea
+		Guinea-Bissau	8420	15GW	Guinea-Bissau
+		Liberia	8450	15LR	Liberia
+		Mali	8480	15ML	Mali
+		Mauritania	8490	15MR	Mauritania
+		Niger	8530	15NE	Niger
+		Nigeria	8540	15NG	Nigeria
+		Senegal	8580	15SN	Senegal
+		Sierra Leone	8600	15LSL	Sierra Leone
+		Togo	8650	15TG	Togo
+					
+	Other Africa	Other Africa	8980	16OT	Other Africa
+					
+Americas	Caribbean	Anguilla	1310	21AI	Anguilla
+		Antigua and Barbuda	1320	21AG	Antigua and Barbuda
+		Aruba	1330	21AW	Aruba
+		Bahamas	1350	21BS	Bahamas
+		Barbados	1360	21BB	Barbados
+		Bermuda	1370	21BM	Bermuda
+		"Bonaire, Saint Eustatius & Saba"	1375	21BQ	"Bonaire, Saint Eustatius & Saba"
+		Cayman Islands	1380	21KY	Cayman Islands
+		Cuba	1390	21CU	Cuba
+		Curacao	1395	21CW	Curacao
+		Dominica	1400	21DM	Dominica
+		Dominican Republic	1410	21DO	Dominican Republic
+		Grenada	1420	21GD	Grenada
+		Guadeloupe	1430	21GP	Guadeloupe
+		Haiti	1440	21HT	Haiti
+		Jamaica	1450	21JM	Jamaica
+		Martinique	1460	21MQ	Martinique
+		Montserrat	1470	21MS	Montserrat
+		Puerto Rico	1500	21PR	Puerto Rico
+		Sint Maarten	1505	21SX	Sint Maarten
+		St. Kitts-Nevis	1510	21KN	St. Kitts-Nevis
+		St. Lucia	1520	21LC	St. Lucia
+		St. Vincent & the Grenadines	1530	21VC	St. Vincent & the Grenadines
+		Trinidad & Tobago	1540	21TT	Trinidad & Tobago
+		Turks & Caicos Islands	1550	21TC	Turks & Caicos Islands
+		"Virgin Islands, British"	1560	21VG	"Virgin Islands, British"
+		"Virgin Islands, United States"	1570	21VI	"Virgin Islands, United States"
+		Other Caribbean	1590	21OT	Other Caribbean
+					
+	Central America	Belize	1210	22BZ	Belize
+		Costa Rica	1220	22CR	Costa Rica
+		El Salvador	1230	22SV	El Salvador
+		Guatemala	1240	22GT	Guatemala
+		Honduras	1250	22HN	Honduras
+		Mexico	1020	22MX	Mexico
+		Nicaragua	1260	22NI	Nicaragua
+		Panama	1270	22PA	Panama
+		Other Central America	1290	22OT	Other Central America
+					
+	North America	Canada	1010	23CA	Canada
+		Greenland	1110	23GL	Greenland
+		St. Pierre & Miquelon	1120	23PM	St. Pierre & Miquelon
+		USA	1030	23US	USA
+		Other North America	1180	23OT	Other North America
+					
+	South America	Argentina	1610	24AR	Argentina
+		Bolivia	1710	24BO	Bolivia
+		Brazil	1620	24BR	Brazil
+		Chile	1630	24CL	Chile
+		Colombia	1640	24CO	Colombia
+		Ecuador	1720	24EC	Ecuador
+		Falkland Islands	1730	24FK	Falkland Islands
+		French Guyana	1740	24GF	French Guyana
+		Guyana	1750	24GY	Guyana
+		Paraguay	1760	24PY	Paraguay
+		Peru	1650	24PE	Peru
+		South Georgia & the South Sandwich Islands	1770	24GS	South Georgia & the South Sandwich Islands
+		Suriname	1790	24SR	Suriname
+		Uruguay	1660	24UY	Uruguay
+		Venezuela	1670	24VE	Venezuela
+		Other South America	1880	24OT	Other South America
+					
+	Other Americas	Other Americas	1980	25OT	Other Americas
+					
+Asia	Central Asia	Kazakhstan	5710	31KZ	Kazakhstan
+		Kyrgyzstan	5720	31KG	Kyrgyzstan
+		Tajikistan	5730	31TJ	Tajikistan
+		Turkmenistan	5740	31TM	Turkmenistan
+		Uzbekistan	5750	31UZ	Uzbekistan
+		Other Central Asia	5780	31OT	Other Central Asia
+					
+	Northeast Asia	China	4010	32CN	China
+		Chinese Taipei	4030	32TW	Chinese Taipei
+		DPR Korea	4520	32KP	DPR Korea
+		Hong Kong SAR	4020	32HK	Hong Kong SAR
+		Hong Kong SAR & Macau SAR	4027	32HO	Hong Kong SAR & Macau
+		Japan	4040	32JP	Japan
+		Korea (ROK)	4050	32KR	Korea (ROK)
+		Macau SAR	4060	32MO	Macau SAR
+		Mongolia	4530	32MN	Mongolia
+		Other Northeast Asia	4580	32OT	Other Northeast Asia
+					
+	South Asia	Afghanistan	3510	33AF	Afghanistan
+		Bangladesh	3010	33BD	Bangladesh
+		Bhutan	3520	33BT	Bhutan
+		India	3020	33IN	India
+		Maldives	3030	33MV	Maldives
+		Nepal	3040	33NP	Nepal
+		Pakistan	3050	33PK	Pakistan
+		Sri Lanka	3060	33LK	Sri Lanka
+		Other South Asia	3580	33OT	Other South Asia
+					
+	Southeast Asia	Brunei	5010	34BN	Brunei
+		Cambodia	5020	34KH	Cambodia
+		Indonesia	5030	34ID	Indonesia
+		Lao PDR	5040	34LA	Lao PDR
+		Malaysia	5050	34MY	Malaysia
+		Myanmar	5060	34MM	Myanmar
+		Philippines	5070	34PH	Philippines
+		Singapore	5080	34SG	Singapore
+		Thailand	5090	34TH	Thailand
+		Timor Leste	5510	34TL	Timor Leste
+		Vietnam	5100	34VN	Vietnam
+		Other Southeast Asia	5580	34OT	Other Southeast Asia
+					
+	West Asia	Bahrain	7520	35BH	Bahrain
+		Cyprus	7530	35CY	Cyprus
+		Iran	7010	35IR	Iran
+		Iraq	7540	35IQ	Iraq
+		Israel	7020	35IL	Israel
+		Jordan	7550	35JO	Jordan
+		Kuwait	7030	35KW	Kuwait
+		Lebanon	7560	35LB	Lebanon
+		Oman	7570	35OM	Oman
+		Palestine	7580	35PS	Palestine
+		Qatar	7590	35QA	Qatar
+		Saudi Arabia	7040	35SA	Saudi Arabia
+		Syria	7600	35SY	Syria
+		Turkey	7050	35TR	Turkey
+		UAE	7060	35AE	UAE
+		Yemen	7610	35YE	Yemen
+		Other West Asia	7980	35OT	Other West Asia
+					
+	Other Asia	Other Asia	5910	36OT	Other Asia
+					
+Europe	East Europe	Armenia	2720	41AM	Armenia
+		Azerbaijan	2730	41AZ	Azerbaijan
+		Belarus	2740	41BY	Belarus
+		Bulgaria	2760	41BG	Bulgaria
+		Czech Republic	2530	41CZ	Czech Republic
+		Georgia	2790	41GE	Georgia
+		Hungary	2540	41HU	Hungary
+		Moldova	2830	41MD	Moldova
+		Poland	2550	41PL	Poland
+		Romania	2560	41RO	Romania
+		Russian Federation	2570	41RU	Russian Federation
+		Slovakia	2840	41SK	Slovakia
+		Ukraine	2860	41UA	Ukraine
+		Other East Europe	2880	41OT	Other East Europe
+					
+	North Europe	Denmark	2030	42DK	Denmark
+		Estonia	2780	42EE	Estonia
+		Faeroe Islands	2330	42FO	Faeroe Islands
+		Finland	2040	42FI	Finland
+		Iceland	2350	42IS	Iceland
+		Ireland	2080	42IE	Ireland
+		Latvia	2800	42LV	Latvia
+		Lithuania	2810	42LT	Lithuania
+		Norway	2140	42NO	Norway
+		Sweden	2170	42SE	Sweden
+		UK	2190	42UK	UK
+		Other North Europe		42OT	Other North Europe
+					
+	South Europe	Albania	2710	43AL	Albania
+		Andorra	2310	43AD	Andorra
+		Bosnia-Herzegovina	2750	43BA	Bosnia-Herzegovina
+		Croatia	2770	43HR	Croatia
+		Gibraltar	2340	43GI	Gibraltar
+		Greece	2070	43GR	Greece
+		Holy See (Vatican)	2100	43VA	Holy See (Vatican)
+		Italy	2090	43IT	Italy
+		Macedonia	2820	43MK	Macedonia
+		Malta	2370	43MT	Malta
+		Montenegro	2833	43ME	Montenegro
+		Portugal	2150	43PT	Portugal
+		San Marino	2380	43SM	San Marino
+		Serbia	2836	43RS	Serbia
+		Slovenia	2850	43SI	Slovenia
+		Spain	2160	43ES	Spain
+		Other South Europe		43OT	Other South Europe
+					
+	West Europe	Austria	2010	44AT	Austria
+		Belgium	2020	44BE	Belgium
+		France	2050	44FR	France
+		Germany	2060	44DE	Germany
+		Liechtenstein	2360	44LI	Liechtenstein
+		Luxembourg	2110	44LU	Luxembourg
+		Monaco	2120	44MC	Monaco
+		Netherlands	2130	44NL	Netherlands
+		Switzerland	2180	44CH	Switzerland
+		Other West Europe	2480	44OT	Other West Europe
+					
+	Other Europe	Other Europe	2980	45OT	Other Europe
+					
+Pacific	Oceania	Australia	6010	51AU	Australia
+		New Zealand	6020	51NZ	New Zealand
+		Norfolk Island	6240	51NF	Norfolk Island
+		Other Oceania	6290	51OT	Other Oceania
+					
+	Melanesia	Fiji	6530	52FJ	Fiji
+		New Caledonia	6600	52NC	New Caledonia
+		Papua New Guinea	6640	52PG	Papua New Guinea
+		Solomon Islands	6660	52SB	Solomon Islands
+		Vanuatu	6700	52VU	Vanuatu
+					
+	Micronesia	Guam	6550	53GU	Guam
+		Kiribati	6560	53KI	Kiribati
+		Marshall Islands	6570	53MH	Marshall Islands
+		FSM	6580	53FM	FSM
+		Nauru	6590	53NR	Nauru
+		Northern Marianas	6620	53MP	Northern Marianas
+		Palau	6630	53PW	Palau
+					
+	Polynesia	American Samoa	6510	54AS	American Samoa
+		Cook Islands	6520	54CK	Cook Islands
+		French Polynesia (Tahiti)	6540 & 6670	54PF	French Polynesia (Tahiti)
+		Hawaii	6555	54HI	Hawaii
+		Niue	6610	54NU	Niue
+		Samoa	6650	54WS	Samoa
+		Tonga	6680	54TO	Tonga
+		Tuvalu	6690	54TV	Tuvalu
+		Wallis & Futuna Islands	6710	54WF	Wallis & Futuna Islands
+		Tokelau	6960	54TK	Tokelau
+					
+	Other Pacific	Antarctica	9100	55AQ	Antarctica
+		Other Pacific	6980	55OT	Other Pacific
+					
+Other Countries	Other Countries	Other Countries	9200	92OT	Other Countries

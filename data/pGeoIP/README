@@ -1,0 +1,47 @@
+
+The free GeoLite City database is available from:
+http://www.maxmind.com/app/geolitecity
+
+The Open Source C-based API can be downloaded from:
+http://geolite.maxmind.com/download/geoip/api/c/
+See also: http://www.maxmind.com/app/c
+
+The Open Source Perl-based API can be downloaded from:
+http://geolite.maxmind.com/download/geoip/api/perl/
+See also: http://www.maxmind.com/app/perl
+
+The Open Source Ruby-based API can be downloaded from:
+http://geolite.maxmind.com/download/geoip/api/ruby/
+See also: http://www.maxmind.com/app/ruby
+
+The Open Source JavaScript-based API can be downloaded from:
+http://www.maxmind.com/app/javascript_city
+
+
+------------------ Original README file from the Perl module ---------------------
+This module a simple file-based database.  This database simply contains
+IP blocks as keys, and countries as values.  The data contains all
+public IP addresses and should be more
+complete and accurate than reverse DNS lookups.
+
+This module can be used to automatically select the geographically closest mirror,
+or to analyze your web server logs to determine the countries of your visiters.
+
+To install, see the INSTALL file.
+
+MaxMind offers a subscription to database updates, where your systems can
+be keep up to date by running geoipupdate program included in the C API
+as a cronjob.  This subscription also includes a enhanced database which
+is more accurate, and contains information on anonymous proxies, and satellite
+providers.  For more information see:
+http://www.maxmind.com/app/country
+For more information on the GeoIP City, ISP and other databases, see:
+http://www.maxmind.com/app/products
+
+Copyright (c) 2007, MaxMind LLC
+
+All rights reserved.  This package is free software; you can redistribute it
+and/or modify it under the same terms as Perl itself.
+-------------------------------------------------------
+
+

@@ -1,0 +1,19 @@
+
+# FIPS codes and history
+midori http://efele.net/maps/fips-10/data/
+
+# Latest codes
+wget http://efele.net/maps/fips-10/data/fips-414.txt
+
+# All the files are in UTF-8, one record per line, fields delimited by _ (underscore):
+#  1. FIPS code. For countries, it is of the form xx00.
+#  2. first fips version. The first version in which the code is present, with the same designation and names.
+#  3. last fips version. The last version in which the code is present, with the same designation and names.
+#  4. designation, English. "country" for countries, "county", "state", ... for the others
+#  5. designation, other language.
+#  6. designation, other language.
+#  7. designation, other language.
+#  8. name
+#  9. convential name
+# 10. former name
+

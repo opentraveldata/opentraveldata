@@ -1,0 +1,72 @@
+<!-- USAGE
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "demographics", "86.75.30.9");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "trstrank", "infochimps");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "domain", "86.75.30.9");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "geo", "86.75.30.9");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "influence", "infochimps");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "conversation", "mbakrena", "harlirusdi");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "wordbag", "infochimps");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "word_stats", "tintinnabulation");
+//apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "combined", "108.0.12.123");
+-->
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+<script type="text/javascript">
+  var key, call_name, api_url, value_1 = "", value_2 = "";
+	
+  $(document).ready(function() {
+		
+    function infochimpsAPICall (key, call_name, value_1, value_2) {
+      this.key = key;
+      this.call_name = call_name;
+      this.value_1 = value_1;
+      this.value_2 = value_2;
+      select_api();
+      var url = "http://api.infochimps.com" + api_url;		
+      $.ajax({
+        dataType: "jsonp",
+        url: url + "&callback=?", query: $("#query").val(), cache: false,
+        success: function(data){ 			  	
+          $(this).printHumanReadable(data);	
+        }
+      });	
+    }
+		
+    function select_api() {
+      var type_web = "/web/an/de/";
+      var type_ipCensus = "/web/an/ip_census/";
+      var type_soc = "/soc/net/tw/";
+      var apiTypes = Array();
+      apiTypes.push(
+        ['demographics', [type_web, "ip"]],
+        ['domain', [type_web, "ip"]],
+        ['geo', [type_web, "ip"]],
+        ['combined', [type_ipCensus, "ip"]],
+        ['influence', [type_soc, "screen_name"]],
+        ['word_stats', [type_soc, "tok"]],
+        ['wordbag', [type_soc, "screen_name"]],
+        ['links', [type_soc, "screen_name"]],
+        ['trstrank', [type_soc, "screen_name", "", "0.2"]],
+        ['conversation', [type_soc, "user_a_sn", "user_b_sn", "0.2"]]
+      );
+      for (var index in apiTypes) {		
+        if (call_name == apiTypes[index][0]) {
+        api_url =  apiTypes[index][1][0]+apiTypes[index][0]+".json?apikey="+key+"&"+apiTypes[index][1][1]+"="+ value_1;
+        if (value_2 != null) {api_url += "&"+apiTypes[index][3]+"="+value_2;}
+        if (apiTypes[index][1][3] != null) {api_url += "&v="+apiTypes[index][1][3];}
+      }
+    }
+  }	
+	
+  jQuery.fn.printHumanReadable = function(json) {
+    document.write("<pre>");	
+    document.write(JSON.stringify(json, null, '\t'));	
+    document.write("</pre>");	
+  };
+	
+  apiCall = infochimpsAPICall("api_test-W1cipwpcdu9Cbd9pmm8D4Cjc469", "combined", "108.0.12.123");	
+
+});
+
+</script>
+

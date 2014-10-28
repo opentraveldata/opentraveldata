@@ -1,0 +1,4 @@
+
+OpenFlights.org is an open source project. The list of airports can be downloaded from http://openflights.org/data.html
+wget http://openflights.svn.sourceforge.net/viewvc/openflights/openflights/data/airports.dat
+

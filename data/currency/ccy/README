@@ -1,0 +1,3 @@
+The C++ library ccy allows to process efficiently currencies, defined as three-letter strings by ISO-4217 standard.
+
+It comes with a simple test program, and with many static data such a lists of offical and obsolete currencies. These lists are used as well for debugging and consistency checks.
