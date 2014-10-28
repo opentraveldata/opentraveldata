@@ -26,25 +26,34 @@ cat .travis/synchronization_file_map.csv | while read line ; do
   old=$(echo $line | cut -d^ -f1)
   new=$(echo $line | cut -d^ -f2)
   if [ ! -f "$new" ] ; then
+    echo "\n#####"
     echo "In .travis/synchronization_file_map.csv:$n"
     echo "\$old=$old"
     echo "\$new=$new"
     echo "The new file '$new' is missing in this repo"
     echo "It is needed to update the old file '$old' in opentraveldata/optd"
     echo "If you moved this file, please update .travis/synchronization_file_map.csv"
+    echo "\n#####"
     exit 1
   fi
   if [ ! -f /tmp/optd/"$old"  ] ; then
+    echo "\n#####"
     echo "In .travis/synchronization_file_map.csv:$n"
     echo "\$old=$old"
     echo "\$new=$new"
     echo "The file '$old' is missing in opentraveldata/optd"
     echo "Please check .travis/synchronization_file_map.csv for mistakes"
+    echo "#####\n"
     exit 1
   fi
   echo "copying '$new' in 'optd/$old'"
   cp "$new" /tmp/optd/"$old"
 done
+
+# The previous commands runs in a subshell, so the 'exit' only exit this
+# subshell, not the whole hook. We need to exit the hook if things went
+# bad
+[ $? != 0 ] && exit 1
 
 # Get the log of the last commit
 LOG="$(git log -1)"
