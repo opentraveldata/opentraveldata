@@ -61,5 +61,9 @@ cd /tmp/optd
 
 echo "Showing what we are about to synchronize"
 git status
+
+git config --global user.email "opentraveldata@1adev.com"
+git config --global user.name "opentraveldata-bot"
+git config --global push.default simple
 git commit -a -m "$LOG"
 git push
