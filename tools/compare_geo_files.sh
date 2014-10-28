@@ -7,7 +7,7 @@
 
 ##
 #
-GEO_FILE_2_FILENAME=ori_por_best_known_so_far.csv
+GEO_FILE_2_FILENAME=optd_por_best_known_so_far.csv
 
 ##
 # Temporary path
@@ -53,7 +53,7 @@ AIRPORT_PR_FILENAME=ref_airport_pageranked.csv
 # Comparison files
 COMP_FILE_COORD_FILENAME=por_comparison_coord.csv
 COMP_FILE_DIST_FILENAME=por_comparison_dist.csv
-POR_MAIN_DIFF_FILENAME=ori_por_diff_w_geonames.csv
+POR_MAIN_DIFF_FILENAME=optd_por_diff_w_geonames.csv
 # Minimal distance triggering a difference (in km)
 COMP_MIN_DIST=10
 

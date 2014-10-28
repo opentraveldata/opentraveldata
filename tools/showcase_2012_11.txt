@@ -68,8 +68,8 @@ ORIDIRNAME=${RDDIRNAME}/ORI
 GEOEXTRACTOR=extract_por_with_iata_icao.sh
 GEOPREPARATOR=preprepare_geonames_dump_file.sh
 GEODIFFCALCULATOR=compare_por_files.sh
-DEDUPLICATOR=ori_por_splitter.sh
-ORIMAKER=make_ori_por_public.sh
+DEDUPLICATOR=optd_por_splitter.sh
+ORIMAKER=make_optd_por_public.sh
 
 
 ##
@@ -155,7 +155,7 @@ cd ${TOOLDIRNAME} # cd refdata/tools
 ##
 # Check that everything is going well
 #
-grep "^IEV" ../ORI/ori_por_best_known_so_far.csv \
+grep "^IEV" ../ORI/optd_por_best_known_so_far.csv \
 	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
 
 
@@ -187,11 +187,11 @@ cd ${ORIDIRNAME} # cd refdata/ORI
 ./${ORIMAKER} --clean
 
 # Tell Git that it has a new friend to supervise
-git add ori_only_por.csv
+git add optd_only_por.csv
 # Use Git to track the changes
-git diff --cached ori_only_por.csv
+git diff --cached optd_only_por.csv
 # If everything is right, commit the new changes
-git commit -m "[RefData][ORI] Integrated the latest Geonames updates." ori_only_por.csv
+git commit -m "[RefData][ORI] Integrated the latest Geonames updates." optd_only_por.csv
 
 
 ##
@@ -370,12 +370,12 @@ mysql -u root --password=${ROOT_PW} -h ${MYSQL_SVR} -P ${MYSQL_PORT} \
 
 ##
 # [Recently added POR]
-awk -F'^' '{if ($6 != "") {print $0}}' ../ORI/ori_por_best_known_so_far.csv 
+awk -F'^' '{if ($6 != "") {print $0}}' ../ORI/optd_por_best_known_so_far.csv 
 # BUT
 # BUT-CA^BUT^27.5619^90.7469^BUT^2012-10-12
 
 ##
-# [Recently deleted POR] / POR appearing in the ../ORI/ori_only_por.csv file
+# [Recently deleted POR] / POR appearing in the ../ORI/optd_only_por.csv file
 # RAU (deleted as per IATA LIWG #33 2012)
 midori http://www.theairdb.com/airport/RAU.html
 midori http://www.flightstats.com/go/Airport/airportDetails.do?airport=RAU
@@ -383,28 +383,28 @@ midori http://www.flightstats.com/go/Airport/airportDetails.do?airport=RAU
 midori http://www.theairdb.com/airport/KZK.html
 midori http://www.flightstats.com/go/Airport/airportDetails.do?airport=KZK
 # IIN (deleted as per IATA LIWG #39 2012)
-# => add the POR entry, as in the ori_por_public.csv file, into 
-#    ori_por_non_iata.csv, then suppress that POR entry from
-#    the ori_por_best_known_so_far.csv data file
-grep "^RAU" ori_por_public.csv # >> ori_por_non_iata.csv
-vi ori_por_best_known_so_far.csv
-./make_ori_por_public.sh
-git add ori_por_best_known_so_far.csv ori_por_public.csv ori_por_non_iata.csv
+# => add the POR entry, as in the optd_por_public.csv file, into 
+#    optd_por_non_iata.csv, then suppress that POR entry from
+#    the optd_por_best_known_so_far.csv data file
+grep "^RAU" optd_por_public.csv # >> optd_por_non_iata.csv
+vi optd_por_best_known_so_far.csv
+./make_optd_por_public.sh
+git add optd_por_best_known_so_far.csv optd_por_public.csv optd_por_non_iata.csv
 git ci -m "[RefData][ORI] Suppressed the RAU/Rangpur (Bangladesh) POR (as per IATA LIWG #33, 2012)."
 
 
 ##
 # [Difference analysis - Section 07]
 # MIL-C
-grep "^MIL" ../ORI/ori_por_best_known_so_far.csv \
+grep "^MIL" ../ORI/optd_por_best_known_so_far.csv \
 	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
 # => MIL corresponds to Milan, Italy, having got GeonameID=3173435
 midori http://www.geonames.org/3173435
 # Here, the Geonames coordinates are the good ones and those of 
-# ../ORI/ori_por_best_known_so_far.csv must be fixed:
-vi ../ORI/ori_por_best_known_so_far.csv
-git add ../ORI/ori_por_best_known_so_far.csv
-git ci -m "[RefData][ORI] Fixed the geographical coordinates of MIL (Milan, Italy)." ../ORI/ori_por_best_known_so_far.csv
+# ../ORI/optd_por_best_known_so_far.csv must be fixed:
+vi ../ORI/optd_por_best_known_so_far.csv
+git add ../ORI/optd_por_best_known_so_far.csv
+git ci -m "[RefData][ORI] Fixed the geographical coordinates of MIL (Milan, Italy)." ../ORI/optd_por_best_known_so_far.csv
 
 ##
 # [De-duplication of ORI single POR - Section 05]
@@ -447,7 +447,7 @@ midori http://www.geonames.org/2637434
 ##
 # [Difference analysis - Section 07]
 # BCV
-grep "^BCV" ../ORI/ori_por_best_known_so_far.csv \
+grep "^BCV" ../ORI/optd_por_best_known_so_far.csv \
 	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
 # The best known coordinates (61.416489 -149.50735) are very different
 # from the Geonames ones (17.26968 -88.77691), which seem to be consistent with
@@ -461,20 +461,20 @@ midori http://www.geonames.org/5857458/birchwood-airport.html
 # By clicking the "history" link, we see that Marc Wick, from Geonames, has made
 # the last changes, for the good, on that POR. Indeed, BCV was first reported
 # to be the IATA code, when in fact it was the FAA code. So, we now understand:
-# the ../ORI/ori_por_best_known_so_far.csv has got the coordinates of the
+# the ../ORI/optd_por_best_known_so_far.csv has got the coordinates of the
 # BCV FAA-coded airport (Birchwood) for the BCV IATA-coded airport (Belmopan).
 # The solution is simply to fix the coordinates in the
-# ../ORI/ori_por_best_known_so_far.csv file.
-vi ../ORI/ori_por_best_known_so_far.csv
-git add ../ORI/ori_por_best_known_so_far.csv
-git ci -m "[RefData][ORI] Fixed the geographical coordinates of BCV (Belmopan, Belize)." ../ORI/ori_por_best_known_so_far.csv
+# ../ORI/optd_por_best_known_so_far.csv file.
+vi ../ORI/optd_por_best_known_so_far.csv
+git add ../ORI/optd_por_best_known_so_far.csv
+git ci -m "[RefData][ORI] Fixed the geographical coordinates of BCV (Belmopan, Belize)." ../ORI/optd_por_best_known_so_far.csv
 
 ##
 # [De-duplication of ORI single POR - Section 05]
 # BDL
-grep "^BDL" ../ORI/ori_por_best_known_so_far.csv \
+grep "^BDL" ../ORI/optd_por_best_known_so_far.csv \
 	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
-grep "^HFD" ../ORI/ori_por_best_known_so_far.csv \
+grep "^HFD" ../ORI/optd_por_best_known_so_far.csv \
 	 ./dump_from_crb_city.csv ./dump_from_geonames.csv
 # When Geonames knows at least two POR entries when ORI knows only one
 # (which is current when ORI has a single 'CA' entry while Geonames

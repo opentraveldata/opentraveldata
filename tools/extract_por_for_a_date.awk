@@ -1,7 +1,7 @@
 ##
 # That AWK script derives the list of active POR (point of reference) entries
 # for any given date, from the ORI-maintained data file of POR
-# (i.e., ../ORI/ori_por_public.csv).
+# (i.e., ../ORI/optd_por_public.csv).
 #
 
 ##

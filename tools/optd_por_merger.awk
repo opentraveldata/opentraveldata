@@ -7,10 +7,10 @@
 # that AWK script).
 #
 # For instance, the following POR entries of the
-# ../ORI/ori_por_best_known_so_far.csv data file:
+# ../ORI/optd_por_best_known_so_far.csv data file:
 # is made of the IATA code and location type. For instance:
 #  * NCE-CA^NCE^43.658411^7.215872^NCE^
-# will be de-duplicated in the ori_por_to_be_split.csv data file:
+# will be de-duplicated in the optd_por_to_be_split.csv data file:
 #  * NCE-A^NCE^43.658411^7.215872^NCE^
 #  * NCE-C^NCE^43.70313^7.26608^NCE^
 #
@@ -104,7 +104,7 @@ function deriveLocationTypes(myLocType) {
 BEGINFILE {
 	# Global variables
 	error_stream = "/dev/stderr"
-	awk_file = "ori_por_merger.awk"
+	awk_file = "optd_por_merger.awk"
 
 	#
 	is_deduplicated["0"] = 1
@@ -126,9 +126,9 @@ BEGINFILE {
 }
 
 ##
-# ./ori_por_to_be_split.csv
+# ./optd_por_to_be_split.csv
 #
-# Sample lines: same as for ori_por_best_known_so_far.csv below,
+# Sample lines: same as for optd_por_best_known_so_far.csv below,
 # but with a "^DEDUP" tag at the end of every line.
 #
 # Sample lines:
@@ -271,7 +271,7 @@ BEGINFILE {
 
 
 ##
-# ../ORI/ori_por_best_known_so_far.csv
+# ../ORI/optd_por_best_known_so_far.csv
 #
 # Sample lines:
 #  ALV-O^ALV^40.98^0.45^ALV^         (1 line in ORI, 2 lines in Geonames)

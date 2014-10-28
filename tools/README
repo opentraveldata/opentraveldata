@@ -8,10 +8,10 @@
 # ---------------------------------------------------------------
 #
 cd ../ORI
-./make_ori_por_public.sh
-./make_ori_por_public.sh --clean
-git add ori_por_public.csv
-git diff --cached ori_por_public.csv
+./make_optd_por_public.sh
+./make_optd_por_public.sh --clean
+git add optd_por_public.csv
+git diff --cached optd_por_public.csv
 git ci -m "[RefData][ORI] Integrated the latest updates from Geonames."
 cd -
 
@@ -61,16 +61,16 @@ cd -
 ./compare_por_files.sh
 
 # A data file, summing up all the differences, is generated, namely
-# 'ori_por_diff_w_geonames.csv'. Those differences correspond to the
+# 'optd_por_diff_w_geonames.csv'. Those differences correspond to the
 # geographical distance weighted by the airport importance (expressed
 # as the PageRank derived from the flight schedules for a whole year).
 # That file is sorted by decreasing differences.
-less ori_por_diff_w_geonames.csv
-diff -c ori_por_diff_w_geonames.csv ../ORI/ori_por_diff_w_geonames.csv
+less optd_por_diff_w_geonames.csv
+diff -c optd_por_diff_w_geonames.csv ../ORI/optd_por_diff_w_geonames.csv
 
 # When the differences have been analysed:
-\mv -f ori_por_diff_w_geonames.csv ../ORI/ori_por_diff_w_geonames.csv
-git add ../ORI/ori_por_diff_w_geonames.csv
+\mv -f optd_por_diff_w_geonames.csv ../ORI/optd_por_diff_w_geonames.csv
+git add ../ORI/optd_por_diff_w_geonames.csv
 
 
 # To see the respective details of a given POR (point of reference), a reminder
@@ -78,7 +78,7 @@ git add ../ORI/ori_por_diff_w_geonames.csv
 ./extract_por_info.sh
 
 # It should give something like:
-grep "^LHR" ../ORI/ori_por_best_known_so_far.csv \
+grep "^LHR" ../ORI/optd_por_best_known_so_far.csv \
 	 dump_from_crb_city.csv dump_from_geonames.csv dump_from_innovata.csv \
      ../ORI/por_in_schedule/por_schedule_counts_2011_01_to_2013_10.csv \
      ../ORI/ref_airport_pageranked.csv
@@ -105,8 +105,8 @@ midori http://maps.bing.com
 # than in the ORI-maintained data files, those latters have to be corrected.
 # Just update the coordinates within the ORI-maintained list of best known
 # coordinates:
-vi ../ORI/ori_por_best_known_so_far.csv
-git add ../ORI/ori_por_best_known_so_far.csv
+vi ../ORI/optd_por_best_known_so_far.csv
+git add ../ORI/optd_por_best_known_so_far.csv
 
 # For the bulk update, see also 8.
 
@@ -121,7 +121,7 @@ git add ../ORI/ori_por_best_known_so_far.csv
 # A new POR, still unknown from ORI, may have been specified within Geonames.
 #
 # The procedure is exactly the same as in 4.1: manually edit the
-# ../ORI/ori_por_best_known_so_far.csv and re-generate the ORI-maintained
+# ../ORI/optd_por_best_known_so_far.csv and re-generate the ORI-maintained
 # POR file (step 1.1).
 
 
@@ -170,28 +170,28 @@ gzip pageranked_por_in_iata_but_missing_from_geonames.csv
 ./fix_best_known_coordinates.sh
 
 # When Geonames has better coordinates
-wc -l new_ori_por_best_known_so_far.csv.wgeo \
-   ../ORI/ori_por_best_known_so_far.csv
-diff -c new_ori_por_best_known_so_far.csv.wgeo \
-	../ORI/ori_por_best_known_so_far.csv | less
+wc -l new_optd_por_best_known_so_far.csv.wgeo \
+   ../ORI/optd_por_best_known_so_far.csv
+diff -c new_optd_por_best_known_so_far.csv.wgeo \
+	../ORI/optd_por_best_known_so_far.csv | less
 
 # When RFD has better coordinates
-wc -l new_ori_por_best_known_so_far.csv.wrfd \
-   ../ORI/ori_por_best_known_so_far.csv
-diff -c new_ori_por_best_known_so_far.csv.wrfd \
-	 ../ORI/ori_por_best_known_so_far.csv | less
+wc -l new_optd_por_best_known_so_far.csv.wrfd \
+   ../ORI/optd_por_best_known_so_far.csv
+diff -c new_optd_por_best_known_so_far.csv.wrfd \
+	 ../ORI/optd_por_best_known_so_far.csv | less
 
 # In case everything seems correct, replace the ORI-maintained file:
 #  - When Geonames has better coordinates
-\mv -f new_ori_por_best_known_so_far.csv.wgeo \
-	../ORI/ori_por_best_known_so_far.csv
+\mv -f new_optd_por_best_known_so_far.csv.wgeo \
+	../ORI/optd_por_best_known_so_far.csv
 #  - When RFD has better coordinates
-\mv -f new_ori_por_best_known_so_far.csv.wrfd \
-	../ORI/ori_por_best_known_so_far.csv
+\mv -f new_optd_por_best_known_so_far.csv.wrfd \
+	../ORI/optd_por_best_known_so_far.csv
 
 # Add it into Git and re-check
-git add ../ORI/ori_por_best_known_so_far.csv
-git diff --cached ../ORI/ori_por_best_known_so_far.csv
+git add ../ORI/optd_por_best_known_so_far.csv
+git diff --cached ../ORI/optd_por_best_known_so_far.csv
 
 # Go to 1.1., as the ORI-maintained file of best known coordinates
 # has been updated
@@ -232,8 +232,8 @@ sh prepare_geonames_dump_file.sh --clean
 # -----------------------------------------------------
 #
 ./generate_por_apt_list_for_geonames.sh
-wc -l ../ORI/ori_por_apt_for_geonames.csv
-less ../ORI/ori_por_apt_for_geonames.csv
+wc -l ../ORI/optd_por_apt_for_geonames.csv
+less ../ORI/optd_por_apt_for_geonames.csv
 
 
 ##--------------------------------------------------------------------##
@@ -265,25 +265,25 @@ refdata/tools/extract_por_with_iata_icao.awk
 #refdata/tools/preprepare_geonames_dump_file.sh (no longer used)
 
 * For ORI-maintained data file processing:
-refdata/ORI/make_ori_por_public.sh
+refdata/ORI/make_optd_por_public.sh
 refdata/tools/geo_pk_creator.awk
-refdata/ORI/make_ori_por_public.awk
+refdata/ORI/make_optd_por_public.awk
 refdata/ORI/add_city_name.awk
-refdata/ORI/ori_por_non_iata.csv
+refdata/ORI/optd_por_non_iata.csv
 
 * For data publication to Geonames:
 refdata/tools/generate_por_deduplication_suggestions_for_geonames.sh
-refdata/tools/ori_pk_creator.awk
-refdata/tools/ori_por_splitter.awk
+refdata/tools/optd_pk_creator.awk
+refdata/tools/optd_por_splitter.awk
 
 * For ORI-maintained data extraction for Amadeus private usage, the private
   Data Analysis project should also be amended through:
-data_generation/por/make_ori_por_private.awk
-data_generation/por/make_ori_por_private.sh
+data_generation/por/make_optd_por_private.awk
+data_generation/por/make_optd_por_private.sh
 
 
 ##
-# B. The format of the ori_por_public.csv file changes
+# B. The format of the optd_por_public.csv file changes
 # ----------------------------------------------------
 #    
 #
@@ -296,17 +296,17 @@ git show 28ab958cfcd159ea96753177d457cd583019a680
 
 In that case, the following scripts and data files should be amended accordingly:
 * For ORI-maintained data file processing:
-refdata/ORI/make_ori_por_public.sh
-refdata/ORI/make_ori_por_public.awk
+refdata/ORI/make_optd_por_public.sh
+refdata/ORI/make_optd_por_public.awk
 refdata/ORI/add_city_name.awk
-refdata/ORI/ori_por_non_iata.csv
+refdata/ORI/optd_por_non_iata.csv
 
 * For data publication to Geonames:
 refdata/tools/generate_por_deduplication_suggestions_for_geonames.sh
-refdata/tools/ori_pk_creator.awk
-refdata/tools/ori_por_splitter.awk
+refdata/tools/optd_pk_creator.awk
+refdata/tools/optd_por_splitter.awk
 
 * For ORI-maintained data extraction for Amadeus private usage, the private
   Data Analysis project should also be amended through:
-data_generation/por/make_ori_por_private.awk
-data_generation/por/make_ori_por_private.sh
+data_generation/por/make_optd_por_private.awk
+data_generation/por/make_optd_por_private.sh

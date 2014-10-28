@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Create the public version of the ORI-maintained list of POR, from:
-# - ori_por_best_known_so_far.csv
-# - ori_por_no_longer_valid.csv
+# - optd_por_best_known_so_far.csv
+# - optd_por_no_longer_valid.csv
 # - ref_airport_pageranked.csv
-# - ori_tz_light.csv
-# - ori_cont.csv
+# - optd_tz_light.csv
+# - optd_cont.csv
 # - dump_from_crb_city.csv
 # - dump_from_geonames.csv
 #
-# => ori_por_public.csv
+# => optd_por_public.csv
 #
 
 ##
@@ -73,18 +73,18 @@ LOG_LEVEL=3
 
 ##
 # File of best known coordinates
-ORI_POR_FILENAME=ori_por_best_known_so_far.csv
+ORI_POR_FILENAME=optd_por_best_known_so_far.csv
 ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
 # File of no longer valid IATA entries
-ORI_NOIATA_FILENAME=ori_por_no_longer_valid.csv
+ORI_NOIATA_FILENAME=optd_por_no_longer_valid.csv
 ORI_NOIATA_FILE=${ORI_DIR}${ORI_NOIATA_FILENAME}
 
 ##
 # Light (and inaccurate) version of the country-related time-zones
-ORI_TZ_FILENAME=ori_tz_light.csv
+ORI_TZ_FILENAME=optd_tz_light.csv
 ORI_TZ_FILE=${ORI_DIR}${ORI_TZ_FILENAME}
 # Mapping between the Countries and their corresponding continent
-ORI_CNT_FILENAME=ori_cont.csv
+ORI_CNT_FILENAME=optd_cont.csv
 ORI_CNT_FILE=${ORI_DIR}${ORI_CNT_FILENAME}
 
 ##
@@ -134,8 +134,8 @@ INNO_RAW_FILE=${TOOLS_DIR}${INNO_RAW_FILENAME}
 
 ##
 # Target (generated files)
-ORI_POR_PUBLIC_FILENAME=ori_por_public.csv
-ORI_ONLY_POR_FILENAME=ori_only_por.csv
+ORI_POR_PUBLIC_FILENAME=optd_por_public.csv
+ORI_ONLY_POR_FILENAME=optd_only_por.csv
 ORI_ONLY_POR_NEW_FILE=${ORI_ONLY_POR_FILE}.new
 #
 ORI_POR_PUBLIC_FILE=${ORI_DIR}${ORI_POR_PUBLIC_FILENAME}
@@ -282,19 +282,19 @@ sed -i -e "/^$/d" ${ORI_POR_WITH_NOHD}
 ##
 # Aggregate all the data sources into a single file
 #
-# ${ORI_POR_FILE} (ori_por_best_known_so_far.csv) and
+# ${ORI_POR_FILE} (optd_por_best_known_so_far.csv) and
 # ${GEONAME_CUT_SORTED_FILE} (../tools/cut_sorted_wpk_dump_from_geonames.csv)
 # are joined on the primary key (i.e., IATA code - location type):
 join -t'^' -a 1 -1 1 -2 1 ${ORI_POR_WITH_NOHD} ${GEONAME_CUT_SORTED_FILE} \
 	> ${ORI_POR_WITH_GEO}
 
-# ${ORI_POR_WITH_GEO} (ori_por_best_known_so_far.csv.withgeo) and
+# ${ORI_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
 # ${GEONAME_CUT_SORTED_FILE} (sorted_wpk_dump_from_crb_city.csv) are joined on
 # the primary key (i.e., IATA code - location type):
 join -t'^' -a 1 -1 1 -2 1 ${ORI_POR_WITH_GEO} ${RFD_SORTED_FILE} \
 	> ${ORI_POR_WITH_GEORFD}
 
-# ${ORI_POR_WITH_GEORFD} (ori_por_best_known_so_far.csv.withgeorfd) and
+# ${ORI_POR_WITH_GEORFD} (optd_por_best_known_so_far.csv.withgeorfd) and
 # ${GEONAME_RAW_FILE_TMP} (../tools/dump_from_geonames.csv.alt) are joined on
 # the primary key (i.e., IATA code - location type):
 join -t'^' -a 1 -1 1 -2 1 ${ORI_POR_WITH_GEORFD} ${GEONAME_RAW_FILE_TMP} \
@@ -306,8 +306,8 @@ echo
 echo "Aggregation Step"
 echo "----------------"
 echo
-REDUCER=make_ori_por_public.awk
-time awk -F'^' -v non_ori_por_file="${ORI_ONLY_POR_FILE}" -f ${REDUCER} \
+REDUCER=make_optd_por_public.awk
+time awk -F'^' -v non_optd_por_file="${ORI_ONLY_POR_FILE}" -f ${REDUCER} \
 	${ORI_PR_FILE} ${ORI_TZ_FILE} ${ORI_CNT_FILE} ${ORI_POR_WITH_GEORFDALT} \
 	> ${ORI_POR_WITH_NO_CTY_NAME}
 

@@ -23,7 +23,7 @@ fi
 
 ##
 # Parsing of command-line options
-APT_DTLS_FILE=../ORI/ori_por_public.csv
+APT_DTLS_FILE=../ORI/optd_por_public.csv
 OND_FILE_OPTION="NO"
 IS_OND_FILE_STD_INPUT="NO"
 for opt_elem in $@

@@ -2,7 +2,7 @@
 # AWK script to calculate the distance between geographical points
 # of several sources:
 #  * ORI-maintained list of best known coordinates:
-#      ori_por_best_known_so_far.csv
+#      optd_por_best_known_so_far.csv
 #  * Geonames dump data file:
 #      dump_from_geonames.csv
 #
@@ -30,7 +30,7 @@ BEGINFILE {
 }
 
 ##
-# The ../ORI/ori_por_best_known_so_far.csv data file is used, in order to
+# The ../ORI/optd_por_best_known_so_far.csv data file is used, in order to
 # specify the POR primary key and its location type.
 #
 # Sample lines:
@@ -77,24 +77,24 @@ BEGINFILE {
 # File of PageRank values.
 #
 # Note that the location types of that file are not the same as the ones
-# in the ori_por_best_known_so_far.csv file. Indeed, the location types
+# in the optd_por_best_known_so_far.csv file. Indeed, the location types
 # take a value from three possible ones: 'C', 'A' or 'CA', where 'A' actually
 # means travel-related rather than airport. There are distinct entries for
 # the city and for the corresponding travel-related POR, only when there are
 # several travel-related POR serving the city.
 #
-# In the ori_por_best_known_so_far.csv file, instead, there are distinct
+# In the optd_por_best_known_so_far.csv file, instead, there are distinct
 # entries when Geonames has got itself distinct entries.
 #
 # For instance:
 #  * NCE has got:
-#    - 2 distinct entries in the ori_por_best_known_so_far.csv file:
+#    - 2 distinct entries in the optd_por_best_known_so_far.csv file:
 #       NCE-A-6299418^NCE^43.658411^7.215872^NCE^
 #       NCE-C-2990440^NCE^43.70313^7.26608^NCE^
 #    - 1 entry in the file of PageRank values:
 #       NCE-CA^NCE^0.161281957529
 #  * IEV has got:
-#    - 2 distinct entries in the ori_por_best_known_so_far.csv file:
+#    - 2 distinct entries in the optd_por_best_known_so_far.csv file:
 #       IEV-A-6300960^IEV^50.401694^30.449697^IEV^
 #       IEV-C-703448^IEV^50.401694^30.449697^IEV^
 #    - 2 entries in the file of PageRank values:

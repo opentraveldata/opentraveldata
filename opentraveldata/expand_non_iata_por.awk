@@ -1,9 +1,9 @@
 ##
 # That AWK script re-formats the full details of POR (points of reference)
 # for unknown POR entries. Hence, the format of the non-IATA POR entries is
-# exactly the same as the one of the ori_por_public.csv data file.
+# exactly the same as the one of the optd_por_public.csv data file.
 #
-# See also the make_ori_por_public.awk AWK script for more details.
+# See also the make_optd_por_public.awk AWK script for more details.
 #
 # Important note: that AWK script is intended to be run very rarely,
 # potentially just once.
@@ -72,63 +72,63 @@ BEGIN {
 
 		# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Validity ID
 		printf ("%s", iata_code "^ZZZZ^^" isGeonames "^" geonameID "^") \
-			> non_ori_por_file
+			> non_optd_por_file
 
 		# ^ Name ^ ASCII name
 		printf ("%s", "^UNKNOWN" unknown_idx "^UNKNOWN" unknown_idx) \
-			> non_ori_por_file
+			> non_optd_por_file
 
 		# ^ Alternate names
-		# printf ("%s", "^") > non_ori_por_file
+		# printf ("%s", "^") > non_optd_por_file
 
 		# ^ Latitude ^ Longitude
-		printf ("%s", "^" $3 "^" $4) > non_ori_por_file
+		printf ("%s", "^" $3 "^" $4) > non_optd_por_file
 
 		#  ^ Feat. class ^ Feat. code
-		printf ("%s", "^S^AIRP") > non_ori_por_file
+		printf ("%s", "^S^AIRP") > non_optd_por_file
 
 		# ^ PageRank value
-		printf ("%s", "^" page_rank) > non_ori_por_file
+		printf ("%s", "^" page_rank) > non_optd_por_file
 
 		# ^ Valid from date ^ Valid until date ^ Comment
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 
 		# ^ Country code ^ Alt. country codes ^ Country name
-		printf ("%s", "^" "ZZ" "^" "Zzzzz") > non_ori_por_file
+		printf ("%s", "^" "ZZ" "^" "Zzzzz") > non_optd_por_file
 
 		# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 		# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 		# ^ Admin3 code ^ Admin4 code
-		printf ("%s", "^^") > non_ori_por_file
+		printf ("%s", "^^") > non_optd_por_file
 
 		# ^ Population ^ Elevation ^ gtopo30
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 
 		# ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
-		printf ("%s", "^" "Europe/Greenwich" "^^^") > non_ori_por_file
+		printf ("%s", "^" "Europe/Greenwich" "^^^") > non_optd_por_file
 
 		# ^ Modification date
-		printf ("%s", "^" today_date) > non_ori_por_file
+		printf ("%s", "^" today_date) > non_optd_por_file
 
 		# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
-		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_ori_por_file
+		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_optd_por_file
 
 		# ^ State code
-		printf ("%s", "^" ) > non_ori_por_file
+		printf ("%s", "^" ) > non_optd_por_file
 
 		#  ^ Location type (the default, i.e., city and airport)
-		printf ("%s", "^CA") > non_ori_por_file
+		printf ("%s", "^CA") > non_optd_por_file
 
 		#  ^ Wiki link (empty here)
-		printf ("%s", "^") > non_ori_por_file
+		printf ("%s", "^") > non_optd_por_file
 
 		#  ^ Section of alternate names  (empty here)
-		printf ("%s", "^") > non_ori_por_file
+		printf ("%s", "^") > non_optd_por_file
 
 		# End of line
-		printf ("%s", "\n") > non_ori_por_file
+		printf ("%s", "\n") > non_optd_por_file
 
 		# ----
 		# From ORI-POR ($1 - $6)

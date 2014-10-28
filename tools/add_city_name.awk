@@ -2,10 +2,10 @@
 # That AWK script:
 #  1. Adds the name, in both UTF8 and ASCII encodings, of the served cities.
 #  2. Adds the list of travel-related POR IATA codes.
-# The ori_por_public.csv data file is parsed twice:
+# The optd_por_public.csv data file is parsed twice:
 #  * once to store, in memory, the city names,
 #  * the second time to write the corresponding fields in that very same
-#    ori_por_public.csv file, which is therefore amended.
+#    optd_por_public.csv file, which is therefore amended.
 #
 # As of June 2013 (see also the "Fields" part in the BEGIN{} section):
 #  * The POR IATA code is the field #1
@@ -19,7 +19,7 @@
 #  * The location type is the field #42
 #
 # * Samples of relevant input POR entries, as manually curated
-#   in the ori_por_best_known_so_far.csv data file:
+#   in the optd_por_best_known_so_far.csv data file:
 #   - IEV-A-6300960^...^IEV^
 #   - IEV-C-703448^...^IEV^
 #   - RDU-A-4487056^...^RDU^

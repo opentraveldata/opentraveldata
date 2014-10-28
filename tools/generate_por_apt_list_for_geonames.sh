@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Input
-ORI_GEO_FILE=../ORI/ori_por_best_known_so_far.csv
+ORI_GEO_FILE=../ORI/optd_por_best_known_so_far.csv
 
 # Output
-ORI_APT_FOR_GEO_FILE=../ORI/ori_por_apt_for_geonames.csv
+ORI_APT_FOR_GEO_FILE=../ORI/optd_por_apt_for_geonames.csv
 
 #
 echo

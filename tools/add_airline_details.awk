@@ -6,7 +6,7 @@ BEGIN {
 	error_stream = "/dev/stderr"
 }
 
-# Airline reference file: ../ORI/ori_airlines.csv
+# Airline reference file: ../ORI/optd_airlines.csv
 # Samples:
 # air-aer-lingus^^^^EIN^EI^53^Aer Lingus^Aer Lingus^^^^^67441
 # air-aero-airlines^^^^^EE^350^Aero Airlines^Aero Airlines^^^^^2144

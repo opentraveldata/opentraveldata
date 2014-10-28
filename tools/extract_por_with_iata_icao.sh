@@ -81,9 +81,9 @@ DUMP_GEO_FILENAME=dump_from_geonames.csv
 DUMP_IATA_FILENAME=${POR_FILE_PFX1}_${SNAPSHOT_DATE}.csv
 DUMP_NOIATA_FILENAME=${POR_FILE_PFX2}_${SNAPSHOT_DATE}.csv
 # Light version of the country-related time-zones
-ORI_TZ_FILENAME=ori_tz_light.csv
+ORI_TZ_FILENAME=optd_tz_light.csv
 # Mapping between countries and continents
-ORI_CNT_FILENAME=ori_cont.csv
+ORI_CNT_FILENAME=optd_cont.csv
 
 #
 DUMP_GEO_FILE=${TMP_DIR}${DUMP_GEO_FILENAME}

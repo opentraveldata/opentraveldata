@@ -2,9 +2,9 @@
 
 # Derive the list of active POR (point of reference) entries
 # for any given date, from the ORI-maintained data file of POR:
-# ../ORI/ori_por_public.csv
+# ../ORI/optd_por_public.csv
 #
-# => ori_por_public_YYYYMMDD.csv
+# => optd_por_public_YYYYMMDD.csv
 #
 
 ##
@@ -73,7 +73,7 @@ LOG_LEVEL=3
 
 ##
 # File of ORI-maintained POR (points of reference)
-ORI_POR_BASEFILENAME=ori_por_public
+ORI_POR_BASEFILENAME=optd_por_public
 ORI_POR_FILENAME=${ORI_POR_BASEFILENAME}.csv
 ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
 

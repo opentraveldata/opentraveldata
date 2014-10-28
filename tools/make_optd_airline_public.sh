@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Create the public version of the ORI-maintained list of airlines, from:
-# - ori_airline_best_known_so_far.csv
-# - ori_airline_no_longer_valid.csv
+# - optd_airline_best_known_so_far.csv
+# - optd_airline_no_longer_valid.csv
 # - ref_airline_nb_of_flights.csv (future)
-# - ori_airline_alliance_membership.csv
+# - optd_airline_alliance_membership.csv
 # - dump_from_crb_airline.csv
 # - dump_from_geonames.csv (future)
 #
-# => ori_airlines.csv
+# => optd_airlines.csv
 #
 
 ##
@@ -72,11 +72,11 @@ LOG_LEVEL=3
 
 ##
 # File of best known airline details (future)
-ORI_AIR_FILENAME=ori_airline_best_known_so_far.csv
+ORI_AIR_FILENAME=optd_airline_best_known_so_far.csv
 # File of no longer valid IATA entries (future)
-ORI_NOIATA_FILENAME=ori_airline_no_longer_valid.csv
+ORI_NOIATA_FILENAME=optd_airline_no_longer_valid.csv
 # File of alliance membership details
-ORI_AIR_ALC_FILENAME=ori_airline_alliance_membership.csv
+ORI_AIR_ALC_FILENAME=optd_airline_alliance_membership.csv
 #
 ORI_AIR_FILE=${ORI_DIR}${ORI_AIR_FILENAME}
 ORI_NOIATA_FILE=${ORI_DIR}${ORI_NOIATA_FILENAME}
@@ -100,9 +100,9 @@ RFD_CAP_FILE=${TOOLS_DIR}${RFD_CAP_FILENAME}
 
 ##
 # Target (generated files)
-ORI_AIR_PUBLIC_FILENAME=ori_airlines.csv
-ORI_AIR_RFD_DIFF_FILENAME=ori_airline_diff_w_rfd.csv
-ORI_AIR_ALC_DIFF_FILENAME=ori_airline_diff_w_alc.csv
+ORI_AIR_PUBLIC_FILENAME=optd_airlines.csv
+ORI_AIR_RFD_DIFF_FILENAME=optd_airline_diff_w_rfd.csv
+ORI_AIR_ALC_DIFF_FILENAME=optd_airline_diff_w_alc.csv
 #
 ORI_AIR_PUBLIC_FILE=${ORI_DIR}${ORI_AIR_PUBLIC_FILENAME}
 ORI_AIR_RFD_DIFF_FILE=${ORI_DIR}${ORI_AIR_RFD_DIFF_FILENAME}
@@ -202,7 +202,7 @@ fi
 
 ##
 # Re-format the aggregated entries. See ${REDUCER} for more details and samples.
-REDUCER=make_ori_airline_public.awk
+REDUCER=make_optd_airline_public.awk
 awk -F'^' -v air_name_alc_diff_file=${ORI_AIR_ALC_DIFF_FILE} \
 	-v air_name_rfd_diff_file=${ORI_AIR_RFD_DIFF_FILE} \
 	-f ${REDUCER} ${ORI_AIR_ALC_FILE} ${ORI_NF_FILE} \

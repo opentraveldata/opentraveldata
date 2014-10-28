@@ -2,7 +2,7 @@
 
 ##
 # Input files
-BST_FILENAME=ori_por_best_known_so_far.csv
+BST_FILENAME=optd_por_best_known_so_far.csv
 GEO_FILE=dump_from_geonames.csv
 RFD_FILE=dump_from_crb_city.csv
 BST_FILE=../ORI/${BST_FILENAME}
@@ -90,7 +90,7 @@ join -t'^' -a 1 ${BST_WGEO_NEW_FILE} ${GEO_FILE} > ${BST_WGEO_FILE_TMP}
 join -t'^' -a 1 ${BST_WRFD_NEW_FILE} ${RFD_FILE} > ${BST_WRFD_FILE_TMP}
 
 # Reduce the lines
-FIX_BST_REDUCER=fix_ori_por_best_known.awk
+FIX_BST_REDUCER=fix_optd_por_best_known.awk
 awk -F'^' -f ${FIX_BST_REDUCER} ${BST_WGEO_FILE_TMP} > ${BST_WGEO_NEW_FILE}
 NB_GEO_FIXED_ROWS=`wc -l ${BST_WGEO_NEW_FILE} | cut -d' ' -f1`
 #

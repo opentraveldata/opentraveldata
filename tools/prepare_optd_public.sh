@@ -20,7 +20,7 @@ displayOriDetails() {
 
 ##
 # Input file
-ORI_RAW_FILENAME=ori_por_public.csv
+ORI_RAW_FILENAME=optd_por_public.csv
 
 ##
 # Temporary path
@@ -173,7 +173,7 @@ fi
 ##
 # Generate a second version of the file with the ORI primary key (integrating
 # the location type)
-ORI_PK_ADDER=${EXEC_PATH}ori_pk_creator.awk
+ORI_PK_ADDER=${EXEC_PATH}optd_pk_creator.awk
 \cp -f ${ORI_RAW_FILE} ${ORI_WPK_FILE_TMP}
 awk -F'^' -v log_level=${LOG_LEVEL} \
 	-f ${ORI_PK_ADDER} ${ORI_WPK_FILE_TMP} > ${ORI_WPK_FILE}

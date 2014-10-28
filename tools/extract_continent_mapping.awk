@@ -21,7 +21,7 @@
 # -------------------
 # The generated data file contains, for every country code, its corresponding
 # continent (code and name).
-# http://github.com/opentraveldata/optd/blob/trunk/refdata/ORI/ori_cont.csv
+# http://github.com/opentraveldata/optd/blob/trunk/refdata/ORI/optd_cont.csv
 #
 # Sample output lines:
 # country_code^country_name^continent_code^continent_name

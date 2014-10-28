@@ -7,14 +7,14 @@
 # something like "AR" (meaning airport and railway station).
 #
 # Typical sequence of commands to issue in order to use that script:
-# awk -F'^' -f ori_split_best.awk best_to_split.csv ori_por_best_known_so_far.csv > ori_por_best_known_so_far.csv.new
-# sort -t'^' -k1,1 ori_por_best_known_so_far.csv.new > ori_por_best_known_so_far.csv.new2
-# \mv ori_por_best_known_so_far.csv.new2 ori_por_best_known_so_far.csv.new
+# awk -F'^' -f optd_split_best.awk best_to_split.csv optd_por_best_known_so_far.csv > optd_por_best_known_so_far.csv.new
+# sort -t'^' -k1,1 optd_por_best_known_so_far.csv.new > optd_por_best_known_so_far.csv.new2
+# \mv optd_por_best_known_so_far.csv.new2 optd_por_best_known_so_far.csv.new
 # Check with:
-# comm -3 ori_por_best_known_so_far.csv ori_por_best_known_so_far.csv.new | less
+# comm -3 optd_por_best_known_so_far.csv optd_por_best_known_so_far.csv.new | less
 # Then:
-# \mv ori_por_best_known_so_far.csv.new ori_por_best_known_so_far.csv
-# git add ori_por_best_known_so_far.csv
+# \mv optd_por_best_known_so_far.csv.new optd_por_best_known_so_far.csv
+# git add optd_por_best_known_so_far.csv
 #
 
 ##
@@ -32,7 +32,7 @@
 }
 
 ##
-# ORI-maintained list of POR (normally, 'ori_por_best_known_so_far.csv')
+# ORI-maintained list of POR (normally, 'optd_por_best_known_so_far.csv')
 # Sample lines:
 # AAH-CA^AAH^50.75^6.133^AAH
 /^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^/ {

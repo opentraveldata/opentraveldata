@@ -1,10 +1,10 @@
 ##
 # That AWK script adds the list of no longer valid IATA POR (points of
-# reference) to the ori_por_public.csv file. The input files are:
-#  * Already re-formatted list of POR: ori_por_public.csv.wonoiata (temporary)
-#  * Non longer valid POR:             ori_por_no_longer_valid.csv
+# reference) to the optd_por_public.csv file. The input files are:
+#  * Already re-formatted list of POR: optd_por_public.csv.wonoiata (temporary)
+#  * Non longer valid POR:             optd_por_no_longer_valid.csv
 #
-# See also the make_ori_por_public.awk AWK script for details on the format.
+# See also the make_optd_por_public.awk AWK script for details on the format.
 #
 # Sample output lines:
 # IEV^UKKK^^Y^6300960^^Kyiv Zhuliany International Airport^Kyiv Zhuliany International Airport^50.401694^30.449697^S^AIRP^0.0240196752049^^^^UA^^Ukraine^Europe^^^^^^^^^0^178^174^Europe/Kiev^2.0^3.0^2.0^2012-06-03^IEV^^^^^A^http://en.wikipedia.org/wiki/Kyiv_Zhuliany_International_Airport^en|Kyiv Zhuliany International Airport|=en|Kyiv International Airport|=en|Kyiv Airport|s=en|Kiev International Airport|=uk|Міжнародний аеропорт «Київ» (Жуляни)|=ru|Аэропорт «Киев» (Жуляны)|=ru|Международный аеропорт «Киев» (Жуляни)|
@@ -30,9 +30,9 @@ BEGIN {
 
 ##
 # List of:
-# * Re-formatted list of POR: ori_por_public.csv.wonoiata (temporary)
-# * No longer valid POR: ori_por_no_longer_valid.csv file
-# Those files have the exact same format as the output of ori_por_public.csv
+# * Re-formatted list of POR: optd_por_public.csv.wonoiata (temporary)
+# * No longer valid POR: optd_por_no_longer_valid.csv file
+# Those files have the exact same format as the output of optd_por_public.csv
 #
 # Sample input lines:
 # UNS^ZZZZ^^Y^8298981^1^Umnak Island Airport^Umnak Island Airport^53.38277^-167.88946^S^AIRP^^^1948-01-01^Air base closed after WWII, in 1947^US^^United States^North America^^^^^^^^^^^^America/USA^^^^-1^UMB^Umnak Island^UMB|5877180|Umnak Island|Umnak Island^^AK^A^http://en.wikipedia.org/wiki/Cape_Field_at_Fort_Glenn^

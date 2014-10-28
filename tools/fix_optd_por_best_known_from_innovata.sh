@@ -3,7 +3,7 @@
 ##
 # Input file names
 INN_RAW_FILENAME=dump_from_innovata.csv
-GEO_ORI_FILENAME=ori_por_best_known_so_far.csv
+GEO_ORI_FILENAME=optd_por_best_known_so_far.csv
 
 ##
 # Temporary path
@@ -82,7 +82,7 @@ SORTED_CUT_INN_WPK_FILE=${TMP_DIR}${SORTED_CUT_INN_WPK_FILENAME}
 
 ##
 # Output
-INN_GEO_FILENAME=ori_por_best_known_so_far_null_fixed.csv
+INN_GEO_FILENAME=optd_por_best_known_so_far_null_fixed.csv
 #
 INN_GEO_FILE=${TMP_DIR}${INN_GEO_FILENAME}
 
@@ -104,7 +104,7 @@ INN_GEO_FILE_TMP=${INN_GEO_FILE}.tmp
 join -t'^' -a 2 ${INN_WPK_FILE} ${GEO_ORI_FILE} > ${INN_GEO_FILE_TMP}
 
 #
-COORD_FIXER=fix_ori_por_best_known_from_innovata.awk
+COORD_FIXER=fix_optd_por_best_known_from_innovata.awk
 awk -F'^' -f ${COORD_FIXER} ${INN_GEO_FILE_TMP} > ${INN_GEO_FILE}
 \rm -f ${INN_GEO_FILE_TMP}
 

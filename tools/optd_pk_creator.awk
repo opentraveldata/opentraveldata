@@ -5,7 +5,7 @@
 #  * Geonames dump data file:
 #      dump_from_geonames.csv
 #  * ORI-maintained list of best known coordinates:
-#      ori_por_best_known_so_far.csv
+#      optd_por_best_known_so_far.csv
 #
 # The primary key is made of:
 #  * The IATA code
@@ -33,11 +33,11 @@
 #
 # That script relies on the ORI-maintained list of POR (points of reference),
 # provided by the OpenTravelData project (http://github.com/opentraveldata/optd).
-# Issue the 'bash prepare_ori_public.sh --ori' command to see more detailed
+# Issue the 'bash prepare_optd_public.sh --ori' command to see more detailed
 # instructions.
 #
 # All the work has indeed already been done by ORI and integrated within the
-# ORI-maintained list of POR file, namely 'ori_por_public.csv'. Hence, the
+# ORI-maintained list of POR file, namely 'optd_por_public.csv'. Hence, the
 # primary key is just the concatenation of the IATA code and location type.
 # No more work to do at that stage.
 #
@@ -49,7 +49,7 @@
 }
 
 ##
-# Regular 'ori_por_public.csv' line
+# Regular 'optd_por_public.csv' line
 # Details of the fields:
 # iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id
 # ^name^asciiname^latitude^longitude^fclass^fcode

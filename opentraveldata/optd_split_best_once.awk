@@ -9,13 +9,13 @@
 #
 # Way it was used:
 # 
-# sed -e "s/^iata\(.\+\)//g" ori_por_public.csv > ori_por_public.csv.woh
-# sed -i -e "/^$/d" ori_por_public.csv.woh
-# join -t'^' -a 1 -1 2 -2 1 ori_por_best_known_so_far.csv ori_por_public.csv.woh > ori_por_best_known_so_far.csv.tmp
-# awk -F'^' -f ori_split_best_once.awk ori_por_cty.csv ori_por_best_known_so_far.csv.tmp > ori_por_best_known_so_far.csv.new
-# diff -c ori_por_best_known_so_far.csv ori_por_best_known_so_far.csv.new | less
-# \mv -f ori_por_best_known_so_far.csv.new ori_por_best_known_so_far.csv
-# \rm -f ori_por_best_known_so_far.csv.tmp
+# sed -e "s/^iata\(.\+\)//g" optd_por_public.csv > optd_por_public.csv.woh
+# sed -i -e "/^$/d" optd_por_public.csv.woh
+# join -t'^' -a 1 -1 2 -2 1 optd_por_best_known_so_far.csv optd_por_public.csv.woh > optd_por_best_known_so_far.csv.tmp
+# awk -F'^' -f optd_split_best_once.awk optd_por_cty.csv optd_por_best_known_so_far.csv.tmp > optd_por_best_known_so_far.csv.new
+# diff -c optd_por_best_known_so_far.csv optd_por_best_known_so_far.csv.new | less
+# \mv -f optd_por_best_known_so_far.csv.new optd_por_best_known_so_far.csv
+# \rm -f optd_por_best_known_so_far.csv.tmp
 
 
 ##

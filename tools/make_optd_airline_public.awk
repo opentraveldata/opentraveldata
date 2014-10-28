@@ -2,9 +2,9 @@
 # That AWK script re-formats the full details of airlines
 # derived from a few sources:
 #  * Amadeus ORI-maintained lists of:
-#    * Best known airlines:                 ori_airline_best_known_so_far.csv
-#    * Alliance memberships:                ori_airline_alliance_membership.csv
-#    * No longer valid airlines:            ori_airline_no_longer_valid.csv
+#    * Best known airlines:                 optd_airline_best_known_so_far.csv
+#    * Alliance memberships:                optd_airline_alliance_membership.csv
+#    * No longer valid airlines:            optd_airline_no_longer_valid.csv
 #    * Nb of flight-dates:                  ref_airline_nb_of_flights.csv
 #  * Amadeus RFD (Referential Data):        dump_from_crb_airline.csv
 #  * [Future] Geonames list of airlines:    dump_from_geonames.csv
@@ -33,14 +33,14 @@
 BEGIN {
 	# Global variables
 	error_stream = "/dev/stderr"
-	awk_file = "make_ori_airline_public.awk"
+	awk_file = "make_optd_airline_public.awk"
 
 	# Generated file for name differences
 	if (air_name_rfd_diff_file == "") {
-		air_name_rfd_diff_file = "ori_airline_diff_w_rfd.csv"
+		air_name_rfd_diff_file = "optd_airline_diff_w_rfd.csv"
 	}
 	if (air_name_alc_diff_file == "") {
-		air_name_alc_diff_file = "ori_airline_diff_w_alc.csv"
+		air_name_alc_diff_file = "optd_airline_diff_w_alc.csv"
 	}
 
 	# Initialisation
@@ -165,10 +165,10 @@ BEGIN {
 		# Name2
 		name2 = $9
 
-		# Alliance code (taken from ori_airline_alliance_membership.csv)
+		# Alliance code (taken from optd_airline_alliance_membership.csv)
 		alc_code = air_alliance_all_names[code_2char]
 
-		# Alliance status (taken from ori_airline_alliance_membership.csv)
+		# Alliance status (taken from optd_airline_alliance_membership.csv)
 		alc_status = air_alliance_types[code_2char]
 
 		# Airline type
@@ -286,14 +286,14 @@ BEGIN {
 		current_line = current_line "^" alliance_name "^" alliance_type
 
 		# Difference between ORI and RFD
-		ori_name = aln_name[pk]
-		ori_name2 = aln_name2[pk]
-		if (air_name != ori_name) {
-			print (pk "^1^" ori_name "<>" air_name) \
+		optd_name = aln_name[pk]
+		optd_name2 = aln_name2[pk]
+		if (air_name != optd_name) {
+			print (pk "^1^" optd_name "<>" air_name) \
 				> air_name_rfd_diff_file
 		}
-		if (air_name_alt != ori_name2) {
-			print (pk "^2^" ori_name2 "<>" air_name_alt) \
+		if (air_name_alt != optd_name2) {
+			print (pk "^2^" optd_name2 "<>" air_name_alt) \
 				> air_name_rfd_diff_file
 		}
 

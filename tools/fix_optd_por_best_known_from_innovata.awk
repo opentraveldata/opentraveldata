@@ -1,6 +1,6 @@
 ##
 # That AWK script spots the empty coordinates from the
-# ../ORI/ori_por_best_known_so_far.csv file, and fixes them thanks to the
+# ../ORI/optd_por_best_known_so_far.csv file, and fixes them thanks to the
 # Innovata dump file.
 #
 
@@ -9,7 +9,7 @@
 BEGINFILE {
 	# Global variables
 	error_stream = "/dev/stderr"
-	awk_file = "fix_ori_por_best_known_from_innovata.awk"
+	awk_file = "fix_optd_por_best_known_from_innovata.awk"
 
 	#
 	nb_of_por = 0
@@ -46,8 +46,8 @@ BEGINFILE {
 		inn_lon = $9
 
 		# Geographical coordinates from the ORI-maintained POR file
-		ori_lat = $13
-		ori_lon = $14
+		optd_lat = $13
+		optd_lon = $14
 
 		# City code
 		cty_code = $15
@@ -56,14 +56,14 @@ BEGINFILE {
 		date_from = $16
 
 		#
-		if (ori_lat == "" && ori_lon == "") {
+		if (optd_lat == "" && optd_lon == "") {
 			# Replace the geographical coordinates
 			print (pk "^" iata_code "^" inn_lat "^" inn_lon \
 				   "^" cty_code "^" date_from)
 
 		} else {
 			# Original line from the ORI-maintained POR file
-			print (pk "^" iata_code "^" ori_lat "^" ori_lon \
+			print (pk "^" iata_code "^" optd_lat "^" optd_lon \
 				   "^" cty_code "^" date_from)
 		}
 

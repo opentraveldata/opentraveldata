@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # That Bash script extracts a POR from:
-# - ori_por_best_known_so_far.csv
-# - ori_por_no_longer_valid.csv
+# - optd_por_best_known_so_far.csv
+# - optd_por_no_longer_valid.csv
 # - dump_from_crb_city.csv
 # - dump_from_geonames.csv
 # - dump_from_innovata.csv
@@ -71,10 +71,10 @@ LOG_LEVEL=3
 
 ##
 # File of best known coordinates
-ORI_POR_FILENAME=ori_por_best_known_so_far.csv
+ORI_POR_FILENAME=optd_por_best_known_so_far.csv
 ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
 # File of no longer valid IATA entries
-ORI_NOIATA_FILENAME=ori_por_no_longer_valid.csv
+ORI_NOIATA_FILENAME=optd_por_no_longer_valid.csv
 ORI_NOIATA_FILE=${ORI_DIR}${ORI_NOIATA_FILENAME}
 
 ##
@@ -102,7 +102,7 @@ INNO_RAW_FILE=${TOOLS_DIR}${INNO_RAW_FILENAME}
 
 ##
 # Target (generated files)
-ORI_POR_PUBLIC_FILENAME=ori_por_public.csv
+ORI_POR_PUBLIC_FILENAME=optd_por_public.csv
 #
 ORI_POR_PUBLIC_FILE=${ORI_DIR}${ORI_POR_PUBLIC_FILENAME}
 

@@ -52,7 +52,7 @@ LOG_LEVEL=2
 
 ##
 # Initial
-ORI_POR_FILENAME=ori_por_best_known_so_far.csv
+ORI_POR_FILENAME=optd_por_best_known_so_far.csv
 ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
 
 ##

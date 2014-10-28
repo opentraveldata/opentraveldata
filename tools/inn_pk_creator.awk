@@ -4,7 +4,7 @@
 #  * Innovata dump data file:
 #      ../Innovata/innovata_stations.dat
 #  * ORI-maintained list of best known coordinates:
-#      ori_por_best_known_so_far.csv
+#      optd_por_best_known_so_far.csv
 #
 # The primary key is made of:
 #  * The IATA code
@@ -73,7 +73,7 @@ BEGINFILE {
 
 
 ##
-# The ../ORI/ori_por_best_known_so_far.csv data file is used, in order to
+# The ../ORI/optd_por_best_known_so_far.csv data file is used, in order to
 # specify the POR primary key and its location type.
 #
 # Sample lines:

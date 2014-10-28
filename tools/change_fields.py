@@ -32,7 +32,7 @@ if __name__ == '__main__':
     if len(sys.argv) < 6:
         print 'python %s SOURCE SEPARATOR FIELDS OLD NEW' % sys.argv[0]
         print 
-        print 'Example: python %s ori_por_best_known_so_far.csv "^" 2,3 0 ""' % sys.argv[0]
+        print 'Example: python %s optd_por_best_known_so_far.csv "^" 2,3 0 ""' % sys.argv[0]
         exit()
 
     fields = [int(f) for f in sys.argv[3].split(',')]

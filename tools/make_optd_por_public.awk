@@ -2,10 +2,10 @@
 # That AWK script re-formats the full details of POR (points of reference)
 # derived from a few sources:
 #  * Amadeus ORI-maintained lists of:
-#    * Best known POR (poins of reference): ori_por_best_known_so_far.csv
+#    * Best known POR (poins of reference): optd_por_best_known_so_far.csv
 #    * PageRank values:                     ref_airport_pageranked.csv
-#    * Country-associated time-zones:       ori_tz_light.csv
-#    * Country-associated continents:       ori_cont.csv
+#    * Country-associated time-zones:       optd_tz_light.csv
+#    * Country-associated continents:       optd_cont.csv
 #  * Amadeus RFD (Referential Data):        dump_from_crb_city.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
@@ -33,7 +33,7 @@
 BEGIN {
 	# Global variables
 	error_stream = "/dev/stderr"
-	awk_file = "make_ori_por_public.awk"
+	awk_file = "make_optd_por_public.awk"
 
 	# Lists
 	ctry_name_list["ZZ"] = "Not relevant/available"
@@ -98,24 +98,24 @@ BEGIN {
 # Content:
 # --------
 # Note that the location types of that file are not the same as the ones
-# in the ori_por_best_known_so_far.csv file. Indeed, the location types
+# in the optd_por_best_known_so_far.csv file. Indeed, the location types
 # take a value from three possible ones: 'C', 'A' or 'CA', where 'A' actually
 # means travel-related rather than airport. There are distinct entries for
 # the city and for the corresponding travel-related POR, only when there are
 # several travel-related POR serving the city.
 #
-# In the ori_por_best_known_so_far.csv file, instead, there are distinct
+# In the optd_por_best_known_so_far.csv file, instead, there are distinct
 # entries when Geonames has got itself distinct entries.
 #
 # For instance:
 #  * NCE has got:
-#    - 2 distinct entries in the ori_por_best_known_so_far.csv file:
+#    - 2 distinct entries in the optd_por_best_known_so_far.csv file:
 #       NCE-A-6299418^NCE^43.658411^7.215872^NCE^
 #       NCE-C-2990440^NCE^43.70313^7.26608^NCE^
 #    - 1 entry in the file of PageRank values:
 #       NCE-CA^NCE^0.161281957529
 #  * IEV has got:
-#    - 2 distinct entries in the ori_por_best_known_so_far.csv file:
+#    - 2 distinct entries in the optd_por_best_known_so_far.csv file:
 #       IEV-A-6300960^IEV^50.401694^30.449697^IEV^
 #       IEV-C-703448^IEV^50.401694^30.449697^IEV^
 #    - 2 entries in the file of PageRank values:
@@ -693,63 +693,63 @@ function printAltNameSection(myAltNameSection) {
 
 		# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Validity ID
 		printf ("%s", iata_code "^^^" isGeonames "^" geonameID "^") \
-			> non_ori_por_file
+			> non_optd_por_file
 
 		# ^ Name ^ ASCII name
 		printf ("%s", "^UNKNOWN" unknown_idx "^UNKNOWN" unknown_idx) \
-			> non_ori_por_file
+			> non_optd_por_file
 
 		# ^ Alternate names
-		# printf ("%s", "^") > non_ori_por_file
+		# printf ("%s", "^") > non_optd_por_file
 
 		# ^ Latitude ^ Longitude
-		printf ("%s", "^" $3 "^" $4) > non_ori_por_file
+		printf ("%s", "^" $3 "^" $4) > non_optd_por_file
 
 		#  ^ Feat. class ^ Feat. code
-		printf ("%s", "^S^AIRP") > non_ori_por_file
+		printf ("%s", "^S^AIRP") > non_optd_por_file
 
 		# ^ PageRank value
-		printf ("%s", "^" page_rank) > non_ori_por_file
+		printf ("%s", "^" page_rank) > non_optd_por_file
 
 		# ^ Valid from date ^ Valid until date ^ Comment
-		printf ("%s", "^" $6 "^^") > non_ori_por_file
+		printf ("%s", "^" $6 "^^") > non_optd_por_file
 
 		# ^ Country code ^ Alt. country codes ^ Country name
-		printf ("%s", "^" "ZZ" "^" "No country") > non_ori_por_file
+		printf ("%s", "^" "ZZ" "^" "No country") > non_optd_por_file
 
 		# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 		# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 		# ^ Admin3 code ^ Admin4 code
-		printf ("%s", "^^") > non_ori_por_file
+		printf ("%s", "^^") > non_optd_por_file
 
 		# ^ Population ^ Elevation ^ gtopo30
-		printf ("%s", "^^^") > non_ori_por_file
+		printf ("%s", "^^^") > non_optd_por_file
 
 		# ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
-		printf ("%s", "^" "Europe/Greenwich" "^^^") > non_ori_por_file
+		printf ("%s", "^" "Europe/Greenwich" "^^^") > non_optd_por_file
 
 		# ^ Modification date
-		printf ("%s", "^" today_date) > non_ori_por_file
+		printf ("%s", "^" today_date) > non_optd_por_file
 
 		# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
-		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_ori_por_file
+		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_optd_por_file
 
 		# ^ State code
-		printf ("%s", "^" ) > non_ori_por_file
+		printf ("%s", "^" ) > non_optd_por_file
 
 		#  ^ Location type (the default, i.e., city and airport)
-		printf ("%s", "^CA") > non_ori_por_file
+		printf ("%s", "^CA") > non_optd_por_file
 
 		#  ^ Wiki link (empty here)
-		printf ("%s", "^") > non_ori_por_file
+		printf ("%s", "^") > non_optd_por_file
 
 		#  ^ Section of alternate names  (empty here)
-		printf ("%s", "^") > non_ori_por_file
+		printf ("%s", "^") > non_optd_por_file
 
 		# End of line
-		printf ("%s", "\n") > non_ori_por_file
+		printf ("%s", "\n") > non_optd_por_file
 
 		# ----
 		# From ORI-POR ($1 - $6)
