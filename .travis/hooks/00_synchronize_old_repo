@@ -58,6 +58,8 @@ done
 # Get the log of the last commit
 LOG="$(git log -1)"
 cd /tmp/optd
+
+echo "Showing what we are about to synchronize"
 git status
-#git commit -a -m "$LOG"
-#git push
+git commit -a -m "$LOG"
+git push
