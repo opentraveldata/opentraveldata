@@ -18,3 +18,6 @@ How it works
   hook .travis/hooks/all. It will be invoked as:
 
    .travis/hooks/XX_myhook
+
+* If your hook fails (exits with a non-zero status), then the master hook
+  exits immediately and the next hooks are not executed.
