@@ -17,6 +17,7 @@ How it works
 * Your hook will run from the root of the project, invoked by the master
   hook .travis/hooks/all. It will be invoked as:
 
+
     .travis/hooks/XX_myhook
 
 * If your hook fails (exits with a non-zero status), then the master hook
