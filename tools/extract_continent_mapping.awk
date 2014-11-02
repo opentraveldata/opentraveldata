@@ -21,7 +21,7 @@
 # -------------------
 # The generated data file contains, for every country code, its corresponding
 # continent (code and name).
-# http://github.com/opentraveldata/optd/blob/trunk/refdata/ORI/optd_cont.csv
+# http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_cont.csv
 #
 # Sample output lines:
 # country_code^country_name^continent_code^continent_name
@@ -33,17 +33,17 @@
 ##
 #
 BEGIN {
-	# Global variables
-	error_stream = "/dev/stderr"
-	awk_file = "extract_continent_mapping.awk"
+    # Global variables
+    error_stream = "/dev/stderr"
+    awk_file = "extract_continent_mapping.awk"
 
-	# Header
-	printf ("%s","country_code^country_name^continent_code^continent_name")
-	printf ("%s", "\n")
+    # Header
+    printf ("%s","country_code^country_name^continent_code^continent_name")
+    printf ("%s", "\n")
 
-	#
-	today_date = mktime ("YYYY-MM-DD")
-	cont_line = 0
+    #
+    today_date = mktime ("YYYY-MM-DD")
+    cont_line = 0
 }
 
 ##
@@ -59,17 +59,17 @@ BEGIN {
 # AN Antarctica 6255152
 #
 /^([A-Z]{2})\t([A-Za-z ]+)\t([0-9]{1,9})$/ {
-	#
-	cont_line++
+    #
+    cont_line++
 
-	# Continent code
-	cont_code = $1
+    # Continent code
+    cont_code = $1
 
-	# Continent name
-	cont_name = $2
+    # Continent name
+    cont_name = $2
 
-	# Register the continent name
-	cont_list[cont_code] = cont_name
+    # Register the continent name
+    cont_list[cont_code] = cont_name
 }
 
 ##
@@ -84,26 +84,26 @@ BEGIN {
 # US USA 840 US United States Washington 9629091 310232863 NA .us USD Dollar 1 ###-## ^(\d{9})$ en-US,es-US,haw,fr 6252001 CA,MX,CU
 #
 /^([A-Z]{2})\t([A-Z]{3})\t([0-9]{1,3})\t.*\t([0-9]{1,10})\t.*\t.*$/ {
-	# 2-character ISO code
-	iso_2char_code = $1
+    # 2-character ISO code
+    iso_2char_code = $1
 
-	# (ASCII) Name
-	ctry_name = $5
+    # (ASCII) Name
+    ctry_name = $5
 
-	# Continent code
-	cont_code = $9
+    # Continent code
+    cont_code = $9
 
-	# Continent name
-	cont_name = cont_list[cont_code]
+    # Continent name
+    cont_name = cont_list[cont_code]
 
-	# Print the mapping for that country
-	print (iso_2char_code "^" ctry_name "^" cont_code "^" cont_name)
+    # Print the mapping for that country
+    print (iso_2char_code "^" ctry_name "^" cont_code "^" cont_name)
 }
 
 
 ##
 #
 END {
-	# DEBUG
-	# print (cont_line " lines") > error_stream
+    # DEBUG
+    # print (cont_line " lines") > error_stream
 }

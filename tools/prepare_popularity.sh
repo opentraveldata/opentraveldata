@@ -26,7 +26,7 @@ displayPopularityDetails() {
 		echo "mkdir -p ${TMP_DIR}"
 	fi
 	echo "cd ${MYCURDIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_popularity.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
 	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo
@@ -64,15 +64,15 @@ then
 fi
 
 ##
-# ORI path
-ORI_DIR=${EXEC_PATH}../ORI/
+# OPTD path
+DATA_DIR=${EXEC_PATH}../opentraveldata/
 
 ##
 #
 AIRPORT_POP_SORTED=sorted_${AIRPORT_POP_FILENAME}
 AIRPORT_POP_SORTED_CUT=cut_sorted_${AIRPORT_POP_FILENAME}
 #
-AIRPORT_POP=${ORI_DIR}${AIRPORT_POP_FILENAME}
+AIRPORT_POP=${DATA_DIR}${AIRPORT_POP_FILENAME}
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ];

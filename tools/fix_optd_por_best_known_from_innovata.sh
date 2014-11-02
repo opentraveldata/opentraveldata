@@ -3,7 +3,7 @@
 ##
 # Input file names
 INN_RAW_FILENAME=dump_from_innovata.csv
-GEO_ORI_FILENAME=optd_por_best_known_so_far.csv
+GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##
 # Temporary path
@@ -56,8 +56,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directory
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directory
+DATA_DIR=${OPTD_DIR}OPTD/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -67,7 +67,7 @@ LOG_LEVEL=4
 ##
 # Input files
 INN_RAW_FILE=${TMP_DIR}${INN_RAW_FILENAME}
-GEO_ORI_FILE=${ORI_DIR}${GEO_ORI_FILENAME}
+GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 
 ##
 # Innovata
@@ -101,7 +101,7 @@ fi
 ##
 #
 INN_GEO_FILE_TMP=${INN_GEO_FILE}.tmp
-join -t'^' -a 2 ${INN_WPK_FILE} ${GEO_ORI_FILE} > ${INN_GEO_FILE_TMP}
+join -t'^' -a 2 ${INN_WPK_FILE} ${GEO_OPTD_FILE} > ${INN_GEO_FILE_TMP}
 
 #
 COORD_FIXER=fix_optd_por_best_known_from_innovata.awk
@@ -113,7 +113,7 @@ awk -F'^' -f ${COORD_FIXER} ${INN_GEO_FILE_TMP} > ${INN_GEO_FILE}
 echo
 echo "Reporting"
 echo "---------"
-echo "The '${INN_GEO_FILE}' file has been generated from '${INN_RAW_FILE}' and '${GEO_ORI_FILE}'."
+echo "The '${INN_GEO_FILE}' file has been generated from '${INN_RAW_FILE}' and '${GEO_OPTD_FILE}'."
 echo "Next step:"
-echo "mv ${INN_GEO_FILE} ${GEO_ORI_FILE}"
+echo "mv ${INN_GEO_FILE} ${GEO_OPTD_FILE}"
 echo

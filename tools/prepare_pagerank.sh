@@ -26,7 +26,7 @@ displayPopularityDetails() {
 		echo "mkdir -p ${TMP_DIR}"
 	fi
 	echo "cd ${MYCURDIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_pageranked.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_pageranked.csv ${TMP_DIR}"
 	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo
@@ -64,8 +64,8 @@ then
 fi
 
 ##
-# ORI path
-ORI_DIR=${EXEC_PATH}../ORI/
+# OPTD path
+DATA_DIR=${EXEC_PATH}../opentraveldata/
 
 ##
 #
@@ -98,9 +98,9 @@ then
 	AIRPORT_PR_FILENAME=`basename ${AIRPORT_PR}`
 	AIRPORT_PR_SORTED=sorted_${AIRPORT_PR_FILENAME}
 	AIRPORT_PR_SORTED_CUT=cut_sorted_${AIRPORT_PR_FILENAME}
-	if [ "${AIRPORT_PR}" = "${ORI_DIR}${AIRPORT_PR_FILENAME}" ]
+	if [ "${AIRPORT_PR}" = "${DATA_DIR}${AIRPORT_PR_FILENAME}" ]
 	then
-		AIRPORT_PR="${ORI_DIR}${AIRPORT_PR}"
+		AIRPORT_PR="${DATA_DIR}${AIRPORT_PR}"
 	fi
 fi
 AIRPORT_PR_SORTED=${TMP_DIR}${AIRPORT_PR_SORTED}

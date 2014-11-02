@@ -5,7 +5,7 @@
 BST_FILENAME=optd_por_best_known_so_far.csv
 GEO_FILE=dump_from_geonames.csv
 RFD_FILE=dump_from_crb_city.csv
-BST_FILE=../ORI/${BST_FILENAME}
+BST_FILE=../opentraveldata/${BST_FILENAME}
 
 ##
 # Output files
@@ -98,7 +98,7 @@ awk -F'^' -f ${FIX_BST_REDUCER} ${BST_WRFD_FILE_TMP} > ${BST_WRFD_NEW_FILE}
 NB_RFD_FIXED_ROWS=`wc -l ${BST_WRFD_NEW_FILE} | cut -d' ' -f1`
 
 ##
-# Join the coordinates of the pristine ORI file with the one of fixed
+# Join the coordinates of the pristine OPTD file with the one of fixed
 # coordinates.
 join -t'^' -a 2 ${BST_WGEO_NEW_FILE} ${BST_FILE} > ${BST_WGEO_FILE_TMP}
 join -t'^' -a 2 ${BST_WRFD_NEW_FILE} ${BST_FILE} > ${BST_WRFD_FILE_TMP}

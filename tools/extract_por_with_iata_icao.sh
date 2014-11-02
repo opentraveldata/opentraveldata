@@ -58,11 +58,11 @@ fi
 
 ##
 # Geonames data store
-GEO_POR_DATA_DIR=${EXEC_PATH}../geonames/data/por/data/
+GEO_POR_DATA_DIR=${EXEC_PATH}../data/geonames/data/por/data/
 
 ##
-# ORI directory
-ORI_DIR=${EXEC_PATH}../ORI/
+# OPTD directory
+DATA_DIR=${EXEC_PATH}../opentraveldata/
 
 
 ##
@@ -81,9 +81,9 @@ DUMP_GEO_FILENAME=dump_from_geonames.csv
 DUMP_IATA_FILENAME=${POR_FILE_PFX1}_${SNAPSHOT_DATE}.csv
 DUMP_NOIATA_FILENAME=${POR_FILE_PFX2}_${SNAPSHOT_DATE}.csv
 # Light version of the country-related time-zones
-ORI_TZ_FILENAME=optd_tz_light.csv
+OPTD_TZ_FILENAME=optd_tz_light.csv
 # Mapping between countries and continents
-ORI_CNT_FILENAME=optd_cont.csv
+OPTD_CNT_FILENAME=optd_cont.csv
 
 #
 DUMP_GEO_FILE=${TMP_DIR}${DUMP_GEO_FILENAME}
@@ -91,12 +91,12 @@ DUMP_IATA_FILE=${TMP_DIR}${DUMP_IATA_FILENAME}
 DUMP_NOIATA_FILE=${TMP_DIR}${DUMP_NOIATA_FILENAME}
 DUMP_GEO_FILE_HDR=${DUMP_IATA_FILE}.hdr
 DUMP_GEO_FILE_TMP=${DUMP_IATA_FILE}.tmp
-# ORI-related data files
-ORI_TZ_FILE=${ORI_DIR}${ORI_TZ_FILENAME}
-ORI_CNT_FILE=${ORI_DIR}${ORI_CNT_FILENAME}
-ORI_CNT_FILE_TMP=${TMP_DIR}${ORI_CNT_FILENAME}.tmp
-ORI_CNT_FILE_TMP_SORTED=${TMP_DIR}${ORI_CNT_FILENAME}.tmp.sorted
-ORI_CNT_FILE_HDR=${TMP_DIR}${ORI_CNT_FILENAME}.tmp.hdr
+# OPTD-related data files
+OPTD_TZ_FILE=${DATA_DIR}${OPTD_TZ_FILENAME}
+OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
+OPTD_CNT_FILE_TMP=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp
+OPTD_CNT_FILE_TMP_SORTED=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.sorted
+OPTD_CNT_FILE_HDR=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.hdr
 
 ##
 # Latest snapshot data files
@@ -123,9 +123,9 @@ then
 	echo "      + '${DUMP_IATA_FILE}'"
 	echo "      + '${DUMP_NOIATA_FILE}'"
 	echo
-	echo "  - Generated (CSV-formatted) data files in '${ORI_DIR}':"
-	echo "      + '${ORI_TZ_FILE}' (maybe sometimes in the future)"
-	echo "      + '${ORI_CNT_FILE}'"
+	echo "  - Generated (CSV-formatted) data files in '${DATA_DIR}':"
+	echo "      + '${OPTD_TZ_FILE}' (maybe sometimes in the future)"
+	echo "      + '${OPTD_CNT_FILE}'"
 	echo
 	exit
 fi
@@ -138,8 +138,8 @@ if [ "$1" = "--clean" ]
 	then
 		\rm -rf ${TMP_DIR}
 	else
-		\rm -f ${ORI_CNT_FILE_HDR} ${ORI_CNT_FILE_TMP}
-		\rm -f ${ORI_CNT_FILE_TMP_SORTED}
+		\rm -f ${OPTD_CNT_FILE_HDR} ${OPTD_CNT_FILE_TMP}
+		\rm -f ${OPTD_CNT_FILE_TMP_SORTED}
 		\rm -f ${DUMP_GEO_FILE_HDR} ${DUMP_GEO_FILE_TMP}
 	fi
 	exit
@@ -153,16 +153,16 @@ echo
 echo "Extracting country-related information from '${GEO_CTY_FILE}'"
 CONT_EXTRACTOR=${EXEC_PATH}extract_continent_mapping.awk
 awk -F'\t' -f ${CONT_EXTRACTOR} ${GEO_CNT_FILE} ${GEO_CTY_FILE} \
-	> ${ORI_CNT_FILE_TMP}
+	> ${OPTD_CNT_FILE_TMP}
 # Extract and remove the header
-grep "^country_code\(.\+\)" ${ORI_CNT_FILE_TMP} > ${ORI_CNT_FILE_HDR}
-sed -i -e "s/^country_code\(.\+\)//g" ${ORI_CNT_FILE_TMP}
-sed -i -e "/^$/d" ${ORI_CNT_FILE_TMP}
+grep "^country_code\(.\+\)" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE_HDR}
+sed -i -e "s/^country_code\(.\+\)//g" ${OPTD_CNT_FILE_TMP}
+sed -i -e "/^$/d" ${OPTD_CNT_FILE_TMP}
 # Sort by country code
-sort -t'^' -k1,1 ${ORI_CNT_FILE_TMP} > ${ORI_CNT_FILE_TMP_SORTED}
+sort -t'^' -k1,1 ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE_TMP_SORTED}
 # Re-add the header
-cat ${ORI_CNT_FILE_HDR} ${ORI_CNT_FILE_TMP_SORTED} > ${ORI_CNT_FILE_TMP}
-sed -e "/^$/d" ${ORI_CNT_FILE_TMP} > ${ORI_CNT_FILE}
+cat ${OPTD_CNT_FILE_HDR} ${OPTD_CNT_FILE_TMP_SORTED} > ${OPTD_CNT_FILE_TMP}
+sed -e "/^$/d" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE}
 
 # For travel-related POR and cities.
 echo

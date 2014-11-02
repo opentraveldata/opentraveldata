@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create the public version of the ORI-maintained list of airlines, from:
+# Create the public version of the OPTD-maintained list of airlines, from:
 # - optd_airline_best_known_so_far.csv
 # - optd_airline_no_longer_valid.csv
 # - ref_airline_nb_of_flights.csv (future)
@@ -62,8 +62,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -72,20 +72,20 @@ LOG_LEVEL=3
 
 ##
 # File of best known airline details (future)
-ORI_AIR_FILENAME=optd_airline_best_known_so_far.csv
+OPTD_AIR_FILENAME=optd_airline_best_known_so_far.csv
 # File of no longer valid IATA entries (future)
-ORI_NOIATA_FILENAME=optd_airline_no_longer_valid.csv
+OPTD_NOIATA_FILENAME=optd_airline_no_longer_valid.csv
 # File of alliance membership details
-ORI_AIR_ALC_FILENAME=optd_airline_alliance_membership.csv
+OPTD_AIR_ALC_FILENAME=optd_airline_alliance_membership.csv
 #
-ORI_AIR_FILE=${ORI_DIR}${ORI_AIR_FILENAME}
-ORI_NOIATA_FILE=${ORI_DIR}${ORI_NOIATA_FILENAME}
-ORI_AIR_ALC_FILE=${ORI_DIR}${ORI_AIR_ALC_FILENAME}
+OPTD_AIR_FILE=${DATA_DIR}${OPTD_AIR_FILENAME}
+OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
+OPTD_AIR_ALC_FILE=${DATA_DIR}${OPTD_AIR_ALC_FILENAME}
 
 ##
 # Importance values (future)
-ORI_NF_FILENAME=ref_airline_nb_of_flights.csv
-ORI_NF_FILE=${ORI_DIR}${ORI_NF_FILENAME}
+OPTD_NF_FILENAME=ref_airline_nb_of_flights.csv
+OPTD_NF_FILE=${DATA_DIR}${OPTD_NF_FILENAME}
 
 ##
 # RFD (to be found, as temporary files, within the ../tools directory)
@@ -100,20 +100,20 @@ RFD_CAP_FILE=${TOOLS_DIR}${RFD_CAP_FILENAME}
 
 ##
 # Target (generated files)
-ORI_AIR_PUBLIC_FILENAME=optd_airlines.csv
-ORI_AIR_RFD_DIFF_FILENAME=optd_airline_diff_w_rfd.csv
-ORI_AIR_ALC_DIFF_FILENAME=optd_airline_diff_w_alc.csv
+OPTD_AIR_PUBLIC_FILENAME=optd_airlines.csv
+OPTD_AIR_RFD_DIFF_FILENAME=optd_airline_diff_w_rfd.csv
+OPTD_AIR_ALC_DIFF_FILENAME=optd_airline_diff_w_alc.csv
 #
-ORI_AIR_PUBLIC_FILE=${ORI_DIR}${ORI_AIR_PUBLIC_FILENAME}
-ORI_AIR_RFD_DIFF_FILE=${ORI_DIR}${ORI_AIR_RFD_DIFF_FILENAME}
-ORI_AIR_ALC_DIFF_FILE=${ORI_DIR}${ORI_AIR_ALC_DIFF_FILENAME}
+OPTD_AIR_PUBLIC_FILE=${DATA_DIR}${OPTD_AIR_PUBLIC_FILENAME}
+OPTD_AIR_RFD_DIFF_FILE=${DATA_DIR}${OPTD_AIR_RFD_DIFF_FILENAME}
+OPTD_AIR_ALC_DIFF_FILE=${DATA_DIR}${OPTD_AIR_ALC_DIFF_FILENAME}
 
 ##
 # Temporary
-ORI_AIR_HEADER=${ORI_AIR_FILE}.tmp.hdr
-ORI_AIR_WITH_NOHD=${ORI_AIR_FILE}.wohd
-ORI_AIR_UNSORTED_NOHDR=${ORI_AIR_FILE}.wohd.unsorted
-ORI_AIR_PUBLIC_UNSORTED_FILE=${ORI_AIR_FILE}.unsorted
+OPTD_AIR_HEADER=${OPTD_AIR_FILE}.tmp.hdr
+OPTD_AIR_WITH_NOHD=${OPTD_AIR_FILE}.wohd
+OPTD_AIR_UNSORTED_NOHDR=${OPTD_AIR_FILE}.wohd.unsorted
+OPTD_AIR_PUBLIC_UNSORTED_FILE=${OPTD_AIR_FILE}.unsorted
 
 
 ##
@@ -142,24 +142,24 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
-	echo "That script generates the public version of the ORI-maintained list of airlines"
+	echo "That script generates the public version of the OPTD-maintained list of airlines"
 	echo
 	echo "Usage: $0 [<log level (0: quiet; 5: verbose)>]"
 	echo " - Default log level (from 0 to 5): ${LOG_LEVEL}"
 	echo
 	echo "* Input data files"
 	echo "------------------"
-	echo " - ORI-maintained file of best known details: '${ORI_AIR_FILE}'"
-	echo " - ORI-maintained file of non longer valid IATA airlines: '${ORI_NOIATA_FILE}'"
-	echo " - ORI-maintained file of importance values: '${ORI_NF_FILE}'"
-	echo " - ORI-maintained file of alliance membership details: '${ORI_AIR_ALC_FILE}'"
+	echo " - OPTD-maintained file of best known details: '${OPTD_AIR_FILE}'"
+	echo " - OPTD-maintained file of non longer valid IATA airlines: '${OPTD_NOIATA_FILE}'"
+	echo " - OPTD-maintained file of importance values: '${OPTD_NF_FILE}'"
+	echo " - OPTD-maintained file of alliance membership details: '${OPTD_AIR_ALC_FILE}'"
 	echo " - RFD data dump file: '${RFD_AIR_FILE}'"
 	echo
 	echo "* Output data file"
 	echo "------------------"
-	echo " - ORI-maintained public file of airlines: '${ORI_AIR_PUBLIC_FILE}'"
-	echo " - List of airlines for which the RFD-derived names are different: '${ORI_AIR_RFD_DIFF_FILE}'"
-	echo " - List of airlines for which the alliance-derived names are different: '${ORI_AIR_ALC_DIFF_FILE}'"
+	echo " - OPTD-maintained public file of airlines: '${OPTD_AIR_PUBLIC_FILE}'"
+	echo " - List of airlines for which the RFD-derived names are different: '${OPTD_AIR_RFD_DIFF_FILE}'"
+	echo " - List of airlines for which the alliance-derived names are different: '${OPTD_AIR_ALC_DIFF_FILE}'"
 	echo
 	exit
 fi
@@ -170,8 +170,8 @@ fi
 #
 if [ "$1" = "--clean" ]
 then
-	\rm -f ${ORI_AIR_WITH_NOHD} ${ORI_AIR_UNSORTED_NOHDR} \
-		${ORI_AIR_PUBLIC_UNSORTED_FILE} ${RFD_CAP_FILE}
+	\rm -f ${OPTD_AIR_WITH_NOHD} ${OPTD_AIR_UNSORTED_NOHDR} \
+		${OPTD_AIR_PUBLIC_UNSORTED_FILE} ${RFD_CAP_FILE}
 
 	bash prepare_rfd_dump_file.sh --clean || exit -1
 	exit
@@ -203,33 +203,33 @@ fi
 ##
 # Re-format the aggregated entries. See ${REDUCER} for more details and samples.
 REDUCER=make_optd_airline_public.awk
-awk -F'^' -v air_name_alc_diff_file=${ORI_AIR_ALC_DIFF_FILE} \
-	-v air_name_rfd_diff_file=${ORI_AIR_RFD_DIFF_FILE} \
-	-f ${REDUCER} ${ORI_AIR_ALC_FILE} ${ORI_NF_FILE} \
-	${ORI_AIR_FILE} ${ORI_NOIATA_FILE} ${RFD_CAP_FILE} \
-	> ${ORI_AIR_PUBLIC_UNSORTED_FILE}
+awk -F'^' -v air_name_alc_diff_file=${OPTD_AIR_ALC_DIFF_FILE} \
+	-v air_name_rfd_diff_file=${OPTD_AIR_RFD_DIFF_FILE} \
+	-f ${REDUCER} ${OPTD_AIR_ALC_FILE} ${OPTD_NF_FILE} \
+	${OPTD_AIR_FILE} ${OPTD_NOIATA_FILE} ${RFD_CAP_FILE} \
+	> ${OPTD_AIR_PUBLIC_UNSORTED_FILE}
 
 ##
 # Extract the header into temporary files
-grep "^pk\(.\+\)" ${ORI_AIR_PUBLIC_UNSORTED_FILE} > ${ORI_AIR_HEADER}
+grep "^pk\(.\+\)" ${OPTD_AIR_PUBLIC_UNSORTED_FILE} > ${OPTD_AIR_HEADER}
 
 ##
 # Remove the header
-sed -e "s/^pk\(.\+\)//g" ${ORI_AIR_PUBLIC_UNSORTED_FILE} \
-	> ${ORI_AIR_WITH_NOHD}
-sed -i -e "/^$/d" ${ORI_AIR_WITH_NOHD}
+sed -e "s/^pk\(.\+\)//g" ${OPTD_AIR_PUBLIC_UNSORTED_FILE} \
+	> ${OPTD_AIR_WITH_NOHD}
+sed -i -e "/^$/d" ${OPTD_AIR_WITH_NOHD}
 
 ##
 # Sort on the IATA code, feature code and Geonames ID, in that order
-sort -t'^' -k1,1 -k2,2 ${ORI_AIR_WITH_NOHD} > ${ORI_AIR_UNSORTED_NOHDR}
+sort -t'^' -k1,1 -k2,2 ${OPTD_AIR_WITH_NOHD} > ${OPTD_AIR_UNSORTED_NOHDR}
 
 ##
 # Re-add the header
-cat ${ORI_AIR_HEADER} ${ORI_AIR_UNSORTED_NOHDR} > ${ORI_AIR_PUBLIC_FILE}
+cat ${OPTD_AIR_HEADER} ${OPTD_AIR_UNSORTED_NOHDR} > ${OPTD_AIR_PUBLIC_FILE}
 
 ##
 # Remove the header
-\rm -f ${ORI_AIR_HEADER}
+\rm -f ${OPTD_AIR_HEADER}
 
 ##
 # Reporting
@@ -238,5 +238,5 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "wc -l ${ORI_AIR_PUBLIC_FILE} ${ORI_AIR_RFD_DIFF_FILE} ${ORI_AIR_ALC_DIFF_FILE}"
+echo "wc -l ${OPTD_AIR_PUBLIC_FILE} ${OPTD_AIR_RFD_DIFF_FILE} ${OPTD_AIR_ALC_DIFF_FILE}"
 echo

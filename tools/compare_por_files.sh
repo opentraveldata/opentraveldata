@@ -2,8 +2,8 @@
 #
 # Four parameters are optional for this script:
 # - the Geonames data dump file, only for its geographical coordinates
-# - the ORI-maintained list of "best known" POR (points of reference)
-# - the ORI-maintained list of POR importance (i.e., PageRank) figures
+# - the OPTD-maintained list of "best known" POR (points of reference)
+# - the OPTD-maintained list of POR importance (i.e., PageRank) figures
 # - the minimal distance (in km) triggering a difference
 #
 
@@ -33,9 +33,9 @@ fi
 LOG_LEVEL=3
 
 ##
-# ORI path
+# Data path
 OPTD_DIR=${EXEC_PATH}../
-ORI_DIR=${OPTD_DIR}ORI/
+DATA_DIR=${OPTD_DIR}opentraveldata/
 
 ##
 # Geonames data dump file
@@ -48,18 +48,18 @@ GEONAME_FILE_RAW=${TMP_DIR}${GEONAME_FILE_RAW_FILENAME}
 GEONAME_FILE=${TMP_DIR}${GEONAME_FILENAME}
 
 ##
-# ORI-maintained list of "best known" POR (points of reference)
-ORI_BEST_FILENAME=optd_por_best_known_so_far.csv
+# OPTD-maintained list of "best known" POR (points of reference)
+OPTD_BEST_FILENAME=optd_por_best_known_so_far.csv
 #
-ORI_BEST_FILE=${ORI_DIR}${ORI_BEST_FILENAME}
+OPTD_BEST_FILE=${DATA_DIR}${OPTD_BEST_FILENAME}
 
 ##
-# ORI-maintained list of POR importance (i.e., PageRank) figures
+# OPTD-maintained list of POR importance (i.e., PageRank) figures
 AIRPORT_PR_FILENAME=ref_airport_pageranked.csv
 AIRPORT_PR_SORTED=sorted_${AIRPORT_PR_FILENAME}
 AIRPORT_PR_SORTED_CUT=cut_sorted_${AIRPORT_PR_FILENAME}
 #
-AIRPORT_PR_FILE=${ORI_DIR}${AIRPORT_PR_FILENAME}
+AIRPORT_PR_FILE=${DATA_DIR}${AIRPORT_PR_FILENAME}
 
 ##
 # Comparison files
@@ -73,12 +73,12 @@ COMP_MIN_DIST=10
 ##
 # Missing POR
 GEONAME_FILE_MISSING=${GEONAME_FILE}.missing
-ORI_BEST_FILE_MISSING=${ORI_BEST_FILE}.missing
+OPTD_BEST_FILE_MISSING=${OPTD_BEST_FILE}.missing
 
 
 ##
 # Temporary files
-ORI_BEST_WITH_NOHD=${TMP_DIR}${ORI_BEST_FILENAME}.wohd
+OPTD_BEST_WITH_NOHD=${TMP_DIR}${OPTD_BEST_FILENAME}.wohd
 GEO_COMBINED_TMP_FILE=geo_combined_file.csv.tmp
 
 
@@ -88,9 +88,9 @@ GEO_COMBINED_TMP_FILE=geo_combined_file.csv.tmp
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
-	echo "Usage: $0 [<Geonames data dump file> [<ORI file of best known coordinates> [<PageRanked POR file>] [<minimum distance>]]]]"
+	echo "Usage: $0 [<Geonames data dump file> [<OPTD file of best known coordinates> [<PageRanked POR file>] [<minimum distance>]]]]"
 	echo " - Default name for the Geonames data dump file: '${GEONAME_FILE_RAW}'"
-	echo " - Default name for the ORI-maintained file of best known coordinates: '${ORI_BEST_FILE}'"
+	echo " - Default name for the OPTD-maintained file of best known coordinates: '${OPTD_BEST_FILE}'"
 	echo " - Default name for the PageRanked POR file: '${AIRPORT_PR_FILE}'"
 	echo " - Default minimum distance (in km) triggering a difference: '${COMP_MIN_DIST}'"
 	echo
@@ -107,8 +107,8 @@ then
 	then
 		\rm -rf ${TMP_DIR}
 	else
-		\rm -f ${GEONAME_FILE_MISSING} ${ORI_BEST_FILE_MISSING} \
-			${ORI_BEST_FILE_HEADER} ${ORI_BEST_WITH_NOHD} \
+		\rm -f ${GEONAME_FILE_MISSING} ${OPTD_BEST_FILE_MISSING} \
+			${OPTD_BEST_FILE_HEADER} ${OPTD_BEST_WITH_NOHD} \
 			${GEONAME_FILE} ${GEONAME_FILE_SORTED} ${GEONAME_FILE_SORTED_CUT} \
 			${AIRPORT_PR_SORTED} ${AIRPORT_PR_SORTED_CUT} ${POR_MAIN_DIFF}
 	fi
@@ -166,21 +166,21 @@ fi
 ${PREPARE_EXEC} ${OPTD_DIR} ${LOG_LEVEL}
 
 
-# ORI-maintained list of "best known" geographical coordinates
+# OPTD-maintained list of "best known" geographical coordinates
 if [ "$2" != "" ]
 then
-	ORI_BEST_FILE="$2"
+	OPTD_BEST_FILE="$2"
 fi
 
-if [ ! -f "${ORI_BEST_FILE}" ]
+if [ ! -f "${OPTD_BEST_FILE}" ]
 then
 	echo
-	echo "[$0:$LINENO] The '${ORI_BEST_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${OPTD_BEST_FILE}' file does not exist."
 	if [ "$2" = "" ]
 	then
 		echo
 		echo "Hint:"
-		echo "\cp -f ${EXEC_PATH}../ORI/${ORI_BEST_FILENAME} ${TMP_DIR}"
+		echo "\cp -f ${EXEC_PATH}../OPTD/${OPTD_BEST_FILENAME} ${TMP_DIR}"
 		echo
 	fi
 	exit -1
@@ -218,7 +218,7 @@ fi
 
 
 ##
-# Prepare the ORI-maintained airport popularity dump file. Basically, the file
+# Prepare the OPTD-maintained airport popularity dump file. Basically, the file
 # is sorted by IATA code. Then, only two columns/fields are kept in that
 # version of the file: the airport/city IATA code and the airport popularity.
 ${PREPARE_PR_EXEC} ${AIRPORT_PR_FILE}
@@ -233,12 +233,12 @@ fi
 
 ##
 # Extract the header into a temporary file
-ORI_BEST_FILE_HEADER=${ORI_BEST_FILE}.tmp.hdr
-grep "^pk\(.\+\)" ${ORI_BEST_FILE} > ${ORI_BEST_FILE_HEADER}
+OPTD_BEST_FILE_HEADER=${OPTD_BEST_FILE}.tmp.hdr
+grep "^pk\(.\+\)" ${OPTD_BEST_FILE} > ${OPTD_BEST_FILE_HEADER}
 
 # Remove the header
-sed -e "s/^pk\(.\+\)//g" ${ORI_BEST_FILE} > ${ORI_BEST_WITH_NOHD}
-sed -i -e "/^$/d" ${ORI_BEST_WITH_NOHD}
+sed -e "s/^pk\(.\+\)//g" ${OPTD_BEST_FILE} > ${OPTD_BEST_WITH_NOHD}
+sed -i -e "/^$/d" ${OPTD_BEST_WITH_NOHD}
 
 ##
 # The two files contain only four fields (the primary key, the IATA code and
@@ -270,8 +270,8 @@ sed -i -e "/^$/d" ${ORI_BEST_WITH_NOHD}
 #
 GEONAME_MASTER=${GEO_COMBINED_TMP_FILE}.geomst
 join -t'^' -a 1 -1 1 -2 1 -e NULL \
-	${GEONAME_FILE_SORTED_CUT} ${ORI_BEST_WITH_NOHD} > ${GEONAME_MASTER}
-#echo "head -3 ${GEONAME_FILE_SORTED_CUT} ${ORI_BEST_WITH_NOHD} ${GEONAME_MASTER}"
+	${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} > ${GEONAME_MASTER}
+#echo "head -3 ${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} ${GEONAME_MASTER}"
 
 
 ##
@@ -285,8 +285,8 @@ then
 	echo "Sanity check"
 	echo "------------"
 	echo "[$0:$LINENO] Error! The file aggregating all the geographical coordinates should have a specific number of fields (that is, either 4 or 9). It is ${MIN_FIELD_NB}"
-	echo "Check that file (${GEONAME_MASTER}), which is a join of the coordinates from ${GEONAME_FILE_SORTED_CUT} and from ${ORI_BEST_FILE}."
-	echo "That error generally indicates that the format of one of the files (i.e., ${GEONAME_FILENAME} and/or ${ORI_BEST_FILE}) has changed, and that this script ($0) is not aware of it."
+	echo "Check that file (${GEONAME_MASTER}), which is a join of the coordinates from ${GEONAME_FILE_SORTED_CUT} and from ${OPTD_BEST_FILE}."
+	echo "That error generally indicates that the format of one of the files (i.e., ${GEONAME_FILENAME} and/or ${OPTD_BEST_FILE}) has changed, and that this script ($0) is not aware of it."
 	echo
   exit -1
 fi
@@ -320,16 +320,16 @@ fi
 #    best known coordinates, followed by the IATA code of its served city,
 #    ended by the from validity date.
 #
-ORI_BEST_MASTER=${GEO_COMBINED_TMP_FILE}.bstmst
+OPTD_BEST_MASTER=${GEO_COMBINED_TMP_FILE}.bstmst
 join -t'^' -a 2 -1 1 -2 1 -e NULL \
-	${GEONAME_FILE_SORTED_CUT} ${ORI_BEST_WITH_NOHD} > ${ORI_BEST_MASTER}
-#echo "head -3 ${GEONAME_FILE_SORTED_CUT} ${ORI_BEST_WITH_NOHD} ${ORI_BEST_MASTER}"
+	${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} > ${OPTD_BEST_MASTER}
+#echo "head -3 ${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} ${OPTD_BEST_MASTER}"
 
 
 ##
 # Sanity check: calculate the minimal number of fields on the resulting file
 #
-MIN_FIELD_NB=`awk -F'^' 'BEGIN{n=10} {if (NF<n) {n=NF}} END{print n}' ${ORI_BEST_MASTER} | uniq | sort | uniq`
+MIN_FIELD_NB=`awk -F'^' 'BEGIN{n=10} {if (NF<n) {n=NF}} END{print n}' ${OPTD_BEST_MASTER} | uniq | sort | uniq`
 
 if [ "${MIN_FIELD_NB}" != "9" -a "${MIN_FIELD_NB}" != "6" ]
 then
@@ -337,8 +337,8 @@ then
 	echo "Sanity check"
 	echo "------------"
 	echo "[$0:$LINENO] Error! The file aggregating all the geographical coordinates should have a specific number of fields (that is, either 6 or 9). It is ${MIN_FIELD_NB}"
-	echo "Check that file (${ORI_BEST_MASTER}), which is a join of the coordinates from ${GEONAME_FILE_SORTED_CUT} and from ${ORI_BEST_FILE}."
-	echo "That error generally indicates that the format of one of the files (i.e., ${GEONAME_FILENAME} and/or ${ORI_BEST_FILE}) has changed, and that this script ($0) is not aware of it."
+	echo "Check that file (${OPTD_BEST_MASTER}), which is a join of the coordinates from ${GEONAME_FILE_SORTED_CUT} and from ${OPTD_BEST_FILE}."
+	echo "That error generally indicates that the format of one of the files (i.e., ${GEONAME_FILENAME} and/or ${OPTD_BEST_FILE}) has changed, and that this script ($0) is not aware of it."
 	echo
   exit -1
 fi
@@ -354,9 +354,9 @@ fi
 cut -d'^' -f 1-4 ${GEONAME_MASTER} > ${GEONAME_MASTER}.dup
 #echo "head -3 ${GEONAME_MASTER} ${GEONAME_MASTER}.dup"
 \mv -f ${GEONAME_MASTER}.dup ${GEONAME_MASTER}
-cut -d'^' -f 1-4 ${ORI_BEST_MASTER} > ${ORI_BEST_MASTER}.dup
-#echo "head -3 ${ORI_BEST_MASTER} ${ORI_BEST_MASTER}.dup"
-\mv -f ${ORI_BEST_MASTER}.dup ${ORI_BEST_MASTER}
+cut -d'^' -f 1-4 ${OPTD_BEST_MASTER} > ${OPTD_BEST_MASTER}.dup
+#echo "head -3 ${OPTD_BEST_MASTER} ${OPTD_BEST_MASTER}.dup"
+\mv -f ${OPTD_BEST_MASTER}.dup ${OPTD_BEST_MASTER}
 
 
 ##
@@ -364,8 +364,8 @@ cut -d'^' -f 1-4 ${ORI_BEST_MASTER} > ${ORI_BEST_MASTER}.dup
 # the duplicated lines may not be in the sorting order, due to the coordinates
 sort ${GEONAME_MASTER} > ${GEONAME_MASTER}.dup
 \mv -f ${GEONAME_MASTER}.dup ${GEONAME_MASTER}
-sort ${ORI_BEST_MASTER} > ${ORI_BEST_MASTER}.dup
-\mv -f ${ORI_BEST_MASTER}.dup ${ORI_BEST_MASTER}
+sort ${OPTD_BEST_MASTER} > ${OPTD_BEST_MASTER}.dup
+\mv -f ${OPTD_BEST_MASTER}.dup ${OPTD_BEST_MASTER}
 
 
 ##
@@ -374,27 +374,27 @@ sort ${ORI_BEST_MASTER} > ${ORI_BEST_MASTER}.dup
 # Reminder:
 #  * ${GEONAME_MASTER} (e.g., geo_combined_file.csv.tmp.geomst) has got all
 #    the entries of the Geonames dump file (./wpk_dump_from_geonames.csv)
-#  * ${ORI_BEST_MASTER} (e.g., geo_combined_file.csv.tmp.bstmst) has got all
-#    the entries of the ORI-maintained list of best known geographical
+#  * ${OPTD_BEST_MASTER} (e.g., geo_combined_file.csv.tmp.bstmst) has got all
+#    the entries of the OPTD-maintained list of best known geographical
 #    coordinates (optd_por_best_known_so_far.csv)
 #
-#echo "comm -12 ${GEONAME_MASTER} ${ORI_BEST_MASTER} | less"
-#echo "comm -23 ${GEONAME_MASTER} ${ORI_BEST_MASTER} | less"
-#echo "comm -13 ${GEONAME_MASTER} ${ORI_BEST_MASTER} | less"
-POR_NB_COMMON=`comm -12 ${GEONAME_MASTER} ${ORI_BEST_MASTER} | wc -l`
-POR_NB_FILE1=`comm -23 ${GEONAME_MASTER} ${ORI_BEST_MASTER} | wc -l`
-POR_NB_FILE2=`comm -13 ${GEONAME_MASTER} ${ORI_BEST_MASTER} | wc -l`
+#echo "comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
+#echo "comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
+#echo "comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
+POR_NB_COMMON=`comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | wc -l`
+POR_NB_FILE1=`comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | wc -l`
+POR_NB_FILE2=`comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | wc -l`
 echo
 echo "Reporting step"
 echo "--------------"
-echo "'${GEONAME_FILE}' and '${ORI_BEST_FILE}' have got ${POR_NB_COMMON} common lines."
-echo "'${GEONAME_FILE}' has got ${POR_NB_FILE1} POR, missing from '${ORI_BEST_FILE}'"
-echo "'${ORI_BEST_FILE}' has got ${POR_NB_FILE2} POR, missing from '${GEONAME_FILE}'"
+echo "'${GEONAME_FILE}' and '${OPTD_BEST_FILE}' have got ${POR_NB_COMMON} common lines."
+echo "'${GEONAME_FILE}' has got ${POR_NB_FILE1} POR, missing from '${OPTD_BEST_FILE}'"
+echo "'${OPTD_BEST_FILE}' has got ${POR_NB_FILE2} POR, missing from '${GEONAME_FILE}'"
 echo
 
 if [ ${POR_NB_FILE2} -gt 0 ]
 then
-	comm -13 ${GEONAME_MASTER} ${ORI_BEST_MASTER} > ${GEONAME_FILE_MISSING}
+	comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${GEONAME_FILE_MISSING}
 	POR_MISSING_GEONAMES_NB=`wc -l ${GEONAME_FILE_MISSING} | cut -d' ' -f1`
 	echo
 	echo "Suggestion step"
@@ -408,14 +408,14 @@ fi
 
 if [ ${POR_NB_FILE1} -gt 0 ]
 then
-	comm -23 ${GEONAME_MASTER} ${ORI_BEST_MASTER} > ${ORI_BEST_FILE_MISSING}
-	POR_MISSING_BEST_NB=`wc -l ${ORI_BEST_FILE_MISSING} | cut -d' ' -f1`
+	comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${OPTD_BEST_FILE_MISSING}
+	POR_MISSING_BEST_NB=`wc -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f1`
 	echo
 	echo "Suggestion step"
 	echo "---------------"
-	echo "${POR_MISSING_BEST_NB} points of reference (POR) are missing from the file of best coordinates ('${ORI_BEST_FILE}' => '${ORI_BEST_WITH_NOHD}')."
-	echo "To incorporate the missing POR into '${ORI_BEST_FILE}', just do:"
-	echo "cat ${ORI_BEST_WITH_NOHD} ${ORI_BEST_FILE_MISSING} | sort -t'^' -k1,1 > ${ORI_BEST_FILE}.tmp && \mv -f ${ORI_BEST_FILE}.tmp ${ORI_BEST_FILE} && \rm -f ${ORI_BEST_FILE_MISSING}"
+	echo "${POR_MISSING_BEST_NB} points of reference (POR) are missing from the file of best coordinates ('${OPTD_BEST_FILE}' => '${OPTD_BEST_WITH_NOHD}')."
+	echo "To incorporate the missing POR into '${OPTD_BEST_FILE}', just do:"
+	echo "cat ${OPTD_BEST_WITH_NOHD} ${OPTD_BEST_FILE_MISSING} | sort -t'^' -k1,1 > ${OPTD_BEST_FILE}.tmp && \mv -f ${OPTD_BEST_FILE}.tmp ${OPTD_BEST_FILE} && \rm -f ${OPTD_BEST_FILE_MISSING}"
 	echo
 fi
 
@@ -425,7 +425,7 @@ fi
 # It generates a data file (${POR_MAIN_DIFF}, e.g., optd_por_diff_w_geonames.csv)
 # containing the greatest distances (in km), for each airport/city, between
 # both sets of coordinates (Geonames and best known ones).
-${COMPARE_EXEC} ${GEONAME_FILE_SORTED_CUT} ${ORI_BEST_WITH_NOHD} \
+${COMPARE_EXEC} ${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} \
 	${AIRPORT_PR_FILE} ${COMP_MIN_DIST}
 # ${AIRPORT_PR_SORTED_CUT}
 
@@ -436,7 +436,7 @@ ${COMPARE_EXEC} ${GEONAME_FILE_SORTED_CUT} ${ORI_BEST_WITH_NOHD} \
 if [ "${TMP_DIR}" != "/tmp/por/" ]
 then
 	\rm -f ${JOINED_COORD} ${JOINED_COORD_FULL}
-	\rm -f ${ORI_BEST_FILE_HEADER} ${ORI_BEST_WITH_NOHD}
-	\rm -f ${GEONAME_MASTER} ${ORI_BEST_MASTER}
+	\rm -f ${OPTD_BEST_FILE_HEADER} ${OPTD_BEST_WITH_NOHD}
+	\rm -f ${GEONAME_MASTER} ${OPTD_BEST_MASTER}
 	\rm -f ${GEONAME_FILE_SORTED} ${GEONAME_FILE_SORTED_CUT}
 fi

@@ -1,7 +1,7 @@
 ##
 # That AWK script derives the list of active POR (point of reference) entries
-# for any given date, from the ORI-maintained data file of POR
-# (i.e., ../ORI/optd_por_public.csv).
+# for any given date, from the OPTD-maintained data file of POR
+# (i.e., ../opentraveldata/optd_por_public.csv).
 #
 
 ##
@@ -11,46 +11,46 @@
 ##
 #
 BEGIN {
-	# Global variables
-	error_stream = "/dev/stderr"
-	awk_file = "extract_por_for_a_date.awk"
+    # Global variables
+    error_stream = "/dev/stderr"
+    awk_file = "extract_por_for_a_date.awk"
 
-	# Fields
-	K_POR_CDE = 1
-	K_POR_GID = 5
-	K_NME_UTF = 7
-	K_NME_ASC = 8
-	K_SVD_CTY_LST = 37
-	K_CTY_UTF_LST = 38
-	K_CTY_ASC_LST = 39
-	K_TVL_LST = 40
-	K_LOC_TYP = 42
+    # Fields
+    K_POR_CDE = 1
+    K_POR_GID = 5
+    K_NME_UTF = 7
+    K_NME_ASC = 8
+    K_SVD_CTY_LST = 37
+    K_CTY_UTF_LST = 38
+    K_CTY_ASC_LST = 39
+    K_TVL_LST = 40
+    K_LOC_TYP = 42
 
-	# Separators
-	K_1ST_SEP = "^"
-	K_2ND_SEP = "="
-	K_3RD_SEP = "|"
+    # Separators
+    K_1ST_SEP = "^"
+    K_2ND_SEP = "="
+    K_3RD_SEP = "|"
 
-	# Header
-	hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
-	hdr_line = hdr_line "^name^asciiname^latitude^longitude"
-	hdr_line = hdr_line "^fclass^fcode^page_rank^date_from^date_until^comment"
-	hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
-	hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
-	hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
-	hdr_line = hdr_line "^adm3_code^adm4_code"
-	hdr_line = hdr_line "^population^elevation^gtopo30"
-	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
-	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list"
-	hdr_line = hdr_line	"^tvl_por_list"
-	hdr_line = hdr_line	"^state_code^location_type"
-	hdr_line = hdr_line "^wiki_link^alt_name_section"
+    # Header
+    hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
+    hdr_line = hdr_line "^name^asciiname^latitude^longitude"
+    hdr_line = hdr_line "^fclass^fcode^page_rank^date_from^date_until^comment"
+    hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
+    hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
+    hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
+    hdr_line = hdr_line "^adm3_code^adm4_code"
+    hdr_line = hdr_line "^population^elevation^gtopo30"
+    hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
+    hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list"
+    hdr_line = hdr_line	"^tvl_por_list"
+    hdr_line = hdr_line	"^state_code^location_type"
+    hdr_line = hdr_line "^wiki_link^alt_name_section"
 
-	print (hdr_line)
+    print (hdr_line)
 }
 
 ##
-# ORI-maintained list of POR
+# OPTD-maintained list of POR
 #
 # Sample input and output lines:
 # iata_code^icao_code^faa_code^is_geonames^geoname_id^valid_id^name^asciiname^latitude^longitude^fclass^fcode^page_rank^date_from^date_until^comment^country_code^cc2^country_name^continent_name^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3_code^adm4_code^population^elevation^gtopo30^timezone^gmt_offset^dst_offset^raw_offset^moddate^city_code^city_name_utf^city_name_ascii^tvl_por_list^state_code^location_type^wiki_link^alt_name_section
@@ -62,34 +62,34 @@ BEGIN {
 # RDU^KRDU^^Y^4487056^^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^S^AIRP^0.0818187017848^^^^US^^United States^North America^NC^North Carolina^North Carolina^183^Wake County^Wake County^^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2011-12-11^RDU|C|4464368=RDU|C|4487042^Durham=Raleigh^Durham=Raleigh^^NC^A^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^
 #
 /^([A-Z0-9]{3})\^([A-Z0-9]{0,4})\^([A-Z0-9]{0,4})\^/{
-	# IATA code of the point of reference (POR) itself
-	iata_code = $K_POR_CDE
+    # IATA code of the point of reference (POR) itself
+    iata_code = $K_POR_CDE
 
-	# Geonames ID
-	geoname_id = $K_POR_GID
+    # Geonames ID
+    geoname_id = $K_POR_GID
 
-	# IATA location type
-	location_type = $K_LOC_TYP
+    # IATA location type
+    location_type = $K_LOC_TYP
 
-	# UTF8 name of the POR itself
-	name_utf = $K_NME_UTF
+    # UTF8 name of the POR itself
+    name_utf = $K_NME_UTF
 
-	# ASCII name of the POR itself
-	name_ascii = $K_NME_ASC
+    # ASCII name of the POR itself
+    name_ascii = $K_NME_ASC
 
-	# Served city IATA code
-	served_city_code_list = $K_SVD_CTY_LST
+    # Served city IATA code
+    served_city_code_list = $K_SVD_CTY_LST
 
-	# IATA code of the city served by that POR
-	city_iata_code_list = $K_SVD_CTY_LST
+    # IATA code of the city served by that POR
+    city_iata_code_list = $K_SVD_CTY_LST
 
-	# DEBUG
-	print $0
+    # DEBUG
+    print $0
 }
 
 #
 ENDFILE {
-	# DEBUG
-	#displayLists()
+    # DEBUG
+    #displayLists()
 }
 

@@ -1,7 +1,7 @@
 ##
 # That AWK script detects when a same Geoname ID appears for several
 # distinct POR, just for information (no further action is performed).
-# It takes as input the ../ORI/optd_por_best_known_so_far.csv file.
+# It takes as input the ../opentraveldata/optd_por_best_known_so_far.csv file.
 # Examples:
 #  * Geonames ID=3451668: REZ and QRZ
 #  ** QRZ-O-3451668^QRZ^-22.46889^-44.44667^QRZ^
@@ -75,7 +75,7 @@ BEGINFILE {
 	# IATA code
 	iata_code = $2
 
-	# Geographical coordinates from the ORI-maintained POR file
+	# Geographical coordinates from the OPTD-maintained POR file
 	optd_lat = $3
 	optd_lon = $4
 

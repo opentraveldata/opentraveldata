@@ -34,9 +34,9 @@ displayGeonamesDetails() {
 	echo "It produces both a por_all_iata_YYYYMMDD.csv and a por_all_noicao_YYYYMMDD.csv files,"
 	echo "which have to be aggregated into the dump_from_geonames.csv file."
 	echo "${OPTDDIR}/tools/preprepare_geonames_dump_file.sh"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_popularity.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
 	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo
@@ -93,8 +93,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directory
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directory
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##

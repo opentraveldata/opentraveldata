@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Create the public version of the ORI-maintained list of POR, from:
+# Create the public version of the OPTD-maintained list of POR, from:
 # - optd_por_best_known_so_far.csv
 # - optd_por_no_longer_valid.csv
 # - ref_airport_pageranked.csv
@@ -63,8 +63,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -73,24 +73,24 @@ LOG_LEVEL=3
 
 ##
 # File of best known coordinates
-ORI_POR_FILENAME=optd_por_best_known_so_far.csv
-ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
+OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 # File of no longer valid IATA entries
-ORI_NOIATA_FILENAME=optd_por_no_longer_valid.csv
-ORI_NOIATA_FILE=${ORI_DIR}${ORI_NOIATA_FILENAME}
+OPTD_NOIATA_FILENAME=optd_por_no_longer_valid.csv
+OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
 
 ##
 # Light (and inaccurate) version of the country-related time-zones
-ORI_TZ_FILENAME=optd_tz_light.csv
-ORI_TZ_FILE=${ORI_DIR}${ORI_TZ_FILENAME}
+OPTD_TZ_FILENAME=optd_tz_light.csv
+OPTD_TZ_FILE=${DATA_DIR}${OPTD_TZ_FILENAME}
 # Mapping between the Countries and their corresponding continent
-ORI_CNT_FILENAME=optd_cont.csv
-ORI_CNT_FILE=${ORI_DIR}${ORI_CNT_FILENAME}
+OPTD_CNT_FILENAME=optd_cont.csv
+OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
 
 ##
 # PageRank values
-ORI_PR_FILENAME=ref_airport_pageranked.csv
-ORI_PR_FILE=${ORI_DIR}${ORI_PR_FILENAME}
+OPTD_PR_FILENAME=ref_airport_pageranked.csv
+OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
 
 ##
 # Geonames (to be found, as temporary files, within the ../tools directory)
@@ -134,25 +134,25 @@ INNO_RAW_FILE=${TOOLS_DIR}${INNO_RAW_FILENAME}
 
 ##
 # Target (generated files)
-ORI_POR_PUBLIC_FILENAME=optd_por_public.csv
-ORI_ONLY_POR_FILENAME=optd_only_por.csv
-ORI_ONLY_POR_NEW_FILE=${ORI_ONLY_POR_FILE}.new
+OPTD_POR_PUBLIC_FILENAME=optd_por_public.csv
+OPTD_ONLY_POR_FILENAME=optd_only_por.csv
+OPTD_ONLY_POR_NEW_FILE=${OPTD_ONLY_POR_FILE}.new
 #
-ORI_POR_PUBLIC_FILE=${ORI_DIR}${ORI_POR_PUBLIC_FILENAME}
-ORI_ONLY_POR_FILE=${ORI_DIR}${ORI_ONLY_POR_FILENAME}
+OPTD_POR_PUBLIC_FILE=${DATA_DIR}${OPTD_POR_PUBLIC_FILENAME}
+OPTD_ONLY_POR_FILE=${DATA_DIR}${OPTD_ONLY_POR_FILENAME}
 
 ##
 # Temporary
-ORI_POR_WITH_NOHD=${ORI_POR_FILE}.wohd
-ORI_NOIATA_WITH_NOHD=${ORI_NOIATA_FILE}.wohd
-ORI_POR_WITH_GEO=${ORI_POR_FILE}.withgeo
-ORI_POR_WITH_GEORFD=${ORI_POR_FILE}.withgeorfd
-ORI_POR_WITH_GEORFDALT=${ORI_POR_FILE}.withgeorfdalt
-ORI_POR_WITH_NO_CTY_NAME=${ORI_POR_FILE}.withnoctyname
-ORI_POR_PUBLIC_WO_NOIATA_FILE=${ORI_POR_FILE}.wonoiata
-ORI_POR_PUBLIC_WO_NOIATA_WITH_NOHD=${ORI_POR_FILE}.wonoiata.wohd
-ORI_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD=${ORI_POR_FILE}.wnoiata.wohd
-ORI_POR_PUBLIC_W_NOIATA_UNSORTED_FILE=${ORI_POR_FILE}.wnoiata.unsorted
+OPTD_POR_WITH_NOHD=${OPTD_POR_FILE}.wohd
+OPTD_NOIATA_WITH_NOHD=${OPTD_NOIATA_FILE}.wohd
+OPTD_POR_WITH_GEO=${OPTD_POR_FILE}.withgeo
+OPTD_POR_WITH_GEORFD=${OPTD_POR_FILE}.withgeorfd
+OPTD_POR_WITH_GEORFDALT=${OPTD_POR_FILE}.withgeorfdalt
+OPTD_POR_WITH_NO_CTY_NAME=${OPTD_POR_FILE}.withnoctyname
+OPTD_POR_PUBLIC_WO_NOIATA_FILE=${OPTD_POR_FILE}.wonoiata
+OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD=${OPTD_POR_FILE}.wonoiata.wohd
+OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD=${OPTD_POR_FILE}.wnoiata.wohd
+OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE=${OPTD_POR_FILE}.wnoiata.unsorted
 GEONAME_RAW_FILE_TMP=${GEONAME_RAW_FILE}.alt
 
 
@@ -190,25 +190,25 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
-	echo "That script generates the public version of the ORI-maintained list of POR (points of reference)"
+	echo "That script generates the public version of the OPTD-maintained list of POR (points of reference)"
 	echo
 	echo "Usage: $0 [<log level (0: quiet; 5: verbose)>]"
 	echo " - Default log level (from 0 to 5): ${LOG_LEVEL}"
 	echo
 	echo "* Input data files"
 	echo "------------------"
-	echo " - ORI-maintained file of best known coordinates: '${ORI_POR_FILE}'"
-	echo " - ORI-maintained file of non longer valid IATA POR: '${ORI_NOIATA_FILE}'"
-	echo " - ORI-maintained file of PageRanked POR: '${ORI_PR_FILE}'"
-	echo " - ORI-maintained file of country-related time-zones: '${ORI_TZ_FILE}'"
-	echo " - ORI-maintained file of country-continent mapping: '${ORI_CNT_FILE}'"
+	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
+	echo " - OPTD-maintained file of non longer valid IATA POR: '${OPTD_NOIATA_FILE}'"
+	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
+	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_FILE}'"
+	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
 	echo " - RFD data dump file: '${RFD_RAW_FILE}'"
 	echo " - Geonames data dump file: '${GEONAME_RAW_FILE}'"
 	echo
 	echo "* Output data file"
 	echo "------------------"
-	echo " - ORI-maintained public file of POR: '${ORI_POR_PUBLIC_FILE}'"
-	echo " - ORI-maintained list of non-IATA/outlier POR: '${ORI_ONLY_POR_FILE}'"
+	echo " - OPTD-maintained public file of POR: '${OPTD_POR_PUBLIC_FILE}'"
+	echo " - OPTD-maintained list of non-IATA/outlier POR: '${OPTD_ONLY_POR_FILE}'"
 	echo
 	exit
 fi
@@ -219,18 +219,18 @@ fi
 #
 if [ "$1" = "--clean" ]
 then
-	\rm -f ${ORI_POR_WITH_GEO} ${ORI_ONLY_POR_NEW_FILE} \
-		${ORI_POR_WITH_GEORFD} ${ORI_POR_WITH_GEORFDALT} \
-		${ORI_POR_PUBLIC_WO_NOIATA_FILE} \
-		${ORI_POR_PUBLIC_WO_NOIATA_WITH_NOHD} \
-		${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
-		${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
-		${ORI_NOIATA_WITH_NOHD} \
-		${ORI_POR_WITH_NO_CTY_NAME} ${ORI_POR_FILE_HEADER} ${ORI_POR_WITH_NOHD} \
+	\rm -f ${OPTD_POR_WITH_GEO} ${OPTD_ONLY_POR_NEW_FILE} \
+		${OPTD_POR_WITH_GEORFD} ${OPTD_POR_WITH_GEORFDALT} \
+		${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
+		${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} \
+		${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
+		${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
+		${OPTD_NOIATA_WITH_NOHD} \
+		${OPTD_POR_WITH_NO_CTY_NAME} ${OPTD_POR_FILE_HEADER} ${OPTD_POR_WITH_NOHD} \
 		${GEONAME_WPK_FILE} ${GEONAME_RAW_FILE_TMP} \
 		${GEONAME_SORTED_FILE} ${GEONAME_CUT_SORTED_FILE} \
 		${RFD_SORTED_FILE} ${RFD_CUT_SORTED_FILE} \
-		${ORI_ONLY_POR_NEW_FILE}
+		${OPTD_ONLY_POR_NEW_FILE}
 
 	bash prepare_geonames_dump_file.sh --clean || exit -1
 	bash prepare_rfd_dump_file.sh --clean || exit -1
@@ -276,29 +276,29 @@ cut -d'^' -f1-33 ${GEONAME_SORTED_FILE} > ${GEONAME_CUT_SORTED_FILE}
 
 ##
 # Remove the header
-sed -e "s/^pk\(.\+\)//g" ${ORI_POR_FILE} > ${ORI_POR_WITH_NOHD}
-sed -i -e "/^$/d" ${ORI_POR_WITH_NOHD}
+sed -e "s/^pk\(.\+\)//g" ${OPTD_POR_FILE} > ${OPTD_POR_WITH_NOHD}
+sed -i -e "/^$/d" ${OPTD_POR_WITH_NOHD}
 
 ##
 # Aggregate all the data sources into a single file
 #
-# ${ORI_POR_FILE} (optd_por_best_known_so_far.csv) and
+# ${OPTD_POR_FILE} (optd_por_best_known_so_far.csv) and
 # ${GEONAME_CUT_SORTED_FILE} (../tools/cut_sorted_wpk_dump_from_geonames.csv)
 # are joined on the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${ORI_POR_WITH_NOHD} ${GEONAME_CUT_SORTED_FILE} \
-	> ${ORI_POR_WITH_GEO}
+join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_NOHD} ${GEONAME_CUT_SORTED_FILE} \
+	> ${OPTD_POR_WITH_GEO}
 
-# ${ORI_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
+# ${OPTD_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
 # ${GEONAME_CUT_SORTED_FILE} (sorted_wpk_dump_from_crb_city.csv) are joined on
 # the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${ORI_POR_WITH_GEO} ${RFD_SORTED_FILE} \
-	> ${ORI_POR_WITH_GEORFD}
+join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${RFD_SORTED_FILE} \
+	> ${OPTD_POR_WITH_GEORFD}
 
-# ${ORI_POR_WITH_GEORFD} (optd_por_best_known_so_far.csv.withgeorfd) and
+# ${OPTD_POR_WITH_GEORFD} (optd_por_best_known_so_far.csv.withgeorfd) and
 # ${GEONAME_RAW_FILE_TMP} (../tools/dump_from_geonames.csv.alt) are joined on
 # the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${ORI_POR_WITH_GEORFD} ${GEONAME_RAW_FILE_TMP} \
-	> ${ORI_POR_WITH_GEORFDALT}
+join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEORFD} ${GEONAME_RAW_FILE_TMP} \
+	> ${OPTD_POR_WITH_GEORFDALT}
 
 ##
 # Re-format the aggregated entries. See ${REDUCER} for more details and samples.
@@ -307,9 +307,9 @@ echo "Aggregation Step"
 echo "----------------"
 echo
 REDUCER=make_optd_por_public.awk
-time awk -F'^' -v non_optd_por_file="${ORI_ONLY_POR_FILE}" -f ${REDUCER} \
-	${ORI_PR_FILE} ${ORI_TZ_FILE} ${ORI_CNT_FILE} ${ORI_POR_WITH_GEORFDALT} \
-	> ${ORI_POR_WITH_NO_CTY_NAME}
+time awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
+	${OPTD_PR_FILE} ${OPTD_TZ_FILE} ${OPTD_CNT_FILE} ${OPTD_POR_WITH_GEORFDALT} \
+	> ${OPTD_POR_WITH_NO_CTY_NAME}
 
 ##
 # Write the UTF8 and ASCII names of the city served by every travel-related
@@ -320,22 +320,22 @@ echo "------------------"
 echo
 CITY_WRITER=add_city_name.awk
 time awk -F'^' -f ${CITY_WRITER} \
-	${ORI_POR_WITH_NO_CTY_NAME} ${ORI_POR_WITH_NO_CTY_NAME} \
-	> ${ORI_POR_PUBLIC_WO_NOIATA_FILE}
+	${OPTD_POR_WITH_NO_CTY_NAME} ${OPTD_POR_WITH_NO_CTY_NAME} \
+	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}
 
 ##
 # Extract the header into temporary files
-ORI_POR_FILE_HEADER=${ORI_POR_FILE}.tmp.hdr
-grep "^iata_code\(.\+\)" ${ORI_POR_PUBLIC_WO_NOIATA_FILE} \
-	> ${ORI_POR_FILE_HEADER}
+OPTD_POR_FILE_HEADER=${OPTD_POR_FILE}.tmp.hdr
+grep "^iata_code\(.\+\)" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
+	> ${OPTD_POR_FILE_HEADER}
 
 # Remove the headers
-sed -e "s/^iata_code\(.\+\)//g" ${ORI_POR_PUBLIC_WO_NOIATA_FILE} \
-	> ${ORI_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
-sed -i -e "/^$/d" ${ORI_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
+sed -e "s/^iata_code\(.\+\)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
+	> ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
+sed -i -e "/^$/d" ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
 
-sed -e "s/^iata_code\(.\+\)//g" ${ORI_NOIATA_FILE} > ${ORI_NOIATA_WITH_NOHD}
-sed -i -e "/^$/d" ${ORI_NOIATA_WITH_NOHD}
+sed -e "s/^iata_code\(.\+\)//g" ${OPTD_NOIATA_FILE} > ${OPTD_NOIATA_WITH_NOHD}
+sed -i -e "/^$/d" ${OPTD_NOIATA_WITH_NOHD}
 
 
 ##
@@ -346,8 +346,8 @@ echo "-------------------------"
 echo
 NOIATA_ADDER=add_noiata_por.awk
 time awk -F'^' -f ${NOIATA_ADDER} \
-	${ORI_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${ORI_NOIATA_WITH_NOHD} \
-	> ${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD}
+	${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_NOIATA_WITH_NOHD} \
+	> ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD}
 
 ##
 # Sort the final file
@@ -356,15 +356,15 @@ echo "Sorting Step"
 echo "------------"
 echo
 # Sort on the IATA code, feature code and Geonames ID, in that order
-time sort -t'^' -k1,1 -k42,42 -k5,5 ${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
-	> ${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_FILE}
-cat ${ORI_POR_FILE_HEADER} ${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
-	> ${ORI_POR_PUBLIC_FILE}
+time sort -t'^' -k1,1 -k42,42 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
+	> ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE}
+cat ${OPTD_POR_FILE_HEADER} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
+	> ${OPTD_POR_PUBLIC_FILE}
 
 
 ##
 # Remove the header
-\rm -f ${ORI_POR_FILE_HEADER}
+\rm -f ${OPTD_POR_FILE_HEADER}
 
 ##
 # Reporting
@@ -373,12 +373,12 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "wc -l ${ORI_POR_FILE} ${ORI_POR_PUBLIC_FILE} ${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} ${ORI_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} ${ORI_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${ORI_POR_PUBLIC_WO_NOIATA_FILE} ${ORI_POR_WITH_GEO} ${ORI_POR_WITH_GEORFD} ${ORI_POR_WITH_GEORFDALT} ${ORI_POR_WITH_NO_CTY_NAME}"
-if [ -f ${ORI_ONLY_POR_NEW_FILE} ]
+echo "wc -l ${OPTD_POR_FILE} ${OPTD_POR_PUBLIC_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_WITH_GEO} ${OPTD_POR_WITH_GEORFD} ${OPTD_POR_WITH_GEORFDALT} ${OPTD_POR_WITH_NO_CTY_NAME}"
+if [ -f ${OPTD_ONLY_POR_NEW_FILE} ]
 then
-	NB_LINES_ORI_ONLY=`wc -l ${ORI_ONLY_POR_NEW_FILE}`
+	NB_LINES_OPTD_ONLY=`wc -l ${OPTD_ONLY_POR_NEW_FILE}`
 	echo
-	echo "See also the '${ORI_ONLY_POR_NEW_FILE}' file, which contains ${NB_LINES_ORI_ONLY} lines:"
-	echo "less ${ORI_ONLY_POR_NEW_FILE}"
+	echo "See also the '${OPTD_ONLY_POR_NEW_FILE}' file, which contains ${NB_LINES_OPTD_ONLY} lines:"
+	echo "less ${OPTD_ONLY_POR_NEW_FILE}"
 fi
 echo

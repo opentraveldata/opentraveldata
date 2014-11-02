@@ -41,9 +41,9 @@ fi
 LOG_LEVEL=4
 
 ##
-# ORI path
+# Data path
 OPTD_DIR=${EXEC_PATH}../
-ORI_DIR=${OPTD_DIR}ORI/
+DATA_DIR=${OPTD_DIR}opentraveldata/
 
 ##
 # Geo data files
@@ -62,7 +62,7 @@ COMP_MIN_DIST=10
 GEO_FILE_1=${TMP_DIR}${GEO_FILE_1_FILENAME}
 GEO_FILE_2=${TMP_DIR}${GEO_FILE_2_FILENAME}
 #AIRPORT_PR_FILE=${TMP_DIR}${AIRPORT_PR_FILENAME}
-AIRPORT_PR_FILE=${ORI_DIR}${AIRPORT_PR_FILENAME}
+AIRPORT_PR_FILE=${DATA_DIR}${AIRPORT_PR_FILENAME}
 # Comparison files
 COMP_FILE_COORD=${TMP_DIR}${COMP_FILE_COORD_FILENAME}
 COMP_FILE_DIST=${TMP_DIR}${COMP_FILE_DIST_FILENAME}
@@ -236,8 +236,8 @@ then
 	echo "To see the ${POR_MAIN_DIFF_NB} main differences (greater than ${COMP_MIN_DIST} kms), over ${POR_ALL_DIFF_NB} differences in all,"
 	echo "between the Geonames coordinates ('${GEO_FILE_1}') and the best known ones ('${GEO_FILE_2}'),"
 	echo "sorted by distance (in km), just do: less ${POR_MAIN_DIFF}"
-	echo "After examining the file, you can copy it into the ORI/ sub-directory:"
-	echo "\cp ${POR_MAIN_DIFF} ${ORI_DIR}"
+	echo "After examining the file, you can copy it into the opentraveldata/ sub-directory:"
+	echo "\cp ${POR_MAIN_DIFF} ${DATA_DIR}"
 	echo
 else
 	echo

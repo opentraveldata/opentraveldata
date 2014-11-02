@@ -69,8 +69,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -79,7 +79,7 @@ LOG_LEVEL=3
 
 ##
 # Schedule-derived data files
-POR_SKD_DIR=${ORI_DIR}por_in_schedule/
+POR_SKD_DIR=${DATA_DIR}por_in_schedule/
 
 ##
 # Snapshot date

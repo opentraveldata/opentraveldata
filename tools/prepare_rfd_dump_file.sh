@@ -34,9 +34,9 @@ displayGeonamesDetails() {
 	echo "It produces both a por_all_iata_YYYYMMDD.csv and a por_all_noicao_YYYYMMDD.csv files,"
 	echo "which have to be aggregated into the dump_from_geonames.csv file."
 	echo "${OPTDDIR}/tools/preprepare_geonames_dump_file.sh"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_popularity.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
 	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo
@@ -72,9 +72,9 @@ displayRfdDetails() {
 	echo "# The MySQL CRB_CITY table has then to be exported into a CSV file."
 	echo "\${DARFD}/por/extract_por_rfd_crb_city.sh rfd rfd_rfd localhost"
 	echo "\cp -f ${TMP_DIR}por_all_rfd_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_crb_city.csv"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_pageranked.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por.csv ${TMP_DIR}optd_airports.csv"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_pageranked.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por.csv ${TMP_DIR}optd_airports.csv"
 	echo "\${DARFD}/update_airports_csv_after_getting_crb_city_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo "#####################"
@@ -85,7 +85,7 @@ displayRfdDetails() {
 # Input file names
 AIR_RFD_FILENAME=dump_from_crb_airline.csv
 GEO_RFD_FILENAME=dump_from_crb_city.csv
-GEO_ORI_FILENAME=optd_por_best_known_so_far.csv
+GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##
 # Temporary path
@@ -138,8 +138,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directory
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directory
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 RFD_DIR=${TOOLS_DIR}
 
@@ -151,7 +151,7 @@ LOG_LEVEL=4
 # Input files
 AIR_RFD_FILE=${TOOLS_DIR}${AIR_RFD_FILENAME}
 GEO_RFD_FILE=${TOOLS_DIR}${GEO_RFD_FILENAME}
-GEO_ORI_FILE=${ORI_DIR}${GEO_ORI_FILENAME}
+GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 
 ##
 # Amadeus RFD
@@ -190,7 +190,7 @@ then
 	echo
 	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Amadeus RFD directory for data dump files> [<log level>]]]"
 	echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
-	echo "  - Default path for the ORI-maintained file of best known coordinates: '${GEO_ORI_FILE}'"
+	echo "  - Default path for the OPTD-maintained file of best known coordinates: '${GEO_OPTD_FILE}'"
 	echo "  - Default path for the Amadeus RFD data dump files: '${RFD_DIR}'"
 	echo "    + 'Airlines (CRB_AIRLINE): ${AIR_RFD_FILE}'"
 	echo "    + 'Airports/cities (CRB_CITY): ${GEO_RFD_FILE}'"
@@ -219,7 +219,7 @@ fi
 
 ##
 # The OpenTravelData refdata/ sub-directory contains, among other things,
-# the ORI-maintained list of POR file with geographical coordinates.
+# the OPTD-maintained list of POR file with geographical coordinates.
 if [ "$1" != "" ]
 then
 	if [ ! -d $1 ]
@@ -232,16 +232,16 @@ then
 	OPTD_DIR_DIR=`dirname $1`
 	OPTD_DIR_BASE=`basename $1`
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-	ORI_DIR=${OPTD_DIR}ORI/
+	DATA_DIR=${OPTD_DIR}opentraveldata/
 	TOOLS_DIR=${OPTD_DIR}tools/
 	RFD_DIR=${TOOLS_DIR}
-	GEO_ORI_FILE=${ORI_DIR}${GEO_ORI_FILENAME}
+	GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 fi
 
-if [ ! -f "${GEO_ORI_FILE}" ]
+if [ ! -f "${GEO_OPTD_FILE}" ]
 then
 	echo
-	echo "[$0:$LINENO] The '${GEO_ORI_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${GEO_OPTD_FILE}' file does not exist."
 	echo
 	if [ "$1" = "" ]
 	then
@@ -314,11 +314,11 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${RFD_CAPITILISER} ${GEO_RFD_FILE} \
 	> ${GEO_RFD_CAP_FILE}
 
 ##
-# Generate a second version of the geographical file with the ORI primary key
+# Generate a second version of the geographical file with the OPTD primary key
 # (integrating the location type)
-ORI_PK_ADDER=${TOOLS_DIR}rfd_pk_creator.awk
-awk -F'^' -v log_level=${LOG_LEVEL} -f ${ORI_PK_ADDER} \
-	${GEO_ORI_FILE} ${GEO_RFD_CAP_FILE} > ${GEO_RFD_WPK_FILE}
+OPTD_PK_ADDER=${TOOLS_DIR}rfd_pk_creator.awk
+awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
+	${GEO_OPTD_FILE} ${GEO_RFD_CAP_FILE} > ${GEO_RFD_WPK_FILE}
 #sort -t'^' -k1,1 ${GEO_RFD_WPK_FILE}
 
 ##

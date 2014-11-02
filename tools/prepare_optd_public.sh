@@ -6,8 +6,8 @@
 
 displayOriDetails() {
 	echo
-	echo "For this script ($0) to work properly, ORI-maintained data and tools need"
-	echo "to be available. The ORI-maintained data and tools can be obtained from"
+	echo "For this script ($0) to work properly, OPTD-maintained data and tools need"
+	echo "to be available. The OPTD-maintained data and tools can be obtained from"
 	echo "the OpenTravelData project (http://github.com/opentraveldata/optd)."
 	echo "The OPTDDIR environment variable needs to be set properly. For instance:"
 	echo "MYCURDIR=`pwd`"
@@ -20,7 +20,7 @@ displayOriDetails() {
 
 ##
 # Input file
-ORI_RAW_FILENAME=optd_por_public.csv
+OPTD_RAW_FILENAME=optd_por_public.csv
 
 ##
 # Temporary path
@@ -66,8 +66,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directory
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directory
+DATA_DIR=${OPTD_DIR}opentraveldata/
 
 ##
 # Log level
@@ -75,19 +75,19 @@ LOG_LEVEL=4
 
 ##
 #
-ORI_WPK_FILENAME=wpk_${ORI_RAW_FILENAME}
-SORTED_ORI_WPK_FILENAME=sorted_${ORI_WPK_FILENAME}
-SORTED_CUT_ORI_WPK_FILENAME=cut_sorted_${ORI_WPK_FILENAME}
+OPTD_WPK_FILENAME=wpk_${OPTD_RAW_FILENAME}
+SORTED_OPTD_WPK_FILENAME=sorted_${OPTD_WPK_FILENAME}
+SORTED_CUT_OPTD_WPK_FILENAME=cut_sorted_${OPTD_WPK_FILENAME}
 #
-ORI_RAW_FILE=${ORI_DIR}${ORI_RAW_FILENAME}
-ORI_WPK_FILE=${TMP_DIR}${ORI_WPK_FILENAME}
-SORTED_ORI_WPK_FILE=${SORTED_ORI_WPK_FILENAME}
-SORTED_CUT_ORI_WPK_FILE=${SORTED_CUT_ORI_WPK_FILENAME}
+OPTD_RAW_FILE=${DATA_DIR}${OPTD_RAW_FILENAME}
+OPTD_WPK_FILE=${TMP_DIR}${OPTD_WPK_FILENAME}
+SORTED_OPTD_WPK_FILE=${SORTED_OPTD_WPK_FILENAME}
+SORTED_CUT_OPTD_WPK_FILE=${SORTED_CUT_OPTD_WPK_FILENAME}
 
 ##
 # Temporary files
-ORI_WPK_FILE_TMP=${ORI_WPK_FILE}.tmp
-ORI_WPK_FILE_TMP2=${ORI_WPK_FILE}.tmp2
+OPTD_WPK_FILE_TMP=${OPTD_WPK_FILE}.tmp
+OPTD_WPK_FILE_TMP2=${OPTD_WPK_FILE}.tmp2
 
 
 ##
@@ -98,9 +98,9 @@ then
 	then
 		\rm -rf ${TMP_DIR}
 	else
-		\rm -f ${SORTED_ORI_WPK_FILE} ${SORTED_CUT_ORI_WPK_FILE}
-		\rm -f ${ORI_WPK_FILE_TMP} ${ORI_WPK_FILE_TMP2}
-		\rm -f ${ORI_WPK_FILE}
+		\rm -f ${SORTED_OPTD_WPK_FILE} ${SORTED_CUT_OPTD_WPK_FILE}
+		\rm -f ${OPTD_WPK_FILE_TMP} ${OPTD_WPK_FILE_TMP2}
+		\rm -f ${OPTD_WPK_FILE}
 	fi
 	exit
 fi
@@ -112,11 +112,11 @@ then
 	echo
 	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Log level>]]"
 	echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
-	echo "  - Default path for the ORI-maintained POR public file: '${ORI_RAW_FILE}'"
+	echo "  - Default path for the OPTD-maintained POR public file: '${OPTD_RAW_FILE}'"
 	echo "  - Default log level: ${LOG_LEVEL}"
 	echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
 	echo "  - Generated files:"
-	echo "    + '${ORI_WPK_FILE}'"
+	echo "    + '${OPTD_WPK_FILE}'"
 	echo
 	exit
 fi
@@ -129,7 +129,7 @@ fi
 
 ##
 # The OpenTravelData refdata/ sub-directory contains, among other things,
-# the ORI-maintained list of POR file with geographical coordinates.
+# the OPTD-maintained list of POR file with geographical coordinates.
 if [ "$1" != "" ]
 then
 	if [ ! -d $1 ]
@@ -142,19 +142,19 @@ then
 	OPTD_DIR_DIR=`dirname $1`
 	OPTD_DIR_BASE=`basename $1`
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-	ORI_DIR=${OPTD_DIR}ORI/
+	DATA_DIR=${OPTD_DIR}opentraveldata/
 	OPTD_EXEC_PATH=${OPTD_DIR}tools/
-	ORI_RAW_FILE=${ORI_DIR}${ORI_RAW_FILENAME}
+	OPTD_RAW_FILE=${DATA_DIR}${OPTD_RAW_FILENAME}
 fi
-ORI_WPK_FILE=${TMP_DIR}${ORI_WPK_FILENAME}
-SORTED_ORI_WPK_FILE=${TMP_DIR}${SORTED_ORI_WPK_FILENAME}
-SORTED_CUT_ORI_WPK_FILE=${TMP_DIR}${SORTED_CUT_ORI_WPK_FILENAME}
-ORI_WPK_FILE_TMP=${ORI_WPK_FILE}.tmp
-ORI_WPK_FILE_TMP2=${ORI_WPK_FILE}.tmp2
+OPTD_WPK_FILE=${TMP_DIR}${OPTD_WPK_FILENAME}
+SORTED_OPTD_WPK_FILE=${TMP_DIR}${SORTED_OPTD_WPK_FILENAME}
+SORTED_CUT_OPTD_WPK_FILE=${TMP_DIR}${SORTED_CUT_OPTD_WPK_FILENAME}
+OPTD_WPK_FILE_TMP=${OPTD_WPK_FILE}.tmp
+OPTD_WPK_FILE_TMP2=${OPTD_WPK_FILE}.tmp2
 
-if [ ! -f "${ORI_RAW_FILE}" ]
+if [ ! -f "${OPTD_RAW_FILE}" ]
 then
-	echo "[$0:$LINENO] The '${ORI_RAW_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${OPTD_RAW_FILE}' file does not exist."
 	if [ "$1" = "" ]
 	then
 		displayOriDetails
@@ -171,38 +171,38 @@ fi
 
 
 ##
-# Generate a second version of the file with the ORI primary key (integrating
+# Generate a second version of the file with the OPTD primary key (integrating
 # the location type)
-ORI_PK_ADDER=${EXEC_PATH}optd_pk_creator.awk
-\cp -f ${ORI_RAW_FILE} ${ORI_WPK_FILE_TMP}
+OPTD_PK_ADDER=${EXEC_PATH}optd_pk_creator.awk
+\cp -f ${OPTD_RAW_FILE} ${OPTD_WPK_FILE_TMP}
 awk -F'^' -v log_level=${LOG_LEVEL} \
-	-f ${ORI_PK_ADDER} ${ORI_WPK_FILE_TMP} > ${ORI_WPK_FILE}
-#sort -t'^' -k1,1 ${ORI_WPK_FILE}
-#echo "head -3 ${ORI_WPK_FILE_TMP} ${ORI_WPK_FILE}"
+	-f ${OPTD_PK_ADDER} ${OPTD_WPK_FILE_TMP} > ${OPTD_WPK_FILE}
+#sort -t'^' -k1,1 ${OPTD_WPK_FILE}
+#echo "head -3 ${OPTD_WPK_FILE_TMP} ${OPTD_WPK_FILE}"
 
 ##
 # First, remove the header (first line)
-sed -e "s/^pk\(.\+\)//g" ${ORI_WPK_FILE} > ${ORI_WPK_FILE_TMP2}
-sed -i -e "/^$/d" ${ORI_WPK_FILE_TMP2}
+sed -e "s/^pk\(.\+\)//g" ${OPTD_WPK_FILE} > ${OPTD_WPK_FILE_TMP2}
+sed -i -e "/^$/d" ${OPTD_WPK_FILE_TMP2}
 
 
 ##
-# That version of the ORI-maintained POR file is sorted according to the IATA
+# That version of the OPTD-maintained POR file is sorted according to the IATA
 # code; re-sort it according to the primary key (IATA code, location type and
 # Geonames ID).
-sort -t'^' -k1,1 ${ORI_WPK_FILE_TMP2} > ${SORTED_ORI_WPK_FILE}
+sort -t'^' -k1,1 ${OPTD_WPK_FILE_TMP2} > ${SORTED_OPTD_WPK_FILE}
 
 ##
 # Only four columns/fields are kept in that version of the file:
 # the primary key, airport/city IATA code and the geographical coordinates
 # (latitude, longitude).
-cut -d'^' -f 1,2,9,10 ${SORTED_ORI_WPK_FILE} > ${SORTED_CUT_ORI_WPK_FILE}
+cut -d'^' -f 1,2,9,10 ${SORTED_OPTD_WPK_FILE} > ${SORTED_CUT_OPTD_WPK_FILE}
 
 ##
 # Reporting
 echo
 echo "Preparation step"
 echo "----------------"
-echo "The '${ORI_WPK_FILE}', '${SORTED_ORI_WPK_FILE}' and '${SORTED_CUT_ORI_WPK_FILE}' files have been derived from '${ORI_RAW_FILE}'."
+echo "The '${OPTD_WPK_FILE}', '${SORTED_OPTD_WPK_FILE}' and '${SORTED_CUT_OPTD_WPK_FILE}' files have been derived from '${OPTD_RAW_FILE}'."
 echo
 

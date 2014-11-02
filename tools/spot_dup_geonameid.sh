@@ -42,8 +42,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -52,14 +52,14 @@ LOG_LEVEL=2
 
 ##
 # Initial
-ORI_POR_FILENAME=optd_por_best_known_so_far.csv
-ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
+OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 
 ##
 # Temporary
-ORI_POR_NEW_FILENAME=new_${ORI_POR_FILENAME}
+OPTD_POR_NEW_FILENAME=new_${OPTD_POR_FILENAME}
 #
-ORI_POR_NEW_FILE=${TMP_DIR}${ORI_POR_NEW_FILENAME}
+OPTD_POR_NEW_FILE=${TMP_DIR}${OPTD_POR_NEW_FILENAME}
 
 ##
 # Usage helper
@@ -74,7 +74,7 @@ then
 	echo
 	echo "* Input data file"
 	echo "-----------------"
-	echo " - ORI-maintained file of best known coordinates: '${ORI_POR_FILE}'"
+	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
 	echo
 	exit
 fi
@@ -82,7 +82,7 @@ fi
 ##
 # Extract and re-aggregate the Geoname ID
 SPOTTER=spot_dup_geonameid.awk
-awk -F'^' -f ${SPOTTER} ${ORI_POR_FILE}
+awk -F'^' -f ${SPOTTER} ${OPTD_POR_FILE}
 
 ##
 # Reporting

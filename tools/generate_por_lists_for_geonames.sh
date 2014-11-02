@@ -30,9 +30,9 @@ displayGeonamesDetails() {
 	echo "It produces both a por_all_iata_YYYYMMDD.csv and a por_all_noicao_YYYYMMDD.csv files,"
 	echo "which have to be aggregated into the dump_from_geonames.csv file."
 	echo "${OPTDDIR}/tools/preprepare_geonames_dump_file.sh"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_popularity.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
 	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo
@@ -68,9 +68,9 @@ displayRfdDetails() {
 	echo "# The MySQL CRB_CITY table has then to be exported into a CSV file."
 	echo "\${DARFD}/por/extract_por_rfd_crb_city.sh geo rfd_rfd"
 	echo "\cp -f ${TMP_DIR}por_all_rfd_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_crb_city.csv"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/ref_airport_popularity.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/ORI/optd_por.csv ${TMP_DIR}optd_airports.csv"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por.csv ${TMP_DIR}optd_airports.csv"
 	echo "\${DARFD}/update_airports_csv_after_getting_crb_city_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo "#####################"
@@ -80,9 +80,9 @@ displayRfdDetails() {
 ##
 # Input file names
 RFD_RAW_FILENAME=dump_from_crb_city.csv
-GEO_ORI_FILENAME=optd_por_best_known_so_far.csv
+GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 GEONAMES_FILENAME=dump_from_geonames.csv
-PR_ORI_FILENAME=ref_airport_pageranked.csv
+PR_OPTD_FILENAME=ref_airport_pageranked.csv
 FOR_GEONAMES_FILENAME=por_in_iata_but_missing_from_geonames.csv
 
 ##
@@ -136,8 +136,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directory
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directory
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -147,9 +147,9 @@ LOG_LEVEL=4
 ##
 # Input files
 RFD_RAW_FILE=${TOOLS_DIR}${RFD_RAW_FILENAME}
-GEO_ORI_FILE=${ORI_DIR}${GEO_ORI_FILENAME}
+GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 GEONAMES_FILE=${TMP_DIR}${GEONAMES_FILENAME}
-PR_ORI_FILE=${ORI_DIR}${PR_ORI_FILENAME}
+PR_OPTD_FILE=${DATA_DIR}${PR_OPTD_FILENAME}
 
 ##
 # Amadeus RFD
@@ -160,10 +160,10 @@ RFD_CAP_FILE=${TMP_DIR}${RFD_CAP_FILENAME}
 RFD_RAW_HEADER_FILE=${TMP_DIR}${RFD_RAW_HEADER_FILENAME}
 
 ##
-# ORI
-SORTED_PR_ORI_FILENAME=sorted_${PR_ORI_FILENAME}
+# OPTD
+SORTED_PR_OPTD_FILENAME=sorted_${PR_OPTD_FILENAME}
 #
-SORTED_PR_ORI_FILE=${TMP_DIR}${SORTED_PR_ORI_FILENAME}
+SORTED_PR_OPTD_FILE=${TMP_DIR}${SORTED_PR_OPTD_FILENAME}
 
 ##
 # Combination of Geonames and RFD
@@ -202,7 +202,7 @@ then
 	echo
 	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Amadeus RFD CRB_CITY data dump file> [<log level>]]]"
 	echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
-	echo "  - Default path for the ORI-maintained file of best known coordinates: '${GEO_ORI_FILE}'"
+	echo "  - Default path for the OPTD-maintained file of best known coordinates: '${GEO_OPTD_FILE}'"
 	echo "  - Default path for the Amadeus RFD CRB_CITY data dump file: '${RFD_RAW_FILE}'"
 	echo "  - Default log level: ${LOG_LEVEL}"
 	echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
@@ -227,7 +227,7 @@ fi
 
 ##
 # The OpenTravelData refdata/ sub-directory contains, among other things,
-# the ORI-maintained list of POR file with geographical coordinates.
+# the OPTD-maintained list of POR file with geographical coordinates.
 if [ "$1" != "" ]
 then
 	if [ ! -d $1 ]
@@ -240,15 +240,15 @@ then
 	OPTD_DIR_DIR=`dirname $1`
 	OPTD_DIR_BASE=`basename $1`
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-	ORI_DIR=${OPTD_DIR}ORI/
+	DATA_DIR=${OPTD_DIR}opentraveldata/
 	TOOLS_DIR=${OPTD_DIR}tools/
-	GEO_ORI_FILE=${ORI_DIR}${GEO_ORI_FILENAME}
+	GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 fi
 
-if [ ! -f "${GEO_ORI_FILE}" ]
+if [ ! -f "${GEO_OPTD_FILE}" ]
 then
 	echo
-	echo "[$0:$LINENO] The '${GEO_ORI_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${GEO_OPTD_FILE}' file does not exist."
 	echo
 	if [ "$1" = "" ]
 	then
@@ -350,8 +350,8 @@ NB_ROWS=`wc -l ${FOR_GEONAMES_FILE} | cut -d' ' -f1`
 
 ##
 # Generate a version with the PageRanked POR
-sort -t'^' -k1,1 ${PR_ORI_FILE} > ${SORTED_PR_ORI_FILE}
-join -t'^' -a 1 ${FOR_GEONAMES_FILE} ${SORTED_PR_ORI_FILE} > ${GEONAMES_FILE_TMP}
+sort -t'^' -k1,1 ${PR_OPTD_FILE} > ${SORTED_PR_OPTD_FILE}
+join -t'^' -a 1 ${FOR_GEONAMES_FILE} ${SORTED_PR_OPTD_FILE} > ${GEONAMES_FILE_TMP}
 awk -F'^' '{printf ($0); if (NF == 18) {print ("^0.01")} else {print ("")}}' \
 	${GEONAMES_FILE_TMP} > ${FOR_GEONAMES_PR_FILE}
 #echo "head -3 ${GEONAMES_FILE_TMP} ${FOR_GEONAMES_PR_FILE}"

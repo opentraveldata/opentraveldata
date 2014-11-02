@@ -1,10 +1,10 @@
 ##
-# That AWK script creates and adds a primary key for the ORI-maintained list
+# That AWK script creates and adds a primary key for the OPTD-maintained list
 # of POR (points of reference).
 # It uses the following input files:
 #  * Geonames dump data file:
 #      dump_from_geonames.csv
-#  * ORI-maintained list of best known coordinates:
+#  * OPTD-maintained list of best known coordinates:
 #      optd_por_best_known_so_far.csv
 #
 # The primary key is made of:
@@ -31,13 +31,13 @@
 #  * 'G' for ground station
 #  * 'O' for off-line point (usually small airports or railway stations)
 #
-# That script relies on the ORI-maintained list of POR (points of reference),
+# That script relies on the OPTD-maintained list of POR (points of reference),
 # provided by the OpenTravelData project (http://github.com/opentraveldata/optd).
 # Issue the 'bash prepare_optd_public.sh --ori' command to see more detailed
 # instructions.
 #
-# All the work has indeed already been done by ORI and integrated within the
-# ORI-maintained list of POR file, namely 'optd_por_public.csv'. Hence, the
+# All the work has indeed already been done by OPTD and integrated within the
+# OPTD-maintained list of POR file, namely 'optd_por_public.csv'. Hence, the
 # primary key is just the concatenation of the IATA code and location type.
 # No more work to do at that stage.
 #
@@ -45,7 +45,7 @@
 ##
 # Header
 /^iata_code/ {
-	print ("pk^" $0)
+    print ("pk^" $0)
 }
 
 ##
@@ -75,19 +75,19 @@
 
 #
 /^([A-Z]{3})\^([A-Z0-9]{0,4})\^([A-Z0-9]{0,4})\^([YN])/ {
-	# IATA code
-	iata_code = $1
+    # IATA code
+    iata_code = $1
 
-	# Location type
-	location_type = $42
+    # Location type
+    location_type = $42
 
-	# Geonames ID
-	geonames_id = $5
+    # Geonames ID
+    geonames_id = $5
 
-	# Primary key (IATA code - location type)
-	pk = iata_code "-" location_type "-" geonames_id
+    # Primary key (IATA code - location type)
+    pk = iata_code "-" location_type "-" geonames_id
 
-	#
-	print (pk "^" $0)
+    #
+    print (pk "^" $0)
 }
 

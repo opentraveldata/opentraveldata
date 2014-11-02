@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Derive the list of active POR (point of reference) entries
-# for any given date, from the ORI-maintained data file of POR:
-# ../ORI/optd_por_public.csv
+# for any given date, from the OPTD-maintained data file of POR:
+# ../opentraveldata/optd_por_public.csv
 #
 # => optd_por_public_YYYYMMDD.csv
 #
@@ -63,8 +63,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -72,15 +72,15 @@ TOOLS_DIR=${OPTD_DIR}tools/
 LOG_LEVEL=3
 
 ##
-# File of ORI-maintained POR (points of reference)
-ORI_POR_BASEFILENAME=optd_por_public
-ORI_POR_FILENAME=${ORI_POR_BASEFILENAME}.csv
-ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
+# File of OPTD-maintained POR (points of reference)
+OPTD_POR_BASEFILENAME=optd_por_public
+OPTD_POR_FILENAME=${OPTD_POR_BASEFILENAME}.csv
+OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 
 ##
 # Target (generated files)
-ORI_POR_TGT_FILENAME=${ORI_POR_BASEFILENAME}_${TARGET_DATE}.csv
-ORI_POR_TGT_FILE=${ORI_DIR}${ORI_POR_TGT_FILENAME}
+OPTD_POR_TGT_FILENAME=${OPTD_POR_BASEFILENAME}_${TARGET_DATE}.csv
+OPTD_POR_TGT_FILE=${DATA_DIR}${OPTD_POR_TGT_FILENAME}
 
 ##
 # Parse command-line options
@@ -89,7 +89,7 @@ then
 	echo
 	echo "Usage: $0 [<Target date>]"
 	echo "  - Target date: '${TARGET_DATE}' (${TARGET_DATE_HUMAN})"
-	echo "    + ${GEO_IATA_FILE} for the list of ORI-maintained POR at that date"
+	echo "    + ${GEO_IATA_FILE} for the list of OPTD-maintained POR at that date"
 	echo
 	exit -1
 fi
@@ -99,8 +99,8 @@ fi
 if [ "$1" != "" ];
 then
 	TARGET_DATE="$1"
-	ORI_POR_TGT_FILENAME=${ORI_POR_BASEFILENAME}_${TARGET_DATE}.csv
-	ORI_POR_TGT_FILE=${ORI_DIR}${ORI_POR_TGT_FILENAME}
+	OPTD_POR_TGT_FILENAME=${OPTD_POR_BASEFILENAME}_${TARGET_DATE}.csv
+	OPTD_POR_TGT_FILE=${DATA_DIR}${OPTD_POR_TGT_FILENAME}
 fi
 
 ##
@@ -118,7 +118,7 @@ echo "Extraction Step"
 echo "---------------"
 echo
 EXTRACTER=extract_por_for_a_date.awk
-time awk -F'^' -f ${EXTRACTER} ${ORI_POR_FILE} > ${ORI_POR_TGT_FILE}
+time awk -F'^' -f ${EXTRACTER} ${OPTD_POR_FILE} > ${OPTD_POR_TGT_FILE}
 
 ##
 # Reporting
@@ -127,5 +127,5 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "wc -l ${ORI_POR_FILE} ${ORI_POR_TGT_FILE}"
+echo "wc -l ${OPTD_POR_FILE} ${OPTD_POR_TGT_FILE}"
 echo

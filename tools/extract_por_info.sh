@@ -62,8 +62,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -72,16 +72,16 @@ LOG_LEVEL=3
 
 ##
 # File of best known coordinates
-ORI_POR_FILENAME=optd_por_best_known_so_far.csv
-ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
+OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 # File of no longer valid IATA entries
-ORI_NOIATA_FILENAME=optd_por_no_longer_valid.csv
-ORI_NOIATA_FILE=${ORI_DIR}${ORI_NOIATA_FILENAME}
+OPTD_NOIATA_FILENAME=optd_por_no_longer_valid.csv
+OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
 
 ##
 # PageRank values
-ORI_PR_FILENAME=ref_airport_pageranked.csv
-ORI_PR_FILE=${ORI_DIR}${ORI_PR_FILENAME}
+OPTD_PR_FILENAME=ref_airport_pageranked.csv
+OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
 
 ##
 # Geonames (to be found, as temporary files, within the ../tools directory)
@@ -103,7 +103,7 @@ INNO_RAW_FILE=${TOOLS_DIR}${INNO_RAW_FILENAME}
 
 ##
 # Schedule-derived data files
-POR_SKD_DIR=${ORI_DIR}por_in_schedule/
+POR_SKD_DIR=${DATA_DIR}por_in_schedule/
 
 ##
 # Snapshot date
@@ -134,5 +134,5 @@ then
 fi
 LATEST_DUMP_POR_SKD_CNT_FILE=${POR_SKD_DIR}${LATEST_DUMP_POR_SKD_CNT_FILENAME}
 
-echo "grep \"^BER\" ${ORI_POR_FILE} ${RFD_RAW_FILENAME} ${GEONAME_RAW_FILENAME} ${INNO_RAW_FILENAME} ${LATEST_DUMP_POR_SKD_CNT_FILE} ${ORI_PR_FILE}"
+echo "grep \"^XCG\" ${OPTD_POR_FILE} ${RFD_RAW_FILENAME} ${GEONAME_RAW_FILENAME} ${INNO_RAW_FILENAME} ${LATEST_DUMP_POR_SKD_CNT_FILE} ${OPTD_PR_FILE}"
 

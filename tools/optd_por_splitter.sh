@@ -7,7 +7,7 @@
 # into a city and an airport when Geonames knows about those two POR
 # individually:
 # they can therefore be distinguished. The input data files are:
-# - ../ORI/optd_por_best_known_so_far.csv
+# - ../OPTD/optd_por_best_known_so_far.csv
 # - dump_from_geonames.csv
 #
 # The generated file is:
@@ -51,8 +51,8 @@ OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
-# ORI sub-directories
-ORI_DIR=${OPTD_DIR}ORI/
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
@@ -61,8 +61,8 @@ LOG_LEVEL=2
 
 ##
 # Initial
-ORI_POR_FILENAME=optd_por_best_known_so_far.csv
-ORI_POR_FILE=${ORI_DIR}${ORI_POR_FILENAME}
+OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 
 ##
 # Geonames (to be found, as temporary files, within the ../tools directory)
@@ -83,11 +83,11 @@ GEONAME_CUT_SORTED_FILE=${TOOLS_DIR}${GEONAME_CUT_SORTED_FILENAME}
 
 ##
 # Target (generated files)
-ORI_POR_TOBESPLIT_FILENAME=optd_por_to_be_split.csv
-ORI_POR_NEW_FILENAME=new_${ORI_POR_FILENAME}
+OPTD_POR_TOBESPLIT_FILENAME=optd_por_to_be_split.csv
+OPTD_POR_NEW_FILENAME=new_${OPTD_POR_FILENAME}
 #
-ORI_POR_TOBESPLIT_FILE=${TMP_DIR}${ORI_POR_TOBESPLIT_FILENAME}
-ORI_POR_NEW_FILE=${TMP_DIR}${ORI_POR_NEW_FILENAME}
+OPTD_POR_TOBESPLIT_FILE=${TMP_DIR}${OPTD_POR_TOBESPLIT_FILENAME}
+OPTD_POR_NEW_FILE=${TMP_DIR}${OPTD_POR_NEW_FILENAME}
 
 
 ##
@@ -123,12 +123,12 @@ then
 	echo
 	echo "* Input data files"
 	echo "------------------"
-	echo " - ORI-maintained file of best known coordinates: '${ORI_POR_FILE}'"
+	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
 	echo " - Geonames data dump file: '${GEONAME_RAW_FILE}'"
 	echo
 	echo "* Output data file"
 	echo "------------------"
-	echo " - ORI-maintained public file of POR: '${ORI_POR_TOBESPLIT_FILE}'"
+	echo " - OPTD-maintained public file of POR: '${OPTD_POR_TOBESPLIT_FILE}'"
 	echo
 	exit
 fi
@@ -140,7 +140,7 @@ fi
 if [ "$1" = "--clean" ]
 then
 	\rm -f ${GEONAME_WPK_FILE} ${GEONAME_SORTED_FILE} ${GEONAME_CUT_SORTED_FILE}
-	\rm -f ${ORI_POR_TOBESPLIT_FILE} ${ORI_POR_NEW_FILE}
+	\rm -f ${OPTD_POR_TOBESPLIT_FILE} ${OPTD_POR_NEW_FILE}
 	bash prepare_geonames_dump_file.sh --clean || exit -1
 	exit
 fi
@@ -176,7 +176,7 @@ fi
 # for the individual entries.
 SPLITTER=optd_por_splitter.awk
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${SPLITTER} \
-	${ORI_POR_FILE} ${GEONAME_RAW_FILE} > ${ORI_POR_TOBESPLIT_FILE}
+	${OPTD_POR_FILE} ${GEONAME_RAW_FILE} > ${OPTD_POR_TOBESPLIT_FILE}
 
 ##
 # Sanity check #1
@@ -184,7 +184,7 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${SPLITTER} \
 #  1.1. Extract the primary keys (e.g., IEV-A or IEV-C)
 #  1.2. Extract the location type (e.g., A or C)
 LOC_TYPE_LIST=`
-awk -F'^' '/^([A-Z]{3})-/ {print ($1)}' ${ORI_POR_TOBESPLIT_FILE} \
+awk -F'^' '/^([A-Z]{3})-/ {print ($1)}' ${OPTD_POR_TOBESPLIT_FILE} \
 	| awk -F'-' '{print ($2)}' | sort | uniq -c`
 
 ##
@@ -197,7 +197,7 @@ awk -F'^' '/^([A-Z]{3})-/ {print ($1)}' ${ORI_POR_TOBESPLIT_FILE} \
 #  2.4. Check the IATA codes having just a single entry
 #
 SINGLE_POR_LIST=`
-awk -F'^' '/^([A-Z]{3})-/ {print ($1)}' ${ORI_POR_TOBESPLIT_FILE} \
+awk -F'^' '/^([A-Z]{3})-/ {print ($1)}' ${OPTD_POR_TOBESPLIT_FILE} \
 	| awk -F'-' '{print ($1)}' | sort | uniq -c \
 	| awk '{if ($1 != "2") {print ($0)}}'`
 if [ "${SINGLE_POR_LIST}" != "" ]
@@ -210,15 +210,15 @@ then
 fi
 
 ##
-# Merge the file of best known coordinates (${ORI_POR_FILE}, aka
+# Merge the file of best known coordinates (${OPTD_POR_FILE}, aka
 # optd_por_best_known_so_far.csv) with the newly created splitted one
-# (${ORI_POR_TOBESPLIT_FILE}, aka optd_por_to_be_split.csv).
+# (${OPTD_POR_TOBESPLIT_FILE}, aka optd_por_to_be_split.csv).
 # They both have got the same format.
 MERGER=optd_por_merger.awk
-if [ -f ${ORI_POR_TOBESPLIT_FILE} ]
+if [ -f ${OPTD_POR_TOBESPLIT_FILE} ]
 then
 	awk -F'^' -v log_level=${LOG_LEVEL} -f ${MERGER} \
-		${ORI_POR_TOBESPLIT_FILE} ${ORI_POR_FILE} > ${ORI_POR_NEW_FILE}
+		${OPTD_POR_TOBESPLIT_FILE} ${OPTD_POR_FILE} > ${OPTD_POR_NEW_FILE}
 fi
 
 
@@ -229,26 +229,26 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "wc -l ${ORI_POR_FILE}"
-if [ -f ${ORI_POR_TOBESPLIT_FILE} ]
+echo "wc -l ${OPTD_POR_FILE}"
+if [ -f ${OPTD_POR_TOBESPLIT_FILE} ]
 then
-	NB_LINES_ORI_POR=`wc -l ${ORI_POR_FILE} | cut -d' ' -f1`
-	NB_LINES_ORI_TOBESPLIT=`wc -l ${ORI_POR_TOBESPLIT_FILE} | cut -d' ' -f1`
-	NB_LINES_ORI_NEW=`wc -l ${ORI_POR_NEW_FILE} | cut -d' ' -f1`
-	NB_EXP_LINES_ORI_NEW=`echo ${NB_LINES_ORI_TOBESPLIT}/2 + ${NB_LINES_ORI_POR} + 1 | bc 2> /dev/null`
+	NB_LINES_OPTD_POR=`wc -l ${OPTD_POR_FILE} | cut -d' ' -f1`
+	NB_LINES_OPTD_TOBESPLIT=`wc -l ${OPTD_POR_TOBESPLIT_FILE} | cut -d' ' -f1`
+	NB_LINES_OPTD_NEW=`wc -l ${OPTD_POR_NEW_FILE} | cut -d' ' -f1`
+	NB_EXP_LINES_OPTD_NEW=`echo ${NB_LINES_OPTD_TOBESPLIT}/2 + ${NB_LINES_OPTD_POR} + 1 | bc 2> /dev/null`
 	echo
 	echo "See:"
-	echo "  + '${ORI_POR_FILE}' file, which contains ${NB_LINES_ORI_POR} lines"
-	echo "  + '${ORI_POR_TOBESPLIT_FILE}' file, which contains ${NB_LINES_ORI_TOBESPLIT} lines"
-	echo "  + '${ORI_POR_NEW_FILE}' file, which contains ${NB_LINES_ORI_NEW} lines."
-	if [ ${NB_EXP_LINES_ORI_NEW} -eq ${NB_LINES_ORI_NEW} ]
+	echo "  + '${OPTD_POR_FILE}' file, which contains ${NB_LINES_OPTD_POR} lines"
+	echo "  + '${OPTD_POR_TOBESPLIT_FILE}' file, which contains ${NB_LINES_OPTD_TOBESPLIT} lines"
+	echo "  + '${OPTD_POR_NEW_FILE}' file, which contains ${NB_LINES_OPTD_NEW} lines."
+	if [ ${NB_EXP_LINES_OPTD_NEW} -eq ${NB_LINES_OPTD_NEW} ]
 	then
-		echo "    Hence, it is equal to the expected number of lines, which is ${NB_EXP_LINES_ORI_NEW} (= ${NB_LINES_ORI_TOBESPLIT}/2 + ${NB_LINES_ORI_POR} + 1)"
+		echo "    Hence, it is equal to the expected number of lines, which is ${NB_EXP_LINES_OPTD_NEW} (= ${NB_LINES_OPTD_TOBESPLIT}/2 + ${NB_LINES_OPTD_POR} + 1)"
 	else
-		echo "    [WARNING] Hence, it is not equal to the expected number of lines, which is ${NB_EXP_LINES_ORI_NEW} (= ${NB_LINES_ORI_TOBESPLIT}/2 + ${NB_LINES_ORI_POR} + 1)"
+		echo "    [WARNING] Hence, it is not equal to the expected number of lines, which is ${NB_EXP_LINES_OPTD_NEW} (= ${NB_LINES_OPTD_TOBESPLIT}/2 + ${NB_LINES_OPTD_POR} + 1)"
 	fi
-	echo "head -3 ${ORI_POR_FILE} ${ORI_POR_TOBESPLIT_FILE} ${ORI_POR_NEW_FILE}"
-	echo "grep \"^NCE\" ${ORI_POR_FILE} ${ORI_POR_TOBESPLIT_FILE} ${ORI_POR_NEW_FILE}"
+	echo "head -3 ${OPTD_POR_FILE} ${OPTD_POR_TOBESPLIT_FILE} ${OPTD_POR_NEW_FILE}"
+	echo "grep \"^NCE\" ${OPTD_POR_FILE} ${OPTD_POR_TOBESPLIT_FILE} ${OPTD_POR_NEW_FILE}"
 	echo
 	echo "List of location types for the de-duplicated POR entries:"
 	echo "${LOC_TYPE_LIST}"
@@ -257,12 +257,12 @@ then
 	echo "-----------"
 	echo "First, there should be no warning from the process above."
 	echo "Then, double check that the generated file is comparable to the original one:"
-	echo "diff -c ${ORI_POR_FILE} ${ORI_POR_NEW_FILE} | less"
+	echo "diff -c ${OPTD_POR_FILE} ${OPTD_POR_NEW_FILE} | less"
 	echo "Then, replace the original file and tell Git about it:"
-	echo "cp ${ORI_POR_NEW_FILE} ${ORI_POR_FILE}"
-	echo "git add ${ORI_POR_FILE}"
-	echo "git diff --cached ${ORI_POR_FILE}"
-	echo "git ci -m \"[RefData][ORI] De-duplicated the POR (points of reference) entries of the ORI-maintained file of best known coordinates.\" ${ORI_POR_FILE}"
+	echo "cp ${OPTD_POR_NEW_FILE} ${OPTD_POR_FILE}"
+	echo "git add ${OPTD_POR_FILE}"
+	echo "git diff --cached ${OPTD_POR_FILE}"
+	echo "git ci -m \"[RefData][OPTD] De-duplicated the POR (points of reference) entries of the OPTD-maintained file of best known coordinates.\" ${OPTD_POR_FILE}"
 	echo
 	echo "Finally, do some cleaning:"
 	echo "$0 --clean"
