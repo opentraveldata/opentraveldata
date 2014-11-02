@@ -6,13 +6,13 @@
 # To use this, just add a line in .travis/synchronization_file_map.csv,
 # in the following order: $old^$new
 #
-# Note on the separator: The separator is ^, meaning that we do not
-# support the character '^' in file names (while it is allow in unix/git
-# file names). Using the null character ('\0') as a separator instead
-# would be unbeatable since no filename can contain it, but not all the
-# text editors support it (vim does: <C-v>10<CR> in insertion mode). If we
-# want to switch to that, then cut supports cutting on the null character
-# with `cut -d ''` (notice the space between -d and '').
+# The separator is ^, meaning that we do not support the character '^' in
+# file names (while unix/git allow it). Using the null character ('\0') as
+# a separator instead would allow any valid filename (since no filename
+# can contain this character), but not all the text editors support it
+# (vim does: <C-v>10<CR> in insertion mode). If we want to switch to that,
+# then cut supports cutting on the null character with `cut -d ''` (notice
+# the space between -d and '').
 #
 
 
