@@ -5,21 +5,33 @@
 #
 # To use this, just add a line in .travis/synchronization_file_map.csv,
 # in the following order: $old^$new
-# The separator is ^, meaning that we do not support the character '^' in
-# file names. If this breaks your code, please update this setup in order
-# to use a different character for separator.
+#
+# Note on the separator: The separator is ^, meaning that we do not
+# support the character '^' in file names (while it is allow in unix/git
+# file names). Using the null character ('\0') as a separator instead
+# would be unbeatable since no filename can contain it, but not all the
+# text editors support it (vim does: <C-v>10<CR> in insertion mode). If we
+# want to switch to that, then cut supports cutting on the null character
+# with `cut -d ''` (notice the space between -d and '').
 #
 
-# Starts an ssh-agent
-eval $(ssh-agent -s) 2>/dev/null
-# The key is decrypted by travis (it is stored encrypted in our repo)
-chmod 600 .travis/id_rsa
-# Import the key
-ssh-add .travis/id_rsa
-# Clone the old repo
-git clone git@github.com:opentraveldata/optd.git /tmp/optd >/dev/null
 
-# Synchronize the files
+# ssh setup
+# The key .travis/id_rsa has been decrypted by travis from
+# .travis/id_rsa.enc prior to the execution of this hook.
+chmod 600 .travis/id_rsa
+eval $(ssh-agent -s)
+ssh-add .travis/id_rsa
+
+# git setup
+git config --global user.email "opentraveldata@1adev.com"
+git config --global user.name "opentraveldata-bot"
+git config --global push.default simple
+
+# Clone the old repo
+git clone git@github.com:opentraveldata/optd.git /tmp/optd
+
+# Copy the files
 n=0
 cat .travis/synchronization_file_map.csv | while read line ; do
   n=$((n+1))
@@ -57,13 +69,11 @@ done
 
 # Get the log of the last commit
 LOG="$(git log -1)"
-cd /tmp/optd
 
+# Go to the old repo, commit and push (if nothing has changed, git is
+# clever enough not to do anything)
+cd /tmp/optd
 echo "Showing what we are about to synchronize"
 git status
-
-git config --global user.email "opentraveldata@1adev.com"
-git config --global user.name "opentraveldata-bot"
-git config --global push.default simple
 git commit -a -m "$LOG"
 git push
