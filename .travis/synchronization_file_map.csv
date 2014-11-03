@@ -1,0 +1,4 @@
+refdata/ORI/ori_por_best_known_so_far.csv^opentraveldata/optd_por_best_known_so_far.csv
+refdata/ORI/ori_por_diff_w_geonames.csv^opentraveldata/optd_por_diff_w_geonames.csv
+refdata/ORI/ori_por_no_longer_valid.csv^opentraveldata/optd_por_no_longer_valid.csv
+refdata/ORI/ori_por_public.csv^opentraveldata/optd_por_public.csv
