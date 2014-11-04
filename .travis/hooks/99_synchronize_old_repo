@@ -68,7 +68,7 @@ done
 [ $? != 0 ] && exit 1
 
 # Get the log of the last commit
-LOG="$(git log -1)"
+LOG="(Imported) $(git log -1 --pretty=format:%s)\n\nThis commit was automatically imported from the repository opentraveldata/opentraveldata:\n\n$(git log -1 --pretty=raw)"
 
 # Go to the old repo, commit and push (if nothing has changed, git is
 # clever enough not to do anything)
