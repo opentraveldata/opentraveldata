@@ -2,3 +2,9 @@ refdata/ORI/ori_por_best_known_so_far.csv^opentraveldata/optd_por_best_known_so_
 refdata/ORI/ori_por_diff_w_geonames.csv^opentraveldata/optd_por_diff_w_geonames.csv
 refdata/ORI/ori_por_no_longer_valid.csv^opentraveldata/optd_por_no_longer_valid.csv
 refdata/ORI/ori_por_public.csv^opentraveldata/optd_por_public.csv
+refdata/ORI/ref_airport_pageranked.csv^opentraveldata/ref_airport_pageranked.csv
+refdata/ORI/ori_aircraft.csv^opentraveldata/optd_aircraft.csv
+refdata/ORI/ori_airline_alliance_membership.csv^opentraveldata/.csv
+refdata/ORI/ori_airlines.csv^opentraveldata/optd_airlines.csv
+refdata/ORI/ori_region_details.csv^opentraveldata/optd_region_details.csv
+refdata/ORI/ori_regions.csv^opentraveldata/optd_regions.csv
