@@ -57,7 +57,7 @@ OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}OPTD/
+DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
