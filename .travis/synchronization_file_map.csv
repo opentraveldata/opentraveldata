@@ -1,6 +1,7 @@
 refdata/Innovata/innovata_stations.csv^data/Innovata/innovata_stations.dat
 refdata/ORI/ori_aircraft.csv^opentraveldata/optd_aircraft.csv
 refdata/ORI/ori_airline_alliance_membership.csv^opentraveldata/optd_airline_alliance_membership.csv
+refdata/ORI/ori_airline_best_known_so_far.csv^opentraveldata/optd_airline_best_known_so_far.csv
 refdata/ORI/ori_airlines.csv^opentraveldata/optd_airlines.csv
 refdata/ORI/ori_country_region_info^opentraveldata/optd_country_region_info.csv
 refdata/ORI/ori_por_best_known_so_far.csv^opentraveldata/optd_por_best_known_so_far.csv
