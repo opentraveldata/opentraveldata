@@ -192,7 +192,7 @@ air-alpha-air-transport^^2014-01-01^^^7U^428^Alpha Air Transport^^^^^^
 air-alpine-air^^^^^N6^758^Alpine Air^Aerocontinent^^^^^
 air-als^^^^^K4^0^ALS^^^^^^
 air-alsa-grupo^^^^^5I^0^Alsa Grupo Slu^Air G^^^^^36983
-air-amadeus-7n^^2011-01-25^^^7N^^Amadeus 7N^Amadeus 7N^^^D^ ^
+air-amadeus-7n^^2011-01-25^^^7N^^Amadeus 7N^Amadeus 7N^^^D^^
 air-amadeus-8z^1^^2014-06-01^^8Z^0^Amadeus 8Z^Amadeus 8Z^^^D^^
 air-amadeus-eight^^^^XYD^8X^794^Amadeus Eight^Amadeus Eight^^^D^^
 air-amadeus-pdf-0e^^^^XYS^0E^0^Amadeus PDF 0E^^^^D^^
@@ -771,7 +771,7 @@ air-novoair^^^^^VQ^855^Novoair^^^^P^^2511
 air-nyasa-express^^^^^7Q^0^Elite Airways^^^^^^
 air-oceanair^^^^ONE^O6^247^Avianca Brasil^Oceanair^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Avianca_Brazil^67392
 air-okapi-airlines^^^^HND^OI^0^Hinterland Aviation^Italiatour^^^^^560
-air-okay-airways^^^^^BK^866^Okay Airways^Paradise Isl^^^^^8374
+air-okay-airways^^^^OKA^BK^866^Okay Airways^Paradise Isl^^^^http://en.wikipedia.org/wiki/Okay_Airways^8374
 air-olt-express-germany^^^^OLT^OL^704^Olt Express Germany Gmbh^^^^^^
 air-olympic-air^^^^OAL^OA^50^Olympic Air^Olympic Air^Star Alliance^Affiliate^^^20917
 air-olympic-airlines^^^^^OP^0^Olympic Airlines^Olympic Airlines^^^^^
@@ -896,7 +896,7 @@ air-shuttle-america^^^^^S5^0^Shuttle America^^^^^^99582
 air-siam-air-transport^^^^^O8^0^Siam Air Transport^^^^^^
 air-siam-ga^^^^^5E^0^Siam Ga^Base Regional^^^^^
 air-siberia-airlines^^^^SBI^S7^421^S7 Airlines^S7 Airlines^OneWorld^Member^^http://en.wikipedia.org/wiki/S7_Airlines^47123
-air-sichuan-airlines^^^^^3U^876^Sichuan Airlines^Sichuan Air^^^^^147716
+air-sichuan-airlines^^^^CSC^3U^876^Sichuan Airlines^Sichuan Air^^^^http://en.wikipedia.org/wiki/Sichuan_Airlines^147716
 air-silkair^^^^SLK^MI^629^Silkair^Silkair^^^^^38755
 air-silk-way-airlines^^^^AZQ^ZP^463^Silk Way Airlines^^^^^^
 air-silver-airways^^^^GFT^3M^449^Silver Airways Corp^Silver Airway^^^PC^^58834
@@ -943,7 +943,7 @@ air-spanair^1^1988-03-01^2012-01-27^JKK^JK^680^Spanair^Spanair^^^^http://en.wiki
 air-speed-alliance-westbahn^^^^^5W^0^Speed Alliance Westbahn^Executive Exp^^^^^15955
 air-spicejet^^^^SEJ^SG^775^Spicejet^Sempati Air^^^^^122113
 air-spirit-airlines^^^^NKS^NK^487^Spirit Airlines^Spirit Airlines^^^^http://en.wikipedia.org/wiki/Spirit_Airlines^108991
-air-spring-airlines^^^^^9C^89^Spring Airlines^Haiti Caribb^^^^^73874
+air-spring-airlines^^^^CQH^9C^89^Spring Airlines^Haiti Caribb^^^^http://en.wikipedia.org/wiki/Spring_Airlines^73874
 air-spring-airlines-jp^^^^^IJ^0^Spring Airlines Japan^^^^^^
 air-sqiva-sistem^^^^^Q1^0^Sqiva Sistem^^^^^^
 air-srilankan-airlines^^^^ALK^UL^603^SriLankan Airlines^SriLankan Air^OneWorld^Member^^http://en.wikipedia.org/wiki/SriLankan_Airlines^34313
@@ -1005,7 +1005,7 @@ air-thomas-cook-airlines^^^^TCX^MT^727^Thomas Cook Airlines^^^^^^1016
 air-thomas-cook-belgium^^^^TCW^HQ^583^Thomas Cook Airlines Belgium^Harmony Air^^^P^^1631
 air-thomas-cook-eastland^^^^VKG^DK^630^Thomas Cook Airlines^Eastland Air^^^^^
 air-thomson-airways^^^^TOM^BY^754^Thomson Airways^Britannia^^^^^
-air-tianjin-airlines^^^^^GS^826^Tianjin Airlines^^^^^^33734
+air-tianjin-airlines^^^^GCR^GS^826^Tianjin Airlines^^^^^http://en.wikipedia.org/wiki/Tianjin_Airlines^33734
 air-tiara-air-aruba^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^^1834
 air-tibet-airlines^^^^^TV^88^Tibet Airlines^^^^^^13175
 air-tiger-air^^^^TGW^TR^388^Tiger Airways^^^^^^34322
@@ -1040,7 +1040,7 @@ air-tunisair^^^^TAR^TU^199^Tunisair^Tunis Air^^^^^24047
 air-tunisair-express^^^^^UG^150^Tunisair Express^Tuninter^^^^^2585
 air-turkish-airlines^^^^THY^TK^235^Turkish Airlines^Turkish^Star Alliance^Member^^^336463
 air-turkmenistan-airlines^^^^TUA^T5^542^Turkmenistan Airlines^Turkmenistan^^^^^1251
-air-tway-air^^^^^TW^722^Tway Air^Tway Air^^^^^1008
+air-tway-air^^^^TWB^TW^722^Tway Air^Tway Air^^^^http://en.wikipedia.org/wiki/T'way_Airlines^1008
 air-twin-jet^^^^^T7^294^Twin Jet^Twin Jet^^^^^6462
 air-tyrolean-airways^^^^TYR^VO^734^Tyrolean Airways^Tyroleanair^^^^^129228
 air-ukraine-airlines^^^^AUI^PS^566^Ukraine Intl Airlines^Ukraine Intl^^^^^35599
