@@ -734,7 +734,7 @@ air-novoair^^^^^VQ^855^Novoair^^^^P^
 air-nyasa-express^^^^^7Q^0^Elite Airways^^^^^
 air-oceanair^^^^ONE^O6^247^Avianca Brasil^Oceanair^^^^http://en.wikipedia.org/wiki/Avianca_Brazil
 air-okapi-airlines^^^^HND^OI^0^Hinterland Aviation^Italiatour^^^^
-air-okay-airways^^^^^BK^866^Okay Airways^Paradise Isl^^^^
+air-okay-airways^^^^OKA^BK^866^Okay Airways^Paradise Isl^^^^http://en.wikipedia.org/wiki/Okay_Airways
 air-olt-express-germany^^^^OLT^OL^704^Olt Express Germany Gmbh^^^^^
 air-olympic-airlines^^^^^OP^0^Olympic Airlines^Olympic Airlines^^^^
 air-olympic-air^^^^OAL^OA^50^Olympic Air^Olympic Air^^^^
@@ -856,7 +856,7 @@ air-shuttle-america^^^^^S5^0^Shuttle America^^^^^
 air-siam-air-transport^^^^^O8^0^Siam Air Transport^^^^^
 air-siam-ga^^^^^5E^0^Siam Ga^Base Regional^^^^
 air-siberia-airlines^^^^SBI^S7^421^S7 Airlines^S7 Airlines^OneWorld^Member^^http://en.wikipedia.org/wiki/S7_Airlines
-air-sichuan-airlines^^^^^3U^876^Sichuan Airlines^Sichuan Air^^^^
+air-sichuan-airlines^^^^CSC^3U^876^Sichuan Airlines^Sichuan Air^^^^http://en.wikipedia.org/wiki/Sichuan_Airlines
 air-silkair^^^^SLK^MI^629^Silkair^Silkair^^^^
 air-silk-way-airlines^^^^AZQ^ZP^463^Silk Way Airlines^^^^^
 air-silver-airways^^^^GFT^3M^449^Silver Airways Corp^Silver Airway^^^PC^
@@ -900,7 +900,7 @@ air-southwest-airlines^^^^SWA^WN^526^Southwest Airlines^SW Airlines^^^P^
 air-speed-alliance-westbahn^^^^^5W^0^Speed Alliance Westbahn^Executive Exp^^^^
 air-spicejet^^^^SEJ^SG^775^Spicejet^Sempati Air^^^^
 air-spirit-airlines^^^^NKS^NK^487^Spirit Airlines^Spirit Airlines^^^^http://en.wikipedia.org/wiki/Spirit_Airlines
-air-spring-airlines^^^^^9C^89^Spring Airlines^Haiti Caribb^^^^
+air-spring-airlines^^^^CQH^9C^89^Spring Airlines^Haiti Caribb^^^^http://en.wikipedia.org/wiki/Spring_Airlines
 air-spring-airlines-jp^^^^^IJ^0^Spring Airlines Japan^^^^^
 air-sqiva-sistem^^^^^Q1^0^Sqiva Sistem^^^^^
 air-srilankan-airlines^^^^ALK^UL^603^SriLankan Airlines^SriLankan Air^OneWorld^Future^^http://en.wikipedia.org/wiki/SriLankan_Airlines
@@ -960,7 +960,7 @@ air-thomas-cook-airlines^^^^TCX^MT^727^Thomas Cook Airlines^^^^^
 air-thomas-cook-belgium^^^^TCW^HQ^583^Thomas Cook Airlines Belgium^Harmony Air^^^P^
 air-thomas-cook-eastland^^^^VKG^DK^630^Thomas Cook Airlines^Eastland Air^^^^
 air-thomson-airways^^^^TOM^BY^754^Thomson Airways^Britannia^^^^
-air-tianjin-airlines^^^^^GS^826^Tianjin Airlines^^^^^
+air-tianjin-airlines^^^^GCR^GS^826^Tianjin Airlines^^^^^http://en.wikipedia.org/wiki/Tianjin_Airlines
 air-tiara-air-aruba^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^
 air-tibet-airlines^^^^^TV^88^Tibet Airlines^^^^^
 air-tiger-air-philippines^^^^SRQ^DG^931^Tiger Air Philippines^Tiger Air^^^^
