@@ -106,7 +106,7 @@ UNWTO^AM^Americas^^^North America^Canada^1010^23CA^CA
 UNWTO^AM^Americas^^^North America^Greenland^1110^23GL^GL
 UNWTO^AM^Americas^^^North America^Other North America^1180^23OT^OT
 UNWTO^AM^Americas^^^North America^St. Pierre & Miquelon^1120^23PM^PM
-UNWTO^AM^Americas^^^North America^USA^1030^23US^US
+UNWTO^AM^Americas^^^North America^United States (USA)^1030^23US^US
 UNWTO^AM^Americas^^^Other Americas^Other Americas^1980^25OT^OT
 UNWTO^AM^Americas^^^South America^Argentina^1610^24AR^AR
 UNWTO^AM^Americas^^^South America^Bolivia^1710^24BO^BO
@@ -204,7 +204,7 @@ UNWTO^EU^Europe^^^North Europe^Latvia^2800^42LV^LV
 UNWTO^EU^Europe^^^North Europe^Norway^2140^42NO^NO
 UNWTO^EU^Europe^^^North Europe^Other North Europe^^42OT^OT
 UNWTO^EU^Europe^^^North Europe^Sweden^2170^42SE^SE
-UNWTO^EU^Europe^^^North Europe^UK^2190^42UK^GB
+UNWTO^EU^Europe^^^North Europe^United Kingdom (UK)^2190^42UK^GB
 UNWTO^EU^Europe^^^Other Europe^Other Europe^2980^45OT^OT
 UNWTO^EU^Europe^^^South Europe^Andorra^2310^43AD^AD
 UNWTO^EU^Europe^^^South Europe^Albania^2710^43AL^AL
