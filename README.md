@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/opentraveldata/opentraveldata.svg?branch=master)](https://travis-ci.org/opentraveldata/opentraveldata)
 
-opentraveldata
-==============
 Open travel data (opdt) provides a collection of travel and leisure related data. The project
 makes extensive use of already existing data sources such as Geonames and Wikipedia, and adds
 some glue around those (e.g. links). All data sets are carefully maintained and kept up-to-date
@@ -15,7 +13,7 @@ flat files with hat (^) separated columns that should be easy to use with your t
 choice. Some usage examples can be found in the **`examples`** directory.
 
 The **`tools`** and **`data`** directories contain scripts and collected data which are used to
-generate our data sets. **`.travis`** contains continuous integration related code
+generate our data sets. **`.travis`** contains continuous integration related code.
 
 
 Development
