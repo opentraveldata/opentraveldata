@@ -3,11 +3,11 @@
 # for the 4281 most important travel-related POR (points of reference).
 #
 # [PR] Project reference: Open Travel Data (http://github.com/opentraveldata/optd)
-# [PR] Generation date: 2014-12-07
+# [PR] Generation date: 2014-12-20
 # [PR] License: CC-BY-SA (http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)
 # [PR] Validity period:
-# [PR]   From: 2014-12-04
-# [PR]   To: 2014-12-10
+# [PR]   From: 2014-12-19
+# [PR]   To: 2014-12-24
 #
 # pk^iata_code^PageRank
 PAR-C^PAR^1.0
