@@ -601,7 +601,7 @@ air-kenmore-air^^^^KEN^M5^763^Kenmore Air^^^^^
 air-kenn-borek-air^^^^KBA^4K^0^Kenn Borek Air^Kenn Borek^^^^
 air-kenya-airways^^^^KQA^KQ^706^Kenya Airways^Kenyaairway^Skyteam^Member^^
 air-kharkiv-airlines^^^^^KW^711^Kharkiv Airlines^^^^^
-air-kingfisher-airlines^^^^KFR^IT^90^Kingfisher Airlines^^OneWorld^Future^^
+air-kingfisher-airlines^^^^KFR^^90^Kingfisher Airlines^^OneWorld^Future^^
 air-kish-airlines^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^
 air-klm-cityhopper^^^^KLC^WA^0^KLM Cityhopper^KLM Cityhopper^^^^
 air-klm^^^^KLM^KL^74^KLM Royal Dutch Airlines^KLM^Skyteam^Member^^
@@ -967,6 +967,7 @@ air-tiara-air-aruba^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^
 air-tibet-airlines^^^^^TV^88^Tibet Airlines^^^^^
 air-tiger-air-philippines^^^^SRQ^DG^931^Tiger Air Philippines^Tiger Air^^^^
 air-tiger-air-australia^^^^^TT^0^Tiger Airways Australia^Air Lithuania^^^^
+air-tiger-air-taiwan^^2014-11-26^^TTW^IT^0^Tiger Air Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan
 air-tiger-air^^^^TGW^TR^388^Tiger Airways^^^^^
 air-tik-systems^^^^^T1^0^Tik Systems^^^^^
 air-titan-airways^^^^^ZT^0^Titan Airways^^^^^
@@ -1015,6 +1016,7 @@ air-us-helicopter^^^^UJX^UH^500^AtlasJet Ukraine^US Helicopter^^^^
 air-utair-aviation^^^^UTA^UT^298^Utair Aviation Jsc^Utair^^^^
 air-utair-express^^^^UTX^UR^0^Utair Express^^^^^
 air-uzbekistan-airways^^^^UZB^HY^250^Uzbekistan Airways^Uzbekistan^^^^
+air-v-air^^2014-12-17^^VAX^ZV^189^V Air^V Air Corporation^^^^http://en.wikipedia.org/wiki/V_Air
 air-valair^^^^^V4^0^Valair^^^^^
 air-valuair^^^^VLU^VF^896^Valuair^Valuair^^^^
 air-van-air-europe^^^^^V9^0^Van Air Europe^^^^^
@@ -1073,7 +1075,7 @@ air-yeti-airlines^^1998-08-17^^NYT^YL^0^Yeti Airlines^^^^^http://en.wikipedia.or
 air-ygnus-air^^^^RGN^Y2^571^Ygnus Air^^^^^
 air-yute-air-alaska^^^^TUD^4Y^0^Yute Air Alaska^^^^PT^http://en.wikipedia.org/wiki/Flight_Alaska
 air-zagros-air^^^^GZQ^Z4^541^Zagros Air^Zagros Air^^^^
-air-zagros-airlines^^^^IZG^ZV^0^Zagros Airlines^Air Midwest^^^^
+air-zagros-airlines^^^^IZG^^0^Zagros Airlines^Air Midwest^^^^
 air-zambezi-airlines^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^
 air-zambia-skyways^^^^^K8^241^Zambia Skyways^^^^^
 air-anguilla-air-services^^^^AAS^Q3^0^Anguilla Air Services^^^^^
