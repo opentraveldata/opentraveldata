@@ -1,248 +1,248 @@
-country_code^country_name^schengen^schengen_from^schengen_to^region_unwto_code^region_unwto_name^subregion_unwto_code^subregion_unwto_name^region_iatassim_code^region_iatassim_name^region_iatawats_code^region_iatawats_name
-AD^Andorra^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-AE^UAE^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-AF^Afghanistan^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-AG^Antigua and Barbuda^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-AI^Anguilla^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-AL^Albania^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-AM^Armenia^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-AO^Angola^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-AQ^Antarctica^^^^PA^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
-AR^Argentina^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-AS^American Samoa^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-AT^Austria^1^01.12.1997^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-AU^Australia^^^^PA^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
-AW^Aruba^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-AX^Aland Islands^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-AZ^Azerbaijan^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-BA^Bosnia-Herzegovina^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-BB^Barbados^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-BD^Bangladesh^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-BE^Belgium^1^26.03.1995^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-BF^Burkina Faso^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-BG^Bulgaria^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-BH^Bahrain^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-BI^Burundi^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-BJ^Benin^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-BL^Saint Barthelemy^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-BM^Bermuda^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^NOA^North America
-BN^Brunei^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-BO^Bolivia^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-BQ^Bonaire Saint Eustatius & Saba^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-BR^Brazil^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-BS^Bahamas^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-BT^Bhutan^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-BW^Botswana^^^^AF^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-BY^Belarus^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-BZ^Belize^^^^AM^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-CA^Canada^^^^AM^Americas^AM_No^North America^NOA^North America^NOA^North America
-CC^Cocos Islands^^^^PA^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
-CD^Congo the Democratic Republic of the^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-CF^Central African Republic^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-CG^Congo Republic of^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-CH^Switzerland^1^12.12.2008^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-CI^Ivory Coast^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-CK^Cook Islands^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-CL^Chile^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-CM^Cameroon^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-CN^China^^^^AS^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
-CO^Colombia^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-CR^Costa Rica^^^^AM^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-CU^Cuba^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-CV^Cape Verde^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-CW^Curacao^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-CX^Christmas Island^^^^PA^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
-CY^Cyprus^^^^AS^Asia^AS_We^West Asia^EUR^Europe^EUR^Europe
-CZ^Czech Republic^1^30.03.2008^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-DE^Germany^1^26.03.1995^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-DJ^Djibouti^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-DK^Denmark^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-DM^Dominica^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-DO^Dominican Republic^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-DZ^Algeria^^^^AF^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
-EC^Ecuador^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-EE^Estonia^1^30.03.2008^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-EG^Egypt^^^^AF^Africa^AF_No^North Africa^MDE^Middle East^AFR^Africa
-EH^Western Sahara^^^^AF^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
-ER^Eritrea^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-ES^Spain^1^26.03.1995^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-ET^Ethiopia^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-FI^Finland^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-FJ^Fiji^^^^PA^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
-FK^Falkland Islands^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-FM^FSM^^^^PA^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
-FO^Faeroe Islands^^^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-FR^France^1^26.03.1995^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-GA^Gabon^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-GB^UK^^^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-GD^Grenada^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-GE^Georgia^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-GF^French Guyana^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-GG^Guernsey^^^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-GH^Ghana^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-GI^Gibraltar^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-GL^Greenland^^^^AM^Americas^AM_No^North America^NOA^North America^EUR^Europe
-GM^Gambia^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-GN^Guinea^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-GP^Guadeloupe^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-GQ^Equatorial Guinea^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-GR^Greece^1^26.03.2000^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-GS^South Georgia & the South Sandwich Islands^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-GT^Guatemala^^^^AM^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-GU^Guam^^^^PA^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
-GW^Guinea-Bissau^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-GY^Guyana^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-HI^Hawaii^^^^PA^Pacific^PA_Po^Polynesia^NOA^North America^NOA^North America
-HK^Hong Kong SAR^^^^AS^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
-HN^Honduras^^^^AM^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-HO^Hong Kong SAR & Macau SAR^^^^AS^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
-HR^Croatia^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-HT^Haiti^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-HU^Hungary^1^30.03.2008^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-ID^Indonesia^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-IE^Ireland^^^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-IL^Israel^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-IM^Isle of Man^^^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-IN^India^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-IQ^Iraq^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-IR^Iran^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-IS^Iceland^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-IT^Italy^1^26.10.1997^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-JE^Jersey^^^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-JM^Jamaica^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-JO^Jordan^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-JP^Japan^^^^AS^Asia^AS_Ne^Northeast Asia^JAK^Japan and Korea^ASI^Asia
-KE^Kenya^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-KG^Kyrgyzstan^^^^AS^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
-KH^Cambodia^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-KI^Kiribati^^^^PA^Pacific^PA_Mi^Micronesia^SWP^South-West Pacific^SWP^Southwest Pacific
-KM^Comoros^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-KN^St. Kitts-Nevis^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-KP^DPR Korea^^^^AS^Asia^AS_Ne^Northeast Asia^JAK^Japan and Korea^ASI^Asia
-KR^Korea (ROK)^^^^AS^Asia^AS_Ne^Northeast Asia^JAK^Japan and Korea^ASI^Asia
-KW^Kuwait^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-KY^Cayman Islands^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-KZ^Kazakhstan^^^^AS^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
-LA^Lao PDR^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-LB^Lebanon^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-LC^St. Lucia^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-LI^Liechtenstein^1^19.12.2011^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-LK^Sri Lanka^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-LR^Liberia^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-LS^Lesotho^^^^AF^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-LT^Lithuania^1^30.03.2008^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-LU^Luxembourg^1^26.03.1995^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-LV^Latvia^1^30.03.2008^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-LY^Libya^^^^AF^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
-MA^Morocco^^^^AF^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
-MC^Monaco^^^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-MD^Moldova^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-ME^Montenegro^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-MF^Saint Martin^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-MG^Madagascar^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-MH^Marshall Islands^^^^PA^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
-MK^Macedonia^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-ML^Mali^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-MM^Myanmar^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-MN^Mongolia^^^^AS^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
-MO^Macau SAR^^^^AS^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
-MP^Northern Marianas^^^^PA^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
-MQ^Martinique^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-MR^Mauritania^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-MS^Montserrat^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-MT^Malta^1^30.03.2008^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-MU^Mauritius^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-MV^Maldives^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-MW^Malawi^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-MX^Mexico^^^^AM^Americas^AM_Ce^Central America^NOA^North America^CEM^Central America and Caribbean
-MY^Malaysia^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-MZ^Mozambique^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-NA^Namibia^^^^AF^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-NC^New Caledonia^^^^PA^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
-NE^Niger^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-NF^Norfolk Island^^^^PA^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
-NG^Nigeria^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-NI^Nicaragua^^^^AM^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-NL^Netherlands^1^26.03.1995^^EU^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-NO^Norway^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-NP^Nepal^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-NR^Nauru^^^^PA^Pacific^PA_Mi^Micronesia^SWP^South-West Pacific^SWP^Southwest Pacific
-NU^Niue^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-NZ^New Zealand^^^^PA^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
-OM^Oman^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-PA^Panama^^^^AM^Americas^AM_Ce^Central America^SOA^South America^CEM^Central America and Caribbean
-PE^Peru^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-PF^French Polynesia (Tahiti)^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-PG^Papua New Guinea^^^^PA^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
-PH^Philippines^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-PK^Pakistan^^^^AS^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-PL^Poland^1^30.03.2008^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-PM^St. Pierre & Miquelon^^^^AM^Americas^AM_No^North America^NOA^North America^NOA^North America
-PR^Puerto Rico^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-PS^Palestine^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-PT^Portugal^1^26.03.1995^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-PW^Palau^^^^PA^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
-PY^Paraguay^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-QA^Qatar^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-RE^Reunion^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-RO^Romania^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-RS^Serbia^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-RU^Russian Federation^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-RW^Rwanda^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-SA^Saudi Arabia^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-SB^Solomon Islands^^^^PA^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
-SC^Seychelles^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-SD^Sudan^^^^AF^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
-SE^Sweden^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-SG^Singapore^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-SH^Saint Helena^^^^AF^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-SI^Slovenia^1^30.03.2008^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-SJ^Svalbard and Jan Mayen^1^25.03.2001^^EU^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-SK^Slovakia^1^30.03.2008^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-SL^Sierra Leone^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-SM^San Marino^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-SN^Senegal^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-SO^Somalia^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-SR^Suriname^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-SS^South Sudan^^^^AF^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
-ST^Sao Tome and Principe^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-SV^El Salvador^^^^AM^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-SX^Sint Maarten^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-SY^Syria^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-SZ^Swaziland^^^^AF^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-TC^Turks & Caicos Islands^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-TD^Chad^^^^AF^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-TG^Togo^^^^AF^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
-TH^Thailand^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-TJ^Tajikistan^^^^AS^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
-TK^Tokelau^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-TL^Timor Leste^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-TM^Turkmenistan^^^^AS^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
-TN^Tunisia^^^^AF^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
-TO^Tonga^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-TR^Turkey^^^^AS^Asia^AS_We^West Asia^EUR^Europe^EUR^Europe
-TT^Trinidad & Tobago^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-TV^Tuvalu^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-TW^Chinese Taipei^^^^AS^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
-TZ^Tanzania^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-UA^Ukraine^^^^EU^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-UG^Uganda^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-UM^United States Minor Outlying Islands^^^^AM^Americas^AM_No^North America^NOA^North America^SWP^Southwest Pacific
-US^USA^^^^AM^Americas^AM_No^North America^NOA^North America^NOA^North America
-UY^Uruguay^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-UZ^Uzbekistan^^^^AS^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
-VA^Holy See (Vatican)^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-VC^St. Vincent & the Grenadines^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-VE^Venezuela^^^^AM^Americas^AM_So^South America^SOA^South America^SOA^South America
-VG^Virgin Islands British^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-VI^Virgin Islands United States^^^^AM^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-VN^Vietnam^^^^AS^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
-VU^Vanuatu^^^^PA^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
-WF^Wallis & Futuna Islands^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-WS^Samoa^^^^PA^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-XK^Kosovo^^^^EU^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-YE^Yemen^^^^AS^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-YT^Mayotte^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-ZA^South Africa^^^^AF^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-ZM^Zambia^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-ZW^Zimbabwe^^^^AF^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+country_code^country_name^schengen^schengen_from^schengen_to^region_unwto_code^region_unwto_numeric^region_unwto_name^subregion_unwto_code^subregion_unwto_name^region_iatassim_code^region_iatassim_name^region_iatawats_code^region_iatawats_name
+AD^Andorra^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+AE^UAE^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+AF^Afghanistan^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+AG^Antigua and Barbuda^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+AI^Anguilla^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+AL^Albania^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+AM^Armenia^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+AO^Angola^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+AQ^Antarctica^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
+AR^Argentina^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+AS^American Samoa^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+AT^Austria^1^01.12.1997^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+AU^Australia^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
+AW^Aruba^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+AX^Aland Islands^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+AZ^Azerbaijan^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+BA^Bosnia-Herzegovina^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+BB^Barbados^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+BD^Bangladesh^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+BE^Belgium^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+BF^Burkina Faso^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+BG^Bulgaria^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+BH^Bahrain^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+BI^Burundi^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+BJ^Benin^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+BL^Saint Barthelemy^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+BM^Bermuda^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^NOA^North America
+BN^Brunei^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+BO^Bolivia^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+BQ^Bonaire Saint Eustatius & Saba^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+BR^Brazil^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+BS^Bahamas^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+BT^Bhutan^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+BW^Botswana^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
+BY^Belarus^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+BZ^Belize^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
+CA^Canada^^^^AM^23^Americas^AM_No^North America^NOA^North America^NOA^North America
+CC^Cocos Islands^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
+CD^Congo the Democratic Republic of the^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+CF^Central African Republic^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+CG^Congo Republic of^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+CH^Switzerland^1^12.12.2008^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+CI^Ivory Coast^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+CK^Cook Islands^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+CL^Chile^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+CM^Cameroon^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+CN^China^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
+CO^Colombia^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+CR^Costa Rica^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
+CU^Cuba^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+CV^Cape Verde^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+CW^Curacao^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+CX^Christmas Island^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
+CY^Cyprus^^^^AS^35^Asia^AS_We^West Asia^EUR^Europe^EUR^Europe
+CZ^Czech Republic^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+DE^Germany^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+DJ^Djibouti^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+DK^Denmark^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+DM^Dominica^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+DO^Dominican Republic^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+DZ^Algeria^^^^AF^13^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
+EC^Ecuador^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+EE^Estonia^1^30.03.2008^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+EG^Egypt^^^^AF^13^Africa^AF_No^North Africa^MDE^Middle East^AFR^Africa
+EH^Western Sahara^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
+ER^Eritrea^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+ES^Spain^1^26.03.1995^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+ET^Ethiopia^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+FI^Finland^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+FJ^Fiji^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
+FK^Falkland Islands^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+FM^FSM^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
+FO^Faeroe Islands^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+FR^France^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+GA^Gabon^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+GB^UK^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+GD^Grenada^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+GE^Georgia^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+GF^French Guyana^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+GG^Guernsey^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+GH^Ghana^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+GI^Gibraltar^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+GL^Greenland^^^^AM^23^Americas^AM_No^North America^NOA^North America^EUR^Europe
+GM^Gambia^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+GN^Guinea^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+GP^Guadeloupe^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+GQ^Equatorial Guinea^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+GR^Greece^1^26.03.2000^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+GS^South Georgia & the South Sandwich Islands^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+GT^Guatemala^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
+GU^Guam^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
+GW^Guinea-Bissau^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+GY^Guyana^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+HI^Hawaii^^^^PA^54^Pacific^PA_Po^Polynesia^NOA^North America^NOA^North America
+HK^Hong Kong SAR^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
+HN^Honduras^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
+HO^Hong Kong SAR & Macau SAR^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
+HR^Croatia^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+HT^Haiti^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+HU^Hungary^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+ID^Indonesia^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+IE^Ireland^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+IL^Israel^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+IM^Isle of Man^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+IN^India^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+IQ^Iraq^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+IR^Iran^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+IS^Iceland^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+IT^Italy^1^26.10.1997^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+JE^Jersey^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+JM^Jamaica^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+JO^Jordan^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+JP^Japan^^^^AS^32^Asia^AS_Ne^Northeast Asia^JAK^Japan and Korea^ASI^Asia
+KE^Kenya^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+KG^Kyrgyzstan^^^^AS^31^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
+KH^Cambodia^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+KI^Kiribati^^^^PA^53^Pacific^PA_Mi^Micronesia^SWP^South-West Pacific^SWP^Southwest Pacific
+KM^Comoros^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+KN^St. Kitts-Nevis^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+KP^DPR Korea^^^^AS^32^Asia^AS_Ne^Northeast Asia^JAK^Japan and Korea^ASI^Asia
+KR^Korea (ROK)^^^^AS^32^Asia^AS_Ne^Northeast Asia^JAK^Japan and Korea^ASI^Asia
+KW^Kuwait^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+KY^Cayman Islands^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+KZ^Kazakhstan^^^^AS^31^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
+LA^Lao PDR^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+LB^Lebanon^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+LC^St. Lucia^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+LI^Liechtenstein^1^19.12.2011^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+LK^Sri Lanka^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+LR^Liberia^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+LS^Lesotho^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
+LT^Lithuania^1^30.03.2008^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+LU^Luxembourg^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+LV^Latvia^1^30.03.2008^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+LY^Libya^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
+MA^Morocco^^^^AF^13^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
+MC^Monaco^^^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+MD^Moldova^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+ME^Montenegro^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+MF^Saint Martin^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+MG^Madagascar^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+MH^Marshall Islands^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
+MK^Macedonia^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+ML^Mali^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+MM^Myanmar^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+MN^Mongolia^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
+MO^Macau SAR^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
+MP^Northern Marianas^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
+MQ^Martinique^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+MR^Mauritania^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+MS^Montserrat^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+MT^Malta^1^30.03.2008^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+MU^Mauritius^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+MV^Maldives^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+MW^Malawi^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+MX^Mexico^^^^AM^22^Americas^AM_Ce^Central America^NOA^North America^CEM^Central America and Caribbean
+MY^Malaysia^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+MZ^Mozambique^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+NA^Namibia^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
+NC^New Caledonia^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
+NE^Niger^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+NF^Norfolk Island^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
+NG^Nigeria^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+NI^Nicaragua^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
+NL^Netherlands^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+NO^Norway^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+NP^Nepal^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+NR^Nauru^^^^PA^53^Pacific^PA_Mi^Micronesia^SWP^South-West Pacific^SWP^Southwest Pacific
+NU^Niue^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+NZ^New Zealand^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
+OM^Oman^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+PA^Panama^^^^AM^22^Americas^AM_Ce^Central America^SOA^South America^CEM^Central America and Caribbean
+PE^Peru^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+PF^French Polynesia (Tahiti)^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+PG^Papua New Guinea^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
+PH^Philippines^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+PK^Pakistan^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
+PL^Poland^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+PM^St. Pierre & Miquelon^^^^AM^23^Americas^AM_No^North America^NOA^North America^NOA^North America
+PR^Puerto Rico^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+PS^Palestine^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+PT^Portugal^1^26.03.1995^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+PW^Palau^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
+PY^Paraguay^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+QA^Qatar^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+RE^Reunion^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+RO^Romania^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+RS^Serbia^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+RU^Russian Federation^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+RW^Rwanda^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+SA^Saudi Arabia^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+SB^Solomon Islands^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
+SC^Seychelles^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+SD^Sudan^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
+SE^Sweden^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+SG^Singapore^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+SH^Saint Helena^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
+SI^Slovenia^1^30.03.2008^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+SJ^Svalbard and Jan Mayen^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+SK^Slovakia^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+SL^Sierra Leone^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+SM^San Marino^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+SN^Senegal^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+SO^Somalia^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+SR^Suriname^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+SS^South Sudan^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
+ST^Sao Tome and Principe^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+SV^El Salvador^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
+SX^Sint Maarten^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+SY^Syria^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+SZ^Swaziland^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
+TC^Turks & Caicos Islands^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+TD^Chad^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
+TG^Togo^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
+TH^Thailand^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+TJ^Tajikistan^^^^AS^31^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
+TK^Tokelau^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+TL^Timor Leste^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+TM^Turkmenistan^^^^AS^31^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
+TN^Tunisia^^^^AF^13^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
+TO^Tonga^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+TR^Turkey^^^^AS^35^Asia^AS_We^West Asia^EUR^Europe^EUR^Europe
+TT^Trinidad & Tobago^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+TV^Tuvalu^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+TW^Chinese Taipei^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
+TZ^Tanzania^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+UA^Ukraine^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+UG^Uganda^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+UM^United States Minor Outlying Islands^^^^AM^23^Americas^AM_No^North America^NOA^North America^SWP^Southwest Pacific
+US^USA^^^^AM^23^Americas^AM_No^North America^NOA^North America^NOA^North America
+UY^Uruguay^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+UZ^Uzbekistan^^^^AS^31^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
+VA^Holy See (Vatican)^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+VC^St. Vincent & the Grenadines^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+VE^Venezuela^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
+VG^Virgin Islands British^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+VI^Virgin Islands United States^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
+VN^Vietnam^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
+VU^Vanuatu^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
+WF^Wallis & Futuna Islands^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+WS^Samoa^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
+XK^Kosovo^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+YE^Yemen^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
+YT^Mayotte^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+ZA^South Africa^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
+ZM^Zambia^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
+ZW^Zimbabwe^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
