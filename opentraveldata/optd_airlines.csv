@@ -640,7 +640,7 @@ air-kenmore-air^^^^KEN^M5^763^Kenmore Air^^^^^^13398
 air-kenn-borek-air^^^^KBA^4K^0^Kenn Borek Air^Kenn Borek^^^^^417
 air-kenya-airways^^^^KQA^KQ^706^Kenya Airways^Kenyaairway^Skyteam^Member^^^52043
 air-kharkiv-airlines^^^^^KW^711^Kharkiv Airlines^^^^^^345
-air-kingfisher-airlines^^^^KFR^IT^90^Kingfisher Airlines^^^^^^526
+air-kingfisher-airlines^^^^KFR^^90^Kingfisher Airlines^^^^^^526
 air-kish-airlines^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^^945
 air-klm-cityhopper^^^^KLC^WA^0^KLM Cityhopper^KLM Cityhopper^^^^^6
 air-klm^^^^KLM^KL^74^KLM Royal Dutch Airlines^KLM^Skyteam^Member^^^231513
@@ -1022,6 +1022,7 @@ air-tiara-air-aruba^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^^1834
 air-tibet-airlines^^^^^TV^88^Tibet Airlines^^^^^^16625
 air-tiger-air-australia^^^^^TT^0^Tiger Airways Australia^Air Lithuania^^^^^23000
 air-tiger-air-philippines^^^^SRQ^DG^931^Tiger Air Philippines^Tiger Air^^^^^17285
+air-tiger-air-taiwan^^2014-11-26^^TTW^IT^0^Tiger Air Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan
 air-tiger-air^^^^TGW^TR^388^Tiger Airways^^^^^^31853
 air-tik-systems^^^^^T1^0^Tik Systems^^^^^^
 air-titan-airways^^^^^ZT^0^Titan Airways^^^^^^
@@ -1069,6 +1070,7 @@ air-us-helicopter^^^^UJX^UH^500^AtlasJet Ukraine^US Helicopter^^^^^
 air-utair-aviation^^^^UTA^UT^298^Utair Aviation Jsc^Utair^^^^^40179
 air-utair-express^^^^UTX^UR^0^Utair Express^^^^^^5397
 air-uzbekistan-airways^^^^UZB^HY^250^Uzbekistan Airways^Uzbekistan^^^^^22032
+air-v-air^^2014-12-17^^VAX^ZV^189^V Air^V Air Corporation^^^^http://en.wikipedia.org/wiki/V_Air
 air-valair^^^^^V4^0^Valair^^^^^^1098
 air-valuair^^^^VLU^VF^896^Valuair^Valuair^^^^^
 air-van-air-europe^^^^^V9^0^Van Air Europe^^^^^^3457
@@ -1128,7 +1130,7 @@ air-yeti-airlines^^1998-08-17^^NYT^YL^0^Yeti Airlines^^^^^http://en.wikipedia.or
 air-ygnus-air^^^^RGN^Y2^571^Ygnus Air^^^^^^
 air-yute-air-alaska^^^^TUD^4Y^0^Yute Air Alaska^^^^PT^http://en.wikipedia.org/wiki/Flight_Alaska^37654
 air-zagros-air^^^^GZQ^Z4^541^Zagros Air^Zagros Air^^^^^702
-air-zagros-airlines^^^^IZG^ZV^0^Zagros Airlines^Air Midwest^^^^^1136
+air-zagros-airlines^^^^IZG^^0^Zagros Airlines^Air Midwest^^^^^1136
 air-zambezi-airlines^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^^
 air-zambian-airways^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http://en.wikipedia.org/wiki/Zambian_Airways^2198
 air-zambia-skyways^^^^^K8^241^Zambia Skyways^^^^^^2144
