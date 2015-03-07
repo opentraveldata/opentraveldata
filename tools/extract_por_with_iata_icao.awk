@@ -50,6 +50,7 @@
 #  * MTx:   Mountain (e.g., Mount Hotham)
 #  * RK:    Rock (e.g., Ayers Rock)
 #  * MNx:   Mine (e.g., Osborne Mine)
+#  * INSM:  Military Installation (e.g., Bellows Air Force Station)
 #  * AIRB:  Air base; AIRF: Air field; AIRP: Airport; AIRS: Seaplane landing
 #           field
 #  * AIRQ:  Abandoned air field

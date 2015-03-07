@@ -57,6 +57,7 @@
 #  * MTx:   Mountain (e.g., Mount Hotham)
 #  * RK:    Rock (e.g., Ayers Rock)
 #  * MNx:   Mine (e.g., Osborne Mine)
+#  * INSM:  Military Installation (e.g., Bellows Air Force Station)
 #  * AIRB:  Air base; AIRF: Air field; AIRP: Airport; AIRS: Seaplane landing
 #           field
 #  * AIRQ:  Abandoned air field
@@ -626,6 +627,7 @@ BEGINFILE {
     is_city += match (fcode, "PLAT")
     is_city += match (fcode, "VLC") + match (fcode, "MT")
     is_city += match (fcode, "RK") + match (fcode, "MN")
+    is_city += match (fcode, "INSM")
 
     # Travel-related part
     is_airport = match (fcode, "AIRB") + match (fcode, "AIRF")
