@@ -25,6 +25,9 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     # Initialise the OPTD-derived lists
     resetOPTDLineList()
 
+	# Initialise the US DOT-derived lists
+	resetDOTLineList()
+
     # Initialise the PageRank-derived lists
     resetPageRankList()
 }
@@ -127,13 +130,19 @@ function displayLists() {
     displayList("Ground stations", ground_list)
     displayList("Ports", port_list)
     displayList("Off-line points", offpoint_list)
+	displayList("DOT country POR lists", dot_ctry_por_list)
 
-    #
+    # OpenTravelData
     display2dList("OPTD POR indices", optd_por_idx_list)
     display2dList("OPTD POR latitude", optd_por_lat_list)
     display2dList("OPTD POR longitude", optd_por_lon_list)
     display2dList("OPTD POR city list", optd_por_cty_list)
     display2dList("OPTD POR beginning date list", optd_por_bdate_list)
+
+	# US DOT
+	display2dList("DOT country indices", dot_ctry_idx_list)
+	display2dList("DOT country indices", dot_por_name_list)
+	display2dList("DOT country indices", dot_por_area_list)
 }
 
 ##
@@ -686,6 +695,20 @@ function addGeoIDToAllGeoList(__alttaglParamGeonamesID,__alttaglParamGeoString) 
 }
 
 ##
+# Add the given IATA code to the given US DOT list of area codes.
+#
+function addDOTFieldToList(__adftlParamIataCode, __adftlParamDOTList, \
+						   __adftlParamDOTAreaCode) {
+    # Register the details of the US DOT-maintained POR entry for the given field
+    myTmpString = __adftlParamDOTList[__adftlParamDOTAreaCode]
+    if (myTmpString) {
+		myTmpString = myTmpString ","
+    }
+    myTmpString = myTmpString __adftlParamIataCode
+    __adftlParamDOTList[__adftlParamDOTAreaCode] = myTmpString
+}
+
+##
 # Add a given field to the given dedicated OPTD list. The field and the list
 # correspond to the file of best known coordinates and, therefore, are one
 # of the following:
@@ -695,16 +718,16 @@ function addGeoIDToAllGeoList(__alttaglParamGeonamesID,__alttaglParamGeoString) 
 # * Beginning date of the validity range
 #
 function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
-			    __aoftlParamOPTDList, __aoftlParamOPTDField) {
-    # Register the details of the OPTD-maintained POR entry for the latitude
+							__aoftlParamOPTDList, __aoftlParamOPTDField) {
+    # Register the details of the OPTD-maintained POR entry for the given field
     myTmpString = \
-	__aoftlParamOPTDList[__aoftlParamIataCode, __aoftlParamLocationType]
+		__aoftlParamOPTDList[__aoftlParamIataCode, __aoftlParamLocationType]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __aoftlParamOPTDField
     __aoftlParamOPTDList[__aoftlParamIataCode, __aoftlParamLocationType] = \
-	myTmpString
+		myTmpString
 }
 
 ##
@@ -792,6 +815,31 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
 }
 
 ##
+# Register the details of the US DOT-maintained POR entry. Those details are:
+# 1. The IATA code
+# 2. The DOT-maintained location name
+# 3. The DOT-maintained area (country) code
+#
+function registerDOTLine(__rdlParamIataCode, __rdlParamName, \
+						 __rdlParamAreaCode, __rdlParamFullLine) {
+    # DEBUG
+    # print ("IATA code=" __rdlParamIataCode ", loc_name="				\
+    #	   __rdlParamName ", AreaCode=" __rdlParamAreaCode ", awk="		\
+    #	   awk_file ", err=" __glGlobalErrorStream)
+
+	# Register the US DOT-maintained POR name and area code
+    dot_por_name_list[__rdlParamIataCode] = __rdlParamName
+    dot_por_area_list[__rdlParamIataCode] = __rdlParamAreaCode
+ 
+    # Calculate the index for that IATA code
+    dot_ctry_idx_list[__rdlParamAreaCode]++
+    dot_ctry_idx = dot_ctry_idx_list[__rdlParamAreaCode]
+
+    # Register the US DOT-maintained area code for that POR entry
+    addDOTFieldToList(__rdlParamAreaCode, dot_ctry_por_list, __rdlParamIataCode)
+}
+
+##
 # Reset the list of the OPTD-maintained POR entries
 function resetOPTDLineList() {
     delete optd_por_loctype_list
@@ -801,6 +849,15 @@ function resetOPTDLineList() {
     delete optd_por_lon_list
     delete optd_por_cty_list
     delete optd_por_bdate_list
+}
+
+##
+# Reset the list of the US DOT-maintained POR entries
+function resetDOTLineList() {
+    delete dot_ctry_idx_list
+    delete dot_ctry_por_list
+    delete dot_por_name_list
+    delete dot_por_area_list
 }
 
 ##
