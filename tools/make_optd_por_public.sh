@@ -6,6 +6,7 @@
 # - ref_airport_pageranked.csv
 # - optd_tz_light.csv
 # - optd_cont.csv
+# - optd_usdot_wac.csv
 # - dump_from_crb_city.csv
 # - dump_from_geonames.csv
 #
@@ -86,6 +87,11 @@ OPTD_TZ_FILE=${DATA_DIR}${OPTD_TZ_FILENAME}
 # Mapping between the Countries and their corresponding continent
 OPTD_CNT_FILENAME=optd_cont.csv
 OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
+
+##
+# US DOT World Area Codes (WAC) for countries and states
+OPTD_USDOT_FILENAME=optd_usdot_wac.csv
+OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
 
 ##
 # PageRank values
@@ -202,6 +208,7 @@ then
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
 	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_FILE}'"
 	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
+	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): '${OPTD_USDOT_FILE}'"
 	echo " - RFD data dump file: '${RFD_RAW_FILE}'"
 	echo " - Geonames data dump file: '${GEONAME_RAW_FILE}'"
 	echo
@@ -308,8 +315,8 @@ echo "----------------"
 echo
 REDUCER=make_optd_por_public.awk
 time awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
-	${OPTD_PR_FILE} ${OPTD_TZ_FILE} ${OPTD_CNT_FILE} ${OPTD_POR_WITH_GEORFDALT} \
-	> ${OPTD_POR_WITH_NO_CTY_NAME}
+	 ${OPTD_PR_FILE} ${OPTD_TZ_FILE} ${OPTD_CNT_FILE} ${OPTD_USDOT_FILE} \
+	 ${OPTD_POR_WITH_GEORFDALT} > ${OPTD_POR_WITH_NO_CTY_NAME}
 
 ##
 # Write the UTF8 and ASCII names of the city served by every travel-related
@@ -356,7 +363,7 @@ echo "Sorting Step"
 echo "------------"
 echo
 # Sort on the IATA code, feature code and Geonames ID, in that order
-time sort -t'^' -k1,1 -k42,42 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
+time sort -t'^' -k1,1 -k44,44 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
 	> ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE}
 cat ${OPTD_POR_FILE_HEADER} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
 	> ${OPTD_POR_PUBLIC_FILE}
