@@ -121,7 +121,8 @@ OPTD_POR_PUBLIC_FILE=${DATA_DIR}${OPTD_POR_PUBLIC_FILENAME}
 # moddate (36) ^
 # city_code_list (37) ^ city_name_list (38) ^ city_detail_list (39) ^
 # tvl_por_list (40) ^
-# state_code (41) ^ location_type (42) ^ wiki_link (43) ^ alt_name_section (44)
+# state_code (41) ^ wac (42) ^ wac_name (43) ^
+# location_type (44) ^ wiki_link (45) ^ alt_name_section (46)
 
 ####
 ## Valid combined Geonames POR, appearing in schedules (i.e., important)
@@ -131,33 +132,33 @@ echo "--------"
 
 ##
 # Valid combined Geonames airport POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $42 == "CA") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $44 == "CA") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} airports:"
-echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CA\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
+echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CA\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
 
 ##
 # Valid combined Geonames heliport POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $42 == "CH") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $44 == "CH") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} heliports:"
-echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CH\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
+echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CH\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
 
 ##
 # Valid combined Geonames rail POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $42 == "CR") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $44 == "CR") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} railway stations:"
-echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CR\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
+echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CR\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
 
 ##
 # Valid combined Geonames bus POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $42 == "CB") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $44 == "CB") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} bus stations:"
-echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CB\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
+echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CB\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
 
 ##
 # Valid combined Geonames port POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $42 == "CP") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 != 0 && $6 == "" && $13 != "" && $44 == "CP") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} ferry ports:"
-echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CP\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
+echo "awk -F'^' '{if (\$5 != 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CP\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | sort -t'^' -k13nr,13 | less"
 
 
 ####
@@ -169,33 +170,33 @@ echo "--------"
 
 ##
 # Valid combined non-Geonames airport POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $42 == "CA") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $44 == "CA") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} airports:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CA\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CA\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid combined non-Geonames heliport POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $42 == "CH") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $44 == "CH") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} heliports:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CH\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CH\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid combined non-Geonames rail POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $42 == "CR") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $44 == "CR") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} railway stations:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CR\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CR\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid combined non-Geonames bus POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $42 == "CB") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $44 == "CB") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} bus stations:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CB\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CB\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid combined non-Geonames port POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $42 == "CP") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && $44 == "CP") {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} ferry ports:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$42 == \"CP\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && \$44 == \"CP\") {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 
 ####
@@ -207,31 +208,31 @@ echo "--------"
 
 ##
 # Valid non-Geonames airport POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "A")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($44, "A")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} airports:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"A\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$44, \"A\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid non-Geonames heliport POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "H")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($44, "H")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} heliports:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"H\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$44, \"H\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid non-Geonames rail POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "R")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($44, "R")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} railway stations:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"R\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$44, \"R\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid non-Geonames bus POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "B")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($44, "B")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} bus stations:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"B\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$44, \"B\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid non-Geonames port POR, appearing in schedules (i.e., important)
-NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "P")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($44, "P")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} ferry ports:"
-echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"P\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$44, \"P\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
