@@ -32,9 +32,10 @@ BEGIN {
 	printf ("%s", "^population^elevation^gtopo30")
 	printf ("%s", "^timezone^gmt_offset^dst_offset^raw_offset^moddate")
 	printf ("%s", "^city_code^city_name_utf^city_name_ascii^tvl_por_list")
-	printf ("%s", "^state_code^wac^wac_name^location_type")
+	printf ("%s", "^state_code^location_type")
 	printf ("%s", "^wiki_link")
 	printf ("%s", "^alt_name_section")
+	printf ("%s", "^wac^wac_name")
 	printf ("%s", "\n")
 
 	#
@@ -115,8 +116,8 @@ BEGIN {
 		# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
 		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_optd_por_file
 
-		# ^ State code ^ US DOT WAC ^ WAC name
-		printf ("%s", "^" "^" "^") > non_optd_por_file
+		# ^ State code (empty here)
+		printf ("%s", "^") > non_optd_por_file
 
 		#  ^ Location type (the default, i.e., city and airport)
 		printf ("%s", "^CA") > non_optd_por_file
@@ -126,6 +127,9 @@ BEGIN {
 
 		#  ^ Section of alternate names  (empty here)
 		printf ("%s", "^") > non_optd_por_file
+
+		#  ^ US DOT WAC ^ WAC name (empty here)
+		printf ("%s", "^" "^") > non_optd_por_file
 
 		# End of line
 		printf ("%s", "\n") > non_optd_por_file

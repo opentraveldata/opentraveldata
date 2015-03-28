@@ -54,9 +54,10 @@ BEGIN {
     printf ("%s", "^population^elevation^gtopo30")
     printf ("%s", "^timezone^gmt_offset^dst_offset^raw_offset^moddate")
     printf ("%s", "^city_code_list^city_name_list^city_detail_list^tvl_por_list")
-    printf ("%s", "^state_code^wac^wac_name^location_type")
+    printf ("%s", "^state_code^location_type")
     printf ("%s", "^wiki_link")
     printf ("%s", "^alt_name_section")
+	printf ("%s", "^wac^wac_name")
     printf ("%s", "\n")
 
     #
@@ -454,12 +455,9 @@ function printAltNameSection(myAltNameSection) {
 		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
-		# ^ State code ^ US DOT World Area Code (WAC) ^ WAC name ^
+		# ^ State code
 		state_code = $48
-		world_area_code = getWorldAreaCode(country_code, state_code, \
-										   country_code_alt)
-		wac_name = getWorldAreaCodeName(world_area_code)
-		printf ("%s", "^" state_code "^" world_area_code "^" wac_name)
+		printf ("%s", "^" state_code)
 
 		# ^ Location type ^ Wiki link
 		printf ("%s", "^" location_type "^" $38)
@@ -468,6 +466,12 @@ function printAltNameSection(myAltNameSection) {
 		# ^ Section of alternate names
 		altname_section = $57
 		printAltNameSection(altname_section)
+
+		# ^ US DOT World Area Code (WAC) ^ WAC name
+		world_area_code = getWorldAreaCode(country_code, state_code,	\
+										   country_code_alt)
+		wac_name = getWorldAreaCodeName(world_area_code)
+		printf ("%s", "^" world_area_code "^" wac_name)
 
 		# End of line
 		printf ("%s", "\n")
@@ -624,12 +628,9 @@ function printAltNameSection(myAltNameSection) {
 		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
-		# ^ State code ^ US DOT World Area Code (WAC) ^ WAC name ^
+		# ^ State code
 		state_code = $16
-		world_area_code = getWorldAreaCode(country_code, state_code, \
-										   country_code_alt)
-		wac_name = getWorldAreaCodeName(world_area_code)
-		printf ("%s", "^" state_code "^" world_area_code "^" wac_name)
+		printf ("%s", "^" state_code)
 
 		# ^ Location type
 		printf ("%s", "^" location_type)
@@ -639,6 +640,12 @@ function printAltNameSection(myAltNameSection) {
 
 		# ^ Section of alternate names (empty here)
 		printf ("%s", "^")
+
+		# ^ US DOT World Area Code (WAC) ^ WAC name
+		world_area_code = getWorldAreaCode(country_code, state_code,	\
+										   country_code_alt)
+		wac_name = getWorldAreaCodeName(world_area_code)
+		printf ("%s", "^" world_area_code "^" wac_name)
 
 		# End of line
 		printf ("%s", "\n")
@@ -730,12 +737,9 @@ function printAltNameSection(myAltNameSection) {
 		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
-		# ^ State code ^ US DOT World Area Code (WAC) ^ WAC name ^
+		# ^ State code
 		state_code = $21
-		world_area_code = getWorldAreaCode(country_code, state_code, \
-										   country_code_alt)
-		wac_name = getWorldAreaCodeName(world_area_code)
-		printf ("%s", "^" state_code "^" world_area_code "^" wac_name)
+		printf ("%s", "^" state_code)
 
 		#  ^ Location type
 		printf ("%s", "^" location_type)
@@ -747,6 +751,12 @@ function printAltNameSection(myAltNameSection) {
 		# ^ Section of alternate names
 		altname_section = $39
 		printAltNameSection(altname_section)
+
+		# ^ US DOT World Area Code (WAC) ^ WAC name
+		world_area_code = getWorldAreaCode(country_code, state_code, \
+										   country_code_alt)
+		wac_name = getWorldAreaCodeName(world_area_code)
+		printf ("%s", "^" world_area_code "^" wac_name)
 
 		# End of line
 		printf ("%s", "\n")
@@ -833,7 +843,7 @@ function printAltNameSection(myAltNameSection) {
 		# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
 		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_optd_por_file
 
-		# ^ State code ^ US DOT World Area Code (WAC) ^
+		# ^ State code
 		printf ("%s", "^" ) > non_optd_por_file
 
 		#  ^ Location type (the default, i.e., city and airport)
@@ -844,6 +854,9 @@ function printAltNameSection(myAltNameSection) {
 
 		#  ^ Section of alternate names  (empty here)
 		printf ("%s", "^") > non_optd_por_file
+
+		# ^ US DOT World Area Code (WAC) ^ WAC name (empty here)
+		printf ("%s", "^^" ) > non_optd_por_file
 
 		# End of line
 		printf ("%s", "\n") > non_optd_por_file
