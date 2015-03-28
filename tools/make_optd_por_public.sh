@@ -363,7 +363,7 @@ echo "Sorting Step"
 echo "------------"
 echo
 # Sort on the IATA code, feature code and Geonames ID, in that order
-time sort -t'^' -k1,1 -k44,44 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
+time sort -t'^' -k1,1 -k42,42 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
 	> ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE}
 cat ${OPTD_POR_FILE_HEADER} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
 	> ${OPTD_POR_PUBLIC_FILE}
