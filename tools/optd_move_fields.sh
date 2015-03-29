@@ -4,6 +4,9 @@
 # That Bash script moves fields for:
 # - optd_por_no_longer_valid.csv
 #
+# Note that that script is intended to be very rarely run, for one-time actions
+# only. If you want to re-use it, check the 'TO BE CUSTOMIZED' lines below.
+#
 
 ##
 # Temporary path
@@ -69,6 +72,7 @@ OPTD_NOIATA_NEW_FILE=${TMP_DIR}${OPTD_NOIATA_FILENAME}.new
 
 ##
 # Move the fields #42 and #43 at the end of the line
+# TO BE CUSTOMIZED
 cut -d'^' -f1-41,44- ${OPTD_NOIATA_FILE} > ${OPTD_NOIATA_TMP1_FILE}
 cut -d'^' -f42,43 ${OPTD_NOIATA_FILE} > ${OPTD_NOIATA_TMP2_FILE}
 paste -d'^' ${OPTD_NOIATA_TMP1_FILE} ${OPTD_NOIATA_TMP2_FILE} > ${OPTD_NOIATA_NEW_FILE}
