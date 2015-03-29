@@ -1,4 +1,5 @@
 pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type^wiki_link^flt_freq
+air-9-air^^2015-01-01^^^AQ^902^9 Air^^^^^http://en.wikipedia.org/wiki/9_Air^
 air-abc-aerolineas^^2005-12-01^^AIJ^4O^837^Interjet^ABC Aerolineas^^^^http://en.wikipedia.org/wiki/Interjet^96332
 air-acg-air-cargo-germany^^^^ACX^6U^0^Acg Air Cargo Germany^Air Ukraine^^^^^
 air-act-havayollari^^^^ABS^9T^556^Act Havayollari^Athabaska^^^^^
@@ -6,6 +7,7 @@ air-adria-airways^^^^ADR^JP^165^Adria Airways^Adria^Star Alliance^Member^^^17725
 air-aegean-airlines^^^^AEE^A3^390^Aegean Airlines^Aegean Air^Star Alliance^Member^^^61691
 air-aer-arann^^^^REA^RE^743^Aer Arann^^^^^^23869
 air-aer-lingus^^^^EIN^EI^53^Aer Lingus^Aer Lingus^^^^^67362
+air-aero4m^^2015-01-01^^AEH^H4^0^Aero4M^^^^^^
 air-aero-airlines^^^^^EE^350^Aero Airlines^Aero Airlines^^^^^
 air-aero-benin^^^^^EM^282^Aero Benin^^^^^^
 air-aero-caribbean^^^^CRN^7L^164^Aero Caribbean^^^^^^
@@ -45,8 +47,8 @@ air-air-alliance^^^^GGN^ZX^0^Air Alliance^^^^^^
 air-air-alps-aviation^1^1999-01-01^2014-03-01^LPV^A6^527^Air Alps Aviation^^^^^http://en.wikipedia.org/wiki/Air_Alps^
 air-air-alsie^^^^^6I^248^Air Alsie^Air Alsie^^^PT^^381
 air-air-antilles-express^^^^^3S^875^Air Antilles Express^Air Antilles^^^^^11474
-air-air-arabia-egypt^^^^RBG^E5^844^Air Arabia Egypt^Samara Airl^^^^^1431
 air-air-arabia^^^^^G9^514^Air Arabia^^^^^^51495
+air-air-arabia-egypt^^^^RBG^E5^844^Air Arabia Egypt^Samara Airl^^^^^1431
 air-air-arabia-maroc^^^^^3O^452^Air Arabia Maroc^^^^^^5699
 air-air-armenia^^^^^QN^907^Air Armenia^Air Armenia^^^^^3765
 air-air-asia^^^^AXM^AK^807^Air Asia^^^^^http://en.wikipedia.org/wiki/AirAsia^166285
@@ -77,6 +79,7 @@ air-air-calin^^^^ACI^SB^63^Aircalin^Cal Int^^^^^3797
 air-air-canada^^^^ACA^AC^14^Air Canada^Air Canada^Star Alliance^Member^^^565646
 air-air-canada-rouge^^^^^RV^0^Air Canada Rouge^^^^^^
 air-air-caraibes^^^^FWI^TX^427^Air Caraibes^Air Caraibes^^^^^11688
+air-air-cargo-carriers^^1986-01-01^^SNC^2Q^0^Air Cargo Carriers^^^^C^http://en.wikipedia.org/wiki/Air_Cargo_Carriers^
 air-air-caucasus^^^^CSG^UY^49^Air Caucasus^Air Caucasus^^^^^
 air-air-china^^^^CCA^CA^999^Air China^Air China^Star Alliance^Member^^^386849
 air-air-city^^^^ECE^4F^0^Air City^Air City^^^^^
@@ -91,7 +94,7 @@ air-air-cote-d-ivoire^^^^^HF^483^Air Cote D Ivoire^Aircoteivoire^^^^^3052
 air-air-creebec^^^^CRQ^YN^219^Air Creebec^Air Creebec^^^^^10173
 air-air-dolomiti^^^^DLA^EN^101^Air Dolomiti^Air Dolomiti^^^^^25685
 air-air-east^^^^^ER^0^Air East^^^^^^
-air-aires^^1981-01-01^^ARE^4C^35^LAN Colombia^AIRES^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Colombia^
+air-aires^^1981-01-01^^ARE^4C^35^LAN Colombia^Aerovías de Integración Regional (AIRES)^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Colombia^
 air-air-europa^^^^AEA^UX^996^Air Europa^Air Europa^Skyteam^Member^^^93686
 air-air-excursions^^^^^X4^0^Air Excursions^^^^^^1109
 air-air-explore^^^^AXE^ED^0^Air Explore^Airblue^^^^^
@@ -113,6 +116,7 @@ air-air-italy^^^^^I9^67^Air Italy^Air Italy^^^^^6464
 air-air-ivoire^1^1960-01-01^2011-12-31^VUN^VU^943^Air Ivoire^^^^^http://en.wikipedia.org/wiki/Air_Ivoire^
 air-air-jamaica^^^^AJM^JM^201^Air Jamaica^^^^^^
 air-air-japan-company^^^^AJX^NQ^0^Air Japan Company^^^^^^5449
+air-air-jet^^^2015-01-01^^7A^0^Air Jet^^^^^^
 air-air-kbz^^^^KBZ^K7^314^Air Kbz^Arizona^^^^^8471
 air-air-kenya-aviation^^^^^QP^0^Air Kenya Aviation^Airkenya Avn^^^^^
 air-air-kenya-express^^^^XAK^P2^0^Air Kenya Express^^^^^^8784
@@ -141,14 +145,14 @@ air-air-mobility-command^^^^^MC^0^Air Mobility Command^^^^^^
 air-air-moldova^^^^MLD^9U^572^Air Moldova^Air Moldova^^^^^7753
 air-air-namibia^^^^NMB^SW^186^Air Namibia^Air Namibia^^^^^8492
 air-air-new-zealand^^^^ANZ^NZ^86^Air New Zealand^New Zealand^Star Alliance^Member^^^187920
-air-air-next^^^^NXA^7A^0^Air Next^Haines Air^^^^^
+air-air-next^1^2004-08-20^2010-12-31^NXA^7A^0^Air Next^Haines Air^^^^http://en.wikipedia.org/wiki/Air_Next^
 air-air-niamey^^^^AWN^A7^0^Air Niamey^Air Comet^^^^^
 air-air-nigeria^^^^VGN^VK^786^Air Nigeria^^^^^^
 air-air-nippon^1^1974-10-10^2012-04-01^ANK^EL^0^Air Nippon^^^^^http://en.wikipedia.org/wiki/Air_Nippon^144
 air-air-nippon-wings^^^^^EH^0^ANA Wings^^^^^^98515
 air-air-niugini^^^^ANG^PX^656^Air Niugini^Air Niugini^^^^^28298
-air-air-north^^^^^4N^287^Air North^Air North^^^^^855
 air-airnorth^^^^ANO^TL^935^Airnorth^Airnorth^^^^^10232
+air-air-north^^^^^4N^287^Air North^Air North^^^^^855
 air-air-nostrum^^^^ANE^YW^694^Air Nostrum^Air Nostrum^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Air_Nostrum^77130
 air-air-one^^^^ADH^AP^867^Air One^Aliadriatica^^^^http://en.wikipedia.org/wiki/Air_One^
 air-air-onix^1^2012-04-28^2013-12-31^^OG^130^Air Onix^^^^^http://en.wikipedia.org/wiki/Air_Onix^
@@ -161,13 +165,13 @@ air-air-seychelles^^^^SEY^HM^61^Air Seychelles^Air Seychel^^^^^5687
 air-air-sinai^^^^ASD^4D^903^Air Sinai^Air Sinai^^^^^208
 air-air-slovakia^^^^SVK^GM^0^Air Slovakia^Air Slovakia^^^^^
 air-air-sunshine^^^^RSI^YI^0^Air Sunshine^Airsunshine^^^^^23745
-air-air-tahiti-nui^^^^THT^TN^244^Air Tahiti Nui^Air Tahiti^^^^^17872
 air-air-tahiti^^^^VTA^VT^135^Air Tahiti^Air Tahiti^^^^^22877
+air-air-tahiti-nui^^^^THT^TN^244^Air Tahiti Nui^Air Tahiti^^^^^17872
 air-air-tanzania^^^^ATC^TC^197^Air Tanzania^^^^^^3138
 air-air-timor^^^^^6C^586^Air Timor^^^^^^
 air-air-tindi^^^^TID^8T^744^Air Tindi^^^^^http://en.wikipedia.org/wiki/Air_Tindi^3768
-air-airtran-airways^^^^^FL^332^Airtran Airways^Airtran Air^^^^^2507
-air-air-transat^^^^TSC^TS^649^Air Transat^Air Transat^^^^^17543
+air-airtran-airways^^1993-10-26^^TRS^FL^332^Airtran Airways^^^^^http://en.wikipedia.org/wiki/AirTran_Airways^2507
+air-air-transat^^1987-11-14^^TSC^TS^649^Air Transat^^^^^http://en.wikipedia.org/wiki/Air_Transat^17543
 air-air-uganda^^^^^U7^926^Air Uganda^Norcanair^^^^^
 air-air-urga^^^^URG^3N^746^Air Urga^Airvantage^^^^^
 air-air-vallee^^^^^DO^0^Discovery Airways^Air Vallee^^^^^1098
@@ -184,7 +188,7 @@ air-alaska-airlines^^^^ASA^AS^27^Alaska Airlines^Alaska Airlines^^^^^184626
 air-alaska-seaplane-service^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^^11931
 air-alas-uruguay^^^^^YZ^0^Alas Uruguay^^^^^^
 air-alidaunia^^^^LID^D4^0^Alidaunia^^^^^^614
-air-alitalia^^^^AZA^AZ^55^Alitalia^Alitalia^Skyteam^Member^^^140408
+air-alitalia^^1999-03-01^^AZA^AZ^55^Alitalia S.A.I.^^Skyteam^Member^^http://en.wikipedia.org/wiki/Alitalia^140408
 air-alitalia-cityliner^^^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/Alitalia_CityLiner^34169
 air-allegiant-air^^^^^G4^268^Allegiant Air^Guizhou Air^^^^^
 air-alliance-airlines^^^^FWQ^QQ^0^Alliance Airlines^^^^PT^^
@@ -193,9 +197,9 @@ air-alma-de-mexico^^^^^C4^665^Alma De Mexico^Almademexico^^^^^
 air-almasria-universal-airlines^^^^LMU^UJ^110^Almasria Universal Airlines^Almasria Air^^^^^5123
 air-al-naser-airlines^1^^2013-12-31^MHK^6N^503^Al Naser Airlines^^^^^http://en.wikipedia.org/wiki/Al-Naser_Airlines^419
 air-alpha-air-transport^^2014-01-01^^^7U^428^Alpha Air Transport^^^^^^
-air-alpine-air^^^^^N6^758^Alpine Air^Aerocontinent^^^^^
-air-alsa-grupo^^^^^5I^0^Alsa Grupo Slu^Air G^^^^^36739
+air-alpine-air^^^^^N6^0^Nomad Aviation^Aerocontinent^^^^^
 air-als^^^^^K4^0^ALS^^^^^^
+air-alsa-grupo^^^^^5I^0^Alsa Grupo Slu^Air G^^^^^36739
 air-amadeus-7n^^2011-01-25^^^7N^^Amadeus 7N^Amadeus 7N^^^D^^
 air-amadeus-8z^1^^2014-06-01^^8Z^0^Amadeus 8Z^Amadeus 8Z^^^D^^
 air-amadeus-eight^^^^XYD^8X^794^Amadeus Eight^Amadeus Eight^^^D^^
@@ -217,8 +221,8 @@ air-andes-lineas-aereas^^2006-06-20^^ANS^OY^650^Andes Lineas Aereas^Andes^^^^htt
 air-angara-airlines^^^^^2G^735^Angara Airlines^^^^P^^1572
 air-anguilla-air-services^^^^AAS^Q3^0^Anguilla Air Services^^^^^^2198
 air-antrak-air^^^^^O4^916^Antrak Air^^^^^^368
-air-arctic-circle-air^^^^ODM^5F^91^Pan African Airways^Bonaire Air^^^^^
 air-arc^^^^^XD^0^Arc^^^^^^
+air-arctic-circle-air^^^^ODM^5F^91^Pan African Airways^Bonaire Air^^^^^
 air-ariana-afghan-airlines^^^^AFG^FG^255^Ariana Afghan Airlines^Ariana^^^^^1256
 air-arik-air^^^^ARA^W3^725^Arik Air^Arik Air^^^^^38336
 air-arkefly^^^^TFL^OR^178^Arkefly^Arkefly^^^PC^http://en.wikipedia.org/wiki/Arkefly^2190
@@ -257,7 +261,7 @@ air-avia-traffic^^^^^YK^511^Avia Traffic Company^Avia Traffic^^^^^936
 air-avies^^^^AIA^U3^0^Avies^^^^^^5776
 air-avion-express^^^^NVD^X9^0^Avion Express^City Star Air^^^^^
 air-avior^^^^ROI^9V^742^Avior^Avior^^^^^6320
-air-avitrans-nordic^^^^ETS^2Q^0^Nuovo Trasporto Viaggiatori^^^^^^
+air-avitrans-nordic^1^2004-01-01^2010-12-31^ETS^2Q^0^Avitrans Nordic^^^^T^http://en.wikipedia.org/wiki/Avitrans^
 air-axess^^^^^1J^0^Axess International^Axess Intl^^^^^
 air-axis-lines^1^2005-01-01^2006-01-01^^O8^0^Axis International Lines^^^^^http://en.wikipedia.org/wiki/Axis_Lines_International^115
 air-azerbaijan-airlines^^^^AHY^J2^771^Azerbaijan Airlines^Azerbaijan Ai^^^^^10136
@@ -268,11 +272,12 @@ air-badr-airlines^^^^^J4^0^Badr Airlines^Jet For You^^^^^2562
 air-bahamasair^^^^BHS^UP^111^Bahamasair^Bahamasair^^^^^19456
 air-bahrain-air^^^^^BN^937^Bahrain Air^Horizon Airli^^^^^
 air-bangkok-airways^^^^BKP^PG^829^Bangkok Airways^Bangkok Air^^^^^65444
+air-bassaka-air^^2013-01-01^^BSX^5B^590^Bassaka Air^^^^^http://en.wikipedia.org/wiki/Bassaka_Air^495
 air-batavia-air^^^^^Y6^0^Batavia Air^^^^^^
 air-batik-air-indonesia^^^^BTK^ID^0^Batik Air Indonesia^Interlink^^^P^^2562
 air-bb-airways^^^^^BO^505^BB Airways^^^^^^
 air-bearskin-airlines^^^^BLS^JV^632^Bearskin Airlines^Bearskin Air^^^^^14833
-air-beijing-capital-airlines^^^^DER^JD^898^Beijing Capital Airlines^Beijing Capit^^^^^24898
+air-beijing-capital-airlines^^2010-05-01^^DER^JD^898^Beijing Capital Airlines^^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^24898
 air-bek-air^^^^BEK^Z9^183^Jsc Bek Air^Jsc Bek Air^^^^^1870
 air-belair-airlines^^^^^4T^0^Belair Airlines^Russian Air^^^^^1187
 air-belavia^^^^BRU^B2^628^Belavia^Belavia^^^^^18728
@@ -286,7 +291,7 @@ air-bh-air^^^^BGH^8H^366^BH Air^Highland Air^^^^^482
 air-bh-airlines^^^^^JA^995^BH Airlines^BH Airlines^^^^^889
 air-biman-bangladesh-airline^^^^BBC^BG^997^Biman Bangladesh Airline^Biman^^^^^10336
 air-binter-canarias^^^^IBB^NT^474^Binter Canarias^Binter Can^^^^^21818
-air-bismilah-airlines^^^^^5Z^0^Bismilah Airlines^Bismilah Airl^^^^^1739
+air-bismilah-airlines^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^http://en.wikipedia.org/wiki/Bismillah_Airlines^1739
 air-blue1^^^^BLF^KF^142^Blue1^^^^^^8954
 air-blue-air-airline^^^^^0B^0^Blue Air Airline^^^^^^9983
 air-bluebird-airways^^^^BBG^BZ^0^Blue Bird Airways^^^^^^
@@ -303,7 +308,7 @@ air-brindabella-airlines^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^http://en
 air-bringer-air-cargo^^^^^E6^417^Bringer Air Cargo^^^^^^
 air-british-airways^^^^BAW^BA^125^British Airways^British Airways^OneWorld^Member^^^293520
 air-british-midland^^^^BMA^BD^236^British Midland^British Midland^^^^^
-air-brussels-airlines^^^^DAT^SN^82^Brussels Airlines^Brussels Air^Star Alliance^Member^^^73778
+air-brussels-airlines^^2007-03-25^^BEL^SN^82^Brussels Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Brussels_Airlines^73778
 air-buddha-air^^^^^U4^0^Buddha Air^Pmt Air^^^^^
 air-bukovyna-airlines^^^^BKV^BQ^616^Bukovyna Airlines^^^^^^
 air-bulgaria-air^^^^LZB^FB^623^Bulgaria Air^Balkan Air To^^^^^11063
@@ -337,6 +342,7 @@ air-catovair^^^^^0C^0^Catovair^Catovair^^^^^
 air-cayman-airways^^^^CAY^KX^378^Cayman Airways^Cayman Air^^^^^11060
 air-cebu-air^^^^CEB^5J^203^Cebu Air^Cebu Air^^^^^119881
 air-ceiba^^^^^C2^304^Ceiba Intercontinental^Ceiba^^^^^5124
+air-cemair^^2005-01-01^^KEM^5Z^0^CemAir^^^^^http://en.wikipedia.org/wiki/CemAir^1739
 air-central-air-transport-services^^^^^ZO^0^Central Air Transport Services^^^^^^
 air-central-mountain-air^^^^GLR^9M^634^Central Mountain Air^^^^^^12015
 air-centralwings^^^^CLW^C0^0^Centralwings^^^^^^
@@ -345,13 +351,13 @@ air-challenge-aero^^^^CHG^^^Challenge Aero^Challenge Aero^^^T^^
 air-champion-air^^^^CCP^MG^0^Champion Air^Mgm Grand^^^^^
 air-champlain-enterprises^^^^UCA^C5^841^Champlain Enterprises^^^^^^31112
 air-cham-wings-airlines^^^^SAW^6Q^386^Cham Wings Airlines^Slovak Arlines^^^^^
-air-chanchangi-airlines^^^^^5B^0^Chanchangi Airlines^^^^^^495
+air-chanchangi-airlines^1^1994-01-01^2015-01-01^NCH^5B^0^Chanchangi Airlines^^^^^http://en.wikipedia.org/wiki/Chanchangi_Airlines^495
 air-charter-air-transport^^^^^VC^0^Charter Air Transport^^^^^http://en.wikipedia.org/wiki/Charter_Air_Transport^202
 air-chautauqua-airlines^^^^CHQ^RP^363^Chautauqua Airlines^^^^^^64920
 air-chengdu-airlines^^^^^EU^811^Chengdu Airlines^Ecuatoriana^^^^^9455
 air-china-airlines^^^^CAL^CI^297^China Airlines^China Air^Skyteam^Member^^^60213
-air-china-cargo-airlines-bis^^^^NDR^CK^0^China Cargo Airlines^Andesmar Lin^^^^^
 air-china-cargo-airlines^^^^CKK^CK^0^China Cargo Airlines^Andesmar Lin^^^^^
+air-china-cargo-airlines-bis^^^^NDR^CK^0^China Cargo Airlines^Andesmar Lin^^^^^
 air-china-eastern-airlines^^^^CES^MU^781^China Eastern Airlines^China Eastern Airlines^Skyteam^Member^^http://en.wikipedia.org/wiki/China_Eastern_Airlines^572068
 air-china-express-airlines^^^^HXA^G5^987^China Express Airlines^Jsc Air Enkor^^^^^11797
 air-china-southern-airlines^^^^CSN^CZ^784^China Southern Airlines^China South^Skyteam^Member^^^651695
@@ -360,8 +366,8 @@ air-china-west-air^^^^^PN^847^China West Air^Pan Am^^^^^15996
 air-china-xinhua-airlines^^^^^X2^0^China Xinhua Airlines^China Xinhua^^^^^
 air-chongqing-airlines^^^^^OQ^878^Chongqing Airlines^^^^^^
 air-chu-kong-passenger-transport^^^^^3A^28^Chu Kong Passenger Transport^Mafira Air^^^F^^23790
-air-cimber-air^^^^CIM^QI^647^Cimber AS^Cimber Air^^^^^
 air-cimber^^^^^QA^0^Cimber^Cimber^^^^^2957
+air-cimber-air^^^^CIM^QI^647^Cimber AS^Cimber Air^^^^^
 air-cinnamon-air^^^^RLE^C7^0^Cinnamon Air^^^^P^^6693
 air-cions-software^^^^^B1^0^Cions Software^^^^^^
 air-cirrus-airlines^^^^RUS^C9^251^Cirrus Airlines^^^^^^
@@ -376,8 +382,8 @@ air-comair^^^^CAW^MN^161^Comair^Comair^OneWorld^Affiliate^^^41798
 air-comores-aviation^^^^KMZ^O5^174^Comores Aviation International^^^^^^
 air-compagnie-africaine-d-aviation^^1993-01-01^^FPY^BU^883^Compagnie Africaine d'Aviation^flyCAA^^^^http://en.wikipedia.org/wiki/Compagnie_Africaine_d%27Aviation^2486
 air-compass-airlines^^^^^CP^3^Compass Airlines^Canadian^^^^^67450
-air-condor-berlin^^^^CIB^DF^0^Condor Berlin^^^^^^
 air-condor^^^^CFG^DE^881^Condor^Condor^^^^^33969
+air-condor-berlin^^^^CIB^DF^0^Condor Berlin^^^^^^
 air-congo-express^1^2010-01-01^2014-01-01^CXR^9X^0^Congo Express^New Axis Air^^^^http://en.wikipedia.org/wiki/Congo_Express^267
 air-continental-airlines^1^^2010-09-30^COA^CO^5^Continental Airlines^Continental^^^^http://fr.wikipedia.org/wiki/Continental_Airlines^
 air-continental-micronesia^^^^CMI^CS^0^Continental Micronesia^Continl Micro^^^^^
@@ -391,7 +397,7 @@ air-cronos-airlines^^^^^C8^498^Cronos Airlines^^^^P^^
 air-crystal-thai-airlines^1^2011-02-01^2011-12-31^KPS^YL^0^Crystal Thai Airlines^^^^^http://en.wikipedia.org/wiki/Crystal_Thai_Airlines^
 air-cts-viaggi^^^^^I1^489^CTS Viaggi^CTS Viaggi^^^^^
 air-cubana-de-aviacion^^^^CUB^CU^136^Cubana De Aviacion^Cubana^^^^^8844
-air-cyprus-airways^^^^CYP^CY^48^Cyprus Airways^Cyprus Air^^^^^5523
+air-cyprus-airways^1^1947-01-01^2015-01-09^CYP^CY^48^Cyprus Airways^^^^^http://en.wikipedia.org/wiki/Cyprus_Airways^5523
 air-czech-airlines^^^^CSA^OK^64^Czech Airlines^Czech Airlines^Skyteam^Member^^http://en.wikipedia.org/wiki/Czech_Airlines^27422
 air-czech-connect-airlines^^^^^CQ^909^Czech Connect Airlines^^^^^^
 air-daallo-airlines^^^^DAO^D3^991^Daallo Airlines^Daallo Airlin^^^^^
@@ -400,6 +406,7 @@ air-dana-airlines^^2008-01-01^^DAN^9J^234^Dana Air^^^^^http://en.wikipedia.org/w
 air-danish-air-transport^^^^DTR^DX^243^Danish Air Transport^Danish Air^^^^^10382
 air-darwin-airline^1^^2014-10-31^DWT^0D^779^Darwin Airline^^^^^http://en.wikipedia.org/wiki/Darwin_Airline^
 air-dauair^^^^DAE^D5^0^Dauair^Dauair^^^^^
+air-deer-jet-airlines^1^2006-01-01^2010-05-31^CBJ^JD^0^Deer Jet Airlines^Deer Air^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^24898
 air-delta-air-lines^^^^DAL^DL^6^Delta Air Lines^Delta Air^Skyteam^Member^^^1012589
 air-delta-connection^^^^DCP^DQ^521^Delta Connection^Coastal Air^^^^^
 air-denim-air^^^^DNM^J7^0^Denim Air^Centre Avia^^^^^
@@ -426,10 +433,10 @@ air-eastar-jet^^^^ESR^ZE^839^Eastar Jet^Eastar Jet^^^^^6777
 air-eastern-airways^^^^^T3^467^Eastern Airways^Eastern Air^^^^^20946
 air-eastern-caribbean-airlines^^^^^JI^0^Eastern Caribbean Airlines^^^^^^20
 air-east-horizon-airlines^^^^EHN^EA^0^East Horizon Airlines^^^^^^1409
-air-east-line^^^^^1T^0^East Line Jsc^^^^^^
+air-east-line^^^^^1T^0^East Line^^^^^^
 air-east-star^^^^^8C^813^Air Transport International^East Star^^^^^30246
-air-easyjet^^^^EZY^U2^888^Easyjet^Easyjet^^^^^347994
-air-easyjet-switzerland^^^^^DS^0^Easyjet Switzerland^^^^^^
+air-easyjet^^1995-01-01^^EZY^U2^888^easyJet^^^^^http://en.wikipedia.org/wiki/EasyJet^347994
+air-easyjet-switzerland^^1989-03-23^^EZS^DS^0^easyJet Switzerland^^^^^http://en.wikipedia.org/wiki/EasyJet_Switzerland^
 air-edelweiss-air^^^^EDW^WK^0^Edelweiss Air^Edelweiss Air^^^^^8174
 air-egyptair^^^^MSR^MS^77^Egyptair^Egyptair^Star Alliance^Member^^^85518
 air-el-al^^^^ELY^LY^114^El Al Israel Airlines^El Al^^^^^28830
@@ -463,11 +470,11 @@ air-ewa-air^^^^EWR^ZD^732^Ewa Air^Flying Dandy^^^^^1255
 air-exec-air^^^^^X7^0^Exec Air^Air Service^^^^^210
 air-executive-airlines^^^^EXK^OW^92^Executive Airlines^^OneWorld^Affiliate^^^
 air-exel-nl^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^^^^http://en.wikipedia.org/wiki/Air_Exel^
-air-expressjet-airlines-inc^^^^BTA^XE^477^Expressjet Airlines Inc^^^^^^
 air-express-jet^^^^ASQ^EV^862^Express Jet^^^^^^772039
+air-expressjet-airlines-inc^^^^BTA^XE^477^Expressjet Airlines Inc^^^^^^
 air-eznis-airways^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^^
 air-far-eastern^^^^^FE^436^Far Eastern^^^^^^2504
-air-farnair-switzerland^^^^FAT^FT^0^Farnair Switzerland^^^^^^
+air-farnair-switzerland^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^http://en.wikipedia.org/wiki/Farnair_Switzerland^
 air-fars-qeshm-airlines^^^^QFZ^QE^721^Fars Qeshm Airlines^Crossair Eur^^^^^
 air-federal-airlines^^^^^7V^739^Federal Airlines^Federal Airlines^^^^^996
 air-fedex^^^^FXA^FX^0^Fedex^Express Air^^^^^
@@ -479,14 +486,15 @@ air-first-air^^^^FAB^7F^245^First Air^First Air^^^^^17859
 air-flair-airlines^^2005-01-01^^FLE^F8^0^Flair Airlines^^^^^http://en.wikipedia.org/wiki/Flair_Airlines^
 air-flexflight^^^^FXT^W2^365^Flexflight^Flexflight^^^^^2698
 air-florida-coastal-airlines^1^1995-01-01^2014-06-06^FCL^PA^0^Florida Coastal Airlines^^^^P^http://en.wikipedia.org/wiki/Florida_Coastal_Airlines^3469
-air-fly540-cosmic-air^^^^^F5^548^Fly 540^Cosmic Air^^^^^
 air-fly540^^^^FFV^5H^540^Five Fourty Aviation^Five Fourty^^^^^10811
+air-fly540-cosmic-air^^^^^F5^548^Fly 540^Cosmic Air^^^^^
 air-fly540-ghana^^^^^5G^0^Fly 540 Ghana^Skyservice Ghana^^^^^
 air-fly540-tanzania^^^^FTZ^FN^0^Fastjet Airlines^Regional Air^^^^^2256
-air-flyafrica-zimbabwe^^^2014-07-17^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^http://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^3584
+air-flyafrica-zimbabwe^^2014-07-17^^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^http://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^3584
 air-flybe^^^^BEE^BE^267^Flybe^Brit Europ^^^^http://en.wikipedia.org/wiki/Flybe^162913
 air-flycongo^1^^2013-31-12^ALX^EO^663^Flycongo^^^^^^234
 air-flydubai^^^^^FZ^141^Flydubai^Flydubai^^^^^59620
+air-flyegypt^^^^^FT^0^FlyEgypt^^^^^^
 air-flyfirefly^^^^^FY^918^Flyfirefly^NW Regional^^^^^40213
 air-fly-georgia^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^http://en.wikipedia.org/wiki/Fly_Georgia^
 air-fly-jamaica-airways^^^^OLA^OJ^266^Fly Jamaica Airways^Overland Air^^^^^1045
@@ -494,14 +502,14 @@ air-fly-logic-malmo^^^^^XN^0^Fly Logic Malmo^^^^^^
 air-flywell-airlines^1^1995-01-01^2003-12-12^FEM^YZ^0^Zimbabwe Airlink^Flywell Airlines^^^P^http://en.wikipedia.org/wiki/Zimbabwe_Airlink^
 air-forty-mile-air^^^^MLA^Q5^0^Forty Mile Air^Forty Miles Air^^^^^733
 air-freebird-airlines^^^^FHY^FH^0^Freebird Airlines^Futura Intl^^^^^
-air-freedom-air^^^^FRE^FP^224^Freedom Air^^^^^^
+air-freedom-air^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^http://en.wikipedia.org/wiki/Freedom_Air_(Guam)^
 air-freedom-airlines^1^2002-01-01^2010-12-31^FRL^F8^0^Freedom Airlines^Air Montreal^^^^http://en.wikipedia.org/wiki/Freedom_Airlines^
 air-french-military-force^^^^^RD^0^French Military Force^Ryan^^^^^
 air-freshair^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^3584
 air-frontier-airlines^^^^FTT^F9^422^Frontier Airlines^Frontier Air^^^^^60109
 air-frontier-flying-service^^^^AFU^2F^0^Afrinat International Airlines^Frontier^^^^^
 air-fuji-dream-airlines^^^^FDA^JH^0^Fuji Dream Airlines^Nordeste^^^^^16104
-air-fuzhou-airlines^^^2014-10-30^FZA^FU^666^Fuzhou Airlines^^^^^http://en.wikipedia.org/wiki/Fuzhou_Airlines^1545
+air-fuzhou-airlines^^2014-10-30^^FZA^FU^666^Fuzhou Airlines^^^^^http://en.wikipedia.org/wiki/Fuzhou_Airlines^1545
 air-gamair^1^^2014-06-01^BIH^BS^0^British International^Gamair^^^^^1680
 air-gambia-airlines^1^1996-01-23^2004-04-30^GNR^GC^34^Gambia International Airlines^Gambia Intl^^^^http://en.wikipedia.org/wiki/Gambia_International_Airlines^
 air-gambia-bird-airlines^^2012-10-01^^GBQ^3G^213^Gambia Bird^Gambia Bird^^^^http://en.wikipedia.org/wiki/Gambia_Bird^732
@@ -515,17 +523,18 @@ air-germanwings^^^^GWI^4U^51^Germanwings^Germanwings^^^^^111167
 air-ghadames-air-transport^1^2004-01-01^2006-12-31^GHT^G6^0^Ghadames Air Transport^^^^^http://en.wikipedia.org/wiki/Ghadames_Air_Transport^
 air-girjet^^^^^8G^0^Girjet^Girjet^^^^^
 air-globus^^^^GHA^GH^674^Globus^Ghana Air^OneWorld^Affiliate^^^13749
-air-gmg-airlines^^^^^Z5^9^GMG Airlines^GMG Airlines^^^^^
-air-go-airlines^^^^GOW^G8^0^Go Airlines^^^^^^44018
+air-gmg-airlines^^1998-04-06^^GMG^Z5^9^GMG Airlines^^^^^http://en.wikipedia.org/wiki/GMG_Airlines^
 air-go^^^^GOE^GO^0^Go^^^^^^
+air-go-airlines^^^^GOW^G8^0^Go Airlines^^^^^^44018
 air-gojet-airlines^^^^GJS^G7^573^Gojet Airlines^^^^^^87349
 air-golden-myanmar-airlines^^^^^Y5^509^Golden Myanmar Airlines^^^^^^1828
-air-gol-transportes-aereos^^2001-01-15^^GLO^G3^127^Gol Transportes Aéreos^Gol Linhas Aereas Inteligentes^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^334127
+air-gol-transportes-aereos^^2001-01-15^^GLO^G3^127^Gol Transportes Aéreos^VRG Linhas Aéreas^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^334127
 air-grand-china-air^^^^^CN^895^Grand China Air^Gd China Air^^^^^2335
 air-grant-aviation^^^^SWV^GV^0^Grant Aviation^Aero Flight^^^^^44950
 air-great-lakes-aviation^^^^GLA^ZK^846^Great Lakes Aviation^Great Lakes^^^^^37893
 air-groznyy-avia^^^^GOZ^ZG^24^Groznyy Avia^Groznyy Avia^^^^^
 air-gryphon-airline^^^^VOS^6P^478^Gryphon Airline^Clubair^^^^^
+air-guangxi-beibu-gulf-airlines^^^^^GX^872^Guangxi Beibu Gulf Airlines^^^^^^
 air-guinea-airlines^^^^^G2^0^Guinea Airlines^Avirex Gabon^^^^^
 air-gulf-air^^^^GFA^GF^72^Gulf Air^Gulf Air^^^^^51608
 air-hahn-air^^^^HHN^HR^169^Hahn Air^Hahn Air^^^^^30
@@ -541,7 +550,7 @@ air-hebei-airlines^^^^^NS^836^Hebei Airlines^Caucasus Air^^^^^16523
 air-heli-air-monaco^^^^MCM^YO^747^Heli Air Monaco^Heliairmona^^^^^32260
 air-helicopteros-del-sureste^^^^^UV^662^Helicopteros Del Sureste^^^^^^
 air-helijet^^^^JBA^JB^613^Helijet International^Helijet^^^^^7598
-air-heli-securite^^^^^H4^0^Heli Securite^^^^^^
+air-heli-securite^1^^2015-01-01^HLI^H4^0^Heli Securite^^^^^^
 air-helitrans-as^^^^LLR^9I^0^Alliance Air^^Star Alliance^Affiliate^^^10040
 air-helitt-lineas-aereas^^^^^H9^221^Helitt Lineas Aereas^^^^^^
 air-hellas-jet^^^^HEJ^HJ^681^Hellas Jet^Hellenic Star^^^^^
@@ -553,21 +562,21 @@ air-hesa-airlines^^^^^H8^0^Hesa Airlines^Auric Air^^^^^
 air-hevi-lift^^1994-01-01^^ASN^IU^0^Hevilift^Air Straubing^^^^http://en.wikipedia.org/wiki/Hevilift^
 air-hex-air^^^^HER^UD^848^Hex Air^Hex Air^^^^^149
 air-hi-fly-transportes-aereo^^^^ODS^5K^654^Hi Fly Transportes Aereo^Sac Odessa^^^^^36
-air-hokkaido^^^^ADO^HD^0^Hokkaido International^^^^^^51978
+air-hokkaido^^1998-05-12^^ADO^HD^0^Air Do^Hokkaido International Airlines^^^^http://en.wikipedia.org/wiki/Air_Do^51978
 air-holidays-czech-airlines^^^^^HC^0^Holidays Czech Airlines^Aero Tropics^^^^^
 air-homer-air^^^^^HB^^Homer Air^^^^^^
 air-hong-kong-airlines^^^^CRK^HX^851^Hong Kong Airlines^Hongkong Air^^^^^27368
 air-hong-kong-express-airways^^^^HKE^UO^128^Hong Kong Express Airways^HK Express^^^^^10777
+air-hop^^^^HOP^A5^163^HOP!^HOP!^^^P^http://en.wikipedia.org/wiki/HOP!^
 air-hop-airlinair^^^^RLA^AN^0^HOP Airlinair^HOP Airlinair^^^^http://en.wikipedia.org/wiki/Airlinair^27705
 air-hop-brit-air^^^^BZH^DB^750^HOP Brit Air^HOP Brit Air^^^^http://en.wikipedia.org/wiki/Brit_Air^46820
-air-hop^^^^HOP^A5^163^HOP!^HOP!^^^P^http://en.wikipedia.org/wiki/HOP!^
 air-hop-regional^^^^^YS^0^HOP Regional^HOP Regional^^^^http://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^69572
 air-horizon-air^^^^QXE^QX^481^Horizon Air^Horizon Air^^^^^134547
 air-hs-aviation^^^^APF^HP^0^Amapola Flyg^^^^^^
 air-hunnu-air^^^^MML^MR^861^Hunnu Air^Mongolian Air^^^^^1062
 air-ibc-airways^^^^CSQ^II^175^Ibc Airways Inc^^^^^^
-air-iberia-express^^^^^I2^60^Iberia Express^Ib Express^OneWorld^Affiliate^^^28721
 air-iberia^^^^IBE^IB^75^Iberia^Iberia^OneWorld^Member^^^90487
+air-iberia-express^^^^^I2^60^Iberia Express^Ib Express^OneWorld^Affiliate^^^28721
 air-iberworld-airlines^^^^IWD^IP^560^Iberworld Airlines^Atyrauauejoly^^^^^
 air-ibex-airlines^^^^^FW^0^Ibex Airlines^^^^^^38064
 air-icelandair^^^^ICE^FI^108^Icelandair^Icelandair^^^^^19229
@@ -579,7 +588,7 @@ air-indonesia-air-transport^^^^IDA^I7^0^Indonesia Air Transport^Paramount Air^^^
 air-insel-air^^^^^7I^958^Insel Air International^Insel Air^^^^^17407
 air-insel-air-aruba^^^^^8I^778^Insel Air Aruba^Insel Air Aru^^^^^1900
 air-inter-air^^^^INL^D6^625^Inter Air^Inter Air^^^^^521
-air-intercaribbean-airways^^^^^JY^653^Intercaribbean Airways^Air Turcks^^^^^9152
+air-intercaribbean-airways^^1992-01-01^^IWY^JY^653^InterCaribbean Airways^Air Turcks^^^^http://en.wikipedia.org/wiki/InterCaribbean_Airways^9152
 air-interjet-gr^^^^INJ^^0^InterJet^InterJet^^^^http://en.wikipedia.org/wiki/InterJet^
 air-intersky^^^^ISK^3L^222^Intersky Luftfahrt^Intersky^^^^^5311
 air-invest-avia^^^^TLG^IN^0^Invest Avia^Macedonianair^^^^^
@@ -588,8 +597,8 @@ air-iran-aseman-airlines^^^^IRC^EP^815^Iran Aseman Airlines^^^^^^30111
 air-iranian-naft-airline^^^^IRG^NV^346^Iranian Naft Airline^^^^^^
 air-iraqi-airways^^^^IAW^IA^73^Iraqi Airways^Iraqi Air^^^^^
 air-irtysh-air^^^^MZA^IH^0^Jsc Irtysh Air^Falcon Air^^^^^
-air-island-air-bis^^^^^WP^347^Island Air^Island Air^^^^^11616
 air-island-air^^^^^IS^0^Ais Airlines B V^Island Air^^^^^3283
+air-island-air-bis^^^^^WP^347^Island Air^Island Air^^^^^11616
 air-island-aviation-services^^^^^Q2^986^Island Aviation Services^^^^^^7702
 air-islas-airways^^^^^IF^769^Islas Airways^Islas Airways^^^^^
 air-islena-airlines^^^^ISV^WC^506^Islena Airlines^Islena Air^^^^^67
@@ -607,8 +616,8 @@ air-jazz-aviation^^^^JZA^QK^983^Jazz Aviation^Jazz Air^^^^^
 air-jeju-air^^^^JJA^7C^806^Jeju Air^Jeju Air^^^^^36122
 air-jet2^^^^EXS^LS^949^Jet2^^^^^^34081
 air-jet-4-you^^^^^8J^0^Linea Aerea Eco Jet^^^^^^
-air-jetairfly^^2005-11-23^^JAF^TB^0^Jetairfly^TUI Airlines Belgium^^^^http://en.wikipedia.org/wiki/Jetairfly^5921
 air-jet-air^^^^^O2^0^Jet Air^Jet Air^^^^^
+air-jetairfly^^2005-11-23^^JAF^TB^0^Jetairfly^TUI Airlines Belgium^^^^http://en.wikipedia.org/wiki/Jetairfly^5921
 air-jet-airways^^^^JAI^9W^589^Jet Airways^Jet Airways^^^^^192207
 air-jet-asia-airways^^^^^JF^0^Jet Asia Airways^^^^^^107
 air-jet-aviation-business^^^^PJS^PP^0^Jet Aviation Business^Jet Aviation^^^^^
@@ -616,9 +625,9 @@ air-jetblue-airways^^^^JBU^B6^279^Jetblue Airways^Jetblue Air^^^^^243974
 air-jetgo-australia^^^^^JG^0^Jetgo Australia^^^^^^911
 air-jetlink-express^^^^^J0^402^Jetlink Express^Jetlink Exprs^^^^^
 air-jet-lite^^^^RSH^S2^705^Jet Lite^Jet Lite^^^^^26975
+air-jetstar^^^^JST^JQ^41^Jetstar^Jetstar^^^^^96370
 air-jetstar-asia^^^^JSA^3K^375^Jetstar Asia^Jetstar Asia^^^^^21916
 air-jetstar-japan^^^^^GK^798^Jetstar Japan^^^^^^10904
-air-jetstar^^^^JST^JQ^41^Jetstar^Jetstar^^^^^96370
 air-jetstar-pacific-airlines^^^^PIC^BL^550^Jetstar Pacific Airlines^Pacific Air^^^^^8293
 air-jet-time^^2006-09-01^^JTG^JO^0^Jet Time^Jalways^^^^http://en.wikipedia.org/wiki/Jet_Time^25089
 air-jin-air^^^^JNA^LJ^718^Jin Air^Jin Air^^^^^16446
@@ -640,10 +649,10 @@ air-kenmore-air^^^^KEN^M5^763^Kenmore Air^^^^^^13398
 air-kenn-borek-air^^^^KBA^4K^0^Kenn Borek Air^Kenn Borek^^^^^417
 air-kenya-airways^^^^KQA^KQ^706^Kenya Airways^Kenyaairway^Skyteam^Member^^^52043
 air-kharkiv-airlines^^^^^KW^711^Kharkiv Airlines^^^^^^345
-air-kingfisher-airlines^^^^KFR^^90^Kingfisher Airlines^^^^^^526
+air-kingfisher-airlines^^^^KFR^^90^Kingfisher Airlines^^^^^^
 air-kish-airlines^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^^945
-air-klm-cityhopper^^^^KLC^WA^0^KLM Cityhopper^KLM Cityhopper^^^^^6
 air-klm^^^^KLM^KL^74^KLM Royal Dutch Airlines^KLM^Skyteam^Member^^^231513
+air-klm-cityhopper^^^^KLC^WA^0^KLM Cityhopper^KLM Cityhopper^^^^^6
 air-kogalymavia-airlines^^^^^7K^0^Kogalymavia Airlines^^^^^^
 air-korean-air^^^^KAL^KE^180^Korean Air^Korean Air^Skyteam^Member^^^143001
 air-korongo-airlines^^^^^ZC^557^Korongo Airlines^Korongo Air^^^^^
@@ -676,13 +685,13 @@ air-linea-aerea-cuencana^^^^^L5^0^Linea Aerea Cuencana^^^^^^
 air-linea-aerea-de-servicio^^^^LER^QL^782^Linea Aerea De Servicio^^^^^^3388
 air-linea-turistica-aereotuy^^^^^L4^445^Linea Turistica Aereotuy^^^^^^
 air-link^^^^^V6^0^Air Link^^^^^^6171
-air-lion-airlines^^^^^JT^990^Lion Airlines^Jaro Intl Arl^^^^^228591
 air-lion-air^^^^^SL^0^Thai Lion Mentari^Rio Sul^^^^^5105
+air-lion-airlines^^^^^JT^990^Lion Airlines^Jaro Intl Arl^^^^^228591
 air-loganair^^^^^LM^682^Loganair^Livingston^^^^^33020
 air-lot^^^^LOT^LO^80^LOT Polish Airlines^LOT^Star Alliance^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^60803
 air-lucky-air^^^^^8L^859^Lucky Air^^^^^^18115
-air-lufthansa-cityline^^^^CLH^CL^683^Lufthansa CityLine^Tempelhof^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^118705
 air-lufthansa^^^^DLH^LH^220^Lufthansa^Lufthansa^Star Alliance^Member^^^384419
+air-lufthansa-cityline^^^^CLH^CL^683^Lufthansa CityLine^Tempelhof^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^118705
 air-lugansk-airlines^^^^LHS^L7^0^Lugansk Airlines^^^^^^
 air-luxair^^^^LGL^LG^149^Luxair^Luxair^^^^^30107
 air-lynx-aviation^^^^^L3^0^Lynx Aviation^Ltu Billa Luf^^^^^
@@ -732,11 +741,11 @@ air-montserrat-airways^^^^MNT^5M^0^Montserrat Airways^Sibaviatrans^^^^^522
 air-moskovia-airlines^^^^GAI^3R^520^Moskovia Airlines^Gromovairline^^^^^
 air-motor-sich^^^^^M9^11^Motor Sich Jsc^Motor Sich^^^^^399
 air-ms-royal-airlines^^^^^R0^333^MS Royal Airlines^^^^^^
-air-myanmar-airways^^^^^8M^599^Myanmar Airways^Myanmar^^^^^2366
-air-myanmar-utd^^^^^UB^0^UTD Myanmar^UTD Myanmar^^^^^3255
+air-myanmar-airways^^1946-01-01^^MMA^8M^599^Myanmar Airways International^^^^^http://en.wikipedia.org/wiki/Myanmar_Airways_International^2366
+air-myanmar-utd^^1948-09-15^^UBA^UB^665^Myanmar National Airlines^UTD Myanmar^^^^http://en.wikipedia.org/wiki/Myanmar_National_Airlines^3255
 air-nacil-indian-airline^^^^^IC^58^Nacil Indian Airline^^^^^^
 air-nakina-air-service^^^^^T2^0^Nakina Air Service^Taba Aereos^^^^^
-air-nasair^^^^KNE^XY^593^Nasair^Nasair^^^^^47748
+air-nasair^^2007-02-01^^KNE^XY^593^Flynas^Nas Air^^^^http://en.wikipedia.org/wiki/Flynas^47748
 air-nasair-uair^^^^^UE^770^Nasair^^^^^^
 air-national-airlines^^^^MUA^N8^416^National Airlines^^^^^^
 air-national-airways-cameroon^1^1999-11-01^2000-03-01^^9O^357^National Airways Cameroon^Aircameroon^^^^http://en.wikipedia.org/wiki/National_Airways_Cameroon^
@@ -748,7 +757,7 @@ air-naysa^^^^NAY^ZN^595^Naysa^Air Bourbon^^^^^19662
 air-nego-airline-one^^^^^YA^0^Nego Airline One^^^^^^
 air-neos^^2002-03-08^^NOS^NO^703^Neos^^^^^http://en.wikipedia.org/wiki/Neos_(airline)^
 air-nepal-airlines^^^^RNA^RA^285^Nepal Airlines^Nepal Air^^^^^2105
-air-nesma-airlines^^^^NMA^NE^0^Nesma Airlines^Skyeurope Air^^^^^3924
+air-nesma-airlines^^2010-07-18^^NMA^NE^477^Nesma Airlines^^^^^http://en.wikipedia.org/wiki/Nesma_Airlines^3924
 air-netjets-aviation^^^^^1I^0^Netjets Aviation^^^^^^
 air-new-england-airlines^^^^NEA^EJ^0^New England Airlines^New Englan^^^^^
 air-new-livingston^^^^NVL^JN^401^New Livingston^Newlivingston^^^^^
@@ -770,24 +779,24 @@ air-north-flying^^2014-01-01^^^M3^0^North Flying^^^^^^
 air-northwest-airlines^^^^^NW^0^Northwest Airlines^Nwest Airlines^^^^^
 air-northwestern-air-lease^^^^PLR^J3^0^Northwestern Air Lease^Nw Air Lease^^^^^4875
 air-north-wright-air^^^^^HW^0^North Wright Air^North Wright^^^^^8329
-air-norwegian-air-int^^^^NAI^D8^0^Norwegian Air International^^^^^^
-air-norwegian-air-shuttle^^^^NAX^DY^328^Norwegian Air Shuttle^Norwegian Air^^^^^147415
-air-norwegian-long-haul^^^^^DU^0^Norwegian Long Haul Air Shuttle^^^^^^2673
-air-nouvelair^^^^LBT^BJ^796^Nouvelair^Nouvelair^^^^^293
-air-nova-airlines-northcoast^^^^NVR^N9^326^Nova Airlines^Northcoast Av^^^^^
+air-norwegian-air-int^^2012-01-01^^IBK^D8^0^Norwegian Air International^^^^^http://en.wikipedia.org/wiki/Norwegian_Long_Haul^
+air-norwegian-air-shuttle^^1993-01-01^^NAX^DY^328^Norwegian Air Shuttle (NAS)^^^^^http://en.wikipedia.org/wiki/Norwegian_Air_Shuttle^147415
+air-norwegian-long-haul^^2012-01-01^^NLH^DU^0^Norwegian Long Haul^^^^^http://en.wikipedia.org/wiki/Norwegian_Long_Haul^2673
+air-nouvelair^^1990-03-21^^LBT^BJ^796^Nouvelair^^^^^http://en.wikipedia.org/wiki/Nouvelair^293
 air-nova-airlines^^^^NOV^O9^948^Nova Airlines^^^^^^2406
+air-nova-airlines-northcoast^^^^NVR^N9^326^Nova Airlines^Northcoast Av^^^^^
 air-novoair^^^^^VQ^855^Novoair^^^^P^^3816
 air-nyasa-express^^^^^7Q^0^Elite Airways^^^^^^
 air-oceanair^^^^ONE^O6^247^Avianca Brasil^Oceanair^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Avianca_Brazil^63976
 air-okapi-airlines^^^^HND^OI^0^Hinterland Aviation^Italiatour^^^^^2792
 air-okay-airways^^^^OKA^BK^866^Okay Airways^Paradise Isl^^^^http://en.wikipedia.org/wiki/Okay_Airways^12246
 air-olt-express-germany^^^^OLT^OL^704^Olt Express Germany Gmbh^^^^^^
-air-olympic-airlines^^^^^OP^0^Olympic Airlines^Olympic Airlines^^^^^
 air-olympic-air^^^^OAL^OA^50^Olympic Air^Olympic Air^Star Alliance^Affiliate^^^34558
+air-olympic-airlines^^^^^OP^0^Olympic Airlines^Olympic Airlines^^^^^
 air-oman-air^^^^OAS^WY^910^Oman Air^Oman Air^^^^^57798
 air-onetime-airline^^^^RNX^T6^0^Onetime Airline^Tavrey Airco^^^^^
 air-onur-air^^^^OHY^8Q^66^Onur Air^^^^^^20529
-air-openskies^^^^^EC^284^OpenSkies^OpenSkies^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/OpenSkies^1255
+air-openskies^^2008-03-01^^^EC^284^OpenSkies^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/OpenSkies^1255
 air-orbest^^^^OBS^6O^0^Orbest Ghd^^^^^^
 air-ord-air-charter^^^^^RF^0^Ord Air Charter Pty Ltd^Ord Air Chart^^^^^
 air-orenair^^1992-01-01^^ORB^R2^291^Orenair^Orenburg Airlines^^^^http://en.wikipedia.org/wiki/Orenair^2981
@@ -813,7 +822,7 @@ air-pegasus-asia^^^^MBB^ZM^887^Pegasus Asia^Pegasus Asia^^^^^1039
 air-penair^^^^PEN^KS^339^Penair^Pen Air^^^^^12918
 air-peoples-viennaline^^^^PEV^PE^335^Peoples Viennaline^Peoples Vienn^^^^^807
 air-perimeter-aviation^^^^^YP^0^Perimeter Aviation^^^^^^
-air-perla-airlines^^^^PLV^DP^0^Perla Airlines^Air 2000^^^^^
+air-perla-airlines^1^^2015-01-01^PLV^DP^0^Perla Airlines^Air 2000^^^^http://www.airlineupdate.com/content_public/airlines/airlines-venezuela/perla.htm^
 air-peruvian-air-lines^^2008-10-29^^PVN^P9^602^Peruvian Airlines^^^^^http://en.wikipedia.org/wiki/Peruvian_Airlines^14429
 air-petra-airlines^^^^PTR^9P^0^Petra Airlines^^^^^^546
 air-philippine-airlines^^^^PAL^PR^79^Philippine Airlines^Philippine^^^^^92492
@@ -821,6 +830,7 @@ air-pison-airways^^^^LFM^3I^0^Pison Airways Ltd^Virgin Austra^^^^^
 air-pluna^^^^PUA^PU^286^Pluna^^^^^^
 air-plus-ultra^^^^^F6^0^Plus Ultra^Fst Cambodia^^^^^
 air-pm-air^^^^^Z3^0^PM Air^^^^P^^
+air-pobeda^^2014-12-01^^PBD^DP^0^Pobeda^^^^^http://en.wikipedia.org/wiki/Pobeda_(airline)^
 air-polar-airlines^^^^RKA^PI^545^Polar Airlines^^^^P^^1032
 air-polet-airlines^^^^POT^YQ^342^Polet Airlines^Polet Airline^^^^^1356
 air-porter-airlines^^^^^PD^451^Porter Airlines^Porter Air^^^^^52045
@@ -828,11 +838,12 @@ air-portugalia^^^^PGA^NI^685^Portugalia^Portugalia^^^^^27306
 air-precision-air^^^^^PW^31^Precision Air^Precision Air^^^^^12293
 air-premium-jet^^^^^0J^254^Premium Jet AG^^^^^^
 air-primair^^^^^J1^528^Primair^^^^^^
-air-primera-air^^^^JXX^GX^591^Primera Air^^^^^^
+air-primera-air^^2003-01-01^^PRI^PF^0^Primera Air^^^^^http://en.wikipedia.org/wiki/Primera_Air^921
 air-primera-air-scandinavia^^2003-01-01^^PRI^PF^834^Primera Air Scandinavia^JetX^^^^http://en.wikipedia.org/wiki/Primera_Air^921
 air-private-wings^^^^^8W^0^Private Wings^Private Wings^^^^^
 air-proflight-commuter^^^^PFZ^P0^659^Proflight Commuter^Proflight^^^^^10985
 air-provincial-airlines^^^^SPR^PB^967^Provincial Airlines^Provincial^^^^^16275
+air-psa-airlines^^1995-01-01^^JIA^OH^320^PSA Airlines^US Airways Express^^^^http://en.wikipedia.org/wiki/PSA_Airlines^
 air-publiccharters-com^^^^^P1^351^Publiccharters Com^Publiccharter^^^^^3011
 air-pullmantur-air^^^^^EB^460^Pullmantur Air^Pullmantur^^^^^119
 air-punto-azul^^^^^ZR^0^Punto Azul^^^^^^842
@@ -867,8 +878,8 @@ air-ruili-airlines^^^^^DR^0^Ruili Airlines^Air Link^^^^^4758
 air-rusline^^^^RLU^7R^362^Rusline^Rusline^^^^^21253
 air-rutaca^^^^^RM^0^Rutaca^^^^^^
 air-rwandair-express^^^^RWD^WB^459^Rwandair Express^Rwandair^^^^^11008
-air-ryanair-arctic-transportation^^^^RYA^7S^^Ryan Air Services^Arctic Transportation Services^^^C^http://en.wikipedia.org/wiki/Ryan_Air_Services^2198
 air-ryanair^^^^RYR^FR^0^Ryanair^Ryanair Ltd^^^^^
+air-ryanair-arctic-transportation^^^^RYA^7S^^Ryan Air Services^Arctic Transportation Services^^^C^http://en.wikipedia.org/wiki/Ryan_Air_Services^2198
 air-sabaidee-airways^^^^^E3^0^Sabaidee Airways^^^^^^
 air-saereo^^^^^MZ^532^Saereo^Merpati^^^^^
 air-safair^^^^SFR^FA^0^Safair^^^^^^1756
@@ -879,9 +890,9 @@ air-sansa^^^^LRS^RZ^684^Sansa^Pan Am Exp^^^^^
 air-santa-barbara-airlines^^^^BBR^S3^249^Santa Barbara Airlines^Santa Barbara^^^^^1821
 air-saratov-airlines^^^^^6W^26^Saratov Airlines^^^^^^5372
 air-sas-braathens^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^Sas^^^^http://en.wikipedia.org/wiki/SAS_Braathens^2486
-air-sata-air-acores^^^^SAT^SP^737^Sata Air Acores^Sata^^^^^9930
-air-sat-airlines^^^^SHU^HZ^598^Aurora Airlines^SAT Airlines^^^^^10752
 air-sata^^^^RZO^S4^331^Sata International^Sata Intl^^^^^4114
+air-sata-air-acores^^^^SAT^SP^737^Sata Air Acores^Sata^^^^^9930
+air-sat-airlines^^2013-12-08^^SHU^HZ^598^Aurora Airlines^SAT Airlines^^^^http://en.wikipedia.org/wiki/Aurora_(airline)^10752
 air-satena^^^^NSE^9R^0^Satena^^^^^^24276
 air-saudi-arabian-airlines^^^^SVA^SV^65^Saudi Arabian Airlines^Saudiarabi^Skyteam^Member^^^170285
 air-sayakhat-airlines^^^^SAH^W7^271^Sayakhat Airlines^Sayakhat Air^^^^^
@@ -895,6 +906,7 @@ air-seair^^^^^XO^0^Seair^Xinjiang^^^^^
 air-seaport-airlines^^^^SQH^K5^609^SeaPort Airlines^Wings of Alaska^^^P^http://en.wikipedia.org/wiki/SeaPort_Airlines^22987
 air-senegal-airlines^^^^^DN^440^Senegal Airlines^Senegal Air^^^^^2405
 air-servant-air^^^^^8D^0^Servant Air^^^^^^2669
+air-servicios-aereos-andes^^^^AND^FP^323^Servicios Aereos De Los Andes^^^^^^
 air-servicios-aereos-profesionales^^^^PSV^5S^0^Servicios Aereos Profesionales^^^^^^
 air-severstal-aircompany^^^^SSF^D2^103^Severstal Air Company^Severstal Air^^^^http://en.wikipedia.org/wiki/Severstal_Air_Company^1622
 air-shaheen-air^^^^SAI^NL^740^Shaheen Air Intl^Shaheen Air^^^^^12549
@@ -904,7 +916,7 @@ air-sharp-aviation^^^^^SH^0^Sharp Aviation^Fly Me^^^^^4761
 air-shenzhen-airlines^^^^CSZ^ZH^479^Shenzhen Airlines^Shenzhen Airl^Star Alliance^Member^^^163666
 air-shun-tak-china^^^^^8S^802^Shun Tak China^^^^^^
 air-shuttle-america^^^^^S5^0^Shuttle America^^^^^^87963
-air-siam-air-transport^^^^^O8^0^Siam Air Transport^^^^^^115
+air-siam-air-transport^^^^^O8^874^Siam Air Transport^^^^^^115
 air-siam-ga^^^^^5E^0^Siam Ga^Base Regional^^^^^
 air-siberia-airlines^^^^SBI^S7^421^S7 Airlines^S7 Airlines^OneWorld^Member^^http://en.wikipedia.org/wiki/S7_Airlines^66558
 air-sichuan-airlines^^^^CSC^3U^876^Sichuan Airlines^Sichuan Air^^^^http://en.wikipedia.org/wiki/Sichuan_Airlines^150639
@@ -930,7 +942,7 @@ air-skyways^1^^2012-05-22^SKX^JZ^752^Skyways^Skyways^^^^http://en.wikipedia.org/
 air-skywest-airlines^^1972-01-01^^SKW^OO^302^Skywest Airlines^Sky West^^^^http://en.wikipedia.org/wiki/SkyWest_Airlines^605270
 air-sky-wings-airlines^1^2006-06-01^2012-12-31^GSW^ND^171^Sky Wings Airlines^Intair Inc^^^^http://en.wikipedia.org/wiki/Sky_Wings_Airlines^
 air-sky-wings-asia-airlines^^2011-06-13^^SWM^ZA^969^Skywings Asia Airlines^Sky Wings Asia Airlines^^^^http://en.wikipedia.org/wiki/Sky_Wings_Asia_Airlines^1518
-air-skywise^^^^^S8^0^Skywise^^^^^^
+air-skywise^^2015-02-11^^SWZ^S8^0^Skywise Airlines^^^^^http://en.wikipedia.org/wiki/Skywise_Airlines^
 air-skywork-airlines^^^^SRK^SX^772^Skywork Airlines^Skywork Air^^^^^5630
 air-slok-air^^^^OKS^S0^503^Slok Air International^Slok Air^^^^^
 air-small-planet-airline^^^^LLP^P7^0^Small Planet Airline^East Line Air^^^^^
@@ -942,10 +954,11 @@ air-sol-aviation^^^^^ZS^0^Kazaviaspas^^^^^http://en.wikipedia.org/wiki/Kazaviasp
 air-sol-lineas-aereas^^^^^8R^300^Sol Lineas Aereas^Sol Lineas^^^^^8800
 air-solomon-airlines^^^^SOL^IE^193^Solomon Airlines^Solomon Air^^^^^8930
 air-somon-air^^^^^4J^0^^^^^^^
+air-sounds-air^^1986-01-01^^SDA^S8^0^Sounds Air^^^^^http://en.wikipedia.org/wiki/Sounds_Air^
 air-south-african-airlink^^1995-01-01^^LNK^4Z^749^South African Airlink^SA Airlink^^^^http://en.wikipedia.org/wiki/Airlink^43570
 air-south-african-airways^^1934-02-01^^SAA^SA^83^South African Airways^SAA^Star Alliance^Member^^http://en.wikipedia.org/wiki/South_African_Airways^56420
 air-south-african-express^^^^EXY^XZ^29^South African Express^Eastair^^^^^35378
-air-south-airlines^^^^OTL^YG^233^South Airlines^South Airline^^^^^
+air-south-airlines^^1999-04-19^^OTL^YG^233^South Airlines^^^^^http://en.wikipedia.org/wiki/South_Airlines^
 air-southern-air-charter^^^^^PL^0^Southern Air Charter^^^^^^11085
 air-southern-airways^^2013-01-01^^LTD^9X^0^Southern Airways^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^267
 air-southern-star-airlines^^^^^4P^0^Travel Air^^^^^^5234
@@ -973,8 +986,8 @@ air-sum-air-services^^^^^RN^0^Sum Air Services^Euralair^^^^^
 air-sun-air-express^^^^FDY^6G^504^Sun Air Express^Air Wales^^^^^
 air-sun-air-of-scandinavia^^^^SUS^EZ^0^Sun Air of Scandinavia^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Sun_Air_of_Scandinavia^10802
 air-sun-country^^^^SCX^SY^337^Sun Country^Sun Country^^^^^13473
-air-sun-express-germany^^^^^XG^0^Sun Express Germany^^^^^^8942
 air-sun-express^^^^SXS^XQ^564^Sun Express^Sun Express^^^^^78955
+air-sun-express-germany^^^^^XG^0^Sun Express Germany^^^^^^8942
 air-sunny-airways^^^^KJA^2S^338^Kinda Airlines^Island Exp^^^^^
 air-sunrise-airways^^^^SNR^S6^0^Sunrise Airways^^^^^^691
 air-sunwing-airlines^^^^SWG^WG^292^Sunwing Airlines^Sunwing Airlines^^^^^17982
@@ -1005,7 +1018,7 @@ air-taquan-air-services^^^^^K3^0^Taquan Air Services^^^^^^4570
 air-tarco-air^^^^TRQ^3T^0^Tarco Air^Turan Air^^^^^
 air-tarom^^^^ROT^RO^281^Tarom^Tarom^Skyteam^Member^^^37062
 air-tashi-air^^^^BTN^B3^0^Tashi Air^Bellview Air^^^P^^1834
-air-tassili-airlines^^^^^SF^515^Tassili Airlines^^^^^^836
+air-tassili-airlines^^1999-04-08^^DTH^SF^515^Tassili Airlines^^^^^http://en.wikipedia.org/wiki/Tassili_Airlines^836
 air-tatarstan-air^^^^^U9^966^Tatarstan Air^^^^^^
 air-tata-sia-airlines^^2014-01-01^^VTI^UK^0^Vistara^Tata SIA Airlines^^^^http://en.wikipedia.org/wiki/Vistara^
 air-tectimes-sudamerica^^^^^C1^322^Tectimes Sudamerica^^^^^^
@@ -1020,10 +1033,10 @@ air-thomson-airways^^^^TOM^BY^754^Thomson Airways^Britannia^^^^^
 air-tianjin-airlines^^^^GCR^GS^826^Tianjin Airlines^^^^^http://en.wikipedia.org/wiki/Tianjin_Airlines^49420
 air-tiara-air-aruba^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^^1834
 air-tibet-airlines^^^^^TV^88^Tibet Airlines^^^^^^16625
+air-tiger-air^^^^TGW^TR^388^Tiger Airways^^^^^^31853
 air-tiger-air-australia^^^^^TT^0^Tiger Airways Australia^Air Lithuania^^^^^23000
 air-tiger-air-philippines^^^^SRQ^DG^931^Tiger Air Philippines^Tiger Air^^^^^17285
-air-tiger-air-taiwan^^2014-11-26^^TTW^IT^0^Tiger Air Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan
-air-tiger-air^^^^TGW^TR^388^Tiger Airways^^^^^^31853
+air-tiger-air-taiwan^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^526
 air-tik-systems^^^^^T1^0^Tik Systems^^^^^^
 air-titan-airways^^^^^ZT^0^Titan Airways^^^^^^
 air-tnt-airways^^^^TAY^3V^756^Tnt Airways^Viking Air^^^^^
@@ -1047,10 +1060,10 @@ air-trigana-air^^2014-01-01^^^IL^0^Trigana Air Service^Istanbul Air^^^^^15004
 air-trip^^^^^T4^661^Trip^^^^^^
 air-tropic-air^^1979-01-01^^TOS^9N^789^Tropic Air^^^^PC^http://en.wikipedia.org/wiki/Tropic_Air^65774
 air-tta-airlink^^2014-04-30^^^2Z^^TTA Airlink^TTA Airlink^^^P^http://en.wikipedia.org/wiki/TTA_Airlink^22190
-air-tuifly-nordic^^^^BLX^6B^951^Tuifly Nordic^Britannia^^^^^
 air-tuifly^^^^TUI^X3^617^Tuifly^Tuifly^^^^^26364
-air-tunisair-express^^^^^UG^150^Tunisair Express^Tuninter^^^^^1580
+air-tuifly-nordic^^^^BLX^6B^951^Tuifly Nordic^Britannia^^^^^
 air-tunisair^^^^TAR^TU^199^Tunisair^Tunis Air^^^^^35223
+air-tunisair-express^^^^^UG^150^Tunisair Express^Tuninter^^^^^1580
 air-turkish-airlines^^^^THY^TK^235^Turkish Airlines^Turkish^Star Alliance^Member^^^359412
 air-turkmenistan-airlines^^^^TUA^T5^542^Turkmenistan Airlines^Turkmenistan^^^^^1251
 air-tway-air^^^^TWB^TW^722^Tway Air^Tway Air^^^^http://en.wikipedia.org/wiki/T'way_Airlines^3867
@@ -1070,7 +1083,7 @@ air-us-helicopter^^^^UJX^UH^500^AtlasJet Ukraine^US Helicopter^^^^^
 air-utair-aviation^^^^UTA^UT^298^Utair Aviation Jsc^Utair^^^^^40179
 air-utair-express^^^^UTX^UR^0^Utair Express^^^^^^5397
 air-uzbekistan-airways^^^^UZB^HY^250^Uzbekistan Airways^Uzbekistan^^^^^22032
-air-v-air^^2014-12-17^^VAX^ZV^189^V Air^V Air Corporation^^^^http://en.wikipedia.org/wiki/V_Air
+air-v-air^^2014-12-17^^VAX^ZV^189^V Air^^^^^http://en.wikipedia.org/wiki/V_Air^1136
 air-valair^^^^^V4^0^Valair^^^^^^1098
 air-valuair^^^^VLU^VF^896^Valuair^Valuair^^^^^
 air-van-air-europe^^^^^V9^0^Van Air Europe^^^^^^3457
@@ -1084,11 +1097,11 @@ air-villa-air^^^^VQI^VP^0^Villa Air^^^^^^2980
 air-vim-airlines^^^^MOV^NN^823^Vim Airlines^Vim Airlines^^^^^
 air-vincent-aviation^^^^VIN^BF^0^Vincent Aviation^^^^P^^
 air-vip-wings^^^^VPA^V5^0^Vip Wings^Royal Aruban^^^^^
-air-virgin-america^^^^VRD^VX^984^Virgin America^Virgin USA^^^^^56520
-air-virgin-atlantic^^^^VIR^VS^932^Virgin Atlantic^Virgin Atl^^^^^27010
-air-virgin-australia-int^^^^VAU^VA^795^Virgin Australia International^V Australia^^^^^193516
-air-virgin-australia-regional^^^^^XR^608^Virgin Australia Regional^^^^^^
-air-virgin-australia^^^^VOZ^DJ^856^Virgin Australia^^^^^^
+air-virgin-america^^2007-08-08^^VRD^VX^984^Virgin America^^^^^http://en.wikipedia.org/wiki/Virgin_America^56520
+air-virgin-atlantic^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^http://en.wikipedia.org/wiki/Virgin_Atlantic^27010
+air-virgin-australia^^2000-08-31^^VOZ^VA^856^Virgin Australia^Virgin Blue^^^^http://en.wikipedia.org/wiki/Virgin_Australia^193516
+air-virgin-australia-int^^2009-02-27^^VAU^VA^795^Virgin Australia International^V Australia^^^^http://en.wikipedia.org/wiki/V_Australia^193516
+air-virgin-australia-regional^^1963-01-01^^VOZ^VA^608^Virgin Australia Regional^SkyWest^^^^http://en.wikipedia.org/wiki/Virgin_Australia_Regional_Airlines^193516
 air-vision-airlines^^^^RBY^V2^0^Vision Airlines^^^^^^
 air-vista-georgia^^^^AJD^GT^0^Vista Georgia^GB Airways^^^^^
 air-vladivostok-air^^^^VLK^XF^277^Vladivostok Air^^^^^^
@@ -1130,7 +1143,7 @@ air-yeti-airlines^^1998-08-17^^NYT^YL^0^Yeti Airlines^^^^^http://en.wikipedia.or
 air-ygnus-air^^^^RGN^Y2^571^Ygnus Air^^^^^^
 air-yute-air-alaska^^^^TUD^4Y^0^Yute Air Alaska^^^^PT^http://en.wikipedia.org/wiki/Flight_Alaska^37654
 air-zagros-air^^^^GZQ^Z4^541^Zagros Air^Zagros Air^^^^^702
-air-zagros-airlines^^^^IZG^^0^Zagros Airlines^Air Midwest^^^^^1136
+air-zagros-airlines^^^^IZG^^0^Zagros Airlines^Air Midwest^^^^^
 air-zambezi-airlines^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^^
 air-zambian-airways^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http://en.wikipedia.org/wiki/Zambian_Airways^2198
 air-zambia-skyways^^^^^K8^241^Zambia Skyways^^^^^^2144
@@ -1167,7 +1180,7 @@ gds-worldticket^^^^^W1^0^WorldTicket^^^^G^http://en.wikipedia.org/wiki/WorldTick
 tec-arc-reporting^^^^ATA^X6^889^Airlines Reporting Corp^ARC^^^^^
 tec-bird-information-systems^^^^^1R^0^Bird Information Systems^^^^^^
 tec-fantasia^^^^APD^1Z^0^Fantasia Info Network^Asia Pacific^^^^^
-tec-map-management-planning^^^^MPJ^AQ^0^Map Management Planning^^^^^^
+tec-map-management-planning^1^^2015-01-01^MPJ^AQ^0^Map Management Planning^^^^^^
 tec-oag-worldwide^^^^^CR^0^OAG Worldwide^^^^^^
 tec-travel-technology-interactive^^^^^Y1^392^Travel Technology Interactive^^^^^^
 trn-accesrail^^^^^9B^450^Accesrail^Accesrail^^^R^^1039986
@@ -1176,6 +1189,7 @@ trn-deutsche-bahn^^^^DBB^2A^0^Deutsche Bahn AG^Deutsche Bahn^^^R^^305437
 trn-eurostar^^^^^9F^814^Eurostar^Eurostar UK^^^R^^16569
 trn-express-rail-link-malaysia^1^^2014-06-01^^5Y^0^Express Rail Link, Malaysia^Express Rail Link, Malaysia^^^R^http://en.wikipedia.org/wiki/Express_Rail_Link^
 trn-g-rail^^^^^9G^0^9G Rail^^^^R^^27084
+trn-nuovo-trasporto-viaggiatori^1^2012-04-01^2015-01-01^^2Q^0^Nuovo Trasporto Viaggiatori^^^^^http://en.wikipedia.org/wiki/Nuovo_Trasporto_Viaggiatori^
 trn-sncf^^^^^2C^0^SNCF^^^^R^^212725
 trn-thalys^^^^^2H^56^Thalys International^Thalys^^^R^^41939
 trn-trenitalia^^^^^7T^0^Trenitalia^^^^R^^
