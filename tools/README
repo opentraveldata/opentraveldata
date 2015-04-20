@@ -4,7 +4,7 @@
 ############################
 
 ##
-# 1.1. Generate the ORI-maintained POR (points of reference) file
+# 1.1. Generate the OPTD-maintained POR (points of reference) file
 # ---------------------------------------------------------------
 #
 cd ../ORI
@@ -12,7 +12,7 @@ cd ../ORI
 ./make_optd_por_public.sh --clean
 git add optd_por_public.csv
 git diff --cached optd_por_public.csv
-git ci -m "[RefData][ORI] Integrated the latest updates from Geonames."
+git ci -m "[POR] Integrated the latest updates from Geonames."
 cd -
 
 
@@ -30,7 +30,7 @@ cd -
 # Generates the dump_from_geonames.csv from the four data files obtained above
 #./preprepare_geonames_dump_file.sh (no longer used)
 
-# Recompute the ORI-maintained POR file: do 1.1.
+# Recompute the OPTD-maintained POR file: do 1.1.
 
 
 ##
@@ -41,7 +41,7 @@ cd -
 # and the dump_from_crb_city.csv has been recomputed.
 #
 
-# Recompute the ORI-maintained POR file: do 1.1.
+# Recompute the OPTD-maintained POR file: do 1.1.
 
 ##
 # 2.2. Update from Innovata
@@ -102,31 +102,31 @@ midori http://maps.bing.com
 # ----------------------------------------------------
 #
 # When the geographical details of a given POR are proved better in Geonames
-# than in the ORI-maintained data files, those latters have to be corrected.
-# Just update the coordinates within the ORI-maintained list of best known
+# than in the OPTD-maintained data files, those latters have to be corrected.
+# Just update the coordinates within the OPTD-maintained list of best known
 # coordinates:
 vi ../ORI/optd_por_best_known_so_far.csv
 git add ../ORI/optd_por_best_known_so_far.csv
 
 # For the bulk update, see also 8.
 
-# Proceed with the use case 1.1, since the ORI-maintained list of best known
-# coordinates has now better coordinates than the ORI-maintained list of POR.
+# Proceed with the use case 1.1, since the OPTD-maintained list of best known
+# coordinates has now better coordinates than the OPTD-maintained list of POR.
 
 
 ##
 # 4.2. Geonames has details for an unknown POR
 # --------------------------------------------
 #
-# A new POR, still unknown from ORI, may have been specified within Geonames.
+# A new POR, still unknown from OPTD, may have been specified within Geonames.
 #
 # The procedure is exactly the same as in 4.1: manually edit the
-# ../ORI/optd_por_best_known_so_far.csv and re-generate the ORI-maintained
+# ../ORI/optd_por_best_known_so_far.csv and re-generate the OPTD-maintained
 # POR file (step 1.1).
 
 
 ##
-# 5.1. ORI-maintained best known coordinates file has better coordinates
+# 5.1. OPTD-maintained best known coordinates file has better coordinates
 # ----------------------------------------------------------------------
 #
 # Fix the POR (points of reference) in Geonames and Wikipedia.
@@ -134,7 +134,7 @@ git add ../ORI/optd_por_best_known_so_far.csv
 
 
 ##
-# 6.1. ORI-maintained list has got POR unknown from Geonames
+# 6.1. OPTD-maintained list has got POR unknown from Geonames
 # ----------------------------------------------------------
 #
 # Add the POR in Geonames and Wikipedia. See 2.1 for the URLs.
@@ -181,7 +181,7 @@ wc -l new_optd_por_best_known_so_far.csv.wrfd \
 diff -c new_optd_por_best_known_so_far.csv.wrfd \
 	 ../ORI/optd_por_best_known_so_far.csv | less
 
-# In case everything seems correct, replace the ORI-maintained file:
+# In case everything seems correct, replace the OPTD-maintained file:
 #  - When Geonames has better coordinates
 \mv -f new_optd_por_best_known_so_far.csv.wgeo \
 	../ORI/optd_por_best_known_so_far.csv
@@ -193,12 +193,12 @@ diff -c new_optd_por_best_known_so_far.csv.wrfd \
 git add ../ORI/optd_por_best_known_so_far.csv
 git diff --cached ../ORI/optd_por_best_known_so_far.csv
 
-# Go to 1.1., as the ORI-maintained file of best known coordinates
+# Go to 1.1., as the OPTD-maintained file of best known coordinates
 # has been updated
 
 
 ##
-# 9. Check issues with Geonames ID on ORI POR
+# 9. Check issues with Geonames ID on OPTD POR
 # -------------------------------------------
 #
 sh prepare_geonames_dump_file.sh ../ 5
@@ -248,8 +248,8 @@ less ../ORI/optd_por_apt_for_geonames.csv
 # --------------------------------------------------------
 #    
 #
-The format of the refdata/geonames/data/por/data/allCountries_w_alt.txt
-may change, i.e., when the refdata/geonames/data/por/admin/aggregateGeonamesPor.*
+The format of the data/geonames/data/por/data/allCountries_w_alt.txt
+may change, i.e., when the data/geonames/data/por/admin/aggregateGeonamesPor.*
 (Shell and AWK) scripts are amended. An example of such a change has been
 implemented by the 28ab958cfcd159ea96753177d457cd583019a680 commit (addition of
 the continent):
@@ -257,26 +257,26 @@ git show 28ab958cfcd159ea96753177d457cd583019a680
 
 In that case, the following scripts and data files should be amended accordingly:
 * For Geonames raw data processing:
-refdata/geonames/data/por/admin/aggregateGeonamesPor.awk
-refdata/geonames/data/por/admin/aggregateGeonamesPor.sh
+data/geonames/data/por/admin/aggregateGeonamesPor.awk
+data/geonames/data/por/admin/aggregateGeonamesPor.sh
 
 * For Geonames data extraction:
-refdata/tools/extract_por_with_iata_icao.awk
-#refdata/tools/preprepare_geonames_dump_file.sh (no longer used)
+data/tools/extract_por_with_iata_icao.awk
+#tools/preprepare_geonames_dump_file.sh (no longer used)
 
-* For ORI-maintained data file processing:
-refdata/ORI/make_optd_por_public.sh
-refdata/tools/geo_pk_creator.awk
-refdata/ORI/make_optd_por_public.awk
-refdata/ORI/add_city_name.awk
-refdata/ORI/optd_por_non_iata.csv
+* For OPTD-maintained data file processing:
+tools/make_optd_por_public.sh
+tools/geo_pk_creator.awk
+tools/make_optd_por_public.awk
+tools/add_city_name.awk
+opentraveldata/optd_por_non_iata.csv
 
 * For data publication to Geonames:
-refdata/tools/generate_por_deduplication_suggestions_for_geonames.sh
-refdata/tools/optd_pk_creator.awk
-refdata/tools/optd_por_splitter.awk
+tools/generate_por_deduplication_suggestions_for_geonames.sh
+tools/optd_pk_creator.awk
+tools/optd_por_splitter.awk
 
-* For ORI-maintained data extraction for Amadeus private usage, the private
+* For OPTD-maintained data extraction for Amadeus private usage, the private
   Data Analysis project should also be amended through:
 data_generation/por/make_optd_por_private.awk
 data_generation/por/make_optd_por_private.sh
@@ -287,26 +287,26 @@ data_generation/por/make_optd_por_private.sh
 # ----------------------------------------------------
 #    
 #
-The format of the refdata/geonames/data/por/data/allCountries_w_alt.txt
-may change, i.e., when the refdata/geonames/data/por/admin/aggregateGeonamesPor.*
+The format of the data/geonames/data/por/data/allCountries_w_alt.txt
+may change, i.e., when the data/geonames/data/por/admin/aggregateGeonamesPor.*
 (Shell and AWK) scripts are amended. An example of such a change has been
 implemented by the 28ab958cfcd159ea96753177d457cd583019a680 commit (addition of
 the continent):
 git show 28ab958cfcd159ea96753177d457cd583019a680
 
 In that case, the following scripts and data files should be amended accordingly:
-* For ORI-maintained data file processing:
-refdata/ORI/make_optd_por_public.sh
-refdata/ORI/make_optd_por_public.awk
-refdata/ORI/add_city_name.awk
-refdata/ORI/optd_por_non_iata.csv
+* For OPTD-maintained data file processing:
+tools/make_optd_por_public.sh
+tools/make_optd_por_public.awk
+tools/add_city_name.awk
+opentraveldata/optd_por_non_iata.csv
 
 * For data publication to Geonames:
-refdata/tools/generate_por_deduplication_suggestions_for_geonames.sh
-refdata/tools/optd_pk_creator.awk
-refdata/tools/optd_por_splitter.awk
+tools/generate_por_deduplication_suggestions_for_geonames.sh
+tools/optd_pk_creator.awk
+tools/optd_por_splitter.awk
 
-* For ORI-maintained data extraction for Amadeus private usage, the private
+* For OPTD-maintained data extraction for Amadeus private usage, the private
   Data Analysis project should also be amended through:
 data_generation/por/make_optd_por_private.awk
 data_generation/por/make_optd_por_private.sh

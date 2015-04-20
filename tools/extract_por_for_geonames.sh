@@ -121,7 +121,9 @@ OPTD_POR_PUBLIC_FILE=${DATA_DIR}${OPTD_POR_PUBLIC_FILENAME}
 # moddate (36) ^
 # city_code_list (37) ^ city_name_list (38) ^ city_detail_list (39) ^
 # tvl_por_list (40) ^
-# state_code (41) ^ location_type (42) ^ wiki_link (43) ^ alt_name_section (44)
+# state_code (41) ^
+# location_type (42) ^ wiki_link (43) ^ alt_name_section (44) ^
+# wac (45) ^ wac_name (46)
 
 ####
 ## Valid combined Geonames POR, appearing in schedules (i.e., important)

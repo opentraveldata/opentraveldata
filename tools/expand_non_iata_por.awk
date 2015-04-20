@@ -9,7 +9,7 @@
 # potentially just once.
 #
 # Sample output lines:
-# SEJ^ZZZZ^^N^0^1^Unkown POR N^Unkown POR N^65.27^-14^S^AIRP^^^^^FR^^France^^^^^^^^^0^178^174^Europe/Paris^1.0^2.0^1.0^2013-01-01^SEJ^^^^^CA^^
+# SEJ^ZZZZ^^N^0^1^Unkown POR N^Unkown POR N^65.27^-14^S^AIRP^^^^^FR^^France^^^^^^^^^0^178^174^Europe/Paris^1.0^2.0^1.0^2013-01-01^SEJ^^^^^^^CA^^
 #
 
 
@@ -35,6 +35,7 @@ BEGIN {
 	printf ("%s", "^state_code^location_type")
 	printf ("%s", "^wiki_link")
 	printf ("%s", "^alt_name_section")
+	printf ("%s", "^wac^wac_name")
 	printf ("%s", "\n")
 
 	#
@@ -48,7 +49,7 @@ BEGIN {
 #
 # Sample input lines (16 fields):
 #
-# TODO:SEJ^UNKNOWN7974^UNKNOWN7974^UNKNOWN7974/ZZ^ZZZ^Y^^ZZ^ZZZZZ^ITZ1^ZZ^65.27^-14^0^N^CA
+# TODO:SEJ^UNKNOWN7974^UNKNOWN7974^UNKNOWN7974/ZZ^ZZZ^Y^^ZZ^ZZZZZ^ITZ1^ZZ^65.27^-14^0^N^^^CA
 #
 #
 /^([A-Z0-9]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.+-]{0,12})\^/ {
@@ -115,8 +116,8 @@ BEGIN {
 		# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
 		printf ("%s", "^" "ZZZ" "^"  "^"  "^" ) > non_optd_por_file
 
-		# ^ State code
-		printf ("%s", "^" ) > non_optd_por_file
+		# ^ State code (empty here)
+		printf ("%s", "^") > non_optd_por_file
 
 		#  ^ Location type (the default, i.e., city and airport)
 		printf ("%s", "^CA") > non_optd_por_file
@@ -126,6 +127,9 @@ BEGIN {
 
 		#  ^ Section of alternate names  (empty here)
 		printf ("%s", "^") > non_optd_por_file
+
+		#  ^ US DOT WAC ^ WAC name (empty here)
+		printf ("%s", "^" "^") > non_optd_por_file
 
 		# End of line
 		printf ("%s", "\n") > non_optd_por_file
