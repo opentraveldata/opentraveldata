@@ -236,13 +236,16 @@ BEGIN {
     # State code
     state_code = $10
 
+    # Through date
+    through_date = $14
+
     # Register the WAC associated to that country (e.g., 401 for 'AL'/Albania)
-	if (country_iso_code) {
+	if (through_date == "" && country_iso_code) {
 		wac_by_ctry_code_list[country_iso_code] = world_area_code
 	}
 
     # Register the WAC associated to that state (e.g., 51 for 'AL'/Alabama)
-	if (state_code) {
+	if (through_date == "" && state_code) {
 		wac_by_state_code_list[state_code] = world_area_code
 	}
 
