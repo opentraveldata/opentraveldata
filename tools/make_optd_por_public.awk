@@ -289,23 +289,41 @@ function getContinentName(myCountryCode) {
 ##
 # Retrieve the World Area Code (WAC) for a given country or a given state
 function getWorldAreaCode(myCountryCode, myStateCode, myCountryCodeAlt) {
-	# If there is a WAC registered for the state code, then the WAC is
-	# specified at the state level (like for US and CA states)
+	# If there is a WAC registered for the state code (as found in Geonames),
+	# then the WAC is specified at the state level (like for US and CA states)
 	world_area_code_for_state = wac_by_state_code_list[myStateCode]
 	if (world_area_code_for_state) {
 		return world_area_code_for_state
 	}
 
+	# Then, try to match the country code (as found in Geonames)
 	world_area_code_for_ctry = wac_by_ctry_code_list[myCountryCode]
 	if (world_area_code_for_ctry) {
 		return world_area_code_for_ctry
 	}
 
+	# Then, try to match the alternate country code (as found in Geonames)
 	world_area_code_for_ctry = wac_by_ctry_code_list[myCountryCodeAlt]
 	if (world_area_code_for_ctry) {
 		return world_area_code_for_ctry
 	}
 
+	# Then, try to match the country code (as found in Geonames)
+	# with a WAC state code. For instance, Puerto Rico (PR) is a country
+	# for Geonames, but a state (of the USA) for the US DOT WAC.
+	world_area_code_for_state = wac_by_state_code_list[myCountryCode]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+	
+	# Then, try to match the alternate country code (as found in Geonames)
+	# with a WAC state code. For instance, Puerto Rico (PR) is a country
+	# for Geonames, but a state (of the USA) for the US DOT WAC.
+	world_area_code_for_state = wac_by_state_code_list[myCountryCodeAlt]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+	
     # There is no WAC registered for either the state or country code
 	#print ("[" awk_file "] !!!! Warning !!!! No World Area Code (WAC) can be" \
 	#	   " found for either the state code ("	myStateCode				\
