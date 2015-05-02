@@ -323,7 +323,18 @@ function getWorldAreaCode(myCountryCode, myStateCode, myCountryCodeAlt) {
 	if (world_area_code_for_state) {
 		return world_area_code_for_state
 	}
-	
+
+	# A few specific rules. See for instance the issue #5 on Open Travel Data:
+	# http://github.com/opentraveldata/opentraveldata/issues/5
+	# The following countries should be mapped onto WAC #005, TT, USA:
+	# * American Samoa, referenced under Geonames as AS
+	# * Guam, referenced under Geonames as GU
+	# * Northern Mariana Islands, referenced under Geonames as MP
+	if (myCountryCode == "AS" || myCountryCode == "GU" || myCountryCode == "MP"){
+		world_area_code_for_ctry = 5
+		return world_area_code_for_ctry
+	}
+
     # There is no WAC registered for either the state or country code
 	#print ("[" awk_file "] !!!! Warning !!!! No World Area Code (WAC) can be" \
 	#	   " found for either the state code ("	myStateCode				\
