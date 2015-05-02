@@ -593,8 +593,8 @@ air-kal-star-aviation^^^^KNI^KD^0^Kal Star Aviation^KD Avia^^^^
 air-kam-air^^^^KMF^RQ^384^Kam Air^Kam Air^^^^
 air-kan-air^^2010-01-01^^KND^K8^0^Kan Air^^^^^http://en.wikipedia.org/wiki/Kan_Air
 air-karinou-airlines^^^^^U5^0^Karinou Airlines^USA 3000^^^^
-air-karthago-airlines^^^^^5R^0^Karthago Airlines^Karthago Air^^^^
-air-kartika-airlines^^^^KAE^3Y^0^Kartika Airlines^Kartika Air^^^^
+air-karthago-airlines^^^^^5R^0^Karthago Airlines^^^^^
+air-kartika-airlines^^^^KAE^3Y^0^Kartika Airlines^^^^^
 air-katekavia^^1995-01-01^^KTK^ZF^0^Katekavia^^^^^http://en.wikipedia.org/wiki/Katekavia
 air-katmai-air^^^^^KT^0^Katmai Air^^^^^http://www.katmailand.com/air-services
 air-kaya-airlines^^1991-01-01^^KYY^IK^0^Kaya Airlines^Imair Air^^^^http://en.wikipedia.org/wiki/Kaya_Airlines
@@ -604,21 +604,21 @@ air-kenya-airways^^^^KQA^KQ^706^Kenya Airways^Kenyaairway^Skyteam^Member^^
 air-kharkiv-airlines^^^^^KW^711^Kharkiv Airlines^^^^^
 air-kingfisher-airlines^^^^KFR^^90^Kingfisher Airlines^^OneWorld^Future^^
 air-kish-airlines^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^
-air-klm-cityhopper^^^^KLC^WA^0^KLM Cityhopper^KLM Cityhopper^^^^
-air-klm^^^^KLM^KL^74^KLM Royal Dutch Airlines^KLM^Skyteam^Member^^
+air-klm-cityhopper^^1991-04-01^^KLC^WA^0^KLM Cityhopper^^^^^http://en.wikipedia.org/wiki/KLM_Cityhopper
+air-klm^^1919-10-07^^KLM^KL^74^KLM Royal Dutch Airlines^KLM^Skyteam^Member^^http://en.wikipedia.org/wiki/KLM
 air-kogalymavia-airlines^^^^^7K^0^Kogalymavia Airlines^^^^^
 air-korean-air^^^^KAL^KE^180^Korean Air^Korean Air^Skyteam^Member^^
-air-korongo-airlines^^^^^ZC^557^Korongo Airlines^Korongo Air^^^^
+air-korongo-airlines^^^^^ZC^557^Korongo Airlines^^^^^
 air-kuban-airlines^^^^SKG^GW^0^SkyGreece Airlines^^^^^
 air-kunming-airlines^^^^KNA^KY^833^Kunming Airlines^^^^^
-air-kuwait-airways^^^^KAC^KU^229^Kuwait Airways^Kuwait Air^^^^
+air-kuwait-airways^^^^KAC^KU^229^Kuwait Airways^^^^^
 air-kyrgyz-airlines^^^^^LK^915^Kyrgyz Airlines^^^^^
 air-kyrgyzstan-air^^2001-01-01^^LYN^QH^138^Air Kyrgyzstan^^^^^http://en.wikipedia.org/wiki/Air_Kyrgyzstan
-air-kyrgyzstan-airlines^^^^KGA^R8^0^Kyrgyzstan Airlines^Kyrgyzstan^^^^
+air-kyrgyzstan-airlines^^^^KGA^R8^0^Kyrgyzstan Airlines^^^^^
 air-kyrgyz-trans-avia^^^^KTC^6K^0^Kyrgyz Trans Avia^Korsar^^^^
 air-lacbravo^^^^^4V^408^Lacbravo^^^^^
 air-lacsa^^^^LRC^LR^133^Avianca Costa Rica^Lacsa^^^^http://en.wikipedia.org/wiki/Avianca_Costa_Rica
-air-lam-mozambique^^^^LAM^TM^68^Lam Mozambique^Lam^^^^
+air-lam-mozambique^^^^LAM^TM^68^Lam Mozambique^^^^^
 air-lan-airlines^^^^LAN^LA^45^LAN Airlines^LATAM Airlines Group^OneWorld^Member^^http://en.wikipedia.org/wiki/LAN_Airlines
 air-lan-argentina^^^^^4M^469^LAN Argentina^LAN argentina^OneWorld^Affiliate^^
 air-lan-chile-cargo^^^^LCO^UC^0^LAN Chile Cargo^Ladeco^^^^

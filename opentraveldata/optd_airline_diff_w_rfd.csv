@@ -31,6 +31,7 @@
 3G^1^Gambia Bird<>Gambia Bird Airlines Ltd
 3Q^1^Carib Aviation Limited<>
 3X^1^Japan Air Commuter<>
+3Y^2^<>Kartika Air
 4A^2^ATSA<>
 4C^1^LAN Colombia<>Lan Colombia Airlines
 4C^2^Aerovías de Integración Regional (AIRES)<>Lan Colombia
@@ -50,6 +51,7 @@
 5P^2^Aerolinea Principal Chile<>
 5Q^1^BQB Lineas Aereas<>Bqb Lineas Aereas
 5Q^2^BQB Lineas<>Bqb Lineas
+5R^2^<>Karthago Air
 5T^2^Canadian North<>Canadiannorth
 5U^2^LADE<>L A D E
 5Y^2^Atlas Air<>Express Rail
@@ -343,16 +345,18 @@ K5^1^SeaPort Airlines<>Seaport Airlines
 K5^2^Wings of Alaska<>Wings Alaska
 K8^1^Zambia Skyways<>Kan Air
 KA^2^HK Dragon<>Hk Dragon
+KAC^2^<>Kuwait Air
+KAE^2^<>Kartika Air
 KAP^2^<>Cape Air
 KAR^1^Ikar<>Llc Ikar
 KAR^2^<>Imair Air
 KD^1^Kal Star Aviation<>Pt Kal Star Aviation
 KD^2^KD Avia<>Kd Avia
+KGA^2^<>Kyrgyzstan
 KI^1^Air Contact<>
 KL^1^KLM Royal Dutch Airlines<>Klm Royal Dutch Airlines
 KL^2^KLM<>Klm
 KLC^1^KLM Cityhopper<>Klm Cityhopper
-KLC^2^KLM Cityhopper<>Klm Cityhopp
 KLM^1^KLM Royal Dutch Airlines<>Klm Royal Dutch Airlines
 KLM^2^KLM<>Klm
 KNE^2^Nas Air<>Nasair
@@ -361,12 +365,14 @@ KNI^2^KD Avia<>Kd Avia
 KT^1^Katmai Air<>
 KTK^1^Katekavia<>Katekavia Limited
 KTK^2^<>Athens Airway
+KU^2^<>Kuwait Air
 KW^2^<>Kharkiv
 L7^1^Lugansk Airlines<>
 L8^2^<>Afric Aviatio
 LA^1^LAN Airlines<>Lan Airlines
 LA^2^LATAM Airlines Group<>Lan Chile
 LAA^2^<>Libyan Air
+LAM^2^<>Lam
 LAN^1^LAN Airlines<>Lan Airlines
 LAN^2^LATAM Airlines Group<>Lan Chile
 LB^2^LAB<>L A B
@@ -493,6 +499,7 @@ QZ^2^Awair<>Ptindairasia
 R0^1^MS Royal Airlines<>M S Royal Airlines
 R2^2^Orenburg Airlines<>Orenair
 R6^1^DOT LT<>Dot Lt
+R8^2^<>Kyrgyzstan
 R9^1^TAF Linhas Aereas<>
 RAM^2^Royal Air Maroc<>R Air Maroc
 RE^1^Aer Arann<>Stobart Air
@@ -555,6 +562,7 @@ TCV^2^TACV<>T A C V
 TGU^2^LADE<>L A D E
 THD^2^Rheintalflg<>Thai Smile
 TLG^1^Invest Avia<>Nam Air
+TM^2^<>Lam
 TOM^1^Thomson Airways<>Thomson Airways Ltd
 TP^1^TAP Portugal<>Tap Portugal
 TP^2^TAP Portugal<>Tap Portugal
@@ -628,7 +636,6 @@ W4^2^<>Lc Busre
 W7^1^Sayakhat Airlines<>
 W8^1^Caribbean Winds Airlines<>
 WA^1^KLM Cityhopper<>Klm Cityhopper
-WA^2^KLM Cityhopper<>Klm Cityhopp
 WAU^1^Wizz Air Ukraine<>Wizz Air Ukraine Llc
 WD^1^Amsterdam Airlines Bv<>
 WE^2^Rheintalflg<>Thai Smile
@@ -694,6 +701,7 @@ Z7^1^Zimbabwe flyafrica.com<>Fly Africa Zimbabwe
 Z7^2^<>Easeon Air
 Z8^1^Amaszonas SA<>Amaszonas S A
 ZA^2^Sky Wings Asia Airlines<>
+ZC^2^<>Korongo Air
 ZF^1^Katekavia<>Katekavia Limited
 ZF^2^<>Athens Airway
 ZM^1^Pegasus Asia<>Air Manas
