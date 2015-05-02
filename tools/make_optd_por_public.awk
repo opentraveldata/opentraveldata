@@ -334,6 +334,12 @@ function getWorldAreaCode(myCountryCode, myStateCode, myCountryCodeAlt) {
 		world_area_code_for_ctry = 5
 		return world_area_code_for_ctry
 	}
+	# For some reason, the US DOT has got the wrong country code for Kosovo
+	# See also https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
+	if (myCountryCode == "XK") {
+		world_area_code_for_ctry = 494
+		return world_area_code_for_ctry
+	}
 
     # There is no WAC registered for either the state or country code
 	#print ("[" awk_file "] !!!! Warning !!!! No World Area Code (WAC) can be" \
