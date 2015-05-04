@@ -53,14 +53,14 @@ def write(filename, data):
 
 
 def main():
+    # get new ones from urls, currently just one implemented
+    new = read_from_flugzeuginfo()
     # read the existing table
     existing = read_existing(target_file)
-    # get new ones from urls, currently just one implemented
-    new = read_from_flugzeuginfo(url)
     # update list of aircrafts
-    existing.update(new)
+    new.update(existing)
     # write back to file
-    write(target_file, existing)
+    write(target_file, new)
     
 
 if __name__ == '__main__':
