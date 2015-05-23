@@ -8,7 +8,7 @@ BPA^America/New_York
 BVD^America/Anchorage
 BXC^America/New_York
 BZF^America/Los_Angeles
-BZS^America/Sao_Paulo
+BZS^America/New_York
 CBA^America/Juneau
 CCD^America/Los_Angeles
 CGX^America/Chicago
@@ -22,7 +22,7 @@ CWG^America/New_York
 CYE^America/New_York
 CZT^America/Chicago
 CZZ^Africa/Malabo
-DAJ^Pacific/Port_Moresby
+DAJ^Australia/Sydney
 DCK^America/Anchorage
 DDI^Australia/Brisbane
 DEO^America/Detroit
@@ -35,7 +35,7 @@ EFO^America/Chicago
 EFW^America/Chicago
 ELA^America/Chicago
 EMB^America/Los_Angeles
-ERO^Europe/London
+ERO^America/Anchorage
 ETN^America/Chicago
 EVA^America/Chicago
 FBY^America/Chicago
@@ -106,7 +106,7 @@ JSD^America/New_York
 JSK^America/Chicago
 JSL^America/New_York
 JSN^America/Los_Angeles
-JTI^Atlantic/Stanley
+JTI^America/Sao_Paulo
 JTO^America/Los_Angeles
 JUC^America/Los_Angeles
 JUP^America/Los_Angeles
@@ -179,8 +179,8 @@ PSN^America/Chicago
 PSQ^America/New_York
 QAW^America/Chicago
 QBF^America/Denver
-QCC^Africa/Maputo
-QCK^Indian/Antananarivo
+QCC^America/Sao_Paulo
+QCK^America/Sao_Paulo
 QCW^America/New_York
 QDE^Indian/Antananarivo
 QDK^Asia/Karachi

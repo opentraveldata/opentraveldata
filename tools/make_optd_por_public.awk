@@ -5,6 +5,7 @@
 #    * Best known POR (poins of reference): optd_por_best_known_so_far.csv
 #    * PageRank values:                     ref_airport_pageranked.csv
 #    * Country-associated time-zones:       optd_tz_light.csv
+#    * Time-zones for a few POR:            optd_por_tz.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
 #  * Amadeus RFD (Referential Data):        dump_from_crb_city.csv
@@ -182,6 +183,33 @@ BEGIN {
 
 
 ##
+# File of time-zones for a few POR.
+#
+# Content:
+# --------
+# Currently, for POR not known from Geonames, the time-zone is guessed
+# thanks to the country. While that method works for most of the small
+# countries, it fails for countries spanning multiple time-zones (e.g.,
+# United States, Russia).
+#
+# Sample input lines:
+# AYZ^America/New_York
+# LJC^America/Kentucky/Louisville
+# MNP^Pacific/Port_Moresby
+# QSE^America/Sao_Paulo
+#
+/^([A-Z]{3})\^(Africa|America|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/([A-Za-z/_]+)$/ {
+    # IATA code
+    iata_code = $1
+
+    # Time-zone ID
+    tz_id = $2
+
+    # Register the time-zone ID associated to that country
+    por_tz_list[iata_code] = tz_id
+}
+
+##
 # File of country-continent mappings
 #
 # Sample lines:
@@ -259,8 +287,15 @@ BEGIN {
 
 
 ##
+# Retrieve the time-zone ID for that POR IATA code
+function getTimeZoneFromIATACode(myIATACode) {
+    tz_id = por_tz_list[myIATACode]
+    return tz_id
+}
+
+##
 # Retrieve the time-zone ID for that country
-function getTimeZone(myCountryCode) {
+function getTimeZoneFromCountryCode(myCountryCode) {
     tz_id = ctry_tz_list[myCountryCode]
     return tz_id
 }
@@ -638,7 +673,15 @@ function printAltNameSection(myAltNameSection) {
 		country_code = $17
 		country_code_alt = ""
 		country_name = getCountryName(country_code)
-		time_zone_id = getTimeZone(country_code)
+		time_zone_id = getTimeZoneFromIATACode(iata_code)
+		if (time_zone_id == "") {
+			time_zone_id = getTimeZoneFromCountryCode(country_code)
+
+			#print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
+			#	   "for the record #" FNR " - Default time-zone: "	\
+			#	   time_zone_id ". Record: " $0)					\
+			#	> error_stream
+		}
 		continent_name = getContinentName(country_code)
 		# continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
 		printf ("%s", "^" country_code "^^" country_name "^" continent_name)

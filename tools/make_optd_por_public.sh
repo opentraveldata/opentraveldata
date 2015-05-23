@@ -5,6 +5,7 @@
 # - optd_por_no_longer_valid.csv
 # - ref_airport_pageranked.csv
 # - optd_tz_light.csv
+# - optd_por_tz.csv
 # - optd_cont.csv
 # - optd_usdot_wac.csv
 # - dump_from_crb_city.csv
@@ -82,8 +83,14 @@ OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
 
 ##
 # Light (and inaccurate) version of the country-related time-zones
-OPTD_TZ_FILENAME=optd_tz_light.csv
-OPTD_TZ_FILE=${DATA_DIR}${OPTD_TZ_FILENAME}
+OPTD_TZ_CNT_FILENAME=optd_tz_light.csv
+OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
+# Time-zones derived from the closest city in Geonames: more accurate,
+# only when the geographical coordinates are themselves accurate of course
+OPTD_TZ_POR_FILENAME=optd_por_tz.csv
+OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
+
+##
 # Mapping between the Countries and their corresponding continent
 OPTD_CNT_FILENAME=optd_cont.csv
 OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
@@ -206,7 +213,8 @@ then
 	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
 	echo " - OPTD-maintained file of non longer valid IATA POR: '${OPTD_NOIATA_FILE}'"
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
-	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_FILE}'"
+	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
+	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"
 	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
 	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): '${OPTD_USDOT_FILE}'"
 	echo " - RFD data dump file: '${RFD_RAW_FILE}'"
@@ -315,8 +323,9 @@ echo "----------------"
 echo
 REDUCER=make_optd_por_public.awk
 time awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
-	 ${OPTD_PR_FILE} ${OPTD_TZ_FILE} ${OPTD_CNT_FILE} ${OPTD_USDOT_FILE} \
-	 ${OPTD_POR_WITH_GEORFDALT} > ${OPTD_POR_WITH_NO_CTY_NAME}
+	 ${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
+	 ${OPTD_USDOT_FILE} ${OPTD_POR_WITH_GEORFDALT} \
+	 > ${OPTD_POR_WITH_NO_CTY_NAME}
 
 ##
 # Write the UTF8 and ASCII names of the city served by every travel-related
