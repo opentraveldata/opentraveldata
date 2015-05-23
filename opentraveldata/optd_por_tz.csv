@@ -1,3 +1,4 @@
+iata_code^tz
 AYZ^America/New_York
 BAR^America/Anchorage
 BDF^America/Chicago
@@ -55,7 +56,6 @@ HKP^Pacific/Honolulu
 HLR^America/Chicago
 HPT^America/Chicago
 HSB^America/Chicago
-iata_code^tz
 IAT^America/Los_Angeles
 ITJ^America/Sao_Paulo
 JAE^America/New_York
