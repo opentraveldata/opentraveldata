@@ -44,6 +44,8 @@
 4V^1^Lacbravo<>Lignes Aeriennes Congo
 4W^2^<>Warbelow
 4Z^2^SA Airlink<>Sa Airlink
+5D^1^Aeromexico Connect<>Aerolitoral
+5D^2^Aerolitoral<>
 5G^1^Fly 540 Ghana<>540 Ghana
 5G^2^Skyservice Ghana<>Skyservice
 5L^1^Aerosur<>
@@ -84,6 +86,8 @@
 9A^1^Aladia Airlines<>
 9F^2^Eurostar UK<>Eurostar Uk
 9G^1^9G Rail<>9g Rail Ltd
+9I^1^Air India Regional<>Alliance Air
+9I^2^Alliance Air<>
 9J^1^Dana Air<>Dana Airlines Limited
 9K^2^<>Cape Air
 9N^1^Tropic Air<>Tropic Air Limited
@@ -145,10 +149,10 @@ AWQ^2^Awair<>Ptindairasia
 AWU^1^Sylt Air<>Sylt Air Gmbh
 AXM^1^Air Asia<>Airasia Sdn Bhd
 AXM^2^<>Airasia
-AZ^1^Alitalia S.A.I.<>Alitalia S A I S P A
-AZ^2^<>Alitalia Spa
-AZA^1^Alitalia S.A.I.<>Alitalia S A I S P A
-AZA^2^<>Alitalia Spa
+AZ^1^Alitalia<>Alitalia S A I S P A
+AZ^2^Alitalia S.A.I.<>Alitalia Spa
+AZA^1^Alitalia<>Alitalia S A I S P A
+AZA^2^Alitalia S.A.I.<>Alitalia Spa
 B0^2^Dreamjet<>La Compagnie
 B1^1^Cions Software<>Bravo Passenger Solution
 BA^2^British Airways<>British A W
@@ -323,6 +327,8 @@ IN^1^Invest Avia<>Nam Air
 IP^1^Iberworld Airlines<>Apsara International Air
 IU^1^Hevilift<>Hevi Lift Png Pty Ltd
 IW^1^Wings Abadi Airlines<>Pt Wings Abadi Airlines
+IX^1^Air India Express<>Air India Charters
+IX^2^Air India Charters<>
 J0^1^Jetlink Express<>
 JA^1^BH Airlines<>B H Airlines
 JA^2^BH Airlines<>B H Airlines
@@ -384,6 +390,8 @@ LCO^1^LAN Chile Cargo<>Lan Chile Cargo
 LID^1^Alidaunia<>Alidaunia S R L
 LLM^2^<>Yamal
 LLP^1^Small Planet Airline<>Small Planet Airline Ghd
+LLR^1^Air India Regional<>Alliance Air
+LLR^2^Alliance Air<>
 LN^2^<>Libyan Air
 LNE^1^LAN Ecuador<>Lanecuador Aerolane Sa
 LNE^2^LAN Ecuador<>Lan Ecuador
@@ -531,6 +539,8 @@ SIT^2^SITA<>
 SJ^1^Sriwijaya Air<>Pt Sriwijaya Air
 SJY^1^Sriwijaya Air<>Pt Sriwijaya Air
 SKG^1^SkyGreece Airlines<>Skygreece Airlines
+SLI^1^Aeromexico Connect<>Aerolitoral
+SLI^2^Aerolitoral<>
 SME^2^Nayzak Air<>M4 NAYZAK Air
 SMX^1^<>C A I First S P A
 SMX^2^<>Cai First Spa

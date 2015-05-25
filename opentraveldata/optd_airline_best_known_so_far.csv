@@ -23,7 +23,7 @@ air-aerolineas-galapagos^^^^GLG^2K^547^Aerolineas Galapagos^Aerogal^^^^
 air-aerolineas-mas^^^^^N3^877^Aerolineas Mas^Omskavia^^^^
 air-aerolineas-regionales^^^^XLK^F2^0^Safarilink Aviation^^^^P^http://en.wikipedia.org/wiki/Safarilink_Aviation
 air-aerolineas-sosa^^^^^P4^0^Aerolineas Sosa^Sosa^^^^
-air-aerolitoral^^^^SLI^5D^642^Aerolitoral^^Skyteam^Affiliate^^
+air-aerolitoral^^1988-01-01^^SLI^5D^642^Aeromexico Connect^Aerolitoral^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/Aerom%C3%A9xico_Connect
 air-aeromar^^^^TAO^VW^942^Aeromar^Aeromar^^^^
 air-aeromexico^^^^AMX^AM^139^AeroMexico^AeroMexico^Skyteam^Member^^http://en.wikipedia.org/wiki/Aerom%C3%A9xico
 air-aero-mongolia^^^^MNG^M0^719^Aero Mongolia^^^^^
@@ -104,7 +104,8 @@ air-air-greenland^^^^GRL^GL^631^Air Greenland^Air Greenland^^^^
 air-air-guinea^^^^^LQ^0^Air Guinea^Air Guinea^^^^
 air-air-iceland^^^^FXI^NY^882^Air Iceland^Air Iceland^^^^
 air-air-incheon^^^^AII^KJ^994^Air Incheon^Bmed^^^^
-air-air-india-charters^^^^^IX^0^Air India Charters^^^^^
+air-air-india-charters^^2005-04-29^^AXB^IX^0^Air India Express^Air India Charters^^^^http://en.wikipedia.org/wiki/Air_India_Express
+air-air-india-regional^^1996-06-21^^LLR^9I^0^Air India Regional^Alliance Air^^^^http://en.wikipedia.org/wiki/Air_India_Regional
 air-air-india^^^^AIC^AI^98^Air India^Air India^^^^
 air-air-indus^^^^MPK^I6^315^Air Indus^^^^^
 air-air-inuit^^^^AIE^3H^466^Air Inuit^Air Inuit^^^^
@@ -176,7 +177,7 @@ air-alas-uruguay^^2015-02-01^^ALY^YZ^570^Alas Uruguay^^^^^http://en.wikipedia.or
 air-alaska-airlines^^1944-06-06^^ASA^AS^27^Alaska Airlines^^^^^http://en.wikipedia.org/wiki/Alaska_Airlines
 air-alaska-seaplane-service^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^
 air-alidaunia^^^^LID^D4^0^Alidaunia^^^^^
-air-alitalia^^1999-03-01^^AZA^AZ^55^Alitalia S.A.I.^^Skyteam^Member^^http://en.wikipedia.org/wiki/Alitalia
+air-alitalia^^1999-03-01^^AZA^AZ^55^Alitalia^Alitalia S.A.I.^Skyteam^Member^^http://en.wikipedia.org/wiki/Alitalia
 air-alitalia-cityliner^^^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/Alitalia_CityLiner
 air-allegiant-air^^^^^G4^268^Allegiant Air^Guizhou Air^^^^
 air-alliance-airlines^^^^FWQ^QQ^0^Alliance Airlines^^^^PT^
@@ -504,7 +505,6 @@ air-hebei-airlines^^^^^NS^836^Hebei Airlines^Caucasus Air^^^^
 air-heli-air-monaco^^^^MCM^YO^747^Heli Air Monaco^Heliairmona^^^^
 air-helicopteros-del-sureste^^^^^UV^662^Helicopteros Del Sureste^^^^^
 air-helijet^^^^JBA^JB^613^Helijet International^Helijet^^^^
-air-helitrans-as^^^^LLR^9I^0^Alliance Air^^^^^
 air-hellas-jet^^^^HEJ^HJ^681^Hellas Jet^Hellenic Star^^^^
 air-helvetic-airways^^^^OAW^2L^102^Helvetic Airways^2L Helvetic^^^^
 air-hennan-airlines^^^^^VD^981^Hennan Airlines^^^^^

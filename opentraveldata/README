@@ -1,8 +1,72 @@
 
-##
-# That directory contains the opentraveldata-maintained data files for the
-# Points of Reference (POR) related to travel. For now, it contains only
-# the POR having got a IATA code.
+Overview
+========
+That directory contains the files maintained by the OpenTravelData
+team (http://github.com/opentraveldata/opentraveldata) for various
+types of travel-related referential data:
+* Points of Reference (POR). For now, only the POR having got a IATA code.
+* Countries and continents.
+* Time-zones for a few POR.
+* Airlines and alliances. For now, only the airlines having a 2-letter
+  IATA code.
+* Aircraft.
+
+Geographical-related Data
+=========================
+A few files are maintained, others are generated.
+
+Curated
+-------
+* optd_por_best_known_so_far.csv is the list of best known details
+  for the Points of Reference (POR), for geographical coordinates,
+  serving city and Geonames reference.
+* optd_por_no_longer_valid.csv is the list of no longer POR.
+* optd_regions.csv and optd_region_details.csv are the list of regions
+  from various projects or institutions (UN WTO, Geonames).
+
+Generated
+---------
+* optd_por_public.csv
+
+Mixed
+-----
+* optd_por_best_to_reject.csv is the list of POR not referenced by IATA.
+  A typical use case is when the FAA code has been taken for the IATA code,
+  for instance with DAW, as of May 2015: http://geonames.org/5092710.
+  Someone should go through that list, check it item and item, and amend
+  the corresponding records, usually in Geonames, where the mistake has been
+  done in the first place. IATA may be the culprit in some other cases.
+* optd_por_tz.csv. Overall curated, but regurlaly generated thanks to GeoBases
+  and Geonames
+* optd_country_region_info.csv and optd_cont.csv are the lists of countries,
+  with their associated details. Those are generated from Geonames. 
+* optd_por_diff_w_geonames.csv is the list of geographical distances
+  for the POR, as known from optd_por_best_known_so_far.csv on one hand,
+  and as known by Geonames on the other hand.
+  Someone should go through that list, check it item by item, and amend
+  the corresponding records, usually in optd_por_best_known_so_far.csv,
+  where the mistake (for geographical coordinates) has been done most of
+  the time. Sometimes the culprit may be Geonames; but it is then easy to amend.
+
+Airlines
+========
+
+Curated
+-------
+* optd_airline_best_known_so_far.csv
+* optd_airline_alliance_membership.csv
+* optd_airline_no_longer_valid.csv
+
+Mixed
+-----
+* optd_airline_diff_w_alc.csv
+* optd_airline_diff_w_rfd.csv
+
+
+Generated
+---------
+* optd_airlines.csv
+
 
 ##
 # The only file to be maintained is the list of best known coordinates, i.e.,
