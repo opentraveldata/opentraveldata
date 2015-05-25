@@ -1,6 +1,6 @@
 
 ##
-# That directory contains the ORI-maintained data files for the
+# That directory contains the opentraveldata-maintained data files for the
 # Points of Reference (POR) related to travel. For now, it contains only
 # the POR having got a IATA code.
 
@@ -48,10 +48,3 @@
 #
 #  - By Amadeus RFD, within the dump_from_crb_city.csv file. Idem as for
 #    Geonames.
-
-##
-# The optd_por.csv data file is deprecated, and should soon be removed. It was
-# made of a merge of the file of best known coordinates and of the Amadeus RFD
-# data file. It did not integrate Geonames information. That is why it has been
-# replaced by optd_por_public.csv.
-
