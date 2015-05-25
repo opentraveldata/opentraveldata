@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/opentraveldata/opentraveldata.svg?branch=master)](https://travis-ci.org/opentraveldata/opentraveldata)
 
-Open travel data (opdt) provides a collection of travel and leisure related data. The project
+Open Travel Data (optd) provides a collection of travel and leisure related data. The project
 makes extensive use of already existing data sources such as Geonames and Wikipedia, and adds
 some glue around those (e.g. links). All data sets are carefully maintained and kept up-to-date
-by the opdt developers.
+by the OPTD developers.
 
 
 Usage
@@ -18,6 +18,8 @@ generate our data sets. **`.travis`** contains continuous integration related co
 
 Development
 ============
-This is the master repository of the open travel data project. For backwards
-compatability reasons, all changes are synced back to the
+This is the master repository of the Open Travel Data (OPTD) project.
+For backwards compatability reasons, all changes are synced back to the
 [old repository](https://github.com/opentraveldata/optd).
+
+
