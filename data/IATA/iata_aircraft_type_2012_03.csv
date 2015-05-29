@@ -1,0 +1,364 @@
+iata_code^iata_group^model^iata_category^icao_code
+100^100^Fokker 100^2J^F100
+141^146^BAE Systems 146-100 Passenger^4J^B461
+142^146^BAE Systems 146-200 Passenger^4J^B462
+143^146^BAE Systems 146-300 Passenger^4J^B463
+14X^14F^BAE Systems 146-100 Freighter^4J^B461
+14Y^14F^BAE Systems 146-200 Freighter^4J^B462
+14Z^14F^BAE Systems 146-300 Freighter^4J^B463
+312^310^Airbus A310-200 Passenger^2J^A310
+313^310^Airbus A310-300 Passenger^2J^A310
+318^32S^Airbus A318^2J^A318
+319^32S^Airbus A319^2J^A319
+31X^31F^Airbus A310-200 Freighter^2J^A310
+31Y^31F^Airbus A310-300 Freighter^2J^A310
+32A^32S^Airbus A320 (sharklets)^2J^A320
+32B^32S^Airbus A321 (sharklets)^2J^A321
+32F^32F^Airbus A320 Freighter^2J^A320
+32X^32X^Airbus A321 Freighter^2J^A321
+320^32S^Airbus A320^2J^A320
+321^32S^Airbus A321^2J^A321
+332^330^Airbus A330-200^2J^A332
+333^330^Airbus A330-300^2J^A333
+33X^33F^Airbus A330-200 Freighter^2J^A332
+342^340^Airbus A340-200^4J^A342
+343^340^Airbus A340-300^4J^A343
+345^340^Airbus A340-500^4J^A345
+346^340^Airbus A340-600^4J^A346
+358^350^Airbus A350-800^2J^ZZZZ
+359^350^Airbus A350-900^2J^ZZZZ
+351^350^Airbus A350-1000^2J^ZZZZ
+388^380^Airbus A380-800 Passenger^4J^A388
+38F^38F^Airbus A380-800F Freighter^4J^A388
+703^707^Boeing 707-320B/320C Passenger^4J^B703
+70F^70F^Boeing 707-320B/320C Freighter^4J^B703
+70M^70M^Boeing 707-320B/320C Mixed Configuration^4J^B703
+717^717^Boeing 717-200^2J^B712
+721^727^Boeing 727-100 Passenger^3J^B721
+722^727^Boeing 727-200 Passenger^3J^B722
+72B^72M^Boeing 727-100 Mixed Configuration^3J^B721
+72C^72M^Boeing 727-200 Mixed Configuration^3J^B722
+72W^727^Boeing 727-200 (winglets) Passenger^3J^B722
+72X^72F^Boeing 727-100 Freighter^3J^B721
+72Y^72F^Boeing 727-200 Freighter^3J^B722
+731^737^Boeing 737-100 Passenger^2J^B731
+732^737^Boeing 737-200 Passenger^2J^B732
+733^737^Boeing 737-300 Passenger^2J^B733
+734^737^Boeing 737-400 Passenger^2J^B734
+735^737^Boeing 737-500 Passenger^2J^B735
+736^737^Boeing 737-600 Passenger^2J^B736
+738^737^Boeing 737-800 Passenger^2J^B738
+739^737^Boeing 737-900 Passenger^2J^B739
+73C^737^Boeing 737-300 (winglets) Passenger^2J^B733
+73E^737^Boeing 737-500 (winglets) Passenger^2J^B735
+73G^737^Boeing 737-700 Passenger^2J^B737
+73H^737^Boeing 737-800 (winglets) Passenger/BBJ2^2J^B738
+73J^737^Boeing 737-900 (winglets) Passenger/BBJ3^2J^B739
+73L^73M^Boeing 737-200 Mixed Configuration^2J^B732
+73N^73M^Boeing 737-300 Mixed Configuration^2J^B733
+73P^73F^Boeing 737-400 Freighter^2J^B734
+73Q^73M^Boeing 737-400 Mixed Configuration^2J^B734
+73R^73M^Boeing 737-700 Mixed Configuration/BBJC^2J^B737
+73S^73F^Boeing 737-700 Freighter^2J^B737
+73W^737^Boeing 737-700 (winglets) Passenger/BBJ1^2J^B737
+73X^73F^Boeing 737-200 Freighter^2J^B732
+73Y^73F^Boeing 737-300 Freighter^2J^B733
+741^747^Boeing 747-100 Passenger^4J^B741
+742^747^Boeing 747-200 Passenger^4J^B742
+743^747^Boeing 747-300/747-100/200 SUD Passenger^4J^B743
+744^747^Boeing 747-400 Passenger^4J^B744
+74B^74F^Boeing 747-400 Swingtail Freighter^4J^B744
+74C^74M^Boeing 747-200 Mixed Configuration^4J^B742
+74D^74M^Boeing 747-300/747-200 SUD Mixed Configuration^4J^B743
+74E^74M^Boeing 747-400 Mixed Configuration^4J^B744
+74H^747^Boeing 747-8 Passenger^4J^B748
+74J^747^Boeing 747-400 (Domestic) Passenger^4J^B74D
+74L^747^Boeing 747SP Passenger^4J^B74S
+74N^74F^Boeing 747-8F Freighter^4J^B748
+74R^747^Boeing 747SR Passenger^4J^B74R
+74T^74F^Boeing 747-100 Freighter^4J^B741
+74U^74F^Boeing 747-300/747-200 SUD Freighter^4J^B743
+74V^74F^Boeing 747SR Freighter^4J^B74R
+74X^74F^Boeing 747-200 Freighter^4J^B742
+74Y^74F^Boeing 747-400 Freighter^4J^B744
+752^757^Boeing 757-200 Passenger^2J^B752
+753^757^Boeing 757-300 Passenger^2J^B753
+75F^75F^Boeing 757-200 Freighter^2J^B752
+75M^75M^Boeing 757-200 Mixed Configuration^2J^B752
+75T^757^Boeing 757-300 (winglets) Passenger^2J^B753
+75W^757^Boeing 757-200 (winglets) Passenger^2J^B752
+762^767^Boeing 767-200 Passenger^2J^B762
+763^767^Boeing 767-300 Passenger^2J^B763
+764^767^Boeing 767-400 Passenger^2J^B764
+76V^76F^Boeing 767-300 (winglets) Freighter^2J^B763
+76W^767^Boeing 767-300 (winglets) Passenger^2J^B763
+76X^76F^Boeing 767-200 Freighter^2J^B762
+76Y^76F^Boeing 767-300 Freighter^2J^B763
+772^777^Boeing 777-200/200ER^2J^B77L
+773^777^Boeing 777-300^2J^B773
+77L^777^Boeing 777-200LR^2J^B772
+77W^777^Boeing 777-300ER^2J^B77W
+77X^77F^Boeing 777-200F Freighter^2J^B772
+783^787^Boeing 787-3^2J^B783
+788^787^Boeing 787-8^2J^B788
+789^787^Boeing 787-9^2J^B789
+A22^A22^Antonov An-22^4T^AN22
+A26^AN6^Antonov An-26^2T^AN26
+A28^A28^Antonov An-28/PZL Mielec M-28 Skytruck^2T^AN28
+A30^AN6^Antonov An-30^2T^AN30
+A32^AN6^Antonov An-32^2T^AN32
+A38^A38^Antonov An-38^2T^AN38
+A40^A40^Antonov An-140^2T^A140
+A58^A58^Antonov An-158^2J^ZZZZ
+A4F^A4F^Antonov An-124 Ruslan^4J^A124
+A5F^A5F^Antonov An-225^6J^A225
+A81^A81^Antonov AN148-100^2J^A148
+AB4^AB3^Airbus A300B2/A300B4 Passenger^2J^A30B
+AB6^AB3^Airbus A300-600 Passenger^2J^A306
+ABB^ABF^Airbus A300-600ST Beluga Freighter^2J^A3ST
+ABX^ABF^Airbus A300B4/A300C4/A300F4 Freighter^2J^A30B
+ABY^ABF^Airbus A300-600 Freighter^2J^A306
+ACP^ACD^Twin Commander Aircraft^2P^*
+ACT^ACD^Twin (Aero) Turbo Commander/Jetprop Commander^2T^*
+AGH^AGH^AgustaWestland A109^H^A109
+AN4^AN4^Antonov An-24^2T^AN24
+AN7^AN7^Antonov An-72/An-74^2J^AN72
+ANF^ANF^Antonov An-12^4T^AN12
+APF^APF^BAE Systems ATP Freighter^2T^ZZZZ
+APH^APH^Eurocopter (Aerospatiale) SA330 Puma/AS332 Super Puma^H^*
+AR1^ARJ^Avro RJ100^4J^RJ1H
+AR7^ARJ^Avro RJ70^4J^RJ70
+AR8^ARJ^Avro RJ85^4J^RJ85
+AT4^ATR^ATR 42-300/320^2T^AT43
+AT5^ATR^ATR 42-500^2T^AT45
+AT7^ATR^ATR 72^2T^AT72
+ATD^ATR^ATR 42-400^2T^AT44
+ATF^ATF^ATR 72 Freighter^2T^AT72
+ATP^ATP^BAE Systems ATP^2T^ATP
+AWH^AWH^AgustaWestland AW139^2T^A139
+ATZ^ATZ^ATR 42 Freighter^2T^*
+B12^B11^BAE Systems (BAC) One-Eleven 200^2J^BA11
+B13^B11^BAE Systems (BAC) One-Eleven 300^2J^BA11
+B14^B11^BAE Systems (BAC) One-Eleven 400/475^2J^BA11
+B15^B11^BAE Systems (BAC) One-Eleven 500/RomBac^2J^BA11
+B72^707^Boeing 720-020B^4J^B720
+BE2^BEC^Hawker Beechcraft (Light aircraft-twin piston engines)^2P^*
+BE4^HBA^Hawker 400 Beechjet/400A/400XP/400T^2J^BE40
+BE9^BE9^Hawker Beechcraft C99 Airliner^2T^BE99
+BEF^BEF^Hawker Beechcraft 1900 Freighter^2T^B190
+BEH^BE1^Hawker Beechcraft 1900D Airliner^2T^B190
+BEP^BEC^Hawker Beechcraft (Light aircraft-single piston engine)^1P^*
+BES^BE1^Hawker Beechcraft 1900C Airliner^2T^B190
+BET^BEC^Hawker Beechcraft (Light aircraft-twin turboprop engines)^2T^*
+BH2^BH2^Bell (Helicopters)^H^*
+BNI^BNI^Britten-Norman BN-2A/BN-2B Islander^2P^BN2P
+BNT^BNT^Britten-Norman BN-2A Mk.III Trislander^3P^TRIS
+BTA^BTA^Business Turbo-Prop Aircraft^2T^ZZZZ
+BUS^BUS^Surface Equipment-Bus^S^0000
+C27^C21^Comac ARJ21-700^2J^AJ27
+CCJ^CCJ^Canadair (Bombardier) CL-600/601/604/605 Challenger^2J^CL60
+CCX^CCX^Bombardier BD-700 Global Express/Global 500^2J^GLEX
+CD2^CD2^Gippsland Aeronautics N22B/N24A Nomad^2T^NOMA
+CJL^CNJ^Cessna 560 XL/XLS Citation^2J^*
+CJM^CNJ^Cessna 510 Mustang Citation^2J^C510
+CJ1^CNJ^Cessna 500/501/525 Citation^2J^*
+CJ2^CNJ^Cessna 550/551/552 Citation^2J^*
+CJ5^CNJ^Cessna 560 Citation^2J^*
+CJ6^CNJ^Cessna 650 Citation^2J^*
+CJ8^CNJ^Cessna 680 Citation^2J^*
+CL3^CL3^Bombardier Challenger 300^2J^CL30
+CN1^CNA^Cessna (Light aircraft-single piston engine)^1P^*
+CN2^CNA^Cessna (Light aircraft-twin piston engines)^2P^*
+CN7^CN7^Cessna 750 Citation X^2J^C750
+CNC^CNA^Cessna (Light aircraft-single turboprop engine)^1T^*
+CNF^CNF^Cessna 208B Freighter^2T^*
+CNJ^CNJ^Cessna Citation^2J^*
+CNT^CNA^Cessna (Light aircraft-twin turboprop engines)^2T^*
+CR1^CRJ^Canadair (Bombardier) Regional Jet 100^2J^CRJ1
+CR2^CRJ^Canadair (Bombardier) Regional Jet 200^2J^CRJ2
+CR7^CRJ^Canadair (Bombardier) Regional Jet 700 and Challenger 870^2J^CRJ7
+CR9^CRJ^Canadair (Bombardier) Regional Jet 900 and Challenger 890^2J^CRJ9
+CRA^CRJ^Canadair (Bombardier) Regional Jet 705^2J^CRJ9
+CRF^CRF^Canadair (Bombardier) Regional Jet Freighter^2J^ZZZZ
+CRK^CRJ^Canadair (Bombardier) Regional Jet 1000^2J^CRJX
+CS1^CSB^Bombardier CS100^2J^ZZZZ
+CS2^CS2^CASA/lAe 212 Aviocar^2T^C212
+CS5^CS5^CASA/lAe CN-235^2T^CN35
+CS3^CSB^Bombardier CS300^2J^ZZZZ
+CV2^CVR^Convair 240 Passenger^2P^CVLP
+CV4^CVR^Convair 440 Metropolitan Passenger^2P^CVLP
+CV5^CVR^Convair 580 Passenger^2T^CVLT
+CVV^CVF^Convair 240 Freighter^2P^CVLP
+CVX^CVF^Convair 340/440 Freighter^2P^CVLP
+CVY^CVF^Convair 580/5800/600/640 Freighter^2T^CVLT
+CWC^CWC^Curtiss C-46 Commando^2P^C46
+D11^D10^Boeing (Douglas) DC-10-10/15 Passenger^3J^DC10
+D20^DFL^Dassault Falcon 2000/2000DX^2J^F2TH
+D1C^D10^Boeing (Douglas) DC-10-30/40 Passenger^3J^DC10
+D1M^D1M^Boeing (Douglas) DC-10-30 Mixed Configuration^3J^DC10
+D1X^D1F^Boeing (Douglas) DC-10-10 Freighter^3J^DC10
+D1Y^D1F^Boeing (Douglas) DC-10-30/40 Freighter^3J^DC10
+D28^D28^Fairchild Dornier 228^2T^D228
+D2L^DFL^Dassault Falcon 2000EX/EASY/LX^2J^F2TH
+D38^D38^Fairchild Dornier 328-100^2T^D328
+D42^D42^Diamond Aircraft DA42 Twin Star^2P^DA42
+D3F^D3F^Boeing (Douglas) DC-3 Freighter^2P^DC3
+D4X^DHF^De Havilland (Bombardier) DHC-8-400 Dash 8Q Freighter^2T^DH8D
+D6F^D6F^Boeing (Douglas) DC-6A/DC-6B/DC-6C Freighter^4P^DC6
+D8L^DC8^Boeing (Douglas) DC-8-62 Passenger^4J^DC86
+D8M^D8M^Boeing (Douglas) DC-8-62 Mixed Configuration^4J^DC86
+D8Q^DC8^Boeing (Douglas) DC-8-72 Passenger^4J^DC87
+D8T^D8F^Boeing (Douglas) DC-8-50 Freighter^4J^DC85
+D8X^D8F^Boeing (Douglas) DC-8-61/62/63 Freighter^4J^DC86
+D8Y^D8F^Boeing (Douglas) DC-8-71/72/73 Freighter^4J^DC87
+D91^DC9^Boeing (Douglas) DC-9-10 Passenger^2J^DC91
+D92^DC9^Boeing (Douglas) DC-9-20 Passenger^2J^DC92
+D93^DC9^Boeing (Douglas) DC-9-30 Passenger^2J^DC93
+D94^DC9^Boeing (Douglas) DC-9-40 Passenger^2J^DC94
+D95^DC9^Boeing (Douglas) DC-9-50 Passenger^2J^DC95
+D9C^D9F^Boeing (Douglas) DC-9-30 Freighter^2J^DC93
+D9D^D9F^Boeing (Douglas) DC-9-40 Freighter^2J^DC94
+D9L^DFL^Dassault Falcon 900LX^3J^F900
+D9X^D9F^Boeing (Douglas) DC-9-10 Freighter^2J^DC91
+DC3^DC3^Boeing (Douglas) DC-3 Passenger^2P^DC3
+DC4^DC4^Boeing (Douglas) DC-4^4P^DC4
+DC6^DC6^Boeing (Douglas) DC-6B Passenger^4P^DC6
+DF1^DFL^Dassault Falcon 10/100^2J^FA10
+DF2^DFL^Dassault Falcon 20/200^2J^FA20
+DF5^DFL^Dassault Falcon 50/50EX^3J^FA50
+DF7^DFL^Dassault Falcon 7X^3J^FA7X
+DF9^DFL^Dassault Falcon 900/900B/900C/900DX/900EX/EASY^3J^F900
+DH1^DH8^De Havilland (Bombardier) DHC-8-100 Dash 8/8Q^2T^DH8A
+DH2^DH8^De Havilland (Bombardier) DHC-8-200 Dash 8/8Q^2T^DH8B
+DH3^DH8^De Havilland (Bombardier) DHC-8-300 Dash 8/8Q^2T^DH8C
+DH4^DH8^De Havilland (Bombardier) DHC-8-400 Dash 8Q^2T^DH8D
+DH7^DH7^De Havilland (Bombardier) DHC-7 Dash 7^4T^DHC7
+DHC^DHC^De Havilland (Bombardier) DHC-4 Caribou^2P^DHC4
+DHD^DHD^BAE Systems (De Havilland) 104 Dove^2P^DOVE
+DHF^000^De Havilland (Bombardier) DHC-8 Freighter^00^0000
+DHH^DHH^BAE Systems (De Havilland) 114 Heron^4P^HERN
+DHL^DHO^De Havilland (Bombardier) DHC-3 Turbo Otter^1T^DH3T
+DHP^DHB^De Havilland (Bombardier) DHC-2 Beaver^1P^DHC2
+DHR^DHB^De Havilland (Bombardier) DHC-2 Turbo Beaver^1T^DH2T
+DHS^DHO^De Havilland (Bombardier) DHC-3 Otter^1P^DHC3
+DHT^DHT^De Havilland (Bombardier) DHC-6^Twin Otter^2T^DHC6
+E70^EMJ^Embraer 170^2J^E170
+EA5^EAC^Eclipse 500^2J^EA50
+E75^EMJ^Embraer 175^2J^E170
+E90^EMJ^Embraer 190^2J^E190
+E95^EMJ^Embraer 195 and Legacy 1000^2J^E190
+EC3^EC3^Eurocopter EC130^H^EC30
+EM2^EM2^Embraer 120 Brasilia^2T^E120
+EMB^EMB^Embraer 110 Bandeirante^2T^E110
+EP1^EPH^Embraer EMB-500 Phenom 100^2J^E50P
+EP3^EPH^Embraer EMB-505 Phenom 300^2J^E55P
+ER3^ERJ^Embraer RJ135 and Legacy 600/650^2J^E135
+ER4^ERJ^Embraer RJ145^2J^E145
+ERD^ERJ^Embraer RJ140^2J^E135
+F21^F28^Fokker F28 Fellowship 1000^2J^F28
+F22^F28^Fokker F28 Fellowship 2000^2J^F28
+F23^F28^Fokker F28 Fellowship 3000^2J^F28
+F24^F28^Fokker F28 Fellowship 4000^2J^F28
+F27^F27^Fokker F27 Friendship/Fairchild Industries F-27^2T^F27
+F50^F50^Fokker 50^2T^F50
+F5F^F5F^Fokker 50 Freighter^2T^F50
+F70^F70^Fokker 70^2J^F70
+FK7^FK7^Fairchild Industries FH-227^2T^F27
+FRJ^FRJ^Fairchild Dornier 328JET^2J^J328
+GA8^GA8^Gippsland Aeronautics GA8 Airvan^1P^GA8
+GR1^GR1^Gulfstream Aerospace G-100/G-150^2J^G150
+GR2^GR2^Gulfstream Aerospace G-200 (Galaxy)^2J^GALX
+GR3^GR3^Gulfstream Aerospace G-250^2J^G250
+GRG^GRG^Grumman G-21 Goose (Amphibian)^2P^G21
+GRJ^GRJ^Gulfstream Aerospace (Grumman) Gulfstream II/III/IV/V/VI^2J^*
+GRM^GRM^Grumman G-73 Turbo Mallard (Amphibian)^2T^G73T
+GRS^GRS^Gulfstream Aerospace (Grumman) G-159 Gulfstream I^2T^G159
+H20^HBA^Hawker 200^2J^ZZZZ
+H21^HBA^Hawker 1000^2J^H25C
+H24^HBA^Hawker 4000^2J^HA4T
+H25^HBA^Hawker 750/800/800XP/800SP^2J^H25B
+H28^HBA^Hawker 850XP/900^2J^H25B
+H29^HBA^Hawker 900XP^2J^H25B
+HEC^HEC^Helio H-250 Courier/H-295/395 Super Courier^1P^COUR
+HOV^HOV^Surface Equipment-Hovercraft^S^0000
+HS7^HS7^BAE Systems (Hawker Siddeley) 748/Andover^2T^A748
+I14^I14^Ilyushin Il-114^2T^I114
+I9F^I9F^Ilyushin Il-96 Freighter^4J^IL96
+IL6^IL6^Ilyushin Il-62^4J^IL62
+IL7^IL7^Ilyushin Il-76^4J^IL76
+IL8^IL8^Ilyushin Il-18^4T^IL18
+IL9^IL9^Ilyushin Il-96 Passenger^4J^IL96
+ILW^ILW^Ilyushin Il-86^4J^IL86
+J31^JST^BAE Systems Jetstream 31^2T^JS31
+J32^JST^BAE Systems Jetstream 32^2T^JS32
+J41^JST^BAE Systems Jetstream 41^2T^JS41
+JU5^JU5^Junkers Ju 52/3m^3P^JU52
+L11^L10^Lockheed Martin L-1011 TriStar 1/50/100/150/200/250 Passenger^3J^L101
+L15^L10^Lockheed Martin L-1011 TriStar 500 Passenger^3J^L101
+L1F^L1F^Lockheed Martin L-1011 TriStar Freighter^3J^L101
+L4F^L4F^Aircraft Industries (LET) 410 Freighter^2T^L410
+L4T^L4T^Aircraft Industries (LET) 410^2T^L410
+LCH^LCH^Surface Equipment-Launch/Boat^S^0000
+LJA^LJA^Light Jet Aircraft^2J^ZZZZ
+LMO^LMO^Surface Equipment-Limousine^S^0000
+LOE^LOE^Lockheed Martin L-188 Electra^4T^L188
+LOF^LOF^Lockheed Martin L-188 Electra Freighter^4T^L188
+LOH^LOH^Lockheed Martin L-182/L-282/L-382 (L-100)Hercules^4T^C130
+LRJ^LRJ^Learjet^2J^*
+M11^M11^Boeing (Douglas) MD-11 Passenger^3J^MD11
+M1F^M1F^Boeing (Douglas) MD-11 Freighter^3J^MD11
+M1M^M1M^Boeing (Douglas) MD-11 Mixed Configuration^3J^MD11
+M2F^M2F^Boeing (Douglas) MD82 Freighter^2J^MD82
+M3F^M3F^Boeing (Douglas) MD83 Freighter^2J^MD83
+M8F^M8F^Boeing (Douglas) MD88 Freighter^2J^MD88
+M81^M80^Boeing (Douglas) MD-81^2J^MD81
+M82^M80^Boeing (Douglas) MD-82^2J^MD82
+M83^M80^Boeing (Douglas) MD-83^2J^MD83
+M87^M80^Boeing (Douglas) MD-87^2J^MD87
+M88^M80^Boeing (Douglas) MD-88^2J^MD88
+M90^M90^Boeing (Douglas) MD-90^2J^MD90
+MA6^MA6^Xian Yunshuji MA-60^2T^AN24
+MBH^MBH^Eurocopter (MBB) BO105^H^B105
+MD9^MD9^MD Helicopters Inc MD 900 Explorer^H^EXPL
+MIH^MIH^Mil Mi-8/Mi-17/Mi-171/Mi-172^H^MI8
+MU2^MU2^Mitsubishi Aircraft Corporation MU-2^2T^MU2
+NDC^NDC^Aerospatiale SN601 Corvette^2J^S601
+NDE^NDE^Eurocopter (Aerospatiale) AS350 Ecureuil/AS355 Ecureuil 2^H^*
+NDH^NDH^Eurocopter (Aerospatiale) SA365C/SA365N Dauphin 2^H^*
+P18^P18^Piaggio Aero P180 Avanti II^2T^P180
+PA1^PAG^Piper (Light aircraft-single piston engine)^1P^*
+PA2^PAG^Piper (Light aircraft-twin piston engines)^2P^*
+PAT^PAG^Piper (Light aircraft-twin turboprop engines)^2T^*
+PL2^PL2^Pilatus PC-12^1T^PC12
+PL6^PL6^Pilatus PC-6 Turbo Porter^1T^PC6T
+PN6^PN6^Vulcanair (Partenavia) P.68^2P^P68
+PRI^HBA^Hawker 390 Premier 1/1A^2J^PRM1
+RFS^RFS^Surface Equipment-Road Feeder Service (Truck)^S^0000
+S20^S20^Saab 2000^2T^SB20
+S58^S58^Sikorsky S-58T^H^S58T
+S61^S61^Sikorsky S-61^H^S61
+S76^S76^Sikorsky S-76^H^S76
+SF3^SF3^Saab 340^2T^SF34
+SFB^SF3^Saab 340B^2T^SF34
+SFF^SFF^Saab 340 Freighter^2T^SF34
+SH3^SH3^Shorts 330 (SD3-30)^2T^SH33
+SH6^SH6^Shorts 360 (SD3-60)^2T^SH36
+SHS^SHS^Shorts Skyvan (SC-7)^2T^SC7
+SU7^SU1^Sukhoi Superjet 100-75^2J^ZZZZ
+SU9^SU1^Sukhoi Superjet 100-95^2J^SU95
+SWF^SWF^Fairchild (Swearingen) SA226 Freighter^2T^*
+SWM^SWM^Fairchild (Swearingen) SA26/SA226/SA227 Merlin/Metro/Expediter^2T^*
+SY8^SY8^Shaanxi Y-8^4T^AN12
+T20^T20^Tupolev Tu-204/Tu-214^2J^T204
+T2F^T2F^Tupolev Tu-204 Freighter^2J^T204
+T34^T34^Tupolev Tu-334^2J^T334
+TRN^TRN^Surface Equipment-Train^S^0000
+TBM^TBM^SOCATA TBM-700^1T^TBM7
+TU3^TU3^Tupolev Tu-134^2J^T134
+TU5^TU5^Tupolev Tu-154^3J^T154
+WWP^WWP^Israel Aerospace Industries 1124 Westwind^2J^WW24
+YK2^YK2^Yakovlev Yak-42/Yak-142^3J^YK42
+YK4^YK4^Yakovlev Yak-40^3J^YK40
+YN2^YN2^Harbin Yunshuji Y12^2T^Y12
+YN7^YN7^Xian Yunshuji Y7^2T^AN24
+YS1^YS1^NAMC YS-11^2T^YS11
