@@ -1,6 +1,6 @@
 from update_optd_aircraft import *
 
-iata_file = "../IATA/iata_aircraft_type_2012_03.csv"
+iata_file = "../../data/IATA/iata_aircraft_type_2012_03.csv"
 iata_cols = ['iata_code',
              'iata_group',
              'model',

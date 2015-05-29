@@ -1,2 +1,5 @@
+# compiled files
+*[.pyc#]
+
 # text editor temp files
 *[~#]
