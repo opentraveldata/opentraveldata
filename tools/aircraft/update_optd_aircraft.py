@@ -4,7 +4,12 @@ import requests
 
 target_file = "../../opentraveldata/optd_aircraft.csv"
 sep = '^'
-header = ['iata_code', 'manufacturer', 'model']
+header = ['iata_code',
+          'manufacturer',
+          'model',
+          'iata_group',
+          'iata_category',
+          'icao_code']
 
 
 def read_from_flugzeuginfo():
@@ -27,7 +32,7 @@ def read_from_flugzeuginfo():
             iata = d[0]
             manufacturer = d[1]
             model = d[2]
-            res[iata] = (manufacturer, model)
+            res[iata] = {'iata_code':iata, 'manufacturer':manufacturer, 'model':model}
     return res
     
     
@@ -39,17 +44,23 @@ def read_existing(filename):
         for row in fin:
             items = row.strip().split(sep)
             iata = items[0]
-            manufacturer = items[1]
-            model = items[2]
-            data[iata] = (manufacturer, model)
+            content = [(col,items[i]) for i, col in enumerate(header) if (len(items)>i and items[i])]
+            data[iata] = dict(content)
     return data
+
+
+def update_aircrafts (target, update):
+   for iata, aircraft in update.iteritems():
+    target_a = target.get(iata,{})
+    target_a.update(aircraft)
+    target[iata] = target_a
 
 
 def write(filename, data):
     with open(filename, 'w') as fout:
         print >> fout, sep.join(header)
-        for iata, (manufacturer, model) in sorted(data.iteritems()):
-            print >> fout, sep.join([iata, manufacturer, model])
+        for iata, aircraft in sorted(data.iteritems()):
+            print >> fout, sep.join([aircraft.get(col,'') for col in header])
 
 
 def main():
@@ -58,7 +69,7 @@ def main():
     # read the existing table
     existing = read_existing(target_file)
     # update list of aircrafts
-    new.update(existing)
+    update_aircrafts(new, existing)
     # write back to file
     write(target_file, new)
     
