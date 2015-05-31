@@ -677,10 +677,10 @@ function printAltNameSection(myAltNameSection) {
 		if (time_zone_id == "") {
 			time_zone_id = getTimeZoneFromCountryCode(country_code)
 
-			#print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
-			#	   "for the record #" FNR " - Default time-zone: "	\
-			#	   time_zone_id ". Record: " $0)					\
-			#	> error_stream
+			print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
+				   "for the record #" FNR " - Default time-zone: "	\
+				   time_zone_id ". Record: " $0)					\
+				> error_stream
 		}
 		continent_name = getContinentName(country_code)
 		# continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
