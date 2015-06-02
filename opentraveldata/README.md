@@ -96,14 +96,12 @@ List of best known details for aircraft. With the following columns:
  - icao_code
  - nb_engines
  - aircraft_type
+  * H: helicopter
+  * J: jet
+  * P: piston-engined aircraft
+  * S: surface transportation
+  * T: turboprop-engined aircraft
 
-####Aircraft types:
-Code | meaning
------| -------
-H    | helicopter
-J    | jet
-P    | piston-engined aircraft
-S    | surface transportation
-T    | turboprop-engined aircraft
+
 
 
