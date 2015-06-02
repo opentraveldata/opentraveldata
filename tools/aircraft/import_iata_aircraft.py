@@ -1,3 +1,4 @@
+import re
 from update_optd_aircraft import *
 
 iata_file = "../../data/IATA/iata_aircraft_type_2012_03.csv"
@@ -18,6 +19,11 @@ def read_iata(filename):
             iata = items[0]
             content = [(col,items[i]) for i, col in enumerate(iata_cols) if (len(items)>i and items[i])]
             data[iata] = dict(content)
+            # extracting nb engines and aircraft type from iata_group
+            m= re.match('([0-9]?)([A-Z])', data[iata]['iata_category'])
+            if (m):
+              data[iata]['nb_engines'] = m.group(1)
+              data[iata]['aircraft_type'] = m.group(2)
     return data
 
 

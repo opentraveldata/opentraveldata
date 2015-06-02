@@ -9,7 +9,9 @@ header = ['iata_code',
           'model',
           'iata_group',
           'iata_category',
-          'icao_code']
+          'icao_code',
+          'nb_engines',
+          'aircraft_type']
 
 
 def read_from_flugzeuginfo():

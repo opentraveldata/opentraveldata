@@ -80,11 +80,30 @@ Generated
 * optd_airlines.csv is the main referential data file, meant to be used
   by everyone, with all the details.
 
+
 Aircraft
 ========
 
 Curated
 -------
-* optd_aircraft.csv is the list of best known details for aircraft.
+#### `optd_aircraft.csv`
+List of best known details for aircraft. With the following columns:
+ - iata_code
+ - manufacturer
+ - model
+ - iata_group
+ - iata_category
+ - icao_code
+ - nb_engines
+ - aircraft_type
+
+####Aircraft types:
+Code | meaning
+-----| -------
+H    | helicopter
+J    | jet
+P    | piston-engined aircraft
+S    | surface transportation
+T    | turboprop-engined aircraft
 
 
