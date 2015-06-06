@@ -29,6 +29,7 @@
 2Z^2^<>Passaredo
 3C^1^Calima Aviacion<>
 3G^1^Gambia Bird<>Gambia Bird Airlines Ltd
+3H^2^<>Air Inuit
 3Q^1^Carib Aviation Limited<>
 3X^1^Japan Air Commuter<>
 3Y^2^<>Kartika Air
@@ -38,6 +39,7 @@
 4J^1^<>Flydamas Airlines
 4M^1^LAN Argentina<>Lanargentina
 4M^2^LAN argentina<>Lanargentina
+4N^2^<>Air North
 4O^2^ABC Aerolineas<>
 4Q^2^<>Safi Airways
 4R^1^Hamburg International<>
@@ -63,6 +65,7 @@
 6M^1^Air Minas Linhas Aereas<>
 6Q^2^Slovak Arlines<>Slovak Arlns
 6S^1^Kato Airlines<>
+6T^2^<>Air Mandalay
 6Y^1^SmartLynx Airlines<>Smartlynx Airlines
 7A^2^<>Haines Air
 7D^1^Donbassaero Airlines<>
@@ -97,6 +100,7 @@
 9Q^2^PB Air<>Pb Air
 9S^1^Amadeus PDF 9S<>Amadeus Pdf 9s
 9S^2^Amadeus 9S<>Amadeus 9s
+9U^2^<>Air Moldova
 9Y^2^<>Fly Georgia
 9Z^1^Amadeus PDF 9Z<>Amadeus Pdf 9z
 A0^1^L'Avion<>L Avion
@@ -110,11 +114,12 @@ ADO^2^Hokkaido International Airlines<>
 AG^2^<>Aruba
 AI^1^Air India<>Air India Limited
 AIC^1^Air India<>Air India Limited
+AIE^2^<>Air Inuit
 AIJ^2^ABC Aerolineas<>
 AIQ^1^Thai AirAsia<>Thai Airasia
 AIQ^2^<>Thai Airasia
 AJD^2^GB Airways<>Gb Airways
-AJX^1^Air Japan Company<>Air Japan Company Ltd
+AJX^1^Air Japan<>Air Japan Company Ltd
 AK^1^Air Asia<>Airasia Sdn Bhd
 AK^2^<>Airasia
 AL^2^<>Astral Avia
@@ -123,10 +128,14 @@ ALK^2^SriLankan Air<>Srilankan Air
 ALY^2^<>Alas Uruguay
 AM^1^AeroMexico<>Aeromexico
 AM^2^AeroMexico<>Aeromexico
+AMC^2^<>Air Malta
+AMU^2^<>Air Macau
 AMX^1^AeroMexico<>Aeromexico
 AMX^2^AeroMexico<>Aeromexico
 AN^1^HOP Airlinair<>Hop Airlinair
 AN^2^HOP Airlinair<>Hop Airlinair
+ANG^2^<>Air Niugini
+ANO^2^Capiteq Limited<>Airnorth
 ANS^1^Andes Lineas Aereas<>Air Nostrum
 ANS^2^Andes<>Air Nostrum
 AOG^1^<>Aero Vip
@@ -143,6 +152,7 @@ ASQ^1^Express Jet<>Expressjet Airlines
 AT^2^Royal Air Maroc<>R Air Maroc
 ATA^2^ARC<>Arc
 AU^2^Austral LA<>Austral L A
+AUI^1^Ukraine International Airlines<>Ukraine Intl Airlines
 AUT^2^Austral LA<>Austral L A
 AWQ^1^Indonesia AirAsia<>Pt Indonesia Airasia
 AWQ^2^Awair<>Ptindairasia
@@ -155,6 +165,7 @@ AZA^1^Alitalia<>Alitalia S A I S P A
 AZA^2^Alitalia S.A.I.<>Alitalia Spa
 B0^2^Dreamjet<>La Compagnie
 B1^1^Cions Software<>Bravo Passenger Solution
+B7^2^<>Uni Airways
 BA^2^British Airways<>British A W
 BAW^2^British Airways<>British A W
 BCY^1^CityJet<>Cityjet
@@ -165,6 +176,7 @@ BEA^1^BQB Lineas Aereas<>Bqb Lineas Aereas
 BEA^2^BQB Lineas<>Bqb Lineas
 BEL^2^<>Brussels Air
 BGH^1^BH Air<>Bh Air
+BIE^2^<>Air Mediterra
 BJ^2^<>Nouvelair
 BM^1^bmi regional<>Bmi Regional
 BM^2^BMI Regional<>Bmi Regional
@@ -194,6 +206,8 @@ CC^1^CM Airlines<>Cm Airlines
 CC^2^Cielo Maya Airlines<>Cm Airlines
 CES^2^China Eastern Airlines<>China East
 CFE^1^BA CityFlyer<>Ba Cityflyer
+CG^1^Airlines PNG<>Airlines Png
+CG^2^<>Airl Of Png
 CIM^1^Cimber AS<>Cimber A S
 CJ^1^BA CityFlyer<>Ba Cityflyer
 CJA^2^Bright Airlines<>Bright Arl
@@ -311,6 +325,7 @@ HP^1^Amapola Flyg<>Amapola Flyg Ab
 HS^1^Svenska Direktflyg<>Svenska Direktflyg Ab
 HSV^1^Svenska Direktflyg<>Svenska Direktflyg Ab
 HW^2^North Wright<>North Wrigh
+HY^2^<>Uzbekistan
 HZ^2^SAT Airlines<>Aurora Air
 I1^1^CTS Viaggi<>Cts Viaggi
 I1^2^CTS Viaggi<>Cts Viaggi
@@ -351,6 +366,8 @@ JY^2^Air Turcks<>Intercaribean
 K4^1^ALS<>Als Ltd
 K5^1^SeaPort Airlines<>Seaport Airlines
 K5^2^Wings of Alaska<>Wings Alaska
+K7^1^Air KBZ<>Air Kbz
+K7^2^<>Arizona
 K8^1^Zambia Skyways<>Kan Air
 K9^1^KrasAvia<>Krasavia
 KA^2^HK Dragon<>Hk Dragon
@@ -359,6 +376,8 @@ KAE^2^<>Kartika Air
 KAP^2^<>Cape Air
 KAR^1^Ikar<>Llc Ikar
 KAR^2^<>Imair Air
+KBZ^1^Air KBZ<>Air Kbz
+KBZ^2^<>Arizona
 KD^1^Kal Star Aviation<>Pt Kal Star Aviation
 KD^2^KD Avia<>Kd Avia
 KGA^2^<>Kyrgyzstan
@@ -368,6 +387,7 @@ KL^2^KLM<>Klm
 KLC^1^KLM Cityhopper<>Klm Cityhopper
 KLM^1^KLM Royal Dutch Airlines<>Klm Royal Dutch Airlines
 KLM^2^KLM<>Klm
+KM^2^<>Air Malta
 KNE^2^Nas Air<>Nasair
 KNI^1^Kal Star Aviation<>Pt Kal Star Aviation
 KNI^2^KD Avia<>Kd Avia
@@ -409,7 +429,9 @@ LR^2^Lacsa<>L A C S A
 LRC^1^Avianca Costa Rica<>Lacsa
 LRC^2^Lacsa<>L A C S A
 LS^1^Jet2<>Jet2 Com
+LT^2^<>Air Lituanica
 LTC^1^<>Smartlynx Airlines
+LTU^2^<>Air Lituanica
 LU^1^LAN Express<>Lan Express
 LYN^1^Air Kyrgyzstan<>Ojsc Air Kyrgyzstan
 LYN^2^<>Kyrgyzstan
@@ -417,11 +439,17 @@ M2^1^MHS Aviation<>Mhs Aviation
 M3^1^North Flying<>North Flying As
 M4^2^Nayzak Air<>M4 NAYZAK Air
 M8^1^TransNusa<>Skyjet
+MAU^2^<>Air Mauriti
 MBB^1^Pegasus Asia<>Air Manas
 MBB^2^Air Manas<>Pegasus Asia
+MD^2^<>Madagascar
+MDG^2^<>Madagascar
 MEP^2^Republic Airline<>Republic Airl
 MG^1^Champion Air<>
+MK^2^<>Air Mauriti
+ML^2^<>Air Mediterra
 MLA^2^Forty Miles Air<>Forty Miles A
+MLD^2^<>Air Moldova
 MN^1^Comair<>Comair Ltd
 MRJ^1^<>Meraj Air
 MU^2^China Eastern Airlines<>China East
@@ -443,11 +471,13 @@ NJS^1^<>National Jet Systems
 NK^2^Spirit Airlines<>Spirit Airlin
 NM^1^Manx<>
 NMA^2^<>Nesma
+NMB^2^<>Air Namibia
 NO^1^Neos<>Neos Spa
-NQ^1^Air Japan Company<>Air Japan Company Ltd
+NQ^1^Air Japan<>Air Japan Company Ltd
 NR^1^Al-Naser Airlines<>Al Naser Airlines
 NW^1^Northwest Airlines<>
 NW^2^Nwest Airlines<>Nwest Airli
+NX^2^<>Air Macau
 O2^1^Jet Air<>
 O7^1^Orenburg Region Airlines<>Sue Orenburg Region
 O8^2^<>Siam Air
@@ -485,11 +515,13 @@ PIA^2^PIA<>P I A
 PK^1^Pakistan International Airlines<>Pakistan International
 PK^2^PIA<>P I A
 PRI^2^JetX<>Primera Air
+PS^1^Ukraine International Airlines<>Ukraine Intl Airlines
 PSC^1^Pascan Aviation<>Pascan Aviation Inc
 PT^2^<>West Air Swed
 PTB^2^<>Passaredo
 PTR^2^Petra Airlines<>
 PWD^1^Pan American World Airways Dominicana<>Pan American World
+PX^2^<>Air Niugini
 Q0^1^Quebecair Express<>
 Q3^2^<>Zambian Air
 Q5^2^Forty Miles Air<>Forty Miles A
@@ -504,6 +536,8 @@ QJ^1^Latpass Airlines<>
 QO^1^Quantum Air<>
 QP^1^Air Kenya Aviation<>Airkenya Aviation
 QS^2^Travel Service<>Travelservice
+QU^1^UTair Ukraine<>Airline Utair Ukraine
+QU^2^<>Utair Ukraine
 QZ^1^Indonesia AirAsia<>Pt Indonesia Airasia
 QZ^2^Awair<>Ptindairasia
 R0^1^MS Royal Airlines<>M S Royal Airlines
@@ -550,6 +584,8 @@ SRQ^2^Tiger Air<>Tigerair
 STP^1^STP Airways<>Stp Airways
 STP^2^STP Airways<>Stp Airways
 SUS^1^Sun Air of Scandinavia<>Sun Air Of Scandinavia
+SVR^2^<>Ural Airlines
+SW^2^<>Air Namibia
 SWA^1^Southwest Airlines<>Southwest Airlines Texas
 SWA^2^SW Airlines<>Sw Airlines
 SWG^1^Sunwing Airlines<>Sunwing Airlines Inc
@@ -560,6 +596,7 @@ SYA^2^<>Syphax Airl
 T0^1^TACA Peru<>Taca Peru
 T0^2^TACA Peru<>Taca Peru
 T6^1^Onetime Airline<>
+T7^2^<>Twin Jet
 TA^1^TACA International Airlines<>Taca International Airlines
 TA^2^TACA<>Taca
 TAI^1^TACA International Airlines<>Taca International Airlines
@@ -573,6 +610,7 @@ TB^2^TUI Airlines Belgium<>Jetairfly
 TCV^2^TACV<>T A C V
 TGU^2^LADE<>L A D E
 THD^2^Rheintalflg<>Thai Smile
+TL^2^Capiteq Limited<>Airnorth
 TLG^1^Invest Avia<>Nam Air
 TM^2^<>Lam
 TOM^1^Thomson Airways<>Thomson Airways Ltd
@@ -583,29 +621,42 @@ TS^2^<>Air Transat
 TSC^2^<>Air Transat
 TVS^2^Travel Service<>Travelservice
 TY^2^Air Caledonie<>Aircaledoni
+TYA^1^Airline Taimyr<>Jsc Airline Taimyr
 U2^1^easyJet<>Easyjet
 U2^2^<>Easyjet
 U5^2^USA 3000<>Usa 3000
+U6^2^<>Ural Airlines
 U8^1^Armavia<>
 UB^2^UTD Myanmar<>Utd Myanmar
 UBA^2^UTD Myanmar<>Utd Myanmar
 UC^1^LAN Chile Cargo<>Lan Chile Cargo
 UE^1^Nasair<>Ultimate Jetcharters
+UF^2^<>Um Air
 UH^1^AtlasJet Ukraine<>Atlasjet Ukraine
 UH^2^US Helicopter<>Atlasjet
+UIA^2^<>Uni Airways
 UJC^1^<>Ultimate Jetcharters
 UJX^1^AtlasJet Ukraine<>Atlasjet Ukraine
 UJX^2^US Helicopter<>Atlasjet
 UK^2^Tata SIA Airlines<>Vistara
+UKM^2^<>Um Air
 UL^1^SriLankan Airlines<>Srilankan Airlines
 UL^2^SriLankan Air<>Srilankan Air
 UO^2^HK Express<>Hk Express
 UQ^1^Business Aviation Centre<>Urumqi Airlines
+UR^1^UTair Express<>Utair Express
 US^1^US Airways<>Us Airways
 US^2^US Airways<>Us Airways
 USA^1^US Airways<>Us Airways
 USA^2^US Airways<>Us Airways
+UT^1^UTair Aviation<>Utair Aviation Jsc
+UT^2^UTair<>Utair
+UTA^1^UTair Aviation<>Utair Aviation Jsc
+UTA^2^UTair<>Utair
+UTX^1^UTair Express<>Utair Express
 UW^1^Universal Airlines<>
+UW^2^<>Universal Air
+UZB^2^<>Uzbekistan
 V1^1^IBS Software Services Americas<>Ibs Software Services Americas
 V4^1^Vieques Air Link<>Vieques Air
 V5^1^Aerovias DAP<>Aerovias Dap
@@ -704,6 +755,7 @@ XYW^2^Amadeus 7S<>Amadeus 7s
 XYX^1^Amadeus PDF 9S<>Amadeus Pdf 9s
 XYX^2^Amadeus 9S<>Amadeus 9s
 Y6^1^Batavia Air<>
+Y7^1^Airline Taimyr<>Jsc Airline Taimyr
 YC^2^<>Yamal
 YE^2^<>Yan Air
 YS^1^HOP Regional<>Hop Regional
