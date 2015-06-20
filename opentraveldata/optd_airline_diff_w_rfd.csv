@@ -73,6 +73,7 @@
 7H^1^Era Aviation<>Ravin Akaska
 7L^1^Aero Caribbean<>Aerocaribbean
 7N^1^Pan American World Airways Dominicana<>Pan American World
+7N^2^PAWA Dominicana<>Pawad
 7S^1^Ryan Air Services<>Amadeus Pdf 7s
 7S^2^Arctic Transportation Services<>Amadeus 7s
 7V^2^Federal Airlines<>Federal Airl
@@ -514,6 +515,7 @@ PIA^1^Pakistan International Airlines<>Pakistan International
 PIA^2^PIA<>P I A
 PK^1^Pakistan International Airlines<>Pakistan International
 PK^2^PIA<>P I A
+POT^1^<>Polet Airlines
 PRI^2^JetX<>Primera Air
 PS^1^Ukraine International Airlines<>Ukraine Intl Airlines
 PSC^1^Pascan Aviation<>Pascan Aviation Inc
@@ -521,6 +523,7 @@ PT^2^<>West Air Swed
 PTB^2^<>Passaredo
 PTR^2^Petra Airlines<>
 PWD^1^Pan American World Airways Dominicana<>Pan American World
+PWD^2^PAWA Dominicana<>Pawad
 PX^2^<>Air Niugini
 Q0^1^Quebecair Express<>
 Q3^2^<>Zambian Air
@@ -758,6 +761,7 @@ Y6^1^Batavia Air<>
 Y7^1^Airline Taimyr<>Jsc Airline Taimyr
 YC^2^<>Yamal
 YE^2^<>Yan Air
+YQ^1^<>Polet Airlines
 YS^1^HOP Regional<>Hop Regional
 YS^2^HOP Regional<>Hop Regional
 YT^1^<>Yeti Airlines
