@@ -1,3 +1,5 @@
+0B^1^Blue Air<>Blue Air Airline
+0B^2^<>Blue Air
 0C^1^Catovair<>
 0E^1^Amadeus PDF 0E<>Amadeus Pdf 0e
 0J^1^Premium Jet AG<>Premium Jet Ag
@@ -81,6 +83,7 @@
 8F^2^STP Airways<>Stp Airways
 8G^1^Girjet<>
 8H^1^BH Air<>Bh Air
+8H^2^<>Bh Air
 8M^1^Myanmar Airways International<>Myanmar Airways Intl
 8M^2^<>Myanmar
 8Q^2^<>Onur Air
@@ -177,6 +180,7 @@ BEA^1^BQB Lineas Aereas<>Bqb Lineas Aereas
 BEA^2^BQB Lineas<>Bqb Lineas
 BEL^2^<>Brussels Air
 BGH^1^BH Air<>Bh Air
+BGH^2^<>Bh Air
 BIE^2^<>Air Mediterra
 BJ^2^<>Nouvelair
 BM^1^bmi regional<>Bmi Regional
@@ -185,7 +189,8 @@ BMA^1^British Midland<>British Midland International
 BMA^2^British Midland<>
 BMR^1^bmi regional<>Bmi Regional
 BMR^2^BMI Regional<>Bmi Regional
-BMS^1^<>Blue Air Airline
+BMS^1^Blue Air<>Blue Air Airline
+BMS^2^<>Blue Air
 BN^1^Bahrain Air<>
 BO^1^BB Airways<>Bb Airways
 BS^1^US-Bangla Airlines<>Us Bangla Airlines Ltd
@@ -286,6 +291,8 @@ FQ^1^<>Brindabella Airlines
 FS^1^Syphax Airlines<>Syphax Airlines Sa
 FS^2^<>Syphax Airl
 FT^1^FlyEgypt<>Flyegypt
+FV^1^Rossiya<>Rossiya Airlines
+FV^2^Rossiya — Russian Airlines<>
 FY^2^NW Regional<>Nw Regional
 FZW^1^Zimbabwe flyafrica.com<>Fly Africa Zimbabwe
 FZW^2^<>Easeon Air
@@ -323,8 +330,10 @@ HKE^2^HK Express<>Hk Express
 HOP^1^HOP!<>Hop
 HOP^2^HOP!<>Airlinair
 HP^1^Amapola Flyg<>Amapola Flyg Ab
-HS^1^Svenska Direktflyg<>Svenska Direktflyg Ab
-HSV^1^Svenska Direktflyg<>Svenska Direktflyg Ab
+HS^1^Direktflyg<>Svenska Direktflyg Ab
+HS^2^Svenska Direktflyg<>
+HSV^1^Direktflyg<>Svenska Direktflyg Ab
+HSV^2^Svenska Direktflyg<>
 HW^2^North Wright<>North Wrigh
 HY^2^<>Uzbekistan
 HZ^2^SAT Airlines<>Aurora Air
@@ -346,8 +355,8 @@ IW^1^Wings Abadi Airlines<>Pt Wings Abadi Airlines
 IX^1^Air India Express<>Air India Charters
 IX^2^Air India Charters<>
 J0^1^Jetlink Express<>
-JA^1^BH Airlines<>B H Airlines
-JA^2^BH Airlines<>B H Airlines
+JA^1^B&H Airlines<>B H Airlines
+JA^2^Air Bosna<>B H Airlines
 JAC^2^J Air Commu<>
 JAF^2^TUI Airlines Belgium<>Jetairfly
 JAL^2^JAL<>J A L
@@ -407,7 +416,8 @@ LAN^1^LAN Airlines<>Lan Airlines
 LAN^2^LATAM Airlines Group<>Lan Chile
 LB^2^LAB<>L A B
 LBT^2^<>Nouvelair
-LCO^1^LAN Chile Cargo<>Lan Chile Cargo
+LCO^1^LAN Cargo<>Lan Chile Cargo
+LCO^2^Ladeco<>N
 LID^1^Alidaunia<>Alidaunia S R L
 LLM^2^<>Yamal
 LLP^1^Small Planet Airline<>Small Planet Airline Ghd
@@ -567,6 +577,8 @@ SAA^2^SAA<>S A A
 SAW^2^Slovak Arlines<>Slovak Arlns
 SBI^1^S7 Airlines<>Siberia Airlines
 SBM^1^Sky Bahamas Airlines<>Skybahamas Airlines
+SDM^1^Rossiya<>Rossiya Airlines
+SDM^2^Rossiya — Russian Airlines<>
 SE^1^XL Airways France<>Xl Airways France
 SF^2^<>Tassili Air
 SFW^2^<>Safi Airways
@@ -632,7 +644,8 @@ U6^2^<>Ural Airlines
 U8^1^Armavia<>
 UB^2^UTD Myanmar<>Utd Myanmar
 UBA^2^UTD Myanmar<>Utd Myanmar
-UC^1^LAN Chile Cargo<>Lan Chile Cargo
+UC^1^LAN Cargo<>Lan Chile Cargo
+UC^2^Ladeco<>N
 UE^1^Nasair<>Ultimate Jetcharters
 UF^2^<>Um Air
 UH^1^AtlasJet Ukraine<>Atlasjet Ukraine

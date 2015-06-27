@@ -292,13 +292,13 @@ air-bemidji-airlines^^^^BMJ^CH^872^Bemidji Airlines^Bemidji^^^^^
 air-benin-golf^^^^^A8^0^Benin Golf Air^Benin Golf^^^^^562
 air-bering-air^^^^BRG^8E^0^Bering Air^Bering Air^^^^^25925
 air-berjaya-air^^1989-01-01^^BVT^J8^801^Berjaya Air^^^^^http://en.wikipedia.org/wiki/Berjaya_Air^
-air-bh-air^^^^BGH^8H^366^BH Air^Highland Air^^^^^656
-air-bh-airlines^^^^^JA^995^BH Airlines^BH Airlines^^^^^201
+air-bh-air^^2002-01-01^^BGH^8H^366^BH Air^^^^^http://en.wikipedia.org/wiki/BH_Air^656
+air-bh-airlines^^1994-01-01^^BON^JA^995^B&H Airlines^Air Bosna^^^^http://en.wikipedia.org/wiki/B%26H_Airlines^201
 air-biman-bangladesh-airline^^^^BBC^BG^997^Biman Bangladesh Airline^Biman^^^^^14624
 air-binter-canarias^^^^IBB^NT^474^Binter Canarias^Binter Can^^^^^22111
 air-bismilah-airlines^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^http://en.wikipedia.org/wiki/Bismillah_Airlines^2490
 air-blue1^^^^BLF^KF^142^Blue1^^^^^^4116
-air-blue-air-airline^^^^^0B^0^Blue Air Airline^^^^^^10977
+air-blue-air-airline^^2004-12-01^^BMS^0B^0^Blue Air^^^^^http://en.wikipedia.org/wiki/Blue_Air^10977
 air-bluebird-airways^^^^BBG^BZ^0^Blue Bird Airways^^^^^^
 air-bluebird-cargo^^^^BBD^BF^^Bluebird Cargo^Bluebird Cargo^^^C^^
 air-blue-islands^^^^BCI^SI^821^Blue Islands^Blue Islands^^^^^6140
@@ -569,6 +569,7 @@ air-hesa-airlines^^^^^H8^0^Hesa Airlines^Auric Air^^^^^
 air-hevi-lift^^1994-01-01^^ASN^IU^0^Hevilift^Air Straubing^^^^http://en.wikipedia.org/wiki/Hevilift^
 air-hex-air^^^^HER^UD^848^Hex Air^Hex Air^^^^^130
 air-hi-fly-transportes-aereo^^^^ODS^5K^654^Hi Fly Transportes Aereo^Sac Odessa^^^^^135
+air-highland-airways^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Alba^^^^http://en.wikipedia.org/wiki/Highland_Airways^656
 air-himalaya-airlines^^2015-04-01^^^H9^769^Himalaya Airlines^^^^^http://en.wikipedia.org/wiki/Himalaya_Airlines^
 air-hokkaido^^1998-05-12^^ADO^HD^0^Air Do^Hokkaido International Airlines^^^^http://en.wikipedia.org/wiki/Air_Do^46080
 air-holidays-czech-airlines^^^^^HC^0^Holidays Czech Airlines^Aero Tropics^^^^^
@@ -677,7 +678,7 @@ air-lacsa^^^^LRC^LR^133^Avianca Costa Rica^Lacsa^^^^http://en.wikipedia.org/wiki
 air-lam-mozambique^^^^LAM^TM^68^Lam Mozambique^^^^^^19248
 air-lan-airlines^^^^LAN^LA^45^LAN Airlines^LATAM Airlines Group^OneWorld^Member^^http://en.wikipedia.org/wiki/LAN_Airlines^195487
 air-lan-argentina^^^^^4M^469^LAN Argentina^LAN argentina^OneWorld^Affiliate^^^574
-air-lan-chile-cargo^^^^LCO^UC^0^LAN Chile Cargo^Ladeco^^^^^
+air-lan-chile-cargo^^1929-01-01^^LCO^UC^0^LAN Cargo^Ladeco^^^^http://en.wikipedia.org/wiki/LAN_Cargo^
 air-lan-ecuador^^^^LNE^XL^462^LAN Ecuador^LAN Ecuador^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Ecuador^11117
 air-lan-express^^^^^LU^972^LAN Express^Theron Air^OneWorld^Affiliate^^^
 air-lan-peru^^^^LPE^LP^544^LAN Peru^LAN Peru^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Per%C3%BA^
@@ -878,7 +879,7 @@ air-republic-airline^^^^MEP^YX^453^Republic Airline^Republic Airline^^^^^150038
 air-rheintalflug^1^^2013-12-31^^WE^0^Rheintal flug^^^^^^10046
 air-robin-hood-aviation^^^^^RH^0^Robin Hood Aviation^^^^^^
 air-romavia^^^^^WQ^0^Romavia^^^^^^
-air-rossiya-airlines^^^^SDM^FV^195^Rossiya Airlines^Rossiya^^^^^34824
+air-rossiya-airlines^^1992-01-01^^SDM^FV^195^Rossiya^Rossiya — Russian Airlines^^^^http://en.wikipedia.org/wiki/Rossiya_%28airline%29^34824
 air-rotana-jet^^2011-04-18^^RJD^RG^482^Rotana Jet^Rotana Jet^^^^http://en.wikipedia.org/wiki/Rotana_Jet^5622
 air-royal-air-force^^^^RFR^RR^0^Royal Air Force^RAF NO^^^^^
 air-royal-air-maroc^^^^RAM^AT^147^Royal Air Maroc^Royal Air Maroc^^^^^72574
@@ -1006,7 +1007,7 @@ air-sunrise-airways^^^^SNR^S6^0^Sunrise Airways^^^^^^829
 air-sunwing-airlines^^^^SWG^WG^292^Sunwing Airlines^Sunwing Airlines^^^^^7234
 air-surinam-airways^^^^SLM^PY^192^Surinam Airways^Surinam Air^^^^^2911
 air-sutra^^^^^1K^0^Sutra^Southern^^^^^
-air-svenska-direktflyg^^^^HSV^HS^198^Svenska Direktflyg^Direktflyg^^^^^
+air-svenska-direktflyg^^2000-10-01^^HSV^HS^198^Direktflyg^Svenska Direktflyg^^^^http://en.wikipedia.org/wiki/Direktflyg^
 air-swe-fly^1^1994-01-01^2005-09-30^SWV^WV^857^Swe Fly^^^^^http://en.wikipedia.org/wiki/Swe_Fly^473
 air-swiss-airlines^^^^SWR^LX^724^Swiss International Airlines^Swiss^Star Alliance^Member^^^128654
 air-sylt-air^^^^AWU^7E^0^Sylt Air^^^^^^170
