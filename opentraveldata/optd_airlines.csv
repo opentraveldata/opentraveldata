@@ -125,6 +125,7 @@ air-air-kenya-aviation^^^^^QP^0^Air Kenya Aviation^Airkenya Avn^^^^^
 air-air-kenya-express^^^^XAK^P2^0^Air Kenya Express^^^^^^3784
 air-air-koryo^^^^KOR^JS^120^Air Koryo^Kor Air Dpr^^^^^994
 air-air-labrador^^1948-01-01^^LAL^WJ^927^Air Labrador^Labrador Airways^^^^http://en.wikipedia.org/wiki/Air_Labrador^7804
+air-air-leisure-egypt^^^^ALD^AL^0^Air Leisure^^^^^http://en.wikipedia.org/wiki/Air_Leisure^137
 air-airliaison^^^^^Q9^0^Airliaison^Afrinat Intl^^^^^
 air-airline-service^^^^^ZZ^0^Airline Service^^^^^^
 air-airlines-png^^1987-01-01^^^CG^626^Airlines PNG^^^^^http://en.wikipedia.org/wiki/Airlines_PNG^20680
@@ -242,7 +243,8 @@ air-asiana-airlines^^^^AAR^OZ^988^Asiana Airlines^Asiana^Star Alliance^Member^^^
 air-asian-express-airline^^^^^KV^360^Asian Express Airline^Kavminvodyav^^^^^577
 air-asian-wings-airways^^^^^YJ^601^Asian Wings Airways^^^^^^1222
 air-asky^^^^^KP^32^Asky^Asky^^^^^11131
-air-astra-airlines^^^^AZI^A2^273^Astra Airlines^Astra Airline^^^^^1726
+air-astra-airlines^^2008-07-05^^AZI^A2^273^Astra Airlines^^^^^http://en.wikipedia.org/wiki/Astra_Airlines^1726
+air-astral-aviation^^2000-01-01^^ACP^8V^485^Astral Aviation^^^^^http://en.wikipedia.org/wiki/Astral_Aviation^13161
 air-ata-airlines^^^^TBZ^I3^917^Ata Airlines^^^^^^3224
 air-athens-airways^1^2008-01-01^2010-12-31^ATW^ZF^0^Athens Airways^^^^^http://en.wikipedia.org/wiki/Athens_Airways^
 air-atlantic-airways^^^^FLI^RC^767^Atlantic Airways^Atl Airways^^^^^2820
@@ -803,7 +805,7 @@ air-nova-airlines^^^^NOV^O9^948^Nova Airlines^^^^^^2406
 air-nova-airlines-northcoast^^^^NVR^N9^326^Nova Airlines^Northcoast Av^^^^^
 air-novoair^^^^^VQ^855^Novoair^^^^P^^4970
 air-nyasa-express^^^^^7Q^0^Elite Airways^^^^^^
-air-oceanair^^^^ONE^O6^247^Avianca Brasil^Oceanair^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Avianca_Brazil^72272
+air-oceanair^^^^ONE^O6^247^Avianca Brasil^Oceanair^Star Alliance^Member^^http://en.wikipedia.org/wiki/Avianca_Brazil^72272
 air-okapi-airlines^^^^HND^OI^0^Hinterland Aviation^Italiatour^^^^^3561
 air-okay-airways^^^^OKA^BK^866^Okay Airways^Paradise Isl^^^^http://en.wikipedia.org/wiki/Okay_Airways^15451
 air-olt-express-germany^^^^OLT^OL^704^Olt Express Germany Gmbh^^^^^^
@@ -1148,7 +1150,7 @@ air-wizz-air-hungary^^^^WZZ^W6^0^Wizz Air Hungary^^^^^^93825
 air-wizz-air-ukraine^^^^WAU^WU^0^Wizz Air Ukraine^^^^^^
 air-world-airways^^^^WOA^WO^468^World Airways^^^^^^
 air-wow-air^^^^^WW^0^Wow Air^^^^P^^4758
-air-wright-air-services^^^^^8V^0^Wright Air Services^^^^P^^13161
+air-wright-air-services^^1967-01-01^^WRF^8V^0^Wright Air Services^^^^P^http://en.wikipedia.org/wiki/Wright_Air_Service^13161
 air-xiamen-airlines^^^^CXA^MF^731^Xiamen Airlines^Xiamen Air^Skyteam^Member^^^100714
 air-xl-airways-france^^^^XLF^SE^473^XL Airways France^Star Airlines^^^^^2302
 air-xtra-airways^^^^CXP^XP^0^Xtra Airways^^^^^^
