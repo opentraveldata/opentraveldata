@@ -1,4 +1,5 @@
 pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link
+air-aero-flight^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^http://en.wikipedia.org/wiki/Aero_Flight
 air-aero-vip-argentina^1^1999-06-23^2010-12-01^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^http://en.wikipedia.org/wiki/Aero_VIP_(Argentina)
 air-airlink-papua-new-guinea^1^1990-06-01^2007-07-27^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)
 air-airmax^1^^2015-05-01^DAP^X8^0^Airmax^^^^^
@@ -20,6 +21,7 @@ air-amadeus-pdf-2d^1^^2014-06-01^^2D^0^Amadeus PDF 2D^^^^D^
 air-athens-airways^1^2008-01-01^2010-12-31^ATW^ZF^0^Athens Airways^^^^^http://en.wikipedia.org/wiki/Athens_Airways
 air-aviaenergo^1^1992-01-01^2011-12-31^ERG^7U^765^Aviaenergo^^^^^http://en.wikipedia.org/wiki/Aviaenergo
 air-aviana-airways^1^2008-01-01^2014-01-01^RRY^4A^0^Aviana Airways^Royal Bengal Airline^^^^http://en.wikipedia.org/wiki/Royal_Bengal_Airline
+air-aviaprad^1^1996-01-01^2008-02-05^VID^WR^0^Aviaprad^^^^^http://en.wikipedia.org/wiki/Aviaprad
 air-avitrans-nordic^1^2004-01-01^2010-12-31^ETS^2Q^0^Avitrans Nordic^^^^T^http://en.wikipedia.org/wiki/Avitrans
 air-axis-lines^1^2005-01-01^2006-01-01^^O8^0^Axis International Lines^^^^^http://en.wikipedia.org/wiki/Axis_Lines_International
 air-benin-golf^1^2002-01-01^2012-07-31^BGL^A8^0^Benin Golf Air^^^^^http://en.wikipedia.org/wiki/Benin_Golf_Air
@@ -27,9 +29,11 @@ air-bismilah-airlines^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^http:
 air-brindabella-airlines^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^http://en.wikipedia.org/wiki/Brindabella_Airlines
 air-cai-first^1^1997-10-01^2008-12-31^SMX^XM^0^CAI First^Alitalia Express^^^^http://en.wikipedia.org/wiki/CAI_First
 air-cai-second^1^^2009-01-12^VLE^VE^0^CAI Second^Volare^^^^http://en.wikipedia.org/wiki/CAI_Second
-air-cargolux-italia^1^^2013-12-31^^C8^0^Cargolux Italia^Cargolux Italia^^^C^
+air-canadian-airlines^1^1987-01-01^2000-12-31^CDN^CP^0^Canadian Airlines^^^^^http://en.wikipedia.org/wiki/Canadian_Airlines
+air-cargolux-italia^1^^2013-12-31^^C8^0^Cargolux Italia^^^^C^
 air-chanchangi-airlines^1^1994-01-01^2015-01-01^NCH^5B^0^Chanchangi Airlines^^^^^http://en.wikipedia.org/wiki/Chanchangi_Airlines
 air-club-air^1^2002-10-01^2008-05-31^ISG^6P^0^Club Air^^^^^http://en.wikipedia.org/wiki/Club_Air
+air-comair-delta^1^1977-01-01^2012-09-29^COM^OH^0^Comair^^^^^http://en.wikipedia.org/wiki/Comair
 air-congo-express^1^2010-01-01^2014-01-01^CXR^9X^0^Congo Express^New Axis Air^^^^http://en.wikipedia.org/wiki/Congo_Express
 air-continental-airlines^1^^2010-09-30^COA^CO^5^Continental Airlines^Continental^^^^http://fr.wikipedia.org/wiki/Continental_Airlines
 air-continental-micronesia^1^1968-05-16^2010-12-22^CMI^CS^0^Continental Micronesia^^^^^http://en.wikipedia.org/wiki/Continental_Micronesia
@@ -60,6 +64,7 @@ air-helitt-lineas-aereas^1^2011-11-01^2014-10-31^HTH^H9^221^Helitt Lineas Aereas
 air-heli-securite^1^^2015-01-01^HLI^H4^0^Heli Securite^^^^^
 air-hellenic-imperial-airways^1^2006-05-01^2015-05-01^IMP^HT^570^Hellenic Imperial Airways^^^^^http://en.wikipedia.org/wiki/Hellenic_Imperial_Airways
 air-highland-airways^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Alba^^^^http://en.wikipedia.org/wiki/Highland_Airways
+air-interlink-airlines^1^1998-01-01^2010-12-31^ITK^ID^0^Interlink^^^^P^http://en.wikipedia.org/wiki/Interlink_Airlines
 air-iran-air-tours^1^^^2014-12-31^B9^491^Iran Air Tours^Iran Airtour^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours
 air-islas-airways^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^http://en.wikipedia.org/wiki/Islas_Airways
 air-linea-aerea-cuencana^1^2012-01-01^2015-01-01^LAC^L5^0^Linea Aerea Cuencana^^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Cuencana
@@ -74,10 +79,13 @@ air-national-airways-cameroon^1^1999-11-01^2000-03-01^^9O^357^National Airways C
 air-national-jet-systems^1^^2009-02-28^NJS^NC^0^National Jet Systems^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia
 air-perla-airlines^1^^2015-01-01^PLV^DP^0^Perla Airlines^Air 2000^^^^http://www.airlineupdate.com/content_public/airlines/airlines-venezuela/perla.htm
 air-polet-airlines^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://en.wikipedia.org/wiki/Polet_Airlines
+air-prima-air^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^http://en.wikipedia.org/wiki/Prima_Air
 air-rheintalflug^1^^2013-12-31^^WE^0^Rheintal flug^^^^^
 air-salsa-d-haiti^1^2008-01-01^2015-04-01^SLC^SO^340^Salsa d'Haiti^^^^^http://en.wikipedia.org/wiki/Salsa_d%27Ha%C3%AFti
+air-samara-airlines^1^1992-01-01^2008-12-31^BRZ^E5^0^Samara Airlines^^^^^http://en.wikipedia.org/wiki/Samara_Airlines
 air-sas-braathens^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^Sas^Star Alliance^Member^^http://en.wikipedia.org/wiki/SAS_Braathens
 air-scotairways^1^^2013-03-31^SAY^CB^969^ScotAirways^ScotAirways^^^^http://en.wikipedia.org/wiki/Suckling_Airways
+air-sempati-air^1^1969-01-01^1998-06-05^^SSR^SG^0^Sempati Air^^^^^http://en.wikipedia.org/wiki/Sempati_Air
 air-skystar-airways^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways
 air-skyways^1^^2012-05-22^SKX^JZ^752^Skyways^Skyways^^^^http://en.wikipedia.org/wiki/Skyways_(airline)
 air-sky-wings-airlines^1^2006-06-01^2012-12-31^GSW^ND^171^Sky Wings Airlines^Intair Inc^^^^http://en.wikipedia.org/wiki/Sky_Wings_Airlines
@@ -90,6 +98,8 @@ air-viaggio-air^1^2003-02-27^2007-12-31^VOA^VM^0^Viaggio Air^^^^^http://en.wikip
 air-vip-wings^1^2000-05-23^2013-11-20^VPA^V5^0^Danube Wings^VIP Wings^^^^http://en.wikipedia.org/wiki/Danube_Wings
 air-wataniya-airways^1^2009-01-01^2011-03-17^WAN^KW^100^Wataniya Airways^^^^^http://en.wikipedia.org/wiki/Wataniya_Airways
 air-west-air-sweden^1^1955-01-01^2015-04-01^SWN^PT^0^West Air Sweden^^^^^http://en.wikipedia.org/wiki/West_Air_Sweden
+air-wizz-air-bulgaria^1^2005-01-01^2011-12-31^WVL^8Z^0^Wizz Air Bulgaria^^^^^http://en.wikipedia.org/wiki/Wizz_Air_Bulgaria
+air-wizz-air-ukraine^1^2008-01-01^2015-04-20^WAU^WU^0^Wizz Air Ukraine^^^^^http://en.wikipedia.org/wiki/Wizz_Air_Ukraine
 air-yeti-airlines^1^1998-08-17^^NYT^YT^0^Yeti Airlines^^^^^http://en.wikipedia.org/wiki/Yeti_Airlines
 air-zambian-airways^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http://en.wikipedia.org/wiki/Zambian_Airways
 tec-map-management-planning^1^^2015-01-01^MPJ^AQ^0^Map Management Planning^^^^^
