@@ -348,7 +348,7 @@ CG^1^Airlines PNG<>Airlines Png
 CG^2^<>Airl Of Png
 CHH^2^<>Hainan Air
 CI^2^<>China Air
-CIM^1^Cimber AS<>Cimber A S
+CIM^1^Cimber A/S<>Cimber A S
 CJ^1^BA CityFlyer<>Ba Cityflyer
 CJA^2^Bright Airlines<>Bright Arl
 CL^1^Lufthansa CityLine<>Lufthansa Cityline
@@ -885,6 +885,8 @@ Q3^2^<>Zambian Air
 Q5^2^<>Forty Miles A
 Q7^1^Sky Bahamas Airlines<>Skybahamas Airlines
 Q8^2^<>Trans Air
+QA^1^Cimber A/S<>Cimber
+QA^2^<>Cimber
 QD^1^Dobrolet Airlines<>Dobrolet Lcc
 QE^1^Fars Qeshm Airlines<>
 QF^1^Qantas<>Qantas Airways
@@ -894,7 +896,7 @@ QFA^2^<>Qantas
 QFZ^1^Fars Qeshm Airlines<>
 QH^1^Air Kyrgyzstan<>Ojsc Air Kyrgyzstan
 QH^2^<>Kyrgyzstan
-QI^1^Cimber AS<>Cimber A S
+QI^1^<>Cimber A S
 QJ^1^Latpass Airlines<>
 QN^2^<>Air Armenia
 QO^1^Quantum Air<>
