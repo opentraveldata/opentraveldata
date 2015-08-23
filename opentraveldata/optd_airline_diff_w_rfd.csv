@@ -99,7 +99,6 @@
 6J^2^Skynet Asia Airways<>
 6L^2^<>Aklak Air
 6M^1^Air Minas Linhas Aereas<>
-6P^1^<>Gryphon Airline
 6P^2^<>Clubair
 6Q^2^Slovak Arlines<>Slovak Arlns
 6S^1^Kato Airlines<>
@@ -823,6 +822,7 @@ OB^1^Boliviana de Aviación (BoA)<>Boliviana De Aviacion
 OB^2^<>Boliviana
 OD^2^<>Malindo Airw
 OF^1^Air Finland<>
+OG^1^Air Freight NZ<>Air Freight Nz
 OG^2^<>N
 OH^1^PSA Airlines<>Psa Airlines
 OH^2^US Airways Express<>
@@ -840,6 +840,7 @@ OS^2^<>Austrianair
 OU^2^<>Croatia
 OV^2^<>Estonian Air
 OW^1^Executive Airlines<>
+OX^2^<>Orient Thai
 OZ^2^<>Asiana
 P2^1^Air Kenya Express<>Airkenya Express
 P5^1^Copa Airlines Colombia<>Aero Republica
@@ -1109,8 +1110,8 @@ U8^1^Armavia<>
 UA^2^<>United
 UAE^2^<>Emirates
 UAL^2^<>United
-UB^2^UTD Myanmar<>Utd Myanmar
-UBA^2^UTD Myanmar<>Utd Myanmar
+UB^2^UTD Myanmar<>Myanmar
+UBA^2^UTD Myanmar<>Myanmar
 UC^1^LAN Cargo<>Lan Chile Cargo
 UC^2^Ladeco<>N
 UCA^1^CommutAir<>Champlain Enterprises
@@ -1182,8 +1183,6 @@ VNA^2^<>Warbelow
 VO^1^<>Tyrolean Airways
 VOE^2^<>Volotea
 VOI^2^Concesionaria Vuela Compañía de Aviación<>Eagle Aviatn
-VOS^1^Gryphon Airline<>Gryphon Airlines
-VOS^2^Clubair<>
 VR^2^TACV<>T A C V
 VRD^2^<>Virgin Usa
 VRR^1^VIA Rail Canada<>Via Rail Canada Inc
@@ -1229,7 +1228,7 @@ WN^1^Southwest Airlines<>Southwest Airlines Texas
 WN^2^<>Sw Airlines
 WND^1^Caribbean Winds Airlines<>
 WQ^1^Romavia<>
-WR^1^WestJet Encore<>
+WR^1^WestJet Encore<>Westjet Encore Ltd
 WR^2^<>Jsc Aviaprad
 WRC^2^<>Wind Rose
 WS^1^WestJet<>Westjet
@@ -1274,6 +1273,7 @@ XS^2^SITA<>
 XT^1^<>Indonesia Airasia Extra
 XT^2^Indonesia AirAsia X<>Air Exel Nl
 XV^1^BVI Airways<>Bvi Airways
+XW^1^<>Nokscoot Airlines
 XY^2^Nas Air<>Nasair
 XYO^1^Amadeus PDF 8Z<>Amadeus Pdf 8z
 XYS^1^Amadeus PDF 0E<>Amadeus Pdf 0e
@@ -1283,8 +1283,6 @@ XYX^1^Amadeus PDF 9S<>Amadeus Pdf 9s
 XYX^2^Amadeus 9S<>Amadeus 9s
 XZ^2^SA Express<>Eastair
 Y0^2^<>Yellow Air
-Y3^1^Gryphon Airline<>Gryphon Airlines
-Y3^2^Clubair<>
 Y4^2^Concesionaria Vuela Compañía de Aviación<>Eagle Aviatn
 Y6^1^Batavia Air<>
 Y7^1^NordStar<>Jsc Airline Taimyr
