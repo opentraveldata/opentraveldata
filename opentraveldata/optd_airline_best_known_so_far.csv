@@ -332,7 +332,8 @@ air-china-airlines^^1959-12-16^^CAL^CI^297^China Airlines^^Skyteam^Member^^http:
 air-china-cargo-airlines-bis^^^^NDR^CK^0^China Cargo Airlines^Andesmar Lin^^^^
 air-china-cargo-airlines^^^^CKK^CK^0^China Cargo Airlines^Andesmar Lin^^^^
 air-china-eastern-airlines^^1988-06-25^^CES^MU^781^China Eastern Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/China_Eastern_Airlines
-air-china-express-airlines^^^^HXA^G5^987^China Express Airlines^Jsc Air Enkor^^^^
+air-china-express-airlines^^2006-01-01^^HXA^G5^987^China Express Airlines^^^^^http://en.wikipedia.org/wiki/China_Express_Airlines
+air-china-postal-airlines^^1997-02-27^^CYZ^CF^804^China Postal Airlines^^^^^http://en.wikipedia.org/wiki/China_Postal_Airlines
 air-china-southern-airlines^^1989-01-01^^CSN^CZ^784^China Southern Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/China_Southern_Airlines
 air-china-united-airlines^^^^CUA^KN^822^China United Airlines^^^^^
 air-china-west-air^^^^^PN^847^China West Air^Pan Am^^^^
@@ -344,10 +345,9 @@ air-cinnamon-air^^^^RLE^C7^0^Cinnamon Air^^^^P^
 air-cions-software^^^^^B1^0^Cions Software^^^^^
 air-cirrus-airlines^^^^RUS^C9^251^Cirrus Airlines^^^^^
 air-citilink-indonesia^^2001-01-01^^CTV^QG^0^Citilink Indonesia^Prima Air^^^^http://en.wikipedia.org/wiki/Citilink
-air-city-airline^^^^SDR^CF^419^City Airline^City Air^^^^
 air-city-airways^^^^SMK^E8^0^City Airways^Alpi Eagles^^^^
 air-cityjet^^^^BCY^WX^689^CityJet^CityJet^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/CityJet
-air-closed-iraero^^^^IAE^IO^154^Closed Jsc Iraero^^^^^
+air-closed-iraero^^1999-01-01^^IAE^IO^154^IrAero^^^^^http://en.wikipedia.org/wiki/IrAero
 air-cm-airlines^^^^OMT^CC^0^CM Airlines^Cielo Maya Airlines^^^^http://en.wikipedia.org/wiki/CM_Airlines
 air-colgan-air^^^^WLN^9L^0^West Link Airways^Colgan Air^^^^
 air-comair-south-africa^^1943-01-01^^CAW^MN^161^Comair^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Comair_%28South_Africa%29

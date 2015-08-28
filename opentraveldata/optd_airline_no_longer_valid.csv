@@ -33,6 +33,7 @@ air-canadian-airlines^1^1987-01-01^2000-12-31^CDN^CP^0^Canadian Airlines^^^^^htt
 air-cargolux-italia^1^^2013-12-31^^C8^0^Cargolux Italia^^^^C^
 air-chanchangi-airlines^1^1994-01-01^2015-01-01^NCH^5B^0^Chanchangi Airlines^^^^^http://en.wikipedia.org/wiki/Chanchangi_Airlines
 air-cimber-air^1^1950-01-01^2012-12-31^CIM^QI^647^Cimber Sterling^Cimber Air^^^^http://en.wikipedia.org/wiki/Cimber_Sterling
+air-city-airline^1^1997-01-01^2011-11-29^SDR^CF^419^City Airline^Skyways^^^^http://en.wikipedia.org/wiki/City_Airline
 air-club-air^1^2002-10-01^2008-05-31^ISG^6P^0^Club Air^^^^^http://en.wikipedia.org/wiki/Club_Air
 air-comair-delta^1^1977-01-01^2012-09-29^COM^OH^0^Comair^^^^^http://en.wikipedia.org/wiki/Comair
 air-congo-express^1^2010-01-01^2014-01-01^CXR^9X^0^Congo Express^New Axis Air^^^^http://en.wikipedia.org/wiki/Congo_Express
@@ -43,7 +44,8 @@ air-cyprus-airways^1^1947-01-01^2015-01-09^CYP^CY^48^Cyprus Airways^^^^^http://e
 air-czech-connect-airlines^1^2011-01-01^2012-01-31^CCG^CQ^909^Czech Connect Airlines^^^^^http://en.wikipedia.org/wiki/Czech_Connect_Airlines
 air-darwin-airline^1^^2014-10-31^DWT^0D^779^Darwin Airline^^^^^http://en.wikipedia.org/wiki/Darwin_Airline
 air-deer-jet-airlines^1^2006-01-01^2010-05-31^CBJ^JD^0^Deer Jet Airlines^Deer Air^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines
-air-djibouti-airlines^1^^2013-12-31^DJB^D8^0^Djibouti Airlines^^^^^
+air-djibouti-airlines^1^1996-01-01^2009-07-31^DJB^D8^0^Djibouti Airlines^^^^^http://en.wikipedia.org/wiki/Djibouti_Airlines
+air-enkor-jsc^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor
 air-estafeta-carga-aerea^1^^2013-12-31^^E7^^Estafeta Carga Aerea^Estafeta Carga Aerea^^^C^
 air-exel-nl^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^KLM Exel^^^http://en.wikipedia.org/wiki/Air_Exel
 air-eznis-airways^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^
@@ -88,7 +90,7 @@ air-sas-braathens^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^Sas^S
 air-scotairways^1^^2013-03-31^SAY^CB^969^ScotAirways^ScotAirways^^^^http://en.wikipedia.org/wiki/Suckling_Airways
 air-sempati-air^1^1969-01-01^1998-06-05^^SSR^SG^0^Sempati Air^^^^^http://en.wikipedia.org/wiki/Sempati_Air
 air-skystar-airways^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways
-air-skyways^1^^2012-05-22^SKX^JZ^752^Skyways^Skyways^^^^http://en.wikipedia.org/wiki/Skyways_(airline)
+air-skyways^1^1993-01-01^2012-05-22^SKX^JZ^752^Skyways^^^^^http://en.wikipedia.org/wiki/Skyways_(airline)
 air-sky-wings-airlines^1^2006-06-01^2012-12-31^GSW^ND^171^Sky Wings Airlines^Intair Inc^^^^http://en.wikipedia.org/wiki/Sky_Wings_Airlines
 air-spanair^1^1988-03-01^2012-01-27^JKK^JK^680^Spanair^Spanair^^^^http://en.wikipedia.org/wiki/Spanair
 air-strategic-airlines^1^2008-01-01^2012-02-17^AGC^VC^471^Strategic Airlines^Air Australia^^^^http://en.wikipedia.org/wiki/Air_Australia

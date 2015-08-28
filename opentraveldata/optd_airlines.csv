@@ -366,7 +366,8 @@ air-china-airlines^^1959-12-16^^CAL^CI^297^China Airlines^^Skyteam^Member^^http:
 air-china-cargo-airlines^^^^CKK^CK^0^China Cargo Airlines^Andesmar Lin^^^^^
 air-china-cargo-airlines-bis^^^^NDR^CK^0^China Cargo Airlines^Andesmar Lin^^^^^
 air-china-eastern-airlines^^1988-06-25^^CES^MU^781^China Eastern Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/China_Eastern_Airlines^528221
-air-china-express-airlines^^^^HXA^G5^987^China Express Airlines^Jsc Air Enkor^^^^^8671
+air-china-express-airlines^^2006-01-01^^HXA^G5^987^China Express Airlines^^^^^http://en.wikipedia.org/wiki/China_Express_Airlines^8671
+air-china-postal-airlines^^1997-02-27^^CYZ^CF^804^China Postal Airlines^^^^^http://en.wikipedia.org/wiki/China_Postal_Airlines^
 air-china-southern-airlines^^1989-01-01^^CSN^CZ^784^China Southern Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/China_Southern_Airlines^645255
 air-china-united-airlines^^^^CUA^KN^822^China United Airlines^^^^^^10760
 air-china-west-air^^^^^PN^847^China West Air^Pan Am^^^^^8042
@@ -379,10 +380,10 @@ air-cinnamon-air^^^^RLE^C7^0^Cinnamon Air^^^^P^^6222
 air-cions-software^^^^^B1^0^Cions Software^^^^^^
 air-cirrus-airlines^^^^RUS^C9^251^Cirrus Airlines^^^^^^1288
 air-citilink-indonesia^^2001-01-01^^CTV^QG^0^Citilink Indonesia^Prima Air^^^^http://en.wikipedia.org/wiki/Citilink^66921
-air-city-airline^^^^SDR^CF^419^City Airline^City Air^^^^^
+air-city-airline^1^1997-01-01^2011-11-29^SDR^CF^419^City Airline^Skyways^^^^http://en.wikipedia.org/wiki/City_Airline^
 air-city-airways^^^^SMK^E8^0^City Airways^Alpi Eagles^^^^^45
 air-cityjet^^^^BCY^WX^689^CityJet^CityJet^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/CityJet^10474
-air-closed-iraero^^^^IAE^IO^154^Closed Jsc Iraero^^^^^^6566
+air-closed-iraero^^1999-01-01^^IAE^IO^154^IrAero^^^^^http://en.wikipedia.org/wiki/IrAero^6566
 air-club-air^1^2002-10-01^2008-05-31^ISG^6P^0^Club Air^^^^^http://en.wikipedia.org/wiki/Club_Air^
 air-cm-airlines^^^^OMT^CC^0^CM Airlines^Cielo Maya Airlines^^^^http://en.wikipedia.org/wiki/CM_Airlines^5446
 air-coastal-travels^^^^^CQ^0^Coastal Travels^^^^^^20862
@@ -422,7 +423,7 @@ air-delta-connection^^^^DCP^DQ^521^Delta Connection^Coastal Air^^^^^
 air-denim-air^^^^DNM^J7^0^Denim Air^Centre Avia^^^^^
 air-deta-air^^^^DET^DI^0^Cambodia Airlines^Dba^^^^^
 air-djibouti-air^^^^^DZ^893^Donghai Airlines^^^^^^4758
-air-djibouti-airlines^1^^2013-12-31^DJB^D8^0^Djibouti Airlines^^^^^^23923
+air-djibouti-airlines^1^1996-01-01^2009-07-31^DJB^D8^0^Djibouti Airlines^^^^^http://en.wikipedia.org/wiki/Djibouti_Airlines^23923
 air-dniproavia^^^^UDN^Z6^181^Dniproavia^Dnieproavia^^^^^2451
 air-dobrolet^^2013-01-01^^DOB^QD^0^Dobrolet Airlines^^^^^http://en.wikipedia.org/wiki/Dobrolet_Airlines^
 air-dokasch^^^^^3D^0^Dokasch^Denim Air^^^^^
@@ -454,6 +455,7 @@ air-ellinair^^2014-02-19^^ELB^EL^0^Ellinair^^^^^http://en.wikipedia.org/wiki/Ell
 air-el-sol-de-america^^^^^6S^0^Kato Airlines^^^^^^
 air-emirates^^1985-10-25^^UAE^EK^176^Emirates^^^^^http://en.wikipedia.org/wiki/Emirates_%28airline%29^202633
 air-endeavor-air^^1985-01-01^^FLG^9E^430^Endeavor Air^^^^^http://en.wikipedia.org/wiki/Endeavor_Air^185562
+air-enkor-jsc^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor^
 air-equaflight-service^^^^^E7^965^Equaflight Service^Fly European^^^P^^128
 air-equatorial-congo-airline^^^^^LC^753^Equatorial Congo Airline^Congo Airline^^^^^1371
 air-era-aviation^^1948-01-01^^ERH^7H^808^Era Aviation^^^^^http://en.wikipedia.org/wiki/Era_Aviation^123597
@@ -964,7 +966,7 @@ air-sky-regional-airlines^^^^^RS^0^Sky Regional Airlines^^^^^^
 air-skystar-airways^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways^657
 air-sky-taxi^^^^IGA^TE^0^Sky Taxi^^^^^^117
 air-skytrans-regional^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^
-air-skyways^1^^2012-05-22^SKX^JZ^752^Skyways^Skyways^^^^http://en.wikipedia.org/wiki/Skyways_(airline)^
+air-skyways^1^1993-01-01^2012-05-22^SKX^JZ^752^Skyways^^^^^http://en.wikipedia.org/wiki/Skyways_(airline)^
 air-skywest-airlines^^1972-01-01^^SKW^OO^302^SkyWest Airlines^^^^^http://en.wikipedia.org/wiki/SkyWest_Airlines^637462
 air-sky-wings-airlines^1^2006-06-01^2012-12-31^GSW^ND^171^Sky Wings Airlines^Intair Inc^^^^http://en.wikipedia.org/wiki/Sky_Wings_Airlines^486
 air-sky-wings-asia-airlines^^2011-06-13^^SWM^ZA^969^Sky Angkor Airlines^Skywings Asia Airlines^^^^http://en.wikipedia.org/wiki/Sky_Angkor_Airlines^1279
