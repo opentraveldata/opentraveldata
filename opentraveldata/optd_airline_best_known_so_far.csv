@@ -34,7 +34,6 @@ air-aeroperlas^^^^^WL^54^Aeroperlas^^^^^
 air-aeropostal^^^^^VH^152^Aeropostal^^^^^
 air-aero-republica^^2010-10-06^^RPB^P5^845^Copa Airlines Colombia^AeroRepública^^^^http://en.wikipedia.org/wiki/Copa_Airlines_Colombia
 air-aerosur^^^^^5L^275^Aerosur^^^^^
-air-aerosvit-airlines^^^^AEW^VV^870^Aerosvit Airlines^^^^^
 air-afghan-jet^^^^^HN^714^Afghan Jet International^^^^^
 air-african-express-airways^^^^^XU^0^African Express Airways^Link Airways^^^P^
 air-afric-aviation^^2011-01-01^^^L8^348^Afric Aviation^^^^^http://en.wikipedia.org/wiki/Afric_Aviation
@@ -298,7 +297,7 @@ air-cairo-aviation^^^^^OE^0^Cairo Aviation^^^^^
 air-calm-air^^^^CAV^MO^622^Calm Air International^^^^^
 air-camair^^^^CRD^QC^40^Camair Co^Camair Co^^^^
 air-cambodia-angkor-air^^2009-01-01^^^K6^188^Cambodia Angkor Air^Cambodia Air^^^^http://en.wikipedia.org/wiki/Cambodia_Angkor_Air
-air-cambodia-bayon^^2014-09-01^^^B9^688^Cambodia Bayon Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Bayon_Airlines
+air-cambodia-bayon^^2014-09-01^^BYC^BD^688^Cambodia Bayon Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Bayon_Airlines
 air-canadian-north^^^^^5T^518^Canadian North^^^^^
 air-canary-fly^^^^CNF^PM^496^Canary Fly^Tropic Air^^^^http://en.wikipedia.org/wiki/Cape_Air
 air-canjet-airlines^^^^CJA^C6^0^Canjet Airlines^Bright Airlines^^^^
@@ -440,7 +439,6 @@ air-fedex^^^^FXA^FX^0^Fedex^Express Air^^^^
 air-felix-airways^^^^FXX^FO^569^Felix Airways^^^^^
 air-fiji-airways^^^^FJI^FJ^260^Fiji Airways^Fiji Airways^^^^
 air-finnair^^1923-11-01^^FIN^AY^105^Finnair^^OneWorld^Member^^http://en.wikipedia.org/wiki/Finnair
-air-finncomm-airlines^^^^^FC^216^Finncomm Airlines^^^^^
 air-first-air^^^^FAB^7F^245^First Air^First Air^^^^
 air-flair-airlines^^2005-01-01^^FLE^F8^0^Flair Airlines^^^^^http://en.wikipedia.org/wiki/Flair_Airlines
 air-flexflight^^^^FXT^W2^365^Flexflight^Flexflight^^^^
@@ -538,7 +536,8 @@ air-intercaribbean-airways^^1992-01-01^^IWY^JY^653^InterCaribbean Airways^Air Tu
 air-interjet-gr^^^^INJ^^0^InterJet^InterJet^^^^http://en.wikipedia.org/wiki/InterJet
 air-intersky^^^^ISK^3L^222^Intersky Luftfahrt^Intersky^^^^
 air-invest-avia^^^^TLG^IN^0^Invest Avia^Macedonianair^^^^
-air-iran-air^^^^IRA^IR^96^Iran Air^Iran Air^^^^
+air-iran-air^^1961-01-01^^IRA^IR^96^Iran Air^^^^^http://en.wikipedia.org/wiki/Iran_Air
+air-iran-air-tours^^1973-01-01^^IRB^B9^491^Iran Air Tours^^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours
 air-iran-aseman-airlines^^^^IRC^EP^815^Iran Aseman Airlines^^^^^
 air-iranian-naft-airline^^^^IRG^NV^346^Iranian Naft Airline^^^^^
 air-iraqi-airways^^^^IAW^IA^73^Iraqi Airways^Iraqi Air^^^^
@@ -703,7 +702,7 @@ air-netjets-aviation^^^^^1I^0^Netjets Aviation^^^^^
 air-new-england-airlines^^^^NEA^EJ^0^New England Airlines^New Englan^^^^
 air-new-livingston^^^^NVL^JN^401^New Livingston^Newlivingston^^^^
 air-nextjet^^^^NTJ^2N^121^Nextjet^Nextjet^^^^
-air-nht-linhas-aereas^^^^NHG^N7^0^NHT Linhas Aereas^Lagun Air^^^^
+air-nordic-regional-airlines^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^Norra^^^^http://en.wikipedia.org/wiki/Nordic_Regional_Airlines
 air-nice-helicopteres^^^^^JX^179^Nice Helicopteres^Nice Helicopt^^^^
 air-niger-airlines^^^^NIN^6N^720^Niger Airlines^^^^^
 air-nigerian-eagle^^^^NIG^NG^708^Aero Contractors Company Nigeria^^^^^
@@ -1035,6 +1034,7 @@ air-virgin-australia-regional^^1963-01-01^^VOZ^VA^608^Virgin Australia Regional^
 air-virgin-australia^^2000-08-31^^VOZ^VA^856^Virgin Australia^Virgin Blue^^^^http://en.wikipedia.org/wiki/Virgin_Australia
 air-vision-airlines^^^^RBY^V2^0^Vision Airlines^^^^^
 air-vista-georgia^^^^AJD^GT^0^Vista Georgia^GB Airways^^^^
+air-viva-colombia^^2012-12-25^^VVC^FC^641^Viva Colombia^^^^^http://en.wikipedia.org/wiki/VivaColombia
 air-vladivostok-air^^^^VLK^XF^277^Vladivostok Air^^^^^
 air-vlm^^1982-01-01^^VLM^VG^0^VLM Airlines^^^^^http://en.wikipedia.org/wiki/VLM_Airlines
 air-volaris^^2005-01-01^^VOI^Y4^36^Volaris^Concesionaria Vuela Compañía de Aviación^^^^http://en.wikipedia.org/wiki/Volaris

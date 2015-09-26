@@ -1,4 +1,5 @@
 pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link
+air-aerosvit-airlines^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^http://en.wikipedia.org/wiki/Aerosvit_Airlines
 air-aero-flight^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^http://en.wikipedia.org/wiki/Aero_Flight
 air-aero-vip-argentina^1^1999-06-23^2010-12-01^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^http://en.wikipedia.org/wiki/Aero_VIP_(Argentina)
 air-airlink-papua-new-guinea^1^1990-06-01^2007-07-27^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)
@@ -50,6 +51,7 @@ air-estafeta-carga-aerea^1^^2013-12-31^^E7^^Estafeta Carga Aerea^Estafeta Carga 
 air-exel-nl^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^KLM Exel^^^http://en.wikipedia.org/wiki/Air_Exel
 air-eznis-airways^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^
 air-farnair-switzerland^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^http://en.wikipedia.org/wiki/Farnair_Switzerland
+air-finncomm-airlines^1^1993-01-01^2011-12-31^FCM^FC^216^Finncomm Airlines^^^^^http://en.wikipedia.org/wiki/Finncomm_Airlines
 air-florida-coastal-airlines^1^1995-01-01^2014-06-06^FCL^PA^0^Florida Coastal Airlines^^^^P^http://en.wikipedia.org/wiki/Florida_Coastal_Airlines
 air-flycongo^1^^2013-31-12^ALX^EO^663^Flycongo^^^^^
 air-flywell-airlines^1^1995-01-01^2003-12-12^FEM^YZ^0^Zimbabwe Airlink^Flywell Airlines^^^P^http://en.wikipedia.org/wiki/Zimbabwe_Airlink
@@ -71,6 +73,7 @@ air-interlink-airlines^1^1998-01-01^2010-12-31^ITK^ID^0^Interlink^^^^P^http://en
 air-inter-airlines^1^1999-12-17^2008-11-18^INX^6K^0^Inter Airlines^^^^^http://en.wikipedia.org/wiki/Inter_Airlines
 air-iran-air-tours^1^^^2014-12-31^B9^491^Iran Air Tours^Iran Airtour^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours
 air-islas-airways^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^http://en.wikipedia.org/wiki/Islas_Airways
+air-lagunair-lineas-aeras^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir
 air-linea-aerea-cuencana^1^2012-01-01^2015-01-01^LAC^L5^0^Linea Aerea Cuencana^^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Cuencana
 air-macair-jet^1^^2014-12-31^MCJ^VM^0^Macair Jet^^^^^
 air-marsland-aviation^1^^2013-11-30^MSL^M7^293^Marsland Aviation^^^^^http://en.wikipedia.org/wiki/Marsland_Aviation

@@ -196,6 +196,7 @@ ADO^2^Hokkaido International Airlines<>
 AE^2^<>Mandarin Air
 AEA^2^<>Air Europa
 AEE^2^<>Aegean Air
+AEW^1^<>Aerosvit Airlines
 AF^2^<>Air France
 AFL^2^<>Aeroflot
 AFR^2^<>Air France
@@ -290,8 +291,7 @@ BAW^2^<>British A W
 BB^2^<>Seaborne Air
 BCY^1^CityJet<>Cityjet
 BCY^2^CityJet<>Cityjet
-BD^1^British Midland<>British Midland International
-BD^2^British Midland<>
+BD^1^Cambodia Bayon Airlines<>British Midland International
 BEA^1^BQB Lineas Aereas<>Bqb Lineas Aereas
 BEA^2^BQB Lineas<>Bqb Lineas
 BEL^2^<>Brussels Air
@@ -490,6 +490,7 @@ F7^1^Etihad Regional<>Darwin Airline
 F7^2^Darwin Airline<>Darwin
 F8^2^<>Air Montreal
 F9^2^<>Frontier Air
+FC^1^Viva Colombia<>Finncomm Airlines
 FD^1^Thai AirAsia<>Thai Airasia
 FD^2^<>Thai Airasia
 FDY^1^Sun Air Express<>Sun Air Express Llc
@@ -620,6 +621,8 @@ INL^1^Interair<>Inter Air
 INL^2^<>Inter Air
 IO^1^IrAero<>Closed Jsc Iraero
 IP^1^Iberworld Airlines<>Apsara International Air
+IR^2^<>Iran Air
+IRA^2^<>Iran Air
 IRM^2^<>Mahan Air
 ISS^2^<>Meridiana Fly
 IU^1^Hevilift<>Hevi Lift Png Pty Ltd
@@ -818,7 +821,8 @@ MXA^2^<>Mexicana
 MY^2^<>Maya Island
 MYD^2^<>Maya Island
 N2^1^Dagestan Airlines<>
-N7^1^NHT Linhas Aereas<>Nht Linhas Aereas
+N7^1^Nordic Regional Airlines<>
+N7^2^Norra<>Lagun Air
 NAX^1^Norwegian Air Shuttle (NAS)<>Norwegian Air Shuttle
 NAX^2^<>Norwegian Air
 NB^1^Sterling Air<>Skypower Express
@@ -829,7 +833,6 @@ ND^2^<>Intair Inc
 NE^2^<>Nesma
 NF^2^<>Air Vanuatu
 NH^2^ANA<>All Nippon
-NHG^1^NHT Linhas Aereas<>Nht Linhas Aereas
 NJ^1^Nordic Global Airlines<>Aero Vip
 NJS^1^<>National Jet Systems
 NK^2^<>Spirit Airlin
@@ -922,7 +925,7 @@ Q3^2^<>Zambian Air
 Q5^2^<>Forty Miles A
 Q7^1^Sky Bahamas Airlines<>Skybahamas Airlines
 Q8^2^<>Trans Air
-QA^1^Cimber A/S<>Cimber
+QA^1^Cimber A/S<>
 QA^2^<>Cimber
 QD^1^Dobrolet Airlines<>Dobrolet Lcc
 QE^1^Fars Qeshm Airlines<>
@@ -1204,6 +1207,7 @@ VBW^2^<>Air Burkina
 VE^1^<>C A I Second S P A
 VE^2^<>C A I Second
 VG^1^VLM Airlines<>Vlm
+VG^2^<>Vlm Airlines
 VGO^1^<>Sabaidee Airways
 VH^2^<>Aeropostal
 VIR^2^<>Virgin Atl
@@ -1233,6 +1237,7 @@ VS^2^<>Virgin Atl
 VT^2^<>Air Tahiti
 VTA^2^<>Air Tahiti
 VTI^2^Tata SIA Airlines<>Vistara
+VV^1^<>Aerosvit Airlines
 VW^2^<>Aeromar
 VX^2^<>Virgin Usa
 VY^1^Vueling<>Vueling Airlines
