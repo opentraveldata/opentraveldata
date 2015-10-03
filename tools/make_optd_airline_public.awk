@@ -177,9 +177,10 @@ BEGIN {
 	# Wikipedia link
 	wiki_link = $13
 
-	# Retrieve the flight-date frequency, if existing
+	# Retrieve the flight-date frequency, if existing,
+	# and if the airline is still active
 	air_freq = ""
-	if (code_2char != "") {
+	if (code_2char != "" && env_id == "") {
 	    air_freq = flt_freq[code_2char]
 	}
 
