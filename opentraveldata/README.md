@@ -72,7 +72,9 @@ Generated
   either of the two sources, depending where the mistake is.
 * optd_airline_diff_w_rfd.csv is the list of the differences of airline names,
   as on one hand in optd_airline_best_known_so_far.csv, and on the other
-  hand from Amadeus RFD (which originates from IATA in the first place).
+  hand from reference data (based on publicly available international standard
+  such as some IATA data; see the URL below for such a publicly available data
+  source).
   That file is meant to be a safenet when incorporating updates from either
   source. Any update should be checked against the reality, first thanks
   to IATA search page (http://www.iata.org/publications/Pages/code-search.aspx),

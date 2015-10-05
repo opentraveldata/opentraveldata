@@ -10,7 +10,7 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     __glGlobalErrorStream = __igalParamErrorStream
     __glGlobalLogLevel = __igalParamLogLevel
     __glGlobalIsForGeonames = 0
-    __glGlobalIsForRFD = 0
+    __glGlobalIsForREF = 0
     __glGlobalIsForInnovata = 0
     __glGlobalPI = 4 * atan2(1,1)
     __glGlobalRTOD = 180.0 / __glGlobalPI
@@ -49,8 +49,8 @@ function ATan2(y,x){ return atan2(y,x)*__glGlobalRTOD }
 function initFileGeoAwkLib() {
     # Initialise the Geonames-derived lists
     resetGeonamesLineList()
-    # Initialise the RFD-derived lists
-    resetRFDLineList()
+    # Initialise the reference data lists
+    resetREFLineList()
     # Initialise the Innovata-derived lists
     resetInnovataLineList()
 }
@@ -68,9 +68,9 @@ function finalizeGeoAwkLib() {
 	displayGeonamesPOREntries()
     }
 
-    # Display the last RFD POR entries
-    if (__glGlobalIsForRFD == 1) {
-	displayRFDPOREntries()
+    # Display the last reference data POR entries
+    if (__glGlobalIsForREF == 1) {
+	displayREFPOREntries()
     }
 
     # Display the last Innovata POR entries
@@ -642,7 +642,7 @@ function addLocTypeToGeoList(__alttglParamGeonamesID,	\
 }
 
 ##
-# Add the given location type to the given dedicated Geonames or RFD list.
+# Add the given location type to the given dedicated Geonames or reference data list.
 #
 function addLocTypeToAllGeoList(__alttglParamLocationType,	\
 				__alttglParamGeoString) {
@@ -871,8 +871,8 @@ function resetGeonamesLineList() {
 }
 
 ##
-# Reset the list of last RFD POR entries
-function resetRFDLineList() {
+# Reset the list of last reference data POR entries
+function resetREFLineList() {
     rfd_last_full_line = ""
 }
 
@@ -1343,14 +1343,14 @@ function displayGeonamesPOREntries() {
 }
 
 ##
-# Register the full RFD POR entry details for the given primary key:
+# Register the full reference data POR entry details for the given primary key:
 # 1. The IATA code
 # 2. The OPTD-maintained location type
-function registerRFDLine(__rrlParamIataCode, __rrlParamLocType, \
+function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
 			 __rrlParamFullLine, __rrlParamNbOfPOR) {
-    # Register the fact that the AWK script runs on the RFD data dump
+    # Register the fact that the AWK script runs on the reference data file
     # (most probably called from the rfd_pk_creator.awk file)
-    __glGlobalIsForRFD = 1
+    __glGlobalIsForREF = 1
 
     # Display the last read POR entry, when:
     # 1. The current POR entry is not the first one (as the last POR entry
@@ -1361,10 +1361,10 @@ function registerRFDLine(__rrlParamIataCode, __rrlParamLocType, \
 		
     } else {
 	# Display the last Geonames POR entries
-	displayRFDPOREntries()
+	displayREFPOREntries()
     }
 
-    # Register the RFD POR entry in the list of last entries
+    # Register the reference data POR entry in the list of last entries
     # for that IATA code
     geo_iata_code = __rrlParamIataCode
 
@@ -1373,24 +1373,24 @@ function registerRFDLine(__rrlParamIataCode, __rrlParamLocType, \
     #	   __rrlParamIataCode ", geo_loc_type=" __rrlParamLocType) \
     #	> __glGlobalErrorStream
 
-    # Store the location type of the RFD POR entry
+    # Store the location type of the reference data POR entry
     rfd_last_loctype = __rrlParamLocType
 
-    # Store the full details of the RFD POR entry
+    # Store the full details of the reference data POR entry
     rfd_last_full_line = __rrlParamFullLine
 }
 
 ##
-# Display the full details of the RFD POR entry, prefixed by the
+# Display the full details of the reference data POR entry, prefixed by the
 # corresponding primary key (IATA code, location type, Geonames ID).
 #
-function displayRFDPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
+function displayREFPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 			     __drpwkParamOPTDGeoID) {
     # Build the primary key
     drpwkPK = getPrimaryKey(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 			    __drpwkParamOPTDGeoID)
 
-    # Re-write, within the RFD full line:
+    # Re-write, within the reference data full line:
     #  * The location type (field #2)
     #  * The airport flag (field #9)
     #  * The commercial flag (field #18)
@@ -1414,15 +1414,16 @@ function displayRFDPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
     }
     drpwkFullLine = $0
 
-    # Add the primary key as a prefix to the full details of the RFD POR entry
-    drpwkRFDPORPlusPKLine = drpwkPK FS drpwkFullLine
+    # Add the primary key as a prefix to the full details of
+	# the reference data POR entry
+    drpwkREFPORPlusPKLine = drpwkPK FS drpwkFullLine
 
     # Dump the full line, prefixed by the primary key
-    print (drpwkRFDPORPlusPKLine)
+    print (drpwkREFPORPlusPKLine)
 }
 
 ##
-# Display the list of RFD POR entries.
+# Display the list of reference data POR entries.
 # Usually, there is no more than one POR entry for a given IATA code
 # and location type.
 #
@@ -1430,13 +1431,13 @@ function displayRFDPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 # RDU-A-4487056 serves both RDU-C-4464368 (Raleigh) and RDU-C-4487042 (Durham)
 # in North Carolina, USA. In that case, there are two entries for RDU-C.
 #
-function displayRFDPOREntries() {
+function displayREFPOREntries() {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" && \
 	geo_iata_code == __glGlobalDebugIataCode) {
 	print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "    \
-	       optd_por_loctype_list[geo_iata_code] ", RFD loc_type: " \
+	       optd_por_loctype_list[geo_iata_code] ", REF loc_type: " \
 	       rfd_last_loctype) > __glGlobalErrorStream
     }
 
@@ -1455,22 +1456,22 @@ function displayRFDPOREntries() {
 	    #
 	    drpeOPTDGeoID = drpeOPTDGeoIDArray[drpeOPTDGeoIDIdx]
 
-	    # Display the full details of the RFD POR entry
-	    displayRFDPORWithPK(geo_iata_code, drpeOPTDLocType, drpeOPTDGeoID)
+	    # Display the full details of the reference data POR entry
+	    displayREFPORWithPK(geo_iata_code, drpeOPTDLocType, drpeOPTDGeoID)
 		
 	    # DEBUG
 	    if (__glGlobalDebugIataCode != "" &&		\
 		geo_iata_code == __glGlobalDebugIataCode) {
 		print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
 		       drpeOPTDLocType ", OPTD GeoID: " drpeOPTDGeoID	\
-		       ", RFD loc_type list: " rfd_last_loctype)	\
+		       ", REF loc_type list: " rfd_last_loctype)	\
 		    > __glGlobalErrorStream
 	    }
 	}
     }
 
     # Reset the list for the next turn
-    resetRFDLineList()
+    resetREFLineList()
 }
 
 ##
