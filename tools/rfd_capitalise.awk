@@ -1,9 +1,9 @@
 ##
-# That AWK script capitalises the names within the Amadeus RFD dump files.
+# That AWK script capitalises POR names.
 #
-# The format of the Amadeus RFD dump files is assumed to be as per the following:
+# The format of the data files is assumed to be as per the following:
 #
-# RFD geographical dump (CRB_CITY)
+# Geographical data file (CITY)
 # - [1]  iata_code^
 # - [2]  location_type^
 # - [3]  ticketing_name^
@@ -23,7 +23,7 @@
 # - [17] numeric_code^
 # - [18] is_commercial
 #
-# RFD airline dump (CRB_AIRLINE)
+# Airline  data file (AIRLINE)
 # - [1]  NEW_CODE^ #ICAO 3 digit code
 # - [2]  OLD_CODE^ #IATA 2 digit code
 # - [3]  NUM_CODE^ #numeric code which is mainly used in ticket
@@ -48,16 +48,16 @@ BEGIN {
 
 
 ####
-## Amadeus RFD dump file
+## Data files
 
 ##
-# RFD geographical header line
+# Geographical header line
 /^iata_code/ {
 	print ($0)
 }
 
 ##
-# Amadeus RFD geographical file regular lines
+# Geographical file regular lines
 # Sample lines (truncated):
 #  DUN^^DUNDAS^^DUNDAS^DUNDAS/GL^DUNDAS^DUN^Y^^GL^EUROP^ITC1^GL055^^^^N
 #  IEV^CA^KIEV ZHULIANY INT^ZHULIANY INTL^KIEV ZHULIANY I^KIEV/UA:ZHULIANY INTL
@@ -117,7 +117,7 @@ BEGIN {
 }
 
 ##
-# RFD airline file regular lines
+# Airline file regular lines
 # Sample lines (truncated):
 #  *A^^*A^0^STAR ALLIANCE^
 #  *O^^*O^0^ONEWORLD^

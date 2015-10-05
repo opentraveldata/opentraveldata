@@ -1,18 +1,18 @@
 ##
 # That AWK script re-formats the full details of POR (points of reference)
 # derived from a few sources:
-#  * Amadeus OPTD-maintained lists of:
+#  * OPTD-maintained lists of:
 #    * Best known POR (poins of reference): optd_por_best_known_so_far.csv
 #    * PageRank values:                     ref_airport_pageranked.csv
 #    * Country-associated time-zones:       optd_tz_light.csv
 #    * Time-zones for a few POR:            optd_por_tz.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
-#  * Amadeus RFD (Referential Data):        dump_from_crb_city.csv
+#  * Referential Data:                      dump_from_crb_city.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
 # Notes:
-# 1. When the POR is existing only in Amadeus RFD data, the cryptic time-zone
+# 1. When the POR is existing only in the reference data, the cryptic time-zone
 #    ID is replaced by a more standard time-zone ID. That latter is a simplified
 #    version of the standard time-zone ID (such as the one given by Geonames),
 #    as there is then a single time-zone ID per country; that is obviously
@@ -430,14 +430,14 @@ function printAltNameSection(myAltNameSection) {
 
 
 ##
-# Aggregated content from Amadeus OPTD, Amadeus RFD and Geonames
+# Aggregated content from OPTD, reference data and Geonames
 #
 # Sample input lines:
 #
-# # Both in Geonames and in RFD (56 fields)
+# # Both in Geonames and in reference data (56 fields)
 # NCE-A-6299418^NCE^43.658411^7.215872^NCE^6299418^NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Nice Airport,...^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^NCE^A^Nice^Cote D Azur^Nice^Nice FR Cote D Azur^Nice^NCE^Y^^FR^EUROP^ITC2^FR052^43.6653^7.215^^Y^en|Nice Côte d'Azur International Airport|s
 #
-# # In RFD (24 fields)
+# # In reference data (24 fields)
 # XIT-R-0^XIT^51.42^12.42^LEJ^^XIT^R^Leipzig Rail^Leipzig Hbf Rail Stn^Leipzig Rail^Leipzig HALLE DE Leipzig Hbf R^Leipzig HALLE^LEJ^Y^^DE^EUROP^ITC2^DE040^51.3^12.3333^^N
 #
 # # In Geonames (38 fields)
@@ -447,7 +447,7 @@ function printAltNameSection(myAltNameSection) {
 
     if (NF == 57) {
 		####
-		## Both in Geonames and in RFD
+		## Both in Geonames and in reference data
 		####
 
 		# Primary key
@@ -525,7 +525,7 @@ function printAltNameSection(myAltNameSection) {
 		# Notes:
 		#   1. The actual name values are added by the add_city_name.awk script.
 		#   2. The city code is the one from the file of best known POR,
-		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
+		#      not the one from reference data (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
@@ -571,7 +571,7 @@ function printAltNameSection(myAltNameSection) {
 		# (37) Aeroport de Nice Cote d'Azur, ...,Niza Aeropuerto ^
 		# (38) http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport ^
 
-		# From RFD ($39 - $56)
+		# From reference data ($39 - $56)
 		# (39) NCE ^ (40) CA ^ (41) NICE ^ (42) COTE D AZUR ^ (43) NICE ^
 		# (44) NICE/FR:COTE D AZUR ^ (45) NICE ^ (46) NCE ^
 		# (47) Y ^ (48)  ^ (49) FR ^ (50) EUROP ^ (51) ITC2 ^ (52) FR052 ^
@@ -706,7 +706,7 @@ function printAltNameSection(myAltNameSection) {
 		# Notes:
 		#   1. The actual name values are added by the add_city_name.awk script.
 		#   2. The city code is the one from the file of best known POR,
-		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
+		#      not the one from reference data (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
@@ -736,7 +736,7 @@ function printAltNameSection(myAltNameSection) {
 		# (1) HDQ-CA-0 ^ (2) HDQ ^ (3) <empty lat.> ^ (4)  ^ <empty long.>
 		# (5) HDQ ^ (6)  ^
 
-		# From RFD ($7 - $24)
+		# From reference data ($7 - $24)
 		# (7) HDQ ^ (8) CA ^ (9) Headquarters ^ (10) ^
 		# (11) Headquarters ^ (12) Headquarters ZZ ^
 		# (13) Headquarters ^
@@ -745,7 +745,7 @@ function printAltNameSection(myAltNameSection) {
 
     } else if (NF == 39) {
 		####
-		## Not in RFD
+		## Not in reference data
 		####
 
 		# Primary key
@@ -815,7 +815,7 @@ function printAltNameSection(myAltNameSection) {
 		# Notes:
 		#   1. The actual name values are added by the add_city_name.awk script.
 		#   2. The city code is the one from the file of best known POR,
-		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
+		#      not the one from reference data (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
@@ -861,7 +861,7 @@ function printAltNameSection(myAltNameSection) {
 
     } else if (NF == 6) {
 		####
-		## Neither in Geonames nor in RFD
+		## Neither in Geonames nor in reference data
 		####
 		# Location type (hard-coded to be an airport)
 		location_type = "A"

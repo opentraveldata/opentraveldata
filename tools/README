@@ -7,13 +7,13 @@
 # 1.1. Generate the OPTD-maintained POR (points of reference) file
 # ---------------------------------------------------------------
 #
-cd ../ORI
+cd <OPTD_ROOT_DIR>/tools
 ./make_optd_por_public.sh
 ./make_optd_por_public.sh --clean
+cd ../opentraveldata
 git add optd_por_public.csv
 git diff --cached optd_por_public.csv
 git ci -m "[POR] Integrated the latest updates from Geonames."
-cd -
 
 
 ##
@@ -24,21 +24,25 @@ cd -
 # downloaded and the allCountries_w_alt.txt data file has been recomputed.
 #
 
-# Generate four por_all_*_YYYYMMDD.csv data files
+# Generate four por_*_YYYYMMDD.csv data files
+cd <OPTD_ROOT_DIR>/tools
 ./extract_por_with_iata_icao.sh
 
-# Generates the dump_from_geonames.csv from the four data files obtained above
-#./preprepare_geonames_dump_file.sh (no longer used)
+# Copy the generated por_iata_YYYYMMDD.csv file into dump_from_geonames.csv
+cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
+
+# Cleaning
+./extract_por_with_iata_icao.sh --clean
 
 # Recompute the OPTD-maintained POR file: do 1.1.
 
 
 ##
-# 2.2. Update from RFD
-# --------------------
+# 2.2. Update from reference data
+# -------------------------------
 #
-# The RFD data has been updated, i.e., new RFD data files have been downloaded
-# and the dump_from_crb_city.csv has been recomputed.
+# The reference data has been updated, i.e., the
+# dump_from_crb_city.csv file has been recomputed.
 #
 
 # Recompute the OPTD-maintained POR file: do 1.1.
@@ -58,6 +62,7 @@ cd -
 # ----------------------------------------------------
 #
 
+cd <OPTD_ROOT_DIR>/tools
 ./compare_por_files.sh
 
 # A data file, summing up all the differences, is generated, namely
@@ -66,22 +71,23 @@ cd -
 # as the PageRank derived from the flight schedules for a whole year).
 # That file is sorted by decreasing differences.
 less optd_por_diff_w_geonames.csv
-diff -c optd_por_diff_w_geonames.csv ../ORI/optd_por_diff_w_geonames.csv
+diff -c optd_por_diff_w_geonames.csv ../opentraveldata/optd_por_diff_w_geonames.csv
 
 # When the differences have been analysed:
-\mv -f optd_por_diff_w_geonames.csv ../ORI/optd_por_diff_w_geonames.csv
-git add ../ORI/optd_por_diff_w_geonames.csv
+\mv -f optd_por_diff_w_geonames.csv ../opentraveldata/
+git add ../opentraveldata/optd_por_diff_w_geonames.csv
+./compare_por_files.sh --clean
 
 
-# To see the respective details of a given POR (point of reference), a reminder
-# script is available:
+# To see the respective details of a given POR (point of reference),
+# a reminder script is available:
 ./extract_por_info.sh
 
 # It should give something like:
 grep "^LHR" ../ORI/optd_por_best_known_so_far.csv \
 	 dump_from_crb_city.csv dump_from_geonames.csv dump_from_innovata.csv \
-     ../ORI/por_in_schedule/por_schedule_counts_2011_01_to_2013_10.csv \
-     ../ORI/ref_airport_pageranked.csv
+     ../opentraveldata/por_in_schedule/por_schedule_counts_2011_01_to_2013_10.csv \
+     ../opentraveldata/ref_airport_pageranked.csv
 
 
 # Then, compare
@@ -105,8 +111,8 @@ midori http://maps.bing.com
 # than in the OPTD-maintained data files, those latters have to be corrected.
 # Just update the coordinates within the OPTD-maintained list of best known
 # coordinates:
-vi ../ORI/optd_por_best_known_so_far.csv
-git add ../ORI/optd_por_best_known_so_far.csv
+vi ../opentraveldata/optd_por_best_known_so_far.csv
+git add ../opentraveldata/optd_por_best_known_so_far.csv
 
 # For the bulk update, see also 8.
 
@@ -121,7 +127,7 @@ git add ../ORI/optd_por_best_known_so_far.csv
 # A new POR, still unknown from OPTD, may have been specified within Geonames.
 #
 # The procedure is exactly the same as in 4.1: manually edit the
-# ../ORI/optd_por_best_known_so_far.csv and re-generate the OPTD-maintained
+# ../opentraveldata/optd_por_best_known_so_far.csv and re-generate the OPTD-maintained
 # POR file (step 1.1).
 
 
@@ -152,7 +158,7 @@ git add ../ORI/optd_por_best_known_so_far.csv
 #      pageranked_por_in_iata_but_missing_from_geonames.csv files:
 ./generate_por_lists_for_geonames.sh
 
-# If any POR is not in RFD, it will appear and the program will exit (no file
+# If any POR is not in reference data, it will appear and the program will exit (no file
 # will be generated); follow the suggestion to remove those entries from
 # the dump_from_geonames.csv.missing file.
 
@@ -163,7 +169,8 @@ gzip pageranked_por_in_iata_but_missing_from_geonames.csv
 
 ##
 # 8. Bulk fix the best known coordinates, when those are equal to zero and
-#    they are known by Geonames and/or by RFD. That is the bulk version of 4.1.
+#    they are known by Geonames and/or in reference data.
+#    That is the bulk version of 4.1.
 # -----------------------------------------------------------------------------
 #    
 #
@@ -171,27 +178,27 @@ gzip pageranked_por_in_iata_but_missing_from_geonames.csv
 
 # When Geonames has better coordinates
 wc -l new_optd_por_best_known_so_far.csv.wgeo \
-   ../ORI/optd_por_best_known_so_far.csv
+   ../opentraveldata/optd_por_best_known_so_far.csv
 diff -c new_optd_por_best_known_so_far.csv.wgeo \
-	../ORI/optd_por_best_known_so_far.csv | less
+	../opentraveldata/optd_por_best_known_so_far.csv | less
 
-# When RFD has better coordinates
+# When reference data has better coordinates
 wc -l new_optd_por_best_known_so_far.csv.wrfd \
-   ../ORI/optd_por_best_known_so_far.csv
+   ../opentraveldata/optd_por_best_known_so_far.csv
 diff -c new_optd_por_best_known_so_far.csv.wrfd \
-	 ../ORI/optd_por_best_known_so_far.csv | less
+	 ../opentraveldata/optd_por_best_known_so_far.csv | less
 
 # In case everything seems correct, replace the OPTD-maintained file:
 #  - When Geonames has better coordinates
 \mv -f new_optd_por_best_known_so_far.csv.wgeo \
-	../ORI/optd_por_best_known_so_far.csv
-#  - When RFD has better coordinates
+	../opentraveldata/optd_por_best_known_so_far.csv
+#  - When reference data has better coordinates
 \mv -f new_optd_por_best_known_so_far.csv.wrfd \
-	../ORI/optd_por_best_known_so_far.csv
+	../opentraveldata/optd_por_best_known_so_far.csv
 
 # Add it into Git and re-check
-git add ../ORI/optd_por_best_known_so_far.csv
-git diff --cached ../ORI/optd_por_best_known_so_far.csv
+git add ../opentraveldata/optd_por_best_known_so_far.csv
+git diff --cached ../opentraveldata/optd_por_best_known_so_far.csv
 
 # Go to 1.1., as the OPTD-maintained file of best known coordinates
 # has been updated
@@ -276,7 +283,7 @@ tools/generate_por_deduplication_suggestions_for_geonames.sh
 tools/optd_pk_creator.awk
 tools/optd_por_splitter.awk
 
-* For OPTD-maintained data extraction for Amadeus private usage, the private
+* For OPTD-maintained data extraction for private usage, the private
   Data Analysis project should also be amended through:
 data_generation/por/make_optd_por_private.awk
 data_generation/por/make_optd_por_private.sh
@@ -306,7 +313,8 @@ tools/generate_por_deduplication_suggestions_for_geonames.sh
 tools/optd_pk_creator.awk
 tools/optd_por_splitter.awk
 
-* For OPTD-maintained data extraction for Amadeus private usage, the private
+* For OPTD-maintained data extraction for private usage, the private
   Data Analysis project should also be amended through:
 data_generation/por/make_optd_por_private.awk
 data_generation/por/make_optd_por_private.sh
+

@@ -1,12 +1,12 @@
 ##
 # That AWK script re-formats the full details of airlines
 # derived from a few sources:
-#  * Amadeus OPTD-maintained lists of:
+#  * OPTD-maintained lists of:
 #    * Best known airlines:                 optd_airline_best_known_so_far.csv
 #    * Alliance memberships:                optd_airline_alliance_membership.csv
 #    * No longer valid airlines:            optd_airline_no_longer_valid.csv
 #    * Nb of flight-dates:                  ref_airline_nb_of_flights.csv
-#  * Amadeus RFD (Referential Data):        dump_from_crb_airline.csv
+#  * Referential Data:                      dump_from_crb_airline.csv
 #  * [Future] Geonames list of airlines:    dump_from_geonames.csv
 #
 # Sample output lines:
@@ -36,8 +36,8 @@ BEGIN {
     awk_file = "make_optd_airline_public.awk"
 
     # Generated file for name differences
-    if (air_name_rfd_diff_file == "") {
-	air_name_rfd_diff_file = "optd_airline_diff_w_rfd.csv"
+    if (air_name_ref_diff_file == "") {
+	air_name_ref_diff_file = "optd_airline_diff_w_ref.csv"
     }
     if (air_name_alc_diff_file == "") {
 	air_name_alc_diff_file = "optd_airline_diff_w_alc.csv"
@@ -245,7 +245,7 @@ BEGIN {
 }
 
 ##
-# Aggregated content from Amadeus RFD
+# Aggregated content from reference data
 #
 # Sample input lines:
 # *A^^*A^0^Star Alliance^
@@ -290,16 +290,16 @@ BEGIN {
 	# ^ Alliance name ^ Alliance membership type
 	current_line = current_line "^" alliance_name "^" alliance_type
 
-	# Difference between OPTD and RFD
+	# Difference between OPTD and reference data
 	optd_name = aln_name[pk]
 	optd_name2 = aln_name2[pk]
 	if (air_name != optd_name) {
 	    print (pk "^1^" optd_name "<>" air_name)	\
-		> air_name_rfd_diff_file
+		> air_name_ref_diff_file
 	}
 	if (air_name_alt != optd_name2) {
 	    print (pk "^2^" optd_name2 "<>" air_name_alt)	\
-		> air_name_rfd_diff_file
+		> air_name_ref_diff_file
 	}
 
 	# Print the full line (old version, as is)

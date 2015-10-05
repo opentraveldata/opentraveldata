@@ -71,8 +71,8 @@
 	#
 	if (city_code in city_por_freq && iata_code == city_code && \
 		location_type == "CA") {
-		# For the POR being referenced in Amadeus RFD as both a city and
-		# an airport ("CA"), split that POR into two distinct entries:
+		# For the POR being referenced as both a city and an airport ("CA"),
+        # split that POR into two distinct entries:
 		# one for the city ("C") and another one for the airport ("A").
 
 		primary_key = iata_code "-A"

@@ -11,12 +11,12 @@ displayGeonamesDetails() {
 	fi
 	echo
 	echo "The data dump from Geonames can be obtained from the OpenTravelData project"
-	echo "(http://github.com/opentraveldata/optd). For instance:"
+	echo "(http://github.com/opentraveldata/opentraveldata). For instance:"
 	echo "MYCURDIR=`pwd`"
 	echo "OPTDDIR=${OPTDDIR}"
 	echo "mkdir -p ~/dev/geo"
 	echo "cd ~/dev/geo"
-	echo "git clone git://github.com/opentraveldata/optd.git optdgit"
+	echo "git clone git://github.com/opentraveldata/opentraveldata.git optdgit"
 	echo "cd optdgit/refdata/geonames/data"
 	echo "./getDataFromGeonamesWebsite.sh  # it may take several minutes"
 	echo "cd por/admin"
@@ -27,36 +27,36 @@ displayGeonamesDetails() {
 	fi
 	echo "cd ${MYCURDIR}"
 	echo "${OPTDDIR}/tools/extract_por_with_iata_icao.sh # it may take several minutes"
-	echo "It produces both a por_all_iata_YYYYMMDD.csv and a por_all_noicao_YYYYMMDD.csv files,"
-	echo "which have to be aggregated into the dump_from_geonames.csv file."
+	echo "It produces both a por_all_iata_YYYYMMDD.csv and a por_noiata_YYYYMMDD.csv files."
+	echo "The former has to be copied into the dump_from_geonames.csv file."
 	echo "${OPTDDIR}/tools/preprepare_geonames_dump_file.sh"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
+	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_pageranked.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
 	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo
 }
 
-displayRfdDetails() {
+displayRefDetails() {
     ##
     # Snapshot date
 	SNAPSHOT_DATE=`date "+%Y%m%d"`
 	SNAPSHOT_DATE_HUMAN=`date`
 	echo
 	echo "####### Note #######"
-	echo "# The data dump from Amadeus RFD can be obtained from this project"
-	echo "# (http://gitorious.orinet.nce.amadeus.net/dataanalysis/dataanalysis.git). For instance:"
-	echo "DARFD=~/dev/dataanalysis/dataanalysisgit/data_generation"
+	echo "# Additional data files may be obtained from this project"
+	echo "# (http://<gitorious/bitbucket>/dataanalysis/dataanalysis.git). For instance:"
+	echo "DAREF=~/dev/dataanalysis/dataanalysisgit/data_generation"
 	echo "mkdir -p ~/dev/dataanalysis"
 	echo "cd ~/dev/dataanalysis"
-	echo "git clone git://gitorious.orinet.nce.amadeus.net/dataanalysis/dataanalysis.git dataanalysisgit"
-	echo "cd \${DARFD}/RFD"
-	echo "# The following script fetches a SQLite file, holding Amadeus RFD data,"
+	echo "git clone git://<gitorious/bitbucket>/dataanalysis/dataanalysis.git dataanalysisgit"
+	echo "cd \${DAREF}/RFD"
+	echo "# The following script fetches a SQLite file, holding reference data,"
 	echo "# and translates it into three MySQL-compatible SQL files:"
 	echo "./fetch_sqlite_rfd.sh # it may take several minutes"
 	echo "# It produces three create_*_rfd_*${SNAPSHOT_DATE}.sql files, which are then"
-	echo "# used by the following script, in order to load the RFD data into MySQL:"
+	echo "# used by the following script, in order to load the reference data into MySQL:"
 	echo "./create_rfd_user.sh"
 	echo "./create_rfd_db.sh"
 	echo "./create_all_tables.sh geo rfd_rfd ${SNAPSHOT_DATE}"
@@ -65,13 +65,13 @@ displayRfdDetails() {
 		echo "mkdir -p ${TMP_DIR}"
 	fi
 	echo "cd ${MYCURDIR}"
-	echo "# The MySQL CRB_CITY table has then to be exported into a CSV file."
-	echo "\${DARFD}/por/extract_por_rfd_crb_city.sh geo rfd_rfd"
+	echo "# The MySQL CITY table has then to be exported into a CSV file."
+	echo "\${DAREF}/por/extract_por_rfd_crb_city.sh geo rfd_rfd"
 	echo "\cp -f ${TMP_DIR}por_all_rfd_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_crb_city.csv"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por.csv ${TMP_DIR}optd_airports.csv"
-	echo "\${DARFD}/update_airports_csv_after_getting_crb_city_dump.sh"
+	echo "\${DAREF}/update_airports_csv_after_getting_crb_city_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo "#####################"
 	echo
@@ -79,7 +79,7 @@ displayRfdDetails() {
 
 ##
 # Input file names
-RFD_RAW_FILENAME=dump_from_crb_city.csv
+REF_RAW_FILENAME=dump_from_crb_city.csv
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 GEONAMES_FILENAME=dump_from_geonames.csv
 PR_OPTD_FILENAME=ref_airport_pageranked.csv
@@ -104,9 +104,9 @@ then
 	EXEC_PATH="."
 	TMP_DIR="."
 fi
-# If the RFD dump file is in the current directory, then the current
+# If the REF dump file is in the current directory, then the current
 # directory is certainly intended to be the temporary directory.
-if [ -f ${RFD_RAW_FILENAME} ]
+if [ -f ${REF_RAW_FILENAME} ]
 then
 	TMP_DIR="."
 fi
@@ -146,18 +146,18 @@ LOG_LEVEL=4
 
 ##
 # Input files
-RFD_RAW_FILE=${TOOLS_DIR}${RFD_RAW_FILENAME}
+REF_RAW_FILE=${TOOLS_DIR}${REF_RAW_FILENAME}
 GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 GEONAMES_FILE=${TMP_DIR}${GEONAMES_FILENAME}
 PR_OPTD_FILE=${DATA_DIR}${PR_OPTD_FILENAME}
 
 ##
-# Amadeus RFD
-RFD_CAP_FILENAME=cap_${RFD_RAW_FILENAME}
-RFD_RAW_HEADER_FILENAME=${RFD_RAW_FILENAME}.tmp.hdr
+# Reference data files
+REF_CAP_FILENAME=cap_${REF_RAW_FILENAME}
+REF_RAW_HEADER_FILENAME=${REF_RAW_FILENAME}.tmp.hdr
 #
-RFD_CAP_FILE=${TMP_DIR}${RFD_CAP_FILENAME}
-RFD_RAW_HEADER_FILE=${TMP_DIR}${RFD_RAW_HEADER_FILENAME}
+REF_CAP_FILE=${TMP_DIR}${REF_CAP_FILENAME}
+REF_RAW_HEADER_FILE=${TMP_DIR}${REF_RAW_HEADER_FILENAME}
 
 ##
 # OPTD
@@ -166,7 +166,7 @@ SORTED_PR_OPTD_FILENAME=sorted_${PR_OPTD_FILENAME}
 SORTED_PR_OPTD_FILE=${TMP_DIR}${SORTED_PR_OPTD_FILENAME}
 
 ##
-# Combination of Geonames and RFD
+# Combination of Geonames and reference data
 GEO_COMB_FILENAME=${GEONAMES_FILENAME}.withrfd
 CUT_GEO_COMB_FILENAME=${GEO_COMB_FILENAME}.cut
 GEO_COMB_FILE=${TMP_DIR}${GEO_COMB_FILENAME}
@@ -187,8 +187,8 @@ then
 	then
 		\rm -rf ${TMP_DIR}
 	else
-		\rm -f ${FOR_GEONAMES_FILE} ${FOR_GEONAMES_PR_FILE} ${RFD_CAP_FILE}
-		\rm -f ${GEO_COMB_FILE} ${CUT_GEO_COMB_FILE} ${RFD_RAW_HEADER_FILE}
+		\rm -f ${FOR_GEONAMES_FILE} ${FOR_GEONAMES_PR_FILE} ${REF_CAP_FILE}
+		\rm -f ${GEO_COMB_FILE} ${CUT_GEO_COMB_FILE} ${REF_RAW_HEADER_FILE}
 
 	fi
 	exit
@@ -200,14 +200,14 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
-	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Amadeus RFD CRB_CITY data dump file> [<log level>]]]"
+	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Reference CITY data file> [<log level>]]]"
 	echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
 	echo "  - Default path for the OPTD-maintained file of best known coordinates: '${GEO_OPTD_FILE}'"
-	echo "  - Default path for the Amadeus RFD CRB_CITY data dump file: '${RFD_RAW_FILE}'"
+	echo "  - Default path for the reference CITY data file: '${REF_RAW_FILE}'"
 	echo "  - Default log level: ${LOG_LEVEL}"
 	echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
 	echo "  - Generated files:"
-	echo "    + '${RFD_CAP_FILE}'"
+	echo "    + '${REF_CAP_FILE}'"
 	echo "    + '${FOR_GEONAMES_FILE}'"
 	echo "    + '${FOR_GEONAMES_PR_FILE}'"
 	echo
@@ -221,7 +221,7 @@ then
 fi
 if [ "$1" = "-r" -o "$1" = "--rfd" ]
 then
-	displayRfdDetails
+	displayRefDetails
 	exit
 fi
 
@@ -268,27 +268,27 @@ fi
 
 
 ##
-# RFD data dump file with geographical coordinates
+# Reference data file with geographical coordinates
 if [ "$2" != "" ]
 then
-	RFD_RAW_FILE="$2"
-	RFD_RAW_FILENAME=`basename ${RFD_RAW_FILE}`
-	RFD_CAP_FILENAME=cap_${RFD_RAW_FILENAME}
-	if [ "${RFD_RAW_FILE}" = "${RFD_RAW_FILENAME}" ]
+	REF_RAW_FILE="$2"
+	REF_RAW_FILENAME=`basename ${REF_RAW_FILE}`
+	REF_CAP_FILENAME=cap_${REF_RAW_FILENAME}
+	if [ "${REF_RAW_FILE}" = "${REF_RAW_FILENAME}" ]
 	then
-		RFD_RAW_FILE="${TMP_DIR}${RFD_RAW_FILE}"
+		REF_RAW_FILE="${TMP_DIR}${REF_RAW_FILE}"
 	fi
 fi
-RFD_CAP_FILE=${TMP_DIR}${RFD_CAP_FILENAME}
+REF_CAP_FILE=${TMP_DIR}${REF_CAP_FILENAME}
 
-if [ ! -f "${RFD_RAW_FILE}" ]
+if [ ! -f "${REF_RAW_FILE}" ]
 then
 	echo
-	echo "[$0:$LINENO] The '${RFD_RAW_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${REF_RAW_FILE}' file does not exist."
 	echo
 	if [ "$2" = "" ]
 	then
-		displayRfdDetails
+		displayRefDetails
 	fi
 	exit -1
 fi
@@ -303,9 +303,9 @@ fi
 
 ##
 # Capitalise the names
-RFD_CAPITILISER=${EXEC_PATH}rfd_capitalise.awk
-awk -F'^' -v log_level=${LOG_LEVEL} -f ${RFD_CAPITILISER} ${RFD_RAW_FILE} \
-	> ${RFD_CAP_FILE}
+REF_CAPITILISER=${EXEC_PATH}rfd_capitalise.awk
+awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${REF_RAW_FILE} \
+	> ${REF_CAP_FILE}
 
 ##
 # Header
@@ -314,11 +314,11 @@ HDR_2="${HDR_1}^page_rank"
 
 ##
 # Extract the header into a temporary file
-grep "^iata_code\(.\+\)" ${RFD_CAP_FILE} > ${RFD_RAW_HEADER_FILE}
+grep "^iata_code\(.\+\)" ${REF_CAP_FILE} > ${REF_RAW_HEADER_FILE}
 
 # Remove the header
-sed -i -e "s/^iata_code\(.\+\)//g" ${RFD_CAP_FILE}
-sed -i -e "/^$/d" ${RFD_CAP_FILE}
+sed -i -e "s/^iata_code\(.\+\)//g" ${REF_CAP_FILE}
+sed -i -e "/^$/d" ${REF_CAP_FILE}
 
 ##
 # Extract only the IATA code from the file
@@ -326,16 +326,16 @@ cut -d'^' -f2 ${GEONAMES_FILE_MISSING} > ${GEONAMES_FILE_TMP}
 \mv -f ${GEONAMES_FILE_TMP} ${GEONAMES_FILE_MISSING}
 
 ##
-# Check that all the POR are in RFD.
-join -t'^' -a 2 ${RFD_CAP_FILE} ${GEONAMES_FILE_MISSING} > ${GEO_COMB_FILE}
+# Check that all the POR are in the reference data file.
+join -t'^' -a 2 ${REF_CAP_FILE} ${GEONAMES_FILE_MISSING} > ${GEO_COMB_FILE}
 awk -F'^' '{if (NF != 18) {printf ($0 "\n")}}' ${GEO_COMB_FILE} \
 	> ${CUT_GEO_COMB_FILE}
-# If there are any non-RFD entries, suggest to remove them.
-NB_NON_RFD_ROWS=`wc -l ${CUT_GEO_COMB_FILE} | cut -d' ' -f1`
-if [ ${NB_NON_RFD_ROWS} -gt 0 ]
+# If there are any non-referenced entries, suggest to remove them.
+NB_NON_REF_ROWS=`wc -l ${CUT_GEO_COMB_FILE} | cut -d' ' -f1`
+if [ ${NB_NON_REF_ROWS} -gt 0 ]
 then
 	echo
-	echo "${NB_NON_RFD_ROWS} POR are not in RFD, but present in the ${GEONAMES_FILE_MISSING} file. To see them:"
+	echo "${NB_NON_REF_ROWS} POR are not in the reference data, but present in the ${GEONAMES_FILE_MISSING} file. To see them:"
 	echo "less ${CUT_GEO_COMB_FILE}"
 	echo "Remove those entries from the ${GEONAMES_FILE_MISSING} file:"
 	echo "vi ${GEONAMES_FILE_MISSING}"
@@ -345,7 +345,7 @@ fi
 
 ##
 # Generate the file for Geonames
-join -t'^' -a 2 ${RFD_CAP_FILE} ${GEONAMES_FILE_MISSING} > ${FOR_GEONAMES_FILE}
+join -t'^' -a 2 ${REF_CAP_FILE} ${GEONAMES_FILE_MISSING} > ${FOR_GEONAMES_FILE}
 NB_ROWS=`wc -l ${FOR_GEONAMES_FILE} | cut -d' ' -f1`
 
 ##
@@ -360,7 +360,7 @@ sort -t'^' -k19nr,19 ${FOR_GEONAMES_PR_FILE} > ${GEONAMES_FILE_TMP}
 
 ##
 # Re-add the headers
-cat ${RFD_RAW_HEADER_FILE} ${FOR_GEONAMES_FILE} > ${GEONAMES_FILE_TMP}
+cat ${REF_RAW_HEADER_FILE} ${FOR_GEONAMES_FILE} > ${GEONAMES_FILE_TMP}
 \mv -f ${GEONAMES_FILE_TMP} ${FOR_GEONAMES_FILE}
 \rm -f ${FOR_GEONAMES_FILE}.hdr
 
@@ -374,7 +374,7 @@ cat ${FOR_GEONAMES_FILE}.hdr ${FOR_GEONAMES_PR_FILE} > ${GEONAMES_FILE_TMP}
 echo
 echo "Reporting"
 echo "---------"
-echo "Both the ${FOR_GEONAMES_FILE} and ${FOR_GEONAMES_PR_FILE} files have been generated from ${RFD_RAW_FILE} and ${GEONAMES_FILE_MISSING}."
-echo "${NB_ROWS} rows are in RFD, but missing from Geonames."
+echo "Both the ${FOR_GEONAMES_FILE} and ${FOR_GEONAMES_PR_FILE} files have been generated from ${REF_RAW_FILE} and ${GEONAMES_FILE_MISSING}."
+echo "${NB_ROWS} rows are in the reference data, but missing from Geonames."
 echo "gzip ${FOR_GEONAMES_FILE} ${FOR_GEONAMES_PR_FILE}"
 echo
