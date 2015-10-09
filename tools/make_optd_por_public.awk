@@ -8,7 +8,7 @@
 #    * Time-zones for a few POR:            optd_por_tz.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
-#  * Referential Data:                      dump_from_crb_city.csv
+#  * Referential Data:                      dump_from_ref_city.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
 # Notes:

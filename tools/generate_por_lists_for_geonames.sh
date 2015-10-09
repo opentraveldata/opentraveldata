@@ -51,27 +51,27 @@ displayRefDetails() {
 	echo "mkdir -p ~/dev/dataanalysis"
 	echo "cd ~/dev/dataanalysis"
 	echo "git clone git://<gitorious/bitbucket>/dataanalysis/dataanalysis.git dataanalysisgit"
-	echo "cd \${DAREF}/RFD"
+	echo "cd \${DAREF}/REF"
 	echo "# The following script fetches a SQLite file, holding reference data,"
 	echo "# and translates it into three MySQL-compatible SQL files:"
-	echo "./fetch_sqlite_rfd.sh # it may take several minutes"
-	echo "# It produces three create_*_rfd_*${SNAPSHOT_DATE}.sql files, which are then"
+	echo "./fetch_sqlite_ref.sh # it may take several minutes"
+	echo "# It produces three create_*_ref_*${SNAPSHOT_DATE}.sql files, which are then"
 	echo "# used by the following script, in order to load the reference data into MySQL:"
-	echo "./create_rfd_user.sh"
-	echo "./create_rfd_db.sh"
-	echo "./create_all_tables.sh geo rfd_rfd ${SNAPSHOT_DATE}"
+	echo "./create_ref_user.sh"
+	echo "./create_ref_db.sh"
+	echo "./create_all_tables.sh geo ref_ref ${SNAPSHOT_DATE}"
 	if [ "${TMP_DIR}" = "/tmp/por/" ]
 	then
 		echo "mkdir -p ${TMP_DIR}"
 	fi
 	echo "cd ${MYCURDIR}"
 	echo "# The MySQL CITY table has then to be exported into a CSV file."
-	echo "\${DAREF}/por/extract_por_rfd_crb_city.sh geo rfd_rfd"
-	echo "\cp -f ${TMP_DIR}por_all_rfd_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_crb_city.csv"
+	echo "\${DAREF}/por/extract_ref_por.sh geo ref_ref"
+	echo "\cp -f ${TMP_DIR}por_all_ref_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_ref_city.csv"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por.csv ${TMP_DIR}optd_airports.csv"
-	echo "\${DAREF}/update_airports_csv_after_getting_crb_city_dump.sh"
+	echo "\${DAREF}/update_airports_csv_after_getting_ref_city_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo "#####################"
 	echo
@@ -79,7 +79,7 @@ displayRefDetails() {
 
 ##
 # Input file names
-REF_RAW_FILENAME=dump_from_crb_city.csv
+REF_RAW_FILENAME=dump_from_ref_city.csv
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 GEONAMES_FILENAME=dump_from_geonames.csv
 PR_OPTD_FILENAME=ref_airport_pageranked.csv
@@ -167,7 +167,7 @@ SORTED_PR_OPTD_FILE=${TMP_DIR}${SORTED_PR_OPTD_FILENAME}
 
 ##
 # Combination of Geonames and reference data
-GEO_COMB_FILENAME=${GEONAMES_FILENAME}.withrfd
+GEO_COMB_FILENAME=${GEONAMES_FILENAME}.withref
 CUT_GEO_COMB_FILENAME=${GEO_COMB_FILENAME}.cut
 GEO_COMB_FILE=${TMP_DIR}${GEO_COMB_FILENAME}
 CUT_GEO_COMB_FILE=${TMP_DIR}${CUT_GEO_COMB_FILENAME}
@@ -219,7 +219,7 @@ then
 	displayGeonamesDetails
 	exit
 fi
-if [ "$1" = "-r" -o "$1" = "--rfd" ]
+if [ "$1" = "-r" -o "$1" = "--ref" ]
 then
 	displayRefDetails
 	exit
@@ -303,7 +303,7 @@ fi
 
 ##
 # Capitalise the names
-REF_CAPITILISER=${EXEC_PATH}rfd_capitalise.awk
+REF_CAPITILISER=${EXEC_PATH}ref_capitalise.awk
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${REF_RAW_FILE} \
 	> ${REF_CAP_FILE}
 

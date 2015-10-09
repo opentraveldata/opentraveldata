@@ -2,7 +2,7 @@
 # That AWK script creates and adds a primary key for the reference data file.
 # It uses the following input files:
 #  * Reference data file:
-#      dump_from_crb_city.csv
+#      dump_from_ref_city.csv
 #  * OPTD-maintained list of best known coordinates:
 #      optd_por_best_known_so_far.csv
 #
@@ -32,7 +32,7 @@
 #
 # That script relies on the OPTD-maintained list of POR (points of reference),
 # provided by the OpenTravelData project (http://github.com/opentraveldata/optd).
-# Issue the 'prepare_rfd_dump_file.sh --geonames' command to see more detailed
+# Issue the 'prepare_ref_dump_file.sh --geonames' command to see more detailed
 # instructions.
 #
 
@@ -46,7 +46,7 @@
 BEGIN {
     # Global variables
     error_stream = "/dev/stderr"
-    awk_file = "rfd_pk_creator.awk"
+    awk_file = "ref_pk_creator.awk"
 
     # Initialisation of the Geo library
     initGeoAwkLib(awk_file, error_stream, log_level)

@@ -6,7 +6,7 @@
 #    * Alliance memberships:                optd_airline_alliance_membership.csv
 #    * No longer valid airlines:            optd_airline_no_longer_valid.csv
 #    * Nb of flight-dates:                  ref_airline_nb_of_flights.csv
-#  * Referential Data:                      dump_from_crb_airline.csv
+#  * Referential Data:                      dump_from_ref_airline.csv
 #  * [Future] Geonames list of airlines:    dump_from_geonames.csv
 #
 # Sample output lines:

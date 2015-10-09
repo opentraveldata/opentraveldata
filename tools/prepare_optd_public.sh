@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # One parameter is optional for this script:
-# - the file-path of the data dump file extracted from RFD.
+# - the file-path of the data dump file extracted from Reference Data.
 #
 
 displayOriDetails() {

@@ -42,7 +42,7 @@
 BEGIN {
 	# Global variables
 	error_stream = "/dev/stderr"
-	awk_file = "rfd_capitalise.awk"
+	awk_file = "ref_capitalise.awk"
 	idx_por = 0
 }
 
@@ -136,7 +136,7 @@ BEGIN {
 	exp_nb_fields = 6
 	if (NF != exp_nb_fields) {
 		print ("[" awk_file "] !!!! Error at line #" FNR " for the '" iata_code \
-			   "' IATA code (in the dump_from_crb_airline.csv file); " NF \
+			   "' IATA code (in the dump_from_ref_airline.csv file); " NF \
 			   " fields instead of " exp_nb_fields						\
 			   "- Full line: " $0) > error_stream
 	}

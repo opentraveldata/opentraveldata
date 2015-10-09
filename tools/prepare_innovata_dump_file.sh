@@ -270,7 +270,8 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 #sort -t'^' -k1,1 ${INN_WPK_FILE}
 
 ##
-# Generate a dump file in a format pretty much the same as for RFD and Geonames
+# Generate a dump file in a format pretty much the same
+# as for reference data and Geonames
 cut -d'^' -f 2- ${INN_WPK_FILE} > ${INN_DMP_FILE}
 
 ##

@@ -873,7 +873,7 @@ function resetGeonamesLineList() {
 ##
 # Reset the list of last reference data POR entries
 function resetREFLineList() {
-    rfd_last_full_line = ""
+    ref_last_full_line = ""
 }
 
 ##
@@ -1349,7 +1349,7 @@ function displayGeonamesPOREntries() {
 function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
 			 __rrlParamFullLine, __rrlParamNbOfPOR) {
     # Register the fact that the AWK script runs on the reference data file
-    # (most probably called from the rfd_pk_creator.awk file)
+    # (most probably called from the ref_pk_creator.awk file)
     __glGlobalIsForREF = 1
 
     # Display the last read POR entry, when:
@@ -1374,10 +1374,10 @@ function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
     #	> __glGlobalErrorStream
 
     # Store the location type of the reference data POR entry
-    rfd_last_loctype = __rrlParamLocType
+    ref_last_loctype = __rrlParamLocType
 
     # Store the full details of the reference data POR entry
-    rfd_last_full_line = __rrlParamFullLine
+    ref_last_full_line = __rrlParamFullLine
 }
 
 ##
@@ -1394,7 +1394,7 @@ function displayREFPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
     #  * The location type (field #2)
     #  * The airport flag (field #9)
     #  * The commercial flag (field #18)
-    drpwkFullLine = rfd_last_full_line
+    drpwkFullLine = ref_last_full_line
 
     # Reparse the line
     OFS = FS
@@ -1438,7 +1438,7 @@ function displayREFPOREntries() {
 	geo_iata_code == __glGlobalDebugIataCode) {
 	print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "    \
 	       optd_por_loctype_list[geo_iata_code] ", REF loc_type: " \
-	       rfd_last_loctype) > __glGlobalErrorStream
+	       ref_last_loctype) > __glGlobalErrorStream
     }
 
     # Browse all the location types known by OPTD for that IATA code
@@ -1464,7 +1464,7 @@ function displayREFPOREntries() {
 		geo_iata_code == __glGlobalDebugIataCode) {
 		print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
 		       drpeOPTDLocType ", OPTD GeoID: " drpeOPTDGeoID	\
-		       ", REF loc_type list: " rfd_last_loctype)	\
+		       ", REF loc_type list: " ref_last_loctype)	\
 		    > __glGlobalErrorStream
 	    }
 	}

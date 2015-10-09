@@ -55,27 +55,27 @@ displayRefDetails() {
 	echo "mkdir -p ~/dev/dataanalysis"
 	echo "cd ~/dev/dataanalysis"
 	echo "git clone git://<gitorious/bitbucket>/dataanalysis/dataanalysis.git dataanalysisgit"
-	echo "cd \${DAREF}/RFD"
+	echo "cd \${DAREF}/REF"
 	echo "# The following script fetches a SQLite file, holding reference data,"
 	echo "# and translates it into three MySQL-compatible SQL files:"
-	echo "./fetch_sqlite_rfd.sh # it may take several minutes"
-	echo "# It produces three create_*_rfd_*${SNAPSHOT_DATE}.sql files, which are then"
+	echo "./fetch_sqlite_ref.sh # it may take several minutes"
+	echo "# It produces three create_*_ref_*${SNAPSHOT_DATE}.sql files, which are then"
 	echo "# used by the following script, in order to load the reference data into MySQL:"
-	echo "./create_rfd_user.sh"
-	echo "./create_rfd_db.sh"
-	echo "./create_all_tables.sh rfd rfd_rfd ${SNAPSHOT_DATE} localhost"
+	echo "./create_ref_user.sh"
+	echo "./create_ref_db.sh"
+	echo "./create_all_tables.sh ref ref_ref ${SNAPSHOT_DATE} localhost"
 	if [ "${TMP_DIR}" = "/tmp/por/" ]
 	then
 		echo "mkdir -p ${TMP_DIR}"
 	fi
 	echo "cd ${MYCURDIR}"
-	echo "# The MySQL CRB_CITY table has then to be exported into a CSV file."
-	echo "\${DAREF}/por/extract_por_rfd_crb_city.sh rfd rfd_rfd localhost"
-	echo "\cp -f ${TMP_DIR}por_all_rfd_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_crb_city.csv"
+	echo "# The POR database table has then to be exported into a CSV file."
+	echo "\${DAREF}/por/extract_ref_por.sh ref ref_ref localhost"
+	echo "\cp -f ${TMP_DIR}por_all_ref_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_ref_city.csv"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_pageranked.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por.csv ${TMP_DIR}optd_airports.csv"
-	echo "\${DAREF}/update_airports_csv_after_getting_crb_city_dump.sh"
+	echo "\${DAREF}/update_airports_csv_after_getting_ref_city_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo "#####################"
 	echo
@@ -83,8 +83,8 @@ displayRefDetails() {
 
 ##
 # Input file names
-AIR_REF_FILENAME=dump_from_crb_airline.csv
-GEO_REF_FILENAME=dump_from_crb_city.csv
+AIR_REF_FILENAME=dump_from_ref_airline.csv
+GEO_REF_FILENAME=dump_from_ref_city.csv
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##
@@ -192,8 +192,8 @@ then
 	echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
 	echo "  - Default path for the OPTD-maintained file of best known coordinates: '${GEO_OPTD_FILE}'"
 	echo "  - Default path for the reference data files: '${REF_DIR}'"
-	echo "    + 'Airlines (CRB_AIRLINE): ${AIR_REF_FILE}'"
-	echo "    + 'Airports/cities (CRB_CITY): ${GEO_REF_FILE}'"
+	echo "    + 'Airlines: ${AIR_REF_FILE}'"
+	echo "    + 'Airports/cities: ${GEO_REF_FILE}'"
 	echo "  - Default log level: ${LOG_LEVEL}"
 	echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
 	echo "  - Generated files:"
@@ -211,7 +211,7 @@ then
 	displayGeonamesDetails
 	exit
 fi
-if [ "$1" = "-r" -o "$1" = "--rfd" ]
+if [ "$1" = "-r" -o "$1" = "--ref" ]
 then
 	displayRefDetails
 	exit
@@ -301,7 +301,7 @@ fi
 
 ##
 # Capitalise the names of the airline dump file, if existing
-REF_CAPITILISER=rfd_capitalise.awk
+REF_CAPITILISER=ref_capitalise.awk
 if [ -f "${AIR_REF_FILE}" ]
 then
 	awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${AIR_REF_FILE} \
@@ -316,7 +316,7 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${GEO_REF_FILE} \
 ##
 # Generate a second version of the geographical file with the OPTD primary key
 # (integrating the location type)
-OPTD_PK_ADDER=${TOOLS_DIR}rfd_pk_creator.awk
+OPTD_PK_ADDER=${TOOLS_DIR}ref_pk_creator.awk
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 	${GEO_OPTD_FILE} ${GEO_REF_CAP_FILE} > ${GEO_REF_WPK_FILE}
 #sort -t'^' -k1,1 ${GEO_REF_WPK_FILE}
