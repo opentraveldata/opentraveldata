@@ -4,6 +4,7 @@
 0C^2^<>Catovair
 0E^1^Amadeus PDF 0E<>Amadeus Pdf 0e
 0J^1^Premium Jet AG<>Premium Jet Ag
+0O^1^STA Travel<>Sta Travel
 0O^2^<>Sta Travel
 0P^1^Palau Pacific Airways<>Palau Asia Pacific Air
 1C^1^EDS Information Business<>Eds Information Business
@@ -25,6 +26,8 @@
 2D^2^<>Dynamic
 2H^1^Thalys<>Thalys International
 2H^2^<>Thalys
+2I^1^Star Perú<>Star Peru
+2I^2^<>Star Peru
 2J^2^<>Air Burkina
 2L^2^2L Helvetic<>2l HELVETIC
 2P^2^<>Airphil Exp
@@ -180,6 +183,7 @@ A2^2^<>Astra Airline
 A3^2^<>Aegean Air
 A5^1^HOP!<>Hop
 A5^2^<>Airlinair
+A7^2^<>Air Comet
 A8^1^Aerolink Uganda<>Aerolink Uganda Limited
 A8^2^<>Benin Golf
 AA^2^<>American
@@ -270,6 +274,7 @@ AV^2^<>Avianca
 AVA^2^<>Avianca
 AVN^2^<>Air Vanuatu
 AWI^2^<>Airwisconsi
+AWN^2^<>Air Comet
 AWQ^1^Indonesia AirAsia<>Pt Indonesia Airasia
 AWQ^2^Awair<>Ptindairasia
 AWU^1^Sylt Air<>Sylt Air Gmbh
@@ -496,6 +501,8 @@ EZS^1^easyJet Switzerland<>Easyjet Switzerland
 EZY^1^easyJet<>Easyjet
 EZY^2^<>Easyjet
 F5^1^Fly 540<>
+F6^1^<>Plus Ultra
+F6^2^<>Fst Cambodia
 F7^1^Etihad Regional<>Darwin Airline
 F7^2^Darwin Airline<>Darwin
 F8^2^<>Air Montreal
@@ -786,9 +793,7 @@ LR^2^Lacsa<>L A C S A
 LRC^1^Avianca Costa Rica<>Lacsa
 LRC^2^Lacsa<>L A C S A
 LS^1^Jet2.com<>Jet2 Com
-LT^2^<>Air Lituanica
 LTC^1^<>Smartlynx Airlines
-LTU^2^<>Air Lituanica
 LU^1^LAN Express<>Lan Express
 LX^1^Swiss International Air Lines<>Swiss International Airlines
 LY^1^El Al<>El Al Israel Airlines
@@ -829,6 +834,7 @@ MN^1^Comair<>Comair Ltd
 MN^2^<>Comair
 MNB^2^<>Mng Air Cargo
 MO^2^<>Calm Air Intl
+MOV^2^<>Vim Airlines
 MP^2^<>Martinair
 MPH^2^<>Martinair
 MRJ^1^<>Meraj Air
@@ -848,7 +854,7 @@ N7^1^Nordic Regional Airlines<>
 N7^2^Norra<>Lagun Air
 NAX^1^Norwegian Air Shuttle (NAS)<>Norwegian Air Shuttle
 NAX^2^<>Norwegian Air
-NB^1^Sterling Air<>Skypower Express
+NB^1^Sterling Airlines<>Skypower Express
 NC^1^Cobham Aviation Services Australia<>National Jet Systems
 NC^2^QantasLink<>
 ND^1^FMI Air<>Fmi Air
@@ -856,6 +862,7 @@ ND^2^<>Intair Inc
 NE^2^<>Nesma
 NF^2^<>Air Vanuatu
 NH^2^ANA<>All Nippon
+NI^2^Portugália–Companhia Portuguesa de Transportes Aéreos<>Portugalia
 NJ^1^Nordic Global Airlines<>Aero Vip
 NJS^1^<>National Jet Systems
 NK^2^<>Spirit Airlin
@@ -865,6 +872,7 @@ NLY^2^<>Niki
 NM^1^Manx<>
 NMA^2^<>Nesma
 NMB^2^<>Air Namibia
+NN^2^<>Vim Airlines
 NO^1^Neos<>Neos Spa
 NQ^1^Air Japan<>Air Japan Company Ltd
 NR^1^Al-Naser Airlines<>Al Naser Airlines
@@ -930,6 +938,7 @@ PE^2^<>Peoples Vienn
 PEV^2^<>Peoples Vienn
 PF^2^JetX<>Primera Air
 PG^2^<>Bangkok Air
+PGA^2^Portugália–Companhia Portuguesa de Transportes Aéreos<>Portugalia
 PGT^2^<>Pegasus
 PIA^1^Pakistan International Airlines (PIA)<>Pakistan International
 PIA^2^<>P I A
@@ -948,6 +957,9 @@ PSC^1^Pascan Aviation<>Pascan Aviation Inc
 PT^2^<>West Air Swed
 PTB^2^<>Passaredo
 PTR^2^Petra Airlines<>
+PU^1^Plus Ultra Líneas Aéreas<>Plus Ultra Lineas Aereas
+PU^2^<>Plus Ultra
+PW^2^<>Precision Air
 PWD^1^Pan American World Airways Dominicana<>Pan American World
 PWD^2^PAWA Dominicana<>Pawad
 PX^2^<>Air Niugini
@@ -979,7 +991,6 @@ QR^2^<>Qatar Airways
 QS^2^Travel Service<>Travelservice
 QTR^2^<>Qatar Airways
 QU^1^UTair Ukraine<>Airline Utair Ukraine
-QU^2^<>Utair Ukraine
 QV^2^<>Lao Airlines
 QX^2^<>Horizon Air
 QXE^2^<>Horizon Air
@@ -1090,6 +1101,8 @@ SRK^1^SkyWork Airlines<>Skywork Airlines
 SRK^2^<>Skywork Air
 SRQ^1^Tiger Air Philippines<>Tigerair Philippines
 SRQ^2^<>Tigerair
+SRU^1^Star Perú<>Star Peru
+SRU^2^<>Star Peru
 SS^2^<>Corse Air
 ST^2^<>Germania
 STP^1^STP Airways<>Stp Airways

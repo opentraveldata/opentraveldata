@@ -119,7 +119,7 @@ air-airline-service^^^^^ZZ^0^Airline Service^^^^^
 air-airlines-png^^1987-01-01^^^CG^626^Airlines PNG^^^^^http://en.wikipedia.org/wiki/Airlines_PNG
 air-airline-taimyr^^2009-01-01^^TYA^Y7^476^NordStar^Taimyr Air Company^^^^http://en.wikipedia.org/wiki/NordStar
 air-air-leisure-egypt^^^^ALD^AL^0^Air Leisure^^^^^http://en.wikipedia.org/wiki/Air_Leisure
-air-air-lituanica^^^^LTU^LT^431^Air Lituanica^^^^^
+air-air-lituanica^^2013-05-01^2015-05-22^LTU^LT^431^Air Lituanica^^^^^http://en.wikipedia.org/wiki/Air_Lituanica
 air-air-macau^^^^AMU^NX^675^Air Macau^^^^^
 air-air-madagascar^^^^MDG^MD^258^Air Madagascar^^^^^
 air-air-malawi^^^^AML^QM^167^Air Malawi^^^^^
@@ -134,7 +134,7 @@ air-air-mobility-command^^^^^MC^0^Air Mobility Command^^^^^
 air-air-moldova^^^^MLD^9U^572^Air Moldova^^^^^
 air-air-namibia^^^^NMB^SW^186^Air Namibia^^^^^
 air-air-new-zealand^^1965-04-01^^ANZ^NZ^86^Air New Zealand^New Zealand^Star Alliance^Member^^http://en.wikipedia.org/wiki/Air_New_Zealand
-air-air-niamey^^^^AWN^A7^0^Air Niamey^Air Comet^^^^
+air-air-niamey^^2010-01-01^^AWN^A7^0^Air Niamey^^^^^http://en.wikipedia.org/wiki/Air_Niamey
 air-air-nigeria^^^^VGN^VK^786^Air Nigeria^^^^^
 air-air-nippon-wings^^2010-10-01^^AKX^EH^0^ANA Wings^^^^^http://en.wikipedia.org/wiki/ANA_Wings
 air-air-niugini^^^^ANG^PX^656^Air Niugini^^^^^
@@ -771,12 +771,12 @@ air-petra-airlines^^^^PTR^9P^311^Air Arabia Jordan^Petra Airlines^^^^http://en.w
 air-philippine-airlines^^1941-03-15^^PAL^PR^79^Philippine Airlines^^^^^http://en.wikipedia.org/wiki/Philippine_Airlines
 air-piedmont-airlines^^1955-01-01^^PDT^PT^531^Piedmont Airlines^^^^^http://en.wikipedia.org/wiki/Piedmont_Airlines
 air-pison-airways^^^^LFM^3I^0^Pison Airways Ltd^Virgin Austra^^^^
-air-plus-ultra^^^^^F6^0^Plus Ultra^Fst Cambodia^^^^
+air-plus-ultra^^^^^PU^663^Plus Ultra Líneas Aéreas^^^^^
 air-pobeda^^2014-12-01^^^DP^0^Pobeda^^^^^http://en.wikipedia.org/wiki/Pobeda_(airline)
 air-polar-airlines^^^^RKA^PI^545^Polar Airlines^^^^P^
 air-porter-airlines^^2006-10-23^^POE^PD^451^Porter Airlines^^^^^http://en.wikipedia.org/wiki/Porter_Airlines
-air-portugalia^^^^PGA^NI^685^Portugalia^Portugalia^^^^
-air-precision-air^^^^^PW^31^Precision Air^Precision Air^^^^
+air-portugalia^^1988-01-01^^PGA^NI^685^Portugalia^Portugália–Companhia Portuguesa de Transportes Aéreos^^^^http://en.wikipedia.org/wiki/Portug%C3%A1lia
+air-precision-air^^1993-01-01^^PRF^PW^31^Precision Air^^^^^http://en.wikipedia.org/wiki/Precision_Air
 air-premium-jet^^^^^0J^254^Premium Jet AG^^^^^
 air-primair^^^^^J1^528^Primair^^^^^
 air-primera-air^^2003-01-01^^PRI^PF^0^Primera Air^^^^^http://en.wikipedia.org/wiki/Primera_Air
@@ -913,9 +913,9 @@ air-sriwijaya-air^^2003-11-10^^SJY^SJ^977^Sriwijaya Air^^^^^http://en.wikipedia.
 air-star-airways^^^^STB^4S^0^Star Airways^Aerohonduras^^^^
 air-starbow^^^^IKM^S9^759^Starbow^Starbow^^^^
 air-star-flyer^^2006-03-16^^SFJ^7G^922^StarFlyer^^^^^http://en.wikipedia.org/wiki/StarFlyer
-air-star-peru^^^^SRU^2I^156^Star Peru^^^^^
-air-sta-travel^^^^^0O^0^Sta Travel^^^^^
-air-sterling-air^^^^^NB^373^Sterling Air^^^^^
+air-star-peru^^1997-05-01^^SRU^2I^156^Star Perú^^^^^http://en.wikipedia.org/wiki/Star_Per%C3%BA
+air-sta-travel^^1971-01-01^^^0O^0^STA Travel^^^^^http://en.wikipedia.org/wiki/STA_Travel
+air-sterling-air^^1962-01-01^2008-10-29^SNB^NB^373^Sterling Airlines^^^^^http://en.wikipedia.org/wiki/Sterling_Airlines
 air-sterling-blue^^^^DEX^DM^0^Asian Air^Sterling Blue^^^^
 air-stp-airways^^^^STP^8F^470^STP Airways^^^^^
 air-sudan-airways^^^^SUD^SD^200^Sudan Airways^^^^^
@@ -1025,11 +1025,11 @@ air-viaair^^2014-01-01^^SRY^VC^359^ViaAir^Via Airlines^^^^http://en.wikipedia.or
 air-vieques-air-link^^1965-01-01^^VES^V4^0^Vieques Air Link^^^^^http://en.wikipedia.org/wiki/Vieques_Air_Link
 air-gol-transportes-aereos^^2001-01-15^^GLO^G3^127^Gol Transportes Aéreos^VRG Linhas Aéreas^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos
 air-velvet-sky-aviation^^^^^VZ^0^Velvet Sky Aviation^^^^^
-air-videcom^^^^^U1^0^Videcom International^^^^^
+air-videcom^^^^^U1^0^Videcom International^^^^^http://en.wikipedia.org/wiki/Videcom_international
 air-vietjet-aviation^^2011-12-25^^VJC^VJ^978^VietJet Air^VietJet Aviation^^^^http://en.wikipedia.org/wiki/VietJet_Air
 air-vietnam-airlines^^1956-01-01^^HVN^VN^738^Vietnam Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/Vietnam_Airlines
 air-villa-air^^^^VQI^VP^0^Villa Air^^^^^
-air-vim-airlines^^^^MOV^NN^823^Vim Airlines^Vim Airlines^^^^
+air-vim-airlines^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^http://en.wikipedia.org/wiki/VIM_Airlines
 air-vincent-aviation^^^^VIN^BF^0^Vincent Aviation^^^^P^
 air-virgin-america^^2007-08-08^^VRD^VX^984^Virgin America^^^^^http://en.wikipedia.org/wiki/Virgin_America
 air-virgin-atlantic^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^http://en.wikipedia.org/wiki/Virgin_Atlantic
