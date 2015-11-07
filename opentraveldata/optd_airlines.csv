@@ -185,7 +185,7 @@ air-air-via^^^^VIM^VL^0^Air Via^Vancouver Air^^^^^
 air-airways-international^^^^^J6^0^Airways International^^^^^^2562
 air-air-wisconsin^^^^AWI^ZW^303^Air Wisconsin^^^^^^163081
 air-air-zimbabwe^^^^AZW^UM^168^Air Zimbabwe^^^^^^4388
-air-ak-bars^^^^^2B^441^AK Bars Aero^^^^P^^
+air-ak-bars^^1953-07-10^^BGM^2B^441^Ak Bars Aero^^^^P^http://en.wikipedia.org/wiki/Ak_Bars_Aero^
 air-aklak-air^^^^AKK^6L^709^Aklak Air^^^^^^3561
 air-aladia-airlines^^^^^9A^0^Aladia Airlines^Airatlantic^^^^^
 air-alajnihah-air-transport^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^http://en.wikipedia.org/wiki/Alajnihah_Airways^
@@ -477,7 +477,7 @@ air-etihad-regional^^2003-01-01^^DWT^F7^33^Etihad Regional^Darwin Airline^^^^htt
 air-eurasia-air^^^^^6Z^0^Eurasia Air^^^^^^
 air-euroatlantic-airways^^^^MMZ^YU^551^Euroatlantic Airways^^^^^^105
 air-eurocypria-airlines^^^^AUK^UI^0^Auric Air Services^^^^^^14012
-air-eurolot^^^^ELO^K2^78^Eurolot^^^^^^
+air-eurolot^1^1996-01-01^2015-03-31^ELO^K2^78^Eurolot^^^^^http://en.wikipedia.org/wiki/Eurolot^
 air-europe-airpost^^^^FPO^5O^558^Europe Airpost^^^^^^1186
 air-european-air-transport^^^^^QY^0^European Air Transport^^^^^^
 air-eurowings^^1994-01-01^^EWG^EW^104^Eurowings^^^^^http://en.wikipedia.org/wiki/Eurowings^52270
@@ -541,6 +541,7 @@ air-georgian-air^^^^GIL^4L^0^Georgian International Air^^^^^^
 air-georgian-air^1^2013-01-01^2013-12-31^GIL^4L^0^Georgian International Airlines^^^^^http://en.wikipedia.org/wiki/Georgian_International_Airlines^
 air-georgian-airways^^^^^A9^606^Georgian Airways^Arizena Air^^^^^2896
 air-germania^^1978-01-01^^GMI^ST^246^Germania^^^^^http://en.wikipedia.org/wiki/Germania_%28airline%29^19941
+air-germania-flug^^2015-03-26^^GSW^GM^581^Germania Flug^^^^^http://en.wikipedia.org/wiki/Germania_Flug^174
 air-germanwings^^1997-01-01^^GWI^4U^51^Germanwings^^^^^http://en.wikipedia.org/wiki/Germanwings^117096
 air-ghadames-air-transport^1^2004-01-01^2006-12-31^GHT^G6^0^Ghadames Air Transport^^^^^http://en.wikipedia.org/wiki/Ghadames_Air_Transport^
 air-girjet^^^^^8G^0^Girjet^^^^^^

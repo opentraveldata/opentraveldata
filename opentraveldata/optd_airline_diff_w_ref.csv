@@ -20,8 +20,6 @@
 1Z^1^Fantasia Info Network<>Fantasia Info Network Lt
 2A^1^Deutsche Bahn<>Deutsche Bahn Ag
 2A^2^<>Deutsche Bahn
-2B^1^AK Bars Aero<>Ak Bars Aero
-2B^2^<>Ak Bars Aero
 2C^1^SNCF<>Sncf
 2D^2^<>Dynamic
 2H^1^Thalys<>Thalys International
@@ -474,7 +472,7 @@ EK^2^<>Emirates
 EL^2^<>Ellinair
 ELB^2^<>Ellinair
 ELL^2^<>Estonian Air
-ELO^2^<>Eurolot
+ELO^1^<>Eurolot
 ELY^1^El Al<>El Al Israel Airlines
 ELY^2^El Al Israel Airlines<>El Al
 EM^1^Aero Benin<>Empire Airlines
@@ -562,8 +560,8 @@ GIA^2^<>Garuda
 GJS^1^GoJet Airlines<>Gojet Airlines
 GLA^1^Great Lakes Airlines<>Great Lakes Aviation
 GLA^2^<>Great Lakes
-GM^1^<>Germania Flug Ag
-GM^2^<>Air Slovakia
+GM^1^Germania Flug<>Germania Flug Ag
+GM^2^<>Germania Flug
 GMI^2^<>Germania
 GN^2^<>Air Gabon
 GNR^1^<>Gambia Intl Airlines
@@ -692,7 +690,7 @@ JY^1^InterCaribbean Airways<>Intercaribbean Airways
 JY^2^Air Turcks<>Intercaribean
 JZ^1^Jatayu Airlines<>Jatayu Gelang Sejahtera
 JZ^2^Jatayu Gelang Sejahtera<>
-K2^2^<>Eurolot
+K2^1^<>Eurolot
 K4^1^ALS<>Als Ltd
 K5^1^SeaPort Airlines<>Seaport Airlines
 K5^2^Wings of Alaska<>Wings Alaska
@@ -970,7 +968,7 @@ Q3^2^<>Zambian Air
 Q5^2^<>Forty Miles A
 Q7^1^Sky Bahamas Airlines<>Skybahamas Airlines
 Q8^2^<>Trans Air
-QA^1^Cimber A/S<>
+QA^1^Cimber A/S<>Cimber A S
 QA^2^<>Cimber
 QD^1^Dobrolet Airlines<>Dobrolet Lcc
 QE^1^Fars Qeshm Airlines<>
