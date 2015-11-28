@@ -382,6 +382,8 @@ CLH^1^Lufthansa CityLine<>Lufthansa Cityline
 CM^2^Compañía Panameña de Aviación<>Copa Panamena
 CMP^2^Compañía Panameña de Aviación<>Copa Panamena
 CN^2^<>Gd China Air
+CNF^1^Canaryfly<>Canary Fly
+CNF^2^<>Canary Fly
 CO^1^<>Continental Airlines
 CO^2^<>Continental
 COA^1^<>Continental Airlines
@@ -389,6 +391,7 @@ COA^2^<>Continental
 CP^2^<>Canadian
 CPA^2^<>Cathaypacific
 CR^1^OAG Worldwide<>Oag Worldwide
+CRD^2^Cameroon Airlines Corporation<>Camair Co
 CRK^2^<>Hongkong Air
 CRL^2^<>Corse Air
 CRN^1^Aero Caribbean<>Aerocaribbean
@@ -952,6 +955,8 @@ PJ^2^<>Air St Pierre
 PJS^2^<>Jet Aviation
 PK^1^Pakistan International Airlines (PIA)<>Pakistan International
 PK^2^<>P I A
+PM^1^Canaryfly<>Canary Fly
+PM^2^<>Canary Fly
 POT^1^<>Polet Airlines
 PP^2^<>Jet Aviation
 PQ^1^Philippines AirAsia<>Airasia Philippines
@@ -978,6 +983,7 @@ Q7^1^Sky Bahamas Airlines<>Skybahamas Airlines
 Q8^2^<>Trans Air
 QA^1^Cimber A/S<>Cimber A S
 QA^2^<>Cimber
+QC^2^Cameroon Airlines Corporation<>Camair Co
 QD^1^Dobrolet Airlines<>Dobrolet Lcc
 QE^1^Fars Qeshm Airlines<>
 QF^1^Qantas<>Qantas Airways
