@@ -4,6 +4,7 @@ air-aero-flight^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^http://en.wikip
 air-aero-vip-argentina^1^1999-06-23^2010-12-01^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^http://en.wikipedia.org/wiki/Aero_VIP_(Argentina)
 air-airlink-papua-new-guinea^1^1990-06-01^2007-07-27^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)
 air-airmax^1^^2015-05-01^DAP^X8^0^Airmax^^^^^
+air-airways-international^1^1981-01-01^1999-12-31^AWB^HO^0^Airways International^^^^^http://en.wikipedia.org/wiki/Airways_International
 air-air-alps-aviation^1^1999-01-01^2014-03-01^LPV^A6^527^Air Alps Aviation^^^^^http://en.wikipedia.org/wiki/Air_Alps
 air-air-bashkortostan^1^2006-04-10^2013-10-09^^ZU^894^Air Bashkortostan^^^^^http://en.wikipedia.org/wiki/Air_Bashkortostan
 air-air-gabon^1^1951-01-01^2006-12-31^AGN^GN^185^Air Gabon^^^^^http://en.wikipedia.org/wiki/Air_Gabon
@@ -16,11 +17,13 @@ air-air-nippon^1^1974-10-10^2012-04-01^ANK^EL^0^Air Nippon^^^^^http://en.wikiped
 air-air-onix^1^2012-04-28^2013-12-31^^OG^130^Air Onix^^^^^http://en.wikipedia.org/wiki/Air_Onix
 air-air-slovakia^1^1994-01-01^2010-06-01^SVK^GM^0^Air Slovakia^^^^^http://en.wikipedia.org/wiki/Air_Slovakia
 air-air-sunshine^1^1982-01-01^2015-06-30^RSI^YI^0^Air Sunshine^^^^^http://en.wikipedia.org/wiki/Air_Sunshine
+air-alpi-eagles^1^1979-01-01^2007-12-31^ELG^E8^0^Alpi Eagles^^^^^http://en.wikipedia.org/wiki/Alpi_Eagles
 air-al-naser-airlines^1^^2013-12-31^MHK^6N^503^Al Naser Airlines^^^^^http://en.wikipedia.org/wiki/Al-Naser_Airlines
 air-alajnihah-air-transport^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^http://en.wikipedia.org/wiki/Alajnihah_Airways
 air-amadeus-8z^1^^2014-06-01^^8Z^0^Amadeus 8Z^Amadeus 8Z^^^D^
 air-amadeus-pdf-2d^1^^2014-06-01^^2D^0^Amadeus PDF 2D^^^^D^
 air-angkor-airways^1^2007-01-01^2008-12-31^AKW^G6^0^Angkor Airways^^^^^http://en.wikipedia.org/wiki/Angkor_Airways
+air-ata-airlines^1^1973-01-01^2008-04-03^AMT^TZ^0^ATA Airlines^American Trans Air^^^^http://en.wikipedia.org/wiki/ATA_Airlines
 air-athens-airways^1^2008-01-01^2010-12-31^ATW^ZF^0^Athens Airways^^^^^http://en.wikipedia.org/wiki/Athens_Airways
 air-augsburg-airways^1^1980-01-01^2013-12-31^AUB^IQ^614^Augsburg Airways^^^^^http://en.wikipedia.org/wiki/Augsburg_Airways
 air-aviaenergo^1^1992-01-01^2011-12-31^ERG^7U^765^Aviaenergo^^^^^http://en.wikipedia.org/wiki/Aviaenergo
@@ -32,6 +35,7 @@ air-batavia-air^1^2002-01-01^2013-01-31^BTV^Y6^0^Batavia Air^^^^^http://en.wikip
 air-benin-golf^1^2002-01-01^2012-07-31^BGL^A8^0^Benin Golf Air^^^^^http://en.wikipedia.org/wiki/Benin_Golf_Air
 air-bismilah-airlines^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^http://en.wikipedia.org/wiki/Bismillah_Airlines
 air-brindabella-airlines^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^http://en.wikipedia.org/wiki/Brindabella_Airlines
+air-british-midland-international^1^1938-01-01^2012-10-27^BMA^BD^236^British Midland International^^^^^http://en.wikipedia.org/wiki/British_Midland_International
 air-business-air^1^2009-12-01^2015-01-16^BCC^8B^0^Intira Airlines^Business Air^^^^http://en.wikipedia.org/wiki/Intira_Airlines
 air-cai-first^1^1997-10-01^2008-12-31^SMX^XM^0^CAI First^Alitalia Express^^^^http://en.wikipedia.org/wiki/CAI_First
 air-cai-second^1^^2009-01-12^VLE^VE^0^CAI Second^Volare^^^^http://en.wikipedia.org/wiki/CAI_Second
@@ -83,6 +87,7 @@ air-interlink-airlines^1^1998-01-01^2010-12-31^ITK^ID^0^Interlink^^^^P^http://en
 air-inter-airlines^1^1999-12-17^2008-11-18^INX^6K^0^Inter Airlines^^^^^http://en.wikipedia.org/wiki/Inter_Airlines
 air-investavia^1^2007-01-01^2015-06-30^TLG^IV^0^InvestAvia^^^^^
 air-iran-air-tours^1^^^2014-12-31^B9^491^Iran Air Tours^Iran Airtour^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours
+air-island-airlines^1^1930-01-01^2014-12-31^ISA^IS^0^Island Airlines^^^^^http://en.wikipedia.org/wiki/Island_Airlines
 air-islas-airways^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^http://en.wikipedia.org/wiki/Islas_Airways
 air-lade^1^1940-09-01^2014-12-31^LDE^5U^0^LADE^Líneas Aéreas del Estado^^^^http://en.wikipedia.org/wiki/LADE
 air-lagunair-lineas-aeras^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir
@@ -104,6 +109,7 @@ air-olt-express-germany^1^1958-01-01^2013-01-30^OLT^OL^704^OLT Express Germany^^
 air-perla-airlines^1^^2015-01-01^PLV^DP^0^Perla Airlines^Air 2000^^^^http://www.airlineupdate.com/content_public/airlines/airlines-venezuela/perla.htm
 air-pluna^1^1936-09-01^2012-07-05^PUA^PU^286^PLUNA^^^^^http://en.wikipedia.org/wiki/PLUNA
 air-polet-airlines^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://en.wikipedia.org/wiki/Polet_Airlines
+air-primair^1^^^2014-12-31^J1^528^Primair^^^^^
 air-prima-air^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^http://en.wikipedia.org/wiki/Prima_Air
 air-rak-airways^1^2007-01-01^2014-01-01^RKM^RT^0^RAK Airways^^^^^http://en.wikipedia.org/wiki/RAK_Airways
 air-rheintalflug^1^^2013-12-31^^WE^0^Rheintal flug^^^^^
