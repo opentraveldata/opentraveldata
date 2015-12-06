@@ -834,6 +834,8 @@ LR^1^Avianca Costa Rica<>Lacsa
 LR^2^Lacsa<>L A C S A
 LRC^1^Avianca Costa Rica<>Lacsa
 LRC^2^Lacsa<>L A C S A
+LRS^1^SANSA Airlines<>Sansa
+LRS^2^Servicios Aéreos Nacionales S.A.<>Pan Am Exp
 LS^1^Jet2.com<>Jet2 Com
 LTC^1^<>Smartlynx Airlines
 LTD^2^Executive Express Aviation<>
@@ -1088,6 +1090,8 @@ RT^2^<>Rak Airways
 RVL^1^<>Air Vallee
 RX^2^<>Regent Airway
 RYR^2^<>Ryanair Ltd
+RZ^1^SANSA Airlines<>Sansa
+RZ^2^Servicios Aéreos Nacionales S.A.<>Pan Am Exp
 RZO^1^SATA International<>Sata Azores Airlines
 RZO^2^<>Sata Intl
 S0^2^<>Slok Air
