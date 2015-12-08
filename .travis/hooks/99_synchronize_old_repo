@@ -26,7 +26,6 @@ ssh-add .travis/id_rsa
 # git setup
 git config --global user.email "opentraveldata@1adev.com"
 git config --global user.name "opentraveldata-bot"
-git config --global push.default simple
 
 # Clone the old repo
 git clone git@github.com:opentraveldata/optd.git /tmp/optd
