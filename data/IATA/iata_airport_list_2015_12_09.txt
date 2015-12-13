@@ -1,61 +1,61 @@
-ABY   Albany                GA  US1    ABY   Southwest Georgia Rgnl  0034  3 
-ABX   Albury                NS  AU2    ABX   Albury                  0033  3 
-ABW   Abau                      PG1    ABW   Abau                    0032  3 
-ABV   Abuja                     NG     ABV   Nnamdi Azikiwe Intl           3 
-ABU   Atambua                   ID2    ABU   Haliwen                       3 
-ABT   Al Baha                   SA     ABT   Al-Aqiq                       3 
-ABS   Abu Simbel                EG     ABS   Abu Simbel              0031  3 
-ABR   Aberdeen              SD  US2    ABR   Regional                0030  3 
-ABQ   Albuquerque           NM  US3    ABQ   International Sunport   0029  3 
-ABP   Atkamba                   PG1    ABP   Atkamba                       3 
-ABO   Aboisso                   CI     ABO   Aboisso                       3 
-ABN   Albina                    SR     ABN   Albina                  0028  3 
-ABM   Bamaga                QL  AU2B   ABM   Northern Peninsula      0027  3 
-ABL   Ambler                AK  US5    ABL   Ambler                  0026  3 
-ABK   Kebri Dehar               ET     ABK   Kebri Dehar             0025  3 
-ABJ   Abidjan                   CI     ABJ   Felix Houphouet-Boigny        3 
-ABI   Abilene               TX  US2    ABI   Metropolitan Area             2 
-ABI   Abilene               TX  US2    ABI   Regional                0023  3 
-ABI   Abilene               TX  US2    DYS   Dyess AFB                     3 
-ABH   Alpha                 QL  AU2B   ABH   Alpha                   0022  3 
-ABG   Abingdon Downs        QL  AU2B   ABG   Abingdon Downs          0021  3 
-ABF   Abaiang                   KI1    ABF   Abaiang                 0020  3 
-ABE   Allentown             PA  US1    ABE   Lehigh Valley Intl      0019  3 
-ABD   Abadan                    IR     ABD   Abadan                  0018  3 
-ABC   Albacete                  ES1    ABC   Airport                       3 
-ABC   Albacete                  ES1    EEM   Railway Station               5 
-ABC   Albacete                  ES1    XJJ   Bus Station                   4 
-ABB   Asaba                     NG     ABB   International                 3 
-ABA   Abakan                    RU6    ABA   Abakan                  0016  3 
-AAZ   Quetzaltenango            GT     AAZ   Quetzaltenango                3 
-AAY   Al Ghaydah                YE     AAY   Al Ghaydah              0014  3 
-AAX   Araxa                 MG  BR1    AAX   Araxa                   0013  3 
-AAV   Surallah                  PH     AAV   Allah Valley            0012  3 
-AAU   Asau                      WS     AAU   Asau                    0011  3 
-AAT   Altay                     CN     AAT   Altay                         3 
-AAS   Apalapsili                ID3    AAS   Apalapsili                    3 
+AAA   Anaa                      PF2    AAA   Anaa                    0001  3 
+AAB   Arrabury              QL  AU2B   AAB   Arrabury                0002  3 
+AAC   El Arish                  EG     AAC   International                 3 
+AAE   Annaba                    DZ     AAE   Rabah Bitat             0003  3 
+AAF   Apalachicola          FL  US1    AAF   Regional                      3 
+AAG   Arapoti               PR  BR1    AAG   Avelino Vieira                3 
+AAH   Aachen                    DE     AAH   Merzbrueck                    3 
+AAH   Aachen                    DE     XHJ   Hbf Railway Station           5 
+AAI   Arraias               TO  BR1A   AAI   Arraias                 0005  3 
+AAJ   Awaradam                  SR     AAJ   Cajana                        3 
+AAK   Aranuka                   KI1    AAK   Aranuka                       3 
+AAL   Aalborg                   DK     AAL   Airport                 0006  3 
+AAL   Aalborg                   DK     ZTG   Railway Station               5 
+AAM   Mala Mala                 ZA     AAM   Mala Mala                     3 
+AAN   Al Ain                    AE     AAN   International           0007  3 
+AAN   Al Ain                    AE     ZVH   EK Bus Station                4 
+AAO   Anaco                     VE     AAO   Anaco                   0008  3 
+AAQ   Anapa                     RU2    AAQ   Vityazevo                     3 
 AAR   Aarhus                    DK     AAR   Airport                 0010  3 
 AAR   Aarhus                    DK     ZBU   Limousine                     4 
 AAR   Aarhus                    DK     ZID   Bus Station                   4 
 AAR   Aarhus                    DK     ZJH   Aarhus H Railway Stn          5 
-AAQ   Anapa                     RU2    AAQ   Vityazevo                     3 
-AAO   Anaco                     VE     AAO   Anaco                   0008  3 
-AAN   Al Ain                    AE     AAN   International           0007  3 
-AAN   Al Ain                    AE     ZVH   EK Bus Station                4 
-AAM   Mala Mala                 ZA     AAM   Mala Mala                     3 
-AAL   Aalborg                   DK     AAL   Airport                 0006  3 
-AAL   Aalborg                   DK     ZTG   Railway Station               5 
-AAK   Aranuka                   KI1    AAK   Aranuka                       3 
-AAJ   Awaradam                  SR     AAJ   Cajana                        3 
-AAI   Arraias               TO  BR1A   AAI   Arraias                 0005  3 
-AAH   Aachen                    DE     AAH   Merzbrueck                    3 
-AAH   Aachen                    DE     XHJ   Hbf Railway Station           5 
-AAG   Arapoti               PR  BR1    AAG   Avelino Vieira                3 
-AAF   Apalachicola          FL  US1    AAF   Regional                      3 
-AAE   Annaba                    DZ     AAE   Rabah Bitat             0003  3 
-AAC   El Arish                  EG     AAC   International                 3 
-AAB   Arrabury              QL  AU2B   AAB   Arrabury                0002  3 
-AAA   Anaa                      PF2    AAA   Anaa                    0001  3 
+AAS   Apalapsili                ID3    AAS   Apalapsili                    3 
+AAT   Altay                     CN     AAT   Altay                         3 
+AAU   Asau                      WS     AAU   Asau                    0011  3 
+AAV   Surallah                  PH     AAV   Allah Valley            0012  3 
+AAX   Araxa                 MG  BR1    AAX   Araxa                   0013  3 
+AAY   Al Ghaydah                YE     AAY   Al Ghaydah              0014  3 
+AAZ   Quetzaltenango            GT     AAZ   Quetzaltenango                3 
+ABA   Abakan                    RU6    ABA   Abakan                  0016  3 
+ABB   Asaba                     NG     ABB   International                 3 
+ABC   Albacete                  ES1    ABC   Airport                       3 
+ABC   Albacete                  ES1    EEM   Railway Station               5 
+ABC   Albacete                  ES1    XJJ   Bus Station                   4 
+ABD   Abadan                    IR     ABD   Abadan                  0018  3 
+ABE   Allentown             PA  US1    ABE   Lehigh Valley Intl      0019  3 
+ABF   Abaiang                   KI1    ABF   Abaiang                 0020  3 
+ABG   Abingdon Downs        QL  AU2B   ABG   Abingdon Downs          0021  3 
+ABH   Alpha                 QL  AU2B   ABH   Alpha                   0022  3 
+ABI   Abilene               TX  US2    ABI   Metropolitan Area             2 
+ABI   Abilene               TX  US2    ABI   Regional                0023  3 
+ABI   Abilene               TX  US2    DYS   Dyess AFB                     3 
+ABJ   Abidjan                   CI     ABJ   Felix Houphouet-Boigny        3 
+ABK   Kebri Dehar               ET     ABK   Kebri Dehar             0025  3 
+ABL   Ambler                AK  US5    ABL   Ambler                  0026  3 
+ABM   Bamaga                QL  AU2B   ABM   Northern Peninsula      0027  3 
+ABN   Albina                    SR     ABN   Albina                  0028  3 
+ABO   Aboisso                   CI     ABO   Aboisso                       3 
+ABP   Atkamba                   PG1    ABP   Atkamba                       3 
+ABQ   Albuquerque           NM  US3    ABQ   International Sunport   0029  3 
+ABR   Aberdeen              SD  US2    ABR   Regional                0030  3 
+ABS   Abu Simbel                EG     ABS   Abu Simbel              0031  3 
+ABT   Al Baha                   SA     ABT   Al-Aqiq                       3 
+ABU   Atambua                   ID2    ABU   Haliwen                       3 
+ABV   Abuja                     NG     ABV   Nnamdi Azikiwe Intl           3 
+ABW   Abau                      PG1    ABW   Abau                    0032  3 
+ABX   Albury                NS  AU2    ABX   Albury                  0033  3 
+ABY   Albany                GA  US1    ABY   Southwest Georgia Rgnl  0034  3 
 ABZ   Aberdeen                  GB     ABZ   Dyce                    0035  3 
 ABZ   Aberdeen                  GB     ZXA   Railway Station               5 
 ACA   Acapulco                  MX1    ACA   Juan N. Alvarez Intl    0036  3 
@@ -604,6 +604,8 @@ BAM   Battle Mountain       NV  US4    BAM   Battle Mountain         0368  3
 BAN   Basongo                   CD2    BAN   Basongo                       3 
 BAP   Baibara                   PG1    BAP   Baibara                 0371  3 
 BAQ   Barranquilla              CO     BAQ   Ernesto Cortissoz Intl  0372  3 
+BAR   Qionghai                  CN     BAR   Bo'ao                         3 
+BAR   Qionghai                  CN     QHX   Railway Station               5 
 BAS   Balalae                   SB     BAS   Balalae                 0373  3 
 BAT   Barretos              SP  BR1    BAT   Chafei Amsei            0374  3 
 BAV   Baotou                    CN     BAV   Erliban                 0376  3 
@@ -1011,6 +1013,7 @@ BQE   Bubaque                   GW     BQE   Bubaque                       3
 BQG   Bogorodskoye              RU9    BQG   Bogorodskoye                  3 
 BQI   Bagani                    NA     BQI   Bagani                        3 
 BQJ   Batagay                   RU9    BQJ   Batagay                       3 
+
 BQL   Boulia                QL  AU2B   BQL   Boulia                  0643  3 
 BQN   Aguadilla                 PR     BQN   Rafael Hernandez        0644  3 
 BQO   Bouna                     CI     BQO   Tehini                  0645  3 
@@ -2185,6 +2188,7 @@ DYW   Daly Waters           NT  AU3A   DYW   Daly Waters             1327  3
 DZA   Dzaoudzi                  YT     DZA   Pamandzi Intl           1328  3 
 DZI   Agustin Codazzi           CO     DZI   Las Flores              1329  3 
 DZN   Zhezkazgan                KZ2    DZN   Zhezkazgan                    3 
+
 DZO   Durazno                   UY     DZO   Santa Bernardina              3 
 DZU   Dazu                      CN     DZU   Dazu                          3 
 EAA   Eagle                 AK  US5    EAA   Eagle                   1330  3 
@@ -2283,8 +2287,6 @@ EIY   Ein Yahav                 IL     EIY   Ein Yahav               1378  3
 EJA   Barrancabermeja           CO     EJA   Yariguies               1379  3 
 EJH   Wedjh                     SA     EJH   Wedjh                   1380  3 
 EJN   Ejina Banner              CN     EJN   Taolai                        3 
-EJQ   Shiyan                    CN     EJQ   Railway Station               5 
-EJQ   Shiyan                    CN     WDS   Wudangshan                    3 
 EJT   Enejet Island             MH     EJT   Enejet Island                 3 
 EKB   Ekibastuz                 KZ2    EKB   Ekibastuz                     3 
 EKD   Elkedra               NT  AU3A   EKD   Elkedra                 1383  3 
@@ -3741,6 +3743,7 @@ IZT   Ixtepec                   MX1    IZT   Ixtepec                 2245  3
 JAA   Jalalabad                 AF     JAA   Jalalabad               2246  3 
 JAB   Jabiru                NT  AU3A   JAB   Jabiru                  2247  3 
 JAC   Jackson               WY  US3    JAC   Jackson Hole            2248  3 
+JAE   Jaen                      PE     JAE   Aeropuerto de Shumba          3 
 JAF   Jaffna                    LK     JAF   Kankesanturai           2250  3 
 JAG   Jacobabad                 PK     JAG   Jacobabad                     3 
 JAH   Aubagne                   FR     JAH   Off-line Point                1 
@@ -5324,6 +5327,7 @@ MLZ   Melo                      UY     MLZ   Cerro Largo             3217  3
 MMA   Malmo                     SE     JMM   Harbour Heliport              6 
 MMA   Malmo                     SE     MMA   Metropolitan Area             2 
 MMA   Malmo                     SE     MMX   Airport                 3218  3 
+
 MMA   Malmo                     SE     XFP   Malmo C Railway Stn           5 
 MMA   Malmo                     SE     XFR   Malmo Syd Railway Stn         5 
 MMB   Memanbetsu                JP     MMB   Memanbetsu              3219  3 
@@ -6157,7 +6161,6 @@ OKC   Oklahoma City         OK  US2    PWA   Wiley Post              4130  3
 OKC   Oklahoma City         OK  US2    TIK   Tinker AFB                    3 
 OKE   Okierabu                  JP     OKE   Okierabu                3671  3 
 OKF   Okaukuejo                 NA     OKF   Okaukuejo                     3 
-
 OKG   Okoyo                     CG     OKG   Okoyo                   3672  3 
 OKH   Oakham                    GB     OKH   Cottesmore RAF                3 
 OKI   Oki                       JP     OKI   Oki                     3673  3 
@@ -7014,7 +7017,6 @@ QDB   Cachoeira do Sul      RS  BR1    QDB   Off-line Point                1
 QDC   Dracena               SP  BR1    QDC   Off-line Point                1 
 QDD   Botosani                  RO     QDD   Off-line Point                1 
 QDE   Catanduva             SP  BR1    QDE   Off-line Point                1 
-
 QDF   Conselheiro Lafaiete  MG  BR1    QDF   Off-line Point                1 
 QDG   Ostrow Wielkopolski       PL     QDG   Off-line Point                1 
 QDH   Ashford                   GB     QDH   International Rail Stn        5 
@@ -7124,8 +7126,6 @@ QHS   Homs                      SY     QHS   Off-line Point                1
 QHT   Teresopolis           RJ  BR1    QHT   Off-line Point                1 
 QHU   Husum                     DE     QHU   Schwesing                     3 
 QHV   Novo Hamburgo         RS  BR1    QHV   Off-line Point                1 
-QHX   Qionghai                  CN     BAR   Bo'ao                         3 
-QHX   Qionghai                  CN     QHX   Railway Station               5 
 QHY   Hachioji                  JP     QHY   Off-line Point                1 
 QHZ   Hoofddorp                 NL     QHZ   Off-line Point                1 
 QIA   Itauna                MG  BR1    QIA   Off-line Point                1 
@@ -7636,6 +7636,7 @@ REO   Rome                  OR  US3    REO   State                         3
 REP   Siem Reap                 KH     REP   Angkor Intl             4208  3 
 REQ   Reko Diq                  PK     REQ   Reko Diq                      3 
 RER   Retalhuleu                GT     RER   Retalhuleu                    3 
+
 RES   Resistencia           CH  AR     RES   Resistencia             4209  3 
 RET   Rost                      NO     RET   Rost                    4210  3 
 REU   Reus                      ES1    EER   Railway Station               5 
@@ -8719,8 +8720,6 @@ TEF   Telfer                WA  AU4    TEF   Telfer                  4867  3
 TEG   Tenkodogo                 BF     TEG   Tenkodogo                     3 
 TEH   Tetlin                AK  US5    TEH   Tetlin                        3 
 TEI   Tezu                      IN     TEI   Tezu                          3 
-TEJ   Teruel                    ES1    TEJ   Railway Station               5 
-TEJ   Teruel                    ES1    TEV   Airport                       3 
 TEK   Tatitlek              AK  US5    TEK   Tatitlek                4868  3 
 TEL   Telupid                   MY     TEL   Telupid                 4869  3 
 TEM   Temora                NS  AU2    TEM   Temora                  4870  3 
@@ -8732,6 +8731,8 @@ TER   Terceira Island           PT2    TER   Lajes                   4873  3
 TES   Teseney                   ER     TES   Teseney                 4874  3 
 TET   Tete                      MZ     TET   Chingozi                4875  3 
 TEU   Te Anau                   NZ1    TEU   Manapouri               4876  3 
+TEV   Teruel                    ES1    TEJ   Railway Station               5 
+TEV   Teruel                    ES1    TEV   Airport                       3 
 TEX   Telluride             CO  US3    TEX   Regional                      3 
 TEX   Telluride             CO  US3    ZTL   Bus Station                   4 
 TEY   Thingeyri                 IS     TEY   Selardalur              4877  3 
@@ -9629,6 +9630,8 @@ WDH   Windhoek                  NA     ZWH   Railway Station               5
 WDI   Wondai                QL  AU2B   WDI   Wondai                        3 
 WDN   Waldron Island        WA  US4    WDN   Waldronaire                   3 
 WDR   Winder                GA  US1    WDR   Barrow County           5391  3 
+WDS   Shiyan                    CN     EJQ   Railway Station               5 
+WDS   Shiyan                    CN     WDS   Wudangshan                    3 
 WEA   Weatherford           TX  US2    WEA   Regional                      3 
 WEC   Wenchang                  CN     WEC   Railway Station               5 
 WED   Wedau                     PG1    WED   Wedau                   5392  3 
@@ -9776,6 +9779,7 @@ WTE   Wotje Island              MH     WTE   Wotje Island                  3
 WTK   Noatak                AK  US5    WTK   Noatak                  5487  3 
 WTL   Tuntutuliak           AK  US5    WTL   Tuntutuliak             5488  3 
 WTN   Waddington                GB     WTN   RAF Station                   3 
+
 WTO   Wotho Island              MH     WTO   Wotho Island                  3 
 WTP   Woitape                   PG1    WTP   Woitape                 5489  3 
 WTR   Whiteriver            AZ  US3A   WTR   Whiteriver              5490  3 
