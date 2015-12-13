@@ -328,13 +328,13 @@ air-buddha-air^^^^^U4^0^Buddha Air^Pmt Air^^^^^5771
 air-bukovyna-airlines^^^^BKV^BQ^616^Bukovyna Airlines^^^^^^
 air-bulgaria-air^^^^LZB^FB^623^Bulgaria Air^Balkan Air To^^^^^12566
 air-bulgarian-air-charter^^^^BUC^H6^0^Bulgarian Air Charter^^^^^^
-air-buraq-air^^^^BRQ^UZ^928^Buraq Air^^^^^^52
+air-buraq-air^^2001-01-01^^BRQ^UZ^928^Buraq Air^^^^^http://en.wikipedia.org/wiki/Buraq_Air^52
 air-business-air^1^2009-12-01^2015-01-16^BCC^8B^0^Intira Airlines^Business Air^^^^http://en.wikipedia.org/wiki/Intira_Airlines^
 air-business-aviation-centre^^^^^UQ^0^Business Aviation Centre^O Connor^^^^^507
-air-bvi-airways^^^^BVI^XV^0^BVI Airways^^^^^^
-air-caicos-express-airways^^^^CXE^9Q^0^Caicos Express Airways^PB Air^^^^^4423
+air-bvi-airways^1^2010-05-05^2014-09-30^BVI^XV^0^BVI Airways^^^^^http://en.wikipedia.org/wiki/BVI_Airways^
+air-caicos-express-airways^^2011-01-01^^CXE^9Q^0^Caicos Express Airways^PB Air^^^^http://en.wikipedia.org/wiki/Caicos_Express_Airways^4423
 air-cai-first^1^1997-10-01^2008-12-31^SMX^XM^0^CAI First^Alitalia Express^^^^http://en.wikipedia.org/wiki/CAI_First^
-air-cairo-aviation^^^^^OE^0^Cairo Aviation^^^^^^
+air-cairo-aviation^^1998-01-01^^CCE^OE^207^Cairo Aviation^^^^^http://en.wikipedia.org/wiki/Cairo_Aviation^
 air-cai-second^1^^2009-01-12^VLE^VE^0^CAI Second^Volare^^^^http://en.wikipedia.org/wiki/CAI_Second^
 air-calm-air^^^^CAV^MO^622^Calm Air International^^^^^^6843
 air-camair^^2011-03-28^^CRD^QC^40^Camair Co^Cameroon Airlines Corporation^^^^http://en.wikipedia.org/wiki/Camair-Co^5650
@@ -561,10 +561,10 @@ air-great-lakes-aviation^^1977-04-05^^GLA^ZK^846^Great Lakes Airlines^^^^^http:/
 air-groznyy-avia^^^^GOZ^ZG^24^Groznyy Avia^^^^^^148
 air-gryphon-airline^^2007-03-01^^VOS^Y3^0^Gryphon Airlines^^^^^http://en.wikipedia.org/wiki/Gryphon_Airlines^
 air-guangxi-beibu-gulf-airlines^^^^^GX^872^Guangxi Beibu Gulf Airlines^^^^^^3070
-air-guinea-airlines^^^^^G2^0^Guinea Airlines^Avirex Gabon^^^^^
+air-guinea-airlines^^1989-01-01^^VXG^G2^0^Jet Express^Avirex Gabon^^^^http://en.wikipedia.org/wiki/Jet_Express^
 air-guizhou-airlines^1^1991-01-01^1998-12-31^CGH^G4^0^Guizhou Airlines^^^^^http://en.wikipedia.org/wiki/Guizhou_Airlines^
 air-gulf-air^^1950-01-01^^GFA^GF^72^Gulf Air^^^^^http://en.wikipedia.org/wiki/Gulf_Air^53378
-air-hahn-air^^^^HHN^HR^169^Hahn Air^^^^^http://en.wikipedia.org/wiki/Hahn_Air^29
+air-hahn-air^^1994-01-01^^HHN^HR^169^Hahn Air^^^^^http://en.wikipedia.org/wiki/Hahn_Air^29
 air-hahn-air-systems^^^^^H1^0^Hahn Air Systems^^^^^http://en.wikipedia.org/wiki/Hahn_Air_Systems_GmbH^
 air-hainan-airlines^^1989-01-01^^CHH^HU^880^Hainan Airlines^^^^^http://en.wikipedia.org/wiki/Hainan_Airlines^89062
 air-haiti-aviation^^^^^H5^0^Haiti Aviation^Magadan^^^^^
@@ -625,7 +625,7 @@ air-intersky^^^^ISK^3L^222^Intersky Luftfahrt^Intersky^^^^^
 air-investavia^1^2007-01-01^2015-06-30^TLG^IV^0^InvestAvia^^^^^^
 air-iran-air^^1961-01-01^^IRA^IR^96^Iran Air^^^^^http://en.wikipedia.org/wiki/Iran_Air^12910
 air-iran-air-tours^^1973-01-01^^IRB^B9^491^Iran Air Tours^^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours^8467
-air-iran-aseman-airlines^^^^IRC^EP^815^Iran Aseman Airlines^^^^^^17
+air-iran-aseman-airlines^^1980-01-01^^IRC^EP^815^Iran Aseman Airlines^^^^^http://en.wikipedia.org/wiki/Iran_Aseman_Airlines^17
 air-iranian-naft-airline^^^^IRG^NV^346^Iranian Naft Airline^^^^^^
 air-iraqi-airways^^^^IAW^IA^73^Iraqi Airways^Iraqi Air^^^^^
 air-irtysh-air^^^^MZA^IH^0^Jsc Irtysh Air^Falcon Air^^^^^
@@ -992,7 +992,7 @@ air-skymark-airlines^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^http://en.wikipe
 air-skynet-asia^^2002-01-01^^^6J^0^Solaseed Air^Skynet Asia Airways^^^^http://en.wikipedia.org/wiki/Solaseed_Air^29349
 air-sky-regional-airlines^^^^^RS^0^Sky Regional Airlines^^^^^^
 air-skystar-airways^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways^
-air-sky-taxi^^^^IGA^TE^0^Sky Taxi^^^^^^45
+air-sky-taxi^^2000-01-01^^IGA^TE^0^Sky Taxi^^^^^http://en.wikipedia.org/wiki/SkyTaxi_%28airline%29^45
 air-skytrans-regional^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^
 air-skyways^1^1993-01-01^2012-05-22^SKX^JZ^752^Skyways^^^^^http://en.wikipedia.org/wiki/Skyways_%28airline%29^
 air-skywest-airlines^^1972-01-01^^SKW^OO^302^SkyWest Airlines^^^^^http://en.wikipedia.org/wiki/SkyWest_Airlines^640203
@@ -1070,7 +1070,7 @@ air-tam-linhas-aereas^^1976-07-12^^TAM^JJ^957^TAM Airlines^TAM Linhas Aereas^One
 air-tam-mercosur^^1962-01-01^^LAP^PZ^692^TAM Airlines^Transportes Aéreos del Mercosur^^^^http://en.wikipedia.org/wiki/TAM_Airlines_%28Paraguay%29^3306
 air-tampa-cargo^^^^TPA^QT^0^Tampa Cargo^Regional^^^C^^
 air-tanana-air-service^^^^TNR^4E^0^Tanana Air Service^^^^^^
-air-tandem-aero^^^^TDM^TQ^38^Tandem Aero^^^^^^17
+air-tandem-aero^^1998-01-01^^TDM^TQ^38^Tandem Aero^^^^^http://en.wikipedia.org/wiki/Tandem_Aero^17
 air-tap-portugal^^1946-09-19^^TAP^TP^47^TAP Portugal^^Star Alliance^Member^^http://en.wikipedia.org/wiki/TAP_Portugal^85154
 air-taquan-air-services^^^^^K3^0^Taquan Air Services^^^^^^5244
 air-tarco-air^^^^TRQ^3T^0^Tarco Air^Turan Air^^^^^205
@@ -1100,7 +1100,7 @@ air-titan-airways^^^^^ZT^0^Titan Airways^^^^^^97
 air-tnt-airways^^^^TAY^3V^756^Tnt Airways^Viking Air^^^^^
 air-tonlesap-airlines^1^2011-01-21^2013-08-31^^K9^443^TonleSap Airlines^^^^^http://en.wikipedia.org/wiki/TonleSap_Airlines^
 air-toumai-air-tchad^^^^^9D^371^Toumai Air Tchad^^^^P^^
-air-trade-air^^^^^C3^0^Trade Air^^^^^^3
+air-trade-air^^1994-04-01^^TDR^C3^0^Trade Air^^^^^http://en.wikipedia.org/wiki/Trade_Air^3
 air-tradewind-aviation^^^^GPD^TJ^0^Tradewind Aviation^^^^^^8948
 air-transaero-airlines^^1990-01-01^^TSO^UN^670^Transaero Airlines^^^^^http://en.wikipedia.org/wiki/Transaero^
 air-trans-air-congo^^^^TSG^Q8^223^Trans Air Congo^^^^^^2403
