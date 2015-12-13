@@ -206,8 +206,7 @@ AC^2^<>Air Canada
 ACA^2^<>Air Canada
 AD^1^Azul Brazilian Airlines<>Azul Linhas Aereas Brasileiras
 AD^2^Azul Linhas Aéreas Brasileiras<>Azul Linhas
-ADH^1^Air One<>Airone S P A
-ADH^2^Aliadriatica<>Aliadratica
+ADH^1^<>Airone S P A
 ADO^1^Air Do<>Airdo
 ADO^2^Hokkaido International Airlines<>
 AE^2^<>Mandarin Air
@@ -252,8 +251,7 @@ ANO^2^Capiteq Limited<>Airnorth
 ANS^1^Andes Líneas Aéreas<>Air Nostrum
 ANS^2^Andes<>Air Nostrum
 AOG^1^<>Aero Vip
-AP^1^Air One<>Airone S P A
-AP^2^Aliadriatica<>Aliadratica
+AP^1^<>Airone S P A
 APD^1^Fantasia Info Network<>Fantasia Info Network Lt
 APF^1^Amapola Flyg<>Amapola Flyg Ab
 AR^1^Aerolíneas Argentinas<>Aerolineas Argentinas
@@ -1464,6 +1462,7 @@ Y6^1^AB Aviation<>Ab Aviation
 Y7^1^NordStar<>Jsc Airline Taimyr
 Y7^2^Taimyr Air Company<>Air Taimyr
 Y8^2^<>Yangtze River
+YB^1^<>Bora Jet
 YC^2^<>Yamal
 YE^2^<>Yan Air
 YH^2^<>Yangon
