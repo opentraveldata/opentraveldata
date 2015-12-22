@@ -15,7 +15,7 @@ air-aero-charter^^^^UCR^DW^187^Aero Charter^Helicopter Sh^^^^^en|Aero Charter|=e
 air-aero4m^^2015-01-01^^AEH^H4^0^Aero4M^^^^^^en|Aero4M|
 air-aerocomercial-oriente-norte^^^^^A4^702^Aerocomercial Oriente Norte^South Winds^^^^^en|Aerocomercial Oriente Norte|=en|South Winds|
 air-aeroenlaces-nacionales^^^^VIV^VB^0^Aeroenlaces Nacionales^^^^^^en|Aeroenlaces Nacionales|
-air-aeroflot^^1923-07-15^^AFL^SU^555^Aeroflot^^^Member^^http://en.wikipedia.org/wiki/Aeroflot^en|Aeroflot|
+air-aeroflot^^1923-07-15^^AFL^SU^555^Aeroflot^^^Member^^http://en.wikipedia.org/wiki/Aeroflot^en|Aeroflot|s=en|Aeroflot – Russian Airlines|=ru|Аэрофлот—Российские авиалинии|=ru|Аэрофлот|s
 air-aerogaviota^^^^GTV^KG^854^Aerogaviota^King Island^^^^^en|Aerogaviota|=en|King Island|
 air-aerolinea-principal-chile^^^^PCP^5P^676^PAL Airlines^Aerolinea Principal Chile^^^P^http://en.wikipedia.org/wiki/PAL_Airlines^en|PAL Airlines|=en|Aerolinea Principal Chile|
 air-aerolineas-argentinas^^1950-12-07^^ARG^AR^44^Aerolíneas Argentinas^^^Member^^http://en.wikipedia.org/wiki/Aerol%C3%ADneas_Argentinas^en|Aerolíneas Argentinas|
@@ -53,7 +53,7 @@ air-air-asia^^1996-11-16^^AXM^AK^807^AirAsia^^^^^http://en.wikipedia.org/wiki/Ai
 air-air-asia-india^^2014-06-12^^^I5^0^AirAsia India^^^^^http://en.wikipedia.org/wiki/AirAsia_India^en|AirAsia India|
 air-air-asia-indonesia^^2000-06-22^^AWQ^QZ^975^Indonesia AirAsia^Awair^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia^en|Indonesia AirAsia|=en|Awair|
 air-air-asia-indonesia-extra^^2014-12-26^^INX^XT^0^^Indonesia AirAsia X^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia_X^en||=en|Indonesia AirAsia X|
-air-air-asia-japan^^2012-08-01^^WAJ^DJ^0^AirAsia Japan^^^^^http://en.wikipedia.org/wiki/AirAsia_Japan^en|AirAsia Japan|
+air-air-asia-japan^^2012-08-01^^WAJ^DJ^0^AirAsia Japan^^^^^http://en.wikipedia.org/wiki/AirAsia_Japan^en|AirAsia Japan|=ja|エアアジア・ジャパン株式会社|=ja|Eāajia Japan Kabushiki-Gaisha|
 air-air-asia-philippines^^^2010-12-01^APG^PQ^0^Philippines AirAsia^Panafrican^^^^http://en.wikipedia.org/wiki/Philippines_AirAsia^en|Philippines AirAsia|=en|Panafrican|
 air-air-asia-x^^^^XAX^D7^843^AirAsia X^^^^^http://en.wikipedia.org/wiki/AirAsia_X^en|AirAsia X|
 air-air-astana^^2002-05-15^^KZR^KC^465^Air Astana^^^^^http://en.wikipedia.org/wiki/Air_Astana^en|Air Astana|
@@ -120,7 +120,7 @@ air-airlines-png^^1987-01-01^^^CG^626^Airlines PNG^^^^^http://en.wikipedia.org/w
 air-airline-taimyr^^2009-01-01^^TYA^Y7^476^NordStar^Taimyr Air Company^^^^http://en.wikipedia.org/wiki/NordStar^en|NordStar|=en|Taimyr Air Company|
 air-air-leisure-egypt^^^^ALD^AL^0^Air Leisure^^^^^http://en.wikipedia.org/wiki/Air_Leisure^en|Air Leisure|
 air-air-lituanica^^2013-05-01^2015-05-22^LTU^LT^431^Air Lituanica^^^^^http://en.wikipedia.org/wiki/Air_Lituanica^en|Air Lituanica|
-air-air-macau^^^^AMU^NX^675^Air Macau^^^^^^en|Air Macau|
+air-air-macau^^1995-11-09^^AMU^NX^675^Air Macau^^^^^http://en.wikipedia.org/wiki/Air_Macau^en|Air Macau|=pny|Àomén Hángkōng|=wuu|澳门航空|=yue|澳門航空|
 air-air-madagascar^^^^MDG^MD^258^Air Madagascar^^^^^^en|Air Madagascar|
 air-air-malawi^^^^AML^QM^167^Air Malawi^^^^^^en|Air Malawi|
 air-air-malta^^^^AMC^KM^643^Air Malta^^^^^^en|Air Malta|
@@ -255,7 +255,7 @@ air-ab-aviation^^2013-01-01^^AYD^Y6^0^AB Aviation^^^^^http://en.wikipedia.org/wi
 air-batik-air-indonesia^^2013-05-03^^BTK^ID^0^Batik Air^^^^P^http://en.wikipedia.org/wiki/Batik_Air^en|Batik Air|
 air-bb-airways^^2012-09-13^^^BO^505^BB Airways^^^^^http://en.wikipedia.org/wiki/BB_Airways^en|BB Airways|
 air-bearskin-airlines^^1963-07-17^^BLS^JV^632^Bearskin Airlines^^^^^http://en.wikipedia.org/wiki/Bearskin_Airlines^en|Bearskin Airlines|
-air-beijing-capital-airlines^^2010-05-01^^CDG^JD^898^Beijing Capital Airlines^^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^en|Beijing Capital Airlines|
+air-beijing-capital-airlines^^2010-05-01^^CBJ^JD^898^Beijing Capital Airlines^^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^en|Beijing Capital Airlines|=pny|Shǒudū Hángkōng|=zh|首都航空|
 air-bek-air^^^^BEK^Z9^183^Jsc Bek Air^^^^^^en|Jsc Bek Air|
 air-belair-airlines^^^^^4T^0^Belair Airlines^Russian Air^^^^^en|Belair Airlines|=en|Russian Air|
 air-belavia^^1996-03-05^^BRU^B2^628^Belavia^^^^^http://en.wikipedia.org/wiki/Belavia^en|Belavia|
@@ -326,7 +326,7 @@ air-chengdu-airlines^^^^^EU^811^Chengdu Airlines^Ecuatoriana^^^^^en|Chengdu Airl
 air-china-airlines^^1959-12-16^^CAL^CI^297^China Airlines^^^Member^^http://en.wikipedia.org/wiki/China_Airlines^en|China Airlines|
 air-china-cargo-airlines-bis^^^^NDR^CK^0^China Cargo Airlines^Andesmar Lin^^^C^^en|China Cargo Airlines|=en|Andesmar Lin|
 air-china-cargo-airlines^^^^CKK^CK^0^China Cargo Airlines^Andesmar Lin^^^C^^en|China Cargo Airlines|=en|Andesmar Lin|
-air-china-eastern-airlines^^1988-06-25^^CES^MU^781^China Eastern Airlines^^^Member^^http://en.wikipedia.org/wiki/China_Eastern_Airlines^en|China Eastern Airlines|
+air-china-eastern-airlines^^1988-06-25^^CES^MU^781^China Eastern Airlines^^^Member^^http://en.wikipedia.org/wiki/China_Eastern_Airlines^en|China Eastern Airlines|=pny|Zhōngguó Dōngfāng Hángkōng Gōngsī|=wuu|中国东方航空公司|=yue|中國東方航空公司|
 air-china-express-airlines^^2006-01-01^^HXA^G5^987^China Express Airlines^^^^^http://en.wikipedia.org/wiki/China_Express_Airlines^en|China Express Airlines|
 air-china-postal-airlines^^1997-02-27^^CYZ^CF^804^China Postal Airlines^^^^^http://en.wikipedia.org/wiki/China_Postal_Airlines^en|China Postal Airlines|
 air-china-southern-airlines^^1989-01-01^^CSN^CZ^784^China Southern Airlines^^^Member^^http://en.wikipedia.org/wiki/China_Southern_Airlines^en|China Southern Airlines|
@@ -427,7 +427,7 @@ air-exec-air^^^^^X7^0^Exec Air^Air Service^^^^^en|Exec Air|=en|Air Service|
 air-executive-airlines^^^^EXK^OW^92^Executive Airlines^^^Affiliate^^^en|Executive Airlines|
 air-expressjet-airlines-inc^^^^BTA^XE^477^Expressjet Airlines Inc^^^^^^en|Expressjet Airlines Inc|
 air-express-jet^^1979-01-01^^ASQ^EV^862^ExpressJet^^^^^http://en.wikipedia.org/wiki/ExpressJet^en|ExpressJet|
-air-far-eastern^^^^FEA^FE^436^Far Eastern^^^^^^en|Far Eastern|
+air-far-eastern^^1957-01-01^^FEA^FE^436^Far Eastern Air Transport^^^^^http://en.wikipedia.org/wiki/Far_Eastern_Air_Transport^abbr|FAT|=en|Far Eastern Air Transport|=pny|Yuǎndōng Hángkōng Gǔfènyǒuxiàngōngsī|=wuu|远东航空股份有限公司|=yue|遠東航空股份有限公司|
 air-fars-qeshm-airlines^^^^QFZ^QE^721^Fars Qeshm Airlines^Crossair Eur^^^^^en|Fars Qeshm Airlines|=en|Crossair Eur|
 air-federal-airlines^^^^^7V^739^Federal Airlines^Federal Airlines^^^^^en|Federal Airlines|=en|Federal Airlines|
 air-fedex^^^^FXA^FX^0^Fedex^Express Air^^^^^en|Fedex|=en|Express Air|
@@ -557,7 +557,7 @@ air-jeju-air^^2005-01-01^^JJA^7C^806^Jeju Air^^^^^http://en.wikipedia.org/wiki/J
 air-jet-4-you^^^^^8J^0^Línea Aerea Eco Jet^^^^^^en|Línea Aerea Eco Jet|
 air-jet-air^^^^^O2^0^Jet Air^Jet Air^^^^^en|Jet Air|=en|Jet Air|
 air-jet-airways^^1993-05-05^^JAI^9W^589^Jet Airways^^^^^http://en.wikipedia.org/wiki/Jet_Airways^en|Jet Airways|
-air-jet-asia-airways^^^^JAA^JF^0^Jet Asia Airways^^^^^^en|Jet Asia Airways|
+air-jet-asia-airways^^2009-02-01^^JAA^JF^884^Jet Asia Airways^^^^^http://en.wikipedia.org/wiki/Jet_Asia_Airways^en|Jet Asia Airways|=he|ג'ט אסיה איירווייז|=ja|ジェットアジア・エアウェイズ|=ko|제트 아시아 항공|=th|สายการบินเจ็ทเอเซีย|=zh|捷特亚洲航空|
 air-jet-aviation-business^^^^PJS^PP^0^Jet Aviation Business^^^^^^en|Jet Aviation Business|
 air-jet-lite^^^^RSH^S2^705^Jet Lite^^^^^^en|Jet Lite|
 air-jet-ops^^2005-01-01^^OPS^J6^0^Jet-Ops^Seawings^^^^http://en.wikipedia.org/wiki/Seawings^en|Jet-Ops|=en|Seawings|
@@ -632,7 +632,7 @@ air-lion-airlines^^2000-06-30^^LNI^JT^990^Lion Air^^^^^http://en.wikipedia.org/w
 air-lion-air^^^^^SL^0^Thai Lion Mentari^Rio Sul^^^^^en|Thai Lion Mentari|=en|Rio Sul|
 air-loganair^^^^^LM^682^Loganair^Livingston^^^^^en|Loganair|=en|Livingston|
 air-lot^^1929-01-01^^LOT^LO^80^LOT Polish Airlines^LOT^^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^en|LOT Polish Airlines|=en|LOT|
-air-lucky-air^^^^LKE^8L^859^Lucky Air^^^^^^en|Lucky Air|
+air-lucky-air^^2004-07-01^^LKE^8L^859^Lucky Air^^^^^http://en.wikipedia.org/wiki/Lucky_Air^en|Lucky Air|=en|Shilin Airlines|h=ja|雲南祥鵬航空|i=ko|럭키 에어|=pny|Xiángpéng Hángkōng Gōngsī|=wuu|祥鹏航空大厦|=yue|祥鵬航空大廈|=zh|祥鹏航空公司|
 air-lufthansa-cityline^^1958-01-01^^CLH^CL^683^Lufthansa CityLine^Tempelhof^^Member^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^en|Lufthansa CityLine|=en|Tempelhof|
 air-lufthansa^^1955-01-01^^DLH^LH^220^Lufthansa^^^Member^^http://en.wikipedia.org/wiki/Lufthansa^en|Lufthansa|
 air-lugansk-airlines^^^^LHS^L7^0^Lugansk Airlines^^^^^^en|Lugansk Airlines|
