@@ -383,7 +383,7 @@ air-china-west-air^^^^^PN^847^China West Air^Pan Am^^^^^12219^en|China West Air|
 air-china-xinhua-airlines^^^^^X2^0^China Xinhua Airlines^China Xinhua^^^^^^en|China Xinhua Airlines|=en|China Xinhua|
 air-chongqing-airlines^^^^^OQ^878^Chongqing Airlines^^^^^^^en|Chongqing Airlines|
 air-chu-kong-passenger-transport^^^^^3A^28^Chu Kong Passenger Transport^Mafira Air^^^F^^25620^en|Chu Kong Passenger Transport|=en|Mafira Air|
-air-cimber^^2012-05-16^^CIM^QA^0^Cimber A/S^^^^^http://en.wikipedia.org/wiki/Cimber_%28airline%29^0^en|Cimber A/S|
+air-cimber^^2012-05-16^^CIM^QA^0^Cimber^^^^^http://en.wikipedia.org/wiki/Cimber_%28airline%29^0^en|Cimber|ps=en|Cimber A/S|
 air-cimber-air^1^1950-01-01^2012-12-31^CIM^QI^647^Cimber Sterling^Cimber Air^^^^http://en.wikipedia.org/wiki/Cimber_Sterling^^en|Cimber Sterling|=en|Cimber Air|
 air-cinnamon-air^^2013-01-01^^RLE^C7^0^Cinnamon Air^Saffron Aviation^^^P^http://en.wikipedia.org/wiki/Cinnamon_Air^6237^en|Cinnamon Air|=en|Saffron Aviation|
 air-cirrus-airlines^1^1995-02-01^2012-01-20^RUS^C9^251^Cirrus Airlines^^^^^http://en.wikipedia.org/wiki/Cirrus_Airlines^^en|Cirrus Airlines|
@@ -481,7 +481,7 @@ air-eurasia-air^^^^^6Z^0^Eurasia Air^^^^^^^en|Eurasia Air|
 air-euroatlantic-airways^^^^MMZ^YU^551^Euroatlantic Airways^^^^^^216^en|Euroatlantic Airways|
 air-eurocypria-airlines^^^^AUK^UI^0^Auric Air Services^^^^^^13176^en|Auric Air Services|
 air-eurolot^1^1996-01-01^2015-03-31^ELO^K2^78^Eurolot^^^^^http://en.wikipedia.org/wiki/Eurolot^^en|Eurolot|
-air-europe-airpost^^^^FPO^5O^558^Europe Airpost^^^^^^975^en|Europe Airpost|
+air-europe-airpost^^1991-01-01^^FPO^5O^558^ASL Airlines France^^^^^http://en.wikipedia.org/wiki/ASL_Airlines_France^975^en|ASL Airlines France|=en|Europe Airpost|h
 air-european-air-transport^^^^^QY^0^European Air Transport^^^^^^^en|European Air Transport|
 air-eurowings^^1994-01-01^^EWG^EW^104^Eurowings^^^^^http://en.wikipedia.org/wiki/Eurowings^55021^en|Eurowings|
 air-eva-air^^1989-03-01^^EVA^BR^695^EVA Air^^Star Alliance^Member^^http://en.wikipedia.org/wiki/EVA_Air^56516^en|EVA Air|

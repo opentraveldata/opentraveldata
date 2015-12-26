@@ -335,7 +335,7 @@ air-china-west-air^^^^^PN^847^China West Air^Pan Am^^^^^en|China West Air|=en|Pa
 air-china-xinhua-airlines^^^^^X2^0^China Xinhua Airlines^China Xinhua^^^^^en|China Xinhua Airlines|=en|China Xinhua|
 air-chongqing-airlines^^^^^OQ^878^Chongqing Airlines^^^^^^en|Chongqing Airlines|
 air-chu-kong-passenger-transport^^^^^3A^28^Chu Kong Passenger Transport^Mafira Air^^^F^^en|Chu Kong Passenger Transport|=en|Mafira Air|
-air-cimber^^2012-05-16^^CIM^QA^0^Cimber A/S^^^^^http://en.wikipedia.org/wiki/Cimber_%28airline%29^en|Cimber A/S|
+air-cimber^^2012-05-16^^CIM^QA^0^Cimber^^^^^http://en.wikipedia.org/wiki/Cimber_%28airline%29^en|Cimber|ps=en|Cimber A/S|
 air-cinnamon-air^^2013-01-01^^RLE^C7^0^Cinnamon Air^Saffron Aviation^^^P^http://en.wikipedia.org/wiki/Cinnamon_Air^en|Cinnamon Air|=en|Saffron Aviation|
 air-citilink-indonesia^^2001-01-01^^CTV^QG^0^Citilink Indonesia^Prima Air^^^^http://en.wikipedia.org/wiki/Citilink^en|Citilink Indonesia|=en|Prima Air|
 air-city-airways^^2012-09-01^^GTA^E8^0^City Airways^^^^^http://en.wikipedia.org/wiki/City_Airways^en|City Airways|
@@ -416,7 +416,7 @@ air-etihad-regional^^2003-01-01^^DWT^F7^33^Etihad Regional^Darwin Airline^^^^htt
 air-eurasia-air^^^^^6Z^0^Eurasia Air^^^^^^en|Eurasia Air|
 air-euroatlantic-airways^^^^MMZ^YU^551^Euroatlantic Airways^^^^^^en|Euroatlantic Airways|
 air-eurocypria-airlines^^^^AUK^UI^0^Auric Air Services^^^^^^en|Auric Air Services|
-air-europe-airpost^^^^FPO^5O^558^Europe Airpost^^^^^^en|Europe Airpost|
+air-europe-airpost^^1991-01-01^^FPO^5O^558^ASL Airlines France^^^^^http://en.wikipedia.org/wiki/ASL_Airlines_France^en|ASL Airlines France|=en|Europe Airpost|h
 air-european-air-transport^^^^^QY^0^European Air Transport^^^^^^en|European Air Transport|
 air-eurowings^^1994-01-01^^EWG^EW^104^Eurowings^^^^^http://en.wikipedia.org/wiki/Eurowings^en|Eurowings|
 air-eva-air^^1989-03-01^^EVA^BR^695^EVA Air^^^^^http://en.wikipedia.org/wiki/EVA_Air^en|EVA Air|

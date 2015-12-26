@@ -89,6 +89,7 @@
 5K^2^<>Sac Odessa
 5L^1^Aerosur<>
 5L^2^<>Aerosur
+5O^1^ASL Airlines France<>Asl Airlines France
 5O^2^<>Europ Airpost
 5P^1^PAL Airlines<>Aerolinea Principal Chile
 5P^2^Aerolinea Principal Chile<>
@@ -394,7 +395,7 @@ CG^2^<>Airl Of Png
 CH^2^<>Bemidji
 CHH^2^<>Hainan Air
 CI^2^<>China Air
-CIM^1^Cimber A/S<>Cimber A S
+CIM^1^Cimber<>Cimber A S
 CJ^1^BA CityFlyer<>Ba Cityflyer
 CJA^2^Bright Airlines<>Bright Arl
 CL^1^Lufthansa CityLine<>Lufthansa Cityline
@@ -550,6 +551,7 @@ FLE^2^<>Air Montreal
 FLG^2^<>Endeavor Air
 FLI^2^<>Atl Airways
 FM^2^<>Shangai Airli
+FPO^1^ASL Airlines France<>Asl Airlines France
 FPO^2^<>Europ Airpost
 FPY^1^Compagnie Africaine d'Aviation<>Compagnie Africaine D Aviation
 FPY^2^flyCAA<>Africaine
@@ -1018,7 +1020,7 @@ Q3^2^<>Zambian Air
 Q5^2^<>Forty Miles A
 Q7^1^Sky Bahamas Airlines<>Skybahamas Airlines
 Q8^2^<>Trans Air
-QA^1^Cimber A/S<>Cimber A S
+QA^1^Cimber<>
 QA^2^<>Cimber
 QC^2^Cameroon Airlines Corporation<>Camair Co
 QD^1^Dobrolet Airlines<>Dobrolet Lcc
