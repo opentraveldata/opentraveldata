@@ -135,6 +135,7 @@
 7N^1^Pan American World Airways Dominicana<>Pan American World
 7N^2^PAWA Dominicana<>Pawad
 7O^1^Travel Service Hungary<>Travel Service Legoforgalmi
+7P^2^<>Apa Intl
 7S^1^Ryan Air Services<>Amadeus Pdf 7s
 7S^2^Arctic Transportation Services<>Amadeus 7s
 7V^2^Federal Airlines<>Federal Airl
@@ -247,10 +248,9 @@ AMX^2^AeroMexico<>Aeromexico
 AN^1^HOP Airlinair<>Hop Airlinair
 AN^2^<>Hop Airlinair
 ANA^2^ANA<>All Nippon
+ANE^2^<>Air Nostrum
 ANG^2^<>Air Niugini
 ANO^2^Capiteq Limited<>Airnorth
-ANS^1^Andes Líneas Aéreas<>Air Nostrum
-ANS^2^Andes<>Air Nostrum
 AOG^1^<>Aero Vip
 AP^1^<>Airone S P A
 APD^1^Fantasia Info Network<>Fantasia Info Network Lt
@@ -262,6 +262,7 @@ ARE^1^LAN Colombia<>Lan Colombia Airlines
 ARE^2^Aerovías de Integración Regional (AIRES)<>Lan Colombia
 ARG^1^Aerolíneas Argentinas<>Aerolineas Argentinas
 ARG^2^<>Argentinas
+ART^1^SmartLynx Airlines<>Smartlynx Airlines
 AS^2^<>Alaska A L
 ASA^2^<>Alaska A L
 ASD^2^<>Air Sinai
@@ -838,7 +839,6 @@ LRC^2^Lacsa<>L A C S A
 LRS^1^SANSA Airlines<>Sansa
 LRS^2^Servicios Aéreos Nacionales S.A.<>Pan Am Exp
 LS^1^Jet2.com<>Jet2 Com
-LTC^1^<>Smartlynx Airlines
 LTD^2^Executive Express Aviation<>
 LU^1^LAN Express<>Lan Express
 LY^1^El Al<>El Al Israel Airlines
@@ -964,6 +964,7 @@ OV^2^<>Estonian Air
 OW^1^Executive Airlines<>
 OX^2^<>Orient Thai
 OY^1^Andes Líneas Aéreas<>Andes Lineas Aereas
+OY^2^<>Andes
 OZ^2^<>Asiana
 P2^1^Air Kenya Express<>Airkenya Express
 P4^2^<>Sosa
@@ -1003,6 +1004,7 @@ PRI^2^JetX<>Primera Air
 PS^1^Ukraine International Airlines<>Ukraine Intl Airlines
 PS^2^<>Ukraine Intl
 PSC^1^Pascan Aviation<>Pascan Aviation Inc
+PST^2^<>Apa Intl
 PT^2^<>West Air Swed
 PTB^2^<>Passaredo
 PTR^2^Petra Airlines<>
