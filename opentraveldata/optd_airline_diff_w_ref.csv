@@ -102,6 +102,8 @@
 5Y^2^Atlas Air<>Express Rail
 5Z^1^CemAir<>Cemair
 5Z^2^<>Cemair
+6A^1^<>Armenia Airways
+6A^2^<>Aviacsa
 6D^1^<>Travel Service Slovensko
 6D^2^<>Alaska Isl
 6E^1^IndiGo<>Indigo
@@ -141,7 +143,7 @@
 7V^2^Federal Airlines<>Federal Airl
 7W^2^<>Wind Rose
 8B^1^TransNusa Air Services<>Transnusa Aviation
-8B^2^PT TransNusa Aviation Mandiri<>Carribean Air
+8B^2^<>Carribean Air
 8E^2^<>Bering Air
 8F^1^STP Airways<>Stp Airways
 8F^2^<>Stp Airways
@@ -313,8 +315,8 @@ BAW^2^<>British A W
 BB^2^<>Seaborne Air
 BBC^2^<>Biman
 BBG^1^Bluebird Airways<>Blue Bird Airways
-BCC^1^TransNusa Air Services<>Transnusa Aviation
-BCC^2^PT TransNusa Aviation Mandiri<>Carribean Air
+BCC^1^<>Transnusa Aviation
+BCC^2^<>Carribean Air
 BCY^1^CityJet<>Cityjet
 BCY^2^<>Cityjet
 BEA^1^BQB Líneas Aéreas<>Bqb Lineas Aereas
@@ -427,7 +429,8 @@ CSZ^2^<>Shenzhen Airl
 CT^1^Alitalia CityLiner<>Alitalia City Liner Spa
 CT^2^Air One CityLiner<>Air One Cityl
 CTN^2^<>Croatia
-CV^1^Cargolux Airlines<>Cargolux Airlines International
+CV^1^Cargolux<>Cargolux Airlines International
+CV^2^<>Air Chatham
 CX^2^<>Cathaypacific
 CXA^1^XiamenAir<>Xiamen Airlines
 CXA^2^<>Xiamen Air
@@ -889,6 +892,8 @@ MS^2^<>Egyptair
 MSR^1^EgyptAir<>Egyptair
 MSR^2^<>Egyptair
 MU^2^<>China East
+MV^1^<>Aviastar Mandiri
+MV^2^<>Armenian Intl
 MW^1^Mokulele Airlines<>Mokulele Flight Service
 MW^2^<>Mokulele
 MX^2^<>Mexicana
@@ -907,6 +912,8 @@ ND^1^FMI Air<>Fmi Air
 ND^2^<>Intair Inc
 NE^2^<>Nesma
 NF^2^<>Air Vanuatu
+NGA^1^<>Wasaya Airways
+NGA^2^<>Nigeria Air
 NH^2^ANA<>All Nippon
 NI^2^Portugália–Companhia Portuguesa de Transportes Aéreos<>Portugalia
 NJ^1^Nordic Global Airlines<>Aero Vip
@@ -1271,9 +1278,9 @@ TYR^1^<>Tyrolean Airways
 TZ^2^<>Scoot
 U2^1^easyJet<>Easyjet
 U2^2^<>Easyjet
+U4^2^<>Pmt Air
 U5^2^USA 3000<>Usa 3000
 U6^2^<>Ural Airlines
-U8^1^Armavia<>
 UA^2^<>United
 UAE^2^<>Emirates
 UAL^2^<>United
@@ -1411,6 +1418,8 @@ WRC^2^<>Wind Rose
 WS^1^WestJet<>Westjet
 WS^2^<>Westjet
 WSP^1^Travelport Worldspan<>Worldspan
+WT^1^Swiftair<>Wasaya Airways
+WT^2^<>Nigeria Air
 WU^1^<>Wizz Air Ukraine Llc
 WV^1^Aero VIP<>Aero Vip Companhia Transportes
 WV^2^<>Swe Fly

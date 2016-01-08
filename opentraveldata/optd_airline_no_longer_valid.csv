@@ -24,9 +24,12 @@ air-alajnihah-air-transport^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^http:
 air-amadeus-8z^1^^2014-06-01^^8Z^0^Amadeus 8Z^Amadeus 8Z^^^D^^en|Amadeus 8Z|=en|Amadeus 8Z|
 air-amadeus-pdf-2d^1^^2014-06-01^^2D^0^Amadeus PDF 2D^^^^D^^en|Amadeus PDF 2D|
 air-angkor-airways^1^2007-01-01^2008-12-31^AKW^G6^0^Angkor Airways^^^^^http://en.wikipedia.org/wiki/Angkor_Airways^en|Angkor Airways|
+air-armavia^1^1996-01-01^2013-04-01^RNV^U8^669^Armavia^^^^^http://en.wikipedia.org/wiki/Armavia^en|Armavia|=en|Armenian International Airways|h
+air-armenian-international-airways^1^2002-07-12^2004-12-31^RML^MV^0^Armenian International Airways^^^^^http://en.wikipedia.org/wiki/Armenian_International_Airways^en|Armavia|=en|Armenian International Airways|
 air-ata-airlines^1^1973-01-01^2008-04-03^AMT^TZ^0^ATA Airlines^American Trans Air^^^^http://en.wikipedia.org/wiki/ATA_Airlines^en|ATA Airlines|=en|American Trans Air|
 air-athens-airways^1^2008-01-01^2010-12-31^ATW^ZF^0^Athens Airways^^^^^http://en.wikipedia.org/wiki/Athens_Airways^en|Athens Airways|
 air-augsburg-airways^1^1980-01-01^2013-12-31^AUB^IQ^614^Augsburg Airways^^^^^http://en.wikipedia.org/wiki/Augsburg_Airways^en|Augsburg Airways|
+air-aviacsa^1^1990-01-01^2011-12-31^CHP^6A^0^Aviacsa^^^^^http://en.wikipedia.org/wiki/Aviacsa^en|Consorcio Aviaxsa, S.A. de C.V.|=en|Aviacsa|p
 air-aviaenergo^1^1992-01-01^2011-12-31^ERG^7U^765^Aviaenergo^^^^^http://en.wikipedia.org/wiki/Aviaenergo^en|Aviaenergo|
 air-aviana-airways^1^2008-01-01^2014-01-01^RRY^4A^0^Aviana Airways^Royal Bengal Airline^^^^http://en.wikipedia.org/wiki/Royal_Bengal_Airline^en|Aviana Airways|=en|Royal Bengal Airline|
 air-aviaprad^1^1996-01-01^2008-02-05^VID^WR^0^Aviaprad^^^^^http://en.wikipedia.org/wiki/Aviaprad^en|Aviaprad|
@@ -37,6 +40,7 @@ air-benin-golf^1^2002-01-01^2012-07-31^BGL^A8^0^Benin Golf Air^^^^^http://en.wik
 air-bismilah-airlines^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^http://en.wikipedia.org/wiki/Bismillah_Airlines^en|Bismillah Airlines|
 air-brindabella-airlines^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^http://en.wikipedia.org/wiki/Brindabella_Airlines^en|Brindabella Airlines|
 air-british-midland-international^1^1938-01-01^2012-10-27^BMA^BD^236^British Midland International^^^^^http://en.wikipedia.org/wiki/British_Midland_International^en|British Midland International|
+air-buffalo-airways^1^1978-05-13^2015-11-30^BFL^J4^^Buffalo Airways^^^^^http://en.wikipedia.org/wiki/Buffalo_Airways^en|Buffalo Airways|=sign||BUFFALO
 air-business-air^1^2009-12-01^2015-01-16^BCC^8B^0^Intira Airlines^Business Air^^^^http://en.wikipedia.org/wiki/Intira_Airlines^en|Intira Airlines|=en|Business Air|
 air-bvi-airways^1^2010-05-05^2014-09-30^BVI^XV^0^BVI Airways^^^^^http://en.wikipedia.org/wiki/BVI_Airways^en|BVI Airways|
 air-cai-first^1^1997-10-01^2008-12-31^SMX^XM^0^CAI First^Alitalia Express^^^^http://en.wikipedia.org/wiki/CAI_First^en|CAI First|=en|Alitalia Express|
@@ -88,7 +92,7 @@ air-highland-airways^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Alba^
 air-interlink-airlines^1^1998-01-01^2010-12-31^ITK^ID^0^Interlink^^^^P^http://en.wikipedia.org/wiki/Interlink_Airlines^en|Interlink|
 air-inter-airlines^1^1999-12-17^2008-11-18^INX^6K^0^Inter Airlines^^^^^http://en.wikipedia.org/wiki/Inter_Airlines^en|Inter Airlines|
 air-investavia^1^2007-01-01^2015-06-30^TLG^IV^0^InvestAvia^^^^^^en|InvestAvia|
-air-island-airlines^1^1930-01-01^2014-12-31^ISA^IS^0^Island Airlines^^^^^http://en.wikipedia.org/wiki/Island_Airlines^en|Island Airlines|
+air-island-airlines^1^1930-01-01^2015-12-11^ISA^IS^0^Island Airlines^^^^^http://en.wikipedia.org/wiki/Island_Airlines^en|Island Airlines|
 air-islas-airways^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^http://en.wikipedia.org/wiki/Islas_Airways^en|Islas Airways|
 air-lade^1^1940-09-01^2014-12-31^LDE^5U^0^LADE^Líneas Aéreas del Estado^^^^http://en.wikipedia.org/wiki/LADE^en|LADE|=en|Líneas Aéreas del Estado|
 air-lagunair-lineas-aeras^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir^en|LagunAir|=en|LagunAir Líneas Aéreas|
@@ -105,11 +109,13 @@ air-midwest-airlines^1^1948-01-01^2011-12-31^MEP^YX^0^Midwest Airlines^^^^^http:
 air-midwest-connect^1^1994-01-01^2009-12-31^SYX^AL^0^Midwest Connect^Skyway Airlines^^^^http://en.wikipedia.org/wiki/Midwest_Connect^en|Midwest Connect|=en|Skyway Airlines|
 air-national-airways-cameroon^1^1999-11-01^2000-03-01^^9O^357^National Airways Cameroon^Aircameroon^^^^http://en.wikipedia.org/wiki/National_Airways_Cameroon^en|National Airways Cameroon|=en|Aircameroon|
 air-national-jet-systems^1^^2009-02-28^NJS^NC^0^National Jet Systems^^^Affiliate^^http://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^en|National Jet Systems|
+air-nigeria-airways^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^http://en.wikipedia.org/wiki/Nigeria_Airways^en|Nigeria Airways|
 air-odessa-airlines^1^1996-01-01^2006-12-31^ODS^5K^0^Odessa Airlines^^^^^http://en.wikipedia.org/wiki/Odessa_Airlines^en|Odessa Airlines|
 air-olt-express-germany^1^1958-01-01^2013-01-30^OLT^OL^704^OLT Express Germany^^^^^http://en.wikipedia.org/wiki/OLT_Express_Germany^en|OLT Express Germany|
 air-perla-airlines^1^^2015-01-01^PLV^DP^0^Perla Airlines^Air 2000^^^^http://www.airlineupdate.com/content_public/airlines/airlines-venezuela/perla.htm^en|Perla Airlines|=en|Air 2000|
 air-pluna^1^1936-09-01^2012-07-05^PUA^PU^286^PLUNA^^^^^http://en.wikipedia.org/wiki/PLUNA^en|PLUNA|
-air-polet-airlines^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://en.wikipedia.org/wiki/Polet_Airlines^en|Polet Airlines|
+air-pmt-air^1^2003-01-14^2008-12-31^PMT^U4^0^PMTair^^^^^http://en.wikipedia.org/wiki/PMTair^en|PMTair|s=en|Progress MulTi Air|
+air-polet-airlines^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://en.wikipedia.org/wiki/Polet_Airlines^en|Polet Airlines|=ru|Авиакомпания Полёт|
 air-prima-air^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^http://en.wikipedia.org/wiki/Prima_Air^en|Prima Air|
 air-rak-airways^1^2007-01-01^2014-01-01^RKM^RT^0^RAK Airways^^^^^http://en.wikipedia.org/wiki/RAK_Airways^en|RAK Airways|
 air-rheintalflug^1^^2013-12-31^^WE^0^Rheintal flug^^^^^^en|Rheintal flug|
@@ -137,8 +143,7 @@ air-wataniya-airways^1^2009-01-01^2011-03-17^WAN^KW^100^Wataniya Airways^^^^^htt
 air-welcome-air^1^2000-05-01^2015-03-31^WLC^2W^0^Welcome Air^^^^^http://en.wikipedia.org/wiki/Welcome_Air^en|Welcome Air|
 air-west-air-sweden^1^1955-01-01^2015-04-01^SWN^PT^0^West Air Sweden^^^^^http://en.wikipedia.org/wiki/West_Air_Sweden^en|West Air Sweden|
 air-wizz-air-bulgaria^1^2005-01-01^2011-12-31^WVL^8Z^0^Wizz Air Bulgaria^^^^^http://en.wikipedia.org/wiki/Wizz_Air_Bulgaria^en|Wizz Air Bulgaria|
-air-wizz-air-ukraine^1^2008-01-01^2015-04-20^WAU^WU^0^Wizz Air Ukraine^^^^^http://en.wikipedia.org/wiki/Wizz_Air_Ukraine^en|Wizz Air Ukraine|
-air-yeti-airlines^1^1998-08-17^^NYT^YT^0^Yeti Airlines^^^^^http://en.wikipedia.org/wiki/Yeti_Airlines^en|Yeti Airlines|
+air-wizz-air-ukraine^1^2008-01-01^2015-04-20^WAU^WU^0^Wizz Air Ukraine^^^^^http://en.wikipedia.org/wiki/Wizz_Air_Ukraine^en|Wizz Air Ukraine|=uk|Товариство з обмеженою відповідальністю|
 air-zambian-airways^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http://en.wikipedia.org/wiki/Zambian_Airways^en|Zambian Airways|
 tec-map-management-planning^1^^2015-01-01^MPJ^AQ^0^Map Management Planning^^^^^^en|Map Management Planning|
 trn-express-rail-link-malaysia^1^^2014-06-01^^5Y^0^Express Rail Link, Malaysia^Express Rail Link, Malaysia^^^R^http://en.wikipedia.org/wiki/Express_Rail_Link^en|Express Rail Link, Malaysia|=en|Express Rail Link, Malaysia|
