@@ -1,4 +1,5 @@
 pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link^alt_names
+air-aerosur^1^1992-01-01^2012-12-31^RSU^5L^275^AeroSur^^^^^http://en.wikipedia.org/wiki/AeroSur^en|AeroSur|
 air-aerosvit-airlines^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^http://en.wikipedia.org/wiki/Aerosvit_Airlines^en|AeroSvit Airlines|
 air-aero-flight^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^http://en.wikipedia.org/wiki/Aero_Flight^en|Aero Flight|
 air-aero-vip-argentina^1^1999-06-23^2010-12-01^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^http://en.wikipedia.org/wiki/Aero_VIP_(Argentina)^en|Aero VIP (Argentina)|=en|Aero VIP (Argentina)|
