@@ -67,7 +67,7 @@ BEGIN {
 
 # By requiring the env_id field to be empty, only active alliance memberships are considered.
 
-/^([A-Za-z ]+)\^([A-Za-z]+)\^([*A-Z0-9]{2})\^([A-Za-z0-9 ]+)\^[0-9-]*\^[0-9-]*\^$/ {
+/^([A-Za-z ]+)\^([A-Za-z]+)\^([*A-Z0-9]{2})\^(.+)\^[0-9-]*\^[0-9-]*\^$/ {
     # Alliance name
     alliance_name = $1
 
