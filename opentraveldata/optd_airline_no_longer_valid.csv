@@ -1,6 +1,7 @@
 pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link^alt_names
 air-aerosur^1^1992-01-01^2012-12-31^RSU^5L^275^AeroSur^^^^^http://en.wikipedia.org/wiki/AeroSur^en|AeroSur|
 air-aerosvit-airlines^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^http://en.wikipedia.org/wiki/Aerosvit_Airlines^en|AeroSvit Airlines|
+air-aero-california^1^1960-01-01^2008-07-23^SER^JR^0^Aero California^^^^^http://en.wikipedia.org/wiki/Aero_California^en|Aero California|p=en|AeroCal|s=sign|AEROCALIFORNIA|
 air-aero-flight^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^http://en.wikipedia.org/wiki/Aero_Flight^en|Aero Flight|
 air-aero-vip-argentina^1^1999-06-23^2010-12-01^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^http://en.wikipedia.org/wiki/Aero_VIP_(Argentina)^en|Aero VIP (Argentina)|=en|Aero VIP (Argentina)|
 air-airlink-papua-new-guinea^1^1990-06-01^2007-07-27^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^en|Aero VIP (Argentina)|=en|Aero VIP (Argentina)|
@@ -50,6 +51,7 @@ air-canadian-airlines^1^1987-01-01^2000-12-31^CDN^CP^0^Canadian Airlines^^^^^htt
 air-cargolux-italia^1^^2013-12-31^^C8^0^Cargolux Italia^^^^C^^en|Cargolux Italia|
 air-chanchangi-airlines^1^1994-01-01^2015-01-01^NCH^5B^0^Chanchangi Airlines^^^^^http://en.wikipedia.org/wiki/Chanchangi_Airlines^en|Chanchangi Airlines|
 air-charter-air-transport^1^1997-01-01^2014-12-31^SRY^VC^0^Charter Air Transport^ViaAir^^^^http://en.wikipedia.org/wiki/Charter_Air_Transport^en|Charter Air Transport|=en|ViaAir|
+air-china-xinhua-airlines^1^1992-01-01^2007-11-29^CXH^XW^0^China Xinhua Airlines^^^^^http://en.wikipedia.org/wiki/China_Xinhua_Airlines^en|China Xinhua Airlines|=pny|Zhōngguó Xīnhuá Hángkōng|=sign|XINHUA|=yue|中國新華航空|=wuu|中国新华航空|
 air-cimber-air^1^1950-01-01^2012-12-31^CIM^QI^647^Cimber Sterling^Cimber Air^^^^http://en.wikipedia.org/wiki/Cimber_Sterling^en|Cimber Sterling|=en|Cimber Air|
 air-cirrus-airlines^1^1995-02-01^2012-01-20^RUS^C9^251^Cirrus Airlines^^^^^http://en.wikipedia.org/wiki/Cirrus_Airlines^en|Cirrus Airlines|
 air-city-airline^1^1997-01-01^2011-11-29^SDR^CF^419^City Airline^Skyways^^^^http://en.wikipedia.org/wiki/City_Airline^en|City Airline|=en|Skyways|
@@ -65,9 +67,11 @@ air-czech-connect-airlines^1^2011-01-01^2012-01-31^CCG^CQ^909^Czech Connect Airl
 air-darwin-airline^1^^2014-10-31^DWT^0D^779^Darwin Airline^^^^^http://en.wikipedia.org/wiki/Darwin_Airline^en|Darwin Airline|
 air-deer-jet-airlines^1^2006-01-01^2010-05-31^CBJ^JD^0^Deer Jet Airlines^Deer Air^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^en|Deer Jet Airlines|=en|Deer Air|
 air-djibouti-airlines^1^1996-01-01^2009-07-31^DJB^D8^0^Djibouti Airlines^^^^^http://en.wikipedia.org/wiki/Djibouti_Airlines^en|Djibouti Airlines|
+air-dutch-antilles-express^1^2005-01-01^2013-09-19^DNL^9H^0^Dutch Antilles Express^Dae^^^^http://en.wikipedia.org/wiki/Dutch_Antilles_Express^en|Dutch Antilles Express|==abbr|dae|
 air-enkor-jsc^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor^en|Enkor|
 air-estafeta-carga-aerea^1^^2013-12-31^^E7^^Estafeta Carga Aerea^Estafeta Carga Aerea^^^C^^en|Estafeta Carga Aerea|=en|Estafeta Carga Aerea|
 air-eurolot^1^1996-01-01^2015-03-31^ELO^K2^78^Eurolot^^^^^http://en.wikipedia.org/wiki/Eurolot^en|Eurolot|
+air-european-executive-express^1^1997-01-01^2005-12-31^EXC^RY^0^European Executive Express^^^^^http://en.wikipedia.org/wiki/European_Executive_Express^en|European Executive Express|
 air-exel-nl^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^^^^http://en.wikipedia.org/wiki/Air_Exel^en||=en|Air Exel|
 air-eznis-airways^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^^en|Eznis Airways|=en|Eznis Airways|
 air-farnair-switzerland^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^http://en.wikipedia.org/wiki/Farnair_Switzerland^en|Farnair Switzerland|
@@ -101,11 +105,13 @@ air-linea-aerea-cuencana^1^2012-01-01^2015-01-01^LAC^L5^0^Línea Aerea Cuencana^
 air-linea-turistica-aereotuy^1^1982-01-01^2015-06-30^^L4^445^Línea Turística Aereotuy (LTA)^^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_Tur%C3%ADstica_Aereotuy^en|Línea Turística Aereotuy (LTA)|
 air-macair-jet^1^^2014-12-31^MCJ^VM^0^Macair Jet^^^^^^en|Macair Jet|
 air-macedonian-airlines^1^1992-01-01^2003-12-31^MCS^MC^0^Macedonian Airlines^^^^^http://en.wikipedia.org/wiki/Macedonian_Airlines^en|Macedonian Airlines|
+air-malev-hungarian-airlines^1^1956-11-25^2012-02-03^MAH^MA^182^MALÉV Hungarian Airlines^MALEV Hungarian Airlines^^^^^en|MALÉV Hungarian Airlines|=en|MALÉV|s=he|מאלב, נתיבי אוויר הונגריים|=hu|Magyar Légiközlekedési Vállalat|=hu|MALÉV|s=ja|マレーヴ・ハンガリー航空|=ko|말레브 헝가리 항공|=ru|Малев Венгерские Авиалинии|=zh|匈牙利航空|
 air-marsland-aviation^1^^2013-11-30^MSL^M7^293^Marsland Aviation^^^^^http://en.wikipedia.org/wiki/Marsland_Aviation^en|Marsland Aviation|
 air-mat-airways^1^2009-01-01^2011-12-31^^6F^0^MAT Airways^^^^^http://en.wikipedia.org/wiki/MAT_Airways^en|MAT Airways|
 air-mat-macedonian-airlines^1^1994-01-01^2009-09-01^MAK^IN^0^MAT Macedonian Airlines^^^^^http://en.wikipedia.org/wiki/MAT_Macedonian_Airlines^en|MAT Macedonian Airlines|
 air-maxjet-airways^1^2003-01-01^2007-12-24^MXJ^MY^0^MAXjet Airways^^^^^http://en.wikipedia.org/wiki/MAXjet_Airways^en|MAXjet Airways|
 air-max-air^1^2008-01-01^2015-04-01^NGL^NR^0^Max Air^^^^^http://en.wikipedia.org/wiki/Max_Air^en|Max Air|
+air-merpati-nusantara-airlines^1^1962-09-06^2014-02-15^MMA^MZ^532^Merpati Nusantara Airlines^^^^^http://en.wikipedia.org/wiki/Merpati_Nusantara_Airlines^en|Merpati Nusantara Airlines|=ja|メルパチ・ヌサンタラ航空|=ko|메르파티 누산타라 항공|=sign|MERPATI|
 air-midwest-airlines^1^1948-01-01^2011-12-31^MEP^YX^0^Midwest Airlines^^^^^http://en.wikipedia.org/wiki/Midwest_Airlines^en|Midwest Airlines|
 air-midwest-connect^1^1994-01-01^2009-12-31^SYX^AL^0^Midwest Connect^Skyway Airlines^^^^http://en.wikipedia.org/wiki/Midwest_Connect^en|Midwest Connect|=en|Skyway Airlines|
 air-national-airways-cameroon^1^1999-11-01^2000-03-01^^9O^357^National Airways Cameroon^Aircameroon^^^^http://en.wikipedia.org/wiki/National_Airways_Cameroon^en|National Airways Cameroon|=en|Aircameroon|
@@ -120,10 +126,12 @@ air-polet-airlines^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://
 air-prima-air^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^http://en.wikipedia.org/wiki/Prima_Air^en|Prima Air|
 air-rak-airways^1^2007-01-01^2014-01-01^RKM^RT^0^RAK Airways^^^^^http://en.wikipedia.org/wiki/RAK_Airways^en|RAK Airways|
 air-rheintalflug^1^^2013-12-31^^WE^0^Rheintal flug^^^^^^en|Rheintal flug|
+air-saereo^1^1994-01-01^2013-12-31^SRO^MZ^0^SAEREO^^^^^http://en.wikipedia.org/wiki/SAEREO^en|SAEREO|p=en|Servicios Aéreos Ejecutivos Saereo S.A.|=sign|SAEREO|
 air-salsa-d-haiti^1^2008-01-01^2015-04-01^SLC^SO^340^Salsa d'Haiti^^^^^http://en.wikipedia.org/wiki/Salsa_d%27Ha%C3%AFti^en|Salsa d'Haiti|
 air-samara-airlines^1^1992-01-01^2008-12-31^BRZ^E5^0^Samara Airlines^^^^^http://en.wikipedia.org/wiki/Samara_Airlines^en|Samara Airlines|
 air-sas-braathens^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^Sas^^Member^^http://en.wikipedia.org/wiki/SAS_Braathens^en|Scandinavian Airlines|=en|Sas|
 air-scotairways^1^^2013-03-31^SAY^CB^969^ScotAirways^ScotAirways^^^^http://en.wikipedia.org/wiki/Suckling_Airways^en|ScotAirways|=en|ScotAirways|
+air-shanxi-airlines^1^2001-07-06^2009-12-31^CXI^8C^0^Shanxi Airlines^Gamair^^^^http://en.wikipedia.org/wiki/Shanxi_Airlines^en|Shanxi Airlines|=sign|SHANXI|
 air-sky-airlines^1^2001-01-01^2013-06-04^SHY^ZY^438^Sky Airlines^^^^^http://en.wikipedia.org/wiki/Sky_Airlines^en|Sky Airlines|
 air-sky-bishek^1^2012-01-01^2015-06-30^BIS^GY^0^Sky Bishek^^^^^^en|Sky Bishek|
 air-sky-express^1^2007-01-29^2011-10-29^SXR^XW^0^Sky Express^^^^^http://en.wikipedia.org/wiki/Sky_Express^en|Sky Express|
@@ -137,6 +145,7 @@ air-tavrey-airlines^1^1995-01-01^2008-12-31^TVR^T6^0^Tavrey Airlines^Tavrey Airc
 air-tonlesap-airlines^1^2011-01-21^2013-08-31^^K9^443^TonleSap Airlines^^^^^http://en.wikipedia.org/wiki/TonleSap_Airlines^en|TonleSap Airlines|
 air-tyrolean-airways^1^1978-01-01^2015-03-31^TYR^VO^734^Tyrolean Airways^^^^^http://en.wikipedia.org/wiki/Tyrolean_Airways^en|Tyrolean Airways|
 air-varig^1^1927-05-07^2008-10-19^VRG^RG^^Varig Linhas^Viação Aérea Rio-Grandense S.A^^^^http://en.wikipedia.org/wiki/Varig^en|Varig Linhas|=en|Viação Aérea Rio-Grandense S.A|
+air-velvet-sky^1^2011-03-22^2012-02-27^VEL^VZ^0^Velvet Sky^^^^^http://en.wikipedia.org/wiki/Velvet_Sky_%28airline%29^en|Velvet Sky|=ko|벨벳 스카이|=sign|VELVET|
 air-viaggio-air^1^2003-02-27^2007-12-31^VOA^VM^0^Viaggio Air^^^^^http://en.wikipedia.org/wiki/Viaggio_Air^en|Viaggio Air|
 air-vietnam-air-service^1^1987-12-31^2015-09-01^VFC^0V^368^Vietnam Air Services Company^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^en|Vietnam Air Services Company|
 air-vip-wings^1^2000-05-23^2013-11-20^VPA^V5^0^Danube Wings^VIP Wings^^^^http://en.wikipedia.org/wiki/Danube_Wings^en|Danube Wings|=en|VIP Wings|
