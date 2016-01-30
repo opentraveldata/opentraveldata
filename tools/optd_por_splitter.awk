@@ -56,6 +56,7 @@
 #  * VLC:   Volcano (e.g., Arenal Volcano)
 #  * MTx:   Mountain (e.g., Mount Hotham)
 #  * RK:    Rock (e.g., Ayers Rock)
+#  * CNYN:  Canyon (e.g., Grand Canyon)
 #  * MNx:   Mine (e.g., Osborne Mine)
 #  * INSM:  Military Installation (e.g., Bellows Air Force Station)
 #  * AIRB:  Air base; AIRF: Air field; AIRP: Airport; AIRS: Seaplane landing
@@ -624,7 +625,7 @@ BEGINFILE {
     is_city += match (fcode, "PRK") + match (fcode, "RES")
     is_city += match (fcode, "AMUS")
     is_city += match (fcode, "CAPE") + match (fcode, "PT")
-    is_city += match (fcode, "PLAT")
+    is_city += match (fcode, "PLAT") + match (fcode, "CNYN")
     is_city += match (fcode, "VLC") + match (fcode, "MT")
     is_city += match (fcode, "RK") + match (fcode, "MN")
     is_city += match (fcode, "INSM")
