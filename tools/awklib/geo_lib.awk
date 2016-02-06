@@ -1610,3 +1610,43 @@ function displayInnovataPORWithPK(__dipwkParamIataCode,		\
     print (dipwkInnovataPORPlusPKLine)
 }
 
+##
+# Extract the list of names of a POR in a given language.
+#
+# Sample lists of alternate name details:
+# [AAE] ru|Аэропорт «Аннаба»|=en|Rabah Bitat Annaba Airport|=en|Annaba Airport|s=en|Les Salines Airport|h=en|El Mellah Airport|=en|Rabah Bitat Airport|p
+# [PAR] la|Lutetia Parisorum|=fr|Lutèce|h=fr|Ville-Lumière|c=eo|Parizo|=es|París|ps=de|Paris|=en|Paris|p=af|Parys|=als|Paris|=an|París|=ar|باريس|=ast|París|=be|Горад Парыж|=bg|Париж|=ca|París|=cs|Paříž|=cy|Paris|=da|Paris|=el|Παρίσι|=et|Pariis|=eu|Paris|=fa|پاریس|=fi|Pariisi|=fr|Paris|p=ga|Páras|=gl|París|=he|פריז|=hr|Pariz|=hu|Párizs|=id|Paris|=io|Paris|=it|Parigi|=ja|パリ|=ka|პარიზი|=kn|ಪ್ಯಾರಿಸ್|=ko|파리|=ku|Parîs|=kw|Paris|=lb|Paräis|=li|Paries|=lt|Paryžius|=lv|Parīze|=mk|Париз|=ms|Paris|=na|Paris|=nds|Paris|=nl|Parijs|=nn|Paris|=no|Paris|=oc|París|=pl|Paryż|=pt|Paris|=ro|Paris|=ru|Париж|=scn|Pariggi|=sco|Paris|=sl|Pariz|=sq|Paris|=sr|Париз|=sv|Paris|=ta|பாரிஸ்|=th|ปารีส|=tl|Paris|=tr|Paris|=uk|Париж|=vi|Paris|p=zh|巴黎|=ia|Paris|=fy|Parys|=ln|Pari|=os|Париж|=pms|Paris|=sk|Paríž|=sq|Parisi|=sw|Paris|=tl|Lungsod ng Paris|=ug|پارىژ|=fr|Paname|c=fr|Pantruche|c=am|ፓሪስ|=arc|ܦܐܪܝܣ|=br|Pariz|=gd|Paris|=gv|Paarys|=hy|Փարիզ|=ksh|Paris|=lad|Paris|=lmo|Paris|=mg|Paris|=mr|पॅरिस|=tet|París|=tg|Париж|=ty|Paris|=ur|پیرس|=vls|Parys|=is|París|=vi|Pa-ri|=ml|പാരിസ്|=uz|Parij|=rue|Паріж|=ne|पेरिस|=jbo|paris|=mn|Парис|=lij|Pariggi|=vec|Parixe|=yo|Parisi|=yi|פאריז|=mrj|Париж|=hi|पैरिस|=fur|Parîs|=tt|Париж|=szl|Paryż|=mhr|Париж|=te|పారిస్|=tk|Pariž|=bn|প্যারিস|=ha|Pariis|=sah|Париж|=mzn|پاریس|=bo|ཕ་རི།|=haw|Palika|=mi|Parī|=ext|París|=ps|پاريس|=pa|ਪੈਰਿਸ|=ckb|پاریس|=cu|Парижь|=cv|Парис|=co|Parighji|=bs|Pariz|=so|Baariis|=hbs|Pariz|=gu|પૅરિસ|=xmf|პარიზი|=ba|Париж|=pnb|پیرس|=arz|باريس|=la|Lutetia|=kk|Париж|=kv|Париж|=gn|Parĩ|=ky|Париж|=myv|Париж ош|=nap|Parigge|=km|ប៉ារីស|=krc|Париж|=udm|Париж|=wo|Pari|=gan|巴黎|=sc|Parigi|=za|Bahliz|=my|ပါရီမြို့|=post|75000|p=post|75020|=olo|Pariižu|
+# Sample output for French ("fr"):
+# [PAR] Lutèce|h=Ville-Lumière|c=Paris|p=Paname|c=Pantruche|c
+function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
+	outputNameList = ""
+	outputMainSep = "="
+	outputSecSep = "|"
+
+	# The list of alternate name details is separated by the equal ("=") sign
+	split (__gpnflAltNameList, dpnAltNameArray, "=")
+    for (dpnAltIdx in dpnAltNameArray) {
+		dpnAltNameDetails = dpnAltNameArray[dpnAltIdx]
+
+		# The list of details is separated by the pipe ("|") sign
+		split (dpnAltNameDetails, dpnAltNameDetailArray, "|")
+
+		# With AWK, the array created by split() begins with the index of 1:
+		# 1. Langauge (e.g., "en", "fa", "ru", "zh")
+		# 2. Name for that language
+		# 3. Qualifier (e.g., "p" for preferred, "s" for short, "h" for
+		#    historical, and "c" for colloquial)
+		if (dpnAltNameDetailArray[1] == __gpnflLang) {
+			if (outputNameList != "") {
+				outputNameList = outputNameList outputMainSep
+			}
+			outputNameList = outputNameList dpnAltNameDetailArray[2]
+			if (dpnAltNameDetailArray[3] != "") {
+				outputNameList = outputNameList outputSecSep dpnAltNameDetailArray[3]
+			}
+		}
+	}
+
+	#
+	return outputNameList
+}

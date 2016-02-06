@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Derive the list of active POR (point of reference) entries
-# for any given date, from the OPTD-maintained data file of POR:
+# for any given language, from the OPTD-maintained data file of POR:
 # ../opentraveldata/optd_por_public.csv
 #
-# => optd_por_public_YYYYMMDD.csv
+# => optd_por_public_lang.csv
 #
 
 ##
@@ -53,9 +53,8 @@ then
 fi
 
 ##
-# Target date
-TARGET_DATE=`date "+%Y%m%d"`
-TARGET_DATE_HUMAN=`date`
+# Target language
+TARGET_LANG="en"
 
 ##
 # OpenTravelData directory
@@ -79,7 +78,7 @@ OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 
 ##
 # Target (generated files)
-OPTD_POR_TGT_FILENAME=${OPTD_POR_BASEFILENAME}_${TARGET_DATE}.csv
+OPTD_POR_TGT_FILENAME=${OPTD_POR_BASEFILENAME}_${TARGET_LANG}.csv
 OPTD_POR_TGT_FILE=${DATA_DIR}${OPTD_POR_TGT_FILENAME}
 
 ##
@@ -87,10 +86,10 @@ OPTD_POR_TGT_FILE=${DATA_DIR}${OPTD_POR_TGT_FILENAME}
 if [ "$1" = "-h" -o "$1" = "--help" ];
 then
 	echo
-	echo "Usage: $0 [<Target date>]"
-	echo "  - Target date: '${TARGET_DATE}' (${TARGET_DATE_HUMAN})"
+	echo "Usage: $0 [<Target language>]"
+	echo "  - Target language: '${TARGET_LANG}'"
 	echo "    + ${OPTD_POR_FILE} contains the OPTD-maintained list of Points of Reference (POR)"
-	echo "    + ${OPTD_POR_TGT_FILE} contains the list of OPTD-maintained POR for that date"
+	echo "    + ${OPTD_POR_TGT_FILE} contains the list of OPTD-maintained POR for that language"
 	echo
 	exit -1
 fi
@@ -99,8 +98,8 @@ fi
 # Target date
 if [ "$1" != "" ];
 then
-	TARGET_DATE="$1"
-	OPTD_POR_TGT_FILENAME=${OPTD_POR_BASEFILENAME}_${TARGET_DATE}.csv
+	TARGET_LANG="$1"
+	OPTD_POR_TGT_FILENAME=${OPTD_POR_BASEFILENAME}_${TARGET_LANG}.csv
 	OPTD_POR_TGT_FILE=${DATA_DIR}${OPTD_POR_TGT_FILENAME}
 fi
 
@@ -118,8 +117,8 @@ echo
 echo "Extraction Step"
 echo "---------------"
 echo
-EXTRACTER=extract_por_for_a_date.awk
-time awk -F'^' -v tgt_date=${TARGET_DATE} -f ${EXTRACTER} \
+EXTRACTER=extract_por_for_a_language.awk
+time awk -F'^' -v tgt_lang=${TARGET_LANG} -f ${EXTRACTER} \
 	 ${OPTD_POR_FILE} > ${OPTD_POR_TGT_FILE}
 
 ##
@@ -130,4 +129,23 @@ echo "Reporting Step"
 echo "--------------"
 echo
 echo "wc -l ${OPTD_POR_FILE} ${OPTD_POR_TGT_FILE}"
+echo
+echo "Hints for next steps:"
+echo "---------------------"
+echo "# Display the list ordered by PageRank values:"
+echo "sort -t';' -k4nr,4 ${OPTD_POR_TGT_FILE} | less"
+echo
+echo "# Filter only on the airports"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\") {print \$0}}' ${OPTD_POR_TGT_FILE} | less"
+echo
+echo "# Combine both rules above"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\") {print \$0}}' ${OPTD_POR_TGT_FILE} | sort -t';' -k4nr,4 | less"
+echo
+echo "# Filter only on the airports having no name for that language"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$8 == \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | sort -t';' -k4nr,4 | less"
+echo
+echo "# Display the number of airports: 1. having a name for that language, having no name for that language, 3. in total"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$4 != \"\" && \$8 != \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$4 != \"\" && \$8 == \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$4 != \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
 echo
