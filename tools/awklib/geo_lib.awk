@@ -90,12 +90,12 @@ function displayOPTDPorPublicHeader(__dopphFullLine) {
 # Display a list
 function displayList(__paramListType, __paramList) {
     if (length(__paramList) == 0) {
-	return
+		return
     }
 
     print (__paramListType ":")
     for (myIdx in __paramList) {
-	print (myIdx " => " __paramList[myIdx])
+		print (myIdx " => " __paramList[myIdx])
     }
 }
 
@@ -103,15 +103,15 @@ function displayList(__paramListType, __paramList) {
 # Display a 2-dimensional list
 function display2dList(__paramListType, __paramList) {
     if (length(__paramList) == 0) {
-	return
+		return
     }
 
     print (__paramListType ":")
     for (myCombIdx in __paramList) {
-	split (myCombIdx, myIdxArray, SUBSEP)
-	myIdx1 = myIdxArray[1]; myIdx2 = myIdxArray[2]
-	print ("[" __paramListType "] " myIdx1 ", " myIdx2 " => " \
-	       __paramList[myIdx1, myIdx2])
+		split (myCombIdx, myIdxArray, SUBSEP)
+		myIdx1 = myIdxArray[1]; myIdx2 = myIdxArray[2]
+		print ("[" __paramListType "] " myIdx1 ", " myIdx2 " => "	\
+			   __paramList[myIdx1, myIdx2])
     }
 }
 
@@ -137,6 +137,7 @@ function displayLists() {
     display2dList("OPTD POR latitude", optd_por_lat_list)
     display2dList("OPTD POR longitude", optd_por_lon_list)
     display2dList("OPTD POR city list", optd_por_cty_list)
+	display2dList("OPTD POR list per airline", optd_por_air_list)
     display2dList("OPTD POR beginning date list", optd_por_bdate_list)
 
 	# US DOT
@@ -746,10 +747,10 @@ function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
 # Note 1: the location type is either individual (e.g., 'C', 'A', 'H', 'R', 'B',
 #         'P', 'G', 'O') or combined (e.g., 'CA', 'CH', 'CR', 'CB', 'CP')
 #
-function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
-			  __rolParamLatitude, __rolParamLongitude,	\
-			  __rolParamServedCityCode, __rolParamBeginDate, \
-			  __rolParamFullLine) {
+function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
+						  __rolParamLatitude, __rolParamLongitude,	\
+						  __rolParamServedCityCode, __rolParamBeginDate, \
+						  __rolParamFullLine) {
     # Extract the primary key fields
     getPrimaryKeyAsArray(__rolParamPK, myPKArray)
     rolIataCode = myPKArray[1]
@@ -769,20 +770,20 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
     # Sanity check: the IATA codes of the primary key and of the dedicated field
     #               should be equal.
     if (rolIataCode != __rolParamIataCode2) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the IATA code ('" rolIataCode "') of the primary key " \
-	       "is not the same as the one of the dedicated field ('"	\
-	       __rolParamIataCode2 "') - Full line: " __rolParamFullLine) \
-	    > __glGlobalErrorStream
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	 \
+			   ", the IATA code ('" rolIataCode "') of the primary key " \
+			   "is not the same as the one of the dedicated field ('"	\
+			   __rolParamIataCode2 "') - Full line: " __rolParamFullLine) \
+			> __glGlobalErrorStream
     }
 
     # Sanity check: when the location type is a combined type, one of those
     #               types should be a travel-related POR.
     if (length(rolLocationType) >= 2 && myIsTravel == 0) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the location type ('"	rolLocationType			\
-	       "') is unknown - Full line: " __rolParamFullLine)	\
-	    > __glGlobalErrorStream
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
+			   ", the location type ('"	rolLocationType				\
+			   "') is unknown - Full line: " __rolParamFullLine)	\
+			> __glGlobalErrorStream
     }
 
     # Add the location type to the dedicated list for that IATA code
@@ -791,28 +792,61 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
     # Add the Geonames ID to the dedicated list for that (IATA code, location
     # type)
     addGeoIDToOPTDList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_geoid_list)
+					   optd_por_geoid_list)
 
     # Calculate the index for that IATA code
     optd_por_idx_list[rolIataCode, rolLocationType]++
     optd_por_idx = optd_por_idx_list[rolIataCode, rolLocationType]
 
     # Register the details of the OPTD-maintained POR entry for the latitude
-    addOPTDFieldToList(rolIataCode, rolLocationType,		\
-		       optd_por_lat_list, __rolParamLatitude)
+    addOPTDFieldToList(rolIataCode, rolLocationType,			\
+					   optd_por_lat_list, __rolParamLatitude)
 
     # Register the details of the OPTD-maintained POR entry for the longitude
-    addOPTDFieldToList(rolIataCode, rolLocationType,		\
-		       optd_por_lon_list, __rolParamLongitude)
+    addOPTDFieldToList(rolIataCode, rolLocationType,			\
+					   optd_por_lon_list, __rolParamLongitude)
 
     # Register the details of the OPTD-maintained POR entry for the (list of)
     # served cit(y)(ies)
-    addOPTDFieldToList(rolIataCode, rolLocationType,			\
-		       optd_por_cty_list, __rolParamServedCityCode)
+    addOPTDFieldToList(rolIataCode, rolLocationType,				\
+					   optd_por_cty_list, __rolParamServedCityCode)
 
     # Register the details of the OPTD-maintained POR entry for the beg. date
-    addOPTDFieldToList(rolIataCode, rolLocationType,		\
-		       optd_por_bdate_list, __rolParamBeginDate)
+    addOPTDFieldToList(rolIataCode, rolLocationType,				\
+					   optd_por_bdate_list, __rolParamBeginDate)
+}
+
+##
+# Register the flight frequency for a given (origin, destination) POR pair,
+# for a given airline. The input parameters are:
+# 1. The airline 2-char ISO code
+# 2. The origin POR
+# 3. The destination POR
+# 4. The number of flights (flight frequency) for that (origin, destination) pair
+#
+function registerPORAirlineLine(__rpalAirline, __rpalPOROrg,	\
+								__rpalPORDst, __rpalFltFreq) {
+    # DEBUG
+    # print ("Airline code=" __rpalAirline ", origin=" __rpalPOROrg		\
+    #	   ", destination=" __rpalPORDst ", flight frquency=" __rpalFltFreq	\
+	#      "awk=" awk_file ", err=" __glGlobalErrorStream)
+
+	# Register the US DOT-maintained POR name and area code
+	optd_por_air_list[__rpalAirline, __rpalPOROrg] += __rpalFltFreq
+	optd_por_air_list[__rpalAirline, __rpalPORDst] += __rpalFltFreq
+}
+
+##
+# Retrieve the flight frequency for a given (airline, POR) combination.
+# The input parameters are:
+# 1. The airline 2-char ISO code
+# 2. The POR IATA code
+# The function returns the accumulated number of flights (flight frequency)
+# for that (airline, POR) combination
+#
+function getAirlinePORFltFreq(__gapffAirline, __gapffPOR) {
+	outputFltFreq = optd_por_air_list[__gapffAirline, __gapffPOR]
+	return outputFltFreq
 }
 
 ##
@@ -850,6 +884,7 @@ function resetOPTDLineList() {
     delete optd_por_lon_list
     delete optd_por_cty_list
     delete optd_por_bdate_list
+	delete optd_por_air_list
 }
 
 ##
