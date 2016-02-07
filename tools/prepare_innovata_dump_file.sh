@@ -7,7 +7,7 @@
 displayGeonamesDetails() {
     if [ -z "${OPTDDIR}" ]
     then
-	export OPTDDIR=~/dev/geo/optdgit/refdata
+	export OPTDDIR=~/dev/geo/optdgit/data/geonames/data
     fi
     if [ -z "${MYCURDIR}" ]
     then
@@ -20,8 +20,8 @@ displayGeonamesDetails() {
     echo "OPTDDIR=${OPTDDIR}"
     echo "mkdir -p ~/dev/geo"
     echo "cd ~/dev/geo"
-    echo "git clone git://github.com/opentraveldata/optd.git optdgit"
-    echo "cd optdgit/refdata/geonames/data"
+    echo "git clone git://github.com/opentraveldata/opentraveldata.git optdgit"
+    echo "cd optdgit/data/geonames/data"
     echo "./getDataFromGeonamesWebsite.sh  # it may take several minutes"
     echo "cd por/admin"
     echo "./aggregateGeonamesPor.sh # it may take several minutes (~10 minutes)"
@@ -35,7 +35,7 @@ displayGeonamesDetails() {
     echo "which have to be aggregated into the dump_from_geonames.csv file."
     echo "${OPTDDIR}/tools/preprepare_geonames_dump_file.sh"
     echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
-    echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
+    echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_pageranked.csv ${TMP_DIR}"
     echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
     echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
     echo "ls -l ${TMP_DIR}"
@@ -58,7 +58,7 @@ displayInnovataDetails() {
 
 ##
 # Input file names
-INN_RAW_FILENAME=innovata_stations.dat
+INN_RAW_FILENAME=stations.dat
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##

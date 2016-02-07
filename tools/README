@@ -55,6 +55,27 @@ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 # downloaded and the dump_from_innovata.csv has to be recomputed.
 # That file is just used for comparison purpose.
 #
+# Typical commands:
+cd <OPTD_ROOT_DIR>/tools
+# Get the stations.dat file
+dos2unix stations.dat
+sh prepare_innovata_dump_file.sh .. stations.dat
+# It generates a dump_from_innovata.csv file
+cp dump_from_innovata.csv ../data/Innovata/innovata_stations.dat
+git add ../data/Innovata/innovata_stations.dat
+git commit -m "[POR] New updates for some sources." ../data/Innovata
+
+##
+# 2.2. Update from Schedules
+# --------------------------
+#
+cd <OPTD_ROOT_DIR>/tools
+# Get the oag_schedule_opt_YYMMDD_all.csv file
+./prepare_airline_por_dump_file.sh oag_schedule_opt_YYMMDD_all.csv
+# It should generate a dump_from_airline_por.csv file
+cp dump_from_airline_por.csv ../opentraveldata/optd_airline_por.csv
+git add ../opentraveldata/optd_airline_por.csv
+git commit -m "[Airlines] Updated with latest POR network information." ../opentraveldata
 
 
 ##
