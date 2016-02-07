@@ -108,6 +108,9 @@ fi
 #
 if [ "$1" = "--clean" ]
 then
+	OPTD_POR_TGT_ALL_FILENAME=${OPTD_POR_BASEFILENAME}_??.csv
+	OPTD_POR_TGT_ALL_FILE=${DATA_DIR}${OPTD_POR_TGT_ALL_FILENAME}
+	\rm -f ${OPTD_POR_TGT_ALL_FILE}
 	exit
 fi
 
