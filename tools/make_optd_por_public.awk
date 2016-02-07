@@ -136,7 +136,7 @@ BEGIN {
 #   ORD-A^ORD^0.677280625337
 #   CDG-A^CDG^0.647060165878
 #
-/^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,15})$/ {
+/^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,20})$/ {
     # Primary key (IATA code and location pseudo-code)
     pk = $1
 
