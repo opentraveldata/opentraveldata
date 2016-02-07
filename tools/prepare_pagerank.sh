@@ -7,7 +7,7 @@
 displayPopularityDetails() {
 	if [ -z "${OPTDDIR}" ]
 	then
-		export OPTDDIR=~/dev/geo/optdgit/refdata
+		export OPTDDIR=~/dev/geo/optdgit/opentraveldata
 	fi
 	if [ -z "${MYCURDIR}" ]
 	then
@@ -15,12 +15,12 @@ displayPopularityDetails() {
 	fi
 	echo
 	echo "The data dump for PageRanked airports can be obtained from this project (OpenTravelData:"
-	echo "http://github.com/opentraveldata/optd). For instance:"
+	echo "http://github.com/opentraveldata/opentraveldata). For instance:"
 	echo "MYCURDIR=`pwd`"
 	echo "OPTDDIR=${OPTDDIR}"
 	echo "mkdir -p ~/dev/geo"
 	echo "cd ~/dev/geo"
-	echo "git clone git://github.com/opentraveldata/optd.git optdgit"
+	echo "git clone git://github.com/opentraveldata/opentraveldata.git optdgit"
 	if [ "${TMP_DIR}" = "/tmp/por/" ]
 	then
 		echo "mkdir -p ${TMP_DIR}"
