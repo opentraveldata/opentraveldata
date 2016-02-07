@@ -133,19 +133,19 @@ echo
 echo "Hints for next steps:"
 echo "---------------------"
 echo "# Display the list ordered by PageRank values:"
-echo "sort -t';' -k4nr,4 ${OPTD_POR_TGT_FILE} | less"
+echo "sort -t';' -k5nr,5 ${OPTD_POR_TGT_FILE} | less"
 echo
 echo "# Filter only on the airports"
 echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\") {print \$0}}' ${OPTD_POR_TGT_FILE} | less"
 echo
 echo "# Combine both rules above"
-echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\") {print \$0}}' ${OPTD_POR_TGT_FILE} | sort -t';' -k4nr,4 | less"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\") {print \$0}}' ${OPTD_POR_TGT_FILE} | sort -t';' -k5nr,5 | less"
 echo
 echo "# Filter only on the airports having no name for that language"
-echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$8 == \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | sort -t';' -k4nr,4 | less"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$9 == \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | sort -t';' -k5nr,5 | less"
 echo
 echo "# Display the number of airports: 1. having a name for that language, having no name for that language, 3. in total"
-echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$4 != \"\" && \$8 != \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
-echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$4 != \"\" && \$8 == \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
-echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$4 != \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$5 != \"\" && \$9 != \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$5 != \"\" && \$9 == \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
+echo "awk -F';' '/^[A-Z]{3};[AC]{1,2}/ {if (\$2 != \"C\" && \$5 != \"\") {print \$0}}' ${OPTD_POR_TGT_FILE} | wc -l"
 echo

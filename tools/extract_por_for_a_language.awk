@@ -28,6 +28,7 @@ BEGIN {
     K_NME_UTF = 7
     K_NME_ASC = 8
     K_PG_RK = 13
+    K_POR_CC = 17
     K_SVD_CTY_LST = 37
     K_CTY_UTF_LST = 38
     K_CTY_ASC_LST = 39
@@ -42,7 +43,7 @@ BEGIN {
     K_3RD_SEP = "|"
 
     # Header
-    hdr_line = "iata_code;location_type;geoname_link;name;asciiname"
+    hdr_line = "iata_code;location_type;country_code;geoname_link;name;asciiname"
 	hdr_line = hdr_line ";lang_code;name_list"
 
     print (hdr_line)
@@ -83,6 +84,9 @@ BEGIN {
 	# PageRank
 	pagerank = $K_PG_RK
 
+	# Country code (2-char ISO code)
+	country_code = $K_POR_CC
+
     # Served city IATA code
     served_city_code_list = $K_SVD_CTY_LST
 
@@ -96,8 +100,8 @@ BEGIN {
 	alt_name_list_4_lang = getPORNameForLang(alt_name_list, tgt_lang)
 
 	# Assemble the output line
-	outputLine = iata_code K_TGT_SEP location_type K_TGT_SEP geoname_link
-	outputLine = outputLine K_TGT_SEP pagerank
+	outputLine = iata_code K_TGT_SEP location_type K_TGT_SEP country_code
+	outputLine = outputLine K_TGT_SEP geoname_link K_TGT_SEP pagerank
 	outputLine = outputLine K_TGT_SEP name_utf K_TGT_SEP name_ascii
 	outputLine = outputLine K_TGT_SEP tgt_lang K_TGT_SEP alt_name_list_4_lang
 
