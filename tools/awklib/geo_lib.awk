@@ -1671,7 +1671,15 @@ function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
 		# 2. Name for that language
 		# 3. Qualifier (e.g., "p" for preferred, "s" for short, "h" for
 		#    historical, and "c" for colloquial)
-		if (dpnAltNameDetailArray[1] == __gpnflLang) {
+		AltNameLang = dpnAltNameDetailArray[1]
+		delete EquivalentLangArray
+		EquivalentLangArray[__gpnflLang] = 1
+		if (__gpnflLang == "zh") {
+			EquivalentLangArray["yue"] = 1
+			EquivalentLangArray["wuu"] = 1
+			EquivalentLangArray["pny"] = 1
+		}
+		if (AltNameLang in EquivalentLangArray) {
 			if (outputNameList != "") {
 				outputNameList = outputNameList outputMainSep
 			}
