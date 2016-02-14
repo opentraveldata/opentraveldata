@@ -1,5 +1,5 @@
 CDG;A;FR;http://geonames.org/6269554 ;0.782315181376;Paris Charles de Gaulle Airport;Paris Charles de Gaulle Airport;zh;巴黎夏尔·戴高乐机场
-PEK;A;CN;http://geonames.org/6301354 ;0.505455851034;Beijing Capital International Airport;Beijing Capital International Airport;zh;Běijīng Shǒudū Guójì Jīcháng=北京首都国际机场=北京首都國際機場
+PEK;A;CN;http://geonames.org/6301354 ;0.505455851034;Beijing Capital International Airport;Beijing Capital International Airport;zh;北京首都国际机场=Běijīng Shǒudū Guójì Jīcháng=北京首都国际机场=北京首都國際機場
 SVO;A;RU;http://geonames.org/494811 ;0.505412044143;Sheremetyevo International Airport;Sheremetyevo International Airport;zh;
 ORD;A;US;http://geonames.org/4887479 ;0.499920348728;Chicago O'Hare International Airport;Chicago O'Hare International Airport;zh;奥黑尔国际机场
 YYZ;A;CA;http://geonames.org/6296338 ;0.482782705448;Toronto Pearson International Airport;Toronto Pearson International Airport;zh;多倫多皮爾遜國際機場
@@ -7,23 +7,23 @@ SEA;C;US;http://geonames.org/5809844 ;0.435834631572;Seattle;Seattle;zh;西雅�
 LAX;A;US;http://geonames.org/5368418 ;0.427256724211;Los Angeles International Airport;Los Angeles International Airport;zh;洛杉磯國際機場
 LAX;C;US;http://geonames.org/5368361 ;0.427256724211;Los Angeles;Los Angeles;zh;洛杉矶=洛杉矶=洛杉磯
 SEA;A;US;http://geonames.org/5809876 ;0.406183921393;Seattle-Tacoma International Airport;Seattle-Tacoma International Airport;zh;西雅圖-塔科馬國際機場
-BKK;C;TH;http://geonames.org/1609350 ;0.376845773287;Bangkok;Bangkok;zh;曼谷=曼谷
+BKK;C;TH;http://geonames.org/1609350 ;0.376845773287;Bangkok;Bangkok;zh;曼谷=曼谷=曼谷
 HND;A;JP;http://geonames.org/6300412 ;0.362647013696;Tokyo International Airport;Tokyo International Airport;zh;東京國際機場
 CAN;A;CN;http://geonames.org/6301359 ;0.356646719686;Guangzhou Baiyun International Airport;Guangzhou Baiyun International Airport;zh;广州白云国际机场=廣州白雲國際機場
-CAN;C;CN;http://geonames.org/1809858 ;0.356646719686;Guangzhou;Guangzhou;zh;广州=广州=廣州
+CAN;C;CN;http://geonames.org/1809858 ;0.356646719686;Guangzhou;Guangzhou;zh;广州=广州市=广州=廣州
 SYD;A;AU;http://geonames.org/2208268 ;0.333817092739;Sydney International Airport;Sydney International Airport;zh;悉尼机场
 SYD;C;AU;http://geonames.org/2147714 ;0.333817092739;Sydney;Sydney;zh;悉尼=悉尼=雪梨
 BOS;A;US;http://geonames.org/4937646 ;0.325504183038;Logan International Airport;Logan International Airport;zh;爱德华·劳伦斯·洛根将军国际机场
-BOS;C;US;http://geonames.org/4930956 ;0.325504183038;Boston;Boston;zh;波士顿=波士顿=波士頓
+BOS;C;US;http://geonames.org/4930956 ;0.325504183038;Boston;Boston;zh;波士顿=波士顿=波士顿=波士頓
 BKK;A;TH;http://geonames.org/6301137 ;0.316699356874;Suvarnabhumi Airport;Suvarnabhumi Airport;zh;素万那普机场=新曼谷國際機場
 SHA;C;CN;http://geonames.org/1796236 ;0.304858435638;Shanghai;Shanghai;zh;上海=上海市=上海=中国上海
 FCO;A;IT;http://geonames.org/6299619 ;0.284472671151;Leonardo da Vinci–Fiumicino Airport;Leonardo da Vinci-Fiumicino Airport;zh;
-BRU;C;BE;http://geonames.org/2800866 ;0.271684411398;Brussels;Brussels;zh;
+BRU;C;BE;http://geonames.org/2800866 ;0.271684411398;Brussels;Brussels;zh;布鲁塞尔
 PVG;A;CN;http://geonames.org/6301386 ;0.247954201191;Shanghai Pudong International Airport;Shanghai Pudong International Airport;zh;上海浦东国际机场=上海浦東國際機場=Shànghǎi Pǔdōng Guójì Jīcháng=上海浦東國際機場
 BRU;A;BE;http://geonames.org/6296486 ;0.238989832395;Brussels Airport;Brussels Airport;zh;布鲁塞尔机场
 SHA;A;CN;http://geonames.org/6301388 ;0.229203659425;Shanghai Hongqiao International Airport;Shanghai Hongqiao International Airport;zh;上海虹桥机场=上海虹橋國際機場=Shànghǎi Hóngqiáo Jīcháng=上海虹桥国际机场
 YYC;A;CA;http://geonames.org/6296327 ;0.204072227393;Calgary International, Alta.;Calgary International, Alta.;zh;
-YYC;C;CA;http://geonames.org/5913490 ;0.204072227393;Calgary;Calgary;zh;卡尔加里=卡加利
+YYC;C;CA;http://geonames.org/5913490 ;0.204072227393;Calgary;Calgary;zh;卡尔加里=卡尔加里=卡加利
 NRT;A;JP;http://geonames.org/6300307 ;0.191672133521;Narita International Airport;Narita International Airport;zh;成田国际机场
 TXL;A;DE;http://geonames.org/3208806 ;0.176991105114;Berlin Tegel Airport;Berlin Tegel Airport;zh;
 CTU;A;CN;http://geonames.org/6301392 ;0.167543976139;Chengdu Shuangliu International Airport;Chengdu Shuangliu International Airport;zh;成都双流国际机场=Chéngdū Shuāngliú Guójì Jīchǎng=成都雙流國際機場
@@ -32,31 +32,31 @@ SZX;C;CN;http://geonames.org/1795565 ;0.163300818213;Shenzhen;Shenzhen;zh;深圳
 KMG;A;CN;http://geonames.org/9036019 ;0.158102296105;Kunming Changshui International Airport;Kunming Changshui International Airport;zh;
 KMG;C;CN;http://geonames.org/1804651 ;0.158102296105;Kunming;Kunming;zh;昆明=昆明市=昆明
 LED;A;RU;http://geonames.org/6300971 ;0.157141346603;Pulkovo Airport;Pulkovo Airport;zh;
-LED;C;RU;http://geonames.org/498817 ;0.157141346603;Saint Petersburg;Saint Petersburg;zh;
+LED;C;RU;http://geonames.org/498817 ;0.157141346603;Saint Petersburg;Saint Petersburg;zh;圣彼得堡
 SZX;A;CN;http://geonames.org/6301365 ;0.155734706049;Shenzhen Bao'an International Airport;Shenzhen Bao'an International Airport;zh;深圳宝安国际机场
 MAN;A;GB;http://geonames.org/6296575 ;0.151263118018;Manchester Airport;Manchester Airport;zh;曼彻斯特机场
-MAN;C;GB;http://geonames.org/2643123 ;0.151263118018;Manchester;Manchester;zh;
+MAN;C;GB;http://geonames.org/2643123 ;0.151263118018;Manchester;Manchester;zh;曼彻斯特
 PRG;A;CZ;http://geonames.org/6299654 ;0.143790913497;Prague Václav Havel Airport;Prague Vaclav Havel Airport;zh;布拉格魯濟涅國際機場
 PRG;C;CZ;http://geonames.org/3067696 ;0.143790913497;Prague;Prague;zh;布拉格
 HGH;A;CN;http://geonames.org/6301383 ;0.141888417395;Hangzhou Xiaoshan International Airport;Hangzhou Xiaoshan International Airport;zh;杭州萧山国际机场=Hángzhōu Xiāoshān Guójì Jīchǎng
 HGH;C;CN;http://geonames.org/1808926 ;0.141888417395;Hangzhou;Hangzhou;zh;杭州=杭州市=杭州市=杭州
 URC;A;CN;http://geonames.org/6301396 ;0.137095357625;Ürümqi Diwopu International Airport;UEruemqi Diwopu International Airport;zh;乌鲁木齐地窝堡国际机场=烏魯木齊地窩堡國際機場=Wūlǔmùqí Dìwōpù Guójì Jīcháng
-URC;C;CN;http://geonames.org/1529102 ;0.137095357625;Ürümqi;UEruemqi;zh;乌鲁木齐=Ürümqi=乌鲁木齐市=烏魯木齊
+URC;C;CN;http://geonames.org/1529102 ;0.137095357625;Ürümqi;UEruemqi;zh;乌鲁木齐=乌鲁木齐市=Ürümqi=乌鲁木齐市=烏魯木齊
 URC;C;CN;http://geonames.org/1532302 ;0.137095357625;Diwopu;Diwopu;zh;地窝堡乡
 CKG;A;CN;http://geonames.org/6301390 ;0.12622390664;Chongqing Jiangbei International Airport;Chongqing Jiangbei International Airport;zh;重庆江北国际机场
 CKG;C;CN;http://geonames.org/1803998 ;0.12622390664;Jiangbei;Jiangbei;zh;江北
-CKG;C;CN;http://geonames.org/1814906 ;0.12622390664;Chongqing;Chongqing;zh;重庆=重庆市
+CKG;C;CN;http://geonames.org/1814906 ;0.12622390664;Chongqing;Chongqing;zh;重庆=重庆市=重庆市
 TPE;C;TW;http://geonames.org/1668341 ;0.125899898455;Taipei;Taipei;zh;T’ai-pei=Pan-ch’iao-chieh=T’ai-pei Shih=Pan-ch’iao=T’ai-pei-hsien=Pan-ch’iao-chen=台北市|p=臺北市
 WUH;A;CN;http://geonames.org/6301368 ;0.118639889334;Wuhan Tianhe International Airport;Wuhan Tianhe International Airport;zh;武汉天河国际机场=武漢國際機場
-WUH;C;CN;http://geonames.org/1791247 ;0.118639889334;Wuhan;Wuhan;zh;武汉=武汉=武漢
+WUH;C;CN;http://geonames.org/1791247 ;0.118639889334;Wuhan;Wuhan;zh;武汉=武汉市=武汉=武漢=武汉|p
 TPE;A;TW;http://geonames.org/1980018 ;0.113268846164;Taiwan Taoyuan International Airport;Taiwan Taoyuan International Airport;zh;
-TLV;C;IL;http://geonames.org/293397 ;0.102017086429;Tel Aviv;Tel Aviv;zh;特拉維夫=特拉维夫
+TLV;C;IL;http://geonames.org/293397 ;0.102017086429;Tel Aviv;Tel Aviv;zh;特拉维夫=特拉維夫=特拉维夫
 XMN;A;CN;http://geonames.org/6301379 ;0.0984281777196;Xiamen Gaoqi International Airport;Xiamen Gaoqi International Airport;zh;厦门高崎国际机场
-XMN;C;CN;http://geonames.org/1790645 ;0.0984281777196;Xiamen;Xiamen;zh;厦门市=廈門
+XMN;C;CN;http://geonames.org/1790645 ;0.0984281777196;Xiamen;Xiamen;zh;厦门市=厦门市=廈門
 XIY;A;CN;http://geonames.org/2001154 ;0.096255244035;Xi'an Xianyang International Airport;Xi'an Xianyang International Airport;zh;
 NKG;A;CN;http://geonames.org/6301384 ;0.0951841339837;Nanjing Lukou International Airport;Nanjing Lukou International Airport;zh;南京禄口国际机场
 NKG;C;CN;http://geonames.org/1799962 ;0.0951841339837;Nanjing;Nanjing;zh;南京=南京市=南京市=南京
-CSX;C;CN;http://geonames.org/1815577 ;0.0945609054065;Changsha;Changsha;zh;长沙市=長沙=长沙=長沙
+CSX;C;CN;http://geonames.org/1815577 ;0.0945609054065;Changsha;Changsha;zh;长沙市=长沙=長沙=长沙=長沙
 CSX;A;CN;http://geonames.org/6301360 ;0.0930240263189;Changsha Huanghua International Airport;Changsha Huanghua International Airport;zh;长沙黄花国际机场=長沙黃花國際機場=Chángshā Huánghuā Guójì Jīchǎng
 TLV;A;IL;http://geonames.org/390285 ;0.0929076820495;Ben Gurion Airport;Ben Gurion Airport;zh;
 CJU;A;KR;http://geonames.org/6194228 ;0.0907662611253;Jeju International Airport;Jeju International Airport;zh;
@@ -64,25 +64,25 @@ CJU;C;KR;http://geonames.org/1846266 ;0.0907662611253;Jeju-si;Jeju-si;zh;
 SJC;A;US;http://geonames.org/5392196 ;0.0880489875793;San Jose International Airport;San Jose International Airport;zh;諾曼·峰田聖荷西國際機場
 SJC;C;US;http://geonames.org/5392171 ;0.0880489875793;San Jose;San Jose;zh;聖荷西
 DLC;A;CN;http://geonames.org/6301401 ;0.0835472439613;Dalian Zhoushuizi International Airport;Dalian Zhoushuizi International Airport;zh;大连周水子国际机场=Dàlián Zhōushuǐzǐ Guójì Jīchǎng
-DLC;C;CN;http://geonames.org/1814087 ;0.0835472439613;Dalian;Dalian;zh;大连市|p=大連
+DLC;C;CN;http://geonames.org/1814087 ;0.0835472439613;Dalian;Dalian;zh;大连市|p=大连|s=大連
 MFM;C;MO;http://geonames.org/1821274 ;0.0784290373722;Macau;Macau;zh;澳门=澳门=澳門
 HKT;A;TH;http://geonames.org/6301157 ;0.0782519091686;Phuket International Airport;Phuket International Airport;zh;布吉國際機場=普吉国际机场=布吉國際機場
 HKT;C;TH;http://geonames.org/1151254 ;0.0782519091686;Phuket;Phuket;zh;
 CGO;A;CN;http://geonames.org/6301367 ;0.0761403752197;Zhengzhou Xinzheng International Airport;Zhengzhou Xinzheng International Airport;zh;郑州新郑国际机场=Zhèngzhōu Xīnzhèng Guójì Jīchǎng
-CGO;C;CN;http://geonames.org/1784658 ;0.0761403752197;Zhengzhou;Zhengzhou;zh;郑州=鄭州
+CGO;C;CN;http://geonames.org/1784658 ;0.0761403752197;Zhengzhou;Zhengzhou;zh;郑州=郑州市=鄭州
 TAO;A;CN;http://geonames.org/6301387 ;0.0756591119013;Qingdao Liuting International Airport;Qingdao Liuting International Airport;zh;青岛流亭国际机场=Qīngdǎo Liútíng Guójì Jīchǎng=青島流亭國際機場
-TAO;C;CN;http://geonames.org/1797929 ;0.0756591119013;Qingdao;Qingdao;zh;青岛市=青岛=青島
+TAO;C;CN;http://geonames.org/1797929 ;0.0756591119013;Qingdao;Qingdao;zh;青岛市=青岛市=青岛=青島
 SHE;A;CN;http://geonames.org/6301402 ;0.0756257491907;Shenyang Taoxian International Airport;Shenyang Taoxian International Airport;zh;沈阳桃仙国际机场=沈阳桃仙国际机场
-SHE;C;CN;http://geonames.org/2034937 ;0.0756257491907;Shenyang;Shenyang;zh;沈阳=沈阳市=瀋陽
+SHE;C;CN;http://geonames.org/2034937 ;0.0756257491907;Shenyang;Shenyang;zh;沈阳=沈阳市=沉阳市=瀋陽
 HRB;A;CN;http://geonames.org/6301399 ;0.0750168069576;Harbin Taiping International Airport;Harbin Taiping International Airport;zh;哈尔滨太平国际机场=Hā'ěrbīn Tàipíng Guójì Jīchǎng
-HRB;C;CN;http://geonames.org/2037013 ;0.0750168069576;Harbin;Harbin;zh;哈尔滨=Ha’erbin=哈爾濱
+HRB;C;CN;http://geonames.org/2037013 ;0.0750168069576;Harbin;Harbin;zh;哈尔滨=哈尔滨市=Ha’erbin=哈爾濱
 MFM;A;MO;http://geonames.org/6284950 ;0.0701428305452;Macau International Airport;Macau International Airport;zh;澳门国际机场=澳門國際機場
 ALA;A;KZ;http://geonames.org/6300913 ;0.0677198342296;Almaty Airport;Almaty Airport;zh;
 ALA;C;KZ;http://geonames.org/1526384 ;0.0677198342296;Almaty;Almaty;zh;阿拉木圖
 KWE;A;CN;http://geonames.org/6301391 ;0.0671494688941;Guiyang Longdongbao International Airport;Guiyang Longdongbao International Airport;zh;贵阳龙洞堡国际机场
-KWE;C;CN;http://geonames.org/1809461 ;0.0671494688941;Guiyang;Guiyang;zh;贵阳=貴陽
+KWE;C;CN;http://geonames.org/1809461 ;0.0671494688941;Guiyang;Guiyang;zh;贵阳=贵阳市=貴陽
 NGB;A;CN;http://geonames.org/7668805 ;0.0614862063158;Ningbo Lishe International Airport;Ningbo Lishe International Airport;zh;
-NGB;C;CN;http://geonames.org/1799397 ;0.0614862063158;Ningbo;Ningbo;zh;宁波=寧波
+NGB;C;CN;http://geonames.org/1799397 ;0.0614862063158;Ningbo;Ningbo;zh;宁波=宁波市=寧波
 HET;A;CN;http://geonames.org/6301355 ;0.0592886966514;Hohhot Baita International Airport;Hohhot Baita International Airport;zh;
 HET;C;CN;http://geonames.org/2036892 ;0.0592886966514;Hohhot;Hohhot;zh;呼和浩特市=呼和浩特=呼和浩特
 SYX;A;CN;http://geonames.org/6301369 ;0.0577142161707;Sanya Phoenix International Airport;Sanya Phoenix International Airport;zh;Sānyà Fènghuáng Guójì Jīcháng=三亚凤凰国际机场
@@ -91,9 +91,9 @@ FOC;A;CN;http://geonames.org/6301381 ;0.0531046364383;Fuzhou Changle Internation
 FOC;C;CN;http://geonames.org/1791245 ;0.0531046364383;Changle;Changle;zh;
 FOC;C;CN;http://geonames.org/1810821 ;0.0531046364383;Fuzhou;Fuzhou;zh;福州市=福州=福州
 NNG;A;CN;http://geonames.org/6301363 ;0.0525924065518;Nanning Airport;Nanning Airport;zh;
-NNG;C;CN;http://geonames.org/1799869 ;0.0525924065518;Nanning;Nanning;zh;南宁=南寧
+NNG;C;CN;http://geonames.org/1799869 ;0.0525924065518;Nanning;Nanning;zh;南宁=南宁市=南寧
 TNA;A;CN;http://geonames.org/6453420 ;0.0520327470469;Jinan Yaoqiang International Airport;Jinan Yaoqiang International Airport;zh;济南遥墙国际机场=Jǐnán Yáoqiáng Guójì Jīchǎng
-TNA;C;CN;http://geonames.org/1805753 ;0.0520327470469;Jinan;Jinan;zh;济南=濟南
+TNA;C;CN;http://geonames.org/1805753 ;0.0520327470469;Jinan;Jinan;zh;济南=济南市=濟南
 HAK;A;CN;http://geonames.org/6453422 ;0.0511029100502;Meilan International Airport;Meilan International Airport;zh;
 HAK;C;CN;http://geonames.org/1809078 ;0.0511029100502;Haikou;Haikou;zh;海口市=海口=海口
 TSN;A;CN;http://geonames.org/6301356 ;0.0508740293058;Tianjin Binhai International Airport;Tianjin Binhai International Airport;zh;天津滨海国际机场|p
@@ -101,20 +101,20 @@ TSN;C;CN;http://geonames.org/1792947 ;0.0508740293058;Tianjin;Tianjin;zh;天津=
 TYN;A;CN;http://geonames.org/6301357 ;0.0508262189411;Taiyuan Wusu International Airport;Taiyuan Wusu International Airport;zh;
 TYN;C;CN;http://geonames.org/1793511 ;0.0508262189411;Taiyuan;Taiyuan;zh;太原=太原
 LHW;A;CN;http://geonames.org/6301373 ;0.0485606573585;Lanzhou Zhongchuan Airport;Lanzhou Zhongchuan Airport;zh;兰州中川机场
-LHW;C;CN;http://geonames.org/1804430 ;0.0485606573585;Lanzhou;Lanzhou;zh;兰州=兰州=兰州市=蘭州
+LHW;C;CN;http://geonames.org/1804430 ;0.0485606573585;Lanzhou;Lanzhou;zh;兰州=兰州市=兰州=兰州市=蘭州
 CGQ;A;CN;http://geonames.org/6301398 ;0.0478697016827;Changchun Longjia International Airport;Changchun Longjia International Airport;zh;长春龙嘉国际机场=Chángchūn Lóngjiā Guójì Jīcháng=长春龙嘉国际机场
-CGQ;C;CN;http://geonames.org/2038180 ;0.0478697016827;Changchun;Changchun;zh;长春市=長春
+CGQ;C;CN;http://geonames.org/2038180 ;0.0478697016827;Changchun;Changchun;zh;长春=长春市=長春
 WNZ;A;CN;http://geonames.org/7729999 ;0.0478620681773;Wenzhou Yongqiang International Airport;Wenzhou Yongqiang International Airport;zh;温州永强国际机场=Wēnzhōu Yóngqiăng Guójì Jīchǎng
 WNZ;C;CN;http://geonames.org/1791388 ;0.0478620681773;Wenzhou;Wenzhou;zh;温州市=温州市=溫州
 KHN;C;CN;http://geonames.org/1800163 ;0.0472574301849;Nanchang;Nanchang;zh;南昌=南昌市=南昌
 KHN;A;CN;http://geonames.org/6301380 ;0.0440845266818;Nanchang Changbei International Airport;Nanchang Changbei International Airport;zh;南昌昌北国际机场=Nánchāng Chāngběi Guójì Jīchǎng
 ZUH;C;CN;http://geonames.org/1790437 ;0.0424892622621;Zhuhai;Zhuhai;zh;珠海市=珠海=珠海
 XNN;A;CN;http://geonames.org/6301375 ;0.0423113885486;Xining Caojiabao Airport;Xining Caojiabao Airport;zh;西宁曹家堡机场|p
-XNN;C;CN;http://geonames.org/1788852 ;0.0423113885486;Xining;Xining;zh;西宁=西宁市=西寧
+XNN;C;CN;http://geonames.org/1788852 ;0.0423113885486;Xining;Xining;zh;西宁=西宁市=西宁市=西寧
 HFE;A;CN;http://geonames.org/8581630 ;0.0401528425623;Hefei Xinqiao International Airport;Hefei Xinqiao International Airport;zh;合肥新桥国际机场=Héféi Xīnqiáo Guójì Jīchǎng
 HFE;C;CN;http://geonames.org/1808722 ;0.0401528425623;Hefei;Hefei;zh;合肥=合肥市=合肥
 INC;A;CN;http://geonames.org/6301883 ;0.0397740296601;Yinchuan Hedong Airport;Yinchuan Hedong Airport;zh;Yínchuān Hédōng Jīchǎng=银川河东机场=銀川河東機場
-INC;C;CN;http://geonames.org/1786657 ;0.0397740296601;Yinchuan;Yinchuan;zh;银川=銀川
+INC;C;CN;http://geonames.org/1786657 ;0.0397740296601;Yinchuan;Yinchuan;zh;银川=银川市=銀川
 KWL;A;CN;http://geonames.org/6301362 ;0.0361494897337;Guilin Liangjiang International Airport;Guilin Liangjiang International Airport;zh;桂林两江国际机场=Guìlín Liǎngjiāng Guójì Jīchǎng=桂林兩江國際機場
 KWL;C;CN;http://geonames.org/1809498 ;0.035949999207;Guilin;Guilin;zh;桂林市
 ZUH;A;CN;http://geonames.org/7668792 ;0.0349231500984;Zhuhai Jinwan Airport;Zhuhai Jinwan Airport;zh;
@@ -127,7 +127,7 @@ YIW;C;CN;http://geonames.org/1814870 ;0.0252478703181;Yiwu;Yiwu;zh;义乌=義烏
 XUZ;A;CN;http://geonames.org/8505071 ;0.0211896632223;Xuzhou Guanyin Airport;Xuzhou Guanyin Airport;zh;徐州观音机场=徐州觀音機場=Xúzhōu Guānyīn Jīchǎng
 XUZ;C;CN;http://geonames.org/10630003 ;0.0211896632223;Xuzhou;Xuzhou;zh;徐州市=徐州
 KRL;A;CN;http://geonames.org/7730304 ;0.0201113704359;Korla Airport;Korla Airport;zh;
-KRL;C;CN;http://geonames.org/1529376 ;0.0201113704359;Sayibage;Sayibage;zh;库尔勒=萨依巴格=库尔勒市
+KRL;C;CN;http://geonames.org/1529376 ;0.0201113704359;Sayibage;Sayibage;zh;库尔勒=库尔勒市=萨依巴格=库尔勒市
 YIH;A;CN;http://geonames.org/7731644 ;0.0174689422353;Yichang Airport;Yichang Airport;zh;
 YIH;C;CN;http://geonames.org/1786764 ;0.0174689422353;Yichang;Yichang;zh;宜昌市=宜昌
 LYG;A;CN;http://geonames.org/7731252 ;0.0168497275612;Lianyungang Baitabu Airport;Lianyungang Baitabu Airport;zh;连云港白塔埠机场=Liányúngǎng Báitǎbù Jīchǎng
@@ -137,39 +137,39 @@ KHG;C;CN;http://geonames.org/1280849 ;0.0132120737273;Kashgar;Kashgar;zh;喀什=
 JMU;A;CN;http://geonames.org/7668813 ;0.0121127521301;Jiamusi Airport;Jiamusi Airport;zh;
 JMU;C;CN;http://geonames.org/2036581 ;0.0121127521301;Jiamusi;Jiamusi;zh;佳木斯市=佳木斯=佳木斯
 DAT;A;CN;http://geonames.org/7668788 ;0.0117027513627;Datong Beijiazao Airport;Datong Beijiazao Airport;zh;大同东王庄机场
-DAT;C;CN;http://geonames.org/2037799 ;0.0117027513627;Datong;Datong;zh;大同市
+DAT;C;CN;http://geonames.org/2037799 ;0.0117027513627;Datong;Datong;zh;大同市=大同市
 CIH;A;CN;http://geonames.org/7730917 ;0.011650891979;Changzhi Airport;Changzhi Airport;zh;
 CIH;C;CN;http://geonames.org/1808956 ;0.011650891979;Changzhi;Changzhi;zh;長治
 NZH;A;CN;http://geonames.org/7910171 ;0.0104622007054;Manzhouli Airport;Manzhouli Airport;zh;
-NZH;C;CN;http://geonames.org/2035836 ;0.0104622007054;Manzhouli;Manzhouli;zh;
+NZH;C;CN;http://geonames.org/2035836 ;0.0104622007054;Manzhouli;Manzhouli;zh;满洲里市
 UYN;A;CN;http://geonames.org/7731593 ;0.0101849177357;Yulin Airport;Yulin Airport;zh;榆林榆阳机场
 UYN;C;CN;http://geonames.org/1785777 ;0.0101849177357;Yulin;Yulin;zh;榆林=榆林市
 NDG;A;CN;http://geonames.org/6301400 ;0.00913980724992;Qiqihar Sanjiazi Airport;Qiqihar Sanjiazi Airport;zh;齐齐哈尔三家子机场=齊齊哈爾三家子機場=Qíqíhā'ěr Sānjiāzǐ Jīchǎng
-NDG;C;CN;http://geonames.org/2035265 ;0.00913980724992;Qiqihar;Qiqihar;zh;齐齐哈尔=齐齐哈尔市=齊齊哈爾
+NDG;C;CN;http://geonames.org/2035265 ;0.00913980724992;Qiqihar;Qiqihar;zh;齐齐哈尔市=齐齐哈尔=齐齐哈尔市=齊齊哈爾
 TVS;A;CN;http://geonames.org/7910486 ;0.0086851316065;Tangshan Sannühe Airport;Tangshan Sannuehe Airport;zh;唐山三女河机场
 TVS;C;CN;http://geonames.org/1793346 ;0.0086851316065;Tangshan;Tangshan;zh;唐山市
 TVS;C;CN;http://geonames.org/1796660 ;0.0086851316065;Sannühe;Sannuhe;zh;
 LPF;A;CN;http://geonames.org/8693254 ;0.00814015200585;Liupanshui Yue Zhao Airport;Liupanshui Yue Zhao Airport;zh;
 LPF;C;CN;http://geonames.org/8533133 ;0.00814015200585;Liupanshui;Liupanshui;zh;
 AKU;A;CN;http://geonames.org/7668809 ;0.00794521670096;Aksu Airport;Aksu Airport;zh;阿克苏机场=阿克蘇機場=Ākèsù Jīchǎng
-AKU;C;CN;http://geonames.org/1529660 ;0.00794521670096;Yingbazha;Yingbazha;zh;英巴扎=阿克苏=阿克苏市
+AKU;C;CN;http://geonames.org/1529660 ;0.00794521670096;Yingbazha;Yingbazha;zh;阿克苏市=英巴扎=阿克苏=阿克苏市
 WUA;A;CN;http://geonames.org/7910204 ;0.00748921751998;Wuhai Airport;Wuhai Airport;zh;乌海机场=Wūhǎi Jīchǎng
 WUA;C;CN;http://geonames.org/1791249 ;0.00748921751998;Wuhai;Wuhai;zh;
 DOY;A;CN;http://geonames.org/7910226 ;0.00700208807277;Dongying Shengli Airport;Dongying Shengli Airport;zh;东营胜利机场=Dōngyíng Shènglì Jīchǎng
-DOY;C;CN;http://geonames.org/1812101 ;0.00700208807277;Shengli;Shengli;zh;东营市=東營=胜利=胜利街道
+DOY;C;CN;http://geonames.org/1812101 ;0.00700208807277;Shengli;Shengli;zh;东营市=东营市=東營=胜利=胜利街道
 JNZ;A;CN;http://geonames.org/7730309 ;0.00692759309251;Jinzhou Airport;Jinzhou Airport;zh;
 JNZ;C;CN;http://geonames.org/2036427 ;0.00692759309251;Jinzhou;Jinzhou;zh;錦州=锦州市
 QHX;C;CN;http://geonames.org/1806488 ;0.00651361585456;Qionghai;Qionghai;zh;嘉积=琼海市
 AQG;A;CN;http://geonames.org/7668802 ;0.00627589161462;Anqing Tianzhushan Airport;Anqing Tianzhushan Airport;zh;安庆天柱山机场
-AQG;C;CN;http://geonames.org/1817993 ;0.00627589161462;Anqing;Anqing;zh;安庆市=安庆=安庆市=安慶
+AQG;C;CN;http://geonames.org/1817993 ;0.00627589161462;Anqing;Anqing;zh;安庆市=安庆市=安庆=安庆市=安慶
 WEF;A;CN;http://geonames.org/7730297 ;0.00620575401836;Weifang Airport;Weifang Airport;zh;
-WEF;C;CN;http://geonames.org/1791681 ;0.00620575401836;Weifang;Weifang;zh;潍坊市=濰坊
+WEF;C;CN;http://geonames.org/1791681 ;0.00620575401836;Weifang;Weifang;zh;潍坊市=潍坊市=濰坊
 ENY;A;CN;http://geonames.org/6301376 ;0.0059204093919;Yan'an Ershilipu Airport;Yan'an Ershilipu Airport;zh;延安二十里堡机场=Yán'ān Èrshílǐpù Jīchǎng
 ENY;C;CN;http://geonames.org/1787765 ;0.0059204093919;Yan’an;Yan'an;zh;
 LQS;C;CN;http://geonames.org/1803461 ;0.00580437365408;Lingshui Li Autonomous County;Lingshui Li Autonomous County;zh;Lingshui Xian=Ling-shui Hsien=陵水黎族自治县=陵水=Lingshui Lizu Zizhixian
 LCX;A;CN;http://geonames.org/7910378 ;0.00551932450612;Longyan Guanzhishan Airport;Longyan Guanzhishan Airport;zh;龙岩冠豸山机场
-LCX;C;CN;http://geonames.org/1802276 ;0.00551932450612;Longyan;Longyan;zh;龙岩=龍岩=龙岩市
+LCX;C;CN;http://geonames.org/1802276 ;0.00551932450612;Longyan;Longyan;zh;龙岩=龙岩市=龍岩=龙岩市
 ZQZ;A;CN;http://geonames.org/8298673 ;0.00524792496069;Zhangjiakou Ningyuan Airport;Zhangjiakou Ningyuan Airport;zh;张家口机场
-ZQZ;C;CN;http://geonames.org/2033196 ;0.00524792496069;Zhangjiakou;Zhangjiakou;zh;张家口市
+ZQZ;C;CN;http://geonames.org/2033196 ;0.00524792496069;Zhangjiakou;Zhangjiakou;zh;张家口市=张家口市
 AEB;A;CN;http://geonames.org/7910245 ;0.00503080623317;Baise Youjiang Airport;Baise Youjiang Airport;zh;百色右江机场
 AEB;C;CN;http://geonames.org/1816269 ;0.00503080623317;Baise City;Baise City;zh;Bósè=Bǎisè=百城=百城街道=百色镇=百色

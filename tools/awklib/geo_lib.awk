@@ -1678,6 +1678,7 @@ function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
 			EquivalentLangArray["yue"] = 1
 			EquivalentLangArray["wuu"] = 1
 			EquivalentLangArray["pny"] = 1
+			EquivalentLangArray["zh-CN"] = 1
 		}
 		if (AltNameLang in EquivalentLangArray) {
 			if (outputNameList != "") {
