@@ -9,9 +9,9 @@ LAX;C;US;http://geonames.org/5368361 ;0.427256724211;Los Angeles;Los Angeles;zh;
 SEA;A;US;http://geonames.org/5809876 ;0.406183921393;Seattle-Tacoma International Airport;Seattle-Tacoma International Airport;zh;西雅圖-塔科馬國際機場
 BKK;C;TH;http://geonames.org/1609350 ;0.376845773287;Bangkok;Bangkok;zh;曼谷=曼谷
 HND;A;JP;http://geonames.org/6300412 ;0.362647013696;Tokyo International Airport;Tokyo International Airport;zh;東京國際機場
-CAN;A;CN;http://geonames.org/6301359 ;0.356646719686;Guangzhou;Guangzhou;zh;
+CAN;A;CN;http://geonames.org/6301359 ;0.356646719686;Guangzhou Baiyun International Airport;Guangzhou Baiyun International Airport;zh;广州白云国际机场=廣州白雲國際機場
 CAN;C;CN;http://geonames.org/1809858 ;0.356646719686;Guangzhou;Guangzhou;zh;广州=广州=廣州
-SYD;A;AU;http://geonames.org/2208268 ;0.333817092739;Sydney International Airport;Sydney International Airport;zh;
+SYD;A;AU;http://geonames.org/2208268 ;0.333817092739;Sydney International Airport;Sydney International Airport;zh;悉尼机场
 SYD;C;AU;http://geonames.org/2147714 ;0.333817092739;Sydney;Sydney;zh;悉尼=悉尼=雪梨
 BOS;A;US;http://geonames.org/4937646 ;0.325504183038;Logan International Airport;Logan International Airport;zh;爱德华·劳伦斯·洛根将军国际机场
 BOS;C;US;http://geonames.org/4930956 ;0.325504183038;Boston;Boston;zh;波士顿=波士顿=波士頓
@@ -20,7 +20,7 @@ SHA;C;CN;http://geonames.org/1796236 ;0.304858435638;Shanghai;Shanghai;zh;上海
 FCO;A;IT;http://geonames.org/6299619 ;0.284472671151;Leonardo da Vinci–Fiumicino Airport;Leonardo da Vinci-Fiumicino Airport;zh;
 BRU;C;BE;http://geonames.org/2800866 ;0.271684411398;Brussels;Brussels;zh;
 PVG;A;CN;http://geonames.org/6301386 ;0.247954201191;Shanghai Pudong International Airport;Shanghai Pudong International Airport;zh;上海浦东国际机场=上海浦東國際機場=Shànghǎi Pǔdōng Guójì Jīcháng=上海浦東國際機場
-BRU;A;BE;http://geonames.org/6296486 ;0.238989832395;Bruxelles National;Bruxelles National;zh;
+BRU;A;BE;http://geonames.org/6296486 ;0.238989832395;Brussels Airport;Brussels Airport;zh;布鲁塞尔机场
 SHA;A;CN;http://geonames.org/6301388 ;0.229203659425;Shanghai Hongqiao International Airport;Shanghai Hongqiao International Airport;zh;上海虹桥机场=上海虹橋國際機場=Shànghǎi Hóngqiáo Jīcháng=上海虹桥国际机场
 YYC;A;CA;http://geonames.org/6296327 ;0.204072227393;Calgary International, Alta.;Calgary International, Alta.;zh;
 YYC;C;CA;http://geonames.org/5913490 ;0.204072227393;Calgary;Calgary;zh;卡尔加里=卡加利
@@ -47,11 +47,11 @@ CKG;A;CN;http://geonames.org/6301390 ;0.12622390664;Chongqing Jiangbei Internati
 CKG;C;CN;http://geonames.org/1803998 ;0.12622390664;Jiangbei;Jiangbei;zh;江北
 CKG;C;CN;http://geonames.org/1814906 ;0.12622390664;Chongqing;Chongqing;zh;重庆=重庆市
 TPE;C;TW;http://geonames.org/1668341 ;0.125899898455;Taipei;Taipei;zh;T’ai-pei=Pan-ch’iao-chieh=T’ai-pei Shih=Pan-ch’iao=T’ai-pei-hsien=Pan-ch’iao-chen=台北市|p=臺北市
-WUH;A;CN;http://geonames.org/6301368 ;0.118639889334;Wuhan Tianhe International Airport;Wuhan Tianhe International Airport;zh;
+WUH;A;CN;http://geonames.org/6301368 ;0.118639889334;Wuhan Tianhe International Airport;Wuhan Tianhe International Airport;zh;武汉天河国际机场=武漢國際機場
 WUH;C;CN;http://geonames.org/1791247 ;0.118639889334;Wuhan;Wuhan;zh;武汉=武汉=武漢
 TPE;A;TW;http://geonames.org/1980018 ;0.113268846164;Taiwan Taoyuan International Airport;Taiwan Taoyuan International Airport;zh;
 TLV;C;IL;http://geonames.org/293397 ;0.102017086429;Tel Aviv;Tel Aviv;zh;特拉維夫=特拉维夫
-XMN;A;CN;http://geonames.org/6301379 ;0.0984281777196;Xiamen;Xiamen;zh;
+XMN;A;CN;http://geonames.org/6301379 ;0.0984281777196;Xiamen Gaoqi International Airport;Xiamen Gaoqi International Airport;zh;厦门高崎国际机场
 XMN;C;CN;http://geonames.org/1790645 ;0.0984281777196;Xiamen;Xiamen;zh;厦门市=廈門
 XIY;A;CN;http://geonames.org/2001154 ;0.096255244035;Xi'an Xianyang International Airport;Xi'an Xianyang International Airport;zh;
 NKG;A;CN;http://geonames.org/6301384 ;0.0951841339837;Nanjing Lukou International Airport;Nanjing Lukou International Airport;zh;南京禄口国际机场
@@ -64,7 +64,7 @@ CJU;C;KR;http://geonames.org/1846266 ;0.0907662611253;Jeju-si;Jeju-si;zh;
 SJC;A;US;http://geonames.org/5392196 ;0.0880489875793;San Jose International Airport;San Jose International Airport;zh;諾曼·峰田聖荷西國際機場
 SJC;C;US;http://geonames.org/5392171 ;0.0880489875793;San Jose;San Jose;zh;聖荷西
 DLC;A;CN;http://geonames.org/6301401 ;0.0835472439613;Dalian Zhoushuizi International Airport;Dalian Zhoushuizi International Airport;zh;大连周水子国际机场=Dàlián Zhōushuǐzǐ Guójì Jīchǎng
-DLC;C;CN;http://geonames.org/1814087 ;0.0835472439613;Dalian;Dalian;zh;大连市|p
+DLC;C;CN;http://geonames.org/1814087 ;0.0835472439613;Dalian;Dalian;zh;大连市|p=大連
 MFM;C;MO;http://geonames.org/1821274 ;0.0784290373722;Macau;Macau;zh;澳门=澳门=澳門
 HKT;A;TH;http://geonames.org/6301157 ;0.0782519091686;Phuket International Airport;Phuket International Airport;zh;布吉國際機場=普吉国际机场=布吉國際機場
 HKT;C;TH;http://geonames.org/1151254 ;0.0782519091686;Phuket;Phuket;zh;
