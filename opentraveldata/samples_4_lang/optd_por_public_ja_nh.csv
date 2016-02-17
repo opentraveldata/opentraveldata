@@ -30,7 +30,7 @@ SHA;C;CN;http://geonames.org/1796236 ;0.304858435638;Shanghai;Shanghai;ja;上海
 IAH;A;US;http://geonames.org/4693268 ;0.301720032358;George Bush Intercontinental Airport;George Bush Intercontinental Airport;ja;ジョージ・ブッシュ・インターコンチネンタル空港
 PHX;A;US;http://geonames.org/5308700 ;0.298068666136;Phoenix Sky Harbor International Airport;Phoenix Sky Harbor International Airport;ja;フェニックス・スカイハーバー国際空港
 PHX;C;US;http://geonames.org/5308655 ;0.298068666136;Phoenix;Phoenix;ja;フェニックス
-JFK;A;US;http://geonames.org/5122732 ;0.295644595254;John F Kennedy International Airport;John F Kennedy International Airport;ja;ジョン・F・ケネディ国際空港
+JFK;A;US;http://geonames.org/5122732 ;0.295644595254;John F. Kennedy International Airport;John F. Kennedy International Airport;ja;ジョン・F・ケネディ国際空港
 BOM;A;IN;http://geonames.org/6301032 ;0.286872600398;Chhatrapati Shivaji International Airport;Chhatrapati Shivaji International Airport;ja;チャットラパティー・シヴァージー国際空港
 BOM;C;IN;http://geonames.org/1275339 ;0.286872600398;Mumbai;Mumbai;ja;ムンバイ
 YVR;C;CA;http://geonames.org/6173331 ;0.276457374712;Vancouver;Vancouver;ja;バンクーバー市=バンクーバー|p
@@ -128,8 +128,8 @@ ISG;A;JP;http://geonames.org/6300461 ;0.0141138373619;Ishigaki Airport;Ishigaki 
 ISG;C;JP;http://geonames.org/1861416 ;0.0141138373619;Ishigaki;Ishigaki;ja;石垣=いしがき=石垣市
 TTJ;A;JP;http://geonames.org/6300382 ;0.013563116679;Tottori Airport;Tottori Airport;ja;
 TTJ;C;JP;http://geonames.org/1849892 ;0.013563116679;Tottori;Tottori;ja;
-SHB;A;JP;http://geonames.org/6300326 ;0.0118973376513;Nakashibetsu Airport;Nakashibetsu Airport;ja;
-SHB;C;JP;http://geonames.org/2129034 ;0.0118973376513;Naka-shibetsu;Naka-shibetsu;ja;中標津|p
+SHB;A;JP;http://geonames.org/6300326 ;0.0118973376513;Nakashibetsu Airport;Nakashibetsu Airport;ja;中標津空港|p=Nakashibetsu Kūkō
+SHB;C;JP;http://geonames.org/2129034 ;0.0118973376513;Nakashibetsu;Nakashibetsu;ja;中標津|p=Nakashibetsu-chō
 SYO;A;JP;http://geonames.org/6300401 ;0.0117956884336;Shonai Airport;Shonai Airport;ja;庄内空港=Shonai Kūkō
 SYO;C;JP;http://geonames.org/10630004 ;0.0117956884336;Shonai;Shonai;ja;庄内町=Shōnai-machi
 SYO;C;JP;http://geonames.org/1853140 ;0.0117956884336;Sakata;Sakata;ja;酒田市
@@ -139,15 +139,15 @@ HSG;A;JP;http://geonames.org/6300353 ;0.0104683417341;Saga Airport;Saga Airport;
 HSG;C;JP;http://geonames.org/1853303 ;0.0104683417341;Saga;Saga;ja;佐賀|p=Saga-shi=佐賀市=さがし=さが=サガ=サガシ
 TOY;A;JP;http://geonames.org/6300369 ;0.0101042822721;Toyama Airport;Toyama Airport;ja;
 TOY;C;JP;http://geonames.org/1849876 ;0.0101042822721;Toyama;Toyama;ja;Toyama-shi=富山市=とやまし=Toyamashi=富山=とやま=トヤマ=トヤマシ
-HAC;A;JP;http://geonames.org/6300407 ;0.0100282601881;Hachijojima Airport;Hachijojima Airport;ja;
-HAC;C;JP;http://geonames.org/0 ;0.0100282601881;Hachijojima JP;Hachijojima JP;ja;
+HAC;A;JP;http://geonames.org/6300407 ;0.0100282601881;Hachijojima Airport;Hachijojima Airport;ja;八丈島空港|p=Hachijōjima Kūkō
+HAC;C;JP;http://geonames.org/1863455 ;0.0100282601881;Hachijō Jima;Hachijo Jima;ja;八丈島
 IWJ;A;JP;http://geonames.org/6300385 ;0.0083308383435;Iwami Airport;Iwami Airport;ja;石見空港
 IWJ;C;JP;http://geonames.org/1857594 ;0.0083308383435;Masuda;Masuda;ja;
 NTQ;A;JP;http://geonames.org/7668415 ;0.00826083194262;Noto Airport;Noto Airport;ja;能登空港=輪島空港|c
 NTQ;C;JP;http://geonames.org/1848976 ;0.00826083194262;Wajima;Wajima;ja;輪島崎町=輪島市
-ONJ;A;JP;http://geonames.org/6300398 ;0.00826083194262;Odate-Noshiro Airport;Odate-Noshiro Airport;ja;
+ONJ;A;JP;http://geonames.org/6300398 ;0.00826083194262;Odate–Noshiro Airport;Odate-Noshiro Airport;ja;大館能代空港|p=Odate-Noshiro Kūkō
 ONJ;C;JP;http://geonames.org/2128787 ;0.00826083194262;Ōdate;Odate;ja;大館=おおだて=オオダテ=大館市
-ONJ;C;JP;http://geonames.org/2128867 ;0.00826083194262;Noshiromachi;Noshiromachi;ja;能代町
+ONJ;C;JP;http://geonames.org/2128867 ;0.00826083194262;Noshiro;Noshiro;ja;能代町|p=Noshiro-shi
 MBE;CA;JP;http://geonames.org/6300339 ;0.00649340369715;Mombetsu Airport;Mombetsu Airport;ja;
 FKS;A;JP;http://geonames.org/6300391 ;0.00621834155484;Fukushima Airport;Fukushima Airport;ja;
 FKS;C;JP;http://geonames.org/2112923 ;0.00621834155484;Fukushima;Fukushima;ja;福島市=ふくしまし=福島=ふくしま=フクシマ=フクシマシ
