@@ -68,7 +68,7 @@
 4M^1^LAN Argentina<>Lanargentina
 4M^2^LAN argentina<>Lanargentina
 4N^2^<>Air North
-4O^2^ABC Aerolíneas<>Interjet
+4O^2^<>Interjet
 4Q^2^<>Safi Airways
 4R^2^<>Hamburg Intl
 4U^2^<>Germanwings
@@ -229,7 +229,7 @@ AI^2^<>Air India
 AIC^1^Air India<>Air India Limited
 AIC^2^<>Air India
 AIE^2^<>Air Inuit
-AIJ^2^ABC Aerolíneas<>Interjet
+AIJ^2^<>Interjet
 AIQ^1^Thai AirAsia<>Thai Airasia
 AIQ^2^<>Thai Airasia
 AJD^2^GB Airways<>Gb Airways

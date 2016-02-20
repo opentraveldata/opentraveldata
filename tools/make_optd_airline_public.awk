@@ -10,13 +10,13 @@
 #  * [Future] Geonames list of airlines:    dump_from_geonames.csv
 #
 # Sample output lines:
-# alc-oneworld^^^^^*O^0^Oneworld^^^^^^^en|Oneworld|
-# alc-skyteam^^^^^*S^0^Skyteam^^^^^^^en|Skyteam|
-# alc-star-alliance^^^^^*A^0^Star Alliance^^^^^^^en|Star Alliance|
-# air-air-france^^1933-10-07^^AFR^AF^57^Air France^^Skyteam^Member^^http://en.wikipedia.org/wiki/Air_France^270088^en|Air France|
-# air-british-airways^^1974-03-31^^BAW^BA^125^British Airways^^OneWorld^Member^^http://en.wikipedia.org/wiki/British_Airways^299158^en|British Airways|
-# air-lufthansa^^1955-01-01^^DLH^LH^220^Lufthansa^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Lufthansa^411417^en|Lufthansa|
-# air-easyjet^^1995-01-01^^EZY^U2^888^easyJet^^^^^http://en.wikipedia.org/wiki/EasyJet^433807^en|easyJet|
+# alc-oneworld^^^^^*O^0^Oneworld^^^^^^^en|Oneworld|^
+# alc-skyteam^^^^^*S^0^Skyteam^^^^^^^en|Skyteam|^
+# alc-star-alliance^^^^^*A^0^Star Alliance^^^^^^^en|Star Alliance|^
+# air-air-france^^1933-10-07^^AFR^AF^57^Air France^^Skyteam^Member^^http://en.wikipedia.org/wiki/Air_France^270088^en|Air France|^CDG=ORY
+# air-british-airways^^1974-03-31^^BAW^BA^125^British Airways^^OneWorld^Member^^http://en.wikipedia.org/wiki/British_Airways^299158^en|British Airways|^LGW=LHR
+# air-lufthansa^^1955-01-01^^DLH^LH^220^Lufthansa^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Lufthansa^411417^en|Lufthansa|^FRA=MUC
+# air-easyjet^^1995-01-01^^EZY^U2^888^easyJet^^^^^http://en.wikipedia.org/wiki/EasyJet^433807^en|easyJet|^AMS
 #
 
 ##
@@ -48,7 +48,7 @@ BEGIN {
     printf ("%s", "pk^env_id^validity_from^validity_to^3char_code^2char_code")
     printf ("%s", "^num_code^name^name2")
     printf ("%s", "^alliance_code^alliance_status^type")
-    printf ("%s", "^wiki_link^flt_freq^alt_names")
+    printf ("%s", "^wiki_link^flt_freq^alt_names^bases")
     printf ("%s", "\n")
 
     #
@@ -116,8 +116,8 @@ BEGIN {
 	flt_freq[code_2char] = $2
 
     } else {
-	print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
-	       " fields: " $0) > error_stream
+		print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
+			   " fields: " $0) > error_stream
     }
 }
 
@@ -126,14 +126,14 @@ BEGIN {
 #
 # Sample input lines:
 #
-# pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link^alt_names
-# air-abc-aerolineas^^2005-12-01^^AIJ^4O^837^Interjet^ABC Aerolíneas^^^^http://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|
-# gds-abacus^^^^^1B^0^Abacus^Abacus^^^G^^en|Abacus|=en|Abacus|
-# tec-bird-information-systems^^^^^1R^0^Bird Information Systems^^^^^^en|Bird Information Systems|
-# trn-accesrail^^^^^9B^450^AccesRail^^^^R^http://en.wikipedia.org/wiki/9B^en|AccesRail|
+# pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link^alt_names^bases
+# air-abc-aerolineas^^2005-12-01^^AIJ^4O^837^Interjet^ABC Aerolíneas^^^^http://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|^MEX=TLC
+# gds-abacus^^^^^1B^0^Abacus^Abacus^^^G^^en|Abacus|=en|Abacus|^
+# tec-bird-information-systems^^^^^1R^0^Bird Information Systems^^^^^^en|Bird Information Systems|^
+# trn-accesrail^^^^^9B^450^AccesRail^^^^R^http://en.wikipedia.org/wiki/9B^en|AccesRail|^
 /^([a-z]{3}-[a-z0-9\-]+)\^([0-9]*)\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([A-Z0-9]{3})?\^([A-Z0-9*]{2})?\^/ {
 
-    if (NF == 14) {
+    if (NF == 15) {
 		# Unified code
 		pk = $1
 
@@ -176,7 +176,10 @@ BEGIN {
 		# Alternate names
 		alt_names = $14
 
-		# Retrieve the flight-date frequency, if existing,
+		# Airport bases / hubs
+		bases = $15
+
+        # Retrieve the flight-date frequency, if existing,
 		# and if the airline is still active
 		air_freq = ""
 		if (code_2char != "" && env_id == "") {
@@ -187,7 +190,7 @@ BEGIN {
 		current_line = pk "^" env_id "^" valid_from "^" valid_to	\
 			"^" code_3char "^" code_2char "^" code_tkt				\
 			"^" name "^" name2 "^" alc_code "^" alc_status "^" type	\
-			"^" wiki_link "^" air_freq "^" alt_names
+			"^" wiki_link "^" air_freq "^" alt_names "^" bases
 
 		# Print the full line
 		print (current_line)
@@ -200,26 +203,6 @@ BEGIN {
 		if (code_3char != "" && env_id == "") {
 			aln_name[code_3char] = name
 			aln_name2[code_3char] = name2
-		}
-
-		# DEBUG (to compare with old version)
-		if (code_2char) {
-			# Line 1
-			current_line = code_2char "^" code_3char "^" code_2char	\
-				"^" code_tkt										\
-				"^" name "^" name2 "^" alc_code "^" alc_status
-
-			# Print the full line
-			# print (current_line)
-		}
-		if (code_3char) {
-			# Line 2
-			current_line = code_3char "^" code_3char "^" code_2char	\
-				"^" code_tkt										\
-				"^" name "^" name2 "^" alc_code "^" alc_status
-
-			# Print the full line
-			# print (current_line)
 		}
 
 		# Alliance name from the OPTD-maintained file of alliance
