@@ -19,9 +19,9 @@
 
 
 ##
-# RFD derived list of cities.
+# Reference data derived list of cities.
 #
-# Note that, by construction of the por_cty_rfd_????????.csv file (filtered in
+# Note that, by construction of the por_cty_ref_????????.csv file (filtered in
 # by the sequence below), at least two POR (point of reference, e.g., airport,
 # heliport, railway station, bus station) serve the city.
 #
@@ -71,8 +71,8 @@
 	#
 	if (city_code in city_por_freq && iata_code == city_code && \
 		location_type == "CA") {
-		# For the POR being referenced in Amadeus RFD as both a city and
-		# an airport ("CA"), split that POR into two distinct entries:
+		# For the POR being referenced as both a city and an airport ("CA"),
+        # split that POR into two distinct entries:
 		# one for the city ("C") and another one for the airport ("A").
 
 		primary_key = iata_code "-A"
@@ -82,7 +82,7 @@
 
 	} else {
 		# Standard POR. When that POR is both a city and an airport,
-		# by construction of the por_cty_rfd_????????.csv file, there is a
+		# by construction of the por_cty_ref_????????.csv file, there is a
 		# single airport serving the city. For now (as of June 2012),
 		# those POR are not split, as they may be considered as a single
 		# entity for many processes (e.g., PageRank).

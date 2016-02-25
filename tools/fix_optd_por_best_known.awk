@@ -3,7 +3,7 @@
 #  * 1a. In order to replace the geographical coordinates, only when
 #        known by Geonames.
 #  * 1b. In order to replace the geographical coordinates, only when
-#        known by RFD.
+#        known by reference data.
 #  * 2.  In order to fix the geographical coordinates of the pristine
 #        OPTD-maintained list of best known POR coordinates.
 
@@ -24,7 +24,7 @@
     } else if (NF == 18) {
 	if ($14 != "" && $15 != "" \
 	    && int($14 * 1000)/1000 != 0 && int($15 * 1000)/1000 != 0) {
-	    # First use case (b). The POR is known by RFD.
+	    # First use case (b). The POR is known by reference data.
 
 	    # IATA code
 	    printf ("%s", $1)
@@ -49,7 +49,7 @@
 	printf ("%s", "\n")
 
     } else if (NF == 1) {
-	# First use case. The POR is known neither by Geonames nor by RFD.
+	# First use case. The POR is known neither by Geonames nor by reference data.
 
     } else {
 	# Error

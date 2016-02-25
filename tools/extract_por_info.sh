@@ -4,7 +4,7 @@
 # That Bash script extracts a POR from:
 # - optd_por_best_known_so_far.csv
 # - optd_por_no_longer_valid.csv
-# - dump_from_crb_city.csv
+# - dump_from_ref_city.csv
 # - dump_from_geonames.csv
 # - dump_from_innovata.csv
 # - ref_airport_pageranked.csv
@@ -90,10 +90,10 @@ GEONAME_RAW_FILENAME=dump_from_geonames.csv
 GEONAME_RAW_FILE=${TOOLS_DIR}${GEONAME_RAW_FILENAME}
 
 ##
-# RFD (to be found, as temporary files, within the ../tools directory)
-RFD_RAW_FILENAME=dump_from_crb_city.csv
+# REF (to be found, as temporary files, within the ../tools directory)
+REF_RAW_FILENAME=dump_from_ref_city.csv
 #
-RFD_RAW_FILE=${TOOLS_DIR}${RFD_RAW_FILENAME}
+REF_RAW_FILE=${TOOLS_DIR}${REF_RAW_FILENAME}
 
 ##
 # Innovata (to be found, as temporary files, within the ../tools directory)
@@ -134,5 +134,5 @@ then
 fi
 LATEST_DUMP_POR_SKD_CNT_FILE=${POR_SKD_DIR}${LATEST_DUMP_POR_SKD_CNT_FILENAME}
 
-echo "grep \"^XCG\" ${OPTD_POR_FILE} ${RFD_RAW_FILENAME} ${GEONAME_RAW_FILENAME} ${INNO_RAW_FILENAME} ${LATEST_DUMP_POR_SKD_CNT_FILE} ${OPTD_PR_FILE}"
+echo "grep \"^XCG\" ${OPTD_POR_FILE} ${REF_RAW_FILENAME} ${GEONAME_RAW_FILENAME} ${INNO_RAW_FILENAME} ${LATEST_DUMP_POR_SKD_CNT_FILE} ${OPTD_PR_FILE}"
 

@@ -1,8 +1,8 @@
 ##
-# That AWK script creates and adds a primary key for the Amadeus RFD dump file.
+# That AWK script creates and adds a primary key for the reference data file.
 # It uses the following input files:
-#  * Amadeus RFD dump data file:
-#      dump_from_crb_city.csv
+#  * Reference data file:
+#      dump_from_ref_city.csv
 #  * OPTD-maintained list of best known coordinates:
 #      optd_por_best_known_so_far.csv
 #
@@ -32,7 +32,7 @@
 #
 # That script relies on the OPTD-maintained list of POR (points of reference),
 # provided by the OpenTravelData project (http://github.com/opentraveldata/optd).
-# Issue the 'prepare_rfd_dump_file.sh --geonames' command to see more detailed
+# Issue the 'prepare_ref_dump_file.sh --geonames' command to see more detailed
 # instructions.
 #
 
@@ -46,7 +46,7 @@
 BEGIN {
     # Global variables
     error_stream = "/dev/stderr"
-    awk_file = "rfd_pk_creator.awk"
+    awk_file = "ref_pk_creator.awk"
 
     # Initialisation of the Geo library
     initGeoAwkLib(awk_file, error_stream, log_level)
@@ -108,10 +108,10 @@ BEGINFILE {
 
 
 ####
-## Amadeus RFD dump file
+## Reference data file
 
 ##
-# Amadeus RFD header line
+# Reference data header line
 /^iata_code/ {
     # Retrieve the full line
     full_line = $0
@@ -121,7 +121,7 @@ BEGINFILE {
 }
 
 ##
-# Amadeus RFD regular lines
+# Reference data regular lines
 #
 # Sample input lines (truncated):
 #  BFJ^^BA^BUCKLEY ANGB^BA^BA/FJ:BA^BA^BFJ^Y^^FJ^AUSTL^ITC3^FJ169^^^^N
@@ -144,13 +144,13 @@ BEGINFILE {
     iata_code = $1
 
     # Feature code
-    rfd_loc_type = $2
+    ref_loc_type = $2
 
     # Store the full line
     full_line = $0
 
     # Register the full line
-    registerRFDLine(iata_code, rfd_loc_type, full_line, nb_of_geo_por)
+    registerREFLine(iata_code, ref_loc_type, full_line, nb_of_geo_por)
 
     # DEBUG
     #if (FNR >= 16) { exit }

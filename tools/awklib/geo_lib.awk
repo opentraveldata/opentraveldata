@@ -10,7 +10,7 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     __glGlobalErrorStream = __igalParamErrorStream
     __glGlobalLogLevel = __igalParamLogLevel
     __glGlobalIsForGeonames = 0
-    __glGlobalIsForRFD = 0
+    __glGlobalIsForREF = 0
     __glGlobalIsForInnovata = 0
     __glGlobalPI = 4 * atan2(1,1)
     __glGlobalRTOD = 180.0 / __glGlobalPI
@@ -49,8 +49,8 @@ function ATan2(y,x){ return atan2(y,x)*__glGlobalRTOD }
 function initFileGeoAwkLib() {
     # Initialise the Geonames-derived lists
     resetGeonamesLineList()
-    # Initialise the RFD-derived lists
-    resetRFDLineList()
+    # Initialise the reference data lists
+    resetREFLineList()
     # Initialise the Innovata-derived lists
     resetInnovataLineList()
 }
@@ -68,9 +68,9 @@ function finalizeGeoAwkLib() {
 	displayGeonamesPOREntries()
     }
 
-    # Display the last RFD POR entries
-    if (__glGlobalIsForRFD == 1) {
-	displayRFDPOREntries()
+    # Display the last reference data POR entries
+    if (__glGlobalIsForREF == 1) {
+	displayREFPOREntries()
     }
 
     # Display the last Innovata POR entries
@@ -90,12 +90,12 @@ function displayOPTDPorPublicHeader(__dopphFullLine) {
 # Display a list
 function displayList(__paramListType, __paramList) {
     if (length(__paramList) == 0) {
-	return
+		return
     }
 
     print (__paramListType ":")
     for (myIdx in __paramList) {
-	print (myIdx " => " __paramList[myIdx])
+		print (myIdx " => " __paramList[myIdx])
     }
 }
 
@@ -103,15 +103,15 @@ function displayList(__paramListType, __paramList) {
 # Display a 2-dimensional list
 function display2dList(__paramListType, __paramList) {
     if (length(__paramList) == 0) {
-	return
+		return
     }
 
     print (__paramListType ":")
     for (myCombIdx in __paramList) {
-	split (myCombIdx, myIdxArray, SUBSEP)
-	myIdx1 = myIdxArray[1]; myIdx2 = myIdxArray[2]
-	print ("[" __paramListType "] " myIdx1 ", " myIdx2 " => " \
-	       __paramList[myIdx1, myIdx2])
+		split (myCombIdx, myIdxArray, SUBSEP)
+		myIdx1 = myIdxArray[1]; myIdx2 = myIdxArray[2]
+		print ("[" __paramListType "] " myIdx1 ", " myIdx2 " => "	\
+			   __paramList[myIdx1, myIdx2])
     }
 }
 
@@ -137,6 +137,7 @@ function displayLists() {
     display2dList("OPTD POR latitude", optd_por_lat_list)
     display2dList("OPTD POR longitude", optd_por_lon_list)
     display2dList("OPTD POR city list", optd_por_cty_list)
+	display2dList("OPTD POR list per airline", optd_por_air_list)
     display2dList("OPTD POR beginning date list", optd_por_bdate_list)
 
 	# US DOT
@@ -273,6 +274,7 @@ function isFeatCodeCity(__ifccParamFeatureCode) {
     __resultIsCity += match (__ifccParamFeatureCode, "^VLC")
     __resultIsCity += match (__ifccParamFeatureCode, "^MT")
     __resultIsCity += match (__ifccParamFeatureCode, "^RK")
+    __resultIsCity += match (__ifccParamFeatureCode, "^CNYN")
     __resultIsCity += match (__ifccParamFeatureCode, "^MN")
     __resultIsCity += match (__ifccParamFeatureCode, "^INSM")
 
@@ -642,7 +644,7 @@ function addLocTypeToGeoList(__alttglParamGeonamesID,	\
 }
 
 ##
-# Add the given location type to the given dedicated Geonames or RFD list.
+# Add the given location type to the given dedicated Geonames or reference data list.
 #
 function addLocTypeToAllGeoList(__alttglParamLocationType,	\
 				__alttglParamGeoString) {
@@ -745,10 +747,10 @@ function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
 # Note 1: the location type is either individual (e.g., 'C', 'A', 'H', 'R', 'B',
 #         'P', 'G', 'O') or combined (e.g., 'CA', 'CH', 'CR', 'CB', 'CP')
 #
-function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
-			  __rolParamLatitude, __rolParamLongitude,	\
-			  __rolParamServedCityCode, __rolParamBeginDate, \
-			  __rolParamFullLine) {
+function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
+						  __rolParamLatitude, __rolParamLongitude,	\
+						  __rolParamServedCityCode, __rolParamBeginDate, \
+						  __rolParamFullLine) {
     # Extract the primary key fields
     getPrimaryKeyAsArray(__rolParamPK, myPKArray)
     rolIataCode = myPKArray[1]
@@ -768,20 +770,20 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
     # Sanity check: the IATA codes of the primary key and of the dedicated field
     #               should be equal.
     if (rolIataCode != __rolParamIataCode2) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the IATA code ('" rolIataCode "') of the primary key " \
-	       "is not the same as the one of the dedicated field ('"	\
-	       __rolParamIataCode2 "') - Full line: " __rolParamFullLine) \
-	    > __glGlobalErrorStream
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	 \
+			   ", the IATA code ('" rolIataCode "') of the primary key " \
+			   "is not the same as the one of the dedicated field ('"	\
+			   __rolParamIataCode2 "') - Full line: " __rolParamFullLine) \
+			> __glGlobalErrorStream
     }
 
     # Sanity check: when the location type is a combined type, one of those
     #               types should be a travel-related POR.
     if (length(rolLocationType) >= 2 && myIsTravel == 0) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the location type ('"	rolLocationType			\
-	       "') is unknown - Full line: " __rolParamFullLine)	\
-	    > __glGlobalErrorStream
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
+			   ", the location type ('"	rolLocationType				\
+			   "') is unknown - Full line: " __rolParamFullLine)	\
+			> __glGlobalErrorStream
     }
 
     # Add the location type to the dedicated list for that IATA code
@@ -790,28 +792,61 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,		\
     # Add the Geonames ID to the dedicated list for that (IATA code, location
     # type)
     addGeoIDToOPTDList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_geoid_list)
+					   optd_por_geoid_list)
 
     # Calculate the index for that IATA code
     optd_por_idx_list[rolIataCode, rolLocationType]++
     optd_por_idx = optd_por_idx_list[rolIataCode, rolLocationType]
 
     # Register the details of the OPTD-maintained POR entry for the latitude
-    addOPTDFieldToList(rolIataCode, rolLocationType,		\
-		       optd_por_lat_list, __rolParamLatitude)
+    addOPTDFieldToList(rolIataCode, rolLocationType,			\
+					   optd_por_lat_list, __rolParamLatitude)
 
     # Register the details of the OPTD-maintained POR entry for the longitude
-    addOPTDFieldToList(rolIataCode, rolLocationType,		\
-		       optd_por_lon_list, __rolParamLongitude)
+    addOPTDFieldToList(rolIataCode, rolLocationType,			\
+					   optd_por_lon_list, __rolParamLongitude)
 
     # Register the details of the OPTD-maintained POR entry for the (list of)
     # served cit(y)(ies)
-    addOPTDFieldToList(rolIataCode, rolLocationType,			\
-		       optd_por_cty_list, __rolParamServedCityCode)
+    addOPTDFieldToList(rolIataCode, rolLocationType,				\
+					   optd_por_cty_list, __rolParamServedCityCode)
 
     # Register the details of the OPTD-maintained POR entry for the beg. date
-    addOPTDFieldToList(rolIataCode, rolLocationType,		\
-		       optd_por_bdate_list, __rolParamBeginDate)
+    addOPTDFieldToList(rolIataCode, rolLocationType,				\
+					   optd_por_bdate_list, __rolParamBeginDate)
+}
+
+##
+# Register the flight frequency for a given (origin, destination) POR pair,
+# for a given airline. The input parameters are:
+# 1. The airline 2-char ISO code
+# 2. The origin POR
+# 3. The destination POR
+# 4. The number of flights (flight frequency) for that (origin, destination) pair
+#
+function registerPORAirlineLine(__rpalAirline, __rpalPOROrg,	\
+								__rpalPORDst, __rpalFltFreq) {
+    # DEBUG
+    # print ("Airline code=" __rpalAirline ", origin=" __rpalPOROrg		\
+    #	   ", destination=" __rpalPORDst ", flight frquency=" __rpalFltFreq	\
+	#      "awk=" awk_file ", err=" __glGlobalErrorStream)
+
+	# Register the US DOT-maintained POR name and area code
+	optd_por_air_list[__rpalAirline, __rpalPOROrg] += __rpalFltFreq
+	optd_por_air_list[__rpalAirline, __rpalPORDst] += __rpalFltFreq
+}
+
+##
+# Retrieve the flight frequency for a given (airline, POR) combination.
+# The input parameters are:
+# 1. The airline 2-char ISO code
+# 2. The POR IATA code
+# The function returns the accumulated number of flights (flight frequency)
+# for that (airline, POR) combination
+#
+function getAirlinePORFltFreq(__gapffAirline, __gapffPOR) {
+	outputFltFreq = optd_por_air_list[__gapffAirline, __gapffPOR]
+	return outputFltFreq
 }
 
 ##
@@ -849,6 +884,7 @@ function resetOPTDLineList() {
     delete optd_por_lon_list
     delete optd_por_cty_list
     delete optd_por_bdate_list
+	delete optd_por_air_list
 }
 
 ##
@@ -871,9 +907,9 @@ function resetGeonamesLineList() {
 }
 
 ##
-# Reset the list of last RFD POR entries
-function resetRFDLineList() {
-    rfd_last_full_line = ""
+# Reset the list of last reference data POR entries
+function resetREFLineList() {
+    ref_last_full_line = ""
 }
 
 ##
@@ -1343,14 +1379,14 @@ function displayGeonamesPOREntries() {
 }
 
 ##
-# Register the full RFD POR entry details for the given primary key:
+# Register the full reference data POR entry details for the given primary key:
 # 1. The IATA code
 # 2. The OPTD-maintained location type
-function registerRFDLine(__rrlParamIataCode, __rrlParamLocType, \
+function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
 			 __rrlParamFullLine, __rrlParamNbOfPOR) {
-    # Register the fact that the AWK script runs on the RFD data dump
-    # (most probably called from the rfd_pk_creator.awk file)
-    __glGlobalIsForRFD = 1
+    # Register the fact that the AWK script runs on the reference data file
+    # (most probably called from the ref_pk_creator.awk file)
+    __glGlobalIsForREF = 1
 
     # Display the last read POR entry, when:
     # 1. The current POR entry is not the first one (as the last POR entry
@@ -1361,10 +1397,10 @@ function registerRFDLine(__rrlParamIataCode, __rrlParamLocType, \
 		
     } else {
 	# Display the last Geonames POR entries
-	displayRFDPOREntries()
+	displayREFPOREntries()
     }
 
-    # Register the RFD POR entry in the list of last entries
+    # Register the reference data POR entry in the list of last entries
     # for that IATA code
     geo_iata_code = __rrlParamIataCode
 
@@ -1373,28 +1409,28 @@ function registerRFDLine(__rrlParamIataCode, __rrlParamLocType, \
     #	   __rrlParamIataCode ", geo_loc_type=" __rrlParamLocType) \
     #	> __glGlobalErrorStream
 
-    # Store the location type of the RFD POR entry
-    rfd_last_loctype = __rrlParamLocType
+    # Store the location type of the reference data POR entry
+    ref_last_loctype = __rrlParamLocType
 
-    # Store the full details of the RFD POR entry
-    rfd_last_full_line = __rrlParamFullLine
+    # Store the full details of the reference data POR entry
+    ref_last_full_line = __rrlParamFullLine
 }
 
 ##
-# Display the full details of the RFD POR entry, prefixed by the
+# Display the full details of the reference data POR entry, prefixed by the
 # corresponding primary key (IATA code, location type, Geonames ID).
 #
-function displayRFDPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
+function displayREFPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 			     __drpwkParamOPTDGeoID) {
     # Build the primary key
     drpwkPK = getPrimaryKey(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 			    __drpwkParamOPTDGeoID)
 
-    # Re-write, within the RFD full line:
+    # Re-write, within the reference data full line:
     #  * The location type (field #2)
     #  * The airport flag (field #9)
     #  * The commercial flag (field #18)
-    drpwkFullLine = rfd_last_full_line
+    drpwkFullLine = ref_last_full_line
 
     # Reparse the line
     OFS = FS
@@ -1414,15 +1450,16 @@ function displayRFDPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
     }
     drpwkFullLine = $0
 
-    # Add the primary key as a prefix to the full details of the RFD POR entry
-    drpwkRFDPORPlusPKLine = drpwkPK FS drpwkFullLine
+    # Add the primary key as a prefix to the full details of
+	# the reference data POR entry
+    drpwkREFPORPlusPKLine = drpwkPK FS drpwkFullLine
 
     # Dump the full line, prefixed by the primary key
-    print (drpwkRFDPORPlusPKLine)
+    print (drpwkREFPORPlusPKLine)
 }
 
 ##
-# Display the list of RFD POR entries.
+# Display the list of reference data POR entries.
 # Usually, there is no more than one POR entry for a given IATA code
 # and location type.
 #
@@ -1430,14 +1467,14 @@ function displayRFDPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 # RDU-A-4487056 serves both RDU-C-4464368 (Raleigh) and RDU-C-4487042 (Durham)
 # in North Carolina, USA. In that case, there are two entries for RDU-C.
 #
-function displayRFDPOREntries() {
+function displayREFPOREntries() {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" && \
 	geo_iata_code == __glGlobalDebugIataCode) {
 	print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "    \
-	       optd_por_loctype_list[geo_iata_code] ", RFD loc_type: " \
-	       rfd_last_loctype) > __glGlobalErrorStream
+	       optd_por_loctype_list[geo_iata_code] ", REF loc_type: " \
+	       ref_last_loctype) > __glGlobalErrorStream
     }
 
     # Browse all the location types known by OPTD for that IATA code
@@ -1455,22 +1492,22 @@ function displayRFDPOREntries() {
 	    #
 	    drpeOPTDGeoID = drpeOPTDGeoIDArray[drpeOPTDGeoIDIdx]
 
-	    # Display the full details of the RFD POR entry
-	    displayRFDPORWithPK(geo_iata_code, drpeOPTDLocType, drpeOPTDGeoID)
+	    # Display the full details of the reference data POR entry
+	    displayREFPORWithPK(geo_iata_code, drpeOPTDLocType, drpeOPTDGeoID)
 		
 	    # DEBUG
 	    if (__glGlobalDebugIataCode != "" &&		\
 		geo_iata_code == __glGlobalDebugIataCode) {
 		print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
 		       drpeOPTDLocType ", OPTD GeoID: " drpeOPTDGeoID	\
-		       ", RFD loc_type list: " rfd_last_loctype)	\
+		       ", REF loc_type list: " ref_last_loctype)	\
 		    > __glGlobalErrorStream
 	    }
 	}
     }
 
     # Reset the list for the next turn
-    resetRFDLineList()
+    resetREFLineList()
 }
 
 ##
@@ -1608,3 +1645,52 @@ function displayInnovataPORWithPK(__dipwkParamIataCode,		\
     print (dipwkInnovataPORPlusPKLine)
 }
 
+##
+# Extract the list of names of a POR in a given language.
+#
+# Sample lists of alternate name details:
+# [AAE] ru|Аэропорт «Аннаба»|=en|Rabah Bitat Annaba Airport|=en|Annaba Airport|s=en|Les Salines Airport|h=en|El Mellah Airport|=en|Rabah Bitat Airport|p
+# [PAR] la|Lutetia Parisorum|=fr|Lutèce|h=fr|Ville-Lumière|c=eo|Parizo|=es|París|ps=de|Paris|=en|Paris|p=af|Parys|=als|Paris|=an|París|=ar|باريس|=ast|París|=be|Горад Парыж|=bg|Париж|=ca|París|=cs|Paříž|=cy|Paris|=da|Paris|=el|Παρίσι|=et|Pariis|=eu|Paris|=fa|پاریس|=fi|Pariisi|=fr|Paris|p=ga|Páras|=gl|París|=he|פריז|=hr|Pariz|=hu|Párizs|=id|Paris|=io|Paris|=it|Parigi|=ja|パリ|=ka|პარიზი|=kn|ಪ್ಯಾರಿಸ್|=ko|파리|=ku|Parîs|=kw|Paris|=lb|Paräis|=li|Paries|=lt|Paryžius|=lv|Parīze|=mk|Париз|=ms|Paris|=na|Paris|=nds|Paris|=nl|Parijs|=nn|Paris|=no|Paris|=oc|París|=pl|Paryż|=pt|Paris|=ro|Paris|=ru|Париж|=scn|Pariggi|=sco|Paris|=sl|Pariz|=sq|Paris|=sr|Париз|=sv|Paris|=ta|பாரிஸ்|=th|ปารีส|=tl|Paris|=tr|Paris|=uk|Париж|=vi|Paris|p=zh|巴黎|=ia|Paris|=fy|Parys|=ln|Pari|=os|Париж|=pms|Paris|=sk|Paríž|=sq|Parisi|=sw|Paris|=tl|Lungsod ng Paris|=ug|پارىژ|=fr|Paname|c=fr|Pantruche|c=am|ፓሪስ|=arc|ܦܐܪܝܣ|=br|Pariz|=gd|Paris|=gv|Paarys|=hy|Փարիզ|=ksh|Paris|=lad|Paris|=lmo|Paris|=mg|Paris|=mr|पॅरिस|=tet|París|=tg|Париж|=ty|Paris|=ur|پیرس|=vls|Parys|=is|París|=vi|Pa-ri|=ml|പാരിസ്|=uz|Parij|=rue|Паріж|=ne|पेरिस|=jbo|paris|=mn|Парис|=lij|Pariggi|=vec|Parixe|=yo|Parisi|=yi|פאריז|=mrj|Париж|=hi|पैरिस|=fur|Parîs|=tt|Париж|=szl|Paryż|=mhr|Париж|=te|పారిస్|=tk|Pariž|=bn|প্যারিস|=ha|Pariis|=sah|Париж|=mzn|پاریس|=bo|ཕ་རི།|=haw|Palika|=mi|Parī|=ext|París|=ps|پاريس|=pa|ਪੈਰਿਸ|=ckb|پاریس|=cu|Парижь|=cv|Парис|=co|Parighji|=bs|Pariz|=so|Baariis|=hbs|Pariz|=gu|પૅરિસ|=xmf|პარიზი|=ba|Париж|=pnb|پیرس|=arz|باريس|=la|Lutetia|=kk|Париж|=kv|Париж|=gn|Parĩ|=ky|Париж|=myv|Париж ош|=nap|Parigge|=km|ប៉ារីស|=krc|Париж|=udm|Париж|=wo|Pari|=gan|巴黎|=sc|Parigi|=za|Bahliz|=my|ပါရီမြို့|=post|75000|p=post|75020|=olo|Pariižu|
+# Sample output for French ("fr"):
+# [PAR] Lutèce|h=Ville-Lumière|c=Paris|p=Paname|c=Pantruche|c
+function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
+	outputNameList = ""
+	outputMainSep = "="
+	outputSecSep = "|"
+
+	# The list of alternate name details is separated by the equal ("=") sign
+	split (__gpnflAltNameList, dpnAltNameArray, "=")
+    for (dpnAltIdx in dpnAltNameArray) {
+		dpnAltNameDetails = dpnAltNameArray[dpnAltIdx]
+
+		# The list of details is separated by the pipe ("|") sign
+		split (dpnAltNameDetails, dpnAltNameDetailArray, "|")
+
+		# With AWK, the array created by split() begins with the index of 1:
+		# 1. Langauge (e.g., "en", "fa", "ru", "zh")
+		# 2. Name for that language
+		# 3. Qualifier (e.g., "p" for preferred, "s" for short, "h" for
+		#    historical, and "c" for colloquial)
+		AltNameLang = dpnAltNameDetailArray[1]
+		delete EquivalentLangArray
+		EquivalentLangArray[__gpnflLang] = 1
+		if (__gpnflLang == "zh") {
+			EquivalentLangArray["yue"] = 1
+			EquivalentLangArray["wuu"] = 1
+			EquivalentLangArray["pny"] = 1
+			EquivalentLangArray["zh-CN"] = 1
+		}
+		if (AltNameLang in EquivalentLangArray) {
+			if (outputNameList != "") {
+				outputNameList = outputNameList outputMainSep
+			}
+			outputNameList = outputNameList dpnAltNameDetailArray[2]
+			if (dpnAltNameDetailArray[3] != "") {
+				outputNameList = outputNameList outputSecSep dpnAltNameDetailArray[3]
+			}
+		}
+	}
+
+	#
+	return outputNameList
+}

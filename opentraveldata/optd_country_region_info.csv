@@ -10,15 +10,15 @@ AO^Angola^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
 AQ^Antarctica^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
 AR^Argentina^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
 AS^American Samoa^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
-AT^Austria^1^01.12.1997^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+AT^Austria^1^1997-12-01^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
 AU^Australia^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
 AW^Aruba^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-AX^Aland Islands^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+AX^Aland Islands^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 AZ^Azerbaijan^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
 BA^Bosnia-Herzegovina^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 BB^Barbados^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 BD^Bangladesh^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-BE^Belgium^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+BE^Belgium^1^1995-03-26^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
 BF^Burkina Faso^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 BG^Bulgaria^^^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
 BH^Bahrain^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
@@ -40,7 +40,7 @@ CC^Cocos Islands^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^South
 CD^Congo the Democratic Republic of the^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
 CF^Central African Republic^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
 CG^Congo Republic of^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-CH^Switzerland^1^12.12.2008^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+CH^Switzerland^1^2008-12-12^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
 CI^Ivory Coast^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 CK^Cook Islands^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
 CL^Chile^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
@@ -53,26 +53,26 @@ CV^Cape Verde^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 CW^Curacao^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 CX^Christmas Island^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
 CY^Cyprus^^^^AS^35^Asia^AS_We^West Asia^EUR^Europe^EUR^Europe
-CZ^Czech Republic^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
-DE^Germany^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+CZ^Czech Republic^1^2008-03-30^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+DE^Germany^1^1995-03-26^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
 DJ^Djibouti^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-DK^Denmark^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+DK^Denmark^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 DM^Dominica^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 DO^Dominican Republic^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 DZ^Algeria^^^^AF^13^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
 EC^Ecuador^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
-EE^Estonia^1^30.03.2008^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+EE^Estonia^1^2008-03-30^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 EG^Egypt^^^^AF^13^Africa^AF_No^North Africa^MDE^Middle East^AFR^Africa
 EH^Western Sahara^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
 ER^Eritrea^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-ES^Spain^1^26.03.1995^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+ES^Spain^1^1995-03-26^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 ET^Ethiopia^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
-FI^Finland^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+FI^Finland^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 FJ^Fiji^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
 FK^Falkland Islands^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
 FM^FSM^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
 FO^Faeroe Islands^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-FR^France^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+FR^France^1^1995-03-26^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
 GA^Gabon^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
 GB^UK^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 GD^Grenada^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
@@ -86,7 +86,7 @@ GM^Gambia^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 GN^Guinea^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 GP^Guadeloupe^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 GQ^Equatorial Guinea^^^^AF^11^Africa^AF_Ce^Central Africa^AFR^Africa^AFR^Africa
-GR^Greece^1^26.03.2000^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+GR^Greece^1^2000-03-26^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 GS^South Georgia & the South Sandwich Islands^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
 GT^Guatemala^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
 GU^Guam^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
@@ -98,7 +98,7 @@ HN^Honduras^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Cent
 HO^Hong Kong SAR & Macau SAR^^^^AS^32^Asia^AS_Ne^Northeast Asia^SEA^South-Eastern Asia^ASI^Asia
 HR^Croatia^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 HT^Haiti^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-HU^Hungary^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+HU^Hungary^1^2008-03-30^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
 ID^Indonesia^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
 IE^Ireland^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 IL^Israel^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
@@ -106,8 +106,8 @@ IM^Isle of Man^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 IN^India^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
 IQ^Iraq^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
 IR^Iran^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-IS^Iceland^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-IT^Italy^1^26.10.1997^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+IS^Iceland^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+IT^Italy^1^1997-10-26^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 JE^Jersey^^^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 JM^Jamaica^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 JO^Jordan^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
@@ -126,13 +126,13 @@ KZ^Kazakhstan^^^^AS^31^Asia^AS_Ce^Central Asia^SEA^South-Eastern Asia^ASI^Asia
 LA^Lao PDR^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
 LB^Lebanon^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
 LC^St. Lucia^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-LI^Liechtenstein^1^19.12.2011^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+LI^Liechtenstein^1^2011-12-19^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
 LK^Sri Lanka^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
 LR^Liberia^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 LS^Lesotho^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-LT^Lithuania^1^30.03.2008^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-LU^Luxembourg^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-LV^Latvia^1^30.03.2008^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+LT^Lithuania^1^2008-03-30^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+LU^Luxembourg^1^1995-03-26^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+LV^Latvia^1^2008-03-30^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 LY^Libya^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
 MA^Morocco^^^^AF^13^Africa^AF_No^North Africa^EUR^Europe^AFR^Africa
 MC^Monaco^^^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
@@ -150,7 +150,7 @@ MP^Northern Marianas^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SW
 MQ^Martinique^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 MR^Mauritania^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 MS^Montserrat^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
-MT^Malta^1^30.03.2008^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+MT^Malta^1^2008-03-30^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 MU^Mauritius^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
 MV^Maldives^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
 MW^Malawi^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
@@ -163,8 +163,8 @@ NE^Niger^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 NF^Norfolk Island^^^^PA^51^Pacific^PA_Oc^Oceania^SWP^South-West Pacific^SWP^Southwest Pacific
 NG^Nigeria^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 NI^Nicaragua^^^^AM^22^Americas^AM_Ce^Central America^CEM^Central America^CEM^Central America and Caribbean
-NL^Netherlands^1^26.03.1995^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
-NO^Norway^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+NL^Netherlands^1^1995-03-26^^EU^44^Europe^EU_We^West Europe^EUR^Europe^EUR^Europe
+NO^Norway^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 NP^Nepal^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
 NR^Nauru^^^^PA^53^Pacific^PA_Mi^Micronesia^SWP^South-West Pacific^SWP^Southwest Pacific
 NU^Niue^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pacific^SWP^Southwest Pacific
@@ -176,11 +176,11 @@ PF^French Polynesia (Tahiti)^^^^PA^54^Pacific^PA_Po^Polynesia^SWP^South-West Pac
 PG^Papua New Guinea^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
 PH^Philippines^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
 PK^Pakistan^^^^AS^33^Asia^AS_So^South Asia^SAS^South Asia^ASI^Asia
-PL^Poland^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+PL^Poland^1^2008-03-30^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
 PM^St. Pierre & Miquelon^^^^AM^23^Americas^AM_No^North America^NOA^North America^NOA^North America
 PR^Puerto Rico^^^^AM^21^Americas^AM_Ca^Caribbean^CAR^Caribbean sea countries^CEM^Central America and Caribbean
 PS^Palestine^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
-PT^Portugal^1^26.03.1995^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+PT^Portugal^1^1995-03-26^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 PW^Palau^^^^PA^53^Pacific^PA_Mi^Micronesia^SEA^South-Eastern Asia^SWP^Southwest Pacific
 PY^Paraguay^^^^AM^24^Americas^AM_So^South America^SOA^South America^SOA^South America
 QA^Qatar^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
@@ -193,12 +193,12 @@ SA^Saudi Arabia^^^^AS^35^Asia^AS_We^West Asia^MDE^Middle East^MDE^Middle East
 SB^Solomon Islands^^^^PA^52^Pacific^PA_Me^Melanesia^SWP^South-West Pacific^SWP^Southwest Pacific
 SC^Seychelles^^^^AF^12^Africa^AF_Ea^East Africa^AFR^Africa^AFR^Africa
 SD^Sudan^^^^AF^13^Africa^AF_No^North Africa^AFR^Africa^AFR^Africa
-SE^Sweden^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+SE^Sweden^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
 SG^Singapore^^^^AS^34^Asia^AS_Se^Southeast Asia^SEA^South-Eastern Asia^ASI^Asia
 SH^Saint Helena^^^^AF^14^Africa^AF_So^South Africa^AFR^Africa^AFR^Africa
-SI^Slovenia^1^30.03.2008^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
-SJ^Svalbard and Jan Mayen^1^25.03.2001^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
-SK^Slovakia^1^30.03.2008^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
+SI^Slovenia^1^2008-03-30^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
+SJ^Svalbard and Jan Mayen^1^2001-03-25^^EU^42^Europe^EU_No^North Europe^EUR^Europe^EUR^Europe
+SK^Slovakia^1^2008-03-30^^EU^41^Europe^EU_Ea^East Europe^EUR^Europe^EUR^Europe
 SL^Sierra Leone^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa
 SM^San Marino^^^^EU^43^Europe^EU_So^South Europe^EUR^Europe^EUR^Europe
 SN^Senegal^^^^AF^15^Africa^AF_We^West Africa^AFR^Africa^AFR^Africa

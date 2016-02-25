@@ -1,17 +1,18 @@
 ##
 # That AWK script re-formats the full details of POR (points of reference)
 # derived from a few sources:
-#  * Amadeus OPTD-maintained lists of:
+#  * OPTD-maintained lists of:
 #    * Best known POR (poins of reference): optd_por_best_known_so_far.csv
 #    * PageRank values:                     ref_airport_pageranked.csv
 #    * Country-associated time-zones:       optd_tz_light.csv
+#    * Time-zones for a few POR:            optd_por_tz.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
-#  * Amadeus RFD (Referential Data):        dump_from_crb_city.csv
+#  * Referential Data:                      dump_from_ref_city.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
 # Notes:
-# 1. When the POR is existing only in Amadeus RFD data, the cryptic time-zone
+# 1. When the POR is existing only in the reference data, the cryptic time-zone
 #    ID is replaced by a more standard time-zone ID. That latter is a simplified
 #    version of the standard time-zone ID (such as the one given by Geonames),
 #    as there is then a single time-zone ID per country; that is obviously
@@ -135,7 +136,7 @@ BEGIN {
 #   ORD-A^ORD^0.677280625337
 #   CDG-A^CDG^0.647060165878
 #
-/^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,15})$/ {
+/^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,20})$/ {
     # Primary key (IATA code and location pseudo-code)
     pk = $1
 
@@ -180,6 +181,33 @@ BEGIN {
     ctry_tz_list[country_code] = tz_id
 }
 
+
+##
+# File of time-zones for a few POR.
+#
+# Content:
+# --------
+# Currently, for POR not known from Geonames, the time-zone is guessed
+# thanks to the country. While that method works for most of the small
+# countries, it fails for countries spanning multiple time-zones (e.g.,
+# United States, Russia).
+#
+# Sample input lines:
+# AYZ^America/New_York
+# LJC^America/Kentucky/Louisville
+# MNP^Pacific/Port_Moresby
+# QSE^America/Sao_Paulo
+#
+/^([A-Z]{3})\^(Africa|America|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/([A-Za-z/_]+)$/ {
+    # IATA code
+    iata_code = $1
+
+    # Time-zone ID
+    tz_id = $2
+
+    # Register the time-zone ID associated to that country
+    por_tz_list[iata_code] = tz_id
+}
 
 ##
 # File of country-continent mappings
@@ -236,13 +264,16 @@ BEGIN {
     # State code
     state_code = $10
 
+    # Through date
+    through_date = $14
+
     # Register the WAC associated to that country (e.g., 401 for 'AL'/Albania)
-	if (country_iso_code) {
+	if (through_date == "" && country_iso_code) {
 		wac_by_ctry_code_list[country_iso_code] = world_area_code
 	}
 
     # Register the WAC associated to that state (e.g., 51 for 'AL'/Alabama)
-	if (state_code) {
+	if (through_date == "" && state_code) {
 		wac_by_state_code_list[state_code] = world_area_code
 	}
 
@@ -256,8 +287,15 @@ BEGIN {
 
 
 ##
+# Retrieve the time-zone ID for that POR IATA code
+function getTimeZoneFromIATACode(myIATACode) {
+    tz_id = por_tz_list[myIATACode]
+    return tz_id
+}
+
+##
 # Retrieve the time-zone ID for that country
-function getTimeZone(myCountryCode) {
+function getTimeZoneFromCountryCode(myCountryCode) {
     tz_id = ctry_tz_list[myCountryCode]
     return tz_id
 }
@@ -286,20 +324,55 @@ function getContinentName(myCountryCode) {
 ##
 # Retrieve the World Area Code (WAC) for a given country or a given state
 function getWorldAreaCode(myCountryCode, myStateCode, myCountryCodeAlt) {
-	# If there is a WAC registered for the state code, then the WAC is
-	# specified at the state level (like for US and CA states)
+	# If there is a WAC registered for the state code (as found in Geonames),
+	# then the WAC is specified at the state level (like for US and CA states)
 	world_area_code_for_state = wac_by_state_code_list[myStateCode]
 	if (world_area_code_for_state) {
 		return world_area_code_for_state
 	}
 
+	# Then, try to match the country code (as found in Geonames)
 	world_area_code_for_ctry = wac_by_ctry_code_list[myCountryCode]
 	if (world_area_code_for_ctry) {
 		return world_area_code_for_ctry
 	}
 
+	# Then, try to match the alternate country code (as found in Geonames)
 	world_area_code_for_ctry = wac_by_ctry_code_list[myCountryCodeAlt]
 	if (world_area_code_for_ctry) {
+		return world_area_code_for_ctry
+	}
+
+	# Then, try to match the country code (as found in Geonames)
+	# with a WAC state code. For instance, Puerto Rico (PR) is a country
+	# for Geonames, but a state (of the USA) for the US DOT WAC.
+	world_area_code_for_state = wac_by_state_code_list[myCountryCode]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+	
+	# Then, try to match the alternate country code (as found in Geonames)
+	# with a WAC state code. For instance, Puerto Rico (PR) is a country
+	# for Geonames, but a state (of the USA) for the US DOT WAC.
+	world_area_code_for_state = wac_by_state_code_list[myCountryCodeAlt]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+
+	# A few specific rules. See for instance the issue #5 on Open Travel Data:
+	# http://github.com/opentraveldata/opentraveldata/issues/5
+	# The following countries should be mapped onto WAC #005, TT, USA:
+	# * American Samoa, referenced under Geonames as AS
+	# * Guam, referenced under Geonames as GU
+	# * Northern Mariana Islands, referenced under Geonames as MP
+	if (myCountryCode == "AS" || myCountryCode == "GU" || myCountryCode == "MP"){
+		world_area_code_for_ctry = 5
+		return world_area_code_for_ctry
+	}
+	# For some reason, the US DOT has got the wrong country code for Kosovo
+	# See also https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
+	if (myCountryCode == "XK") {
+		world_area_code_for_ctry = 494
 		return world_area_code_for_ctry
 	}
 
@@ -357,14 +430,14 @@ function printAltNameSection(myAltNameSection) {
 
 
 ##
-# Aggregated content from Amadeus OPTD, Amadeus RFD and Geonames
+# Aggregated content from OPTD, reference data and Geonames
 #
 # Sample input lines:
 #
-# # Both in Geonames and in RFD (56 fields)
+# # Both in Geonames and in reference data (56 fields)
 # NCE-A-6299418^NCE^43.658411^7.215872^NCE^6299418^NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Nice Airport,...^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^NCE^A^Nice^Cote D Azur^Nice^Nice FR Cote D Azur^Nice^NCE^Y^^FR^EUROP^ITC2^FR052^43.6653^7.215^^Y^en|Nice Côte d'Azur International Airport|s
 #
-# # In RFD (24 fields)
+# # In reference data (24 fields)
 # XIT-R-0^XIT^51.42^12.42^LEJ^^XIT^R^Leipzig Rail^Leipzig Hbf Rail Stn^Leipzig Rail^Leipzig HALLE DE Leipzig Hbf R^Leipzig HALLE^LEJ^Y^^DE^EUROP^ITC2^DE040^51.3^12.3333^^N
 #
 # # In Geonames (38 fields)
@@ -374,7 +447,7 @@ function printAltNameSection(myAltNameSection) {
 
     if (NF == 57) {
 		####
-		## Both in Geonames and in RFD
+		## Both in Geonames and in reference data
 		####
 
 		# Primary key
@@ -452,7 +525,7 @@ function printAltNameSection(myAltNameSection) {
 		# Notes:
 		#   1. The actual name values are added by the add_city_name.awk script.
 		#   2. The city code is the one from the file of best known POR,
-		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
+		#      not the one from reference data (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
@@ -498,7 +571,7 @@ function printAltNameSection(myAltNameSection) {
 		# (37) Aeroport de Nice Cote d'Azur, ...,Niza Aeropuerto ^
 		# (38) http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport ^
 
-		# From RFD ($39 - $56)
+		# From reference data ($39 - $56)
 		# (39) NCE ^ (40) CA ^ (41) NICE ^ (42) COTE D AZUR ^ (43) NICE ^
 		# (44) NICE/FR:COTE D AZUR ^ (45) NICE ^ (46) NCE ^
 		# (47) Y ^ (48)  ^ (49) FR ^ (50) EUROP ^ (51) ITC2 ^ (52) FR052 ^
@@ -600,7 +673,15 @@ function printAltNameSection(myAltNameSection) {
 		country_code = $17
 		country_code_alt = ""
 		country_name = getCountryName(country_code)
-		time_zone_id = getTimeZone(country_code)
+		time_zone_id = getTimeZoneFromIATACode(iata_code)
+		if (time_zone_id == "") {
+			time_zone_id = getTimeZoneFromCountryCode(country_code)
+
+			print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
+				   "for the record #" FNR " - Default time-zone: "	\
+				   time_zone_id ". Record: " $0)					\
+				> error_stream
+		}
 		continent_name = getContinentName(country_code)
 		# continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
 		printf ("%s", "^" country_code "^^" country_name "^" continent_name)
@@ -625,7 +706,7 @@ function printAltNameSection(myAltNameSection) {
 		# Notes:
 		#   1. The actual name values are added by the add_city_name.awk script.
 		#   2. The city code is the one from the file of best known POR,
-		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
+		#      not the one from reference data (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
@@ -655,7 +736,7 @@ function printAltNameSection(myAltNameSection) {
 		# (1) HDQ-CA-0 ^ (2) HDQ ^ (3) <empty lat.> ^ (4)  ^ <empty long.>
 		# (5) HDQ ^ (6)  ^
 
-		# From RFD ($7 - $24)
+		# From reference data ($7 - $24)
 		# (7) HDQ ^ (8) CA ^ (9) Headquarters ^ (10) ^
 		# (11) Headquarters ^ (12) Headquarters ZZ ^
 		# (13) Headquarters ^
@@ -664,7 +745,7 @@ function printAltNameSection(myAltNameSection) {
 
     } else if (NF == 39) {
 		####
-		## Not in RFD
+		## Not in reference data
 		####
 
 		# Primary key
@@ -734,7 +815,7 @@ function printAltNameSection(myAltNameSection) {
 		# Notes:
 		#   1. The actual name values are added by the add_city_name.awk script.
 		#   2. The city code is the one from the file of best known POR,
-		#      not the one from Amadeus RFD (as it is sometimes inaccurate).
+		#      not the one from reference data (as it is sometimes inaccurate).
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
@@ -780,7 +861,7 @@ function printAltNameSection(myAltNameSection) {
 
     } else if (NF == 6) {
 		####
-		## Neither in Geonames nor in RFD
+		## Neither in Geonames nor in reference data
 		####
 		# Location type (hard-coded to be an airport)
 		location_type = "A"

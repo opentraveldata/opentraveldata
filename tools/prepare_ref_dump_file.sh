@@ -1,13 +1,13 @@
 #!/bin/bash
 #
 # One parameter is optional for this script:
-# - the file-path of the data dump file extracted from RFD.
+# - the file-path of the dump file extracted from the reference data.
 #
 
 displayGeonamesDetails() {
 	if [ -z "${OPTDDIR}" ]
 	then
-		export OPTDDIR=~/dev/geo/optdgit/refdata
+		export OPTDDIR=~/dev/geo/optdgit
 	fi
 	if [ -z "${MYCURDIR}" ]
 	then
@@ -42,40 +42,40 @@ displayGeonamesDetails() {
 	echo
 }
 
-displayRfdDetails() {
+displayRefDetails() {
     ##
     # Snapshot date
 	SNAPSHOT_DATE=`date "+%Y%m%d"`
 	SNAPSHOT_DATE_HUMAN=`date`
 	echo
 	echo "####### Note #######"
-	echo "# The data dump from Amadeus RFD can be obtained from this project"
-	echo "# (http://gitorious.orinet.nce.amadeus.net/dataanalysis/dataanalysis.git). For instance:"
-	echo "DARFD=~/dev/dataanalysis/dataanalysisgit/data_generation"
+	echo "# The data dump from reference data can be obtained from this project"
+	echo "# (http://<gitorious/bitbucket>/dataanalysis/dataanalysis.git). For instance:"
+	echo "DAREF=~/dev/dataanalysis/dataanalysisgit/data_generation"
 	echo "mkdir -p ~/dev/dataanalysis"
 	echo "cd ~/dev/dataanalysis"
-	echo "git clone git://gitorious.orinet.nce.amadeus.net/dataanalysis/dataanalysis.git dataanalysisgit"
-	echo "cd \${DARFD}/RFD"
-	echo "# The following script fetches a SQLite file, holding Amadeus RFD data,"
+	echo "git clone git://<gitorious/bitbucket>/dataanalysis/dataanalysis.git dataanalysisgit"
+	echo "cd \${DAREF}/REF"
+	echo "# The following script fetches a SQLite file, holding reference data,"
 	echo "# and translates it into three MySQL-compatible SQL files:"
-	echo "./fetch_sqlite_rfd.sh # it may take several minutes"
-	echo "# It produces three create_*_rfd_*${SNAPSHOT_DATE}.sql files, which are then"
-	echo "# used by the following script, in order to load the RFD data into MySQL:"
-	echo "./create_rfd_user.sh"
-	echo "./create_rfd_db.sh"
-	echo "./create_all_tables.sh rfd rfd_rfd ${SNAPSHOT_DATE} localhost"
+	echo "./fetch_sqlite_ref.sh # it may take several minutes"
+	echo "# It produces three create_*_ref_*${SNAPSHOT_DATE}.sql files, which are then"
+	echo "# used by the following script, in order to load the reference data into MySQL:"
+	echo "./create_ref_user.sh"
+	echo "./create_ref_db.sh"
+	echo "./create_all_tables.sh ref ref_ref ${SNAPSHOT_DATE} localhost"
 	if [ "${TMP_DIR}" = "/tmp/por/" ]
 	then
 		echo "mkdir -p ${TMP_DIR}"
 	fi
 	echo "cd ${MYCURDIR}"
-	echo "# The MySQL CRB_CITY table has then to be exported into a CSV file."
-	echo "\${DARFD}/por/extract_por_rfd_crb_city.sh rfd rfd_rfd localhost"
-	echo "\cp -f ${TMP_DIR}por_all_rfd_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_crb_city.csv"
+	echo "# The POR database table has then to be exported into a CSV file."
+	echo "\${DAREF}/por/extract_ref_por.sh ref ref_ref localhost"
+	echo "\cp -f ${TMP_DIR}por_all_ref_${SNAPSHOT_DATE}.csv ${TMP_DIR}dump_from_ref_city.csv"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_pageranked.csv ${TMP_DIR}"
 	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por.csv ${TMP_DIR}optd_airports.csv"
-	echo "\${DARFD}/update_airports_csv_after_getting_crb_city_dump.sh"
+	echo "\${DAREF}/update_airports_csv_after_getting_ref_city_dump.sh"
 	echo "ls -l ${TMP_DIR}"
 	echo "#####################"
 	echo
@@ -83,8 +83,8 @@ displayRfdDetails() {
 
 ##
 # Input file names
-AIR_RFD_FILENAME=dump_from_crb_airline.csv
-GEO_RFD_FILENAME=dump_from_crb_city.csv
+AIR_REF_FILENAME=dump_from_ref_airline.csv
+GEO_REF_FILENAME=dump_from_ref_city.csv
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##
@@ -106,9 +106,9 @@ then
 	EXEC_PATH="."
 	TMP_DIR="."
 fi
-# If the RFD dump file is in the current directory, then the current
+# If the reference data file is in the current directory, then the current
 # directory is certainly intended to be the temporary directory.
-if [ -f ${GEO_RFD_FILENAME} ]
+if [ -f ${GEO_REF_FILENAME} ]
 then
 	TMP_DIR="."
 fi
@@ -141,7 +141,7 @@ OPTD_DIR="${OPTD_DIR}/"
 # OPTD sub-directory
 DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
-RFD_DIR=${TOOLS_DIR}
+REF_DIR=${TOOLS_DIR}
 
 ##
 # Log level
@@ -149,23 +149,23 @@ LOG_LEVEL=4
 
 ##
 # Input files
-AIR_RFD_FILE=${TOOLS_DIR}${AIR_RFD_FILENAME}
-GEO_RFD_FILE=${TOOLS_DIR}${GEO_RFD_FILENAME}
+AIR_REF_FILE=${TOOLS_DIR}${AIR_REF_FILENAME}
+GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
 GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 
 ##
-# Amadeus RFD
-AIR_RFD_CAP_FILENAME=cap_${AIR_RFD_FILENAME}
-GEO_RFD_CAP_FILENAME=cap_${GEO_RFD_FILENAME}
-GEO_RFD_WPK_FILENAME=wpk_${GEO_RFD_FILENAME}
-SORTED_GEO_RFD_WPK_FILENAME=sorted_${GEO_RFD_WPK_FILENAME}
-SORTED_CUT_GEO_RFD_WPK_FILENAME=cut_${SORTED_GEO_RFD_WPK_FILENAME}
+# Reference data
+AIR_REF_CAP_FILENAME=cap_${AIR_REF_FILENAME}
+GEO_REF_CAP_FILENAME=cap_${GEO_REF_FILENAME}
+GEO_REF_WPK_FILENAME=wpk_${GEO_REF_FILENAME}
+SORTED_GEO_REF_WPK_FILENAME=sorted_${GEO_REF_WPK_FILENAME}
+SORTED_CUT_GEO_REF_WPK_FILENAME=cut_${SORTED_GEO_REF_WPK_FILENAME}
 #
-AIR_RFD_CAP_FILE=${TMP_DIR}${AIR_RFD_CAP_FILENAME}
-GEO_RFD_CAP_FILE=${TMP_DIR}${GEO_RFD_CAP_FILENAME}
-GEO_RFD_WPK_FILE=${TMP_DIR}${GEO_RFD_WPK_FILENAME}
-SORTED_GEO_RFD_WPK_FILE=${TMP_DIR}${SORTED_GEO_RFD_WPK_FILENAME}
-SORTED_CUT_GEO_RFD_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_RFD_WPK_FILENAME}
+AIR_REF_CAP_FILE=${TMP_DIR}${AIR_REF_CAP_FILENAME}
+GEO_REF_CAP_FILE=${TMP_DIR}${GEO_REF_CAP_FILENAME}
+GEO_REF_WPK_FILE=${TMP_DIR}${GEO_REF_WPK_FILENAME}
+SORTED_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_GEO_REF_WPK_FILENAME}
+SORTED_CUT_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_REF_WPK_FILENAME}
 
 
 ##
@@ -176,8 +176,8 @@ then
 	then
 		\rm -rf ${TMP_DIR}
 	else
-		\rm -f ${SORTED_GEO_RFD_WPK_FILE} ${SORTED_CUT_GEO_RFD_WPK_FILE}
-		\rm -f ${AIR_RFD_CAP_FILE} ${GEO_RFD_CAP_FILE} ${GEO_RFD_WPK_FILE}
+		\rm -f ${SORTED_GEO_REF_WPK_FILE} ${SORTED_CUT_GEO_REF_WPK_FILE}
+		\rm -f ${AIR_REF_CAP_FILE} ${GEO_REF_CAP_FILE} ${GEO_REF_WPK_FILE}
 	fi
 	exit
 fi
@@ -188,20 +188,20 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
-	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Amadeus RFD directory for data dump files> [<log level>]]]"
+	echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Reference data directory for data dump files> [<log level>]]]"
 	echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
 	echo "  - Default path for the OPTD-maintained file of best known coordinates: '${GEO_OPTD_FILE}'"
-	echo "  - Default path for the Amadeus RFD data dump files: '${RFD_DIR}'"
-	echo "    + 'Airlines (CRB_AIRLINE): ${AIR_RFD_FILE}'"
-	echo "    + 'Airports/cities (CRB_CITY): ${GEO_RFD_FILE}'"
+	echo "  - Default path for the reference data files: '${REF_DIR}'"
+	echo "    + 'Airlines: ${AIR_REF_FILE}'"
+	echo "    + 'Airports/cities: ${GEO_REF_FILE}'"
 	echo "  - Default log level: ${LOG_LEVEL}"
 	echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
 	echo "  - Generated files:"
-	echo "    + '${AIR_RFD_CAP_FILE}'"
-	echo "    + '${GEO_RFD_CAP_FILE}'"
-	echo "    + '${GEO_RFD_WPK_FILE}'"
-	echo "    + '${SORTED_GEO_RFD_WPK_FILE}'"
-	echo "    + '${SORTED_CUT_GEO_RFD_WPK_FILE}'"
+	echo "    + '${AIR_REF_CAP_FILE}'"
+	echo "    + '${GEO_REF_CAP_FILE}'"
+	echo "    + '${GEO_REF_WPK_FILE}'"
+	echo "    + '${SORTED_GEO_REF_WPK_FILE}'"
+	echo "    + '${SORTED_CUT_GEO_REF_WPK_FILE}'"
 	echo
 	exit
 fi
@@ -211,9 +211,9 @@ then
 	displayGeonamesDetails
 	exit
 fi
-if [ "$1" = "-r" -o "$1" = "--rfd" ]
+if [ "$1" = "-r" -o "$1" = "--ref" ]
 then
-	displayRfdDetails
+	displayRefDetails
 	exit
 fi
 
@@ -234,7 +234,7 @@ then
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
 	DATA_DIR=${OPTD_DIR}opentraveldata/
 	TOOLS_DIR=${OPTD_DIR}tools/
-	RFD_DIR=${TOOLS_DIR}
+	REF_DIR=${TOOLS_DIR}
 	GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 fi
 
@@ -251,43 +251,43 @@ then
 fi
 
 ##
-# RFD data dump file with geographical coordinates
+# Reference data file with geographical coordinates
 if [ "$2" != "" ]
 then
-	RFD_DIR="$2"
-	AIR_RFD_FILE=${RFD_DIR}${AIR_RFD_FILENAME}
-	GEO_RFD_FILE=${RFD_DIR}${GEO_RFD_FILENAME}
-	if [ "${GEO_RFD_FILE}" = "${GEO_RFD_FILENAME}" ]
+	REF_DIR="$2"
+	AIR_REF_FILE=${REF_DIR}${AIR_REF_FILENAME}
+	GEO_REF_FILE=${REF_DIR}${GEO_REF_FILENAME}
+	if [ "${GEO_REF_FILE}" = "${GEO_REF_FILENAME}" ]
 	then
-		GEO_RFD_FILE="${TMP_DIR}${GEO_RFD_FILE}"
+		GEO_REF_FILE="${TMP_DIR}${GEO_REF_FILE}"
 	fi
 fi
-AIR_RFD_CAP_FILE=${TMP_DIR}${AIR_RFD_CAP_FILENAME}
-GEO_RFD_CAP_FILE=${TMP_DIR}${GEO_RFD_CAP_FILENAME}
-GEO_RFD_WPK_FILE=${TMP_DIR}${GEO_RFD_WPK_FILENAME}
-SORTED_GEO_RFD_WPK_FILE=${TMP_DIR}${SORTED_GEO_RFD_WPK_FILENAME}
-SORTED_CUT_GEO_RFD_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_RFD_WPK_FILENAME}
+AIR_REF_CAP_FILE=${TMP_DIR}${AIR_REF_CAP_FILENAME}
+GEO_REF_CAP_FILE=${TMP_DIR}${GEO_REF_CAP_FILENAME}
+GEO_REF_WPK_FILE=${TMP_DIR}${GEO_REF_WPK_FILENAME}
+SORTED_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_GEO_REF_WPK_FILENAME}
+SORTED_CUT_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_REF_WPK_FILENAME}
 
-if [ ! -f "${GEO_RFD_FILE}" ]
+if [ ! -f "${GEO_REF_FILE}" ]
 then
 	echo
-	echo "[$0:$LINENO] The '${GEO_RFD_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${GEO_REF_FILE}' file does not exist."
 	echo
 	if [ "$2" = "" ]
 	then
-		displayRfdDetails
+		displayRefDetails
 	fi
 	exit -1
 fi
 
-if [ ! -f "${AIR_RFD_FILE}" ]
+if [ ! -f "${AIR_REF_FILE}" ]
 then
 	echo
-	echo "[$0:$LINENO] The '${AIR_RFD_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${AIR_REF_FILE}' file does not exist."
 	echo
 	if [ "$2" = "" ]
 	then
-		displayRfdDetails
+		displayRefDetails
 	fi
 fi
 
@@ -301,51 +301,51 @@ fi
 
 ##
 # Capitalise the names of the airline dump file, if existing
-RFD_CAPITILISER=rfd_capitalise.awk
-if [ -f "${AIR_RFD_FILE}" ]
+REF_CAPITILISER=ref_capitalise.awk
+if [ -f "${AIR_REF_FILE}" ]
 then
-	awk -F'^' -v log_level=${LOG_LEVEL} -f ${RFD_CAPITILISER} ${AIR_RFD_FILE} \
-		> ${AIR_RFD_CAP_FILE}
+	awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${AIR_REF_FILE} \
+		> ${AIR_REF_CAP_FILE}
 fi
 
 ##
 # Capitalise the names of the geographical dump file
-awk -F'^' -v log_level=${LOG_LEVEL} -f ${RFD_CAPITILISER} ${GEO_RFD_FILE} \
-	> ${GEO_RFD_CAP_FILE}
+awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${GEO_REF_FILE} \
+	> ${GEO_REF_CAP_FILE}
 
 ##
 # Generate a second version of the geographical file with the OPTD primary key
 # (integrating the location type)
-OPTD_PK_ADDER=${TOOLS_DIR}rfd_pk_creator.awk
+OPTD_PK_ADDER=${TOOLS_DIR}ref_pk_creator.awk
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
-	${GEO_OPTD_FILE} ${GEO_RFD_CAP_FILE} > ${GEO_RFD_WPK_FILE}
-#sort -t'^' -k1,1 ${GEO_RFD_WPK_FILE}
+	${GEO_OPTD_FILE} ${GEO_REF_CAP_FILE} > ${GEO_REF_WPK_FILE}
+#sort -t'^' -k1,1 ${GEO_REF_WPK_FILE}
 
 ##
 # Remove the header (first line) of the geographical file
-GEO_RFD_WPK_FILE_TMP=${GEO_RFD_WPK_FILE}.tmp
-sed -e "s/^pk\(.\+\)//g" ${GEO_RFD_WPK_FILE} > ${GEO_RFD_WPK_FILE_TMP}
-sed -i -e "/^$/d" ${GEO_RFD_WPK_FILE_TMP}
+GEO_REF_WPK_FILE_TMP=${GEO_REF_WPK_FILE}.tmp
+sed -e "s/^pk\(.\+\)//g" ${GEO_REF_WPK_FILE} > ${GEO_REF_WPK_FILE_TMP}
+sed -i -e "/^$/d" ${GEO_REF_WPK_FILE_TMP}
 
 
 ##
-# That version of the RFD geographical dump file (without primary key)
+# That version of the REF geographical dump file (without primary key)
 # is sorted according to the IATA code.
-sort -t'^' -k 1,1 ${GEO_RFD_WPK_FILE_TMP} > ${SORTED_GEO_RFD_WPK_FILE}
-\rm -f ${GEO_RFD_WPK_FILE_TMP}
+sort -t'^' -k 1,1 ${GEO_REF_WPK_FILE_TMP} > ${SORTED_GEO_REF_WPK_FILE}
+\rm -f ${GEO_REF_WPK_FILE_TMP}
 
 ##
 # Only four columns/fields are kept in that version of the geographical file:
 # the primary key, airport/city IATA code and the geographical coordinates
 # (latitude, longitude).
-cut -d'^' -f 1,2,16,17 ${SORTED_GEO_RFD_WPK_FILE} \
-	> ${SORTED_CUT_GEO_RFD_WPK_FILE}
+cut -d'^' -f 1,2,16,17 ${SORTED_GEO_REF_WPK_FILE} \
+	> ${SORTED_CUT_GEO_REF_WPK_FILE}
 
 ##
 # Reporting
 echo
 echo "Preparation step"
 echo "----------------"
-echo "The '${AIR_RFD_CAP_FILE}', '${GEO_RFD_CAP_FILE}', '${GEO_RFD_WPK_FILE}', '${SORTED_GEO_RFD_WPK_FILE}' and '${SORTED_CUT_GEO_RFD_WPK_FILE}' files have been derived from '${GEO_RFD_FILE}'."
+echo "The '${AIR_REF_CAP_FILE}', '${GEO_REF_CAP_FILE}', '${GEO_REF_WPK_FILE}', '${SORTED_GEO_REF_WPK_FILE}' and '${SORTED_CUT_GEO_REF_WPK_FILE}' files have been derived from '${GEO_REF_FILE}'."
 echo
 

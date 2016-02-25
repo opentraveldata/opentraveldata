@@ -56,7 +56,7 @@ BEGIN {
 
 	if (NF == 16) {
 		####
-		## Neither in Geonames nor in RFD
+		## Neither in Geonames nor in reference data
 		####
 		# Location type (extracted from the primary key)
 		location_type = "A"

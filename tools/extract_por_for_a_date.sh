@@ -89,7 +89,8 @@ then
 	echo
 	echo "Usage: $0 [<Target date>]"
 	echo "  - Target date: '${TARGET_DATE}' (${TARGET_DATE_HUMAN})"
-	echo "    + ${GEO_IATA_FILE} for the list of OPTD-maintained POR at that date"
+	echo "    + ${OPTD_POR_FILE} contains the OPTD-maintained list of Points of Reference (POR)"
+	echo "    + ${OPTD_POR_TGT_FILE} contains the list of OPTD-maintained POR for that date"
 	echo
 	exit -1
 fi
@@ -118,7 +119,8 @@ echo "Extraction Step"
 echo "---------------"
 echo
 EXTRACTER=extract_por_for_a_date.awk
-time awk -F'^' -f ${EXTRACTER} ${OPTD_POR_FILE} > ${OPTD_POR_TGT_FILE}
+time awk -F'^' -v tgt_date=${TARGET_DATE} -f ${EXTRACTER} \
+	 ${OPTD_POR_FILE} > ${OPTD_POR_TGT_FILE}
 
 ##
 # Reporting
