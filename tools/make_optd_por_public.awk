@@ -42,24 +42,20 @@ BEGIN {
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
 
-    # Header
-    printf ("%s", "iata_code^icao_code^faa_code")
-    printf ("%s", "^is_geonames^geoname_id^envelope_id")
-    printf ("%s", "^name^asciiname^latitude^longitude")
-    printf ("%s", "^fclass^fcode")
-    printf ("%s", "^page_rank^date_from^date_until^comment")
-    printf ("%s", "^country_code^cc2^country_name^continent_name")
-    printf ("%s", "^adm1_code^adm1_name_utf^adm1_name_ascii")
-    printf ("%s", "^adm2_code^adm2_name_utf^adm2_name_ascii")
-    printf ("%s", "^adm3_code^adm4_code")
-    printf ("%s", "^population^elevation^gtopo30")
-    printf ("%s", "^timezone^gmt_offset^dst_offset^raw_offset^moddate")
-    printf ("%s", "^city_code_list^city_name_list^city_detail_list^tvl_por_list")
-    printf ("%s", "^state_code^location_type")
-    printf ("%s", "^wiki_link")
-    printf ("%s", "^alt_name_section")
-	printf ("%s", "^wac^wac_name")
-    printf ("%s", "\n")
+    hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
+	hdr_line = hdr_line "^name^asciiname^latitude^longitude^fclass^fcode"
+	hdr_line = hdr_line "^page_rank^date_from^date_until^comment"
+	hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
+	hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
+	hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
+	hdr_line = hdr_line "^adm3_code^adm4_code"
+	hdr_line = hdr_line "^population^elevation^gtopo30"
+	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
+	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
+	hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
+	hdr_line = hdr_line "^wac^wac_name"
+
+    print (hdr_line)
 
     #
     today_date = mktime ("YYYY-MM-DD")
