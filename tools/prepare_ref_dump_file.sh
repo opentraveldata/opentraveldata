@@ -218,7 +218,7 @@ then
 fi
 
 ##
-# The OpenTravelData refdata/ sub-directory contains, among other things,
+# The OpenTravelData opentraveldata/ sub-directory contains, among other things,
 # the OPTD-maintained list of POR file with geographical coordinates.
 if [ "$1" != "" ]
 then
