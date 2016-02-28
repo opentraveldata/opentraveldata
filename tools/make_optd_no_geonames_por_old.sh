@@ -6,7 +6,7 @@
 ##
 # OpenTravelData
 OPTD_DIR=../
-DATA_DIR=${OPTD_DIR}opentraveldata
+DATA_DIR=${OPTD_DIR}opentraveldata/
 
 ##
 # Input
