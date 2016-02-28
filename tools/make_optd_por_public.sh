@@ -1,8 +1,31 @@
 #!/bin/bash
 
+##
+# TODO
+# Check:
+# 1. Cities with less TVL POR, eg, AAR, AIY
+# 2. TVL POR list not sorted.
+#
+# cd tools/
+# git co master
+# ./make_optd_por_public.sh
+# ./make_optd_por_public.sh --clean
+# sh prepare_por_no_geonames.sh # => optd_por_no_geonames.csv
+# # ./make_optd_no_geonames_por_old.sh # => optd_por_no_geonames_old.csv # No longer used, normally
+# git add ../opentraveldata/optd_por_public.sh ../opentraveldata/optd_por_no_geonames.csv
+# git ci -m "[POR] Integrated the last updates of Geonames; xx POR has been updated." ../opentraveldata/optd_por_public.sh ../opentraveldata/optd_por_no_geonames.csv
+# git co woref
+# ./make_optd_por_public.sh
+# ./make_optd_por_public.sh --clean
+# cd ../opentraveldata
+# git diff optd_por_public.sh
+
+
+##
 # Create the public version of the OPTD-maintained list of POR, from:
 # - optd_por_best_known_so_far.csv
 # - optd_por_no_longer_valid.csv
+# - optd_por_no_geonames.csv
 # - ref_airport_pageranked.csv
 # - optd_tz_light.csv
 # - optd_por_tz.csv
@@ -80,6 +103,9 @@ OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 # File of no longer valid IATA entries
 OPTD_NOIATA_FILENAME=optd_por_no_longer_valid.csv
 OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
+# File of non-Geonames POR
+OPTD_NOGEONAMES_FILENAME=optd_por_no_geonames.csv
+OPTD_NOGEONAMES_FILE=${DATA_DIR}${OPTD_NOGEONAMES_FILENAME}
 
 ##
 # Light (and inaccurate) version of the country-related time-zones
@@ -162,6 +188,7 @@ OPTD_POR_WITH_GEO=${OPTD_POR_FILE}.withgeo
 OPTD_POR_WITH_GEOREF=${OPTD_POR_FILE}.withgeoref
 OPTD_POR_WITH_GEOREFALT=${OPTD_POR_FILE}.withgeorefalt
 OPTD_POR_WITH_NO_CTY_NAME=${OPTD_POR_FILE}.withnoctyname
+OPTD_POR_PUBLIC_W_NOGEONAMES=${OPTD_POR_FILE}.wnogenames
 OPTD_POR_PUBLIC_WO_NOIATA_FILE=${OPTD_POR_FILE}.wonoiata
 OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD=${OPTD_POR_FILE}.wonoiata.wohd
 OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD=${OPTD_POR_FILE}.wnoiata.wohd
@@ -236,7 +263,7 @@ if [ "$1" = "--clean" ]
 then
 	\rm -f ${OPTD_POR_WITH_GEO} ${OPTD_ONLY_POR_NEW_FILE} \
 		${OPTD_POR_WITH_GEOREF} ${OPTD_POR_WITH_GEOREFALT} \
-		${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
+		${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 		${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} \
 		${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
 		${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
@@ -304,16 +331,25 @@ join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_NOHD} ${GEONAME_CUT_SORTED_FILE} \
 	> ${OPTD_POR_WITH_GEO}
 
 # ${OPTD_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
-# ${GEONAME_CUT_SORTED_FILE} (sorted_wpk_dump_from_ref_city.csv) are joined on
+# ${REF_SORTED_FILE} (sorted_wpk_dump_from_ref_city.csv) are joined on
 # the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${REF_SORTED_FILE} \
-	> ${OPTD_POR_WITH_GEOREF}
+#join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${REF_SORTED_FILE} \
+#	> ${OPTD_POR_WITH_GEOREF}
 
 # ${OPTD_POR_WITH_GEOREF} (optd_por_best_known_so_far.csv.withgeoref) and
 # ${GEONAME_RAW_FILE_TMP} (../tools/dump_from_geonames.csv.alt) are joined on
 # the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEOREF} ${GEONAME_RAW_FILE_TMP} \
+#join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEOREF} ${GEONAME_RAW_FILE_TMP} \
+#	> ${OPTD_POR_WITH_GEOREFALT}
+
+# ${OPTD_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
+# ${GEONAME_RAW_FILE_TMP} (../tools/dump_from_geonames.csv.alt) are joined on
+# the primary key (i.e., IATA code - location type):
+join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${GEONAME_RAW_FILE_TMP} \
 	> ${OPTD_POR_WITH_GEOREFALT}
+
+#echo "less ${OPTD_POR_WITH_GEOREFALT}"
+#exit
 
 ##
 # Re-format the aggregated entries. See ${REDUCER} for more details and samples.
@@ -322,10 +358,26 @@ echo "Aggregation Step"
 echo "----------------"
 echo
 REDUCER=make_optd_por_public.awk
-time awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
-	 ${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
-	 ${OPTD_USDOT_FILE} ${OPTD_POR_WITH_GEOREFALT} \
-	 > ${OPTD_POR_WITH_NO_CTY_NAME}
+awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
+	${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
+	${OPTD_USDOT_FILE} ${OPTD_POR_WITH_GEOREFALT} \
+	> ${OPTD_POR_WITH_NO_CTY_NAME}
+
+#echo "less ${OPTD_POR_WITH_NO_CTY_NAME}"
+#exit
+
+##
+# Add the non Geonames POR
+echo
+echo "Non Geonames Step"
+echo "-----------------"
+echo
+NOIATA_ADDER=add_noiata_por.awk
+awk -F'^' -f ${NOIATA_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
+	${OPTD_NOGEONAMES_FILE} > ${OPTD_POR_PUBLIC_W_NOGEONAMES}
+
+#echo "less ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
+#exit
 
 ##
 # Write the UTF8 and ASCII names of the city served by every travel-related
@@ -335,15 +387,18 @@ echo "City addition Step"
 echo "------------------"
 echo
 CITY_WRITER=add_city_name.awk
-time awk -F'^' -f ${CITY_WRITER} \
-	${OPTD_POR_WITH_NO_CTY_NAME} ${OPTD_POR_WITH_NO_CTY_NAME} \
+awk -F'^' -f ${CITY_WRITER} \
+	${OPTD_POR_PUBLIC_W_NOGEONAMES} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}
 
 ##
 # Extract the header into temporary files
 OPTD_POR_FILE_HEADER=${OPTD_POR_FILE}.tmp.hdr
-grep "^iata_code\(.\+\)" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
-	> ${OPTD_POR_FILE_HEADER}
+##
+# Header
+echo "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id^name^asciiname^latitude^longitude^fclass^fcode^page_rank^date_from^date_until^comment^country_code^cc2^country_name^continent_name^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3_code^adm4_code^population^elevation^gtopo30^timezone^gmt_offset^dst_offset^raw_offset^moddate^city_code_list^city_name_list^city_detail_list^tvl_por_list^state_code^location_type^wiki_link^alt_name_section^wac^wac_name" > ${OPTD_POR_FILE_HEADER}
+#grep "^iata_code\(.\+\)" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
+#	 > ${OPTD_POR_FILE_HEADER}
 
 # Remove the headers
 sed -e "s/^iata_code\(.\+\)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
@@ -361,7 +416,7 @@ echo "No longer valid IATA Step"
 echo "-------------------------"
 echo
 NOIATA_ADDER=add_noiata_por.awk
-time awk -F'^' -f ${NOIATA_ADDER} \
+awk -F'^' -f ${NOIATA_ADDER} \
 	${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_NOIATA_WITH_NOHD} \
 	> ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD}
 
@@ -372,8 +427,8 @@ echo "Sorting Step"
 echo "------------"
 echo
 # Sort on the IATA code, feature code and Geonames ID, in that order
-time sort -t'^' -k1,1 -k42,42 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
-	> ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE}
+sort -t'^' -k1,1 -k42,42 -k5,5 ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
+	 > ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE}
 cat ${OPTD_POR_FILE_HEADER} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} \
 	> ${OPTD_POR_PUBLIC_FILE}
 
