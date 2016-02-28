@@ -263,22 +263,9 @@ BEGIN {
     # Through date
     through_date = $14
 
-    # Register the WAC associated to that country (e.g., 401 for 'AL'/Albania)
-	if (through_date == "" && country_iso_code) {
-		wac_by_ctry_code_list[country_iso_code] = world_area_code
-	}
-
-    # Register the WAC associated to that state (e.g., 51 for 'AL'/Alabama)
-	if (through_date == "" && state_code) {
-		wac_by_state_code_list[state_code] = world_area_code
-	}
-
-	# Register the WAC name
-	wac_name_list[world_area_code] = wac_name
-
-	# DEBUG
-	# print ("WAC: " world_area_code "; country_code: " country_iso_code	\
-	#	   "; state_code: " state_code) > error_stream
+	# Register the relationships for that WAC
+	registerWACLists(world_area_code, through_date,				\
+					 country_iso_code, state_code, wac_name)
 }
 
 
@@ -317,77 +304,6 @@ function getContinentName(myCountryCode) {
     return cnt_name
 }
 
-##
-# Retrieve the World Area Code (WAC) for a given country or a given state
-function getWorldAreaCode(myCountryCode, myStateCode, myCountryCodeAlt) {
-	# If there is a WAC registered for the state code (as found in Geonames),
-	# then the WAC is specified at the state level (like for US and CA states)
-	world_area_code_for_state = wac_by_state_code_list[myStateCode]
-	if (world_area_code_for_state) {
-		return world_area_code_for_state
-	}
-
-	# Then, try to match the country code (as found in Geonames)
-	world_area_code_for_ctry = wac_by_ctry_code_list[myCountryCode]
-	if (world_area_code_for_ctry) {
-		return world_area_code_for_ctry
-	}
-
-	# Then, try to match the alternate country code (as found in Geonames)
-	world_area_code_for_ctry = wac_by_ctry_code_list[myCountryCodeAlt]
-	if (world_area_code_for_ctry) {
-		return world_area_code_for_ctry
-	}
-
-	# Then, try to match the country code (as found in Geonames)
-	# with a WAC state code. For instance, Puerto Rico (PR) is a country
-	# for Geonames, but a state (of the USA) for the US DOT WAC.
-	world_area_code_for_state = wac_by_state_code_list[myCountryCode]
-	if (world_area_code_for_state) {
-		return world_area_code_for_state
-	}
-	
-	# Then, try to match the alternate country code (as found in Geonames)
-	# with a WAC state code. For instance, Puerto Rico (PR) is a country
-	# for Geonames, but a state (of the USA) for the US DOT WAC.
-	world_area_code_for_state = wac_by_state_code_list[myCountryCodeAlt]
-	if (world_area_code_for_state) {
-		return world_area_code_for_state
-	}
-
-	# A few specific rules. See for instance the issue #5 on Open Travel Data:
-	# http://github.com/opentraveldata/opentraveldata/issues/5
-	# The following countries should be mapped onto WAC #005, TT, USA:
-	# * American Samoa, referenced under Geonames as AS
-	# * Guam, referenced under Geonames as GU
-	# * Northern Mariana Islands, referenced under Geonames as MP
-	if (myCountryCode == "AS" || myCountryCode == "GU" || myCountryCode == "MP"){
-		world_area_code_for_ctry = 5
-		return world_area_code_for_ctry
-	}
-	# For some reason, the US DOT has got the wrong country code for Kosovo
-	# See also https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
-	if (myCountryCode == "XK") {
-		world_area_code_for_ctry = 494
-		return world_area_code_for_ctry
-	}
-
-    # There is no WAC registered for either the state or country code
-	#print ("[" awk_file "] !!!! Warning !!!! No World Area Code (WAC) can be" \
-	#	   " found for either the state code ("	myStateCode				\
-	#	   "), the country code (" myCountryCode						\
-	#	   ") or the alternate country code (" myCountryCodeAlt			\
-	#	   "). Line: " $0) > error_stream
-}
-
-##
-# Retrieve the World Area Code (WAC) name for a given WAC
-function getWorldAreaCodeName(myWAC) {
-	if (myWAC) {
-		wac_name = wac_name_list[myWAC]
-		return wac_name
-	}
-}
 
 ##
 #

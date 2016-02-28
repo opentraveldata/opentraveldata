@@ -1606,8 +1606,8 @@ function displayInnovataPOREntries() {
 # corresponding primary key (IATA code, location type, Geonames ID).
 #
 function displayInnovataPORWithPK(__dipwkParamIataCode,		\
-				  __dipwkParamOPTDLocType,	\
-				  __dipwkParamOPTDGeoID) {
+								  __dipwkParamOPTDLocType,	\
+								  __dipwkParamOPTDGeoID) {
     # Build the primary key
     dipwkPK = getPrimaryKey(__dipwkParamIataCode, __dipwkParamOPTDLocType, \
 			    __dipwkParamOPTDGeoID)
@@ -1693,4 +1693,100 @@ function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
 
 	#
 	return outputNameList
+}
+
+##
+# Register a few relationships for the World Area Code (WAC)
+function registerWACLists(__rwlWorldAreaCode, __rwlThroughDate,			\
+						  __rwlCountryIsoCode, __rwlStateCode, __rwlWACName) {
+
+    # Register the WAC associated to that country (e.g., 401 for 'AL'/Albania)
+	if (__rwlThroughDate == "" && __rwlCountryIsoCode) {
+		wac_by_ctry_code_list[__rwlCountryIsoCode] = __rwlWorldAreaCode
+	}
+
+    # Register the WAC associated to that state (e.g., 51 for 'AL'/Alabama)
+	if (__rwlThroughDate == "" && __rwlStateCode) {
+		wac_by_state_code_list[__rwlStateCode] = __rwlWorldAreaCode
+	}
+
+	# Register the WAC name
+	wac_name_list[__rwlWorldAreaCode] = __rwlWACName
+
+	# DEBUG
+	# print ("WAC: " __rwlWorldAreaCode "; country_code: " __rwlCountryIsoCode \
+	#	   "; state_code: " __rwlStateCode) > error_stream
+}
+
+##
+# Retrieve the World Area Code (WAC) for a given country or a given state
+function getWorldAreaCode(__gwacCountryCode, __gwacStateCode, __gwacCountryCodeAlt) {
+	# If there is a WAC registered for the state code (as found in Geonames),
+	# then the WAC is specified at the state level (like for US and CA states)
+	world_area_code_for_state = wac_by_state_code_list[__gwacStateCode]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+
+	# Then, try to match the country code (as found in Geonames)
+	world_area_code_for_ctry = wac_by_ctry_code_list[__gwacCountryCode]
+	if (world_area_code_for_ctry) {
+		return world_area_code_for_ctry
+	}
+
+	# Then, try to match the alternate country code (as found in Geonames)
+	world_area_code_for_ctry = wac_by_ctry_code_list[__gwacCountryCodeAlt]
+	if (world_area_code_for_ctry) {
+		return world_area_code_for_ctry
+	}
+
+	# Then, try to match the country code (as found in Geonames)
+	# with a WAC state code. For instance, Puerto Rico (PR) is a country
+	# for Geonames, but a state (of the USA) for the US DOT WAC.
+	world_area_code_for_state = wac_by_state_code_list[__gwacCountryCode]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+	
+	# Then, try to match the alternate country code (as found in Geonames)
+	# with a WAC state code. For instance, Puerto Rico (PR) is a country
+	# for Geonames, but a state (of the USA) for the US DOT WAC.
+	world_area_code_for_state = wac_by_state_code_list[__gwacCountryCodeAlt]
+	if (world_area_code_for_state) {
+		return world_area_code_for_state
+	}
+
+	# A few specific rules. See for instance the issue #5 on Open Travel Data:
+	# http://github.com/opentraveldata/opentraveldata/issues/5
+	# The following countries should be mapped onto WAC #005, TT, USA:
+	# * American Samoa, referenced under Geonames as AS
+	# * Guam, referenced under Geonames as GU
+	# * Northern Mariana Islands, referenced under Geonames as MP
+	if (__gwacCountryCode == "AS" || __gwacCountryCode == "GU" \
+		|| __gwacCountryCode == "MP"){
+		world_area_code_for_ctry = 5
+		return world_area_code_for_ctry
+	}
+	# For some reason, the US DOT has got the wrong country code for Kosovo
+	# See also https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
+	if (__gwacCountryCode == "XK") {
+		world_area_code_for_ctry = 494
+		return world_area_code_for_ctry
+	}
+
+    # There is no WAC registered for either the state or country code
+	#print ("[" awk_file "] !!!! Warning !!!! No World Area Code (WAC) can be" \
+	#	   " found for either the state code ("	__gwacStateCode				\
+	#	   "), the country code (" __gwacCountryCode						\
+	#	   ") or the alternate country code (" __gwacCountryCodeAlt			\
+	#	   "). Line: " $0) > error_stream
+}
+
+##
+# Retrieve the World Area Code (WAC) name for a given WAC
+function getWorldAreaCodeName(__gwacnWAC) {
+	if (__gwacnWAC) {
+		wac_name = wac_name_list[__gwacnWAC]
+		return wac_name
+	}
 }
