@@ -1,0 +1,100 @@
+ctry_code^geo_id^adm1_code^adm1_name^abbr
+AU^2058645^08^Western Australia^WA
+AU^2061327^05^South Australia^SA
+AU^2064513^03^Northern Territory^NT
+AU^2145234^07^Victoria^VIC
+AU^2147291^06^Tasmania^TAS
+AU^2152274^04^Queensland^QLD
+AU^2155400^02^New South Wales^NSW
+AU^2177478^01^Australian Capital Territory^ACT
+BR^3390290^22^Rio Grande do Norte^RN
+BR^3392213^20^Piauí^PI
+BR^3392268^30^Pernambuco^PE
+BR^3393098^17^Paraíba^PB
+BR^3393129^16^Pará^PA
+BR^3395443^13^Maranhão^MA
+BR^3402362^06^Ceará^CE
+BR^3407762^03^Amapá^AP
+BR^3408096^02^Alagoas^AL
+BR^3447799^28^Sergipe^SE
+BR^3448433^27^São Paulo^SP
+BR^3450387^26^Santa Catarina^SC
+BR^3451133^23^Rio Grande do Sul^RS
+BR^3451189^21^Rio de Janeiro^RJ
+BR^3455077^18^Paraná^PR
+BR^3457153^15^Minas Gerais^MG
+BR^3457415^11^Mato Grosso do Sul^MS
+BR^3457419^14^Mato Grosso^MT
+BR^3462372^29^Goiás^GO
+BR^3463504^07^Federal District^DF
+BR^3463930^08^Espírito Santo^ES
+BR^3471168^05^Bahia^BA
+BR^3474575^31^Tocantins^TO
+BR^3662560^25^Roraima^RR
+BR^3665361^04^Amazonas^AM
+BR^3665474^01^Acre^AC
+BR^3924825^24^Rondônia^RO
+CA^5883102^01^Alberta^AB
+CA^5909050^02^British Columbia^BC
+CA^6065171^03^Manitoba^MB
+CA^6087430^04^New Brunswick^NB
+CA^6091069^13^Northwest Territories^NT
+CA^6091530^07^Nova Scotia^NS
+CA^6091732^14^Nunavut^NU
+CA^6093943^08^Ontario^ON
+CA^6113358^09^Prince Edward Island^PE
+CA^6115047^10^Quebec^QC
+CA^6141242^11^Saskatchewan^SK
+CA^6185811^12^Yukon^YT
+CA^6354959^05^Newfoundland and Labrador^NL
+US^4099753^AR^Arkansas^AR
+US^4138106^DC^Washington, D.C.^DC
+US^4142224^DE^Delaware^DE
+US^4155751^FL^Florida^FL
+US^4197000^GA^Georgia^GA
+US^4273857^KS^Kansas^KS
+US^4331987^LA^Louisiana^LA
+US^4361885^MD^Maryland^MD
+US^4398678^MO^Missouri^MO
+US^4436296^MS^Mississippi^MS
+US^4482348^NC^North Carolina^NC
+US^4544379^OK^Oklahoma^OK
+US^4597040^SC^South Carolina^SC
+US^4662168^TN^Tennessee^TN
+US^4736286^TX^Texas^TX
+US^4826850^WV^West Virginia^WV
+US^4829764^AL^Alabama^AL
+US^4831725^CT^Connecticut^CT
+US^4862182^IA^Iowa^IA
+US^4896861^IL^Illinois^IL
+US^4921868^IN^Indiana^IN
+US^4971068^ME^Maine^ME
+US^5001836^MI^Michigan^MI
+US^5037779^MN^Minnesota^MN
+US^5073708^NE^Nebraska^NE
+US^5090174^NH^New Hampshire^NH
+US^5101760^NJ^New Jersey^NJ
+US^5128638^NY^New York^NY
+US^5165418^OH^Ohio^OH
+US^5224323^RI^Rhode Island^RI
+US^5242283^VT^Vermont^VT
+US^5279468^WI^Wisconsin^WI
+US^5332921^CA^California^CA
+US^5417618^CO^Colorado^CO
+US^5481136^NM^New Mexico^NM
+US^5509151^NV^Nevada^NV
+US^5549030^UT^Utah^UT
+US^5551752^AZ^Arizona^AZ
+US^5596512^ID^Idaho^ID
+US^5667009^MT^Montana^MT
+US^5690763^ND^North Dakota^ND
+US^5744337^OR^Oregon^OR
+US^5769223^SD^South Dakota^SD
+US^5815135^WA^Washington^WA
+US^5843591^WY^Wyoming^WY
+US^5855797^HI^Hawaii^HI
+US^5879092^AK^Alaska^AK
+US^6254925^KY^Kentucky^KY
+US^6254926^MA^Massachusetts^MA
+US^6254927^PA^Pennsylvania^PA
+US^6254928^VA^Virginia^VA
