@@ -80,7 +80,6 @@ JDM^^^N^0^^Miami FL US Downtown Heliport^Miami FL US Downtown Heliport^25.8^-80.
 JDT^^^N^0^^Minneapolis MN US Downtown Hpt^Minneapolis MN US Downtown Hpt^44.97^-93.24^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^MSP^^^^MN^H^^^63^Minnesota
 JDX^^^N^0^^Houston TX US First City Helip^Houston TX US First City Helip^29.77^-95.33^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^B^^^74^Texas
 JDY^^^N^0^^Downey CA US Heliport^Downey CA US Heliport^42.43^-112.1^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Boise^^^^-1^JDY^Downey CA US Heliport^JDY|0|Downey CA US Heliport|Downey CA US Heliport^JDY^CA^CH^^^91^California
-JEM^^^N^0^^Emeryville CA US Heliport^Emeryville CA US Heliport^33.95^-117.4^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^JEM^Emeryville CA US Heliport^JEM|0|Emeryville CA US Heliport|Emeryville CA US Heliport^JEM^CA^CH^^^91^California
 JEV^^^N^0^^Evry FR^Evry FR^48.63^2.567^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^JEV^^^^^O^^^427^France
 JGE^^^N^0^^Geoje KR Heliport^Geoje KR Heliport^34.9^128.7^S^AIRH^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^JGE^Geoje KR Heliport^JGE|0|Geoje KR Heliport|Geoje KR Heliport^JGE^^CH^^^778^South Korea
 JGL^^^N^0^^Atlanta GA US Galleria^Atlanta GA US Galleria^33.58^-84.47^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ATL^^^^GA^A^^^34^Georgia
@@ -302,7 +301,7 @@ QPN^^^N^0^^Piatra Neamt RO Piatra Neamt^Piatra Neamt RO Piatra Neamt^46.9333^-26
 QPR^^^N^0^^Prato IT Prato^Prato IT Prato^43.8833^11.1^X^XXXX^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^QPR^^^^^O^^^450^Italy
 QPU^^^N^0^^Porto Uniao SC BR Off^Porto Uniao SC BR Off^-26.25^51.0833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPU^^^^SC^O^^^37^South Carolina
 QPV^^^N^0^^Perisher Valley NS AU Bus Stat^Perisher Valley NS AU Bus Stat^-36.4^148.4^S^BUSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QPV^Perisher Valley NS AU Bus Stat^QPV|0|Perisher Valley NS AU Bus Stat|Perisher Valley NS AU Bus Stat^QPV^NS^CB^^^951^Nova Scotia
-QPX^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^42.17^-88.43^X^XXXX^0.0121628342918^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPX^^^^^O^^^^
+QPX^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^42.17^-88.43^X^XXXX^0.0121675446982^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPX^^^^^O^^^^
 QPY^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^41.45^-87.63^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPY^^^^^O^^^^
 QQM^^^N^0^^Manchester GB Piccadilly Railw^Manchester GB Piccadilly Railw^53.5^-2.25^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^MAN^^^^^R^^^493^United Kingdom
 QQN^^^N^0^^Birming GB New Street Rail Stn^Birming GB New Street Rail Stn^52.5^-1.883^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^BHX^^^^^R^^^493^United Kingdom
@@ -573,7 +572,7 @@ XZC^^^N^0^^Glencoe ON CA Railway Station^Glencoe ON CA Railway Station^42.75^-81
 XZE^^^N^0^^Rail Generic DE Rail Generic^Rail Generic DE Rail Generic^50^10^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^XZE^^^^^O^^^429^Germany
 XZK^^^N^0^^Amherst NS CA Railway Station^Amherst NS CA Railway Station^44.15^-76.75^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZK^Amherst NS CA Railway Station^XZK|0|Amherst NS CA Railway Station|Amherst NS CA Railway Station^XZK^NS^CR^^^951^Nova Scotia
 XZO^^^N^0^^Oslo NO Oslo S Railway Station^Oslo NO Oslo S Railway Station^60.2^11.08^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^OSL^^^^^R^^^465^Norway
-XZP^^^N^0^^Pass ON CA Pass^Pass ON CA Pass^46.35^-72.57^X^XXXX^0.00880599618219^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZP^^^^ON^O^^^936^Ontario
+XZP^^^N^0^^Pass ON CA Pass^Pass ON CA Pass^46.35^-72.57^X^XXXX^0.00883165959155^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZP^^^^ON^O^^^936^Ontario
 XZQ^^^N^0^^Pass Ra SE Pass Rail Generic^Pass Ra SE Pass Rail Generic^59.35^18.08^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XZQ^Pass Ra SE Pass Rail Generic^XZQ|0|Pass Ra SE Pass Rail Generic|Pass Ra SE Pass Rail Generic^XZQ^^CR^^^484^Sweden
 XZR^^^N^0^^Rail QC CA Rail^Rail QC CA Rail^46.35^-72.57^X^XXXX^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZR^^^^QC^O^^^941^Quebec
 XZT^^^N^0^^Trondheim NO S Rail Stn^Trondheim NO S Rail Stn^63.45^10.93^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^TRD^^^^^R^^^465^Norway
