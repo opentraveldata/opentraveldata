@@ -1,5 +1,27 @@
 ctry_code^geo_id^adm1_code^adm1_name^abbr
 AR^3435907^01^Buenos Aires^BA
+AR^0^02^Catamarca^CA
+AR^0^03^Chaco^CH
+AR^0^04^Chubut^CB
+AR^0^05^Cordoba^CD
+AR^0^06^Corrientes^CR
+AR^0^08^Entre Rios^ER
+AR^0^09^Formosa^FO
+AR^0^10^Jujuy^PJ
+AR^0^11^La Pampa^LP
+AR^0^12^La Rioja^LR
+AR^0^13^Mendoza^MD
+AR^0^14^Misiones^MI
+AR^0^15^Neuquen^NE
+AR^0^16^Rio Negro^RN
+AR^0^17^Salta^SA
+AR^0^18^San Juan^SJ
+AR^0^19^San Luis^SL
+AR^0^20^Santa Cruz^SC
+AR^0^21^Santa Fe^SF
+AR^0^22^Santiago del Estero^SE
+AR^0^23^Tierra del Fuego^TF
+AR^0^24^Tucuman^TU
 AU^2058645^08^Western Australia^WA
 AU^2061327^05^South Australia^SA
 AU^2064513^03^Northern Territory^NT
