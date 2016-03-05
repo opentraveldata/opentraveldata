@@ -99,7 +99,7 @@ air-air-greenland^^^^GRL^GL^631^Air Greenland^Air Greenland^^^^^en|Air Greenland
 air-air-guinea^^^^^LQ^0^Air Guinea^Air Guinea^^^^^en|Air Guinea|=en|Air Guinea|^
 air-air-iceland^^^^FXI^NY^882^Air Iceland^Air Iceland^^^^^en|Air Iceland|=en|Air Iceland|^
 air-air-incheon^^^^AII^KJ^994^Air Incheon^Bmed^^^^^en|Air Incheon|=en|Bmed|^
-air-air-india-charters^^2005-04-29^^AXB^IX^0^Air India Express^Air India Charters^^^^http://en.wikipedia.org/wiki/Air_India_Express^en|Air India Express|=en|Air India Charters|^
+air-air-india-charters^^2005-04-29^^AXB^IX^0^Air India Express^^^^^http://en.wikipedia.org/wiki/Air_India_Express^en|Air India Express|p=en|Air India Charters|^COK=TRV
 air-air-india-regional^^1996-06-21^^LLR^9I^0^Air India Regional^Alliance Air^^^^http://en.wikipedia.org/wiki/Air_India_Regional^en|Air India Regional|=en|Alliance Air|^
 air-air-india^^1932-10-15^^AIC^AI^98^Air India^^^^^http://en.wikipedia.org/wiki/Air_India^en|Air India|^
 air-air-indus^^^^MPK^I6^315^Air Indus^^^^^^en|Air Indus|^
@@ -123,7 +123,6 @@ air-air-macau^^1995-11-09^^AMU^NX^675^Air Macau^^^^^http://en.wikipedia.org/wiki
 air-air-madagascar^^^^MDG^MD^258^Air Madagascar^^^^^^en|Air Madagascar|^
 air-air-malta^^^^AMC^KM^643^Air Malta^^^^^^en|Air Malta|^
 air-air-mandalay^^^^^6T^373^Air Mandalay^^^^^^en|Air Mandalay|^
-air-air-marshall-islands^^^^MRS^CW^0^Air Marshall Islands^^^^^^en|Air Marshall Islands|^
 air-air-mauritius^^^^MAU^MK^239^Air Mauritius^^^^^^en|Air Mauritius|^
 air-air-mediterranee^^^^BIE^ML^853^Air Mediterranee^^^^^^en|Air Mediterranee|^
 air-air-mekong^^^^^P8^819^Air Mekong^Pantanal Linh^^^^^en|Air Mekong|=en|Pantanal Linh|^
@@ -362,6 +361,7 @@ air-cubana-de-aviacion^^^^CUB^CU^136^Cubana De Aviacion^Cubana^^^^^en|Cubana De 
 air-czech-airlines^^1923-10-06^^CSA^OK^64^Czech Airlines^^^Member^^http://en.wikipedia.org/wiki/Czech_Airlines^en|Czech Airlines|^
 air-coastal-travels^^^^^CQ^0^Coastal Travels^^^^^^en|Coastal Travels|^
 air-daallo-airlines^^^^DAO^D3^991^Daallo Airlines^Daallo Airlin^^^^^en|Daallo Airlines|=en|Daallo Airlin|^
+air-dac-east-africa^^2011-01-01^^^JX^0^DCA East Africa^^^^^http://en.wikipedia.org/wiki/CMC_Aviation^en|DCA East Africa|=en|CMC Aviation|h^NBO
 air-dagestan-airlines^^^^^N2^0^Dagestan Airlines^^^^^^en|Dagestan Airlines|^
 air-dana-airlines^^2008-01-01^^DAN^9J^234^Dana Air^^^^^http://en.wikipedia.org/wiki/Dana_Air^en|Dana Air|^
 air-danish-air-transport^^1989-01-01^^DTR^DX^243^Danish Air Transport^^^^^http://en.wikipedia.org/wiki/Danish_Air_Transport^en|Danish Air Transport|^
@@ -491,7 +491,8 @@ air-hamburg-airways^^^^HAY^HK^516^Hamburg Airways^^^^^^en|Hamburg Airways|^
 air-hawaiian-airlines^^1929-01-30^^HAL^HA^173^Hawaiian Airlines^^^^^http://en.wikipedia.org/wiki/Hawaiian_Airlines^en|Hawaiian Airlines|^
 air-hawkair^^^^^BH^993^Hawkair^^^^^^en|Hawkair|^
 air-hebei-airlines^^^^^NS^836^Hebei Airlines^Caucasus Air^^^^^en|Hebei Airlines|=en|Caucasus Air|^
-air-heli-air-monaco^^^^MCM^YO^747^Heli Air Monaco^Heliairmona^^^^^en|Heli Air Monaco|=en|Heliairmona|^
+air-heli-air-monaco^^1976-01-01^^MCM^YO^747^Heli Air Monaco^^^^^http://en.wikipedia.org/wiki/Heli_Air_Monaco^en|Heli Air Monaco|^MCM
+air-heli-security-saint-tropez^^2014-01-01^^HLI^HS^0^Heli Sécurité^^^^^^en|Heli Sécurité|=en|Helicopter Airline Saint-Tropez|^MCM=NCE
 air-helicopteros-del-sureste^^^^^UV^662^Helicopteros Del Sureste^^^^^^en|Helicopteros Del Sureste|^
 air-helijet^^^^JBA^JB^613^Helijet International^Helijet^^^^^en|Helijet International|=en|Helijet|^
 air-hellas-jet^^^^HEJ^HJ^681^Hellas Jet^Hellenic Star^^^^^en|Hellas Jet|=en|Hellenic Star|^
@@ -712,7 +713,6 @@ air-new-england-airlines^^^^NEA^EJ^0^New England Airlines^New Englan^^^^^en|New 
 air-new-livingston^^^^NVL^JN^401^New Livingston^Newlivingston^^^^^en|New Livingston|=en|Newlivingston|^
 air-nextjet^^^^NTJ^2N^121^Nextjet^Nextjet^^^^^en|Nextjet|=en|Nextjet|^
 air-nordic-regional-airlines^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^Norra^^^^http://en.wikipedia.org/wiki/Nordic_Regional_Airlines^en|Nordic Regional Airlines|=en|Norra|^
-air-nice-helicopteres^^^^^JX^179^Nice Helicopteres^Nice Helicopt^^^^^en|Nice Helicopteres|=en|Nice Helicopt|^
 air-niger-airlines^^^^NIN^6N^720^Niger Airlines^^^^^^en|Niger Airlines|^
 air-nigerian-eagle^^^^NIG^NG^708^Aero Contractors Company Nigeria^^^^^^en|Aero Contractors Company Nigeria|^
 air-niki^^2003-01-01^^NLY^HG^0^Niki^^^Affiliate^^http://en.wikipedia.org/wiki/Niki_%28airline%29^en|Niki|^
@@ -932,7 +932,6 @@ air-sunrise-airways^^^^SNR^S6^0^Sunrise Airways^^^^^^en|Sunrise Airways|^
 air-sunwing-airlines^^^^SWG^WG^292^Sunwing Airlines^Sunwing Airlines^^^^^en|Sunwing Airlines|=en|Sunwing Airlines|^
 air-surinam-airways^^^^SLM^PY^192^Surinam Airways^Surinam Air^^^^^en|Surinam Airways|=en|Surinam Air|^
 air-sutra^^^^^1K^0^Sutra^Southern^^^^^en|Sutra|=en|Southern|^
-air-svenska-direktflyg^^2000-10-01^^HSV^HS^198^Direktflyg^Svenska Direktflyg^^^^http://en.wikipedia.org/wiki/Direktflyg^en|Direktflyg|=en|Svenska Direktflyg|^
 air-swiftair^^1986-01-01^^SWT^WT^^Swiftair^^^^^http://en.wikipedia.org/wiki/Swiftair^en|Swiftair|^
 air-swiss-airlines^^2002-01-01^^SWR^LX^724^Swiss International Air Lines^Swiss^^Member^^http://en.wikipedia.org/wiki/Swiss_International_Air_Lines^en|Swiss International Air Lines|=en|Swiss|^
 air-sylt-air^^^^AWU^7E^0^Sylt Air^^^^^^en|Sylt Air|^
@@ -970,7 +969,7 @@ air-thomas-cook-airlines^^^^TCX^MT^727^Thomas Cook Airlines^^^^^^en|Thomas Cook 
 air-thomas-cook-belgium^^^^TCW^HQ^583^Thomas Cook Airlines Belgium^Harmony Air^^^P^^en|Thomas Cook Airlines Belgium|=en|Harmony Air|^
 air-thomas-cook-eastland^^^^VKG^DK^630^Thomas Cook Airlines^Eastland Air^^^^^en|Thomas Cook Airlines|=en|Eastland Air|^
 air-thomson-airways^^2004-01-01^^TOM^BY^754^Thomson Airways^Britannia Airways^^^^http://en.wikipedia.org/wiki/Thomson_Airways^en|Thomson Airways|=en|Britannia Airways|^
-air-tianjin-airlines^^2007-01-01^^GCR^GS^826^Tianjin Airlines^^^^^http://en.wikipedia.org/wiki/Tianjin_Airlines^en|Tianjin Airlines|^
+air-tianjin-airlines^^2007-01-01^^GCR^GS^826^Tianjin Airlines^^^^^http://en.wikipedia.org/wiki/Tianjin_Airlines^en|Tianjin Airlines|^HAK=HET=TSN=URC=XIY
 air-tiara-air-aruba^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^^en|Tiara Air Aruba|=en|Tiara Air|^
 air-tibet-airlines^^^^^TV^88^Tibet Airlines^^^^^^en|Tibet Airlines|^
 air-tiger-air-philippines^^^^SRQ^DG^931^Tiger Air Philippines^^^^^^en|Tiger Air Philippines|^
@@ -1080,7 +1079,7 @@ air-yeti-airlines^^1998-08-17^^NYT^^0^Yeti Airlines^^^^^http://en.wikipedia.org/
 air-ygnus-air^^^^RGN^Y2^571^Ygnus Air^^^^^^en|Ygnus Air|^
 air-yunnan-yingan-airline^^^^^YI^852^Yunnan Yingan Airline^^^^^^en|Yunnan Yingan Airline|^
 air-yute-air-alaska^^1950-01-01^^TUD^4Y^0^Flight Alaska^Yute Air Alaska^^^PT^http://en.wikipedia.org/wiki/Flight_Alaska^en|Flight Alaska|=en|Yute Air Alaska|^
-air-zagros-air^^2005-10-01^^GZQ^Z4^541^Zagrosjet^Zagros Air^^^^http://en.wikipedia.org/wiki/Zagrosjet^en|Zagrosjet|=en|Zagros Air|^
+air-zagros-air^^2005-10-01^^GZQ^Z4^541^Zagrosjet^^^^^http://en.wikipedia.org/wiki/Zagrosjet^en|Zagrosjet|=en|Zagros Air|h^EBL
 air-zagros-airlines^^2005-01-01^^IZG^ZO^0^Zagros Airlines^^^^^http://en.wikipedia.org/wiki/Zagros_Airlines^en|Zagros Airlines|^
 air-zambezi-airlines^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^^en|Zambezi Airlines|^
 air-zambia-skyways^^^^^K8^241^Zambia Skyways^^^^^^en|Zambia Skyways|^

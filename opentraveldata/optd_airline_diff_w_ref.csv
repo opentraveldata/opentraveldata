@@ -613,6 +613,7 @@ GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
 GQ^2^Cretan Aeronautical Exploitations<>Sky Express
 GR^2^<>Aurigny Air
+GS^2^<>Tianjin
 GT^2^GB Airways<>Gb Airways
 GU^2^<>Aviateca
 GUG^2^<>Aviateca
@@ -623,7 +624,8 @@ GWI^2^<>Germanwings
 GX^1^Guangxi Beibu Gulf Airlines<>Guangxi Beidu Gulf Airlines
 GY^1^Colorful Guizhou Airlines<>Colorful Guizhou Airline
 GZ^2^<>Air Rarotong
-GZQ^1^Zagrosjet<>Zagros Air
+GZQ^1^Zagrosjet<>Zagros Jet
+GZQ^2^<>Zagros Air
 H2^2^<>Sky Airline
 H4^1^Aero4M<>Aero4m
 HA^2^<>Hawaiian Air
@@ -645,10 +647,7 @@ HOP^1^HOP!<>Hop
 HOP^2^<>Airlinair
 HP^1^Amapola Flyg<>Amapola Flyg Ab
 HR^2^<>Hahn Air
-HS^1^Direktflyg<>Svenska Direktflyg Ab
-HS^2^Svenska Direktflyg<>
-HSV^1^Direktflyg<>Svenska Direktflyg Ab
-HSV^2^Svenska Direktflyg<>
+HS^1^Heli Sécurité<>Heli Security Helicopter
 HU^2^<>Hainan Air
 HV^2^<>Transavia
 HVN^2^<>Vietnam Air
@@ -697,8 +696,6 @@ ITI^2^Island Transvoyager<>Tavrey Airco
 IU^1^Hevilift<>Hevi Lift Png Pty Ltd
 IW^1^Wings Air<>Pt Wings Abadi Airlines
 IW^2^Wings Abadi Airlines<>Air Lib
-IX^1^Air India Express<>Air India Charters
-IX^2^Air India Charters<>
 IY^2^<>Yemen Airways
 IYE^2^<>Yemen Airways
 J0^1^Jetlink Express<>
@@ -737,6 +734,8 @@ JT^2^<>Jaro Intl Arl
 JU^2^Jat Airways<>J A T
 JV^2^<>Bearskin Air
 JW^2^AirAsia Japan<>
+JX^1^DCA East Africa<>Nice Helicopteres
+JX^2^<>Nice Helicopt
 JY^1^InterCaribbean Airways<>Intercaribbean Airways
 JY^2^Air Turcks<>Intercaribean
 JZ^1^Jatayu Airlines<>Jatayu Gelang Sejahtera
@@ -862,6 +861,7 @@ MAU^2^<>Air Mauriti
 MB^2^<>Mng Air Cargo
 MBB^1^Pegasus Asia<>Air Manas
 MBB^2^Air Manas<>Pegasus Asia
+MCM^2^<>Heliairmona
 MD^2^<>Madagascar
 MDA^2^<>Mandarin Air
 MDG^2^<>Madagascar
@@ -1504,6 +1504,7 @@ YE^2^<>Yan Air
 YH^2^<>Yangon
 YI^2^<>Airsunshine
 YM^2^<>Montenegro Al
+YO^2^<>Heliairmona
 YQ^1^<>Polet Airlines
 YS^1^Regional<>Hop Regional
 YS^2^Régional Compagnie Aérienne Européenne<>
@@ -1515,7 +1516,8 @@ YZ^2^<>Alas Uruguay
 Z2^1^AirAsia Zest<>Airasia Zest
 Z2^2^Zest Air<>Zest Airways
 Z3^1^PM Air<>Pm Air Llc
-Z4^1^Zagrosjet<>Zagros Air
+Z4^1^Zagrosjet<>Zagros Jet
+Z4^2^<>Zagros Air
 Z5^1^GMG Airlines<>Gmg Airlines
 Z6^2^<>Dnieproavia
 Z7^1^Zimbabwe flyafrica.com<>Fly Africa Zimbabwe
