@@ -14,6 +14,7 @@ BEGIN {
   ctry_list["US"] = 1
   ctry_list["CA"] = 1
   ctry_list["BR"] = 1
+  ctry_list["AR"] = 1
   ctry_list["AU"] = 1
 
   # Header
