@@ -9,6 +9,7 @@
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
 #    * Non-Geonames referential data:       optd_por_no_geonames.csv
+#    * Country states:                      optd_country_states.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
 # Notes:
@@ -41,12 +42,6 @@ BEGIN {
     ctry_name_list["ZZ"] = "Not relevant/available"
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
-
-	# Countries in which the state code is needed for now.
-	# To be removed when no longer needed.
-	ctry_w_state_list["US"] = 1; ctry_w_state_list["AU"] = 1
-	ctry_w_state_list["BR"] = 1; ctry_w_state_list["AR"] = 1
-	ctry_w_state_list["CA"] = 1
 
 	# Header
 	hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
@@ -163,6 +158,33 @@ BEGIN {
 
     #
     registerPageRankValue(iata_code, por_type, $0, FNR, pr_value)
+}
+
+
+##
+# File of country states
+#
+# Sample lines:
+# ctry_code^geo_id^adm1_code^adm1_name^abbr
+# BR^3455077^18^Paraná^PR
+# AU^2147291^06^Tasmania^TAS
+# US^5481136^NM^New Mexico^NM
+/^([A-Z]{2})\^([0-9]+)\^([0-9A-Z]+)\^([A-Z].+)\^([0-9A-Z]{1,3})$/ {
+    # Country code
+    country_code = $1
+
+    # Geonames ID
+    geo_id = $2
+
+	# Administrative level 1 (adm1)
+	adm1_code = $3
+	adm1_name = $4
+
+	# Alternate state code (abbreviation)
+	state_code = $5
+
+    # Register the relationship between the state code and the adm1 code
+    ctry_state_list[country_code][adm1_code] = state_code
 }
 
 
@@ -426,7 +448,8 @@ function printAltNameSection(myAltNameSection) {
 		printf ("%s", "^" country_code "^" country_code_alt "^" $17 "^" $18)
 
 		# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
-		printf ("%s", "^" $21 "^" $22 "^" $23)
+		adm1_code = $21
+		printf ("%s", "^" adm1_code "^" $22 "^" $23)
 		# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
 		printf ("%s", "^" $24 "^" $25 "^" $26)
 		# ^ Admin3 code ^ Admin4 code
@@ -449,10 +472,7 @@ function printAltNameSection(myAltNameSection) {
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
-		state_code = ""
-		if (ctry_w_state_list[country_code] == 1) {
-			state_code = $21
-		}
+		state_code = substr (ctry_state_list[country_code][adm1_code], 0, 2)
 		printf ("%s", "^" state_code)
 
 		# ^ Location type ^ Wiki link

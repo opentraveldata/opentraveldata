@@ -26,6 +26,7 @@
 # - optd_por_best_known_so_far.csv
 # - optd_por_no_longer_valid.csv
 # - optd_por_no_geonames.csv
+# - optd_country_states.csv
 # - ref_airport_pageranked.csv
 # - optd_tz_light.csv
 # - optd_por_tz.csv
@@ -106,6 +107,11 @@ OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
 # File of non-Geonames POR
 OPTD_NOGEONAMES_FILENAME=optd_por_no_geonames.csv
 OPTD_NOGEONAMES_FILE=${DATA_DIR}${OPTD_NOGEONAMES_FILENAME}
+
+##
+# List of state codes for a few countries (e.g., US, CA, AU, AR, BR)
+OPTD_CTRY_STATE_FILENAME=optd_country_states.csv
+OPTD_CTRY_STATE_FILE=${DATA_DIR}${OPTD_CTRY_STATE_FILENAME}
 
 ##
 # Light (and inaccurate) version of the country-related time-zones
@@ -241,6 +247,7 @@ then
 	echo " - OPTD-maintained file of non longer valid IATA POR: '${OPTD_NOIATA_FILE}'"
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
 	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
+	echo " - OPTD-maintained file of country states: '${OPTD_CTRY_STATE_FILE}'"
 	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"
 	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
 	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): '${OPTD_USDOT_FILE}'"
@@ -359,7 +366,8 @@ echo "----------------"
 echo
 REDUCER=make_optd_por_public.awk
 awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
-	${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
+	${OPTD_PR_FILE} ${OPTD_CTRY_STATE_FILE} \
+	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
 	${OPTD_USDOT_FILE} ${OPTD_POR_WITH_GEOREFALT} \
 	> ${OPTD_POR_WITH_NO_CTY_NAME}
 
