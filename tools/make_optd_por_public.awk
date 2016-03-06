@@ -472,7 +472,8 @@ function printAltNameSection(myAltNameSection) {
 		printf ("%s", "^" $5 "^"  "^"  "^" )
 
 		# ^ State code
-		state_code = substr (ctry_state_list[country_code][adm1_code], 0, 2)
+		# state_code = substr (ctry_state_list[country_code][adm1_code], 0, 2)
+		state_code = ctry_state_list[country_code][adm1_code]
 		printf ("%s", "^" state_code)
 
 		# ^ Location type ^ Wiki link

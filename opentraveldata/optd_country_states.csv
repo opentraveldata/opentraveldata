@@ -1,11 +1,11 @@
 ctry_code^geo_id^adm1_code^adm1_name^abbr
-AR^3430657^14^Misiones Province^MI
+AR^3430657^14^Misiones Province^MN
 AR^3433896^09^Formosa Province^FO
-AR^3433955^07^Buenos Aires F.D.^BA
+AR^3433955^07^Buenos Aires F.D.^CF
 AR^3434137^08^Entre Ríos Province^ER
 AR^3435214^06^Corrientes Province^CR
 AR^3435907^01^Buenos Aires^BA
-AR^3833578^24^Tucumán Province^TU
+AR^3833578^24^Tucumán Province^TM
 AR^3834450^23^Tierra del Fuego Province^TF
 AR^3835868^22^Santiago del Estero Province^SE
 AR^3836276^21^Santa Fe Province^SF
@@ -14,20 +14,20 @@ AR^3837029^19^San Luis Province^SL
 AR^3837152^18^San Juan Province^SJ
 AR^3838231^17^Salta Province^SA
 AR^3838830^16^Río Negro Province^RN
-AR^3843122^15^Neuquén Province^NE
-AR^3844419^13^Mendoza Province^MD
+AR^3843122^15^Neuquén Province^NQ
+AR^3844419^13^Mendoza Province^MZ
 AR^3848949^12^La Rioja Province^LR
 AR^3849574^11^La Pampa Province^LP
-AR^3853404^10^Jujuy Province^PJ
+AR^3853404^10^Jujuy Province^JY
 AR^3860255^05^Cordoba Province^CD
-AR^3861244^04^Chubut Province^CB
-AR^3861887^03^Chaco Province^CH
-AR^3862286^02^Catamarca Province^CA
+AR^3861244^04^Chubut Province^CH
+AR^3861887^03^Chaco Province^CC
+AR^3862286^02^Catamarca Province^CT
 AU^2058645^08^Western Australia^WA
 AU^2061327^05^South Australia^SA
 AU^2064513^03^Northern Territory^NT
 AU^2145234^07^Victoria^VIC
-AU^2147291^06^Tasmania^TS
+AU^2147291^06^Tasmania^TAS
 AU^2152274^04^Queensland^QLD
 AU^2155400^02^New South Wales^NSW
 AU^2177478^01^Australian Capital Territory^ACT
