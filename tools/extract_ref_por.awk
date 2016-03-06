@@ -34,7 +34,7 @@ BEGIN {
     K_3RD_SEP = "|"
 
     # Header
-    hdr_line = "iata_code^loc_type^cty_code^state_code^ctry_code^lat_lon"
+    hdr_line = "iata_code^loc_type^cty_code^state_code^ctry_code^lat^lon"
     print (hdr_line)
 }
 

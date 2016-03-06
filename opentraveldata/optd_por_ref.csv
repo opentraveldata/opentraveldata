@@ -1,4 +1,4 @@
-iata_code^loc_type^cty_code^state_code^ctry_code^lat_lon
+iata_code^loc_type^cty_code^state_code^ctry_code^lat^lon
 AAA^CA^AAA^^PF^-17.4167^-145.5
 AAB^CA^AAB^QL^AU^-26.75^141
 AAC^CA^AAC^^EG^31.1333^33.8
