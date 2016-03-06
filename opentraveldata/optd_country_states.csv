@@ -1,27 +1,28 @@
 ctry_code^geo_id^adm1_code^adm1_name^abbr
+AR^3430657^14^Misiones Province^MI
+AR^3433896^09^Formosa Province^FO
+AR^3433955^07^Buenos Aires F.D.^BA
+AR^3434137^08^Entre Ríos Province^ER
+AR^3435214^06^Corrientes Province^CR
 AR^3435907^01^Buenos Aires^BA
-AR^0^02^Catamarca^CA
-AR^0^03^Chaco^CH
-AR^0^04^Chubut^CB
-AR^0^05^Cordoba^CD
-AR^0^06^Corrientes^CR
-AR^0^08^Entre Rios^ER
-AR^0^09^Formosa^FO
-AR^0^10^Jujuy^PJ
-AR^0^11^La Pampa^LP
-AR^0^12^La Rioja^LR
-AR^0^13^Mendoza^MD
-AR^0^14^Misiones^MI
-AR^0^15^Neuquen^NE
-AR^0^16^Rio Negro^RN
-AR^0^17^Salta^SA
-AR^0^18^San Juan^SJ
-AR^0^19^San Luis^SL
-AR^0^20^Santa Cruz^SC
-AR^0^21^Santa Fe^SF
-AR^0^22^Santiago del Estero^SE
-AR^0^23^Tierra del Fuego^TF
-AR^0^24^Tucuman^TU
+AR^3833578^24^Tucumán Province^TU
+AR^3834450^23^Tierra del Fuego Province^TF
+AR^3835868^22^Santiago del Estero Province^SE
+AR^3836276^21^Santa Fe Province^SF
+AR^3836350^20^Santa Cruz Province^SC
+AR^3837029^19^San Luis Province^SL
+AR^3837152^18^San Juan Province^SJ
+AR^3838231^17^Salta Province^SA
+AR^3838830^16^Río Negro Province^RN
+AR^3843122^15^Neuquén Province^NE
+AR^3844419^13^Mendoza Province^MD
+AR^3848949^12^La Rioja Province^LR
+AR^3849574^11^La Pampa Province^LP
+AR^3853404^10^Jujuy Province^PJ
+AR^3860255^05^Cordoba Province^CD
+AR^3861244^04^Chubut Province^CB
+AR^3861887^03^Chaco Province^CH
+AR^3862286^02^Catamarca Province^CA
 AU^2058645^08^Western Australia^WA
 AU^2061327^05^South Australia^SA
 AU^2064513^03^Northern Territory^NT
