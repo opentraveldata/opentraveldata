@@ -31,7 +31,7 @@ DUK^^^N^0^^Mtubatuba ZA Dukuduku^Mtubatuba ZA Dukuduku^-28.37^32.23^S^AIRP^^^^^Z
 DWF^^^N^0^^Dayton OH US Wright Afb^Dayton OH US Wright Afb^39.59^-84.22^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^DAY^^^^OH^A^^^44^Ohio
 DWS^^^N^0^^Orlando FL US Disney World^Orlando FL US Disney World^28.53^-81.35^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ORL^^^^FL^A^^^33^Florida
 EBR^^^N^0^^Baton Rouge LA US Downtown^Baton Rouge LA US Downtown^30.53^-91.15^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^BTR^^^^LA^A^^^72^Louisiana
-ECC^^^N^0^^East Coast Cities NY US^East Coast Cities NY US^40.78^-73.97^X^XXXX^^2013-07-01^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ECC^^^^NY^O^^^22^New York
+ECC^^^N^0^^East Coast Cities NY US^East Coast Cities NY US^40.78^-73.97^P^PPLC^^2013-07-01^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ECC^East Coast Cities NY US^ECC|0|East Coast Cities NY US|East Coast Cities NY US^ECC^NY^O^^^22^New York
 EFW^^^N^0^^Jefferson IA US Municipal^Jefferson IA US Municipal^42.02^-94.38^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^EFW^Jefferson IA US Municipal^EFW|0|Jefferson IA US Municipal|Jefferson IA US Municipal^EFW^IA^CA^^^61^Iowa
 EIB^^^N^0^^Eisenach DE Kindel Airport^Eisenach DE Kindel Airport^50.992797^10.472711^S^AIRP^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^EIB^Eisenach DE Kindel Airport^EIB|0|Eisenach DE Kindel Airport|Eisenach DE Kindel Airport^EIB^^CA^^^429^Germany
 ELA^^^N^0^^Eagle Lake TX US^Eagle Lake TX US^29.58^-96.33^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^ELA^Eagle Lake TX US^ELA|0|Eagle Lake TX US|Eagle Lake TX US^ELA^TX^CA^^^74^Texas
@@ -61,7 +61,7 @@ IMG^^^N^0^^Inhaminga MZ^Inhaminga MZ^-18.4^35^S^AIRP^^^^^MZ^^Mozambique^Africa^^
 IPR^^^N^0^^Milan IT Porta Garibaldi Stn^Milan IT Porta Garibaldi Stn^45.4847^9.18778^S^RSTN^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^MIL^^^^^R^^^450^Italy
 IRU^^^N^0^^Iranamadu LK Spb^Iranamadu LK Spb^9.33917^80.4506^S^AIRP^^^^^LK^^Sri Lanka^Asia^^^^^^^^^^^^Asia/Colombo^^^^-1^IRU^Iranamadu LK Spb^IRU|0|Iranamadu LK Spb|Iranamadu LK Spb^IRU^^CA^^^711^Sri Lanka
 ISR^^^N^0^^Salerno IT Railway Station^Salerno IT Railway Station^40.6753^14.7722^S^RSTN^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^QSR^^^^^R^^^450^Italy
-ITJ^^^N^0^^Itajai SC BR Off^Itajai SC BR Off^-26.88^-48.65^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^ITJ^^^^SC^O^^^37^South Carolina
+ITJ^^^N^0^^Itajai SC BR Off^Itajai SC BR Off^-26.88^-48.65^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^ITJ^Itajai SC BR Off^ITJ|0|Itajai SC BR Off|Itajai SC BR Off^ITJ^SC^O^^^37^South Carolina
 IVI^^^N^0^^Viveros Island PA^Viveros Island PA^8.47167^-79.0006^S^AIRP^^^^^PA^^Panama^North America^^^^^^^^^^^^America/Panama^^^^-1^IVI^Viveros Island PA^IVI|0|Viveros Island PA|Viveros Island PA^IVI^^CA^^^162^Panama
 JAJ^^^N^0^^Atlanta GA US Perimeter Mall^Atlanta GA US Perimeter Mall^33.93^-84.15^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ATL^^^^GA^A^^^34^Georgia
 JAS^^^N^0^^Jasper TX US County Bell Fld^Jasper TX US County Bell Fld^30.92^-94.02^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^JAS^Jasper TX US County Bell Fld^JAS|0|Jasper TX US County Bell Fld|Jasper TX US County Bell Fld^JAS^TX^CA^^^74^Texas
@@ -80,7 +80,7 @@ JDM^^^N^0^^Miami FL US Downtown Heliport^Miami FL US Downtown Heliport^25.8^-80.
 JDT^^^N^0^^Minneapolis MN US Downtown Hpt^Minneapolis MN US Downtown Hpt^44.97^-93.24^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^MSP^^^^MN^H^^^63^Minnesota
 JDX^^^N^0^^Houston TX US First City Helip^Houston TX US First City Helip^29.77^-95.33^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^B^^^74^Texas
 JDY^^^N^0^^Downey CA US Heliport^Downey CA US Heliport^42.43^-112.1^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Boise^^^^-1^JDY^Downey CA US Heliport^JDY|0|Downey CA US Heliport|Downey CA US Heliport^JDY^CA^CH^^^91^California
-JEV^^^N^0^^Evry FR^Evry FR^48.63^2.567^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^JEV^^^^^O^^^427^France
+JEV^^^N^0^^Evry FR^Evry FR^48.63^2.567^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^JEV^Evry FR^JEV|0|Evry FR|Evry FR^JEV^^O^^^427^France
 JGE^^^N^0^^Geoje KR Heliport^Geoje KR Heliport^34.9^128.7^S^AIRH^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^JGE^Geoje KR Heliport^JGE|0|Geoje KR Heliport|Geoje KR Heliport^JGE^^CH^^^778^South Korea
 JGL^^^N^0^^Atlanta GA US Galleria^Atlanta GA US Galleria^33.58^-84.47^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ATL^^^^GA^A^^^34^Georgia
 JGQ^^^N^0^^Houston TX US Transco Tower He^Houston TX US Transco Tower He^29.77^-95.47^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^H^^^74^Texas
@@ -161,7 +161,7 @@ PBY^^^N^0^^Long Island Palm Bay QL AU Hel^Long Island Palm Bay QL AU Hel^-20.28^
 PCC^^^N^0^^Puerto Rico CO^Puerto Rico CO^1.917^-75.17^S^AIRP^^^^^CO^^Colombia^South America^^^^^^^^^^^^America/Bogota^^^^-1^PCC^Puerto Rico CO^PCC|0|Puerto Rico CO|Puerto Rico CO^PCC^^CA^^^327^Colombia
 PGC^^^N^0^^Petersburg WV US Grant County^Petersburg WV US Grant County^39^-79.12^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^PGC^Petersburg WV US Grant County^PGC|0|Petersburg WV US Grant County|Petersburg WV US Grant County^PGC^WV^CA^^^39^West Virginia
 PHJ^^^N^0^^Newcastle NS AU Harbour Helipo^Newcastle NS AU Harbour Helipo^-32.92^151.8^S^AIRH^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^NTL^^^^NS^H^^^951^Nova Scotia
-PLG^^^N^0^^La Plagne FR^La Plagne FR^45.57^6.75^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^PLG^^^^^O^^^427^France
+PLG^^^N^0^^La Plagne FR^La Plagne FR^45.57^6.75^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^PLG^La Plagne FR^PLG|0|La Plagne FR|La Plagne FR^PLG^^O^^^427^France
 PME^^^N^0^^Portsmouth GB Fleetlands Helip^Portsmouth GB Fleetlands Helip^50.83^-1.05^S^AIRH^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^PME^Portsmouth GB Fleetlands Helip^PME|0|Portsmouth GB Fleetlands Helip|Portsmouth GB Fleetlands Helip^PME^^CH^^^493^United Kingdom
 PRT^^^N^0^^Point Ret AK US Coastguard Hpt^Point Ret AK US Coastguard Hpt^60.54^-145.7^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^PRT^Point Ret AK US Coastguard Hpt^PRT|0|Point Ret AK US Coastguard Hpt|Point Ret AK US Coastguard Hpt^PRT^AK^CH^^^1^Alaska
 PRW^^^N^0^^Prentice WI US^Prentice WI US^45.55^-90.28^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^PRW^Prentice WI US^PRW|0|Prentice WI US|Prentice WI US^PRW^WI^CA^^^45^Wisconsin
@@ -169,217 +169,217 @@ PSN^^^N^0^^Palestine TX US Municipal^Palestine TX US Municipal^31.77^-95.63^S^AI
 QAF^^^N^0^^Offline Point FR^Offline Point FR^48.82^2.283^S^AIRP^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QAF^Offline Point FR^QAF|0|Offline Point FR|Offline Point FR^QAF^^CA^^^427^France
 QAW^^^N^0^^Anniston AL US Ft Mcclellan Bu^Anniston AL US Ft Mcclellan Bu^33.59^-85.86^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^ANB^^^^AL^B^^^51^Alabama
 QBF^^^N^0^^Vail Eagle CO US Vail Bus Stat^Vail Eagle CO US Vail Bus Stat^39.63^-106.9^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^EGE^^^^CO^B^^^82^Colorado
-QBM^^^N^0^^Bourg St Maurice FR Bourg St M^Bourg St Maurice FR Bourg St M^45.6167^6.76667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QBM^^^^^O^^^427^France
+QBM^^^N^0^^Bourg St Maurice FR Bourg St M^Bourg St Maurice FR Bourg St M^45.6167^6.76667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QBM^Bourg St Maurice FR Bourg St M^QBM|0|Bourg St Maurice FR Bourg St M|Bourg St Maurice FR Bourg St M^QBM^^O^^^427^France
 QCA^^^N^0^^Makkah SA Bus Station^Makkah SA Bus Station^21.5^39.2^S^BUSTN^^^^^SA^^Saudi Arabia^Asia^^^^^^^^^^^^Asia/Riyadh^^^^-1^QCA^Makkah SA Bus Station^QCA|0|Makkah SA Bus Station|Makkah SA Bus Station^QCA^^CB^^^670^Saudi Arabia
-QCW^^^N^0^^Wilton CT US Wilton^Wilton CT US Wilton^40.78^-73.83^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^QCW^^^^CT^O^^^11^Connecticut
-QDE^^^N^0^^Catanduva SP BR Off^Catanduva SP BR Off^-21.0833^48.9667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QDE^^^^SP^O^^^316^Brazil
+QCW^^^N^0^^Wilton CT US Wilton^Wilton CT US Wilton^40.78^-73.83^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^QCW^Wilton CT US Wilton^QCW|0|Wilton CT US Wilton|Wilton CT US Wilton^QCW^CT^O^^^11^Connecticut
+QDE^^^N^0^^Catanduva SP BR Off^Catanduva SP BR Off^-21.0833^48.9667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QDE^Catanduva SP BR Off^QDE|0|Catanduva SP BR Off|Catanduva SP BR Off^QDE^SP^O^^^316^Brazil
 QDI^^^N^0^^Hohenems Dornbirn AT Dornbirn^Hohenems Dornbirn AT Dornbirn^47.42^9.733^S^BUSTN^^^^^AT^^Austria^Europe^^^^^^^^^^^^Europe/Vienna^^^^-1^HOH^^^^^B^^^403^Austria
 QDK^^^N^0^^Chattanooga TN US Greyhound Bu^Chattanooga TN US Greyhound Bu^29.961011^70.485925^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Karachi^^^^-1^CHA^^^^TN^B^^^54^Tennessee
-QDO^^^N^0^^Icoaraci PA BR Off^Icoaraci PA BR Off^-1.3^48.4667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Mogadishu^^^^-1^QDO^^^^PA^O^^^23^Pennsylvania
-QDP^^^N^0^^Dom Pedrito RS BR Off^Dom Pedrito RS BR Off^-31^54.6667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QDP^^^^RS^O^^^316^Brazil
-QDR^^^N^0^^Daraa SY^Daraa SY^32.6218^-36.1037^X^XXXX^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QDR^^^^^O^^^676^Syria
-QDS^^^N^0^^Itajuba MG BR Off^Itajuba MG BR Off^-22.4^45.5^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QDS^^^^MG^O^^^316^Brazil
-QDT^^^N^0^^Sedrata DZ Off^Sedrata DZ Off^36.1167^-7.51667^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QDT^^^^^O^^^500^Algeria
-QDY^^^N^0^^Andong KR Off^Andong KR Off^36.6667^-128.717^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QDY^^^^^O^^^778^South Korea
-QDZ^^^N^0^^Saida DZ Off^Saida DZ Off^34.8333^-0.183333^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QDZ^^^^^O^^^500^Algeria
-QEB^^^N^0^^Maebashi JP Off^Maebashi JP Off^36.3833^-139.067^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QEB^^^^^O^^^736^Japan
-QEC^^^N^0^^El Merj LY El Merj^El Merj LY El Merj^32.5^-20.8265^X^XXXX^^^^^LY^^Libya^Africa^^^^^^^^^^^^Africa/Tripoli^^^^-1^QEC^^^^^O^^^538^Libya
-QED^^^N^0^^Medea DZ Off^Medea DZ Off^36.2^-2.83333^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QED^^^^^O^^^500^Algeria
-QEK^^^N^0^^El Mahalla El Kubra EG El Maha^El Mahalla El Kubra EG El Maha^31^-31^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QEK^^^^^O^^^591^Egypt
-QEL^^^N^0^^Wellington NS AU Wellington^Wellington NS AU Wellington^-32.5833^-148.983^X^XXXX^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Pacific/Rarotonga^^^^-1^QEL^^^^NS^O^^^951^Nova Scotia
-QEM^^^N^0^^El Manzala EG^El Manzala EG^31.155^-31.9355^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QEM^^^^^O^^^591^Egypt
-QEO^^^N^0^^Bielsko Biala PL Bielsko Biala^Bielsko Biala PL Bielsko Biala^49.82^19.057^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QEO^^^^^O^^^467^Poland
+QDO^^^N^0^^Icoaraci PA BR Off^Icoaraci PA BR Off^-1.3^48.4667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Mogadishu^^^^-1^QDO^Icoaraci PA BR Off^QDO|0|Icoaraci PA BR Off|Icoaraci PA BR Off^QDO^PA^O^^^23^Pennsylvania
+QDP^^^N^0^^Dom Pedrito RS BR Off^Dom Pedrito RS BR Off^-31^54.6667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QDP^Dom Pedrito RS BR Off^QDP|0|Dom Pedrito RS BR Off|Dom Pedrito RS BR Off^QDP^RS^O^^^316^Brazil
+QDR^^^N^0^^Daraa SY^Daraa SY^32.6218^-36.1037^P^PPLC^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QDR^Daraa SY^QDR|0|Daraa SY|Daraa SY^QDR^^O^^^676^Syria
+QDS^^^N^0^^Itajuba MG BR Off^Itajuba MG BR Off^-22.4^45.5^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QDS^Itajuba MG BR Off^QDS|0|Itajuba MG BR Off|Itajuba MG BR Off^QDS^MG^O^^^316^Brazil
+QDT^^^N^0^^Sedrata DZ Off^Sedrata DZ Off^36.1167^-7.51667^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QDT^Sedrata DZ Off^QDT|0|Sedrata DZ Off|Sedrata DZ Off^QDT^^O^^^500^Algeria
+QDY^^^N^0^^Andong KR Off^Andong KR Off^36.6667^-128.717^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QDY^Andong KR Off^QDY|0|Andong KR Off|Andong KR Off^QDY^^O^^^778^South Korea
+QDZ^^^N^0^^Saida DZ Off^Saida DZ Off^34.8333^-0.183333^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QDZ^Saida DZ Off^QDZ|0|Saida DZ Off|Saida DZ Off^QDZ^^O^^^500^Algeria
+QEB^^^N^0^^Maebashi JP Off^Maebashi JP Off^36.3833^-139.067^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QEB^Maebashi JP Off^QEB|0|Maebashi JP Off|Maebashi JP Off^QEB^^O^^^736^Japan
+QEC^^^N^0^^El Merj LY El Merj^El Merj LY El Merj^32.5^-20.8265^P^PPLC^^^^^LY^^Libya^Africa^^^^^^^^^^^^Africa/Tripoli^^^^-1^QEC^El Merj LY El Merj^QEC|0|El Merj LY El Merj|El Merj LY El Merj^QEC^^O^^^538^Libya
+QED^^^N^0^^Medea DZ Off^Medea DZ Off^36.2^-2.83333^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QED^Medea DZ Off^QED|0|Medea DZ Off|Medea DZ Off^QED^^O^^^500^Algeria
+QEK^^^N^0^^El Mahalla El Kubra EG El Maha^El Mahalla El Kubra EG El Maha^31^-31^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QEK^El Mahalla El Kubra EG El Maha^QEK|0|El Mahalla El Kubra EG El Maha|El Mahalla El Kubra EG El Maha^QEK^^O^^^591^Egypt
+QEL^^^N^0^^Wellington NS AU Wellington^Wellington NS AU Wellington^-32.5833^-148.983^P^PPLC^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Pacific/Rarotonga^^^^-1^QEL^Wellington NS AU Wellington^QEL|0|Wellington NS AU Wellington|Wellington NS AU Wellington^QEL^NS^O^^^951^Nova Scotia
+QEM^^^N^0^^El Manzala EG^El Manzala EG^31.155^-31.9355^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QEM^El Manzala EG^QEM|0|El Manzala EG|El Manzala EG^QEM^^O^^^591^Egypt
+QEO^^^N^0^^Bielsko Biala PL Bielsko Biala^Bielsko Biala PL Bielsko Biala^49.82^19.057^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QEO^Bielsko Biala PL Bielsko Biala^QEO|0|Bielsko Biala PL Bielsko Biala|Bielsko Biala PL Bielsko Biala^QEO^^O^^^467^Poland
 QEQ^^^N^0^^Embrach Rorbas CH Rail St^Embrach Rorbas CH Rail St^47.5^8.6^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^QEQ^Embrach Rorbas CH Rail St^QEQ|0|Embrach Rorbas CH Rail St|Embrach Rorbas CH Rail St^QEQ^^CR^^^486^Switzerland
-QER^^^N^0^^Shihr YE^Shihr YE^14.7565^-49.6042^X^XXXX^^^^^YE^^Yemen^Asia^^^^^^^^^^^^Asia/Aden^^^^-1^QER^^^^^O^^^694^Yemen
-QET^^^N^0^^Taedok KR Taedok^Taedok KR Taedok^39.92^125.5^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QET^^^^^O^^^778^South Korea
-QEU^^^N^0^^Parnamirim RN BR Parnamirim^Parnamirim RN BR Parnamirim^-8.08333^39.5667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QEU^^^^RN^O^^^316^Brazil
+QER^^^N^0^^Shihr YE^Shihr YE^14.7565^-49.6042^P^PPLC^^^^^YE^^Yemen^Asia^^^^^^^^^^^^Asia/Aden^^^^-1^QER^Shihr YE^QER|0|Shihr YE|Shihr YE^QER^^O^^^694^Yemen
+QET^^^N^0^^Taedok KR Taedok^Taedok KR Taedok^39.92^125.5^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QET^Taedok KR Taedok^QET|0|Taedok KR Taedok|Taedok KR Taedok^QET^^O^^^778^South Korea
+QEU^^^N^0^^Parnamirim RN BR Parnamirim^Parnamirim RN BR Parnamirim^-8.08333^39.5667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QEU^Parnamirim RN BR Parnamirim^QEU|0|Parnamirim RN BR Parnamirim|Parnamirim RN BR Parnamirim^QEU^RN^O^^^316^Brazil
 QFB^^^N^0^^Freiburg DE Hbf Railway Statio^Freiburg DE Hbf Railway Statio^48.022653^7.832583^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QFB^Freiburg DE Hbf Railway Statio^QFB|0|Freiburg DE Hbf Railway Statio|Freiburg DE Hbf Railway Statio^QFB^^CR^^^429^Germany
-QFC^^^N^0^^Creteil FR Creteil^Creteil FR Creteil^48.78^2.467^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QFC^^^^^O^^^427^France
-QFE^^^N^0^^Ft Benning GA US Ft Benning^Ft Benning GA US Ft Benning^32.37^-84.83^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^QFE^^^^GA^O^^^34^Georgia
-QFM^^^N^0^^Meet Ghamr EG Meet Ghamr^Meet Ghamr EG Meet Ghamr^30.7^31.27^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QFM^^^^^O^^^591^Egypt
-QFP^^^N^0^^Fictitious Point DE Fictitious^Fictitious Point DE Fictitious^41.62^-88.2^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QFP^^^^^O^^^429^Germany
-QFS^^^N^0^^Sao Francisco SC BR Do Sul^Sao Francisco SC BR Do Sul^-11.75^43.3333^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Comoro^^^^-1^QFS^^^^SC^O^^^37^South Carolina
+QFC^^^N^0^^Creteil FR Creteil^Creteil FR Creteil^48.78^2.467^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QFC^Creteil FR Creteil^QFC|0|Creteil FR Creteil|Creteil FR Creteil^QFC^^O^^^427^France
+QFE^^^N^0^^Ft Benning GA US Ft Benning^Ft Benning GA US Ft Benning^32.37^-84.83^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^QFE^Ft Benning GA US Ft Benning^QFE|0|Ft Benning GA US Ft Benning|Ft Benning GA US Ft Benning^QFE^GA^O^^^34^Georgia
+QFM^^^N^0^^Meet Ghamr EG Meet Ghamr^Meet Ghamr EG Meet Ghamr^30.7^31.27^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QFM^Meet Ghamr EG Meet Ghamr^QFM|0|Meet Ghamr EG Meet Ghamr|Meet Ghamr EG Meet Ghamr^QFM^^O^^^591^Egypt
+QFP^^^N^0^^Fictitious Point DE Fictitious^Fictitious Point DE Fictitious^41.62^-88.2^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QFP^Fictitious Point DE Fictitious^QFP|0|Fictitious Point DE Fictitious|Fictitious Point DE Fictitious^QFP^^O^^^429^Germany
+QFS^^^N^0^^Sao Francisco SC BR Do Sul^Sao Francisco SC BR Do Sul^-11.75^43.3333^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Comoro^^^^-1^QFS^Sao Francisco SC BR Do Sul^QFS|0|Sao Francisco SC BR Do Sul|Sao Francisco SC BR Do Sul^QFS^SC^O^^^37^South Carolina
 QFV^^^N^0^^Bergen NO Railway Station^Bergen NO Railway Station^60.3^5.217^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^BGO^^^^^R^^^465^Norway
-QFW^^^N^0^^Fort Washington PA US Off^Fort Washington PA US Off^40.15^75.2167^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Shanghai^^^^-1^QFW^^^^PA^O^^^23^Pennsylvania
-QGK^^^N^0^^Palmares PE BR Palmares^Palmares PE BR Palmares^-10.3667^67.7167^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Mauritius^^^^-1^QGK^^^^PE^O^^^956^Prince Edward Island
-QGM^^^N^0^^Chelghoum El Aaid DZ Chelghoum^Chelghoum El Aaid DZ Chelghoum^36.1667^-6.16667^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QGM^^^^^O^^^500^Algeria
-QGR^^^N^0^^Kangerluk GL Kangerluk^Kangerluk GL Kangerluk^69.5^-53.92^X^XXXX^^^^^GL^^Greenland^North America^^^^^^^^^^^^America/Godthab^^^^-1^QGR^^^^^O^^^975^Greenland
-QGU^^^N^0^^Gifu JP Off^Gifu JP Off^35.394078^136.869667^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QGU^^^^^O^^^736^Japan
+QFW^^^N^0^^Fort Washington PA US Off^Fort Washington PA US Off^40.15^75.2167^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Shanghai^^^^-1^QFW^Fort Washington PA US Off^QFW|0|Fort Washington PA US Off|Fort Washington PA US Off^QFW^PA^O^^^23^Pennsylvania
+QGK^^^N^0^^Palmares PE BR Palmares^Palmares PE BR Palmares^-10.3667^67.7167^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Mauritius^^^^-1^QGK^Palmares PE BR Palmares^QGK|0|Palmares PE BR Palmares|Palmares PE BR Palmares^QGK^PE^O^^^956^Prince Edward Island
+QGM^^^N^0^^Chelghoum El Aaid DZ Chelghoum^Chelghoum El Aaid DZ Chelghoum^36.1667^-6.16667^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QGM^Chelghoum El Aaid DZ Chelghoum^QGM|0|Chelghoum El Aaid DZ Chelghoum|Chelghoum El Aaid DZ Chelghoum^QGM^^O^^^500^Algeria
+QGR^^^N^0^^Kangerluk GL Kangerluk^Kangerluk GL Kangerluk^69.5^-53.92^P^PPLC^^^^^GL^^Greenland^North America^^^^^^^^^^^^America/Godthab^^^^-1^QGR^Kangerluk GL Kangerluk^QGR|0|Kangerluk GL Kangerluk|Kangerluk GL Kangerluk^QGR^^O^^^975^Greenland
+QGU^^^N^0^^Gifu JP Off^Gifu JP Off^35.394078^136.869667^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QGU^Gifu JP Off^QGU|0|Gifu JP Off|Gifu JP Off^QGU^^O^^^736^Japan
 QGV^^^N^0^^Frankfurt DE Neu Isenburg Rail^Frankfurt DE Neu Isenburg Rail^50.03^8.567^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^FRA^^^^^R^^^429^Germany
-QGX^^^N^0^^Girga EG^Girga EG^37.1167^2.55^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QGX^^^^^O^^^591^Egypt
-QGZ^^^N^0^^Yokkaichi JP^Yokkaichi JP^34.9167^-136.633^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QGZ^^^^^O^^^736^Japan
-QHC^^^N^0^^Rolandia PR BR Off^Rolandia PR BR Off^-23.3^51.3833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHC^^^^PR^O^^^3^Puerto Rico
-QHE^^^N^0^^Sao Ben SC BR Sao Bento Do Sul^Sao Ben SC BR Sao Bento Do Sul^-26.25^49.3833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHE^^^^SC^O^^^37^South Carolina
-QHF^^^N^0^^Sao Sebastiao Do RS BR Off^Sao Sebastiao Do RS BR Off^-23.8833^45.2833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHF^^^^RS^O^^^316^Brazil
-QHG^^^N^0^^Sete Lagoas MG BR Off^Sete Lagoas MG BR Off^-19.45^44.2667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHG^^^^MG^O^^^316^Brazil
+QGX^^^N^0^^Girga EG^Girga EG^37.1167^2.55^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QGX^Girga EG^QGX|0|Girga EG|Girga EG^QGX^^O^^^591^Egypt
+QGZ^^^N^0^^Yokkaichi JP^Yokkaichi JP^34.9167^-136.633^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QGZ^Yokkaichi JP^QGZ|0|Yokkaichi JP|Yokkaichi JP^QGZ^^O^^^736^Japan
+QHC^^^N^0^^Rolandia PR BR Off^Rolandia PR BR Off^-23.3^51.3833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHC^Rolandia PR BR Off^QHC|0|Rolandia PR BR Off|Rolandia PR BR Off^QHC^PR^O^^^3^Puerto Rico
+QHE^^^N^0^^Sao Ben SC BR Sao Bento Do Sul^Sao Ben SC BR Sao Bento Do Sul^-26.25^49.3833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHE^Sao Ben SC BR Sao Bento Do Sul^QHE|0|Sao Ben SC BR Sao Bento Do Sul|Sao Ben SC BR Sao Bento Do Sul^QHE^SC^O^^^37^South Carolina
+QHF^^^N^0^^Sao Sebastiao Do RS BR Off^Sao Sebastiao Do RS BR Off^-23.8833^45.2833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHF^Sao Sebastiao Do RS BR Off^QHF|0|Sao Sebastiao Do RS BR Off|Sao Sebastiao Do RS BR Off^QHF^RS^O^^^316^Brazil
+QHG^^^N^0^^Sete Lagoas MG BR Off^Sete Lagoas MG BR Off^-19.45^44.2667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHG^Sete Lagoas MG BR Off^QHG|0|Sete Lagoas MG BR Off|Sete Lagoas MG BR Off^QHG^MG^O^^^316^Brazil
 QHJ^^^N^0^^Hjorring DK Bus Station^Hjorring DK Bus Station^57.47^9.983^S^BUSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^QHJ^Hjorring DK Bus Station^QHJ|0|Hjorring DK Bus Station|Hjorring DK Bus Station^QHJ^^CB^^^419^Denmark
-QHK^^^N^0^^Shahrkord IR Off^Shahrkord IR Off^32.297222^50.842222^X^XXXX^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^QHK^^^^^O^^^632^Iran
-QHL^^^N^0^^Castanhal PA BR Off^Castanhal PA BR Off^-1.3^47.9167^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Mogadishu^^^^-1^QHL^^^^PA^O^^^23^Pennsylvania
-QHM^^^N^0^^Hama SY Off^Hama SY Off^35.1333^-36.075^X^XXXX^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QHM^^^^^O^^^676^Syria
-QHT^^^N^0^^Terezopolis RJ BR Teresopolis^Terezopolis RJ BR Teresopolis^-22.4333^42.9833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHT^^^^RJ^O^^^316^Brazil
-QHW^^^N^0^^Brooklyn NJ US Brooklyn^Brooklyn NJ US Brooklyn^41^91^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Urumqi^^^^-1^QHW^^^^NJ^O^^^21^New Jersey
-QHY^^^N^0^^Hachiojicity JP Hachiojicity^Hachiojicity JP Hachiojicity^35.6667^-139.333^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QHY^^^^^O^^^736^Japan
-QIA^^^N^0^^Itauna MG BR Off^Itauna MG BR Off^-20.0667^44.5667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QIA^^^^MG^O^^^316^Brazil
-QIB^^^N^0^^Ibiruba RS BR Off^Ibiruba RS BR Off^-28.6232^53.0872^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QIB^^^^RS^O^^^316^Brazil
+QHK^^^N^0^^Shahrkord IR Off^Shahrkord IR Off^32.297222^50.842222^P^PPLC^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^QHK^Shahrkord IR Off^QHK|0|Shahrkord IR Off|Shahrkord IR Off^QHK^^O^^^632^Iran
+QHL^^^N^0^^Castanhal PA BR Off^Castanhal PA BR Off^-1.3^47.9167^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Mogadishu^^^^-1^QHL^Castanhal PA BR Off^QHL|0|Castanhal PA BR Off|Castanhal PA BR Off^QHL^PA^O^^^23^Pennsylvania
+QHM^^^N^0^^Hama SY Off^Hama SY Off^35.1333^-36.075^P^PPLC^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QHM^Hama SY Off^QHM|0|Hama SY Off|Hama SY Off^QHM^^O^^^676^Syria
+QHT^^^N^0^^Terezopolis RJ BR Teresopolis^Terezopolis RJ BR Teresopolis^-22.4333^42.9833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QHT^Terezopolis RJ BR Teresopolis^QHT|0|Terezopolis RJ BR Teresopolis|Terezopolis RJ BR Teresopolis^QHT^RJ^O^^^316^Brazil
+QHW^^^N^0^^Brooklyn NJ US Brooklyn^Brooklyn NJ US Brooklyn^41^91^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Urumqi^^^^-1^QHW^Brooklyn NJ US Brooklyn^QHW|0|Brooklyn NJ US Brooklyn|Brooklyn NJ US Brooklyn^QHW^NJ^O^^^21^New Jersey
+QHY^^^N^0^^Hachiojicity JP Hachiojicity^Hachiojicity JP Hachiojicity^35.6667^-139.333^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QHY^Hachiojicity JP Hachiojicity^QHY|0|Hachiojicity JP Hachiojicity|Hachiojicity JP Hachiojicity^QHY^^O^^^736^Japan
+QIA^^^N^0^^Itauna MG BR Off^Itauna MG BR Off^-20.0667^44.5667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QIA^Itauna MG BR Off^QIA|0|Itauna MG BR Off|Itauna MG BR Off^QIA^MG^O^^^316^Brazil
+QIB^^^N^0^^Ibiruba RS BR Off^Ibiruba RS BR Off^-28.6232^53.0872^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QIB^Ibiruba RS BR Off^QIB|0|Ibiruba RS BR Off|Ibiruba RS BR Off^QIB^RS^O^^^316^Brazil
 QII^^^N^0^^Lindau DE Hbf Railway Station^Lindau DE Hbf Railway Station^47.55^9.68333^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QII^Lindau DE Hbf Railway Station^QII|0|Lindau DE Hbf Railway Station|Lindau DE Hbf Railway Station^QII^^CR^^^429^Germany
-QIK^^^N^0^^Ikoyi NG Off^Ikoyi NG Off^6.45^-3.43333^X^XXXX^^^^^NG^^Nigeria^Africa^^^^^^^^^^^^Africa/Lagos^^^^-1^QIK^^^^^O^^^555^Nigeria
-QIM^^^N^0^^Ain M Lila DZ Ain M Lila^Ain M Lila DZ Ain M Lila^36.0333^-6.58333^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QIM^^^^^O^^^500^Algeria
-QIN^^^N^0^^Mersin TR Mersin^Mersin TR Mersin^36.85^-34.6^X^XXXX^^^^^TR^^Turkey^Asia^^^^^^^^^^^^Europe/Istanbul^^^^-1^QIN^^^^^O^^^679^Turkey
-QIO^^^N^0^^Ain Temouchent DZ Off^Ain Temouchent DZ Off^35.2667^1.13333^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QIO^^^^^O^^^500^Algeria
-QIP^^^N^0^^Simbach DE Off^Simbach DE Off^48.5667^-12.75^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QIP^^^^^O^^^429^Germany
-QIS^^^N^0^^Mito JP Off^Mito JP Off^36.3333^-140.5^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QIS^^^^^O^^^736^Japan
-QIU^^^N^0^^Ciudadela ES Off^Ciudadela ES Off^40^-3.83333^X^XXXX^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^QIU^^^^^O^^^482^Spain
-QIW^^^N^0^^Umm Al Quwain AE^Umm Al Quwain AE^25.27^55.5^X^XXXX^^^^^AE^^United Arab Emirates^Asia^^^^^^^^^^^^Asia/Dubai^^^^-1^QIW^^^^^O^^^678^United Arab Emirates
-QIX^^^N^0^^Quixada CE BR Quixada^Quixada CE BR Quixada^-4.91667^39^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QIX^^^^CE^O^^^316^Brazil
-QJA^^^N^0^^Jaragua Do Sul SC BR Off^Jaragua Do Sul SC BR Off^-26.4833^49.0667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJA^^^^SC^O^^^37^South Carolina
-QJB^^^N^0^^Jubail SA Off^Jubail SA Off^27.039028^49.405083^X^XXXX^^^^^SA^^Saudi Arabia^Asia^^^^^^^^^^^^Asia/Riyadh^^^^-1^QJB^^^^^O^^^670^Saudi Arabia
-QJC^^^N^0^^Thimbu BT Off^Thimbu BT Off^27.4667^-89.65^X^XXXX^^^^^BT^^Bhutan^Asia^^^^^^^^^^^^Asia/Thimphu^^^^-1^QJC^^^^^O^^^702^Bhutan
-QJG^^^N^0^^Itilleq GL Itilleq^Itilleq GL Itilleq^66.58^-53.42^X^XXXX^^^^^GL^^Greenland^North America^^^^^^^^^^^^America/Godthab^^^^-1^QJG^^^^^O^^^975^Greenland
+QIK^^^N^0^^Ikoyi NG Off^Ikoyi NG Off^6.45^-3.43333^P^PPLC^^^^^NG^^Nigeria^Africa^^^^^^^^^^^^Africa/Lagos^^^^-1^QIK^Ikoyi NG Off^QIK|0|Ikoyi NG Off|Ikoyi NG Off^QIK^^O^^^555^Nigeria
+QIM^^^N^0^^Ain M Lila DZ Ain M Lila^Ain M Lila DZ Ain M Lila^36.0333^-6.58333^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QIM^Ain M Lila DZ Ain M Lila^QIM|0|Ain M Lila DZ Ain M Lila|Ain M Lila DZ Ain M Lila^QIM^^O^^^500^Algeria
+QIN^^^N^0^^Mersin TR Mersin^Mersin TR Mersin^36.85^-34.6^P^PPLC^^^^^TR^^Turkey^Asia^^^^^^^^^^^^Europe/Istanbul^^^^-1^QIN^Mersin TR Mersin^QIN|0|Mersin TR Mersin|Mersin TR Mersin^QIN^^O^^^679^Turkey
+QIO^^^N^0^^Ain Temouchent DZ Off^Ain Temouchent DZ Off^35.2667^1.13333^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QIO^Ain Temouchent DZ Off^QIO|0|Ain Temouchent DZ Off|Ain Temouchent DZ Off^QIO^^O^^^500^Algeria
+QIP^^^N^0^^Simbach DE Off^Simbach DE Off^48.5667^-12.75^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QIP^Simbach DE Off^QIP|0|Simbach DE Off|Simbach DE Off^QIP^^O^^^429^Germany
+QIS^^^N^0^^Mito JP Off^Mito JP Off^36.3333^-140.5^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QIS^Mito JP Off^QIS|0|Mito JP Off|Mito JP Off^QIS^^O^^^736^Japan
+QIU^^^N^0^^Ciudadela ES Off^Ciudadela ES Off^40^-3.83333^P^PPLC^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^QIU^Ciudadela ES Off^QIU|0|Ciudadela ES Off|Ciudadela ES Off^QIU^^O^^^482^Spain
+QIW^^^N^0^^Umm Al Quwain AE^Umm Al Quwain AE^25.27^55.5^P^PPLC^^^^^AE^^United Arab Emirates^Asia^^^^^^^^^^^^Asia/Dubai^^^^-1^QIW^Umm Al Quwain AE^QIW|0|Umm Al Quwain AE|Umm Al Quwain AE^QIW^^O^^^678^United Arab Emirates
+QIX^^^N^0^^Quixada CE BR Quixada^Quixada CE BR Quixada^-4.91667^39^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QIX^Quixada CE BR Quixada^QIX|0|Quixada CE BR Quixada|Quixada CE BR Quixada^QIX^CE^O^^^316^Brazil
+QJA^^^N^0^^Jaragua Do Sul SC BR Off^Jaragua Do Sul SC BR Off^-26.4833^49.0667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJA^Jaragua Do Sul SC BR Off^QJA|0|Jaragua Do Sul SC BR Off|Jaragua Do Sul SC BR Off^QJA^SC^O^^^37^South Carolina
+QJB^^^N^0^^Jubail SA Off^Jubail SA Off^27.039028^49.405083^P^PPLC^^^^^SA^^Saudi Arabia^Asia^^^^^^^^^^^^Asia/Riyadh^^^^-1^QJB^Jubail SA Off^QJB|0|Jubail SA Off|Jubail SA Off^QJB^^O^^^670^Saudi Arabia
+QJC^^^N^0^^Thimbu BT Off^Thimbu BT Off^27.4667^-89.65^P^PPLC^^^^^BT^^Bhutan^Asia^^^^^^^^^^^^Asia/Thimphu^^^^-1^QJC^Thimbu BT Off^QJC|0|Thimbu BT Off|Thimbu BT Off^QJC^^O^^^702^Bhutan
+QJG^^^N^0^^Itilleq GL Itilleq^Itilleq GL Itilleq^66.58^-53.42^P^PPLC^^^^^GL^^Greenland^North America^^^^^^^^^^^^America/Godthab^^^^-1^QJG^Itilleq GL Itilleq^QJG|0|Itilleq GL Itilleq|Itilleq GL Itilleq^QJG^^O^^^975^Greenland
 QJJ^^^N^0^^Dalton GA US Flightlink Bus St^Dalton GA US Flightlink Bus St^34.72^-84.87^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^DNN^^^^GA^B^^^34^Georgia
-QJL^^^N^0^^Kjollefjord NO^Kjollefjord NO^70.93^27.45^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QJL^^^^^O^^^465^Norway
-QJM^^^N^0^^Brusque SC BR Off Pt^Brusque SC BR Off Pt^-27.1167^48.9^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJM^^^^SC^O^^^37^South Carolina
-QJN^^^N^0^^Jounie LB Jounie^Jounie LB Jounie^33.9667^-35.6333^X^XXXX^^^^^LB^^Lebanon^Asia^^^^^^^^^^^^Asia/Beirut^^^^-1^QJN^^^^^O^^^647^Lebanon
-QJO^^^N^0^^Campos Do Jordao SP BR Off^Campos Do Jordao SP BR Off^-22.7333^45.5833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJO^^^^SP^O^^^316^Brazil
-QJP^^^N^0^^Bucheon KR Bucheon^Bucheon KR Bucheon^37.4927^-126.776^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QJP^^^^^O^^^778^South Korea
-QJQ^^^N^0^^Jall Ed Dib LB Jall Ed Dib^Jall Ed Dib LB Jall Ed Dib^33.905^-35.5755^X^XXXX^^^^^LB^^Lebanon^Asia^^^^^^^^^^^^Asia/Beirut^^^^-1^QJQ^^^^^O^^^647^Lebanon
-QJR^^^N^0^^La Junquera ES Off^La Junquera ES Off^42.4167^-2.88333^X^XXXX^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^QJR^^^^^O^^^482^Spain
+QJL^^^N^0^^Kjollefjord NO^Kjollefjord NO^70.93^27.45^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QJL^Kjollefjord NO^QJL|0|Kjollefjord NO|Kjollefjord NO^QJL^^O^^^465^Norway
+QJM^^^N^0^^Brusque SC BR Off Pt^Brusque SC BR Off Pt^-27.1167^48.9^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJM^Brusque SC BR Off Pt^QJM|0|Brusque SC BR Off Pt|Brusque SC BR Off Pt^QJM^SC^O^^^37^South Carolina
+QJN^^^N^0^^Jounie LB Jounie^Jounie LB Jounie^33.9667^-35.6333^P^PPLC^^^^^LB^^Lebanon^Asia^^^^^^^^^^^^Asia/Beirut^^^^-1^QJN^Jounie LB Jounie^QJN|0|Jounie LB Jounie|Jounie LB Jounie^QJN^^O^^^647^Lebanon
+QJO^^^N^0^^Campos Do Jordao SP BR Off^Campos Do Jordao SP BR Off^-22.7333^45.5833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJO^Campos Do Jordao SP BR Off^QJO|0|Campos Do Jordao SP BR Off|Campos Do Jordao SP BR Off^QJO^SP^O^^^316^Brazil
+QJP^^^N^0^^Bucheon KR Bucheon^Bucheon KR Bucheon^37.4927^-126.776^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QJP^Bucheon KR Bucheon^QJP|0|Bucheon KR Bucheon|Bucheon KR Bucheon^QJP^^O^^^778^South Korea
+QJQ^^^N^0^^Jall Ed Dib LB Jall Ed Dib^Jall Ed Dib LB Jall Ed Dib^33.905^-35.5755^P^PPLC^^^^^LB^^Lebanon^Asia^^^^^^^^^^^^Asia/Beirut^^^^-1^QJQ^Jall Ed Dib LB Jall Ed Dib^QJQ|0|Jall Ed Dib LB Jall Ed Dib|Jall Ed Dib LB Jall Ed Dib^QJQ^^O^^^647^Lebanon
+QJR^^^N^0^^La Junquera ES Off^La Junquera ES Off^42.4167^-2.88333^P^PPLC^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^QJR^La Junquera ES Off^QJR|0|La Junquera ES Off|La Junquera ES Off^QJR^^O^^^482^Spain
 QJS^^^N^0^^Saeby DK Saeby Bus^Saeby DK Saeby Bus^57.33^10.53^S^BUSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^QJS^Saeby DK Saeby Bus^QJS|0|Saeby DK Saeby Bus|Saeby DK Saeby Bus^QJS^^CB^^^419^Denmark
-QJU^^^N^0^^Jalandhar IN^Jalandhar IN^31.33^75.577^X^XXXX^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QJU^^^^^O^^^733^India
+QJU^^^N^0^^Jalandhar IN^Jalandhar IN^31.33^75.577^P^PPLC^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QJU^Jalandhar IN^QJU|0|Jalandhar IN|Jalandhar IN^QJU^^O^^^733^India
 QJY^^^N^0^^Kolobrzeg PL Bus Station^Kolobrzeg PL Bus Station^54.17^15.58^S^BUSTN^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QJY^Kolobrzeg PL Bus Station^QJY|0|Kolobrzeg PL Bus Station|Kolobrzeg PL Bus Station^QJY^^CB^^^467^Poland
-QKA^^^N^0^^Cachoeirinha RS BR^Cachoeirinha RS BR^-8.48333^36.2333^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QKA^^^^RS^O^^^316^Brazil
+QKA^^^N^0^^Cachoeirinha RS BR^Cachoeirinha RS BR^-8.48333^36.2333^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QKA^Cachoeirinha RS BR^QKA|0|Cachoeirinha RS BR|Cachoeirinha RS BR^QKA^RS^O^^^316^Brazil
 QKB^^^N^0^^Breckenridge CO US Bus Station^Breckenridge CO US Bus Station^39.48^-106.1^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^QKB^Breckenridge CO US Bus Station^QKB|0|Breckenridge CO US Bus Station|Breckenridge CO US Bus Station^QKB^CO^CB^^^82^Colorado
-QKD^^^N^0^^Elk PL Elk^Elk PL Elk^53.8333^-22.35^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QKD^^^^^O^^^467^Poland
-QKG^^^N^0^^Chalkida GR Chalkida^Chalkida GR Chalkida^37.75^21.75^X^XXXX^^^^^GR^^Greece^Europe^^^^^^^^^^^^Europe/Athens^^^^-1^QKG^^^^^O^^^433^Greece
-QKH^^^N^0^^Kharian PK Off^Kharian PK Off^32.8667^-73.8667^X^XXXX^^^^^PK^^Pakistan^Asia^^^^^^^^^^^^Asia/Karachi^^^^-1^QKH^^^^^O^^^764^Pakistan
-QKO^^^N^0^^Khoms LY Off^Khoms LY Off^32.65^14.266^X^XXXX^^^^^LY^^Libya^Africa^^^^^^^^^^^^Africa/Tripoli^^^^-1^QKO^^^^^O^^^538^Libya
-QKP^^^N^0^^Kruger National P ZA Off^Kruger National P ZA Off^-23.5^-31.6667^X^XXXX^^^^^ZA^^South Africa^Africa^^^^^^^^^^^^Africa/Johannesburg^^^^-1^QKP^^^^^O^^^562^South Africa
+QKD^^^N^0^^Elk PL Elk^Elk PL Elk^53.8333^-22.35^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QKD^Elk PL Elk^QKD|0|Elk PL Elk|Elk PL Elk^QKD^^O^^^467^Poland
+QKG^^^N^0^^Chalkida GR Chalkida^Chalkida GR Chalkida^37.75^21.75^P^PPLC^^^^^GR^^Greece^Europe^^^^^^^^^^^^Europe/Athens^^^^-1^QKG^Chalkida GR Chalkida^QKG|0|Chalkida GR Chalkida|Chalkida GR Chalkida^QKG^^O^^^433^Greece
+QKH^^^N^0^^Kharian PK Off^Kharian PK Off^32.8667^-73.8667^P^PPLC^^^^^PK^^Pakistan^Asia^^^^^^^^^^^^Asia/Karachi^^^^-1^QKH^Kharian PK Off^QKH|0|Kharian PK Off|Kharian PK Off^QKH^^O^^^764^Pakistan
+QKO^^^N^0^^Khoms LY Off^Khoms LY Off^32.65^14.266^P^PPLC^^^^^LY^^Libya^Africa^^^^^^^^^^^^Africa/Tripoli^^^^-1^QKO^Khoms LY Off^QKO|0|Khoms LY Off|Khoms LY Off^QKO^^O^^^538^Libya
+QKP^^^N^0^^Kruger National P ZA Off^Kruger National P ZA Off^-23.5^-31.6667^P^PPLC^^^^^ZA^^South Africa^Africa^^^^^^^^^^^^Africa/Johannesburg^^^^-1^QKP^Kruger National P ZA Off^QKP|0|Kruger National P ZA Off|Kruger National P ZA Off^QKP^^O^^^562^South Africa
 QKS^^^N^0^^Keystone CO US Bus Station^Keystone CO US Bus Station^39.83^-106^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^QKS^Keystone CO US Bus Station^QKS|0|Keystone CO US Bus Station|Keystone CO US Bus Station^QKS^CO^CB^^^82^Colorado
-QKW^^^N^0^^Kanazawa JP Off^Kanazawa JP Off^36.5^-136.633^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QKW^^^^^O^^^736^Japan
-QLB^^^N^0^^Lajeado RS BR Off^Lajeado RS BR Off^-29.45^51.9667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QLB^^^^RS^O^^^316^Brazil
+QKW^^^N^0^^Kanazawa JP Off^Kanazawa JP Off^36.5^-136.633^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QKW^Kanazawa JP Off^QKW|0|Kanazawa JP Off|Kanazawa JP Off^QKW^^O^^^736^Japan
+QLB^^^N^0^^Lajeado RS BR Off^Lajeado RS BR Off^-29.45^51.9667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QLB^Lajeado RS BR Off^QLB|0|Lajeado RS BR Off|Lajeado RS BR Off^QLB^RS^O^^^316^Brazil
 QLJ^^^N^0^^Lucerne CH Lucerne Rail^Lucerne CH Lucerne Rail^47.05^8.283^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^QLJ^Lucerne CH Lucerne Rail^QLJ|0|Lucerne CH Lucerne Rail|Lucerne CH Lucerne Rail^QLJ^^CR^^^486^Switzerland
-QLL^^^N^0^^Sao Leopold RS BR Sao Leopoldo^Sao Leopold RS BR Sao Leopoldo^-29.75^-51.18^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^QLL^^^^RS^O^^^316^Brazil
+QLL^^^N^0^^Sao Leopold RS BR Sao Leopoldo^Sao Leopold RS BR Sao Leopoldo^-29.75^-51.18^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^QLL^Sao Leopold RS BR Sao Leopoldo^QLL|0|Sao Leopold RS BR Sao Leopoldo|Sao Leopold RS BR Sao Leopoldo^QLL^RS^O^^^316^Brazil
 QLO^^^N^0^^Los Angeles CA US Ferry Port^Los Angeles CA US Ferry Port^33.9167^-118.383^S^PRT^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^LAX^^^^CA^P^^^91^California
-QLW^^^N^0^^Lavras MG BR Off^Lavras MG BR Off^-21.3333^45^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QLW^^^^MG^O^^^316^Brazil
-QMB^^^N^0^^Panambi RS BR Off^Panambi RS BR Off^-28.2888^53.501^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QMB^^^^RS^O^^^316^Brazil
-QMD^^^N^0^^Madaba JO Off^Madaba JO Off^31.7333^-35.8^X^XXXX^^^^^JO^^Jordan^Asia^^^^^^^^^^^^Asia/Amman^^^^-1^QMD^^^^^O^^^639^Jordan
-QMI^^^N^0^^Mogi Das Cruzes SP BR Off^Mogi Das Cruzes SP BR Off^-23.5167^46.1833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QMI^^^^SP^O^^^316^Brazil
-QMJ^^^N^0^^Masjed Soleiman IR Masjed Sole^Masjed Soleiman IR Masjed Sole^32.002372^49.270364^X^XXXX^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^QMJ^^^^^O^^^632^Iran
+QLW^^^N^0^^Lavras MG BR Off^Lavras MG BR Off^-21.3333^45^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QLW^Lavras MG BR Off^QLW|0|Lavras MG BR Off|Lavras MG BR Off^QLW^MG^O^^^316^Brazil
+QMB^^^N^0^^Panambi RS BR Off^Panambi RS BR Off^-28.2888^53.501^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QMB^Panambi RS BR Off^QMB|0|Panambi RS BR Off|Panambi RS BR Off^QMB^RS^O^^^316^Brazil
+QMD^^^N^0^^Madaba JO Off^Madaba JO Off^31.7333^-35.8^P^PPLC^^^^^JO^^Jordan^Asia^^^^^^^^^^^^Asia/Amman^^^^-1^QMD^Madaba JO Off^QMD|0|Madaba JO Off|Madaba JO Off^QMD^^O^^^639^Jordan
+QMI^^^N^0^^Mogi Das Cruzes SP BR Off^Mogi Das Cruzes SP BR Off^-23.5167^46.1833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QMI^Mogi Das Cruzes SP BR Off^QMI|0|Mogi Das Cruzes SP BR Off|Mogi Das Cruzes SP BR Off^QMI^SP^O^^^316^Brazil
+QMJ^^^N^0^^Masjed Soleiman IR Masjed Sole^Masjed Soleiman IR Masjed Sole^32.002372^49.270364^P^PPLC^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^QMJ^Masjed Soleiman IR Masjed Sole^QMJ|0|Masjed Soleiman IR Masjed Sole|Masjed Soleiman IR Masjed Sole^QMJ^^O^^^632^Iran
 QMO^^^N^0^^Mons BE Railway Station^Mons BE Railway Station^0.8411^0.06611^S^RSTN^^^^^BE^^Belgium^Europe^^^^^^^^^^^^Europe/Brussels^^^^-1^QMO^Mons BE Railway Station^QMO|0|Mons BE Railway Station|Mons BE Railway Station^QMO^^CR^^^409^Belgium
 QMP^^^N^0^^Macon GA US Flightlink Bus Sta^Macon GA US Flightlink Bus Sta^32.68^-83.65^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^MCN^^^^GA^B^^^34^Georgia
-QMS^^^N^0^^Masan KR Off^Masan KR Off^35.1833^-128.533^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QMS^^^^^O^^^778^South Korea
-QMU^^^N^0^^Moutiers FR Moutiers^Moutiers FR Moutiers^45.4833^6.53333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QMU^^^^^O^^^427^France
+QMS^^^N^0^^Masan KR Off^Masan KR Off^35.1833^-128.533^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QMS^Masan KR Off^QMS|0|Masan KR Off|Masan KR Off^QMS^^O^^^778^South Korea
+QMU^^^N^0^^Moutiers FR Moutiers^Moutiers FR Moutiers^45.4833^6.53333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QMU^Moutiers FR Moutiers^QMU|0|Moutiers FR Moutiers|Moutiers FR Moutiers^QMU^^O^^^427^France
 QMV^^^N^0^^Montvale NJ US^Montvale NJ US^38.4^-113^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^QMV^Montvale NJ US^QMV|0|Montvale NJ US|Montvale NJ US^QMV^NJ^CA^^^21^New Jersey
-QMX^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^41.78^-88.15^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QMX^^^^^O^^^^
-QMY^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^42.35^-88.05^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QMY^^^^^O^^^^
+QMX^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^41.78^-88.15^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QMX^Fictitious Point ZZ^QMX|0|Fictitious Point ZZ|Fictitious Point ZZ^QMX^^O^^^^
+QMY^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^42.35^-88.05^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QMY^Fictitious Point ZZ^QMY|0|Fictitious Point ZZ|Fictitious Point ZZ^QMY^^O^^^^
 QMZ^^^N^0^^Mainz DE Hbf Railway Station^Mainz DE Hbf Railway Station^50^8.267^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QMZ^Mainz DE Hbf Railway Station^QMZ|0|Mainz DE Hbf Railway Station|Mainz DE Hbf Railway Station^QMZ^^CR^^^429^Germany
-QNB^^^N^0^^Anand IN Off^Anand IN Off^22.5333^-72.9833^X^XXXX^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QNB^^^^^O^^^733^India
-QNF^^^N^0^^Faridabad IN Off^Faridabad IN Off^28.4^-77.3^X^XXXX^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QNF^^^^^O^^^733^India
-QNG^^^N^0^^Nagano JP Off^Nagano JP Off^36.6667^-138.167^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QNG^^^^^O^^^736^Japan
-QNH^^^N^0^^Canoinhas SC BR Off^Canoinhas SC BR Off^-26.1833^50.5^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QNH^^^^SC^O^^^37^South Carolina
-QNT^^^N^0^^Niteroi RJ BR Off^Niteroi RJ BR Off^-22.8667^43^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QNT^^^^RJ^O^^^316^Brazil
-QNW^^^N^0^^Nawashahr IN^Nawashahr IN^32.55^-74.8^X^XXXX^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QNW^^^^^O^^^733^India
+QNB^^^N^0^^Anand IN Off^Anand IN Off^22.5333^-72.9833^P^PPLC^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QNB^Anand IN Off^QNB|0|Anand IN Off|Anand IN Off^QNB^^O^^^733^India
+QNF^^^N^0^^Faridabad IN Off^Faridabad IN Off^28.4^-77.3^P^PPLC^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QNF^Faridabad IN Off^QNF|0|Faridabad IN Off|Faridabad IN Off^QNF^^O^^^733^India
+QNG^^^N^0^^Nagano JP Off^Nagano JP Off^36.6667^-138.167^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QNG^Nagano JP Off^QNG|0|Nagano JP Off|Nagano JP Off^QNG^^O^^^736^Japan
+QNH^^^N^0^^Canoinhas SC BR Off^Canoinhas SC BR Off^-26.1833^50.5^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QNH^Canoinhas SC BR Off^QNH|0|Canoinhas SC BR Off|Canoinhas SC BR Off^QNH^SC^O^^^37^South Carolina
+QNT^^^N^0^^Niteroi RJ BR Off^Niteroi RJ BR Off^-22.8667^43^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QNT^Niteroi RJ BR Off^QNT|0|Niteroi RJ BR Off|Niteroi RJ BR Off^QNT^RJ^O^^^316^Brazil
+QNW^^^N^0^^Nawashahr IN^Nawashahr IN^32.55^-74.8^P^PPLC^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^QNW^Nawashahr IN^QNW|0|Nawashahr IN|Nawashahr IN^QNW^^O^^^733^India
 QNY^^^N^0^^New York NY US Marine Air^New York NY US Marine Air^40.68^-74.17^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^NYC^^^^NY^A^^^22^New York
-QNZ^^^N^0^^Nara JP Nara^Nara JP Nara^34.6667^-135.817^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QNZ^^^^^O^^^736^Japan
-QOD^^^N^0^^Osvaldo Cruz SP BR Off^Osvaldo Cruz SP BR Off^-21.7833^50.8333^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QOD^^^^SP^O^^^316^Brazil
-QOG^^^N^0^^Homburg DE Off^Homburg DE Off^49.4667^-7.3^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QOG^^^^^O^^^429^Germany
+QNZ^^^N^0^^Nara JP Nara^Nara JP Nara^34.6667^-135.817^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QNZ^Nara JP Nara^QNZ|0|Nara JP Nara|Nara JP Nara^QNZ^^O^^^736^Japan
+QOD^^^N^0^^Osvaldo Cruz SP BR Off^Osvaldo Cruz SP BR Off^-21.7833^50.8333^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QOD^Osvaldo Cruz SP BR Off^QOD|0|Osvaldo Cruz SP BR Off|Osvaldo Cruz SP BR Off^QOD^SP^O^^^316^Brazil
+QOG^^^N^0^^Homburg DE Off^Homburg DE Off^49.4667^-7.3^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QOG^Homburg DE Off^QOG|0|Homburg DE Off|Homburg DE Off^QOG^^O^^^429^Germany
 QOH^^^N^0^^Kiev UA Hotel Rus^Kiev UA Hotel Rus^50.4^30.47^S^BUSTN^^^^^UA^^Ukraine^Europe^^^^^^^^^^^^Europe/Kiev^^^^-1^IEV^^^^^B^^^488^Ukraine
-QOI^^^N^0^^Cotia SP BR Off^Cotia SP BR Off^-23.6023^46.9182^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QOI^^^^SP^O^^^316^Brazil
-QOK^^^N^0^^Oksfjord NO^Oksfjord NO^70.23^22.37^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QOK^^^^^O^^^465^Norway
-QOM^^^N^0^^Omiya JP Off^Omiya JP Off^35.9^-139.633^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QOM^^^^^O^^^736^Japan
-QOO^^^N^0^^Otsu JP Otsu^Otsu JP Otsu^35^-135.833^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QOO^^^^^O^^^736^Japan
-QOX^^^N^0^^Memmingen DE Off Pt^Memmingen DE Off Pt^47.9833^-10.1833^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QOX^^^^^O^^^429^Germany
-QOY^^^N^0^^Lomza PL Lomza^Lomza PL Lomza^53.18^22.08^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QOY^^^^^O^^^467^Poland
-QPC^^^N^0^^Plock PL Plock^Plock PL Plock^52.55^-19.7167^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QPC^^^^^O^^^467^Poland
-QPE^^^N^0^^Petropolis RJ BR Off^Petropolis RJ BR Off^-22.5167^43.1667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPE^^^^RJ^O^^^316^Brazil
-QPF^^^N^0^^Pompeia SP BR Off^Pompeia SP BR Off^-22.1167^50.1833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPF^^^^SP^O^^^316^Brazil
-QPI^^^N^0^^Palmira CO Off^Palmira CO Off^25.42^-49.25^X^XXXX^^^^^CO^^Colombia^South America^^^^^^^^^^^^America/Bogota^^^^-1^QPI^^^^^O^^^327^Colombia
+QOI^^^N^0^^Cotia SP BR Off^Cotia SP BR Off^-23.6023^46.9182^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QOI^Cotia SP BR Off^QOI|0|Cotia SP BR Off|Cotia SP BR Off^QOI^SP^O^^^316^Brazil
+QOK^^^N^0^^Oksfjord NO^Oksfjord NO^70.23^22.37^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QOK^Oksfjord NO^QOK|0|Oksfjord NO|Oksfjord NO^QOK^^O^^^465^Norway
+QOM^^^N^0^^Omiya JP Off^Omiya JP Off^35.9^-139.633^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QOM^Omiya JP Off^QOM|0|Omiya JP Off|Omiya JP Off^QOM^^O^^^736^Japan
+QOO^^^N^0^^Otsu JP Otsu^Otsu JP Otsu^35^-135.833^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QOO^Otsu JP Otsu^QOO|0|Otsu JP Otsu|Otsu JP Otsu^QOO^^O^^^736^Japan
+QOX^^^N^0^^Memmingen DE Off Pt^Memmingen DE Off Pt^47.9833^-10.1833^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QOX^Memmingen DE Off Pt^QOX|0|Memmingen DE Off Pt|Memmingen DE Off Pt^QOX^^O^^^429^Germany
+QOY^^^N^0^^Lomza PL Lomza^Lomza PL Lomza^53.18^22.08^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QOY^Lomza PL Lomza^QOY|0|Lomza PL Lomza|Lomza PL Lomza^QOY^^O^^^467^Poland
+QPC^^^N^0^^Plock PL Plock^Plock PL Plock^52.55^-19.7167^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QPC^Plock PL Plock^QPC|0|Plock PL Plock|Plock PL Plock^QPC^^O^^^467^Poland
+QPE^^^N^0^^Petropolis RJ BR Off^Petropolis RJ BR Off^-22.5167^43.1667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPE^Petropolis RJ BR Off^QPE|0|Petropolis RJ BR Off|Petropolis RJ BR Off^QPE^RJ^O^^^316^Brazil
+QPF^^^N^0^^Pompeia SP BR Off^Pompeia SP BR Off^-22.1167^50.1833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPF^Pompeia SP BR Off^QPF|0|Pompeia SP BR Off|Pompeia SP BR Off^QPF^SP^O^^^316^Brazil
+QPI^^^N^0^^Palmira CO Off^Palmira CO Off^25.42^-49.25^P^PPLC^^^^^CO^^Colombia^South America^^^^^^^^^^^^America/Bogota^^^^-1^QPI^Palmira CO Off^QPI|0|Palmira CO Off|Palmira CO Off^QPI^^O^^^327^Colombia
 QPJ^^^N^0^^Pecs HU Pecs^Pecs HU Pecs^46.07^18.25^S^BUSTN^^^^^HU^^Hungary^Europe^^^^^^^^^^^^Europe/Budapest^^^^-1^QPJ^Pecs HU Pecs^QPJ|0|Pecs HU Pecs|Pecs HU Pecs^QPJ^^CB^^^437^Hungary
 QPL^^^N^0^^Ploiesti RO Bus Station^Ploiesti RO Bus Station^44.94^26.03^S^BUSTN^^^^^RO^^Romania^Europe^^^^^^^^^^^^Europe/Bucharest^^^^-1^QPL^Ploiesti RO Bus Station^QPL|0|Ploiesti RO Bus Station|Ploiesti RO Bus Station^QPL^^CB^^^473^Romania
-QPM^^^N^0^^Opole PL Opole^Opole PL Opole^50.6667^-17.9333^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QPM^^^^^O^^^467^Poland
-QPN^^^N^0^^Piatra Neamt RO Piatra Neamt^Piatra Neamt RO Piatra Neamt^46.9333^-26.35^X^XXXX^^^^^RO^^Romania^Europe^^^^^^^^^^^^Europe/Bucharest^^^^-1^QPN^^^^^O^^^473^Romania
-QPR^^^N^0^^Prato IT Prato^Prato IT Prato^43.8833^11.1^X^XXXX^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^QPR^^^^^O^^^450^Italy
-QPU^^^N^0^^Porto Uniao SC BR Off^Porto Uniao SC BR Off^-26.25^51.0833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPU^^^^SC^O^^^37^South Carolina
+QPM^^^N^0^^Opole PL Opole^Opole PL Opole^50.6667^-17.9333^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QPM^Opole PL Opole^QPM|0|Opole PL Opole|Opole PL Opole^QPM^^O^^^467^Poland
+QPN^^^N^0^^Piatra Neamt RO Piatra Neamt^Piatra Neamt RO Piatra Neamt^46.9333^-26.35^P^PPLC^^^^^RO^^Romania^Europe^^^^^^^^^^^^Europe/Bucharest^^^^-1^QPN^Piatra Neamt RO Piatra Neamt^QPN|0|Piatra Neamt RO Piatra Neamt|Piatra Neamt RO Piatra Neamt^QPN^^O^^^473^Romania
+QPR^^^N^0^^Prato IT Prato^Prato IT Prato^43.8833^11.1^P^PPLC^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^QPR^Prato IT Prato^QPR|0|Prato IT Prato|Prato IT Prato^QPR^^O^^^450^Italy
+QPU^^^N^0^^Porto Uniao SC BR Off^Porto Uniao SC BR Off^-26.25^51.0833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QPU^Porto Uniao SC BR Off^QPU|0|Porto Uniao SC BR Off|Porto Uniao SC BR Off^QPU^SC^O^^^37^South Carolina
 QPV^^^N^0^^Perisher Valley NS AU Bus Stat^Perisher Valley NS AU Bus Stat^-36.4^148.4^S^BUSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QPV^Perisher Valley NS AU Bus Stat^QPV|0|Perisher Valley NS AU Bus Stat|Perisher Valley NS AU Bus Stat^QPV^NS^CB^^^951^Nova Scotia
-QPX^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^42.17^-88.43^X^XXXX^0.0121675446982^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPX^^^^^O^^^^
-QPY^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^41.45^-87.63^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPY^^^^^O^^^^
+QPX^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^42.17^-88.43^P^PPLC^0.0121675446982^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPX^Fictitious Point ZZ^QPX|0|Fictitious Point ZZ|Fictitious Point ZZ^QPX^^O^^^^
+QPY^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^41.45^-87.63^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QPY^Fictitious Point ZZ^QPY|0|Fictitious Point ZZ|Fictitious Point ZZ^QPY^^O^^^^
 QQM^^^N^0^^Manchester GB Piccadilly Railw^Manchester GB Piccadilly Railw^53.5^-2.25^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^MAN^^^^^R^^^493^United Kingdom
 QQN^^^N^0^^Birming GB New Street Rail Stn^Birming GB New Street Rail Stn^52.5^-1.883^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^BHX^^^^^R^^^493^United Kingdom
-QQT^^^N^0^^Britra GB Britrail Rail Zone T^Britra GB Britrail Rail Zone T^51.509^-0.134^X^XXXX^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^QQT^^^^^O^^^493^United Kingdom
-QRD^^^N^0^^Andradas MG BR Off^Andradas MG BR Off^-22.0667^46.5667^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QRD^^^^MG^O^^^316^Brazil
-QSD^^^N^0^^Sao Goncalo RJ BR Off^Sao Goncalo RJ BR Off^-22.8^43.0833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QSD^^^^RJ^O^^^316^Brazil
-QSE^^^N^0^^Santo Andre SP BR Off^Santo Andre SP BR Off^-23.68^-46.531^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^QSE^^^^SP^O^^^316^Brazil
+QQT^^^N^0^^Britra GB Britrail Rail Zone T^Britra GB Britrail Rail Zone T^51.509^-0.134^P^PPLC^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^QQT^Britra GB Britrail Rail Zone T^QQT|0|Britra GB Britrail Rail Zone T|Britra GB Britrail Rail Zone T^QQT^^O^^^493^United Kingdom
+QRD^^^N^0^^Andradas MG BR Off^Andradas MG BR Off^-22.0667^46.5667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QRD^Andradas MG BR Off^QRD|0|Andradas MG BR Off|Andradas MG BR Off^QRD^MG^O^^^316^Brazil
+QSD^^^N^0^^Sao Goncalo RJ BR Off^Sao Goncalo RJ BR Off^-22.8^43.0833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QSD^Sao Goncalo RJ BR Off^QSD|0|Sao Goncalo RJ BR Off|Sao Goncalo RJ BR Off^QSD^RJ^O^^^316^Brazil
+QSE^^^N^0^^Santo Andre SP BR Off^Santo Andre SP BR Off^-23.68^-46.531^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^QSE^Santo Andre SP BR Off^QSE|0|Santo Andre SP BR Off|Santo Andre SP BR Off^QSE^SP^O^^^316^Brazil
 QSG^^^N^0^^Sonderborg DK Railway Station^Sonderborg DK Railway Station^33.149722^130.302222^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^SGD^^^^^R^^^419^Denmark
-QSH^^^N^0^^Seeheim DE Off^Seeheim DE Off^49.7667^-8.66667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QSH^^^^^O^^^429^Germany
-QST^^^N^0^^Izmit TR Izmit^Izmit TR Izmit^40.735028^30.083336^X^XXXX^^^^^TR^^Turkey^Asia^^^^^^^^^^^^Europe/Istanbul^^^^-1^QST^^^^^O^^^679^Turkey
-QSU^^^N^0^^Mansoura EG Off^Mansoura EG Off^30.97^31.433^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QSU^^^^^O^^^591^Egypt
-QSW^^^N^0^^As Suwayda SY^As Suwayda SY^32.7^-36.5667^X^XXXX^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QSW^^^^^O^^^676^Syria
-QTD^^^N^0^^Timbauba PE BR Timbauba^Timbauba PE BR Timbauba^-7.51667^35.3167^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QTD^^^^PE^O^^^956^Prince Edward Island
-QTE^^^N^0^^Sao Go RN BR Sao Goncalo Amara^Sao Go RN BR Sao Goncalo Amara^-3.6^38.9833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Nairobi^^^^-1^QTE^^^^RN^O^^^316^Brazil
-QTF^^^N^0^^Qatif SA Off^Qatif SA Off^26.8^-49.9^X^XXXX^^^^^SA^^Saudi Arabia^Asia^^^^^^^^^^^^Asia/Riyadh^^^^-1^QTF^^^^^O^^^670^Saudi Arabia
+QSH^^^N^0^^Seeheim DE Off^Seeheim DE Off^49.7667^-8.66667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QSH^Seeheim DE Off^QSH|0|Seeheim DE Off|Seeheim DE Off^QSH^^O^^^429^Germany
+QST^^^N^0^^Izmit TR Izmit^Izmit TR Izmit^40.735028^30.083336^P^PPLC^^^^^TR^^Turkey^Asia^^^^^^^^^^^^Europe/Istanbul^^^^-1^QST^Izmit TR Izmit^QST|0|Izmit TR Izmit|Izmit TR Izmit^QST^^O^^^679^Turkey
+QSU^^^N^0^^Mansoura EG Off^Mansoura EG Off^30.97^31.433^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QSU^Mansoura EG Off^QSU|0|Mansoura EG Off|Mansoura EG Off^QSU^^O^^^591^Egypt
+QSW^^^N^0^^As Suwayda SY^As Suwayda SY^32.7^-36.5667^P^PPLC^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QSW^As Suwayda SY^QSW|0|As Suwayda SY|As Suwayda SY^QSW^^O^^^676^Syria
+QTD^^^N^0^^Timbauba PE BR Timbauba^Timbauba PE BR Timbauba^-7.51667^35.3167^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QTD^Timbauba PE BR Timbauba^QTD|0|Timbauba PE BR Timbauba|Timbauba PE BR Timbauba^QTD^PE^O^^^956^Prince Edward Island
+QTE^^^N^0^^Sao Go RN BR Sao Goncalo Amara^Sao Go RN BR Sao Goncalo Amara^-3.6^38.9833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Nairobi^^^^-1^QTE^Sao Go RN BR Sao Goncalo Amara^QTE|0|Sao Go RN BR Sao Goncalo Amara|Sao Go RN BR Sao Goncalo Amara^QTE^RN^O^^^316^Brazil
+QTF^^^N^0^^Qatif SA Off^Qatif SA Off^26.8^-49.9^P^PPLC^^^^^SA^^Saudi Arabia^Asia^^^^^^^^^^^^Asia/Riyadh^^^^-1^QTF^Qatif SA Off^QTF|0|Qatif SA Off|Qatif SA Off^QTF^^O^^^670^Saudi Arabia
 QTH^^^N^0^^Thredbo NS AU Bus Station^Thredbo NS AU Bus Station^-36.5^148.3^S^BUSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QTH^Thredbo NS AU Bus Station^QTH|0|Thredbo NS AU Bus Station|Thredbo NS AU Bus Station^QTH^NS^CB^^^951^Nova Scotia
-QTK^^^N^0^^Rothenburg DE Off^Rothenburg DE Off^51.363167^14.95^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QTK^^^^^O^^^429^Germany
-QTO^^^N^0^^Skitube NS AU^Skitube NS AU^-36.47^148.5^X^XXXX^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QTO^^^^NS^O^^^951^Nova Scotia
-QTP^^^N^0^^Tana NO Tana^Tana NO Tana^70.47^28.3^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QTP^^^^^O^^^465^Norway
-QTR^^^N^0^^Tartus SY^Tartus SY^34.94^36.042^X^XXXX^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QTR^^^^^O^^^676^Syria
-QTS^^^N^0^^Englewood CO US Off^Englewood CO US Off^39.65^104.983^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Shanghai^^^^-1^QTS^^^^CO^O^^^82^Colorado
-QTT^^^N^0^^Tanta EG Off^Tanta EG Off^30.79^31.001^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QTT^^^^^O^^^591^Egypt
-QTV^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^46^6.167^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/Paris^^^^-1^QTV^^^^^O^^^^
-QTX^^^N^0^^Arbatax IT Arbatax^Arbatax IT Arbatax^39.9344^9.70556^X^XXXX^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^QTX^^^^^O^^^450^Italy
-QTY^^^N^0^^Tsu JP Off^Tsu JP Off^34.7167^-136.517^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QTY^^^^^O^^^736^Japan
-QUC^^^N^0^^Puerto La Cruz VE Puerto La Cr^Puerto La Cruz VE Puerto La Cr^10.2185^64.6333^X^XXXX^^^^^VE^^Venezuela^South America^^^^^^^^^^^^America/Caracas^^^^-1^QUC^^^^^O^^^388^Venezuela
-QUD^^^N^0^^Damanhun EG Damanhun^Damanhun EG Damanhun^30.47^31.05^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QUD^^^^^O^^^591^Egypt
-QUH^^^N^0^^Shibin El Kom EG Shibin El Kom^Shibin El Kom EG Shibin El Kom^30.93^31^X^XXXX^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QUH^^^^^O^^^591^Egypt
-QUJ^^^N^0^^Uijeongbu KR Uijeongbu^Uijeongbu KR Uijeongbu^37.73^127^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QUJ^^^^^O^^^778^South Korea
-QUK^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^51^-2.167^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^QUK^^^^^O^^^^
-QUR^^^N^0^^Muriae MG BR Off^Muriae MG BR Off^-21.3^42.3833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QUR^^^^MG^O^^^316^Brazil
-QUT^^^N^0^^Utsunomiya JP Off^Utsunomiya JP Off^36.514544^139.870936^X^XXXX^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QUT^^^^^O^^^736^Japan
-QUU^^^N^0^^Chung Mu City KR Chung Mu City^Chung Mu City KR Chung Mu City^39.08^126.9^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QUU^^^^^O^^^778^South Korea
-QVC^^^N^0^^Vicosa MG BR Off^Vicosa MG BR Off^-9.46667^36.2333^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QVC^^^^MG^O^^^316^Brazil
-QVD^^^N^0^^Salo FI Salo^Salo FI Salo^60.38^23.17^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVD^^^^^O^^^425^Finland
-QVG^^^N^0^^Vilgenis FR Vilgenis^Vilgenis FR Vilgenis^49.02^2.533^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QVG^^^^^O^^^427^France
-QVH^^^N^0^^Vila Velha ES BR Off^Vila Velha ES BR Off^-20.3333^40.2833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Maputo^^^^-1^QVH^^^^ES^O^^^316^Brazil
-QVM^^^N^0^^Hameenlinna FI Hameenlinna^Hameenlinna FI Hameenlinna^61^24.42^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVM^^^^^O^^^425^Finland
-QVO^^^N^0^^Havoysund NO^Havoysund NO^71.05^24.67^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QVO^^^^^O^^^465^Norway
-QVR^^^N^0^^Volta Redonda RJ BR Off^Volta Redonda RJ BR Off^-22.5167^44.0833^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QVR^^^^RJ^O^^^316^Brazil
-QVT^^^N^0^^Riihimaki FI Riihimaki^Riihimaki FI Riihimaki^60.75^24.75^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVT^^^^^O^^^425^Finland
-QVW^^^N^0^^Kotka FI Kotka^Kotka FI Kotka^60.43^26.92^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVW^^^^^O^^^425^Finland
-QVX^^^N^0^^Ghazaouet DZ Off^Ghazaouet DZ Off^35.1333^1.83333^X^XXXX^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QVX^^^^^O^^^500^Algeria
+QTK^^^N^0^^Rothenburg DE Off^Rothenburg DE Off^51.363167^14.95^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QTK^Rothenburg DE Off^QTK|0|Rothenburg DE Off|Rothenburg DE Off^QTK^^O^^^429^Germany
+QTO^^^N^0^^Skitube NS AU^Skitube NS AU^-36.47^148.5^P^PPLC^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QTO^Skitube NS AU^QTO|0|Skitube NS AU|Skitube NS AU^QTO^NS^O^^^951^Nova Scotia
+QTP^^^N^0^^Tana NO Tana^Tana NO Tana^70.47^28.3^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QTP^Tana NO Tana^QTP|0|Tana NO Tana|Tana NO Tana^QTP^^O^^^465^Norway
+QTR^^^N^0^^Tartus SY^Tartus SY^34.94^36.042^P^PPLC^^^^^SY^^Syria^Asia^^^^^^^^^^^^Asia/Damascus^^^^-1^QTR^Tartus SY^QTR|0|Tartus SY|Tartus SY^QTR^^O^^^676^Syria
+QTS^^^N^0^^Englewood CO US Off^Englewood CO US Off^39.65^104.983^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^Asia/Shanghai^^^^-1^QTS^Englewood CO US Off^QTS|0|Englewood CO US Off|Englewood CO US Off^QTS^CO^O^^^82^Colorado
+QTT^^^N^0^^Tanta EG Off^Tanta EG Off^30.79^31.001^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QTT^Tanta EG Off^QTT|0|Tanta EG Off|Tanta EG Off^QTT^^O^^^591^Egypt
+QTV^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^46^6.167^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/Paris^^^^-1^QTV^Fictitious Point ZZ Fictitious^QTV|0|Fictitious Point ZZ Fictitious|Fictitious Point ZZ Fictitious^QTV^^O^^^^
+QTX^^^N^0^^Arbatax IT Arbatax^Arbatax IT Arbatax^39.9344^9.70556^P^PPLC^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^QTX^Arbatax IT Arbatax^QTX|0|Arbatax IT Arbatax|Arbatax IT Arbatax^QTX^^O^^^450^Italy
+QTY^^^N^0^^Tsu JP Off^Tsu JP Off^34.7167^-136.517^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QTY^Tsu JP Off^QTY|0|Tsu JP Off|Tsu JP Off^QTY^^O^^^736^Japan
+QUC^^^N^0^^Puerto La Cruz VE Puerto La Cr^Puerto La Cruz VE Puerto La Cr^10.2185^64.6333^P^PPLC^^^^^VE^^Venezuela^South America^^^^^^^^^^^^America/Caracas^^^^-1^QUC^Puerto La Cruz VE Puerto La Cr^QUC|0|Puerto La Cruz VE Puerto La Cr|Puerto La Cruz VE Puerto La Cr^QUC^^O^^^388^Venezuela
+QUD^^^N^0^^Damanhun EG Damanhun^Damanhun EG Damanhun^30.47^31.05^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QUD^Damanhun EG Damanhun^QUD|0|Damanhun EG Damanhun|Damanhun EG Damanhun^QUD^^O^^^591^Egypt
+QUH^^^N^0^^Shibin El Kom EG Shibin El Kom^Shibin El Kom EG Shibin El Kom^30.93^31^P^PPLC^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^QUH^Shibin El Kom EG Shibin El Kom^QUH|0|Shibin El Kom EG Shibin El Kom|Shibin El Kom EG Shibin El Kom^QUH^^O^^^591^Egypt
+QUJ^^^N^0^^Uijeongbu KR Uijeongbu^Uijeongbu KR Uijeongbu^37.73^127^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QUJ^Uijeongbu KR Uijeongbu^QUJ|0|Uijeongbu KR Uijeongbu|Uijeongbu KR Uijeongbu^QUJ^^O^^^778^South Korea
+QUK^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^51^-2.167^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^QUK^Fictitious Point ZZ Fictitious^QUK|0|Fictitious Point ZZ Fictitious|Fictitious Point ZZ Fictitious^QUK^^O^^^^
+QUR^^^N^0^^Muriae MG BR Off^Muriae MG BR Off^-21.3^42.3833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QUR^Muriae MG BR Off^QUR|0|Muriae MG BR Off|Muriae MG BR Off^QUR^MG^O^^^316^Brazil
+QUT^^^N^0^^Utsunomiya JP Off^Utsunomiya JP Off^36.514544^139.870936^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QUT^Utsunomiya JP Off^QUT|0|Utsunomiya JP Off|Utsunomiya JP Off^QUT^^O^^^736^Japan
+QUU^^^N^0^^Chung Mu City KR Chung Mu City^Chung Mu City KR Chung Mu City^39.08^126.9^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QUU^Chung Mu City KR Chung Mu City^QUU|0|Chung Mu City KR Chung Mu City|Chung Mu City KR Chung Mu City^QUU^^O^^^778^South Korea
+QVC^^^N^0^^Vicosa MG BR Off^Vicosa MG BR Off^-9.46667^36.2333^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QVC^Vicosa MG BR Off^QVC|0|Vicosa MG BR Off|Vicosa MG BR Off^QVC^MG^O^^^316^Brazil
+QVD^^^N^0^^Salo FI Salo^Salo FI Salo^60.38^23.17^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVD^Salo FI Salo^QVD|0|Salo FI Salo|Salo FI Salo^QVD^^O^^^425^Finland
+QVG^^^N^0^^Vilgenis FR Vilgenis^Vilgenis FR Vilgenis^49.02^2.533^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QVG^Vilgenis FR Vilgenis^QVG|0|Vilgenis FR Vilgenis|Vilgenis FR Vilgenis^QVG^^O^^^427^France
+QVH^^^N^0^^Vila Velha ES BR Off^Vila Velha ES BR Off^-20.3333^40.2833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Maputo^^^^-1^QVH^Vila Velha ES BR Off^QVH|0|Vila Velha ES BR Off|Vila Velha ES BR Off^QVH^ES^O^^^316^Brazil
+QVM^^^N^0^^Hameenlinna FI Hameenlinna^Hameenlinna FI Hameenlinna^61^24.42^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVM^Hameenlinna FI Hameenlinna^QVM|0|Hameenlinna FI Hameenlinna|Hameenlinna FI Hameenlinna^QVM^^O^^^425^Finland
+QVO^^^N^0^^Havoysund NO^Havoysund NO^71.05^24.67^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QVO^Havoysund NO^QVO|0|Havoysund NO|Havoysund NO^QVO^^O^^^465^Norway
+QVR^^^N^0^^Volta Redonda RJ BR Off^Volta Redonda RJ BR Off^-22.5167^44.0833^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QVR^Volta Redonda RJ BR Off^QVR|0|Volta Redonda RJ BR Off|Volta Redonda RJ BR Off^QVR^RJ^O^^^316^Brazil
+QVT^^^N^0^^Riihimaki FI Riihimaki^Riihimaki FI Riihimaki^60.75^24.75^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVT^Riihimaki FI Riihimaki^QVT|0|Riihimaki FI Riihimaki|Riihimaki FI Riihimaki^QVT^^O^^^425^Finland
+QVW^^^N^0^^Kotka FI Kotka^Kotka FI Kotka^60.43^26.92^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVW^Kotka FI Kotka^QVW|0|Kotka FI Kotka|Kotka FI Kotka^QVW^^O^^^425^Finland
+QVX^^^N^0^^Ghazaouet DZ Off^Ghazaouet DZ Off^35.1333^1.83333^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QVX^Ghazaouet DZ Off^QVX|0|Ghazaouet DZ Off|Ghazaouet DZ Off^QVX^^O^^^500^Algeria
 QVY^^^N^0^^Kouvola FI Bus Station^Kouvola FI Bus Station^60.896394^26.938353^S^BUSTN^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVY^Kouvola FI Bus Station^QVY|0|Kouvola FI Bus Station|Kouvola FI Bus Station^QVY^^CB^^^425^Finland
-QVZ^^^N^0^^Hamina FI Hamina^Hamina FI Hamina^60.55^27.25^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVZ^^^^^O^^^425^Finland
+QVZ^^^N^0^^Hamina FI Hamina^Hamina FI Hamina^60.55^27.25^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QVZ^Hamina FI Hamina^QVZ|0|Hamina FI Hamina|Hamina FI Hamina^QVZ^^O^^^425^Finland
 QWB^^^N^0^^Berlin DE Ostbahnhof Railway S^Berlin DE Ostbahnhof Railway S^52.57^13.3^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^BER^^^^^R^^^429^Germany
 QWC^^^N^0^^Berlin DE Zoo Railway Station^Berlin DE Zoo Railway Station^52.57^13.3^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^BER^^^^^R^^^429^Germany
 QWF^^^N^0^^Fort Collins Loveland CO US Fo^Fort Collins Loveland CO US Fo^40.58^-105.1^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^FNL^^^^CO^B^^^82^Colorado
 QWH^^^N^0^^Fort Collins Loveland CO US Lo^Fort Collins Loveland CO US Lo^40.4^-105.1^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^FNL^^^^CO^B^^^82^Colorado
-QWK^^^N^0^^Wloclawek PL Wloclawek^Wloclawek PL Wloclawek^52.6667^-19.05^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QWK^^^^^O^^^467^Poland
+QWK^^^N^0^^Wloclawek PL Wloclawek^Wloclawek PL Wloclawek^52.6667^-19.05^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QWK^Wloclawek PL Wloclawek^QWK|0|Wloclawek PL Wloclawek|Wloclawek PL Wloclawek^QWK^^O^^^467^Poland
 QWL^^^N^0^^Crackenback NS AU Bus Station^Crackenback NS AU Bus Station^-36.47^148.5^S^BUSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QWL^Crackenback NS AU Bus Station^QWL|0|Crackenback NS AU Bus Station|Crackenback NS AU Bus Station^QWL^NS^CB^^^951^Nova Scotia
 QWM^^^N^0^^Longmont CO US Bus Station^Longmont CO US Bus Station^40.18^-105.1^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^QWM^Longmont CO US Bus Station^QWM|0|Longmont CO US Bus Station|Longmont CO US Bus Station^QWM^CO^CB^^^82^Colorado
-QWR^^^N^0^^Donauwoerth DE Off^Donauwoerth DE Off^48.7167^-10.7833^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QWR^^^^^O^^^429^Germany
-QWS^^^N^0^^Nowy Targ PL Nowy Targ^Nowy Targ PL Nowy Targ^49.47^20^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QWS^^^^^O^^^467^Poland
+QWR^^^N^0^^Donauwoerth DE Off^Donauwoerth DE Off^48.7167^-10.7833^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QWR^Donauwoerth DE Off^QWR|0|Donauwoerth DE Off|Donauwoerth DE Off^QWR^^O^^^429^Germany
+QWS^^^N^0^^Nowy Targ PL Nowy Targ^Nowy Targ PL Nowy Targ^49.47^20^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^QWS^Nowy Targ PL Nowy Targ^QWS|0|Nowy Targ PL Nowy Targ|Nowy Targ PL Nowy Targ^QWS^^O^^^467^Poland
 QWU^^^N^0^^Wuerzburg DE Hbf Railway Stati^Wuerzburg DE Hbf Railway Stati^49.8^9.933^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QWU^Wuerzburg DE Hbf Railway Stati^QWU|0|Wuerzburg DE Hbf Railway Stati|Wuerzburg DE Hbf Railway Stati^QWU^^CR^^^429^Germany
 QWY^^^N^0^^Corvallis ALBANY OR US Albany^Corvallis ALBANY OR US Albany^44.5^-123.3^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^CVO^^^^OR^B^^^92^Oregon
-QXI^^^N^0^^Loviisa FI Loviisa^Loviisa FI Loviisa^60.45^26.25^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QXI^^^^^O^^^425^Finland
+QXI^^^N^0^^Loviisa FI Loviisa^Loviisa FI Loviisa^60.45^26.25^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QXI^Loviisa FI Loviisa^QXI|0|Loviisa FI Loviisa|Loviisa FI Loviisa^QXI^^O^^^425^Finland
 QXK^^^N^0^^St Genis FR Bus Station^St Genis FR Bus Station^44.38^5.75^S^BUSTN^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QXK^St Genis FR Bus Station^QXK|0|St Genis FR Bus Station|St Genis FR Bus Station^QXK^^CB^^^427^France
-QXL^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^57^-2^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^QXL^^^^^O^^^^
-QXM^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^57.17^-2.2^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^QXM^^^^^O^^^^
+QXL^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^57^-2^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^QXL^Fictitious Point ZZ Fictitious^QXL|0|Fictitious Point ZZ Fictitious|Fictitious Point ZZ Fictitious^QXL^^O^^^^
+QXM^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^57.17^-2.2^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^QXM^Fictitious Point ZZ Fictitious^QXM|0|Fictitious Point ZZ Fictitious|Fictitious Point ZZ Fictitious^QXM^^O^^^^
 QXX^^^N^0^^Fictitious Point IL US^Fictitious Point IL US^41.7833^-87.75^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^QXX^Fictitious Point IL US^QXX|0|Fictitious Point IL US|Fictitious Point IL US^QXX^IL^CA^^^41^Illinois
 QXY^^^N^0^^Fictitious Point IL US^Fictitious Point IL US^41.7833^-87.75^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^QXY^Fictitious Point IL US^QXY|0|Fictitious Point IL US|Fictitious Point IL US^QXY^IL^CA^^^41^Illinois
-QYA^^^N^0^^Anyang KR Off^Anyang KR Off^36.02^114.4^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QYA^^^^^O^^^778^South Korea
-QYB^^^N^0^^Yaba NG Off^Yaba NG Off^6.5^-3.38333^X^XXXX^^^^^NG^^Nigeria^Africa^^^^^^^^^^^^Africa/Lagos^^^^-1^QYB^^^^^O^^^555^Nigeria
+QYA^^^N^0^^Anyang KR Off^Anyang KR Off^36.02^114.4^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^QYA^Anyang KR Off^QYA|0|Anyang KR Off|Anyang KR Off^QYA^^O^^^778^South Korea
+QYB^^^N^0^^Yaba NG Off^Yaba NG Off^6.5^-3.38333^P^PPLC^^^^^NG^^Nigeria^Africa^^^^^^^^^^^^Africa/Lagos^^^^-1^QYB^Yaba NG Off^QYB|0|Yaba NG Off|Yaba NG Off^QYB^^O^^^555^Nigeria
 QYE^^^N^0^^Enschede NL Railway Station^Enschede NL Railway Station^52.22^6.917^S^RSTN^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ENS^^^^^R^^^461^Netherlands
-QYF^^^N^0^^German Railways Zone F DE Off^German Railways Zone F DE Off^50.03^8.567^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QYF^^^^^O^^^429^Germany
+QYF^^^N^0^^German Railways Zone F DE Off^German Railways Zone F DE Off^50.03^8.567^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QYF^German Railways Zone F DE Off^QYF|0|German Railways Zone F DE Off|German Railways Zone F DE Off^QYF^^O^^^429^Germany
 QYH^^^N^0^^Hengelo NL Railway Station^Hengelo NL Railway Station^52.27^6.767^S^RSTN^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^QYH^Hengelo NL Railway Station^QYH|0|Hengelo NL Railway Station|Hengelo NL Railway Station^QYH^^CR^^^461^Netherlands
-QYJ^^^N^0^^German Railways Zone J DE Off^German Railways Zone J DE Off^49^8^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QYJ^^^^^O^^^429^Germany
-QYS^^^N^0^^Yasoudj IR Off^Yasoudj IR Off^30.700478^51.545094^X^XXXX^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^QYS^^^^^O^^^632^Iran
+QYJ^^^N^0^^German Railways Zone J DE Off^German Railways Zone J DE Off^49^8^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QYJ^German Railways Zone J DE Off^QYJ|0|German Railways Zone J DE Off|German Railways Zone J DE Off^QYJ^^O^^^429^Germany
+QYS^^^N^0^^Yasoudj IR Off^Yasoudj IR Off^30.700478^51.545094^P^PPLC^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^QYS^Yasoudj IR Off^QYS|0|Yasoudj IR Off|Yasoudj IR Off^QYS^^O^^^632^Iran
 QZC^^^N^0^^Smiggin Holes NS AU Bus Statio^Smiggin Holes NS AU Bus Statio^-36.5^148.3^S^BUSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^QZC^Smiggin Holes NS AU Bus Statio^QZC|0|Smiggin Holes NS AU Bus Statio|Smiggin Holes NS AU Bus Statio^QZC^NS^CB^^^951^Nova Scotia
-QZF^^^N^0^^Font Romeu FR Font Romeu^Font Romeu FR Font Romeu^42.5167^2.05^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QZF^^^^^O^^^427^France
-QZH^^^N^0^^Les Angles FR Les Angles^Les Angles FR Les Angles^42.5833^2.08333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QZH^^^^^O^^^427^France
-QZK^^^N^0^^Mantsala FI Mantsala^Mantsala FI Mantsala^60.65^25.25^X^XXXX^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QZK^^^^^O^^^425^Finland
+QZF^^^N^0^^Font Romeu FR Font Romeu^Font Romeu FR Font Romeu^42.5167^2.05^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QZF^Font Romeu FR Font Romeu^QZF|0|Font Romeu FR Font Romeu|Font Romeu FR Font Romeu^QZF^^O^^^427^France
+QZH^^^N^0^^Les Angles FR Les Angles^Les Angles FR Les Angles^42.5833^2.08333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^QZH^Les Angles FR Les Angles^QZH|0|Les Angles FR Les Angles|Les Angles FR Les Angles^QZH^^O^^^427^France
+QZK^^^N^0^^Mantsala FI Mantsala^Mantsala FI Mantsala^60.65^25.25^P^PPLC^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^QZK^Mantsala FI Mantsala^QZK|0|Mantsala FI Mantsala|Mantsala FI Mantsala^QZK^^O^^^425^Finland
 QZM^^^N^0^^Bullocks Flat NS AU Bus Statio^Bullocks Flat NS AU Bus Statio^-20.83^144.2^S^BUSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Brisbane^^^^-1^QZM^Bullocks Flat NS AU Bus Statio^QZM|0|Bullocks Flat NS AU Bus Statio|Bullocks Flat NS AU Bus Statio^QZM^NS^CB^^^951^Nova Scotia
-QZS^^^N^0^^Soroya NO^Soroya NO^70.6^22.77^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QZS^^^^^O^^^465^Norway
-QZT^^^N^0^^Zawia LY Zawia^Zawia LY Zawia^32.17^22.283^X^XXXX^^^^^LY^^Libya^Africa^^^^^^^^^^^^Africa/Tripoli^^^^-1^QZT^^^^^O^^^538^Libya
-QZW^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^41.62^-88.2^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QZW^^^^^O^^^^
-QZX^^^N^0^^Fictitious Point Utc ZZ Fictit^Fictitious Point Utc ZZ Fictit^41.62^-88.2^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QZX^^^^^O^^^^
-QZY^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^41.62^-88.2^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QZY^^^^^O^^^^
+QZS^^^N^0^^Soroya NO^Soroya NO^70.6^22.77^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^QZS^Soroya NO^QZS|0|Soroya NO|Soroya NO^QZS^^O^^^465^Norway
+QZT^^^N^0^^Zawia LY Zawia^Zawia LY Zawia^32.17^22.283^P^PPLC^^^^^LY^^Libya^Africa^^^^^^^^^^^^Africa/Tripoli^^^^-1^QZT^Zawia LY Zawia^QZT|0|Zawia LY Zawia|Zawia LY Zawia^QZT^^O^^^538^Libya
+QZW^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^41.62^-88.2^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QZW^Fictitious Point ZZ Fictitious^QZW|0|Fictitious Point ZZ Fictitious|Fictitious Point ZZ Fictitious^QZW^^O^^^^
+QZX^^^N^0^^Fictitious Point Utc ZZ Fictit^Fictitious Point Utc ZZ Fictit^41.62^-88.2^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QZX^Fictitious Point Utc ZZ Fictit^QZX|0|Fictitious Point Utc ZZ Fictit|Fictitious Point Utc ZZ Fictit^QZX^^O^^^^
+QZY^^^N^0^^Fictitious Point ZZ Fictitious^Fictitious Point ZZ Fictitious^41.62^-88.2^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Chicago^^^^-1^QZY^Fictitious Point ZZ Fictitious^QZY|0|Fictitious Point ZZ Fictitious|Fictitious Point ZZ Fictitious^QZY^^O^^^^
 RCK^^^N^0^^Rockdale TX US Hh Coffield Reg^Rockdale TX US Hh Coffield Reg^30.65^-97^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^RCK^Rockdale TX US Hh Coffield Reg^RCK|0|Rockdale TX US Hh Coffield Reg|Rockdale TX US Hh Coffield Reg^RCK^TX^CA^^^74^Texas
 REE^^^N^0^^Lubbock TX US Reese Airpark^Lubbock TX US Reese Airpark^33.49^-101.8^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^LBB^^^^TX^A^^^74^Texas
 RLI^^^N^0^^Anniston AL US Reilly Ahp^Anniston AL US Reilly Ahp^33.63^-85.97^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^ANB^^^^AL^H^^^51^Alabama
@@ -387,9 +387,9 @@ RLR^^^N^0^^Isalo MG Relais De La Reine^Isalo MG Relais De La Reine^-22.6453^45.3
 RON^^^N^0^^Paipa CO Juan Jose Rondon^Paipa CO Juan Jose Rondon^6.3^-71.08^S^AIRP^^^^^CO^^Colombia^South America^^^^^^^^^^^^America/Bogota^^^^-1^RON^Paipa CO Juan Jose Rondon^RON|0|Paipa CO Juan Jose Rondon|Paipa CO Juan Jose Rondon^RON^^CA^^^327^Colombia
 RRL^^^N^0^^Merrill WI US Municipal^Merrill WI US Municipal^45.18^-89.68^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^RRL^Merrill WI US Municipal^RRL|0|Merrill WI US Municipal|Merrill WI US Municipal^RRL^WI^CA^^^45^Wisconsin
 RSE^^^N^0^^Sydney NS AU Rose Bay Spb^Sydney NS AU Rose Bay Spb^-33.8^151.2^S^AIRP^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^SYD^^^^NS^A^^^951^Nova Scotia
-RSY^^^N^0^^Roissy FR^Roissy FR^48.7833^-2.65^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^RSY^^^^^O^^^427^France
+RSY^^^N^0^^Roissy FR^Roissy FR^48.7833^-2.65^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^RSY^Roissy FR^RSY|0|Roissy FR|Roissy FR^RSY^^O^^^427^France
 RTL^^^N^0^^Spirit Lake IA US Municipal^Spirit Lake IA US Municipal^43.42^-95.1^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^RTL^Spirit Lake IA US Municipal^RTL|0|Spirit Lake IA US Municipal|Spirit Lake IA US Municipal^RTL^IA^CA^^^61^Iowa
-RWP^^^N^0^^Rawalpindi PK Off^Rawalpindi PK Off^33.58^73.05^X^XXXX^^^^^PK^^Pakistan^Asia^^^^^^^^^^^^Asia/Karachi^^^^-1^RWP^^^^^O^^^764^Pakistan
+RWP^^^N^0^^Rawalpindi PK Off^Rawalpindi PK Off^33.58^73.05^P^PPLC^^^^^PK^^Pakistan^Asia^^^^^^^^^^^^Asia/Karachi^^^^-1^RWP^Rawalpindi PK Off^RWP|0|Rawalpindi PK Off|Rawalpindi PK Off^RWP^^O^^^764^Pakistan
 SJG^^^N^0^^San Pedro De Jagua CO^San Pedro De Jagua CO^4.65^-73.33^S^AIRP^^^^^CO^^Colombia^South America^^^^^^^^^^^^America/Bogota^^^^-1^SJG^San Pedro De Jagua CO^SJG|0|San Pedro De Jagua CO|San Pedro De Jagua CO^SJG^^CA^^^327^Colombia
 SLO^^^N^0^^Salem IL US Leckrone^Salem IL US Leckrone^38.62^-88.93^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^SLO^Salem IL US Leckrone^SLO|0|Salem IL US Leckrone|Salem IL US Leckrone^SLO^IL^CA^^^41^Illinois
 SPO^^^N^0^^San Pablo ES Railway Station^San Pablo ES Railway Station^37.42^-5.9^S^RSTN^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^SPO^San Pablo ES Railway Station^SPO|0|San Pablo ES Railway Station|San Pablo ES Railway Station^SPO^^CR^^^482^Spain
@@ -397,7 +397,7 @@ SPQ^^^N^0^^San Pedro CA US Catalina Air S^San Pedro CA US Catalina Air S^33.75^-
 SQB^^^N^0^^Piedras CO Santa Ana^Piedras CO Santa Ana^4.767^-75.95^S^AIRP^^^^^CO^^Colombia^South America^^^^^^^^^^^^America/Bogota^^^^-1^SQB^Piedras CO Santa Ana^SQB|0|Piedras CO Santa Ana|Piedras CO Santa Ana^SQB^^CA^^^327^Colombia
 SRU^^^N^0^^Santa Cruz CA US Skypark^Santa Cruz CA US Skypark^36.97^-122^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^SRU^Santa Cruz CA US Skypark^SRU|0|Santa Cruz CA US Skypark|Santa Cruz CA US Skypark^SRU^CA^CA^^^91^California
 SSU^^^N^0^^White Sulphur WV US Greenbrier^White Sulphur WV US Greenbrier^46.55^-110.9^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^SSU^White Sulphur WV US Greenbrier^SSU|0|White Sulphur WV US Greenbrier|White Sulphur WV US Greenbrier^SSU^WV^CA^^^39^West Virginia
-SWI^^^N^0^^Reverse Office ZZ Reverse Offi^Reverse Office ZZ Reverse Offi^51.57^-1.783^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^SWI^^^^^O^^^^
+SWI^^^N^0^^Reverse Office ZZ Reverse Offi^Reverse Office ZZ Reverse Offi^51.57^-1.783^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^Europe/London^^^^-1^SWI^Reverse Office ZZ Reverse Offi^SWI|0|Reverse Office ZZ Reverse Offi|Reverse Office ZZ Reverse Offi^SWI^^O^^^^
 SYV^^^N^0^^Sylvester GA US^Sylvester GA US^31.52^-83.83^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^SYV^Sylvester GA US^SYV|0|Sylvester GA US|Sylvester GA US^SYV^GA^CA^^^34^Georgia
 TFR^^^N^0^^Ramadan City EG Wadi Al Jandal^Ramadan City EG Wadi Al Jandal^30.13^31.41^S^AIRP^^^^^EG^^Egypt^Africa^^^^^^^^^^^^Africa/Cairo^^^^-1^TFR^Ramadan City EG Wadi Al Jandal^TFR|0|Ramadan City EG Wadi Al Jandal|Ramadan City EG Wadi Al Jandal^TFR^^CA^^^591^Egypt
 THM^^^N^0^^Thompson Falls MT US^Thompson Falls MT US^47.6^-115.4^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^THM^Thompson Falls MT US^THM|0|Thompson Falls MT US|Thompson Falls MT US^THM^MT^CA^^^84^Montana
@@ -407,67 +407,67 @@ TWE^^^N^0^^Taylor AK US^Taylor AK US^56.17^-120.7^S^AIRP^^^^^US^^United States^N
 UCE^^^N^0^^Eunice LA US^Eunice LA US^30.5^-92.42^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^UCE^Eunice LA US^UCE|0|Eunice LA US|Eunice LA US^UCE^LA^CA^^^72^Louisiana
 UJN^^^N^0^^Uljin KR^Uljin KR^36.7769^129.462^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^UJN^Uljin KR^UJN|0|Uljin KR|Uljin KR^^^C^^^778^South Korea
 UKN^^^N^0^^Waukon IA US Municipal^Waukon IA US Municipal^43.27^-91.48^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^UKN^Waukon IA US Municipal^UKN|0|Waukon IA US Municipal|Waukon IA US Municipal^UKN^IA^CA^^^61^Iowa
-UPC^^^N^0^^Puerto De La Cruz ES^Puerto De La Cruz ES^28.4^-16.55^X^XXXX^^^^^ES^^Spain^Europe^^^^^^^^^^^^Atlantic/Canary^^^^-1^UPC^^^^^O^^^482^Spain
+UPC^^^N^0^^Puerto De La Cruz ES^Puerto De La Cruz ES^28.4^-16.55^P^PPLC^^^^^ES^^Spain^Europe^^^^^^^^^^^^Atlantic/Canary^^^^-1^UPC^Puerto De La Cruz ES^UPC|0|Puerto De La Cruz ES|Puerto De La Cruz ES^UPC^^O^^^482^Spain
 URN^^^N^0^^Urgun AF^Urgun AF^34.52^69.2^S^AIRP^^^^^AF^^Afghanistan^Asia^^^^^^^^^^^^Asia/Kabul^^^^-1^URN^Urgun AF^URN|0|Urgun AF|Urgun AF^URN^^CA^^^701^Afghanistan
 UWA^^^N^0^^Ware MA US^Ware MA US^42.25^-72.23^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^UWA^Ware MA US^UWA|0|Ware MA US|Ware MA US^UWA^MA^CA^^^13^Massachusetts
 WBJ^^^N^0^^Won Ju KR^Won Ju KR^37.438081^127.960383^S^AIRP^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^WBJ^Won Ju KR^WBJ|0|Won Ju KR|Won Ju KR^WBJ^^CA^^^778^South Korea
 WBN^^^N^0^^Woburn MA US Cummings Park^Woburn MA US Cummings Park^42.47^-71.15^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^WBN^Woburn MA US Cummings Park^WBN|0|Woburn MA US Cummings Park|Woburn MA US Cummings Park^WBN^MA^CA^^^13^Massachusetts
-WCC^^^N^0^^West Coast Cities CA US^West Coast Cities CA US^37.77493^-122.41942^X^XXXX^^2013-07-01^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^WCC^^^^CA^O^^^91^California
-WGZ^^^N^0^^Manly NS AU Manly^Manly NS AU Manly^-33.8^151.3^X^XXXX^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^WGZ^^^^NS^O^^^951^Nova Scotia
+WCC^^^N^0^^West Coast Cities CA US^West Coast Cities CA US^37.77493^-122.41942^P^PPLC^^2013-07-01^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^WCC^West Coast Cities CA US^WCC|0|West Coast Cities CA US|West Coast Cities CA US^WCC^CA^O^^^91^California
+WGZ^^^N^0^^Manly NS AU Manly^Manly NS AU Manly^-33.8^151.3^P^PPLC^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^WGZ^Manly NS AU Manly^WGZ|0|Manly NS AU Manly|Manly NS AU Manly^WGZ^NS^O^^^951^Nova Scotia
 WKM^^^N^0^^Wankie Rhodesia ZW^Wankie Rhodesia ZW^-18.629872^27.021042^S^AIRP^^^^^ZW^^Zimbabwe^Africa^^^^^^^^^^^^Africa/Harare^^^^-1^WKM^Wankie Rhodesia ZW^WKM|0|Wankie Rhodesia ZW|Wankie Rhodesia ZW^WKM^^CA^^^565^Zimbabwe
 WLM^^^N^0^^Waltham MA US^Waltham MA US^42.38^-71.25^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^WLM^Waltham MA US^WLM|0|Waltham MA US|Waltham MA US^WLM^MA^CA^^^13^Massachusetts
 WOB^^^N^0^^Suttonheath GB Woodbridge^Suttonheath GB Woodbridge^52.1^1.317^S^AIRP^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^WOB^Suttonheath GB Woodbridge^WOB|0|Suttonheath GB Woodbridge|Suttonheath GB Woodbridge^WOB^^CA^^^493^United Kingdom
-WPS^^^N^0^^Persepolis IR Off^Persepolis IR Off^29.95^-52.9833^X^XXXX^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^WPS^^^^^O^^^632^Iran
+WPS^^^N^0^^Persepolis IR Off^Persepolis IR Off^29.95^-52.9833^P^PPLC^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^WPS^Persepolis IR Off^WPS|0|Persepolis IR Off|Persepolis IR Off^WPS^^O^^^632^Iran
 WWG^^^N^0^^Al Koude OM^Al Koude OM^23.54^58.19^P^PPLC^^^^^OM^^Oman^Asia^^^^^^^^^^^^Asia/Muscat^^^^-1^WWG^Al Koude OM^WWG|0|Al Koude OM|Al Koude OM^^^C^^^658^Oman
-XAI^^^N^0^^Aix Les Bains FR Off^Aix Les Bains FR Off^45.6833^-5.88333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XAI^^^^^O^^^427^France
+XAI^^^N^0^^Aix Les Bains FR Off^Aix Les Bains FR Off^45.6833^-5.88333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XAI^Aix Les Bains FR Off^XAI|0|Aix Les Bains FR Off|Aix Les Bains FR Off^XAI^^O^^^427^France
 XAK^^^N^0^^Herning DK Herning Railway Stn^Herning DK Herning Railway Stn^56.13^8.983^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^ZRY^^^^^R^^^419^Denmark
-XBF^^^N^0^^Bellegarde FR Bellegarde^Bellegarde FR Bellegarde^43.75^4.51667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBF^^^^^O^^^427^France
-XBH^^^N^0^^Bethune FR Bethune^Bethune FR Bethune^50.5333^2.63333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBH^^^^^O^^^427^France
-XBU^^^N^0^^Banyuls Sur Mer FR Banyuls Sur^Banyuls Sur Mer FR Banyuls Sur^42.4833^3.13333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBU^^^^^O^^^427^France
-XBX^^^N^0^^Bernay FR Bernay^Bernay FR Bernay^49.1^0.6^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBX^^^^^O^^^427^France
-XCA^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^45.32^-65.88^X^XXXX^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Moncton^^^^-1^XCA^^^^^O^^^^
-XCE^^^N^0^^Cerbere FR Cerbere^Cerbere FR Cerbere^42.45^0.73333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCE^^^^^O^^^427^France
-XCF^^^N^0^^Chamonix Mont Blanc FR Chamoni^Chamonix Mont Blanc FR Chamoni^45.9167^6.86667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCF^^^^^O^^^427^France
-XCK^^^N^0^^St Die FR St Die^St Die FR St Die^48.2833^6.95^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCK^^^^^O^^^427^France
-XCP^^^N^0^^Compiegne FR Compiegne^Compiegne FR Compiegne^49.4167^2.83333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCP^^^^^O^^^427^France
-XDC^^^N^0^^Dives Cabourg FR Dives Cabourg^Dives Cabourg FR Dives Cabourg^49.2833^0.13333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XDC^^^^^O^^^427^France
-XDI^^^N^0^^Digne FR Digne^Digne FR Digne^44.1^6.23333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XDI^^^^^O^^^427^France
-XEB^^^N^0^^Evian Les Bains FR Evian Les B^Evian Les Bains FR Evian Les B^46.3833^6.58333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XEB^^^^^O^^^427^France
+XBF^^^N^0^^Bellegarde FR Bellegarde^Bellegarde FR Bellegarde^43.75^4.51667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBF^Bellegarde FR Bellegarde^XBF|0|Bellegarde FR Bellegarde|Bellegarde FR Bellegarde^XBF^^O^^^427^France
+XBH^^^N^0^^Bethune FR Bethune^Bethune FR Bethune^50.5333^2.63333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBH^Bethune FR Bethune^XBH|0|Bethune FR Bethune|Bethune FR Bethune^XBH^^O^^^427^France
+XBU^^^N^0^^Banyuls Sur Mer FR Banyuls Sur^Banyuls Sur Mer FR Banyuls Sur^42.4833^3.13333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBU^Banyuls Sur Mer FR Banyuls Sur^XBU|0|Banyuls Sur Mer FR Banyuls Sur|Banyuls Sur Mer FR Banyuls Sur^XBU^^O^^^427^France
+XBX^^^N^0^^Bernay FR Bernay^Bernay FR Bernay^49.1^0.6^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XBX^Bernay FR Bernay^XBX|0|Bernay FR Bernay|Bernay FR Bernay^XBX^^O^^^427^France
+XCA^^^N^0^^Fictitious Point ZZ^Fictitious Point ZZ^45.32^-65.88^P^PPLC^^^^^ZZ^^Not relevant/available^Not relevant/available^^^^^^^^^^^^America/Moncton^^^^-1^XCA^Fictitious Point ZZ^XCA|0|Fictitious Point ZZ|Fictitious Point ZZ^XCA^^O^^^^
+XCE^^^N^0^^Cerbere FR Cerbere^Cerbere FR Cerbere^42.45^0.73333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCE^Cerbere FR Cerbere^XCE|0|Cerbere FR Cerbere|Cerbere FR Cerbere^XCE^^O^^^427^France
+XCF^^^N^0^^Chamonix Mont Blanc FR Chamoni^Chamonix Mont Blanc FR Chamoni^45.9167^6.86667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCF^Chamonix Mont Blanc FR Chamoni^XCF|0|Chamonix Mont Blanc FR Chamoni|Chamonix Mont Blanc FR Chamoni^XCF^^O^^^427^France
+XCK^^^N^0^^St Die FR St Die^St Die FR St Die^48.2833^6.95^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCK^St Die FR St Die^XCK|0|St Die FR St Die|St Die FR St Die^XCK^^O^^^427^France
+XCP^^^N^0^^Compiegne FR Compiegne^Compiegne FR Compiegne^49.4167^2.83333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XCP^Compiegne FR Compiegne^XCP|0|Compiegne FR Compiegne|Compiegne FR Compiegne^XCP^^O^^^427^France
+XDC^^^N^0^^Dives Cabourg FR Dives Cabourg^Dives Cabourg FR Dives Cabourg^49.2833^0.13333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XDC^Dives Cabourg FR Dives Cabourg^XDC|0|Dives Cabourg FR Dives Cabourg|Dives Cabourg FR Dives Cabourg^XDC^^O^^^427^France
+XDI^^^N^0^^Digne FR Digne^Digne FR Digne^44.1^6.23333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XDI^Digne FR Digne^XDI|0|Digne FR Digne|Digne FR Digne^XDI^^O^^^427^France
+XEB^^^N^0^^Evian Les Bains FR Evian Les B^Evian Les Bains FR Evian Les B^46.3833^6.58333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XEB^Evian Les Bains FR Evian Les B^XEB|0|Evian Les Bains FR Evian Les B|Evian Les Bains FR Evian Les B^XEB^^O^^^427^France
 XEK^^^N^0^^Melville SK CA Railway Station^Melville SK CA Railway Station^50.95^-102.8^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Regina^^^^-1^XEK^Melville SK CA Railway Station^XEK|0|Melville SK CA Railway Station|Melville SK CA Railway Station^XEK^SK^CR^^^921^Saskatchewan
 XEM^^^N^0^^New Richmond QC CA Railway Sta^New Richmond QC CA Railway Sta^48.2^-65.87^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Moncton^^^^-1^XEM^New Richmond QC CA Railway Sta^XEM|0|New Richmond QC CA Railway Sta|New Richmond QC CA Railway Sta^XEM^QC^CR^^^941^Quebec
-XEP^^^N^0^^Epernay FR Epernay^Epernay FR Epernay^49.05^3.95^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XEP^^^^^O^^^427^France
+XEP^^^N^0^^Epernay FR Epernay^Epernay FR Epernay^49.05^3.95^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XEP^Epernay FR Epernay^XEP|0|Epernay FR Epernay|Epernay FR Epernay^XEP^^O^^^427^France
 XEU^^^N^0^^Dubai AE Hyatt Rgncy Ey Bus St^Dubai AE Hyatt Rgncy Ey Bus St^59.65^0.2986^S^BUSTN^^^^^AE^^United Arab Emirates^Asia^^^^^^^^^^^^Asia/Dubai^^^^-1^DXB^^^^^B^^^678^United Arab Emirates
 XEV^^^N^0^^Stockholm SE C Rail Stn^Stockholm SE C Rail Stn^59.32^0.3008^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^STO^^^^^R^^^484^Sweden
 XFD^^^N^0^^Stratford ON CA Railway Statio^Stratford ON CA Railway Statio^43.37^-81^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XFD^Stratford ON CA Railway Statio^XFD|0|Stratford ON CA Railway Statio|Stratford ON CA Railway Statio^XFD^ON^CR^^^936^Ontario
 XFH^^^N^0^^Strangnas SE Railway Station^Strangnas SE Railway Station^59.37^0.2836^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XFH^Strangnas SE Railway Station^XFH|0|Strangnas SE Railway Station|Strangnas SE Railway Station^XFH^^CR^^^484^Sweden
-XFT^^^N^0^^Fo Tan HK Fo Tan^Fo Tan HK Fo Tan^22.38^114.2^X^XXXX^^^^^HK^^Hong Kong^Asia^^^^^^^^^^^^Asia/Hong_Kong^^^^-1^XFT^^^^^O^^^729^Hong Kong
-XFX^^^N^0^^Foix FR Foix^Foix FR Foix^42.9667^1.6^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XFX^^^^^O^^^427^France
+XFT^^^N^0^^Fo Tan HK Fo Tan^Fo Tan HK Fo Tan^22.38^114.2^P^PPLC^^^^^HK^^Hong Kong^Asia^^^^^^^^^^^^Asia/Hong_Kong^^^^-1^XFT^Fo Tan HK Fo Tan^XFT|0|Fo Tan HK Fo Tan|Fo Tan HK Fo Tan^XFT^^O^^^729^Hong Kong
+XFX^^^N^0^^Foix FR Foix^Foix FR Foix^42.9667^1.6^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XFX^Foix FR Foix^XFX|0|Foix FR Foix|Foix FR Foix^XFX^^O^^^427^France
 XGC^^^N^0^^Lund SE Lund C Railway Station^Lund SE Lund C Railway Station^55.7^0.2197^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XGC^Lund SE Lund C Railway Station^XGC|0|Lund SE Lund C Railway Station|Lund SE Lund C Railway Station^XGC^^CR^^^484^Sweden
-XGF^^^N^0^^St Gervais Le Fayet FR St Gerv^St Gervais Le Fayet FR St Gerv^45.9^6.71667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XGF^^^^^O^^^427^France
+XGF^^^N^0^^St Gervais Le Fayet FR St Gerv^St Gervais Le Fayet FR St Gerv^45.9^6.71667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XGF^St Gervais Le Fayet FR St Gerv^XGF|0|St Gervais Le Fayet FR St Gerv|St Gervais Le Fayet FR St Gerv^XGF^^O^^^427^France
 XGH^^^N^0^^Flam NO Railway Station^Flam NO Railway Station^60.86^7.113^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XGH^Flam NO Railway Station^XGH|0|Flam NO Railway Station|Flam NO Railway Station^XGH^^CR^^^465^Norway
 XGI^^^N^0^^Andalsnes NO Railway Station^Andalsnes NO Railway Station^62.57^7.69^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XGI^Andalsnes NO Railway Station^XGI|0|Andalsnes NO Railway Station|Andalsnes NO Railway Station^XGI^^CR^^^465^Norway
 XGK^^^N^0^^Coteau QC CA Railway Station^Coteau QC CA Railway Station^45.27^-74.27^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XGK^Coteau QC CA Railway Station^XGK|0|Coteau QC CA Railway Station|Coteau QC CA Railway Station^XGK^QC^CR^^^941^Quebec
-XGO^^^N^0^^Santiago RS BR Santiago^Santiago RS BR Santiago^-29.8^-55.73^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XGO^^^^RS^O^^^316^Brazil
+XGO^^^N^0^^Santiago RS BR Santiago^Santiago RS BR Santiago^-29.8^-55.73^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XGO^Santiago RS BR Santiago^XGO|0|Santiago RS BR Santiago|Santiago RS BR Santiago^XGO^RS^O^^^316^Brazil
 XGP^^^N^0^^Dombas NO Railway Station^Dombas NO Railway Station^62.07^9.126^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XGP^Dombas NO Railway Station^XGP|0|Dombas NO Railway Station|Dombas NO Railway Station^XGP^^CR^^^465^Norway
 XGS^^^N^0^^Gjerstad NO Railway Station^Gjerstad NO Railway Station^58.87^9^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XGS^Gjerstad NO Railway Station^XGS|0|Gjerstad NO Railway Station|Gjerstad NO Railway Station^XGS^^CR^^^465^Norway
-XGT^^^N^0^^Gueret FR Gueret^Gueret FR Gueret^46.1667^1.86667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XGT^^^^^O^^^427^France
-XGV^^^N^0^^St Gilles Croix De Vie FR St G^St Gilles Croix De Vie FR St G^46.6833^-1.93333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XGV^^^^^O^^^427^France
+XGT^^^N^0^^Gueret FR Gueret^Gueret FR Gueret^46.1667^1.86667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XGT^Gueret FR Gueret^XGT|0|Gueret FR Gueret|Gueret FR Gueret^XGT^^O^^^427^France
+XGV^^^N^0^^St Gilles Croix De Vie FR St G^St Gilles Croix De Vie FR St G^46.6833^-1.93333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XGV^St Gilles Croix De Vie FR St G^XGV|0|St Gilles Croix De Vie FR St G|St Gilles Croix De Vie FR St G^XGV^^O^^^427^France
 XHA^^^N^0^^Yllasjarvi FI Bus Station^Yllasjarvi FI Bus Station^67.52^24.3^S^BUSTN^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^XHA^Yllasjarvi FI Bus Station^XHA|0|Yllasjarvi FI Bus Station|Yllasjarvi FI Bus Station^XHA^^CB^^^425^Finland
 XHC^^^N^0^^Akaslompolo FI Bus Station^Akaslompolo FI Bus Station^67.6^24.13^S^BUSTN^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^XHC^Akaslompolo FI Bus Station^XHC|0|Akaslompolo FI Bus Station|Akaslompolo FI Bus Station^XHC^^CB^^^425^Finland
-XHE^^^N^0^^Hyeres FR Off^Hyeres FR Off^43.1333^-6.15^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XHE^^^^^O^^^427^France
+XHE^^^N^0^^Hyeres FR Off^Hyeres FR Off^43.1333^-6.15^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XHE^Hyeres FR Off^XHE|0|Hyeres FR Off|Hyeres FR Off^XHE^^O^^^427^France
 XHF^^^N^0^^Honefoss NO Railway Station^Honefoss NO Railway Station^60.17^10.25^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XHF^Honefoss NO Railway Station^XHF|0|Honefoss NO Railway Station|Honefoss NO Railway Station^XHF^^CR^^^465^Norway
 XHH^^^N^0^^Boulder CO US Bus Station^Boulder CO US Bus Station^40.03^-105.3^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^WBU^^^^CO^B^^^82^Colorado
 XHL^^^N^0^^Nelaug NO Railway Station^Nelaug NO Railway Station^58.66^8.629^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XHL^Nelaug NO Railway Station^XHL|0|Nelaug NO Railway Station|Nelaug NO Railway Station^XHL^^CR^^^465^Norway
-XHR^^^N^0^^Timbo SC BR Timbo^Timbo SC BR Timbo^-26.93^-49.05^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XHR^^^^SC^O^^^37^South Carolina
+XHR^^^N^0^^Timbo SC BR Timbo^Timbo SC BR Timbo^-26.93^-49.05^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XHR^Timbo SC BR Timbo^XHR|0|Timbo SC BR Timbo|Timbo SC BR Timbo^XHR^SC^O^^^37^South Carolina
 XHS^^^N^0^^Chemainus BC CA Railway Statio^Chemainus BC CA Railway Statio^51.83^-124^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Vancouver^^^^-1^XHS^Chemainus BC CA Railway Statio^XHS|0|Chemainus BC CA Railway Statio|Chemainus BC CA Railway Statio^XHS^BC^CR^^^906^British Columbia
 XHT^^^N^0^^Arna Rail Station NO Railway S^Arna Rail Station NO Railway S^60.42^5.464^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XHT^Arna Rail Station NO Railway S^XHT|0|Arna Rail Station NO Railway S|Arna Rail Station NO Railway S^XHT^^CR^^^465^Norway
 XHW^^^N^0^^Alice Springs NT AU Railway St^Alice Springs NT AU Railway St^-23.7^133.9^S^RSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Darwin^^^^-1^ASP^^^^NT^R^^^931^Northwest Territories
 XHX^^^N^0^^Adelaide SA AU Keswick Railway^Adelaide SA AU Keswick Railway^-34.93^138.6^S^RSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Adelaide^^^^-1^ADL^^^^SA^R^^^802^Australia
-XHZ^^^N^0^^Hotel Generic GB Hotel Generic^Hotel Generic GB Hotel Generic^51^0.0166667^X^XXXX^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^XHZ^^^^^O^^^493^United Kingdom
-XIH^^^N^0^^Khan Al Baghdadi IQ Off Line P^Khan Al Baghdadi IQ Off Line P^35^-43^X^XXXX^^^^^IQ^^Iraq^Asia^^^^^^^^^^^^Asia/Baghdad^^^^-1^XIH^^^^^O^^^634^Iraq
+XHZ^^^N^0^^Hotel Generic GB Hotel Generic^Hotel Generic GB Hotel Generic^51^0.0166667^P^PPLC^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^XHZ^Hotel Generic GB Hotel Generic^XHZ|0|Hotel Generic GB Hotel Generic|Hotel Generic GB Hotel Generic^XHZ^^O^^^493^United Kingdom
+XIH^^^N^0^^Khan Al Baghdadi IQ Off Line P^Khan Al Baghdadi IQ Off Line P^35^-43^P^PPLC^^^^^IQ^^Iraq^Asia^^^^^^^^^^^^Asia/Baghdad^^^^-1^XIH^Khan Al Baghdadi IQ Off Line P^XIH|0|Khan Al Baghdadi IQ Off Line P|Khan Al Baghdadi IQ Off Line P^XIH^^O^^^634^Iraq
 XIP^^^N^0^^Woodstock ON CA Railway Statio^Woodstock ON CA Railway Statio^43.12^-80.77^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XIP^Woodstock ON CA Railway Statio^XIP|0|Woodstock ON CA Railway Statio|Woodstock ON CA Railway Statio^XIP^ON^CR^^^936^Ontario
 XIR^^^N^0^^Dresden DE Hbf Railway Station^Dresden DE Hbf Railway Station^51.13^13.77^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^DRS^^^^^R^^^429^Germany
-XIS^^^N^0^^Dioni SC BR Dionisio Cerqueira^Dioni SC BR Dionisio Cerqueira^-26.93^-49.05^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XIS^^^^SC^O^^^37^South Carolina
+XIS^^^N^0^^Dioni SC BR Dionisio Cerqueira^Dioni SC BR Dionisio Cerqueira^-26.93^-49.05^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XIS^Dioni SC BR Dionisio Cerqueira^XIS|0|Dioni SC BR Dionisio Cerqueira|Dioni SC BR Dionisio Cerqueira^XIS^SC^O^^^37^South Carolina
 XIU^^^N^0^^Erfurt DE Hbf Railway Station^Erfurt DE Hbf Railway Station^50.98^10.96^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ERF^^^^^R^^^429^Germany
 XIX^^^N^0^^Verona IT Porta Nuova Rail Stn^Verona IT Porta Nuova Rail Stn^45.42^10.97^S^RSTN^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^VRN^^^^^R^^^450^Italy
 XJB^^^N^0^^Barcelona ES Bus Station^Barcelona ES Bus Station^41.3^2.083^S^BUSTN^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^BCN^^^^^B^^^482^Spain
@@ -480,17 +480,17 @@ XJV^^^N^0^^Ostrava CZ Main Railway Statio^Ostrava CZ Main Railway Statio^49.85^1
 XKC^^^N^0^^Sandnes NO Railway Station^Sandnes NO Railway Station^58.85^5.734^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XKC^Sandnes NO Railway Station^XKC|0|Sandnes NO Railway Station|Sandnes NO Railway Station^XKC^^CR^^^465^Norway
 XKI^^^N^0^^Lillestrom NO Railway Station^Lillestrom NO Railway Station^59.95^11.04^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XKI^Lillestrom NO Railway Station^XKI|0|Lillestrom NO Railway Station|Lillestrom NO Railway Station^XKI^^CR^^^465^Norway
 XKJ^^^N^0^^Steinkjer NO Railway Station^Steinkjer NO Railway Station^64.01^11.49^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XKJ^Steinkjer NO Railway Station^XKJ|0|Steinkjer NO Railway Station|Steinkjer NO Railway Station^XKJ^^CR^^^465^Norway
-XKU^^^N^0^^Kusadasi TR Kusadasi^Kusadasi TR Kusadasi^37.8667^-27.25^X^XXXX^^^^^TR^^Turkey^Asia^^^^^^^^^^^^Europe/Istanbul^^^^-1^XKU^^^^^O^^^679^Turkey
+XKU^^^N^0^^Kusadasi TR Kusadasi^Kusadasi TR Kusadasi^37.8667^-27.25^P^PPLC^^^^^TR^^Turkey^Asia^^^^^^^^^^^^Europe/Istanbul^^^^-1^XKU^Kusadasi TR Kusadasi^XKU|0|Kusadasi TR Kusadasi|Kusadasi TR Kusadasi^XKU^^O^^^679^Turkey
 XKW^^^N^0^^Tonsberg NO Railway Station^Tonsberg NO Railway Station^59.27^10.41^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XKW^Tonsberg NO Railway Station^XKW|0|Tonsberg NO Railway Station|Tonsberg NO Railway Station^XKW^^CR^^^465^Norway
-XLH^^^N^0^^Luchon FR Luchon^Luchon FR Luchon^42.7833^0.6^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XLH^^^^^O^^^427^France
-XLI^^^N^0^^St Louis FR St Louis^St Louis FR St Louis^47.5833^7.56667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XLI^^^^^O^^^427^France
+XLH^^^N^0^^Luchon FR Luchon^Luchon FR Luchon^42.7833^0.6^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XLH^Luchon FR Luchon^XLH|0|Luchon FR Luchon|Luchon FR Luchon^XLH^^O^^^427^France
+XLI^^^N^0^^St Louis FR St Louis^St Louis FR St Louis^47.5833^7.56667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XLI^St Louis FR St Louis^XLI|0|St Louis FR St Louis|St Louis FR St Louis^XLI^^O^^^427^France
 XLP^^^N^0^^Matapedia QC CA Railway Statio^Matapedia QC CA Railway Statio^47.98^-66.97^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Moncton^^^^-1^XLP^Matapedia QC CA Railway Statio^XLP|0|Matapedia QC CA Railway Statio|Matapedia QC CA Railway Statio^XLP^QC^CR^^^941^Quebec
 XLY^^^N^0^^Aldershot ON CA Railway Statio^Aldershot ON CA Railway Statio^46.48^-84.5^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XLY^Aldershot ON CA Railway Statio^XLY|0|Aldershot ON CA Railway Statio|Aldershot ON CA Railway Statio^XLY^ON^CR^^^936^Ontario
 XNC^^^N^0^^Milan IT Cadorna Railway Stn^Milan IT Cadorna Railway Stn^45.63^8.733^S^RSTN^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^MIL^^^^^R^^^450^Italy
-XNH^^^N^0^^Nasiriyah IQ Off Line Point^Nasiriyah IQ Off Line Point^35^-43^X^XXXX^^^^^IQ^^Iraq^Asia^^^^^^^^^^^^Asia/Baghdad^^^^-1^XNH^^^^^O^^^634^Iraq
+XNH^^^N^0^^Nasiriyah IQ Off Line Point^Nasiriyah IQ Off Line Point^35^-43^P^PPLC^^^^^IQ^^Iraq^Asia^^^^^^^^^^^^Asia/Baghdad^^^^-1^XNH^Nasiriyah IQ Off Line Point^XNH|0|Nasiriyah IQ Off Line Point|Nasiriyah IQ Off Line Point^XNH^^O^^^634^Iraq
 XNK^^^N^0^^Newark GB North Gate Rail Stn^Newark GB North Gate Rail Stn^51.58^-0.05^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^XNK^Newark GB North Gate Rail Stn^XNK|0|Newark GB North Gate Rail Stn|Newark GB North Gate Rail Stn^XNK^^CR^^^493^United Kingdom
 XNM^^^N^0^^Nottingham GB Railway Station^Nottingham GB Railway Station^51.88^0.2333^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^NQT^^^^^R^^^493^United Kingdom
-XNS^^^N^0^^Ansan KR Ansan^Ansan KR Ansan^37^127^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^XNS^^^^^O^^^778^South Korea
+XNS^^^N^0^^Ansan KR Ansan^Ansan KR Ansan^37^127^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^XNS^Ansan KR Ansan^XNS|0|Ansan KR Ansan|Ansan KR Ansan^XNS^^O^^^778^South Korea
 XNY^^^N^0^^New York NY US 39th Street Fer^New York NY US 39th Street Fer^40.75^-74^S^PRT^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^NYC^^^^NY^P^^^22^New York
 XNZ^^^N^0^^Auckland NZ Ferry Port^Auckland NZ Ferry Port^-36.8667^174.667^S^PRT^^^^^NZ^^New Zealand^Oceania^^^^^^^^^^^^Pacific/Auckland^^^^-1^AKL^^^^^P^^^851^New Zealand
 XOA^^^N^0^^Aalbaek DK^Aalbaek DK^57.6^10.42^S^BUSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^XOA^Aalbaek DK^XOA|0|Aalbaek DK|Aalbaek DK^XOA^^CB^^^419^Denmark
@@ -500,30 +500,30 @@ XOL^^^N^0^^Myrdal NO Railway Station^Myrdal NO Railway Station^60.74^7.123^S^RST
 XOM^^^N^0^^Melbourne VI AU Ferry Port^Melbourne VI AU Ferry Port^-37.8167^144.917^S^PRT^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Melbourne^^^^-1^MEL^^^^VI^P^^^4^U.S. Virgin Islands
 XON^^^N^0^^Carleton QC CA Railway Station^Carleton QC CA Railway Station^48.13^-66.17^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Moncton^^^^-1^XON^Carleton QC CA Railway Station^XON|0|Carleton QC CA Railway Station|Carleton QC CA Railway Station^XON^QC^CR^^^941^Quebec
 XOO^^^N^0^^Soelden AT Bus Station^Soelden AT Bus Station^46.97^11.01^S^BUSTN^^^^^AT^^Austria^Europe^^^^^^^^^^^^Europe/Vienna^^^^-1^XOO^Soelden AT Bus Station^XOO|0|Soelden AT Bus Station|Soelden AT Bus Station^XOO^^CB^^^403^Austria
-XOT^^^N^0^^Marigot GP Marigot^Marigot GP Marigot^48.45^-4.417^X^XXXX^^^^^GP^^Guadeloupe^North America^^^^^^^^^^^^America/Guadeloupe^^^^-1^XOT^^^^^O^^^235^Guadeloupe
+XOT^^^N^0^^Marigot GP Marigot^Marigot GP Marigot^48.45^-4.417^P^PPLC^^^^^GP^^Guadeloupe^North America^^^^^^^^^^^^America/Guadeloupe^^^^-1^XOT^Marigot GP Marigot^XOT|0|Marigot GP Marigot|Marigot GP Marigot^XOT^^O^^^235^Guadeloupe
 XOV^^^N^0^^St Anton AT Bus Station^St Anton AT Bus Station^47.13^10.27^S^BUSTN^^^^^AT^^Austria^Europe^^^^^^^^^^^^Europe/Vienna^^^^-1^XOV^St Anton AT Bus Station^XOV|0|St Anton AT Bus Station|St Anton AT Bus Station^XOV^^CB^^^403^Austria
-XOX^^^N^0^^Cheonan KR Cheonan^Cheonan KR Cheonan^36.8^127.2^X^XXXX^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^XOX^^^^^O^^^778^South Korea
+XOX^^^N^0^^Cheonan KR Cheonan^Cheonan KR Cheonan^36.8^127.2^P^PPLC^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^XOX^Cheonan KR Cheonan^XOX|0|Cheonan KR Cheonan|Cheonan KR Cheonan^XOX^^O^^^778^South Korea
 XOZ^^^N^0^^Doha QA Free Zone^Doha QA Free Zone^24.83^50.92^S^AIRP^^^^^QA^^Qatar^Asia^^^^^^^^^^^^Asia/Qatar^^^^-1^DOH^^^^^A^^^664^Qatar
-XPM^^^N^0^^Pontorson Mt St Michel FR Pont^Pontorson Mt St Michel FR Pont^48.55^-1.51667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XPM^^^^^O^^^427^France
+XPM^^^N^0^^Pontorson Mt St Michel FR Pont^Pontorson Mt St Michel FR Pont^48.55^-1.51667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XPM^Pontorson Mt St Michel FR Pont^XPM|0|Pontorson Mt St Michel FR Pont|Pontorson Mt St Michel FR Pont^XPM^^O^^^427^France
 XPO^^^N^0^^Perth WA AU Ferry Port^Perth WA AU Ferry Port^-32.1^115.8^S^PRT^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Perth^^^^-1^PER^^^^WA^P^^^93^Washington
 XPQ^^^N^0^^Port Klang MY Ferry Port^Port Klang MY Ferry Port^3^101.4^S^BUSTN^^^^^MY^^Malaysia^Asia^^^^^^^^^^^^Asia/Kuala_Lumpur^^^^-1^XPQ^Port Klang MY Ferry Port^XPQ|0|Port Klang MY Ferry Port|Port Klang MY Ferry Port^XPQ^^CB^^^749^Malaysia
-XPV^^^N^0^^Port Vendres FR Port Vendres^Port Vendres FR Port Vendres^42.5167^3.11667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XPV^^^^^O^^^427^France
+XPV^^^N^0^^Port Vendres FR Port Vendres^Port Vendres FR Port Vendres^42.5167^3.11667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XPV^Port Vendres FR Port Vendres^XPV|0|Port Vendres FR Port Vendres|Port Vendres FR Port Vendres^XPV^^O^^^427^France
 XPY^^^N^0^^Pyha FI Bus Station^Pyha FI Bus Station^61.02^27.15^S^BUSTN^^^^^FI^^Finland^Europe^^^^^^^^^^^^Europe/Helsinki^^^^-1^XPY^Pyha FI Bus Station^XPY|0|Pyha FI Bus Station|Pyha FI Bus Station^XPY^^CB^^^425^Finland
 XPZ^^^N^0^^St Tropez FR St Tropez Harbour^St Tropez FR St Tropez Harbour^43.2^6.483^S^AIRH^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^LTT^^^^^H^^^427^France
 XQG^^^N^0^^Berwick Upon Tweed GB Railway^Berwick Upon Tweed GB Railway^55.95^-3.35^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^XQG^Berwick Upon Tweed GB Railway^XQG|0|Berwick Upon Tweed GB Railway|Berwick Upon Tweed GB Railway^XQG^^CR^^^493^United Kingdom
 XQN^^^N^0^^Brisbane QL AU Ferry Port^Brisbane QL AU Ferry Port^-27.5333^153.25^S^PRT^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Brisbane^^^^-1^BNE^^^^QL^P^^^802^Australia
-XQO^^^N^0^^Qom IR^Qom IR^34.6405^-50.8752^X^XXXX^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^XQO^^^^^O^^^632^Iran
-XQY^^^N^0^^St Quentin En Yvelines FR St Q^St Quentin En Yvelines FR St Q^48.8^2.133^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XQY^^^^^O^^^427^France
+XQO^^^N^0^^Qom IR^Qom IR^34.6405^-50.8752^P^PPLC^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^XQO^Qom IR^XQO|0|Qom IR|Qom IR^XQO^^O^^^632^Iran
+XQY^^^N^0^^St Quentin En Yvelines FR St Q^St Quentin En Yvelines FR St Q^48.8^2.133^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XQY^St Quentin En Yvelines FR St Q^XQY|0|St Quentin En Yvelines FR St Q|St Quentin En Yvelines FR St Q^XQY^^O^^^427^France
 XRA^^^N^0^^Graasten DK Bus Station^Graasten DK Bus Station^54.92^9.683^S^BUSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^XRA^Graasten DK Bus Station^XRA|0|Graasten DK Bus Station|Graasten DK Bus Station^XRA^^CB^^^419^Denmark
-XRB^^^N^0^^Ararangua SC BR Ararangua^Ararangua SC BR Ararangua^-26.93^-49.05^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XRB^^^^SC^O^^^37^South Carolina
+XRB^^^N^0^^Ararangua SC BR Ararangua^Ararangua SC BR Ararangua^-26.93^-49.05^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^XRB^Ararangua SC BR Ararangua^XRB|0|Ararangua SC BR Ararangua|Ararangua SC BR Ararangua^XRB^SC^O^^^37^South Carolina
 XRH^^^N^0^^Richmond NS AU Raaf Base^Richmond NS AU Raaf Base^-33.6^150.8^S^AIRP^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^XRH^Richmond NS AU Raaf Base^XRH|0|Richmond NS AU Raaf Base|Richmond NS AU Raaf Base^XRH^NS^CA^^^951^Nova Scotia
 XRK^^^N^0^^Moscow RU Paveletsky Rail Stn^Moscow RU Paveletsky Rail Stn^55.72^37.63^S^RSTN^^^^^RU^^Russia^Europe^^^^^^^^^^^^Europe/Moscow^^^^-1^MOW^^^^^R^^^770^Russia (Asian Part)
-XRM^^^N^0^^Armentieres FR Armentieres^Armentieres FR Armentieres^50.6833^2.88333^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XRM^^^^^O^^^427^France
+XRM^^^N^0^^Armentieres FR Armentieres^Armentieres FR Armentieres^50.6833^2.88333^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XRM^Armentieres FR Armentieres^XRM|0|Armentieres FR Armentieres|Armentieres FR Armentieres^XRM^^O^^^427^France
 XSZ^^^N^0^^Setubal PT^Setubal PT^46.45^-97.68^S^AIRP^^^^^PT^^Portugal^Europe^^^^^^^^^^^^America/Chicago^^^^-1^XSZ^Setubal PT^XSZ|0|Setubal PT|Setubal PT^XSZ^^CA^^^469^Portugal
 XTA^^^N^0^^Tianjin CN Econ TECH Dev Area^Tianjin CN Econ TECH Dev Area^39.06^117.7^S^RSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^TSN^^^^^R^^^713^China
 XTF^^^N^0^^Tianjin CN Port Free Trade Zon^Tianjin CN Port Free Trade Zon^39.04^117.7^S^RSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^TSN^^^^^R^^^713^China
-XTH^^^N^0^^Thionville FR Off^Thionville FR Off^49.3333^-6.16667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XTH^^^^^O^^^427^France
-XTV^^^N^0^^Tikrit IQ Off Line Point^Tikrit IQ Off Line Point^35^-43^X^XXXX^^^^^IQ^^Iraq^Asia^^^^^^^^^^^^Asia/Baghdad^^^^-1^XTV^^^^^O^^^634^Iraq
+XTH^^^N^0^^Thionville FR Off^Thionville FR Off^49.3333^-6.16667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XTH^Thionville FR Off^XTH|0|Thionville FR Off|Thionville FR Off^XTH^^O^^^427^France
+XTV^^^N^0^^Tikrit IQ Off Line Point^Tikrit IQ Off Line Point^35^-43^P^PPLC^^^^^IQ^^Iraq^Asia^^^^^^^^^^^^Asia/Baghdad^^^^-1^XTV^Tikrit IQ Off Line Point^XTV|0|Tikrit IQ Off Line Point|Tikrit IQ Off Line Point^XTV^^O^^^634^Iraq
 XTX^^^N^0^^Chengdu CN Port Free Trade Zon^Chengdu CN Port Free Trade Zon^30.7547^103.938^S^AIRP^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^CTU^^^^^A^^^713^China
 XUB^^^N^0^^Berkak NO Railway Station^Berkak NO Railway Station^62.82^10.01^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XUB^Berkak NO Railway Station^XUB|0|Berkak NO Railway Station|Berkak NO Railway Station^XUB^^CR^^^465^Norway
 XUE^^^N^0^^Heimdal NO Railway Station^Heimdal NO Railway Station^63.35^10.36^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XUE^Heimdal NO Railway Station^XUE|0|Heimdal NO Railway Station|Heimdal NO Railway Station^XUE^^CR^^^465^Norway
@@ -532,10 +532,10 @@ XUO^^^N^0^^Nordagutu NO Railway Station^Nordagutu NO Railway Station^59.42^9.323
 XUU^^^N^0^^Stjordal NO Railway Station^Stjordal NO Railway Station^63.47^10.91^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XUU^Stjordal NO Railway Station^XUU|0|Stjordal NO Railway Station|Stjordal NO Railway Station^XUU^^CR^^^465^Norway
 XUV^^^N^0^^Storekvina NO Railway Station^Storekvina NO Railway Station^63.05^6.958^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XUV^Storekvina NO Railway Station^XUV|0|Storekvina NO Railway Station|Storekvina NO Railway Station^XUV^^CR^^^465^Norway
 XUW^^^N^0^^Storen NO Railway Station^Storen NO Railway Station^63.05^10.28^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XUW^Storen NO Railway Station^XUW|0|Storen NO Railway Station|Storen NO Railway Station^XUW^^CR^^^465^Norway
-XVD^^^N^0^^Vendome FR Vendome^Vendome FR Vendome^47.8^1.06667^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XVD^^^^^O^^^427^France
+XVD^^^N^0^^Vendome FR Vendome^Vendome FR Vendome^47.8^1.06667^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XVD^Vendome FR Vendome^XVD|0|Vendome FR Vendome|Vendome FR Vendome^XVD^^O^^^427^France
 XVK^^^N^0^^Voss NO Railway Station^Voss NO Railway Station^60.63^6.41^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XVK^Voss NO Railway Station^XVK|0|Voss NO Railway Station|Voss NO Railway Station^XVK^^CR^^^465^Norway
-XVP^^^N^0^^Villepinte FR Villepinte^Villepinte FR Villepinte^48.93^2.417^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XVP^^^^^O^^^427^France
-XVT^^^N^0^^Vitre FR Vitre^Vitre FR Vitre^48.1333^-1.2^X^XXXX^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XVT^^^^^O^^^427^France
+XVP^^^N^0^^Villepinte FR Villepinte^Villepinte FR Villepinte^48.93^2.417^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XVP^Villepinte FR Villepinte^XVP|0|Villepinte FR Villepinte|Villepinte FR Villepinte^XVP^^O^^^427^France
+XVT^^^N^0^^Vitre FR Vitre^Vitre FR Vitre^48.1333^-1.2^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^XVT^Vitre FR Vitre^XVT|0|Vitre FR Vitre|Vitre FR Vitre^XVT^^O^^^427^France
 XVU^^^N^0^^Durham GB Railway Station^Durham GB Railway Station^54.78^-1.567^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^MME^^^^^R^^^493^United Kingdom
 XVV^^^N^0^^Belleville ON CA Railway Stati^Belleville ON CA Railway Stati^44.17^-77.37^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XVV^Belleville ON CA Railway Stati^XVV|0|Belleville ON CA Railway Stati|Belleville ON CA Railway Stati^XVV^ON^CR^^^936^Ontario
 XVX^^^N^0^^Vejle DK Railway Station^Vejle DK Railway Station^55.75^9.333^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^XVX^Vejle DK Railway Station^XVX|0|Vejle DK Railway Station|Vejle DK Railway Station^XVX^^CR^^^419^Denmark
@@ -547,19 +547,19 @@ XWV^^^N^0^^Varberg SE Railway Station^Varberg SE Railway Station^57.1^12.25^S^RS
 XWX^^^N^0^^Nassjo SE Railway Station^Nassjo SE Railway Station^59.35^17.95^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XWX^Nassjo SE Railway Station^XWX|0|Nassjo SE Railway Station|Nassjo SE Railway Station^XWX^^CR^^^484^Sweden
 XWZ^^^N^0^^Nykoping SE C Railway Stn^Nykoping SE C Railway Stn^58.76^16.99^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XWZ^Nykoping SE C Railway Stn^XWZ|0|Nykoping SE C Railway Stn|Nykoping SE C Railway Stn^XWZ^^CR^^^484^Sweden
 XXA^^^N^0^^Alvesta SE Railway Station^Alvesta SE Railway Station^56.9^14.56^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XXA^Alvesta SE Railway Station^XXA|0|Alvesta SE Railway Station|Alvesta SE Railway Station^XXA^^CR^^^484^Sweden
-XXB^^^N^0^^Bhadohi IN Off^Bhadohi IN Off^28.6^77.2^X^XXXX^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^XXB^^^^^O^^^733^India
+XXB^^^N^0^^Bhadohi IN Off^Bhadohi IN Off^28.6^77.2^P^PPLC^^^^^IN^^India^Asia^^^^^^^^^^^^Asia/Kolkata^^^^-1^XXB^Bhadohi IN Off^XXB|0|Bhadohi IN Off|Bhadohi IN Off^XXB^^O^^^733^India
 XXC^^^N^0^^Bo NO Railway Station^Bo NO Railway Station^59.4^9.067^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XXC^Bo NO Railway Station^XXC|0|Bo NO Railway Station|Bo NO Railway Station^XXC^^CR^^^465^Norway
 XXD^^^N^0^^Degerfors SE Railway Station^Degerfors SE Railway Station^59.23^14.43^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XXD^Degerfors SE Railway Station^XXD|0|Degerfors SE Railway Station|Degerfors SE Railway Station^XXD^^CR^^^484^Sweden
-XXF^^^N^0^^Scenic Flight NZ Off^Scenic Flight NZ Off^-41.33^174.8^X^XXXX^^^^^NZ^^New Zealand^Oceania^^^^^^^^^^^^Pacific/Auckland^^^^-1^XXF^^^^^O^^^851^New Zealand
+XXF^^^N^0^^Scenic Flight NZ Off^Scenic Flight NZ Off^-41.33^174.8^P^PPLC^^^^^NZ^^New Zealand^Oceania^^^^^^^^^^^^Pacific/Auckland^^^^-1^XXF^Scenic Flight NZ Off^XXF|0|Scenic Flight NZ Off|Scenic Flight NZ Off^XXF^^O^^^851^New Zealand
 XXH^^^N^0^^Helicopter Scenic NZ^Helicopter Scenic NZ^-37.02^174.8^S^AIRP^^^^^NZ^^New Zealand^Oceania^^^^^^^^^^^^Pacific/Auckland^^^^-1^XXH^Helicopter Scenic NZ^XXH|0|Helicopter Scenic NZ|Helicopter Scenic NZ^XXH^^CA^^^851^New Zealand
 XXI^^^N^0^^Koping SE Railway Station^Koping SE Railway Station^59.35^17.95^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XXI^Koping SE Railway Station^XXI|0|Koping SE Railway Station|Koping SE Railway Station^XXI^^CR^^^484^Sweden
 XXJ^^^N^0^^Budapest HU Deli Railway Stati^Budapest HU Deli Railway Stati^47.5^19.02^S^RSTN^^^^^HU^^Hungary^Europe^^^^^^^^^^^^Europe/Budapest^^^^-1^BUD^^^^^R^^^437^Hungary
 XXK^^^N^0^^Katrineholm SE C Rail Stn^Katrineholm SE C Rail Stn^59^16.21^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XXK^Katrineholm SE C Rail Stn^XXK|0|Katrineholm SE C Rail Stn|Katrineholm SE C Rail Stn^XXK^^CR^^^484^Sweden
 XXM^^^N^0^^Mjolby SE Railway Station^Mjolby SE Railway Station^58.32^15.17^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XXM^Mjolby SE Railway Station^XXM|0|Mjolby SE Railway Station|Mjolby SE Railway Station^XXM^^CR^^^484^Sweden
-XXP^^^N^0^^Potsdam DE Off^Potsdam DE Off^52.4167^-13.0667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^XXP^^^^^O^^^429^Germany
+XXP^^^N^0^^Potsdam DE Off^Potsdam DE Off^52.4167^-13.0667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^XXP^Potsdam DE Off^XXP|0|Potsdam DE Off|Potsdam DE Off^XXP^^O^^^429^Germany
 XXQ^^^N^0^^Budapest HU Keleti Railway Sta^Budapest HU Keleti Railway Sta^47.5^19.03^S^RSTN^^^^^HU^^Hungary^Europe^^^^^^^^^^^^Europe/Budapest^^^^-1^BUD^^^^^R^^^437^Hungary
 XXR^^^N^0^^Al NO Railway Station^Al NO Railway Station^60.63^8.562^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^XXR^Al NO Railway Station^XXR|0|Al NO Railway Station|Al NO Railway Station^XXR^^CR^^^465^Norway
-XXS^^^N^0^^Scenic Flight NZ Off^Scenic Flight NZ Off^-37.02^174.8^X^XXXX^^^^^NZ^^New Zealand^Oceania^^^^^^^^^^^^Pacific/Auckland^^^^-1^XXS^^^^^O^^^851^New Zealand
+XXS^^^N^0^^Scenic Flight NZ Off^Scenic Flight NZ Off^-37.02^174.8^P^PPLC^^^^^NZ^^New Zealand^Oceania^^^^^^^^^^^^Pacific/Auckland^^^^-1^XXS^Scenic Flight NZ Off^XXS|0|Scenic Flight NZ Off|Scenic Flight NZ Off^XXS^^O^^^851^New Zealand
 XXV^^^N^0^^Kumla SE Railway Station^Kumla SE Railway Station^59.35^17.95^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XXV^Kumla SE Railway Station^XXV|0|Kumla SE Railway Station|Kumla SE Railway Station^XXV^^CR^^^484^Sweden
 XYI^^^N^0^^Flen SE Railway Station^Flen SE Railway Station^59.06^16.59^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XYI^Flen SE Railway Station^XYI|0|Flen SE Railway Station|Flen SE Railway Station^XYI^^CR^^^484^Sweden
 XYL^^^N^0^^Lyon FR Perrache Railway Stn^Lyon FR Perrache Railway Stn^45.73^4.933^S^RSTN^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^LYS^^^^^R^^^427^France
@@ -568,12 +568,12 @@ XYQ^^^N^0^^Angelholm HELSINGBORG SE Angel^Angelholm HELSINGBORG SE Angel^56.25^1
 XYS^^^N^0^^Sydney NS AU Ferry Port^Sydney NS AU Ferry Port^-33.9833^151.2^S^PRT^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^SYD^^^^NS^P^^^951^Nova Scotia
 XYU^^^N^0^^Solvesborg SE Railway Station^Solvesborg SE Railway Station^56.05^14.58^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XYU^Solvesborg SE Railway Station^XYU|0|Solvesborg SE Railway Station|Solvesborg SE Railway Station^XYU^^CR^^^484^Sweden
 XZC^^^N^0^^Glencoe ON CA Railway Station^Glencoe ON CA Railway Station^42.75^-81.73^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZC^Glencoe ON CA Railway Station^XZC|0|Glencoe ON CA Railway Station|Glencoe ON CA Railway Station^XZC^ON^CR^^^936^Ontario
-XZE^^^N^0^^Rail Generic DE Rail Generic^Rail Generic DE Rail Generic^50^10^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^XZE^^^^^O^^^429^Germany
+XZE^^^N^0^^Rail Generic DE Rail Generic^Rail Generic DE Rail Generic^50^10^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^XZE^Rail Generic DE Rail Generic^XZE|0|Rail Generic DE Rail Generic|Rail Generic DE Rail Generic^XZE^^O^^^429^Germany
 XZK^^^N^0^^Amherst NS CA Railway Station^Amherst NS CA Railway Station^44.15^-76.75^S^RSTN^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZK^Amherst NS CA Railway Station^XZK|0|Amherst NS CA Railway Station|Amherst NS CA Railway Station^XZK^NS^CR^^^951^Nova Scotia
 XZO^^^N^0^^Oslo NO Oslo S Railway Station^Oslo NO Oslo S Railway Station^60.2^11.08^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^OSL^^^^^R^^^465^Norway
-XZP^^^N^0^^Pass ON CA Pass^Pass ON CA Pass^46.35^-72.57^X^XXXX^0.00883165959155^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZP^^^^ON^O^^^936^Ontario
+XZP^^^N^0^^Pass ON CA Pass^Pass ON CA Pass^46.35^-72.57^P^PPLC^0.00883165959155^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZP^Pass ON CA Pass^XZP|0|Pass ON CA Pass|Pass ON CA Pass^XZP^ON^O^^^936^Ontario
 XZQ^^^N^0^^Pass Ra SE Pass Rail Generic^Pass Ra SE Pass Rail Generic^59.35^18.08^S^RSTN^^^^^SE^^Sweden^Europe^^^^^^^^^^^^Europe/Stockholm^^^^-1^XZQ^Pass Ra SE Pass Rail Generic^XZQ|0|Pass Ra SE Pass Rail Generic|Pass Ra SE Pass Rail Generic^XZQ^^CR^^^484^Sweden
-XZR^^^N^0^^Rail QC CA Rail^Rail QC CA Rail^46.35^-72.57^X^XXXX^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZR^^^^QC^O^^^941^Quebec
+XZR^^^N^0^^Rail QC CA Rail^Rail QC CA Rail^46.35^-72.57^P^PPLC^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Toronto^^^^-1^XZR^Rail QC CA Rail^XZR|0|Rail QC CA Rail|Rail QC CA Rail^XZR^QC^O^^^941^Quebec
 XZT^^^N^0^^Trondheim NO S Rail Stn^Trondheim NO S Rail Stn^63.45^10.93^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^TRD^^^^^R^^^465^Norway
 XZX^^^N^0^^Rail Generic NS AU Rail Generi^Rail Generic NS AU Rail Generi^-33.92^151.2^S^RSTN^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Sydney^^^^-1^XZX^Rail Generic NS AU Rail Generi^XZX|0|Rail Generic NS AU Rail Generi|Rail Generic NS AU Rail Generi^XZX^NS^CR^^^951^Nova Scotia
 YAD^^^N^0^^Moose Lake MB CA^Moose Lake MB CA^46.42^-92.75^S^AIRP^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Chicago^^^^-1^YAD^Moose Lake MB CA^YAD|0|Moose Lake MB CA|Moose Lake MB CA^YAD^MB^CA^^^926^Manitoba
@@ -590,9 +590,9 @@ ZBQ^^^N^0^^Odense DK Railway Station^Odense DK Railway Station^55.62^12.65^S^RST
 ZBU^^^N^0^^Aarhus DK Limousine^Aarhus DK Limousine^55.62^12.65^S^AIRP^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^AAR^^^ZBU,ZID,ZJH^^CA^^^419^Denmark
 ZBV^^^N^0^^Beaver Creek CO US Bus Stn^Beaver Creek CO US Bus Stn^38.37^-105^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^ZBV^Beaver Creek CO US Bus Stn^ZBV|0|Beaver Creek CO US Bus Stn|Beaver Creek CO US Bus Stn^ZBV^CO^CB^^^82^Colorado
 ZBZ^^^N^0^^Xinhui CN Ferry Port^Xinhui CN Ferry Port^22.52^113^S^BUSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^ZBZ^Xinhui CN Ferry Port^ZBZ|0|Xinhui CN Ferry Port|Xinhui CN Ferry Port^ZBZ^^CB^^^713^China
-ZCF^^^N^0^^Bergheim DE Off^Bergheim DE Off^50.95^-6.63333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCF^^^^^O^^^429^Germany
-ZCK^^^N^0^^Bruehl DE Off^Bruehl DE Off^50.8167^-6.9^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCK^^^^^O^^^429^Germany
-ZCY^^^N^0^^Dueren DE Off^Dueren DE Off^42.3167^5.9^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCY^^^^^O^^^429^Germany
+ZCF^^^N^0^^Bergheim DE Off^Bergheim DE Off^50.95^-6.63333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCF^Bergheim DE Off^ZCF|0|Bergheim DE Off|Bergheim DE Off^ZCF^^O^^^429^Germany
+ZCK^^^N^0^^Bruehl DE Off^Bruehl DE Off^50.8167^-6.9^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCK^Bruehl DE Off^ZCK|0|Bruehl DE Off|Bruehl DE Off^ZCK^^O^^^429^Germany
+ZCY^^^N^0^^Dueren DE Off^Dueren DE Off^42.3167^5.9^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCY^Dueren DE Off^ZCY|0|Dueren DE Off|Dueren DE Off^ZCY^^O^^^429^Germany
 ZDB^^^N^0^^Adelboden CH Bus Station^Adelboden CH Bus Station^46.5^7.567^S^BUSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZDB^Adelboden CH Bus Station^ZDB|0|Adelboden CH Bus Station|Adelboden CH Bus Station^ZDB^^CB^^^486^Switzerland
 ZDN^^^N^0^^Brno CZ Bus Station^Brno CZ Bus Station^49.23^16.67^S^BUSTN^^^^^CZ^^Czech Republic^Europe^^^^^^^^^^^^Europe/Prague^^^^-1^BRQ^^^^^B^^^418^Czech Republic
 ZDO^^^N^0^^Buchs Sg CH Buchs Sg^Buchs Sg CH Buchs Sg^47.1667^9.46667^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZDO^Buchs Sg CH Buchs Sg^ZDO|0|Buchs Sg CH Buchs Sg|Buchs Sg CH Buchs Sg^ZDO^^CR^^^486^Switzerland
@@ -600,7 +600,7 @@ ZDQ^^^N^0^^Champery CH Champery^Champery CH Champery^46.1833^6.86667^S^RSTN^^^^^
 ZDR^^^N^0^^Chateau D Oex CH Chateau D Oex^Chateau D Oex CH Chateau D Oex^46.4667^7.13333^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZDR^Chateau D Oex CH Chateau D Oex^ZDR|0|Chateau D Oex CH Chateau D Oex|Chateau D Oex CH Chateau D Oex^ZDR^^CR^^^486^Switzerland
 ZDU^^^N^0^^Dundee GB Railway Station^Dundee GB Railway Station^56.45^-3.017^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^DND^^^^^R^^^493^United Kingdom
 ZDW^^^N^0^^Delemont CH Delemont^Delemont CH Delemont^47.3667^7.33333^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZDW^Delemont CH Delemont^ZDW|0|Delemont CH Delemont|Delemont CH Delemont^ZDW^^CR^^^486^Switzerland
-ZEO^^^N^0^^Savi Ragha PK Off^Savi Ragha PK Off^33.58^73.05^X^XXXX^^^^^PK^^Pakistan^Asia^^^^^^^^^^^^Asia/Karachi^^^^-1^ZEO^^^^^O^^^764^Pakistan
+ZEO^^^N^0^^Savi Ragha PK Off^Savi Ragha PK Off^33.58^73.05^P^PPLC^^^^^PK^^Pakistan^Asia^^^^^^^^^^^^Asia/Karachi^^^^-1^ZEO^Savi Ragha PK Off^ZEO|0|Savi Ragha PK Off|Savi Ragha PK Off^ZEO^^O^^^764^Pakistan
 ZFH^^^N^0^^Milton Keynes GB Bus Station^Milton Keynes GB Bus Station^52.05^-0.7^S^BUSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^KYN^^^^^B^^^493^United Kingdom
 ZFK^^^N^0^^Guderup DK Bus Station^Guderup DK Bus Station^54.98^9.867^S^BUSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^ZFK^Guderup DK Bus Station^ZFK|0|Guderup DK Bus Station|Guderup DK Bus Station^ZFK^^CB^^^419^Denmark
 ZFY^^^N^0^^Katowice PL Bus Station^Katowice PL Bus Station^50.25^19^S^BUSTN^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^KTW^^^^^B^^^467^Poland
@@ -615,7 +615,7 @@ ZHD^^^N^0^^Fluelen CH Fluelen^Fluelen CH Fluelen^46.9^8.63333^S^RSTN^^^^^CH^^Swi
 ZHH^^^N^0^^Gossau Sg CH Gossau Sg^Gossau Sg CH Gossau Sg^47.4167^9.25^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZHH^Gossau Sg CH Gossau Sg^ZHH|0|Gossau Sg CH Gossau Sg|Gossau Sg CH Gossau Sg^ZHH^^CR^^^486^Switzerland
 ZHS^^^N^0^^Klosters CH Klosters^Klosters CH Klosters^46.9^9.883^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZHS^Klosters CH Klosters^ZHS|0|Klosters CH Klosters|Klosters CH Klosters^ZHS^^CR^^^486^Switzerland
 ZHT^^^N^0^^Geneva Cornavin CH Railwa^Geneva Cornavin CH Railwa^46.23^6.117^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZHT^Geneva Cornavin CH Railwa^ZHT|0|Geneva Cornavin CH Railwa|Geneva Cornavin CH Railwa^ZHT^^CR^^^486^Switzerland
-ZHX^^^N^0^^Tubarao SC BR Off^Tubarao SC BR Off^-28.5^49^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^ZHX^^^^SC^O^^^37^South Carolina
+ZHX^^^N^0^^Tubarao SC BR Off^Tubarao SC BR Off^-28.5^49^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^ZHX^Tubarao SC BR Off^ZHX|0|Tubarao SC BR Off|Tubarao SC BR Off^ZHX^SC^O^^^37^South Carolina
 ZHZ^^^N^0^^Leipzig HALLE DE Halle Hbf Rai^Leipzig HALLE DE Halle Hbf Rai^52.07^11.97^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZHZ^Leipzig HALLE DE Halle Hbf Rai^ZHZ|0|Leipzig HALLE DE Halle Hbf Rai|Leipzig HALLE DE Halle Hbf Rai^ZHZ^^CR^^^429^Germany
 ZIB^^^N^0^^Nyborg DK Railway Station^Nyborg DK Railway Station^57.1^9.85^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^ZIB^Nyborg DK Railway Station^ZIB|0|Nyborg DK Railway Station|Nyborg DK Railway Station^ZIB^^CR^^^419^Denmark
 ZID^^^N^0^^Aarhus DK Bus Station^Aarhus DK Bus Station^56.3^10.62^S^BUSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^AAR^^^^^B^^^419^Denmark
@@ -636,7 +636,7 @@ ZJD^^^N^0^^Lenzerheide Lai CH Bus St^Lenzerheide Lai CH Bus St^46.75^9.55^S^BUST
 ZJE^^^N^0^^Panarea Island IT Harbour^Panarea Island IT Harbour^38.64^15.07^S^PRT^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^ZJE^Panarea Island IT Harbour^ZJE|0|Panarea Island IT Harbour|Panarea Island IT Harbour^ZJE^^CP^^^450^Italy
 ZJF^^^N^0^^Dubai AE Jebel Ali Free Zone^Dubai AE Jebel Ali Free Zone^25.0203^55.1031^S^AIRP^^^^^AE^^United Arab Emirates^Asia^^^^^^^^^^^^Asia/Dubai^^^^-1^DXB^^^^^A^^^678^United Arab Emirates
 ZJH^^^N^0^^Aarhus DK Aarhus H Railway Stn^Aarhus DK Aarhus H Railway Stn^55.62^12.65^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^AAR^^^^^R^^^419^Denmark
-ZJK^^^N^0^^Chek Lap Kok HK Chek Lap Kok^Chek Lap Kok HK Chek Lap Kok^22.3^-113.933^X^XXXX^^^^^HK^^Hong Kong^Asia^^^^^^^^^^^^Asia/Hong_Kong^^^^-1^ZJK^^^^^O^^^729^Hong Kong
+ZJK^^^N^0^^Chek Lap Kok HK Chek Lap Kok^Chek Lap Kok HK Chek Lap Kok^22.3^-113.933^P^PPLC^^^^^HK^^Hong Kong^Asia^^^^^^^^^^^^Asia/Hong_Kong^^^^-1^ZJK^Chek Lap Kok HK Chek Lap Kok^ZJK|0|Chek Lap Kok HK Chek Lap Kok|Chek Lap Kok HK Chek Lap Kok^ZJK^^O^^^729^Hong Kong
 ZJM^^^N^0^^Martigny CH Martigny^Martigny CH Martigny^46.0833^7.08333^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZJM^Martigny CH Martigny^ZJM|0|Martigny CH Martigny|Martigny CH Martigny^ZJM^^CR^^^486^Switzerland
 ZJO^^^N^0^^San Jose CA US Bus Station^San Jose CA US Bus Station^37.35^-121.9^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^SJC^^^^CA^B^^^91^California
 ZJR^^^N^0^^Penang MY Penang Port^Penang MY Penang Port^5.385^100.3^S^PRT^^^^^MY^^Malaysia^Asia^^^^^^^^^^^^Asia/Kuala_Lumpur^^^^-1^PEN^^^^^P^^^749^Malaysia
@@ -647,8 +647,8 @@ ZKF^^^N^0^^St Margrethen CH St Margrethen^St Margrethen CH St Margrethen^47.45^9
 ZKH^^^N^0^^St Moritz CH St Moritz^St Moritz CH St Moritz^46.5^9.833^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZKH^St Moritz CH St Moritz^ZKH|0|St Moritz CH St Moritz|St Moritz CH St Moritz^ZKH^^CR^^^486^Switzerland
 ZKN^^^N^0^^Skive DK Railway Station^Skive DK Railway Station^55.62^12.65^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^SQW^^^^^R^^^419^Denmark
 ZKO^^^N^0^^Sierre CH Sierre^Sierre CH Sierre^46.3^7.53333^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZKO^Sierre CH Sierre^ZKO|0|Sierre CH Sierre|Sierre CH Sierre^ZKO^^CR^^^486^Switzerland
-ZKR^^^N^0^^Karlovasion GR Karlovasion^Karlovasion GR Karlovasion^37.7903^26.7044^X^XXXX^^^^^GR^^Greece^Europe^^^^^^^^^^^^Europe/Athens^^^^-1^ZKR^^^^^O^^^433^Greece
-ZKT^^^N^0^^Komotini GR Komotini^Komotini GR Komotini^41.1228^25.3964^X^XXXX^^^^^GR^^Greece^Europe^^^^^^^^^^^^Europe/Athens^^^^-1^ZKT^^^^^O^^^433^Greece
+ZKR^^^N^0^^Karlovasion GR Karlovasion^Karlovasion GR Karlovasion^37.7903^26.7044^P^PPLC^^^^^GR^^Greece^Europe^^^^^^^^^^^^Europe/Athens^^^^-1^ZKR^Karlovasion GR Karlovasion^ZKR|0|Karlovasion GR Karlovasion|Karlovasion GR Karlovasion^ZKR^^O^^^433^Greece
+ZKT^^^N^0^^Komotini GR Komotini^Komotini GR Komotini^41.1228^25.3964^P^PPLC^^^^^GR^^Greece^Europe^^^^^^^^^^^^Europe/Athens^^^^-1^ZKT^Komotini GR Komotini^ZKT|0|Komotini GR Komotini|Komotini GR Komotini^ZKT^^O^^^433^Greece
 ZKV^^^N^0^^Thalwil CH Thalwil^Thalwil CH Thalwil^47.2833^8.56667^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZKV^Thalwil CH Thalwil^ZKV|0|Thalwil CH Thalwil|Thalwil CH Thalwil^ZKV^^CR^^^486^Switzerland
 ZKW^^^N^0^^Wetzikon CH Railway Station^Wetzikon CH Railway Station^47.32^8.8^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZKW^Wetzikon CH Railway Station^ZKW|0|Wetzikon CH Railway Station|Wetzikon CH Railway Station^ZKW^^CR^^^486^Switzerland
 ZLC^^^N^0^^Waedenswil CH Waedenswil^Waedenswil CH Waedenswil^47.2333^8.66667^S^RSTN^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZLC^Waedenswil CH Waedenswil^ZLC|0|Waedenswil CH Waedenswil|Waedenswil CH Waedenswil^ZLC^^CR^^^486^Switzerland
@@ -666,54 +666,54 @@ ZMI^^^N^0^^Naples IT Mergellina Railway S^Naples IT Mergellina Railway S^40.88^1
 ZMJ^^^N^0^^Naples IT Mergellina Harbour^Naples IT Mergellina Harbour^40.83^14.22^S^PRT^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^NAP^^^^^P^^^450^Italy
 ZMK^^^N^0^^Bintulu MY Bintulu Port^Bintulu MY Bintulu Port^3.167^113^S^PRT^^^^^MY^^Malaysia^Asia^^^^^^^^^^^^Asia/Kuching^^^^-1^BTU^^^^^P^^^749^Malaysia
 ZML^^^N^0^^Milwaukee WI US Intermodal Sta^Milwaukee WI US Intermodal Sta^51.736111^-121.332778^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Vancouver^^^^-1^MKE^^^^WI^R^^^45^Wisconsin
-ZMN^^^N^0^^Monte Siao MG BR Monte Siao^Monte Siao MG BR Monte Siao^-22.43^-46.57^X^XXXX^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^ZMN^^^^MG^O^^^316^Brazil
+ZMN^^^N^0^^Monte Siao MG BR Monte Siao^Monte Siao MG BR Monte Siao^-22.43^-46.57^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^America/Sao_Paulo^^^^-1^ZMN^Monte Siao MG BR Monte Siao^ZMN|0|Monte Siao MG BR Monte Siao|Monte Siao MG BR Monte Siao^ZMN^MG^O^^^316^Brazil
 ZMP^^^N^0^^Manchester GB Bus Station^Manchester GB Bus Station^53.35^-2.267^S^BUSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^MAN^^^^^B^^^493^United Kingdom
 ZMR^^^N^0^^Merano Meran IT Bus Station^Merano Meran IT Bus Station^46.67^11.15^S^BUSTN^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^ZMR^Merano Meran IT Bus Station^ZMR|0|Merano Meran IT Bus Station|Merano Meran IT Bus Station^ZMR^^CB^^^450^Italy
-ZMV^^^N^0^^Melville NY US Off^Melville NY US Off^42.73^-73.8^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ZMV^^^^NY^O^^^22^New York
+ZMV^^^N^0^^Melville NY US Off^Melville NY US Off^42.73^-73.8^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ZMV^Melville NY US Off^ZMV|0|Melville NY US Off|Melville NY US Off^ZMV^NY^O^^^22^New York
 ZMY^^^N^0^^Huangpu CN Harbour^Huangpu CN Harbour^23.1^113.4^S^BUSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^ZMY^Huangpu CN Harbour^ZMY|0|Huangpu CN Harbour|Huangpu CN Harbour^ZMY^^CB^^^713^China
 ZNB^^^N^0^^Hamm DE Railway Station^Hamm DE Railway Station^51.67^7.8^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNB^Hamm DE Railway Station^ZNB|0|Hamm DE Railway Station|Hamm DE Railway Station^ZNB^^CR^^^429^Germany
-ZNF^^^N^0^^Hanau DE Off^Hanau DE Off^50.169189^8.961586^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNF^^^^^O^^^429^Germany
-ZNJ^^^N^0^^Heilbronn DE Off^Heilbronn DE Off^49.15^-9.21667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNJ^^^^^O^^^429^Germany
-ZNL^^^N^0^^Herne DE Off^Herne DE Off^49.494167^-117.300556^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNL^^^^^O^^^429^Germany
-ZNM^^^N^0^^Herten DE Off^Herten DE Off^51.6^-7.13333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNM^^^^^O^^^429^Germany
+ZNF^^^N^0^^Hanau DE Off^Hanau DE Off^50.169189^8.961586^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNF^Hanau DE Off^ZNF|0|Hanau DE Off|Hanau DE Off^ZNF^^O^^^429^Germany
+ZNJ^^^N^0^^Heilbronn DE Off^Heilbronn DE Off^49.15^-9.21667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNJ^Heilbronn DE Off^ZNJ|0|Heilbronn DE Off|Heilbronn DE Off^ZNJ^^O^^^429^Germany
+ZNL^^^N^0^^Herne DE Off^Herne DE Off^49.494167^-117.300556^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNL^Herne DE Off^ZNL|0|Herne DE Off|Herne DE Off^ZNL^^O^^^429^Germany
+ZNM^^^N^0^^Herten DE Off^Herten DE Off^51.6^-7.13333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNM^Herten DE Off^ZNM|0|Herten DE Off|Herten DE Off^ZNM^^O^^^429^Germany
 ZNQ^^^N^0^^Ingolstadt DE Hbf Railway Stat^Ingolstadt DE Hbf Railway Stat^48.715667^11.534^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^IGS^^^^^R^^^429^Germany
-ZNT^^^N^0^^Kerpen DE Off^Kerpen DE Off^50.8667^-6.7^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNT^^^^^O^^^429^Germany
-ZNY^^^N^0^^Langenhagen DE Off^Langenhagen DE Off^52.4333^-9.75^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNY^^^^^O^^^429^Germany
-ZOC^^^N^0^^Luedenscheid DE Off^Luedenscheid DE Off^51.2167^-7.63333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOC^^^^^O^^^429^Germany
-ZOD^^^N^0^^Ludwigsburg DE Off^Ludwigsburg DE Off^48.8833^-9.18333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOD^^^^^O^^^429^Germany
+ZNT^^^N^0^^Kerpen DE Off^Kerpen DE Off^50.8667^-6.7^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNT^Kerpen DE Off^ZNT|0|Kerpen DE Off|Kerpen DE Off^ZNT^^O^^^429^Germany
+ZNY^^^N^0^^Langenhagen DE Off^Langenhagen DE Off^52.4333^-9.75^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZNY^Langenhagen DE Off^ZNY|0|Langenhagen DE Off|Langenhagen DE Off^ZNY^^O^^^429^Germany
+ZOC^^^N^0^^Luedenscheid DE Off^Luedenscheid DE Off^51.2167^-7.63333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOC^Luedenscheid DE Off^ZOC|0|Luedenscheid DE Off|Luedenscheid DE Off^ZOC^^O^^^429^Germany
+ZOD^^^N^0^^Ludwigsburg DE Off^Ludwigsburg DE Off^48.8833^-9.18333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOD^Ludwigsburg DE Off^ZOD|0|Ludwigsburg DE Off|Ludwigsburg DE Off^ZOD^^O^^^429^Germany
 ZOG^^^N^0^^Lueneburg DE Railway Station^Lueneburg DE Railway Station^50.03^8.567^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOG^Lueneburg DE Railway Station^ZOG|0|Lueneburg DE Railway Station|Lueneburg DE Railway Station^ZOG^^CR^^^429^Germany
-ZOH^^^N^0^^Luenen DE Off^Luenen DE Off^-40.206039^175.387808^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOH^^^^^O^^^429^Germany
-ZOI^^^N^0^^Marburg An Der Lahn DE Off^Marburg An Der Lahn DE Off^50.8167^-8.76667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOI^^^^^O^^^429^Germany
-ZOJ^^^N^0^^Marl DE Off^Marl DE Off^51.6333^-7.1^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOJ^^^^^O^^^429^Germany
-ZOL^^^N^0^^Menden DE Off^Menden DE Off^51.4333^-7.78333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOL^^^^^O^^^429^Germany
+ZOH^^^N^0^^Luenen DE Off^Luenen DE Off^-40.206039^175.387808^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOH^Luenen DE Off^ZOH|0|Luenen DE Off|Luenen DE Off^ZOH^^O^^^429^Germany
+ZOI^^^N^0^^Marburg An Der Lahn DE Off^Marburg An Der Lahn DE Off^50.8167^-8.76667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOI^Marburg An Der Lahn DE Off^ZOI|0|Marburg An Der Lahn DE Off|Marburg An Der Lahn DE Off^ZOI^^O^^^429^Germany
+ZOJ^^^N^0^^Marl DE Off^Marl DE Off^51.6333^-7.1^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOJ^Marl DE Off^ZOJ|0|Marl DE Off|Marl DE Off^ZOJ^^O^^^429^Germany
+ZOL^^^N^0^^Menden DE Off^Menden DE Off^51.4333^-7.78333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOL^Menden DE Off^ZOL|0|Menden DE Off|Menden DE Off^ZOL^^O^^^429^Germany
 ZOM^^^N^0^^Minden DE Railway Station^Minden DE Railway Station^52.28^6.883^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOM^Minden DE Railway Station^ZOM|0|Minden DE Railway Station|Minden DE Railway Station^ZOM^^CR^^^429^Germany
 ZOO^^^N^0^^Muelheim An Der Ruhr DE Hbf Ra^Muelheim An Der Ruhr DE Hbf Ra^51.43^6.883^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOO^Muelheim An Der Ruhr DE Hbf Ra^ZOO|0|Muelheim An Der Ruhr DE Hbf Ra|Muelheim An Der Ruhr DE Hbf Ra^ZOO^^CR^^^429^Germany
-ZOP^^^N^0^^Neunkirchen DE Off^Neunkirchen DE Off^49.3333^-7.15^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOP^^^^^O^^^429^Germany
-ZOQ^^^N^0^^Neuss DE Off^Neuss DE Off^51.1833^-6.7^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOQ^^^^^O^^^429^Germany
-ZOR^^^N^0^^Neustadt Weinstrasse DE Off^Neustadt Weinstrasse DE Off^49.35^-8.15^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOR^^^^^O^^^429^Germany
-ZOW^^^N^0^^Nordhorn DE Off^Nordhorn DE Off^52.4333^-7.06667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOW^^^^^O^^^429^Germany
+ZOP^^^N^0^^Neunkirchen DE Off^Neunkirchen DE Off^49.3333^-7.15^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOP^Neunkirchen DE Off^ZOP|0|Neunkirchen DE Off|Neunkirchen DE Off^ZOP^^O^^^429^Germany
+ZOQ^^^N^0^^Neuss DE Off^Neuss DE Off^51.1833^-6.7^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOQ^Neuss DE Off^ZOQ|0|Neuss DE Off|Neuss DE Off^ZOQ^^O^^^429^Germany
+ZOR^^^N^0^^Neustadt Weinstrasse DE Off^Neustadt Weinstrasse DE Off^49.35^-8.15^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOR^Neustadt Weinstrasse DE Off^ZOR|0|Neustadt Weinstrasse DE Off|Neustadt Weinstrasse DE Off^ZOR^^O^^^429^Germany
+ZOW^^^N^0^^Nordhorn DE Off^Nordhorn DE Off^52.4333^-7.06667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOW^Nordhorn DE Off^ZOW|0|Nordhorn DE Off|Nordhorn DE Off^ZOW^^O^^^429^Germany
 ZOY^^^N^0^^Oberhausen DE Hbf Railway Stat^Oberhausen DE Hbf Railway Stat^51.47^6.867^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOY^Oberhausen DE Hbf Railway Stat^ZOY|0|Oberhausen DE Hbf Railway Stat|Oberhausen DE Hbf Railway Stat^ZOY^^CR^^^429^Germany
-ZOZ^^^N^0^^Offenbach DE Off^Offenbach DE Off^50.1^-8.73333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOZ^^^^^O^^^429^Germany
+ZOZ^^^N^0^^Offenbach DE Off^Offenbach DE Off^50.1^-8.73333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZOZ^Offenbach DE Off^ZOZ|0|Offenbach DE Off|Offenbach DE Off^ZOZ^^O^^^429^Germany
 ZPD^^^N^0^^Oldenburg DE Railway Station^Oldenburg DE Railway Station^53.15^8.2^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZPD^Oldenburg DE Railway Station^ZPD|0|Oldenburg DE Railway Station|Oldenburg DE Railway Station^ZPD^^CR^^^429^Germany
 ZPL^^^N^0^^Recklinghausen DE Hbf Railway^Recklinghausen DE Hbf Railway^51.6^7.183^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZPL^Recklinghausen DE Hbf Railway^ZPL|0|Recklinghausen DE Hbf Railway|Recklinghausen DE Hbf Railway^ZPL^^CR^^^429^Germany
-ZPS^^^N^0^^Ruesselsheim DE Off^Ruesselsheim DE Off^50^-8.43333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZPS^^^^^O^^^429^Germany
-ZPV^^^N^0^^Schwaebisch Gmuen DE Off^Schwaebisch Gmuen DE Off^48.8^-9.78333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZPV^^^^^O^^^429^Germany
-ZQA^^^N^0^^Singen DE Off^Singen DE Off^47.75^-8.83333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQA^^^^^O^^^429^Germany
-ZQB^^^N^0^^Round Trip Flights AK US^Round Trip Flights AK US^51^-172^X^XXXX^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^ZQB^^^^AK^O^^^1^Alaska
-ZQD^^^N^0^^Stade DE Off^Stade DE Off^53.5833^-9.48333^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQD^^^^^O^^^429^Germany
-ZQE^^^N^0^^Stolberg DE Off^Stolberg DE Off^50.7833^-6.21667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQE^^^^^O^^^429^Germany
-ZQH^^^N^0^^Tuebingen DE Off^Tuebingen DE Off^48.5333^-9.06667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQH^^^^^O^^^429^Germany
-ZQM^^^N^0^^Voelklingen DE Off^Voelklingen DE Off^-22.5167^44.0833^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQM^^^^^O^^^429^Germany
-ZQO^^^N^0^^Waiblingen DE Off^Waiblingen DE Off^48.8167^-9.3^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQO^^^^^O^^^429^Germany
-ZQP^^^N^0^^Wesel DE Off^Wesel DE Off^51.65^-6.61667^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQP^^^^^O^^^429^Germany
-ZQT^^^N^0^^Wolfenbuettel DE Off^Wolfenbuettel DE Off^52.1667^-10.55^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQT^^^^^O^^^429^Germany
+ZPS^^^N^0^^Ruesselsheim DE Off^Ruesselsheim DE Off^50^-8.43333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZPS^Ruesselsheim DE Off^ZPS|0|Ruesselsheim DE Off|Ruesselsheim DE Off^ZPS^^O^^^429^Germany
+ZPV^^^N^0^^Schwaebisch Gmuen DE Off^Schwaebisch Gmuen DE Off^48.8^-9.78333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZPV^Schwaebisch Gmuen DE Off^ZPV|0|Schwaebisch Gmuen DE Off|Schwaebisch Gmuen DE Off^ZPV^^O^^^429^Germany
+ZQA^^^N^0^^Singen DE Off^Singen DE Off^47.75^-8.83333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQA^Singen DE Off^ZQA|0|Singen DE Off|Singen DE Off^ZQA^^O^^^429^Germany
+ZQB^^^N^0^^Round Trip Flights AK US^Round Trip Flights AK US^51^-172^P^PPLC^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^ZQB^Round Trip Flights AK US^ZQB|0|Round Trip Flights AK US|Round Trip Flights AK US^ZQB^AK^O^^^1^Alaska
+ZQD^^^N^0^^Stade DE Off^Stade DE Off^53.5833^-9.48333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQD^Stade DE Off^ZQD|0|Stade DE Off|Stade DE Off^ZQD^^O^^^429^Germany
+ZQE^^^N^0^^Stolberg DE Off^Stolberg DE Off^50.7833^-6.21667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQE^Stolberg DE Off^ZQE|0|Stolberg DE Off|Stolberg DE Off^ZQE^^O^^^429^Germany
+ZQH^^^N^0^^Tuebingen DE Off^Tuebingen DE Off^48.5333^-9.06667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQH^Tuebingen DE Off^ZQH|0|Tuebingen DE Off|Tuebingen DE Off^ZQH^^O^^^429^Germany
+ZQM^^^N^0^^Voelklingen DE Off^Voelklingen DE Off^-22.5167^44.0833^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQM^Voelklingen DE Off^ZQM|0|Voelklingen DE Off|Voelklingen DE Off^ZQM^^O^^^429^Germany
+ZQO^^^N^0^^Waiblingen DE Off^Waiblingen DE Off^48.8167^-9.3^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQO^Waiblingen DE Off^ZQO|0|Waiblingen DE Off|Waiblingen DE Off^ZQO^^O^^^429^Germany
+ZQP^^^N^0^^Wesel DE Off^Wesel DE Off^51.65^-6.61667^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQP^Wesel DE Off^ZQP|0|Wesel DE Off|Wesel DE Off^ZQP^^O^^^429^Germany
+ZQT^^^N^0^^Wolfenbuettel DE Off^Wolfenbuettel DE Off^52.1667^-10.55^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQT^Wolfenbuettel DE Off^ZQT|0|Wolfenbuettel DE Off|Wolfenbuettel DE Off^ZQT^^O^^^429^Germany
 ZQU^^^N^0^^Braunschweig WOLFSBURG DE Wolf^Braunschweig WOLFSBURG DE Wolf^52.42^10.77^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQU^Braunschweig WOLFSBURG DE Wolf^ZQU|0|Braunschweig WOLFSBURG DE Wolf|Braunschweig WOLFSBURG DE Wolf^ZQU^^CR^^^429^Germany
-ZQX^^^N^0^^Nias Island ID^Nias Island ID^0.7333^97.63^X^XXXX^^^^^ID^^Indonesia^Asia^^^^^^^^^^^^Asia/Jakarta^^^^-1^ZQX^^^^^O^^^832^Indonesia
+ZQX^^^N^0^^Nias Island ID^Nias Island ID^0.7333^97.63^P^PPLC^^^^^ID^^Indonesia^Asia^^^^^^^^^^^^Asia/Jakarta^^^^-1^ZQX^Nias Island ID^ZQX|0|Nias Island ID|Nias Island ID^ZQX^^O^^^832^Indonesia
 ZQY^^^N^0^^Giessen DE Bus Station^Giessen DE Bus Station^50.58^8.7^S^BUSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZQY^Giessen DE Bus Station^ZQY|0|Giessen DE Bus Station|Giessen DE Bus Station^ZQY^^CB^^^429^Germany
 ZRC^^^N^0^^San Pedro Alcantara ES Bu^San Pedro Alcantara ES Bu^36.48^-5^S^BUSTN^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^ZRC^San Pedro Alcantara ES Bu^ZRC|0|San Pedro Alcantara ES Bu|San Pedro Alcantara ES Bu^ZRC^^CB^^^482^Spain
 ZRG^^^N^0^^Bratislava SK Bus Station^Bratislava SK Bus Station^48.17^17.22^S^BUSTN^^^^^SK^^Slovakia^Europe^^^^^^^^^^^^Europe/Bratislava^^^^-1^BTS^^^^^B^^^483^Slovakia
 ZRL^^^N^0^^Lancaster PA US Railway Statio^Lancaster PA US Railway Statio^31.53^-84.2^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^LNS^^^^PA^R^^^23^Pennsylvania
-ZRQ^^^N^0^^Sbb CH Zone 1 Off Line Point^Sbb CH Zone 1 Off Line Point^47.5833^-7.5^X^XXXX^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZRQ^^^^^O^^^486^Switzerland
+ZRQ^^^N^0^^Sbb CH Zone 1 Off Line Point^Sbb CH Zone 1 Off Line Point^47.5833^-7.5^P^PPLC^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZRQ^Sbb CH Zone 1 Off Line Point^ZRQ|0|Sbb CH Zone 1 Off Line Point|Sbb CH Zone 1 Off Line Point^ZRQ^^O^^^486^Switzerland
 ZRS^^^N^0^^Zuers Lech AT Heliport^Zuers Lech AT Heliport^47.22^16.35^S^AIRH^^^^^AT^^Austria^Europe^^^^^^^^^^^^Europe/Vienna^^^^-1^ZRS^Zuers Lech AT Heliport^ZRS|0|Zuers Lech AT Heliport|Zuers Lech AT Heliport^ZRS^^CH^^^403^Austria
 ZRU^^^N^0^^Boston MA US Rt 128 Railway St^Boston MA US Rt 128 Railway St^42.37^-71^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^BOS^^^^MA^R^^^13^Massachusetts
 ZRV^^^N^0^^Providence RI US Railway Stati^Providence RI US Railway Stati^41.73^-71.43^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^PVD^^^^RI^R^^^15^Rhode Island
@@ -733,69 +733,69 @@ ZTG^^^N^0^^Aalborg DK Railway Station^Aalborg DK Railway Station^55.62^12.65^S^R
 ZTL^^^N^0^^Telluride CO US Bus Stn^Telluride CO US Bus Stn^38.27^-104.6^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^ZTL^Telluride CO US Bus Stn^ZTL|0|Telluride CO US Bus Stn|Telluride CO US Bus Stn^ZTL^CO^CB^^^82^Colorado
 ZTN^^^N^0^^Philadelphia PA US Trenton Rai^Philadelphia PA US Trenton Rai^39.88^-75.23^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^PHL^^^^PA^R^^^23^Pennsylvania
 ZTO^^^N^0^^Boston MA US South Railway Sta^Boston MA US South Railway Sta^42.37^-71^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^BOS^^^^MA^R^^^13^Massachusetts
-ZTQ^^^N^0^^Sbb Rail Ch Zone 2 CH^Sbb Rail Ch Zone 2 CH^47.5883^-7.505^X^XXXX^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZTQ^^^^^O^^^486^Switzerland
+ZTQ^^^N^0^^Sbb Rail Ch Zone 2 CH^Sbb Rail Ch Zone 2 CH^47.5883^-7.505^P^PPLC^^^^^CH^^Switzerland^Europe^^^^^^^^^^^^Europe/Zurich^^^^-1^ZTQ^Sbb Rail Ch Zone 2 CH^ZTQ|0|Sbb Rail Ch Zone 2 CH|Sbb Rail Ch Zone 2 CH^ZTQ^^O^^^486^Switzerland
 ZTT^^^N^0^^Cottbus DE Railway Station^Cottbus DE Railway Station^51.13^13.77^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZTT^Cottbus DE Railway Station^ZTT|0|Cottbus DE Railway Station|Cottbus DE Railway Station^ZTT^^CR^^^429^Germany
 ZTV^^^N^0^^Sturtevant WI US Railway Stati^Sturtevant WI US Railway Stati^42.7^-87.91^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^ZTV^Sturtevant WI US Railway Stati^ZTV|0|Sturtevant WI US Railway Stati|Sturtevant WI US Railway Stati^ZTV^WI^CR^^^45^Wisconsin
 ZTY^^^N^0^^Boston MA US Back Bay Railway^Boston MA US Back Bay Railway^39.88^-75.23^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^BOS^^^^MA^R^^^13^Massachusetts
 ZTZ^^^N^0^^Chemnitz DE Hbf Railway Statio^Chemnitz DE Hbf Railway Statio^50.92^12.92^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZTZ^Chemnitz DE Hbf Railway Statio^ZTZ|0|Chemnitz DE Hbf Railway Statio|Chemnitz DE Hbf Railway Statio^ZTZ^^CR^^^429^Germany
 ZUA^^^N^0^^Utica NY US Railway Station^Utica NY US Railway Station^43.15^-75.38^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^UCA^^^^NY^R^^^22^New York
-ZUB^^^N^0^^Batumi GE Sarpi Border Cross^Batumi GE Sarpi Border Cross^41.52^41.55^X^XXXX^^^^^GE^^Georgia^Asia^^^^^^^^^^^^Asia/Tbilisi^^^^-1^ZUB^^^^^O^^^432^Georgia
+ZUB^^^N^0^^Batumi GE Sarpi Border Cross^Batumi GE Sarpi Border Cross^41.52^41.55^P^PPLC^^^^^GE^^Georgia^Asia^^^^^^^^^^^^Asia/Tbilisi^^^^-1^ZUB^Batumi GE Sarpi Border Cross^ZUB|0|Batumi GE Sarpi Border Cross|Batumi GE Sarpi Border Cross^ZUB^^O^^^432^Georgia
 ZUG^^^N^0^^Harrisburg PA US Railway Stati^Harrisburg PA US Railway Stati^41.55^-72.65^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^HAR^^^^PA^R^^^23^Pennsylvania
 ZUK^^^N^0^^Lake Cook Road IL US Railway S^Lake Cook Road IL US Railway S^42.15^-87.84^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^ZUK^Lake Cook Road IL US Railway S^ZUK|0|Lake Cook Road IL US Railway S|Lake Cook Road IL US Railway S^ZUK^IL^CR^^^41^Illinois
 ZUN^^^N^0^^Chicago IL US Union Railway St^Chicago IL US Union Railway St^41.85^-87.6^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CHI^^^^IL^R^^^41^Illinois
-ZUO^^^N^0^^Dutch Rail Zone 16 NL Off Line^Dutch Rail Zone 16 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUO^^^^^O^^^461^Netherlands
-ZUP^^^N^0^^Dutch Rail Zone 17 NL Off Line^Dutch Rail Zone 17 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUP^^^^^O^^^461^Netherlands
-ZUQ^^^N^0^^Dutch Rail Zone 18 NL Off Line^Dutch Rail Zone 18 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUQ^^^^^O^^^461^Netherlands
-ZUR^^^N^0^^Dutch Rail Zone 19 NL Off Line^Dutch Rail Zone 19 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUR^^^^^O^^^461^Netherlands
-ZUS^^^N^0^^Dutch Rail Zone 20 NL Off Line^Dutch Rail Zone 20 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUS^^^^^O^^^461^Netherlands
-ZUT^^^N^0^^Dutch Rail Zone 21 NL Off Line^Dutch Rail Zone 21 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUT^^^^^O^^^461^Netherlands
-ZUU^^^N^0^^Dutch Rail Zone 22 NL Off Line^Dutch Rail Zone 22 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUU^^^^^O^^^461^Netherlands
-ZUV^^^N^0^^Dutch Rail Zone 23 NL Off Line^Dutch Rail Zone 23 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUV^^^^^O^^^461^Netherlands
-ZUW^^^N^0^^Dutch Rail Zone 24 NL Off Line^Dutch Rail Zone 24 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUW^^^^^O^^^461^Netherlands
-ZUX^^^N^0^^Dutch Rail Zone 25 NL Off Line^Dutch Rail Zone 25 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUX^^^^^O^^^461^Netherlands
-ZUY^^^N^0^^Dutch Rail Zone 26 NL Off Line^Dutch Rail Zone 26 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUY^^^^^O^^^461^Netherlands
-ZUZ^^^N^0^^Dutch Rail Zone 27 NL Off Line^Dutch Rail Zone 27 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUZ^^^^^O^^^461^Netherlands
-ZVI^^^N^0^^Zarand IR^Zarand IR^30.82^56.57^X^XXXX^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^ZVI^^^^^O^^^632^Iran
-ZVL^^^N^0^^Dutch Rail Zone 01 NL Off Line^Dutch Rail Zone 01 NL Off Line^53.6675^-113.854444^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVL^^^^^O^^^461^Netherlands
+ZUO^^^N^0^^Dutch Rail Zone 16 NL Off Line^Dutch Rail Zone 16 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUO^Dutch Rail Zone 16 NL Off Line^ZUO|0|Dutch Rail Zone 16 NL Off Line|Dutch Rail Zone 16 NL Off Line^ZUO^^O^^^461^Netherlands
+ZUP^^^N^0^^Dutch Rail Zone 17 NL Off Line^Dutch Rail Zone 17 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUP^Dutch Rail Zone 17 NL Off Line^ZUP|0|Dutch Rail Zone 17 NL Off Line|Dutch Rail Zone 17 NL Off Line^ZUP^^O^^^461^Netherlands
+ZUQ^^^N^0^^Dutch Rail Zone 18 NL Off Line^Dutch Rail Zone 18 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUQ^Dutch Rail Zone 18 NL Off Line^ZUQ|0|Dutch Rail Zone 18 NL Off Line|Dutch Rail Zone 18 NL Off Line^ZUQ^^O^^^461^Netherlands
+ZUR^^^N^0^^Dutch Rail Zone 19 NL Off Line^Dutch Rail Zone 19 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUR^Dutch Rail Zone 19 NL Off Line^ZUR|0|Dutch Rail Zone 19 NL Off Line|Dutch Rail Zone 19 NL Off Line^ZUR^^O^^^461^Netherlands
+ZUS^^^N^0^^Dutch Rail Zone 20 NL Off Line^Dutch Rail Zone 20 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUS^Dutch Rail Zone 20 NL Off Line^ZUS|0|Dutch Rail Zone 20 NL Off Line|Dutch Rail Zone 20 NL Off Line^ZUS^^O^^^461^Netherlands
+ZUT^^^N^0^^Dutch Rail Zone 21 NL Off Line^Dutch Rail Zone 21 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUT^Dutch Rail Zone 21 NL Off Line^ZUT|0|Dutch Rail Zone 21 NL Off Line|Dutch Rail Zone 21 NL Off Line^ZUT^^O^^^461^Netherlands
+ZUU^^^N^0^^Dutch Rail Zone 22 NL Off Line^Dutch Rail Zone 22 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUU^Dutch Rail Zone 22 NL Off Line^ZUU|0|Dutch Rail Zone 22 NL Off Line|Dutch Rail Zone 22 NL Off Line^ZUU^^O^^^461^Netherlands
+ZUV^^^N^0^^Dutch Rail Zone 23 NL Off Line^Dutch Rail Zone 23 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUV^Dutch Rail Zone 23 NL Off Line^ZUV|0|Dutch Rail Zone 23 NL Off Line|Dutch Rail Zone 23 NL Off Line^ZUV^^O^^^461^Netherlands
+ZUW^^^N^0^^Dutch Rail Zone 24 NL Off Line^Dutch Rail Zone 24 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUW^Dutch Rail Zone 24 NL Off Line^ZUW|0|Dutch Rail Zone 24 NL Off Line|Dutch Rail Zone 24 NL Off Line^ZUW^^O^^^461^Netherlands
+ZUX^^^N^0^^Dutch Rail Zone 25 NL Off Line^Dutch Rail Zone 25 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUX^Dutch Rail Zone 25 NL Off Line^ZUX|0|Dutch Rail Zone 25 NL Off Line|Dutch Rail Zone 25 NL Off Line^ZUX^^O^^^461^Netherlands
+ZUY^^^N^0^^Dutch Rail Zone 26 NL Off Line^Dutch Rail Zone 26 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUY^Dutch Rail Zone 26 NL Off Line^ZUY|0|Dutch Rail Zone 26 NL Off Line|Dutch Rail Zone 26 NL Off Line^ZUY^^O^^^461^Netherlands
+ZUZ^^^N^0^^Dutch Rail Zone 27 NL Off Line^Dutch Rail Zone 27 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZUZ^Dutch Rail Zone 27 NL Off Line^ZUZ|0|Dutch Rail Zone 27 NL Off Line|Dutch Rail Zone 27 NL Off Line^ZUZ^^O^^^461^Netherlands
+ZVI^^^N^0^^Zarand IR^Zarand IR^30.82^56.57^P^PPLC^^^^^IR^^Iran^Asia^^^^^^^^^^^^Asia/Tehran^^^^-1^ZVI^Zarand IR^ZVI|0|Zarand IR|Zarand IR^ZVI^^O^^^632^Iran
+ZVL^^^N^0^^Dutch Rail Zone 01 NL Off Line^Dutch Rail Zone 01 NL Off Line^53.6675^-113.854444^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVL^Dutch Rail Zone 01 NL Off Line^ZVL|0|Dutch Rail Zone 01 NL Off Line|Dutch Rail Zone 01 NL Off Line^ZVL^^O^^^461^Netherlands
 ZVM^^^N^0^^Hannover DE Messe LAATZEN Rail^Hannover DE Messe LAATZEN Rail^52.45^9.7^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^HAJ^^^^^R^^^429^Germany
-ZVN^^^N^0^^Dutch Rail Zone 03 NL Off Line^Dutch Rail Zone 03 NL Off Line^52.3^4.833^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVN^^^^^O^^^461^Netherlands
-ZVO^^^N^0^^Dutch Rail Zone 04 NL Off Line^Dutch Rail Zone 04 NL Off Line^52.3^4.833^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVO^^^^^O^^^461^Netherlands
-ZVP^^^N^0^^Dutch Rail Zone 05 NL Off Line^Dutch Rail Zone 05 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVP^^^^^O^^^461^Netherlands
-ZVQ^^^N^0^^Dutch Rail Zone 06 NL Off Line^Dutch Rail Zone 06 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVQ^^^^^O^^^461^Netherlands
+ZVN^^^N^0^^Dutch Rail Zone 03 NL Off Line^Dutch Rail Zone 03 NL Off Line^52.3^4.833^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVN^Dutch Rail Zone 03 NL Off Line^ZVN|0|Dutch Rail Zone 03 NL Off Line|Dutch Rail Zone 03 NL Off Line^ZVN^^O^^^461^Netherlands
+ZVO^^^N^0^^Dutch Rail Zone 04 NL Off Line^Dutch Rail Zone 04 NL Off Line^52.3^4.833^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVO^Dutch Rail Zone 04 NL Off Line^ZVO|0|Dutch Rail Zone 04 NL Off Line|Dutch Rail Zone 04 NL Off Line^ZVO^^O^^^461^Netherlands
+ZVP^^^N^0^^Dutch Rail Zone 05 NL Off Line^Dutch Rail Zone 05 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVP^Dutch Rail Zone 05 NL Off Line^ZVP|0|Dutch Rail Zone 05 NL Off Line|Dutch Rail Zone 05 NL Off Line^ZVP^^O^^^461^Netherlands
+ZVQ^^^N^0^^Dutch Rail Zone 06 NL Off Line^Dutch Rail Zone 06 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVQ^Dutch Rail Zone 06 NL Off Line^ZVQ|0|Dutch Rail Zone 06 NL Off Line|Dutch Rail Zone 06 NL Off Line^ZVQ^^O^^^461^Netherlands
 ZVR^^^N^0^^Hannover DE Hbf Railway Statio^Hannover DE Hbf Railway Statio^52.45^9.7^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^HAJ^^^^^R^^^429^Germany
-ZVS^^^N^0^^Dutch Rail Zone 08 NL Off Line^Dutch Rail Zone 08 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVS^^^^^O^^^461^Netherlands
-ZVT^^^N^0^^Dutch Rail Zone 09 NL Off Line^Dutch Rail Zone 09 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVT^^^^^O^^^461^Netherlands
-ZVU^^^N^0^^Dutch Rail Zone 10 NL Off Line^Dutch Rail Zone 10 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVU^^^^^O^^^461^Netherlands
-ZVV^^^N^0^^Dutch Rail Zone 11 NL Off Line^Dutch Rail Zone 11 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVV^^^^^O^^^461^Netherlands
-ZVW^^^N^0^^Dutch Rail Zone 12 NL Off Line^Dutch Rail Zone 12 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVW^^^^^O^^^461^Netherlands
-ZVX^^^N^0^^Dutch Rail Zone 13 NL Off Line^Dutch Rail Zone 13 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVX^^^^^O^^^461^Netherlands
-ZVY^^^N^0^^Dutch Rail Zone 14 NL Off Line^Dutch Rail Zone 14 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVY^^^^^O^^^461^Netherlands
-ZVZ^^^N^0^^Dutch Rail Zone 15 NL Off Line^Dutch Rail Zone 15 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVZ^^^^^O^^^461^Netherlands
+ZVS^^^N^0^^Dutch Rail Zone 08 NL Off Line^Dutch Rail Zone 08 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVS^Dutch Rail Zone 08 NL Off Line^ZVS|0|Dutch Rail Zone 08 NL Off Line|Dutch Rail Zone 08 NL Off Line^ZVS^^O^^^461^Netherlands
+ZVT^^^N^0^^Dutch Rail Zone 09 NL Off Line^Dutch Rail Zone 09 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVT^Dutch Rail Zone 09 NL Off Line^ZVT|0|Dutch Rail Zone 09 NL Off Line|Dutch Rail Zone 09 NL Off Line^ZVT^^O^^^461^Netherlands
+ZVU^^^N^0^^Dutch Rail Zone 10 NL Off Line^Dutch Rail Zone 10 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVU^Dutch Rail Zone 10 NL Off Line^ZVU|0|Dutch Rail Zone 10 NL Off Line|Dutch Rail Zone 10 NL Off Line^ZVU^^O^^^461^Netherlands
+ZVV^^^N^0^^Dutch Rail Zone 11 NL Off Line^Dutch Rail Zone 11 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVV^Dutch Rail Zone 11 NL Off Line^ZVV|0|Dutch Rail Zone 11 NL Off Line|Dutch Rail Zone 11 NL Off Line^ZVV^^O^^^461^Netherlands
+ZVW^^^N^0^^Dutch Rail Zone 12 NL Off Line^Dutch Rail Zone 12 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVW^Dutch Rail Zone 12 NL Off Line^ZVW|0|Dutch Rail Zone 12 NL Off Line|Dutch Rail Zone 12 NL Off Line^ZVW^^O^^^461^Netherlands
+ZVX^^^N^0^^Dutch Rail Zone 13 NL Off Line^Dutch Rail Zone 13 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVX^Dutch Rail Zone 13 NL Off Line^ZVX|0|Dutch Rail Zone 13 NL Off Line|Dutch Rail Zone 13 NL Off Line^ZVX^^O^^^461^Netherlands
+ZVY^^^N^0^^Dutch Rail Zone 14 NL Off Line^Dutch Rail Zone 14 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVY^Dutch Rail Zone 14 NL Off Line^ZVY|0|Dutch Rail Zone 14 NL Off Line|Dutch Rail Zone 14 NL Off Line^ZVY^^O^^^461^Netherlands
+ZVZ^^^N^0^^Dutch Rail Zone 15 NL Off Line^Dutch Rail Zone 15 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZVZ^Dutch Rail Zone 15 NL Off Line^ZVZ|0|Dutch Rail Zone 15 NL Off Line|Dutch Rail Zone 15 NL Off Line^ZVZ^^O^^^461^Netherlands
 ZWC^^^N^0^^Stavanger NO Railway Station^Stavanger NO Railway Station^58.97^50.73^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^SVG^^^^^R^^^465^Norway
 ZWD^^^N^0^^Warnemuende DE Railway Station^Warnemuende DE Railway Station^54.17^12.08^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZWD^Warnemuende DE Railway Station^ZWD|0|Warnemuende DE Railway Station|Warnemuende DE Railway Station^ZWD^^CR^^^429^Germany
-ZWG^^^N^0^^Weingarten DE Off^Weingarten DE Off^47.7833^-9.65^X^XXXX^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZWG^^^^^O^^^429^Germany
+ZWG^^^N^0^^Weingarten DE Off^Weingarten DE Off^47.7833^-9.65^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZWG^Weingarten DE Off^ZWG|0|Weingarten DE Off|Weingarten DE Off^ZWG^^O^^^429^Germany
 ZWJ^^^N^0^^Haugastol NO Railway Station^Haugastol NO Railway Station^60.52^7.867^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZWJ^Haugastol NO Railway Station^ZWJ|0|Haugastol NO Railway Station|Haugastol NO Railway Station^ZWJ^^CR^^^465^Norway
 ZWM^^^N^0^^Wismar DE Railway Station^Wismar DE Railway Station^53.9^11.47^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZWM^Wismar DE Railway Station^ZWM|0|Wismar DE Railway Station|Wismar DE Railway Station^ZWM^^CR^^^429^Germany
 ZWN^^^N^0^^Wittenb DE Wittenberge Railway^Wittenb DE Wittenberge Railway^52.98^11.75^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZWN^Wittenb DE Wittenberge Railway^ZWN|0|Wittenb DE Wittenberge Railway|Wittenb DE Wittenberge Railway^ZWN^^CR^^^429^Germany
-ZWO^^^N^0^^Dutch Rail Zone 02 NL Off Line^Dutch Rail Zone 02 NL Off Line^52.3^4.833^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWO^^^^^O^^^461^Netherlands
-ZWQ^^^N^0^^Dutch Rail Zone 07 NL Off Line^Dutch Rail Zone 07 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWQ^^^^^O^^^461^Netherlands
+ZWO^^^N^0^^Dutch Rail Zone 02 NL Off Line^Dutch Rail Zone 02 NL Off Line^52.3^4.833^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWO^Dutch Rail Zone 02 NL Off Line^ZWO|0|Dutch Rail Zone 02 NL Off Line|Dutch Rail Zone 02 NL Off Line^ZWO^^O^^^461^Netherlands
+ZWQ^^^N^0^^Dutch Rail Zone 07 NL Off Line^Dutch Rail Zone 07 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWQ^Dutch Rail Zone 07 NL Off Line^ZWQ|0|Dutch Rail Zone 07 NL Off Line|Dutch Rail Zone 07 NL Off Line^ZWQ^^O^^^461^Netherlands
 ZWR^^^N^0^^Kota Kinabalu MY Port^Kota Kinabalu MY Port^5.972^116.1^S^PRT^^^^^MY^^Malaysia^Asia^^^^^^^^^^^^Asia/Kuching^^^^-1^BKI^^^^^P^^^749^Malaysia
 ZWT^^^N^0^^Lutherstadt Wittenberg DE Witt^Lutherstadt Wittenberg DE Witt^51.88^12.65^S^RSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZWT^Lutherstadt Wittenberg DE Witt^ZWT|0|Lutherstadt Wittenberg DE Witt|Lutherstadt Wittenberg DE Witt^ZWT^^CR^^^429^Germany
 ZWU^^^N^0^^Washington DC US Dc Railway St^Washington DC US Dc Railway St^38.85^-77.03^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^WAS^^^^DC^R^^^32^District of Columbia
-ZWX^^^N^0^^Dutch Rail Zone 28 NL Off Line^Dutch Rail Zone 28 NL Off Line^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWX^^^^^O^^^461^Netherlands
-ZWZ^^^N^0^^Any Station NL Off Line Point^Any Station NL Off Line Point^52.32^4.783^X^XXXX^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWZ^^^^^O^^^461^Netherlands
+ZWX^^^N^0^^Dutch Rail Zone 28 NL Off Line^Dutch Rail Zone 28 NL Off Line^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWX^Dutch Rail Zone 28 NL Off Line^ZWX|0|Dutch Rail Zone 28 NL Off Line|Dutch Rail Zone 28 NL Off Line^ZWX^^O^^^461^Netherlands
+ZWZ^^^N^0^^Any Station NL Off Line Point^Any Station NL Off Line Point^52.32^4.783^P^PPLC^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^ZWZ^Any Station NL Off Line Point^ZWZ|0|Any Station NL Off Line Point|Any Station NL Off Line Point^ZWZ^^O^^^461^Netherlands
 ZXA^^^N^0^^Aberdeen GB Railway Station^Aberdeen GB Railway Station^55.88^-4.25^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^ABZ^^^^^R^^^493^United Kingdom
-ZXH^^^N^0^^Sorfjord NO^Sorfjord NO^59.93^10.75^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXH^^^^^O^^^465^Norway
-ZXI^^^N^0^^Rodoy NO^Rodoy NO^59.93^10.75^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXI^^^^^O^^^465^Norway
-ZXK^^^N^0^^Basmoen NO^Basmoen NO^59.93^10.75^X^XXXX^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXK^^^^^O^^^465^Norway
+ZXH^^^N^0^^Sorfjord NO^Sorfjord NO^59.93^10.75^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXH^Sorfjord NO^ZXH|0|Sorfjord NO|Sorfjord NO^ZXH^^O^^^465^Norway
+ZXI^^^N^0^^Rodoy NO^Rodoy NO^59.93^10.75^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXI^Rodoy NO^ZXI|0|Rodoy NO|Rodoy NO^ZXI^^O^^^465^Norway
+ZXK^^^N^0^^Basmoen NO^Basmoen NO^59.93^10.75^P^PPLC^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXK^Basmoen NO^ZXK|0|Basmoen NO|Basmoen NO^ZXK^^O^^^465^Norway
 ZXO^^^N^0^^Fauske NO Railway Station^Fauske NO Railway Station^67.28^15.42^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXO^Fauske NO Railway Station^ZXO|0|Fauske NO Railway Station|Fauske NO Railway Station^ZXO^^CR^^^465^Norway
 ZXP^^^N^0^^Perth GB Railway Station^Perth GB Railway Station^56.4^-3.467^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^PSL^^^^^R^^^493^United Kingdom
 ZXS^^^N^0^^Buffalo NY US Exchange St Rail^Buffalo NY US Exchange St Rail^42.93^-78.73^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^BUF^^^^NY^R^^^22^New York
 ZXU^^^N^0^^Rygge NO Railway Station^Rygge NO Railway Station^59.38^10.75^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXU^Rygge NO Railway Station^ZXU|0|Rygge NO Railway Station|Rygge NO Railway Station^ZXU^^CR^^^465^Norway
 ZXX^^^N^0^^Rade NO Railway Station^Rade NO Railway Station^59.35^10.87^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZXX^Rade NO Railway Station^ZXX|0|Rade NO Railway Station|Rade NO Railway Station^ZXX^^CR^^^465^Norway
 ZXZ^^^N^0^^Dubai AE Jumeirah Beach Bus St^Dubai AE Jumeirah Beach Bus St^55.47^25.42^S^BUSTN^^^^^AE^^United Arab Emirates^Asia^^^^^^^^^^^^Asia/Dubai^^^^-1^DXB^^^^^B^^^678^United Arab Emirates
-ZYB^^^N^0^^Sncb Rail Network BE Off Line^Sncb Rail Network BE Off Line^50.9^4.483^X^XXXX^^^^^BE^^Belgium^Europe^^^^^^^^^^^^Europe/Brussels^^^^-1^ZYB^^^^^O^^^409^Belgium
-ZYC^^^N^0^^Gizycko PL Gizycko^Gizycko PL Gizycko^54.0333^-21.8^X^XXXX^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^ZYC^^^^^O^^^467^Poland
+ZYB^^^N^0^^Sncb Rail Network BE Off Line^Sncb Rail Network BE Off Line^50.9^4.483^P^PPLC^^^^^BE^^Belgium^Europe^^^^^^^^^^^^Europe/Brussels^^^^-1^ZYB^Sncb Rail Network BE Off Line^ZYB|0|Sncb Rail Network BE Off Line|Sncb Rail Network BE Off Line^ZYB^^O^^^409^Belgium
+ZYC^^^N^0^^Gizycko PL Gizycko^Gizycko PL Gizycko^54.0333^-21.8^P^PPLC^^^^^PL^^Poland^Europe^^^^^^^^^^^^Europe/Warsaw^^^^-1^ZYC^Gizycko PL Gizycko^ZYC|0|Gizycko PL Gizycko|Gizycko PL Gizycko^ZYC^^O^^^467^Poland
 ZYD^^^N^0^^Lisbon PT Tp Bus Station^Lisbon PT Tp Bus Station^38.7^-0.1522^S^BUSTN^^^^^PT^^Portugal^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^LIS^^^^^B^^^469^Portugal
 ZYE^^^N^0^^Eindhoven NL Railway Station^Eindhoven NL Railway Station^51.45^5.383^S^RSTN^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^EIN^^^^^R^^^461^Netherlands
 ZYF^^^N^0^^Faro PT Tp Bus Station^Faro PT Tp Bus Station^37.02^-0.1328^S^BUSTN^^^^^PT^^Portugal^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^FAO^^^^^B^^^469^Portugal
@@ -809,5 +809,5 @@ ZYV^^^N^0^^Vegarshei NO Railway Station^Vegarshei NO Railway Station^58.76^8.853
 ZYW^^^N^0^^Sandvika NO Railway Station^Sandvika NO Railway Station^59.89^10.88^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZYW^Sandvika NO Railway Station^ZYW|0|Sandvika NO Railway Station|Sandvika NO Railway Station^ZYW^^CR^^^465^Norway
 ZYY^^^N^0^^Marnardal NO Railway Station^Marnardal NO Railway Station^58.36^7.857^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZYY^Marnardal NO Railway Station^ZYY|0|Marnardal NO Railway Station|Marnardal NO Railway Station^ZYY^^CR^^^465^Norway
 ZZG^^^N^0^^Fictitious Point DE Ge^Fictitious Point DE Ge^50.03^8.567^S^AIRP^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZZG^Fictitious Point DE Ge^ZZG|0|Fictitious Point DE Ge|Fictitious Point DE Ge^ZZG^^CA^^^429^Germany
-ZZI^^^N^0^^Elite Mystery Night VI AU Off^Elite Mystery Night VI AU Off^-38.28^142.5^X^XXXX^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Melbourne^^^^-1^ZZI^^^^VI^O^^^4^U.S. Virgin Islands
-ZZJ^^^N^0^^Mystery Night VI AU Off^Mystery Night VI AU Off^-38.03^144.5^X^XXXX^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Melbourne^^^^-1^ZZJ^^^^VI^O^^^4^U.S. Virgin Islands
+ZZI^^^N^0^^Elite Mystery Night VI AU Off^Elite Mystery Night VI AU Off^-38.28^142.5^P^PPLC^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Melbourne^^^^-1^ZZI^Elite Mystery Night VI AU Off^ZZI|0|Elite Mystery Night VI AU Off|Elite Mystery Night VI AU Off^ZZI^VI^O^^^4^U.S. Virgin Islands
+ZZJ^^^N^0^^Mystery Night VI AU Off^Mystery Night VI AU Off^-38.03^144.5^P^PPLC^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Melbourne^^^^-1^ZZJ^Mystery Night VI AU Off^ZZJ|0|Mystery Night VI AU Off|Mystery Night VI AU Off^ZZJ^VI^O^^^4^U.S. Virgin Islands
