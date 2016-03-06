@@ -155,9 +155,13 @@ function collectTravelPoints(porIataCodePk, porIataCodeServedList, porLocType) {
 			tvl_por_list = travel_por_list_array[porIataCodeServed]
 			if (tvl_por_list == "") {
 				travel_por_list_array[porIataCodeServed] = porIataCodePk
+
 			} else {
+				# Add the POR IATA code
+				tvl_por_list_tmp = tvl_por_list "," porIataCodePk
+				# Sort the list of POR IATA codes
 				travel_por_list_array[porIataCodeServed] =	\
-					tvl_por_list "," porIataCodePk
+					sortListStringAplha(tvl_por_list_tmp, ",")
 			}
 		}
 	}

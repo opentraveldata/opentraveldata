@@ -540,9 +540,46 @@ function getPrimaryKeyAsArray(__gpkaaParamPK, __resultPKArray) {
 # Extract the primary key fields as an array.
 function getPrimaryKey(__gpkParamIataCode, __gpkParamLocationType, \
 		       __gpkParamGeonamesID) {
-    __resultPK = \
-	__gpkParamIataCode "-" __gpkParamLocationType "-" __gpkParamGeonamesID
+    __resultPK =														\
+		__gpkParamIataCode "-" __gpkParamLocationType "-" __gpkParamGeonamesID
     return __resultPK
+}
+
+##
+# The given string is a list. Sort it.
+#
+function sortListStringAplha(__slsParamListString, __slsParamSep) {
+    __resultNbOfFields = split (__slsParamListString, __resultArray, \
+								__slsParamSep)
+	#
+	asort(__resultArray)
+
+	# Browse the list of travel-related POR IATA codes
+	__resultListString = ""
+	delete __resultUniqArray
+	for (idx in __resultArray) {
+		__TvlCode = __resultArray[idx]
+
+		__isAlreadyInArray = __resultUniqArray[__TvlCode]
+		if (__isAlreadyInArray) {
+			# When the travel-related POR already appears in the list,
+			# do not add it again
+			continue
+
+		} else {
+			# Register that that travel-related POR is in the list
+			__resultUniqArray[__TvlCode] = 1
+		}
+
+		# Add the separator when needed
+		if (int(idx) >= 2) {
+			__resultListString = __resultListString __slsParamSep
+		}
+
+		# Add the travel-related POR IATA code to the dedicated list
+		__resultListString = __resultListString __TvlCode
+	}
+	return __resultListString
 }
 
 ##
