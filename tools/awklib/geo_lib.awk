@@ -214,7 +214,7 @@ function capitaliseWords(__cwInStr) {
 ##
 # State whether the POR is (matches with) a city
 function isLocTypeCity(__iltcParamLocationType) {
-    __resultIsCity = match (__iltcParamLocationType, "[C]")
+    __resultIsCity = match (__iltcParamLocationType, "[CO]")
     return __resultIsCity
 }
 
