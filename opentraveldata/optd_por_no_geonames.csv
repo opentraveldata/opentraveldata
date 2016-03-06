@@ -27,6 +27,7 @@ DDI^^^N^0^^Daydream Island QL AU Heliport^Daydream Island QL AU Heliport^-20.17^
 DEO^^^N^0^^Dearborn MI US Hyatt Regency^Dearborn MI US Hyatt Regency^42.3^-83.23^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Detroit^^^^-1^DEO^Dearborn MI US Hyatt Regency^DEO|0|Dearborn MI US Hyatt Regency|Dearborn MI US Hyatt Regency^DEO^MI^CH^^^43^Michigan
 DLB^^^N^0^^D Albertis PG^D Albertis PG^-8.45^118.8^S^AIRP^^^^^PG^^Papua New Guinea^Oceania^^^^^^^^^^^^Pacific/Port_Moresby^^^^-1^DLB^D Albertis PG^DLB|0|D Albertis PG|D Albertis PG^DLB^^CA^^^804^Papua New Guinea
 DRX^^^N^0^^Dresden DE Bus Station^Dresden DE Bus Station^51.0403^13.7306^S^BUSTN^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^DRS^^^^^B^^^429^Germany
+DTZ^^^N^0^^Dortmund DE Hbf Railway Statio^Dortmund DE Hbf Railway Statio^51.51494^7.466^S^RSTN^^2015-01-01^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^DTM^^^^^R^^^429^Germany
 DUK^^^N^0^^Mtubatuba ZA Dukuduku^Mtubatuba ZA Dukuduku^-28.37^32.23^S^AIRP^^^^^ZA^^South Africa^Africa^^^^^^^^^^^^Africa/Johannesburg^^^^-1^DUK^Mtubatuba ZA Dukuduku^DUK|0|Mtubatuba ZA Dukuduku|Mtubatuba ZA Dukuduku^DUK^^CA^^^562^South Africa
 DWF^^^N^0^^Dayton OH US Wright Afb^Dayton OH US Wright Afb^39.59^-84.22^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^DAY^^^^OH^A^^^44^Ohio
 DWS^^^N^0^^Orlando FL US Disney World^Orlando FL US Disney World^28.53^-81.35^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ORL^^^^FL^A^^^33^Florida
@@ -108,6 +109,7 @@ JWH^^^N^0^^Houston TX US Westchase Helipo^Houston TX US Westchase Helipo^29.73^-
 JWL^^^N^0^^Houston TX US Woodlawns Hpt^Houston TX US Woodlawns Hpt^29.94^-95.64^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^H^^^74^Texas
 KAM^^^N^0^^Kamaran Island YE^Kamaran Island YE^15.37^42.58^S^AIRP^^^^^YE^^Yemen^Asia^^^^^^^^^^^^Asia/Aden^^^^-1^KAM^Kamaran Island YE^KAM|0|Kamaran Island YE|Kamaran Island YE^KAM^^CA^^^694^Yemen
 KBE^^^N^0^^Bell Island AK US Hot Springs^Bell Island AK US Hot Springs^65.49^-144.6^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^KBE^Bell Island AK US Hot Springs^KBE|0|Bell Island AK US Hot Springs|Bell Island AK US Hot Springs^KBE^AK^CA^^^1^Alaska
+KHX^^^N^0^^Kihihi UG^Kihihi UG^-0.71944^29.7^S^AIRP^^2015-01-01^^^UG^^Uganda^Africa^^^^^^^^^^^^Africa/Kampala^^^^-1^KHX^Kihihi UG^KHX|0|Kihihi UG|Kihihi UG^KHX^^CA^^^590^Uganda
 KOQ^^^N^0^^Koethen De DE^Koethen De DE^51.72^11.95^S^AIRP^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^KOQ^Koethen De DE^KOQ|0|Koethen De DE|Koethen De DE^KOQ^^CA^^^429^Germany
 KWD^^^N^0^^Kawadjia CF^Kawadjia CF^-8^23.23^S^AIRP^^^^^CF^^Central African Republic^Africa^^^^^^^^^^^^Africa/Bangui^^^^-1^KWD^Kawadjia CF^KWD|0|Kawadjia CF|Kawadjia CF^KWD^^CA^^^509^Central African Republic
 LJC^^^N^0^^Louisville KY US Intercont^Louisville KY US Intercont^38.18^-85.73^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Kentucky/Louisville^^^^-1^SDF^^^^KY^A^^^52^Kentucky
