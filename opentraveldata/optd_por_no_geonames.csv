@@ -68,7 +68,6 @@ IVI^^^N^0^^Viveros Island PA^Viveros Island PA^8.47167^-79.0006^S^AIRP^^^^^PA^^P
 JAJ^^^N^0^^Atlanta GA US Perimeter Mall^Atlanta GA US Perimeter Mall^33.93^-84.15^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ATL^^^^GA^A^^^34^Georgia
 JAS^^^N^0^^Jasper TX US County Bell Fld^Jasper TX US County Bell Fld^30.92^-94.02^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^JAS^Jasper TX US County Bell Fld^JAS|0|Jasper TX US County Bell Fld|Jasper TX US County Bell Fld^JAS^TX^CA^^^74^Texas
 JBC^^^N^0^^Boston MA US City Heliport^Boston MA US City Heliport^42.33^-71.03^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^BOS^^^^MA^H^^^13^Massachusetts
-JBK^^^N^0^^Berkeley CA US^Berkeley CA US^37.95^-122.3^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^JBK^Berkeley CA US^JBK|0|Berkeley CA US|Berkeley CA US^JBK^CA^CA^^^91^California
 JBP^^^N^0^^Los Angeles CA US Commerce Bus^Los Angeles CA US Commerce Bus^33.98^-118.2^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^LAX^^^^CA^B^^^91^California
 JBS^^^N^0^^Pleasanton CA US Hacienda Bus^Pleasanton CA US Hacienda Bus^37.71^-121.9^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^JBS^Pleasanton CA US Hacienda Bus^JBS|0|Pleasanton CA US Hacienda Bus|Pleasanton CA US Hacienda Bus^JBS^CA^CH^^^91^California
 JCE^^^N^0^^Oakland CA US Convention Centr^Oakland CA US Convention Centr^37.62^-122.4^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^OAK^^^^CA^H^^^91^California
@@ -81,7 +80,6 @@ JDK^^^N^0^^Pseudo NY US Pseudo City Code^Pseudo NY US Pseudo City Code^40.6386^-
 JDM^^^N^0^^Miami FL US Downtown Heliport^Miami FL US Downtown Heliport^25.8^-80.3^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^MIA^^^^FL^H^^^33^Florida
 JDT^^^N^0^^Minneapolis MN US Downtown Hpt^Minneapolis MN US Downtown Hpt^44.97^-93.24^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^MSP^^^^MN^H^^^63^Minnesota
 JDX^^^N^0^^Houston TX US First City Helip^Houston TX US First City Helip^29.77^-95.33^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^B^^^74^Texas
-JDY^^^N^0^^Downey CA US Heliport^Downey CA US Heliport^42.43^-112.1^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Boise^^^^-1^JDY^Downey CA US Heliport^JDY|0|Downey CA US Heliport|Downey CA US Heliport^JDY^CA^CH^^^91^California
 JEV^^^N^0^^Evry FR^Evry FR^48.63^2.567^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^JEV^Evry FR^JEV|0|Evry FR|Evry FR^JEV^^O^^^427^France
 JGE^^^N^0^^Geoje KR Heliport^Geoje KR Heliport^34.9^128.7^S^AIRH^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^JGE^Geoje KR Heliport^JGE|0|Geoje KR Heliport|Geoje KR Heliport^JGE^^CH^^^778^South Korea
 JGL^^^N^0^^Atlanta GA US Galleria^Atlanta GA US Galleria^33.58^-84.47^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ATL^^^^GA^A^^^34^Georgia
@@ -232,7 +230,6 @@ QIN^^^N^0^^Mersin TR Mersin^Mersin TR Mersin^36.85^-34.6^P^PPLC^^^^^TR^^Turkey^A
 QIO^^^N^0^^Ain Temouchent DZ Off^Ain Temouchent DZ Off^35.2667^1.13333^P^PPLC^^^^^DZ^^Algeria^Africa^^^^^^^^^^^^Africa/Algiers^^^^-1^QIO^Ain Temouchent DZ Off^QIO|0|Ain Temouchent DZ Off|Ain Temouchent DZ Off^QIO^^O^^^500^Algeria
 QIP^^^N^0^^Simbach DE Off^Simbach DE Off^48.5667^-12.75^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^QIP^Simbach DE Off^QIP|0|Simbach DE Off|Simbach DE Off^QIP^^O^^^429^Germany
 QIS^^^N^0^^Mito JP Off^Mito JP Off^36.3333^-140.5^P^PPLC^^^^^JP^^Japan^Asia^^^^^^^^^^^^Asia/Tokyo^^^^-1^QIS^Mito JP Off^QIS|0|Mito JP Off|Mito JP Off^QIS^^O^^^736^Japan
-QIU^^^N^0^^Ciudadela ES Off^Ciudadela ES Off^40^-3.83333^P^PPLC^^^^^ES^^Spain^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^QIU^Ciudadela ES Off^QIU|0|Ciudadela ES Off|Ciudadela ES Off^QIU^^O^^^482^Spain
 QIW^^^N^0^^Umm Al Quwain AE^Umm Al Quwain AE^25.27^55.5^P^PPLC^^^^^AE^^United Arab Emirates^Asia^^^^^^^^^^^^Asia/Dubai^^^^-1^QIW^Umm Al Quwain AE^QIW|0|Umm Al Quwain AE|Umm Al Quwain AE^QIW^^O^^^678^United Arab Emirates
 QIX^^^N^0^^Quixada CE BR Quixada^Quixada CE BR Quixada^-4.91667^39^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Africa/Dar_es_Salaam^^^^-1^QIX^Quixada CE BR Quixada^QIX|0|Quixada CE BR Quixada|Quixada CE BR Quixada^QIX^CE^O^^^316^Brazil
 QJA^^^N^0^^Jaragua Do Sul SC BR Off^Jaragua Do Sul SC BR Off^-26.4833^49.0667^P^PPLC^^^^^BR^^Brazil^South America^^^^^^^^^^^^Indian/Antananarivo^^^^-1^QJA^Jaragua Do Sul SC BR Off^QJA|0|Jaragua Do Sul SC BR Off|Jaragua Do Sul SC BR Off^QJA^SC^O^^^37^South Carolina
