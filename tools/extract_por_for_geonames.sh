@@ -208,10 +208,16 @@ echo "Valid non-Geonames POR, appearing in schedules (i.e., important)"
 echo "--------"
 
 ##
-# Valid non-Geonames airport POR, appearing in schedules (i.e., important)
+# Valid non-Geonames off-line point POR, appearing in schedules (i.e., important)
 NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "O")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
 echo "${NB_POR} off-line points:"
 echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"O\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
+
+##
+# Valid non-Geonames airport POR, appearing in schedules (i.e., important)
+NB_POR=`awk -F'^' '{if ($5 == 0 && $6 == "" && $13 != "" && match ($42, "A")) {print $0}}' ${OPTD_POR_PUBLIC_FILE} | wc -l`
+echo "${NB_POR} airports:"
+echo "awk -F'^' '{if (\$5 == 0 && \$6 == \"\" && \$13 != \"\" && match (\$42, \"A\")) {print \$0}}' ${OPTD_POR_PUBLIC_FILE} | less"
 
 ##
 # Valid non-Geonames heliport POR, appearing in schedules (i.e., important)
