@@ -7,18 +7,17 @@
 # 2. TVL POR list not sorted.
 #
 # cd tools/
-# git co master
 # ./make_optd_por_public.sh
 # ./make_optd_por_public.sh --clean
-# sh prepare_por_no_geonames.sh # => optd_por_no_geonames.csv
-# # ./make_optd_no_geonames_por_old.sh # => optd_por_no_geonames_old.csv # No longer used, normally
-# git add ../opentraveldata/optd_por_public.sh ../opentraveldata/optd_por_no_geonames.csv
-# git ci -m "[POR] Integrated the last updates of Geonames; xx POR has been updated." ../opentraveldata/optd_por_public.sh ../opentraveldata/optd_por_no_geonames.csv
-# git co woref
+# sh prepare_por_no_geonames.sh # => ../opentraveldata/optd_por_no_geonames.csv
+# sh prepare_por_no_geonames.sh --clean
+# git diff ../opentraveldata/optd_por_no_geonames.csv
+# git add ../opentraveldata/optd_por_no_geonames.csv
 # ./make_optd_por_public.sh
 # ./make_optd_por_public.sh --clean
-# cd ../opentraveldata
-# git diff optd_por_public.sh
+# git diff ../opentraveldata/optd_por_public.csv
+# git add ../opentraveldata/optd_por_public.csv
+# git ci -m "[POR] Integrated the last updates of Geonames; xx POR has been updated." ../opentraveldata/optd_por_public.csv ../opentraveldata/optd_por_no_geonames.csv
 
 
 ##

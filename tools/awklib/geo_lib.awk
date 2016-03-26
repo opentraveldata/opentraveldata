@@ -517,7 +517,7 @@ function convertLonToStd(__cgcLon) {
 # 3. The OPTD-maintained Geonames ID
 function extractPrimaryKeyDetails(__epkdParamPK) {
     # Specification of the primary key format
-    pk_regexp = "^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$"
+    pk_regexp = "^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,15})$"
 
     # IATA code (first field of the primary key)
     epkdIataCode = gensub (pk_regexp, "\\1", "g", __epkdParamPK)

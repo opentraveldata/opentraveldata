@@ -64,6 +64,10 @@ GEO_POR_DATA_DIR=${EXEC_PATH}../data/geonames/data/por/data/
 # OPTD directory
 DATA_DIR=${EXEC_PATH}../opentraveldata/
 
+##
+# File of best known coordinates
+OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 
 ##
 # Extract airport/city information from the Geonames data file
@@ -114,6 +118,9 @@ then
 	then
 		echo "  - Latest extraction date: '${LATEST_EXTRACT_DATE}' (${LATEST_EXTRACT_DATE_HUMAN})"
 	fi
+	echo "  - OPTD-maintained input data files from '${DATA_DIR}':"
+	echo "      + File of best known coordinates: '${OPTD_POR_FILE}'"
+	echo
 	echo "  - Geonames input data files from '${GEO_POR_DATA_DIR}':"
 	echo "      + Detailed POR entry data file (~9 millions): '${GEO_POR_FILE}'"
 	echo "      + Detailed country information data file: '${GEO_CTY_FILE}'"
@@ -173,7 +180,7 @@ echo "That operation may take several minutes..."
 IATA_EXTRACTOR=${EXEC_PATH}extract_por_with_iata_icao.awk
 time awk -F'^' \
 	-v iata_file=${DUMP_IATA_FILE} -v noiata_file=${DUMP_NOIATA_FILE} \
-	-f ${IATA_EXTRACTOR} ${GEO_POR_FILE}
+	-f ${IATA_EXTRACTOR} ${OPTD_POR_FILE} ${GEO_POR_FILE}
 echo "... Done"
 echo
 

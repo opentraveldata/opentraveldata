@@ -12,13 +12,31 @@
 #
 # The format of allCountries_w_alt.txt file corresponds to what is expected.
 # So, no further processing has to be done on the format here.
-# However, all the POR having no IATA code is filtered out.
+# However, most of the POR having no IATA code is filtered out.
 # Hence, the remaining of the Shell/AWK scripts, then, can be left untouched.
+#
+# A few airports have no IATA code (see for instance
+# http://github.com/opentraveldata/opentraveldata/issues/15). However,
+# some are used by airlines to be published in schedules. So, a work around
+# to have them in OpenTravelData (in the optd_por_public.csv file) is to use
+# the 'ZZZ' special IATA code, which cannot be used for airports (it is
+# reserved), meaning that that airport has no IATA code. The airport details
+# (e.g., ICAO or FAA code, names, time-zones) then come from Geonames.
+# Sample line from the optd_por_best_known_so_far.csv file.
+# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
+#
+# Input data files:
+# * <OPTD root dir>/data/geonames/data/por/data/allCountries_w_alt.txt (generated file)
+# * <OPTD root dir>/opentraveldata/optd_por_best_known_so_far.csv
 #
 # Input format:
 # -------------
 # Sample lines for the allCountries_w_alt.txt file:
 # NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s
+# ^WAOM^^8531905^Beringin Airport^Beringin Airport^-0.94238^114.8942^ID^^Indonesia^Asia^S^AIRP^13^Central Kalimantan^Central Kalimantan^^^^^^0^^29^Asia/Pontianak^7.0^7.0^7.0^2013-05-20^Bandar Udara Beringin,WAOM^http://en.wikipedia.org/wiki/Beringin_Airport^id|Bandar Udara Beringin|
+#
+# Sample lines for the optd_por_best_known_so_far.csv file:
+# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
 #
 # A few examples of Geonames feature codes
 # (field #11 here; see also http://www.geonames.org/export/codes.html):
@@ -90,6 +108,7 @@ BEGIN {
 
 	#
 	por_lines = 0
+	delete optd_no_iata_list
 
 	# Output files
 	if (iata_file == "") {
@@ -112,6 +131,31 @@ BEGIN {
 	print (hdr_line) > noiata_file
 }
 
+
+##
+# OPTD-maintained list of POR (optd_por_best_known_so_far.csv)
+#
+# AYM-A-10943125^AYM^24.46682^54.6102^AUH,AYM^2014-05-01
+# AYM-C-10227711^AYM^24.49784^54.60556^AYM^2014-05-01
+# NCE-A-6299418^NCE^43.658411^7.215872^NCE^
+# NCE-C-2990440^NCE^43.70313^7.26608^NCE^
+# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
+#
+/^ZZZ-[A-Z]{1,2}-[0-9]{1,15}\^ZZZ\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^ZZZ\^[0-9-]{0,10}$/ {
+    # Primary key (IATA code and location pseudo-code)
+    pk = $1
+
+	# Geonames ID
+	extractPrimaryKeyDetails(pk)
+	geo_id = epkdGeonamesID
+
+	# Location type
+	por_type = epkdLocationType
+	
+	# Register the POR
+	optd_no_iata_list[geo_id] = por_type
+}
+
 ##
 # POR entries having no IATA code (vast majority of the POR).
 #
@@ -128,12 +172,29 @@ BEGIN {
 # ^BGKS^^7730417^Kangersuatsiaq Heliport^Kangersuatsiaq Heliport^72.39667^-55.555^GL^^Greenland^America^S^AIRH^03^^^^^^^^0^^-9999^America/Godthab^-3.0^-2.0^-3.0^2012-02-26^BGKS,KAQ^http://en.wikipedia.org/wiki/Kangersuatsiaq_Heliport
 #
 /^\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,12})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
+	# Geonames ID
+	geo_id = $4
+
 	# Feature code
 	fcode = $14
 
 	# Dump the line when the POR is either travel- or city-related
 	if (isFeatCodeTvlRtd(fcode) >= 1 || isFeatCodeCity(fcode) >= 1) {
 		print ($0) > noiata_file
+	}
+
+	# When the POR has no IATA code, but is referenced in
+	# optd_por_best_known_so_far.csv, then add it to the list of POR having
+	# a IATA code ('ZZZ', here). That allows to get non-IATA POR in
+	# OpenTravelData
+	if (optd_no_iata_list[geo_id]) {
+		OFS = FS
+		$1 = "ZZZ"
+		print ($0) > iata_file
+
+		# Reset the IATA code field, otherwise, the line will match
+		# the next AWK matching rule and action code clause
+		$1 = ""
 	}
 }
 
@@ -143,8 +204,9 @@ BEGIN {
 # compatibility with the MySQL-based generation process.
 #
 # NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s
+# ^WAOM^^8531905^Beringin Airport^Beringin Airport^-0.94238^114.8942^ID^^Indonesia^Asia^S^AIRP^13^Central Kalimantan^Central Kalimantan^^^^^^0^^29^Asia/Pontianak^7.0^7.0^7.0^2013-05-20^Bandar Udara Beringin,WAOM^http://en.wikipedia.org/wiki/Beringin_Airport^id|Bandar Udara Beringin|
 #
-/^([A-Z0-9]{3})\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,12})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
+/^[A-Z0-9]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9]{4}-[0-9]{2}-[0-9]{2}\^/ {
 	#
 	por_lines++
 
