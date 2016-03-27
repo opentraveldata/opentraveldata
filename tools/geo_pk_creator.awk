@@ -117,7 +117,7 @@ BEGINFILE {
 #  NCE-CA-0^NCE^43.658411^7.215872^NCE^      (1 combined line in OPTD
 #                                             2 lines in Geonames)
 #
-/^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})\^([A-Z]{3})\^/ {
+/^[A-Z]{3}-[A-Z]{1,2}-[0-9]{1,15}\^[A-Z]{3}\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^([A-Z]{3},?)+\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)$/ {
     # Store the full line
     full_line = $0
 
@@ -139,7 +139,7 @@ BEGINFILE {
 
     # Register the OPTD-maintained line
     registerOPTDLine(pk, iata_code2, latitude, longitude,	\
-		     srvd_city_code, beg_date, full_line)
+					 srvd_city_code, beg_date, full_line)
 }
 
 
@@ -166,24 +166,15 @@ BEGINFILE {
 #  NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Nice Airport,...^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^en|Nice Airport|s
 #  NCE^ZZZZ^^2990440^Nice^Nice^43.70313^7.26608^FR^^France^Europe^P^PPLA2^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^338620^25^18^Europe/Paris^1.0^2.0^1.0^2011-11-02^Nice,...,Ница,尼斯^http://en.wikipedia.org/wiki/Nice^en|Nice||ru|Ницца|
 #
-/^([A-Z]{3})\^([A-Z0-9]{0,4})\^([A-Z0-9]{0,4})\^([0-9]{1,10})\^/ {
+/^[A-Z]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^[A-Z]{2}\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)\^/ {
     #
     nb_of_geo_por++
 
-    # IATA code
-    iata_code = $1
+	# Full line
+	full_line = $0
 
-    # Geonames ID
-    geonames_id = $4
-
-    # Feature code
-    fcode = $14
-
-    # Store the full line
-    full_line = $0
-
-    # Register the full line
-    registerGeonamesLine(iata_code, fcode, geonames_id,	full_line, nb_of_geo_por)
+	# Parse and dump the full details
+	registerGeonamesLine(full_line, nb_of_geo_por)
 }
 
 ##
@@ -194,7 +185,7 @@ ENDFILE {
 
     # DEBUG
     if (nb_of_geo_por == 0) {
-	# displayLists()
+		# displayLists()
     }
 }
 

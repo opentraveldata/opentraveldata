@@ -67,38 +67,62 @@ BEGIN {
     pr_date_generation = ""
     pr_date_from = ""
     pr_date_to = ""
+
+	# Log level
+	if (!log_level) {
+		log_level = 3
+	}
+	
+    # Initialisation of the Geo library
+    initGeoAwkLib(awk_file, error_stream, log_level)
+
+    # Number of last registered Geonames POR entries
+    nb_of_geo_por = 0
 }
 
 
 ##
 # OPTD-maintained list of POR (optd_por_best_known_so_far.csv)
 #
-# AYM-A-10943125^AYM^24.46682^54.6102^AUH,AYM^2014-05-01
-# AYM-C-10227711^AYM^24.49784^54.60556^AYM^2014-05-01
-# NCE-A-6299418^NCE^43.658411^7.215872^NCE^
-# NCE-C-2990440^NCE^43.70313^7.26608^NCE^
+# AYM-A-10943125^AYM^24.46682^54.6102^AUH,AYM^2014-05-01 (city code list, date)
+# AYM-C-10227711^AYM^24.49784^54.60556^AYM^2014-05-01    (beginning date)
+# ALV-C-3041563^ALV^42.50779^1.52109^ALV^ (2 lines in OPTD, 2 lines in Geonames)
+# ALV-O-7730819^ALV^40.98^0.45^ALV^       (2 lines in OPTD, 2 lines in Geonames)
+# ARN-A-2725346^ARN^59.651944^17.918611^STO^ (2 lines in OPTD, split from a
+# ARN-R-8335457^ARN^59.649463^17.929^STO^     combined line, 1 line in Geonames)
+# IES-CA-2846939^IES^51.3^13.28^IES^(1 combined line in OPTD,1 line in Geonames)
+# IEV-A-6300960^IEV^50.401694^30.449697^IEV^(2 lines in OPTD, split from a
+# IEV-C-703448^IEV^50.401694^30.449697^IEV^  combined line, 2 lines in Geonames)
+# KBP-A-6300952^KBP^50.345^30.894722^IEV^   (1 line in OPTD, 1 line in Geonames)
+# LHR-A-2647216^LHR^51.4775^-0.461389^LON^  (1 line in OPTD, 1 line in Geonames)
+# LON-C-2643743^LON^51.5^-0.1667^LON^       (1 line in OPTD, 1 line in Geonames)
+# NCE-CA-0^NCE^43.658411^7.215872^NCE^      (1 combined line in OPTD
+#                                             2 lines in Geonames)
 # ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
 #
-/^[A-Z]{3}-[A-Z]{1,2}-[0-9]{1,15}\^[A-Z]{3}\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^[A-Z]{3}\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)$/ {
-    # Primary key (IATA code, location type and Geonames ID)
+/^[A-Z]{3}-[A-Z]{1,2}-[0-9]{1,15}\^[A-Z]{3}\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^([A-Z]{3},?)+\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)$/ {
+    # Store the full line
+    full_line = $0
+
+    # Primary key (combination of IATA code, location type and Geonames ID)
     pk = $1
 
-	# IATA code
-	iata_code = $2
+    # IATA code of the POR (it should be the same as the one of the primary key)
+    iata_code2 = $2
 
 	# Geographical coordinates
 	por_lat = $3
 	por_lon = $4
 
 	# City code (list)
-	city_code_list = $5
+	srvd_city_code_list = $5
 
 	# Beginning date
 	beg_date = $6
 
     # Register the POR
-	registerOPTDLine(pk, iata_code, por_lat, por_lon, city_code_list, beg_date, \
-					 $0)
+	registerOPTDLine(pk, iata_code2, por_lat, por_lon, srvd_city_code_list, \
+					 beg_date, full_line)
 }
 
 ##
@@ -367,7 +391,10 @@ function getContinentName(myCountryCode) {
 
 ##
 #
-function printAltNameSection(myAltNameSection) {
+function generateAltNameSection(myAltNameSection) {
+	# Returned string
+	__pansString = ""
+
     # Archive the full line and the separator
     full_line = $0
     fs_org = FS
@@ -377,9 +404,9 @@ function printAltNameSection(myAltNameSection) {
     $0 = myAltNameSection
 
     # Print the alternate names
-    printf ("%s", "^")
+	__pansString = __pansString "^"
     for (fld = 1; fld <= NF; fld++) {
-		printf ("%s", $fld)
+		__pansString = __pansString $fld
 
 		# Separate the details of a given alternate name with the equal (=) sign
 		# and the alternate name blocks with the pipe (|) sign.
@@ -387,24 +414,27 @@ function printAltNameSection(myAltNameSection) {
 
 			idx = fld % 3
 			if (idx == 0) {
-				printf ("%s", "=")
+				__pansString = __pansString "="
 
 			} else {
-				printf ("%s", "|")
+				__pansString = __pansString "|"
 			}
 		}
     }
 
     # Restore the initial separator (and full line, if needed)
     FS = fs_org
-    #$0 = full_line
+	#$0 = full_line
+
+	# Return the string
+	return __pansString
 }
 
 
 ##
 # Geonames-derived data dump (dump_from_geonames.csv)
 #
-# Sample input lines:
+# Sample input lines (truncated):
 #
 # iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country_code^cc2^country_name^continent_name^fclass^fcode^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_section
 # CHI^^^4887398^Chicago^Chicago^41.85003^-87.65005^US^^United States^North America^P^PPLA2^IL^Illinois^Illinois^031^Cook County^Cook County^^^2695598^179^180^America/Chicago^-6.0^-5.0^-6.0^2014-10-27^Chicago^http://en.wikipedia.org/wiki/Chicago^en|Chicago|p|es|Chicago|
@@ -412,184 +442,34 @@ function printAltNameSection(myAltNameSection) {
 # ORD^KORD^ORD^4887479^Chicago O'Hare International Airport^Chicago O'Hare International Airport^41.97959^-87.90446^US^^United States^North America^S^AIRP^IL^Illinois^Illinois^031^Cook County^Cook County^^^0^201^202^America/Chicago^-6.0^-5.0^-6.0^2016-02-28^Aéroport international O'Hare de Chicago^http://en.wikipedia.org/wiki/O%27Hare_International_Airport^en|Chicago O'Hare International Airport|
 #
 /^[A-Z]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^[A-Z]{2}\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)\^/ {
-    # IATA code
-	iata_code = $1
+    #
+    nb_of_geo_por++
 
-	# ICAO code
-	icao_code = $2
+	# Full line
+	full_line = $0
 
-	# FAA code
-	faa_code = $3
-
-	# Geonames ID
-	geonames_id = $4
-
-	# UTF8 name
-	name_utf8 = $5
-
-	# ASCII name
-	name_ascii = $6
-
-	# Feature class
-	feat_class = $13
-
-	# Feature code
-	feat_code = $14
-
-	# Location type (derived from the Geonames feature code)
-	location_type = getLocTypeFromFeatCode(feat_code)
-
-	# Latitude
-	geo_lat = getOPTDPorLatitude(iata_code, location_type)
-
-	# Longitude
-	geo_lon = getOPTDPorLongitude(iata_code, location_type)
-
-	# City code (list)
-	city_code_list = getOPTDPorCityCodeList(iata_code, location_type)
-
-	# Beginning date
-	date_from = getOPTDPorBegDate(iata_code, location_type)
-
-	# Country code
-	ctry_code = $9
-
-	# Alternate country code
-	ctry_code_alt = $10
-
-	# Country name
-	ctry_name = $11
-
-	# Continent name
-	cont_name = $12
-
-	# Admin level 1 code
-	adm1_code = $15
-
-	# Admin level 1 UTF8 name
-	adm1_name_utf = $16
-
-	# Admin level 1 ASCII name
-	adm1_name_utf = $17
-
-	# Admin level 2 code
-	adm2_code = $18
-
-	# Admin level 2 UTF8 name
-	adm2_name_utf = $19
-
-	# Admin level 2 ASCII name
-	adm2_name_utf = $20
-
-	# Admin level 3 code
-	adm3_code = $21
-
-	# Admin level 4 code
-	adm4_code = $22
-
-	# Population
-	population = $23
-
-	# Elevation
-	elevation = $24
-
-	# GTopo30
-	gtopo30 = $25
-
-	# Time-zone code/name
-	tz_code = $26
-
-	# GMT Off-Set
-	tz_gmt = $27
-
-	# DST Off-Set
-	tz_dst = $28
-
-	# Raw Off-Set
-	tz_raw = $29
-
-	# Modification date
-	moddate = $30
-
-	# Alternate names
-	# altname_list = $31
-
-	# Wiki link
-	wiki_link = $32
-
-	# Alternate names
-	altname_section = $33
-
-	# PageRank value
-	page_rank = getPageRank(iata_code, location_type)
-
-	# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Validity ID
-	printf ("%s", iata_code "^" icao_code "^" faa_code "^Y^" geonames_id "^")
-
-	# ^ Name ^ ASCII name
-	printf ("%s", "^" name_utf8 "^" name_ascii)
-
-	# ^ Alternate names
-	# printf ("%s", "^" altname_list)
-
-	# ^ Latitude ^ Longitude ^ Feat. class ^ Feat. code
-	printf ("%s", "^" geo_lat "^" geo_lon "^" feat_class "^" feat_code)
-
-	# ^ PageRank value
-	printf ("%s", "^" page_rank)
-
-	# ^ Valid from date ^ Valid until date ^ Comment
-	printf ("%s", "^" date_from "^^")
-
-	# ^ Country code ^ Alt. country codes ^ Country name ^ Continent name
-	printf ("%s", "^" ctry_code "^" ctry_code_alt "^" ctry_name "^" cont_name)
-
-	# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
-	printf ("%s", "^" adm1_code "^" adm1_name_utf "^" adm1_name_ascii)
-	# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
-	printf ("%s", "^" adm2_code "^" adm2_name_utf "^" adm2_name_ascii)
-	# ^ Admin3 code ^ Admin4 code
-	printf ("%s", "^" adm3_code "^" adm4_code)
-
-	# ^ Population ^ Elevation ^ gtopo30
-	printf ("%s", "^" population "^" elevation "^" gtopo30)
-
-	# ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
-	printf ("%s", "^" tz_code "^" tz_gmt "^" tz_dst "^" tz_raw)
-
-	# ^ Modification date
-	printf ("%s", "^" moddate)
-
-	# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
-	# Notes:
-	#   1. The actual name values are added by the add_city_name.awk script.
-	#   2. The city code is the one from the file of best known POR,
-	#      not the one from reference data (as it is sometimes inaccurate).
-	city_code = substr (city_code_list, 1, 3)
-	printf ("%s", "^" city_code "^"  "^"  "^" )
-
-	# ^ State code
-	# state_code = substr (ctry_state_list[ctry_code][adm1_code], 0, 2)
-	state_code = ctry_state_list[ctry_code][adm1_code]
-	printf ("%s", "^" state_code)
-
-	# ^ Location type ^ Wiki link
-	printf ("%s", "^" location_type "^" wiki_link)
-
-	##
-	# ^ Section of alternate names
-	printAltNameSection(altname_section)
-
-	# ^ US DOT World Area Code (WAC) ^ WAC name
-	world_area_code = getWorldAreaCode(ctry_code, state_code, ctry_code_alt)
-	wac_name = getWorldAreaCodeName(world_area_code)
-	printf ("%s", "^" world_area_code "^" wac_name)
-
-	# End of line
-	printf ("%s", "\n")
+	# Parse and dump the full details
+	registerGeonamesLine(full_line, nb_of_geo_por)
 }
 
+##
+#
+ENDFILE {
+    # Finalisation of the Geo library
+    finalizeFileGeoAwkLib()
+
+    # DEBUG
+    if (nb_of_geo_por == 0) {
+		# displayLists()
+    }
+}
+
+##
+#
 END {
+    # Finalisation of the Geo library
+    finalizeGeoAwkLib()
+
     # DEBUG
     # print ("Generated: " pr_date_generation ", valid from: " pr_date_from \
     #	   " to " pr_date_to) > error_stream
