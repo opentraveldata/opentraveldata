@@ -280,8 +280,8 @@ then
 		${REF_SORTED_FILE} ${REF_CUT_SORTED_FILE} \
 		${OPTD_ONLY_POR_NEW_FILE}
 
-	bash prepare_geonames_dump_file.sh --clean || exit -1
-	bash prepare_ref_dump_file.sh --clean || exit -1
+#	bash prepare_geonames_dump_file.sh --clean || exit -1
+#	bash prepare_ref_dump_file.sh --clean || exit -1
 	exit
 fi
 
@@ -296,36 +296,29 @@ fi
 
 ##
 # Preparation
-bash prepare_geonames_dump_file.sh ${OPTD_DIR} ${LOG_LEVEL} || exit -1
-bash prepare_ref_dump_file.sh ${OPTD_DIR} ${TOOLS_DIR} ${LOG_LEVEL} || exit -1
+#bash prepare_geonames_dump_file.sh ${OPTD_DIR} ${LOG_LEVEL} || exit -1
+#bash prepare_ref_dump_file.sh ${OPTD_DIR} ${TOOLS_DIR} ${LOG_LEVEL} || exit -1
 
 ##
 #
-if [ ! -f ${GEONAME_SORTED_FILE} ]
+if [ ! -f ${GEONAME_RAW_FILE} ]
 then
 	echo
-	echo "[$0:$LINENO] The '${GEONAME_SORTED_FILE}' file does not exist."
-	echo
-	exit -1
-fi
-if [ ! -f ${REF_SORTED_FILE} ]
-then
-	echo
-	echo "[$0:$LINENO] The '${REF_SORTED_FILE}' file does not exist."
+	echo "[$0:$LINENO] The '${GEONAME_RAW_FILE}' file does not exist."
 	echo
 	exit -1
 fi
 
 ##
 # Save the extra alternate names (from field #34 onwards)
-cut -d'^' -f1,34- ${GEONAME_SORTED_FILE} > ${GEONAME_RAW_FILE_TMP}
+#cut -d'^' -f1,34- ${GEONAME_SORTED_FILE} > ${GEONAME_RAW_FILE_TMP}
 # Remove the extra alternate names (see the line above)
-cut -d'^' -f1-33 ${GEONAME_SORTED_FILE} > ${GEONAME_CUT_SORTED_FILE}
+#cut -d'^' -f1-33 ${GEONAME_SORTED_FILE} > ${GEONAME_CUT_SORTED_FILE}
 
 ##
 # Remove the header
-sed -e "s/^pk\(.\+\)//g" ${OPTD_POR_FILE} > ${OPTD_POR_WITH_NOHD}
-sed -i -e "/^$/d" ${OPTD_POR_WITH_NOHD}
+#sed -e "s/^pk\(.\+\)//g" ${OPTD_POR_FILE} > ${OPTD_POR_WITH_NOHD}
+#sed -i -e "/^$/d" ${OPTD_POR_WITH_NOHD}
 
 ##
 # Aggregate all the data sources into a single file
@@ -333,26 +326,14 @@ sed -i -e "/^$/d" ${OPTD_POR_WITH_NOHD}
 # ${OPTD_POR_FILE} (optd_por_best_known_so_far.csv) and
 # ${GEONAME_CUT_SORTED_FILE} (../tools/cut_sorted_wpk_dump_from_geonames.csv)
 # are joined on the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_NOHD} ${GEONAME_CUT_SORTED_FILE} \
-	> ${OPTD_POR_WITH_GEO}
+#join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_NOHD} ${GEONAME_CUT_SORTED_FILE} \
+#	> ${OPTD_POR_WITH_GEO}
 
 # ${OPTD_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
-# ${REF_SORTED_FILE} (sorted_wpk_dump_from_ref_city.csv) are joined on
-# the primary key (i.e., IATA code - location type):
-#join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${REF_SORTED_FILE} \
-#	> ${OPTD_POR_WITH_GEOREF}
-
-# ${OPTD_POR_WITH_GEOREF} (optd_por_best_known_so_far.csv.withgeoref) and
 # ${GEONAME_RAW_FILE_TMP} (../tools/dump_from_geonames.csv.alt) are joined on
 # the primary key (i.e., IATA code - location type):
-#join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEOREF} ${GEONAME_RAW_FILE_TMP} \
+#join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${GEONAME_RAW_FILE_TMP} \
 #	> ${OPTD_POR_WITH_GEOREFALT}
-
-# ${OPTD_POR_WITH_GEO} (optd_por_best_known_so_far.csv.withgeo) and
-# ${GEONAME_RAW_FILE_TMP} (../tools/dump_from_geonames.csv.alt) are joined on
-# the primary key (i.e., IATA code - location type):
-join -t'^' -a 1 -1 1 -2 1 ${OPTD_POR_WITH_GEO} ${GEONAME_RAW_FILE_TMP} \
-	> ${OPTD_POR_WITH_GEOREFALT}
 
 #echo "less ${OPTD_POR_WITH_GEOREFALT}"
 #exit
@@ -367,8 +348,14 @@ REDUCER=make_optd_por_public.awk
 awk -F'^' -v non_optd_por_file="${OPTD_ONLY_POR_FILE}" -f ${REDUCER} \
 	${OPTD_PR_FILE} ${OPTD_CTRY_STATE_FILE} \
 	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
-	${OPTD_USDOT_FILE} ${OPTD_POR_WITH_GEOREFALT} \
+	${OPTD_USDOT_FILE} ${OPTD_POR_FILE} ${GEONAME_RAW_FILE} \
 	> ${OPTD_POR_WITH_NO_CTY_NAME}
+
+#echo "awk -F'^' -v non_optd_por_file=\"${OPTD_ONLY_POR_FILE}\" -f ${REDUCER} \
+#	${OPTD_PR_FILE} ${OPTD_CTRY_STATE_FILE} \
+#	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
+#	${OPTD_USDOT_FILE} ${OPTD_POR_FILE} ${GEONAME_RAW_FILE} \
+#	> ${OPTD_POR_WITH_NO_CTY_NAME}"
 
 #echo "less ${OPTD_POR_WITH_NO_CTY_NAME}"
 #exit
@@ -397,6 +384,14 @@ CITY_WRITER=add_city_name.awk
 awk -F'^' -f ${CITY_WRITER} \
 	${OPTD_POR_PUBLIC_W_NOGEONAMES} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}
+
+echo "awk -F'^' -f ${CITY_WRITER} \
+	${OPTD_POR_PUBLIC_W_NOGEONAMES} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
+	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}"
+exit
+
+#echo "less ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
+#exit
 
 ##
 # Extract the header into temporary files

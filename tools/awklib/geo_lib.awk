@@ -369,7 +369,7 @@ function isFeatCodeTvlRtd(__ifctrParamFeatureCode) {
 
     # Aggregation
     __resultIsTravelRelated = __isAirport + __isHeliport + __isRail \
-	+ __isBus + __isMetro + __isPort
+		+ __isBus + __isMetro + __isPort
 
     return __resultIsTravelRelated
 }
@@ -382,11 +382,11 @@ function getFeatureClass(__gfcParamLocationType) {
 
     switch (__gfcParamLocationType) {
     case "C": case "O":
-	__resultFeatureClass = "P"
-	break
+		__resultFeatureClass = "P"
+		break
     case "A": case "H": case "R": case "B": case "P": case "G": \
-	__resultFeatureClass = "S"
-	break
+		__resultFeatureClass = "S"
+		break
     }
 
     return __resultFeatureClass
@@ -400,26 +400,26 @@ function getFeatureCode(__gfcParamLocationType) {
 
     switch (__gfcParamLocationType) {
     case "C": case "O":
-	__resultFeatureCode = "PPL"
-	break
+		__resultFeatureCode = "PPL"
+		break
     case "A":
-	__resultFeatureCode = "AIRP"
-	break
+		__resultFeatureCode = "AIRP"
+		break
     case "H":
-	__resultFeatureCode = "AIRH"
-	break
+		__resultFeatureCode = "AIRH"
+		break
     case "R":
-	__resultFeatureCode = "RSTN"
-	break
+		__resultFeatureCode = "RSTN"
+		break
     case "B":
-	__resultFeatureCode = "BUSTN"
-	break
+		__resultFeatureCode = "BUSTN"
+		break
     case "G":
-	__resultFeatureCode = "RSTN"
-	break
+		__resultFeatureCode = "RSTN"
+		break
     case "P":
-	__resultFeatureCode = "FY"
-	break
+		__resultFeatureCode = "FY"
+		break
     }
 
     return __resultFeatureCode
@@ -432,29 +432,29 @@ function getLocTypeFromFeatCode(__gltParamFeatureCode) {
     __resultLocationType = "NA"
 
     if (isFeatCodeCity(__gltParamFeatureCode)) {
-	# City
-	__resultLocationType = "C"
+		# City
+		__resultLocationType = "C"
 
     } else if (isFeatCodeAirport(__gltParamFeatureCode)) {
-	# Airport
-	__resultLocationType = "A"
+		# Airport
+		__resultLocationType = "A"
 
     } else if (isFeatCodeHeliport(__gltParamFeatureCode)) {
-	# Heliport
-	__resultLocationType = "H"
+		# Heliport
+		__resultLocationType = "H"
 
     } else if (isFeatCodeRail(__gltParamFeatureCode)) {
-	# Railway station
-	__resultLocationType = "R"
+		# Railway station
+		__resultLocationType = "R"
 
-    } else if (isFeatCodeBus(__gltParamFeatureCode)		\
-	       || isFeatCodeMetro(__gltParamFeatureCode)) {
-	# Bus station/stop or metro station
-	__resultLocationType = "B"
+    } else if (isFeatCodeBus(__gltParamFeatureCode)			\
+			   || isFeatCodeMetro(__gltParamFeatureCode)) {
+		# Bus station/stop or metro station
+		__resultLocationType = "B"
 
     } else if (isFeatCodePort(__gltParamFeatureCode)) {
-	# Maritime port, ferry, naval base
-	__resultLocationType = "P"
+		# Maritime port, ferry, naval base
+		__resultLocationType = "P"
     }
 
     return __resultLocationType
@@ -531,15 +531,17 @@ function extractPrimaryKeyDetails(__epkdParamPK) {
 
 ##
 # Extract the primary key fields as an array.
+# Note that, with AWK, the array index begins with 1 (not 0).
+# Hence, the IATA code will be __resultPKArray[1]
 function getPrimaryKeyAsArray(__gpkaaParamPK, __resultPKArray) {
     __resultNbOfFields = split (__gpkaaParamPK, __resultPKArray, "-")
     return __resultNbOfFields
 }
 
 ##
-# Extract the primary key fields as an array.
+# Generate the primary key from the corresponding fields.
 function getPrimaryKey(__gpkParamIataCode, __gpkParamLocationType, \
-		       __gpkParamGeonamesID) {
+					   __gpkParamGeonamesID) {
     __resultPK =														\
 		__gpkParamIataCode "-" __gpkParamLocationType "-" __gpkParamGeonamesID
     return __resultPK
@@ -589,7 +591,7 @@ function sortListStringAplha(__slsParamListString, __slsParamSep) {
 function addFieldToList(__aftlParamIataCode, __aftlParamList, __aftlParamField) {
     myTmpString = __aftlParamList[__aftlParamIataCode]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __aftlParamField
     __aftlParamList[__aftlParamIataCode] = myTmpString
@@ -600,7 +602,7 @@ function addFieldToList(__aftlParamIataCode, __aftlParamList, __aftlParamField) 
 # and the list correspond to the file of best known coordinates.
 #
 function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, \
-			     __alttolParamOPTDList) {
+							  __alttolParamOPTDList) {
     myTmpString = __alttolParamOPTDList[__alttolParamIataCode]
 
     # If the location type is already listed, do not add it again.
@@ -614,20 +616,20 @@ function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, 
     # See also the addLocTypeToAllGeoList() function below.
     split (myTmpString, alttolOPTDLocTypeArray, ",")
     for (alttolOPTDLocTypeIdx in alttolOPTDLocTypeArray) {
-	alttolOPTDLocType = alttolOPTDLocTypeArray[alttolOPTDLocTypeIdx]
-	if (alttolOPTDLocType == __alttolParamLocationType) {
-	    # DEBUG
-	    #print ("[" __alttolParamIataCode "-" __alttolParamLocationType \
-	    #	   "] already exists. Indeed, the OPTD loc_type list is: " \
-	    #	   myTmpString) > __glGlobalErrorStream
-	    return
-	}
+		alttolOPTDLocType = alttolOPTDLocTypeArray[alttolOPTDLocTypeIdx]
+		if (alttolOPTDLocType == __alttolParamLocationType) {
+			# DEBUG
+			#print ("[" __alttolParamIataCode "-" __alttolParamLocationType \
+			#	   "] already exists. Indeed, the OPTD loc_type list is: " \
+			#	   myTmpString) > __glGlobalErrorStream
+			return
+		}
     }
 
     # By construction, we are now sure that the given location type
     # is not already listed
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
 
     # Add the given location type
@@ -640,15 +642,15 @@ function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, 
 # and the list correspond to the file of best known coordinates.
 #
 function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
-			   __agitolParamGeonamesID, __agitolParamOPTDList) {
+							__agitolParamGeonamesID, __agitolParamOPTDList) {
     myTmpString = \
 	__agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __agitolParamGeonamesID
     __agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType] = \
-	myTmpString
+		myTmpString
 }
 
 ##
@@ -656,10 +658,10 @@ function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 # The Geonames ID and the list correspond to the Geonames data dump.
 #
 function addGeoIDToGeoList(__agitolParamLocationType, __agitolParamGeonamesID, \
-			   __agitolParamGeoList) {
+						   __agitolParamGeoList) {
     myTmpString = __agitolParamGeoList[__agitolParamLocationType]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __agitolParamGeonamesID
     __agitolParamGeoList[__agitolParamLocationType] = myTmpString
@@ -670,21 +672,22 @@ function addGeoIDToGeoList(__agitolParamLocationType, __agitolParamGeonamesID, \
 # The Geonames ID and the list correspond to the Geonames data dump.
 #
 function addLocTypeToGeoList(__alttglParamGeonamesID,	\
-			     __alttglParamLocationType, \
-			     __alttglParamGeoList) {
+							 __alttglParamLocationType, \
+							 __alttglParamGeoList) {
     myTmpString = __alttglParamGeoList[__alttglParamGeonamesID]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __alttglParamLocationType
     __alttglParamGeoList[__alttglParamGeonamesID] = myTmpString
 }
 
 ##
-# Add the given location type to the given dedicated Geonames or reference data list.
+# Add the given location type to the given dedicated Geonames
+# or reference data list.
 #
 function addLocTypeToAllGeoList(__alttglParamLocationType,	\
-				__alttglParamGeoString) {
+								__alttglParamGeoString) {
     __resultGeoString = __alttglParamGeoString
 
     # If the location type is already listed, do not add it again.
@@ -701,7 +704,7 @@ function addLocTypeToAllGeoList(__alttglParamLocationType,	\
 
     # Register the location type
     if (__resultGeoString) {
-	__resultGeoString = __resultGeoString ","
+		__resultGeoString = __resultGeoString ","
     }
     __resultGeoString = __resultGeoString __alttglParamLocationType
     return __resultGeoString
@@ -716,18 +719,18 @@ function addGeoIDToAllGeoList(__alttaglParamGeonamesID,__alttaglParamGeoString) 
 
     # If the Geonames ID is already listed, notify the user
     if (match (__alttaglParamGeoString, __alttaglParamGeonamesID)) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the Geonames ID (" __alttaglParamGeonamesID		\
-	       ") already exists ('" __alttaglParamGeoString		\
-	       "'): it is a duplicate. Check the Geonames data dump. By " \
-	       "construction, that should not happen!")			\
-	    > __glGlobalErrorStream
-	return __resultGeoString
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR		\
+			   ", the Geonames ID (" __alttaglParamGeonamesID			\
+			   ") already exists ('" __alttaglParamGeoString			\
+			   "'): it is a duplicate. Check the Geonames data dump. By " \
+			   "construction, that should not happen!")					\
+			> __glGlobalErrorStream
+		return __resultGeoString
     }
 
     # Register the location type
     if (__resultGeoString) {
-	__resultGeoString = __resultGeoString ","
+		__resultGeoString = __resultGeoString ","
     }
     __resultGeoString = __resultGeoString __alttaglParamGeonamesID
     return __resultGeoString
@@ -854,6 +857,38 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
 }
 
 ##
+# Get the field for the given (list, POR IATA code) pair
+function getOPTDFieldFromList(__gofflIataCode, __gofflLocType, __gofflList) {
+	return __gofflList[__gofflIataCode, __gofflLocType]
+}
+
+##
+# Get the geographical latitude for the given POR IATA code
+function getOPTDPorLatitude(__goplIataCode, __goplLocType) {
+	return getOPTDFieldFromList(__goplIataCode, __goplLocType, optd_por_lat_list)
+}
+
+##
+# Get the geographical longitude for the given POR IATA code
+function getOPTDPorLongitude(__goplIataCode, __goplLocType) {
+	return getOPTDFieldFromList(__goplIataCode, __goplLocType, optd_por_lon_list)
+}
+
+##
+# Get the city code (list) for the given POR IATA code
+function getOPTDPorCityCodeList(__goplIataCode, __gopcclLocType) {
+	return getOPTDFieldFromList(__goplIataCode, __gopcclLocType,	\
+								optd_por_cty_list)
+}
+
+##
+# Get the beginning date for the given POR IATA code
+function getOPTDPorBegDate(__goplIataCode, __gopbdLocType) {
+	return getOPTDFieldFromList(__goplIataCode, __gopbdLocType, \
+								optd_por_bdate_list)
+}
+
+##
 # Register the flight frequency for a given (origin, destination) POR pair,
 # for a given airline. The input parameters are:
 # 1. The airline 2-char ISO code
@@ -965,44 +1000,44 @@ function resetPageRankList() {
 ##
 # Suggest a next step for the user: add the given POR entry
 function displayNextStepAdd(__dnsaParamIataCode, __dnsaParamLocationType, \
-			    __dnsaParamGeonamesID) {
+							__dnsaParamGeonamesID) {
     # Calculate the primary key
     dnsaPK = getPrimaryKey(__dnsaParamIataCode, __dnsaParamLocationType, \
-			   __dnsaParamGeonamesID)
+						   __dnsaParamGeonamesID)
 
     #
     print ("[" __glGlobalAWKFile "] Next step: add an entry in the OPTD " \
-	   "file of best known coordinates for the " dnsaPK " primary key") \
-	> __glGlobalErrorStream
+		   "file of best known coordinates for the " dnsaPK " primary key") \
+		> __glGlobalErrorStream
 }
 
 ##
 # Suggest a next step for the user: fix the location type of the given POR entry
 function displayNextStepFixLocType(__dnsfltParamIataCode,		\
-				   __dnsfltParamLocationType,		\
-				   __dnsfltParamGeonamesID) {
+								   __dnsfltParamLocationType,	\
+								   __dnsfltParamGeonamesID) {
     # Calculate the primary key
     dnsfPK = getPrimaryKey(__dnsfltParamIataCode, __dnsfltParamLocationType, \
-			   __dnsfltParamGeonamesID)
+						   __dnsfltParamGeonamesID)
 
     #
     print ("[" __glGlobalAWKFile "] Next step: fix the entry in the OPTD " \
-	   "file of best known coordinates for the " dnsfPK " primary key") \
-	> __glGlobalErrorStream
+		   "file of best known coordinates for the " dnsfPK " primary key") \
+		> __glGlobalErrorStream
 }
 
 ##
 # Suggest a next step for the user: fix the Geonames ID of the given POR entry
 function displayNextStepFixID(__dnsfiParamIataCode, __dnsfiParamLocationType, \
-			      __dnsfiParamGeonamesID) {
+							  __dnsfiParamGeonamesID) {
     # Calculate the primary key
     dnsfPK = getPrimaryKey(__dnsfiParamIataCode, __dnsfiParamLocationType, \
-			   __dnsfiParamGeonamesID)
+						   __dnsfiParamGeonamesID)
 
     #
     print ("[" __glGlobalAWKFile "] Next step: fix the entry in the OPTD " \
-	   "file of best known coordinates for the " dnsfPK " primary key") \
-	> __glGlobalErrorStream
+		   "file of best known coordinates for the " dnsfPK " primary key") \
+		> __glGlobalErrorStream
 }
 
 
@@ -1010,10 +1045,10 @@ function displayNextStepFixID(__dnsfiParamIataCode, __dnsfiParamLocationType, \
 # Calculate an alternate location type
 function getAltLocTypeFromGeo(__galtfgParamLocationType) {
     if (isLocTypeTvlRtd(__galtfgParamLocationType)) {
-	__resultLocationType = "C" __galtfgParamLocationType
+		__resultLocationType = "C" __galtfgParamLocationType
 
     } else if (isLocTypeCity(__galtfgParamLocationType)) {
-	__resultLocationType = "O"
+		__resultLocationType = "O"
     }
     return __resultLocationType
 }
@@ -1046,40 +1081,40 @@ function getAltLocTypeFromGeo(__galtfgParamLocationType) {
 # TVX^...^8411019^AIRP  (should match with OPTD-derived TVX-R-8411019 and notify
 #                        the user as there is a location type mismatch)
 function getMostSimilarLocType(__gmsltParamOPTDLocType, __gmsltParamOPTDGeoID, \
-			       __gmsltParamGeoLocTypeListString,	\
-			       __gmsltParamGeoGeoIDListString) {
+							   __gmsltParamGeoLocTypeListString,		\
+							   __gmsltParamGeoGeoIDListString) {
     __resultMostSimilarLocType = ""
 
     # First, check whether the OPTD-derived Geonames ID is to be found in the
     # Geonames data dump
-    isGeoIDKnownToGeonames = \
-	match (__gmsltParamGeoGeoIDListString, __gmsltParamOPTDGeoID)
+    isGeoIDKnownToGeonames = match (__gmsltParamGeoGeoIDListString, \
+									__gmsltParamOPTDGeoID)
     if (isGeoIDKnownToGeonames) {
-	# Retrieve the Geonames-derived location type corresponding to that
-	# Geonames-derived Geonames ID. That Geonames-derived location type
-	# will allow to retrieve the right Geonames ID later on.
-	gmsltGeoLocType = geo_line_loctype_list[__gmsltParamOPTDGeoID]
-	__resultMostSimilarLocType = gmsltGeoLocType
-	return __resultMostSimilarLocType
+		# Retrieve the Geonames-derived location type corresponding to that
+		# Geonames-derived Geonames ID. That Geonames-derived location type
+		# will allow to retrieve the right Geonames ID later on.
+		gmsltGeoLocType = geo_line_loctype_list[__gmsltParamOPTDGeoID]
+		__resultMostSimilarLocType = gmsltGeoLocType
+		return __resultMostSimilarLocType
     }
 
     split (__gmsltParamGeoLocTypeListString, gmsltGeoLocTypeArray, ",")
     for (gmsltGeoLocTypeIdx in gmsltGeoLocTypeArray) {
-	gmsltGeoLocType = gmsltGeoLocTypeArray[gmsltGeoLocTypeIdx]
+		gmsltGeoLocType = gmsltGeoLocTypeArray[gmsltGeoLocTypeIdx]
 
-	if (isLocTypeTvlRtd(__gmsltParamOPTDLocType)	\
-	    && isLocTypeTvlRtd(gmsltGeoLocType)) {
-	    __resultMostSimilarLocType = gmsltGeoLocType
-	    break
-	}
+		if (isLocTypeTvlRtd(__gmsltParamOPTDLocType)	\
+			&& isLocTypeTvlRtd(gmsltGeoLocType)) {
+			__resultMostSimilarLocType = gmsltGeoLocType
+			break
+		}
 
-	if ((isLocTypeCity(__gmsltParamOPTDLocType)		\
-	     || match (__gmsltParamOPTDLocType, "O")) &&	\
-	    (isLocTypeCity(gmsltGeoLocType)			\
-	     || match (gmsltGeoLocType, "O"))) {
-	    __resultMostSimilarLocType = gmsltGeoLocType
-	    break
-	}
+		if ((isLocTypeCity(__gmsltParamOPTDLocType)			\
+			 || match (__gmsltParamOPTDLocType, "O")) &&	\
+			(isLocTypeCity(gmsltGeoLocType)					\
+			 || match (gmsltGeoLocType, "O"))) {
+			__resultMostSimilarLocType = gmsltGeoLocType
+			break
+		}
     }
 
     return __resultMostSimilarLocType
@@ -1133,13 +1168,13 @@ function getPageRank(__gprParamIataCode, __gprParamLocType) {
     is_tvl = isLocTypeTvlRtd(__gprParamLocType)
 	
     if (is_city != 0) {
-	__gprPR = optd_pr_city_list[__gprParamIataCode]
-
+		__gprPR = optd_pr_city_list[__gprParamIataCode]
+	
     } else if (is_tvl != 0) {
-	__gprPR = optd_pr_tvl_list[__gprParamIataCode]
+		__gprPR = optd_pr_tvl_list[__gprParamIataCode]
 
     } else {
-	__gprPR = 0.001
+		__gprPR = 0.001
     }
 
     return __gprPR
@@ -1152,8 +1187,8 @@ function getPageRank(__gprParamIataCode, __gprParamLocType) {
 # the analysis of schedule files; hence, one can distinguish only between
 # a city and a travel-related POR.
 function registerPageRankValue(__rprlParamIataCode, __rprlParamLocType, \
-			       __rprlParamFullLine, __rprlParamNbOfPOR, \
-			       __rprlParamPRValue) {
+							   __rprlParamFullLine, __rprlParamNbOfPOR, \
+							   __rprlParamPRValue) {
     # Check whether it is a city
     is_city = isLocTypeCity(__rprlParamLocType)
 
@@ -1162,11 +1197,11 @@ function registerPageRankValue(__rprlParamIataCode, __rprlParamLocType, \
 
     # Store the PageRank value for that POR
     if (is_city != 0) {
-	addFieldToList(__rprlParamIataCode, optd_pr_city_list,	\
-		       __rprlParamPRValue)
+		addFieldToList(__rprlParamIataCode, optd_pr_city_list,	\
+					   __rprlParamPRValue)
     }
     if (is_tvl != 0) {
-	addFieldToList(__rprlParamIataCode, optd_pr_tvl_list, __rprlParamPRValue)
+		addFieldToList(__rprlParamIataCode, optd_pr_tvl_list, __rprlParamPRValue)
     }
 
 }
@@ -1177,8 +1212,8 @@ function registerPageRankValue(__rprlParamIataCode, __rprlParamLocType, \
 # 2. The OPTD-maintained location type
 # 3. The OPTD-maintained Geonames ID
 function registerGeonamesLine(__rglParamIataCode, __rglParamFeatureCode, \
-			      __rglParamGeonamesID, __rglParamFullLine,	\
-			      __rglParamNbOfPOR) {
+							  __rglParamGeonamesID, __rglParamFullLine,	\
+							  __rglParamNbOfPOR) {
     # Register the fact that the AWK script runs on the Geonames data dump
     # (most probably called from the geo_pk_creator.awk file)
     __glGlobalIsForGeonames = 1
@@ -1192,11 +1227,11 @@ function registerGeonamesLine(__rglParamIataCode, __rglParamFeatureCode, \
 
     # Sanity check: the location type should be known
     if (rglLocationType == "NA") {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" __rglParamNbOfPOR \
-	       ", the POR with that IATA code ('" __rglParamIataCode		\
-	       "') has an unknown feature code ('" __rglParamFeatureCode	\
-	       "') - Full line: " __rglParamFullLine) > __glGlobalErrorStream
-	return
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" __rglParamNbOfPOR \
+			   ", the POR with that IATA code ('" __rglParamIataCode	\
+			   "') has an unknown feature code ('" __rglParamFeatureCode \
+			   "') - Full line: " __rglParamFullLine) > __glGlobalErrorStream
+		return
     }
 
     # Display the last read POR entry, when:
@@ -1207,8 +1242,8 @@ function registerGeonamesLine(__rglParamIataCode, __rglParamFeatureCode, \
     if (__rglParamIataCode == geo_iata_code || __rglParamNbOfPOR == 1) {
 		
     } else {
-	# Display the last Geonames POR entries
-	displayGeonamesPOREntries()
+		# Display the last Geonames POR entries
+		displayGeonamesPOREntries()
     }
 
     # Register the Geonames POR entry in the list of last entries
@@ -1222,16 +1257,16 @@ function registerGeonamesLine(__rglParamIataCode, __rglParamFeatureCode, \
     #	> __glGlobalErrorStream
 
     # Add the location type to the dedicated list
-    geo_line_loctype_all_list =						\
-	addLocTypeToAllGeoList(rglLocationType,	geo_line_loctype_all_list)
+    geo_line_loctype_all_list =											\
+		addLocTypeToAllGeoList(rglLocationType,	geo_line_loctype_all_list)
 
     # Add the location type to the dedicated list for that Geonames ID
     addLocTypeToGeoList(__rglParamGeonamesID, rglLocationType,	\
-			geo_line_loctype_list)
+						geo_line_loctype_list)
 
     # Add the Geonames ID to the dedicated list
-    geo_line_geoid_all_list = \
-	addGeoIDToAllGeoList(__rglParamGeonamesID, geo_line_geoid_all_list)
+    geo_line_geoid_all_list =											\
+		addGeoIDToAllGeoList(__rglParamGeonamesID, geo_line_geoid_all_list)
 
     # Add the Geonames ID to the dedicated list for that location type
     addGeoIDToGeoList(rglLocationType, __rglParamGeonamesID, geo_line_geoid_list)

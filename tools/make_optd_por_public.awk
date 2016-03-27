@@ -71,7 +71,38 @@ BEGIN {
 
 
 ##
-# File of PageRank values.
+# OPTD-maintained list of POR (optd_por_best_known_so_far.csv)
+#
+# AYM-A-10943125^AYM^24.46682^54.6102^AUH,AYM^2014-05-01
+# AYM-C-10227711^AYM^24.49784^54.60556^AYM^2014-05-01
+# NCE-A-6299418^NCE^43.658411^7.215872^NCE^
+# NCE-C-2990440^NCE^43.70313^7.26608^NCE^
+# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
+#
+/^[A-Z]{3}-[A-Z]{1,2}-[0-9]{1,15}\^[A-Z]{3}\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^[A-Z]{3}\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)$/ {
+    # Primary key (IATA code, location type and Geonames ID)
+    pk = $1
+
+	# IATA code
+	iata_code = $2
+
+	# Geographical coordinates
+	por_lat = $3
+	por_lon = $4
+
+	# City code (list)
+	city_code_list = $5
+
+	# Beginning date
+	beg_date = $6
+
+    # Register the POR
+	registerOPTDLine(pk, iata_code, por_lat, por_lon, city_code_list, beg_date, \
+					 $0)
+}
+
+##
+# Header of file of PageRank values (ref_airport_pageranked.csv).
 #
 # Header:
 # -------
@@ -94,7 +125,7 @@ BEGIN {
 }
 
 ##
-# File of PageRank values.
+# Content of file of PageRank values (ref_airport_pageranked.csv).
 #
 # Content:
 # --------
@@ -134,7 +165,7 @@ BEGIN {
 #   ORD-A^ORD^0.677280625337
 #   CDG-A^CDG^0.647060165878
 #
-/^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,20})$/ {
+/^[A-Z]{3}-[A-Z]{1,2}\^[A-Z]{3}\^[0-9.]{1,20}$/ {
     # Primary key (IATA code and location pseudo-code)
     pk = $1
 
@@ -162,7 +193,7 @@ BEGIN {
 
 
 ##
-# File of country states
+# File of country states (optd_country_states.csv)
 #
 # Sample lines:
 # ctry_code^geo_id^adm1_code^adm1_name^abbr
@@ -189,7 +220,7 @@ BEGIN {
 
 
 ##
-# File of time-zone IDs
+# File of time-zone IDs (optd_tz_light.csv)
 #
 # Sample lines:
 # country_code^time_zone
@@ -208,7 +239,7 @@ BEGIN {
 
 
 ##
-# File of time-zones for a few POR.
+# File of time-zones for a few POR (optd_por_tz.csv).
 #
 # Content:
 # --------
@@ -235,7 +266,7 @@ BEGIN {
 }
 
 ##
-# File of country-continent mappings
+# File of country-continent mappings (optd_cont.csv).
 #
 # Sample lines:
 # country_code^country_name^continent_code^continent_name
@@ -267,7 +298,7 @@ BEGIN {
 
 
 ##
-# File of US DOT World Area Codes (WAC)
+# File of US DOT World Area Codes (WAC)(optd_usdot_wac.csv)
 #
 # Sample lines:
 # WAC^WAC_SEQ_ID2^WAC_NAME^WORLD_AREA_NAME^COUNTRY_SHORT_NAME^COUNTRY_TYPE^CAPITAL^SOVEREIGNTY^COUNTRY_CODE_ISO^STATE_CODE^STATE_NAME^STATE_FIPS^START_DATE^THRU_DATE^COMMENTS^IS_LATEST^
@@ -371,165 +402,191 @@ function printAltNameSection(myAltNameSection) {
 
 
 ##
-# Aggregated content from OPTD, reference data and Geonames
+# Geonames-derived data dump (dump_from_geonames.csv)
 #
 # Sample input lines:
 #
-# # In Geonames (39 fields)
-# CHI-C-4887398^CHI^41.85003^-87.65005^CHI^^CHI^^^4887398^Chicago^Chicago^41.85003^-87.65005^US^^United States^North America^P^PPLA2^IL^Illinois^Illinois^031^Cook County^Cook County^^^2695598^179^180^America/Chicago^-6.0^-5.0^-6.0^2014-10-27^Chicago^http://en.wikipedia.org/wiki/Chicago^en|Chicago|p
-# NCE-A-6299418^NCE^43.658411^7.215872^NCE^^NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2016-02-18^Aéroport de Nice Côte d'Azur^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^en|Nice Côte d'Azur International Airport|p
-# ORD-A-4887479^ORD^41.978603^-87.904842^CHI^^ORD^KORD^ORD^4887479^Chicago O'Hare International Airport^Chicago O'Hare International Airport^41.97959^-87.90446^US^^United States^North America^S^AIRP^IL^Illinois^Illinois^031^Cook County^Cook County^^^0^201^202^America/Chicago^-6.0^-5.0^-6.0^2014-04-21^Chicago O’Hare International Airport^http://en.wikipedia.org/wiki/O%27Hare_International_Airport^de|Flughafen Chicago O'Hare
+# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country_code^cc2^country_name^continent_name^fclass^fcode^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_section
+# CHI^^^4887398^Chicago^Chicago^41.85003^-87.65005^US^^United States^North America^P^PPLA2^IL^Illinois^Illinois^031^Cook County^Cook County^^^2695598^179^180^America/Chicago^-6.0^-5.0^-6.0^2014-10-27^Chicago^http://en.wikipedia.org/wiki/Chicago^en|Chicago|p|es|Chicago|
+# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2016-02-18^Aéroport de Nice Côte d'Azur^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^en|Nice Côte d'Azur International Airport|p|es|Niza Aeropuerto|ps
+# ORD^KORD^ORD^4887479^Chicago O'Hare International Airport^Chicago O'Hare International Airport^41.97959^-87.90446^US^^United States^North America^S^AIRP^IL^Illinois^Illinois^031^Cook County^Cook County^^^0^201^202^America/Chicago^-6.0^-5.0^-6.0^2016-02-28^Aéroport international O'Hare de Chicago^http://en.wikipedia.org/wiki/O%27Hare_International_Airport^en|Chicago O'Hare International Airport|
 #
-# # Not in Geonames (6 fields)
-# APE-CA-0^APE^-15.35^-75.17^APE^
-# CGX-A-0^CGX^41.85^-87.6^CHI^
-# ECC-O-0^ECC^40.78^-73.97^ECC^2013-07-01
-#
-/^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,12})\^[A-Z]{3}\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^[A-Z,]{3,19}\^[0-9-]{0,10}\^/ {
+/^[A-Z]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^[A-Z]{2}\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)\^/ {
+    # IATA code
+	iata_code = $1
 
-    if (NF == 39) {
-		####
-		## In Geonames
-		####
+	# ICAO code
+	icao_code = $2
 
-		# Primary key
-		pk = $1
+	# FAA code
+	faa_code = $3
 
-		# Location type (extracted from the primary key)
-		location_type = gensub ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$", \
-								"\\2", "g", pk)
+	# Geonames ID
+	geonames_id = $4
 
-		# Geonames ID
-		geonames_id = gensub ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$", \
-							  "\\3",	"g", pk)
+	# UTF8 name
+	name_utf8 = $5
 
-		# IATA code
-		iata_code = $2
+	# ASCII name
+	name_ascii = $6
 
-		# PageRank value
-		page_rank = getPageRank(iata_code, location_type)
+	# Feature class
+	feat_class = $13
 
-		# Is in Geonames?
-		geonameID = $10
-		isGeonames = "Y"
-		if (geonameID == "0" || geonameID == "") {
-			isGeonames = "N"
-		}
+	# Feature code
+	feat_code = $14
 
-		# Sanity check
-		if (geonames_id != geonameID) {
-			print ("[" awk_file "] !!!! Warning !!!! The two Geonames ID" \
-				   " are not equal: pk="	pk " and " geonameID		\
-				   " for the record #" FNR ":" $0)						\
-				> error_stream
-		}
+	# Location type (derived from the Geonames feature code)
+	location_type = getLocTypeFromFeatCode(feat_code)
 
-		# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Validity ID
-		printf ("%s", iata_code "^" $8 "^" $9 "^" isGeonames "^" geonameID "^")
+	# Latitude
+	geo_lat = getOPTDPorLatitude(iata_code, location_type)
 
-		# ^ Name ^ ASCII name
-		printf ("%s", "^" $11 "^" $12)
+	# Longitude
+	geo_lon = getOPTDPorLongitude(iata_code, location_type)
 
-		# ^ Alternate names
-		# printf ("%s", "^" $37)
+	# City code (list)
+	city_code_list = getOPTDPorCityCodeList(iata_code, location_type)
 
-		# ^ Latitude ^ Longitude ^ Feat. class ^ Feat. code
-		printf ("%s", "^" $3 "^" $4 "^" $19 "^" $20)
+	# Beginning date
+	date_from = getOPTDPorBegDate(iata_code, location_type)
 
-		# ^ PageRank value
-		printf ("%s", "^" page_rank)
+	# Country code
+	ctry_code = $9
 
-		# ^ Valid from date ^ Valid until date ^ Comment
-		printf ("%s", "^" $6 "^^")
+	# Alternate country code
+	ctry_code_alt = $10
 
-		# ^ Country code ^ Alt. country codes ^ Country name ^ Continent name
-		country_code = $15
-		country_code_alt = $16
-		printf ("%s", "^" country_code "^" country_code_alt "^" $17 "^" $18)
+	# Country name
+	ctry_name = $11
 
-		# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
-		adm1_code = $21
-		printf ("%s", "^" adm1_code "^" $22 "^" $23)
-		# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
-		printf ("%s", "^" $24 "^" $25 "^" $26)
-		# ^ Admin3 code ^ Admin4 code
-		printf ("%s", "^" $27 "^" $28)
+	# Continent name
+	cont_name = $12
 
-		# ^ Population ^ Elevation ^ gtopo30
-		printf ("%s", "^" $29 "^" $30 "^" $31)
+	# Admin level 1 code
+	adm1_code = $15
 
-		# ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
-		printf ("%s", "^" $32 "^" $33 "^" $34 "^" $35)
+	# Admin level 1 UTF8 name
+	adm1_name_utf = $16
 
-		# ^ Modification date
-		printf ("%s", "^" $36)
+	# Admin level 1 ASCII name
+	adm1_name_utf = $17
 
-		# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
-		# Notes:
-		#   1. The actual name values are added by the add_city_name.awk script.
-		#   2. The city code is the one from the file of best known POR,
-		#      not the one from reference data (as it is sometimes inaccurate).
-		printf ("%s", "^" $5 "^"  "^"  "^" )
+	# Admin level 2 code
+	adm2_code = $18
 
-		# ^ State code
-		# state_code = substr (ctry_state_list[country_code][adm1_code], 0, 2)
-		state_code = ctry_state_list[country_code][adm1_code]
-		printf ("%s", "^" state_code)
+	# Admin level 2 UTF8 name
+	adm2_name_utf = $19
 
-		# ^ Location type ^ Wiki link
-		printf ("%s", "^" location_type "^" $38)
+	# Admin level 2 ASCII name
+	adm2_name_utf = $20
 
-		##
-		# ^ Section of alternate names
-		altname_section = $39
-		printAltNameSection(altname_section)
+	# Admin level 3 code
+	adm3_code = $21
 
-		# ^ US DOT World Area Code (WAC) ^ WAC name
-		world_area_code = getWorldAreaCode(country_code, state_code,	\
-										   country_code_alt)
-		wac_name = getWorldAreaCodeName(world_area_code)
-		printf ("%s", "^" world_area_code "^" wac_name)
+	# Admin level 4 code
+	adm4_code = $22
 
-		# End of line
-		printf ("%s", "\n")
+	# Population
+	population = $23
 
-		# ----
-		# From OPTD-POR ($1 - $6)
-		# (1) NCE-A-6299418 ^ (2) NCE ^ (3) 43.658411 ^ (4) 7.215872 ^
-		# (5) NCE ^ (6) 6299418 ^
+	# Elevation
+	elevation = $24
 
-		# From Geonames ($7 - $38)
-		# (7) NCE ^ (8) LFMN ^ (9)  ^ (10) 6299418 ^
-		# (11) Nice Côte d'Azur International Airport ^
-		# (12) Nice Cote d'Azur International Airport ^
-		# (13) 43.66272 ^ (14) 7.20787 ^
-		# (15) FR ^ (16)  ^ (17) France ^ (18) Europe ^ (19) S ^ (20) AIRP ^
-		# (21) B8 ^ (22) Provence-Alpes-Côte d'Azur ^
-		# (23) Provence-Alpes-Cote d'Azur ^
-		# (24) 06 ^ (25) Département des Alpes-Maritimes ^ 
-		# (26) Departement des Alpes-Maritimes ^
-		# (27) 062 ^ (28) 06088 ^
-		# (29) 0 ^ (30) 3 ^ (31) -9999
-		# (32) Europe/Paris ^ (33) 1.0 ^ (34) 2.0 ^ (35) 1.0 ^
-		# (36) 2012-06-30 ^
-		# (37) Aeroport de Nice Cote d'Azur, ...,Niza Aeropuerto ^
-		# (38) http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport ^
+	# GTopo30
+	gtopo30 = $25
 
-		# From Geonames alternate names ($39)
-		# (39) en | Nice Airport | s |
-		#      en | Nice Côte d'Azur International Airport | 
+	# Time-zone code/name
+	tz_code = $26
 
-    } else if (NF == 6) {
-		####
-		## Not in Geonames.
-		## We discard those POR here, as they are then added back through
-		## the optd_por_no_geonames.csv file
+	# GMT Off-Set
+	tz_gmt = $27
 
-    } else {
-		print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
-			   " fields: " $0) > error_stream
-    }
+	# DST Off-Set
+	tz_dst = $28
 
+	# Raw Off-Set
+	tz_raw = $29
+
+	# Modification date
+	moddate = $30
+
+	# Alternate names
+	# altname_list = $31
+
+	# Wiki link
+	wiki_link = $32
+
+	# Alternate names
+	altname_section = $33
+
+	# PageRank value
+	page_rank = getPageRank(iata_code, location_type)
+
+	# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Validity ID
+	printf ("%s", iata_code "^" icao_code "^" faa_code "^Y^" geonames_id "^")
+
+	# ^ Name ^ ASCII name
+	printf ("%s", "^" name_utf8 "^" name_ascii)
+
+	# ^ Alternate names
+	# printf ("%s", "^" altname_list)
+
+	# ^ Latitude ^ Longitude ^ Feat. class ^ Feat. code
+	printf ("%s", "^" geo_lat "^" geo_lon "^" feat_class "^" feat_code)
+
+	# ^ PageRank value
+	printf ("%s", "^" page_rank)
+
+	# ^ Valid from date ^ Valid until date ^ Comment
+	printf ("%s", "^" date_from "^^")
+
+	# ^ Country code ^ Alt. country codes ^ Country name ^ Continent name
+	printf ("%s", "^" ctry_code "^" ctry_code_alt "^" ctry_name "^" cont_name)
+
+	# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
+	printf ("%s", "^" adm1_code "^" adm1_name_utf "^" adm1_name_ascii)
+	# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
+	printf ("%s", "^" adm2_code "^" adm2_name_utf "^" adm2_name_ascii)
+	# ^ Admin3 code ^ Admin4 code
+	printf ("%s", "^" adm3_code "^" adm4_code)
+
+	# ^ Population ^ Elevation ^ gtopo30
+	printf ("%s", "^" population "^" elevation "^" gtopo30)
+
+	# ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
+	printf ("%s", "^" tz_code "^" tz_gmt "^" tz_dst "^" tz_raw)
+
+	# ^ Modification date
+	printf ("%s", "^" moddate)
+
+	# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-related list
+	# Notes:
+	#   1. The actual name values are added by the add_city_name.awk script.
+	#   2. The city code is the one from the file of best known POR,
+	#      not the one from reference data (as it is sometimes inaccurate).
+	city_code = substr (city_code_list, 1, 3)
+	printf ("%s", "^" city_code "^"  "^"  "^" )
+
+	# ^ State code
+	# state_code = substr (ctry_state_list[ctry_code][adm1_code], 0, 2)
+	state_code = ctry_state_list[ctry_code][adm1_code]
+	printf ("%s", "^" state_code)
+
+	# ^ Location type ^ Wiki link
+	printf ("%s", "^" location_type "^" wiki_link)
+
+	##
+	# ^ Section of alternate names
+	printAltNameSection(altname_section)
+
+	# ^ US DOT World Area Code (WAC) ^ WAC name
+	world_area_code = getWorldAreaCode(ctry_code, state_code, ctry_code_alt)
+	wac_name = getWorldAreaCodeName(world_area_code)
+	printf ("%s", "^" world_area_code "^" wac_name)
+
+	# End of line
+	printf ("%s", "\n")
 }
 
 END {
