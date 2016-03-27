@@ -40,6 +40,7 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
 
 	# Temporary variable
 	geo_iata_code = ""
+	geo_w_pk_display = 0
 
     # Initialise the OPTD-derived lists
     resetOPTDLineList()
@@ -1451,10 +1452,15 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 # 1. The IATA code
 # 2. The OPTD-maintained location type
 # 3. The OPTD-maintained Geonames ID
-function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR) {
+function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
+							  __rglParamGeonamesFormat) {
 	# Separator
 	saved_fs = FS
 	FS = "^"
+
+	# Whether the output line should follow the pristine Geonames format,
+	# or OPTD's one
+	geo_w_pk_display = __rglParamGeonamesFormat
 
 	#
 	$0 = __rglParamFullLine
@@ -1558,24 +1564,27 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
     }
 
     # Build the primary key
-    # dpwpPK = getPrimaryKey(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
-	#					   __dpwpParamGeonamesGeoID)
+    dpwpPK = getPrimaryKey(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
+						   __dpwpParamGeonamesGeoID)
 
     # Retrieve the full details of the Geonames POR entry
-    # dpwpGeonamesPORLine = geo_line_list[__dpwpParamGeonamesGeoID]
+    geo_full_line = geo_line_list[__dpwpParamGeonamesGeoID]
 
-    # Add the primary key as a prefix
-    # dpwpGeonamesPORPlusPKLine = dpwpPK FS dpwpGeonamesPORLine
+	# The output line may either be:
+	#  * Primary Key + initial Geonames line.
+	#    Typically used by the geo_pk_creator.awk script.
+	#  * Reformatted to conform to optd_por_public.csv.
+	#    Typically used by the make_por_public.awk script.
+	if (geo_w_pk_display) {
+		# Add the primary key as a prefix
+		output_line = dpwpPK FS geo_full_line
 
-    # Dump the full line, prefixed by the primary key
-    # retun dpwpGeonamesPORPlusPKLine
-
-    # Retrieve the full details of the Geonames POR entry
-	geo_full_line = geo_line_list[__dpwpParamGeonamesGeoID]
-
-	# Parse the full details of the Geonames POR and re-dump them
-	# with the OPTD format
-	output_line = displayGeonamesPORLine(__dpwpParamOPTDLocType, geo_full_line)
+	} else {
+		# Parse the full details of the Geonames POR and re-dump them
+		# with the OPTD format
+		output_line = displayGeonamesPORLine(__dpwpParamOPTDLocType, \
+											 geo_full_line)
+	}
 
 	# DEBUG
 	#print("[" __glGlobalAWKFile "][" __dpwpParamIataCode "] OPTD-loc-type: " \
@@ -1597,7 +1606,7 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 # RDU-A-4487056 serves both RDU-C-4464368 (Raleigh) and RDU-C-4487042 (Durham)
 # in North Carolina, USA. In that case, there are two entries for RDU-C.
 #
-function displayGeonamesPOREntries() {
+function displayGeonamesPOREntries(__dgpeWAddedPK) {
     # Calculate the number of the Geonames POR entries corresponding to
     # the last IATA code.
     dgpeNbOfGeoPOR = length(geo_line_list)

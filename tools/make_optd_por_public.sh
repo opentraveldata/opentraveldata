@@ -1,11 +1,6 @@
 #!/bin/bash
 
 ##
-# TODO
-# Check:
-# 1. Cities with less TVL POR, eg, AAR, AIY
-# 2. TVL POR list not sorted.
-#
 # cd tools/
 # ./make_optd_por_public.sh
 # ./make_optd_por_public.sh --clean

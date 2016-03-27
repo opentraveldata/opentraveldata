@@ -173,8 +173,11 @@ BEGINFILE {
 	# Full line
 	full_line = $0
 
+	# The output format should be the Geonames' format
+	geonames_format_flag = 1
+
 	# Parse and dump the full details
-	registerGeonamesLine(full_line, nb_of_geo_por)
+	registerGeonamesLine(full_line, nb_of_geo_por, geonames_format_flag)
 }
 
 ##
