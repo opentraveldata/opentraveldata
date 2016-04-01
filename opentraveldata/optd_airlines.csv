@@ -197,7 +197,7 @@ air-alajnihah-air-transport^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^http:
 air-alaska-airlines^^1944-06-06^^ASA^AS^27^Alaska Airlines^^^^^http://en.wikipedia.org/wiki/Alaska_Airlines^188012^en|Alaska Airlines|^
 air-alaska-seaplane-service^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^^11767^en|Alaska Seaplane Service|=en|Stock Sochi|^
 air-alas-uruguay^^2015-02-01^^ALY^YZ^570^Alas Uruguay^^^^^http://en.wikipedia.org/wiki/Alas_Uruguay^1673^en|Alas Uruguay|^
-air-alidaunia^^^^LID^D4^0^Alidaunia^^^^^^50^en|Alidaunia|^
+air-alidaunia^1^^2015-12-31^LID^D4^0^Alidaunia^^^^^^^en|Alidaunia|^
 air-alitalia^^1999-03-01^^AZA^AZ^55^Alitalia^Alitalia S.A.I.^Skyteam^Member^^http://en.wikipedia.org/wiki/Alitalia^151981^en|Alitalia|=en|Alitalia S.A.I.|^
 air-alitalia-cityliner^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/Alitalia_CityLiner^36697^en|Alitalia CityLiner|=en|Air One CityLiner|^
 air-allegiant-air^^1998-06-01^^AAY^G4^268^Allegiant Air^^^^^http://en.wikipedia.org/wiki/Allegiant_Air^^en|Allegiant Air|^
@@ -232,7 +232,7 @@ air-american-eagle^^1998-01-01^^ENY^MQ^93^Envoy Air^^OneWorld^Affiliate^^http://
 air-amsterdam-airlines^^^^AAN^WD^562^Amsterdam Airlines Bv^Das Air^^^^^^en|Amsterdam Airlines Bv|=en|Das Air|^
 air-andes-lineas-aereas^^2006-06-20^^ANS^OY^650^Andes Líneas Aéreas^^^^^http://en.wikipedia.org/wiki/Andes_L%C3%ADneas_A%C3%A9reas^786^en|Andes Líneas Aéreas|p=en|andes|s^
 air-angara-airlines^^^^^2G^735^Angara Airlines^^^^P^^261^en|Angara Airlines|^
-air-angkor-airways^1^2007-01-01^2008-12-31^AKW^G6^0^Angkor Airways^^^^^http://en.wikipedia.org/wiki/Angkor_Airways^^en|Angkor Airways|^
+air-angkor-airways^1^2007-01-01^2008-12-31^AKW^G6^0^Angkor Airways^^^^^http://en.wikipedia.org/wiki/Angkor_Airways^^en|Angkor Airways|^PNH
 air-anguilla-air-services^^^^AAS^Q3^0^Anguilla Air Services^^^^^^495^en|Anguilla Air Services|^
 air-antrak-air^^^^^O4^916^Antrak Air^^^^^^^en|Antrak Air|^
 air-apex-airline^^2015-04-01^^^SO^0^Apex Airline^^^^^^2562^en|Apex Airline|^
@@ -346,8 +346,8 @@ air-cairo-aviation^^1998-01-01^^CCE^OE^207^Cairo Aviation^^^^^http://en.wikipedi
 air-cai-second^1^^2009-01-12^VLE^VE^0^CAI Second^Volare^^^^http://en.wikipedia.org/wiki/CAI_Second^^en|CAI Second|=en|Volare|^
 air-calm-air^^^^CAV^MO^622^Calm Air International^^^^^^5445^en|Calm Air International|^
 air-camair^^2011-03-28^^CRD^QC^40^Camair Co^Cameroon Airlines Corporation^^^^http://en.wikipedia.org/wiki/Camair-Co^7662^en|Camair Co|=en|Cameroon Airlines Corporation|^
-air-cambodia-angkor-air^^2009-01-01^^^K6^188^Cambodia Angkor Air^Cambodia Air^^^^http://en.wikipedia.org/wiki/Cambodia_Angkor_Air^13643^en|Cambodia Angkor Air|=en|Cambodia Air|^
-air-cambodia-bayon^^2014-09-01^^BYC^BD^688^Cambodia Bayon Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Bayon_Airlines^1751^en|Cambodia Bayon Airlines|^
+air-cambodia-angkor-air^^2009-01-01^^KHV^K6^188^Cambodia Angkor Air^^^^^http://en.wikipedia.org/wiki/Cambodia_Angkor_Air^13643^en|Cambodia Angkor Air|p=en|Cambodia Air|=ja|カンボジア・アンコール航空|=km|កម្ពុជា អង្គរ អ៊ែរ|=ko|캄보디아 앙코르 항공|=sign|CAMBODIA|=zh|柬埔寨吴哥航空|^HAN=PNH=REP=SGN
+air-cambodia-bayon^^2014-09-01^^BYC^BD^688^Cambodia Bayon Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Bayon_Airlines^1751^en|Cambodia Bayon Airlines|ja|カンボジア・バイヨン航空|=km|អាកាសចរណ៍ កម្ពុជា បាយ័ន/បាយ័នអ៊ែរឡាញ|=zh|柬埔寨巴戎航空|^PNH
 air-canadian-airlines^1^1987-01-01^2000-12-31^CDN^CP^0^Canadian Airlines^^^^^http://en.wikipedia.org/wiki/Canadian_Airlines^^en|Canadian Airlines|^
 air-canadian-north^^1989-01-01^^MPE^5T^518^Canadian North^^^^^http://en.wikipedia.org/wiki/Canadian_North^6680^en|Canadian North|^
 air-canary-fly^^2010-01-01^^CNF^PM^496^Canaryfly^^^^^http://en.wikipedia.org/wiki/Canaryfly^4236^en|Canaryfly|^
@@ -960,6 +960,7 @@ air-robin-hood-aviation^^^^^RH^0^Robin Hood Aviation^^^^^^^en|Robin Hood Aviatio
 air-romavia^^^^^WQ^0^Romavia^^^^^^^en|Romavia|^
 air-rossiya-airlines^^1992-01-01^^SDM^FV^195^Rossiya^^^^^http://en.wikipedia.org/wiki/Rossiya_%28airline%29^40517^en|Rossiya|=en|Rossiya — Russian Airlines|^
 air-rotana-jet^^2011-04-18^^RJD^RG^482^Rotana Jet^^^^^http://en.wikipedia.org/wiki/Rotana_Jet^2351^en|Rotana Jet|^
+air-royal-air-cambodge^1^1994-01-01^2001-10-16^RAC^VJ^0^Royal Air Cambodge^^^^^http://en.wikipedia.org/wiki/Royal_Air_Cambodge^^en|Royal Air Cambodge|=en|Air Cambodge|h=km|អាកាសចរណ៍ភូមិន្ទ កម្ពុជា|^PNH
 air-royal-air-force^^^^RFR^RR^0^Royal Air Force^RAF NO^^^^^^en|Royal Air Force|=en|RAF NO|^
 air-royal-air-maroc^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^^^^http://en.wikipedia.org/wiki/Royal_Air_Maroc^74860^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^
 air-royal-brunei^^^^RBA^BI^672^Royal Brunei^Royalbrunei^^^^^9899^en|Royal Brunei|=en|Royalbrunei|^
@@ -1200,7 +1201,7 @@ air-viaair^^2014-01-01^^SRY^VC^359^ViaAir^^^^^http://en.wikipedia.org/wiki/ViaAi
 air-viaggio-air^1^2003-02-27^2007-12-31^VOA^VM^0^Viaggio Air^^^^^http://en.wikipedia.org/wiki/Viaggio_Air^^en|Viaggio Air|^
 air-videcom^^^^^U1^0^Videcom International^^^^^http://en.wikipedia.org/wiki/Videcom_international^^en|Videcom International|^
 air-vieques-air-link^^1965-01-01^^VES^V4^0^Vieques Air Link^^^^^http://en.wikipedia.org/wiki/Vieques_Air_Link^3120^en|Vieques Air Link|^
-air-vietjet-aviation^^2011-12-25^^VJC^VJ^978^VietJet Air^VietJet Aviation^^^^http://en.wikipedia.org/wiki/VietJet_Air^75879^en|VietJet Air|=en|VietJet Aviation|^
+air-vietjet-aviation^^2011-12-25^^VJC^VJ^978^VietJet Air^^^^^http://en.wikipedia.org/wiki/VietJet_Air^75879^en|VietJet Air|=en|VietJet Aviation|^
 air-vietnam-airlines^^1956-01-01^^HVN^VN^738^Vietnam Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/Vietnam_Airlines^132799^en|Vietnam Airlines|^
 air-vietnam-air-service^1^1987-12-31^2015-09-01^VFC^0V^368^Vietnam Air Services Company^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^^en|Vietnam Air Services Company|^
 air-villa-air^^^^VQI^VP^0^Villa Air^^^^^^5124^en|Villa Air|^

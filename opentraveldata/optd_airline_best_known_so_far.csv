@@ -170,7 +170,7 @@ air-aladia-airlines^^^^^9A^0^Aladia Airlines^Airatlantic^^^^^en|Aladia Airlines|
 air-alas-uruguay^^2015-02-01^^ALY^YZ^570^Alas Uruguay^^^^^http://en.wikipedia.org/wiki/Alas_Uruguay^en|Alas Uruguay|^
 air-alaska-airlines^^1944-06-06^^ASA^AS^27^Alaska Airlines^^^^^http://en.wikipedia.org/wiki/Alaska_Airlines^en|Alaska Airlines|^
 air-alaska-seaplane-service^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^^en|Alaska Seaplane Service|=en|Stock Sochi|^
-air-alidaunia^^^^LID^D4^0^Alidaunia^^^^^^en|Alidaunia|^
+air-dart-ltd^^2016-01-01^443^LID^D4^0^DART Ltd^^^^^^en|DART Ltd|^IEV
 air-alitalia^^1999-03-01^^AZA^AZ^55^Alitalia^Alitalia S.A.I.^^Member^^http://en.wikipedia.org/wiki/Alitalia^en|Alitalia|=en|Alitalia S.A.I.|^
 air-alitalia-cityliner^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^^Affiliate^^http://en.wikipedia.org/wiki/Alitalia_CityLiner^en|Alitalia CityLiner|=en|Air One CityLiner|^
 air-allegiant-air^^1998-06-01^^AAY^G4^268^Allegiant Air^^^^^http://en.wikipedia.org/wiki/Allegiant_Air^en|Allegiant Air|^
@@ -200,7 +200,6 @@ air-american-eagle^^1998-01-01^^ENY^MQ^93^Envoy Air^^^^^http://en.wikipedia.org/
 air-amsterdam-airlines^^^^AAN^WD^562^Amsterdam Airlines Bv^Das Air^^^^^en|Amsterdam Airlines Bv|=en|Das Air|^
 air-andes-lineas-aereas^^2006-06-20^^ANS^OY^650^Andes Líneas Aéreas^^^^^http://en.wikipedia.org/wiki/Andes_L%C3%ADneas_A%C3%A9reas^en|Andes Líneas Aéreas|p=en|andes|s^
 air-angara-airlines^^^^^2G^735^Angara Airlines^^^^P^^en|Angara Airlines|^
-air-antrak-air^^^^^O4^916^Antrak Air^^^^^^en|Antrak Air|^
 air-apex-airline^^2015-04-01^^^SO^0^Apex Airline^^^^^^en|Apex Airline|^
 air-arctic-circle-air^^^^ODM^5F^91^Pan African Airways^Bonaire Air^^^^^en|Pan African Airways|=en|Bonaire Air|^
 air-arc^^^^^XD^0^Arc^^^^^^en|Arc|^
@@ -292,8 +291,8 @@ air-caicos-express-airways^^2011-01-01^^CXE^9Q^0^Caicos Express Airways^PB Air^^
 air-cairo-aviation^^1998-01-01^^CCE^OE^207^Cairo Aviation^^^^^http://en.wikipedia.org/wiki/Cairo_Aviation^en|Cairo Aviation|^
 air-calm-air^^^^CAV^MO^622^Calm Air International^^^^^^en|Calm Air International|^
 air-camair^^2011-03-28^^CRD^QC^40^Camair Co^Cameroon Airlines Corporation^^^^http://en.wikipedia.org/wiki/Camair-Co^en|Camair Co|=en|Cameroon Airlines Corporation|^
-air-cambodia-angkor-air^^2009-01-01^^^K6^188^Cambodia Angkor Air^Cambodia Air^^^^http://en.wikipedia.org/wiki/Cambodia_Angkor_Air^en|Cambodia Angkor Air|=en|Cambodia Air|^
-air-cambodia-bayon^^2014-09-01^^BYC^BD^688^Cambodia Bayon Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Bayon_Airlines^en|Cambodia Bayon Airlines|^
+air-cambodia-angkor-air^^2009-01-01^^KHV^K6^188^Cambodia Angkor Air^^^^^http://en.wikipedia.org/wiki/Cambodia_Angkor_Air^en|Cambodia Angkor Air|p=en|Cambodia Air|=ja|カンボジア・アンコール航空|=km|កម្ពុជា អង្គរ អ៊ែរ|=ko|캄보디아 앙코르 항공|=sign|CAMBODIA|=zh|柬埔寨吴哥航空|^HAN=PNH=REP=SGN
+air-cambodia-bayon^^2014-09-01^^BYC^BD^688^Cambodia Bayon Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Bayon_Airlines^en|Cambodia Bayon Airlines|ja|カンボジア・バイヨン航空|=km|អាកាសចរណ៍ កម្ពុជា បាយ័ន/បាយ័នអ៊ែរឡាញ|=zh|柬埔寨巴戎航空|^PNH
 air-canadian-north^^1989-01-01^^MPE^5T^518^Canadian North^^^^^http://en.wikipedia.org/wiki/Canadian_North^en|Canadian North|^
 air-canary-fly^^2010-01-01^^CNF^PM^496^Canaryfly^^^^^http://en.wikipedia.org/wiki/Canaryfly^en|Canaryfly|^
 air-canjet-airlines^^^^CJA^C6^0^Canjet Airlines^Bright Airlines^^^^^en|Canjet Airlines|=en|Bright Airlines|^
@@ -1028,7 +1027,7 @@ air-vee-h-aviation^^2016-01-01^^^FC^0^Vee H Aviation^^^^^^en|Vee H Aviation|^
 air-viaair^^2014-01-01^^SRY^VC^359^ViaAir^^^^^http://en.wikipedia.org/wiki/ViaAir^en|ViaAir|=en|Via Airlines|^
 air-vieques-air-link^^1965-01-01^^VES^V4^0^Vieques Air Link^^^^^http://en.wikipedia.org/wiki/Vieques_Air_Link^en|Vieques Air Link|^
 air-videcom^^^^^U1^0^Videcom International^^^^^http://en.wikipedia.org/wiki/Videcom_international^en|Videcom International|^
-air-vietjet-aviation^^2011-12-25^^VJC^VJ^978^VietJet Air^VietJet Aviation^^^^http://en.wikipedia.org/wiki/VietJet_Air^en|VietJet Air|=en|VietJet Aviation|^
+air-vietjet-aviation^^2011-12-25^^VJC^VJ^978^VietJet Air^^^^^http://en.wikipedia.org/wiki/VietJet_Air^en|VietJet Air|=en|VietJet Aviation|^
 air-vietnam-airlines^^1956-01-01^^HVN^VN^738^Vietnam Airlines^^^Member^^http://en.wikipedia.org/wiki/Vietnam_Airlines^en|Vietnam Airlines|^
 air-villa-air^^^^VQI^VP^0^Villa Air^^^^^^en|Villa Air|^
 air-vim-airlines^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^http://en.wikipedia.org/wiki/VIM_Airlines^en|Vim Airlines|^
@@ -1083,6 +1082,7 @@ air-zagros-airlines^^2005-01-01^^IZG^ZO^0^Zagros Airlines^^^^^http://en.wikipedi
 air-zambezi-airlines^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^^en|Zambezi Airlines|^
 air-zambia-skyways^^^^^K8^241^Zambia Skyways^^^^^^en|Zambia Skyways|^
 air-anguilla-air-services^^^^AAS^Q3^0^Anguilla Air Services^^^^^^en|Anguilla Air Services|^
+air-antrak-air^^^^^O4^916^Antrak Air^^^^^^en|Antrak Air|^
 air-zanair^^^^TAN^B4^698^Zanair^^^^^^en|Zanair|^
 air-zestair^^^^EZD^Z2^457^AirAsia Zest^Zest Air^^^P^http://en.wikipedia.org/wiki/AirAsia_Zest^en|AirAsia Zest|=en|Zest Air|^
 air-zhejiang-loong-airlines^^^^^GJ^891^Zhejiang Loong Airlines^Eurofly^^^^^en|Zhejiang Loong Airlines|=en|Eurofly|^
