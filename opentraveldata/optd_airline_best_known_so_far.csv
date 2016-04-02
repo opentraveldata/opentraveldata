@@ -29,7 +29,6 @@ air-aeromar^^1987-01-01^^TAO^VW^942^Aeromar^^^^^http://en.wikipedia.org/wiki/Aer
 air-aeromexico^^^^AMX^AM^139^AeroMexico^AeroMexico^^Member^^http://en.wikipedia.org/wiki/Aerom%C3%A9xico^en|AeroMexico|=en|AeroMexico|^
 air-aero-mongolia^^^^MNG^M0^719^Aero Mongolia^^^^^^en|Aero Mongolia|^
 air-aero-transporte-atsa^^2014-01-01^^AMP^4A^212^Aero Transporte^ATSA^^^^^en|Aero Transporte|=en|ATSA|^
-air-aeroperlas^^^^^WL^54^Aeroperlas^^^^^^en|Aeroperlas|^
 air-aeropostal^^^^^VH^152^Aeropostal^^^^^^en|Aeropostal|^
 air-aero-republica^^2010-10-06^^RPB^P5^845^Copa Airlines Colombia^AeroRepública^^^^http://en.wikipedia.org/wiki/Copa_Airlines_Colombia^en|Copa Airlines Colombia|=en|AeroRepública|^
 air-aero-vip-portugal^^2014-01-01^^RVP^WV^0^Aero VIP^^^^^http://en.wikipedia.org/wiki/Aero_VIP_(Portugal)^en|Aero VIP|^
@@ -303,7 +302,7 @@ air-caribbean-airlines^^2007-01-01^^BWA^BW^106^Caribbean Airlines^^^^^http://en.
 air-caribbean-sun-airlines^^2002-01-01^^WAL^K8^0^World Atlantic Airlines^Caribbean Sun Airlines^^^^http://en.wikipedia.org/wiki/World_Atlantic_Airlines^en|World Atlantic Airlines|=en|Caribbean Sun Airlines|^
 air-caribbean-winds-airlines^^^^WND^W8^0^Caribbean Winds Airlines^La Costena^^^^^en|Caribbean Winds Airlines|=en|La Costena|^
 air-carpatair^^1999-02-01^^KRP^V3^21^Carpatair^^^^^http://en.wikipedia.org/wiki/Carpatair^en|Carpatair|=en|Veg Air|h=sign|CARPATAIR|^
-air-vvb-aviation-malta^^2016-01-01^^^IV^0^VVB Aviation Malta^^^^^^en|VVB Aviation Malta|^
+air-vvb-aviation-malta^^2015-01-01^^SGO^IV^0^VVB Aviation Malta^^^^^^en|VVB Aviation Malta|^MLA
 air-cathay-pacific^^1946-09-24^^CPA^CX^160^Cathay Pacific^^^Member^^http://en.wikipedia.org/wiki/Cathay_Pacific^en|Cathay Pacific|^
 air-catovair^^^^^0C^0^Catovair^^^^^^en|Catovair|^
 air-cayman-airways^^^^CAY^KX^378^Cayman Airways^^^^^^en|Cayman Airways|^
@@ -415,6 +414,7 @@ air-euroatlantic-airways^^1993-08-25^^MMZ^YU^551^Euroatlantic Airways^^^^^http:/
 air-eurocypria-airlines^^^^AUK^UI^0^Auric Air Services^^^^^^en|Auric Air Services|^
 air-europe-airpost^^1991-01-01^^FPO^5O^558^ASL Airlines France^^^^^http://en.wikipedia.org/wiki/ASL_Airlines_France^en|ASL Airlines France|=en|Europe Airpost|h^
 air-european-air-transport^^^^^QY^0^European Air Transport^^^^^^en|European Air Transport|^
+air-european-coastal-airlines^^2008-01-01^^ECB^WL^0^European Coastal Airlines^^^^^^en|European Coastal Airlines|^SPU
 air-eurowings^^1994-01-01^^EWG^EW^104^Eurowings^^^^^http://en.wikipedia.org/wiki/Eurowings^en|Eurowings|^
 air-eva-air^^1989-03-01^^EVA^BR^695^EVA Air^^^^^http://en.wikipedia.org/wiki/EVA_Air^en|EVA Air|^
 air-evelop-airlines^^^^EVE^E9^0^Evelop Airlines^Pan Am Conx^^^^^en|Evelop Airlines|=en|Pan Am Conx|^
@@ -484,7 +484,6 @@ air-gulf-air^^1950-01-01^^GFA^GF^72^Gulf Air^^^^^http://en.wikipedia.org/wiki/Gu
 air-hahn-air^^1994-01-01^^HHN^HR^169^Hahn Air^^^^^http://en.wikipedia.org/wiki/Hahn_Air^en|Hahn Air|^
 air-hahn-air-systems^^^^^H1^0^Hahn Air Systems^^^^^http://en.wikipedia.org/wiki/Hahn_Air_Systems_GmbH^en|Hahn Air Systems|^
 air-hainan-airlines^^1989-01-01^^CHH^HU^880^Hainan Airlines^^^^^http://en.wikipedia.org/wiki/Hainan_Airlines^en|Hainan Airlines|^
-air-haiti-aviation^^^^^H5^0^Haiti Aviation^Magadan^^^^^en|Haiti Aviation|=en|Magadan|^
 air-halcyon-air-cabo-verde^^^^^7Z^159^Halcyon Air Cabo Verde^^^^^^en|Halcyon Air Cabo Verde|^
 air-hawaiian-airlines^^1929-01-30^^HAL^HA^173^Hawaiian Airlines^^^^^http://en.wikipedia.org/wiki/Hawaiian_Airlines^en|Hawaiian Airlines|^
 air-hawkair^^^^^BH^993^Hawkair^^^^^^en|Hawkair|^

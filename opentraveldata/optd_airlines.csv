@@ -31,7 +31,7 @@ air-aeromar^^1987-01-01^^TAO^VW^942^Aeromar^^^^^http://en.wikipedia.org/wiki/Aer
 air-aeromexico^^^^AMX^AM^139^AeroMexico^AeroMexico^Skyteam^Member^^http://en.wikipedia.org/wiki/Aerom%C3%A9xico^137500^en|AeroMexico|=en|AeroMexico|^
 air-aero-mongolia^^^^MNG^M0^719^Aero Mongolia^^^^^^^en|Aero Mongolia|^
 air-aeropelican-air-services^1^1971-07-01^2013-12-31^PEL^OT^0^Aeropelican Air Services^^^^^http://en.wikipedia.org/wiki/Aeropelican_Air_Services^^en|Aeropelican Air Services|^
-air-aeroperlas^^^^^WL^54^Aeroperlas^^^^^^^en|Aeroperlas|^
+air-aeroperlas^1^1970-01-01^2012-02-29^APP^WL^54^Aeroperlas^^^^^http://en.wikipedia.org/wiki/Aeroperlas^^en|Aeroperlas|=es|Aerolíneas Islas de Las Perlas|^DAV=PAC
 air-aeropostal^^^^^VH^152^Aeropostal^^^^^^7374^en|Aeropostal|^
 air-aero-republica^^2010-10-06^^RPB^P5^845^Copa Airlines Colombia^AeroRepública^^^^http://en.wikipedia.org/wiki/Copa_Airlines_Colombia^26063^en|Copa Airlines Colombia|=en|AeroRepública|^
 air-aerosur^1^1992-01-01^2012-12-31^RSU^5L^275^AeroSur^^^^^http://en.wikipedia.org/wiki/AeroSur^^en|AeroSur|^
@@ -496,6 +496,7 @@ air-eurolot^1^1996-01-01^2015-03-31^ELO^K2^78^Eurolot^^^^^http://en.wikipedia.or
 air-euromanx^1^2002-08-19^2008-05-09^EMX^3W^0^EuroManx^^^^^http://en.wikipedia.org/wiki/EuroManx^^en|Malawian Airlines|=en|EuroManx|^
 air-europe-airpost^^1991-01-01^^FPO^5O^558^ASL Airlines France^^^^^http://en.wikipedia.org/wiki/ASL_Airlines_France^1017^en|ASL Airlines France|=en|Europe Airpost|h^
 air-european-air-transport^^^^^QY^0^European Air Transport^^^^^^^en|European Air Transport|^
+air-european-coastal-airlines^^2008-01-01^^ECB^WL^0^European Coastal Airlines^^^^^^^en|European Coastal Airlines|^SPU
 air-european-executive-express^1^1997-01-01^2005-12-31^EXC^RY^0^European Executive Express^^^^^http://en.wikipedia.org/wiki/European_Executive_Express^^en|European Executive Express|^
 air-eurowings^^1994-01-01^^EWG^EW^104^Eurowings^^^^^http://en.wikipedia.org/wiki/Eurowings^53192^en|Eurowings|^
 air-eva-air^^1989-03-01^^EVA^BR^695^EVA Air^^Star Alliance^Member^^http://en.wikipedia.org/wiki/EVA_Air^58140^en|EVA Air|^
@@ -584,7 +585,7 @@ air-gulf-air^^1950-01-01^^GFA^GF^72^Gulf Air^^^^^http://en.wikipedia.org/wiki/Gu
 air-hahn-air^^1994-01-01^^HHN^HR^169^Hahn Air^^^^^http://en.wikipedia.org/wiki/Hahn_Air^60^en|Hahn Air|^
 air-hahn-air-systems^^^^^H1^0^Hahn Air Systems^^^^^http://en.wikipedia.org/wiki/Hahn_Air_Systems_GmbH^^en|Hahn Air Systems|^
 air-hainan-airlines^^1989-01-01^^CHH^HU^880^Hainan Airlines^^^^^http://en.wikipedia.org/wiki/Hainan_Airlines^151843^en|Hainan Airlines|^
-air-haiti-aviation^^^^^H5^0^Haiti Aviation^Magadan^^^^^^en|Haiti Aviation|=en|Magadan|^
+air-haiti-aviation^1^2013-01-01^2013-12-31^^H5^0^Haiti Aviation^^^^^^^en|Haiti Aviation|^
 air-halcyon-air-cabo-verde^^^^^7Z^159^Halcyon Air Cabo Verde^^^^^^^en|Halcyon Air Cabo Verde|^
 air-hamburg-airlines^1^1988-04-01^1997-12-21^HAS^HX^0^Hamburg Airlines^^^^^http://en.wikipedia.org/wiki/Hamburg_Airlines^^en|Hamburg Airlines|=sign|Hamburg Air|^
 air-hamburg-airways^1^2011-03-01^2014-12-31^HAY^HK^516^Hamburg Airways^^^^^http://en.wikipedia.org/wiki/Hamburg_Airways^^en|Hamburg Airways|^DUS=HAJ=HAM
@@ -766,6 +767,7 @@ air-lydd-air^^1997-01-01^^LYD^^^LyddAir^^^^^http://en.wikipedia.org/wiki/LyddAir
 air-lynx-aviation^^^^^L3^0^Lynx Aviation^Ltu Billa Luf^^^^^^en|Lynx Aviation|=en|Ltu Billa Luf|^
 air-macair-jet^1^^2014-12-31^MCJ^VM^0^Macair Jet^^^^^^^en|Macair Jet|^
 air-macedonian-airlines^1^1992-01-01^2003-12-31^MCS^MC^0^Macedonian Airlines^^^^^http://en.wikipedia.org/wiki/Macedonian_Airlines^^en|Macedonian Airlines|^
+air-magadan-airlines^1^1993-01-01^2006-07-31^MVL^H5^0^Magadan Airlines^^^^^http://en.wikipedia.org/wiki/MAVIAL_Magadan_Airlines^^en|Mavial Magadan Airlines|=ru|ФГУП «Авиакомпания „Магаданские авиалинии“»|=sign|Mavial|^
 air-magnum-air^^2012-12-14^^^M8^0^Magnum Air^SkyJet Airlines^^^^http://en.wikipedia.org/wiki/SkyJet^1691^en|Magnum Air|=en|SkyJet Airlines|^
 air-mahan-airlines^^^^IRM^W5^537^Mahan Airlines^^^^^^10193^en|Mahan Airlines|^
 air-malawian-airlines^^2014-01-31^^MWI^3W^529^Malawian Airlines^^^^^http://en.wikipedia.org/wiki/Malawian_Airlines^2823^en|Malawian Airlines|^
@@ -1064,7 +1066,7 @@ air-southern-air-charter^^^^^PL^0^Southern Air Charter^^^^^^11085^en|Southern Ai
 air-southern-airways^^2013-01-01^^LTD^9X^677^Southern Airways^Executive Express Aviation^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^366^en|Southern Airways|=en|Executive Express Aviation|^
 air-southern-star-airlines^^^^^4P^0^Travel Air^^^^^^4550^en|Travel Air|^
 air-southwest-airlines^^1971-06-18^^SWA^WN^526^Southwest Airlines^^^^P^http://en.wikipedia.org/wiki/Southwest_Airlines^875931^en|Southwest Airlines|^
-air-spanair^1^1988-03-01^2012-01-27^JKK^JK^680^Spanair^Spanair^^^^http://en.wikipedia.org/wiki/Spanair^^en|Spanair|=en|Spanair|^
+air-spanair^1^1988-03-01^2012-01-27^JKK^JK^680^Spanair^^^^^http://en.wikipedia.org/wiki/Spanair^^en|Spanair|^MAD=PMI=TFN
 air-speed-alliance-westbahn^^^^^5W^0^Speed Alliance Westbahn^Executive Exp^^^^^16683^en|Speed Alliance Westbahn|=en|Executive Exp|^
 air-spicejet^^2005-05-18^^SEJ^SG^775^SpiceJet^^^^^http://en.wikipedia.org/wiki/SpiceJet^106102^en|SpiceJet|^
 air-spirit-airlines^^1980-01-01^^NKS^NK^487^Spirit Airlines^^^^^http://en.wikipedia.org/wiki/Spirit_Airlines^127794^en|Spirit Airlines|^
@@ -1223,7 +1225,7 @@ air-volga-dnepr-airline^^^^^VI^412^Volga Dnepr Airline^^^^^^^en|Volga Dnepr Airl
 air-volotea^^^^VOE^V7^712^Volotea^^^^^^30968^en|Volotea|^
 air-vueling-airlines^^2004-01-01^^VLG^VY^30^Vueling^^^^^http://en.wikipedia.org/wiki/Vueling^197521^en|Vueling|^
 air-vuelos-economicos^^^^VAR^VU^0^Vuelos Economicos^^^^^^1151^en|Vuelos Economicos|^
-air-vvb-aviation-malta^^2016-01-01^^^IV^0^VVB Aviation Malta^^^^^^^en|VVB Aviation Malta|^
+air-vvb-aviation-malta^^2015-01-01^^SGO^IV^0^VVB Aviation Malta^^^^^^^en|VVB Aviation Malta|^
 air-warbelows-air-ventures^^^^VNA^4W^0^Warbelows Air Ventures^^^^^^7901^en|Warbelows Air Ventures|^
 air-wasaya-airways^^1989-01-01^^WSG^^0^Wasaya Airways^^^^^http://en.wikipedia.org/wiki/Wasaya_Airways^^en|Wasaya Airways|^
 air-wataniya-airways^1^2009-01-01^2011-03-17^WAN^KW^100^Wataniya Airways^^^^^http://en.wikipedia.org/wiki/Wataniya_Airways^^en|Wataniya Airways|^
