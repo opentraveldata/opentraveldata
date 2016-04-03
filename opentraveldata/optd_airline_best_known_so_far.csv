@@ -282,7 +282,7 @@ air-british-airways-v1^^1974-03-31^^BAW^BA^125^British Airways^^^Member^^http://
 air-brussels-airlines-v1^^2007-03-25^^BEL^SN^82^Brussels Airlines^^^Member^^http://en.wikipedia.org/wiki/Brussels_Airlines^en|Brussels Airlines|^^air-brussels-airlines^1
 air-buddha-air-v1^^1997-01-01^^BHA^U4^0^Buddha Air^^^^^http://en.wikipedia.org/wiki/Buddha_Air^en|Buddha Air|ps=en|Buddha Air Pvt. Ltd|^^air-buddha-air^1
 air-bulgaria-air-v1^^^^LZB^FB^623^Bulgaria Air^Balkan Air To^^^^^en|Bulgaria Air|=en|Balkan Air To|^^air-bulgaria-air^1
-air-bulgarian-air-charter-v1^2000-12-14^^^BUC^H6^0^Bulgarian Air Charter^^^^^http://en.wikipedia.org/wiki/Bulgarian_Air_Charter^bg|Българиан Ер Чартер|=en|Bulgarian Air Charter|^BOJ=PDV=SOF=VAR^air-bulgarian-air-charter^1
+air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^http://en.wikipedia.org/wiki/Bulgarian_Air_Charter^bg|Българиан Ер Чартер|=en|Bulgarian Air Charter|^BOJ=PDV=SOF=VAR^air-bulgarian-air-charter^1
 air-buraq-air-v1^^2001-01-01^^BRQ^UZ^928^Buraq Air^^^^^http://en.wikipedia.org/wiki/Buraq_Air^en|Buraq Air|^^air-buraq-air^1
 air-business-aviation-centre-v1^^^^^UQ^0^Business Aviation Centre^O Connor^^^^^en|Business Aviation Centre|=en|O Connor|^^air-business-aviation-centre^1
 air-caicos-express-airways-v1^^2011-01-01^^CXE^9Q^0^Caicos Express Airways^PB Air^^^^http://en.wikipedia.org/wiki/Caicos_Express_Airways^en|Caicos Express Airways|=en|PB Air|^^air-caicos-express-airways^1
@@ -890,7 +890,7 @@ air-solomon-airlines-v1^^^^SOL^IE^193^Solomon Airlines^Solomon Air^^^^^en|Solomo
 air-somon-air-v1^^2008-02-01^^SMR^SZ^413^Somon Air^^^^P^http://en.wikipedia.org/wiki/Somon_Air^en|Somon Air|^^air-somon-air^1
 air-songbird-airways-v1^^1990-01-01^^SGB^6K^0^Songbird Airways^^^^^http://en.wikipedia.org/wiki/Songbird_Airways^en|Songbird Airways|^^air-songbird-airways^1
 air-sounds-air-v1^^1986-01-01^^SDA^S8^0^Sounds Air^^^^^http://en.wikipedia.org/wiki/Sounds_Air^en|Sounds Air|^^air-sounds-air^1
-air-south-african-airlink-v1^^1995-01-01^^LNK^4Z^749^Airlink^South African Airlink^^^^http://en.wikipedia.org/wiki/Airlink^en|Airlink|=en|South African Airlink|^^air-south-african-airlink^1
+air-south-african-airlink-v3^^2011-01-01^^LNK^4Z^749^Airlink^^^^^http://en.wikipedia.org/wiki/Airlink^en|Airlink|p=en|South African Airlink|h^^air-south-african-airlink^3
 air-south-african-airways-v1^^1934-02-01^^SAA^SA^83^South African Airways^SAA^^Member^^http://en.wikipedia.org/wiki/South_African_Airways^en|South African Airways|=en|SAA|^^air-south-african-airways^1
 air-south-african-express-v1^^1994-04-24^^EXY^XZ^29^South African Express^SA Express^^^^http://en.wikipedia.org/wiki/South_African_Express^en|South African Express|=en|SA Express|^^air-south-african-express^1
 air-south-airlines-v1^^1999-04-19^^OTL^YG^233^South Airlines^^^^^http://en.wikipedia.org/wiki/South_Airlines^en|South Airlines|^^air-south-airlines^1
