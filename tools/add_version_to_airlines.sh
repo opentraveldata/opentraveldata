@@ -86,13 +86,6 @@ OPTD_AIR_NEW_FILE=${DATA_DIR}${OPTD_AIR_NEW_FILENAME}
 OPTD_NOIATA_NEW_FILENAME=optd_airline_no_longer_valid_new.csv
 OPTD_NOIATA_NEW_FILE=${DATA_DIR}${OPTD_NOIATA_NEW_FILENAME}
 
-##
-# Temporary
-OPTD_AIR_HEADER=${OPTD_AIR_FILE}.tmp.hdr
-OPTD_AIR_WITH_NOHD=${OPTD_AIR_FILE}.wohd
-OPTD_AIR_UNSORTED_NOHDR=${OPTD_AIR_FILE}.wohd.unsorted
-OPTD_AIR_PUBLIC_UNSORTED_FILE=${OPTD_AIR_FILE}.unsorted
-
 
 ##
 # Sanity check
@@ -100,14 +93,6 @@ if [ ! -d ${TOOLS_DIR} ]
 then
 	echo
 	echo "[$0:$LINENO] The tools/ sub-directory ('${TOOLS_DIR}') does not exist or is not accessible."
-	echo "Check that your Git clone of the OpenTravelData is complete."
-	echo
-	exit -1
-fi
-if [ ! -f ${TOOLS_DIR}prepare_ref_dump_file.sh ]
-then
-	echo
-	echo "[$0:$LINENO] The REF file preparation script ('${TOOLS_DIR}prepare_ref_dump_file.sh') does not exist or is not accessible."
 	echo "Check that your Git clone of the OpenTravelData is complete."
 	echo
 	exit -1
@@ -139,8 +124,6 @@ fi
 #
 if [ "$1" = "--clean" ]
 then
-	\rm -f ${OPTD_AIR_WITH_NOHD} ${OPTD_AIR_UNSORTED_NOHDR} \
-		${OPTD_AIR_PUBLIC_UNSORTED_FILE}
 	exit
 fi
 
