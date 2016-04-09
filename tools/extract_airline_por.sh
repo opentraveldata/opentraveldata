@@ -4,20 +4,8 @@
 # - the file-path of the data dump file extracted from the schedule-derived file
 #
 
-displayScheduleDetails() {
-    ##
-    echo
-    echo "####### Note #######"
-    echo "# The data dump from the airline list of POR has to be derived from SSIM7 schedule files."
-    echo "# The airline POR list dump file ('${SCH_RAW_FILENAME}') should be in the ${SCH_DIR} directory:"
-    ls -la ${SCH_DIR}
-    echo "#####################"
-    echo
-}
-
 ##
 # Output file name
-AIR_POR_LST_FILENAME=dump_from_airline_por.csv
 AIR_POR_LST_IN_DATA_FILENAME=optd_airline_por.csv
 
 ##
@@ -39,12 +27,6 @@ then
 	EXEC_PATH="."
 	TMP_DIR="."
 fi
-# If the airline POR list dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${AIR_POR_LST_FILENAME} ]
-then
-	TMP_DIR="."
-fi
 EXEC_PATH="${EXEC_PATH}/"
 TMP_DIR="${TMP_DIR}/"
 
@@ -60,7 +42,7 @@ EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
 	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
+	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
 	echo
 	exit -1
 fi
@@ -118,12 +100,7 @@ LST_SCH_TVL_ALL_FILE=${TOOLS_DIR}${LST_SCH_TVL_ALL_FILENAME}
 
 ##
 # Output files
-AIR_POR_LST_FILE=${TMP_DIR}${AIR_POR_LST_FILENAME}
 AIR_POR_LST_IN_DATA_FILE=${DATA_DIR}${AIR_POR_LST_IN_DATA_FILENAME}
-
-##
-# Temporary files
-HDR_AIR_POR_LST_FILE=${TMP_DIR}${AIR_POR_LST_FILE}.hdr
 
 
 ##
@@ -133,8 +110,6 @@ then
     if [ "${TMP_DIR}" = "/tmp/por" ]
     then
 		\rm -rf ${TMP_DIR}
-    else
-		\rm -f ${HDR_AIR_POR_LST_FILE}
     fi
     exit
 fi
@@ -146,20 +121,14 @@ if [ "$1" = "-h" -o "$1" = "--help" ]
 then
     echo
     echo "Usage: $0 [<Airline POR list data file> [<log level>]]"
+	echo
     echo "  - Default directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
     echo "  - Default path for the input airline POR list data file: '${LST_SCH_TVL_ALL_FILE}'"
-	echo "  - Default path for the output airline POR list data file: '${AIR_POR_LST_IN_DATA_FILE}'"
     echo "  - Default log level: ${LOG_LEVEL}"
     echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
     echo "  - Generated files:"
-    echo "    + '${AIR_POR_LST_FILE}'"
+    echo "    + '${AIR_POR_LST_IN_DATA_FILE}'"
     echo
-    exit
-fi
-#
-if [ "$1" = "-r" -o "$1" = "--schedule" ]
-then
-    displayScheduleDetails
     exit
 fi
 
@@ -175,10 +144,6 @@ then
     echo
     echo "[$0:$LINENO] The '${LST_SCH_TVL_ALL_FILE}' file does not exist."
     echo
-    if [ "$1" = "" ]
-    then
-		displayScheduleDetails
-    fi
     exit -1
 fi
 
@@ -193,18 +158,17 @@ fi
 ##
 # Generate a simple dump file with the following fields
 # airline_code^apt_org^apt_dst^flt_freq
-echo "airline_code^apt_org^apt_dst^flt_freq" > ${AIR_POR_LST_FILE}
-cut -d'^' -f 1-4 ${LST_SCH_TVL_ALL_FILE} >> ${AIR_POR_LST_FILE}
+echo "airline_code^apt_org^apt_dst^flt_freq" > ${AIR_POR_LST_IN_DATA_FILE}
+cut -d'^' -f 1-4 ${LST_SCH_TVL_ALL_FILE} >> ${AIR_POR_LST_IN_DATA_FILE}
 
 ##
 # Reporting
 echo
-echo "Preparation step"
-echo "----------------"
-echo "The '${AIR_POR_LST_FILE}' file has been derived from '${LST_SCH_TVL_ALL_FILE}'."
+echo "Results"
+echo "-------"
+echo "The '${AIR_POR_LST_IN_DATA_FILE}' file has been derived from '${LST_SCH_TVL_ALL_FILE}'."
 echo
 echo "Next steps:"
-echo "cp -f ${AIR_POR_LST_FILE} ${AIR_POR_LST_IN_DATA_FILE}"
 echo "git add ${AIR_POR_LST_IN_DATA_FILE}"
 echo "git commit -m \"[Airlines] Updated with latest POR network information.\" ${AIR_POR_LST_IN_DATA_FILE}"
 echo
