@@ -4,44 +4,6 @@
 # - the file-path of the dump file extracted from the reference data.
 #
 
-displayGeonamesDetails() {
-	if [ -z "${OPTDDIR}" ]
-	then
-		export OPTDDIR=~/dev/geo/optdgit
-	fi
-	if [ -z "${MYCURDIR}" ]
-	then
-		export MYCURDIR=`pwd`
-	fi
-	echo
-	echo "The data dump from Geonames can be obtained from the OpenTravelData project"
-	echo "(http://github.com/opentraveldata/optd). For instance:"
-	echo "MYCURDIR=`pwd`"
-	echo "OPTDDIR=${OPTDDIR}"
-	echo "mkdir -p ~/dev/geo"
-	echo "cd ~/dev/geo"
-	echo "git clone git://github.com/opentraveldata/optd.git optdgit"
-	echo "cd optdgit/refdata/geonames/data"
-	echo "./getDataFromGeonamesWebsite.sh  # it may take several minutes"
-	echo "cd por/admin"
-	echo "./aggregateGeonamesPor.sh # it may take several minutes (~10 minutes)"
-	if [ "${TMP_DIR}" = "/tmp/por/" ]
-	then
-		echo "mkdir -p ${TMP_DIR}"
-	fi
-	echo "cd ${MYCURDIR}"
-	echo "${OPTDDIR}/tools/extract_por_with_iata_icao.sh # it may take several minutes"
-	echo "It produces both a por_all_iata_YYYYMMDD.csv and a por_all_noicao_YYYYMMDD.csv files,"
-	echo "which have to be aggregated into the dump_from_geonames.csv file."
-	echo "${OPTDDIR}/tools/preprepare_geonames_dump_file.sh"
-	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_best_known_so_far.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/opentraveldata/ref_airport_popularity.csv ${TMP_DIR}"
-	echo "\cp -f ${OPTDDIR}/opentraveldata/optd_por_public.csv ${TMP_DIR}optd_airports.csv"
-	echo "${OPTDDIR}/tools/update_airports_csv_after_getting_geonames_iata_dump.sh"
-	echo "ls -l ${TMP_DIR}"
-	echo
-}
-
 displayRefDetails() {
     ##
     # Snapshot date
@@ -206,11 +168,6 @@ then
 	exit
 fi
 #
-if [ "$1" = "-g" -o "$1" = "--geonames" ]
-then
-	displayGeonamesDetails
-	exit
-fi
 if [ "$1" = "-r" -o "$1" = "--ref" ]
 then
 	displayRefDetails
@@ -243,10 +200,6 @@ then
 	echo
 	echo "[$0:$LINENO] The '${GEO_OPTD_FILE}' file does not exist."
 	echo
-	if [ "$1" = "" ]
-	then
-		displayGeonamesDetails
-	fi
 	exit -1
 fi
 

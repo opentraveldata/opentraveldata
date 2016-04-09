@@ -207,12 +207,6 @@ then
     echo
     exit
 fi
-#
-if [ "$1" = "-g" -o "$1" = "--geonames" ]
-then
-    displayGeonamesDetails
-    exit
-fi
 
 ##
 # The OpenTravelData opentraveldata/ sub-directory contains, among other things,
@@ -238,18 +232,6 @@ then
 	OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
 	OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
 	OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
-fi
-
-if [ ! -f "${OPTD_POR_FILE}" ]
-then
-    echo
-    echo "[$0:$LINENO] The '${OPTD_POR_FILE}' file does not exist."
-    echo
-    if [ "$1" = "" ]
-    then
-		displayGeonamesDetails
-    fi
-    exit -1
 fi
 
 ##

@@ -161,12 +161,6 @@ then
     echo
     exit
 fi
-#
-if [ "$1" = "-g" -o "$1" = "--geonames" ]
-then
-    displayGeonamesDetails
-    exit
-fi
 
 ##
 # The OpenTravelData opentraveldata/ sub-directory contains, among other things,

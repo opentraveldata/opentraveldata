@@ -32,7 +32,7 @@ if [ ! -f ${GEO_FILE} ]
 then
 	echo
 	echo "The ${GEO_FILE} file is missing."
-	echo "Hint: launch the ./preprepare_geonames_dump_file.sh script."
+	echo "Hint: launch sh prepare_geonames_dump_file.sh --geonames"
 	echo
 	exit -1
 fi
@@ -50,7 +50,7 @@ if [ ! -f ${BST_FILE} ]
 then
 	echo
 	echo "The ${BST_FILE} file is missing."
-	echo "Hint: you probably launch the current script ($0) from another directory than <opentraveldata>/refdata/tools."
+	echo "Hint: you probably launch the current script ($0) from another directory than <opentraveldata>/tools."
 	echo
 	exit -1
 fi
