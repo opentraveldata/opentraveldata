@@ -71,7 +71,7 @@ EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
 	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
+	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
 	echo
 	exit -1
 fi
@@ -151,8 +151,6 @@ OPTD_POR_PUBLIC_FILE=${DATA_DIR}${OPTD_POR_PUBLIC_FILENAME}
 OPTD_POR_WITH_NOHD=${OPTD_POR_FILE}.wohd
 OPTD_NOIATA_WITH_NOHD=${OPTD_NOIATA_FILE}.wohd
 OPTD_POR_WITH_GEO=${OPTD_POR_FILE}.withgeo
-OPTD_POR_WITH_GEOREF=${OPTD_POR_FILE}.withgeoref
-OPTD_POR_WITH_GEOREFALT=${OPTD_POR_FILE}.withgeorefalt
 OPTD_POR_WITH_NO_CTY_NAME=${OPTD_POR_FILE}.withnoctyname
 OPTD_POR_PUBLIC_W_NOGEONAMES=${OPTD_POR_FILE}.wnogenames
 OPTD_POR_PUBLIC_WO_NOIATA_FILE=${OPTD_POR_FILE}.wonoiata
@@ -211,7 +209,6 @@ fi
 if [ "$1" = "--clean" ]
 then
 	\rm -f ${OPTD_POR_WITH_GEO} ${OPTD_ONLY_POR_NEW_FILE} \
-		${OPTD_POR_WITH_GEOREF} ${OPTD_POR_WITH_GEOREFALT} \
 		${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 		${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} \
 		${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} \
@@ -220,9 +217,6 @@ then
 		${OPTD_POR_WITH_NO_CTY_NAME} \
 		${OPTD_POR_FILE_HEADER} ${OPTD_POR_WITH_NOHD} \
 		${GEONAME_RAW_FILE_TMP}
-
-#	bash prepare_geonames_dump_file.sh --clean || exit -1
-#	bash prepare_ref_dump_file.sh --clean || exit -1
 	exit
 fi
 
@@ -354,5 +348,5 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "wc -l ${OPTD_POR_FILE} ${OPTD_POR_PUBLIC_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_WITH_GEO} ${OPTD_POR_WITH_GEOREF} ${OPTD_POR_WITH_GEOREFALT} ${OPTD_POR_WITH_NO_CTY_NAME}"
+echo "wc -l ${OPTD_POR_FILE} ${OPTD_POR_PUBLIC_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_UNSORTED_WOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_WITH_GEO} ${OPTD_POR_WITH_NO_CTY_NAME}"
 echo
