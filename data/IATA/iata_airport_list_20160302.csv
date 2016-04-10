@@ -761,7 +761,7 @@ BGJ^Borgarfjordur eystri^^IS^^^BGJ^Borgarfjordur eystri^0475^A
 BGK^Big Creek^^BZ^^^BGK^Big Creek^^A
 BGL^Baglung^^NP^^^BGL^Balewa^0476^A
 BGM^Binghamton^NY^US^1^^BGM^Johnson City^0477^A
-BGN^Belaya Gora^^RU^1^0^BGN^Belaya Gora^^A
+BGN^Belaya Gora^^RU^10^^BGN^Belaya Gora^^A
 BGO^Bergen^^NO^^^BGO^Flesland^0479^A
 BGO^Bergen^^NO^^^QFV^Railway Station^^R
 BGP^Bongo^^GA^^^BGP^Bongo^0480^A
@@ -1504,7 +1504,7 @@ CKC^Cherkasy^^UA^^^CKC^International^^A
 CKD^Crooked Creek^AK^US^5^^CKD^Crooked Creek^0934^A
 CKE^Lakeport^CA^US^4^^CKE^Lampson Field^0935^A
 CKG^Chongqing^^CN^^^CKG^Jiangbei Intl^0936^A
-CKH^Chokurdakh^^RU^1^0^CKH^Chokurdakh^^A
+CKH^Chokurdakh^^RU^10^^CKH^Chokurdakh^^A
 CKI^Croker Island^NT^AU^3^A^CKI^Croker Island^0937^A
 CKK^Ash Flat^AR^US^2^^CKK^Sharp County Regional^^A
 CKL^Chkalovsky^^RU^2^^CKL^Chkalovsky^^A
@@ -1825,7 +1825,7 @@ CYS^Cheyenne^WY^US^3^^FEW^F.E. Warren AFB H/P^^H
 CYT^Yakataga^AK^US^5^^CYT^Yakataga^1145^A
 CYU^Cuyo^^PH^^^CYU^Cuyo^^A
 CYW^Celaya^^MX^1^^CYW^Capt. Rogelio Castillo^^A
-CYX^Chersky^^RU^1^0^CYX^Chersky^^A
+CYX^Chersky^^RU^10^^CYX^Chersky^^A
 CYZ^Cauayan^^PH^^^CYZ^Cauayan^1146^A
 CZA^Chichen-Itza^^MX^1^^CZA^International^1147^A
 CZB^Cruz Alta^RS^BR^1^^CZB^Carlos Ruhl^1148^A
@@ -5453,7 +5453,7 @@ MQE^Marqua^NT^AU^3^A^MQE^Marqua^3295^A
 MQF^Magnitogorsk^^RU^4^^MQF^Magnitogorsk^^A
 MQG^Midgard^^NA^^^MQG^Midgard^^A
 MQH^Minacu^GO^BR^1^^MQH^Minacu^^A
-MQJ^Khonu^^RU^1^0^MQJ^Moma^^A
+MQJ^Khonu^^RU^10^^MQJ^Moma^^A
 MQK^San Matias^^BO^^^MQK^San Matias^^A
 MQL^Mildura^VI^AU^2^^MQL^Mildura^3296^A
 MQM^Mardin^^TR^^^MQM^Mardin^^A
@@ -8028,7 +8028,7 @@ SED^Sedom^^IL^^^SED^Min'hat Hashnayim^4433^A
 SEF^Sebring^FL^US^1^^SEF^Regional^4434^A
 SEG^Selinsgrove^PA^US^1^^SEG^Penn Valley^^A
 SEH^Senggeh^^ID^3^^SEH^Senggeh^4435^A
-SEK^Srednekolymsk^^RU^1^0^SEK^Srednekolymsk^^A
+SEK^Srednekolymsk^^RU^10^^SEK^Srednekolymsk^^A
 SEL^Seoul^^KR^^^GMP^Gimpo International^4438^A
 SEL^Seoul^^KR^^^ICN^Incheon International^^A
 SEL^Seoul^^KR^^^SEL^Metropolitan Area^^C
@@ -11029,7 +11029,7 @@ ZKJ^Schaffhausen^^CH^^^ZKJ^Railway Station^^R
 ZKK^Schwyz^^CH^^^ZKK^Railway Station^^R
 ZKM^Sette Cama^^GA^^^ZKM^Sette Cama^5841^R
 ZKO^Sierre/Siders^^CH^^^ZKO^Railway Station^^R
-ZKP^Zyryanka^^RU^1^0^ZKP^Zyryanka^^A
+ZKP^Zyryanka^^RU^10^^ZKP^Zyryanka^^A
 ZKQ^Kotor^^ME^^^ZKQ^Off-line Point^^O
 ZKR^Karlovasion^^GR^^^ZKR^Off-line Point^^O
 ZKS^Solothurn^^CH^^^ZKS^Railway Station^^R

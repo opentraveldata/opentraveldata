@@ -4,6 +4,7 @@
 # Sample input lines:
 # ALV   Andorra la Vella          AD     ALV   Off-line Point                1
 # ABI   Abilene               TX  US2    ABI   Metropolitan Area             2
+# BGN   Belaya Gora               RU10   BGN   Belaya Gora                   3
 # PAR   Paris                     FR     CDG   Charles de Gaulle       0838  3 
 # AAH   Aachen                    DE     AAW   Aachen Bf West Bus Stn        4 
 # AAH   Aachen                    DE     XHJ   Hbf Railway Station           5 
@@ -74,7 +75,7 @@ function toLocType(__tltLocType) {
 
 ##
 #
-// {
+/^[A-Z]{3}/ {
 	# City IATA code
 	city_code = trim($1)
 
@@ -89,16 +90,27 @@ function toLocType(__tltLocType) {
 
 	# Time-Zone code
 	tz_code = trim($5)
-	if (length(tz_code) > 1) {
-		print ("[" awk_file "] !!! Error at record #" FNR \
-			   ". TZ code length too big. Full line: " $0) > error_stream
-	}
 
 	# STV
 	stv = trim($6)
+
+	# Sanity check
 	if (length(stv) > 1) {
-		print ("[" awk_file "] !!! Error at record #" FNR \
-			   ". STV length too big. Full line: " $0) > error_stream
+		print ("[" awk_file "] !!! Error at record #" FNR				\
+			   ". STV ('" stv "') length too big. Full line: " $0) > error_stream
+	}
+
+	# Hack, as STV is not positional, but rather glued to tz_code
+	if (stv == "0" && tz_code == 1) {
+		tz_code = 10
+		stv = ""
+	}
+
+	# Sanity check
+	if (tz_code > 10) {
+		print ("[" awk_file "] !!! Error at record #" FNR				\
+			   ". TZ ('" tz_code "') code length too big. Full line: " $0) \
+			> error_stream
 	}
 
 	# Travel-related POR code
