@@ -20,7 +20,7 @@ displayInnovataDetails() {
 
 ##
 # Input file names
-INN_RAW_FILENAME=stations.dat
+INN_RAW_FILENAME=innovata_stations.dat
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##

@@ -141,7 +141,7 @@ if [ "$1" = "--clean" ]
 then
 	\rm -f ${GEONAME_WPK_FILE} ${GEONAME_SORTED_FILE} ${GEONAME_CUT_SORTED_FILE}
 	\rm -f ${OPTD_POR_TOBESPLIT_FILE} ${OPTD_POR_NEW_FILE}
-	bash prepare_geonames_dump_file.sh --clean || exit -1
+	bash ${TOOLS_DIR}prepare_geonames_dump_file.sh --clean || exit -1
 	exit
 fi
 
@@ -158,7 +158,7 @@ fi
 ##
 # Preparation
 #
-bash prepare_geonames_dump_file.sh ${OPTD_DIR} ${LOG_LEVEL} || exit -1
+bash ${TOOLS_DIR}prepare_geonames_dump_file.sh ${OPTD_DIR} ${LOG_LEVEL} || exit -1
 
 ##
 #
@@ -174,7 +174,7 @@ fi
 ##
 # Split the combined POR entries for which Geonames has got the details
 # for the individual entries.
-SPLITTER=optd_por_splitter.awk
+SPLITTER=one-off/optd_por_splitter.awk
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${SPLITTER} \
 	${OPTD_POR_FILE} ${GEONAME_RAW_FILE} > ${OPTD_POR_TOBESPLIT_FILE}
 

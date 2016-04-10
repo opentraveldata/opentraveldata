@@ -1,15 +1,70 @@
 #!/bin/sh
 
 ##
+# Temporary path
+TMP_DIR="/tmp/por"
+
+##
+# Path of the executable: set it to empty when this is the current directory.
+EXEC_PATH=`dirname $0`
+# Trick to get the actual full-path
+pushd ${EXEC_PATH} > /dev/null
+EXEC_FULL_PATH=`popd`
+popd > /dev/null
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+#
+CURRENT_DIR=`pwd`
+if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
+then
+	EXEC_PATH="."
+	TMP_DIR="."
+fi
+# If the Geonames dump file is in the current directory, then the current
+# directory is certainly intended to be the temporary directory.
+if [ -f ${GEO_RAW_FILENAME} ]
+then
+	TMP_DIR="."
+fi
+EXEC_PATH="${EXEC_PATH}/"
+TMP_DIR="${TMP_DIR}/"
+
+if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
+then
+	\mkdir -p ${TMP_DIR}
+fi
+
+##
+# Sanity check: that (executable) script should be located in the
+# tools/ sub-directory of the OpenTravelData project Git clone
+EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
+if [ "${EXEC_DIR_NAME}" != "tools" ]
+then
+	echo
+	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
+	echo
+	exit -1
+fi
+
+##
+# OpenTravelData directory
+OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR="${OPTD_DIR}/"
+
+##
+# OPTD sub-directories
+DATA_DIR=${OPTD_DIR}opentraveldata/
+TOOLS_DIR=${OPTD_DIR}tools/
+
+##
 # Input files
 BST_FILENAME=optd_por_best_known_so_far.csv
-GEO_FILE=dump_from_geonames.csv
-REF_FILE=dump_from_ref_city.csv
-BST_FILE=../opentraveldata/${BST_FILENAME}
+GEO_FILE=${TOOLS_DIR}dump_from_geonames.csv
+REF_FILE=${TOOLS_DIR}dump_from_ref_city.csv
+BST_FILE=${DATA_DIR}${BST_FILENAME}
 
 ##
 # Output files
-BST_NEW_FILE=new_${BST_FILENAME}
+BST_NEW_FILE=${BST_FILENAME}.new
 BST_WGEO_NEW_FILE=${BST_NEW_FILE}.wgeo
 BST_WREF_NEW_FILE=${BST_NEW_FILE}.wref
 
@@ -90,7 +145,7 @@ join -t'^' -a 1 ${BST_WGEO_NEW_FILE} ${GEO_FILE} > ${BST_WGEO_FILE_TMP}
 join -t'^' -a 1 ${BST_WREF_NEW_FILE} ${REF_FILE} > ${BST_WREF_FILE_TMP}
 
 # Reduce the lines
-FIX_BST_REDUCER=fix_optd_por_best_known.awk
+FIX_BST_REDUCER=one-off/fix_optd_por_best_known.awk
 awk -F'^' -f ${FIX_BST_REDUCER} ${BST_WGEO_FILE_TMP} > ${BST_WGEO_NEW_FILE}
 NB_GEO_FIXED_ROWS=`wc -l ${BST_WGEO_NEW_FILE} | cut -d' ' -f1`
 #
