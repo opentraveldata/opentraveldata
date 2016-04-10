@@ -170,10 +170,10 @@ fi
 
 ##
 # Add the header
-#CONVERTER=prepare_iata_dump_file.awk
-#awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_FILE}
-CONVERTER=prepare_iata_dump_file_from_tsv.awk
-awk -F'\t' -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_FILE}
+CONVERTER=prepare_iata_dump_file.awk
+awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_FILE}
+#CONVERTER=prepare_iata_dump_file_from_tsv.awk
+#awk -F'\t' -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_FILE}
 
 ##
 # Reporting
