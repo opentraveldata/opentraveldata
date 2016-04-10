@@ -39,8 +39,9 @@ BEGIN {
 	print (header_line)
 }
 
-# Trim the white of the end of the string
+# Trim the white of the beginning and of the end of the string
 function trim(__tString) {
+	gsub ("^[ \t]+", "", __tString)
 	gsub ("[ \t]+$", "", __tString)
 	return __tString
 }
