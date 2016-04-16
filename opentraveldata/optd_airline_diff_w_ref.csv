@@ -50,6 +50,7 @@
 3K^2^<>Jetstar Asia
 3M^1^Silver Airways<>Silver Airways Corp
 3M^2^<>Silver Airway
+3O^2^<>Air Arabiamar
 3Q^1^Carib Aviation Limited<>
 3R^2^<>Gromovairline
 3S^2^<>Air Antilles
@@ -467,9 +468,9 @@ DC^2^<>Golden Air
 DE^2^<>Condor
 DER^1^<>Beijing Capital Airlines
 DER^2^<>Beijing Capit
-DET^2^<>Dba
 DG^1^Tiger Air Philippines<>Tigerair Philippines
 DG^2^<>Tigerair
+DI^1^Norwegian Air UK<>Norwegian Air Uk
 DI^2^<>Dba
 DJ^1^AirAsia Japan<>Airasia Japan
 DJT^2^Dreamjet<>La Compagnie
@@ -506,6 +507,8 @@ ECE^2^<>Air City
 EDW^2^<>Edelweiss Air
 EE^1^Aero Airlines<>
 EE^2^<>Aero Airlines
+EF^1^Fly CamInter<>Fly Caminter
+EF^2^<>Fly Caminter
 EH^1^ANA Wings<>Ana Wings
 EI^2^<>Aer Lingus
 EIN^2^<>Aer Lingus

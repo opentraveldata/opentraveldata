@@ -50,7 +50,7 @@ air-aviana-airways-v1^1^2008-01-01^2014-01-01^RRY^4A^0^Aviana Airways^Royal Beng
 air-aviaprad-v1^1^1996-01-01^2008-02-05^VID^WR^0^Aviaprad^^^^^http://en.wikipedia.org/wiki/Aviaprad^en|Aviaprad|^^air-aviaprad^1
 air-avitrans-nordic-v1^1^2004-01-01^2010-12-31^ETS^2Q^0^Avitrans Nordic^^^^T^http://en.wikipedia.org/wiki/Avitrans^en|Avitrans Nordic|^^air-avitrans-nordic^1
 air-axis-lines-v1^1^2005-01-01^2006-01-01^^O8^0^Axis International Lines^^^^^http://en.wikipedia.org/wiki/Axis_Lines_International^en|Axis International Lines|^^air-axis-lines^1
-air-batavia-air-v1^1^2002-01-01^2013-01-31^BTV^Y6^0^Batavia Air^^^^^http://en.wikipedia.org/wiki/Batavia_Air^en|Batavia Air|^^air-batavia-air^1
+air-batavia-air-v1^1^2002-01-01^2013-01-31^BTV^Y6^0^Batavia Air^^^^^http://en.wikipedia.org/wiki/Batavia_Air^en|Batavia Air|^CGK^air-batavia-air^1
 air-benin-golf-v1^1^2002-01-01^2012-07-31^BGL^A8^0^Benin Golf Air^^^^^http://en.wikipedia.org/wiki/Benin_Golf_Air^en|Benin Golf Air|^^air-benin-golf^1
 air-bismilah-airlines-v1^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^http://en.wikipedia.org/wiki/Bismillah_Airlines^en|Bismillah Airlines|^^air-bismilah-airlines^1
 air-brindabella-airlines-v1^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^http://en.wikipedia.org/wiki/Brindabella_Airlines^en|Brindabella Airlines|^^air-brindabella-airlines^1
@@ -60,6 +60,7 @@ air-business-air-v1^1^2009-12-01^2015-01-16^BCC^8B^0^Intira Airlines^Business Ai
 air-bvi-airways-v1^1^2010-05-05^2014-09-30^BVI^XV^0^BVI Airways^^^^^http://en.wikipedia.org/wiki/BVI_Airways^en|BVI Airways|^^air-bvi-airways^1
 air-cai-first-v1^1^1997-10-01^2008-12-31^SMX^XM^0^CAI First^Alitalia Express^^^^http://en.wikipedia.org/wiki/CAI_First^en|CAI First|=en|Alitalia Express|^^air-cai-first^1
 air-cai-second-v1^1^^2009-01-12^VLE^VE^0^CAI Second^Volare^^^^http://en.wikipedia.org/wiki/CAI_Second^en|CAI Second|=en|Volare|^^air-cai-second^1
+air-cambodia-airlines-v1^1^2013-01-01^2014-12-31^CCL^Y6^0^Cambodia Airlines^^^^^http://en.wikipedia.org/wiki/Cambodia_Airlines^en|Cambodia Airlines|^PNH^air-cambodia-airlines^1
 air-canadian-airlines-v1^1^1987-01-01^2000-12-31^CDN^CP^0^Canadian Airlines^^^^^http://en.wikipedia.org/wiki/Canadian_Airlines^en|Canadian Airlines|^^air-canadian-airlines^1
 air-cargolux-italia-v1^1^^2013-12-31^^C8^0^Cargolux Italia^^^^C^^en|Cargolux Italia|^^air-cargolux-italia^1
 air-caspian-airlines-v1^1^1993-01-01^2015-12-31^CPN^IV^864^Caspian Airlines^^^^^http://en.wikipedia.org/wiki/Caspian_Airlines^en|Caspian Airlines|^^air-caspian-airlines^1
@@ -81,6 +82,9 @@ air-cyprus-airways-v1^1^1947-01-01^2015-01-09^CYP^CY^48^Cyprus Airways^^^^^http:
 air-czech-connect-airlines-v1^1^2011-01-01^2012-01-31^CCG^CQ^909^Czech Connect Airlines^^^^^http://en.wikipedia.org/wiki/Czech_Connect_Airlines^en|Czech Connect Airlines|^^air-czech-connect-airlines^1
 air-darwin-airline-v1^1^^2014-10-31^DWT^0D^779^Darwin Airline^^^^^http://en.wikipedia.org/wiki/Darwin_Airline^en|Darwin Airline|^^air-darwin-airline^1
 air-deer-jet-airlines-v1^1^2006-01-01^2010-05-31^CBJ^JD^0^Deer Jet Airlines^Deer Air^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^en|Deer Jet Airlines|=en|Deer Air|^^air-deer-jet-airlines^1
+air-deta-air-v1^1^2006-01-01^2013-12-31^DET^9D^0^DETA Air^^^^^http://en.wikipedia.org/wiki/DETA_Air^en|DETA Air|p=en|D.E.T.A. LLP|^ALA^air-deta-air^1
+air-deutsche-ba-v1^1^1992-01-01^2003-12-31^BAG^DI^0^Deutsche BA^^^^^http://en.wikipedia.org/wiki/DBA_(airline)^en|Deutsche BA|h=en|dba|ps=en|Delta Air Regionalflugverkehr|h^MUC^air-deutsche-ba^1
+air-deutsche-ba-v2^1^2004-01-01^2008-12-31^BAG^DI^0^dba^^^^^http://en.wikipedia.org/wiki/DBA_(airline)^en|Deutsche BA|h=en|dba|ps=en|Delta Air Regionalflugverkehr|h^MUC^air-deutsche-ba^2
 air-djibouti-airlines-v1^1^1996-01-01^2009-07-31^DJB^D8^0^Djibouti Airlines^^^^^http://en.wikipedia.org/wiki/Djibouti_Airlines^en|Djibouti Airlines|^^air-djibouti-airlines^1
 air-donbassaero-airlines-v1^1^1993-01-01^2013-01-14^UDC^7D^897^Donbassaero^^^^^http://en.wikipedia.org/wiki/Donbassaero^en|Donbassaero|=he|דונבאסאירו|=ja|ドンバスアエロ|=ko|도바스아에로|=ru|Донбассаэро|=sign|DONBASS AERO|=uk|Донбасаеро|=zh|頓巴斯航空|^^air-donbassaero-airlines^1
 air-dutch-antilles-express-v1^1^2005-01-01^2013-09-19^DNL^9H^0^Dutch Antilles Express^Dae^^^^http://en.wikipedia.org/wiki/Dutch_Antilles_Express^en|Dutch Antilles Express|==abbr|dae|^^air-dutch-antilles-express^1

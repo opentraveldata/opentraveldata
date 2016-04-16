@@ -247,7 +247,7 @@ air-bahamasair-v1^^^^BHS^UP^111^Bahamasair^^^^^^en|Bahamasair|^^air-bahamasair^1
 air-bahrain-air-v1^^^^^BN^937^Bahrain Air^Horizon Airli^^^^^en|Bahrain Air|=en|Horizon Airli|^^air-bahrain-air^1
 air-bangkok-airways-v1^^1968-01-01^^BKP^PG^829^Bangkok Airways^^^^^http://en.wikipedia.org/wiki/Bangkok_Airways^en|Bangkok Airways|^^air-bangkok-airways^1
 air-bassaka-air-v1^^2013-01-01^^BSX^5B^590^Bassaka Air^^^^^http://en.wikipedia.org/wiki/Bassaka_Air^en|Bassaka Air|^^air-bassaka-air^1
-air-ab-aviation-v1^^2013-01-01^^AYD^Y6^0^AB Aviation^^^^^http://en.wikipedia.org/wiki/AB_Aviation^en|AB Aviation|^^air-ab-aviation^1
+air-ab-aviation-v1^^2013-01-01^^AYD^Y6^0^AB Aviation^^^^^http://en.wikipedia.org/wiki/AB_Aviation^en|AB Aviation|^HAH^air-ab-aviation^1
 air-batik-air-indonesia-v1^^2013-05-03^^BTK^ID^0^Batik Air^^^^P^http://en.wikipedia.org/wiki/Batik_Air^en|Batik Air|^^air-batik-air-indonesia^1
 air-bb-airways-v1^^2012-09-13^^^BO^505^BB Airways^^^^^http://en.wikipedia.org/wiki/BB_Airways^en|BB Airways|^^air-bb-airways^1
 air-bearskin-airlines-v1^^1963-07-17^^BLS^JV^632^Bearskin Airlines^^^^^http://en.wikipedia.org/wiki/Bearskin_Airlines^en|Bearskin Airlines|^^air-bearskin-airlines^1
@@ -366,7 +366,6 @@ air-dauair-v1^^^^DAE^D5^0^Dauair^Dauair^^^^^en|Dauair|=en|Dauair|^^air-dauair^1
 air-delta-air-lines-v1^^1929-06-17^^DAL^DL^6^Delta Air Lines^^^Member^^http://en.wikipedia.org/wiki/Delta_Air_Lines^en|Delta Air Lines|^^air-delta-air-lines^1
 air-delta-connection-v1^^^^DCP^DQ^521^Delta Connection^Coastal Air^^^^^en|Delta Connection|=en|Coastal Air|^^air-delta-connection^1
 air-denim-air-v1^^^^DNM^J7^0^Denim Air^Centre Avia^^^^^en|Denim Air|=en|Centre Avia|^^air-denim-air^1
-air-deta-air-v1^^^^DET^DI^0^Cambodia Airlines^^^^^^en|Cambodia Airlines|^^air-deta-air^1
 air-djibouti-air-v1^^^^^DZ^893^Donghai Airlines^^^^^^en|Donghai Airlines|^^air-djibouti-air^1
 air-dniproavia-v1^^1996-01-01^^UDN^Z6^181^Dniproavia^^^^^http://en.wikipedia.org/wiki/Dniproavia^en|Dniproavia|^^air-dniproavia^1
 air-dobrolet-v1^^2013-01-01^^DOB^QD^0^Dobrolet Airlines^^^^^http://en.wikipedia.org/wiki/Dobrolet_Airlines^en|Dobrolet Airlines|^^air-dobrolet^1
@@ -445,7 +444,7 @@ air-flydubai-v1^^2009-06-01^^FDB^FZ^141^flydubai^Dubai Aviation Corporation^^^^h
 air-flyegypt-v1^^2015-02-12^^^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/FlyEgypt^en|FlyEgypt|^CAI^air-flyegypt^1
 air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
 air-fly-blue-crane-v1^^2015-09-01^^^7B^562^Fly Blue Crane^^^^^http://en.wikipedia.org/wiki/Fly_Blue_Crane^en|Fly Blue Crane|^JNB^air-fly-blue-crane^1
-air-fly-caminter-v1^^2016-03-17^^^EF^0^Fly Caminter^^^^^^en|Fly Caminter|=en|Equa2C|h^^air-fly-caminter^1
+air-fly-caminter-v1^^2016-03-17^^^EF^448^Fly CamInter^^^^^^en|Fly CamInter|=en|Equa2C|h^DLA^air-fly-caminter^1
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^en|Fly Jamaica Airways|^^air-fly-jamaica-airways^1
 air-fly-logic-malmo-v1^^^^^XN^0^Fly Logic Malmo^^^^^^en|Fly Logic Malmo|^^air-fly-logic-malmo^1
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^http://en.wikipedia.org/wiki/Fly_Salone^en|Fly Salone|^^air-fly-salone^1
@@ -722,9 +721,10 @@ air-north-flying-v1^^2014-01-01^^^M3^0^North Flying^^^^^^en|North Flying|^^air-n
 air-northwest-airlines-v1^^^^^NW^0^Northwest Airlines^Nwest Airlines^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1
 air-northwestern-air-lease-v1^^^^PLR^J3^0^Northwestern Air Lease^Nw Air Lease^^^^^en|Northwestern Air Lease|=en|Nw Air Lease|^^air-northwestern-air-lease^1
 air-north-wright-air-v1^^^^^HW^0^North Wright Air^North Wright^^^^^en|North Wright Air|=en|North Wright|^^air-north-wright-air^1
-air-norwegian-air-int-v1^^2012-01-01^^IBK^D8^0^Norwegian Air International^^^^^http://en.wikipedia.org/wiki/Norwegian_Long_Haul^en|Norwegian Air International|^^air-norwegian-air-int^1
+air-norwegian-air-international-v1^^2012-01-01^^IBK^D8^0^Norwegian Air International^^^^^http://en.wikipedia.org/wiki/Norwegian_Air_International^en|Norwegian Air International|^OSL^air-norwegian-air-international^1
 air-norwegian-air-shuttle-v1^^1993-01-01^^NAX^DY^328^Norwegian Air Shuttle (NAS)^^^^^http://en.wikipedia.org/wiki/Norwegian_Air_Shuttle^en|Norwegian Air Shuttle (NAS)|^^air-norwegian-air-shuttle^1
-air-norwegian-long-haul-v1^^2012-01-01^^NLH^DU^0^Norwegian Long Haul^^^^^http://en.wikipedia.org/wiki/Norwegian_Long_Haul^en|Norwegian Long Haul|^^air-norwegian-long-haul^1
+air-norwegian-air-uk-v1^^2015-01-01^^NRS^DI^762^Norwegian Air UK^^^^^^en|Norwegian Air UK|^DUB^air-norwegian-air-uk^1
+air-norwegian-long-haul-v1^^2012-01-01^^NLH^DU^0^Norwegian Long Haul^^^^^http://en.wikipedia.org/wiki/Norwegian_Long_Haul^en|Norwegian Long Haul|^OSL^air-norwegian-long-haul^1
 air-nouvelair-v1^^1990-03-21^^LBT^BJ^796^Nouvelair^^^^^http://en.wikipedia.org/wiki/Nouvelair^en|Nouvelair|^^air-nouvelair^1
 air-nova-airlines-northcoast-v1^^^^NVR^N9^326^Nova Airlines^Northcoast Av^^^^^en|Nova Airlines|=en|Northcoast Av|^^air-nova-airlines-northcoast^1
 air-nova-airlines-v1^^^^NOV^O9^948^Nova Airlines^^^^^^en|Nova Airlines|^^air-nova-airlines^1
