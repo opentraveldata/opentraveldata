@@ -56,8 +56,8 @@ BEGIN {
 
     print (hdr_line)
 
-	# List of non Geonames POR
-	delete optd_por_no_geoname_list
+	# List of flags stating whether the POR are referenced by Geonames
+	delete optd_por_geoname_list
 
     #
     today_date = mktime ("YYYY-MM-DD")
@@ -205,7 +205,9 @@ BEGIN {
 		optd_por_lat_list[iata_code] = coord_lat
 		optd_por_lon_list[iata_code] = coord_lon
 		optd_date_from_list[iata_code] = date_from
-		optd_por_no_geoname_list[iata_code] = 1
+		optd_por_geoname_list[iata_code] = -1
+	} else {
+		optd_por_geoname_list[iata_code] = 1
 	}
 }
 
@@ -368,22 +370,25 @@ function getContinentName(myCountryCode) {
     iata_code = $1
 
 	# Keep only if not in Geonames
-	isNotGeonames = optd_por_no_geoname_list[iata_code]
+	isGeonames = optd_por_geoname_list[iata_code]
 
 	#
-	if (isNotGeonames == 1) {
-		# Feature code, retrieved from the best known details,
-		# rather than from the reference data
-		# location_type = $2
-		location_type = optd_loc_type_list[iata_code]
-
+	if (isGeonames != 1) {
+		# Feature code
+		if (isGeonames == -1) {
+			# Retrieved from the best known details
+			location_type = optd_loc_type_list[iata_code]
+		} else {
+			# Retrieved from reference data
+			location_type = $2
+		}
 
 		# Primary key
 		pk = $1
 
 		# Geonames ID
 		geonameID = "0"
-		isNotGeonames = "N"
+		isGeonamesStr = "N"
 
 		# PageRank value
 		page_rank = getPageRank(iata_code, location_type)
@@ -392,10 +397,16 @@ function getContinentName(myCountryCode) {
 		name_utf8 = capitaliseWords($6)
 		name_ascii = name_utf8
 		
-		# Geographical coordinates, retrieved from the best known details,
-		# rather than from the reference data
-		coord_lat = optd_por_lat_list[iata_code]
-		coord_lon = optd_por_lon_list[iata_code]
+		# Geographical coordinates
+		if (isGeonames == -1) {
+			# Retrieved from the best known details
+			coord_lat = optd_por_lat_list[iata_code]
+			coord_lon = optd_por_lon_list[iata_code]
+		} else {
+			# Retrieved from the reference data
+			coord_lat = $15
+			coord_lon = $16
+		}
 
 		# City code
 		city_code = $8
@@ -404,7 +415,7 @@ function getContinentName(myCountryCode) {
 		envelope_id = ""
 
         # IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Envelope ID
-		out_line = iata_code "^^^" isNotGeonames "^" geonameID "^" envelope_id
+		out_line = iata_code "^^^" isGeonamesStr "^" geonameID "^" envelope_id
 
 		# ^ Name ^ ASCII name
 		out_line = out_line "^" name_utf8 "^" name_ascii
