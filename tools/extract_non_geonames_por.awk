@@ -368,10 +368,10 @@ function getContinentName(myCountryCode) {
     iata_code = $1
 
 	# Keep only if not in Geonames
-	isGeonames = optd_por_no_geoname_list[iata_code]
+	isNotGeonames = optd_por_no_geoname_list[iata_code]
 
 	#
-	if (isGeonames == 1) {
+	if (isNotGeonames == 1) {
 		# Feature code, retrieved from the best known details,
 		# rather than from the reference data
 		# location_type = $2
@@ -383,7 +383,7 @@ function getContinentName(myCountryCode) {
 
 		# Geonames ID
 		geonameID = "0"
-		isGeonames = "N"
+		isNotGeonames = "N"
 
 		# PageRank value
 		page_rank = getPageRank(iata_code, location_type)
@@ -404,7 +404,7 @@ function getContinentName(myCountryCode) {
 		envelope_id = ""
 
         # IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Envelope ID
-		out_line = iata_code "^^^" isGeonames "^" geonameID "^" envelope_id
+		out_line = iata_code "^^^" isNotGeonames "^" geonameID "^" envelope_id
 
 		# ^ Name ^ ASCII name
 		out_line = out_line "^" name_utf8 "^" name_ascii
