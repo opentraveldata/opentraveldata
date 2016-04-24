@@ -186,6 +186,8 @@
 9R^1^SATENA<>Satena
 9S^1^Amadeus PDF 9S<>Amadeus Pdf 9s
 9S^2^Amadeus 9S<>Amadeus 9s
+9T^1^Transwest Air<>Act Havayollari
+9T^2^<>Athabaska
 9U^2^<>Air Moldova
 9V^1^Avior Airlines<>Avior
 9V^2^<>Avior
@@ -209,6 +211,8 @@ AAR^2^<>Asiana
 AAW^2^<>Afriqiyah Air
 AB^2^<>Air Berlin
 ABL^2^<>Air Busan
+ABS^1^Transwest Air<>Afrijet Business Service
+ABS^2^<>Centre Avia
 AC^2^<>Air Canada
 ACA^2^<>Air Canada
 AD^1^Azul Brazilian Airlines<>Azul Linhas Aereas Brasileiras
@@ -333,7 +337,7 @@ BGH^1^BH Air<>Bh Air
 BGH^2^<>Bh Air
 BH^2^<>Hawkair
 BHS^2^<>Bahamasair
-BIE^2^<>Air Mediterra
+BIE^1^<>Air Mediterranee
 BJ^2^<>Nouvelair
 BKP^2^<>Bangkok Air
 BLS^2^<>Bearskin Air
@@ -503,6 +507,8 @@ EAA^1^Air Bishkek<>Air Bishkek Aircompany
 EAA^2^<>Air Bishkek
 EB^2^Pullmantur Air<>Pullmantur
 EC^1^OpenSkies<>Openskies
+ECB^1^European Coastal Airlines<>European Coastal Airline
+ECB^2^<>Aeroperlas
 ECE^2^<>Air City
 EDW^2^<>Edelweiss Air
 EE^1^Aero Airlines<>
@@ -718,6 +724,7 @@ J2^2^<>Azerbaijan Ai
 J4^2^<>Jet For You
 J6^1^Jet-Ops<>Airways International
 J6^2^Seawings<>
+J7^2^<>Centre Avia
 JA^1^B&H Airlines<>B H Airlines
 JA^2^Air Bosna<>
 JAF^2^TUI Airlines Belgium<>Jetairfly
@@ -796,7 +803,7 @@ KQ^2^<>Kenyaairway
 KQA^2^<>Kenyaairway
 KR^1^Air Bishkek<>Air Bishkek Aircompany
 KR^2^<>Air Bishkek
-KT^1^Katmai Air<>
+KT^1^SiAvia<>Siavia
 KTC^2^<>Korsar
 KTK^2^<>Athens Airway
 KU^2^<>Kuwait Air
@@ -892,7 +899,7 @@ MI^1^SilkAir<>Silkair
 MI^2^<>Silkair
 MJ^2^<>Mihin Lanka
 MK^2^<>Air Mauriti
-ML^2^<>Air Mediterra
+ML^1^<>Air Mediterranee
 MLA^2^<>Forty Miles A
 MLD^2^<>Air Moldova
 MLR^2^<>Mihin Lanka
@@ -951,6 +958,8 @@ NO^1^Neos<>Neos Spa
 NQ^1^Air Japan<>Air Japan Company Ltd
 NR^1^Al-Naser Airlines<>Al Naser Airlines
 NRL^1^Nolinor Aviation<>Les Investissements Nolinor
+NRS^1^Norwegian Air UK<>Norwegian Air Uk
+NRS^2^<>Dba
 NSE^1^SATENA<>Satena
 NT^2^<>Binter Can
 NW^1^Northwest Airlines<>
@@ -1218,6 +1227,7 @@ SV^1^Saudia<>Saudi Arabian Airlines
 SV^2^Saudi Arabian Airlines<>Saudiarabi
 SVA^1^Saudia<>Saudi Arabian Airlines
 SVA^2^Saudi Arabian Airlines<>Saudiarabi
+SVB^1^SiAvia<>Siavia
 SVR^2^<>Ural Airlines
 SW^2^<>Air Namibia
 SWA^1^Southwest Airlines<>Southwest Airlines Texas
@@ -1440,7 +1450,7 @@ WJ^2^Labrador Airways<>Labradorair
 WJA^1^WestJet<>Westjet
 WJA^2^<>Westjet
 WK^2^<>Edelweiss Air
-WL^1^European Coastal Airlines<>
+WL^1^European Coastal Airlines<>European Coastal Airline
 WL^2^<>Aeroperlas
 WM^2^<>Windward Isl
 WN^1^Southwest Airlines<>Southwest Airlines Texas
