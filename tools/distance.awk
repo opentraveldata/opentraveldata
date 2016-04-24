@@ -125,7 +125,7 @@ BEGINFILE {
 
     # Sanity check
     if (iata_code != $2) {
-	print ("[" awk_file "] !!! Error at recrod #" FNR \
+	print ("[" awk_file "] !!! Error at record #" FNR \
 	       ": the IATA code ('" iata_code			  \
 	       "') should be equal to the field #2 ('" $2 \
 	       "'), but is not. The whole line " $0) > error_stream
