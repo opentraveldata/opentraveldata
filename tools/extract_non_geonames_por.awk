@@ -34,6 +34,17 @@ BEGIN {
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
 
+	# Fix the reference data
+	por_wrong_ref_list["EHD"] = 1; por_wrong_ref_list["OWZ"] = 1
+	por_wrong_ref_list["QQA"] = 1; por_wrong_ref_list["QQB"] = 1
+	por_wrong_ref_list["QQC"] = 1; por_wrong_ref_list["QQE"] = 1
+	por_wrong_ref_list["QQF"] = 1; por_wrong_ref_list["QQG"] = 1
+	por_wrong_ref_list["QQI"] = 1; por_wrong_ref_list["QQJ"] = 1
+	por_wrong_ref_list["QQL"] = 1; por_wrong_ref_list["QQO"] = 1
+	por_wrong_ref_list["QQV"] = 1; por_wrong_ref_list["QQZ"] = 1
+	por_wrong_ref_list["VVE"] = 1; por_wrong_ref_list["VWY"] = 1
+	por_wrong_ref_list["XXX"] = 1; por_wrong_ref_list["ZZW"] = 1
+
     # Separators
 	K_TGT_SEP = ";"
     K_1ST_SEP = "^"
@@ -373,7 +384,8 @@ function getContinentName(myCountryCode) {
 	isGeonames = optd_por_geoname_list[iata_code]
 
 	#
-	if (isGeonames != 1) {
+	shouldDiscard = por_wrong_ref_list[iata_code]
+	if (isGeonames != 1 && !shouldDiscard) {
 		# Feature code
 		if (isGeonames == -1) {
 			# Retrieved from the best known details
