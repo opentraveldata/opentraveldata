@@ -446,7 +446,7 @@ air-fly-blue-crane-v1^^2015-09-01^^^7B^562^Fly Blue Crane^^^^^http://en.wikipedi
 air-fly-caminter-v1^^2016-03-17^^^EF^448^Fly CamInter^^^^^^en|Fly CamInter|=en|Equa2C|h^DLA^air-fly-caminter^1
 air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^CBR^air-fly-corporate^1
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^en|Fly Jamaica Airways|^^air-fly-jamaica-airways^1
-air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^en|Fly Kiss|^LRT,LYS^air-fly-kiss^1
+air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^en|Fly Kiss|^LRT=LYS^air-fly-kiss^1
 air-fly-logic-malmo-v1^^^^^XN^0^Fly Logic Malmo^^^^^^en|Fly Logic Malmo|^^air-fly-logic-malmo^1
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^http://en.wikipedia.org/wiki/Fly_Salone^en|Fly Salone|^^air-fly-salone^1
 air-fmi-air-v1^^2012-09-01^^FMI^ND^0^FMI Air^^^^^http://en.wikipedia.org/wiki/FMI_Air^en|FMI Air|^^air-fmi-air^1
@@ -985,7 +985,7 @@ air-transavia-denmark-v1^^^^^PH^0^Transavia Denmark^Polynesian^^^^^en|Transavia 
 air-transavia-france-v1^^^^^TO^0^Transavia France^President Air^^^^^en|Transavia France|=en|President Air|^^air-transavia-france^1
 air-transnusa-aviation-v1^^2005-08-04^^TNU^8B^0^TransNusa Air Services^^^^^http://en.wikipedia.org/wiki/TransNusa_Air_Services^en|TransNusa|s=en|TransNusa Air Services|=en|PT TransNusa Aviation Mandiri|^^air-transnusa-aviation^1
 air-transportes-aereos-guatemaltecos-v1^^1969-01-01^^TGU^5U^911^Transportes Aéreos Guatemaltecos^TAG^^^^http://en.wikipedia.org/wiki/Transportes_A%C3%A9reos_Guatemaltecos^en|Transportes Aéreos Guatemaltecos|=en|TAG|^^air-transportes-aereos-guatemaltecos^1
-air-transwest-air-v2^^2000-01-01^^ABS^9T^^Transwest Air^^^^^http://en.wikipedia.org/wiki/Transwest_Air^en|Transwest Air|p=en|Athabaska Airways|h^YPA,YXE^air-transwest-air^2
+air-transwest-air-v2^^2000-01-01^^ABS^9T^^Transwest Air^^^^^http://en.wikipedia.org/wiki/Transwest_Air^en|Transwest Air|p=en|Athabaska Airways|h^YPA=YXE^air-transwest-air^2
 air-trans-states-airlines-v1^^1982-01-01^^LOF^AX^414^Trans States Airlines^^^Affiliate^^http://en.wikipedia.org/wiki/Trans_States_Airlines^en|Trans States Airlines|^^air-trans-states-airlines^1
 air-travel-service-hungary-v1^^2001-01-01^^TVL^7O^0^Travel Service Hungary^^^^^http://en.wikipedia.org/wiki/Travel_Service_%28Hungary%29^en|Travel Service Hungary|^^air-travel-service-hungary^1
 air-travel-service-polska-v1^^2012-05-01^^TVP^3Z^0^Travel Service Polska^^^^T^http://en.wikipedia.org/wiki/Travel_Service_Polska^en|Travel Service Polska|^^air-travel-service-polska^1

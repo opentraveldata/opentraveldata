@@ -553,7 +553,7 @@ air-flyegypt-v1^^2015-02-12^^^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/Fly
 air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^41866^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
 air-fly-georgia-v1^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^http://en.wikipedia.org/wiki/Fly_Georgia^^en|Fly Georgia|^^air-fly-georgia^1
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^1018^en|Fly Jamaica Airways|^^air-fly-jamaica-airways^1
-air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^^en|Fly Kiss|^LRT,LYS^air-fly-kiss^1
+air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^^en|Fly Kiss|^LRT=LYS^air-fly-kiss^1
 air-fly-logic-malmo-v1^^^^^XN^0^Fly Logic Malmo^^^^^^^en|Fly Logic Malmo|^^air-fly-logic-malmo^1
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^http://en.wikipedia.org/wiki/Fly_Salone^^en|Fly Salone|^^air-fly-salone^1
 air-flywell-airlines-v1^1^1995-01-01^2003-12-12^FEM^YZ^0^Zimbabwe Airlink^Flywell Airlines^^^P^http://en.wikipedia.org/wiki/Zimbabwe_Airlink^^en|Zimbabwe Airlink|=en|Flywell Airlines|^^air-flywell-airlines^1
@@ -1184,7 +1184,7 @@ air-transnusa-aviation-v1^^2005-08-04^^TNU^8B^0^TransNusa Air Services^^^^^http:
 air-transportes-aereos-guatemaltecos-v1^^1969-01-01^^TGU^5U^911^Transportes Aéreos Guatemaltecos^TAG^^^^http://en.wikipedia.org/wiki/Transportes_A%C3%A9reos_Guatemaltecos^1454^en|Transportes Aéreos Guatemaltecos|=en|TAG|^^air-transportes-aereos-guatemaltecos^1
 air-trans-states-airlines-v1^^1982-01-01^^LOF^AX^414^Trans States Airlines^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Trans_States_Airlines^105091^en|Trans States Airlines|^^air-trans-states-airlines^1
 air-transwest-air-v1^1^1955-01-01^1999-12-31^^9T^^Athabaska Airways^^^^^http://en.wikipedia.org/wiki/Transwest_Air^^en|Athabaska|p=en|Athabaska Airways|h^YPA^air-transwest-air^1
-air-transwest-air-v2^^2000-01-01^^ABS^9T^^Transwest Air^^^^^http://en.wikipedia.org/wiki/Transwest_Air^^en|Transwest Air|p=en|Athabaska Airways|h^YPA,YXE^air-transwest-air^2
+air-transwest-air-v2^^2000-01-01^^ABS^9T^^Transwest Air^^^^^http://en.wikipedia.org/wiki/Transwest_Air^^en|Transwest Air|p=en|Athabaska Airways|h^YPA=YXE^air-transwest-air^2
 air-travel-service-hungary-v1^^2001-01-01^^TVL^7O^0^Travel Service Hungary^^^^^http://en.wikipedia.org/wiki/Travel_Service_%28Hungary%29^1301^en|Travel Service Hungary|^^air-travel-service-hungary^1
 air-travel-service-polska-v1^^2012-05-01^^TVP^3Z^0^Travel Service Polska^^^^T^http://en.wikipedia.org/wiki/Travel_Service_Polska^2502^en|Travel Service Polska|^^air-travel-service-polska^1
 air-trigana-air-v1^^2014-01-01^^^IL^0^Trigana Air Service^Istanbul Air^^^^^11032^en|Trigana Air Service|=en|Istanbul Air|^^air-trigana-air^1
