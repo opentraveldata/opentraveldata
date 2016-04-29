@@ -62,7 +62,6 @@ FOP^^^N^0^^Forest Park GA US Morris Aaf^Forest Park GA US Morris Aaf^33.6097^-82
 FQQ^^^N^0^^Sightsee AT Sightseeing Flight^Sightsee AT Sightseeing Flight^48.13^16.53^S^AIRP^^^^^AT^^Austria^Europe^^^^^^^^^^^^Europe/Vienna^^^^-1^FQQ^Sightsee AT Sightseeing Flight^FQQ|0|Sightsee AT Sightseeing Flight|Sightsee AT Sightseeing Flight^FQQ^^CA^^^403^Austria
 FSN^^^N^0^^Fort Sheridan IL US Haley Aaf^Fort Sheridan IL US Haley Aaf^41.56^-88.66^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^FSN^Fort Sheridan IL US Haley Aaf^FSN|0|Fort Sheridan IL US Haley Aaf|Fort Sheridan IL US Haley Aaf^FSN^IL^CA^^^41^Illinois
 FWL^^^N^0^^Farewell AK US^Farewell AK US^62.52^-153.9^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^FWL^Farewell AK US^FWL|0|Farewell AK US|Farewell AK US^FWL^AK^CA^^^1^Alaska
-FYN^^^N^0^^Fuyun CN^Fuyun CN^46.8025^89.5072^S^AIRP^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^FYN^Fuyun CN^FYN|0|Fuyun CN|Fuyun CN^FYN^^CA^^^713^China
 FZO^^^N^0^^Filton GB^Filton GB^51.5^-2.58333^S^AIRP^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^FZO^Filton GB^FZO|0|Filton GB|Filton GB^FZO^^CA^^^493^United Kingdom
 GBQ^^^N^0^^Muharraq BH^Muharraq BH^26.25^50.65^S^AIRP^^^^^BH^^Bahrain^Asia^^^^^^^^^^^^Asia/Bahrain^^^^-1^GBQ^Muharraq BH^GBQ|0|Muharraq BH|Muharraq BH^GBQ^^CA^^^605^Bahrain
 GHK^^^N^0^^Kennedy Lake NT CA Gahcho Kue^Kennedy Lake NT CA Gahcho Kue^63.4331^-109.2^S^AIRP^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Canada^^^^-1^GHK^Kennedy Lake NT CA Gahcho Kue^GHK|0|Kennedy Lake NT CA Gahcho Kue|Kennedy Lake NT CA Gahcho Kue^GHK^NT^CA^^^931^Northwest Territories
@@ -481,7 +480,6 @@ TRP^^^N^0^^Tree Point AK US Coast Gd Hpt^Tree Point AK US Coast Gd Hpt^56^-134.1
 TSO^^^N^0^^Isles Of Scilly GB Tresco Heli^Isles Of Scilly GB Tresco Heli^49.95^-6.31667^S^AIRP^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^ISC^^^^^A^^^493^United Kingdom
 TWE^^^N^0^^Taylor AK US^Taylor AK US^56.17^-120.7^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Dawson_Creek^^^^-1^TWE^Taylor AK US^TWE|0|Taylor AK US|Taylor AK US^TWE^AK^CA^^^1^Alaska
 TXQ^^^N^0^^Toulouse FR Matabiau Railway S^Toulouse FR Matabiau Railway S^43.6208^1.44833^S^RSTN^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^TLS^^^^^R^^^427^France
-UCB^^^N^0^^Ulanqab CN^Ulanqab CN^41.13^113.109^S^AIRP^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^UCB^Ulanqab CN^UCB|0|Ulanqab CN|Ulanqab CN^UCB^^CA^^^713^China
 UCE^^^N^0^^Eunice LA US^Eunice LA US^30.5^-92.42^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^UCE^Eunice LA US^UCE|0|Eunice LA US|Eunice LA US^UCE^LA^CA^^^72^Louisiana
 UIG^^^N^0^^Huaihua CN Railway Stn^Huaihua CN Railway Stn^27.5147^109.99^S^RSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^HJJ^^^^^R^^^713^China
 UIQ^^^N^0^^Quoin Hill VU^Quoin Hill VU^-17.55^168.417^S^AIRP^^^^^VU^^Vanuatu^Oceania^^^^^^^^^^^^Pacific/Efate^^^^-1^UIQ^Quoin Hill VU^UIQ|0|Quoin Hill VU|Quoin Hill VU^UIQ^^CA^^^885^Vanuatu
