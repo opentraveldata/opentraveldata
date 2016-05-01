@@ -331,7 +331,7 @@ air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regiona
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^http://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^41475^en|Boliviana de Aviación (BoA)|^^air-boliviana-de-aviacion^1
 air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^http://en.wikipedia.org/wiki/Boutique_Air^5104^en|Boutique Air|^^air-boutique-air^1
 air-bqb-v1^^^^BEA^5Q^567^BQB Líneas Aéreas^^^^P^http://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^366^en|BQB Líneas Aéreas|^^air-bqb^1
-air-braathens-regional-v1^^1993-08-15^^BRX^TF^215^Braathens Regional^^^^P^http://en.wikipedia.org/wiki/Braathens_Regional^13187^en|Braathens Regional|=en|Golden Air|h^AGH=BMA^air-braathens-regional^1
+air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^http://en.wikipedia.org/wiki/Braathens_Regional_Aviation^24194^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1
 air-branson-air-v1^^^^^1X^0^Branson Air^Gabriel^^^^^710^en|Branson Air|=en|Gabriel|^^air-branson-air^1
 air-brindabella-airlines-v1^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^http://en.wikipedia.org/wiki/Brindabella_Airlines^^en|Brindabella Airlines|^^air-brindabella-airlines^1
 air-bringer-air-cargo-v1^^^^^E6^417^Bringer Air Cargo^^^^C^^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1
@@ -791,6 +791,7 @@ air-malaysia-airlines-v1^^1972-10-01^^MAS^MH^232^Malaysia Airlines^^OneWorld^Mem
 air-malev-hungarian-airlines-v1^1^1956-11-25^2012-02-03^MAH^MA^182^MALÉV Hungarian Airlines^MALEV Hungarian Airlines^OneWorld^Member^^^^en|MALÉV Hungarian Airlines|=en|MALÉV|s=he|מאלב, נתיבי אוויר הונגריים|=hu|Magyar Légiközlekedési Vállalat|=hu|MALÉV|s=ja|マレーヴ・ハンガリー航空|=ko|말레브 헝가리 항공|=ru|Малев Венгерские Авиалинии|=zh|匈牙利航空|^^air-malev-hungarian-airlines^1
 air-malindo-airways-v1^^2012-09-11^^^OD^816^Malindo Airways^^^^^http://en.wikipedia.org/wiki/Malindo_Air^55849^en|Malindo Airways|^^air-malindo-airways^1
 air-malmo-aviation-v1^1^1981-01-01^2016-02-29^SCW^TF^276^Malmö Aviation^Malmo Aviation^^^^http://en.wikipedia.org/wiki/Malm%C3%B6_Aviation^^en|Malmö Aviation|^^air-malmo-aviation^1
+air-malmo-aviation-v2^^2016-03-01^^BRA^TF^276^BRA^^^^P^http://en.wikipedia.org/wiki/BRA_%28airline%29^13187^en|BRA|ps=en|Braathens Regional Airlines|=en|Braathens Regional Aviation|=en|Malmö Aviation|h=en|Sundsvallsflyg|h=en|Kullaflyg|h=en|Kalmarflyg|h=en|Gotlandsflyg|h=en|Golden Air|h^BMA=THN^air-malmo-aviation^2
 air-mandala-airlines-v1^^^^MDL^RI^488^Mandala Airlines^Pt Mandala^^^^^^en|Mandala Airlines|=en|Pt Mandala|^^air-mandala-airlines^1
 air-mandarin-airlines-v1^^^^MDA^AE^803^Mandarin Airlines^^Skyteam^Affiliate^^^13450^en|Mandarin Airlines|^^air-mandarin-airlines^1
 air-mango-v1^^2006-01-01^^MNO^JE^0^Mango^^^^^http://en.wikipedia.org/wiki/Mango_%28airline%29^17279^en|Mango|^^air-mango^1
@@ -1006,7 +1007,7 @@ air-santa-barbara-airlines-v1^^^^BBR^S3^249^Santa Barbara Airlines^Santa Barbara
 air-saratov-airlines-v1^^^^^6W^26^Saratov Airlines^^^^^^3963^en|Saratov Airlines|^^air-saratov-airlines^1
 air-sarit-airlines-v1^1^1997-01-01^2004-06-30^BDR^J4^0^Badr Airlines^^^^^http://en.wikipedia.org/wiki/Badr_Airlines^^en|Badr Airlines|p=en|Sarit Airlines|h^^air-sarit-airlines^1
 air-sarit-airlines-v2^^2004-07-01^^BDR^J4^0^Badr Airlines^^^^^http://en.wikipedia.org/wiki/Badr_Airlines^4654^en|Badr Airlines|p=en|Sarit Airlines|h^^air-sarit-airlines^2
-air-sas-braathens-v1^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^Sas^^^^http://en.wikipedia.org/wiki/SAS_Braathens^^en|Scandinavian Airlines|=en|Sas|^^air-sas-braathens^1
+air-sas-braathens-v1^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^^^^^http://en.wikipedia.org/wiki/SAS_Braathens^^en|SAS Braathens|^^air-sas-braathens^1
 air-sata-air-acores-v1^^1947-06-15^^RZO^SP^737^SATA Air Açores^^^^^http://en.wikipedia.org/wiki/SATA_Air_A%C3%A7ores^14285^en|SATA Air Açores|^^air-sata-air-acores^1
 air-sat-airlines-v1^^2013-12-08^^SHU^HZ^598^Aurora Airlines^SAT Airlines^^^^http://en.wikipedia.org/wiki/Aurora_(airline)^13843^en|Aurora Airlines|=en|SAT Airlines|^^air-sat-airlines^1
 air-sata-v1^^1991-01-01^^RZO^S4^331^SATA International^^^^^http://en.wikipedia.org/wiki/SATA_International^4669^en|SATA International|^^air-sata^1

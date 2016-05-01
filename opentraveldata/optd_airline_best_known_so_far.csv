@@ -275,7 +275,7 @@ air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regiona
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^http://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^en|Boliviana de Aviación (BoA)|^^air-boliviana-de-aviacion^1
 air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^http://en.wikipedia.org/wiki/Boutique_Air^en|Boutique Air|^^air-boutique-air^1
 air-bqb-v1^^^^BEA^5Q^567^BQB Líneas Aéreas^^^^P^http://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^en|BQB Líneas Aéreas|^^air-bqb^1
-air-braathens-regional-v1^^1993-08-15^^BRX^TF^215^Braathens Regional^^^^P^http://en.wikipedia.org/wiki/Braathens_Regional^en|Braathens Regional|=en|Golden Air|h^AGH=BMA^air-braathens-regional^1
+air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^http://en.wikipedia.org/wiki/Braathens_Regional_Aviation^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1
 air-branson-air-v1^^^^^1X^0^Branson Air^Gabriel^^^^^en|Branson Air|=en|Gabriel|^^air-branson-air^1
 air-bringer-air-cargo-v1^^^^^E6^417^Bringer Air Cargo^^^^C^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1
 air-british-airways-v1^^1974-03-31^^BAW^BA^125^British Airways^^^Member^^http://en.wikipedia.org/wiki/British_Airways^en|British Airways|^LGW=LHR^air-british-airways^1
@@ -648,6 +648,7 @@ air-mahan-airlines-v1^^^^IRM^W5^537^Mahan Airlines^^^^^^en|Mahan Airlines|^^air-
 air-malawian-airlines-v1^^2014-01-31^^MWI^3W^529^Malawian Airlines^^^^^http://en.wikipedia.org/wiki/Malawian_Airlines^en|Malawian Airlines|^^air-malawian-airlines^1
 air-malaysia-airlines-v1^^1972-10-01^^MAS^MH^232^Malaysia Airlines^^^Member^^http://en.wikipedia.org/wiki/Malaysia_Airlines^en|Malaysia Airlines|^^air-malaysia-airlines^1
 air-malindo-airways-v1^^2012-09-11^^^OD^816^Malindo Airways^^^^^http://en.wikipedia.org/wiki/Malindo_Air^en|Malindo Airways|^^air-malindo-airways^1
+air-malmo-aviation-v2^^2016-03-01^^BRA^TF^276^BRA^^^^P^http://en.wikipedia.org/wiki/BRA_%28airline%29^en|BRA|ps=en|Braathens Regional Airlines|=en|Braathens Regional Aviation|=en|Malmö Aviation|h=en|Sundsvallsflyg|h=en|Kullaflyg|h=en|Kalmarflyg|h=en|Gotlandsflyg|h=en|Golden Air|h^BMA=THN^air-malmo-aviation^2
 air-mandala-airlines-v1^^^^MDL^RI^488^Mandala Airlines^Pt Mandala^^^^^en|Mandala Airlines|=en|Pt Mandala|^^air-mandala-airlines^1
 air-mandarin-airlines-v1^^^^MDA^AE^803^Mandarin Airlines^^^Affiliate^^^en|Mandarin Airlines|^^air-mandarin-airlines^1
 air-mango-v1^^2006-01-01^^MNO^JE^0^Mango^^^^^http://en.wikipedia.org/wiki/Mango_%28airline%29^en|Mango|^^air-mango^1
