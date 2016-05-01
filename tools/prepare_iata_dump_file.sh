@@ -88,8 +88,8 @@ then
 	SNPSHT_DATE=`echo ${myfile} | sed -e "s/${POR_FILE_PFX}_\([0-9]\+\)\.txt/\1/" | xargs basename`
 else
 	echo
-	echo "[$0:$LINENO] No schedule-derived airline POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
-	echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}_YYMMDD_all.csv'"
+	echo "[$0:$LINENO] No IATA-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
+	echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}_YYMMDD_all.txt'"
 	echo
 	exit -1
 fi
