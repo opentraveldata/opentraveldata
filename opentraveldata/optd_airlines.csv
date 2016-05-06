@@ -342,7 +342,7 @@ air-buddha-air-v1^^1997-01-01^^BHA^U4^0^Buddha Air^^^^^http://en.wikipedia.org/w
 air-buffalo-airways-v1^1^1978-05-13^2015-11-30^BFL^J4^^Buffalo Airways^^^^^http://en.wikipedia.org/wiki/Buffalo_Airways^^en|Buffalo Airways|=sign||BUFFALO^^air-buffalo-airways^1
 air-bukovyna-airlines-v1^1^1999-01-01^2015-12-31^BKV^BQ^616^Bukovyna Airlines^^^^^http://en.wikipedia.org/wiki/Bukovyna_Airlines^^en|Bukovyna Airlines|p=en|Bukovyna Aviation Enterprise|^^air-bukovyna-airlines^1
 air-bulgaria-air-v1^^^^LZB^FB^623^Bulgaria Air^Balkan Air To^^^^^14016^en|Bulgaria Air|=en|Balkan Air To|^^air-bulgaria-air^1
-air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^http://en.wikipedia.org/wiki/Bulgarian_Air_Charter^103156^bg|Българиан Ер Чартер|=en|Bulgarian Air Charter|^BOJ=PDV=SOF=VAR^air-bulgarian-air-charter^1
+air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^http://en.wikipedia.org/wiki/Bulgarian_Air_Charter^103156^bg|Българиан Ер Чартер|=en|Bulgarian Air Charter|^^air-bulgarian-air-charter^1
 air-buraq-air-v1^^2001-01-01^^BRQ^UZ^928^Buraq Air^^^^^http://en.wikipedia.org/wiki/Buraq_Air^129^en|Buraq Air|^^air-buraq-air^1
 air-business-air-v1^1^2009-12-01^2015-01-16^BCC^8B^0^Intira Airlines^Business Air^^^^http://en.wikipedia.org/wiki/Intira_Airlines^^en|Intira Airlines|=en|Business Air|^^air-business-air^1
 air-business-aviation-centre-v1^^^^^UQ^0^Business Aviation Centre^O Connor^^^^^3456^en|Business Aviation Centre|=en|O Connor|^^air-business-aviation-centre^1
@@ -546,7 +546,7 @@ air-flybe-v1^^1979-01-01^^BEE^BE^267^Flybe^Brit Europ^^^^http://en.wikipedia.org
 air-fly-blue-crane-v1^^2015-09-01^^^7B^562^Fly Blue Crane^^^^^http://en.wikipedia.org/wiki/Fly_Blue_Crane^2164^en|Fly Blue Crane|^JNB^air-fly-blue-crane^1
 air-fly-caminter-v1^^2016-03-17^^^EF^448^Fly CamInter^^^^^^458^en|Fly CamInter|=en|Equa2C|h^DLA^air-fly-caminter^1
 air-flycongo-v1^1^^2013-31-12^ALX^EO^663^Flycongo^^^^^^^en|Flycongo|^^air-flycongo^1
-air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^283^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^CBR^air-fly-corporate^1
+air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^283^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^BNE^air-fly-corporate^1
 air-flydamas-v1^^^^^4J^0^Flydamas Airlines^^^^^^722^en|Flydamas Airlines|^^air-flydamas^1
 air-flydubai-v1^^2009-06-01^^FDB^FZ^141^flydubai^Dubai Aviation Corporation^^^^http://en.wikipedia.org/wiki/Flydubai^80114^en|flydubai|=en|Dubai Aviation Corporation|^^air-flydubai^1
 air-flyegypt-v1^^2015-02-12^^^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/FlyEgypt^483^en|FlyEgypt|^KWI^air-flyegypt^1
@@ -597,6 +597,7 @@ air-guangxi-beibu-gulf-airlines-v1^^^^^GX^872^Guangxi Beibu Gulf Airlines^^^^^^6
 air-guinea-airlines-v1^^1989-01-01^^VXG^G2^0^Jet Express^Avirex Gabon^^^^http://en.wikipedia.org/wiki/Jet_Express^^en|Jet Express|=en|Avirex Gabon|^^air-guinea-airlines^1
 air-guizhou-airlines-v1^1^1991-01-01^1998-12-31^CGH^G4^0^Guizhou Airlines^^^^^http://en.wikipedia.org/wiki/Guizhou_Airlines^^en|Guizhou Airlines|^^air-guizhou-airlines^1
 air-gulf-air-v1^^1950-01-01^^GFA^GF^72^Gulf Air^^^^^http://en.wikipedia.org/wiki/Gulf_Air^54791^en|Gulf Air|^^air-gulf-air^1
+air-hageland-aviation-services-v1^^1981-01-01^^HAG^H6^0^Hageland Aviation Services^^^^^http://en.wikipedia.org/wiki/Hageland_Aviation_Services^103156^en|Hageland Aviation Services|^KSM^air-hageland-aviation-services^1
 air-hahn-air-systems-v1^^^^^H1^0^Hahn Air Systems^^^^^http://en.wikipedia.org/wiki/Hahn_Air_Systems_GmbH^^en|Hahn Air Systems|^^air-hahn-air-systems^1
 air-hahn-air-v1^^1994-01-01^^HHN^HR^169^Hahn Air^^^^^http://en.wikipedia.org/wiki/Hahn_Air^46^en|Hahn Air|^^air-hahn-air^1
 air-hainan-airlines-v1^^1989-01-01^^CHH^HU^880^Hainan Airlines^^^^^http://en.wikipedia.org/wiki/Hainan_Airlines^124930^en|Hainan Airlines|^^air-hainan-airlines^1
@@ -747,7 +748,7 @@ air-lade-v1^1^1940-09-01^2014-12-31^LDE^5U^0^LADE^Líneas Aéreas del Estado^^^^
 air-lagunair-lineas-aeras-v1^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir^^en|LagunAir|=en|LagunAir Líneas Aéreas|^^air-lagunair-lineas-aeras^1
 air-lam-mozambique-v1^^^^LAM^TM^68^Lam Mozambique^^^^^^18467^en|Lam Mozambique|^^air-lam-mozambique^1
 air-lan-airlines-v1^^1929-03-05^^LAN^LA^45^LATAM Chile^^OneWorld^Member^^http://en.wikipedia.org/wiki/LATAM_Chile^201163^en|LATAM Chile|p=en|LAN Airlines|h=en|LATAM Airlines Group|h^SCL^air-lan-airlines^1
-air-lan-argentina-v1^^2005-01-01^^DSM^4M^469^LATAM Argentina^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Argentina^456^en|Aero 2000|h=en|LATAM Argentina|p=en|LAN Argentina|h=sign|LATAR|^AEP^air-lan-argentina^1
+air-lan-argentina-v1^^2005-01-01^^DSM^4M^469^LATAM Argentina^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Argentina^456^en|Aero 2000|h=en|LATAM Argentina|p=en|LAN Argentina|h=sign|LATAR|^EZE^air-lan-argentina^1
 air-lan-chile-cargo-v1^^1929-01-01^^LCO^UC^0^LAN Cargo^Ladeco^^^C^http://en.wikipedia.org/wiki/LAN_Cargo^^en|LAN Cargo|=en|Ladeco|^^air-lan-chile-cargo^1
 air-lan-ecuador-v1^^2002-01-01^^LNE^XL^462^LATAM Ecuador^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Ecuador^10558^en|LATAM Ecuador|p=en|LAN Ecuador|h=en|Aerolane Líneas Aéreas Nacionales del Ecuador S.A.|h=sign|AEROLANE|^UIO^air-lan-ecuador^1
 air-lan-express-v1^^^^^LU^972^LAN Express^Theron Air^OneWorld^Affiliate^^^^en|LAN Express|=en|Theron Air|^^air-lan-express^1

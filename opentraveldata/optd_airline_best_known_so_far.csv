@@ -282,7 +282,7 @@ air-british-airways-v1^^1974-03-31^^BAW^BA^125^British Airways^^^Member^^http://
 air-brussels-airlines-v1^^2007-03-25^^BEL^SN^82^Brussels Airlines^^^Member^^http://en.wikipedia.org/wiki/Brussels_Airlines^en|Brussels Airlines|^^air-brussels-airlines^1
 air-buddha-air-v1^^1997-01-01^^BHA^U4^0^Buddha Air^^^^^http://en.wikipedia.org/wiki/Buddha_Air^en|Buddha Air|ps=en|Buddha Air Pvt. Ltd|^^air-buddha-air^1
 air-bulgaria-air-v1^^^^LZB^FB^623^Bulgaria Air^Balkan Air To^^^^^en|Bulgaria Air|=en|Balkan Air To|^^air-bulgaria-air^1
-air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^http://en.wikipedia.org/wiki/Bulgarian_Air_Charter^bg|Българиан Ер Чартер|=en|Bulgarian Air Charter|^BOJ=PDV=SOF=VAR^air-bulgarian-air-charter^1
+air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^http://en.wikipedia.org/wiki/Bulgarian_Air_Charter^bg|Българиан Ер Чартер|=en|Bulgarian Air Charter|^^air-bulgarian-air-charter^1
 air-buraq-air-v1^^2001-01-01^^BRQ^UZ^928^Buraq Air^^^^^http://en.wikipedia.org/wiki/Buraq_Air^en|Buraq Air|^^air-buraq-air^1
 air-business-aviation-centre-v1^^^^^UQ^0^Business Aviation Centre^O Connor^^^^^en|Business Aviation Centre|=en|O Connor|^^air-business-aviation-centre^1
 air-caicos-express-airways-v1^^2011-01-01^^CXE^9Q^0^Caicos Express Airways^PB Air^^^^http://en.wikipedia.org/wiki/Caicos_Express_Airways^en|Caicos Express Airways|=en|PB Air|^^air-caicos-express-airways^1
@@ -444,7 +444,7 @@ air-flyegypt-v1^^2015-02-12^^^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/Fly
 air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
 air-fly-blue-crane-v1^^2015-09-01^^^7B^562^Fly Blue Crane^^^^^http://en.wikipedia.org/wiki/Fly_Blue_Crane^en|Fly Blue Crane|^JNB^air-fly-blue-crane^1
 air-fly-caminter-v1^^2016-03-17^^^EF^448^Fly CamInter^^^^^^en|Fly CamInter|=en|Equa2C|h^DLA^air-fly-caminter^1
-air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^CBR^air-fly-corporate^1
+air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^BNE^air-fly-corporate^1
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^en|Fly Jamaica Airways|^KIN^air-fly-jamaica-airways^1
 air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^en|Fly Kiss|^LRT=LYS^air-fly-kiss^1
 air-fly-logic-malmo-v1^^^^^XN^0^Fly Logic Malmo^^^^^^en|Fly Logic Malmo|^^air-fly-logic-malmo^1
@@ -480,6 +480,7 @@ air-gryphon-airline-v1^^2007-03-01^^VOS^Y3^0^Gryphon Airlines^^^^^http://en.wiki
 air-guangxi-beibu-gulf-airlines-v1^^^^^GX^872^Guangxi Beibu Gulf Airlines^^^^^^en|Guangxi Beibu Gulf Airlines|^^air-guangxi-beibu-gulf-airlines^1
 air-guinea-airlines-v1^^1989-01-01^^VXG^G2^0^Jet Express^Avirex Gabon^^^^http://en.wikipedia.org/wiki/Jet_Express^en|Jet Express|=en|Avirex Gabon|^^air-guinea-airlines^1
 air-gulf-air-v1^^1950-01-01^^GFA^GF^72^Gulf Air^^^^^http://en.wikipedia.org/wiki/Gulf_Air^en|Gulf Air|^^air-gulf-air^1
+air-hageland-aviation-services-v1^^1981-01-01^^HAG^H6^0^Hageland Aviation Services^^^^^http://en.wikipedia.org/wiki/Hageland_Aviation_Services^en|Hageland Aviation Services|^KSM^air-hageland-aviation-services^1
 air-hahn-air-v1^^1994-01-01^^HHN^HR^169^Hahn Air^^^^^http://en.wikipedia.org/wiki/Hahn_Air^en|Hahn Air|^^air-hahn-air^1
 air-hahn-air-systems-v1^^^^^H1^0^Hahn Air Systems^^^^^http://en.wikipedia.org/wiki/Hahn_Air_Systems_GmbH^en|Hahn Air Systems|^^air-hahn-air-systems^1
 air-hainan-airlines-v1^^1989-01-01^^CHH^HU^880^Hainan Airlines^^^^^http://en.wikipedia.org/wiki/Hainan_Airlines^en|Hainan Airlines|^^air-hainan-airlines^1
@@ -612,7 +613,7 @@ air-lacbravo-v1^^^^^4V^408^Lacbravo^^^^^^en|Lacbravo|^^air-lacbravo^1
 air-lacsa-v1^^^^LRC^LR^133^Avianca Costa Rica^^^^^http://en.wikipedia.org/wiki/Avianca_Costa_Rica^en|Avianca Costa Rica|=en|Lacsa|h=es|Lineas Aéreas Costarricenses S.A.|^SJO^air-lacsa^1
 air-lam-mozambique-v1^^^^LAM^TM^68^Lam Mozambique^^^^^^en|Lam Mozambique|^^air-lam-mozambique^1
 air-lan-airlines-v1^^1929-03-05^^LAN^LA^45^LATAM Chile^^^Member^^http://en.wikipedia.org/wiki/LATAM_Chile^en|LATAM Chile|p=en|LAN Airlines|h=en|LATAM Airlines Group|h^SCL^air-lan-airlines^1
-air-lan-argentina-v1^^2005-01-01^^DSM^4M^469^LATAM Argentina^^^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Argentina^en|Aero 2000|h=en|LATAM Argentina|p=en|LAN Argentina|h=sign|LATAR|^AEP^air-lan-argentina^1
+air-lan-argentina-v1^^2005-01-01^^DSM^4M^469^LATAM Argentina^^^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Argentina^en|Aero 2000|h=en|LATAM Argentina|p=en|LAN Argentina|h=sign|LATAR|^EZE^air-lan-argentina^1
 air-lan-chile-cargo-v1^^1929-01-01^^LCO^UC^0^LAN Cargo^Ladeco^^^C^http://en.wikipedia.org/wiki/LAN_Cargo^en|LAN Cargo|=en|Ladeco|^^air-lan-chile-cargo^1
 air-lan-ecuador-v1^^2002-01-01^^LNE^XL^462^LATAM Ecuador^^^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Ecuador^en|LATAM Ecuador|p=en|LAN Ecuador|h=en|Aerolane Líneas Aéreas Nacionales del Ecuador S.A.|h=sign|AEROLANE|^UIO^air-lan-ecuador^1
 air-lan-express-v1^^^^^LU^972^LAN Express^Theron Air^^Affiliate^^^en|LAN Express|=en|Theron Air|^^air-lan-express^1
