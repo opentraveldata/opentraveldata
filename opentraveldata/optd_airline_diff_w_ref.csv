@@ -61,14 +61,14 @@
 3Y^2^<>Kartika Air
 4A^2^ATSA<>
 4B^2^<>Boutique Air
-4C^1^LAN Colombia<>Lan Colombia Airlines
-4C^2^Aerovías de Integración Regional (AIRES)<>Lan Colombia
+4C^1^LATAM Colombia<>Latam Airlines Colombia
+4C^2^<>Lan Colombia
 4D^2^<>Air Sinai
 4E^2^<>Tanana Air
 4F^2^<>Air City
 4K^2^<>Kenn Borek
-4M^1^LAN Argentina<>Lanargentina
-4M^2^LAN argentina<>Lanargentina
+4M^1^LATAM Argentina<>Latam Airlines Argentina
+4M^2^<>Lanargentina
 4N^2^<>Air North
 4O^2^<>Interjet
 4Q^2^<>Safi Airways
@@ -266,8 +266,8 @@ APF^1^Amapola Flyg<>Amapola Flyg Ab
 AR^1^Aerolíneas Argentinas<>Aerolineas Argentinas
 AR^2^<>Argentinas
 ARA^2^<>Arik Air
-ARE^1^LAN Colombia<>Lan Colombia Airlines
-ARE^2^Aerovías de Integración Regional (AIRES)<>Lan Colombia
+ARE^1^LATAM Colombia<>Latam Airlines Colombia
+ARE^2^<>Lan Colombia
 ARG^1^Aerolíneas Argentinas<>Aerolineas Argentinas
 ARG^2^<>Argentinas
 ART^1^SmartLynx Airlines<>Smartlynx Airlines
@@ -331,6 +331,7 @@ BEA^2^<>Bqb Lineas
 BEK^2^<>Jsc Bek Air
 BEL^2^<>Brussels Air
 BER^2^<>Air Berlin
+BF^1^Vincent Aviation<>French Blue
 BG^2^<>Biman
 BGH^1^BH Air<>Bh Air
 BGH^2^<>Bh Air
@@ -555,7 +556,7 @@ F8^2^<>Air Montreal
 F9^2^<>Frontier Air
 FBA^1^FlyBaghdad<>Fly Baghdad Airlines
 FBA^2^<>Islas Airways
-FC^1^Viva Colombia<>Corporate Air
+FC^1^Viva Colombia<>Fly Corporate
 FD^1^Thai AirAsia<>Thai Airasia
 FD^2^<>Thai Airasia
 FDY^1^Sun Air Express<>Sun Air Express Llc
@@ -735,8 +736,8 @@ JC^1^JAL Express<>Japan Air Commuter
 JD^2^<>Beijing Capit
 JF^2^<>Jet Asia
 JI^1^Eastern Caribbean Airlines<>Meraj Air
-JJ^1^TAM Airlines<>Tam Linhas Aereas
-JJ^2^TAM Linhas Aereas<>Tam Linh Aer
+JJ^1^LATAM Brasil<>Latam Airlines Brasil
+JJ^2^<>Tam Linh Aer
 JJA^2^<>Jeju Air
 JL^2^JAL<>J A L
 JNA^2^<>Jin Air
@@ -813,17 +814,17 @@ L5^2^<>Atlantiqueair
 L6^2^<>Mauritanian
 L7^1^Lugansk Airlines<>
 L8^2^<>Afric Aviatio
-LA^1^LAN Airlines<>Lan Airlines
-LA^2^LATAM Airlines Group<>Lan Chile
+LA^1^LATAM Chile<>Latam Airlines Group
+LA^2^<>Lan Chile
 LAA^2^<>Libyan Air
 LAL^1^Air Labrador<>Labrador Airways Limited
 LAL^2^Labrador Airways<>Labradorair
 LAM^2^<>Lam
-LAN^1^LAN Airlines<>Lan Airlines
-LAN^2^LATAM Airlines Group<>Lan Chile
+LAN^1^LATAM Chile<>Latam Airlines Group
+LAN^2^<>Lan Chile
 LAO^2^<>Lao Airlines
-LAP^1^TAM Airlines<>Tam Mercosur
-LAP^2^Transportes Aéreos del Mercosur<>Lapsa
+LAP^1^LATAM Paraguay<>Latam Airlines Paraguay
+LAP^2^<>Lapsa
 LB^2^LAB<>L A B
 LBT^2^<>Nouvelair
 LC^1^ECAir<>Equatorial Congo Airline
@@ -844,21 +845,21 @@ LLR^2^Alliance Air<>
 LMU^1^AlMasria Universal Airlines<>Almasria Universal Airlines
 LMU^2^<>Almasria Air
 LN^2^<>Libyan Air
-LNE^1^LAN Ecuador<>Lanecuador Aerolane Sa
-LNE^2^LAN Ecuador<>Lan Ecuador
+LNE^1^LATAM Ecuador<>Latam Airlines Ecuador
+LNE^2^<>Lan Ecuador
 LO^1^LOT Polish Airlines<>Lot Polish Airlines
 LO^2^LOT<>Lot
 LOT^1^LOT Polish Airlines<>Lot Polish Airlines
 LOT^2^LOT<>Lot
-LP^1^LAN Perú<>Lanperu
+LP^1^LATAM Perú<>Latam Airlines Peru
 LP^2^<>Lan Peru
-LPE^1^LAN Perú<>Lanperu
+LPE^1^LATAM Perú<>Latam Airlines Peru
 LPE^2^<>Lan Peru
 LQ^1^Air Guinea<>
 LR^1^Avianca Costa Rica<>Lacsa
-LR^2^Lacsa<>L A C S A
+LR^2^<>L A C S A
 LRC^1^Avianca Costa Rica<>Lacsa
-LRC^2^Lacsa<>L A C S A
+LRC^2^<>L A C S A
 LRS^1^SANSA Airlines<>Sansa
 LRS^2^<>Pan Am Exp
 LS^1^Jet2.com<>Jet2 Com
@@ -1052,8 +1053,8 @@ PW^2^<>Precision Air
 PWD^1^Pan American World Airways Dominicana<>Pan American World
 PWD^2^PAWA Dominicana<>Pawad
 PX^2^<>Air Niugini
-PZ^1^TAM Airlines<>Tam Mercosur
-PZ^2^Transportes Aéreos del Mercosur<>Lapsa
+PZ^1^LATAM Paraguay<>Latam Airlines Paraguay
+PZ^2^<>Lapsa
 Q0^1^Quebecair Express<>
 Q2^1^Island Aviation<>Island Aviation Services
 Q3^2^<>Zambian Air
@@ -1259,8 +1260,8 @@ TAE^1^TAME<>Tame Linea Aerea Del Ecuador
 TAE^2^TAME EP Línea Aérea del Ecuador<>Tame
 TAI^1^Avianca El Salvador<>Taca International Airlines
 TAI^2^TACA Airlines<>Taca
-TAM^1^TAM Airlines<>Tam Linhas Aereas
-TAM^2^TAM Linhas Aereas<>Tam Linh Aer
+TAM^1^LATAM Brasil<>Latam Airlines Brasil
+TAM^2^<>Tam Linh Aer
 TAN^2^<>Zanair
 TAO^2^<>Aeromar
 TAP^1^TAP Portugal<>Tap Portugal
@@ -1491,8 +1492,8 @@ XE^1^Expressjet Airlines Inc<>
 XG^1^Sun Express Germany<>Sunexpress Germany
 XJ^1^Thai AirAsia X<>Thai Airasia X Company
 XK^2^<>Air Corsica
-XL^1^LAN Ecuador<>Lanecuador Aerolane Sa
-XL^2^LAN Ecuador<>Lan Ecuador
+XL^1^LATAM Ecuador<>Latam Airlines Ecuador
+XL^2^<>Lan Ecuador
 XLF^1^XL Airways France<>Xl Airways France
 XM^1^<>C A I First S P A
 XM^2^<>Cai First Spa

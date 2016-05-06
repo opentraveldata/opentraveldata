@@ -101,7 +101,7 @@ air-air-cote-d-ivoire-v1^^^^^HF^483^Air Cote D Ivoire^Aircoteivoire^^^^^9152^en|
 air-air-creebec-v1^^^^CRQ^YN^219^Air Creebec^Air Creebec^^^^^10154^en|Air Creebec|=en|Air Creebec|^^air-air-creebec^1
 air-air-dolomiti-v1^^^^DLA^EN^101^Air Dolomiti^Air Dolomiti^^^^^25134^en|Air Dolomiti|=en|Air Dolomiti|^^air-air-dolomiti^1
 air-air-east-v1^^^^^ER^0^Air East^^^^^^^en|Air East|^^air-air-east^1
-air-aires-v1^^1981-01-01^^ARE^4C^35^LAN Colombia^Aerovías de Integración Regional (AIRES)^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Colombia^^en|LAN Colombia|=en|Aerovías de Integración Regional (AIRES)|^^air-aires^1
+air-aires-v1^^1981-01-01^^ARE^4C^35^LATAM Colombia^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Colombia^^en|LATAM Colombia|p=en|LAN Colombia|h=en|Aerovías de Integración Regional|h=abbr|AIRES|h=ko|란 콜롬비아|^BOG^air-aires^1
 air-air-europa-v1^^1986-01-01^^AEA^UX^996^Air Europa^^Skyteam^Member^^http://en.wikipedia.org/wiki/Air_Europa^82645^en|Air Europa|^^air-air-europa^1
 air-air-excursions-v1^^^^^X4^0^Air Excursions^^^^^^1754^en|Air Excursions|^^air-air-excursions^1
 air-air-explore-v1^^^^AXE^ED^0^Air Explore^Airblue^^^^^440^en|Air Explore|=en|Airblue|^^air-air-explore^1
@@ -552,7 +552,7 @@ air-flydubai-v1^^2009-06-01^^FDB^FZ^141^flydubai^Dubai Aviation Corporation^^^^h
 air-flyegypt-v1^^2015-02-12^^^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/FlyEgypt^483^en|FlyEgypt|^KWI^air-flyegypt^1
 air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^40260^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
 air-fly-georgia-v1^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^http://en.wikipedia.org/wiki/Fly_Georgia^^en|Fly Georgia|^^air-fly-georgia^1
-air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^1037^en|Fly Jamaica Airways|^^air-fly-jamaica-airways^1
+air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^1037^en|Fly Jamaica Airways|^KIN^air-fly-jamaica-airways^1
 air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^^en|Fly Kiss|^LRT=LYS^air-fly-kiss^1
 air-fly-logic-malmo-v1^^^^^XN^0^Fly Logic Malmo^^^^^^^en|Fly Logic Malmo|^^air-fly-logic-malmo^1
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^http://en.wikipedia.org/wiki/Fly_Salone^^en|Fly Salone|^^air-fly-salone^1
@@ -562,6 +562,7 @@ air-forty-mile-air-v1^^^^MLA^Q5^0^Forty Mile Air^^^^^^733^en|Forty Mile Air|^^ai
 air-freebird-airlines-v1^^^^FHY^FH^0^Freebird Airlines^Futura Intl^^^^^20^en|Freebird Airlines|=en|Futura Intl|^^air-freebird-airlines^1
 air-freedom-airlines-v1^1^2002-01-01^2010-12-31^FRL^F8^0^Freedom Airlines^Air Montreal^^^^http://en.wikipedia.org/wiki/Freedom_Airlines^^en|Freedom Airlines|=en|Air Montreal|^^air-freedom-airlines^1
 air-freedom-air-v1^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^http://en.wikipedia.org/wiki/Freedom_Air_(Guam)^^en|Freedom Air|^^air-freedom-air^1
+air-french-blue-v1^^2016-01-01^^FBU^BF^0^French Blue^^^^^http://en.wikipedia.org/wiki/French_Blue_(airline)^^en|French Blue|^ORY^air-french-blue^1
 air-french-military-force-v1^^^^^RD^0^French Military Force^Ryan^^^^^^en|French Military Force|=en|Ryan|^^air-french-military-force^1
 air-freshair-v1^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^^en|Freshair|=en|Easeon Air|^^air-freshair^1
 air-frontier-airlines-v1^^1994-07-05^^FTT^F9^422^Frontier Airlines^^^^^http://en.wikipedia.org/wiki/Frontier_Airlines^50512^en|Frontier Airlines|^^air-frontier-airlines^1
@@ -741,16 +742,16 @@ air-kyrgyzstan-airlines-v1^^^^KGA^R8^0^Kyrgyzstan Airlines^^^^^^^en|Kyrgyzstan A
 air-kyrgyzstan-air-v1^^2001-01-01^^LYN^QH^138^Air Kyrgyzstan^^^^^http://en.wikipedia.org/wiki/Air_Kyrgyzstan^2204^en|Air Kyrgyzstan|^^air-kyrgyzstan-air^1
 air-kyrgyz-trans-avia-v1^^2009-01-01^^KTC^6K^0^Kyrgyz Trans Avia^^^^^http://en.wikipedia.org/wiki/Kyrgyz_Trans_Avia^^en|Kyrgyz Trans Avia|^^air-kyrgyz-trans-avia^1
 air-lacbravo-v1^^^^^4V^408^Lacbravo^^^^^^^en|Lacbravo|^^air-lacbravo^1
-air-lacsa-v1^^^^LRC^LR^133^Avianca Costa Rica^Lacsa^^^^http://en.wikipedia.org/wiki/Avianca_Costa_Rica^869^en|Avianca Costa Rica|=en|Lacsa|^^air-lacsa^1
+air-lacsa-v1^^^^LRC^LR^133^Avianca Costa Rica^^^^^http://en.wikipedia.org/wiki/Avianca_Costa_Rica^869^en|Avianca Costa Rica|=en|Lacsa|h=es|Lineas Aéreas Costarricenses S.A.|^SJO^air-lacsa^1
 air-lade-v1^1^1940-09-01^2014-12-31^LDE^5U^0^LADE^Líneas Aéreas del Estado^^^^http://en.wikipedia.org/wiki/LADE^^en|LADE|=en|Líneas Aéreas del Estado|^^air-lade^1
 air-lagunair-lineas-aeras-v1^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir^^en|LagunAir|=en|LagunAir Líneas Aéreas|^^air-lagunair-lineas-aeras^1
 air-lam-mozambique-v1^^^^LAM^TM^68^Lam Mozambique^^^^^^18440^en|Lam Mozambique|^^air-lam-mozambique^1
-air-lan-airlines-v1^^1929-03-05^^LAN^LA^45^LAN Airlines^LATAM Airlines Group^OneWorld^Member^^http://en.wikipedia.org/wiki/LAN_Airlines^198490^en|LAN Airlines|=en|LATAM Airlines Group|^^air-lan-airlines^1
-air-lan-argentina-v1^^^^^4M^469^LAN Argentina^LAN argentina^OneWorld^Affiliate^^^467^en|LAN Argentina|=en|LAN argentina|^^air-lan-argentina^1
+air-lan-airlines-v1^^1929-03-05^^LAN^LA^45^LATAM Chile^^OneWorld^Member^^http://en.wikipedia.org/wiki/LATAM_Chile^198490^en|LATAM Chile|p=en|LAN Airlines|h=en|LATAM Airlines Group|h^SCL^air-lan-airlines^1
+air-lan-argentina-v1^^2005-01-01^^DSM^4M^469^LATAM Argentina^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Argentina^467^en|Aero 2000|h=en|LATAM Argentina|p=en|LAN Argentina|h=sign|LATAR|^AEP^air-lan-argentina^1
 air-lan-chile-cargo-v1^^1929-01-01^^LCO^UC^0^LAN Cargo^Ladeco^^^C^http://en.wikipedia.org/wiki/LAN_Cargo^^en|LAN Cargo|=en|Ladeco|^^air-lan-chile-cargo^1
-air-lan-ecuador-v1^^^^LNE^XL^462^LAN Ecuador^LAN Ecuador^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Ecuador^10664^en|LAN Ecuador|=en|LAN Ecuador|^^air-lan-ecuador^1
+air-lan-ecuador-v1^^2002-01-01^^LNE^XL^462^LATAM Ecuador^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Ecuador^10664^en|LATAM Ecuador|p=en|LAN Ecuador|h=en|Aerolane Líneas Aéreas Nacionales del Ecuador S.A.|h=sign|AEROLANE|^UIO^air-lan-ecuador^1
 air-lan-express-v1^^^^^LU^972^LAN Express^Theron Air^OneWorld^Affiliate^^^^en|LAN Express|=en|Theron Air|^^air-lan-express^1
-air-lan-peru-v1^^^^LPE^LP^544^LAN Perú^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LAN_Per%C3%BA^^en|LAN Perú|^^air-lan-peru^1
+air-lan-peru-v1^^1998-01-01^^LPE^LP^544^LATAM Perú^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Per%C3%BA^^en|LATAM Perú|p=en|LAN Perú|h^LIM^air-lan-peru^1
 air-lao-airlines-v1^^^^LAO^QV^627^Lao Airlines^^^^^^13216^en|Lao Airlines|^^air-lao-airlines^1
 air-lao-central-airlines-v1^^^^^LF^971^Lao Central^^^^^^411^en|Lao Central|^^air-lao-central-airlines^1
 air-lao-skyway-v1^1^2002-01-01^2013-12-31^LLL^LK^0^Lao Air^^^^^http://en.wikipedia.org/wiki/Lao_Skyway^^en|Lao Air|h=en|Lao Skyway|p^VTE^air-lao-skyway^1
@@ -1136,8 +1137,8 @@ air-taf-linhas-aereas-v1^^^^TSD^R9^418^TAF Linhas Aereas^Air Charter^^^^^^en|TAF
 air-tailwind-hava-yollari-as-v1^^^^TWI^TI^0^Tailwind Hava Yollari As^Baltic Int^^^^^^en|Tailwind Hava Yollari As|=en|Baltic Int|^^air-tailwind-hava-yollari-as^1
 air-tajik-air-v1^^^^TJK^7J^502^Tajik Air^^^^^^2563^en|Tajik Air|^^air-tajik-air^1
 air-tame-linea-aerea-del-ecuador-v1^^1962-12-17^^TAE^EQ^269^TAME^TAME EP Línea Aérea del Ecuador^^^^http://en.wikipedia.org/wiki/TAME^24242^en|TAME|=en|TAME EP Línea Aérea del Ecuador|^^air-tame-linea-aerea-del-ecuador^1
-air-tam-linhas-aereas-v1^^1976-07-12^^TAM^JJ^957^TAM Airlines^TAM Linhas Aereas^OneWorld^Member^^http://en.wikipedia.org/wiki/TAM_Airlines^232095^en|TAM Airlines|=en|TAM Linhas Aereas|^^air-tam-linhas-aereas^1
-air-tam-mercosur-v1^^1962-01-01^^LAP^PZ^692^TAM Airlines^Transportes Aéreos del Mercosur^^^^http://en.wikipedia.org/wiki/TAM_Airlines_%28Paraguay%29^3376^en|TAM Airlines|=en|Transportes Aéreos del Mercosur|^^air-tam-mercosur^1
+air-tam-linhas-aereas-v1^^1976-07-12^^TAM^JJ^957^LATAM Brasil^^OneWorld^Member^^http://en.wikipedia.org/wiki/LATAM_Brasil^232095^en|LATAM Brasil|p=en|TAM Airlines|h=en|TAM Linhas Aereas|h^CGH^air-tam-linhas-aereas^1
+air-tam-mercosur-v1^^1962-01-01^^LAP^PZ^692^LATAM Paraguay^^^^^http://en.wikipedia.org/wiki/LATAM_Paraguay^3376^en|LATAM Paraguay|p=en|TAM Airlines Paraguay|h=en|Transportes Aéreos del Mercosur|h=en|TAM Mercosur|h=en|Líneas Aéreas Paraguayas|h=abbr|LAP|h^ASU^air-tam-mercosur^1
 air-tampa-cargo-v1^^^^TPA^QT^0^Tampa Cargo^Regional^^^C^^^en|Tampa Cargo|=en|Regional|^^air-tampa-cargo^1
 air-tanana-air-service-v1^^^^TNR^4E^0^Tanana Air Service^^^^^^^en|Tanana Air Service|^^air-tanana-air-service^1
 air-tandem-aero-v1^^1998-01-01^^TDM^TQ^38^Tandem Aero^^^^^http://en.wikipedia.org/wiki/Tandem_Aero^27^en|Tandem Aero|^^air-tandem-aero^1
