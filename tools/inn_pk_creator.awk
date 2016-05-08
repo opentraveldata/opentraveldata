@@ -64,7 +64,7 @@ BEGINFILE {
     # The separator is a <TAB> for the Innovata dump file
     nb_of_input_files++
     if (nb_of_input_files == 2) {
-	FS = "\t"
+		FS = "\t"
     }
 
     # Initialisation of the Geo library
@@ -112,7 +112,7 @@ BEGINFILE {
 
     # Register the OPTD-maintained line
     registerOPTDLine(pk, iata_code2, latitude, longitude,	\
-		     srvd_city_code, beg_date, full_line)
+					 srvd_city_code, beg_date, full_line)
 }
 
 
@@ -155,7 +155,7 @@ ENDFILE {
 
     # DEBUG
     if (nb_of_geo_por == 0) {
-	# displayLists()
+		# displayLists()
     }
 }
 

@@ -63,7 +63,7 @@ EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
     echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
+    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
     echo
     exit -1
 fi
@@ -112,10 +112,10 @@ if [ "$1" = "--clean" ]
 then
     if [ "${TMP_DIR}" = "/tmp/por" ]
     then
-	\rm -rf ${TMP_DIR}
+		\rm -rf ${TMP_DIR}
     else
-	\rm -f ${SORTED_INN_WPK_FILE} ${SORTED_CUT_INN_WPK_FILE}
-	\rm -f ${INN_WPK_FILE}
+		\rm -f ${SORTED_INN_WPK_FILE} ${SORTED_CUT_INN_WPK_FILE}
+		\rm -f ${INN_WPK_FILE}
     fi
     exit
 fi
@@ -154,10 +154,10 @@ if [ "$1" != "" ]
 then
     if [ ! -d $1 ]
     then
-	echo
-	echo "[$0:$LINENO] The first parameter ('$1') should point to the refdata/ sub-directory of the OpenTravelData project Git clone. It is not accessible here."
-	echo
-	exit -1
+		echo
+		echo "[$0:$LINENO] The first parameter ('$1') should point to the refdata/ sub-directory of the OpenTravelData project Git clone. It is not accessible here."
+		echo
+		exit -1
     fi
     OPTD_DIR_DIR=`dirname $1`
     OPTD_DIR_BASE=`basename $1`
@@ -187,7 +187,7 @@ then
     SORTED_CUT_INN_WPK_FILENAME=cut_${SORTED_INN_WPK_FILENAME}
     if [ "${INN_RAW_FILE}" = "${INN_RAW_FILENAME}" ]
     then
-	INN_RAW_FILE="${TMP_DIR}${INN_RAW_FILE}"
+		INN_RAW_FILE="${TMP_DIR}${INN_RAW_FILE}"
     fi
 fi
 INN_WPK_FILE=${TMP_DIR}${INN_WPK_FILENAME}
@@ -201,7 +201,7 @@ then
     echo
     if [ "$2" = "" ]
     then
-	displayInnovataDetails
+		displayInnovataDetails
     fi
     exit -1
 fi

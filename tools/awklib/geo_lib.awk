@@ -485,7 +485,7 @@ function getLocTypeFromFeatCode(__gltParamFeatureCode) {
 # into the standard ones
 function convertLatToStd(__cgcLat) {
     # Specification of the latitude format
-    lat_regexp = "^([0-9]{2})([0-9]{2})([0-9]{2})(S|N)$"
+    lat_regexp = "^([0-9]{2}).?([0-9]{2}).?([0-9]{2})(S|N)$"
 
     # Sign (+ for North, - for South)
     cgcStdLatSgn = gensub (lat_regexp, "\\4", "g", __cgcLat)
@@ -500,7 +500,7 @@ function convertLatToStd(__cgcLat) {
     cgcStdLat += (cgcStdLatSec / 6000.0)
 
     if (cgcStdLatSgn == "S") {
-	cgcStdLat = -1 * cgcStdLat
+		cgcStdLat = -1 * cgcStdLat
     }
     return cgcStdLat
 }
@@ -510,7 +510,7 @@ function convertLatToStd(__cgcLat) {
 # into the standard ones
 function convertLonToStd(__cgcLon) {
     # Specification of the longitude format
-    lon_regexp = "^([0-9]{3})([0-9]{2})([0-9]{2})(W|E)$"
+    lon_regexp = "^([0-9]{3}).?([0-9]{2}).?([0-9]{2})(W|E)$"
 
     # Sign (+ for West, - for East)
     cgcStdLonSgn = gensub (lon_regexp, "\\4", "g", __cgcLon)
@@ -525,7 +525,7 @@ function convertLonToStd(__cgcLon) {
     cgcStdLon += (cgcStdLonSec / 6000.0)
 
     if (cgcStdLonSgn == "W") {
-	cgcStdLon = -1 * cgcStdLon
+		cgcStdLon = -1 * cgcStdLon
     }
     return cgcStdLon
 }
@@ -1882,7 +1882,7 @@ function displayREFPOREntries() {
 # 1. The IATA code
 # 2. The OPTD-maintained location type
 function registerInnovataLine(__rilParamIataCode, __rilParamLocType, \
-			      __rilParamFullLine, __rilParamNbOfPOR) {
+							  __rilParamFullLine, __rilParamNbOfPOR) {
     # Register the fact that the AWK script runs on the Innovata data dump
     # (most probably called from the inn_pk_creator.awk file)
     __glGlobalIsForInnovata = 1
@@ -1928,7 +1928,7 @@ function displayInnovataPOREntries() {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" && \
-	geo_iata_code == __glGlobalDebugIataCode) {
+		geo_iata_code == __glGlobalDebugIataCode) {
 	print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "	  \
 	       optd_por_loctype_list[geo_iata_code] ", Innovata loc_type: " \
 	       inn_last_loctype) > __glGlobalErrorStream
