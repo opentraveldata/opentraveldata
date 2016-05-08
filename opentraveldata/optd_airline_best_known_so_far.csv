@@ -202,7 +202,7 @@ air-apex-airline-v1^^2015-04-01^^^SO^0^Apex Airline^^^^^^en|Apex Airline|^^air-a
 air-arctic-circle-air-v1^^^^ODM^5F^91^Pan African Airways^Bonaire Air^^^^^en|Pan African Airways|=en|Bonaire Air|^^air-arctic-circle-air^1
 air-arc-v1^^^^^XD^0^Arc^^^^^^en|Arc|^^air-arc^1
 air-ariana-afghan-airlines-v1^^^^AFG^FG^255^Ariana Afghan Airlines^Ariana^^^^^en|Ariana Afghan Airlines|=en|Ariana|^^air-ariana-afghan-airlines^1
-air-arik-air-v1^^2006-10-30^^ARA^W3^725^Arik Air^^^^^http://en.wikipedia.org/wiki/Arik_Air^en|Arik Air|^^air-arik-air^1
+air-arik-air-v1^^2006-10-30^^ARA^W3^725^Arik Air^^^^^http://en.wikipedia.org/wiki/Arik_Air^en|Arik Air|^ABV=ACC=LOS^air-arik-air^1
 air-arkefly-v1^^2004-03-01^^TFL^OR^178^TUI Airlines Netherlands^Arkefly^^^PC^http://en.wikipedia.org/wiki/TUI_Airlines_Netherlands^en|TUI Airlines Netherlands|=en|Arkefly|^^air-arkefly^1
 air-arkia-v1^^^^AIZ^IZ^238^Arkia^Arkia Israeli^^^^^en|Arkia|=en|Arkia Israeli|^^air-arkia^1
 air-armenia-airways-v1^^2013-01-01^^AMW^6A^616^Armenia Airways^^^^^^en|Armenia Airways|^^air-armenia-airways^1
