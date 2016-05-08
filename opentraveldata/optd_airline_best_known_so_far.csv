@@ -155,7 +155,7 @@ air-air-transat-v1^^1987-11-14^^TSC^TS^649^Air Transat^^^^^http://en.wikipedia.o
 air-air-uganda-v1^^^^^U7^926^Air Uganda^Norcanair^^^^^en|Air Uganda|=en|Norcanair|^^air-air-uganda^1
 air-air-urga-v1^^^^URG^3N^746^Air Urga^Airvantage^^^^^en|Air Urga|=en|Airvantage|^^air-air-urga^1
 air-air-vallee-v1^^^^^DO^0^Discovery Airways^Air Vallee^^^^^en|Discovery Airways|=en|Air Vallee|^^air-air-vallee^1
-air-air-vanuatu-v1^^1981-01-01^^AVN^NF^218^Air Vanuatu^^^^^http://en.wikipedia.org/wiki/Air_Vanuatu^en|Air Vanuatu|^^air-air-vanuatu^1
+air-air-vanuatu-v1^^1981-01-01^^AVN^NF^218^Air Vanuatu^^^^^http://en.wikipedia.org/wiki/Air_Vanuatu^en|Air Vanuatu|^NUS=SON=TAH=VLI^air-air-vanuatu^1
 air-air-via-v1^^^^VIM^VL^0^Air Via^Vancouver Air^^^^^en|Air Via|=en|Vancouver Air|^^air-air-via^1
 air-air-wisconsin-v1^^1965-08-23^^AWI^ZW^303^Air Wisconsin^^^^^http://en.wikipedia.org/wiki/Air_Wisconsin^en|Air Wisconsin|^^air-air-wisconsin^1
 air-air-zimbabwe-v1^^1980-04-02^^AZW^UM^168^Air Zimbabwe^^^^^http://en.wikipedia.org/wiki/Air_Zimbabwe^en|Air Zimbabwe|^^air-air-zimbabwe^1
@@ -639,7 +639,7 @@ air-lion-air-v1^^^^^SL^0^Thai Lion Mentari^Rio Sul^^^^^en|Thai Lion Mentari|=en|
 air-loganair-v1^^^^^LM^682^Loganair^Livingston^^^^^en|Loganair|=en|Livingston|^^air-loganair^1
 air-lot-v1^^1929-01-01^^LOT^LO^80^LOT Polish Airlines^LOT^^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^en|LOT Polish Airlines|=en|LOT|^^air-lot^1
 air-lucky-air-v1^^2004-07-01^^LKE^8L^859^Lucky Air^^^^^http://en.wikipedia.org/wiki/Lucky_Air^en|Lucky Air|=en|Shilin Airlines|h=ja|雲南祥鵬航空|i=ko|럭키 에어|=pny|Xiángpéng Hángkōng Gōngsī|=wuu|祥鹏航空大厦|=yue|祥鵬航空大廈|=zh|祥鹏航空公司|^^air-lucky-air^1
-air-lufthansa-cityline-v1^^1958-01-01^^CLH^CL^683^Lufthansa CityLine^Tempelhof^^Member^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^en|Lufthansa CityLine|=en|Tempelhof|^^air-lufthansa-cityline^1
+air-lufthansa-cityline-v1^^1958-01-01^^CLH^CL^683^Lufthansa CityLine^^^Member^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^en|Lufthansa CityLine|^FRA=MUC^air-lufthansa-cityline^1
 air-lufthansa-v1^^1955-01-01^^DLH^LH^220^Lufthansa^^^Member^^http://en.wikipedia.org/wiki/Lufthansa^ar|لوفتهانزا|=en|Lufthansa|=el|Λουφτχάνσα|=fa|لوفت‌هانزا|=ja|ルフトハンザドイツ航空|=ko|루프트한자|=ru|Люфтганза|=ru|Люфтханза|=th|ลุฟต์ฮันซา|=wuu|汉莎航空|=yue|漢莎航空|^FRA=MUC^air-lufthansa^1
 air-lugansk-airlines-v1^^^^LHS^L7^0^Lugansk Airlines^^^^^^en|Lugansk Airlines|^^air-lugansk-airlines^1
 air-luxair-v1^^^^LGL^LG^149^Luxair^Luxair^^^^^en|Luxair|=en|Luxair|^^air-luxair^1
