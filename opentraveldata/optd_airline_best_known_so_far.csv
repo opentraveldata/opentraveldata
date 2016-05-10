@@ -878,7 +878,8 @@ air-sky-express-greece-v1^^2005-07-01^^SEH^GQ^0^Sky Express^Cretan Aeronautical 
 air-skyair-v1^^2010-01-26^^^S8^0^SkyAir^Sky Capital Airlines^^^^http://en.wikipedia.org/wiki/SkyAir^en|SkyAir|=en|Sky Capital Airlines|^^air-skyair^1
 air-skyking-v1^^^^SGB^F3^0^Skyking^Fly 1st Class^^^^^en|Skyking|=en|Fly 1st Class|^^air-skyking^1
 air-skymark-airlines-v1^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^http://en.wikipedia.org/wiki/Skymark_Airlines^en|Skymark Airlines|^^air-skymark-airlines^1
-air-skynet-asia-v1^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^^air-skynet-asia^1
+air-skynet-asia-v1^^1997-01-01^2014-02-28^SNJ^LQ^0^Skynet Asia Airways^^^^^https://en.wikipedia.org/wiki/List_of_defunct_airlines_of_Japan^en|Skynet Asia Airways|^HND^air-skynet-asia^1
+air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^HND^air-skynet-asia^2
 air-sky-regional-airlines-v1^^^^^RS^0^Sky Regional Airlines^^^^^^en|Sky Regional Airlines|^^air-sky-regional-airlines^1
 air-sky-taxi-v1^^2000-01-01^^IGA^TE^0^Sky Taxi^^^^^http://en.wikipedia.org/wiki/SkyTaxi_%28airline%29^en|Sky Taxi|^^air-sky-taxi^1
 air-skytrans-regional-v1^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^en|Skytrans Regional|=en|Mineralnye Vo|^^air-skytrans-regional^1
