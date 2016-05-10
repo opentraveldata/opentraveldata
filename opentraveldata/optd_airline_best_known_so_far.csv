@@ -495,7 +495,9 @@ air-helijet-v1^^^^JBA^JB^613^Helijet International^Helijet^^^^^en|Helijet Intern
 air-hellas-jet-v1^^^^HEJ^HJ^681^Hellas Jet^Hellenic Star^^^^^en|Hellas Jet|=en|Hellenic Star|^^air-hellas-jet^1
 air-helvetic-airways-v1^^^^OAW^2L^102^Helvetic Airways^2L Helvetic^^^^^en|Helvetic Airways|=en|2L Helvetic|^^air-helvetic-airways^1
 air-hennan-airlines-v1^^^^^VD^981^Hennan Airlines^^^^^^en|Hennan Airlines|^^air-hennan-airlines^1
-air-hermes-airlines-v1^^^^HRM^H3^490^Hermes Airlines^Harbour Air^^^^^en|Hermes Airlines|=en|Harbour Air|^^air-hermes-airlines^1
+air-hermes-airlines-v1^^2011-08-01^2015-02-15^HRM^H3^490^Hermes Airlines^^^^^https://en.wikipedia.org/wiki/Hermes_Airlines^en|Hermes Airlines|^ATH^air-hermes-airlines^1
+air-harbour-air-v1^^1982-01-01^^HES^H3^^Harbour Air^^^^^https://en.wikipedia.org/wiki/Harbour_Air_Seaplanes^en|Harbour Air|^YVR^air-harbour-air^1
+air-westcoast-air-v1^^1996-01-01^2010-03-31^YWZ^8O^^Westcoast Air^^^^^https://en.wikipedia.org/wiki/Westcoast_Air^en|Westcoast Air|^YVR^air-westcoast-air^1
 air-hesa-airlines-v1^^^^^H8^0^Hesa Airlines^Auric Air^^^^^en|Hesa Airlines|=en|Auric Air|^^air-hesa-airlines^1
 air-hevi-lift-v1^^1994-01-01^^ASN^IU^0^Hevilift^Air Straubing^^^^http://en.wikipedia.org/wiki/Hevilift^en|Hevilift|=en|Air Straubing|^^air-hevi-lift^1
 air-hex-air-v1^^^^HER^UD^848^Hex Air^^^^^^en|Hex Air|^^air-hex-air^1
