@@ -607,6 +607,7 @@ air-halcyon-air-cabo-verde-v1^^^^^7Z^159^Halcyon Air Cabo Verde^^^^^^^en|Halcyon
 air-hamburg-airlines-v1^1^1988-04-01^1997-12-21^HAS^HX^0^Hamburg Airlines^^^^^http://en.wikipedia.org/wiki/Hamburg_Airlines^^en|Hamburg Airlines|=sign|Hamburg Air|^^air-hamburg-airlines^1
 air-hamburg-airways-v1^1^2011-03-01^2014-12-31^HAY^HK^516^Hamburg Airways^^^^^http://en.wikipedia.org/wiki/Hamburg_Airways^^en|Hamburg Airways|^DUS=HAJ=HAM^air-hamburg-airways^1
 air-hamburg-international-v1^1^1998-07-01^2010-10-20^HHI^4R^0^Hamburg International^^^^^http://en.wikipedia.org/wiki/Hamburg_International^^en|Hamburg International|^^air-hamburg-international^1
+air-harbour-air-v1^^1982-01-01^^HES^H3^^Harbour Air^^^^^http://en.wikipedia.org/wiki/Harbour_Air_Seaplanes^^en|Harbour Air|^YVR^air-harbour-air^1
 air-hawaiian-airlines-v1^^1929-01-30^^HAL^HA^173^Hawaiian Airlines^^^^^http://en.wikipedia.org/wiki/Hawaiian_Airlines^90440^en|Hawaiian Airlines|^^air-hawaiian-airlines^1
 air-hawkair-v1^^^^^BH^993^Hawkair^^^^^^^en|Hawkair|^^air-hawkair^1
 air-hebei-airlines-v1^^^^^NS^836^Hebei Airlines^Caucasus Air^^^^^30274^en|Hebei Airlines|=en|Caucasus Air|^^air-hebei-airlines^1
@@ -621,7 +622,7 @@ air-hellas-jet-v1^^^^HEJ^HJ^681^Hellas Jet^Hellenic Star^^^^^^en|Hellas Jet|=en|
 air-hellenic-imperial-airways-v1^1^2006-05-01^2015-05-01^IMP^HT^570^Hellenic Imperial Airways^^^^^http://en.wikipedia.org/wiki/Hellenic_Imperial_Airways^^en|Hellenic Imperial Airways|^^air-hellenic-imperial-airways^1
 air-helvetic-airways-v1^^^^OAW^2L^102^Helvetic Airways^2L Helvetic^^^^^22729^en|Helvetic Airways|=en|2L Helvetic|^^air-helvetic-airways^1
 air-hennan-airlines-v1^^^^^VD^981^Hennan Airlines^^^^^^^en|Hennan Airlines|^^air-hennan-airlines^1
-air-hermes-airlines-v1^^^^HRM^H3^490^Hermes Airlines^Harbour Air^^^^^^en|Hermes Airlines|=en|Harbour Air|^^air-hermes-airlines^1
+air-hermes-airlines-v1^1^2011-08-01^2015-02-15^HRM^H3^490^Hermes Airlines^^^^^http://en.wikipedia.org/wiki/Hermes_Airlines^^en|Hermes Airlines|^ATH^air-hermes-airlines^1
 air-hesa-airlines-v1^^^^^H8^0^Hesa Airlines^Auric Air^^^^^^en|Hesa Airlines|=en|Auric Air|^^air-hesa-airlines^1
 air-hevi-lift-v1^^1994-01-01^^ASN^IU^0^Hevilift^Air Straubing^^^^http://en.wikipedia.org/wiki/Hevilift^^en|Hevilift|=en|Air Straubing|^^air-hevi-lift^1
 air-hex-air-v1^^^^HER^UD^848^Hex Air^^^^^^192^en|Hex Air|^^air-hex-air^1
@@ -930,7 +931,7 @@ air-pegasus-airlines-v1^^1990-01-01^^PGT^PC^624^Pegasus Airlines^^^^^http://en.w
 air-pegasus-asia-v1^^2006-01-01^^MBB^ZM^887^Pegasus Asia^Air Manas^^^^http://en.wikipedia.org/wiki/Pegasus_Asia^1721^en|Pegasus Asia|=en|Air Manas|^^air-pegasus-asia^1
 air-penair-v1^^^^PEN^KS^339^Penair^Pen Air^^^^^17477^en|Penair|=en|Pen Air|^^air-penair^1
 air-peoples-viennaline-v1^^^^PEV^PE^335^Peoples Viennaline^^^^^^1088^en|Peoples Viennaline|^^air-peoples-viennaline^1
-air-perimeter-aviation-v1^^^^^YP^0^Perimeter Aviation^^^^^^^en|Perimeter Aviation|^^air-perimeter-aviation^1
+air-perimeter-aviation-v1^^1960-01-01^^PAG^YP^0^Perimeter Aviation^^^^^http://en.wikipedia.org/wiki/Perimeter_Aviation^^en|Perimeter Aviation|^YWG^air-perimeter-aviation^1
 air-perla-airlines-v1^1^^2015-01-01^PLV^DP^0^Perla Airlines^Air 2000^^^^http://www.airlineupdate.com/content_public/airlines/airlines-venezuela/perla.htm^^en|Perla Airlines|=en|Air 2000|^^air-perla-airlines^1
 air-peruvian-air-lines-v1^^2008-10-29^^PVN^P9^602^Peruvian Airlines^^^^^http://en.wikipedia.org/wiki/Peruvian_Airlines^15114^en|Peruvian Airlines|^^air-peruvian-air-lines^1
 air-petra-airlines-v1^^^^PTR^9P^311^Air Arabia Jordan^Petra Airlines^^^^http://en.wikipedia.org/wiki/Air_Arabia_Jordan^939^en|Air Arabia Jordan|=en|Petra Airlines|^^air-petra-airlines^1
@@ -1060,7 +1061,8 @@ air-sky-express-greece-v1^^2005-07-01^^SEH^GQ^0^Sky Express^Cretan Aeronautical 
 air-sky-express-v1^1^2007-01-29^2011-10-29^SXR^XW^0^Sky Express^^^^^http://en.wikipedia.org/wiki/Sky_Express^^en|Sky Express|^^air-sky-express^1
 air-skyking-v1^^^^SGB^F3^0^Skyking^Fly 1st Class^^^^^^en|Skyking|=en|Fly 1st Class|^^air-skyking^1
 air-skymark-airlines-v1^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^http://en.wikipedia.org/wiki/Skymark_Airlines^44913^en|Skymark Airlines|^^air-skymark-airlines^1
-air-skynet-asia-v1^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^33186^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^^air-skynet-asia^1
+air-skynet-asia-v1^1^1997-01-01^2014-02-28^SNJ^LQ^0^Skynet Asia Airways^^^^^http://en.wikipedia.org/wiki/List_of_defunct_airlines_of_Japan^^en|Skynet Asia Airways|^HND^air-skynet-asia^1
+air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^33186^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^HND^air-skynet-asia^2
 air-sky-regional-airlines-v1^^^^^RS^0^Sky Regional Airlines^^^^^^^en|Sky Regional Airlines|^^air-sky-regional-airlines^1
 air-skystar-airways-v1^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways^^en||=en|SkyStar Airways|^^air-skystar-airways^1
 air-sky-taxi-v1^^2000-01-01^^IGA^TE^0^Sky Taxi^^^^^http://en.wikipedia.org/wiki/SkyTaxi_%28airline%29^438^en|Sky Taxi|^^air-sky-taxi^1
@@ -1261,6 +1263,7 @@ air-w-caribbean-cr-v1^^^^^0W^0^W Caribbean Costa Rica^^^^^^^en|W Caribbean Costa
 air-welcome-air-v1^1^2000-05-01^2015-03-31^WLC^2W^0^Welcome Air^^^^^http://en.wikipedia.org/wiki/Welcome_Air^^en|Welcome Air|^^air-welcome-air^1
 air-west-african-airlines-v1^^^^^WH^764^West African Airlines^^^^^http://en.wikipedia.org/wiki/West_African_Airlines^^en|West African Airlines|^^air-west-african-airlines^1
 air-west-air-sweden-v1^1^1955-01-01^2015-04-01^SWN^PT^0^West Air Sweden^^^^^http://en.wikipedia.org/wiki/West_Air_Sweden^^en|West Air Sweden|^^air-west-air-sweden^1
+air-westcoast-air-v1^1^1996-01-01^2010-03-31^YWZ^8O^^Westcoast Air^^^^^http://en.wikipedia.org/wiki/Westcoast_Air^^en|Westcoast Air|^YVR^air-westcoast-air^1
 air-westjet-encore-v1^^2013-06-24^^WEN^WR^838^WestJet Encore^^^^^http://en.wikipedia.org/wiki/WestJet_Encore^^en|WestJet Encore|^^air-westjet-encore^1
 air-westjet-v1^^1996-02-29^^WJA^WS^838^WestJet^^^^^http://en.wikipedia.org/wiki/WestJet^227124^en|WestJet|^^air-westjet^1
 air-west-wind-aviation-v1^^1983-01-01^^WEW^^^West Wind Aviation^^^^^http://en.wikipedia.org/wiki/West_Wind_Aviation^^en|Pronto Airways|=en|West Wind Aviation|^^air-west-wind-aviation^1
