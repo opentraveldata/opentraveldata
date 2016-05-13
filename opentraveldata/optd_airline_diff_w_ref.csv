@@ -44,6 +44,7 @@
 2Z^2^<>Passaredo
 3B^2^<>Job Air
 3C^1^Calima Aviacion<>
+3D^2^<>Denim Air
 3G^1^AsiaCargo Express<>Gambia Bird Airlines Ltd
 3H^2^<>Air Inuit
 3K^1^Jetstar Asia Airways<>Jetstar Asia
@@ -97,6 +98,7 @@
 5P^2^Aerolinea Principal Chile<>
 5Q^1^BQB Líneas Aéreas<>Bqb Lineas Aereas
 5Q^2^<>Bqb Lineas
+5R^1^RUTACA Airlines<>Karthago Airlines
 5R^2^<>Karthago Air
 5T^2^<>Canadiannorth
 5U^1^Transportes Aéreos Guatemaltecos<>Transportes Aereos
@@ -200,6 +202,7 @@ A2^2^<>Astra Airline
 A3^2^<>Aegean Air
 A5^1^HOP!<>Hop
 A5^2^<>Airlinair
+A6^1^Yunnan Hongtu Airline<>Yunnan Hong Tu Airlines
 A7^2^<>Air Comet
 A8^1^Aerolink Uganda<>Aerolink Uganda Limited
 A8^2^<>Benin Golf
@@ -238,7 +241,6 @@ AIE^2^<>Air Inuit
 AIJ^2^<>Interjet
 AIQ^1^Thai AirAsia<>Thai Airasia
 AIQ^2^<>Thai Airasia
-AJD^2^GB Airways<>Gb Airways
 AJX^1^Air Japan<>Air Japan Company Ltd
 AK^1^AirAsia<>Airasia Sdn Bhd
 AK^2^<>Airasia
@@ -595,7 +597,6 @@ G3^1^Gol Transportes Aéreos<>Vrg Linhas Aereas S A
 G3^2^VRG Linhas Aéreas<>Vrg Linhas As
 G4^2^<>Guizhou Air
 G5^2^<>Jsc Air Enkor
-G6^1^<>Ghadames Air Transport
 G7^1^GoJet Airlines<>Gojet Airlines
 G8^1^GoAir<>Go Airlines
 GA^2^<>Garuda
@@ -618,6 +619,8 @@ GIA^2^<>Garuda
 GJS^1^GoJet Airlines<>Gojet Airlines
 GLA^1^Great Lakes Airlines<>Great Lakes Aviation
 GLA^2^<>Great Lakes
+GLO^1^Gol Transportes Aéreos<>Vrg Linhas Aereas S A
+GLO^2^VRG Linhas Aéreas<>Vrg Linhas As
 GM^1^Germania Flug<>Germania Flug Ag
 GM^2^<>Germania Flug
 GMI^2^<>Germania
@@ -625,14 +628,12 @@ GN^2^<>Air Gabon
 GNR^1^<>Gambia Intl Airlines
 GNR^2^<>Gambia Intl
 GO^1^Go<>
-GOL^1^<>Vrg Linhas Aereas S A
-GOL^2^<>Vrg Linhas As
 GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
 GQ^2^Cretan Aeronautical Exploitations<>Sky Express
 GR^2^<>Aurigny Air
 GS^2^<>Tianjin
-GT^2^GB Airways<>Gb Airways
+GT^2^<>Gb Airways
 GU^2^<>Aviateca
 GUG^2^<>Aviateca
 GV^1^Grant Aviation<>
@@ -651,6 +652,7 @@ H4^1^Aero4M<>Aero4m
 H5^1^<>European Coastal Airlines Ltd
 H5^2^<>Magadan
 H6^1^Hageland Aviation Services<>Bulgarian Air Charter
+H8^2^<>Auric Air
 HA^2^<>Hawaiian Air
 HAL^2^<>Hawaiian Air
 HAY^1^<>Skippers Aviation Pty
@@ -673,6 +675,7 @@ HR^2^<>Hahn Air
 HRM^1^<>Hermes Airlines
 HRM^2^<>Harbour Air
 HS^1^Heli Sécurité<>Heli Securite Helicopter Airline
+HTU^1^Yunnan Hongtu Airline<>Yunnan Hong Tu Airlines
 HU^2^<>Hainan Air
 HV^2^<>Transavia
 HVN^2^<>Vietnam Air
@@ -1504,6 +1507,7 @@ XL^2^<>Lan Ecuador
 XLF^1^XL Airways France<>Xl Airways France
 XM^1^<>C A I First S P A
 XM^2^<>Cai First Spa
+XN^1^XpressAir<>Travel Express Aviation
 XP^2^<>Xtra Airways
 XQ^1^SunExpress<>Sun Express
 XQ^2^Güneş Ekspress Havacılık<>Sun Express
