@@ -1,4 +1,4 @@
 airline_code^por_issue^por_base^env_id^date_from^date_to^comment
-P2^MIG^MRE^^^As of May 2016, MIG is Mianyang Nanjiao Airport (Geonames ID: 7730302), China, and cannot be an airport served by Airkenya Express
-BU^MNN^MJM^^^As of May 2016, MNN is Marion Municipal Airport (Geonames ID: 5161923), Ohio (OH), USA, and cannot be an airport served by Compagnie Africaine d'Aviation, especially as the only flight is KWZ to MNN, without flight in the other direction
-GJ^BFG^HGH^^^As of May 2016, BFG is Bullfrog Basin Airport (Geonames ID: 5536135), Utah (UT), USA, and cannot be an airport served by Loong Air, which serves only Chinese domestic destinations
+P2^MIG^MRE^^^^As of May 2016, MIG is Mianyang Nanjiao Airport (Geonames ID: 7730302), China, and cannot be an airport served by Airkenya Express
+BU^MNN^MJM^^^^As of May 2016, MNN is Marion Municipal Airport (Geonames ID: 5161923), Ohio (OH), USA, and cannot be an airport served by Compagnie Africaine d'Aviation, especially as the only flight is KWZ to MNN, without flight in the other direction
+GJ^BFG^HGH^^^^As of May 2016, BFG is Bullfrog Basin Airport (Geonames ID: 5536135), Utah (UT), USA, and cannot be an airport served by Loong Air, which serves only Chinese domestic destinations
