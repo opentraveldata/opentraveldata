@@ -52,6 +52,10 @@ BEGIN {
 	por_wrong_ref_list["QQV"] = 1; por_wrong_ref_list["QQZ"] = 1
 	por_wrong_ref_list["VVE"] = 1; por_wrong_ref_list["VWY"] = 1
 	por_wrong_ref_list["XXX"] = 1; por_wrong_ref_list["ZZW"] = 1
+	# Moreover, the reference data still keeps a few POR, which have been
+	# deprecated by IATA; so, it an error. Those POR must not be added
+	# to the output CSV data file.
+	por_wrong_ref_list["SGS"] = 1; por_wrong_ref_list["SHP"] = 1
 
     # Separators
 	K_TGT_SEP = ";"
