@@ -15,7 +15,9 @@ ITU^BVV^R^^^^As of May 2016, ITU and BVV are in ITU/Iturup Island, Sakhalin, Rus
 IUS^IUS^R^^^^As of May 2016, IUS/Inus, Papua New Guinea (PG), cannot be distinguished from WKN/Wakunai
 JHL^JHL^R^^^^As of May 2016, JHL is in HZP/Fort MacKay, Alberta, Canada (CA)
 JQJ^JIQ^R^^^^As of May 2016, JQJ is in JQJ/Qianjiang, Hubei, China (CN), not in JIQ/Qianjiang, Chongqing, China (CN), 404km from each other
-JYQ^YDD^R^^^^As of May 2016, JYQ and YDD are in YKH/Yingkou, Liaoning, China (CN)
+JYQ^YDD^R^^^^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
+YDD^YDD^NR^^^^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
+YKH^YDD^NR^^^^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
 MJI^MJI^R^^^^As of May 2016, MJI is in TIP/Tripoli, Libya (LY)
 OBT^ODM^R^^^^As of May 2016, OBT is in OAK/Oakland, California (CA), USA, not in ODM/Oakland, Maryland (MD), USA, thousands of km away
 OGM^OGM^R^^^^As of May 2016, OGM/Ustupo and UTU/Ustupo are the same place in Guna Yala, Panama (PA)
@@ -30,3 +32,4 @@ THW^THW^R^^^^As of May 2016, THW is in TRR/Trincomalee, Sri Lanka (LK)
 UWE^UWE^R^^^^As of May 2016, UWE is in WIE/Wiesbaden, Germany (DE)
 WIE^UWE^R^^^^As of May 2016, WIE is in WIE/Wiesbaden, Germany (DE)
 VUU^BLZ^R^^^^As of May 2016, VUU/Mvuu Camp is in VUU/Liwonde, Malawi (MW). BLZ/Blantyre-Chileka is 100km from VUU
+XFW^XFW^R^^^^As of May 2016, XFW is in HAM/Hamburg, Germany (DE)
