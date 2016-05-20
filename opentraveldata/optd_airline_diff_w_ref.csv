@@ -83,6 +83,7 @@
 4Z^2^<>Sa Airlink
 5D^1^Aeroméxico Connect<>Aerolitoral
 5D^2^Aeromexico Connect<>
+5F^2^<>Bonaire Air
 5G^1^Fly 540 Ghana<>540 Ghana
 5G^2^Skyservice Ghana<>Skyservice
 5H^2^<>Five Fourty
@@ -219,7 +220,6 @@ AC^2^<>Air Canada
 ACA^2^<>Air Canada
 AD^1^Azul Brazilian Airlines<>Azul Linhas Aereas Brasileiras
 AD^2^Azul Linhas Aéreas Brasileiras<>Azul Linhas
-ADH^1^<>Airone S P A
 ADO^1^Air Do<>Airdo
 ADO^2^Hokkaido International Airlines<>
 ADR^2^<>Adria
@@ -263,7 +263,7 @@ ANE^2^<>Air Nostrum
 ANG^2^<>Air Niugini
 ANO^2^Capiteq Limited<>Airnorth
 AOG^1^<>Aero Vip
-AP^1^<>Airone S P A
+AP^1^AlbaStar<>Alba Star
 APD^1^Fantasia Info Network<>Fantasia Info Network Lt
 APF^1^Amapola Flyg<>Amapola Flyg Ab
 AR^1^Aerolíneas Argentinas<>Aerolineas Argentinas
@@ -507,6 +507,7 @@ E3^1^New Gen Airways<>New Gen
 E3^2^Sabaidee Airways<>
 E5^2^<>Samara Airl
 E8^2^<>Alpi Eagles
+E9^2^<>Evelop Air
 EAA^1^Air Bishkek<>Air Bishkek Aircompany
 EAA^2^<>Air Bishkek
 EB^2^Pullmantur Air<>Pullmantur
@@ -543,6 +544,7 @@ ETH^2^<>Ethiopian
 EV^1^ExpressJet<>Expressjet Airlines
 EVA^1^EVA Air<>Eva Air
 EVA^2^<>Eva Airways
+EVE^2^<>Evelop Air
 EW^2^<>Eurowings
 EWG^2^<>Eurowings
 EXS^1^Jet2.com<>Jet2 Com
@@ -568,6 +570,7 @@ FDY^1^Sun Air Express<>Sun Air Express Llc
 FE^1^Far Eastern Air Transport<>Far Eastern
 FFV^2^<>Five Fourty
 FI^2^<>Icelandair
+FIA^2^<>Bonaire Air
 FIN^2^<>Finnair
 FLE^2^<>Air Montreal
 FLG^2^<>Endeavor Air
@@ -674,7 +677,7 @@ HP^1^Amapola Flyg<>Amapola Flyg Ab
 HR^2^<>Hahn Air
 HRM^1^<>Hermes Airlines
 HRM^2^<>Harbour Air
-HS^1^Heli Sécurité<>Heli Securite Helicopter Airline
+HS^1^SprintAir<>Sprintair
 HTU^1^Yunnan Hongtu Airline<>Yunnan Hong Tu Airlines
 HU^2^<>Hainan Air
 HV^2^<>Transavia
@@ -876,7 +879,8 @@ LRS^1^SANSA Airlines<>Sansa
 LRS^2^<>Pan Am Exp
 LS^1^Jet2.com<>Jet2 Com
 LTD^2^Executive Express Aviation<>
-LU^1^LAN Express<>Lan Express
+LU^1^LAN Express<>Latam Airlines Chile
+LU^2^<>Theron Air
 LY^1^El Al<>El Al Israel Airlines
 LY^2^El Al Israel Airlines<>El Al
 LYN^1^Air Kyrgyzstan<>Ojsc Air Kyrgyzstan
@@ -1406,11 +1410,14 @@ VJC^1^VietJet Air<>Vietjet Aviation
 VJC^2^<>Vietjet
 VK^1^Air Nigeria<>Air Vallee
 VKG^1^Thomas Cook Airlines<>Thomas Cook Airlines A S
-VL^1^Air Via<>Med View Airlines
+VL^1^Med-View Airline<>Med View Airlines
+VL^2^<>Med View Air
 VLE^1^<>C A I Second S P A
 VLE^2^<>C A I Second
 VLG^1^Vueling<>Vueling Airlines
 VLG^2^<>Vueling
+VLM^1^VLM Airlines<>Vlm
+VLM^2^<>Vlm Airlines
 VLU^1^<>Valuair
 VM^1^Max Air<>Max Air Limited
 VM^2^<>Viaggio Air
