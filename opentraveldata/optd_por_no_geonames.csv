@@ -24,7 +24,6 @@ CST^^^N^0^^Castaway Island FJ Spb^Castaway Island FJ Spb^-17.62^177.1^S^AIRP^^^^
 CUX^^^N^0^^Corpus Christi TX US Cuddihy^Corpus Christi TX US Cuddihy^27.72^-97.51^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CRP^^^^TX^A^^^74^Texas
 CXE^^^N^0^^Central Railway Stn GB Centra^Central Railway Stn GB Centra^53.1967^-2.87944^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^CEG^^^^^R^^^493^United Kingdom
 CXX^^^N^0^^Carlisle GB Central Railway St^Carlisle GB Central Railway St^54.8906^-2.93333^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^CAX^^^^^R^^^493^United Kingdom
-CYE^^^N^0^^Crystal Lake PA US^Crystal Lake PA US^41.2^-75.82^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^CYE^Crystal Lake PA US^CYE|0|Crystal Lake PA US|Crystal Lake PA US^CYE^PA^CA^^^23^Pennsylvania
 CZT^^^N^0^^Carrizo Springs TX US Dimmit C^Carrizo Springs TX US Dimmit C^28.52^-99.87^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CZT^Carrizo Springs TX US Dimmit C^CZT|0|Carrizo Springs TX US Dimmit C|Carrizo Springs TX US Dimmit C^CZT^TX^CA^^^74^Texas
 DCK^^^N^0^^Dahl Creek AK US Dahl Creek^Dahl Creek AK US Dahl Creek^66.93^-156.9^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^DCK^Dahl Creek AK US Dahl Creek^DCK|0|Dahl Creek AK US Dahl Creek|Dahl Creek AK US Dahl Creek^DCK^AK^CA^^^1^Alaska
 DDI^^^N^0^^Daydream Island QL AU Heliport^Daydream Island QL AU Heliport^-20.17^148.2^S^AIRH^^^^^AU^^Australia^Oceania^^^^^^^^^^^^Australia/Brisbane^^^^-1^DDI^Daydream Island QL AU Heliport^DDI|0|Daydream Island QL AU Heliport|Daydream Island QL AU Heliport^DDI^QL^CH^^^802^Australia
@@ -35,7 +34,6 @@ DRX^^^N^0^^Dresden DE Bus Station^Dresden DE Bus Station^51.0403^13.7306^S^BUSTN
 DUK^^^N^0^^Mtubatuba ZA Dukuduku^Mtubatuba ZA Dukuduku^-28.37^32.23^S^AIRP^^^^^ZA^^South Africa^Africa^^^^^^^^^^^^Africa/Johannesburg^^^^-1^DUK^Mtubatuba ZA Dukuduku^DUK|0|Mtubatuba ZA Dukuduku|Mtubatuba ZA Dukuduku^DUK^^CA^^^562^South Africa
 DUQ^^^N^0^^Duncan BC CA^Duncan BC CA^48.7833^-123.7^S^AIRP^^^^^CA^^Canada^North America^^^^^^^^^^^^America/Canada^^^^-1^DUQ^Duncan BC CA^DUQ|0|Duncan BC CA|Duncan BC CA^DUQ^BC^CA^^^906^British Columbia
 DWS^^^N^0^^Orlando FL US Disney World^Orlando FL US Disney World^28.53^-81.35^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ORL^^^^FL^A^^^33^Florida
-EBR^^^N^0^^Baton Rouge LA US Downtown^Baton Rouge LA US Downtown^30.53^-91.15^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^BTR^^^^LA^A^^^72^Louisiana
 ECC^^^N^0^^East Coast Cities NY US^East Coast Cities NY US^40.78^-73.97^P^PPLC^^2013-07-01^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^ECC^East Coast Cities NY US^ECC|0|East Coast Cities NY US|East Coast Cities NY US^ECC^NY^O^^^22^New York
 EFW^^^N^0^^Jefferson IA US Municipal^Jefferson IA US Municipal^42.02^-94.38^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^EFW^Jefferson IA US Municipal^EFW|0|Jefferson IA US Municipal|Jefferson IA US Municipal^EFW^IA^CA^^^61^Iowa
 EJJ^^^N^0^^Jingzhou CN Railway Station^Jingzhou CN Railway Station^30.3728^112.207^S^RSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^SHS^^^^^R^^^713^China
@@ -102,7 +100,6 @@ JCX^^^N^0^^Los Angeles CA US Citicorp^Los Angeles CA US Citicorp^34.05^-118.3^S^
 JCY^^^N^0^^Johnson TX US Lbj Ranch^Johnson TX US Lbj Ranch^32.33^-97.33^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^JCY^Johnson TX US Lbj Ranch^JCY|0|Johnson TX US Lbj Ranch|Johnson TX US Lbj Ranch^JCY^TX^CA^^^74^Texas
 JDK^^^N^0^^Pseudo NY US Pseudo City Code^Pseudo NY US Pseudo City Code^40.6386^-73.7622^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^JDK^Pseudo NY US Pseudo City Code^JDK|0|Pseudo NY US Pseudo City Code|Pseudo NY US Pseudo City Code^JDK^NY^CA^^^22^New York
 JDM^^^N^0^^Miami FL US Downtown Heliport^Miami FL US Downtown Heliport^25.8^-80.3^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^MIA^^^^FL^H^^^33^Florida
-JDT^^^N^0^^Minneapolis MN US Downtown Hpt^Minneapolis MN US Downtown Hpt^44.97^-93.24^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^MSP^^^^MN^H^^^63^Minnesota
 JDX^^^N^0^^Houston TX US First City Helip^Houston TX US First City Helip^29.77^-95.33^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^B^^^74^Texas
 JEV^^^N^0^^Evry FR^Evry FR^48.63^2.567^P^PPLC^^^^^FR^^France^Europe^^^^^^^^^^^^Europe/Paris^^^^-1^JEV^Evry FR^JEV|0|Evry FR|Evry FR^JEV^^O^^^427^France
 JGE^^^N^0^^Geoje KR Heliport^Geoje KR Heliport^34.9^128.7^S^AIRH^^^^^KR^^South Korea^Asia^^^^^^^^^^^^Asia/Seoul^^^^-1^JGE^Geoje KR Heliport^JGE|0|Geoje KR Heliport|Geoje KR Heliport^JGE^^CH^^^778^South Korea
@@ -117,9 +114,7 @@ JOR^^^N^0^^Orange CA US The City Heliport^Orange CA US The City Heliport^33.78^-
 JPD^^^N^0^^Pasadena CA US Heliport^Pasadena CA US Heliport^34.17^-118.2^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^JPD^Pasadena CA US Heliport^JPD|0|Pasadena CA US Heliport|Pasadena CA US Heliport^JPD^CA^CH^^^91^California
 JQF^^^N^0^^Moscow RU Savelovsky Railway S^Moscow RU Savelovsky Railway S^55.7942^37.5881^S^RSTN^^^^^RU^^Russia^Europe^^^^^^^^^^^^Europe/Moscow^^^^-1^MOW^^^^^R^^^770^Russia (Asian Part)
 JQO^^^N^0^^Moscow RU Belorussky Railway S^Moscow RU Belorussky Railway S^55.7764^37.5803^S^RSTN^^^^^RU^^Russia^Europe^^^^^^^^^^^^Europe/Moscow^^^^-1^MOW^^^^^R^^^770^Russia (Asian Part)
-JRC^^^N^0^^Rochester MN US Mnpl Hpt^Rochester MN US Mnpl Hpt^44.02^-92.48^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^RST^^^^MN^H^^^63^Minnesota
 JSD^^^N^0^^Stratford CT US Sikorsky Hpt^Stratford CT US Sikorsky Hpt^41.2^-74.63^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^JSD^Stratford CT US Sikorsky Hpt^JSD|0|Stratford CT US Sikorsky Hpt|Stratford CT US Sikorsky Hpt^JSD^CT^CH^^^11^Connecticut
-JSK^^^N^0^^Saint Cloud MN US Mncpl Hpt^Saint Cloud MN US Mncpl Hpt^45.55^-94.06^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^STC^^^^MN^H^^^63^Minnesota
 JTO^^^N^0^^Thousand Oaks CA US Heliport^Thousand Oaks CA US Heliport^34.08^-118.9^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^JTO^Thousand Oaks CA US Heliport^JTO|0|Thousand Oaks CA US Heliport|Thousand Oaks CA US Heliport^JTO^CA^CH^^^91^California
 JWC^^^N^0^^Los Angeles CA US Warner Cntr^Los Angeles CA US Warner Cntr^33.28^-116.7^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^LAX^^^^CA^B^^^91^California
 JWH^^^N^0^^Houston TX US Westchase Helipo^Houston TX US Westchase Helipo^29.73^-95.53^S^AIRH^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^HOU^^^^TX^H^^^74^Texas
@@ -133,7 +128,6 @@ KXD^^^N^0^^Kondinskoye RU^Kondinskoye RU^59.65^67.4333^P^PPLC^^^^^RU^^Russia^Eur
 KXN^^^N^0^^Kendal GB Oxenholme Rail Stn^Kendal GB Oxenholme Rail Stn^54.3053^-2.72194^S^RSTN^^^^^GB^^United Kingdom^Europe^^^^^^^^^^^^Europe/London^^^^-1^KXN^Kendal GB Oxenholme Rail Stn^KXN|0|Kendal GB Oxenholme Rail Stn|Kendal GB Oxenholme Rail Stn^KXN^^CR^^^493^United Kingdom
 KZZ^^^N^0^^Wuzhou CN Railway Stn^Wuzhou CN Railway Stn^23.4894^111.235^S^RSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^WUZ^^^^^R^^^713^China
 LJR^^^N^0^^Ljubljana SI Railway Station^Ljubljana SI Railway Station^46.0589^14.5131^S^RSTN^^^^^SI^^Slovenia^Europe^^^^^^^^^^^^Europe/Ljubljana^^^^-1^LJU^^^^^R^^^481^Slovenia
-LKI^^^N^0^^Duluth MN US Lakeside Usaf^Duluth MN US Lakeside Usaf^46.84^-92.19^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^DLH^^^^MN^A^^^63^Minnesota
 LKK^^^N^0^^Kulik Lake AK US^Kulik Lake AK US^58.97^-155.1^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Anchorage^^^^-1^LKK^Kulik Lake AK US^LKK|0|Kulik Lake AK US|Kulik Lake AK US^LKK^AK^CA^^^1^Alaska
 LOF^^^N^0^^Loen Island MH^Loen Island MH^7.8^168.3^S^AIRP^^^^^MH^^Marshall Islands^Oceania^^^^^^^^^^^^Pacific/Majuro^^^^-1^LOF^Loen Island MH^LOF|0|Loen Island MH|Loen Island MH^LOF^^CA^^^844^Marshall Islands
 LOG^^^N^0^^Longview WA US^Longview WA US^46.12^-122.9^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Los_Angeles^^^^-1^LOG^Longview WA US^LOG|0|Longview WA US|Longview WA US^LOG^WA^CA^^^93^Washington
@@ -162,7 +156,6 @@ MUV^^^N^0^^Philadelphia PA US Mustin Alf^Philadelphia PA US Mustin Alf^39.73^-75
 MWS^^^N^0^^Mount Wilson CA US^Mount Wilson CA US^33.17^-105.8^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^MWS^Mount Wilson CA US^MWS|0|Mount Wilson CA US|Mount Wilson CA US^MWS^CA^CA^^^91^California
 NAX^^^N^0^^Barbers Point HI US^Barbers Point HI US^21.32^-158^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^Pacific/Honolulu^^^^-1^NAX^Barbers Point HI US^NAX|0|Barbers Point HI US|Barbers Point HI US^NAX^HI^CA^^^2^Hawaii
 NBP^^^N^0^^New York NY US Battery Pk City^New York NY US Battery Pk City^40.73^-73.97^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^NYC^^^^NY^A^^^22^New York
-NDP^^^N^0^^Pensacola FL US Ellyson Nas^Pensacola FL US Ellyson Nas^30.47^-87.34^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^PNS^^^^FL^A^^^33^Florida
 NEN^^^N^0^^Whitehouse FL US Olf Usn^Whitehouse FL US Olf Usn^30.33^-81.88^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^NEN^Whitehouse FL US Olf Usn^NEN|0|Whitehouse FL US Olf Usn|Whitehouse FL US Olf Usn^NEN^FL^CA^^^33^Florida
 NFF^^^N^0^^Nanhai CN Cz Bus Station^Nanhai CN Cz Bus Station^23.0378^113.152^S^BUSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^ZEF^^^^^B^^^713^China
 NGF^^^N^0^^Kaneohe Bay HI US Mcas^Kaneohe Bay HI US Mcas^21.4458^-157.77^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/USA^^^^-1^NGF^Kaneohe Bay HI US Mcas^NGF|0|Kaneohe Bay HI US Mcas|Kaneohe Bay HI US Mcas^NGF^HI^CA^^^2^Hawaii
@@ -866,7 +859,6 @@ ZYG^^^N^0^^Gjovik NO Railway Station^Gjovik NO Railway Station^60.8^10.69^S^RSTN
 ZYJ^^^N^0^^Porto PT Tp Bus Station^Porto PT Tp Bus Station^41.13^-0.1436^S^BUSTN^^^^^PT^^Portugal^Europe^^^^^^^^^^^^Europe/Madrid^^^^-1^OPO^^^^^B^^^469^Portugal
 ZYP^^^N^0^^New York NY US Penn Railway St^New York NY US Penn Railway St^40.68^-74.17^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^NYC^^^^NY^R^^^22^New York
 ZYQ^^^N^0^^Syracuse NY US Railway Station^Syracuse NY US Railway Station^43.12^-76.12^S^RSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/New_York^^^^-1^SYR^^^^NY^R^^^22^New York
-ZYT^^^N^0^^Maastricht NL Railway Station^Maastricht NL Railway Station^50.92^5.783^S^RSTN^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^MST^^^^^R^^^461^Netherlands
 ZYU^^^N^0^^Utrecht NL Centraal Railway St^Utrecht NL Centraal Railway St^52.12^5.267^S^RSTN^^^^^NL^^Netherlands^Europe^^^^^^^^^^^^Europe/Amsterdam^^^^-1^UTC^^^^^R^^^461^Netherlands
 ZYV^^^N^0^^Vegarshei NO Railway Station^Vegarshei NO Railway Station^58.76^8.853^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZYV^Vegarshei NO Railway Station^ZYV|0|Vegarshei NO Railway Station|Vegarshei NO Railway Station^ZYV^^CR^^^465^Norway
 ZYW^^^N^0^^Sandvika NO Railway Station^Sandvika NO Railway Station^59.89^10.88^S^RSTN^^^^^NO^^Norway^Europe^^^^^^^^^^^^Europe/Oslo^^^^-1^ZYW^Sandvika NO Railway Station^ZYW|0|Sandvika NO Railway Station|Sandvika NO Railway Station^ZYW^^CR^^^465^Norway
