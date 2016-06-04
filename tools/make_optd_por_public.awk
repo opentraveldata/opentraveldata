@@ -8,7 +8,6 @@
 #    * Time-zones for a few POR:            optd_por_tz.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
-#    * Non-Geonames referential data:       optd_por_no_geonames.csv
 #    * Country states:                      optd_country_states.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
@@ -214,7 +213,6 @@ BEGIN {
     #
     registerPageRankValue(iata_code, por_type, $0, FNR, pr_value)
 }
-
 
 ##
 # File of country states (optd_country_states.csv)
