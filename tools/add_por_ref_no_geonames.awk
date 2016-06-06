@@ -25,8 +25,11 @@ BEGIN {
 	error_stream = "/dev/stderr"
 	awk_file = "add_por_ref_no_geonames.awk"
 
-	#
+	# List of POR known to be still valid in
+	# the reference data, but no longer valid
+	# in OPTD
 	delete optd_por_ref_dpctd_list
+	optd_por_ref_dpctd_list_file = "optd_por_ref_exceptions.csv"
 
     #
 	today_date = mktime ("YYYY-MM-DD")
@@ -64,6 +67,8 @@ BEGIN {
 		# Check that the POR is not known to be an exception
 		if (!(iata_code in optd_por_ref_dpctd_list)) {
 			print ($0)
+		} else {
+			delete optd_por_ref_dpctd_list[iata_code]
 		}
 
 	} else {
@@ -74,4 +79,11 @@ BEGIN {
 
 
 END {
+	for (iata_code in optd_por_ref_dpctd_list) {
+		print ("[" awk_file "] !!!! Warning: " iata_code \
+				" is still referenced in the '" \
+				optd_por_ref_dpctd_list_file "' file, " \
+				"but has disappeared from reference data. ") > error_stream
+	}
 }
+
