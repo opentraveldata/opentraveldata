@@ -29,6 +29,7 @@ BEGIN {
     # Global variables
     error_stream = "/dev/stderr"
     awk_file = "extract_non_geonames_por.awk"
+	optd_por_tz_wrong_file = "../opentraveldata/optd_por_tz_wrong.csv"
 
     # Lists
     ctry_name_list["ZZ"] = "Not relevant/available"
@@ -525,10 +526,12 @@ function getContinentName(myCountryCode) {
 			if (time_zone_id == "") {
 				time_zone_id = getTimeZoneFromCountryCode(country_code)
 
+				# Reporting
 				print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
 					   "for the record #" FNR " - Default time-zone: "	\
 					   time_zone_id ". Record: " $0)					\
 					> error_stream
+				print ($0) > optd_por_tz_wrong_file
 			}
 			continent_name = getContinentName(country_code)
 			# continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
