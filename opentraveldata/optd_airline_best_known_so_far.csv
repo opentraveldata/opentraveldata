@@ -54,7 +54,7 @@ air-air-asia-indonesia-extra-v1^^2014-12-26^^INX^XT^0^^Indonesia AirAsia X^^^^ht
 air-air-asia-japan-v1^^2012-08-01^^WAJ^DJ^0^AirAsia Japan^^^^^http://en.wikipedia.org/wiki/AirAsia_Japan^en|AirAsia Japan|=ja|エアアジア・ジャパン株式会社|=ja|Eāajia Japan Kabushiki-Gaisha|^^air-air-asia-japan^1
 air-air-asia-philippines-v1^^^2010-12-01^APG^PQ^0^Philippines AirAsia^Panafrican^^^^http://en.wikipedia.org/wiki/Philippines_AirAsia^en|Philippines AirAsia|=en|Panafrican|^^air-air-asia-philippines^1
 air-air-asia-x-v1^^^^XAX^D7^843^AirAsia X^^^^^http://en.wikipedia.org/wiki/AirAsia_X^en|AirAsia X|^^air-air-asia-x^1
-air-air-astana-v1^^2002-05-15^^KZR^KC^465^Air Astana^^^^^http://en.wikipedia.org/wiki/Air_Astana^en|Air Astana|^^air-air-astana^1
+air-air-astana-v1^^2002-05-15^^KZR^KC^465^Air Astana^^^^^http://en.wikipedia.org/wiki/Air_Astana^en|Air Astana|^TSE^air-air-astana^1
 air-air-austral-v1^^1975-01-01^^REU^UU^760^Air Austral^^^^^http://en.wikipedia.org/wiki/Air_Austral^en|Air Austral|^^air-air-austral^1
 air-air-azul-v1^^^^LOC^ZQ^0^Air Azul^Carribean Sun^^^^^en|Air Azul|=en|Carribean Sun|^^air-air-azul^1
 air-air-bagan-v1^^^^^W9^17^Air Bagan^^^^^^en|Air Bagan|^^air-air-bagan^1
@@ -445,6 +445,7 @@ air-flydamas-v1^^^^^4J^0^Flydamas Airlines^^^^^^en|Flydamas Airlines|^^air-flyda
 air-flydubai-v1^^2009-06-01^^FDB^FZ^141^flydubai^Dubai Aviation Corporation^^^^http://en.wikipedia.org/wiki/Flydubai^en|flydubai|=en|Dubai Aviation Corporation|^^air-flydubai^1
 air-flyegypt-v1^^2015-02-12^^^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/FlyEgypt^en|FlyEgypt|^KWI^air-flyegypt^1
 air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
+air-fly-all-ways-airlines-v1^^2016-01-22^^EDR^8W^0^Fly All Ways Airlines^^^^^http://en.wikipedia.org/wiki/Fly_All_Ways^en|Fly All Ways Airlines|^PBM^air-fly-all-ways-airlines^1
 air-fly-blue-crane-v1^^2015-09-01^^^7B^562^Fly Blue Crane^^^^^http://en.wikipedia.org/wiki/Fly_Blue_Crane^en|Fly Blue Crane|^JNB^air-fly-blue-crane^1
 air-fly-caminter-v1^^2016-03-17^^^EF^448^Fly CamInter^^^^^^en|Fly CamInter|=en|Equa2C|h^DLA^air-fly-caminter^1
 air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^BNE^air-fly-corporate^1
@@ -537,7 +538,6 @@ air-iran-air-v1^^1961-01-01^^IRA^IR^96^Iran Air^^^^^http://en.wikipedia.org/wiki
 air-iran-air-tours-v1^^1973-01-01^^IRB^B9^491^Iran Air Tours^^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours^en|Iran Air Tours|^^air-iran-air-tours^1
 air-iran-aseman-airlines-v1^^1980-01-01^^IRC^EP^815^Iran Aseman Airlines^^^^^http://en.wikipedia.org/wiki/Iran_Aseman_Airlines^en|Iran Aseman Airlines|^^air-iran-aseman-airlines^1
 air-iranian-naft-airline-v1^^^^IRG^NV^346^Iranian Naft Airline^^^^^^en|Iranian Naft Airline|^^air-iranian-naft-airline^1
-air-iraqi-airways-v1^^^^IAW^IA^73^Iraqi Airways^Iraqi Air^^^^^en|Iraqi Airways|=en|Iraqi Air|^^air-iraqi-airways^1
 air-irtysh-air-v1^^^^MZA^IH^0^Jsc Irtysh Air^Falcon Air^^^^^en|Jsc Irtysh Air|=en|Falcon Air|^^air-irtysh-air^1
 air-island-air-hawaii-v1^^1980-01-01^^MKU^WP^347^Island Air^^^^^http://en.wikipedia.org/wiki/Island_Air_%28Hawaii%29^en|Island Air|^^air-island-air-hawaii^1
 air-island-aviation-services-v1^^2003-05-01^^SOY^Q2^986^Island Aviation^^^^^http://en.wikipedia.org/wiki/Island_Aviation^en|Island Aviation|^^air-island-aviation-services^1
@@ -646,6 +646,7 @@ air-lugansk-airlines-v1^^^^LHS^L7^0^Lugansk Airlines^^^^^^en|Lugansk Airlines|^^
 air-luxair-v1^^^^LGL^LG^149^Luxair^Luxair^^^^^en|Luxair|=en|Luxair|^^air-luxair^1
 air-lydd-air-v1^^1997-01-01^^LYD^^^LyddAir^^^^^http://en.wikipedia.org/wiki/LyddAir^en|LyddAir|^^air-lydd-air^1
 air-lynx-aviation-v1^^^^^L3^0^Lynx Aviation^Ltu Billa Luf^^^^^en|Lynx Aviation|=en|Ltu Billa Luf|^^air-lynx-aviation^1
+air-macair-jet-v1^^1995-01-01^^MCJ^IA^177^Macair Jet^^^^^http://en.wikipedia.org/wiki/Iraqi_Airways^en|Macair Jet|^AEP^air-macair-jet^1
 air-magnum-air-v1^^2012-12-14^^^M8^0^Magnum Air^SkyJet Airlines^^^^http://en.wikipedia.org/wiki/SkyJet^en|Magnum Air|=en|SkyJet Airlines|^^air-magnum-air^1
 air-mahan-airlines-v1^^^^IRM^W5^537^Mahan Airlines^^^^^^en|Mahan Airlines|^^air-mahan-airlines^1
 air-malawian-airlines-v1^^2014-01-31^^MWI^3W^529^Malawian Airlines^^^^^http://en.wikipedia.org/wiki/Malawian_Airlines^en|Malawian Airlines|^^air-malawian-airlines^1
@@ -784,7 +785,6 @@ air-premium-jet-v1^^^^^0J^254^Premium Jet AG^^^^^^en|Premium Jet AG|^^air-premiu
 air-primera-air-v1^^2003-01-01^^PRI^PF^0^Primera Air^^^^^http://en.wikipedia.org/wiki/Primera_Air^en|Primera Air|^^air-primera-air^1
 air-primera-air-nordic-v1^^2015-04-01^^PRW^6F^0^Primera Air Nordic^^^^^http://en.wikipedia.org/wiki/Primera_Air^en|Primera Air Nordic|^^air-primera-air-nordic^1
 air-primera-air-scandinavia-v1^^2003-01-01^^PRI^PF^834^Primera Air Scandinavia^JetX^^^^http://en.wikipedia.org/wiki/Primera_Air^en|Primera Air Scandinavia|=en|JetX|^^air-primera-air-scandinavia^1
-air-private-wings-v1^^^^^8W^0^Private Wings^Private Wings^^^^^en|Private Wings|=en|Private Wings|^^air-private-wings^1
 air-proflight-commuter-v1^^^^PFZ^P0^659^Proflight Commuter^Proflight^^^^^en|Proflight Commuter|=en|Proflight|^^air-proflight-commuter^1
 air-pm-air-v1^^^^^Z3^0^PM Air^^^^P^^en|PM Air|^^air-pm-air^1
 air-psa-airlines-v1^^1995-01-01^^JIA^OH^320^PSA Airlines^^^^^http://en.wikipedia.org/wiki/PSA_Airlines^en|PSA Airlines|=en|Vee Neal Airlines|^^air-psa-airlines^1
