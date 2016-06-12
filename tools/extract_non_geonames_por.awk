@@ -36,7 +36,7 @@ BEGIN {
 
 	# Fix the reference data
 	# IATA references a few "fictitious" or other "test" POR.
-	# By design, those POR are not intended to used in any production
+	# By design, those POR are not intended to be used in any production
 	# online systems. So, it is better to remove them from OpenTravelData,
 	# so that, if they are referenced within a flight schedule or a booking,
 	# it is most probably an error (eg, mispelling), and it must be reported.
@@ -52,10 +52,6 @@ BEGIN {
 	por_wrong_ref_list["QQV"] = 1; por_wrong_ref_list["QQZ"] = 1
 	por_wrong_ref_list["VVE"] = 1; por_wrong_ref_list["VWY"] = 1
 	por_wrong_ref_list["XXX"] = 1; por_wrong_ref_list["ZZW"] = 1
-	# Moreover, the reference data still keeps a few POR, which have been
-	# deprecated by IATA; so, it an error. Those POR must not be added
-	# to the output CSV data file.
-	por_wrong_ref_list["SGS"] = 1; por_wrong_ref_list["SHP"] = 1
 
     # Separators
 	K_TGT_SEP = ";"
