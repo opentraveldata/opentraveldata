@@ -19,10 +19,6 @@
 #
 
 ##
-# TODO: move the content of the por_wrong_ref_list[] AWK array into
-#       the optd_por_ref_exceptions.csv file
-
-##
 # Helper functions
 @include "awklib/geo_lib.awk"
 
@@ -39,28 +35,17 @@ BEGIN {
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
 
-	# Fix the reference data
-	# IATA references a few "fictitious" or other "test" POR.
-	# By design, those POR are not intended to be used in any production
-	# online systems. So, it is better to remove them from OpenTravelData,
+	# Fix the reference data: list of POR known to be valid in
+	# the reference data, but not valid in OPTD.
+	# Also, IATA references a few "fictitious" or other "test" POR.
+	# All those POR should not be used in any production online systems.
+	# So, it is better to remove them from OpenTravelData,
 	# so that, if they are referenced within a flight schedule or a booking,
 	# it is most probably an error (eg, mispelling), and it must be reported.
 	# Keeping those POR in OpenTravelData would increase the difficulty of
 	# detecting those simple errors.
-	delete por_wrong_ref_list
-	por_wrong_ref_list["EHD"] = 1; por_wrong_ref_list["OWZ"] = 1
-	por_wrong_ref_list["QQA"] = 1; por_wrong_ref_list["QQB"] = 1
-	por_wrong_ref_list["QQC"] = 1; por_wrong_ref_list["QQE"] = 1
-	por_wrong_ref_list["QQF"] = 1; por_wrong_ref_list["QQG"] = 1
-	por_wrong_ref_list["QQI"] = 1; por_wrong_ref_list["QQJ"] = 1
-	por_wrong_ref_list["QQL"] = 1; por_wrong_ref_list["QQO"] = 1
-	por_wrong_ref_list["QQV"] = 1; por_wrong_ref_list["QQZ"] = 1
-	por_wrong_ref_list["VVE"] = 1; por_wrong_ref_list["VWY"] = 1
-	por_wrong_ref_list["XXX"] = 1; por_wrong_ref_list["ZZW"] = 1
 
-	# List of POR known to be still valid in
-	# the reference data, but no longer valid
-	# in OPTD
+	# 
 	delete optd_por_ref_dpctd_list
 	optd_por_ref_dpctd_list_file = "optd_por_ref_exceptions.csv"
 
@@ -420,7 +405,7 @@ function getContinentName(myCountryCode) {
 		isGeonames = optd_por_geoname_list[iata_code]
 
 		#
-		if (isGeonames != 1 && !(iata_code in por_wrong_ref_list)) {
+		if (isGeonames != 1) {
 			# Feature code
 			if (isGeonames == -1) {
 				# Retrieved from the best known details
@@ -596,14 +581,6 @@ function getContinentName(myCountryCode) {
 			print (out_line)
 		}
 
-		# If the wrong POR has been consumed, delete it.
-		# At the end, only the non consumed wrong POR will remain.
-		# Normally, no wrong POR should remain. A check at the END of
-		# the AWK script ensures that.
-		if (iata_code in por_wrong_ref_list && isGeonames != 1) {
-			delete por_wrong_ref_list[iata_code]
-		}
-
 	} else {
 		delete optd_por_ref_dpctd_list[iata_code]
 	}
@@ -614,18 +591,6 @@ function getContinentName(myCountryCode) {
 #
 END {
     # Reporting
-	for (myIdx in por_wrong_ref_list) {
-		#
-		print ("[" awk_file "] !!! " myIdx " code is referenced by "	\
-			   "that AWK script (" awk_file	"), in the 'por_wrong_ref_list' " \
-			   "array, as being a fictitious POR, but it appears to be no " \
-			   "longer present in the reference data ("					\
-			   "dump_from_ref_city.csv file), or it has been included " \
-			   "in Geonames. It should therefore be removed from the "	\
-			   "'por_wrong_ref_list' array in the " awk_file		   \
-			   " AWK script") > error_stream
-	}
-
 	for (myIdx in optd_por_ref_dpctd_list) {
 		print ("[" awk_file "] !!!! Warning: " myIdx					\
 			   " code is still referenced in the '"						\
