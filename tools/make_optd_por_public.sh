@@ -102,11 +102,9 @@ OPTD_NOIATA_FILENAME=optd_por_no_longer_valid.csv
 OPTD_NOIATA_FILE=${DATA_DIR}${OPTD_NOIATA_FILENAME}
 
 ##
-# File of non-Geonames POR, with the rules telling whether they are valid
+# File of non-Geonames POR
 OPTD_NOGEONAMES_FILENAME=optd_por_no_geonames.csv
-OPTD_REF_DPCTD_FILENAME=optd_por_ref_exceptions.csv
 OPTD_NOGEONAMES_FILE=${DATA_DIR}${OPTD_NOGEONAMES_FILENAME}
-OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
 
 ##
 # List of state codes for a few countries (e.g., US, CA, AU, AR, BR)
@@ -272,12 +270,10 @@ echo "-----------------"
 echo
 NOGEONAMES_ADDER=add_por_ref_no_geonames.awk
 awk -F'^' -f ${NOGEONAMES_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
-	${OPTD_REF_DPCTD_FILE} ${OPTD_NOGEONAMES_FILE} \
-	> ${OPTD_POR_PUBLIC_W_NOGEONAMES}
+	${OPTD_NOGEONAMES_FILE} > ${OPTD_POR_PUBLIC_W_NOGEONAMES}
 
 #echo "awk -F'^' -f ${NOGEONAMES_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
-#	${OPTD_REF_DPCTD_FILE} ${OPTD_NOGEONAMES_FILE} \
-# > ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
+#	${OPTD_NOGEONAMES_FILE} > ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
 
 #echo "less ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
 #exit

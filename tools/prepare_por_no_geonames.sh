@@ -6,6 +6,7 @@
 # Create the OPTD-maintained list of POR absent from Geonames, from:
 # - optd_por_best_known_so_far.csv
 # - ref_airport_pageranked.csv
+# - optd_por_ref_exceptions.csv
 # - optd_tz_light.csv
 # - optd_por_tz.csv
 # - optd_cont.csv
@@ -60,6 +61,10 @@ GEO_REF_FILENAME=dump_from_ref_city.csv
 ##
 # File of best known coordinates
 OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+
+##
+# File of non-Geonames POR, with the rules telling whether they are valid
+OPTD_REF_DPCTD_FILENAME=optd_por_ref_exceptions.csv
 
 ##
 # PageRank values
@@ -148,6 +153,7 @@ LOG_LEVEL=4
 # Input files
 GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
 OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
+OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
 OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
 OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
 OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
@@ -193,6 +199,7 @@ then
 	echo "* Input data files"
 	echo "------------------"
 	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
+	echo " - OPTD-maintained file of exceptions for reference data: '${OPTD_REF_DPCTD_FILE}'"
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
 	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
 	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"
@@ -227,6 +234,7 @@ then
 	REF_NO_GEO_FILE=${DATA_DIR}${REF_NO_GEO_FILENAME}
 	GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
 	OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
+	OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
 	OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
 	OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
 	OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
@@ -272,8 +280,9 @@ fi
 # (integrating the location type)
 REF_NO_GEO_EXTRACTOR=${TOOLS_DIR}extract_non_geonames_por.awk
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_NO_GEO_EXTRACTOR} \
-    ${OPTD_POR_FILE} ${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} \
-	${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} ${OPTD_USDOT_FILE} \
+    ${OPTD_REF_DPCTD_FILE} ${OPTD_POR_FILE} ${OPTD_PR_FILE} \
+	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} \
+	${OPTD_CNT_FILE} ${OPTD_USDOT_FILE} \
 	${GEO_REF_FILE} > ${REF_NO_GEO_WO_CTY_NAME_FILE}
 
 

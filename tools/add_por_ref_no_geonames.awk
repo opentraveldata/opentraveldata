@@ -3,7 +3,6 @@
 # appearing in the reference data. The input files are:
 #  * Re-formatted list of POR: optd_por_public.csv.wonoiata (temporary)
 #  * Non-Geonames referential data:   optd_por_no_geonames.csv
-#  * Deprecated POR still referenced: optd_por_ref_exceptions.csv
 #
 # See also the make_optd_por_public.awk AWK script for details on the format.
 #
@@ -25,28 +24,8 @@ BEGIN {
 	error_stream = "/dev/stderr"
 	awk_file = "add_por_ref_no_geonames.awk"
 
-	# List of POR known to be still valid in
-	# the reference data, but no longer valid
-	# in OPTD
-	delete optd_por_ref_dpctd_list
-	optd_por_ref_dpctd_list_file = "optd_por_ref_exceptions.csv"
-
     #
 	today_date = mktime ("YYYY-MM-DD")
-}
-
-##
-# File of deprecated, but still referenced, POR
-#
-# Sample lines:
-# por_code^source^env_id^date_from^date_to^comment
-# AIY^R^^^^AIY used to be Atlantic City, New Jersey (NJ), USA, Geonames ID: 4500546
-/^[A-Z]{3}\^R\^\^\^\^[^^]*$/ {
-    # IATA code
-    iata_code = $1
-
-	# Register the fact that that POR is deprecated but still referenced
-	optd_por_ref_dpctd_list[iata_code] = 1
 }
 
 ##
@@ -61,29 +40,10 @@ BEGIN {
 /^[A-Z]{3}\^([A-Z]{4}|)\^([0-9A-Z]{3,4}|)\^(Y|N)\^[0-9]{1,10}\^([0-9]{1,10}|)\^/ {
 
 	if (NF == 46) {
-		# IATA code
-		iata_code = $1
-
-		# Check that the POR is not known to be an exception
-		if (!(iata_code in optd_por_ref_dpctd_list)) {
-			print ($0)
-		} else {
-			delete optd_por_ref_dpctd_list[iata_code]
-		}
+		print ($0)
 
 	} else {
 		print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
 			   " fields: " $0) > error_stream
 	}
 }
-
-
-END {
-	for (iata_code in optd_por_ref_dpctd_list) {
-		print ("[" awk_file "] !!!! Warning: " iata_code \
-				" is still referenced in the '" \
-				optd_por_ref_dpctd_list_file "' file, " \
-				"but has disappeared from reference data. ") > error_stream
-	}
-}
-
