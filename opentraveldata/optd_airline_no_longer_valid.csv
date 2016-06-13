@@ -12,9 +12,7 @@ air-aeroperlas-v1^1^1970-01-01^2012-02-29^APP^WL^54^Aeroperlas^^^^^http://en.wik
 air-afrijet-airlines-v1^1^2000-01-01^2008-12-31^FRJ^6F^0^Afrijet Airlines^^^^^http://en.wikipedia.org/wiki/Afrijet_Airlines^en|Afrijet Airlines|^LOS^air-afrijet-airlines^1
 air-air-cargo-carriers-v1^1^1986-01-01^2003-12-31^SNC^2Q^0^Air Cargo Carriers^^^^C^http://en.wikipedia.org/wiki/Air_Cargo_Carriers^en|Air Cargo Carriers|^^air-air-cargo-carriers^1
 air-air-mediterranee-v1^1^1995-01-01^2016-02-15^BIE^ML^853^Air Mediterranee^^^^^http://en.wikipedia.org/wiki/Air_M%C3%A9diterran%C3%A9e^en|Air Mediterranee|^LDE=LYS=NTE^air-air-mediterranee^1
-air-airlink-papua-new-guinea-v1^1^1990-06-01^1999-06-22^AOG^2D^592^Airlink (Papua New Guinea)^^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^en|Airlink (Papua New Guinea)|^^air-airlink-papua-new-guinea^1
-air-airlink-papua-new-guinea-v2^1^1999-06-23^2004-12-31^AOG^^592^Airlink (Papua New Guinea)^^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^en|Airlink (Papua New Guinea)|^^air-airlink-papua-new-guinea^2
-air-airlink-papua-new-guinea-v3^1^2005-01-01^2007-07-30^AOG^2D^592^Airlink (Papua New Guinea)^^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^en|Airlink (Papua New Guinea)|^^air-airlink-papua-new-guinea^3
+air-airlink-papua-new-guinea-v1^1^1990-06-01^2007-07-30^^ND^^Airlink (Papua New Guinea)^^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^en|Airlink (Papua New Guinea)|^^air-airlink-papua-new-guinea^1
 air-airmax-v1^1^^2015-05-01^DAP^X8^0^Airmax^^^^^^en|Airmax|^^air-airmax^1
 air-airways-international-v1^1^1981-01-01^1999-12-31^AWB^HO^0^Airways International^^^^^http://en.wikipedia.org/wiki/Airways_International^en|Airways International|^^air-airways-international^1
 air-air-alps-aviation-v1^1^1999-01-01^2014-03-01^LPV^A6^527^Air Alps Aviation^^^^^http://en.wikipedia.org/wiki/Air_Alps^en|Air Alps Aviation|^^air-air-alps-aviation^1
