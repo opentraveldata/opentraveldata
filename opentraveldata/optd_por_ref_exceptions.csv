@@ -10,8 +10,9 @@ FZO^R^^^^FZO used to be Bristol Filton Airport, United Kingdom (GB), Geonames ID
 GVW^R^1^^2016-06-06^GVW used to be Richards-Gebaur Airport, Missouri (MO), USA, Geonames ID: 4405533
 HDQ^R^^^^HDQ means headquarters, and there is no specific geographical location associated to it
 HKP^R^^^^HKP used to be Kaanapali Airport, Hawaii (HI), USA, Geonames ID: 5856832
-IAT^R^^^^IAT means IATA Traffic Services, and there is no specific geographical location associated to it
+IAT^R^^^^IAT corresponds to IATA Traffic Services, and there is no specific geographical location associated to it
 LUF^R^1^^2016-06-02^LUF used to be Litchfield Park Airport, Arizona (AZ), USA, Geonames ID: 7132272
+NNN^R^^^^NNN corresponds to pseudo message, and there is no specific geographical location associated to it
 NSA^R^^^^NSA used to be Noosa Airport, Brazil (BR), Geonames ID: 8299129
 NZO^R^^^^NZO used to be Nzoia Airport, Kenya (KE), Geonames ID: 8298862
 OCE^R^^^^OCE used to be Ocean City Airport, Maryland (MD), USA, Geonames ID: 4364313
@@ -32,6 +33,7 @@ QQL^R^^^^QQL is BritRail Zone L, United Kingdom (GB)
 QQO^R^^^^QQO is BritRail Zone O, United Kingdom (GB)
 QQV^R^^^^QQV is BritRail Zone V, United Kingdom (GB)
 QQZ^R^^^^QQZ is BritRail Zone Z, United Kingdom (GB)
+QWI^R^^^^QWI used to be Schleswig, Germany (DE), Geonames ID: 2838634. That code is apparently unknown from IATA. The IATA code associated to Schleswig is WBG
 RAT^R^^^^RAT used to be Raduzhny Airport, Russia (RU), Geonames ID: 7668536
 RVH^R^^^^RVH used to be Saint Petersburg Rzhevka Airport, Russia (RU), Geonames ID: 7668521
 SES^R^1^^2016-06-06^SES used to be Selma Airport, Alabama (AL), USA, Geonames ID: 4089114
@@ -40,9 +42,11 @@ TNQ^R^^^^TNQ used to be Teraina Airport, Cuba (CU), Geonames ID: 7521815
 TSO^R^^^^TSO used to be Isles of Scilly Tresco Airport, United Kingdom (GB), Geonames ID: 7670770
 UIQ^R^^^^UIQ used to be Quoin Hill Airport, Vanuatu (VU), Geonames ID: 7730722
 VVE^R^^^^VVE is test city 3, France (FR)
+VVV^R^^^^VVV corresponds to pseudo message, and there is no specific geographical location associated to it
 VWY^R^^^^VWY used to be Nilgiris Airport, India (IN), Geonames ID: 1261391
 XIE^R^^^^XIE used to be Xienglom Airport, Laos (LA), Geonames ID: 8245855
 XXX^R^^^^XXX is a fictitious point
 YWO^R^^^^YWO used to be Lupin Mine Airport, Canada (CA), Geonames ID: 8260747
 ZMD^R^^^^ZMD used to be Sena Madureira Airfield, Brazil (BR), Geonames ID: 8260768
+ZUF^R^^^^ZUF was Mystery Explorer, New Zealand (NZ)
 ZZW^R^^^^ZZW is used for trip mystery in Australia (AU)
