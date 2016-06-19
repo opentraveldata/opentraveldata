@@ -13,7 +13,7 @@
 # - optd_usdot_wac.csv
 # - dump_from_ref_city.csv
 #
-# => optd_por_no_geonames.csv
+# => optd_por_no_geonames.csv and optd_por_tz_wrong.csv
 
 displayRefDetails() {
     ##
@@ -23,11 +23,12 @@ displayRefDetails() {
 	echo
 	echo "####### Note #######"
 	echo "# The data dump from reference data can be obtained from this project"
-	echo "# (http://<gitorious/bitbucket>/dataanalysis/dataanalysis.git). For instance:"
+	echo "# (https://bitbucket.org/AmadeusTI/data-analysis-general.git)."
+	echo "For instance:"
 	echo "DAREF=~/dev/dataanalysis/dataanalysisgit/data_generation"
 	echo "mkdir -p ~/dev/dataanalysis"
 	echo "cd ~/dev/dataanalysis"
-	echo "git clone git://<gitorious/bitbucket>/dataanalysis/dataanalysis.git dataanalysisgit"
+	echo "git clone git@bitbucket.org:AmadeusTI/data-analysis-general.git dataanalysisgit"
 	echo "cd \${DAREF}/REF"
 	echo "# The following script fetches a SQLite file, holding reference data,"
 	echo "# and translates it into three MySQL-compatible SQL files:"
@@ -88,6 +89,7 @@ OPTD_USDOT_FILENAME=optd_usdot_wac.csv
 ##
 # Output file names
 REF_NO_GEO_FILENAME=optd_por_no_geonames.csv
+OPTD_POR_WRONG_TZ_FILENAME=optd_por_tz_wrong.csv
 
 ##
 # Temporary path
@@ -163,6 +165,7 @@ OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
 ##
 # Output files
 REF_NO_GEO_FILE=${DATA_DIR}${REF_NO_GEO_FILENAME}
+OPTD_POR_WRONG_TZ_FILE=${DATA_DIR}${OPTD_POR_WRONG_TZ_FILENAME}
 
 ##
 # Temporary
@@ -211,6 +214,7 @@ then
 	echo "* Output data file"
 	echo "------------------"
 	echo " - OPTD-maintained list of non-IATA/outlier POR: '${REF_NO_GEO_FILE}'"
+	echo " - OPTD-maintained list of POR with wrong time-zones: '${OPTD_POR_WRONG_TZ_FILE}'"
     echo
     exit
 fi
@@ -232,6 +236,7 @@ then
     TOOLS_DIR=${OPTD_DIR}tools/
 	REF_DIR=${TOOLS_DIR}
 	REF_NO_GEO_FILE=${DATA_DIR}${REF_NO_GEO_FILENAME}
+	OPTD_POR_WRONG_TZ_FILE=${DATA_DIR}${OPTD_POR_WRONG_TZ_FILENAME}
 	GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
 	OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
 	OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
@@ -279,7 +284,9 @@ fi
 # Generate a second version of the file with the OPTD primary key
 # (integrating the location type)
 REF_NO_GEO_EXTRACTOR=${TOOLS_DIR}extract_non_geonames_por.awk
-awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_NO_GEO_EXTRACTOR} \
+awk -F'^' -v log_level=${LOG_LEVEL} \
+	-v optd_por_wrong_tz_file=${OPTD_POR_WRONG_TZ_FILE} \
+	-f ${REF_NO_GEO_EXTRACTOR} \
     ${OPTD_REF_DPCTD_FILE} ${OPTD_POR_FILE} ${OPTD_PR_FILE} \
 	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} \
 	${OPTD_CNT_FILE} ${OPTD_USDOT_FILE} \

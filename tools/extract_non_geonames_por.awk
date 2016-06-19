@@ -10,8 +10,9 @@
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
 #  * Referential data:                      dump_from_ref_city.csv
-# Generated file:
+# Generated files:
 #  * Non-Geonames referential data:         optd_por_no_geonames.csv
+#  * POR having wrong time-zone:            optd_por_tz_wrong.csv
 #
 # Sample output lines:
 # AHE^^^N^0^^Ahe PF^Ahe PF^-14.4806^-146.30279^P^PPLC^0.0111037543665^^^^PF^^French Polynesia^Oceania^^^^^^^^^^^^Pacific/Tahiti^^^^-1^AHE^Ahe PF^AHE|0|Ahe PF|Ahe PF^AHE^^C^^^823^French Polynesia
@@ -29,7 +30,6 @@ BEGIN {
     # Global variables
     error_stream = "/dev/stderr"
     awk_file = "extract_non_geonames_por.awk"
-	optd_por_tz_wrong_file = "../opentraveldata/optd_por_tz_wrong.csv"
 
     # Lists
     ctry_name_list["ZZ"] = "Not relevant/available"
@@ -45,6 +45,13 @@ BEGIN {
 	# it is most probably an error (eg, mispelling), and it must be reported.
 	# Keeping those POR in OpenTravelData would increase the difficulty of
 	# detecting those simple errors.
+	#
+	# optd_por_wrong_tz_file set by the caller Shell script to
+	#                        "../opentraveldata/optd_por_tz_wrong.csv"
+
+	# 
+	delete optd_por_tz_list
+	optd_por_tz_list_file = "optd_por_tz.csv"
 
 	# 
 	delete optd_por_ref_dpctd_list
@@ -249,7 +256,7 @@ BEGIN {
 # country_code^time_zone
 # ES^Europe/Spain
 # RU^Europe/Russia
-/^([A-Z]{2})\^([A-Za-z_\/]+)$/ {
+/^[A-Z]{2}\^[A-Za-z_\/]+$/ {
     # Country code
     country_code = $1
 
@@ -262,7 +269,7 @@ BEGIN {
 
 
 ##
-# File of time-zones for a few POR.
+# File of time-zone rules for a few non-Geonames POR
 #
 # Content:
 # --------
@@ -277,7 +284,7 @@ BEGIN {
 # MNP^Pacific/Port_Moresby
 # QSE^America/Sao_Paulo
 #
-/^([A-Z]{3})\^(Africa|America|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/([A-Za-z/_]+)$/ {
+/^[A-Z]{3}\^(Africa|America|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/([A-Za-z/_]+)$/ {
     # IATA code
     iata_code = $1
 
@@ -285,7 +292,7 @@ BEGIN {
     tz_id = $2
 
     # Register the time-zone ID associated to that country
-    por_tz_list[iata_code] = tz_id
+    optd_por_tz_list[iata_code] = tz_id
 }
 
 ##
@@ -355,7 +362,12 @@ BEGIN {
 ##
 # Retrieve the time-zone ID for that POR IATA code
 function getTimeZoneFromIATACode(myIATACode) {
-    tz_id = por_tz_list[myIATACode]
+    tz_id = optd_por_tz_list[myIATACode]
+
+	# Delete the record, so as to keep track of the ones not used
+	delete optd_por_tz_list[iata_code]
+
+	#
     return tz_id
 }
 
@@ -531,7 +543,7 @@ function getContinentName(myCountryCode) {
 					   "for the record #" FNR " - Default time-zone: "	\
 					   time_zone_id ". Record: " $0)					\
 					> error_stream
-				print ($0) > optd_por_tz_wrong_file
+				print ($0) > optd_por_wrong_tz_file
 			}
 			continent_name = getContinentName(country_code)
 			# continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
@@ -599,6 +611,14 @@ END {
 			   " code is still referenced in the '"						\
 			   optd_por_ref_dpctd_list_file "' file, "					\
 			   "but has disappeared from reference data.") > error_stream
+	}
+
+	asorti(optd_por_tz_list, optd_por_tz_list_sorted)
+	for (myIdx in optd_por_tz_list_sorted) {
+		print ("[" awk_file "] !!!! Warning: " optd_por_tz_list_sorted[myIdx] \
+			   " code is still referenced in the '"						\
+			   optd_por_tz_list_file "' file, but is now in Geonames "	\
+			   "or has disappeared from reference data.") > error_stream
 	}
 }
 
