@@ -48,6 +48,8 @@ BEGIN {
 	#
 	# optd_por_wrong_tz_file set by the caller Shell script to
 	#                        "../opentraveldata/optd_por_tz_wrong.csv"
+	hdr_line = "iata_code^loc_type^por_name^por_name2^por_name3^por_name4^cty_name^cty_code^is_apt^state_code^ctry_code^rgn_code^cnt_code^tz_grp^lat^lon^nmc_code^is_cml"
+	print (hdr_line) > optd_por_wrong_tz_file
 
 	# 
 	delete optd_por_tz_list
