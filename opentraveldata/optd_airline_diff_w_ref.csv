@@ -635,6 +635,7 @@ GNR^2^<>Gambia Intl
 GO^1^Go<>
 GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
+GPD^2^<>Tradewind
 GQ^2^Cretan Aeronautical Exploitations<>Sky Express
 GR^2^<>Aurigny Air
 GS^2^<>Tianjin
@@ -852,8 +853,7 @@ LC^1^ECAir<>Equatorial Congo Airline
 LC^2^<>Congo Airline
 LCO^1^LAN Cargo<>Lan Chile Cargo
 LCO^2^Ladeco<>N
-LF^1^Lao Central<>Lao Central Airlines
-LF^2^<>Lao Central
+LF^1^Corporate Flight Management<>Lao Central Airlines
 LH^2^<>Lufthansa
 LI^2^<>Liat
 LIA^2^<>Liat
@@ -1018,7 +1018,8 @@ OO^1^SkyWest Airlines<>Skywest Airlines
 OO^2^<>Sky West
 OP^2^<>Olympic Airls
 OR^1^TUI Airlines Netherlands<>Tuifly Netherlands
-ORB^2^Orenburg Airlines<>Orenair
+ORB^1^<>Orenburg Airlines
+ORB^2^<>Orenair
 OS^2^<>Austrianair
 OU^2^<>Croatia
 OV^2^<>Estonian Air
@@ -1112,7 +1113,8 @@ QY^2^<>Euroairtran
 QZ^1^Indonesia AirAsia<>Pt Indonesia Airasia
 QZ^2^Awair<>Ptindairasia
 R0^1^MS Royal Airlines<>M S Royal Airlines
-R2^2^Orenburg Airlines<>Orenair
+R2^1^<>Orenburg Airlines
+R2^2^<>Orenair
 R3^1^Yakutia Airlines<>Jsc Aircompany Yakutia
 R3^2^<>Yakutia Air
 R6^1^DOT LT<>Dot Lt
@@ -1306,6 +1308,7 @@ THA^2^<>Thai
 THD^2^Rheintalflg<>Thai Smile
 THT^2^<>Air Tahiti
 THY^2^<>Turkish
+TJ^2^<>Tradewind
 TJK^2^<>Tajik Air
 TK^2^<>Turkish
 TL^2^Capiteq Limited<>Airnorth

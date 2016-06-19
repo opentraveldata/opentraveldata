@@ -142,6 +142,7 @@ air-katmai-air-v1^1^^2015-12-31^^KT^0^Katmai Air^^^^^http://www.katmailand.com/a
 air-kyrgyz-airlines-v1^1^2013-01-01^2013-01-31^KGZ^LK^915^Kyrgyz Airlines^^^^^^en|Kyrgyz Airlines|^FRU^air-kyrgyz-airlines^1
 air-lade-v1^1^1940-09-01^2014-12-31^LDE^5U^0^LADE^Líneas Aéreas del Estado^^^^http://en.wikipedia.org/wiki/LADE^en|LADE|=en|Líneas Aéreas del Estado|^^air-lade^1
 air-lagunair-lineas-aeras-v1^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir^en|LagunAir|=en|LagunAir Líneas Aéreas|^^air-lagunair-lineas-aeras^1
+air-lao-central-airlines-v1^1^2010-01-01^2014-12-31^LKA^LF^971^Lao Central^^^^^http://en.wikipedia.org/wiki/Lao_Central_Airlines^en|Lao Central|=sign|NAKLAO|^VTE^air-lao-central-airlines^1
 air-lao-skyway-v1^1^2002-01-01^2013-12-31^LLL^LK^0^Lao Air^^^^^http://en.wikipedia.org/wiki/Lao_Skyway^en|Lao Air|h=en|Lao Skyway|p^VTE^air-lao-skyway^1
 air-linea-aerea-cuencana-v1^1^2012-01-01^2015-01-01^LAC^L5^0^Línea Aerea Cuencana^^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Cuencana^en|Línea Aerea Cuencana|^^air-linea-aerea-cuencana^1
 air-linea-turistica-aereotuy-v1^1^1982-01-01^2015-06-30^^L4^445^Línea Turística Aereotuy (LTA)^^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_Tur%C3%ADstica_Aereotuy^en|Línea Turística Aereotuy (LTA)|^^air-linea-turistica-aereotuy^1
@@ -168,6 +169,7 @@ air-nigeria-airways-v1^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^http
 air-norfolk-air-v1^1^2006-05-01^2012-02-26^NLK^N5^0^Norfolk Air^^^^^http://en.wikipedia.org/wiki/Norfolk_Air^en|Norfolk Air|^^air-norfolk-air^1
 air-odessa-airlines-v1^1^1996-01-01^2006-12-31^ODS^5K^0^Odessa Airlines^^^^^http://en.wikipedia.org/wiki/Odessa_Airlines^en|Odessa Airlines|^^air-odessa-airlines^1
 air-olt-express-germany-v1^1^1958-01-01^2013-01-30^OLT^OL^704^OLT Express Germany^^^^^http://en.wikipedia.org/wiki/OLT_Express_Germany^en|OLT Express Germany|^^air-olt-express-germany^1
+air-orenair-v1^1^1992-01-01^2016-06-30^ORB^R2^291^Orenburg Airlines^^^^^http://en.wikipedia.org/wiki/Orenair^en|Orenburg Airlines|p=en|Orenair|=ru|Оренбургские авиалинии|^REN^air-orenair^1
 air-overland-airways-v1^1^2003-11-26^2015-12-31^OLA^OJ^0^Overland Airways^^^^^http://en.wikipedia.org/wiki/Overland_Airways^en|Overland Airways|^^air-overland-airways^1
 air-paramount-airways-v1^1^2005-10-01^2010-08-31^PMW^I7^0^Paramount Airways^^^^^http://en.wikipedia.org/wiki/Paramount_Airways^en|Paramount Airways|^^air-paramount-airways^1
 air-perla-airlines-v1^1^^2015-01-01^PLV^DP^0^Perla Airlines^Air 2000^^^^http://www.airlineupdate.com/content_public/airlines/airlines-venezuela/perla.htm^en|Perla Airlines|=en|Air 2000|^^air-perla-airlines^1

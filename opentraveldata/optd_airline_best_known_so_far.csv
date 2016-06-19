@@ -353,6 +353,7 @@ air-conviasa-v1^^^^VCV^V0^308^Conviasa^Conviasa^^^^^en|Conviasa|=en|Conviasa|^^a
 air-copa-airlines-v1^^1947-08-15^^CMP^CM^230^Copa Airlines^Compañía Panameña de Aviación^^Member^^http://en.wikipedia.org/wiki/Copa_Airlines^en|Copa Airlines|=en|Compañía Panameña de Aviación|^^air-copa-airlines^1
 air-corendon-airlines-v1^^^^CAI^XC^0^Corendon Airlines^KD Air^^^^^en|Corendon Airlines|=en|KD Air|^^air-corendon-airlines^1
 air-corendon-dutch-airlines-v1^^^^CND^CD^0^Corendon Dutch Airlines^Seaview Air^^^^^en|Corendon Dutch Airlines|=en|Seaview Air|^^air-corendon-dutch-airlines^1
+air-corporate-flight-management-v1^^2016-01-01^^VTE^LF^522^Corporate Flight Management^^^^^http://en.wikipedia.org/wiki/Corporate_Flight_Management^en|Corporate Flight Management|^BNA=TUP^air-corporate-flight-management^1
 air-corsair-v1^^1981-05-17^^CRL^SS^923^Corsair^^^^^http://en.wikipedia.org/wiki/Corsair_International^en|Corsair|^^air-corsair^1
 air-croatia-airlines-v1^^1989-08-20^^CTN^OU^831^Croatia Airlines^^^Member^^http://en.wikipedia.org/wiki/Croatia_Airlines^en|Croatia Airlines|^^air-croatia-airlines^1
 air-cronos-airlines-v1^^2007-01-01^^CRA^C8^498^Cronos Airlines^^^^P^http://en.wikipedia.org/wiki/Cronos_Airlines^en|Cronos Airlines|^^air-cronos-airlines^1
@@ -620,7 +621,6 @@ air-lan-ecuador-v1^^2002-01-01^^LNE^XL^462^LATAM Ecuador^^^Affiliate^^http://en.
 air-lan-express-v1^^1998-01-01^^LXP^LU^972^LAN Express^^^Affiliate^^http://en.wikipedia.org/wiki/LAN_Express^en|LAN Express|p=en|Transporte Aéreo S.A.|^SCL^air-lan-express^1
 air-lan-peru-v1^^1998-01-01^^LPE^LP^544^LATAM Perú^^^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Per%C3%BA^en|LATAM Perú|p=en|LAN Perú|h^LIM^air-lan-peru^1
 air-lao-airlines-v1^^^^LAO^QV^627^Lao Airlines^^^^^^en|Lao Airlines|^^air-lao-airlines^1
-air-lao-central-airlines-v1^^^^^LF^971^Lao Central^^^^^^en|Lao Central|^^air-lao-central-airlines^1
 air-lao-skyway-v2^^2014-01-01^^LLL^LK^0^Lao Skyway^^^^^http://en.wikipedia.org/wiki/Lao_Skyway^en|Lao Air|h=en|Lao Skyway|p^VTE^air-lao-skyway^2
 air-latpass-airlines-v1^^^^LTP^QJ^0^Latpass Airlines^^^^^^en|Latpass Airlines|^^air-latpass-airlines^1
 air-l-avion-v1^^^^^A0^0^L'Avion^Elysair^^^^^en|L'Avion|=en|Elysair|^^air-l-avion^1
@@ -747,7 +747,6 @@ air-onur-air-v1^^1992-04-14^^OHY^8Q^66^Onur Air^^^^^http://en.wikipedia.org/wiki
 air-openskies-v1^^2008-03-01^^^EC^284^OpenSkies^^^Affiliate^^http://en.wikipedia.org/wiki/OpenSkies^en|OpenSkies|^^air-openskies^1
 air-orbest-v1^^2007-01-01^^OBS^6O^0^Orbest^^^^^http://en.wikipedia.org/wiki/Orbest^en|Orbest|^^air-orbest^1
 air-ord-air-charter-v1^^^^^RF^0^Ord Air Charter^^^^^^en|Ord Air Charter|^^air-ord-air-charter^1
-air-orenair-v1^^1992-01-01^^ORB^R2^291^Orenair^Orenburg Airlines^^^^http://en.wikipedia.org/wiki/Orenair^en|Orenair|=en|Orenburg Airlines|^^air-orenair^1
 air-orenburg-region-airlines-v1^^^^^O7^0^Orenburg Region Airlines^^^^^^en|Orenburg Region Airlines|^^air-orenburg-region-airlines^1
 air-oriental-air-bridge-v1^^^^NGK^OC^0^Oriental Air Bridge^Omni Aviacao^^^^^en|Oriental Air Bridge|=en|Omni Aviacao|^^air-oriental-air-bridge^1
 air-orient-thai-airlines-v1^^1995-01-01^^OEA^OX^578^Orient Thai Airlines^^^^^http://en.wikipedia.org/wiki/Orient_Thai_Airlines^en|Orient Thai Airlines|^^air-orient-thai-airlines^1
@@ -980,7 +979,7 @@ air-titan-airways-v1^^^^^ZT^0^Titan Airways^^^^^^en|Titan Airways|^^air-titan-ai
 air-tnt-airways-v1^^^^TAY^3V^756^Tnt Airways^Viking Air^^^^^en|Tnt Airways|=en|Viking Air|^^air-tnt-airways^1
 air-toumai-air-tchad-v1^^^^^9D^371^Toumai Air Tchad^^^^P^^en|Toumai Air Tchad|^^air-toumai-air-tchad^1
 air-trade-air-v1^^1994-04-01^^TDR^C3^0^Trade Air^^^^^http://en.wikipedia.org/wiki/Trade_Air^en|Trade Air|^^air-trade-air^1
-air-tradewind-aviation-v1^^^^GPD^TJ^0^Tradewind Aviation^^^^^^en|Tradewind Aviation|^^air-tradewind-aviation^1
+air-tradewind-aviation-v1^^2001-01-01^^GPD^TJ^492^Tradewind Aviation^^^^^http://en.wikipedia.org/wiki/Tradewind_Aviation^en|Tradewind Aviation|=en|Tradewind Shuttle|^HPN=NEV=SBH=SJU^air-tradewind-aviation^1
 air-transaero-airlines-v1^^1990-01-01^^TSO^UN^670^Transaero Airlines^^^^^http://en.wikipedia.org/wiki/Transaero^en|Transaero Airlines|^^air-transaero-airlines^1
 air-trans-air-congo-v1^^^^TSG^Q8^223^Trans Air Congo^^^^^^en|Trans Air Congo|^^air-trans-air-congo^1
 air-transasia-airways-v1^^1951-05-21^^TNA^GE^170^TransAsia Airways^^^^^http://en.wikipedia.org/wiki/TransAsia_Airways^en|TransAsia Airways|^^air-transasia-airways^1
