@@ -688,7 +688,7 @@ air-ital-v1^^^^^1Q^0^Joint Stock Company Ital^^^^^^^en|Joint Stock Company Ital|
 air-itek-air-v1^^^^IKA^GI^420^Itek Air^Itek Air^^^^^^en|Itek Air|=en|Itek Air|^^air-itek-air^1
 air-izhavia-v1^^^^IZA^I8^25^Izhavia^Aboriginalair^^^^^1671^en|Izhavia|=en|Aboriginalair|^^air-izhavia^1
 air-jal-express-v1^^^^^JC^0^JAL Express^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^7983^en|JAL Express|^^air-jal-express^1
-air-japan-air-commuter-v1^^^^JAC^3X^0^Japan Air Commuter^^^^^^^en|Japan Air Commuter|^^air-japan-air-commuter^1
+air-japan-air-commuter-v1^^^^JAC^3X^0^Japan Air Commuter^^^^^^^en|Japan Air Commuter|^KOJ^air-japan-air-commuter^1
 air-japan-airlines-v1^^1951-10-25^^JAL^JL^131^Japan Airlines^JAL^OneWorld^Member^^http://en.wikipedia.org/wiki/Japan_Airlines^274677^en|Japan Airlines|=en|JAL|^^air-japan-airlines^1
 air-japan-transocean-air-v1^^^^JTA^NU^353^Japan Transocean Air^Japan Transoc^OneWorld^Affiliate^^^23641^en|Japan Transocean Air|=en|Japan Transoc|^^air-japan-transocean-air^1
 air-jatayu-gelang-sejahtera-v1^^2014-01-25^^JTY^JZ^0^Jatayu Airlines^Jatayu Gelang Sejahtera^^^^http://en.wikipedia.org/wiki/Jatayu_Airlines^^en|Jatayu Airlines|=en|Jatayu Gelang Sejahtera|^^air-jatayu-gelang-sejahtera^1
@@ -957,6 +957,7 @@ air-polynesian-airlines-v1^^1959-01-01^^PAO^OL^162^Polynesian Airlines^^^^^http:
 air-porter-airlines-v1^^2006-10-23^^POE^PD^451^Porter Airlines^^^^^http://en.wikipedia.org/wiki/Porter_Airlines^46867^en|Porter Airlines|^^air-porter-airlines^1
 air-portugalia-v1^^1988-01-01^^PGA^NI^685^Portugalia^Portugália–Companhia Portuguesa de Transportes Aéreos^^^^http://en.wikipedia.org/wiki/Portug%C3%A1lia^17745^en|Portugalia|=en|Portugália–Companhia Portuguesa de Transportes Aéreos|^^air-portugalia^1
 air-precision-air-v1^^1993-01-01^^PRF^PW^31^Precision Air^^^^^http://en.wikipedia.org/wiki/Precision_Air^14507^en|Precision Air|^^air-precision-air^1
+air-premier-trans-aire-v1^^^^^3X^435^Premier Trans Aire^^^^C^http://de.wikipedia.org/wiki/Premier_Trans_Aire^^^HNL^air-premier-trans-aire^1
 air-premium-jet-v1^^^^^0J^254^Premium Jet AG^^^^^^^en|Premium Jet AG|^^air-premium-jet^1
 air-prima-air-v1^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^http://en.wikipedia.org/wiki/Prima_Air^^en|Prima Air|^^air-prima-air^1
 air-primera-air-nordic-v1^^2015-04-01^^PRW^6F^0^Primera Air Nordic^^^^^http://en.wikipedia.org/wiki/Primera_Air^2403^en|Primera Air Nordic|^^air-primera-air-nordic^1
