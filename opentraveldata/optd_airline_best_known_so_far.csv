@@ -377,7 +377,7 @@ air-dokasch-v1^^^^^3D^0^Dokasch^^^^^^en|Dokasch|^^air-dokasch^1
 air-donavia-v1^^^^DNV^D9^733^Donavia^^^Affiliate^^http://en.wikipedia.org/wiki/Donavia^en|Donavia|^^air-donavia^1
 air-dot-lt-v1^^^^DNU^R6^0^DOT LT^^^^^^en|DOT LT|^^air-dot-lt^1
 air-douniah-airlines-v1^^^^DTS^DH^0^Douniah Airlines^^^^P^^en|Douniah Airlines|^^air-douniah-airlines^1
-air-dragonair-v1^^1985-07-01^^HDA^KA^43^Dragonair^Hong Kong Dragon Airlines^^Affiliate^^http://en.wikipedia.org/wiki/Dragonair^en|Dragonair|=en|Hong Kong Dragon Airlines|^^air-dragonair^1
+air-dragonair-v1^^1985-07-01^^HDA^KA^43^Dragonair^^^Affiliate^^http://en.wikipedia.org/wiki/Cathay_Dragon^en|Cathay Dragon|p=en|Dragonair|h=en|Hong Kong Dragon Airlines|^HKG^air-dragonair^1
 air-dreamjet-v1^^2014-01-01^^DJT^B0^2^La Compagnie^Dreamjet^^^^http://en.wikipedia.org/wiki/La_Compagnie^en|La Compagnie|=en|Dreamjet|^^air-dreamjet^1
 air-druk-air-v1^^1983-02-11^^DRK^KB^787^Druk Air^^^^^http://en.wikipedia.org/wiki/Druk_Air^en|Druk Air|^^air-druk-air^1
 air-dynamic-air-v1^^2010-10-01^^DYA^2D^54^Dynamic Airways^^^^T^http://en.wikipedia.org/wiki/Dynamic_Airways^en|Dynamic Airways|^^air-dynamic-air^1
@@ -386,7 +386,7 @@ air-eagle-atlantic-airlines-v1^^^^^E2^0^Eagle Atlantic Airlines^Rio Grandeair^^^
 air-east-african-safari-air-v1^^^^^B5^305^East African Safari Air^Safari Air^^^^^en|East African Safari Air|=en|Safari Air|^^air-east-african-safari-air^1
 air-east-air-v1^^^^ETJ^EG^447^East Air^Japan Asia^^^^^en|East Air|=en|Japan Asia|^^air-east-air^1
 air-eastar-jet-v1^^^^ESR^ZE^839^Eastar Jet^^^^^^en|Eastar Jet|^^air-eastar-jet^1
-air-eastern-airways-v1^^^^^T3^467^Eastern Airways^^^^^^en|Eastern Airways|^^air-eastern-airways^1
+air-eastern-airways-v1^^1997-01-01^^EZE^T3^467^Eastern Airways^^^^^http://en.wikipedia.org/wiki/Eastern_Airways^en|Eastern Airways|^ABZ^air-eastern-airways^1
 air-eastern-caribbean-airlines-v1^^^^^JI^0^Eastern Caribbean Airlines^^^^^^en|Eastern Caribbean Airlines|^^air-eastern-caribbean-airlines^1
 air-east-horizon-airlines-v1^^^^EHN^EA^0^East Horizon Airlines^^^^^^en|East Horizon Airlines|^^air-east-horizon-airlines^1
 air-east-line-v1^^^^^1T^0^East Line^^^^^^en|East Line|^^air-east-line^1
@@ -547,7 +547,7 @@ air-islena-airlines-v1^^^^ISV^WC^506^Islena Airlines^Islena Air^^^^^en|Islena Ai
 air-isles-of-scilly-skybus-v1^^1984-03-01^^IOS^^^Isles of Scilly Skybus^^^^^http://en.wikipedia.org/wiki/Isles_of_Scilly_Skybus^en|Isles of Scilly Skybus|=sign|SCILLONIA|^^air-isles-of-scilly-skybus^1
 air-israir-airlines-v1^^^^ISR^6H^818^Israir Airlines^Israir Airlin^^^^^en|Israir Airlines|=en|Israir Airlin|^^air-israir-airlines^1
 air-ital-v1^^^^^1Q^0^Joint Stock Company Ital^^^^^^en|Joint Stock Company Ital|^^air-ital^1
-air-itek-air-v1^^^^IKA^GI^420^Itek Air^Itek Air^^^^^en|Itek Air|=en|Itek Air|^^air-itek-air^1
+air-itek-air-v1^^^^IKA^GI^420^Itek Air^^^^^^en|Itek Air|^^air-itek-air^1
 air-izhavia-v1^^^^IZA^I8^25^Izhavia^Aboriginalair^^^^^en|Izhavia|=en|Aboriginalair|^^air-izhavia^1
 air-jal-express-v1^^^^^JC^0^JAL Express^^^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^en|JAL Express|^^air-jal-express^1
 air-japan-air-commuter-v1^^^^JAC^3X^0^Japan Air Commuter^^^^^^en|Japan Air Commuter|^KOJ^air-japan-air-commuter^1

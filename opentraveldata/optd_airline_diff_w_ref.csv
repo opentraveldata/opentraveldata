@@ -553,6 +553,7 @@ EXS^1^Jet2.com<>Jet2 Com
 EXY^2^SA Express<>Eastair
 EY^2^<>Etihad Air
 EZ^1^Sun Air of Scandinavia<>Sun Air Of Scandinavia
+EZE^2^<>Eastern Air
 EZS^1^easyJet Switzerland<>Easyjet Switzerland
 EZY^1^easyJet<>Easyjet
 EZY^2^<>Easyjet
@@ -620,6 +621,7 @@ GFT^2^<>Silver Airway
 GGN^2^Air Alliance<>
 GH^1^Globus<>Globus Llc
 GHA^1^Globus<>Globus Llc
+GI^2^<>Itek Air
 GIA^2^<>Garuda
 GJS^1^GoJet Airlines<>Gojet Airlines
 GLA^1^Great Lakes Airlines<>Great Lakes Aviation
@@ -666,7 +668,8 @@ HAY^1^<>Skippers Aviation Pty
 HB^1^Homer Air<>Asia Atlantic Airlines
 HD^1^Air Do<>Airdo
 HD^2^Hokkaido International Airlines<>
-HDA^2^Hong Kong Dragon Airlines<>Hk Dragon
+HDA^1^Dragonair<>Cathay Dragon
+HDA^2^<>Hk Dragon
 HE^1^LGW Luftfahrtges Walter<>Lgw Luftfahrtges Walter
 HER^2^<>Hex Air
 HG^2^<>Niki
@@ -713,6 +716,7 @@ IF^2^<>Islas Airways
 IG^2^<>Meridiana Fly
 II^1^IBC Airways<>Ibc Airways Inc
 IK^1^Kaya Airlines<>Llc Ikar
+IKA^2^<>Itek Air
 IL^1^Trigana Air Service<>Pt Trigana Air Service
 IM^1^Mint Líneas Aéreas<>
 IN^1^NAM Air<>Nam Air
@@ -786,7 +790,8 @@ K7^1^Air KBZ<>Air Kbz
 K7^2^<>Arizona
 K8^1^Zambia Skyways<>Kan Air
 K9^1^Kalitta Charters<>
-KA^2^Hong Kong Dragon Airlines<>Hk Dragon
+KA^1^Dragonair<>Cathay Dragon
+KA^2^<>Hk Dragon
 KAC^2^<>Kuwait Air
 KAE^2^<>Kartika Air
 KAL^2^<>Korean Air
