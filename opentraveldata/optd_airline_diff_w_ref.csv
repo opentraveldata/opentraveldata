@@ -182,6 +182,7 @@
 9I^2^Alliance Air<>
 9J^1^Dana Air<>Dana Airlines Limited
 9K^2^<>Cape Air
+9L^2^<>Colgan Air
 9N^1^Tropic Air<>Tropic Air Limited
 9N^2^<>Tropic Air
 9O^2^<>Aircameroon
@@ -397,7 +398,7 @@ CAW^2^<>Comair
 CAY^2^<>Cayman Air
 CB^2^<>Scotairways
 CC^1^CM Airlines<>Cm Airlines
-CC^2^Cielo Maya Airlines<>Cm Airlines
+CC^2^<>Cm Airlines
 CCA^2^<>Air China
 CCM^2^<>Air Corsica
 CDG^2^<>Shandong Airl
@@ -423,7 +424,7 @@ CMP^2^Compañía Panameña de Aviación<>Copa Panamena
 CN^2^<>Gd China Air
 CNF^1^Canaryfly<>Canary Fly
 CNF^2^<>Canary Fly
-CO^1^<>Continental Airlines
+CO^1^Cobalt Air<>Continental Airlines
 CO^2^<>Continental
 COA^1^<>Continental Airlines
 COA^2^<>Continental
@@ -1017,7 +1018,7 @@ OLA^1^<>Fly Jamaica Airways
 OLA^2^<>Overland Air
 OM^2^<>Miat
 OMT^1^CM Airlines<>Cm Airlines
-OMT^2^Cielo Maya Airlines<>Cm Airlines
+OMT^2^<>Cm Airlines
 ON^2^Our Airline<>Air Nauru
 OO^1^SkyWest Airlines<>Skywest Airlines
 OO^2^<>Sky West
@@ -1483,6 +1484,7 @@ WJA^2^<>Westjet
 WK^2^<>Edelweiss Air
 WL^1^European Coastal Airlines<>European Coastal Airline
 WL^2^<>Aeroperlas
+WLN^2^<>Colgan Air
 WM^2^<>Windward Isl
 WN^1^Southwest Airlines<>Southwest Airlines Texas
 WN^2^<>Sw Airlines
