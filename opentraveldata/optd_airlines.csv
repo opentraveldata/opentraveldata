@@ -431,7 +431,7 @@ air-continental-airlines-v1^1^^2010-09-30^COA^CO^5^Continental Airlines^Continen
 air-continental-micronesia-v1^1^1968-05-16^2010-12-22^CMI^CS^0^Continental Micronesia^^^^^http://en.wikipedia.org/wiki/Continental_Micronesia^^en|Continental Micronesia|^^air-continental-micronesia^1
 air-conviasa-v1^^^^VCV^V0^308^Conviasa^Conviasa^^^^^19927^en|Conviasa|=en|Conviasa|^^air-conviasa^1
 air-copa-airlines-v1^^1947-08-15^^CMP^CM^230^Copa Airlines^Compañía Panameña de Aviación^Star Alliance^Member^^http://en.wikipedia.org/wiki/Copa_Airlines^100362^en|Copa Airlines|=en|Compañía Panameña de Aviación|^^air-copa-airlines^1
-air-corendon-airlines-v1^^^^CAI^XC^0^Corendon Airlines^KD Air^^^^^14032^en|Corendon Airlines|=en|KD Air|^^air-corendon-airlines^1
+air-corendon-airlines-v1^^2005-04-01^^CAI^XC^0^Corendon Airlines^^^^^http://en.wikipedia.org/wiki/Corendon_Airlines^14032^en|Corendon Airlines|p=en|Turistik Hava Tasimacilik A.S.|^AYT^air-corendon-airlines^1
 air-corendon-dutch-airlines-v1^^^^CND^CD^0^Corendon Dutch Airlines^Seaview Air^^^^^^en|Corendon Dutch Airlines|=en|Seaview Air|^^air-corendon-dutch-airlines^1
 air-corporate-flight-management-v1^^2016-01-01^^VTE^LF^522^Corporate Flight Management^^^^^http://en.wikipedia.org/wiki/Corporate_Flight_Management^496^en|Corporate Flight Management|^BNA=TUP^air-corporate-flight-management^1
 air-corsair-v1^^1981-05-17^^CRL^SS^923^Corsair^^^^^http://en.wikipedia.org/wiki/Corsair_International^3638^en|Corsair|^^air-corsair^1
@@ -730,7 +730,8 @@ air-kartika-airlines-v1^^^^KAE^3Y^0^Kartika Airlines^^^^^^^en|Kartika Airlines|^
 air-katekavia-v1^^1995-05-01^^KTK^ZF^0^Azur Air^^^^^http://en.wikipedia.org/wiki/Azur_Air^^en|Azur Air|=en|Katekavia|h=ru|АЗУР эйр|=ru|Катэкавиа|h^^air-katekavia^1
 air-katmai-air-v1^1^^2015-12-31^^KT^0^Katmai Air^^^^^http://www.katmailand.com/air-services^^en|Katmai Air|^BKF^air-katmai-air^1
 air-kaya-airlines-v1^^1991-01-01^^KYY^IK^0^Kaya Airlines^Imair Air^^^^http://en.wikipedia.org/wiki/Kaya_Airlines^^en|Kaya Airlines|=en|Imair Air|^^air-kaya-airlines^1
-air-kd-v1^^1990-01-01^^KDC^^^KD Air^^^^^http://en.wikipedia.org/wiki/KD_Air^^en|KD Air|=sign|KAYDEE|^^air-kd^1
+air-kd-v1^1^1990-01-01^2013-09-30^KDC^XC^0^KD Air^^^^^http://en.wikipedia.org/wiki/KD_Air^^en|KD Air|=sign|KAYDEE|^YVR^air-kd^1
+air-kd-v2^^2013-10-01^^KDC^^0^KD Air^^^^^http://en.wikipedia.org/wiki/KD_Air^^en|KD Air|=sign|KAYDEE|^YVR^air-kd^2
 air-kenmore-air-v1^^^^KEN^M5^763^Kenmore Air^^^^^^3892^en|Kenmore Air|^^air-kenmore-air^1
 air-kenn-borek-air-v1^^^^KBA^4K^0^Kenn Borek Air^^^^^^420^en|Kenn Borek Air|^^air-kenn-borek-air^1
 air-kenya-airways-v1^^1977-02-04^^KQA^KQ^706^Kenya Airways^^Skyteam^Member^^http://en.wikipedia.org/wiki/Kenya_Airways^55380^en|Kenya Airways|^^air-kenya-airways^1
@@ -1138,7 +1139,7 @@ air-surinam-airways-v1^^^^SLM^PY^192^Surinam Airways^Surinam Air^^^^^3039^en|Sur
 air-sutra-v1^^^^^1K^0^Sutra^Southern^^^^^^en|Sutra|=en|Southern|^^air-sutra^1
 air-svenska-direktflyg-v1^1^2000-10-01^2015-12-31^HSV^HS^198^Direktflyg^^^^^http://en.wikipedia.org/wiki/Direktflyg^^en|Direktflyg|p=en|Svenska Direktflyg AB|=en|Sundsvall Aero|h^^air-svenska-direktflyg^1
 air-swe-fly-v1^1^1994-01-01^2005-09-30^SWV^WV^857^Swe Fly^^^^^http://en.wikipedia.org/wiki/Swe_Fly^^en|Swe Fly|^^air-swe-fly^1
-air-swiftair-v1^^1986-01-01^^SWT^WT^^Swiftair^^^^^http://en.wikipedia.org/wiki/Swiftair^^en|Swiftair|^^air-swiftair^1
+air-swiftair-v1^^1986-01-01^^SWT^WT^221^Swiftair^^^^^http://en.wikipedia.org/wiki/Swiftair^^en|Swiftair|^MAD^air-swiftair^1
 air-swiss-airlines-v1^^2002-01-01^^SWR^LX^724^Swiss International Air Lines^Swiss^Star Alliance^Member^^http://en.wikipedia.org/wiki/Swiss_International_Air_Lines^132402^en|Swiss International Air Lines|=en|Swiss|^^air-swiss-airlines^1
 air-sylt-air-v1^^^^AWU^7E^0^Sylt Air^^^^^^161^en|Sylt Air|^^air-sylt-air^1
 air-syphax-airlines-sa-v1^^2012-04-29^^SYA^FS^393^Syphax Airlines^^^^^http://en.wikipedia.org/wiki/Syphax_Airlines^^en|Syphax Airlines|^^air-syphax-airlines-sa^1
@@ -1268,7 +1269,8 @@ air-vueling-airlines-v1^^2004-01-01^^VLG^VY^30^Vueling^^^^^http://en.wikipedia.o
 air-vuelos-economicos-v1^^^^VAR^VU^0^Vuelos Economicos^^^^^^1115^en|Vuelos Economicos|^^air-vuelos-economicos^1
 air-vvb-aviation-malta-v1^^2015-01-01^^SGO^IV^0^VVB Aviation Malta^^^^^^^en|VVB Aviation Malta|^MLA^air-vvb-aviation-malta^1
 air-warbelows-air-ventures-v1^^^^VNA^4W^0^Warbelows Air Ventures^^^^^^4312^en|Warbelows Air Ventures|^^air-warbelows-air-ventures^1
-air-wasaya-airways-v1^^1989-01-01^^WSG^^0^Wasaya Airways^^^^^http://en.wikipedia.org/wiki/Wasaya_Airways^^en|Wasaya Airways|^^air-wasaya-airways^1
+air-wasaya-airways-v1^1^1989-01-01^2014-08-31^WSG^WT^0^Wasaya Airways^^^^^http://en.wikipedia.org/wiki/Wasaya_Airways^^en|Wasaya Airways|^YQT^air-wasaya-airways^1
+air-wasaya-airways-v2^^2014-09-01^^WSG^^0^Wasaya Airways^^^^^http://en.wikipedia.org/wiki/Wasaya_Airways^^en|Wasaya Airways|^YQT^air-wasaya-airways^2
 air-wataniya-airways-v1^1^2009-01-01^2011-03-17^WAN^KW^100^Wataniya Airways^^^^^http://en.wikipedia.org/wiki/Wataniya_Airways^^en|Wataniya Airways|^^air-wataniya-airways^1
 air-w-caribbean-cr-v1^^^^^0W^0^W Caribbean Costa Rica^^^^^^^en|W Caribbean Costa Rica|^^air-w-caribbean-cr^1
 air-welcome-air-v1^1^2000-05-01^2015-03-31^WLC^2W^0^Welcome Air^^^^^http://en.wikipedia.org/wiki/Welcome_Air^^en|Welcome Air|^^air-welcome-air^1
