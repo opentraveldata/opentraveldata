@@ -1,7 +1,7 @@
 #!/bin/sh
 
 
-# That Bash script extracts a POR from:
+# That Bash script tells how to extract a POR from:
 # - optd_por_best_known_so_far.csv
 # - optd_por_no_longer_valid.csv
 # - dump_from_ref_city.csv
@@ -9,7 +9,7 @@
 # - dump_from_innovata.csv
 # - ref_airport_pageranked.csv
 # - por_schedule_counts_YYYY_MM_to_YYYY_MM.csv
-#
+# - iata_airport_list_latest.csv
 
 ##
 # Temporary path
@@ -65,6 +65,7 @@ OPTD_DIR="${OPTD_DIR}/"
 # OPTD sub-directories
 DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
+IATA_DIR=${OPTD_DIR}data/IATA/
 
 ##
 # Log level
@@ -106,6 +107,12 @@ INNO_RAW_FILE=${TOOLS_DIR}${INNO_RAW_FILENAME}
 POR_SKD_DIR=${DATA_DIR}por_in_schedule/
 
 ##
+# Best known list of IATA POR
+IATA_POR_FILENAME=iata_airport_list_latest.csv
+#
+IATA_POR_FILE=${IATA_DIR}${IATA_POR_FILENAME}
+
+##
 # Snapshot date
 SNAPSHOT_DATE=`date "+%Y%m%d"`
 SNAPSHOT_DATE_HUMAN=`date`
@@ -134,5 +141,5 @@ then
 fi
 LATEST_DUMP_POR_SKD_CNT_FILE=${POR_SKD_DIR}${LATEST_DUMP_POR_SKD_CNT_FILENAME}
 
-echo "grep \"^XCG\" ${OPTD_POR_FILE} ${REF_RAW_FILENAME} ${GEONAME_RAW_FILENAME} ${INNO_RAW_FILENAME} ${LATEST_DUMP_POR_SKD_CNT_FILE} ${OPTD_PR_FILE}"
+echo "grep \"^XCG\" ${OPTD_POR_FILE} ${REF_RAW_FILENAME} ${GEONAME_RAW_FILENAME} ${INNO_RAW_FILENAME} ${LATEST_DUMP_POR_SKD_CNT_FILE} ${OPTD_PR_FILE} ${IATA_POR_FILE}"
 

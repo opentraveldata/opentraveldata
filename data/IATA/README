@@ -1,11 +1,13 @@
 
-IATA had the list of its airports available on a hidden directory
-of their Web site:
-midori http://www.iata.org/codes/_li/li.txt
+IATA had the list of its POR available on a hidden directory of their Web site:
+http://www.iata.org/codes/_li/li.txt
 
 However, from around 2011, they have ceased to do so. The IATA airports and
 airlines can now be searched through their online service:
-midori http://www.iata.org/ps/publications/Pages/code-search.aspx
+http://www.iata.org/publications/Pages/code-search.aspx
+
+The data files stored in this directory structure correspond to manually curated
+data, thanks to the above mentionned Web site and to Wikipedia.
 
 Location identifiers Web download (as of June 2010)
 		ACSII format specifications
