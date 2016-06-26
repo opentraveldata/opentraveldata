@@ -479,7 +479,7 @@ air-gojet-airlines-v1^^2004-01-01^^GJS^G7^573^GoJet Airlines^^^^^http://en.wikip
 air-gol-transportes-aereos-v2^^2016-05-01^^GLO^G3^127^Gol Transportes Aéreos^VRG Linhas Aéreas^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|^^air-gol-transportes-aereos^2
 air-golden-myanmar-airlines-v1^^^^^Y5^509^Golden Myanmar Airlines^^^^^^en|Golden Myanmar Airlines|^^air-golden-myanmar-airlines^1
 air-grand-china-air-v1^^2007-01-01^^GDC^CN^895^Grand China Air^^^^^http://en.wikipedia.org/wiki/Grand_China_Air^abbr|GCA|=en|Grand China Air|=pny|Dà Xīn Huá Hángkōng|=sign|GRAND CHINA|=wuu|大新华航空|=yue|大新華航空|^^air-grand-china-air^1
-air-grant-aviation-v1^^1993-01-01^^SWV^GV^0^Grant Aviation^^^^^http://en.wikipedia.org/wiki/Grant_Aviation^en|Grant Aviation|^^air-grant-aviation^1
+air-grant-aviation-v1^^1993-01-01^^SWV^GV^0^Grant Aviation^^^^^http://en.wikipedia.org/wiki/Grant_Aviation^en|Grant Aviation|^BET=ANC^air-grant-aviation^1
 air-great-lakes-aviation-v1^^1977-04-05^^GLA^ZK^846^Great Lakes Airlines^^^^^http://en.wikipedia.org/wiki/Great_Lakes_Airlines^en|Great Lakes Airlines|^^air-great-lakes-aviation^1
 air-groznyy-avia-v1^^^^GOZ^ZG^24^Groznyy Avia^^^^^^en|Groznyy Avia|^^air-groznyy-avia^1
 air-gryphon-airline-v1^^2007-03-01^^VOS^Y3^0^Gryphon Airlines^^^^^http://en.wikipedia.org/wiki/Gryphon_Airlines^en|Gryphon Airlines|^^air-gryphon-airline^1
@@ -927,7 +927,7 @@ air-sun-air-express-v1^^^^FDY^6G^504^Sun Air Express^Air Wales^^^^^en|Sun Air Ex
 air-sun-air-of-scandinavia-v1^^^^SUS^EZ^0^Sun Air of Scandinavia^^^Affiliate^^http://en.wikipedia.org/wiki/Sun_Air_of_Scandinavia^en|Sun Air of Scandinavia|^^air-sun-air-of-scandinavia^1
 air-sun-country-v1^^^^SCX^SY^337^Sun Country^^^^^^en|Sun Country|^^air-sun-country^1
 air-sun-express-germany-v1^^^^^XG^0^Sun Express Germany^^^^^^en|Sun Express Germany|^^air-sun-express-germany^1
-air-sun-express-v1^^1989-01-01^^SXS^XQ^564^SunExpress^Güneş Ekspress Havacılık^^^^http://en.wikipedia.org/wiki/SunExpress^en|SunExpress|=en|Güneş Ekspress Havacılık|^^air-sun-express^1
+air-sun-express-v1^^1989-01-01^^SXS^XQ^564^SunExpress^Güneş Ekspress Havacılık^^^^http://en.wikipedia.org/wiki/SunExpress^en|SunExpress|=en|Güneş Ekspress Havacılık|^AYT=DUS^air-sun-express^1
 air-sunny-airways-v1^^^^KJA^2S^338^Kinda Airlines^Island Exp^^^^^en|Kinda Airlines|=en|Island Exp|^^air-sunny-airways^1
 air-sunrise-airways-v1^^^^SNR^S6^0^Sunrise Airways^^^^^^en|Sunrise Airways|^^air-sunrise-airways^1
 air-sunwing-airlines-v1^^^^SWG^WG^292^Sunwing Airlines^Sunwing Airlines^^^^^en|Sunwing Airlines|=en|Sunwing Airlines|^^air-sunwing-airlines^1
@@ -1071,7 +1071,7 @@ air-xiamen-airlines-v1^^1984-07-25^^CXA^MF^731^XiamenAir^^^Member^^http://en.wik
 air-xl-airways-france-v1^^^^XLF^SE^473^XL Airways France^Star Airlines^^^^^en|XL Airways France|=en|Star Airlines|^^air-xl-airways-france^1
 air-xpressair-v1^^2003-01-01^^XAR^XN^0^XpressAir^^^^^http://en.wikipedia.org/wiki/XpressAir^en|XpressAir|p=en|Express Air|h=en|fly express|h^UPG^air-xpressair^1
 air-xtra-airways-v1^^^^CXP^XP^0^Xtra Airways^^^^^^en|Xtra Airways|^^air-xtra-airways^1
-air-yakutia-airlines-v1^^2002-01-01^^SYL^R3^849^Yakutia Airlines^^^^^http://en.wikipedia.org/wiki/Yakutia_Airlines^en|Yakutia Airlines|^^air-yakutia-airlines^1
+air-yakutia-airlines-v1^^2002-01-01^^SYL^R3^849^Yakutia Airlines^^^^^http://en.wikipedia.org/wiki/Yakutia_Airlines^en|Yakutia Airlines|^YKT^air-yakutia-airlines^1
 air-yamal-airlines-v1^^^^LLM^YC^664^Yamal Airlines^^^^^^en|Yamal Airlines|^^air-yamal-airlines^1
 air-yan-air-v1^^^^^YE^206^Yan Air^^^^P^^en|Yan Air|^^air-yan-air^1
 air-yangon-airways-v1^^^^AYG^YH^0^Yangon Airways^^^^^^en|Yangon Airways|^^air-yangon-airways^1
