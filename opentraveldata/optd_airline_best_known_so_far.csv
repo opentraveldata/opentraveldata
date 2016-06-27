@@ -473,7 +473,7 @@ air-germania-flug-v1^^2015-03-26^^GSW^GM^581^Germania Flug^^^^^http://en.wikiped
 air-germanwings-v1^^1997-01-01^^GWI^4U^51^Germanwings^^^^^http://en.wikipedia.org/wiki/Germanwings^en|Germanwings|^^air-germanwings^1
 air-globus-v1^^^^GHA^GH^674^Globus^Ghana Air^^Affiliate^^^en|Globus|=en|Ghana Air|^^air-globus^1
 air-gmg-airlines-v1^^1998-04-06^^GMG^Z5^9^GMG Airlines^^^^^http://en.wikipedia.org/wiki/GMG_Airlines^en|GMG Airlines|^^air-gmg-airlines^1
-air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/GoAir^en|GoAir|^^air-go-airlines^1
+air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/GoAir^en|GoAir|^BOM=DEL^air-go-airlines^1
 air-go-v1^^^^GOE^GO^0^Go^^^^^^en|Go|^^air-go^1
 air-gojet-airlines-v1^^2004-01-01^^GJS^G7^573^GoJet Airlines^^^^^http://en.wikipedia.org/wiki/GoJet_Airlines^en|GoJet Airlines|^^air-gojet-airlines^1
 air-gol-transportes-aereos-v2^^2016-05-01^^GLO^G3^127^Gol Transportes Aéreos^VRG Linhas Aéreas^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|^^air-gol-transportes-aereos^2
@@ -664,7 +664,7 @@ air-maswings-v1^^2007-10-01^^MWG^MH^0^MASwings^MASwings Sendirian Berhad^^Member
 air-mauritania-airways-v1^^^^^YD^0^Mauritania Airways^^^^^^en|Mauritania Airways|^^air-mauritania-airways^1
 air-mauritanian-airlines-v1^^^^^L6^495^Mauritanian Airlines Int^^^^^^en|Mauritanian Airlines Int|^^air-mauritanian-airlines^1
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^en|Mayair|=en|Aeromonterr|^^air-mayair^1
-air-maya-island-air-v1^^1962-01-01^^MYD^MY^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^en|Maya Island Air|^^air-maya-island-air^1
+air-maya-island-air-v1^^1962-01-01^^MYD^MY^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^en|Maya Island Air|^BZE=TZA^air-maya-island-air^1
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^en|Med-View Airline|^LOS^air-med-view-airline^1
 air-mega-maldives-v1^^^^^LV^400^Mega Maldives^^^^P^^en|Mega Maldives|^^air-mega-maldives^1
 air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^en|Meridiana Fly|^^air-meridiana-fly^1
