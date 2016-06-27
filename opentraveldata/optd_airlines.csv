@@ -281,7 +281,7 @@ air-aviacsa-v1^1^1990-01-01^2011-12-31^CHP^6A^0^Aviacsa^^^^^http://en.wikipedia.
 air-aviaenergo-v1^1^1992-01-01^2011-12-31^ERG^7U^765^Aviaenergo^^^^^http://en.wikipedia.org/wiki/Aviaenergo^^en|Aviaenergo|^^air-aviaenergo^1
 air-aviana-airways-v1^1^2008-01-01^2014-01-01^RRY^4A^0^Aviana Airways^Royal Bengal Airline^^^^http://en.wikipedia.org/wiki/Royal_Bengal_Airline^^en|Aviana Airways|=en|Royal Bengal Airline|^^air-aviana-airways^1
 air-avianca-v1^^1919-12-05^^AVA^AV^134^Avianca^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Avianca^182219^en|Avianca|^^air-avianca^1
-air-avianova-v1^^^^^AO^0^Avianova Lcc^Australian^^^^^^en|Avianova Lcc|=en|Australian|^^air-avianova^1
+air-avianova-v1^1^2009-08-27^2011-10-10^NET^AO^0^Avianova^^^^^http://en.wikipedia.org/wiki/Avianova_(Russia)^^en|Avianova Lcc|^MOW^air-avianova^1
 air-aviaprad-v1^1^1996-01-01^2008-02-05^VID^WR^0^Aviaprad^^^^^http://en.wikipedia.org/wiki/Aviaprad^^en|Aviaprad|^^air-aviaprad^1
 air-aviastar-mandiri-v1^^2003-01-01^^VIT^^0^Aviastar Mandiri^^^^^http://en.wikipedia.org/wiki/Aviastar_(Indonesia)^^en|Aviastar|s=en|Aviastar Mandiri|^^air-aviastar-mandiri^1
 air-aviateca-v1^^^^GUG^GU^240^Aviateca^^^^^^13140^en|Aviateca|^^air-aviateca^1
@@ -591,7 +591,7 @@ air-ghadames-air-transport-v1^1^2004-01-01^2006-12-31^GHT^G6^0^Ghadames Air Tran
 air-girjet-v1^1^2003-07-31^2008-04-30^GJT^8G^0^Girjet^^^^^http://en.wikipedia.org/wiki/Girjet^^en|Girjet|^^air-girjet^1
 air-globus-v1^^^^GHA^GH^674^Globus^Ghana Air^OneWorld^Affiliate^^^20088^en|Globus|=en|Ghana Air|^^air-globus^1
 air-gmg-airlines-v1^^1998-04-06^^GMG^Z5^9^GMG Airlines^^^^^http://en.wikipedia.org/wiki/GMG_Airlines^^en|GMG Airlines|^^air-gmg-airlines^1
-air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/GoAir^54563^en|GoAir|^^air-go-airlines^1
+air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/GoAir^54563^en|GoAir|^BOM=DEL^air-go-airlines^1
 air-gojet-airlines-v1^^2004-01-01^^GJS^G7^573^GoJet Airlines^^^^^http://en.wikipedia.org/wiki/GoJet_Airlines^104884^en|GoJet Airlines|^^air-gojet-airlines^1
 air-golden-myanmar-airlines-v1^^^^^Y5^509^Golden Myanmar Airlines^^^^^^1585^en|Golden Myanmar Airlines|^^air-golden-myanmar-airlines^1
 air-gol-transportes-aereos-v1^1^2001-01-15^2016-04-30^GOL^G3^127^Gol Transportes Aéreos^VRG Linhas Aéreas^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|^^air-gol-transportes-aereos^1
@@ -821,7 +821,7 @@ air-mauritanian-airlines-v1^^^^^L6^495^Mauritanian Airlines Int^^^^^^1850^en|Mau
 air-max-air-nigeria-v1^1^2008-01-01^2015-04-01^NGL^VM^0^Max Air^^^^^http://en.wikipedia.org/wiki/Max_Air^^en|Max Air|^^air-max-air-nigeria^1
 air-maxjet-airways-v1^1^2003-01-01^2007-12-24^MXJ^MY^0^MAXjet Airways^^^^^http://en.wikipedia.org/wiki/MAXjet_Airways^^en|MAXjet Airways|^^air-maxjet-airways^1
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^4026^en|Mayair|=en|Aeromonterr|^^air-mayair^1
-air-maya-island-air-v1^^1962-01-01^^MYD^MY^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^44509^en|Maya Island Air|^^air-maya-island-air^1
+air-maya-island-air-v1^^1962-01-01^^MYD^MY^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^44509^en|Maya Island Air|^BZE=TZA^air-maya-island-air^1
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^^en|Med-View Airline|^LOS^air-med-view-airline^1
 air-mega-maldives-v1^^^^^LV^400^Mega Maldives^^^^P^^380^en|Mega Maldives|^^air-mega-maldives^1
 air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^7419^en|Meridiana Fly|^^air-meridiana-fly^1
@@ -1181,7 +1181,9 @@ air-thomas-cook-eastland-v1^^^^VKG^DK^630^Thomas Cook Airlines^Eastland Air^^^^^
 air-thomson-airways-v1^^2004-01-01^^TOM^BY^754^Thomson Airways^Britannia Airways^^^^http://en.wikipedia.org/wiki/Thomson_Airways^^en|Thomson Airways|=en|Britannia Airways|^^air-thomson-airways^1
 air-tianjin-airlines-v1^^2007-01-01^^GCR^GS^826^Tianjin Airlines^^^^^http://en.wikipedia.org/wiki/Tianjin_Airlines^49847^en|Tianjin Airlines|^HAK=HET=TSN=URC=XIY^air-tianjin-airlines^1
 air-tiara-air-aruba-v1^^^^^3P^253^Tiara Air Aruba^Tiara Air^^^^^10^en|Tiara Air Aruba|=en|Tiara Air|^^air-tiara-air-aruba^1
-air-tibet-airlines-v1^^^^^TV^88^Tibet Airlines^^^^^^52^en|Tibet Airlines|^^air-tibet-airlines^1
+air-tibet-airlines-v1^^2010-03-01^2013-12-31^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^52^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^1
+air-tibet-airlines-v2^^2014-01-01^2014-02-01^TBA^^^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^2
+air-tibet-airlines-v3^^2014-02-02^^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^52^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^3
 air-tiger-air-australia-v1^^^^^TT^0^Tiger Airways Australia^Air Lithuania^^^^^26982^en|Tiger Airways Australia|=en|Air Lithuania|^^air-tiger-air-australia^1
 air-tiger-air-philippines-v1^^^^SRQ^DG^931^Tiger Air Philippines^^^^^^25022^en|Tiger Air Philippines|^^air-tiger-air-philippines^1
 air-tiger-air-taiwan-v1^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^4295^en|Tigerair Taiwan|^^air-tiger-air-taiwan^1
