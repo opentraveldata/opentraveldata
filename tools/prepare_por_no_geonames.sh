@@ -6,7 +6,7 @@
 # Create the OPTD-maintained list of POR absent from Geonames, from:
 # - optd_por_best_known_so_far.csv
 # - ref_airport_pageranked.csv
-# - optd_por_ref_exceptions.csv
+# - optd_por_exceptions.csv
 # - optd_tz_light.csv
 # - optd_por_tz.csv
 # - optd_cont.csv
@@ -64,8 +64,9 @@ GEO_REF_FILENAME=dump_from_ref_city.csv
 OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
 
 ##
-# File of non-Geonames POR, with the rules telling whether they are valid
-OPTD_REF_DPCTD_FILENAME=optd_por_ref_exceptions.csv
+# File of exceptions for POR, referencing known issues
+# For instance, when the POR is still referenced but no longer valid
+OPTD_REF_DPCTD_FILENAME=optd_por_exceptions.csv
 
 ##
 # PageRank values
@@ -202,7 +203,7 @@ then
 	echo "* Input data files"
 	echo "------------------"
 	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
-	echo " - OPTD-maintained file of exceptions for reference data: '${OPTD_REF_DPCTD_FILE}'"
+	echo " - OPTD-maintained file of exceptions: '${OPTD_REF_DPCTD_FILE}'"
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
 	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
 	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"

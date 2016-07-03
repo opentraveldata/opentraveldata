@@ -3,7 +3,7 @@
 # derived from a few sources:
 #  * OPTD-maintained lists of:
 #    * Best known POR (poins of reference): optd_por_best_known_so_far.csv
-#    * Deprecated POR still referenced:     optd_por_ref_exceptions.csv
+#    * Deprecated POR still referenced:     optd_por_exceptions.csv
 #    * PageRank values:                     ref_airport_pageranked.csv
 #    * Country-associated time-zones:       optd_tz_light.csv
 #    * Time-zones for a few POR:            optd_por_tz.csv
@@ -57,7 +57,7 @@ BEGIN {
 
 	# 
 	delete optd_por_ref_dpctd_list
-	optd_por_ref_dpctd_list_file = "optd_por_ref_exceptions.csv"
+	optd_por_ref_dpctd_list_file = "optd_por_exceptions.csv"
 
     # Separators
 	K_TGT_SEP = ";"
@@ -99,9 +99,11 @@ BEGIN {
 # File of deprecated, but still referenced, POR
 #
 # Sample lines:
-# por_code^source^env_id^date_from^date_to^comment
-# AIY^R^^^^AIY used to be Atlantic City, New Jersey (NJ), USA, Geonames ID: 4500546
-/^[A-Z]{3}\^R\^\^\^\^[^^]*$/ {
+# por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^comment
+# AFW^R^1^0^^^^DFW^As of May 2016, AFW has been moved to FTW/Fort Worth, Texas (TX), USA
+# AIY^R^0^1^1^^2016-06-06^^AIY used to be Atlantic City, New Jersey (NJ), USA, Geonames ID: 4500546
+# BVF^R^0^1^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
+/^[A-Z]{3}\^[INO]{0,3}R[INO]{0,3}\^0\^1\^\^\^\^\^[^^]*$/ {
     # IATA code
     iata_code = $1
 

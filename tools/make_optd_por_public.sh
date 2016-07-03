@@ -20,7 +20,6 @@
 # - optd_por_best_known_so_far.csv
 # - optd_por_no_longer_valid.csv
 # - optd_por_no_geonames.csv
-# - optd_por_ref_exceptions.csv
 # - optd_country_states.csv
 # - ref_airport_pageranked.csv
 # - optd_tz_light.csv
