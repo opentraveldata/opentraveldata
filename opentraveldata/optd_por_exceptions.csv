@@ -63,6 +63,9 @@ QQO^R^0^1^^^^^QQO is BritRail Zone O, United Kingdom (GB)
 QQV^R^0^1^^^^^QQV is BritRail Zone V, United Kingdom (GB)
 QQZ^R^0^1^^^^^QQZ is BritRail Zone Z, United Kingdom (GB)
 QXH^R^1^0^^^^^As of May 2016, missing from reference data
+QXN^I^0^1^^^^^QXN corresponds to SITA Network, Switzerland (CH)
+QXS^I^0^1^^^^^QXT corresponds to SITA Aircom, Switzerland (CH)
+QXT^I^0^1^^^^^QXT corresponds to SITA Network, Switzerland (CH)
 QWI^R^0^1^^^^^QWI used to be Schleswig, Germany (DE), Geonames ID: 2838634. That code is apparently unknown from IATA. The IATA code associated to Schleswig is WBG
 RAT^R^0^1^^^^^RAT used to be Raduzhny Airport, Russia (RU), Geonames ID: 7668536
 REQ^R^1^0^^^^^As of July 2016, missing from reference data
