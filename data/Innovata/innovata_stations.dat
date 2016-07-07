@@ -1,7 +1,8 @@
 iata_code^city_code^por_name^city_name^state_code^country_code^latitude^longitude^loc_id^loc_type
 AAA^AAA^Anaa Airport^Anaa^^PF^-17.3515^-145.506^2^A
 AAA^AAA^Anaa Airport^Anaa^^PF^-17.3515^-145.506^2^C
-AAB^AAB^Arrabury Airport^Arrabury^QL^AU^-26.7^141.038^2B^CA
+AAB^AAB^Arrabury Airport^Arrabury^QL^AU^-26.7^141.038^2B^A
+AAB^AAB^Arrabury Airport^Arrabury^QL^AU^-26.7^141.038^2B^C
 AAC^AAC^El Arish International Airport^El Arish^^EG^31.1333^33.75^0^A
 AAC^AAC^El Arish International Airport^El Arish^^EG^31.1333^33.75^0^C
 AAE^AAE^Les Salines Airport^Annaba^^DZ^36.82^7.80567^0^A
@@ -36,6 +37,7 @@ AAU^AAU^Asau Airport^Asau^^WS^-13.455^-172.6^0^A
 AAU^AAU^Asau Airport^Asau^^WS^-13.455^-172.6^0^C
 AAV^AAV^Allah Valley Airport^Surallah^^PH^6.33333^124.767^0^A
 AAV^AAV^Allah Valley Airport^Surallah^^PH^6.33333^124.767^0^C
+AAW^AAH^Bf West Bus Station^Aachen^^DE^50.7752^6.0695^0^R
 AAX^AAX^Araxa Airport^Araxa^MG^BR^-19.5675^-46.9242^1^CA
 AAY^AAY^Al Ghaydah Airport^Al Ghaydah^^YE^16.1883^52.1717^0^CA
 AAZ^AAZ^Quetzaltenango Airport^Quetzaltenango^^GT^14.8593^-91.5012^0^A
@@ -122,6 +124,7 @@ ACV^ACV^Arcata Airport^Arcata/Eureka^CA^US^40.9742^-124.104^4^C
 ACX^ACX^Xingyi Airport^Xingyi^^CN^25.0847^104.956^0^A
 ACX^ACX^Xingyi Airport^Xingyi^^CN^25.0847^104.956^0^C
 ACY^ACY^Atlantic City International Airport^Atlantic City^NJ^US^39.45^-74.5833^1^A
+ACY^ACY^Atlantic City International Airport^Atlantic City^NJ^US^39.45^-74.5833^1^C
 ACZ^ACZ^Zabol Airport^Zabol^^IR^31.0848^61.5343^0^CA
 ADA^ADA^Sakirpasa Airport^Adana^^TR^36.9835^35.2752^0^A
 ADA^ADA^Sakirpasa Airport^Adana^^TR^36.9835^35.2752^0^C
@@ -206,8 +209,8 @@ AFI^AFI^Amalfi Airport^Amalfi^^CO^6.91667^-75.0667^0^C
 AFK^ADP^Kondavattavan Tank SPB^Ampara^^LK^7.28833^81.6345^0^A
 AFL^AFL^Oswaldo Marques Dias Airport^Alta Floresta^MT^BR^-9.85967^-56.1037^2^A
 AFL^AFL^Oswaldo Marques Dias Airport^Alta Floresta^MT^BR^-9.85967^-56.1037^2^C
-AFN^AFN^Jaffrey Municipal Airport^Jaffrey^NH^US^42.8333^-72.0667^1^A
-AFN^AFN^Jaffrey Municipal Airport^Jaffrey^NH^US^42.8333^-72.0667^1^C
+AFN^AFN^Silver Ranch Airport^Jaffrey^NH^US^42.8333^-72.0667^1^A
+AFN^AFN^Silver Ranch Airport^Jaffrey^NH^US^42.8333^-72.0667^1^C
 AFO^AFO^Afton Municipal Airport^Afton^WY^US^42.7333^-110.933^3^A
 AFO^AFO^Afton Municipal Airport^Afton^WY^US^42.7333^-110.933^3^C
 AFR^AFR^Afore Airport^Afore^^PG^-9.13333^148.383^1^A
@@ -323,7 +326,8 @@ AIS^AIS^Arorae Airport^Arorae^^KI^-2.65^176.833^1^A
 AIS^AIS^Arorae Airport^Arorae^^KI^-2.65^176.833^1^C
 AIT^AIT^Aitutaki Island Airport^Aitutaki Island^^CK^-18.85^-159.75^0^A
 AIT^AIT^Aitutaki Island Airport^Aitutaki Island^^CK^-18.85^-159.75^0^C
-AIU^AIU^Atiu Island Airport^Atiu Island^^CK^-20.0333^-158.1^0^CA
+AIU^AIU^Atiu Island Airport^Atiu Island^^CK^-20.0333^-158.1^0^A
+AIU^AIU^Atiu Island Airport^Atiu Island^^CK^-20.0333^-158.1^0^C
 AIV^AIV^George Downer Airport^Aliceville^AL^US^33.1333^-88.15^2^A
 AIV^AIV^George Downer Airport^Aliceville^AL^US^33.1333^-88.15^2^C
 AIW^AIW^Ai-Ais Airport^Ai-Ais^^NA^-27.9833^17.5833^0^A
@@ -487,6 +491,7 @@ AMW^AMW^Ames Municipal Airport^Ames^IA^US^41.9898^-93.6177^2^C
 AMX^AMX^Ammaroo Airport^Ammaroo^NT^AU^-21.7373^135.237^3A^CA
 AMY^AMY^Ambatomainty Airport^Ambatomainty^^MG^-17.6833^45.6667^0^CA
 AMZ^AMZ^Ardmore Airport^Ardmore^^NZ^-37.0333^174.967^1^CA
+ANA^ANA^Angama Airport^Angama^^KE^-1.26967^34.9532^0^CA
 ANB^ANB^Anniston Regional Airport^Anniston^AL^US^33.5875^-85.8535^2^A
 ANB^ANB^Anniston Regional Airport^Anniston^AL^US^33.5875^-85.8535^2^C
 ANC^ANC^Ted Stevens International Airport^Anchorage^AK^US^61.1682^-149.984^5^A
@@ -676,8 +681,8 @@ ASD^ASD^Andros Town Intl Airport^Andros Town^^BS^24.692^-77.791^0^A
 ASD^ASD^Andros Town Intl Airport^Andros Town^^BS^24.692^-77.791^0^C
 ASE^ASE^Pitkin County Airport^Aspen^CO^US^39.2212^-106.868^3^A
 ASE^ASE^Pitkin County Airport^Aspen^CO^US^39.2212^-106.868^3^C
-ASF^ASF^Astrakhan Airport^Astrakhan^^RU^46.2847^48.0012^2^A
-ASF^ASF^Astrakhan Airport^Astrakhan^^RU^46.2847^48.0012^2^C
+ASF^ASF^Astrakhan Airport^Astrakhan^^RU^46.2847^48.0012^3^A
+ASF^ASF^Astrakhan Airport^Astrakhan^^RU^46.2847^48.0012^3^C
 ASG^ASG^Ashburton Airport^Ashburton^^NZ^-43.9^171.783^1^CA
 ASH^ASH^Boire Field^Nashua^NH^US^42.774^-71.5057^1^A
 ASH^ASH^Boire Field^Nashua^NH^US^42.774^-71.5057^1^C
@@ -766,15 +771,14 @@ ATZ^ATZ^Asyut Airport^Asyut^^EG^27.0412^31.0072^0^A
 ATZ^ATZ^Asyut Airport^Asyut^^EG^27.0412^31.0072^0^C
 AUA^AUA^Reina Beatrix Airport^Aruba^^AW^12.5013^-70.0083^0^A
 AUA^AUA^Reina Beatrix Airport^Aruba^^AW^12.5013^-70.0083^0^C
-AUB^MUC^Augsburg Bus Station^Munich^^DE^48.401^10.8728^0^A
-AUB^MUC^Augsburg Bus Station^Munich^^DE^48.401^10.8728^0^C
+AUB^MUC^Augsburg Bus Station^Munich^^DE^48.401^10.8728^0^B
 AUC^AUC^Santiago Perez Quiroz Airport^Arauca^^CO^7.06967^-70.7388^0^A
 AUC^AUC^Santiago Perez Quiroz Airport^Arauca^^CO^7.06967^-70.7388^0^C
 AUD^AUD^Augustus Downs Airport^Augustus Downs^QL^AU^-18.5042^139.876^2B^CA
 AUE^AUE^Abu Rudeis Airport^Abu Rudeis^^EG^28.9^33.1833^0^CA
 AUF^AUF^Aeroport Auxerre Branches^Auxerre^^FR^47.85^3.5^0^A
 AUF^AUF^Aeroport Auxerre Branches^Auxerre^^FR^47.85^3.5^0^C
-AUG^AUG^Augusta Airport^Augusta^ME^US^44.3175^-69.7913^1^CA
+AUG^AUG^Augusta State Airport^Augusta^ME^US^44.3175^-69.7913^1^CA
 AUH^AUH^Abu Dhabi International Airport^Abu Dhabi^^AE^24.4383^54.65^0^A
 AUH^AUH^Abu Dhabi International Airport^Abu Dhabi^^AE^24.4383^54.65^0^C
 AUI^AUI^Aua Island Airport^Aua Island^^PG^-1.455^143.072^1^A
@@ -831,6 +835,8 @@ AVO^AVO^Avon Park Executive Airport^Avon Park^FL^US^27.6^-81.5167^1^CA
 AVP^AVP^Wilkes-Barre International Airport^Wilkes-Barre/Scranton^PA^US^41.3363^-75.7207^1^A
 AVP^AVP^Wilkes-Barre International Airport^Wilkes-Barre/Scranton^PA^US^41.3363^-75.7207^1^C
 AVP^AVP^Wilkes-Barre International Airport^Wilkes-Barre/Scranton^PA^US^41.3363^-75.7207^1^C
+AVR^AVR^Alverca Airport^Alverca^^PT^38.8765^-9.02467^1^A
+AVR^AVR^Alverca Airport^Alverca^^PT^38.8765^-9.02467^1^C
 AVS^AVJ^Railway Station^Avila^SP^ES^40.6542^-4.68333^1^R
 AVU^AVU^Avu Avu Airport^Avu Avu^^SB^-9.83333^160.383^0^CA
 AVV^MEL^Avalon Airport^Melbourne^VI^AU^-38.0223^144.471^2^A
@@ -866,6 +872,9 @@ AXF^AXF^Alxa Left Banner Airport^Alxa Left Banner^^CN^38.742^105.584^0^A
 AXF^AXF^Alxa Left Banner Airport^Alxa Left Banner^^CN^38.742^105.584^0^C
 AXG^AXG^Algona Municipal Airport^Algona^IA^US^43.0667^-94.2333^2^A
 AXG^AXG^Algona Municipal Airport^Algona^IA^US^43.0667^-94.2333^2^C
+AXI^AEI^Algeciras Bus Station^Algeciras^SP^ES^36.1223^-5.44183^1^B
+AXJ^AXJ^Amakusa Airport^Amakusa^^JP^32.476^130.155^0^A
+AXJ^AXJ^Amakusa Airport^Amakusa^^JP^32.476^130.155^0^C
 AXK^AXK^Ataq Airport^Ataq^^YE^14.5508^46.8223^0^A
 AXK^AXK^Ataq Airport^Ataq^^YE^14.5508^46.8223^0^C
 AXL^AXL^Alexandria Station Airport^Alexandria Station^NT^AU^-19.0833^136.667^3A^CA
@@ -888,7 +897,6 @@ AXX^AXX^Angel Fire Airport^Angel Fire^NM^US^36.4167^-105.283^3^CA
 AYA^AYA^El Cebruno Airport^Ayapel^^CO^8.31667^-75.15^0^CA
 AYC^AYC^La Gloria Airport^Ayacucho^^CO^8.6^-73.6167^0^CA
 AYD^AYD^Alroy Downs Airport^Alroy Downs^NT^AU^-19.3^135.95^3A^CA
-AYE^AYE^Army Air Field Heliport^Fort Devens^MA^US^42.55^-71.6^1^CH
 AYG^AYG^Yaguara II Airport^Yaguara II^^CO^1.53333^-73.9333^0^CA
 AYI^AYI^Yari Airport^Yari^^CO^-0.333333^-72.3333^0^CA
 AYK^AYK^Arkalyk Airport^Arkalyk^^KZ^50.3167^66.9667^2^A
@@ -927,6 +935,7 @@ AZN^AZN^Andizhan Airport^Andizhan^^UZ^40.7333^72.3^0^CA
 AZO^AZO^Battle Creek International Airport^Kalamazoo/Battle Creek^MI^US^42.2352^-85.5522^1^A
 AZO^AZO^Battle Creek International Airport^Kalamazoo/Battle Creek^MI^US^42.2352^-85.5522^1^C
 AZP^MEX^Atizapan-Jimenez Cantu Airport^Mexico City^^MX^19.4167^-99.1^1^A
+AZQ^CHG^Chaoyang Railway Station^Chaoyang^^CN^23.3835^116.417^0^R
 AZR^AZR^Touat Airport^Adrar^^DZ^27.8368^-0.1845^0^A
 AZR^AZR^Touat Airport^Adrar^^DZ^27.8368^-0.1845^0^C
 AZS^AZS^El Catey Intl Airport^Samana^^DO^19.2007^-69.4262^0^A
@@ -942,7 +951,7 @@ BAD^SHV^Barksdale Air Force Base^Shreveport^LA^US^32.5^-93.6667^2^A
 BAE^BAE^Barcelonnette Airport^Barcelonnette^^FR^44.3833^6.66667^0^A
 BAE^BAE^Barcelonnette Airport^Barcelonnette^^FR^44.3833^6.66667^0^C
 BAE^BAE^Barcelonnette Airport^Barcelonnette^^FR^44.3833^6.66667^0^C
-BAF^BAF^Barnes Airport^Westfield^MA^US^42.1333^-72.75^1^CA
+BAF^BAF^Barnes Regional Airport^Westfield^MA^US^42.1333^-72.75^1^CA
 BAG^BAG^Loakan Airport^Baguio^^PH^16.3727^120.617^0^A
 BAG^BAG^Loakan Airport^Baguio^^PH^16.3727^120.617^0^C
 BAH^BAH^Bahrain International Airport^Bahrain^^BH^26.2692^50.6335^0^A
@@ -960,7 +969,8 @@ BAN^BAN^Basongo Airport^Basongo^^CD^-4.308^20.4235^2^C
 BAP^BAP^Baibara Airport^Baibara^^PG^-10.3333^149.75^1^CA
 BAQ^BAQ^Ernesto Cortissoz Intl Airport^Barranquilla^^CO^10.891^-74.774^0^A
 BAQ^BAQ^Ernesto Cortissoz Intl Airport^Barranquilla^^CO^10.891^-74.774^0^C
-BAR^BAR^Bo'ao Airport^Qionghai^^CN^19.1368^110.452^0^CA
+BAR^BAR^Bo'ao Airport^Qionghai^^CN^19.1368^110.452^0^A
+BAR^BAR^Bo'ao Airport^Qionghai^^CN^19.1368^110.452^0^C
 BAS^BAS^Balalae Airport^Balalae^^SB^-6.98333^155.883^0^A
 BAS^BAS^Balalae Airport^Balalae^^SB^-6.98333^155.883^0^C
 BAT^BAT^Chafei Amsei Airport^Barretos^SP^BR^-20.55^-48.55^1^A
@@ -969,8 +979,8 @@ BAU^BRI^Central Railway Station^Bari^^IT^41.1173^16.8683^0^R
 BAV^BAV^Erliban Airport^Baotou^^CN^40.556^109.992^0^A
 BAV^BAV^Erliban Airport^Baotou^^CN^40.556^109.992^0^C
 BAW^BAW^Biawonque Airport^Biawonque^^GA^-0.666667^146.35^0^CA
-BAX^BAX^Barnaul Airport^Barnaul^^RU^53.3568^83.542^5^A
-BAX^BAX^Barnaul Airport^Barnaul^^RU^53.3568^83.542^5^C
+BAX^BAX^Barnaul Airport^Barnaul^^RU^53.3568^83.542^6^A
+BAX^BAX^Barnaul Airport^Barnaul^^RU^53.3568^83.542^6^C
 BAY^BAY^Baia Mare Airport^Baia Mare^^RO^47.65^23.4667^0^A
 BAY^BAY^Baia Mare Airport^Baia Mare^^RO^47.65^23.4667^0^C
 BAZ^BAZ^Barcelos Airport^Barcelos^AM^BR^-0.9755^-62.9185^2A^A
@@ -982,7 +992,7 @@ BBB^BBB^Benson Municipal Airport^Benson^MN^US^45.3167^-95.6^2^C
 BBC^BBC^Bay City Municipal Airport^Bay City^TX^US^28.9833^-95.9667^2^CA
 BBD^BBD^Curtis Field^Brady^TX^US^31.1333^-99.3333^2^A
 BBD^BBD^Curtis Field^Brady^TX^US^31.1333^-99.3333^2^C
-BBF^BBF^Burlington Airport^Burlington^MA^US^42.5^-71.1833^1^O
+BBE^BUE^Fluvial Bus Station^Buenos Aires^BA^AR^-34^-58.5333^0^P
 BBG^BBG^Butaritari Airport^Butaritari^^KI^3.16667^172.75^1^A
 BBG^BBG^Butaritari Airport^Butaritari^^KI^3.16667^172.75^1^C
 BBH^BBH^Barth^Stralsund^^DE^54.3358^12.7^0^A
@@ -996,7 +1006,8 @@ BBK^BBK^Kasane Airport^Kasane^^BW^-17.8167^25.15^0^C
 BBL^BBL^Ballera Airport^Ballera^QL^AU^-27.4067^141.805^2B^A
 BBL^BBL^Ballera Airport^Ballera^QL^AU^-27.4067^141.805^2B^C
 BBM^BBM^Battambang Airport^Battambang^^KH^13.1167^103.2^0^CA
-BBN^BBN^Bario Airport^Bario^^MY^3.7355^115.468^0^CA
+BBN^BBN^Bario Airport^Bario^^MY^3.7355^115.468^0^A
+BBN^BBN^Bario Airport^Bario^^MY^3.7355^115.468^0^C
 BBO^BBO^Berbera Airport^Berbera^^SO^10.39^44.9513^0^A
 BBO^BBO^Berbera Airport^Berbera^^SO^10.39^44.9513^0^C
 BBP^BBP^Bembridge Airport^Bembridge^EN^GB^50.6833^-1.08333^0^A
@@ -1037,7 +1048,8 @@ BCK^BCK^Bolwarra Airport^Bolwarra^QL^AU^-17.4^144.167^2B^CA
 BCL^BCL^Barra del Colorado Airport ^Barra del Colorado^^CR^10.8333^-82.9667^0^A
 BCL^BCL^Barra del Colorado Airport ^Barra del Colorado^^CR^10.8333^-82.9667^0^C
 BCL^BCL^Barra del Colorado Airport ^Barra del Colorado^^CR^10.8333^-82.9667^0^C
-BCM^BCM^Bacau Airport^Bacau^^RO^46.5198^26.9062^0^CA
+BCM^BCM^Bacau Airport^Bacau^^RO^46.5198^26.9062^0^A
+BCM^BCM^Bacau Airport^Bacau^^RO^46.5198^26.9062^0^C
 BCN^BCN^Barcelona Airport^Barcelona^SP^ES^41.2915^2.07367^1^A
 BCN^BCN^Barcelona Airport^Barcelona^SP^ES^41.2915^2.07367^1^C
 BCO^BCO^Bako Airport^Jinka^^ET^5.78333^36.55^0^CA
@@ -1103,9 +1115,10 @@ BDZ^BDZ^Baindoung Airport^Baindoung^^PG^-6.33333^146.95^1^CA
 BEA^BEA^Bereina Airport^Bereina^^PG^-8.65^146.483^1^CA
 BEB^BEB^Benbecula Airport^Benbecula^SC^GB^57.476^-7.35883^0^CA
 BEC^ICT^Beech Factory Airport^Wichita^KS^US^37.6833^-97.3333^2^A
-BED^BED^Hanscom Field^Bedford/Hanscom^MA^US^42.4692^-71.2873^1^A
-BED^BED^Hanscom Field^Bedford/Hanscom^MA^US^42.4692^-71.2873^1^C
-BEE^BEE^Beagle Bay Airport^Beagle Bay^WA^AU^-16.9667^122.667^4^CA
+BED^BED^Laurence G Hanscom Field^Bedford^MA^US^42.4692^-71.2873^1^A
+BED^BED^Laurence G Hanscom Field^Bedford^MA^US^42.4692^-71.2873^1^C
+BEE^BEE^Beagle Bay Airport^Beagle Bay^WA^AU^-16.9667^122.667^4^A
+BEE^BEE^Beagle Bay Airport^Beagle Bay^WA^AU^-16.9667^122.667^4^C
 BEF^BEF^Bluefields Airport^Bluefields^^NI^11.9915^-83.7678^0^A
 BEF^BEF^Bluefields Airport^Bluefields^^NI^11.9915^-83.7678^0^C
 BEG^BEG^Nikola Tesla Airport^Belgrade^^RS^44.8182^20.3073^0^A
@@ -1221,8 +1234,8 @@ BGY^MIL^Bergamo/Orio al Serio Airport^Milan^^IT^45.668^9.70017^0^A
 BGZ^BGZ^Braga Airport^Braga^^PT^41.55^-8.43333^1^A
 BGZ^BGZ^Braga Airport^Braga^^PT^41.55^-8.43333^1^C
 BHA^BHA^Los Perales Airport^Bahia De Caraquez^^EC^-0.6^-80.4167^1^CA
-BHB^BHB^Bar Harbor Airport^Bar Harbor^ME^US^44.4427^-68.357^1^A
-BHB^BHB^Bar Harbor Airport^Bar Harbor^ME^US^44.4427^-68.357^1^C
+BHB^BHB^Hancock County Airport^Bar Harbor^ME^US^44.4427^-68.357^1^A
+BHB^BHB^Hancock County Airport^Bar Harbor^ME^US^44.4427^-68.357^1^C
 BHC^BHC^Bhurban Heliport^Bhurban^^PK^33.9217^73.4333^0^CH
 BHD^BFS^George Best City Airport^Belfast^NI^GB^54.6167^-5.88333^0^A
 BHE^BHE^WoodBourne Airport^Blenheim^^NZ^-41.5167^173.87^1^A
@@ -1265,8 +1278,8 @@ BIA^BIA^Poretta Airport^Bastia^^FR^42.55^9.48417^0^A
 BIA^BIA^Poretta Airport^Bastia^^FR^42.55^9.48417^0^C
 BIB^BIB^Baidoa Airport^Baidoa^^SO^3.06667^43.6333^0^A
 BIB^BIB^Baidoa Airport^Baidoa^^SO^3.06667^43.6333^0^C
-BID^BID^Block Island Airport^Block Island^RI^US^41.1667^-71.5742^1^A
-BID^BID^Block Island Airport^Block Island^RI^US^41.1667^-71.5742^1^C
+BID^BID^Block Island State Airport^Block Island^RI^US^41.1667^-71.5742^1^A
+BID^BID^Block Island State Airport^Block Island^RI^US^41.1667^-71.5742^1^C
 BIE^BIE^Beatrice Municipal Airport^Beatrice^NE^US^40.3^-96.75^2^A
 BIE^BIE^Beatrice Municipal Airport^Beatrice^NE^US^40.3^-96.75^2^C
 BIF^ELP^Biggs Army Air Field^El Paso^TX^US^31.75^-106.483^3^A
@@ -1288,7 +1301,8 @@ BIO^BIO^Bilbao Airport^Bilbao^SP^ES^43.3017^-2.91967^1^C
 BIP^BIP^Bulimba Airport^Bulimba^QL^AU^-16.15^143.75^2B^CA
 BIQ^BIQ^Biarritz Parme Airport^Biarritz^^FR^43.4685^-1.52033^0^A
 BIQ^BIQ^Biarritz Parme Airport^Biarritz^^FR^43.4685^-1.52033^0^C
-BIR^BIR^Biratnagar Airport^Biratnagar^^NP^26.4837^87.2597^0^CA
+BIR^BIR^Biratnagar Airport^Biratnagar^^NP^26.4837^87.2597^0^A
+BIR^BIR^Biratnagar Airport^Biratnagar^^NP^26.4837^87.2597^0^C
 BIS^BIS^Bismarck Municipal Airport^Bismarck^ND^US^46.771^-100.755^2^A
 BIS^BIS^Bismarck Municipal Airport^Bismarck^ND^US^46.771^-100.755^2^C
 BIT^BIT^Patan Airport^Baitadi^^NP^29^80.5^0^CA
@@ -1406,7 +1420,9 @@ BLK^BLK^Blackpool Airport^Blackpool^EN^GB^53.7698^-3.035^0^A
 BLK^BLK^Blackpool Airport^Blackpool^EN^GB^53.7698^-3.035^0^C
 BLL^BLL^Billund Airport^Billund^^DK^55.7363^9.15^0^A
 BLL^BLL^Billund Airport^Billund^^DK^55.7363^9.15^0^C
-BLM^BLM^Monmouth Executive Airport^Belmar/Farmingdale^NJ^US^40.1833^-74.0167^1^CA
+BLM^BLM^Monmouth Executive Airport^Belmar/Farmingdale^NJ^US^40.1833^-74.0167^1^A
+BLM^BLM^Monmouth Executive Airport^Belmar/Farmingdale^NJ^US^40.1833^-74.0167^1^C
+BLM^BLM^Monmouth Executive Airport^Belmar/Farmingdale^NJ^US^40.1833^-74.0167^1^C
 BLN^BLN^Benalla Airport^Benalla^VI^AU^-36.55^145.983^2^A
 BLN^BLN^Benalla Airport^Benalla^VI^AU^-36.55^145.983^2^C
 BLO^BLO^Blonduos Airport^Blonduos^^IS^65.6403^-20.2858^0^CA
@@ -1442,12 +1458,13 @@ BMF^BMF^Bakouma Airport^Bakouma^^CF^5.73333^22.8^0^C
 BMG^BMG^Monroe County Airport^Bloomington^IN^US^39.1373^-86.6088^1^A
 BMG^BMG^Monroe County Airport^Bloomington^IN^US^39.1373^-86.6088^1^C
 BMH^BMH^Bomai Airport^Bomai^^PG^-6.41667^144.583^1^CA
-BMI^BMI^Central Illinois Regional Airport^Bloomington-Normal^IL^US^40.4758^-88.9232^2^CA
+BMI^BMI^Central Illinois Regional Airport^Bloomington-Normal^IL^US^40.4758^-88.9232^2^A
+BMI^BMI^Central Illinois Regional Airport^Bloomington-Normal^IL^US^40.4758^-88.9232^2^C
 BMJ^BMJ^Baramita Airport^Baramita^^GY^6.75^-60^0^A
 BMJ^BMJ^Baramita Airport^Baramita^^GY^6.75^-60^0^C
 BMK^BMK^Borkum Airport^Borkum^^DE^53.6^6.7^0^A
 BMK^BMK^Borkum Airport^Borkum^^DE^53.6^6.7^0^C
-BML^BML^Berlin Airport^Berlin^NH^US^44.5718^-71.1722^1^CA
+BML^BML^Berlin Regional Airport^Berlin^NH^US^44.5718^-71.1722^1^CA
 BMM^BMM^Bitam Airport^Bitam^^GA^2.07217^11.4878^0^A
 BMM^BMM^Bitam Airport^Bitam^^GA^2.07217^11.4878^0^C
 BMN^BMN^Bamarni Airport^Bamarni^^IQ^37.1^43.2667^0^CA
@@ -1480,7 +1497,8 @@ BNB^BNB^Boende Airport^Boende^^CD^-0.285333^20.8833^1^A
 BNB^BNB^Boende Airport^Boende^^CD^-0.285333^20.8833^1^C
 BNC^BNC^Mavivi Airport^Beni^^CD^0.571667^29.471^2^A
 BNC^BNC^Mavivi Airport^Beni^^CD^0.571667^29.471^2^C
-BND^BND^Bandar Abbas International Airport^Bandar Abbas^^IR^27.2167^56.3667^0^CA
+BND^BND^Bandar Abbas International Airport^Bandar Abbas^^IR^27.2167^56.3667^0^A
+BND^BND^Bandar Abbas International Airport^Bandar Abbas^^IR^27.2167^56.3667^0^C
 BNE^BNE^Brisbane International Airport^Brisbane^QL^AU^-27.4217^153.085^2B^A
 BNE^BNE^Brisbane International Airport^Brisbane^QL^AU^-27.4217^153.085^2B^C
 BNF^BNF^Warm Spring Bay Sea Plane Base^Baranof^AK^US^57^-135^5^CA
@@ -1552,8 +1570,8 @@ BOP^BOP^Bouar Airport^Bouar^^CF^6^15.6667^0^A
 BOP^BOP^Bouar Airport^Bouar^^CF^6^15.6667^0^C
 BOQ^BOQ^Boku Airport^Boku^^PG^-6.53333^155.35^2^CA
 BOR^BOR^Off-Line Point^Belfort^^FR^47.6533^7.007^0^O
-BOS^BOS^Logan International Airport^Boston^MA^US^42.3593^-71.0057^1^A
-BOS^BOS^Logan International Airport^Boston^MA^US^42.3593^-71.0057^1^C
+BOS^BOS^Edward L. Logan International Airport^Boston^MA^US^42.3593^-71.0057^1^A
+BOS^BOS^Edward L. Logan International Airport^Boston^MA^US^42.3593^-71.0057^1^C
 BOT^BOT^Boset Airport^Boset^^PG^-7.23333^141.083^1^A
 BOT^BOT^Boset Airport^Boset^^PG^-7.23333^141.083^1^C
 BOU^BOU^Bourges Airport^Bourges^^FR^47.15^2.41667^0^A
@@ -1599,7 +1617,8 @@ BPU^BPU^Off-Line Point^Beppu^^JP^33.25^131.5^0^C
 BPU^BPU^Off-Line Point^Beppu^^JP^33.25^131.5^0^R
 BPX^BPX^Bamda/Bangda Airport^Qamdo/Changdu^^CN^30.5535^97.104^0^A
 BPX^BPX^Bamda/Bangda Airport^Qamdo/Changdu^^CN^30.5535^97.104^0^C
-BPY^BPY^Besalampy Airport^Besalampy^^MG^-16.75^44.4833^0^CA
+BPY^BPY^Besalampy Airport^Besalampy^^MG^-16.75^44.4833^0^A
+BPY^BPY^Besalampy Airport^Besalampy^^MG^-16.75^44.4833^0^C
 BQA^BQA^Dr. Juan C. Angara Airport^Baler^^PH^15^121.083^0^A
 BQA^BQA^Dr. Juan C. Angara Airport^Baler^^PH^15^121.083^0^C
 BQB^BQB^Busselton Airport^Busselton^WA^AU^-33.6848^115.393^4^A
@@ -1835,14 +1854,14 @@ BVN^BVN^MU Bus Station^Baoding^^CN^38.8567^115.475^0^C
 BVO^BVO^Bartlesville Municipal Airport^Bartlesville^OK^US^36.7575^-96.0065^2^A
 BVO^BVO^Bartlesville Municipal Airport^Bartlesville^OK^US^36.7575^-96.0065^2^C
 BVP^BVP^Bolovip Airport^Bolovip^^PG^-5.38333^141.7^1^CA
+BVQ^BVN^Railway Station^Baoding^^CN^38.8573^115.471^0^R
 BVR^BVR^Esperadinha Airport^Brava Island^^CV^14.8667^-24.7333^0^CA
 BVS^BVS^Breves Airport^Breves^PA^BR^-1.66667^-50.4667^1A^A
 BVS^BVS^Breves Airport^Breves^PA^BR^-1.66667^-50.4667^1A^C
 BVU^BVU^Beluga Airport^Beluga^AK^US^61.1683^-151.035^5^A
 BVU^BVU^Beluga Airport^Beluga^AK^US^61.1683^-151.035^5^C
-BVV^BVV^Burevestnik AFB^Iturup Island^^RU^44.9187^147.62^9^A
-BVV^BVV^Burevestnik AFB^Iturup Island^^RU^44.9187^147.62^9^C
-BVV^BVV^Burevestnik AFB^Iturup Island^^RU^44.9187^147.62^9^C
+BVV^ITU^Burevestnik AFB^Iturup Island^^RU^44.9187^147.62^10^A
+BVV^ITU^Burevestnik AFB^Iturup Island^^RU^44.9187^147.62^10^C
 BVW^BVW^Batavia Downs Airport^Batavia Downs^QL^AU^-12.65^143.217^2B^CA
 BVX^BVX^Batesville Regionall Airport^Batesville^AR^US^35.7667^-91.65^2^A
 BVX^BVX^Batesville Regionall Airport^Batesville^AR^US^35.7667^-91.65^2^C
@@ -1890,7 +1909,6 @@ BXA^BXA^George R. Carr Memorial Airport^Bogalusa^LA^US^30.8082^-89.859^2^A
 BXA^BXA^George R. Carr Memorial Airport^Bogalusa^LA^US^30.8082^-89.859^2^C
 BXB^BXB^Babo Airport^Irarutu^^ID^-2.55^133.417^3^A
 BXB^BXB^Babo Airport^Irarutu^^ID^-2.55^133.417^3^C
-BXC^BXC^Boxborough Airport^Boxborough^MA^US^42.4833^-71.5333^1^CA
 BXD^BXD^Bade Airport^Bade^^ID^-7.16667^139.5^3^CA
 BXE^BXE^Bakel Airport^Bakel^^SN^14.8383^-12.4673^0^A
 BXE^BXE^Bakel Airport^Bakel^^SN^14.8383^-12.4673^0^C
@@ -1917,8 +1935,11 @@ BXS^BXS^Borrego Valley Airport^Borrego Springs^CA^US^33.2555^-116.319^4^A
 BXS^BXS^Borrego Valley Airport^Borrego Springs^CA^US^33.2555^-116.319^4^C
 BXT^BXT^Bontang Airport^Bontang^^ID^0.166667^117.5^2^A
 BXT^BXT^Bontang Airport^Bontang^^ID^0.166667^117.5^2^C
-BXU^BXU^Bancasi Airport^Butuan^^PH^8.95083^125.484^0^CA
+BXU^BXU^Bancasi Airport^Butuan^^PH^8.95083^125.484^0^A
+BXU^BXU^Bancasi Airport^Butuan^^PH^8.95083^125.484^0^C
 BXV^BXV^Breiddalsvik Airport^Breiddalsvik^^IS^64.7873^-14.0203^0^CA
+BXW^BXW^Bawean Airport^Bawean^^ID^-5.72067^112.673^1^A
+BXW^BXW^Bawean Airport^Bawean^^ID^-5.72067^112.673^1^C
 BXX^BXX^Borama Airport^Borama^^SO^9.96667^43.1167^0^A
 BXX^BXX^Borama Airport^Borama^^SO^9.96667^43.1167^0^C
 BXZ^BXZ^Bunsil Airport^Bunsil^^PG^-5.71667^147.867^1^CA
@@ -2033,6 +2054,9 @@ CAQ^CAQ^Juan H. White Airport^Caucasia^^CO^7.6^-75.25^0^C
 CAR^CAR^Caribou Municipal Airport^Caribou^ME^US^46.8667^-68.0167^1^A
 CAR^CAR^Caribou Municipal Airport^Caribou^ME^US^46.8667^-68.0167^1^C
 CAS^CAS^Anfa Airport^Casablanca^^MA^33.5558^-7.65783^0^C
+CAT^CAT^Tires Airport^Cascais^^PT^38.722^-9.35317^1^A
+CAT^CAT^Tires Airport^Cascais^^PT^38.722^-9.35317^1^C
+CAT^CAT^Tires Airport^Cascais^^PT^38.722^-9.35317^1^C
 CAU^CAU^Oscar Laranjeiras Airport^Caruaru^PE^BR^-8.25^-35.9167^1A^A
 CAU^CAU^Oscar Laranjeiras Airport^Caruaru^PE^BR^-8.25^-35.9167^1A^C
 CAV^CAV^Cazombo Airport^Cazombo^^AO^-11.9^22.8667^0^A
@@ -2049,7 +2073,8 @@ CBB^CBB^Jorge Wilstermann Intl Airport^Cochabamba^^BO^-17.4237^-66.1697^0^A
 CBB^CBB^Jorge Wilstermann Intl Airport^Cochabamba^^BO^-17.4237^-66.1697^0^C
 CBC^CBC^Cherrabun Airport^Cherrabun^WA^AU^-18.9167^125.55^4^CA
 CBD^CBD^Air Force Base^Car Nicobar Island^^IN^9.15^92.8167^0^CA
-CBE^CBE^Greater Cumberland Regional Airport^Cumberland^MD^US^39.6087^-78.7597^1^CA
+CBE^CBE^Greater Cumberland Regional Airport^Cumberland^MD^US^39.6087^-78.7597^1^A
+CBE^CBE^Greater Cumberland Regional Airport^Cumberland^MD^US^39.6087^-78.7597^1^C
 CBF^CBF^Council Bluffs Municipal Airport^Council Bluffs^IA^US^41.2667^-95.8667^2^A
 CBF^CBF^Council Bluffs Municipal Airport^Council Bluffs^IA^US^41.2667^-95.8667^2^C
 CBG^CBG^Cambridge Airport^Cambridge^EN^GB^52.203^0.171667^0^A
@@ -2171,8 +2196,8 @@ CED^CED^Ceduna Airport^Ceduna^SA^AU^-32.1257^133.703^3^A
 CED^CED^Ceduna Airport^Ceduna^SA^AU^-32.1257^133.703^3^C
 CEE^CEE^Cherepovets Airport^Cherepovets^^RU^59.2723^38.018^2^A
 CEE^CEE^Cherepovets Airport^Cherepovets^^RU^59.2723^38.018^2^C
-CEF^SFY^Westover Metro Airport^Springfield^MA^US^42.192^-72.5247^1^A
-CEF^SFY^Westover Metro Airport^Springfield^MA^US^42.192^-72.5247^1^C
+CEF^SFY^Westover Metropolitan Airport^Springfield^MA^US^42.192^-72.5247^1^A
+CEF^SFY^Westover Metropolitan Airport^Springfield^MA^US^42.192^-72.5247^1^C
 CEG^CEG^Hawarden Airport^Chester^EN^GB^53.1667^-2.91667^0^A
 CEG^CEG^Hawarden Airport^Chester^EN^GB^53.1667^-2.91667^0^C
 CEH^CEH^Chelinda Airport^Chelinda^^MW^-10.55^33.8^0^A
@@ -2380,6 +2405,7 @@ CJL^CJL^Chitral Airport^Chitral^^PK^35.885^71.79^0^A
 CJL^CJL^Chitral Airport^Chitral^^PK^35.885^71.79^0^C
 CJM^CJM^Chumphon Airport^Chumphon^^TH^10.7067^99.357^0^A
 CJM^CJM^Chumphon Airport^Chumphon^^TH^10.7067^99.357^0^C
+CJN^CJN^Nusawiru Airport^Cijulang^^ID^-7.71883^108.487^1^C
 CJS^CJS^Abraham Gonzalez International Airport^Ciudad Juarez^^MX^31.635^-106.424^2B^A
 CJS^CJS^Abraham Gonzalez International Airport^Ciudad Juarez^^MX^31.635^-106.424^2B^C
 CJT^CJT^Copalar Airport^Comitan^^MX^16.1667^-92.05^1^A
@@ -2392,7 +2418,8 @@ CKB^CKB^North Central West Virginia Airport^Clarksburg^WV^US^39.2907^-80.2243^1^
 CKB^CKB^North Central West Virginia Airport^Clarksburg^WV^US^39.2907^-80.2243^1^C
 CKC^CKC^Cherkasy International Airport^Cherkasy^^UA^49.4167^32^0^A
 CKC^CKC^Cherkasy International Airport^Cherkasy^^UA^49.4167^32^0^C
-CKD^CKD^Crooked Creek Airport^Crooked Creek^AK^US^61.8692^-158.1^5^CA
+CKD^CKD^Crooked Creek Airport^Crooked Creek^AK^US^61.8692^-158.1^5^A
+CKD^CKD^Crooked Creek Airport^Crooked Creek^AK^US^61.8692^-158.1^5^C
 CKE^CKE^Lampson Field Airport^Lakeport^CA^US^39.0018^-122.791^4^A
 CKE^CKE^Lampson Field Airport^Lakeport^CA^US^39.0018^-122.791^4^C
 CKG^CKG^Jiangbei International Airport^Chongqing^^CN^29.7177^106.635^0^A
@@ -2565,6 +2592,7 @@ COD^COD^Yellowstone Regional Airport^Cody^WY^US^44.5095^-109.023^3^A
 COD^COD^Yellowstone Regional Airport^Cody^WY^US^44.5095^-109.023^3^C
 COE^COE^Pappy Boyington Field Airport^Coeur D'Alene^ID^US^47.6833^-116.767^4^CA
 COF^COF^Patrick Air Force Base^Cocoa Beach^FL^US^28.35^-80.7333^1^A
+COF^COF^Patrick Air Force Base^Cocoa Beach^FL^US^28.35^-80.7333^1^C
 COG^COG^Mandinga Airport^Condoto^^CO^5.07417^-76.658^0^A
 COG^COG^Mandinga Airport^Condoto^^CO^5.07417^-76.658^0^C
 COH^COH^Cooch Behar Airport^Cooch Behar^^IN^26.3333^89.4667^0^CA
@@ -2577,8 +2605,8 @@ COK^COK^Kochi International Airport^Kochi^^IN^10.1533^76.3875^0^C
 COL^COL^Coll Island Airport^Coll Island^SC^GB^56.6167^-6.61667^0^CA
 COM^COM^Coleman Municipal Airport^Coleman^TX^US^31.838^-99.4022^2^A
 COM^COM^Coleman Municipal Airport^Coleman^TX^US^31.838^-99.4022^2^C
-CON^CON^Concord Airport^Concord^NH^US^43.2^-71.5333^1^A
-CON^CON^Concord Airport^Concord^NH^US^43.2^-71.5333^1^C
+CON^CON^Concord Municipal Airport^Concord^NH^US^43.2^-71.5333^1^A
+CON^CON^Concord Municipal Airport^Concord^NH^US^43.2^-71.5333^1^C
 COO^COO^Cadjehoun Airport^Cotonou^^BJ^6.3525^2.38467^0^A
 COO^COO^Cadjehoun Airport^Cotonou^^BJ^6.3525^2.38467^0^C
 COP^COP^Westville Airport^Cooperstown^NY^US^42.6242^-74.888^1^A
@@ -2724,7 +2752,8 @@ CSX^CSX^Huanghua International Airport^Changsha^^CN^28.1853^113.22^0^A
 CSX^CSX^Huanghua International Airport^Changsha^^CN^28.1853^113.22^0^C
 CSY^CSY^Cheboksary Airport^Cheboksary^^RU^56.0873^47.3415^2^A
 CSY^CSY^Cheboksary Airport^Cheboksary^^RU^56.0873^47.3415^2^C
-CSZ^CSZ^Brigadier Hector Ruiz^Coronel Suarez^BA^AR^-37.4333^-67.8833^0^CA
+CSZ^CSZ^Brigadier Hector Ruiz^Coronel Suarez^BA^AR^-37.4333^-67.8833^0^A
+CSZ^CSZ^Brigadier Hector Ruiz^Coronel Suarez^BA^AR^-37.4333^-67.8833^0^C
 CTA^CTA^Fontanarossa Airport^Catania^^IT^37.4667^15.0598^0^A
 CTA^CTA^Fontanarossa Airport^Catania^^IT^37.4667^15.0598^0^C
 CTB^CTB^Cut Bank International Airport^Cut Bank^MT^US^48.6333^-112.333^3^A
@@ -2847,6 +2876,8 @@ CWC^CWC^Chernivtsi International Airport^Chernivtsi^^UA^48.2667^25.9667^0^C
 CWF^LCH^Chennault International Airport^Lake Charles^LA^US^30.2598^-93.1432^2^A
 CWI^CWI^Clinton Municipal Airport^Clinton^IA^US^41.8243^-90.3258^2^A
 CWI^CWI^Clinton Municipal Airport^Clinton^IA^US^41.8243^-90.3258^2^C
+CWJ^CWJ^Washan Airport^Cangyuan^^CN^23.2723^99.3707^0^A
+CWJ^CWJ^Washan Airport^Cangyuan^^CN^23.2723^99.3707^0^C
 CWL^CWL^Cardiff Airport^Cardiff^WL^GB^51.3918^-3.34133^0^A
 CWL^CWL^Cardiff Airport^Cardiff^WL^GB^51.3918^-3.34133^0^C
 CWR^CWR^Cowarie Airport^Cowarie^SA^AU^-27.7167^138.333^3^CA
@@ -2861,6 +2892,7 @@ CWX^CWX^Cochise County Airport^Willcox^AZ^US^32.2405^-109.89^3A^C
 CXA^CXA^Caicara de Orinoco Airport^Caicara de Orinoco^^VE^7.53333^-66.15^0^CA
 CXB^CXB^Coxs Bazar Airport^Coxs Bazar^^BD^21.45^91.9667^0^CA
 CXC^CXC^Chitina Airport^Chitina^AK^US^61.5833^-144.423^5^CA
+CXE^CEG^Chester Central Railway Station^Chester^EN^GB^53.1913^-2.87433^0^R
 CXF^CXF^Coldfoot Airport^Coldfoot^AK^US^67.2667^-150.167^5^A
 CXF^CXF^Coldfoot Airport^Coldfoot^AK^US^67.2667^-150.167^5^C
 CXH^YVR^Harbour SPB^Vancouver^BC^CA^49.2667^-123.117^6^A
@@ -2877,6 +2909,7 @@ CXQ^CXQ^Christmas Creek Station Airport^Christmas Creek Station^WA^AU^-18.8667^1
 CXR^NHA^Cam Rahn International Airport^Nha Trang^^VN^11.9895^109.222^0^A
 CXT^CXT^Charters Towers Airport^Charters Towers^QL^AU^-20.0413^146.268^2B^A
 CXT^CXT^Charters Towers Airport^Charters Towers^QL^AU^-20.0413^146.268^2B^C
+CXX^CAX^Carlisle Central Railway Station^Carlisle^EN^GB^54.8877^-2.93333^0^R
 CXY^CXY^Cat Cays Airport^Cat Cays^^BS^25.4167^-77.8167^0^CA
 CYA^CYA^Antoine-Simon Airport^Les Cayes^^HT^18.2685^-73.7863^0^A
 CYA^CYA^Antoine-Simon Airport^Les Cayes^^HT^18.2685^-73.7863^0^C
@@ -2978,7 +3011,11 @@ DAY^DAY^James M. Cox International Airport^Dayton^OH^US^39.9013^-84.2183^1^C
 DAZ^DAZ^Darwaz Airport^Darwaz^^AF^38.4667^70.8833^0^CA
 DBA^DBA^Dalbandin Airport^Dalbandin^^PK^28.8833^64.4167^0^CA
 DBB^DBB^Al Alamain International^Dabah^^EG^30.9213^28.7902^0^CA
+DBC^DBC^Chang'an Airport^Baicheng^^CN^45.503^123.018^0^A
+DBC^DBC^Chang'an Airport^Baicheng^^CN^45.503^123.018^0^C
 DBD^DBD^Dhanbad Airport^Dhanbad^^IN^23.7833^86.45^0^CA
+DBK^DBK^Dutch Bay SPB^Kalpitiya^^LK^8.25917^79.756^0^A
+DBK^DBK^Dutch Bay SPB^Kalpitiya^^LK^8.25917^79.756^0^C
 DBL^DLC^Dalianbei Railway Station^Dalian^^CN^39.0097^121.604^0^R
 DBM^DBM^Debre Marcos Airport^Debre Marcos^^ET^10.3183^37.7392^0^CA
 DBN^DBN^W.H. Bud Barron Airport^Dublin^GA^US^32.5572^-82.985^1^A
@@ -3030,9 +3067,9 @@ DEB^DEB^Debrecen Airport^Debrecen^^HU^47.4867^21.6092^0^C
 DEC^DEC^Decatur Airport^Decatur^IL^US^39.8338^-88.8678^2^A
 DEC^DEC^Decatur Airport^Decatur^IL^US^39.8338^-88.8678^2^C
 DED^DED^Jolly Grant Airport^Dehra Dun^^IN^30.1873^78.1748^0^CA
-DEE^DEE^Mendeleyevo Airport^Yuzhno-Kurilsk^^RU^43.958^145.685^9^A
-DEE^DEE^Mendeleyevo Airport^Yuzhno-Kurilsk^^RU^43.958^145.685^9^C
-DEE^DEE^Mendeleyevo Airport^Yuzhno-Kurilsk^^RU^43.958^145.685^9^C
+DEE^DEE^Mendeleyevo Airport^Yuzhno-Kurilsk^^RU^43.958^145.685^10^A
+DEE^DEE^Mendeleyevo Airport^Yuzhno-Kurilsk^^RU^43.958^145.685^10^C
+DEE^DEE^Mendeleyevo Airport^Yuzhno-Kurilsk^^RU^43.958^145.685^10^C
 DEF^DEF^Dezful Airport^Dezful^^IR^32.4333^48.3833^0^A
 DEF^DEF^Dezful Airport^Dezful^^IR^32.4333^48.3833^0^C
 DEH^DEH^Decorah Municipal Airport^Decorah^IA^US^43.272^-91.737^2^A
@@ -3049,6 +3086,8 @@ DEP^DEP^Deparijo Airport^Deparijo^^IN^27.35^94^0^C
 DER^DER^Derim Airport^Derim^^PG^-6.1^147.083^1^CA
 DES^DES^Desroches Island Airport^Desroches Island^^SC^-5.68333^53.6833^0^CA
 DET^DTT^Coleman A. Young Municipal Airport^Detroit^MI^US^42.4167^-83.0167^1^A
+DEX^DEX^Nop Goliath Airport^Yahukimo^^ID^-4.85367^139.475^3^A
+DEX^DEX^Nop Goliath Airport^Yahukimo^^ID^-4.85367^139.475^3^C
 DEY^DEY^Bus Station^Deyang^^CN^31.1243^104.376^0^B
 DEY^DEY^Bus Station^Deyang^^CN^31.1243^104.376^0^C
 DEZ^DEZ^Al Jafrah Airport^Deir ez Zor^^SY^35.3333^40.15^0^A
@@ -3068,7 +3107,8 @@ DGF^DGF^Douglas Lake Airport^Douglas Lake^BC^CA^50.1667^-120.183^6^A
 DGF^DGF^Douglas Lake Airport^Douglas Lake^BC^CA^50.1667^-120.183^6^C
 DGG^DGG^Fishermans Heliport^Daugo Island^^PG^-9.51667^147.05^1^C
 DGG^DGG^Fishermans Heliport^Daugo Island^^PG^-9.51667^147.05^1^H
-DGK^DGK^Dugong Beach Lodge Airport^Dugong Beach Lodge^^MZ^-22.126^35.4393^0^CA
+DGK^DGK^Dugong Beach Lodge Airport^Dugong Beach Lodge^^MZ^-22.126^35.4393^0^A
+DGK^DGK^Dugong Beach Lodge Airport^Dugong Beach Lodge^^MZ^-22.126^35.4393^0^C
 DGL^DUG^Douglas Municipal Airport^Douglas/Bisbee^AZ^US^31.35^-109.567^3A^A
 DGM^CMB^Dandugama SPB^Colombo^^LK^7.10467^79.8598^0^A
 DGN^DGN^Dahlgren NSWC^Dahlgren^VA^US^38.3263^-77.0355^1^A
@@ -3229,8 +3269,8 @@ DNK^DNK^Dnipropetrovsk Intl Airport^Dnipropetrovsk^^UA^48.3542^35.1003^0^C
 DNL^AGS^Daniel Field^Augusta^GA^US^33.4667^-81.9667^1^A
 DNM^DNM^Denham Airport^Denham^WA^AU^-25.9167^113.533^4^A
 DNM^DNM^Denham Airport^Denham^WA^AU^-25.9167^113.533^4^C
-DNN^DNN^Dalton Municipal Airport^Dalton^GA^US^34.7667^-84.9667^1^A
-DNN^DNN^Dalton Municipal Airport^Dalton^GA^US^34.7667^-84.9667^1^C
+DNN^DNN^Dalton Municipal Airport^Dalton^GA^US^34.721^-84.8695^1^A
+DNN^DNN^Dalton Municipal Airport^Dalton^GA^US^34.721^-84.8695^1^C
 DNO^DNO^Dianopolis Airport^Dianopolis^TO^BR^-11.6167^-46.85^1A^A
 DNO^DNO^Dianopolis Airport^Dianopolis^TO^BR^-11.6167^-46.85^1A^C
 DNP^DNP^Tribhuvannagar Airport^Dang^^NP^28.1167^82.3167^0^A
@@ -3243,7 +3283,9 @@ DNS^DNS^Denison Municipal Airport^Denison^IA^US^42.0167^-95.35^2^C
 DNU^DNU^Dinangat Airport^Dinangat^^PG^-6.15^146.667^1^CA
 DNV^DNV^Vermilion Regional Airport^Danville^IL^US^40.1932^-87.5907^2^CA
 DNX^DNX^Galegu Airport^Dinder^^SD^14.1^33.0667^0^CA
-DNZ^DNZ^Cardak Airport^Denizli^^TR^37.7857^29.702^0^CA
+DNZ^DNZ^Cardak Airport^Denizli^^TR^37.7857^29.702^0^A
+DNZ^DNZ^Cardak Airport^Denizli^^TR^37.7857^29.702^0^C
+DNZ^DNZ^Cardak Airport^Denizli^^TR^37.7857^29.702^0^C
 DOA^DOA^Doany Airport^Doany^^MG^-14.3667^49.5^0^A
 DOA^DOA^Doany Airport^Doany^^MG^-14.3667^49.5^0^C
 DOB^DOB^Rar Gwamar Airport^Dobo^^ID^-5.77^134.207^3^A
@@ -3340,7 +3382,6 @@ DSD^DSD^Grande Anse Airport^La Desirade^^GP^16.3333^-61.0167^0^CA
 DSE^DSE^Kombolcha Airport^Dessie^^ET^11.0717^39.7092^0^CA
 DSG^DSG^Dilasag Airport^Dilasag^^PH^14^120^0^CA
 DSI^VPS^Destin Executive Airport^Destin-Ft. Walton Beach^FL^US^30.3833^-86.5^2^A
-DSI^VPS^Destin Executive Airport^Destin-Ft. Walton Beach^FL^US^30.3833^-86.5^2^C
 DSK^DSK^Dera Ismail Khan Airport^Dera Ismail Khan^^PK^31.9057^70.8913^0^CA
 DSM^DSM^Des Moines International Airport^Des Moines^IA^US^41.5337^-93.654^2^A
 DSM^DSM^Des Moines International Airport^Des Moines^IA^US^41.5337^-93.654^2^C
@@ -3350,6 +3391,8 @@ DSO^DSO^Sondok Airport^Sondok^^KP^39.6835^127.467^0^A
 DSO^DSO^Sondok Airport^Sondok^^KP^39.6835^127.467^0^C
 DSV^DSV^Dansville Municipal Airport^Dansville^NY^US^42.569^-77.7078^1^A
 DSV^DSV^Dansville Municipal Airport^Dansville^NY^US^42.569^-77.7078^1^C
+DSX^DSX^Dongsha Island Airport^Dongsha Island^^TW^20.7072^116.719^0^A
+DSX^DSX^Dongsha Island Airport^Dongsha Island^^TW^20.7072^116.719^0^C
 DTA^DTA^Delta Municipal Airport^Delta^UT^US^39.3833^-112.5^3^A
 DTA^DTA^Delta Municipal Airport^Delta^UT^US^39.3833^-112.5^3^C
 DTB^DTB^Silangit Airport^Siborong-Borong^^ID^2.25583^98.9905^1^A
@@ -3369,7 +3412,10 @@ DTN^SHV^Shreveport Downtown Airport^Shreveport^LA^US^32.5372^-93.74^2^A
 DTR^DTR^Decatur Shores Airport^Decatur Island^WA^US^48.5167^-122.833^4^A
 DTR^DTR^Decatur Shores Airport^Decatur Island^WA^US^48.5167^-122.833^4^C
 DTT^DTT^Metropolitan Area^Detroit^MI^US^42.2097^-83.3532^1^C
+DTU^DTU^Dedu Airport^Wudalianchi^^CN^48.4377^126.123^0^A
+DTU^DTU^Dedu Airport^Wudalianchi^^CN^48.4377^126.123^0^C
 DTW^DTT^Metropolitan Wayne County Airport^Detroit^MI^US^42.2178^-83.3425^1^A
+DTZ^DTM^Hbf Railway Station^Dortmund^^DE^51.5173^7.4555^0^R
 DUA^DUA^Durant Regional - Eaker Field Airport^Durant^OK^US^33.9387^-96.39^2^A
 DUA^DUA^Durant Regional - Eaker Field Airport^Durant^OK^US^33.9387^-96.39^2^C
 DUB^DUB^Dublin International Airport^Dublin^^IE^53.4195^-6.26867^0^A
@@ -3423,8 +3469,8 @@ DXB^DXB^Dubai International Airport^Dubai^^AE^25.25^55.3547^0^C
 DXD^DXD^Dixie Airport^Dixie^QL^AU^-15.1667^143.667^2B^CA
 DXE^DXE^Bruce Campbell Field^Madison^MS^US^32.4365^-90.1018^2^A
 DXE^DXE^Bruce Campbell Field^Madison^MS^US^32.4365^-90.1018^2^C
-DXR^DXR^Danbury Airport^Danbury^CT^US^41.3833^-73.45^1^A
-DXR^DXR^Danbury Airport^Danbury^CT^US^41.3833^-73.45^1^C
+DXR^DXR^Danbury Municipal Airport^Danbury^CT^US^41.3833^-73.45^1^A
+DXR^DXR^Danbury Municipal Airport^Danbury^CT^US^41.3833^-73.45^1^C
 DYA^DYA^Dysart Airport^Dysart^QL^AU^-23.5^148^2B^A
 DYA^DYA^Dysart Airport^Dysart^QL^AU^-23.5^148^2B^C
 DYG^DYG^Hehua Airport^Zhangjiajie^^CN^29.1333^110.483^0^A
@@ -3501,6 +3547,7 @@ ECN^ECN^Ercan Airport^Ercan^^CY^35.1558^33.4863^0^A
 ECN^ECN^Ercan Airport^Ercan^^CY^35.1558^33.4863^0^C
 ECO^ECO^El Encanto Airport^El Encanto^^CO^-1.61667^-73.2333^0^CA
 ECP^ECP^NW Florida Beaches International Airport^Panama City^FL^US^30.3547^-85.7927^2^A
+ECP^ECP^NW Florida Beaches International Airport^Panama City^FL^US^30.3547^-85.7927^2^C
 ECR^ECR^El Charco Airport^El Charco^^CO^2.5^-78^0^CA
 ECS^ECS^Mondell Field Airport^Newcastle^WY^US^43.8838^-104.309^3^CA
 EDA^EDA^Sea Plane Base^Edna Bay^AK^US^55.9578^-133.62^5^A
@@ -3537,8 +3584,8 @@ EER^REU^Railway Station^Reus^SP^ES^41.0707^1.14^1^R
 EEU^LEN^Railway Station^Leon^SP^ES^42.6^-5.58333^1^R
 EFD^HOU^Ellington Airport^Houston^TX^US^29.6^-95.15^2^A
 EFG^EFG^Efogi Airport^Efogi^^PG^-9.15^147.667^1^CA
-EFK^EFK^Newport Airport^Newport^VT^US^44.887^-72.2247^1^A
-EFK^EFK^Newport Airport^Newport^VT^US^44.887^-72.2247^1^C
+EFK^EFK^Newport State Airport^Newport^VT^US^44.887^-72.2247^1^A
+EFK^EFK^Newport State Airport^Newport^VT^US^44.887^-72.2247^1^C
 EFL^EFL^Kefallinia Airport^Kefallinia^^GR^38.1187^20.5003^0^A
 EFL^EFL^Kefallinia Airport^Kefallinia^^GR^38.1187^20.5003^0^C
 EFW^EFW^Jefferson Municipal Airport^Jefferson^IA^US^42.0167^-94.3833^2^CA
@@ -3565,10 +3612,9 @@ EGX^EGX^Egegik Airport^Egegik^AK^US^58.2047^-157.369^5^C
 EHL^EHL^El Bolson Airport^El Bolson^RN^AR^-42^-71.75^0^A
 EHL^EHL^El Bolson Airport^El Bolson^RN^AR^-42^-71.75^0^C
 EHM^EHM^Cape Newenham Airport^Cape Newenham^AK^US^58.6417^-162.056^5^CA
-EHT^EHT^Rentschler Airport^East Hartford^CT^US^41.7667^-72.65^1^A
-EHT^EHT^Rentschler Airport^East Hartford^CT^US^41.7667^-72.65^1^C
 EIA^EIA^Popondetta Airport^Eia^^PG^-8.11667^147.633^1^CA
-EIB^EIB^Kindel^Eisenach^^DE^50.989^10.4703^0^CA
+EIB^EIB^Kindel^Eisenach^^DE^50.989^10.4703^0^A
+EIB^EIB^Kindel^Eisenach^^DE^50.989^10.4703^0^C
 EIE^EIE^Yeniseysk Airport^Yeniseysk^^RU^58.4667^92.1167^6^A
 EIE^EIE^Yeniseysk Airport^Yeniseysk^^RU^58.4667^92.1167^6^C
 EIH^EIH^Einasleigh Airport^Einasleigh^QL^AU^-18.5^144.1^2B^A
@@ -3581,11 +3627,14 @@ EIN^EIN^Eindhoven Airport^Eindhoven^^NL^51.452^5.38667^0^C
 EIS^TOV^Terrance B. Lettsome Airport^Tortola^^VG^18.4397^-64.539^0^A
 EIS^TOV^Terrance B. Lettsome Airport^Tortola^^VG^18.4397^-64.539^0^C
 EIY^EIY^Ein Yahav Airport^Ein Yahav^^IL^30.6333^35.1833^0^CA
+EIZ^EIB^Hbf Railway Station^Eisenach^^DE^50.9725^10.3255^0^R
 EJA^EJA^Yariguies Airport^Barrancabermeja^^CO^7.0095^-73.7928^0^A
 EJA^EJA^Yariguies Airport^Barrancabermeja^^CO^7.0095^-73.7928^0^C
 EJH^EJH^Wedjh Airport^Wedjh^^SA^26.2^36.4833^0^CA
+EJJ^SHS^Railway Station^Jingzhou^^CN^30.3703^112.204^0^R
 EJN^EJN^Taolai Airport^Ejina Banner^^CN^42.0093^101^0^A
 EJN^EJN^Taolai Airport^Ejina Banner^^CN^42.0093^101^0^C
+EJQ^EJQ^Railway Station^Shiyan^^CN^32.6032^110.772^0^R
 EJT^EJT^Enejet Island Airport^Enejet Island^^MH^6.08333^171.95^0^A
 EJT^EJT^Enejet Island Airport^Enejet Island^^MH^6.08333^171.95^0^C
 EKA^ACV^Murray Field Airport^Arcata/Eureka^CA^US^40.802^-124.108^4^A
@@ -3599,8 +3648,8 @@ EKI^EKI^Elkhart Municipal Airport^Elkhart^IN^US^41.72^-85.9887^1^C
 EKN^EKN^Randolph County Airport^Elkins^WV^US^38.887^-79.8547^1^CA
 EKO^EKO^Elko Regional Airport^Elko^NV^US^40.821^-115.787^4^A
 EKO^EKO^Elko Regional Airport^Elko^NV^US^40.821^-115.787^4^C
-EKS^EKS^Shakhtersk Airport^Shakhtersk^^RU^49.1833^142.083^9^A
-EKS^EKS^Shakhtersk Airport^Shakhtersk^^RU^49.1833^142.083^9^C
+EKS^EKS^Shakhtersk Airport^Shakhtersk^^RU^49.1833^142.083^10^A
+EKS^EKS^Shakhtersk Airport^Shakhtersk^^RU^49.1833^142.083^10^C
 EKT^EKT^Eskilstuna Airport^Eskilstuna^^SE^59.3667^16.5333^0^A
 EKT^EKT^Eskilstuna Airport^Eskilstuna^^SE^59.3667^16.5333^0^C
 EKX^EKX^Elizabethtown Regional-Addington Field Airport^Elizabethtown^KY^US^37.6867^-85.9233^1^A
@@ -3657,6 +3706,7 @@ EME^EME^Emden Airport^Emden^^DE^53.3667^7.2^0^A
 EME^EME^Emden Airport^Emden^^DE^53.3667^7.2^0^C
 EMG^EMG^Empangeni Airport^Empangeni^^ZA^-28.75^31.9^0^CA
 EMI^EMI^Emirau Island Airport^Emirau Island^^PG^-1.65^149.983^1^CA
+EMJ^KWE^Guiyang Railway Station^Guiyang^^CN^26.556^106.693^0^R
 EMK^EMK^Emmonak Airport^Emmonak^AK^US^62.7728^-164.519^5^A
 EMK^EMK^Emmonak Airport^Emmonak^AK^US^62.7728^-164.519^5^C
 EML^EML^Emmen Airport^Emmen^^CH^47.0888^8.30283^0^A
@@ -3792,12 +3842,15 @@ ESP^ESP^Stroudsburg-Pocono Airport^East Stroudsburg^PA^US^40.9833^-75.2^1^A
 ESP^ESP^Stroudsburg-Pocono Airport^East Stroudsburg^PA^US^40.9833^-75.2^1^C
 ESR^ESR^Ricardo Garcia Posada Airport^El Salvador^^CL^-26.3092^-69.7592^1^A
 ESR^ESR^Ricardo Garcia Posada Airport^El Salvador^^CL^-26.3092^-69.7592^1^C
-ESS^ESS^Muelheim^Essen^^DE^51.4013^6.93567^0^CA
+ESS^ESS^Muelheim^Essen^^DE^51.4013^6.93567^0^A
+ESS^ESS^Muelheim^Essen^^DE^51.4013^6.93567^0^C
+ESS^ESS^Muelheim^Essen^^DE^51.4013^6.93567^0^C
 EST^EST^Estherville Municipal Airport^Estherville^IA^US^43.4045^-94.7412^2^A
 EST^EST^Estherville Municipal Airport^Estherville^IA^US^43.4045^-94.7412^2^C
 ESU^ESU^Mogador Airport^Essaouira^^MA^31.4018^-9.68617^0^A
 ESU^ESU^Mogador Airport^Essaouira^^MA^31.4018^-9.68617^0^C
 ESW^ESW^State Airport^Easton^WA^US^47.2525^-121.185^4^CA
+ESZ^ESS^Hbf Railway Station^Essen^^DE^51.451^7.00867^0^R
 ETB^ETB^West Bend Municipal Airport^West Bend^WI^US^43.42^-88.1233^2^A
 ETB^ETB^West Bend Municipal Airport^West Bend^WI^US^43.42^-88.1233^2^C
 ETD^ETD^Etadunna Airport^Etadunna^SA^AU^-27.5^138^3^CA
@@ -3841,14 +3894,16 @@ EVM^EVM^Eveleth-Virginia Municipal Airport^Eveleth^MN^US^47.4225^-92.4908^2^A
 EVM^EVM^Eveleth-Virginia Municipal Airport^Eveleth^MN^US^47.4225^-92.4908^2^C
 EVN^EVN^Zvartnots International Airport^Yerevan^^AM^40.15^44.4^0^A
 EVN^EVN^Zvartnots International Airport^Yerevan^^AM^40.15^44.4^0^C
+EVO^EVO^Estepona Bus Station^Estepona^SP^ES^36.4248^-5.12317^1^B
+EVO^EVO^Estepona Bus Station^Estepona^SP^ES^36.4248^-5.12317^1^C
 EVV^EVV^Evansville Regional Airport^Evansville^IN^US^38.0378^-87.5238^2^A
 EVV^EVV^Evansville Regional Airport^Evansville^IN^US^38.0378^-87.5238^2^C
 EVW^EVW^Uinta County Airport^Evanston^WY^US^41.2667^-110.967^3^A
 EVW^EVW^Uinta County Airport^Evanston^WY^US^41.2667^-110.967^3^C
 EVX^EVX^Evreux Airport^Evreux^^FR^49.0167^1.15^0^A
 EVX^EVX^Evreux Airport^Evreux^^FR^49.0167^1.15^0^C
-EWB^EWB^New Bedford Airport^New Bedford^MA^US^41.6728^-70.9555^1^A
-EWB^EWB^New Bedford Airport^New Bedford^MA^US^41.6728^-70.9555^1^C
+EWB^EWB^New Bedford Regional Airport^New Bedford/Fall River^MA^US^41.6728^-70.9555^1^A
+EWB^EWB^New Bedford Regional Airport^New Bedford/Fall River^MA^US^41.6728^-70.9555^1^C
 EWE^EWE^Ewer Airport^Ewer^^ID^-5.48333^138.083^3^CA
 EWI^EWI^Enarotali Airport^Enarotali^^ID^-3.96667^136.333^3^A
 EWI^EWI^Enarotali Airport^Enarotali^^ID^-3.96667^136.333^3^C
@@ -3859,6 +3914,9 @@ EWN^EWN^Coastal Carolina Regional Airport^New Bern^NC^US^35.0708^-77.0388^1^C
 EWO^EWO^Ewo Airport^Ewo^^CG^-0.883333^14.8^0^A
 EWO^EWO^Ewo Airport^Ewo^^CG^-0.883333^14.8^0^C
 EWR^NYC^Newark Liberty International Airport^New York^NY^US^40.6908^-74.1697^1^A
+EWR^NYC^Newark Liberty International Airport^New York^NY^US^40.6908^-74.1697^1^C
+EWR^NYC^Newark Liberty International Airport^New York^NY^US^40.6908^-74.1697^1^C
+EWV^ENH^Railway Station^Enshi^^CN^31.3503^109.475^0^R
 EXI^EXI^Excursion Inlet Sea Plane Base^Excursion Inlet^AK^US^58.4192^-135.442^5^A
 EXI^EXI^Excursion Inlet Sea Plane Base^Excursion Inlet^AK^US^58.4192^-135.442^5^C
 EXM^EXM^Exmouth Airport^Exmouth^WA^AU^-22.25^114.25^4^CA
@@ -3869,7 +3927,7 @@ EYK^EYK^Beloyarsky Airport^Beloyarsky^^RU^63.6833^66.6833^4^A
 EYK^EYK^Beloyarsky Airport^Beloyarsky^^RU^63.6833^66.6833^4^C
 EYL^EYL^Yelimane Airport^Yelimane^^ML^15.1333^-10.5667^0^CA
 EYP^EYP^El Alcaravan Airport^Yopal^^CO^5.31817^-72.2923^0^CA
-EYR^EYR^Yerington Municipal Airport^Yerington^NV^US^39^-119.25^4^CA
+EYR^EYR^Yerington Municipal Airport^Yerington^NV^US^38.9922^-119.156^4^CA
 EYS^EYS^Elive Springs Airport^Elive Springs^^KE^3.25^35.9667^0^A
 EYS^EYS^Elive Springs Airport^Elive Springs^^KE^3.25^35.9667^0^C
 EYW^EYW^Key West International Airport^Key West^FL^US^24.5537^-81.7558^1^A
@@ -3920,7 +3978,8 @@ FBA^FBA^Fonte Boa Airport^Fonte Boa^AM^BR^-2.5335^-66.067^2A^C
 FBD^FBD^Faizabad Airport^Faizabad^^AF^37.1^70.5667^0^A
 FBD^FBD^Faizabad Airport^Faizabad^^AF^37.1^70.5667^0^C
 FBE^FBE^Paulo Abdala Airport^Francisco Beltrao^PR^BR^-26.0553^-53.0667^1^CA
-FBG^FBG^Simmons Army Air Field^Fort Bragg^NC^US^35.1667^-79.0167^1^CA
+FBG^FBG^Simmons Army Air Field^Fort Bragg^NC^US^35.1667^-79.0167^1^A
+FBG^FBG^Simmons Army Air Field^Fort Bragg^NC^US^35.1667^-79.0167^1^C
 FBK^FAI^Ladd AAF^Fairbanks^AK^US^64.8333^-147.7^5^A
 FBL^FBL^Faribault Municipal Airport^Faribault^MN^US^44.324^-93.3078^2^A
 FBL^FBL^Faribault Municipal Airport^Faribault^MN^US^44.324^-93.3078^2^C
@@ -4002,6 +4061,7 @@ FIG^FIG^Katourou Airport^Fria^^GN^10.35^-13.5667^0^A
 FIG^FIG^Katourou Airport^Fria^^GN^10.35^-13.5667^0^C
 FIH^FIH^N'djili Airport^Kinshasa^^CD^-4.38483^15.44^1^A
 FIH^FIH^N'djili Airport^Kinshasa^^CD^-4.38483^15.44^1^C
+FII^BHY^Beihai Railway Station^Beihai^^CN^21.453^109.121^0^R
 FIK^FIK^Finke Airport^Finke^NT^AU^-25.5667^134.583^3A^A
 FIK^FIK^Finke Airport^Finke^NT^AU^-25.5667^134.583^3A^C
 FIL^FIL^Fillmore Municipal Airport^Fillmore^UT^US^38.955^-112.357^3^CA
@@ -4045,8 +4105,8 @@ FLM^FLM^Filadelfia Airport^Filadelfia^^PY^-22.35^-60.0333^0^A
 FLM^FLM^Filadelfia Airport^Filadelfia^^PY^-22.35^-60.0333^0^C
 FLN^FLN^Hercilio Luz Intl Airport^Florianopolis^SC^BR^-27.669^-48.5417^1^A
 FLN^FLN^Hercilio Luz Intl Airport^Florianopolis^SC^BR^-27.669^-48.5417^1^C
-FLO^FLO^Florence Regional Airport^Florence^SC^US^34.1845^-79.721^1^A
-FLO^FLO^Florence Regional Airport^Florence^SC^US^34.1845^-79.721^1^C
+FLO^FLO^Florence Regional Airport^Florence^SC^US^34.1893^-79.7237^1^A
+FLO^FLO^Florence Regional Airport^Florence^SC^US^34.1893^-79.7237^1^C
 FLP^FLP^Marion County Regional Airport^Flippin^AR^US^36.3^-92.5833^2^A
 FLP^FLP^Marion County Regional Airport^Flippin^AR^US^36.3^-92.5833^2^C
 FLR^FLR^Peretola Airport^Florence^^IT^43.8052^11.2017^0^A
@@ -4063,7 +4123,7 @@ FMA^FMA^Formosa Airport^Formosa^FO^AR^-26.2077^-58.2343^0^A
 FMA^FMA^Formosa Airport^Formosa^FO^AR^-26.2077^-58.2343^0^C
 FME^FME^Tipton Airport^Fort Meade/Odenton^MD^US^39.0845^-76.7557^1^A
 FME^FME^Tipton Airport^Fort Meade/Odenton^MD^US^39.0845^-76.7557^1^C
-FMH^FMH^Otis Air Force Base^Falmouth^MA^US^41.6555^-70.5203^1^CA
+FMH^FMH^Cape Cod Coast Guard^Falmouth^MA^US^41.6555^-70.5203^1^CA
 FMI^FMI^Kalemie Airport^Kalemie^^CD^-5.87367^29.2405^2^A
 FMI^FMI^Kalemie Airport^Kalemie^^CD^-5.87367^29.2405^2^C
 FMM^FMM^Allgaeu Airport^Memmingen^^DE^47.9888^10.2395^0^A
@@ -4170,8 +4230,8 @@ FRU^FRU^Manas International Airport^Bishkek^^KG^43.055^74.4705^0^A
 FRU^FRU^Manas International Airport^Bishkek^^KG^43.055^74.4705^0^C
 FRW^FRW^Francistown Airport^Francistown^^BW^-21.156^27.4762^0^A
 FRW^FRW^Francistown Airport^Francistown^^BW^-21.156^27.4762^0^C
-FRY^FRY^Fryeburg Airport^Fryeburg^ME^US^44.0167^-70.9833^1^A
-FRY^FRY^Fryeburg Airport^Fryeburg^ME^US^44.0167^-70.9833^1^C
+FRY^FRY^Eastern Slopes Regional Airport^Fryeburg^ME^US^44.0167^-70.9833^1^A
+FRY^FRY^Eastern Slopes Regional Airport^Fryeburg^ME^US^44.0167^-70.9833^1^C
 FRZ^FRZ^Fritzlar Air Base^Fritzlar^^DE^51.1087^9.28483^0^A
 FRZ^FRZ^Fritzlar Air Base^Fritzlar^^DE^51.1087^9.28483^0^C
 FSA^FUO^CZ Bus Station^Foshan^^CN^23.037^113.105^0^B
@@ -4247,6 +4307,8 @@ FYJ^FYJ^Fuyuan Airport^Fuyuan^^CN^48.1917^134.358^0^A
 FYJ^FYJ^Fuyuan Airport^Fuyuan^^CN^48.1917^134.358^0^C
 FYM^FYM^Fayetteville Municipal Airport^Fayetteville^TN^US^35.0558^-86.5583^2^A
 FYM^FYM^Fayetteville Municipal Airport^Fayetteville^TN^US^35.0558^-86.5583^2^C
+FYN^FYN^Fuyun Airport^Fuyun^^CN^46.8015^89.5043^0^A
+FYN^FYN^Fuyun Airport^Fuyun^^CN^46.8015^89.5043^0^C
 FYT^FYT^Faya-Largeau Airport^Faya-Largeau^^TD^17.9167^19.1167^0^A
 FYT^FYT^Faya-Largeau Airport^Faya-Largeau^^TD^17.9167^19.1167^0^C
 FYU^FYU^Fort Yukon Airport^Fort Yukon^AK^US^66.5753^-145.205^5^A
@@ -4297,7 +4359,7 @@ GAY^GAY^Gaya Airport^Gaya^^IN^24.7413^84.9408^0^A
 GAY^GAY^Gaya Airport^Gaya^^IN^24.7413^84.9408^0^C
 GAZ^GAZ^Guasopa Airport^Guasopa^^PG^-9.2^152.933^1^A
 GAZ^GAZ^Guasopa Airport^Guasopa^^PG^-9.2^152.933^1^C
-GBB^GBB^Gabala Intl Airport^Gabala^^AZ^40.8053^47.7218^0^CA
+GBB^GBB^Gabala Intl Airport^Gabala^^AZ^40.8227^47.7075^0^CA
 GBC^GBC^Gasuke Airport^Gasuke^^PG^-6.1^141.733^1^CA
 GBD^GBD^Great Bend Municipal Airport^Great Bend^KS^US^38.3417^-98.8585^2^A
 GBD^GBD^Great Bend Municipal Airport^Great Bend^KS^US^38.3417^-98.8585^2^C
@@ -4307,7 +4369,8 @@ GBF^GBF^Negarbo Airport^Negarbo^^PG^-6.58333^144.667^1^CA
 GBG^GBG^Galesburg Municipal Airport^Galesburg^IL^US^40.9365^-90.424^2^A
 GBG^GBG^Galesburg Municipal Airport^Galesburg^IL^US^40.9365^-90.424^2^C
 GBH^GBH^Galbraith Lake Airport^Galbraith Lake^AK^US^68.4667^-149.483^5^CA
-GBJ^GBJ^Les Bases Airport^Marie Galante^^GP^15.8667^-61.2667^0^CA
+GBJ^GBJ^Les Bases Airport^Marie Galante^^GP^15.8667^-61.2667^0^A
+GBJ^GBJ^Les Bases Airport^Marie Galante^^GP^15.8667^-61.2667^0^C
 GBK^GBK^Gbangbatok Airport^Gbangbatok^^SL^7.8^-12.3667^0^A
 GBK^GBK^Gbangbatok Airport^Gbangbatok^^SL^7.8^-12.3667^0^C
 GBL^GBL^South Goulburn Island Airport^South Goulburn Island^NT^AU^-11.55^133.433^3A^CA
@@ -4316,8 +4379,8 @@ GBM^GBM^Garbaharey Airport^Garbaharey^^SO^3.33333^42.1833^0^C
 GBO^BWI^Greenbelt Rail Station^Baltimore^MD^US^39.2667^-76.75^1^A
 GBP^GBP^Gamboola Airport^Gamboola^QL^AU^-16.55^143.667^2B^CA
 GBQ^GBQ^Off-Line Point^Muharraq^^BH^26.4265^50.9867^0^CA
-GBR^GBR^Great Barrington Airport^Great Barrington^MA^US^42.1838^-73.402^1^A
-GBR^GBR^Great Barrington Airport^Great Barrington^MA^US^42.1838^-73.402^1^C
+GBR^GBR^Walter J. Koladza Airport^Great Barrington^MA^US^42.1838^-73.402^1^A
+GBR^GBR^Walter J. Koladza Airport^Great Barrington^MA^US^42.1838^-73.402^1^C
 GBS^GBS^Off-Line Point^Port Fitzroy^^NZ^-36.1333^175.333^1^CA
 GBT^GBT^Gorgon Airport^Gorgon^^IR^36.9003^54.4077^0^CA
 GBU^GBU^Khashm el Girba Airport^Khashm el Girba^^SD^14.9225^35.8867^0^CA
@@ -4377,8 +4440,8 @@ GDV^GDV^Dawson Community Airport^Glendive^MT^US^47.1367^-104.804^3^A
 GDV^GDV^Dawson Community Airport^Glendive^MT^US^47.1367^-104.804^3^C
 GDW^GDW^Zettel Memorial Airport^Gladwin^MI^US^43.969^-84.4717^1^A
 GDW^GDW^Zettel Memorial Airport^Gladwin^MI^US^43.969^-84.4717^1^C
-GDX^GDX^Sokol Airport^Magadan^^RU^59.9067^150.719^9^A
-GDX^GDX^Sokol Airport^Magadan^^RU^59.9067^150.719^9^C
+GDX^GDX^Sokol Airport^Magadan^^RU^59.9067^150.719^10^A
+GDX^GDX^Sokol Airport^Magadan^^RU^59.9067^150.719^10^C
 GDZ^GDZ^Gelendzhik Airport^Gelendzhik^^RU^44.5667^38.0167^2^A
 GDZ^GDZ^Gelendzhik Airport^Gelendzhik^^RU^44.5667^38.0167^2^C
 GEA^NOU^Magenta Airport^Noumea^^NC^-22.2558^166.469^0^A
@@ -4463,6 +4526,8 @@ GHE^GHE^Garachine Airport^Garachine^^PA^8.0595^-78.359^0^A
 GHE^GHE^Garachine Airport^Garachine^^PA^8.0595^-78.359^0^C
 GHF^GHF^Giebelstadt Airport^Giebelstadt^^DE^49.65^9.96667^0^A
 GHF^GHF^Giebelstadt Airport^Giebelstadt^^DE^49.65^9.96667^0^C
+GHK^GHK^Gahcho Kue Airport^Kennedy Lake^NT^CA^63.4265^-109.193^5^A
+GHK^GHK^Gahcho Kue Airport^Kennedy Lake^NT^CA^63.4265^-109.193^5^C
 GHM^GHM^Centerville Municipal Airport^Centerville^TN^US^35.7833^-87.4667^2^A
 GHM^GHM^Centerville Municipal Airport^Centerville^TN^US^35.7833^-87.4667^2^C
 GHN^GHN^Guanghan Airport^Guanghan^^CN^30.4667^106.65^0^CA
@@ -4579,7 +4644,10 @@ GMN^GMN^Greymouth Airport^Greymouth^^NZ^-42.45^171.2^1^A
 GMN^GMN^Greymouth Airport^Greymouth^^NZ^-42.45^171.2^1^C
 GMO^GMO^Lawanti Airport^Gombe^^NG^10.2922^10.8927^0^CA
 GMP^SEL^Gimpo International Airport^Seoul^^KR^37.5507^126.784^0^A
-GMR^GMR^Totegegie Airport^Totegegie^^PF^-23.074^-134.888^3^CA
+GMQ^GMQ^Maqin Airport^Golog^^CN^34.4058^100.317^0^A
+GMQ^GMQ^Maqin Airport^Golog^^CN^34.4058^100.317^0^C
+GMR^GMR^Totegegie Airport^Totegegie^^PF^-23.074^-134.888^3^A
+GMR^GMR^Totegegie Airport^Totegegie^^PF^-23.074^-134.888^3^C
 GMS^GMS^Antonio Guerrero Airport^Guimaraes^MA^BR^-2.15^-44.7^1A^CA
 GMT^GMT^Air Station^Granite Mountain^AK^US^65.4033^-161.273^5^CA
 GMU^GSP^Greenville Downtown Airport^Greenville/Spartanburg^SC^US^34.85^-82.3833^1^A
@@ -4632,8 +4700,8 @@ GOL^GOL^Gold Beach Municipal Airport^Gold Beach^OR^US^42.4167^-124.417^4^A
 GOL^GOL^Gold Beach Municipal Airport^Gold Beach^OR^US^42.4167^-124.417^4^C
 GOM^GOM^Goma International Airport^Goma^^CD^-1.66867^29.2343^2^A
 GOM^GOM^Goma International Airport^Goma^^CD^-1.66867^29.2343^2^C
-GON^GON^Groton-New London Airport^New London^CT^US^41.3258^-72.0418^1^A
-GON^GON^Groton-New London Airport^New London^CT^US^41.3258^-72.0418^1^C
+GON^GON^Groton/New London Airport^Groton/New London^CT^US^41.3258^-72.0418^1^A
+GON^GON^Groton/New London Airport^Groton/New London^CT^US^41.3258^-72.0418^1^C
 GOO^GOO^Goondiwindi Airport^Goondiwindi^QL^AU^-28.5213^150.318^2B^A
 GOO^GOO^Goondiwindi Airport^Goondiwindi^QL^AU^-28.5213^150.318^2B^C
 GOP^GOP^Gorakhpur Airport^Gorakhpur^^IN^26.7372^83.4432^0^A
@@ -4647,7 +4715,8 @@ GOT^GOT^Landvetter Airport^Gothenburg^^SE^57.6577^12.2745^0^A
 GOT^GOT^Landvetter Airport^Gothenburg^^SE^57.6577^12.2745^0^C
 GOU^GOU^Garoua International Airport^Garoua^^CM^9.335^13.372^0^A
 GOU^GOU^Garoua International Airport^Garoua^^CM^9.335^13.372^0^C
-GOV^GOV^Gove Airport^Nhulunbuy^NT^AU^-12.2757^136.82^3A^CA
+GOV^GOV^Gove Airport^Nhulunbuy^NT^AU^-12.2757^136.82^3A^A
+GOV^GOV^Gove Airport^Nhulunbuy^NT^AU^-12.2757^136.82^3A^C
 GOZ^GOZ^Gorna Oryahovitsa Airport^Gorna Oryahovitsa^^BG^43.1508^25.7077^0^CA
 GPA^GPA^Araxos Airport^Patrai^^GR^38.1507^21.422^0^A
 GPA^GPA^Araxos Airport^Patrai^^GR^38.1507^21.422^0^C
@@ -4718,6 +4787,8 @@ GSC^GSC^Gascoyne Junction Airport^Gascoyne Junction^WA^AU^-25.1667^115.25^4^C
 GSE^GOT^Saeve Airport^Gothenburg^^SE^57.7677^11.8673^0^A
 GSH^GSH^Goshen Municipal Airport^Goshen^IN^US^41.5225^-85.7898^1^A
 GSH^GSH^Goshen Municipal Airport^Goshen^IN^US^41.5225^-85.7898^1^C
+GSI^GSI^Grand-Santi Airport^Grand-Santi^^GF^4.28333^-54.3753^0^A
+GSI^GSI^Grand-Santi Airport^Grand-Santi^^GF^4.28333^-54.3753^0^C
 GSJ^GSJ^San Jose Airport^Puerto San Jose^^GT^29.3512^-90.8348^0^A
 GSJ^GSJ^San Jose Airport^Puerto San Jose^^GT^29.3512^-90.8348^0^C
 GSL^GSL^Taltheilei Narrows Airport^Taltheilei Narrows^NT^CA^62.5918^-111.54^5^CA
@@ -4748,7 +4819,8 @@ GTI^GTI^Guettin Airport^Guettin^^DE^54.3833^12.3167^0^C
 GTN^MON^Glentanner Airport^Mount Cook^^NZ^-43.904^170.124^1^A
 GTN^MON^Glentanner Airport^Mount Cook^^NZ^-43.904^170.124^1^C
 GTO^GTO^Djalaluddin Airport^Gorontalo^^ID^0.636333^122.851^2^CA
-GTP^GTP^Grants Pass Airport^Grants Pass^OR^US^42.5043^-123.386^4^CA
+GTP^GTP^Grants Pass Airport^Grants Pass^OR^US^42.5043^-123.386^4^A
+GTP^GTP^Grants Pass Airport^Grants Pass^OR^US^42.5043^-123.386^4^C
 GTR^UBS^Golden Triangle Regional Airport^Columbus^MS^US^33.45^-88.6^2^A
 GTS^GTS^The Granites Airport^The Granites^NT^AU^-26.9667^133.617^3A^A
 GTS^GTS^The Granites Airport^The Granites^NT^AU^-26.9667^133.617^3A^C
@@ -4882,7 +4954,8 @@ HAA^HAA^Hasvik Airport^Hasvik^^NO^70.4667^22.15^0^A
 HAA^HAA^Hasvik Airport^Hasvik^^NO^70.4667^22.15^0^C
 HAB^HAB^Marion County Rankin Fite Airport^Hamilton^AL^US^34.1168^-87.9923^2^A
 HAB^HAB^Marion County Rankin Fite Airport^Hamilton^AL^US^34.1168^-87.9923^2^C
-HAC^HAC^Hachijojima Airport^Hachijojima^^JP^33.108^139.788^0^CA
+HAC^HAC^Hachijojima Airport^Hachijojima^^JP^33.108^139.788^0^A
+HAC^HAC^Hachijojima Airport^Hachijojima^^JP^33.108^139.788^0^C
 HAD^HAD^Halmstad Airport^Halmstad^^SE^56.6833^12.8183^0^A
 HAD^HAD^Halmstad Airport^Halmstad^^SE^56.6833^12.8183^0^C
 HAE^HAE^Lava Falls Heliport^Supai^AZ^US^36.225^-112.668^3A^CA
@@ -4986,7 +5059,8 @@ HEL^HEL^Helsinki-Vantaa Airport^Helsinki^^FI^60.322^24.9697^0^A
 HEL^HEL^Helsinki-Vantaa Airport^Helsinki^^FI^60.322^24.9697^0^C
 HEM^HEL^Helsinke-Malmi Airport^Helsinki^^FI^60.25^25.05^0^A
 HEN^HEL^Hernesaari Heliport^Helsinki^^FI^60.142^24.9213^0^H
-HEO^HEO^Haelogo Airport^Haelogo^^PG^-9.13333^147.583^1^CA
+HEO^HEO^Haelogo Airport^Haelogo^^PG^-9.13333^147.583^1^A
+HEO^HEO^Haelogo Airport^Haelogo^^PG^-9.13333^147.583^1^C
 HER^HER^Nikos Kazantzakis Airport^Irakleion^^GR^35.3372^25.1748^0^A
 HER^HER^Nikos Kazantzakis Airport^Irakleion^^GR^35.3372^25.1748^0^C
 HES^HES^Hermiston Municipal Airport^Hermiston^OR^US^45.85^-119.283^4^A
@@ -5013,6 +5087,8 @@ HFT^HFT^Hammerfest Airport^Hammerfest^^NO^70.6743^23.6677^0^C
 HGA^HGA^Egal International Airport^Hargeisa^^SO^9.5095^44.0883^0^CA
 HGD^HGD^Hughenden Airport^Hughenden^QL^AU^-20.818^144.221^2B^A
 HGD^HGD^Hughenden Airport^Hughenden^QL^AU^-20.818^144.221^2B^C
+HGE^HGE^Higuerote Airport^Higuerote^^VE^10.4573^-66.089^0^A
+HGE^HGE^Higuerote Airport^Higuerote^^VE^10.4573^-66.089^0^C
 HGH^HGH^Xiaoshan Intl Airport^Hangzhou^^CN^30.2243^120.434^0^A
 HGH^HGH^Xiaoshan Intl Airport^Hangzhou^^CN^30.2243^120.434^0^C
 HGI^HGI^Higlieg Airport^Higlieg^^SD^10.9833^32^0^A
@@ -5048,8 +5124,8 @@ HIA^HIA^Lianshui Airport^Huai'an^^CN^33.773^119.142^0^C
 HIB^HIB^Range Regional Airport^Hibbing/Chisholm^MN^US^47.3865^-92.8365^2^A
 HIB^HIB^Range Regional Airport^Hibbing/Chisholm^MN^US^47.3865^-92.8365^2^C
 HID^HID^Horn Island Airport^Horn Island^QL^AU^-10.5833^142.283^2B^CA
-HIE^HIE^Whitefield Regional Airport^Whitefield^NH^US^44.3595^-71.5425^1^A
-HIE^HIE^Whitefield Regional Airport^Whitefield^NH^US^44.3595^-71.5425^1^C
+HIE^HIE^Mount Washington Regional Airport^Whitefield^NH^US^44.3595^-71.5425^1^A
+HIE^HIE^Mount Washington Regional Airport^Whitefield^NH^US^44.3595^-71.5425^1^C
 HIF^OGD^Hill Air Force Base^Ogden^UT^US^41.2167^-111.967^3^A
 HIG^HIG^Highbury Airport^Highbury^QL^AU^-16.4167^143.15^2B^A
 HIG^HIG^Highbury Airport^Highbury^QL^AU^-16.4167^143.15^2B^C
@@ -5072,7 +5148,8 @@ HIS^HIS^Hayman Island Heliport^Hayman Island^QL^AU^-20.0667^148.867^2B^C
 HIS^HIS^Hayman Island Heliport^Hayman Island^QL^AU^-20.0667^148.867^2B^H
 HIT^HIT^Haivaro Airport^Haivaro^^PG^-6.93333^143.067^1^CA
 HIW^HIJ^Hiroshimanishi Airport^Hiroshima^^JP^34.3582^132.41^0^A
-HJJ^HJJ^Zhijiang Airport^Huaihua^^CN^27.4397^109.703^0^CA
+HJJ^HJJ^Zhijiang Airport^Huaihua^^CN^27.4397^109.703^0^A
+HJJ^HJJ^Zhijiang Airport^Huaihua^^CN^27.4397^109.703^0^C
 HJR^HJR^Khajuraho Airport^Khajuraho^^IN^24.8212^79.9203^0^CA
 HJT^HJT^Khujirt Airport^Khujirt^^MN^46.9^102.767^0^A
 HJT^HJT^Khujirt Airport^Khujirt^^MN^46.9^102.767^0^C
@@ -5102,6 +5179,10 @@ HLC^HLC^Hill City Municipal Airport^Hill City^KS^US^39.3748^-99.8255^2^A
 HLC^HLC^Hill City Municipal Airport^Hill City^KS^US^39.3748^-99.8255^2^C
 HLD^HLD^Dongshan Airport^Hailar^^CN^49.2047^119.791^0^A
 HLD^HLD^Dongshan Airport^Hailar^^CN^49.2047^119.791^0^C
+HLE^HLE^Saint Helena Airport^Jamestown^^SH^-15.9548^-5.64033^0^A
+HLE^HLE^Saint Helena Airport^Jamestown^^SH^-15.9548^-5.64033^0^C
+HLE^HLE^Saint Helena Airport^Jamestown^^SH^-15.9548^-5.64033^0^C
+HLE^HLE^Saint Helena Airport^Jamestown^^SH^-15.9548^-5.64033^0^C
 HLF^HLF^Hultsfred Airport^Hultsfred^^SE^57.5225^15.8233^0^CA
 HLG^HLG^Ohio County Airport^Wheeling^WV^US^40.1717^-80.6412^1^A
 HLG^HLG^Ohio County Airport^Wheeling^WV^US^40.1717^-80.6412^1^C
@@ -5144,6 +5225,8 @@ HMR^HMR^Hamar Airport^Hamar^^NO^60.8^11.1167^0^C
 HMT^HMT^Ryan Airport^Hemet^CA^US^33.7333^-117.022^4^A
 HMT^HMT^Ryan Airport^Hemet^CA^US^33.7333^-117.022^4^C
 HMV^HMV^Hemavan Airport^Hemavan^^SE^65.8035^15.0763^0^CA
+HMY^HMY^Seosan Airport^Seosan^^KR^36.702^126.484^0^A
+HMY^HMY^Seosan Airport^Seosan^^KR^36.702^126.484^0^C
 HNA^HNA^Hanamaki Airport^Hanamaki^^JP^39.4238^141.135^0^A
 HNA^HNA^Hanamaki Airport^Hanamaki^^JP^39.4238^141.135^0^C
 HNB^HNB^Huntingburg Airport^Huntingburg^IN^US^38.2428^-86.9522^1^A
@@ -5200,7 +5283,8 @@ HOT^HOT^Memorial Field^Hot Springs^AR^US^34.474^-93.091^2^A
 HOT^HOT^Memorial Field^Hot Springs^AR^US^34.474^-93.091^2^C
 HOU^HOU^William P. Hobby Airport^Houston^TX^US^29.6407^-95.274^2^A
 HOU^HOU^William P. Hobby Airport^Houston^TX^US^29.6407^-95.274^2^C
-HOV^HOV^Hovden Airport^Orsta-Volda^^NO^62.1747^6.07467^0^CA
+HOV^HOV^Hovden Airport^Orsta-Volda^^NO^62.1747^6.07467^0^A
+HOV^HOV^Hovden Airport^Orsta-Volda^^NO^62.1747^6.07467^0^C
 HOX^HOX^Homalin Airport^Homalin^^MM^24.8667^94.9167^0^A
 HOX^HOX^Homalin Airport^Homalin^^MM^24.8667^94.9167^0^C
 HOY^HOY^Longhope Airport^Hoy^SC^GB^58.8333^-3.3^0^CA
@@ -5218,6 +5302,7 @@ HPN^HPN^Westchester County Airport^White Plains^NY^US^41.068^-73.7047^1^A
 HPN^HPN^Westchester County Airport^White Plains^NY^US^41.068^-73.7047^1^C
 HPT^HPT^Hampton Municipal Airport^Hampton^IA^US^42.75^-93.2^2^CA
 HPV^HPV^Princeville Airport^Hanalei^HI^US^22.2075^-159.441^6A^A
+HPV^HPV^Princeville Airport^Hanalei^HI^US^22.2075^-159.441^6A^C
 HPY^HPY^Baytown Airport^Baytown^TX^US^29.7333^-94.9667^2^A
 HPY^HPY^Baytown Airport^Baytown^TX^US^29.7333^-94.9667^2^C
 HQM^HQM^Bowerman Airport^Hoquiam/Aberdeen^WA^US^46.9693^-123.935^4^A
@@ -5257,6 +5342,7 @@ HSG^HSG^Saga Airport^Saga^^JP^33.1432^130.301^0^C
 HSH^LAS^Henderson Executive Airport^Las Vegas^NV^US^35.9677^-115.118^4^A
 HSI^HSI^Hastings Municipal Airport^Hastings^NE^US^40.6033^-98.4228^2^A
 HSI^HSI^Hastings Municipal Airport^Hastings^NE^US^40.6033^-98.4228^2^C
+HSJ^CGO^Shangjie Airport^Zhengzhou^^CN^34.8387^113.267^0^A
 HSK^HSK^Pirineos Airport^Huesca^SP^ES^42.0752^-0.320667^1^A
 HSK^HSK^Pirineos Airport^Huesca^SP^ES^42.0752^-0.320667^1^C
 HSL^HSL^Huslia Airport^Huslia^AK^US^65.7015^-156.372^5^A
@@ -5267,6 +5353,7 @@ HSN^HSN^Putuoshan Airport^Zhoushan^^CN^29.9338^122.357^0^A
 HSN^HSN^Putuoshan Airport^Zhoushan^^CN^29.9338^122.357^0^C
 HSP^HSP^Ingalls Field^Hot Springs^VA^US^37.9503^-79.8337^1^A
 HSP^HSP^Ingalls Field^Hot Springs^VA^US^37.9503^-79.8337^1^C
+HSQ^HSD^Bus Station^Huangshi^^CN^30.242^115.059^0^B
 HSS^HSS^Hisar Airport^Hisar^^IN^29.1667^75.8^0^A
 HSS^HSS^Hisar Airport^Hisar^^IN^29.1667^75.8^0^C
 HST^HST^Homestead ARB^Homestead^FL^US^25.4833^-80.4833^1^A
@@ -5275,14 +5362,14 @@ HSV^HSV^Huntsville Intl - Carl T. Jones Field Airport^Huntsville^AL^US^34.6357^-
 HSV^HSV^Huntsville Intl - Carl T. Jones Field Airport^Huntsville^AL^US^34.6357^-86.7717^2^C
 HSZ^HSZ^Hsinchu Airport^Hsinchu^^TW^24.8167^120.933^0^A
 HSZ^HSZ^Hsinchu Airport^Hsinchu^^TW^24.8167^120.933^0^C
-HTA^HTA^Kadala Airport^Chita^^RU^52.0223^113.303^7^A
-HTA^HTA^Kadala Airport^Chita^^RU^52.0223^113.303^7^C
+HTA^HTA^Kadala Airport^Chita^^RU^52.0223^113.303^8^A
+HTA^HTA^Kadala Airport^Chita^^RU^52.0223^113.303^8^C
 HTG^HTG^Khatanga Airport^Khatanga^^RU^71.9667^102.5^6^A
 HTG^HTG^Khatanga Airport^Khatanga^^RU^71.9667^102.5^6^C
 HTH^HTH^Hawthorne Industrial Airport^Hawthorne^NV^US^38.5333^-118.633^4^CA
 HTI^HTI^Great Barrier Reef Airport^Hamilton Island^QL^AU^-20.35^148.967^2B^A
 HTI^HTI^Great Barrier Reef Airport^Hamilton Island^QL^AU^-20.35^148.967^2B^C
-HTL^HTL^Roscommon County Airport^Houghton Lake^MI^US^47.1073^-88.551^1^CA
+HTL^HTL^Roscommon County Airport^Houghton Lake^MI^US^44.3563^-84.6713^1^CA
 HTM^HTM^Khatgal Airport^Khatgal^^MN^50.45^100.167^0^A
 HTM^HTM^Khatgal Airport^Khatgal^^MN^50.45^100.167^0^C
 HTN^HTN^Hotan Airport^Hotan^^CN^37.0365^79.859^0^A
@@ -5293,6 +5380,7 @@ HTR^HTR^Hateruma Airport^Hateruma^^JP^24.05^123.8^0^A
 HTR^HTR^Hateruma Airport^Hateruma^^JP^24.05^123.8^0^C
 HTS^HTS^Tri-State Airport^Huntington/Ashland KY^WV^US^38.3678^-82.5562^1^A
 HTS^HTS^Tri-State Airport^Huntington/Ashland KY^WV^US^38.3678^-82.5562^1^C
+HTT^HTT^Huatugou Airport^Huatugou^^CN^38.1925^90.8377^0^A
 HTU^HTU^Hopetown Airport^Hopetown^VI^AU^-35.7^142.367^2^A
 HTU^HTU^Hopetown Airport^Hopetown^VI^AU^-35.7^142.367^2^C
 HTV^HTV^Bruce Brothers Regional Airport^Huntsville^TX^US^30.7167^-95.55^2^A
@@ -5328,6 +5416,8 @@ HUM^HUM^Terrebonne Airport^Houma^LA^US^29.5668^-90.6565^2^A
 HUM^HUM^Terrebonne Airport^Houma^LA^US^29.5668^-90.6565^2^C
 HUN^HUN^Hualien Airport^Hualien^^TW^24.02^121.607^0^A
 HUN^HUN^Hualien Airport^Hualien^^TW^24.02^121.607^0^C
+HUO^HUO^Huolinhe Airport^Huolinguole^^CN^45.4855^119.403^0^A
+HUO^HUO^Huolinhe Airport^Huolinguole^^CN^45.4855^119.403^0^C
 HUQ^HUQ^Hon Airport^Hon^^LY^29.5^15.5^0^CA
 HUS^HUS^Hughes Airport^Hughes^AK^US^66.0377^-154.258^5^A
 HUS^HUS^Hughes Airport^Hughes^AK^US^66.0377^-154.258^5^C
@@ -5338,8 +5428,8 @@ HUV^HUV^Hudiksvall Airport^Hudiksvall^^SE^61.7333^17.1167^0^A
 HUV^HUV^Hudiksvall Airport^Hudiksvall^^SE^61.7333^17.1167^0^C
 HUW^HUW^F. Correa da Cruz Airport^Humaita^AM^BR^-7.53467^-63.0693^2A^A
 HUW^HUW^F. Correa da Cruz Airport^Humaita^AM^BR^-7.53467^-63.0693^2A^C
-HUX^HUX^Bahia de Huatulco Intl Airport^Huatulco^^MX^15.7718^-96.2575^1^A
-HUX^HUX^Bahia de Huatulco Intl Airport^Huatulco^^MX^15.7718^-96.2575^1^C
+HUX^HUX^Bahia de Huatulco Intl Airport^Huatulco^^MX^15.7703^-96.2555^1^A
+HUX^HUX^Bahia de Huatulco Intl Airport^Huatulco^^MX^15.7703^-96.2555^1^C
 HUY^HUY^Humberside Airport^Humberside^EN^GB^53.5833^-0.35^0^CA
 HUZ^HUZ^Huizhou Airport^Huizhou^^CN^23.0833^114.367^0^A
 HUZ^HUZ^Huizhou Airport^Huizhou^^CN^23.0833^114.367^0^C
@@ -5352,8 +5442,8 @@ HVE^HVE^Hanksville Airport^Hanksville^UT^US^38.4175^-110.703^3^CA
 HVG^HVG^Valan Airport^Honningsvag^^NO^71.0057^25.9845^0^A
 HVG^HVG^Valan Airport^Honningsvag^^NO^71.0057^25.9845^0^C
 HVK^HVK^Holmavik Airport^Holmavik^^IS^65.7028^-21.6912^0^CA
-HVN^HVN^New Haven Airport^New Haven^CT^US^41.2678^-72.8878^1^A
-HVN^HVN^New Haven Airport^New Haven^CT^US^41.2678^-72.8878^1^C
+HVN^HVN^Tweed Airport^New Haven^CT^US^41.2678^-72.8878^1^A
+HVN^HVN^Tweed Airport^New Haven^CT^US^41.2678^-72.8878^1^C
 HVR^HVR^Havre City-County Airport^Havre^MT^US^48.54^-109.757^3^A
 HVR^HVR^Havre City-County Airport^Havre^MT^US^48.54^-109.757^3^C
 HVS^HVS^Hartsville Regional Airport^Hartsville^SC^US^34.4018^-80.1182^1^A
@@ -5370,10 +5460,11 @@ HWO^HWO^North Perry Airport^Hollywood^FL^US^26^-80.15^1^A
 HWO^HWO^North Perry Airport^Hollywood^FL^US^26^-80.15^1^C
 HXD^HXD^Delingha Airport^Delingha^^CN^37.1217^97.2678^0^A
 HXD^HXD^Delingha Airport^Delingha^^CN^37.1217^97.2678^0^C
+HXN^XNT^Xingtai Railway Station^Xingtai^^CN^37.0682^114.485^0^R
 HXX^HXX^Hay Airport^Hay^NS^AU^-34.5167^144.833^2^A
 HXX^HXX^Hay Airport^Hay^NS^AU^-34.5167^144.833^2^C
-HYA^HYA^Barnstable Airport^Hyannis^MA^US^41.6595^-70.275^1^A
-HYA^HYA^Barnstable Airport^Hyannis^MA^US^41.6595^-70.275^1^C
+HYA^HYA^Barnstable Municipal Airport^Hyannis^MA^US^41.6595^-70.275^1^A
+HYA^HYA^Barnstable Municipal Airport^Hyannis^MA^US^41.6595^-70.275^1^C
 HYC^HYC^Air Parker/Booker Airport^High Wycombe^EN^GB^51.6167^-0.75^0^CA
 HYD^HYD^Rajiv Gandhi International Airport^Hyderabad^^IN^17.2562^78.3915^0^A
 HYD^HYD^Rajiv Gandhi International Airport^Hyderabad^^IN^17.2562^78.3915^0^C
@@ -5424,6 +5515,7 @@ IAU^IAU^Iaura Airport^Iaura^^PG^-9.78333^148.1^1^C
 IBA^IBA^Ibadan Airport^Ibadan^^NG^7.355^3.97167^0^A
 IBA^IBA^Ibadan Airport^Ibadan^^NG^7.355^3.97167^0^C
 IBB^IBB^General Villamil Airport^Isabela Island^^EC^-0.939^-90.9518^2^CA
+IBD^SWA^Chaoshan Railway Station^Shantou^^CN^23.5392^116.576^0^R
 IBE^IBE^Perales Airport^Ibague^^CO^4.42217^-75.1373^0^CA
 IBI^IBI^Iboki Airport^Iboki^^PG^-5.552^149.188^1^CA
 IBL^IBL^Indigo Bay Lodge^Indigo Bay Lodge^^MZ^-21.7012^35.4423^0^CA
@@ -5437,6 +5529,8 @@ IBZ^IBZ^Ibiza Airport^Ibiza^SP^ES^38.8708^1.37033^1^A
 IBZ^IBZ^Ibiza Airport^Ibiza^SP^ES^38.8708^1.37033^1^C
 ICA^ICA^Icabaru Airport^Icabaru^^VE^4.33333^-61.7333^0^A
 ICA^ICA^Icabaru Airport^Icabaru^^VE^4.33333^-61.7333^0^C
+ICC^ICC^A.M. Salazar Marcano Airport^Isla de Coche^^VE^10.79^-63.9757^0^A
+ICC^ICC^A.M. Salazar Marcano Airport^Isla de Coche^^VE^10.79^-63.9757^0^C
 ICI^ICI^Cicia Island Airport^Cicia Island^^FJ^-17.75^-179.333^0^A
 ICI^ICI^Cicia Island Airport^Cicia Island^^FJ^-17.75^-179.333^0^C
 ICK^ICK^Majoor Henry Fernandes Airstrip^Nieuw Nickerie^^SR^5.93333^-56.9833^0^A
@@ -5591,7 +5685,8 @@ IMA^IMA^Iamalele Airport^Iamalele^^PG^-9.50217^150.524^1^CA
 IMB^IMB^Imbaimadai Airport^Imbaimadai^^GY^5.71667^-60.2833^0^A
 IMB^IMB^Imbaimadai Airport^Imbaimadai^^GY^5.71667^-60.2833^0^C
 IMD^IMD^Imonda Airport^Imonda^^PG^-3.43333^141.2^1^CA
-IMF^IMF^Imphal Airport^Imphal^^IN^24.7667^93.9^0^CA
+IMF^IMF^Imphal Airport^Imphal^^IN^24.7667^93.9^0^A
+IMF^IMF^Imphal Airport^Imphal^^IN^24.7667^93.9^0^C
 IMG^IMG^Inhaminga Airport^Inhaminga^^MZ^-18.4333^35^0^CA
 IMI^IMI^Ine Island Airport^Ine Island^^MH^6.98333^171.617^0^CA
 IMK^IMK^Simikot Airport^Simikot^^NP^29.9667^81.8167^0^A
@@ -5742,7 +5837,7 @@ ISJ^ISJ^Isla Mujeres Airport^Isla Mujeres^^MX^21.2667^-86.75^1B^C
 ISK^ISK^Ozar Airport^Nasik^^IN^27.1182^73.9078^0^A
 ISK^ISK^Ozar Airport^Nasik^^IN^27.1182^73.9078^0^C
 ISK^ISK^Ozar Airport^Nasik^^IN^27.1182^73.9078^0^C
-ISM^ORL^Kissimmee Gateway Airport^Orlando^FL^US^28.2872^-81.4355^1^CA
+ISM^ORL^Kissimmee Gateway Airport^Orlando^FL^US^28.2872^-81.4355^1^A
 ISN^ISN^Sloulin Field International Airport^Williston^ND^US^48.1723^-103.635^2^A
 ISN^ISN^Sloulin Field International Airport^Williston^ND^US^48.1723^-103.635^2^C
 ISO^ISO^Kinston Regional Jetport^Kinston^NC^US^35.3227^-77.6167^1^CA
@@ -5778,11 +5873,14 @@ ITQ^ITQ^Itaqui Airport^Itaqui^RS^BR^-29.1333^-56.55^1^C
 ITR^ITR^F. Vilela do Amaral Airport^Itumbiara^GO^BR^-18.4403^-49.2085^1^A
 ITR^ITR^F. Vilela do Amaral Airport^Itumbiara^GO^BR^-18.4403^-49.2085^1^C
 ITT^TRN^Porta Susa Railway Station^Turin^^IT^45.0702^7.6595^0^R
-ITU^BVV^Iturup Airport^Iturup Island^^RU^45.2538^147.953^9^A
+ITU^ITU^Iturup Airport^Iturup Island^^RU^45.2538^147.953^10^A
+ITU^ITU^Iturup Airport^Iturup Island^^RU^45.2538^147.953^10^C
 IUE^IUE^Hanan International Airport^Niue Island^^NU^-19.0833^-169.933^0^CA
 IUI^IUI^Heliport^Innarsuit^^GL^73.1932^-56.0417^1^C
 IUI^IUI^Heliport^Innarsuit^^GL^73.1932^-56.0417^1^H
 IUL^IUL^Ilu Airport^Ilu^^ID^-3.73333^138.167^3^CA
+IUO^IUO^Railway Station^Xianning^^CN^29.8758^114.284^0^C
+IUO^IUO^Railway Station^Xianning^^CN^29.8758^114.284^0^R
 IUS^IUS^Inus Airport^Inus^^PG^-5.81667^155.167^2^A
 IVA^IVA^Ampampamena Airport^Ambanja^^MG^-13.6387^48.4547^0^CA
 IVC^IVC^Invercargill Airport^Invercargill^^NZ^-46.4075^168.319^1^A
@@ -5809,7 +5907,8 @@ IWS^HOU^West Houston Airport^Houston^TX^US^29.8167^-95.6667^2^A
 IXA^IXA^Agartala Airport^Agartala^^IN^23.8855^91.2377^0^A
 IXA^IXA^Agartala Airport^Agartala^^IN^23.8855^91.2377^0^C
 IXB^IXB^Bagdogra Airport^Bagdogra^^IN^26.6833^88.3333^0^CA
-IXC^IXC^Chandigarh Airport^Chandigarh^^IN^30.6698^76.7877^0^CA
+IXC^IXC^Chandigarh Airport^Chandigarh^^IN^30.6698^76.7877^0^A
+IXC^IXC^Chandigarh Airport^Chandigarh^^IN^30.6698^76.7877^0^C
 IXD^IXD^Allahabad Airport^Allahabad^^IN^25.4372^81.735^0^CA
 IXE^IXE^Mangalore Airport^Mangalore^^IN^12.9583^74.8897^0^A
 IXE^IXE^Mangalore Airport^Mangalore^^IN^12.9583^74.8897^0^C
@@ -5830,7 +5929,8 @@ IXN^IXN^Khowai Airport^Khowai^^IN^24.0583^91.602^0^A
 IXN^IXN^Khowai Airport^Khowai^^IN^24.0583^91.602^0^C
 IXP^IXP^Pathankot Airport^Pathankot^^IN^32.2167^75.6333^0^CA
 IXQ^IXQ^Kamalpur Airport^Kamalpur^^IN^24.1262^91.8093^0^CA
-IXR^IXR^Birsa Munda Airport^Ranchi^^IN^23.3087^85.3208^0^CA
+IXR^IXR^Birsa Munda Airport^Ranchi^^IN^23.3087^85.3208^0^A
+IXR^IXR^Birsa Munda Airport^Ranchi^^IN^23.3087^85.3208^0^C
 IXS^IXS^Kumbhirgram Airport^Silchar^^IN^24.9078^92.9738^0^A
 IXS^IXS^Kumbhirgram Airport^Silchar^^IN^24.9078^92.9738^0^C
 IXT^IXT^Pasighat Airport^Pasighat^^IN^28.0167^95.3333^0^CA
@@ -5856,12 +5956,14 @@ JAB^JAB^Jabiru Airport^Jabiru^NT^AU^-12.6558^132.888^3A^C
 JAC^JAC^Jackson Hole Airport^Jackson^WY^US^43.6043^-110.736^3^A
 JAC^JAC^Jackson Hole Airport^Jackson^WY^US^43.6043^-110.736^3^C
 JAD^PER^Jandakot Airport^Perth^WA^AU^-32.0833^115.883^4^A
+JAE^JAE^Aeropuerto de Shumba^Jaen^^PE^-5.58817^-78.7695^0^A
+JAE^JAE^Aeropuerto de Shumba^Jaen^^PE^-5.58817^-78.7695^0^C
 JAF^JAF^Kankesanturai Airport^Jaffna^^LK^9.78833^80.0717^0^A
 JAF^JAF^Kankesanturai Airport^Jaffna^^LK^9.78833^80.0717^0^C
 JAG^JAG^Jacobabad Airport^Jacobabad^^PK^28.3^68.45^0^A
 JAG^JAG^Jacobabad Airport^Jacobabad^^PK^28.3^68.45^0^C
 JAH^JAH^Off-Line Point^Aubagne^^FR^43.2833^5.6^0^C
-JAH^JAH^Off-Line Point^Aubagne^^FR^43.2833^5.6^0^O
+JAH^JAH^Off-Line Point^Aubagne^^FR^43.2833^5.6^0^H
 JAI^JAI^Jaipur International Airport^Jaipur^^IN^26.8212^75.8073^0^A
 JAI^JAI^Jaipur International Airport^Jaipur^^IN^26.8212^75.8073^0^C
 JAK^JAK^Jacmel Airport^Jacmel^^HT^18.2377^-72.5178^0^A
@@ -5886,13 +5988,13 @@ JAX^JAX^Jacksonville International Airport^Jacksonville^FL^US^30.4898^-81.686^1^
 JAX^JAX^Jacksonville International Airport^Jacksonville^FL^US^30.4898^-81.686^1^C
 JBB^JBB^Noto Hadinegoro Airport^Jember^^ID^-8.23867^113.69^1^A
 JBB^JBB^Noto Hadinegoro Airport^Jember^^ID^-8.23867^113.69^1^C
-JBC^BOS^Boston City Heliport^Boston^MA^US^42.3397^-71.043^1^H
 JBD^ZBD^CZ Bus Station^Jiangmen^^CN^22.5848^113.085^0^B
 JBP^LAX^Commerce Business Park Heliport^Los Angeles^CA^US^33.9853^-118.156^4^B
 JBQ^SDQ^Dr. Joaquin Balaguer Airport^Santo Domingo^^DO^18.57^-69.9847^0^A
 JBR^JBR^Jonesboro Municipal Airport^Jonesboro^AR^US^35.8247^-90.6423^2^A
 JBR^JBR^Jonesboro Municipal Airport^Jonesboro^AR^US^35.8247^-90.6423^2^C
 JBT^BET^Sea Plane Base^Bethel^AK^US^60.8^-161.75^5^A
+JBU^SCQ^Bus Station^Santiago De Compostela^SP^ES^42.8858^-8.53383^1^B
 JCA^CEQ^Palm Beach Heliport^Cannes^^FR^43.5^6.5^0^H
 JCB^JCB^Santa Terezinha Airport^Joacaba^SC^BR^-27.1667^-51.5167^1^A
 JCB^JCB^Santa Terezinha Airport^Joacaba^SC^BR^-27.1667^-51.5167^1^C
@@ -5915,8 +6017,8 @@ JCT^JCT^Kimble County Airport^Junction^TX^US^30.4833^-99.7667^2^CA
 JCU^JCU^Ceuta Heliport^Ceuta^SP^ES^35.8928^-5.33633^1^C
 JCU^JCU^Ceuta Heliport^Ceuta^SP^ES^35.8928^-5.33633^1^H
 JCY^JCY^LBJ Ranch Airport^Johnson City^TX^US^30.2512^-98.6202^2^CA
-JDA^JDA^Grant County Regional Airport^John Day^OR^US^44.4167^-118.95^4^A
-JDA^JDA^Grant County Regional Airport^John Day^OR^US^44.4167^-118.95^4^C
+JDA^JDA^Grant County Regional Airport^John Day^OR^US^44.402^-118.957^4^A
+JDA^JDA^Grant County Regional Airport^John Day^OR^US^44.402^-118.957^4^C
 JDB^DFW^Dallas CBD Vertiport^Dallas^TX^US^32.7667^-97.3167^2^H
 JDF^JDF^Francisco de Assis Airport^Juiz de Fora^MG^BR^-21.788^-43.385^1^A
 JDF^JDF^Francisco de Assis Airport^Juiz de Fora^MG^BR^-21.788^-43.385^1^C
@@ -5983,7 +6085,6 @@ JHS^JHS^Sisimiut Airport^Sisimiut^^GL^66.9355^-53.7025^1^A
 JHS^JHS^Sisimiut Airport^Sisimiut^^GL^66.9355^-53.7025^1^C
 JHW^JHW^Chautauqua County Airport^Jamestown^NY^US^42.1503^-79.2548^1^A
 JHW^JHW^Chautauqua County Airport^Jamestown^NY^US^42.1503^-79.2548^1^C
-JHY^JHY^Hyatt Regency Heliport^Cambridge^MA^US^42.3667^-71.1017^1^CH
 JIA^JIA^Juina Airport^Juina^MT^BR^-11.5^-58.8833^2^CA
 JIB^JIB^Ambouli Airport^Djibouti^^DJ^11.5413^43.1553^0^A
 JIB^JIB^Ambouli Airport^Djibouti^^DJ^11.5413^43.1553^0^C
@@ -5998,6 +6099,8 @@ JIL^JIL^Ertaizi Airport^Jilin^^CN^43.8667^126.65^0^C
 JIM^JIM^Aba Segud Airport^Jimma^^ET^7.65267^36.8193^0^CA
 JIN^JIN^Jinja Airport^Jinja^^UG^0.453833^33.1887^0^A
 JIN^JIN^Jinja Airport^Jinja^^UG^0.453833^33.1887^0^C
+JIO^JIO^Jos Orno Imsula Airport^Tiakur^^ID^-8.13683^127.902^3^A
+JIO^JIO^Jos Orno Imsula Airport^Tiakur^^ID^-8.13683^127.902^3^C
 JIP^JIP^Jipijapa Airport^Jipijapa^^EC^-1^-80.6667^1^A
 JIP^JIP^Jipijapa Airport^Jipijapa^^EC^-1^-80.6667^1^C
 JIQ^JIQ^Wulingshan Airport^Qianjiang^^CN^29.5088^108.826^0^A
@@ -6011,7 +6114,9 @@ JJA^JJA^Jajao Airport^Jajao^^SB^-8.21667^159.267^0^CA
 JJG^JJG^Humberto Bortoluzzi Airport^Jaguaruna^SC^BR^-28.6718^-49.0557^1^A
 JJG^JJG^Humberto Bortoluzzi Airport^Jaguaruna^SC^BR^-28.6718^-49.0557^1^C
 JJI^JJI^Juanjui Airport^Juanjui^^PE^-7.15^-76.7167^0^CA
-JJM^JJM^Mulika Lodge Airport^Meru-Kinna^^KE^0.2235^38.17^0^CA
+JJM^JJM^Mulika Lodge Airport^Meru-Kinna^^KE^0.2235^38.17^0^A
+JJM^JJM^Mulika Lodge Airport^Meru-Kinna^^KE^0.2235^38.17^0^C
+JJM^JJM^Mulika Lodge Airport^Meru-Kinna^^KE^0.2235^38.17^0^C
 JJN^JJN^Jinjiang Airport^Quanzhou^^CN^24.8003^118.588^0^A
 JJN^JJN^Jinjiang Airport^Quanzhou^^CN^24.8003^118.588^0^C
 JJN^JJN^Jinjiang Airport^Quanzhou^^CN^24.8003^118.588^0^C
@@ -6181,6 +6286,8 @@ JWA^JWA^Jwaneng Airport^Jwaneng^^BW^-24.6^24.6667^0^CA
 JWC^LAX^Warner Center Plaza Heliport^Los Angeles^CA^US^34.0667^-118.25^4^B
 JWH^HOU^Westchase Heliport^Houston^TX^US^29.735^-95.4173^2^H
 JWN^JWN^Zanjan Airport^Zanjan^^IR^36.7715^48.3555^0^CA
+JWO^JWO^Jungwon AB^Chungju^^KR^37.0247^127.885^0^A
+JWO^JWO^Jungwon AB^Chungju^^KR^37.0247^127.885^0^C
 JXA^JXA^Xingkaihu Airport^Jixi^^CN^45.2888^131.189^0^A
 JXA^JXA^Xingkaihu Airport^Jixi^^CN^45.2888^131.189^0^C
 JXN^JXN^Jackson County Airport^Jackson^MI^US^42.2553^-84.4568^1^A
@@ -6327,7 +6434,8 @@ KDI^KDI^Halu Oleo Airport^Kendari^^ID^-4.07567^122.418^2^C
 KDJ^KDJ^Ndjole-Ville Airport^Ndjole^^GA^-0.15^10.7667^0^CA
 KDK^ADQ^Kodiak Municipal Airport^Kodiak^AK^US^57.8043^-152.369^5^A
 KDL^KDL^Kardla Airport^Kardla^^EE^58.9878^22.8252^0^CA
-KDM^KDM^Kaadedhdhoo Island Airport^Kaadedhdhoo Island^^MV^0.486333^72.991^0^CA
+KDM^KDM^Kaadedhdhoo Island Airport^Kaadedhdhoo Island^^MV^0.486333^72.991^0^A
+KDM^KDM^Kaadedhdhoo Island Airport^Kaadedhdhoo Island^^MV^0.486333^72.991^0^C
 KDN^KDN^Ndende Airport^Ndende^^GA^-2.5^11.1667^0^CA
 KDO^KDO^Kadhdhoo Island Airport^Kadhdhoo Island^^MV^1.88333^73.5167^0^A
 KDO^KDO^Kadhdhoo Island Airport^Kadhdhoo Island^^MV^1.88333^73.5167^0^C
@@ -6381,6 +6489,7 @@ KER^KER^Kerman Airport^Kerman^^IR^30.258^56.9545^0^A
 KER^KER^Kerman Airport^Kerman^^IR^30.258^56.9545^0^C
 KES^KES^Kelsey Airport^Kelsey^MB^CA^56.0167^-96.5^4^CA
 KET^KET^Kengtung Airport^Kentung^^MM^21.3^99.6167^0^CA
+KEU^KEU^Keekorok Airport^Keekorok^^KE^-1.58533^35.2552^0^CA
 KEV^KEV^Halli Airport^Kuorevesi^^FI^61.8538^24.7868^0^A
 KEV^KEV^Halli Airport^Kuorevesi^^FI^61.8538^24.7868^0^C
 KEV^KEV^Halli Airport^Kuorevesi^^FI^61.8538^24.7868^0^C
@@ -6476,6 +6585,8 @@ KHV^KHV^Novy Airport^Khabarovsk^^RU^48.5015^135.11^9^A
 KHV^KHV^Novy Airport^Khabarovsk^^RU^48.5015^135.11^9^C
 KHW^KHW^Khwai River Lodge Airport^Khwai River Lodge^^BW^-19^23.5^0^A
 KHW^KHW^Khwai River Lodge Airport^Khwai River Lodge^^BW^-19^23.5^0^C
+KHX^KHX^Kihihi Airport^Kihihi^^UG^-0.718333^29.7^0^A
+KHX^KHX^Kihihi Airport^Kihihi^^UG^-0.718333^29.7^0^C
 KHY^KHY^Khoy Airport^Khoy^^IR^38.4232^44.9708^0^CA
 KHZ^KHZ^Kauehi Airport^Kauehi^^PF^-15.7667^-145.117^2^CA
 KIA^KIA^Kaiapit Airport^Kaiapit^^PG^-6.26667^146.25^1^CA
@@ -6592,6 +6703,8 @@ KLN^KLN^Larsen Bay Airport^Larsen Bay^AK^US^57.5333^-154^5^A
 KLN^KLN^Larsen Bay Airport^Larsen Bay^AK^US^57.5333^-154^5^C
 KLO^KLO^Kalibo International Airport^Kalibo^^PH^11.6763^122.373^0^A
 KLO^KLO^Kalibo International Airport^Kalibo^^PH^11.6763^122.373^0^C
+KLP^KLP^Kuala Pembuang Airport^Seruyan^^ID^-3.3725^112.536^1^A
+KLP^KLP^Kuala Pembuang Airport^Seruyan^^ID^-3.3725^112.536^1^C
 KLQ^KLQ^Keluang Airport^Keluang^^ID^-2.68333^103.9^1^CA
 KLR^KLR^Kalmar Airport^Kalmar^^SE^56.6843^16.2857^0^A
 KLR^KLR^Kalmar Airport^Kalmar^^SE^56.6843^16.2857^0^C
@@ -6819,7 +6932,8 @@ KRY^KRY^Karamay Airport^Karamay^^CN^45.4675^84.9558^0^A
 KRY^KRY^Karamay Airport^Karamay^^CN^45.4675^84.9558^0^C
 KRZ^KRZ^Kiri Airport^Kiri^^CD^-1.48333^19^1^A
 KRZ^KRZ^Kiri Airport^Kiri^^CD^-1.48333^19^1^C
-KSA^KSA^Kosrae International Airport^Kosrae^^FM^5.35^162.972^2^CA
+KSA^KSA^Kosrae International Airport^Kosrae^^FM^5.35^162.972^2^A
+KSA^KSA^Kosrae International Airport^Kosrae^^FM^5.35^162.972^2^C
 KSB^KSB^Kasanombe Airport^Kasanombe^^PG^-6.38333^147.017^1^CA
 KSC^KSC^Barca Airport^Kosice^^SK^48.6667^21.25^0^A
 KSC^KSC^Barca Airport^Kosice^^SK^48.6667^21.25^0^C
@@ -6845,6 +6959,8 @@ KSO^KSO^Aristotelis Airport^Kastoria^^GR^40.4412^21.276^0^CA
 KSP^KSP^Kosipe Airport^Kosipe^^PG^-8.55^147.467^1^CA
 KSQ^KSQ^Khanabad Aiport^Karshi^^UZ^38.8335^65.9195^0^A
 KSQ^KSQ^Khanabad Aiport^Karshi^^UZ^38.8335^65.9195^0^C
+KSR^KSR^H. Aroeppala Airport^Kepulauan Selayar^^ID^-6.16983^120.434^1^A
+KSR^KSR^H. Aroeppala Airport^Kepulauan Selayar^^ID^-6.16983^120.434^1^C
 KSS^KSS^Dignangan Airport^Sikasso^^ML^11.3^-5.58333^0^CA
 KST^KST^Rabak Airport^Kosti^^SD^13.1333^32.7167^0^A
 KST^KST^Rabak Airport^Kosti^^SD^13.1333^32.7167^0^C
@@ -6871,6 +6987,8 @@ KTF^KTF^Takaka Airport^Takaka^^NZ^-40.85^172.8^1^C
 KTG^KTG^Rahadi Osman Airport^Ketapang^^ID^-1.83333^109.983^1^CA
 KTH^KTH^Tikchik Lodge SPB^Tikchik^AK^US^59.9667^-158.333^5^CA
 KTI^KTI^Kratie Airport^Kratie^^KH^12.5^106.05^0^CA
+KTJ^KTJ^Kichwa Tembo Airport^Kichwa Tembo^^KE^-1.25883^35.0228^0^A
+KTJ^KTJ^Kichwa Tembo Airport^Kichwa Tembo^^KE^-1.25883^35.0228^0^C
 KTK^KTK^Kunua Airport^Kunua^^PG^-5.33667^154.75^2^CA
 KTL^KTL^Kitale Airport^Kitale^^KE^1^35^0^A
 KTL^KTL^Kitale Airport^Kitale^^KE^1^35^0^C
@@ -7006,12 +7124,16 @@ KWZ^KWZ^Kolwezi Airport^Kolwezi^^CD^-10.7667^25.5042^2^A
 KWZ^KWZ^Kolwezi Airport^Kolwezi^^CD^-10.7667^25.5042^2^C
 KXA^KXA^Kasaan Sea Plane Base^Kasaan^AK^US^55.536^-132.391^5^A
 KXA^KXA^Kasaan Sea Plane Base^Kasaan^AK^US^55.536^-132.391^5^C
+KXD^KXD^Kondinskoye Airport^Kondinskoye^^RU^59.65^67.4333^4^A
+KXD^KXD^Kondinskoye Airport^Kondinskoye^^RU^59.65^67.4333^4^C
 KXE^KXE^P. C. Pelser Airport^Klerksdorp^^ZA^-26.8667^26.7167^0^A
 KXE^KXE^P. C. Pelser Airport^Klerksdorp^^ZA^-26.8667^26.7167^0^C
 KXF^KXF^Koro Airport^Koro^^FJ^-17.3333^179.833^0^A
 KXF^KXF^Koro Airport^Koro^^FJ^-17.3333^179.833^0^C
 KXK^KXK^Khurba Airport^Komsomolsk-an-Amure^^RU^50.4057^136.934^9^A
 KXK^KXK^Khurba Airport^Komsomolsk-an-Amure^^RU^50.4057^136.934^9^C
+KXN^KXN^Oxenholme Rail Station^Kendal^EN^GB^54.3032^-2.71983^0^C
+KXN^KXN^Oxenholme Rail Station^Kendal^EN^GB^54.3032^-2.71983^0^R
 KXR^KXR^Karoola Airport^Karoola^^PG^-5.15^154.583^2^CA
 KXU^KXU^Katiu Airport^Katiu^^PF^-16.337^-144.402^2^A
 KXU^KXU^Katiu Airport^Katiu^^PF^-16.337^-144.402^2^C
@@ -7053,6 +7175,7 @@ KZO^KZO^Kyzylorda Airport^Kyzylorda^^KZ^44.705^65.5883^2^C
 KZR^KZR^Zafer Airport^Kutahya^^TR^39.4167^29.9765^0^A
 KZR^KZR^Zafer Airport^Kutahya^^TR^39.4167^29.9765^0^C
 KZS^KZS^Megisti Airport^Megisti^^GR^36.1385^29.5725^0^CA
+KZZ^WUZ^Wuzhou Railway Station^Wuzhou^^CN^23.487^111.234^0^R
 LAA^LAA^Lamar Municipal Airport^Lamar^CO^US^38.0678^-102.688^3^A
 LAA^LAA^Lamar Municipal Airport^Lamar^CO^US^38.0678^-102.688^3^C
 LAB^LAB^Lab Lab Airport^Lab Lab^^PG^-5.63333^148.067^1^CA
@@ -7215,8 +7338,8 @@ LDZ^LDZ^Londolozi Airport^Londolozi^^ZA^-24.8^31.5^0^A
 LDZ^LDZ^Londolozi Airport^Londolozi^^ZA^-24.8^31.5^0^C
 LEA^LEA^Learmonth Airport^Learmonth^WA^AU^-22.2343^114.076^4^A
 LEA^LEA^Learmonth Airport^Learmonth^WA^AU^-22.2343^114.076^4^C
-LEB^LEB^Lebanon Regional Airport^Lebanon^NH^US^43.6235^-72.3035^1^A
-LEB^LEB^Lebanon Regional Airport^Lebanon^NH^US^43.6235^-72.3035^1^C
+LEB^LEB^Lebanon Municipal Airport^Lebanon/Hanover^NH^US^43.6235^-72.3035^1^A
+LEB^LEB^Lebanon Municipal Airport^Lebanon/Hanover^NH^US^43.6235^-72.3035^1^C
 LEC^LEC^Horacio de Mattos Airport^Lencois^BA^BR^-12.476^-41.2728^1A^CA
 LED^LED^Pulkovo Airport^St Petersburg^^RU^59.8002^30.2575^2^A
 LED^LED^Pulkovo Airport^St Petersburg^^RU^59.8002^30.2575^2^C
@@ -7246,7 +7369,7 @@ LET^LET^Alfredo V. Cobb Intl Airport^Leticia^^CO^-4.19117^-69.937^0^C
 LEU^LEU^Aeroport De La Seu^Seo De Urgel^SP^ES^42.3365^1.4055^1^CA
 LEV^LEV^Bureta Airport^Levuka^^FJ^-17.6833^178.833^0^A
 LEV^LEV^Bureta Airport^Levuka^^FJ^-17.6833^178.833^0^C
-LEW^LEW^Auburn Airport^Auburn^ME^US^44.1^-70.2333^1^CA
+LEW^LEW^Lewiston/Auburn Municipal Airport^Lewiston/Auburn^ME^US^44.1^-70.2333^1^CA
 LEX^LEX^Blue Grass Airport^Lexington^KY^US^38.0372^-84.6013^1^A
 LEX^LEX^Blue Grass Airport^Lexington^KY^US^38.0372^-84.6013^1^C
 LEY^LEY^Lelystad Airport^Lelystad^^NL^52.4667^5.53333^0^A
@@ -7256,12 +7379,17 @@ LFA^LFA^MU Bus Station^Langfang^^CN^39.507^116.718^0^B
 LFA^LFA^MU Bus Station^Langfang^^CN^39.507^116.718^0^C
 LFB^APL^Lumbo Airport^Nampula^^MZ^-15.0333^40.6667^0^CA
 LFI^LFI^Langley Air Force Base^Hampton^VA^US^37.0833^-76.5^1^A
+LFI^LFI^Langley Air Force Base^Hampton^VA^US^37.0833^-76.5^1^C
 LFK^LFK^Angelina County Airport^Lufkin^TX^US^31.2335^-94.7503^2^A
+LFK^LFK^Angelina County Airport^Lufkin^TX^US^31.2335^-94.7503^2^C
 LFM^LFM^Lamerd Airport^Lamerd^^IR^27.3672^53.2018^0^CA
 LFN^LFN^Triangle North Executive Airport^Louisburg^NC^US^36.1^-78.3^1^A
 LFN^LFN^Triangle North Executive Airport^Louisburg^NC^US^36.1^-78.3^1^C
 LFO^LFO^Kelafo Airport^Kelafo^^ET^5.66667^44.3333^0^CA
 LFP^LFP^Lakefield Airport^Lakefield^QL^AU^-15.05^144.003^2B^CA
+LFQ^LFQ^Qiaoli Airport^Linfen^^CN^36.1337^111.638^0^A
+LFQ^LFQ^Qiaoli Airport^Linfen^^CN^36.1337^111.638^0^C
+LFQ^LFQ^Qiaoli Airport^Linfen^^CN^36.1337^111.638^0^C
 LFR^LFR^La Fria Airport^La Fria^^VE^8.23767^-72.27^0^A
 LFR^LFR^La Fria Airport^La Fria^^VE^8.23767^-72.27^0^C
 LFT^LFT^Lafayette Regional Airport^Lafayette^LA^US^30.2028^-91.9858^2^A
@@ -7369,12 +7497,13 @@ LIW^LIW^Loikaw Airport^Loikaw^^MM^19.6865^97.2168^0^C
 LIX^LIX^Likoma Island Airport^Likoma Island^^MW^-12.0833^34.7333^0^A
 LIX^LIX^Likoma Island Airport^Likoma Island^^MW^-12.0833^34.7333^0^C
 LIY^LIY^MidCoast Regional Airport^Hinesville/Ft Stewart^GA^US^31.8863^-81.557^1^CA
-LIZ^LIZ^Loring Air Force Base^Limestone^ME^US^46.9503^-67.8848^1^CA
+LIZ^LIZ^Loring International Airport^Limestone^ME^US^46.9503^-67.8848^1^CA
 LJA^LJA^Lodja Airport^Lodja^^CD^-3.45783^23.6093^2^A
 LJA^LJA^Lodja Airport^Lodja^^CD^-3.45783^23.6093^2^C
 LJG^LJG^Sanyi Airport^Lijiang^^CN^26.6742^100.241^0^A
 LJG^LJG^Sanyi Airport^Lijiang^^CN^26.6742^100.241^0^C
 LJN^LJN^Texas Gulf Coast Regional Airport^Angleton/Lake Jackson^TX^US^29.0363^-95.4542^2^CA
+LJR^LJU^Ljubljana Railway Station^Ljubljana^^SI^46.0553^14.5078^0^R
 LJU^LJU^Joze Pucnik Airport^Ljubljana^^SI^46.2208^14.4545^0^A
 LJU^LJU^Joze Pucnik Airport^Ljubljana^^SI^46.2208^14.4545^0^C
 LKA^LKA^Gewayantana Airport^Larantuka^^ID^-8.27133^123.001^2^A
@@ -7418,7 +7547,8 @@ LLG^LLG^Chillagoe Airport^Chillagoe^QL^AU^-17.1333^144.533^2B^A
 LLG^LLG^Chillagoe Airport^Chillagoe^QL^AU^-17.1333^144.533^2B^C
 LLH^LLH^Reginaldo Hammer Airport^Las Limas^^HN^15.4392^-87.8927^0^A
 LLH^LLH^Reginaldo Hammer Airport^Las Limas^^HN^15.4392^-87.8927^0^C
-LLI^LLI^Lalibela Airport^Lalibela^^ET^11.9717^38.9753^0^CA
+LLI^LLI^Lalibela Airport^Lalibela^^ET^11.9717^38.9753^0^A
+LLI^LLI^Lalibela Airport^Lalibela^^ET^11.9717^38.9753^0^C
 LLK^LLK^Lankaran Airport^Lankaran^^AZ^38.7553^48.8038^0^CA
 LLL^LLL^Lissadell Airport^Lissadell^WA^AU^-16.5667^128.633^4^CA
 LLN^LLN^Kelila Airport^Kelila^^ID^-3.75^138.667^3^A
@@ -7436,8 +7566,8 @@ LLV^LLV^Luliang Airport^Luliang^^CN^37.6755^111.139^0^A
 LLV^LLV^Luliang Airport^Luliang^^CN^37.6755^111.139^0^C
 LLW^LLW^Kamuzu International Airport^Lilongwe^^MW^-13.787^33.7753^0^A
 LLW^LLW^Kamuzu International Airport^Lilongwe^^MW^-13.787^33.7753^0^C
-LLX^LLX^Lyndonville Airport^Lyndonville^VT^US^44.5^-72.0167^1^A
-LLX^LLX^Lyndonville Airport^Lyndonville^VT^US^44.5^-72.0167^1^C
+LLX^LLX^Caledonia County Airport^Lyndonville^VT^US^44.5^-72.0167^1^A
+LLX^LLX^Caledonia County Airport^Lyndonville^VT^US^44.5^-72.0167^1^C
 LLY^LLY^South Jersey Regional Airport^Mount Holly^NJ^US^39.9167^-74.75^1^A
 LLY^LLY^South Jersey Regional Airport^Mount Holly^NJ^US^39.9167^-74.75^1^C
 LLZ^LLZ^Bus Station^Allen^RN^AR^-38.9752^-67.8248^0^B
@@ -7659,7 +7789,8 @@ LSX^LSX^Lhok Sukon Airport^Lhok Sukon^^ID^5.06667^97.3167^1^A
 LSX^LSX^Lhok Sukon Airport^Lhok Sukon^^ID^5.06667^97.3167^1^C
 LSY^LSY^Lismore Airport^Lismore^NS^AU^-28.8333^153.267^2^A
 LSY^LSY^Lismore Airport^Lismore^NS^AU^-28.8333^153.267^2^C
-LSZ^LSZ^Mali Losinj Airport^Mali Losinj^^HR^44.5668^14.3897^0^CA
+LSZ^LSZ^Mali Losinj Airport^Mali Losinj^^HR^44.5668^14.3897^0^A
+LSZ^LSZ^Mali Losinj Airport^Mali Losinj^^HR^44.5668^14.3897^0^C
 LTA^LTA^Tzaneen Airport^Tzaneen^^ZA^-23.8333^30.15^0^A
 LTA^LTA^Tzaneen Airport^Tzaneen^^ZA^-23.8333^30.15^0^C
 LTB^LTB^Latrobe Airport^Latrobe^TS^AU^-41.2333^146.4^2A^A
@@ -7703,6 +7834,7 @@ LUC^LUC^Laucala Island Airport^Laucala Island^^FJ^-16.75^179.417^0^A
 LUC^LUC^Laucala Island Airport^Laucala Island^^FJ^-16.75^179.417^0^C
 LUD^LUD^Luderitz Airport^Luderitz^^NA^-26.6852^15.2397^0^CA
 LUE^LUE^Lucenec Airport^Lucenec^^SK^48.3333^19.6667^0^CA
+LUF^PHX^Luke Air Force Base^Phoenix^AZ^US^33.5378^-112.356^3A^A
 LUG^LUG^Agno Airport^Lugano^^CH^46.0025^8.90633^0^A
 LUG^LUG^Agno Airport^Lugano^^CH^46.0025^8.90633^0^C
 LUH^LUH^Ludhiana Airport^Ludhiana^^IN^30.8503^75.954^0^CA
@@ -7728,7 +7860,8 @@ LUU^LUU^Laura Airport^Laura^QL^AU^-15.6667^144.167^2B^A
 LUU^LUU^Laura Airport^Laura^QL^AU^-15.6667^144.167^2B^C
 LUV^LUV^Dumatubun Airport^Langgur^^ID^-5.66667^132.717^3^A
 LUV^LUV^Dumatubun Airport^Langgur^^ID^-5.66667^132.717^3^C
-LUW^LUW^S. Aminuddin Amir Airport^Luwuk^^ID^-1.037^122.77^2^CA
+LUW^LUW^S. Aminuddin Amir Airport^Luwuk^^ID^-1.037^122.77^2^A
+LUW^LUW^S. Aminuddin Amir Airport^Luwuk^^ID^-1.037^122.77^2^C
 LUX^LUX^Luxembourg Airport^Luxembourg^^LU^49.6233^6.204^0^A
 LUX^LUX^Luxembourg Airport^Luxembourg^^LU^49.6233^6.204^0^C
 LUY^LUY^Railway Station^Lugo^SP^ES^43.009^-7.55117^1^C
@@ -7766,8 +7899,8 @@ LWI^LWI^Lowai Airport^Lowai^^PG^-6.31667^146.583^1^CA
 LWK^SDZ^Lerwick/Tingwall Airport^Shetland Islands^SC^GB^60.15^-1.15^0^A
 LWL^LWL^Wells Municipal-Harriet Field Airport^Wells^NV^US^41.1167^-114.967^4^A
 LWL^LWL^Wells Municipal-Harriet Field Airport^Wells^NV^US^41.1167^-114.967^4^C
-LWM^LWM^Lawrence Airport^Lawrence^MA^US^42.7172^-71.1202^1^A
-LWM^LWM^Lawrence Airport^Lawrence^MA^US^42.7172^-71.1202^1^C
+LWM^LWM^Lawrence Municipal Airport^Lawrence^MA^US^42.7172^-71.1202^1^A
+LWM^LWM^Lawrence Municipal Airport^Lawrence^MA^US^42.7172^-71.1202^1^C
 LWN^LWN^Shirak Airport^Gyumri^^AM^40.7167^43.8333^0^A
 LWN^LWN^Shirak Airport^Gyumri^^AM^40.7167^43.8333^0^C
 LWO^LWO^Lviv International Airport^Lviv^^UA^49.8167^23.85^0^A
@@ -7784,7 +7917,9 @@ LWY^LWY^Lawas Airport^Lawas^^MY^4.84283^115.402^0^A
 LWY^LWY^Lawas Airport^Lawas^^MY^4.84283^115.402^0^C
 LXA^LXA^Gonggar Airport^Lhasa/Lasa^^CN^29.6667^91.15^0^A
 LXA^LXA^Gonggar Airport^Lhasa/Lasa^^CN^29.6667^91.15^0^C
+LXC^LPL^Liverpool Central Railway Station^Liverpool^EN^GB^53.4027^-2.97467^0^R
 LXG^LXG^Luang Namtha Airport^Luang Namtha^^LA^20.9563^101.401^0^CA
+LXL^LPL^Lime Street Rail Station^Liverpool^EN^GB^53.4045^-2.973^0^R
 LXN^LXN^Jim Kelly Field Airport^Lexington^NE^US^40.7833^-99.75^2^A
 LXN^LXN^Jim Kelly Field Airport^Lexington^NE^US^40.7833^-99.75^2^C
 LXR^LXR^Luxor International Airport^Luxor^^EG^25.6705^32.7045^0^A
@@ -7839,6 +7974,7 @@ LZO^LZO^Lantian Airport^Luzhou^^CN^28.8833^105.35^0^C
 LZR^LZR^Lizard Island Airport^Lizard Island^QL^AU^-14.6667^145.467^2B^CA
 LZS^LNZ^Hauptbahnhof Rail Station^Linz^^AT^48.2877^14.288^0^R
 LZU^LZU^Lawrenceville Airport^Lawrenceville^GA^US^33.9735^-83.9573^1^CA
+LZX^LHW^West Railway Station^Lanzhou^^CN^36.067^103.75^0^R
 LZY^LZY^Mainling/Milin Airport^Nyingchi/Linzhi^^CN^29.6198^94.3865^0^A
 LZY^LZY^Mainling/Milin Airport^Nyingchi/Linzhi^^CN^29.6198^94.3865^0^C
 MAA^MAA^Chennai International Airport^Chennai^^IN^12.99^80.175^0^A
@@ -7957,9 +8093,11 @@ MCM^MCM^Monte Carlo Heliport^Monte Carlo^^MC^43.7333^7.41667^0^H
 MCN^MCN^Middle Georgia Regional Airport^Macon^GA^US^32.689^-83.6428^1^A
 MCN^MCN^Middle Georgia Regional Airport^Macon^GA^US^32.689^-83.6428^1^C
 MCO^ORL^Orlando International Airport^Orlando^FL^US^28.4258^-81.3215^1^A
-MCP^MCP^Alberto Alcolumbre Intl Airport^Macapa^AP^BR^0.05^-51.0667^1A^CA
+MCP^MCP^Alberto Alcolumbre Intl Airport^Macapa^AP^BR^0.05^-51.0667^1A^A
+MCP^MCP^Alberto Alcolumbre Intl Airport^Macapa^AP^BR^0.05^-51.0667^1A^C
 MCQ^MCQ^Miskolc Airport^Miskolc^^HU^48.1367^20.79^0^A
 MCQ^MCQ^Miskolc Airport^Miskolc^^HU^48.1367^20.79^0^C
+MCR^SIN^Marina Bay Cruise Center^Singapore^^SG^1.2595^103.856^0^P
 MCS^MCS^Monte Caseros Airport^Monte Caseros^CR^AR^-30.2692^-57.638^0^A
 MCS^MCS^Monte Caseros Airport^Monte Caseros^CR^AR^-30.2692^-57.638^0^C
 MCT^MCT^Muscat International Airport^Muscat^^OM^23.5883^58.2742^0^A
@@ -8001,7 +8139,8 @@ MDN^MDN^Madison Municipal Airport^Madison^IN^US^38.756^-85.4588^1^C
 MDO^MDO^Middleton Island Airport^Middleton Island^AK^US^59.4518^-146.3^5^CA
 MDP^MDP^Mindiptana Airport^Mindiptana^^ID^-5.83333^140.833^3^A
 MDP^MDP^Mindiptana Airport^Mindiptana^^ID^-5.83333^140.833^3^C
-MDQ^MDQ^Astor Piazzola Airport^Mar del Plata^BA^AR^-37.9342^-57.57^0^CA
+MDQ^MDQ^Astor Piazzola Airport^Mar del Plata^BA^AR^-37.9342^-57.57^0^A
+MDQ^MDQ^Astor Piazzola Airport^Mar del Plata^BA^AR^-37.9342^-57.57^0^C
 MDS^MDS^Middle Caicos Airport^Middle Caicos^^TC^21.7833^-71.7167^0^CA
 MDT^HAR^Harrisburg International Airport^Harrisburg^PA^US^40.1892^-76.7573^1^A
 MDU^MDU^Mendi Airport^Mendi^^PG^-6.15517^143.65^1^A
@@ -8134,7 +8273,8 @@ MGR^MGR^Thomasville Municipal Airport^Moultrie^GA^US^31.0843^-83.802^1^A
 MGR^MGR^Thomasville Municipal Airport^Moultrie^GA^US^31.0843^-83.802^1^C
 MGS^MGS^Auau Airport^Mangaia Island^^CK^-21.9333^-157.933^0^CA
 MGT^MGT^Milingimbi Island Airport^Milingimbi Island^NT^AU^-12.0913^134.887^3A^CA
-MGU^MGU^Manaung Airport^Manaung^^MM^18.8408^93.6867^0^CA
+MGU^MGU^Manaung Airport^Manaung^^MM^18.8408^93.6867^0^A
+MGU^MGU^Manaung Airport^Manaung^^MM^18.8408^93.6867^0^C
 MGV^MGV^Margaret River Station Airport^Margaret River Station^WA^AU^-18.6167^126.867^4^CA
 MGW^MGW^Morgantown Municipal Airport^Morgantown^WV^US^39.639^-79.9095^1^A
 MGW^MGW^Morgantown Municipal Airport^Morgantown^WV^US^39.639^-79.9095^1^C
@@ -8169,8 +8309,8 @@ MHQ^MHQ^Mariehamn Airport^Mariehamn^^AX^60.1198^19.8912^0^A
 MHQ^MHQ^Mariehamn Airport^Mariehamn^^AX^60.1198^19.8912^0^C
 MHR^SAC^Mather Airport^Sacramento^CA^US^38.05^-121.933^4^A
 MHS^MHS^Dunsmuir Municipal Airport^Mount Shasta^CA^US^41.2578^-122.27^4^CA
-MHT^MHT^Manchester-Boston Municipal Airport^Manchester^NH^US^42.9263^-71.4348^1^A
-MHT^MHT^Manchester-Boston Municipal Airport^Manchester^NH^US^42.9263^-71.4348^1^C
+MHT^MHT^Manchester-Boston Regional Airport^Manchester^NH^US^42.9263^-71.4348^1^A
+MHT^MHT^Manchester-Boston Regional Airport^Manchester^NH^US^42.9263^-71.4348^1^C
 MHU^MHU^Mount Hotham^Mount Hotham^VI^AU^-37.0418^147.334^2^A
 MHU^MHU^Mount Hotham^Mount Hotham^VI^AU^-37.0418^147.334^2^C
 MHV^MHV^Mojave Airport^Mojave^CA^US^35.0667^-118.15^4^A
@@ -8336,14 +8476,15 @@ MLR^MLR^Millicent Airport^Millicent^SA^AU^-37.4833^140.017^3^A
 MLR^MLR^Millicent Airport^Millicent^SA^AU^-37.4833^140.017^3^C
 MLS^MLS^Frank Wiley Field Airport^Miles City^MT^US^46.425^-105.875^3^A
 MLS^MLS^Frank Wiley Field Airport^Miles City^MT^US^46.425^-105.875^3^C
-MLT^MLT^Millinocket Airport^Millinocket^ME^US^45.65^-68.7167^1^A
-MLT^MLT^Millinocket Airport^Millinocket^ME^US^45.65^-68.7167^1^C
+MLT^MLT^Millinocket Municipal Airport^Millinocket^ME^US^45.65^-68.7167^1^A
+MLT^MLT^Millinocket Municipal Airport^Millinocket^ME^US^45.65^-68.7167^1^C
 MLU^MLU^Monroe Regional Airport^Monroe^LA^US^32.5065^-92.036^2^A
 MLU^MLU^Monroe Regional Airport^Monroe^LA^US^32.5065^-92.036^2^C
 MLV^MLV^Merluna Airport^Merluna^QL^AU^-13.0167^142.983^2B^CA
 MLW^MLW^Spriggs Payne Airport^Monrovia^^LR^6.287^-10.755^0^A
 MLW^MLW^Spriggs Payne Airport^Monrovia^^LR^6.287^-10.755^0^C
-MLX^MLX^Erhac Airport^Malatya^^TR^38.4345^38.088^0^CA
+MLX^MLX^Erhac Airport^Malatya^^TR^38.4345^38.088^0^A
+MLX^MLX^Erhac Airport^Malatya^^TR^38.4345^38.088^0^C
 MLY^MLY^Manley Hot Springs Airport^Manley Hot Springs^AK^US^64.9913^-150.639^5^A
 MLY^MLY^Manley Hot Springs Airport^Manley Hot Springs^AK^US^64.9913^-150.639^5^C
 MLZ^MLZ^Cerro Largo Airport^Melo^^UY^-32.3333^-54.2^0^A
@@ -8383,7 +8524,8 @@ MMS^MMS^Selfs Airport^Marks^MS^US^34.2667^-90.2667^2^CA
 MMT^CAE^McEntire JNGB^Columbia^SC^US^33.9353^-81.1093^1^A
 MMU^MMU^Morristown Municipal Airport^Morristown^NJ^US^40.793^-74.409^1^A
 MMU^MMU^Morristown Municipal Airport^Morristown^NJ^US^40.793^-74.409^1^C
-MMV^MMV^Mal Island Airport^Mal Island^^PG^-1.4^144.2^1^CA
+MMV^MMV^Mal Island Airport^Mal Island^^PG^-1.4^144.2^1^A
+MMV^MMV^Mal Island Airport^Mal Island^^PG^-1.4^144.2^1^C
 MMW^MMW^Moma Airport^Moma^^MZ^-16.7833^39.0667^0^CA
 MMX^MMA^Sturup Airport^Malmo^^SE^55.5345^13.37^0^A
 MMY^MMY^Hirara Airport^Miyako^^JP^24.7752^125.292^0^A
@@ -8411,7 +8553,8 @@ MNK^MNK^Maiana Airport^Maiana^^KI^1^173^1^CA
 MNL^MNL^Ninoy Aquino International Airport^Manila^^PH^14.5052^121.018^0^A
 MNL^MNL^Ninoy Aquino International Airport^Manila^^PH^14.5052^121.018^0^C
 MNM^MNM^Menominee-Marinette Airport^Menominee^MI^US^45.1197^-87.635^2^CA
-MNN^MNN^Marion Municipal Airport^Marion^OH^US^40.5833^-83.1333^1^CA
+MNN^MNN^Marion Municipal Airport^Marion^OH^US^40.5833^-83.1333^1^A
+MNN^MNN^Marion Municipal Airport^Marion^OH^US^40.5833^-83.1333^1^C
 MNO^MNO^Manono Airport^Manono^^CD^-7.28617^27.3897^2^A
 MNO^MNO^Manono Airport^Manono^^CD^-7.28617^27.3897^2^C
 MNP^MNP^Maron Island Airport^Maron Island^^PG^-1.55^145.033^1^A
@@ -8447,7 +8590,9 @@ MOF^MOF^Fransiskus X. Seda Airport^Maumere^^ID^-8.63333^122.25^2^C
 MOG^MOG^Mong Hsat Airport^Mong Hsat^^MM^20.5333^99.2667^0^CA
 MOI^MOI^Nukuroa Airport^Mitiaro Island^^CK^-19.8388^-157.702^0^CA
 MOJ^MOJ^Moengo Airport^Moengo^^SR^5.75^-54.3333^0^CA
-MOL^MOL^Aro Airport^Molde^^NO^62.7402^7.2575^0^CA
+MOL^MOL^Aro Airport^Molde^^NO^62.7402^7.2575^0^A
+MOL^MOL^Aro Airport^Molde^^NO^62.7402^7.2575^0^C
+MOL^MOL^Aro Airport^Molde^^NO^62.7402^7.2575^0^C
 MOM^MOM^Letfotar Aiarport^Moudjeria^^MR^17.75^-12.5^0^CA
 MON^MON^Mount Cook Airport^Mount Cook^^NZ^-43.7667^170.143^1^A
 MON^MON^Mount Cook Airport^Mount Cook^^NZ^-43.7667^170.143^1^C
@@ -8476,7 +8621,6 @@ MPC^MPC^Muko-Muko Airport^Muko-Muko^^ID^-2.55^101.1^1^CA
 MPD^MPD^Sinhri Airport^Mirpur Khas^^PK^25.65^69.0333^0^A
 MPD^MPD^Sinhri Airport^Mirpur Khas^^PK^25.65^69.0333^0^C
 MPD^MPD^Sinhri Airport^Mirpur Khas^^PK^25.65^69.0333^0^C
-MPE^MPE^Madison Airport^Madison^CT^US^41.2833^-72.6^1^CA
 MPF^MPF^Mapoda Airport^Mapoda^^PG^-7.96667^143.167^1^CA
 MPG^MPG^Makini Airport^Makini^^PG^-6.53333^147.717^1^CA
 MPH^MPH^Godofredo P. Ramos Airport^Caticlan^^PH^11.9222^121.951^0^A
@@ -8498,7 +8642,7 @@ MPR^MPR^McPherson Airport^McPherson^KS^US^38.3515^-97.6882^2^CA
 MPS^MPS^Mount Pleasant Regional Airport^Mount Pleasant^TX^US^33.1667^-94.9833^2^CA
 MPT^MPT^Maliana Airport^Maliana^^TL^-8.06667^125.25^0^CA
 MPU^MPU^Mabua Airport^Mabua^^PG^-2.9^151.4^1^CA
-MPV^MPV^Edward F Knapp State Airport^Montpelier^VT^US^44.2022^-72.5573^1^CA
+MPV^MPV^Edward F. Knapp State Airport^Barre/Montpelier^VT^US^44.2022^-72.5573^1^CA
 MPW^MPW^Mariupol International Airport^Mariupol^^UA^47.07^37.4537^0^A
 MPW^MPW^Mariupol International Airport^Mariupol^^UA^47.07^37.4537^0^C
 MPX^MPX^Miyanmin Airport^Miyanmin^^PG^-4.9^141.617^1^CA
@@ -8517,7 +8661,6 @@ MQF^MQF^Magnitogorsk Airport^Magnitogorsk^^RU^53.3892^58.7533^4^A
 MQF^MQF^Magnitogorsk Airport^Magnitogorsk^^RU^53.3892^58.7533^4^C
 MQG^MQG^Midgard Airport^Midgard^^NA^-22.0833^17.3667^0^CA
 MQH^MQH^Minacu Airport^Minacu^GO^BR^-13.5333^-48.2333^1^CA
-MQI^MQI^Quincy Airport^Quincy^MA^US^42.25^-71^1^O
 MQJ^MQJ^Moma Airport^Khonu^^RU^66.4505^143.257^10^A
 MQJ^MQJ^Moma Airport^Khonu^^RU^66.4505^143.257^10^C
 MQK^MQK^San Matias Airport^San Matias^^BO^-16.334^-58.3847^0^CA
@@ -8589,7 +8732,7 @@ MRZ^MRZ^Moree Airport^Moree^NS^AU^-29.4923^149.841^2^A
 MRZ^MRZ^Moree Airport^Moree^NS^AU^-29.4923^149.841^2^C
 MSA^MSA^Muskrat Dam Airport^Muskrat Dam^ON^CA^53.438^-91.7578^4^A
 MSA^MSA^Muskrat Dam Airport^Muskrat Dam^ON^CA^53.438^-91.7578^4^C
-MSB^MBX^Bus Station^Maribor^^SI^46.556^15.6535^0^A
+MSB^MBX^Bus Station^Maribor^^SI^46.556^15.6535^0^B
 MSC^PHX^Falcon Field Airport^Phoenix^AZ^US^33.4538^-111.723^3A^A
 MSC^PHX^Falcon Field Airport^Phoenix^AZ^US^33.4538^-111.723^3A^C
 MSD^MSD^Mount Pleasant Airport^Mount Pleasant^UT^US^39.5215^-111.471^3^CA
@@ -8723,7 +8866,7 @@ MVH^MVH^Macksville Airport^Macksville^NS^AU^-30.75^152.9^2^CA
 MVI^MVI^Manetai Airport^Manetai^^PG^-6^155.333^2^A
 MVI^MVI^Manetai Airport^Manetai^^PG^-6^155.333^2^C
 MVK^MVK^Mulka Airport^Mulka^SA^AU^-27.25^138^3^CA
-MVL^MVL^Morrisville-Stowe Airport^Stowe^VT^US^44.5342^-72.6083^1^CA
+MVL^MVL^Morrisville/Stowe State Airport^Morrisville/Stowe^VT^US^44.5342^-72.6083^1^CA
 MVM^MVM^Kayenta Airport^Kayenta^AZ^US^36.7017^-110.233^3A^A
 MVM^MVM^Kayenta Airport^Kayenta^AZ^US^36.7017^-110.233^3A^C
 MVN^MVN^Mount Vernon-Outland Airport^Mount Vernon^IL^US^38.3207^-88.8552^2^A
@@ -8937,7 +9080,7 @@ NAT^NAT^Sao Goncalo do Amarante Intl Airport^Natal^RN^BR^-5.768^-35.3598^1A^A
 NAT^NAT^Sao Goncalo do Amarante Intl Airport^Natal^RN^BR^-5.768^-35.3598^1A^C
 NAU^NAU^Napuka Airport^Napuka^^PF^-14.1667^-141.583^2^A
 NAU^NAU^Napuka Airport^Napuka^^PF^-14.1667^-141.583^2^C
-NAV^NAV^Kapodokya Airport^Nevsehir^^TR^38.7692^34.5193^0^CA
+NAV^NAV^Kapadokya Airport^Nevsehir^^TR^38.7692^34.5193^0^CA
 NAW^NAW^Narathiwat Airport^Narathiwat^^TH^6.51867^101.739^0^A
 NAW^NAW^Narathiwat Airport^Narathiwat^^TH^6.51867^101.739^0^C
 NAX^NAX^Barbers Point Airport^Barbers Point^HI^US^21.3^-158.117^6A^CA
@@ -8975,7 +9118,7 @@ NCJ^NCJ^Sunchales Airport^Sunchales^SF^AR^-30.956^-61.2167^0^CA
 NCL^NCL^Newcastle International Airport^Newcastle^EN^GB^55.0362^-1.68717^0^A
 NCL^NCL^Newcastle International Airport^Newcastle^EN^GB^55.0362^-1.68717^0^C
 NCN^NCN^Chenega Bay Airport^Chenega^AK^US^60.0738^-147.99^5^CA
-NCO^NCO^Naval Air Station^Quonset Point^RI^US^41.593^-71.4167^1^CA
+NCO^NCO^Quonset State Airport^North Kingstown^RI^US^41.593^-71.4167^1^CA
 NCR^NCR^San Carlos Airport^San Carlos^^NI^11.25^-84.8333^0^A
 NCR^NCR^San Carlos Airport^San Carlos^^NI^11.25^-84.8333^0^C
 NCS^NCS^Newcastle Airport^Newcastle^^ZA^-27.7712^29.9873^0^A
@@ -9027,7 +9170,7 @@ NEJ^NEJ^Nejo Airport^Nejo^^ET^9.5^35.4667^0^C
 NEK^NEK^Nekemte Airport^Nekemte^^ET^9.06667^36.5^0^CA
 NEL^NEL^Maxfield Field^Lakehurst^NJ^US^40.0348^-74.3508^1^A
 NEL^NEL^Maxfield Field^Lakehurst^NJ^US^40.0348^-74.3508^1^C
-NEN^JAX^Whitehouse NOLF^Jacksonville^FL^US^30.3167^-81.85^1^CA
+NEN^JAX^Whitehouse NOLF^Jacksonville^FL^US^30.3167^-81.85^1^A
 NER^NER^Chulman Airport^Neryungri^^RU^56.9083^124.908^8^A
 NER^NER^Chulman Airport^Neryungri^^RU^56.9083^124.908^8^C
 NES^NYC^East 34th Street Ferry^New York^NY^US^40.7393^-73.9717^1^A
@@ -9050,10 +9193,12 @@ NGD^NGD^Auguste George Airport^Anegada^^VG^18.7167^-64.3^0^A
 NGD^NGD^Auguste George Airport^Anegada^^VG^18.7167^-64.3^0^C
 NGE^NGE^Ngaoundere Airport^Ngaoundere^^CM^7.35383^13.5568^0^A
 NGE^NGE^Ngaoundere Airport^Ngaoundere^^CM^7.35383^13.5568^0^C
+NGF^NGF^Kaneohe Bay Marine Corps Air Station^Kaneohe Bay^HI^US^21.4408^-157.769^6A^A
+NGF^NGF^Kaneohe Bay Marine Corps Air Station^Kaneohe Bay^HI^US^21.4408^-157.769^6A^C
 NGI^NGI^Gau Island Airport^Gau Island^^FJ^-18^179.333^0^A
 NGI^NGI^Gau Island Airport^Gau Island^^FJ^-18^179.333^0^C
-NGK^NGK^Nogliki Airport^Nogliki^^RU^51.8^143.167^9^A
-NGK^NGK^Nogliki Airport^Nogliki^^RU^51.8^143.167^9^C
+NGK^NGK^Nogliki Airport^Nogliki^^RU^51.8^143.167^10^A
+NGK^NGK^Nogliki Airport^Nogliki^^RU^51.8^143.167^10^C
 NGL^NGL^Ngala Airport^Ngala^^ZA^-25.0207^31.4737^0^CA
 NGN^NGN^Nargana Airport^Nargana^^PA^9.56783^-79.25^0^A
 NGN^NGN^Nargana Airport^Nargana^^PA^9.56783^-79.25^0^C
@@ -9086,8 +9231,8 @@ NHV^NHV^Nuku Hiva Airport^Nuku Hiva^^PF^-8.79017^-140.221^1^A
 NHV^NHV^Nuku Hiva Airport^Nuku Hiva^^PF^-8.79017^-140.221^1^C
 NHX^NHX^Barin NOLF^Foley^AL^US^30.3868^-87.6345^2^A
 NHX^NHX^Barin NOLF^Foley^AL^US^30.3868^-87.6345^2^C
-NHZ^NHZ^Naval Air Station^Brunswick^ME^US^43.8887^-69.9365^1^A
-NHZ^NHZ^Naval Air Station^Brunswick^ME^US^43.8887^-69.9365^1^C
+NHZ^NHZ^Executive Airport^Brunswick^ME^US^43.8887^-69.9365^1^A
+NHZ^NHZ^Executive Airport^Brunswick^ME^US^43.8887^-69.9365^1^C
 NIA^NIA^Nimba Airport^Nimba^^LR^7.488^-8.58833^0^CA
 NIB^NIB^Nikolai Airport^Nikolai^AK^US^63.0167^-154.383^5^A
 NIB^NIB^Nikolai Airport^Nikolai^AK^US^63.0167^-154.383^5^C
@@ -9194,6 +9339,8 @@ NNA^NNA^Royal Air Force Base^Kenitra^^MA^34.2667^-6.66667^0^C
 NNB^NNB^Santa Ana Island Airport^Santa Ana Island^^SB^-10.842^162.452^0^A
 NNB^NNB^Santa Ana Island Airport^Santa Ana Island^^SB^-10.842^162.452^0^C
 NND^NND^Nangade Airport^Nangade^^MZ^-11.0833^39.1^0^CA
+NNE^NNE^Railway Station^Narbonne^^FR^43.188^3.0035^0^C
+NNE^NNE^Railway Station^Narbonne^^FR^43.188^3.0035^0^R
 NNG^NNG^Wuxu International Airport^Nanning^^CN^22.605^108.17^0^A
 NNG^NNG^Wuxu International Airport^Nanning^^CN^22.605^108.17^0^C
 NNI^NNI^Namutoni Airport^Namutoni^^NA^-18.8167^16.9167^0^A
@@ -9217,7 +9364,9 @@ NOA^NOA^Nowra Airport^Nowra^NS^AU^-34.9503^150.536^2^A
 NOA^NOA^Nowra Airport^Nowra^NS^AU^-34.9503^150.536^2^C
 NOB^NOB^Nosara Airport^Nosara^^CR^9.8^-85.5333^0^A
 NOB^NOB^Nosara Airport^Nosara^^CR^9.8^-85.5333^0^C
-NOC^NOC^Ireland West Airport^Knock^^IE^53.9062^-8.81783^0^CA
+NOC^NOC^Ireland West Airport^Knock^^IE^53.9062^-8.81783^0^A
+NOC^NOC^Ireland West Airport^Knock^^IE^53.9062^-8.81783^0^C
+NOC^NOC^Ireland West Airport^Knock^^IE^53.9062^-8.81783^0^C
 NOD^NOD^Norddeich^Norden^^DE^53.6265^7.187^0^CA
 NOG^NOG^Nogales Intl Airport^Nogales^^MX^31.3333^-110.933^2A^A
 NOG^NOG^Nogales Intl Airport^Nogales^^MX^31.3333^-110.933^2A^C
@@ -9436,7 +9585,8 @@ NZE^NZE^Nzerekore Airport^Nzerekore^^GN^7.805^-8.70167^0^A
 NZE^NZE^Nzerekore Airport^Nzerekore^^GN^7.805^-8.70167^0^C
 NZH^NZH^Xijiao Airport^Manzhouli^^CN^49.5593^117.34^0^A
 NZH^NZH^Xijiao Airport^Manzhouli^^CN^49.5593^117.34^0^C
-NZW^NZW^South Weymouth Airport^South Weymouth^MA^US^42.1667^-70.9333^1^CA
+NZL^NZL^Chengjisihan Airport^Zhalantun^^CN^47.8597^122.767^0^A
+NZL^NZL^Chengjisihan Airport^Zhalantun^^CN^47.8597^122.767^0^C
 NZY^SAN^North Island Naval Air Station^San Diego^CA^US^32.7^-117.2^4^A
 OAA^OAA^Air Base^Shank^^AF^33.9198^69.0733^0^CA
 OAG^OAG^Orange Airport^Orange^NS^AU^-33.3757^149.127^2^A
@@ -9478,8 +9628,7 @@ OBO^OBO^Obihiro Airport^Obihiro^^JP^42.7258^143.207^0^A
 OBO^OBO^Obihiro Airport^Obihiro^^JP^42.7258^143.207^0^C
 OBS^OBS^Vals-Lanas Airport^Aubenas^^FR^44.6667^4.7^0^A
 OBS^OBS^Vals-Lanas Airport^Aubenas^^FR^44.6667^4.7^0^C
-OBT^ODM^Coliseum Railway Station^Oakland^MD^US^39.4^-79.4167^1^A
-OBT^ODM^Coliseum Railway Station^Oakland^MD^US^39.4^-79.4167^1^C
+OBT^ODM^Coliseum Railway Station^Oakland^MD^US^39.4^-79.4167^1^R
 OBU^OBU^Kobuk Airport^Kobuk^AK^US^66.9063^-156.883^5^A
 OBU^OBU^Kobuk Airport^Kobuk^AK^US^66.9063^-156.883^5^C
 OBX^OBX^Obo Airport^Obo^^PG^-7.58333^141.317^1^A
@@ -9491,8 +9640,10 @@ OCA^OCA^Ocean Reef Club Airport^Key Largo^FL^US^25.3218^-80.2715^1^A
 OCA^OCA^Ocean Reef Club Airport^Key Largo^FL^US^25.3218^-80.2715^1^C
 OCC^OCC^Francisco de Orellana Airport^Coca^^EC^-0.456333^-76.986^1^A
 OCC^OCC^Francisco de Orellana Airport^Coca^^EC^-0.456333^-76.986^1^C
-OCE^SBY^Ocean City Municipal Airport^Salisbury/Ocean City^MD^US^38.3167^-75.1167^1^CA
-OCF^OCF^Ocala Intl Airport (Jim Taylor Field)^Ocala^FL^US^29.172^-82.2228^1^CA
+OCD^OCD^Duyun Railway Station^Duyun^^CN^26.2345^107.507^0^C
+OCD^OCD^Duyun Railway Station^Duyun^^CN^26.2345^107.507^0^R
+OCF^OCF^Ocala Intl Airport (Jim Taylor Field)^Ocala^FL^US^29.172^-82.2228^1^A
+OCF^OCF^Ocala Intl Airport (Jim Taylor Field)^Ocala^FL^US^29.172^-82.2228^1^C
 OCH^OCH^A.L. Mangham Jr. Regional Airport^Nacogdoches^TX^US^31.5833^-94.7^2^A
 OCH^OCH^A.L. Mangham Jr. Regional Airport^Nacogdoches^TX^US^31.5833^-94.7^2^C
 OCJ^OCJ^Ian Fleming Intl Airport^Ocho Rios^^JM^18.4003^-76.9685^0^A
@@ -9502,6 +9653,8 @@ OCM^OCM^Boolgeeda Airport^Boolgeeda^WA^AU^-22.5372^117.271^4^A
 OCM^OCM^Boolgeeda Airport^Boolgeeda^WA^AU^-22.5372^117.271^4^C
 OCN^OCN^Oceanside Municipal Airport^Oceanside^CA^US^33.2178^-117.352^4^A
 OCN^OCN^Oceanside Municipal Airport^Oceanside^CA^US^33.2178^-117.352^4^C
+OCS^OCS^Corisco Island Airport^Corisco Island^^GQ^0.904167^9.32483^0^A
+OCS^OCS^Corisco Island Airport^Corisco Island^^GQ^0.904167^9.32483^0^C
 OCV^OCV^Aguas Claras Airport^Ocana^^CO^8.25^-73.3333^0^CA
 OCW^OCW^Warren Field^Washington^NC^US^35.569^-77.0432^1^CA
 ODA^ODA^Ouadda Airport^Ouadda^^CF^8.00233^22.401^0^A
@@ -9518,6 +9671,7 @@ ODH^ODH^Royal Air Force Station^Odiham^EN^GB^51.25^-0.95^0^C
 ODJ^ODJ^Ouanda Djalle Airport^Ouanda Djalle^^CF^8.91667^22.8833^0^CA
 ODL^ODL^Cordillo Downs Airport^Cordillo Downs^SA^AU^-26.7167^140.633^3^CA
 ODM^ODM^Garret County Airport^Oakland^MD^US^39.034^-79.2528^1^A
+ODM^ODM^Garret County Airport^Oakland^MD^US^39.034^-79.2528^1^C
 ODN^ODN^Long Seridan Airport^Long Seridan^^MY^3.97217^115.058^0^A
 ODN^ODN^Long Seridan Airport^Long Seridan^^MY^3.97217^115.058^0^C
 ODO^ODO^Bodaybo Airport^Bodaybo^^RU^57.8598^114.239^7^A
@@ -9539,7 +9693,7 @@ OEO^OEO^L.O. Simenstad Municipal Airport^Osceola^WI^US^45.3^-92.7^2^CA
 OER^OER^Ornskoldsvik Airport^Ornskoldsvik^^SE^63.405^18.9873^0^CA
 OES^OES^Antoine de St Exupery Airport^San Antonio Oeste^RN^AR^-40.7333^-64.95^0^A
 OES^OES^Antoine de St Exupery Airport^San Antonio Oeste^RN^AR^-40.7333^-64.95^0^C
-OFF^OMA^Offutt AFB^Omaha^NE^US^41.2833^-95.9667^2^CA
+OFF^OMA^Offutt AFB^Omaha^NE^US^41.2833^-95.9667^2^A
 OFI^OFI^Ouango Fitini Airport^Ouango Fitini^^CI^9.6^-4.03333^0^CA
 OFJ^OFJ^Olafsfjordur Airport^Olafsfjordur^^IS^66.0712^-18.6673^0^CA
 OFK^OFK^Norfolk Regional Airport^Norfolk^NE^US^41.9847^-97.4343^2^A
@@ -9579,8 +9733,8 @@ OHD^OHD^Ohrid Airport^Ohrid^^MK^41.1747^20.7387^0^A
 OHD^OHD^Ohrid Airport^Ohrid^^MK^41.1747^20.7387^0^C
 OHE^OHE^Gulian Airport^Mohe^^CN^52.9098^122.42^0^A
 OHE^OHE^Gulian Airport^Mohe^^CN^52.9098^122.42^0^C
-OHH^OHH^Novostroyka Airport^Okha^^RU^53.5167^142.883^9^A
-OHH^OHH^Novostroyka Airport^Okha^^RU^53.5167^142.883^9^C
+OHH^OHH^Novostroyka Airport^Okha^^RU^53.5167^142.883^10^A
+OHH^OHH^Novostroyka Airport^Okha^^RU^53.5167^142.883^10^C
 OHI^OHI^Oshakati Airport^Oshakati^^NA^-17.7833^15.8^0^CA
 OHO^OHO^Okhotsk Airport^Okhotsk^^RU^59.4167^143.05^9^A
 OHO^OHO^Okhotsk Airport^Okhotsk^^RU^59.4167^143.05^9^C
@@ -9627,7 +9781,8 @@ OKO^TYO^Yokota AB^Tokyo^^JP^35.75^139.35^0^A
 OKP^OKP^Oksapmin Airport^Oksapmin^^PG^-5.25^142.083^1^CA
 OKQ^OKQ^Okaba Airport^Okaba^^ID^-8.1^139.7^3^A
 OKQ^OKQ^Okaba Airport^Okaba^^ID^-8.1^139.7^3^C
-OKR^OKR^Yorke Island Airport^Yorke Island^QL^AU^-9.76667^143.467^2B^CA
+OKR^OKR^Yorke Island Airport^Yorke Island^QL^AU^-9.76667^143.467^2B^A
+OKR^OKR^Yorke Island Airport^Yorke Island^QL^AU^-9.76667^143.467^2B^C
 OKS^OKS^Garden County Airport^Oshkosh^NE^US^41.4^-102.35^3^CA
 OKT^OKT^Oktiabrsky Airport^Oktiabrsky^^RU^54.4333^53.3833^4^CA
 OKU^OKU^Mokuti Lodge Airport^Mokuti Lodge^^NA^-18.805^17.05^0^CA
@@ -9640,7 +9795,7 @@ OLB^OLB^Costa Smeralda Airport^Olbia^^IT^40.8925^9.51733^0^A
 OLB^OLB^Costa Smeralda Airport^Olbia^^IT^40.8925^9.51733^0^C
 OLC^OLC^Sao Paulo de Olivenca Airport^Sao Paulo de Olivenca^AM^BR^-3.46833^-68.955^2A^A
 OLC^OLC^Sao Paulo de Olivenca Airport^Sao Paulo de Olivenca^AM^BR^-3.46833^-68.955^2A^C
-OLD^OLD^Old Town Airport^Old Town^ME^US^44.9333^-68.65^1^CA
+OLD^OLD^Dewitt Field Municipal Airport^Old Town^ME^US^44.9333^-68.65^1^CA
 OLE^OLE^Cattaraugus County Airport^Olean^NY^US^42.238^-78.3695^1^A
 OLE^OLE^Cattaraugus County Airport^Olean^NY^US^42.238^-78.3695^1^C
 OLF^OLF^L.M. Clayton Airport^Wolf Point^MT^US^48.0902^-105.56^3^A
@@ -9665,10 +9820,13 @@ OLQ^OLQ^Olsobip Airport^Olsobip^^PG^-5.46667^141.5^1^CA
 OLR^OLR^Air Base^Salerno^^AF^33.3582^69.9532^0^CA
 OLS^OLS^Nogales International Airport^Nogales^AZ^US^31.4167^-110.85^3A^A
 OLS^OLS^Nogales International Airport^Nogales^AZ^US^31.4167^-110.85^3A^C
+OLT^XTJ^Toledo Bus Station^Toledo^SP^ES^39.8593^-4.01883^1^B
 OLU^OLU^Columbus Municipal Airport^Columbus^NE^US^41.4417^-97.3383^2^A
 OLU^OLU^Columbus Municipal Airport^Columbus^NE^US^41.4417^-97.3383^2^C
 OLV^OLV^Olive Branch Airport^Olive Branch^MS^US^34.9738^-89.7855^2^A
 OLV^OLV^Olive Branch Airport^Olive Branch^MS^US^34.9738^-89.7855^2^C
+OLX^OLX^Olkiombo Airport^Olkiombo^^KE^-1.40533^35.1063^0^A
+OLX^OLX^Olkiombo Airport^Olkiombo^^KE^-1.40533^35.1063^0^C
 OLY^OLY^Olney-Noble Airport^Olney/Noble^IL^US^38.7167^-88.0833^2^A
 OLY^OLY^Olney-Noble Airport^Olney/Noble^IL^US^38.7167^-88.0833^2^C
 OLZ^OLZ^Olekminsk Airport^Olekminsk^^RU^60.4005^120.469^8^A
@@ -9711,7 +9869,9 @@ ONG^ONG^Mornington Island Airport^Mornington Island^QL^AU^-16.6575^139.168^2B^C
 ONH^ONH^Oneonta Municipal Airport^Oneonta^NY^US^42.4763^-75.0003^1^A
 ONH^ONH^Oneonta Municipal Airport^Oneonta^NY^US^42.4763^-75.0003^1^C
 ONI^ONI^Moanamani Airport^Moanamani^^ID^-3.33333^135.5^3^CA
-ONJ^ONJ^Odate Noshiro Airport^Odate/Noshiro^^JP^40.1868^140.372^0^CA
+ONJ^ONJ^Odate Noshiro Airport^Odate/Noshiro^^JP^40.1868^140.372^0^A
+ONJ^ONJ^Odate Noshiro Airport^Odate/Noshiro^^JP^40.1868^140.372^0^C
+ONJ^ONJ^Odate Noshiro Airport^Odate/Noshiro^^JP^40.1868^140.372^0^C
 ONK^ONK^Olenek Airport^Olenek^^RU^68.5088^112.475^8^A
 ONK^ONK^Olenek Airport^Olenek^^RU^68.5088^112.475^8^C
 ONL^ONL^O'Neill Municipal Airport^O'Neill^NE^US^42.4683^-98.686^2^CA
@@ -9752,6 +9912,8 @@ OPL^OPL^St Landry Parish Airport^Opelousas^LA^US^30.5333^-92.0833^2^A
 OPL^OPL^St Landry Parish Airport^Opelousas^LA^US^30.5333^-92.0833^2^C
 OPO^OPO^Porto Airport^Porto^^PT^41.238^-8.67417^1^A
 OPO^OPO^Porto Airport^Porto^^PT^41.238^-8.67417^1^C
+OPQ^OPQ^Puning Railway Station^Puning^^CN^23.2682^116.19^0^C
+OPQ^OPQ^Puning Railway Station^Puning^^CN^23.2682^116.19^0^R
 OPS^OPS^Jao B. Figueiredo Airport^Sinop^MT^BR^-11.8843^-55.5853^2^A
 OPS^OPS^Jao B. Figueiredo Airport^Sinop^MT^BR^-11.8843^-55.5853^2^C
 OPU^OPU^Balimo Airport^Balimo^^PG^-8.03333^142.933^1^A
@@ -9767,8 +9929,8 @@ ORE^ORE^St . Denis de l'Hotel^Orleans^^FR^47.8915^2.158^0^CA
 ORF^ORF^Norfolk International Airport^Norfolk^VA^US^36.8908^-76.2008^1^A
 ORF^ORF^Norfolk International Airport^Norfolk^VA^US^36.8908^-76.2008^1^C
 ORG^PBM^Zorg en Hoop Airport^Paramaribo^^SR^5.80567^-55.188^0^A
-ORH^ORH^Worcester Airport^Worcester^MA^US^42.267^-71.872^1^A
-ORH^ORH^Worcester Airport^Worcester^MA^US^42.267^-71.872^1^C
+ORH^ORH^Worcester Regional Airport^Worcester^MA^US^42.267^-71.872^1^A
+ORH^ORH^Worcester Regional Airport^Worcester^MA^US^42.267^-71.872^1^C
 ORI^ORI^Port Lions Airport^Port Lions^AK^US^57.885^-152.84^5^A
 ORI^ORI^Port Lions Airport^Port Lions^AK^US^57.885^-152.84^5^C
 ORJ^ORJ^Orinduik Airport^Orinduik^^GY^4.71667^-60.0333^0^A
@@ -9784,7 +9946,6 @@ ORN^ORN^Ahmed Ben Bella Airport^Oran^^DZ^35.623^-0.606833^0^C
 ORO^ORO^Yoro Airport^Yoro^^HN^15.1218^-87.1337^0^CA
 ORP^ORP^Orapa Airport^Orapa^^BW^-21^24.5^0^A
 ORP^ORP^Orapa Airport^Orapa^^BW^-21^24.5^0^C
-ORQ^ORQ^Norwalk Heliport^Norwalk^CT^US^41.1167^-73.3667^1^CH
 ORR^ORR^Yorktown Airport^Yorktown^SA^AU^-35.0333^137.583^3^A
 ORR^ORR^Yorktown Airport^Yorktown^SA^AU^-35.0333^137.583^3^C
 ORS^ORS^Waterport SPB^Orpheus Island^QL^AU^-18.6333^146.483^2B^CA
@@ -10268,7 +10429,9 @@ PKA^PKA^Napaskiak Airport^Napaskiak^AK^US^60.7065^-161.755^5^A
 PKA^PKA^Napaskiak Airport^Napaskiak^AK^US^60.7065^-161.755^5^C
 PKB^PKB^Mid-Ohio Valley Regional Airport^Parkersburg^WV^US^39.3403^-81.4368^1^A
 PKB^PKB^Mid-Ohio Valley Regional Airport^Parkersburg^WV^US^39.3403^-81.4368^1^C
-PKC^PKC^Yelizovo Airport^Petropavlovsk^^RU^53.1688^158.452^11^CA
+PKC^PKC^Yelizovo Airport^Petropavlovsk^^RU^53.1688^158.452^11^A
+PKC^PKC^Yelizovo Airport^Petropavlovsk^^RU^53.1688^158.452^11^C
+PKC^PKC^Yelizovo Airport^Petropavlovsk^^RU^53.1688^158.452^11^C
 PKD^PKD^Municipal-Konshok Field Airport^Park Rapids^MN^US^46.8923^-95.0697^2^CA
 PKE^PKE^Parkes Airport^Parkes^NS^AU^-33.1252^148.239^2^A
 PKE^PKE^Parkes Airport^Parkes^NS^AU^-33.1252^148.239^2^C
@@ -10300,7 +10463,8 @@ PKW^PKW^Selebi-Phikwe Airport^Selebi-Phikwe^^BW^-22.05^27.8167^0^A
 PKW^PKW^Selebi-Phikwe Airport^Selebi-Phikwe^^BW^-22.05^27.8167^0^C
 PKY^PKY^Tjilik Riwut Airport^Palangkaraya^^ID^-2.21667^113.933^1^A
 PKY^PKY^Tjilik Riwut Airport^Palangkaraya^^ID^-2.21667^113.933^1^C
-PKZ^PKZ^Pakse International Airport^Pakse^^LA^15.1257^105.784^0^CA
+PKZ^PKZ^Pakse International Airport^Pakse^^LA^15.1257^105.784^0^A
+PKZ^PKZ^Pakse International Airport^Pakse^^LA^15.1257^105.784^0^C
 PLA^PLA^Planadas Airport^Planadas^^CO^3.3^-75.7^0^CA
 PLC^PLC^Planeta Rica Airport^Planeta Rica^^CO^8.41667^-75.6^0^O
 PLD^PLD^Playa Samara/Carrillo^Playa Samara/Carrillo^^CR^10.25^-85.4167^0^A
@@ -10403,8 +10567,8 @@ PNK^PNK^Supadio Airport^Pontianak^^ID^-0.15^109.4^1^A
 PNK^PNK^Supadio Airport^Pontianak^^ID^-0.15^109.4^1^C
 PNL^PNL^Pantelleria Airport^Pantelleria^^IT^36.8078^11.9565^0^A
 PNL^PNL^Pantelleria Airport^Pantelleria^^IT^36.8078^11.9565^0^C
-PNN^PNN^Princeton Airport^Princeton^ME^US^45.2333^-67.5667^1^A
-PNN^PNN^Princeton Airport^Princeton^ME^US^45.2333^-67.5667^1^C
+PNN^PNN^Princeton Municipal Airport^Princeton^ME^US^45.2333^-67.5667^1^A
+PNN^PNN^Princeton Municipal Airport^Princeton^ME^US^45.2333^-67.5667^1^C
 PNP^PNP^Girua Airport^Popondetta^^PG^-8.802^148.306^1^A
 PNP^PNP^Girua Airport^Popondetta^^PG^-8.802^148.306^1^C
 PNQ^PNQ^Lohegaon Airport^Pune^^IN^18.5755^73.919^0^A
@@ -10458,7 +10622,8 @@ POT^POT^Ken Jones Airport^Port Antonio^^JM^18.1923^-76.5347^0^C
 POU^POU^Dutchess County Airport^Poughkeepsie^NY^US^41.6227^-73.8838^1^A
 POU^POU^Dutchess County Airport^Poughkeepsie^NY^US^41.6227^-73.8838^1^C
 POV^POV^Presov Airport^Presov^^SK^49^21.25^0^CA
-POW^POW^Portoroz Airport^Portoroz^^SI^45.5167^13.5833^0^CA
+POW^POW^Portoroz Airport^Portoroz^^SI^45.5167^13.5833^0^A
+POW^POW^Portoroz Airport^Portoroz^^SI^45.5167^13.5833^0^C
 POX^PAR^Pontoise-Cormeilles Airport^Paris^^FR^49.05^2.1^0^A
 POY^POY^Powell Municipal Airport^Powell/Lovell^WY^US^44.867^-108.789^3^A
 POY^POY^Powell Municipal Airport^Powell/Lovell^WY^US^44.867^-108.789^3^C
@@ -10509,8 +10674,8 @@ PPZ^PPZ^Puerto Paez Airport^Puerto Paez^^VE^6.22233^-67.4415^0^C
 PQC^PQC^Duong Dang International Airport^Phu Quoc Island^^VN^10.2333^103.967^0^A
 PQC^PQC^Duong Dang International Airport^Phu Quoc Island^^VN^10.2333^103.967^0^C
 PQD^BTC^Passikudha SPB^Batticaloa^^LK^7.92333^81.5383^0^A
-PQI^PQI^Presque Isle Municipal Airport^Presque Isle^ME^US^46.6843^-68.0418^1^A
-PQI^PQI^Presque Isle Municipal Airport^Presque Isle^ME^US^46.6843^-68.0418^1^C
+PQI^PQI^Northern Maine Regional Airport^Presque Isle^ME^US^46.6843^-68.0418^1^A
+PQI^PQI^Northern Maine Regional Airport^Presque Isle^ME^US^46.6843^-68.0418^1^C
 PQM^PQM^Palenque Intl Airport^Palenque^^MX^17.5^-92.005^1^A
 PQM^PQM^Palenque Intl Airport^Palenque^^MX^17.5^-92.005^1^C
 PQQ^PQQ^Port Macquarie Airport^Port Macquarie^NS^AU^-31.4333^152.867^2^A
@@ -10569,8 +10734,8 @@ PSD^PSD^Port Said Airport^Port Said^^EG^31.2747^32.236^0^A
 PSD^PSD^Port Said Airport^Port Said^^EG^31.2747^32.236^0^C
 PSE^PSE^Mercedita Airport^Ponce^^PR^18.0065^-66.5582^0^A
 PSE^PSE^Mercedita Airport^Ponce^^PR^18.0065^-66.5582^0^C
-PSF^PSF^Pittsfield Airport^Pittsfield^MA^US^42.4227^-73.2883^1^A
-PSF^PSF^Pittsfield Airport^Pittsfield^MA^US^42.4227^-73.2883^1^C
+PSF^PSF^Pittsfield Municipal Airport^Pittsfield^MA^US^42.4227^-73.2883^1^A
+PSF^PSF^Pittsfield Municipal Airport^Pittsfield^MA^US^42.4227^-73.2883^1^C
 PSG^PSG^James A. Johnson Airport^Petersburg^AK^US^56.8025^-132.939^5^A
 PSG^PSG^James A. Johnson Airport^Petersburg^AK^US^56.8025^-132.939^5^C
 PSH^PSH^St Peter-Ording^St Peter-Ording^^DE^54.5^8.11667^0^CA
@@ -10689,10 +10854,10 @@ PUZ^PUZ^Puerto Cabezas Airport^Puerto Cabezas^^NI^14.0405^-83.3835^0^A
 PUZ^PUZ^Puerto Cabezas Airport^Puerto Cabezas^^NI^14.0405^-83.3835^0^C
 PVA^PVA^El Embrujo Airport^Providencia Island^^CO^13.35^-81.35^0^CA
 PVB^PDP^Fluvial Bus Station^Punta Del Este^^UY^-34.9542^-54.9367^0^B
-PVC^PVC^Provincetown Airport^Provincetown^MA^US^42.0698^-70.2197^1^A
-PVC^PVC^Provincetown Airport^Provincetown^MA^US^42.0698^-70.2197^1^C
-PVD^PVD^Theodore Francis Airport^Providence^RI^US^41.7213^-71.4248^1^A
-PVD^PVD^Theodore Francis Airport^Providence^RI^US^41.7213^-71.4248^1^C
+PVC^PVC^Provincetown Municipal Airport^Provincetown^MA^US^42.0698^-70.2197^1^A
+PVC^PVC^Provincetown Municipal Airport^Provincetown^MA^US^42.0698^-70.2197^1^C
+PVD^PVD^T.F. Green State Airport^Providence^RI^US^41.7213^-71.4248^1^A
+PVD^PVD^T.F. Green State Airport^Providence^RI^US^41.7213^-71.4248^1^C
 PVE^PVE^El Porvenir Airport^El Porvenir^^PA^9.58333^-79^0^A
 PVE^PVE^El Porvenir Airport^El Porvenir^^PA^9.58333^-79^0^C
 PVF^PVF^Placerville Airport^Placerville^CA^US^38.7167^-120.8^4^A
@@ -10702,6 +10867,7 @@ PVH^PVH^J.T. de Oliveira Intl Airport^Porto Velho^RO^BR^-8.73333^-63.9^2A^A
 PVH^PVH^J.T. de Oliveira Intl Airport^Porto Velho^RO^BR^-8.73333^-63.9^2A^C
 PVI^PVI^Edu Chaves Airport^Paranavai^PR^BR^-23.0667^-52.4667^1^CA
 PVK^PVK^Aktion Airport^Preveza/Lefkada^^GR^38.922^20.7592^0^CA
+PVL^PVL^Pike County Regional Airport^Pikeville^KY^US^37.557^-82.5598^1^CA
 PVO^PVO^Reales Tamarindos Airport^Portoviejo^^EC^-1.03333^-80.4667^1^A
 PVO^PVO^Reales Tamarindos Airport^Portoviejo^^EC^-1.03333^-80.4667^1^C
 PVR^PVR^G. Diaz Ordaz Intl Airport^Puerto Vallarta^^MX^20.6747^-105.252^1^A
@@ -10732,6 +10898,13 @@ PWT^PWT^Bremerton National Airport^Bremerton^WA^US^47.4875^-122.759^4^A
 PWT^PWT^Bremerton National Airport^Bremerton^WA^US^47.4875^-122.759^4^C
 PWY^PWY^Ralph Wenz Field Airport^Pinedale^WY^US^42.7907^-109.804^3^A
 PWY^PWY^Ralph Wenz Field Airport^Pinedale^WY^US^42.7907^-109.804^3^C
+PXA^PXA^Pagar Alam Airport^Lahat^^ID^-4.02133^103.375^1^A
+PXA^PXA^Pagar Alam Airport^Lahat^^ID^-4.02133^103.375^1^C
+PXA^PXA^Pagar Alam Airport^Lahat^^ID^-4.02133^103.375^1^C
+PXB^PEG^Perugia Bus Station^Perugia^^IT^43.1028^12.3723^0^B
+PXC^PSR^Pescara Bus Station^Pescara^^IT^42.4687^14.2027^0^B
+PXG^PXG^Railway Station^Pingxiang^^CN^27.6502^113.835^0^C
+PXG^PXG^Railway Station^Pingxiang^^CN^27.6502^113.835^0^R
 PXH^PXH^Prominent Hill Airport^Prominent Hill^SA^AU^-29.7192^135.524^3^CA
 PXL^PXL^Polacca Airport^Polacca^AZ^US^35.8^-110.333^3A^CA
 PXM^PXM^Puerto Escondido Intl Airport^Puerto Escondido^^MX^15.85^-97.0833^1^A
@@ -10755,8 +10928,8 @@ PYJ^PYJ^Polyarny Airport^Polyarnyj^^RU^66.4003^112.025^8^C
 PYK^PYK^Payam Airport^Karaj^^IR^35.7745^50.8203^0^A
 PYK^PYK^Payam Airport^Karaj^^IR^35.7745^50.8203^0^C
 PYL^PYL^Perry Sea Plane Base^Perry Island^AK^US^60.6845^-147.918^5^CA
-PYM^PYM^Plymouth Airport^Plymouth^MA^US^41.9667^-70.6833^1^A
-PYM^PYM^Plymouth Airport^Plymouth^MA^US^41.9667^-70.6833^1^C
+PYM^PYM^Plymouth Municipal Airport^Plymouth^MA^US^41.9667^-70.6833^1^A
+PYM^PYM^Plymouth Municipal Airport^Plymouth^MA^US^41.9667^-70.6833^1^C
 PYN^PYN^Payan Airport^Payan^^CO^1.81667^-78.1333^0^CA
 PYO^PYO^Putumayo Airport^Putumayo^^EC^0.0833333^-75.9^1^A
 PYO^PYO^Putumayo Airport^Putumayo^^EC^0.0833333^-75.9^1^C
@@ -10776,10 +10949,13 @@ PZH^PZH^Zhob Airport^Zhob^^PK^31.3333^69.5^0^A
 PZH^PZH^Zhob Airport^Zhob^^PK^31.3333^69.5^0^C
 PZI^PZI^Bao ' angong  Airport^Panzhihua^^CN^26.5333^101.8^0^A
 PZI^PZI^Bao ' angong  Airport^Panzhihua^^CN^26.5333^101.8^0^C
+PZJ^POW^Portoroz Bus Station^Portoroz^^SI^45.508^13.5903^0^B
 PZK^PZK^Pukapuka Island Airport^Pukapuka Island^^CK^-10.8833^-165.817^0^CA
 PZL^PZL^Zulu Inyala Airport^Phinda^^ZA^-27.8667^32.3^0^CA
 PZO^PZO^Manuel Carlos Piar Airport^Puerto Ordaz^^VE^8.303^-62.734^0^A
 PZO^PZO^Manuel Carlos Piar Airport^Puerto Ordaz^^VE^8.303^-62.734^0^C
+PZO^PZO^Manuel Carlos Piar Airport^Puerto Ordaz^^VE^8.303^-62.734^0^C
+PZS^ZCO^Maquehue Airport^Temuco^^CL^-38.7668^-72.6357^1^A
 PZU^PZU^Port Sudan New International Airport^Port Sudan^^SD^19.5733^37.2083^0^A
 PZU^PZU^Port Sudan New International Airport^Port Sudan^^SD^19.5733^37.2083^0^C
 PZY^PZY^Piestany Airport^Piestany^^SK^48.6333^17.8333^0^CA
@@ -10819,7 +10995,8 @@ QBH^QBH^Off-Line Point^Levallois^^FR^48.8833^2.26667^0^O
 QBI^QBI^Off-Line Point^Bitola^^MK^41.0833^21.1667^0^O
 QBJ^QBJ^Off-Line Point^Bordj-Bou-Arreri^^DZ^36.0667^4.75^0^O
 QBK^QBK^Off-Line Point^Betim^MG^BR^-19.9667^-44.1167^1^O
-QBL^QBL^Off-Line Point^Bani Walid^^LY^31.6^13.8833^0^O
+QBL^QBL^Off-Line Point^Bani Walid^^LY^31.6^13.8833^0^A
+QBL^QBL^Off-Line Point^Bani Walid^^LY^31.6^13.8833^0^C
 QBM^QBM^Off-Line Point^Bourg - St. Maurice^^FR^45.5833^6.76667^0^O
 QBN^QBN^Off-Line Point^Barra Mansa^RJ^BR^-22.5833^-44.2^1^O
 QBO^QBO^Hbf Railway Station^Bochum^^DE^51.4738^7.22033^0^CR
@@ -10968,6 +11145,8 @@ QGS^QGS^Off-Line Point^Alagoinhas^BA^BR^-12.1167^-38.3333^1A^C
 QGT^QGT^Off-Line Point^Moriguchi^^JP^34.7333^135.567^0^O
 QGU^QGU^Off-Line Point^Gifu^^JP^35.6667^137^0^O
 QGV^FRA^Neu Isenburg Rail Station^Frankfurt^^DE^50.05^8.7^0^R
+QGW^QGW^Off-Line Point^Neustadt-Glewe^^DE^53.3833^11.5833^0^A
+QGW^QGW^Off-Line Point^Neustadt-Glewe^^DE^53.3833^11.5833^0^C
 QGX^QGX^Off-Line Point^Girga^^EG^37.1167^-2.55^0^O
 QGY^QGY^Bus Station^Gyor^^HU^47.6833^17.6333^0^CB
 QGZ^QGZ^Off-Line Point^Yokkaichi^^JP^34.9167^136.633^0^O
@@ -10996,8 +11175,6 @@ QHU^QHU^Schwesing^Husum^^DE^54.506^9.13633^0^A
 QHU^QHU^Schwesing^Husum^^DE^54.506^9.13633^0^C
 QHV^QHV^Off-Line Point^Novo Hamburgo^RS^BR^-29.6167^-51.1167^1^A
 QHV^QHV^Off-Line Point^Novo Hamburgo^RS^BR^-29.6167^-51.1167^1^C
-QHW^QFF^Off-Line Point^Brooklyn^NY^US^40.5^-73.954^1^O
-QHX^BAR^Railway Station^Qionghai^^CN^19.2383^110.485^0^C
 QHX^BAR^Railway Station^Qionghai^^CN^19.2383^110.485^0^R
 QHY^QHY^Off-Line Point^Hachioji^^JP^35.6667^139.333^0^O
 QHZ^QHZ^Off-Line Point^Hoofddorp^^NL^52.3^4.68333^0^O
@@ -11179,6 +11356,8 @@ QOB^QOB^Railway Station^Ansbach^^DE^49.3^10.5833^0^C
 QOB^QOB^Railway Station^Ansbach^^DE^49.3^10.5833^0^R
 QOC^QOC^Off-Line Point^Osasco^SP^BR^-23.5167^-46.7667^1^O
 QOD^QOD^Off-Line Point^Osvaldo Cruz^SP^BR^-21.7833^-50.8333^1^O
+QOE^QOE^Off-Line Point^Noervenich^^DE^50.8333^6.65^0^A
+QOE^QOE^Off-Line Point^Noervenich^^DE^50.8333^6.65^0^C
 QOF^IEV^Darnitsa Bus Station^Kiev^^UA^50.4^30.4667^0^B
 QOG^QOG^Off-Line Point^Homburg^^DE^49.4667^7.3^0^O
 QOH^IEV^Hotel Rus Bus Station^Kiev^^UA^50.4333^30.5167^0^B
@@ -11202,6 +11381,7 @@ QPA^QPA^Central Railway Station^Padova^^IT^45.4167^11.8833^0^C
 QPA^QPA^Central Railway Station^Padova^^IT^45.4167^11.8833^0^R
 QPB^QPB^Off-Line Point^Campobasso^^IT^41.5667^14.65^0^O
 QPC^QPC^Off-Line Point^Plock^^PL^52.55^19.7167^0^O
+QPD^QPD^Off-line Point^Palau^^IT^41.1833^9.38333^0^O
 QPE^QPE^Off-Line Point^Petropolis^RJ^BR^-22.5167^-43.1667^1^O
 QPF^QPF^Off-Line Point^Pompeia^SP^BR^-22.1167^-50.1833^1^O
 QPG^SIN^Paya Lebar Airport^Singapore^^SG^1.35^103.9^0^A
@@ -11254,7 +11434,7 @@ QRH^RTM^Centraal Railway Station^Rotterdam^^NL^51.9167^4.5^0^R
 QRI^QRI^Off-Line Point^Rize^^TR^41^40.5^0^O
 QRJ^QRJ^Off-Line Point^Cariacica^ES^BR^-20.2667^-40.4167^1^O
 QRK^QRK^Off-Line Point^Arcos^MG^BR^-20.3167^-45.5^1^O
-QRL^QRL^Off-Line Point^Marbella^SP^ES^36.5^-4.95^1^O
+QRL^QRL^Marbella Bus Station^Marbella^SP^ES^36.5^-4.95^1^O
 QRM^QRM^Off-Line Point^Narromine^NS^AU^-32.1667^148.235^2^A
 QRM^QRM^Off-Line Point^Narromine^NS^AU^-32.1667^148.235^2^C
 QRN^QRN^Off-Line Point^Muroran^^JP^42.4167^141^0^O
@@ -11413,6 +11593,7 @@ QXC^QXC^Off-Line Point^Caxias^MA^BR^-4.91667^-43.3333^1A^O
 QXE^QXE^Off-Line Point^Sora^^IT^41.7167^13.6167^0^O
 QXF^QXF^Vestbjerg Z1 Bus Service^Vestbjerg^^DK^57.1333^9.96667^0^CB
 QXG^ANE^Railway Station^Angers^^FR^47.4667^-0.55^0^R
+QXH^QXH^Off-Line Point^Schoenhagen^^DE^52.202^13.155^0^O
 QXI^QXI^Off-Line Point^Lovisa^^FI^60.4667^26.2^0^O
 QXJ^QXJ^Off-Line Point^Porvoo^^FI^60.4^25.6667^0^O
 QXK^QXK^Saint Genis Bus Service^Saint Genis^^FR^45.4833^-0.566667^0^CB
@@ -11596,7 +11777,7 @@ RDO^RDO^Radom Airport^Radom^^PL^51.3865^21.2068^0^A
 RDO^RDO^Radom Airport^Radom^^PL^51.3865^21.2068^0^C
 RDP^RDP^Kazi Nazrul Islam Airport^Durgapur^^IN^23.6212^87.2387^0^A
 RDP^RDP^Kazi Nazrul Islam Airport^Durgapur^^IN^23.6212^87.2387^0^C
-RDR^GFK^Grand Forks Air Force Base^Grand Forks^ND^US^47.9568^-97.4005^2^CA
+RDR^GFK^Grand Forks Air Force Base^Grand Forks^ND^US^47.9568^-97.4005^2^A
 RDS^RDS^Rincon de Los Sauces Airport^Rincon de Los Sauces^NE^AR^-37.3833^-68.9^0^CA
 RDT^RDT^Richard-Toll Airport^Richard-Toll^^SN^16.4357^-15.6543^0^CA
 RDU^RDU^Raleigh/Durham International Airport^Raleigh/Durham^NC^US^35.8718^-78.7758^1^A
@@ -11606,7 +11787,8 @@ RDV^RDV^Red Devil Airport^Red Devil^AK^US^61.7857^-157.341^5^A
 RDV^RDV^Red Devil Airport^Red Devil^AK^US^61.7857^-157.341^5^C
 RDZ^RDZ^Marcillac Airport^Rodez^^FR^44.4045^2.48333^0^A
 RDZ^RDZ^Marcillac Airport^Rodez^^FR^44.4045^2.48333^0^C
-REA^REA^Reao Airport^Reao, Tuamoto Island^^PF^-18.5^-136.4^2^CA
+REA^REA^Reao Airport^Reao, Tuamoto Island^^PF^-18.5^-136.4^2^A
+REA^REA^Reao Airport^Reao, Tuamoto Island^^PF^-18.5^-136.4^2^C
 REB^REB^Laerz^Rechlin^^DE^53.3038^12.7518^0^A
 REB^REB^Laerz^Rechlin^^DE^53.3038^12.7518^0^C
 REC^REC^Guararapes International Airport^Recife^PE^BR^-8.12267^-34.9205^1A^A
@@ -11624,6 +11806,8 @@ REN^REN^Tsentralny Airport^Orenburg^^RU^51.7907^55.454^4^C
 REO^REO^State Airport^Rome^OR^US^42.8333^-117.617^3^CA
 REP^REP^Angkor International Airport^Siem Reap^^KH^13.4063^103.808^0^A
 REP^REP^Angkor International Airport^Siem Reap^^KH^13.4063^103.808^0^C
+REQ^REQ^Reko Diq Airport^Reko Diq^^PK^29.0415^62.1907^0^A
+REQ^REQ^Reko Diq Airport^Reko Diq^^PK^29.0415^62.1907^0^C
 RER^RER^Retalhuleu Airport^Retalhuleu^^GT^14.5188^-91.6915^0^A
 RER^RER^Retalhuleu Airport^Retalhuleu^^GT^14.5188^-91.6915^0^C
 RES^RES^Resistencia Airport^Resistencia^CH^AR^-27.45^-59.0537^0^A
@@ -11640,6 +11824,7 @@ REZ^REZ^Resende Airport^Resende^RJ^BR^-22.4735^-44.4753^1^A
 REZ^REZ^Resende Airport^Resende^RJ^BR^-22.4735^-44.4753^1^C
 RFA^RFA^Rafai Airport^Rafai^^CF^4.98333^23.9667^0^CA
 RFD^CHI^Chicago/Rockford International Airport^Chicago^IL^US^42.1917^-89.0888^2^A
+RFD^CHI^Chicago/Rockford International Airport^Chicago^IL^US^42.1917^-89.0888^2^C
 RFG^RFG^Rooke Field Airport^Refugio^TX^US^28.291^-97.3225^2^A
 RFG^RFG^Rooke Field Airport^Refugio^TX^US^28.291^-97.3225^2^C
 RFK^RFK^Rollang Field Airport^Rolling Fork^MS^US^32.9667^-90.8167^2^A
@@ -11652,12 +11837,13 @@ RFR^RFR^Rio Frio Airport^Rio Frio^^CR^10.3333^-83.8833^0^CA
 RFS^RFS^Rosita Airport^Rosita^^NI^13.8833^-84.4^0^CA
 RGA^RGA^Hermes Quijada Airport^Rio Grande^TF^AR^-53.7742^-67.75^0^A
 RGA^RGA^Hermes Quijada Airport^Rio Grande^TF^AR^-53.7742^-67.75^0^C
+RGD^GDN^Glowny Railway Station^Gdansk^^PL^54.3533^18.64^0^R
 RGE^RGE^Porgera Airport^Porgera^^PG^-5.41667^143.15^1^CA
 RGH^RGH^Balurghat Airport^Balurghat^^IN^25.25^88.7333^0^CA
 RGI^RGI^Rangiroa Airport^Rangiroa^^PF^-14.9532^-147.655^2^A
 RGI^RGI^Rangiroa Airport^Rangiroa^^PF^-14.9532^-147.655^2^C
-RGK^RGK^Gorno-Altaysk Airport^Gorno-Altaysk^^RU^51.9687^85.8355^5^A
-RGK^RGK^Gorno-Altaysk Airport^Gorno-Altaysk^^RU^51.9687^85.8355^5^C
+RGK^RGK^Gorno-Altaysk Airport^Gorno-Altaysk^^RU^51.9687^85.8355^6^A
+RGK^RGK^Gorno-Altaysk Airport^Gorno-Altaysk^^RU^51.9687^85.8355^6^C
 RGL^RGL^Piloto N. Fernandez Airport^Rio Gallegos^SC^AR^-51.6053^-69.3075^0^A
 RGL^RGL^Piloto N. Fernandez Airport^Rio Gallegos^SC^AR^-51.6053^-69.3075^0^C
 RGN^RGN^Mingaladon International Airport^Yangon^^MM^16.9043^96.1333^0^A
@@ -11720,15 +11906,19 @@ RIW^RIW^Riverton Regional Airport^Riverton^WY^US^43.0585^-108.456^3^C
 RIX^RIX^Riga International Airport^Riga^^LV^56.9208^23.9693^0^A
 RIX^RIX^Riga International Airport^Riga^^LV^56.9208^23.9693^0^C
 RIY^RIY^Riyan Airport^Mukalla^^YE^14.6577^49.3717^0^CA
-RIZ^RIZ^Shanzihe Airport^Rizhao^^CN^35.4^119.317^0^CA
+RIZ^RIZ^Shanzihe Airport^Rizhao^^CN^35.4^119.317^0^A
+RIZ^RIZ^Shanzihe Airport^Rizhao^^CN^35.4^119.317^0^C
 RJA^RJA^Rajahmundry Airport^Rajahmundry^^IN^17.1058^81.819^0^CA
 RJB^RJB^Rajbiraj Airport^Rajbiraj^^NP^26.4833^86.8333^0^CA
 RJH^RJH^Shah Makhdum Airport^Rajshahi^^BD^24.4357^88.6098^0^CA
 RJI^RJI^Rajauri Airport^Rajauri^^IN^33.3678^74.3015^0^CA
 RJK^RJK^Rijeka Airport^Rijeka^^HR^45.2168^14.5688^0^A
 RJK^RJK^Rijeka Airport^Rijeka^^HR^45.2168^14.5688^0^C
+RJK^RJK^Rijeka Airport^Rijeka^^HR^45.2168^14.5688^0^C
 RJL^RJL^Agoncillo Airport^Logrono^SP^ES^42.4563^-2.319^1^A
 RJL^RJL^Agoncillo Airport^Logrono^SP^ES^42.4563^-2.319^1^C
+RJM^RJM^Marinda Airport^Waisai^^ID^-0.4205^130.771^3^A
+RJM^RJM^Marinda Airport^Waisai^^ID^-0.4205^130.771^3^C
 RJN^RJN^Rafsanjan Airport^Rafsanjan^^IR^30.2915^56.054^0^CA
 RKA^RKA^Aratika-Nord Airport^Aratika^^PF^-15.4833^-145.467^2^CA
 RKD^RKD^Knox County Regional Airport^Rockland^ME^US^44.056^-69.0928^1^A
@@ -11875,9 +12065,11 @@ RPR^RPR^Swami Vivekananda Airport^Raipur^^IN^21.1748^81.7367^0^C
 RPV^RPV^Roper Valley Airport^Roper Valley^NT^AU^-14.9667^134.033^3A^CA
 RPX^RPX^Roundup Airport^Roundup^MT^US^46.4717^-108.539^3^A
 RPX^RPX^Roundup Airport^Roundup^MT^US^46.4717^-108.539^3^C
+RPZ^POZ^Glowny Railway Station^Poznan^^PL^52.4013^19.9575^0^R
 RQW^RQW^Qayyarah Airport^Qayyarah^^IQ^35.7668^43.1217^0^CA
 RRA^RRA^Railway Station^Ronda^SP^ES^36.7333^-5.16667^1^C
 RRA^RRA^Railway Station^Ronda^SP^ES^36.7333^-5.16667^1^R
+RRB^RBA^AT Bus Station^Rabat^^MA^34.0168^-6.83433^0^B
 RRE^RRE^Marree Airport^Marree^SA^AU^-29.65^138.067^3^A
 RRE^RRE^Marree Airport^Marree^SA^AU^-29.65^138.067^3^C
 RRG^RRG^Sir Gaetan Duval Airport^Rodrigues Island^^MU^-19.7547^63.3567^0^CA
@@ -11960,8 +12152,8 @@ RUP^RUP^Rupsi Airport^Rupsi^^IN^26.15^89.9167^0^C
 RUR^RUR^Rurutu Airport^Rurutu^^PF^-22.4338^-151.356^2^A
 RUR^RUR^Rurutu Airport^Rurutu^^PF^-22.4338^-151.356^2^C
 RUS^RUS^Marau Airport^Marau^^SB^-9.857^160.822^0^CA
-RUT^RUT^Rutland Airport^Rutland^VT^US^43.5247^-72.9432^1^A
-RUT^RUT^Rutland Airport^Rutland^VT^US^43.5247^-72.9432^1^C
+RUT^RUT^Southern Vermont Regional Airport^Rutland^VT^US^43.5247^-72.9432^1^A
+RUT^RUT^Southern Vermont Regional Airport^Rutland^VT^US^43.5247^-72.9432^1^C
 RUU^RUU^Ruti Airport^Kawbenaberi^^PG^-5.18333^144.15^1^CA
 RUV^RUV^Rubelsanto Airport^Rubelsanto^^GT^15.8333^-90.3333^0^CA
 RUY^RUY^Ruinas de Copan Airport^Copan^^HN^15^-88^0^A
@@ -11986,6 +12178,7 @@ RVV^RVV^Raivavae Airport^Raivavae^^PF^-23.885^-147.659^2^A
 RVV^RVV^Raivavae Airport^Raivavae^^PF^-23.885^-147.659^2^C
 RVY^RVY^Oscar D. Gestido Airport^Rivera^^UY^-30.9713^-55.4723^0^A
 RVY^RVY^Oscar D. Gestido Airport^Rivera^^UY^-30.9713^-55.4723^0^C
+RWA^WAW^Central Railway Station^Warsaw^^PL^52.224^21.0022^0^R
 RWF^RWF^Redwood Falls Municipal Airport^Redwood Falls^MN^US^44.5415^-95.0758^2^CA
 RWI^RWI^Wilson Regional Airport^Rocky Mount^NC^US^35.8538^-77.8885^1^CA
 RWL^RWL^Municipal Airport (Harvey Field)^Rawlins^WY^US^41.8027^-107.201^3^A
@@ -12030,6 +12223,7 @@ SAD^SAD^Safford Regional Airport^Safford^AZ^US^32.8333^-109.717^3A^CA
 SAE^SAE^Heliport^Saattut^^GL^70.8052^-51.6227^1^C
 SAE^SAE^Heliport^Saattut^^GL^70.8052^-51.6227^1^H
 SAF^SAF^Santa Fe Municipal Airport^Santa Fe^NM^US^35.617^-106.087^3^A
+SAF^SAF^Santa Fe Municipal Airport^Santa Fe^NM^US^35.617^-106.087^3^C
 SAH^SAH^Sana'a International Airport^Sana'a^^YE^15.4725^44.2185^0^A
 SAH^SAH^Sana'a International Airport^Sana'a^^YE^15.4725^44.2185^0^C
 SAI^SAI^Off-Line Point^San Marino^^SM^43.9167^12.4667^0^O
@@ -12066,6 +12260,8 @@ SBA^SBA^Santa Barbara Municipal Airport^Santa Barbara^CA^US^34.4223^-119.838^4^A
 SBA^SBA^Santa Barbara Municipal Airport^Santa Barbara^CA^US^34.4223^-119.838^4^C
 SBB^SBB^Santa Barbara Barinas Airport^Santa Barbara Barinas^^VE^7.78333^-71.1667^0^CA
 SBC^SBC^Selbang Airport^Selbang^^PG^-5.31667^141.75^1^CA
+SBD^SBD^San Bernardino International Airport^San Bernardino^CA^US^34.1167^-117.233^4^A
+SBD^SBD^San Bernardino International Airport^San Bernardino^CA^US^34.1167^-117.233^4^C
 SBE^SBE^Suabi Airport^Suabi^^PG^-6.1^142.283^1^CA
 SBF^SBF^Sardeh Band Airport^Sardeh Band^^AF^33.6167^68.5333^0^A
 SBF^SBF^Sardeh Band Airport^Sardeh Band^^AF^33.6167^68.5333^0^C
@@ -12100,7 +12296,9 @@ SBV^SBV^Sabah Airport^Sabah^^PG^-5.33333^155.017^2^CA
 SBW^SBW^Sibu Airport^Sibu^^MY^2.2535^111.985^0^A
 SBW^SBW^Sibu Airport^Sibu^^MY^2.2535^111.985^0^C
 SBX^SBX^Shelby Airport^Shelby^MT^US^48.5377^-111.869^3^CA
-SBY^SBY^Wicomico County Airport^Salisbury/Ocean City^MD^US^38.3365^-75.506^1^CA
+SBY^SBY^Wicomico County Airport^Salisbury/Ocean City^MD^US^38.3365^-75.506^1^A
+SBY^SBY^Wicomico County Airport^Salisbury/Ocean City^MD^US^38.3365^-75.506^1^C
+SBY^SBY^Wicomico County Airport^Salisbury/Ocean City^MD^US^38.3365^-75.506^1^C
 SBZ^SBZ^Sibiu Airport^Sibiu^^RO^45.7848^24.0847^0^A
 SBZ^SBZ^Sibiu Airport^Sibiu^^RO^45.7848^24.0847^0^C
 SCA^SCA^Santa Catalina Airport^Santa Catalina^^CO^10.6^-75.2833^0^CA
@@ -12114,6 +12312,7 @@ SCD^SCD^Sulaco Airport^Sulaco^^HN^14.9097^-87.2667^0^C
 SCE^SCE^University Park Airport^State College^PA^US^40.8535^-77.8395^1^A
 SCE^SCE^University Park Airport^State College^PA^US^40.8535^-77.8395^1^C
 SCF^PHX^Scottsdale Airport^Phoenix^AZ^US^33.6217^-111.905^3A^A
+SCF^PHX^Scottsdale Airport^Phoenix^AZ^US^33.6217^-111.905^3A^C
 SCG^SCG^Spring Creek Airport^Spring Creek^QL^AU^-38.0167^142.417^2B^CA
 SCH^SCH^Schenectady County Airport^Schenectady^NY^US^42.8542^-73.9258^1^A
 SCH^SCH^Schenectady County Airport^Schenectady^NY^US^42.8542^-73.9258^1^C
@@ -12125,7 +12324,8 @@ SCM^SCM^Scammon Bay Airport^Scammon Bay^AK^US^61.8412^-165.59^5^A
 SCM^SCM^Scammon Bay Airport^Scammon Bay^AK^US^61.8412^-165.59^5^C
 SCN^SCN^Saarbruecken Airport^Saarbruecken^^DE^49.2187^7.10733^0^A
 SCN^SCN^Saarbruecken Airport^Saarbruecken^^DE^49.2187^7.10733^0^C
-SCO^SCO^Aktau Airport^Aktau^^KZ^43.856^51.0878^1^CA
+SCO^SCO^Aktau Airport^Aktau^^KZ^43.856^51.0878^1^A
+SCO^SCO^Aktau Airport^Aktau^^KZ^43.856^51.0878^1^C
 SCP^SCP^Saint Crepin Airport^Saint Crepin^^FR^45.4167^0.616667^0^A
 SCP^SCP^Saint Crepin Airport^Saint Crepin^^FR^45.4167^0.616667^0^C
 SCQ^SCQ^Santiago De Compostela Airport^Santiago De Compostela^SP^ES^42.8912^-8.40917^1^A
@@ -12200,6 +12400,7 @@ SEK^SEK^Srednekolymsk Airport^Srednekolymsk^^RU^67.4715^153.724^10^A
 SEK^SEK^Srednekolymsk Airport^Srednekolymsk^^RU^67.4715^153.724^10^C
 SEL^SEL^Metropolitan Area^Seoul^^KR^37.555^126.788^0^C
 SEM^SEM^Craig Field Airport^Selma^AL^US^32.3395^-86.986^2^A
+SEM^SEM^Craig Field Airport^Selma^AL^US^32.3395^-86.986^2^C
 SEN^LON^Southend Airport^London^EN^GB^51.5703^0.700833^0^A
 SEO^SEO^Seguela Airport^Seguela^^CI^7.96667^-6.66667^0^CA
 SEP^SEP^Clark Field Regional Airport^Stephenville^TX^US^32.2092^-98.1733^2^CA
@@ -12233,7 +12434,7 @@ SFK^SFK^Soure Airport^Soure^PA^BR^-0.7^-48.52^1A^C
 SFL^SFL^Sao Filipe Airport^Sao Filipe^^CV^14.9^-24.5167^0^A
 SFL^SFL^Sao Filipe Airport^Sao Filipe^^CV^14.9^-24.5167^0^C
 SFL^SFL^Sao Filipe Airport^Sao Filipe^^CV^14.9^-24.5167^0^C
-SFM^SFM^Sanford Airport^Sanford^ME^US^43.4333^-70.7667^1^CA
+SFM^SFM^Seacoast Regional Airport^Sanford^ME^US^43.4333^-70.7667^1^CA
 SFN^SFN^Sauce Viejo Airport^Santa Fe^SF^AR^-31.707^-60.807^0^CA
 SFO^SFO^San Francisco International Airport^San Francisco^CA^US^37.6183^-122.37^4^A
 SFO^SFO^San Francisco International Airport^San Francisco^CA^US^37.6183^-122.37^4^C
@@ -12246,9 +12447,9 @@ SFT^SFT^Skelleftea Airport^Skelleftea^^SE^64.6215^21.0728^0^CA
 SFU^SFU^Safia Airport^Safia^^PG^-9.66667^148.667^1^A
 SFU^SFU^Safia Airport^Safia^^PG^-9.66667^148.667^1^C
 SFV^SFV^Fazenda Tres Irmaos Airport^Santa Fe do Sul^SP^BR^-19.8333^-50.1667^1^CA
-SFX^SFX^Macagua Airport^San Felix^^VE^8.35^-62.6333^0^CA
+SFX^SFX^Macagua Airport^San Felix^^VE^8.35^-62.6333^0^C
 SFY^SFY^Metropolitan Area^Springfield^MA^US^42.0408^-90.1048^1^C
-SFZ^SFZ^North Central Airport^Smithfield^RI^US^41.9167^-71.5667^1^CA
+SFZ^SFZ^North Central State Airport^Pawtucket^RI^US^41.9167^-71.5667^1^CA
 SGA^SGA^Sheghnan Airport^Sheghnan^^AF^38.0333^71.7167^0^A
 SGA^SGA^Sheghnan Airport^Sheghnan^^AF^38.0333^71.7167^0^C
 SGB^SGB^Singaua Airport^Singaua^^PG^-6.7^147.133^1^O
@@ -12295,7 +12496,8 @@ SGZ^SGZ^Songkhla Airport^Songkhla^^TH^7.18367^100.617^0^A
 SGZ^SGZ^Songkhla Airport^Songkhla^^TH^7.18367^100.617^0^C
 SHA^SHA^Hongqiao International Airport^Shanghai^^CN^31.192^121.334^0^A
 SHA^SHA^Hongqiao International Airport^Shanghai^^CN^31.192^121.334^0^C
-SHB^SHB^Nakashibetsu Airport^Nakashibetsu^^JP^43.5667^144.967^0^CA
+SHB^SHB^Nakashibetsu Airport^Nakashibetsu^^JP^43.5667^144.967^0^A
+SHB^SHB^Nakashibetsu Airport^Nakashibetsu^^JP^43.5667^144.967^0^C
 SHC^SHC^Shire Airport^Inda Selassie^^ET^14.0735^38.2702^0^CA
 SHD^SHD^Shenandoah Valley Regional Airport^Staunton/Waynesboro^VA^US^38.2583^-78.8912^1^CA
 SHE^SHE^Taoxian International Airport^Shenyang^^CN^41.6372^123.483^0^A
@@ -12426,7 +12628,9 @@ SJY^SJY^Ilmajoki Airport^Seinajoki^^FI^62.6895^22.8258^0^C
 SJY^SJY^Ilmajoki Airport^Seinajoki^^FI^62.6895^22.8258^0^C
 SJZ^SJZ^Sao Jorge Island Airport^Sao Jorge Island^^PT^38.6592^-28.1715^2^CA
 SKA^GEG^Fairchild Air Force Base^Spokane^WA^US^47.609^-117.653^4^A
-SKB^SKB^Robert L. Bradshaw Intl Airport^St Kitts^^KN^17.3048^-62.7195^0^CA
+SKB^SKB^Robert L. Bradshaw Intl Airport^St Kitts^^KN^17.3048^-62.7195^0^A
+SKB^SKB^Robert L. Bradshaw Intl Airport^St Kitts^^KN^17.3048^-62.7195^0^C
+SKB^SKB^Robert L. Bradshaw Intl Airport^St Kitts^^KN^17.3048^-62.7195^0^C
 SKC^SKC^Suki Airport^Suki^^PG^-8.08333^141.8^1^A
 SKC^SKC^Suki Airport^Suki^^PG^-8.08333^141.8^1^C
 SKD^SKD^Samarkand International Airport^Samarkand^^UZ^39.7003^66.9837^0^A
@@ -12546,6 +12750,8 @@ SMR^SMR^Simon Bolivar Intl Airport^Santa Marta^^CO^11.1185^-74.2252^0^A
 SMR^SMR^Simon Bolivar Intl Airport^Santa Marta^^CO^11.1185^-74.2252^0^C
 SMS^SMS^Sainte-Marie Airport^Sainte-Marie^^MG^-17.0897^49.8095^0^A
 SMS^SMS^Sainte-Marie Airport^Sainte-Marie^^MG^-17.0897^49.8095^0^C
+SMT^SMT^Sorriso Airport^Sorriso^MT^BR^-12.4703^-55.668^2A^A
+SMT^SMT^Sorriso Airport^Sorriso^MT^BR^-12.4703^-55.668^2A^C
 SMU^SMU^Sheep Mountain Airport^Sheep Mountain^AK^US^61.8068^-147.506^5^CA
 SMV^SMV^Engadin Airport^St Moritz^^CH^46.5338^9.88383^0^CA
 SMW^SMW^Smara Airport^Smara^^MA^26.7333^-11.6833^0^A
@@ -12647,7 +12853,8 @@ SPD^SPD^Saidpur Airport^Saidpur^^BD^25.7833^88.9^0^C
 SPE^SPE^Sepulot Airport^Sepulot^^MY^4.70733^116.454^0^CA
 SPF^SPF^Black Hills Airport^Spearfish^SD^US^44.5^-103.867^3^A
 SPF^SPF^Black Hills Airport^Spearfish^SD^US^44.5^-103.867^3^C
-SPG^TPA^St Pete-Albert Whitted Airport^Tampa^FL^US^27.759^-82.6228^1^CA
+SPG^TPA^St Pete-Albert Whitted Airport^Tampa^FL^US^27.759^-82.6228^1^A
+SPG^TPA^St Pete-Albert Whitted Airport^Tampa^FL^US^27.759^-82.6228^1^C
 SPH^SPH^Sopu Airport^Sopu^^PG^-9^147.767^1^CA
 SPI^SPI^A. Lincoln Capital Airport^Springfield^IL^US^39.8398^-89.6735^2^A
 SPI^SPI^A. Lincoln Capital Airport^Springfield^IL^US^39.8398^-89.6735^2^C
@@ -12681,6 +12888,8 @@ SQA^SQA^Santa Ynez Airport^Santa Ynez^CA^US^34.6042^-120.072^4^C
 SQB^SQB^Santa Ana Airport^Piedras^^CO^9.31667^-74.5833^0^CA
 SQC^SQC^Southern Cross Airport^Southern Cross^WA^AU^-31.25^119.35^4^A
 SQC^SQC^Southern Cross Airport^Southern Cross^WA^AU^-31.25^119.35^4^C
+SQD^SQD^Sanqingshan Airport^Shangrao^^CN^28.3745^117.959^0^A
+SQD^SQD^Sanqingshan Airport^Shangrao^^CN^28.3745^117.959^0^C
 SQE^SQE^San Luis de Palenque Airport^San Luis de Palenque^^CO^-12.0667^-77^0^A
 SQE^SQE^San Luis de Palenque Airport^San Luis de Palenque^^CO^-12.0667^-77^0^C
 SQF^SQF^Solano Airport^Solano^^CO^2^-66.9667^0^CA
@@ -12690,6 +12899,9 @@ SQH^SQH^Na San Airport^Son La^^VN^21.2175^104.022^0^A
 SQH^SQH^Na San Airport^Son La^^VN^21.2175^104.022^0^C
 SQH^SQH^Na San Airport^Son La^^VN^21.2175^104.022^0^C
 SQI^SQI^Whiteside County Airport^Sterling/Rock Falls^IL^US^41.739^-89.6725^2^CA
+SQJ^SQJ^Shaxian Airport^Sanming^^CN^26.4223^117.833^0^A
+SQJ^SQJ^Shaxian Airport^Sanming^^CN^26.4223^117.833^0^C
+SQJ^SQJ^Shaxian Airport^Sanming^^CN^26.4223^117.833^0^C
 SQK^SQK^Sidi Barrani Airport^Sidi Barrani^^EG^31.6^25.9333^0^CA
 SQL^SQL^San Carlos Airport^San Carlos^CA^US^37.5072^-122.243^4^A
 SQL^SQL^San Carlos Airport^San Carlos^CA^US^37.5072^-122.243^4^C
@@ -12821,11 +13033,12 @@ STM^STM^Maestro Wilson Fonseca Airport^Santarem^PA^BR^-2.42^-54.7878^1A^A
 STM^STM^Maestro Wilson Fonseca Airport^Santarem^PA^BR^-2.42^-54.7878^1A^C
 STN^LON^Stansted Airport^London^EN^GB^51.8833^0.233333^0^A
 STO^STO^Metropolitan Area^Stockholm^^SE^59.3333^18.05^0^C
-STP^MSP^St Paul Downtown Airport^Minneapolis/Saint Paul^MN^US^44.9333^-93.0667^2^CA
+STP^MSP^St Paul Downtown Airport^Minneapolis/Saint Paul^MN^US^44.9333^-93.0667^2^A
 STQ^STQ^St Marys Municipal Airport^St Marys^PA^US^41.4333^-78.5667^1^CA
 STR^STR^Stuttgart Airport^Stuttgart^^DE^48.6873^9.21983^0^A
 STR^STR^Stuttgart Airport^Stuttgart^^DE^48.6873^9.21983^0^C
-STS^STS^Charles M. Schulz Airport^Santa Rosa^CA^US^38.5058^-122.808^4^CA
+STS^STS^Charles M. Schulz Airport^Santa Rosa^CA^US^38.5058^-122.808^4^A
+STS^STS^Charles M. Schulz Airport^Santa Rosa^CA^US^38.5058^-122.808^4^C
 STT^STT^Cyril E. King Airport^St Thomas Island^^VI^18.3357^-64.9707^0^A
 STT^STT^Cyril E. King Airport^St Thomas Island^^VI^18.3357^-64.9707^0^C
 STV^STV^Surat Gujarat Airport^Surat Gujarat^^IN^21.1085^72.7383^0^CA
@@ -12879,7 +13092,7 @@ SUX^SUX^Sioux Gateway Airport^Sioux City^IA^US^42.4015^-96.384^2^A
 SUX^SUX^Sioux Gateway Airport^Sioux City^IA^US^42.4015^-96.384^2^C
 SUY^SUY^Suntar Airport^Suntar^^RU^62.1843^117.634^8^A
 SUY^SUY^Suntar Airport^Suntar^^RU^62.1843^117.634^8^C
-SUZ^SUZ^Suria Airport^Suria^^PG^-9.13333^147.6^1^CA
+SUZ^SUZ^Suria Airport^Suria^^PG^-9.13333^147.6^1^A
 SVA^SVA^Savoonga Airport^Savoonga^AK^US^63.6893^-170.456^5^A
 SVA^SVA^Savoonga Airport^Savoonga^AK^US^63.6893^-170.456^5^C
 SVB^SVB^Sambava Airport^Sambava^^MG^-14.2728^50.1717^0^A
@@ -12895,7 +13108,8 @@ SVG^SVG^Sola Airport^Stavanger^^NO^58.8727^5.636^0^A
 SVG^SVG^Sola Airport^Stavanger^^NO^58.8727^5.636^0^C
 SVH^SVH^Statesville Regional Airport^Statesville^NC^US^35.759^-80.9523^1^CA
 SVI^SVI^Eduardo Falla Solano Airport^San Vicente del Caguan^^CO^2.15^-74.7667^0^CA
-SVJ^SVJ^Helle Airport^Svolvaer^^NO^68.2393^14.6682^0^CA
+SVJ^SVJ^Helle Airport^Svolvaer^^NO^68.2393^14.6682^0^A
+SVJ^SVJ^Helle Airport^Svolvaer^^NO^68.2393^14.6682^0^C
 SVK^SVK^Silver Creek Airport^Silver Creek^^BZ^16.7333^-88.3333^0^A
 SVK^SVK^Silver Creek Airport^Silver Creek^^BZ^16.7333^-88.3333^0^C
 SVL^SVL^Savonlinna Airport^Savonlinna^^FI^61.9392^28.9403^0^A
@@ -12940,6 +13154,9 @@ SWJ^SWJ^South West Bay Airport^South West Bay^^VU^-16.5^167.433^0^A
 SWJ^SWJ^South West Bay Airport^South West Bay^^VU^-16.5^167.433^0^C
 SWK^SWK^Off-Line Point^Segrate^^IT^45.82^10.2903^0^C
 SWK^SWK^Off-Line Point^Segrate^^IT^45.82^10.2903^0^R
+SWM^SWM^Suia-Missu Airport^Alto Boa Vista^MT^BR^-11.2167^-53.25^2^A
+SWM^SWM^Suia-Missu Airport^Alto Boa Vista^MT^BR^-11.2167^-53.25^2^C
+SWM^SWM^Suia-Missu Airport^Alto Boa Vista^MT^BR^-11.2167^-53.25^2^C
 SWN^SWN^Sahiwal Airport^Sahiwal^^PK^30.75^73.1333^0^O
 SWO^SWO^Stillwater Regional Airport^Stillwater^OK^US^36.1553^-97.0847^2^A
 SWO^SWO^Stillwater Regional Airport^Stillwater^OK^US^36.1553^-97.0847^2^C
@@ -12953,8 +13170,8 @@ SWS^SWS^Fairwood Comm Airport^Swansea^EN^GB^51.6333^-3.95^0^C
 SWT^SWT^Strezhevoy Airport^Strezhevoy^^RU^60.5^77^5^A
 SWT^SWT^Strezhevoy Airport^Strezhevoy^^RU^60.5^77^5^C
 SWU^SWU^Air Base^Suwon^^KR^37.2833^127.017^0^CA
-SWV^SWV^Severo-Evensk Airport^Evensk^^RU^61.9195^159.225^9^A
-SWV^SWV^Severo-Evensk Airport^Evensk^^RU^61.9195^159.225^9^C
+SWV^SWV^Severo-Evensk Airport^Evensk^^RU^61.9195^159.225^10^A
+SWV^SWV^Severo-Evensk Airport^Evensk^^RU^61.9195^159.225^10^C
 SWW^SWW^Avenger Field Airport^Sweetwater^TX^US^32.467^-100.467^2^CA
 SWX^SWX^Shakawe Airport^Shakawe^^BW^-18.3833^21.8333^0^A
 SWX^SWX^Shakawe Airport^Shakawe^^BW^-18.3833^21.8333^0^C
@@ -13010,6 +13227,8 @@ SYE^SYE^Sadah Airport^Sadah^^YE^16.8667^43.6167^0^C
 SYF^SYF^Silva Bay SPB^Gabriola Island^BC^CA^49.15^-123.692^6^A
 SYF^SYF^Silva Bay SPB^Gabriola Island^BC^CA^49.15^-123.692^6^C
 SYF^SYF^Silva Bay SPB^Gabriola Island^BC^CA^49.15^-123.692^6^C
+SYG^SYG^Spitsberg Airport^Svalbard^^NO^78.2355^15.4683^0^C
+SYG^SYG^Spitsberg Airport^Svalbard^^NO^78.2355^15.4683^0^R
 SYH^SYH^Syangboche Airport^Syangboche^^NP^27.8063^86.7057^0^A
 SYH^SYH^Syangboche Airport^Syangboche^^NP^27.8063^86.7057^0^C
 SYI^SYI^Municipal-Bomar Field Airport^Shelbyville^TN^US^35.5557^-86.4388^2^A
@@ -13060,9 +13279,11 @@ SZK^SZK^Skukuza Airport^Skukuza^^ZA^-24.9575^31.585^0^C
 SZL^SZL^Whiteman Air Force Base^Knob Noster^MO^US^38.7248^-93.542^2^CA
 SZM^SZM^Sesriem Airport^Sesriem^^NA^-24.5833^15.8333^0^CA
 SZN^SZN^Santa Cruz Island Airport^Santa Cruz Island^CA^US^34.0563^-119.909^4^A
+SZN^SZN^Santa Cruz Island Airport^Santa Cruz Island^CA^US^34.0563^-119.909^4^C
 SZP^SZP^Santa Paula Airport^Santa Paula^CA^US^34.35^-119.067^4^A
 SZP^SZP^Santa Paula Airport^Santa Paula^CA^US^34.35^-119.067^4^C
-SZR^SZR^Kolyu Ganchevo Airport^Stara Zagora^^BG^42.3727^25.6532^0^CA
+SZR^SZR^Kolyu Ganchevo Airport^Stara Zagora^^BG^42.3727^25.6532^0^A
+SZR^SZR^Kolyu Ganchevo Airport^Stara Zagora^^BG^42.3727^25.6532^0^C
 SZS^SZS^Stewart Island Airport^Stewart Island^^NZ^-47^167.867^1^CA
 SZU^SZU^Segou Airport^Segou^^ML^13.4333^-6.28333^0^A
 SZU^SZU^Segou Airport^Segou^^ML^13.4333^-6.28333^0^C
@@ -13073,9 +13294,9 @@ SZW^SZW^Parchim Airport^Schwerin^^DE^53.4228^11.7833^0^C
 SZW^SZW^Parchim Airport^Schwerin^^DE^53.4228^11.7833^0^C
 SZX^SZX^Bao'an International Airport^Shenzhen^^CN^22.6368^113.806^0^A
 SZX^SZX^Bao'an International Airport^Shenzhen^^CN^22.6368^113.806^0^C
-SZY^SZY^Mazury Airport^Szymany^^PL^52.435^20.9363^0^A
-SZY^SZY^Mazury Airport^Szymany^^PL^52.435^20.9363^0^C
-SZY^SZY^Mazury Airport^Szymany^^PL^52.435^20.9363^0^C
+SZY^SZY^Olsztyn-Mazury Airport^Szczytno^^PL^53.4758^20.936^0^A
+SZY^SZY^Olsztyn-Mazury Airport^Szczytno^^PL^53.4758^20.936^0^C
+SZY^SZY^Olsztyn-Mazury Airport^Szczytno^^PL^53.4758^20.936^0^C
 SZZ^SZZ^Goleniow Airport^Szczecin^^PL^53.5842^14.9013^0^A
 SZZ^SZZ^Goleniow Airport^Szczecin^^PL^53.5842^14.9013^0^C
 TAA^TAA^Tarapaina Airport^Tarapaina^^SB^-9.4^161.35^0^CA
@@ -13609,8 +13830,8 @@ TOC^TOC^R.G. LeTourneau Field^Toccoa^GA^US^34.589^-83.2912^1^C
 TOD^TOD^Tioman Island Airport^Tioman Island^^MY^2.75^104.167^0^CA
 TOE^TOE^Nefta Airport^Tozeur^^TN^33.9167^8.13333^0^A
 TOE^TOE^Nefta Airport^Tozeur^^TN^33.9167^8.13333^0^C
-TOF^TOF^Bogashevo Airport^Tomsk^^RU^56.3765^85.207^5^A
-TOF^TOF^Bogashevo Airport^Tomsk^^RU^56.3765^85.207^5^C
+TOF^TOF^Bogashevo Airport^Tomsk^^RU^56.3765^85.207^6^A
+TOF^TOF^Bogashevo Airport^Tomsk^^RU^56.3765^85.207^6^C
 TOG^TOG^Togiak Airport^Togiak^AK^US^59.054^-160.376^5^A
 TOG^TOG^Togiak Airport^Togiak^AK^US^59.054^-160.376^5^C
 TOH^TOH^Torres Airstrip^Torres Islands^^VU^-13.3333^166.633^0^A
@@ -13694,6 +13915,8 @@ TQN^TQN^Taloqan Airport^Taloqan^^AF^36.7667^69.5333^0^A
 TQN^TQN^Taloqan Airport^Taloqan^^AF^36.7667^69.5333^0^C
 TQP^TQP^Trepell Airport^Trepell^QL^AU^-21.8343^140.886^2B^A
 TQP^TQP^Trepell Airport^Trepell^QL^AU^-21.8343^140.886^2B^C
+TQQ^TQQ^Maranggo Airport^Tomia^^ID^-5.75767^123.917^2^A
+TQQ^TQQ^Maranggo Airport^Tomia^^ID^-5.75767^123.917^2^C
 TQR^TQR^Isole Tremiti Heliport^San Domino Island^^IT^42.1167^15.4833^0^C
 TQR^TQR^Isole Tremiti Heliport^San Domino Island^^IT^42.1167^15.4833^0^H
 TQS^TQS^E. Esquerra Cubides AB^Tres Esquinas^^CO^0.733333^-75.2333^0^A
@@ -13897,6 +14120,9 @@ TWU^TWU^Tawau Airport^Tawau^^MY^4.3085^118.109^0^A
 TWU^TWU^Tawau Airport^Tawau^^MY^4.3085^118.109^0^C
 TWY^TWY^Tawa Airport^Tawa^^PG^-7.26667^146.067^1^CA
 TWZ^MON^Pukaki/Twizel Airport^Mount Cook^^NZ^-44.2338^170.117^1^A
+TXB^TRS^Trieste Railway Station^Trieste^^IT^45.6543^13.77^0^R
+TXE^TXE^Takengon Airport^Takengon^^ID^4.71917^96.8502^1^A
+TXE^TXE^Takengon Airport^Takengon^^ID^4.71917^96.8502^1^C
 TXF^TXF^Teixeira de Freitas Airport^Teixeira de Freitas^BA^BR^-17.5212^-39.6685^1A^A
 TXF^TXF^Teixeira de Freitas Airport^Teixeira de Freitas^BA^BR^-17.5212^-39.6685^1A^C
 TXK^TXK^Regional - Webb Field Airport^Texarkana^AR^US^33.4522^-93.988^2^A
@@ -13906,6 +14132,7 @@ TXM^TXM^Teminabuan Airport^Teminabuan^^ID^-1.43333^132.017^3^A
 TXM^TXM^Teminabuan Airport^Teminabuan^^ID^-1.43333^132.017^3^C
 TXN^TXN^Tunxi International Airport^Huangshan^^CN^29.7333^118.3^0^A
 TXN^TXN^Tunxi International Airport^Huangshan^^CN^29.7333^118.3^0^C
+TXQ^TLS^Matabiau Railway Station^Toulouse^^FR^43.6192^1.44233^0^R
 TXR^TXR^Tanbar Airport^Tanbar^QL^AU^-25.85^141.917^2B^CA
 TXU^TXU^Tabou Airport^Tabou^^CI^4.43333^-7.36667^0^A
 TXU^TXU^Tabou Airport^Tabou^^CI^4.43333^-7.36667^0^C
@@ -13985,8 +14212,9 @@ UBT^UBT^Gastao Madeira Airport^Ubatuba^SP^BR^-23.4333^-45.0833^1^A
 UBT^UBT^Gastao Madeira Airport^Ubatuba^SP^BR^-23.4333^-45.0833^1^C
 UBU^UBU^Kalumburu Airport^Kalumburu^WA^AU^-14.3^126.65^4^A
 UBU^UBU^Kalumburu Airport^Kalumburu^WA^AU^-14.3^126.65^4^C
+UCB^UCB^Ulanqab Airport^Ulanqab^^CN^41.1247^113.106^0^A
+UCB^UCB^Ulanqab Airport^Ulanqab^^CN^41.1247^113.106^0^C
 UCC^DRA^Yucca Airstrip^Mercury^NV^US^36.9408^-116.036^4^A
-UCC^DRA^Yucca Airstrip^Mercury^NV^US^36.9408^-116.036^4^C
 UCE^UCE^Eunice Airport^Eunice^LA^US^30.5^-92.4167^2^CA
 UCK^UCK^Lutsk Airport^Lutsk^^UA^50.75^25.3333^0^CA
 UCN^UCN^Buchanan Airport^Buchanan^^LR^5.95^-10.0333^0^A
@@ -14039,6 +14267,7 @@ UGU^UGU^Bilogai Airport^Bilogai^^ID^-3.73333^137.033^3^CA
 UHE^UHE^Kunovice Airport^Uherske Hradiste^^CZ^49.0243^17.4372^0^CA
 UIB^UIB^El Carano Airport^Quibdo^^CO^5.67483^-76.639^0^A
 UIB^UIB^El Carano Airport^Quibdo^^CO^5.67483^-76.639^0^C
+UIG^HJJ^Huaihua Railway Station^Huaihua^^CN^27.5088^109.987^0^R
 UIH^UIH^Phu Cat Airport^Qui Nhon^^VN^13.9518^109.043^0^A
 UIH^UIH^Phu Cat Airport^Qui Nhon^^VN^13.9518^109.043^0^C
 UII^UII^Utila Airport^Utila^^HN^16.0883^-86.8858^0^A
@@ -14056,6 +14285,8 @@ UIR^UIR^Quirindi Airport^Quirindi^NS^AU^-31.5^150.517^2^C
 UIT^UIT^Jaluit Airport^Jaluit^^MH^5.83333^169.617^0^CA
 UJE^UJE^Ujae Island Airport^Ujae Island^^MH^9.08333^165.667^0^CA
 UJN^UJN^Uljin Airport^Uljin^^KR^36.7728^129.457^0^C
+UJU^UJU^Uiju Airport^Uiju^^KP^40.151^124.492^0^A
+UJU^UJU^Uiju Airport^Uiju^^KP^40.151^124.492^0^C
 UKA^UKA^Diani Airport^Ukunda^^KE^-4.3^39.5667^0^A
 UKA^UKA^Diani Airport^Ukunda^^KE^-4.3^39.5667^0^C
 UKB^OSA^Kobe Airport^Osaka^^JP^34.6355^135.224^0^A
@@ -14104,11 +14335,11 @@ ULQ^ULQ^Heriberto Gil Martinez Airport^Tulua^^CO^4.09167^-76.2242^0^CA
 ULS^ULS^Mulatos Airport^Mulatos^^CO^8.65^-76.75^0^CA
 ULU^ULU^Gulu Airport^Gulu^^UG^2.78333^32.3^0^A
 ULU^ULU^Gulu Airport^Gulu^^UG^2.78333^32.3^0^C
-ULV^ULY^Baratayevka Airport^Ulyanovsk^^RU^54.2677^48.2227^2^A
+ULV^ULY^Baratayevka Airport^Ulyanovsk^^RU^54.2677^48.2227^3^A
 ULX^ULX^Ulusaba Airport^Ulusaba^^ZA^-24.7833^31.35^0^A
 ULX^ULX^Ulusaba Airport^Ulusaba^^ZA^-24.7833^31.35^0^C
-ULY^ULY^Vostochny Airport^Ulyanovsk^^RU^54.393^48.8007^2^A
-ULY^ULY^Vostochny Airport^Ulyanovsk^^RU^54.393^48.8007^2^C
+ULY^ULY^Vostochny Airport^Ulyanovsk^^RU^54.393^48.8007^3^A
+ULY^ULY^Vostochny Airport^Ulyanovsk^^RU^54.393^48.8007^3^C
 ULZ^ULZ^Donoi Airport^Uliastai^^MN^47.75^96.85^0^CA
 UMA^UMA^Punta De Maisi Airport^Punta De Maisi^^CU^20.25^-74.15^0^A
 UMA^UMA^Punta De Maisi Airport^Punta De Maisi^^CU^20.25^-74.15^0^C
@@ -14261,8 +14492,8 @@ UUD^UUD^Mukhino Airport^Ulan-Ude^^RU^51.8047^107.436^7^C
 UUK^UUK^Ugnu-Kuparuk Airport^Kuparuk^AK^US^70.4167^-148.917^5^CA
 UUN^UUN^Baruun-Urt Airport^Baruun-Urt^^MN^46.6833^113.283^0^A
 UUN^UUN^Baruun-Urt Airport^Baruun-Urt^^MN^46.6833^113.283^0^C
-UUS^UUS^Khomutovo Airport^Yuzhno-Sakhalinsk^^RU^46.8855^142.717^9^A
-UUS^UUS^Khomutovo Airport^Yuzhno-Sakhalinsk^^RU^46.8855^142.717^9^C
+UUS^UUS^Khomutovo Airport^Yuzhno-Sakhalinsk^^RU^46.8855^142.717^10^A
+UUS^UUS^Khomutovo Airport^Yuzhno-Sakhalinsk^^RU^46.8855^142.717^10^C
 UUU^UUU^Manumu Airport^Manumu^^PG^-8.99317^147.467^1^A
 UUU^UUU^Manumu Airport^Manumu^^PG^-8.99317^147.467^1^C
 UVA^UVA^Garner Field^Uvalde^TX^US^29.2068^-99.7395^2^A
@@ -14302,12 +14533,14 @@ VAG^VAG^Maj. Brig. Trompowsky Airport^Varginha^MG^BR^-21.55^-45.4333^1^A
 VAG^VAG^Maj. Brig. Trompowsky Airport^Varginha^MG^BR^-21.55^-45.4333^1^C
 VAH^VAH^V. Villagomez Toledo Airport^Vallegrande^^BO^-18.4833^-64.1^0^A
 VAH^VAH^V. Villagomez Toledo Airport^Vallegrande^^BO^-18.4833^-64.1^0^C
-VAI^VAI^Vanimo Airport^Vanimo^^PG^-2.69017^141.301^1^CA
+VAI^VAI^Vanimo Airport^Vanimo^^PG^-2.69017^141.301^1^A
+VAI^VAI^Vanimo Airport^Vanimo^^PG^-2.69017^141.301^1^C
 VAK^VAK^Chevak Airport^Chevak^AK^US^61.5238^-165.588^5^A
 VAK^VAK^Chevak Airport^Chevak^AK^US^61.5238^-165.588^5^C
 VAL^VAL^Valenca Airport^Valenca^BA^BR^-13.3333^-39.0833^1A^A
 VAL^VAL^Valenca Airport^Valenca^BA^BR^-13.3333^-39.0833^1A^C
-VAM^VAM^Maamigili Island Airport^Maamigili Island^^MV^3.469^72.8405^0^CA
+VAM^VAM^Maamigili Island Airport^Maamigili Island^^MV^3.469^72.8405^0^A
+VAM^VAM^Maamigili Island Airport^Maamigili Island^^MV^3.469^72.8405^0^C
 VAN^VAN^Ferit Melen Airport^Van^^TR^38.4677^43.326^0^A
 VAN^VAN^Ferit Melen Airport^Van^^TR^38.4677^43.326^0^C
 VAO^VAO^Suavanao Airstrip^Suavanao^^SB^-7.58467^158.725^0^A
@@ -14328,10 +14561,13 @@ VAW^VAW^Svartnes Airport^Vardo^^NO^70.3532^31.0403^0^C
 VAZ^VAZ^Off-Line Point^Val D'Isere^^FR^45.45^6.98333^0^CA
 VBA^VBA^Ann Airport^Ann^^MM^19.7^94.005^0^A
 VBA^VBA^Ann Airport^Ann^^MM^19.7^94.005^0^C
+VBC^MDL^Chan Mya Thazi Airport^Mandalay^^MM^21.9375^96.087^0^A
 VBG^LPC^Vandenburg Air Force Base^Lompoc^CA^US^34.6333^-120.467^4^A
 VBL^AOG^Anshanxi Railway Station^Anshan^^CN^41.1178^122.909^0^R
 VBP^VBP^Bokpyin Airport^Bokpyin^^MM^11.143^98.735^0^A
 VBP^VBP^Bokpyin Airport^Bokpyin^^MM^11.143^98.735^0^C
+VBR^VBR^Railway Station^Vyborg^^RU^60.7093^28.7508^2^C
+VBR^VBR^Railway Station^Vyborg^^RU^60.7093^28.7508^2^R
 VBS^VRN^Brescia/Montichiari Airport^Verona^^IT^45.424^10.325^0^A
 VBT^VGO^Bus Station^Vigo^SP^ES^42.2208^-8.70567^1^CA
 VBV^VBV^Vanuabalavu Island Airport^Vanuabalavu Island^^FJ^-17.2333^-178.95^0^A
@@ -14364,7 +14600,8 @@ VDB^VDB^Valdres Airport^Fagernes^^NO^61.0093^9.28617^0^A
 VDB^VDB^Valdres Airport^Fagernes^^NO^61.0093^9.28617^0^C
 VDC^VDC^P. Otacilio Figueiredo Airport^Vitoria da Conquista^BA^BR^-14.8833^-40.8667^1A^A
 VDC^VDC^P. Otacilio Figueiredo Airport^Vitoria da Conquista^BA^BR^-14.8833^-40.8667^1A^C
-VDE^VDE^El Hierro Airport^Valverde^CI^ES^27.8088^-17.8855^2^CA
+VDE^VDE^El Hierro Airport^Valverde^CI^ES^27.8088^-17.8855^2^A
+VDE^VDE^El Hierro Airport^Valverde^CI^ES^27.8088^-17.8855^2^C
 VDH^VDH^Dong Hoi Airport^Dong Hoi^^VN^17.509^106.588^0^CA
 VDI^VDI^Vidalia Regional Airport^Vidalia^GA^US^32.189^-82.3693^1^CA
 VDM^VDM^Gobernador E. Castello Airport^Viedma^RN^AR^-43.2068^-65.271^0^A
@@ -14390,7 +14627,9 @@ VEY^VEY^Vestmannaeyjar Airport^Vestmannaeyjar^^IS^63.4217^-20.2742^0^A
 VEY^VEY^Vestmannaeyjar Airport^Vestmannaeyjar^^IS^63.4217^-20.2742^0^C
 VFA^VFA^Victoria Falls International Airport^Victoria Falls^^ZW^-18.0908^25.8367^0^A
 VFA^VFA^Victoria Falls International Airport^Victoria Falls^^ZW^-18.0908^25.8367^0^C
-VGA^VGA^Vijayawada Airport^Vijayawada^^IN^16.525^80.7915^0^CA
+VGA^VGA^Vijayawada Airport^Vijayawada^^IN^16.525^80.7915^0^A
+VGA^VGA^Vijayawada Airport^Vijayawada^^IN^16.525^80.7915^0^C
+VGA^VGA^Vijayawada Airport^Vijayawada^^IN^16.525^80.7915^0^C
 VGD^VGD^Vologda Airport^Vologda^^RU^59.2833^39.95^2^A
 VGD^VGD^Vologda Airport^Vologda^^RU^59.2833^39.95^2^C
 VGO^VGO^Vigo Airport^Vigo^SP^ES^42.2257^-8.62267^1^A
@@ -14451,6 +14690,7 @@ VJI^VJI^Virginia Highlands Airport^Abingdon^VA^US^36.6857^-82.0265^1^CA
 VJQ^VJQ^Gurue Airport^Gurue^^MZ^-15.4167^36.9667^0^CA
 VKG^VKG^Rach Gia Airport^Rach Gia^^VN^9.95483^105.126^0^CA
 VKO^MOW^Vnukovo Airport^Moscow^^RU^55.593^37.2693^2^A
+VKR^KRK^Glowny Railway Station^Krakow^^PL^50.0672^19.9417^0^R
 VKS^VKS^Vicksburg Municipal Airport^Vicksburg^MS^US^32.2368^-90.9235^2^A
 VKS^VKS^Vicksburg Municipal Airport^Vicksburg^MS^US^32.2368^-90.9235^2^C
 VKT^VKT^Vorkuta Airport^Vorkuta^^RU^67.4833^63.9833^2^A
@@ -14497,6 +14737,8 @@ VND^VND^Vangaindrano Airport^Vangaindrano^^MG^-23.35^47.5667^0^A
 VND^VND^Vangaindrano Airport^Vangaindrano^^MG^-23.35^47.5667^0^C
 VNE^VNE^Meucon Airport^Vannes^^FR^47.65^-2.76667^0^A
 VNE^VNE^Meucon Airport^Vannes^^FR^47.65^-2.76667^0^C
+VNL^VNL^Bus Station^Vinales^^CU^22.6083^-83.7075^0^B
+VNL^VNL^Bus Station^Vinales^^CU^22.6083^-83.7075^0^C
 VNO^VNO^Vilnius International Airport^Vilnius^^LT^54.6355^25.286^0^A
 VNO^VNO^Vilnius International Airport^Vilnius^^LT^54.6355^25.286^0^C
 VNR^VNR^Vanrook Station Airport^Vanrook Station^QL^AU^-16.8667^141.917^2B^A
@@ -14523,10 +14765,13 @@ VOZ^VOZ^Chertovitskoye Airport^Voronezh^^RU^51.6667^39.2167^2^A
 VOZ^VOZ^Chertovitskoye Airport^Voronezh^^RU^51.6667^39.2167^2^C
 VPE^VPE^Ondjiva Airport^Ondjiva^^AO^-17.05^15.7^0^A
 VPE^VPE^Ondjiva Airport^Ondjiva^^AO^-17.05^15.7^0^C
+VPG^VPG^Vipingo Airport^Vipingo^^KE^-3.839^39.803^0^A
 VPG^VPG^Vipingo Airport^Vipingo^^KE^-3.839^39.803^0^C
 VPN^VPN^Vopnafjordur Airport^Vopnafjordur^^IS^65.719^-14.8503^0^A
 VPN^VPN^Vopnafjordur Airport^Vopnafjordur^^IS^65.719^-14.8503^0^C
 VPS^VPS^Destin-Ft. Walton Beach Airport^Destin-Ft. Walton Beach^FL^US^30.4833^-86.5223^2^A
+VPS^VPS^Destin-Ft. Walton Beach Airport^Destin-Ft. Walton Beach^FL^US^30.4833^-86.5223^2^C
+VPS^VPS^Destin-Ft. Walton Beach Airport^Destin-Ft. Walton Beach^FL^US^30.4833^-86.5223^2^C
 VPS^VPS^Destin-Ft. Walton Beach Airport^Destin-Ft. Walton Beach^FL^US^30.4833^-86.5223^2^C
 VPY^VPY^Chimoio Airport^Chimoio^^MZ^-19.1425^33.4222^0^A
 VPY^VPY^Chimoio Airport^Chimoio^^MZ^-19.1425^33.4222^0^C
@@ -14562,8 +14807,8 @@ VSA^VSA^C.Rovirosa Perez Intl Airport^Villahermosa^^MX^17.9667^-92.9333^1^A
 VSA^VSA^C.Rovirosa Perez Intl Airport^Villahermosa^^MX^17.9667^-92.9333^1^C
 VSE^VSE^Viseu Airport^Viseu^^PT^40.65^-7.91667^1^A
 VSE^VSE^Viseu Airport^Viseu^^PT^40.65^-7.91667^1^C
-VSF^VSF^State Airport^Springfield^VT^US^43.3395^-72.517^1^A
-VSF^VSF^State Airport^Springfield^VT^US^43.3395^-72.517^1^C
+VSF^VSF^Hartness State Airport^Springfield^VT^US^43.3395^-72.517^1^A
+VSF^VSF^Hartness State Airport^Springfield^VT^US^43.3395^-72.517^1^C
 VSG^VSG^Luhansk International Airport^Luhansk^^UA^48.4177^39.37^0^A
 VSG^VSG^Luhansk International Airport^Luhansk^^UA^48.4177^39.37^0^C
 VSO^VSO^Phuoc-long Airport^Phuoc-long^^VN^9.43333^105.467^0^CA
@@ -14667,7 +14912,6 @@ WBG^WBG^Jagel Airport^Schleswig^^DE^54.4557^9.50983^0^C
 WBK^WBK^West Branch Community Airport^West Branch^MI^US^44.2402^-84.1745^1^CA
 WBM^WBM^Wapenamanda Airport^Wapenamanda^^PG^-5.61667^143.917^1^A
 WBM^WBM^Wapenamanda Airport^Wapenamanda^^PG^-5.61667^143.917^1^C
-WBN^WBN^Cummings Park Airport^Woburn^MA^US^42.4667^-71.15^1^CA
 WBO^WBO^Antsoa Airport^Beroroha^^MG^-21.6^45.1333^0^A
 WBO^WBO^Antsoa Airport^Beroroha^^MG^-21.6^45.1333^0^C
 WBQ^WBQ^Beaver Airport^Beaver^AK^US^66.3573^-147.405^5^A
@@ -14691,6 +14935,8 @@ WDI^WDI^Wondai Airport^Wondai^QL^AU^-26.3333^151.817^2B^C
 WDN^WDN^Waldronaire Airport^Waldron Island^WA^US^48.7167^-123.033^4^A
 WDN^WDN^Waldronaire Airport^Waldron Island^WA^US^48.7167^-123.033^4^C
 WDR^WDR^Barrow County Airport^Winder^GA^US^33.9833^-83.7167^1^CA
+WDS^EJQ^Wudangshan Airport^Shiyan^^CN^32.5893^110.904^0^A
+WDS^EJQ^Wudangshan Airport^Shiyan^^CN^32.5893^110.904^0^C
 WEA^WEA^Parker County Airport^Weatherford^TX^US^32.7667^-97.8^2^A
 WEA^WEA^Parker County Airport^Weatherford^TX^US^32.7667^-97.8^2^C
 WEC^WEC^Railway Station^Wenchang^^CN^19.5577^110.742^0^C
@@ -14713,8 +14959,8 @@ WFB^KTN^Harbor SPB^Ketchikan^AK^US^55.3548^-131.668^5^A
 WFD^WFD^Woodford Airport^Woodford^EN^GB^53.3362^-2.14267^0^CA
 WFI^WFI^Fianarantsoa Airport^Fianarantsoa^^MG^-21.4667^47.0833^0^A
 WFI^WFI^Fianarantsoa Airport^Fianarantsoa^^MG^-21.4667^47.0833^0^C
-WFK^WFK^Frenchville Airport^Frenchville^ME^US^47.35^-68.3333^1^A
-WFK^WFK^Frenchville Airport^Frenchville^ME^US^47.35^-68.3333^1^C
+WFK^WFK^Northern Aroostook Regional Airport^Frenchville^ME^US^47.35^-68.3333^1^A
+WFK^WFK^Northern Aroostook Regional Airport^Frenchville^ME^US^47.35^-68.3333^1^C
 WGA^WGA^Wagga Wagga Airport^Wagga Wagga^NS^AU^-35.1667^147.459^2^A
 WGA^WGA^Wagga Wagga Airport^Wagga Wagga^NS^AU^-35.1667^147.459^2^C
 WGC^WGC^Warangal Airport^Warangal^^IN^17.9167^79.6^0^A
@@ -14794,10 +15040,11 @@ WLE^WLE^Miles Airport^Miles^QL^AU^-26.8067^150.158^2B^C
 WLG^WLG^Wellington International Airport^Wellington^^NZ^-41.321^174.801^1^A
 WLG^WLG^Wellington International Airport^Wellington^^NZ^-41.321^174.801^1^C
 WLH^WLH^Walaha Airport^Walaha^^VU^-15.4167^167.7^0^CA
+WLI^WLI^Raiway Station^Wenling^^CN^28.476^121.319^0^C
+WLI^WLI^Raiway Station^Wenling^^CN^28.476^121.319^0^R
 WLK^WLK^Selawik Airport^Selawik^AK^US^66.6017^-159.983^5^A
 WLK^WLK^Selawik Airport^Selawik^AK^US^66.6017^-159.983^5^C
 WLL^WLL^Wollogorand Airport^Wollogorand^NT^AU^-17.6167^137.917^3A^CA
-WLM^WLM^Waltham Airport^Waltham^MA^US^42.3845^-71.2508^1^CA
 WLO^WLO^Waterloo Airport^Waterloo^NT^AU^-16.6333^129.317^3A^CA
 WLP^WLP^West Angelas Airport^West Angelas^WA^AU^-23.1348^118.704^4^A
 WLP^WLP^West Angelas Airport^West Angelas^WA^AU^-23.1348^118.704^4^C
@@ -14821,7 +15068,8 @@ WMH^WMH^Ozark Regional Airport^Mountain Home^AR^US^36.3333^-92.3833^2^C
 WMI^WMI^Modlin Airport^Nowy Dwor Mazowiecki^^PL^52.4507^20.651^0^A
 WMI^WMI^Modlin Airport^Nowy Dwor Mazowiecki^^PL^52.4507^20.651^0^C
 WMI^WMI^Modlin Airport^Nowy Dwor Mazowiecki^^PL^52.4507^20.651^0^C
-WMK^WMK^Meyers Chuck Sea Plane Base^Meyers Chuck^AK^US^55.7333^-132.183^5^CA
+WMK^WMK^Meyers Chuck Sea Plane Base^Meyers Chuck^AK^US^55.7333^-132.183^5^A
+WMK^WMK^Meyers Chuck Sea Plane Base^Meyers Chuck^AK^US^55.7333^-132.183^5^C
 WML^WML^Malaimbandy Airport^Malaimbandy^^MG^-20.35^45.55^0^A
 WML^WML^Malaimbandy Airport^Malaimbandy^^MG^-20.35^45.55^0^C
 WMN^WMN^Maroantsetra Airport^Maroantsetra^^MG^-15.4333^49.6833^0^A
@@ -14885,18 +15133,21 @@ WPU^WPU^Guardiamarina Zanartu Airport^Puerto Williams^^CL^-54.95^-68.25^1^A
 WPU^WPU^Guardiamarina Zanartu Airport^Puerto Williams^^CL^-54.95^-68.25^1^C
 WRA^WRA^Warder Airport^Warder^^ET^6.96667^45.3333^0^CA
 WRB^WRB^Robins AFB^Warner Robins^GA^US^32.6907^-83.642^1^A
+WRB^WRB^Robins AFB^Warner Robins^GA^US^32.6907^-83.642^1^C
 WRE^WRE^Whangarei Airport^Whangarei^^NZ^-35.77^174.357^1^A
 WRE^WRE^Whangarei Airport^Whangarei^^NZ^-35.77^174.357^1^C
 WRG^WRG^Wrangell Airport^Wrangell^AK^US^56.484^-132.367^5^A
 WRG^WRG^Wrangell Airport^Wrangell^AK^US^56.484^-132.367^5^C
-WRI^WRI^McGuire AFB^Fort Dix^NJ^US^40.0167^-74.6^1^A
-WRI^WRI^McGuire AFB^Fort Dix^NJ^US^40.0167^-74.6^1^C
+WRI^WRI^McGuire AFB^Wrightstown^NJ^US^40.0167^-74.6^1^A
+WRI^WRI^McGuire AFB^Wrightstown^NJ^US^40.0167^-74.6^1^C
 WRL^WRL^Worland Municipal Airport^Worland^WY^US^43.9672^-107.952^3^A
 WRL^WRL^Worland Municipal Airport^Worland^WY^US^43.9672^-107.952^3^C
 WRN^WRN^Windarling Airport^Windarling^WA^AU^-30.0182^119.384^4^A
 WRN^WRN^Windarling Airport^Windarling^WA^AU^-30.0182^119.384^4^C
 WRO^WRO^Strachowice Airport^Wroclaw^^PL^51.1^16.8833^0^A
 WRO^WRO^Strachowice Airport^Wroclaw^^PL^51.1^16.8833^0^C
+WRT^WRT^Warton Airport^Warton^EN^GB^53.7403^-2.88333^0^A
+WRT^WRT^Warton Airport^Warton^EN^GB^53.7403^-2.88333^0^C
 WRW^WRW^Warrawagine Station Airport^Warrawagine Station^WA^AU^-20.8667^120.717^4^CA
 WRY^WRY^Westray Airport^Westray^SC^GB^59.35^-2.95^0^CA
 WRZ^WRZ^Weerawila Airport^Weerawila^^LK^6.251^81.2363^0^A
@@ -14966,6 +15217,9 @@ WUN^WUN^Wiluna Airport^Wiluna^WA^AU^-26.6333^120.217^4^A
 WUN^WUN^Wiluna Airport^Wiluna^WA^AU^-26.6333^120.217^4^C
 WUS^WUS^Fujian Province Airport^Wuyishan^^CN^27.7167^117.967^0^A
 WUS^WUS^Fujian Province Airport^Wuyishan^^CN^27.7167^117.967^0^C
+WUT^WUT^Wutaishan Airport^Xinzhou^^CN^38.5928^112.967^0^A
+WUT^WUT^Wutaishan Airport^Xinzhou^^CN^38.5928^112.967^0^C
+WUT^WUT^Wutaishan Airport^Xinzhou^^CN^38.5928^112.967^0^C
 WUU^WUU^Wau Airport^Wau^^SS^7.74117^27.9845^0^A
 WUU^WUU^Wau Airport^Wau^^SS^7.74117^27.9845^0^C
 WUV^WUV^Wuvulu Island Airport^Wuvulu Island^^PG^-1.75^142.833^1^A
@@ -14980,8 +15234,8 @@ WVI^WVI^Watsonville Municipal Airport^Watsonville^CA^US^36.9167^-121.75^4^A
 WVI^WVI^Watsonville Municipal Airport^Watsonville^CA^US^36.9167^-121.75^4^C
 WVK^WVK^Manakara Airport^Manakara^^MG^-22.1167^48.0167^0^A
 WVK^WVK^Manakara Airport^Manakara^^MG^-22.1167^48.0167^0^C
-WVL^WVL^Robert Lafleur Airport^Waterville^ME^US^44.5337^-69.6722^1^A
-WVL^WVL^Robert Lafleur Airport^Waterville^ME^US^44.5337^-69.6722^1^C
+WVL^WVL^Robert LaFleur Airport^Waterville^ME^US^44.5337^-69.6722^1^A
+WVL^WVL^Robert LaFleur Airport^Waterville^ME^US^44.5337^-69.6722^1^C
 WVN^WVN^Mariensiel^Wilhelmshaven^^DE^53.5028^8.052^0^A
 WVN^WVN^Mariensiel^Wilhelmshaven^^DE^53.5028^8.052^0^C
 WWA^WWA^Wasilla Airport^Wasilla^AK^US^61.5833^-149.433^5^CA
@@ -14998,6 +15252,7 @@ WWT^WWT^Newtok Airport^Newtok^AK^US^60.9203^-164.642^5^A
 WWT^WWT^Newtok Airport^Newtok^AK^US^60.9203^-164.642^5^C
 WWY^WWY^West Wyalong Airport^West Wyalong^NS^AU^-33.9333^147.25^2^A
 WWY^WWY^West Wyalong Airport^West Wyalong^NS^AU^-33.9333^147.25^2^C
+WXF^WXF^Watford Junction Rail Station^Watford^EN^GB^51.658^-0.390667^0^CA
 WXJ^WXJ^Railway Station^Wanning^^CN^18.8063^110.372^0^C
 WXJ^WXJ^Railway Station^Wanning^^CN^18.8063^110.372^0^R
 WXN^WXN^Wuqiao Airport^Wanzhou^^CN^30.835^108.403^0^A
@@ -15011,6 +15266,9 @@ WYN^WYN^Wyndham Airport^Wyndham^WA^AU^-15.5043^128.136^4^A
 WYN^WYN^Wyndham Airport^Wyndham^WA^AU^-15.5043^128.136^4^C
 WYS^WYS^Yellowstone Airport^West Yellowstone^MT^US^44.6853^-111.103^3^A
 WYS^WYS^Yellowstone Airport^West Yellowstone^MT^US^44.6853^-111.103^3^C
+WZE^YIH^Railway Station^Yichang^^CN^30.6562^111.359^0^R
+WZQ^WZQ^Urad Middle Banner Airport^Urad Middle Banner^^CN^41.6895^108.373^0^A
+WZQ^WZQ^Urad Middle Banner Airport^Urad Middle Banner^^CN^41.6895^108.373^0^C
 XAB^XAB^Off-Line Point^Abbeville^^FR^50.1^1.81667^0^C
 XAB^XAB^Off-Line Point^Abbeville^^FR^50.1^1.81667^0^O
 XAC^XAC^Off-Line Point^Arcachon^^FR^44.6667^-1.16667^0^C
@@ -15083,6 +15341,7 @@ XCG^XCG^Off-Line Point^Cagnes Sur Mer^^FR^43.6667^7.15^0^R
 XCH^XCH^Christmas Island Airport^Christmas Island^^CX^-10.4503^105.688^0^A
 XCH^XCH^Christmas Island Airport^Christmas Island^^CX^-10.4503^105.688^0^C
 XCI^XCI^Chambord Railway Services^Chambord^QC^CA^48.4167^-72.1^3^CR
+XCJ^XCJ^Off-Line Point^Marigot^^MF^14.8167^-61.0333^0^C
 XCK^XCK^Off-Line Point^Saint Die^^FR^48.2833^6.93333^0^O
 XCL^XCL^Cluff Lake Airport^Cluff Lake^SK^CA^59^-107^4A^CA
 XCM^XCM^Chatham-Kent Airport^Chatham^ON^CA^42.4^-82.1833^3^A
@@ -15353,7 +15612,8 @@ XLM^YMQ^St-Lambert Railway Station^Montreal^QC^CA^45.5167^-73.5667^3^R
 XLN^XLN^Off-Line Point^Laon^^FR^49.55^3.58333^0^O
 XLO^XLO^Long Xuyen Airport^Long Xuyen^^VN^10.3333^105.467^0^CA
 XLP^XLP^Matapedia Rail Service^Matapedia^QC^CA^48^-66.9833^3^CR
-XLQ^YTO^Guildwood Rail Service^Toronto^ON^CA^43.65^-79.3333^3^CR
+XLQ^YTO^Guildwood Rail Service^Toronto^ON^CA^43.65^-79.3333^3^C
+XLQ^YTO^Guildwood Rail Service^Toronto^ON^CA^43.65^-79.3333^3^R
 XLR^XLR^Off-Line Point^Libourne^^FR^44.9167^-0.233333^0^O
 XLS^XLS^St-Louis Airport^Saint Louis^^SN^16.0502^-16.4562^0^CA
 XLT^XLT^Off-Line Point^Ax Les Thermes^^FR^42.7333^1.83333^0^O
@@ -15376,7 +15636,8 @@ XME^XME^Off-Line Point^Maubeuge^^FR^50.2833^3.96667^0^C
 XMF^XMF^Off-Line Point^Montbeliard^^FR^47.5167^6.8^0^O
 XMG^XMG^Mahendranagar Airport^Mahendranagar^^NP^28.9667^80.2^0^A
 XMG^XMG^Mahendranagar Airport^Mahendranagar^^NP^28.9667^80.2^0^C
-XMH^XMH^Manihi Airport^Manihi^^PF^-14.4333^-146.067^2^CA
+XMH^XMH^Manihi Airport^Manihi^^PF^-14.4333^-146.067^2^A
+XMH^XMH^Manihi Airport^Manihi^^PF^-14.4333^-146.067^2^C
 XMI^XMI^Masasi Airport^Masasi^^TZ^-10.7167^38.8^0^A
 XMI^XMI^Masasi Airport^Masasi^^TZ^-10.7167^38.8^0^C
 XMJ^XMJ^Off-Line Point^Mont De Marsan^^FR^43.9^-0.516667^0^A
@@ -15512,13 +15773,16 @@ XRH^XRH^RAAF Base^Richmond^NS^AU^-33.6^150.768^2^CA
 XRI^XRI^Off-Line Point^Riom^^FR^45.2833^2.65^0^O
 XRJ^ROM^Termini Rail Station^Rome^^IT^41.9^12.4835^0^R
 XRK^MOW^Paveletsky Rail Stn^Moscow^^RU^55^36^2^R
+XRL^ZRO^Mediopadana Rail Station^Reggio Nell Emilia^^IT^44.7213^10.6527^0^R
 XRM^XRM^Off-Line Point^Armentieres^^FR^50.6667^2.83333^0^O
 XRN^XRN^Off-Line Point^Redon^^FR^47.6667^-2.1^0^O
 XRP^XRP^Riviere-a-Pierre Rail Service^Riviere-a-Pierre^QC^CA^46.9833^-72.1833^3^CR
-XRR^XRR^Ross River Airport^Ross River^YT^CA^61.9833^-132.45^6^CA
+XRR^XRR^Ross River Airport^Ross River^YT^CA^61.9833^-132.45^6^A
+XRR^XRR^Ross River Airport^Ross River^YT^CA^61.9833^-132.45^6^C
 XRS^XRS^Off-Line Point^Les Arcs^^FR^43.45^6.48333^0^O
 XRT^XRT^Off-Line Point^Rambouillet^^FR^49.65^1.83333^0^O
 XRU^XRU^Rugby Rail Station^Rugby^EN^GB^52.3833^-1.26667^0^CR
+XRV^LYS^Off-Line Point^Lyon^^FR^45^4^0^O
 XRX^XRX^Off-Line Point^Roubaix^^FR^50.6667^3.16667^0^C
 XRX^XRX^Off-Line Point^Roubaix^^FR^50.6667^3.16667^0^R
 XRY^XRY^Jerez Airport^Jerez^SP^ES^36.7402^-6.056^1^A
@@ -15723,6 +15987,8 @@ XZC^XZC^Glencoe Rail Service^Glencoe^ON^CA^42.75^-81.7333^3^CR
 XZD^XZD^Kongsvinger Railway Station^Kongsvinger^^NO^60.1858^12.001^0^CR
 XZE^XZE^Rail (Generic)^Rail (Generic)^^DE^50^8^0^O
 XZF^DMM^Dammam Harbour^Dammam^^SA^26.5^50.2^0^P
+XZG^NGB^Free Trade Zone^Ningbo^^CN^29.9833^121.993^0^O
+XZH^HGH^Econ/Tech Dev Area^Hangzhou^^CN^30.5167^120.6^0^O
 XZI^ETZ^Lorraine TGV Rail Station^Metz/Nancy^^FR^48.9418^6.1685^0^R
 XZJ^XZJ^Rail (Generic)^Rail (Generic)^^JP^34^135^0^R
 XZK^XZK^Amherst Rail Service^Amherst^NS^CA^45.8^-64.1333^2^CR
@@ -15849,7 +16115,8 @@ YCH^YCH^Miramichi Airport^Miramichi^NB^CA^47.25^-65^2^A
 YCH^YCH^Miramichi Airport^Miramichi^NB^CA^47.25^-65^2^C
 YCK^YCK^Tommy Kochon Airport^Colville Lake^NT^CA^67.1667^-126^5^A
 YCK^YCK^Tommy Kochon Airport^Colville Lake^NT^CA^67.1667^-126^5^C
-YCL^YCL^Charlo Airport^Charlo^NB^CA^47.9833^-66.3333^2^CA
+YCL^YCL^Charlo Airport^Charlo^NB^CA^47.9833^-66.3333^2^A
+YCL^YCL^Charlo Airport^Charlo^NB^CA^47.9833^-66.3333^2^C
 YCM^YCM^Niagara District Airport^St Catharines^ON^CA^43.2^-79.1667^3^A
 YCM^YCM^Niagara District Airport^St Catharines^ON^CA^43.2^-79.1667^3^C
 YCN^YCN^Cochrane Airport^Cochrane^ON^CA^49.0667^-81.0167^3^A
@@ -15879,7 +16146,6 @@ YDA^YDA^Dawson City Airport^Dawson City^YT^CA^64.0383^-139.119^6^C
 YDB^YDB^Burwash Airport^Burwash Landing^YT^CA^61.3692^-139.038^6^A
 YDB^YDB^Burwash Airport^Burwash Landing^YT^CA^61.3692^-139.038^6^C
 YDC^YDC^Industrial Airport^Drayton Valley^AB^CA^53.2^-114.967^5^CA
-YDD^YDD^Yingkoudong Railway Station^Yingkou^^CN^40.62^122.424^0^C
 YDD^YDD^Yingkoudong Railway Station^Yingkou^^CN^40.62^122.424^0^R
 YDE^YDE^Paradise River Airport^Paradise River^NL^CA^53.4333^-57.2333^2^CA
 YDF^YDF^Deer Lake Regional Airport^Deer Lake^NL^CA^49.2167^-57.4^1^A
@@ -15906,7 +16172,8 @@ YDV^YDV^Bloodvein River Airport^Bloodvein^MB^CA^51.75^-96.7333^4^C
 YDW^YDW^North of Sixty Airport^Obre Lake^NT^CA^60.3205^-103.126^5^A
 YDW^YDW^North of Sixty Airport^Obre Lake^NT^CA^60.3205^-103.126^5^C
 YEA^YEA^Metropolitan Area^Edmonton^AB^CA^53.55^-113.467^5^C
-YEB^YEB^Bar River Airport^Bar River^ON^CA^46.4173^-84.1098^3^CA
+YEB^YEB^Bar River Airport^Bar River^ON^CA^46.4173^-84.1098^3^A
+YEB^YEB^Bar River Airport^Bar River^ON^CA^46.4173^-84.1098^3^C
 YEC^YEC^Yecheon Airport^Yecheon^^KR^36.6217^128.353^0^CA
 YED^YEA^CFB Namao Heliport^Edmonton^AB^CA^53.5^-113.5^5^A
 YEG^YEA^Edmonton International Airport^Edmonton^AB^CA^53.305^-113.588^5^A
@@ -15930,7 +16197,8 @@ YES^YES^Yasouj Airport^Yasouj^^IR^30.7003^51.5405^0^A
 YES^YES^Yasouj Airport^Yasouj^^IR^30.7003^51.5405^0^C
 YET^YET^Edson Airport^Edson^AB^CA^53.5833^-116.467^5^A
 YET^YET^Edson Airport^Edson^AB^CA^53.5833^-116.467^5^C
-YEU^YEU^Eureka Airport^Eureka^NU^CA^80^-85.9333^4^CA
+YEU^YEU^Eureka Airport^Eureka^NU^CA^80^-85.9333^4^A
+YEU^YEU^Eureka Airport^Eureka^NU^CA^80^-85.9333^4^C
 YEV^YEV^Mike Zubko Airport^Inuvik^NT^CA^68.3025^-133.476^5^A
 YEV^YEV^Mike Zubko Airport^Inuvik^NT^CA^68.3025^-133.476^5^C
 YEY^YEY^Magny Airport^Amos^QC^CA^48.5513^-78.25^3^A
@@ -16006,7 +16274,8 @@ YHC^YHC^SPB^Hakai Passage^BC^CA^51.7333^-128.117^6^A
 YHC^YHC^SPB^Hakai Passage^BC^CA^51.7333^-128.117^6^C
 YHD^YHD^Dryden Regional Airport^Dryden^ON^CA^49.8258^-92.7405^4^A
 YHD^YHD^Dryden Regional Airport^Dryden^ON^CA^49.8258^-92.7405^4^C
-YHE^YHE^Hope Airport^Hope^BC^CA^49.4167^-121.417^6^CA
+YHE^YHE^Hope Airport^Hope^BC^CA^49.4167^-121.417^6^A
+YHE^YHE^Hope Airport^Hope^BC^CA^49.4167^-121.417^6^C
 YHF^YHF^Rene Fontaine Municipal Airport^Hearst^ON^CA^49.7167^-83.6833^3^A
 YHF^YHF^Rene Fontaine Municipal Airport^Hearst^ON^CA^49.7167^-83.6833^3^C
 YHG^YHG^Charlottetown Airport^Charlottetown^NL^CA^52.7588^-56.1057^1^A
@@ -16053,7 +16322,9 @@ YIO^YIO^Pond Inlet Airport^Pond Inlet^NU^CA^72.6833^-78^3^A
 YIO^YIO^Pond Inlet Airport^Pond Inlet^NU^CA^72.6833^-78^3^C
 YIP^DTT^Willow Run Airport^Detroit^MI^US^42.2333^-83.5333^1^A
 YIU^YIW^Railway Station^Yiwu^^CN^29.375^120.037^0^R
-YIV^YIV^Island Lake/Garden Hill Airport^Island Lake/Garden Hill^MB^CA^53.8567^-94.6553^4^CA
+YIV^YIV^Island Lake/Garden Hill Airport^Island Lake/Garden Hill^MB^CA^53.8567^-94.6553^4^A
+YIV^YIV^Island Lake/Garden Hill Airport^Island Lake/Garden Hill^MB^CA^53.8567^-94.6553^4^C
+YIV^YIV^Island Lake/Garden Hill Airport^Island Lake/Garden Hill^MB^CA^53.8567^-94.6553^4^C
 YIW^YIW^Yiwu Airport^Yiwu^^CN^29.3375^120.026^0^A
 YIW^YIW^Yiwu Airport^Yiwu^^CN^29.3375^120.026^0^C
 YJA^YJA^Jasper Airport^Jasper^AB^CA^52.9167^-118.083^5^A
@@ -16089,6 +16360,8 @@ YKE^YKE^Knee Lake Airport^Knee Lake^MB^CA^53.05^-94.6667^4^C
 YKF^YTO^Kitchener-Waterloo Regional Airport^Toronto^ON^CA^43.45^-80.4833^3^A
 YKG^YKG^Kangirsuk Airport^Kangirsuk^QC^CA^60^-70^3^A
 YKG^YKG^Kangirsuk Airport^Kangirsuk^QC^CA^60^-70^3^C
+YKH^YDD^Yingkou Airport^Yingkou^^CN^40.5385^122.354^0^A
+YKH^YDD^Yingkou Airport^Yingkou^^CN^40.5385^122.354^0^C
 YKJ^YKJ^Key Lake Airport^Key Lake^SK^CA^57.25^-105.6^4A^A
 YKJ^YKJ^Key Lake Airport^Key Lake^SK^CA^57.25^-105.6^4A^C
 YKK^YKK^SPB^Kitkatla^BC^CA^53^-130^6^A
@@ -16226,7 +16499,8 @@ YNY^YNY^Yangyang International Airport^Yangyang^^KR^38.0552^128.658^0^A
 YNY^YNY^Yangyang International Airport^Yangyang^^KR^38.0552^128.658^0^C
 YNZ^YNZ^Nanyang Airport^Yancheng^^CN^33.3847^120.122^0^A
 YNZ^YNZ^Nanyang Airport^Yancheng^^CN^33.3847^120.122^0^C
-YOA^YOA^Ekati Airport^Ekati^NT^CA^64.693^-110.609^5^CA
+YOA^YOA^Ekati Airport^Ekati^NT^CA^64.693^-110.609^5^A
+YOA^YOA^Ekati Airport^Ekati^NT^CA^64.693^-110.609^5^C
 YOC^YOC^Old Crow Airport^Old Crow^YT^CA^67.5833^-139.833^6^A
 YOC^YOC^Old Crow Airport^Old Crow^YT^CA^67.5833^-139.833^6^C
 YOD^YOD^R.W. McNair Airport^Cold Lake^AB^CA^54.4667^-110.25^5^A
@@ -16662,8 +16936,8 @@ ZAP^ZAP^Appenzell Railway Station^Appenzell^^CH^47.3333^9.4^0^CR
 ZAQ^NUE^Hbf Railway Station^Nuremberg^^DE^49.442^11.0677^0^R
 ZAR^ZAR^Zaria Airport^Zaria^^NG^11^7.66667^0^A
 ZAR^ZAR^Zaria Airport^Zaria^^NG^11^7.66667^0^C
-ZAS^ZAS^Ferry Port^Shunde^^CN^22.8333^113.267^0^A
 ZAS^ZAS^Ferry Port^Shunde^^CN^22.8333^113.267^0^C
+ZAS^ZAS^Ferry Port^Shunde^^CN^22.8333^113.267^0^P
 ZAT^ZAT^Zhaotong Airport^Zhaotong^^CN^27.322^103.753^0^A
 ZAT^ZAT^Zhaotong Airport^Zhaotong^^CN^27.322^103.753^0^C
 ZAU^ZAU^Railway Station^Aue^^DE^50.5833^12.7^0^CR
@@ -16698,7 +16972,7 @@ ZBR^ZBR^Konarak Airport^Chah Bahar^^IR^25.4373^60.367^0^A
 ZBR^ZBR^Konarak Airport^Chah Bahar^^IR^25.4373^60.367^0^C
 ZBS^PHX^Mesa Bus Station^Phoenix^AZ^US^33.3338^-111.838^3A^B
 ZBT^ZBT^Kolding Railway Service^Kolding^^DK^55.5^9.48333^0^CR
-ZBU^AAR^Aarhus Limousine^Aarhus^^DK^56^10.5^0^CA
+ZBU^AAR^Aarhus Limousine^Aarhus^^DK^56^10.5^0^B
 ZBV^EGE^Beaver Creek Bus Station^Vail/Eagle^CO^US^38.3667^-104.967^3^CB
 ZBW^ZBW^Off-Line Point^Atibaia^SP^BR^-23.1333^-46.5833^1^CA
 ZBX^ZBX^Off-Line Point^Szombathely^^HU^47.2333^16.6333^0^O
@@ -16826,7 +17100,8 @@ ZFY^KTW^Katowice Bus Service^Katowice^^PL^50.4667^19^0^B
 ZFZ^BUF^Buffalo-Depew Rail Service^Buffalo^NY^US^42.9077^-78.7263^1^R
 ZGA^ZGA^Hbf Railway Station^Gera^^DE^50.8667^12.0833^0^CR
 ZGB^NQT^Nottingham Bus Station^Nottingham^EN^GB^52.9752^-0.307833^0^B
-ZGD^ZGD^New London Rail^Groton^CT^US^41.4025^-72.089^1^R
+ZGC^ZAG^Zagreb Bus Station^Zagreb^^HR^45.802^15.9893^0^B
+ZGD^GON^New London Railway Station^Groton/New London^CT^US^41.4025^-72.089^1^R
 ZGE^ZGE^Goerlitz Railway^Goerlitz^^DE^51.3417^14.8723^0^CR
 ZGF^ZGF^Grand Forks Airport^Grand Forks^BC^CA^49.0167^-118.433^6^A
 ZGF^ZGF^Grand Forks Airport^Grand Forks^BC^CA^49.0167^-118.433^6^C
@@ -16852,7 +17127,7 @@ ZGV^ZGV^Off-Line Point^Wavre^^BE^50.7167^4.63333^0^O
 ZGW^ZGW^Greifswald Railway^Greifswald^^DE^54.0833^13.3833^0^CR
 ZGX^ZGX^Viborg Rail Station^Viborg^^DK^56.45^9.38333^0^CR
 ZGY^ZGY^Kuching Port^Kuching Port^^MY^1.55^110.383^0^P
-ZGZ^ZGZ^German Rail Service^Fictitious Point/AA2^^ZZ^0^0^1^CR
+ZGZ^ZGZ^German Rail Service^Fictitious Point/AA2^^ZZ^0^0^1^O
 ZHA^ZHA^Zhanjiang Airport^Zhanjiang^^CN^21.2087^110.355^0^A
 ZHA^ZHA^Zhanjiang Airport^Zhanjiang^^CN^21.2087^110.355^0^C
 ZHB^ZHB^Engelberg Railway Station^Engelberg^^CH^46.8185^8.40167^0^CR
@@ -16884,7 +17159,7 @@ ZHW^ZHW^Railway Station^Langenthal^^CH^47.2167^7.78333^0^CR
 ZHX^ZHX^Off-Line Point^Tubarao^SC^BR^-28.5^-49^1^O
 ZHY^ZHY^Xiangshan Airport^Zhongwei^^CN^37.5705^105.153^0^CA
 ZHZ^LEJ^Halle Hbf Rail Station^Leipzig/Halle^^DE^51.5^12^0^CR
-ZIA^ZIA^Off-Line Point^Trento/Trient^^IT^46.0667^11.1333^0^O
+ZIA^ZIA^Zhukovsky Airport^Zhukovsky^^RU^55.552^38.151^2^O
 ZIB^ZIB^Nyborg Rail Station^Nyborg^^DK^55.3^10.7833^0^CR
 ZIC^ZIC^Victoria Airport^Victoria^^CL^-38.2167^-72.3333^1^A
 ZIC^ZIC^Victoria Airport^Victoria^^CL^-38.2167^-72.3333^1^C
@@ -16906,6 +17181,8 @@ ZIO^ZIO^Hbf Railway Station^Solingen^^DE^51.1833^7.08333^0^CR
 ZIP^ZIP^Lipari Harbour^Lipari Island^^IT^38.4667^14.95^0^CP
 ZIQ^ZIQ^Salina Island Harbour^Salina Island^^IT^38.5667^14.8333^0^CP
 ZIR^ZIR^Randers Rail Station^Randers^^DK^56.4833^10.0167^0^CR
+ZIS^ZIS^Zintan Airport^Zintan^^LY^31.7725^12.2503^0^A
+ZIS^ZIS^Zintan Airport^Zintan^^LY^31.7725^12.2503^0^C
 ZIT^ZIT^Zittau Railway Service^Zittau^^DE^50.8833^14.8^0^C
 ZIT^ZIT^Zittau Railway Service^Zittau^^DE^50.8833^14.8^0^R
 ZIU^ZUH^CZ Bus Station^Zhuhai^^CN^22.274^113.567^0^B
@@ -17163,6 +17440,7 @@ ZRI^ZRI^S. Condronegoro Airport^Serui^^ID^-1.88333^136.233^3^CA
 ZRJ^ZRJ^Weagamow Lake Airport^Round Lake^ON^CA^52.9395^-91.3077^4^A
 ZRJ^ZRJ^Weagamow Lake Airport^Round Lake^ON^CA^52.9395^-91.3077^4^C
 ZRK^ZRK^Van Galder Bus Station^Rockford^IL^US^42.2667^-89.0833^2^B
+ZRK^ZRK^Van Galder Bus Station^Rockford^IL^US^42.2667^-89.0833^2^C
 ZRL^LNS^Lancaster PA Rail^Lancaster^PA^US^40.1548^-76.3045^1^R
 ZRM^ZRM^Orai Airport^Sarmi^^ID^-1.85^138.75^3^A
 ZRM^ZRM^Orai Airport^Sarmi^^ID^-1.85^138.75^3^C
@@ -17191,7 +17469,6 @@ ZSE^ZSE^Pierrefonds Airport^Saint Pierre de la Reunion^^RE^-21.3333^55.4833^0^C
 ZSF^SFY^Springfield Massachusetts Rail Road^Springfield^MA^US^42.0527^-72.7593^1^R
 ZSG^ZSG^Hbf Railway Station^Sonneberg^^DE^50.35^11.1667^0^CR
 ZSH^SAF^Bus Station^Santa Fe^NM^US^35.6833^-105.95^3^B
-ZSH^SAF^Bus Station^Santa Fe^NM^US^35.6833^-105.95^3^C
 ZSI^ZSI^Sassnitz Railway Service^Sassnitz^^DE^54.4833^13.65^0^CR
 ZSJ^ZSJ^Sandy Lake Airport^Sandy Lake^ON^CA^53.0585^-93.34^4^A
 ZSJ^ZSJ^Sandy Lake Airport^Sandy Lake^ON^CA^53.0585^-93.34^4^C
@@ -17210,7 +17487,7 @@ ZSU^ZSU^Hbf Railway Station^Dessau^^DE^51.8333^12.25^0^CR
 ZSV^STL^Gateway Railway Station^St Louis^MO^US^38.6167^-90.2^2^R
 ZSW^YPR^Seal Cove SPB^Prince Rupert^BC^CA^54.3333^-130.283^6^A
 ZSX^BBH^Stralsund Railway Service^Stralsund^^DE^54.3^13.0667^0^R
-ZSY^PHX^Scottsdale Bus Station^Phoenix^AZ^US^33.5^-111.933^3A^CB
+ZSY^PHX^Scottsdale Bus Station^Phoenix^AZ^US^33.5^-111.933^3A^B
 ZSZ^SWP^Swakopmund Railway Station^Swakopmund^^NA^-22.6667^14.5667^0^R
 ZTA^ZTA^Tureia Airport^Tureia^^PF^-20.8723^-138.507^2^CA
 ZTB^ZTB^Tete-a-la Baleine Airport^Tete-a-la Baleine^QC^CA^50.6712^-59.3833^2A^A
@@ -17221,7 +17498,8 @@ ZTE^ROC^Rochester New York Rail^Rochester^NY^US^43.2207^-77.4428^1^R
 ZTF^ZTF^Railway Station^Stamford^CT^US^41.0418^-73.5382^1^C
 ZTF^ZTF^Railway Station^Stamford^CT^US^41.0418^-73.5382^1^R
 ZTG^AAL^Aalborg Rail Station^Aalborg^^DK^57.0425^9.91967^0^R
-ZTH^ZTH^Dionsios Salomos Airport^Zakinthos Island^^GR^37.7505^20.8838^0^CA
+ZTH^ZTH^Dionsios Salomos Airport^Zakinthos Island^^GR^37.7505^20.8838^0^A
+ZTH^ZTH^Dionsios Salomos Airport^Zakinthos Island^^GR^37.7505^20.8838^0^C
 ZTI^ZTI^Ferry Port^Humen^^CN^22.7703^113.604^0^C
 ZTI^ZTI^Ferry Port^Humen^^CN^22.7703^113.604^0^P
 ZTJ^PCT^Princeton Junction Rail Station^Princeton/Rocky Hill^NJ^US^40.3543^-74.6683^1^C
@@ -17245,6 +17523,7 @@ ZTV^ZTV^Railway Service^Sturtevant^WI^US^42.9932^-88.992^2^CR
 ZTW^ZTW^Tsuen Wan Railway Service^Tsuen Wan^^HK^22.3667^114.1^0^CR
 ZTY^BOS^Boston BkBay Rail^Boston^MA^US^42.3417^-71.072^1^R
 ZTZ^ZTZ^Hbf Railway Station^Chemnitz^^DE^50.8333^12.9167^0^CR
+ZUA^ZUA^Utica New York Rail^Utica^NY^US^43.105^-75.2262^1^C
 ZUA^ZUA^Utica New York Rail^Utica^NY^US^43.105^-75.2262^1^R
 ZUB^BUS^Sarpi Border Cross Airport^Batumi^^GE^41.5185^41.5417^0^O
 ZUC^ZUC^Ignace Municipal Airport^Ignace^ON^CA^49.4095^-91.6552^4^A
@@ -17297,8 +17576,8 @@ ZWR^BKI^Kota Kinabalu Port^Kota Kinabalu^^MY^5.98333^116.067^0^P
 ZWS^STR^Hbf Railway Station^Stuttgart^^DE^48.7667^9.18333^0^R
 ZWT^ZWT^Wittenburg Railway Station^Lutherstadt Wittenberg^^DE^51.8073^12.8032^0^CR
 ZWU^WAS^Washington DC Rail^Washington^DC^US^38.869^-76.9265^1^R
+ZWV^ZWV^Glenview Railway Service^Glenview^IL^US^42.1237^-87.9922^2^C
 ZWV^ZWV^Glenview Railway Service^Glenview^IL^US^42.1237^-87.9922^2^R
-ZWW^PHF^Newport News Rail^Newport News/Williamsburg^VA^US^37.126^-76.5195^1^C
 ZWW^PHF^Newport News Rail^Newport News/Williamsburg^VA^US^37.126^-76.5195^1^R
 ZWY^ZWY^Off-Line Point^Any Station Belgium^^BE^52^4.66667^0^O
 ZWZ^ZWZ^Off-Line Point^Any Stn. Netherlands^^NL^52.3333^4.50083^0^O
@@ -17371,5 +17650,5 @@ ZZR^ZZR^Off-Line Point^Kherrata^^DZ^36.45^5.21667^0^O
 ZZS^ZZS^Off-Line Point^M'Sila^^DZ^35.6667^4.51667^0^O
 ZZU^ZZU^Mzuzu Airport^Mzuzu^^MW^-11.439^34.0077^0^A
 ZZU^ZZU^Mzuzu Airport^Mzuzu^^MW^-11.439^34.0077^0^C
-ZZV^ZZV^Zanesville Municipal Airport^Zanesville^OH^US^39.9333^-82.0167^1^A
-ZZV^ZZV^Zanesville Municipal Airport^Zanesville^OH^US^39.9333^-82.0167^1^C
+ZZV^ZZV^Zanesville Municipal Airport^Zanesville^OH^US^39.94^-81.8887^1^A
+ZZV^ZZV^Zanesville Municipal Airport^Zanesville^OH^US^39.94^-81.8887^1^C

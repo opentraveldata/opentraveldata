@@ -95,7 +95,7 @@ EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
     echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
+    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
     echo
     exit -1
 fi
@@ -143,7 +143,7 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
     echo
-	echo "Usage: $0 [<refdata directory of the OpenTravelData (OPTD) project Git clone> [<Reference data directory for data dump files> [<log level>]]]"
+	echo "Usage: $0 [<root directory of the OpenTravelData (OPTD) project Git clone> [<Reference data directory for data dump files> [<log level>]]]"
 	echo
 	echo " - Default log level: ${LOG_LEVEL}"
 	echo "   + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"

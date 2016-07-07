@@ -126,10 +126,10 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
     echo
-    echo "Usage: $0 [<refdata directory of the OpenTravelData project Git clone> [<Innovata data dump file> [<log level>]]]"
-    echo "  - Default refdata directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
+    echo "Usage: $0 [<root directory of the OpenTravelData project Git clone> [<Innovata data dump file> [<log level>]]]"
+    echo "  - Default root directory for the OpenTravelData project Git clone: '${OPTD_DIR}'"
     echo "  - Default path for the OPTD-maintained file of best known coordinates: '${GEO_OPTD_FILE}'"
-    echo "  - Default path for the Innovata data dump file: '${INN_RAW_FILE}'"
+    echo "  - Default path for the Innovata derived data dump file: '${INN_RAW_FILE}'"
     echo "  - Default log level: ${LOG_LEVEL}"
     echo "    + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
     echo "  - Generated files:"
@@ -155,7 +155,7 @@ then
     if [ ! -d $1 ]
     then
 		echo
-		echo "[$0:$LINENO] The first parameter ('$1') should point to the refdata/ sub-directory of the OpenTravelData project Git clone. It is not accessible here."
+		echo "[$0:$LINENO] The first parameter ('$1') should point to the root directory of the OpenTravelData project Git clone. It is not accessible here."
 		echo
 		exit -1
     fi
@@ -213,6 +213,15 @@ then
     LOG_LEVEL="$3"
 fi
 
+##
+# Dos to Unix format (in place) translation
+DOESDOS2UNIXEXIST=`type dos2unix 2>&1 | grep -q "not found" && echo "N" || echo "Y"`
+if [ "$DOESDOS2UNIXEXIST" = "Y"]
+	dos2unix ${INN_RAW_FILE}
+else
+	echo "dos2unix cannot be found. Please install it"
+	exit -1
+fi
 
 ##
 # Generate a second version of the file with the OPTD primary key
