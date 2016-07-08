@@ -277,7 +277,7 @@ air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA
 air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^http://en.wikipedia.org/wiki/Boutique_Air^en|Boutique Air|^^air-boutique-air^1
 air-bqb-v1^^^^BEA^5Q^567^BQB Líneas Aéreas^^^^P^http://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^en|BQB Líneas Aéreas|^^air-bqb^1
 air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^http://en.wikipedia.org/wiki/Braathens_Regional_Aviation^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1
-air-branson-air-v1^^^^^1X^0^Branson Air^Gabriel^^^^^en|Branson Air|=en|Gabriel|^^air-branson-air^1
+air-branson-air-express-v1^^2010-05-17^^^1X^0^Branson Air Express^^^^^http://en.wikipedia.org/wiki/Branson_Air_Express^en|Branson Air Express|=en|FlyBranson Travel|^BKG^air-branson-air-express^1
 air-bringer-air-cargo-v1^^^^^E6^417^Bringer Air Cargo^^^^C^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1
 air-british-airways-v1^^1974-03-31^^BAW^BA^125^British Airways^^^Member^^http://en.wikipedia.org/wiki/British_Airways^en|British Airways|^LGW=LHR^air-british-airways^1
 air-brussels-airlines-v1^^2007-03-25^^BEL^SN^82^Brussels Airlines^^^Member^^http://en.wikipedia.org/wiki/Brussels_Airlines^en|Brussels Airlines|^^air-brussels-airlines^1
@@ -340,7 +340,7 @@ air-city-airways-v1^^2012-09-01^^GTA^E8^0^City Airways^^^^^http://en.wikipedia.o
 air-cityjet-v1^^^^BCY^WX^689^CityJet^^^Affiliate^^http://en.wikipedia.org/wiki/CityJet^en|CityJet|^^air-cityjet^1
 air-closed-iraero-v1^^1999-01-01^^IAE^IO^154^IrAero^^^^^http://en.wikipedia.org/wiki/IrAero^en|IrAero|^^air-closed-iraero^1
 air-cm-airlines-v1^^^^OMT^CC^0^CM Airlines^^^^^http://en.wikipedia.org/wiki/CM_Airlines^en|CM Airlines|=en|Cielo Maya Airlines|^^air-cm-airlines^1
-air-cobalt-air-v1^^2016-06-01^^FCB^CO^0^Cobalt Air^^^^^http://en.wikipedia.org/wiki/Cobalt_Air^en|Cobalt Air|^LCA^air-cobalt-air^1
+air-cobalt-air-v1^^2015-09-01^^FCB^CO^0^Cobalt Air^^^^^http://en.wikipedia.org/wiki/Cobalt_Air^en|Cobalt Air|^LCA^air-cobalt-air^1
 air-colgan-air-v1^^^^WLN^9L^0^West Link Airways^^^^^^en|West Link Airways|=en|Colgan Air|^^air-colgan-air^1
 air-colorful-guizhou-airlines-v1^^2015-07-01^^^GY^661^Colorful Guizhou Airlines^^^^^http://en.wikipedia.org/wiki/Colorful_Guizhou_Airlines^en|Colorful Guizhou Airlines|^^air-colorful-guizhou-airlines^1
 air-comair-south-africa-v1^^1943-01-01^^CAW^MN^161^Comair^^^Affiliate^^http://en.wikipedia.org/wiki/Comair_%28South_Africa%29^en|Comair|^^air-comair-south-africa^1
@@ -353,7 +353,7 @@ air-conviasa-v1^^^^VCV^V0^308^Conviasa^Conviasa^^^^^en|Conviasa|=en|Conviasa|^^a
 air-copa-airlines-v1^^1947-08-15^^CMP^CM^230^Copa Airlines^Compañía Panameña de Aviación^^Member^^http://en.wikipedia.org/wiki/Copa_Airlines^en|Copa Airlines|=en|Compañía Panameña de Aviación|^^air-copa-airlines^1
 air-corendon-airlines-v1^^2005-04-01^^CAI^XC^0^Corendon Airlines^^^^^http://en.wikipedia.org/wiki/Corendon_Airlines^en|Corendon Airlines|p=en|Turistik Hava Tasimacilik A.S.|^AYT^air-corendon-airlines^1
 air-corendon-dutch-airlines-v1^^^^CND^CD^0^Corendon Dutch Airlines^Seaview Air^^^^^en|Corendon Dutch Airlines|=en|Seaview Air|^^air-corendon-dutch-airlines^1
-air-corporate-flight-management-v1^^2016-01-01^^VTE^LF^522^Corporate Flight Management^^^^^http://en.wikipedia.org/wiki/Corporate_Flight_Management^en|Corporate Flight Management|^BNA=TUP^air-corporate-flight-management^1
+air-corporate-flight-management-v1^^2016-01-01^^VTE^LF^522^Corporate Flight Management^^^^^http://en.wikipedia.org/wiki/Corporate_Flight_Management^en|Corporate Flight Management|p=en|Branson Air Express|h=en|Buzz Airways|h=en|Texas Sky Airways|h=en|Appalachian Air|h=en|Contour Airlines|h=en|North Country Sky|=en|GLO Airlines|^BNA=TUP^air-corporate-flight-management^1
 air-corsair-v1^^1981-05-17^^CRL^SS^923^Corsair^^^^^http://en.wikipedia.org/wiki/Corsair_International^en|Corsair|^^air-corsair^1
 air-croatia-airlines-v1^^1989-08-20^^CTN^OU^831^Croatia Airlines^^^Member^^http://en.wikipedia.org/wiki/Croatia_Airlines^en|Croatia Airlines|^^air-croatia-airlines^1
 air-cronos-airlines-v1^^2007-01-01^^CRA^C8^498^Cronos Airlines^^^^P^http://en.wikipedia.org/wiki/Cronos_Airlines^en|Cronos Airlines|^^air-cronos-airlines^1
@@ -377,7 +377,7 @@ air-dokasch-v1^^^^^3D^0^Dokasch^^^^^^en|Dokasch|^^air-dokasch^1
 air-donavia-v1^^^^DNV^D9^733^Donavia^^^Affiliate^^http://en.wikipedia.org/wiki/Donavia^en|Donavia|^^air-donavia^1
 air-dot-lt-v1^^^^DNU^R6^0^DOT LT^^^^^^en|DOT LT|^^air-dot-lt^1
 air-douniah-airlines-v1^^^^DTS^DH^0^Douniah Airlines^^^^P^^en|Douniah Airlines|^^air-douniah-airlines^1
-air-dragonair-v1^^1985-07-01^^HDA^KA^43^Dragonair^^^Affiliate^^http://en.wikipedia.org/wiki/Cathay_Dragon^en|Cathay Dragon|p=en|Dragonair|h=en|Hong Kong Dragon Airlines|^HKG^air-dragonair^1
+air-dragonair-v1^^1985-07-01^^HDA^KA^43^Cathay Dragon^^^Affiliate^^http://en.wikipedia.org/wiki/Cathay_Dragon^en|Cathay Dragon|p=en|Dragonair|h=en|Hong Kong Dragon Airlines|^HKG^air-dragonair^1
 air-dreamjet-v1^^2014-01-01^^DJT^B0^2^La Compagnie^Dreamjet^^^^http://en.wikipedia.org/wiki/La_Compagnie^en|La Compagnie|=en|Dreamjet|^^air-dreamjet^1
 air-druk-air-v1^^1983-02-11^^DRK^KB^787^Druk Air^^^^^http://en.wikipedia.org/wiki/Druk_Air^en|Druk Air|^^air-druk-air^1
 air-dynamic-air-v1^^2010-10-01^^DYA^2D^54^Dynamic Airways^^^^T^http://en.wikipedia.org/wiki/Dynamic_Airways^en|Dynamic Airways|^^air-dynamic-air^1
@@ -407,7 +407,6 @@ air-eritrean-airlines-v1^^^^ERT^B8^637^Eritrean Airlines^^^^^^en|Eritrean Airlin
 air-ero-sun-d-or-v1^^^^ERO^2U^383^Ero Sun D Or^^^^P^^en|Ero Sun D Or|^^air-ero-sun-d-or^1
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^en|E Savtravel|^^air-e-savtravel^1
 air-estelar-latinoamerica-v1^^^^^E4^52^Estelar Latinoamerica^^^^^^en|Estelar Latinoamerica|^^air-estelar-latinoamerica^1
-air-estonian-air-v1^^^^ELL^OV^960^Estonian Air^^^^^^en|Estonian Air|^^air-estonian-air^1
 air-ethiopian-airlines-v1^^1946-04-08^^ETH^ET^71^Ethiopian Airlines^^^Member^^http://en.wikipedia.org/wiki/Ethiopian_Airlines^en|Ethiopian Airlines|^^air-ethiopian-airlines^1
 air-etihad-airways-v1^^2003-01-01^^ETD^EY^607^Etihad Airways^^^^^http://en.wikipedia.org/wiki/Etihad_Airways^en|Etihad Airways|^^air-etihad-airways^1
 air-etihad-regional-v1^^2003-01-01^^DWT^F7^33^Etihad Regional^Darwin Airline^^^^http://en.wikipedia.org/wiki/Darwin_Airline^en|Etihad Regional|=en|Darwin Airline|^^air-etihad-regional^1
@@ -491,7 +490,7 @@ air-hahn-air-systems-v1^^^^^H1^0^Hahn Air Systems^^^^^http://en.wikipedia.org/wi
 air-hainan-airlines-v1^^1989-01-01^^CHH^HU^880^Hainan Airlines^^^^^http://en.wikipedia.org/wiki/Hainan_Airlines^en|Hainan Airlines|^^air-hainan-airlines^1
 air-halcyon-air-cabo-verde-v1^^^^^7Z^159^Halcyon Air Cabo Verde^^^^^^en|Halcyon Air Cabo Verde|^^air-halcyon-air-cabo-verde^1
 air-hawaiian-airlines-v1^^1929-01-30^^HAL^HA^173^Hawaiian Airlines^^^^^http://en.wikipedia.org/wiki/Hawaiian_Airlines^en|Hawaiian Airlines|^^air-hawaiian-airlines^1
-air-hawkair-v1^^^^^BH^993^Hawkair^^^^^^en|Hawkair|^^air-hawkair^1
+air-hawkair-v1^^1994-01-01^^BHA^BH^993^Hawkair^^^^^http://en.wikipedia.org/wiki/Hawkair^en|Hawkair|^YVR=YXT^air-hawkair^1
 air-hebei-airlines-v1^^^^^NS^836^Hebei Airlines^Caucasus Air^^^^^en|Hebei Airlines|=en|Caucasus Air|^^air-hebei-airlines^1
 air-heli-air-monaco-v1^^1976-01-01^^MCM^YO^747^Heli Air Monaco^^^^^http://en.wikipedia.org/wiki/Heli_Air_Monaco^en|Heli Air Monaco|^MCM^air-heli-air-monaco^1
 air-heli-security-saint-tropez-v1^^2014-01-01^^HLI^HS^0^Heli Sécurité^^^^^^en|Heli Sécurité|=en|Helicopter Airline Saint-Tropez|^MCM=NCE^air-heli-security-saint-tropez^1
@@ -978,7 +977,6 @@ air-tiger-air-v1^^2003-12-12^^TGW^TR^388^Tigerair^Tiger Airways Singapore^^^^htt
 air-tik-systems-v1^^^^^T1^0^Tik Systems^^^^^^en|Tik Systems|^^air-tik-systems^1
 air-titan-airways-v1^^^^^ZT^0^Titan Airways^^^^^^en|Titan Airways|^^air-titan-airways^1
 air-tnt-airways-v1^^^^TAY^3V^756^Tnt Airways^Viking Air^^^^^en|Tnt Airways|=en|Viking Air|^^air-tnt-airways^1
-air-toumai-air-tchad-v1^^^^^9D^371^Toumai Air Tchad^^^^P^^en|Toumai Air Tchad|^^air-toumai-air-tchad^1
 air-trade-air-v1^^1994-04-01^^TDR^C3^0^Trade Air^^^^^http://en.wikipedia.org/wiki/Trade_Air^en|Trade Air|^^air-trade-air^1
 air-tradewind-aviation-v1^^2001-01-01^^GPD^TJ^492^Tradewind Aviation^^^^^http://en.wikipedia.org/wiki/Tradewind_Aviation^en|Tradewind Aviation|=en|Tradewind Shuttle|^HPN=NEV=SBH=SJU^air-tradewind-aviation^1
 air-transaero-airlines-v1^^1990-01-01^^TSO^UN^670^Transaero Airlines^^^^^http://en.wikipedia.org/wiki/Transaero^en|Transaero Airlines|^^air-transaero-airlines^1

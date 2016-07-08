@@ -21,6 +21,8 @@
 1U^1^ITA Software<>Ita Software
 1U^2^Google ITA<>
 1W^2^<>Sabre
+1X^1^Branson Air Express<>Branson Air
+1X^2^<>Gabriel
 1Y^1^Electronic Data Systems (EDS)<>Electronic Data Systems
 1Z^1^Fantasia Info Network<>Fantasia Info Network Lt
 2A^1^Deutsche Bahn<>Deutsche Bahn Ag
@@ -173,7 +175,7 @@
 9B^1^AccesRail<>Accesrail
 9B^2^<>Accesrail
 9C^2^<>Haiti Caribb
-9D^2^<>Toumai Air
+9D^1^<>Toumai Air Tchad
 9E^2^<>Endeavor Air
 9F^2^<>Eurostar Uk
 9G^1^9G Rail<>9g Rail Ltd
@@ -344,7 +346,6 @@ BF^1^Vincent Aviation<>French Blue
 BG^2^<>Biman
 BGH^1^BH Air<>Bh Air
 BGH^2^<>Bh Air
-BH^2^<>Hawkair
 BHS^2^<>Bahamasair
 BIE^1^<>Air Mediterranee
 BJ^2^<>Nouvelair
@@ -427,10 +428,7 @@ CMP^2^Compañía Panameña de Aviación<>Copa Panamena
 CN^2^<>Gd China Air
 CNF^1^Canaryfly<>Canary Fly
 CNF^2^<>Canary Fly
-CO^1^Cobalt Air<>Continental Airlines
-CO^2^<>Continental
-COA^1^<>Continental Airlines
-COA^2^<>Continental
+CO^1^Cobalt Air<>Cobaltair
 CP^2^<>Canadian
 CPA^2^<>Cathaypacific
 CR^1^OAG Worldwide<>Oag Worldwide
@@ -532,7 +530,7 @@ EIN^2^<>Aer Lingus
 EK^2^<>Emirates
 EL^2^<>Ellinair
 ELB^2^<>Ellinair
-ELL^2^<>Estonian Air
+ELL^1^<>Estonian Air
 ELO^1^<>Eurolot
 ELY^1^El Al<>El Al Israel Airlines
 ELY^2^El Al Israel Airlines<>El Al
@@ -571,6 +569,7 @@ F9^2^<>Frontier Air
 FBA^1^FlyBaghdad<>Fly Baghdad Airlines
 FBA^2^<>Islas Airways
 FC^1^Viva Colombia<>Fly Corporate
+FCB^1^Cobalt Air<>Cobaltair
 FD^1^Thai AirAsia<>Thai Airasia
 FD^2^<>Thai Airasia
 FDY^1^Sun Air Express<>Sun Air Express Llc
@@ -672,7 +671,7 @@ HAY^1^<>Skippers Aviation Pty
 HB^1^Homer Air<>Asia Atlantic Airlines
 HD^1^Air Do<>Airdo
 HD^2^Hokkaido International Airlines<>
-HDA^1^Dragonair<>Cathay Dragon
+HDA^1^Cathay Dragon<>Dragonair
 HDA^2^<>Hk Dragon
 HE^1^LGW Luftfahrtges Walter<>Lgw Luftfahrtges Walter
 HER^2^<>Hex Air
@@ -794,7 +793,7 @@ K7^1^Air KBZ<>Air Kbz
 K7^2^<>Arizona
 K8^1^Zambia Skyways<>Kan Air
 K9^1^Kalitta Charters<>
-KA^1^Dragonair<>Cathay Dragon
+KA^1^Cathay Dragon<>Dragonair
 KA^2^<>Hk Dragon
 KAC^2^<>Kuwait Air
 KAE^1^<>Kartika Airlines
@@ -863,7 +862,8 @@ LC^1^ECAir<>Equatorial Congo Airline
 LC^2^<>Congo Airline
 LCO^1^LAN Cargo<>Lan Chile Cargo
 LCO^2^Ladeco<>N
-LF^1^Corporate Flight Management<>Lao Central Airlines
+LF^1^Corporate Flight Management<>Contour Airlines
+LF^2^<>Contour Airl
 LH^2^<>Lufthansa
 LI^2^<>Liat
 LIA^2^<>Liat
@@ -882,9 +882,9 @@ LO^1^LOT Polish Airlines<>Lot Polish Airlines
 LO^2^<>Lot
 LOT^1^LOT Polish Airlines<>Lot Polish Airlines
 LOT^2^<>Lot
-LP^1^LATAM Perú<>Latam Airlines Peru
+LP^1^LATAM Perú<>Lan Peru Sa
 LP^2^<>Lan Peru
-LPE^1^LATAM Perú<>Latam Airlines Peru
+LPE^1^LATAM Perú<>Lan Peru Sa
 LPE^2^<>Lan Peru
 LQ^1^Air Guinea<>
 LR^1^Avianca Costa Rica<>Lacsa
@@ -1032,7 +1032,7 @@ ORB^1^<>Orenburg Airlines
 ORB^2^<>Orenair
 OS^2^<>Austrianair
 OU^2^<>Croatia
-OV^2^<>Estonian Air
+OV^1^<>Estonian Air
 OW^1^Executive Airlines<>
 OX^2^<>Orient Thai
 OY^1^Andes Líneas Aéreas<>Andes Lineas Aereas

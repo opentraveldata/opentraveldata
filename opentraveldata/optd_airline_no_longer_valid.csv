@@ -93,6 +93,7 @@ air-donbassaero-airlines-v1^1^1993-01-01^2013-01-14^UDC^7D^897^Donbassaero^^^^^h
 air-dutch-antilles-express-v1^1^2005-01-01^2013-09-19^DNL^9H^0^Dutch Antilles Express^Dae^^^^http://en.wikipedia.org/wiki/Dutch_Antilles_Express^en|Dutch Antilles Express|==abbr|dae|^^air-dutch-antilles-express^1
 air-enkor-jsc-v1^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor^en|Enkor|^^air-enkor-jsc^1
 air-estafeta-carga-aerea-v1^1^^2013-12-31^^E7^^Estafeta Carga Aerea^Estafeta Carga Aerea^^^C^^en|Estafeta Carga Aerea|=en|Estafeta Carga Aerea|^^air-estafeta-carga-aerea^1
+air-estonian-air-v1^1^1991-01-01^2015-11-08^ELL^OV^960^Estonian Air^^^^^http://en.wikipedia.org/wiki/Estonian_Air^en|Estonian Air|^TLL^air-estonian-air^1
 air-euralair-v1^1^1964-01-01^2003-11-30^ERL^RN^0^Euralair^^^^^http://en.wikipedia.org/wiki/Euralair^en|Euralair|h=en|Air Horizons|p^^air-euralair^1
 air-eurocypria-airlines-v1^1^1992-06-12^2010-11-04^ECA^UI^0^Eurocypria Airlines^^^^^http://en.wikipedia.org/wiki/Eurocypria_Airlines^en|Eurocypria Airlines|^LCA=PFO^air-eurocypria-airlines^1
 air-eurofly-v1^1^1989-05-26^2010-02-28^EEZ^GJ^0^Eurofly^^^^^http://en.wikipedia.org/wiki/Eurofly^en|Eurofly|^BLQ=FCO=MXP^air-eurofly^1
@@ -210,6 +211,7 @@ air-tavrey-airlines-v1^1^1995-01-01^2008-12-31^TVR^T6^0^Tavrey Airlines^Tavrey A
 air-tibet-airlines-v1^^2010-03-01^2013-12-31^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^1
 air-tibet-airlines-v2^^2014-01-01^2014-02-01^TBA^^^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^2
 air-tonlesap-airlines-v1^1^2011-01-21^2013-08-31^^K9^443^TonleSap Airlines^^^^^http://en.wikipedia.org/wiki/TonleSap_Airlines^en|TonleSap Airlines|^^air-tonlesap-airlines^1
+air-toumai-air-tchad-v1^1^2004-01-01^2015-12-31^THE^9D^371^Toumai Air Tchad^^^^P^http://en.wikipedia.org/wiki/Touma%C3%AF_Air_Tchad^en|Toumai Air Tchad|^NDJ^air-toumai-air-tchad^1
 air-transwest-air-v1^1^1955-01-01^1999-12-31^^9T^^Athabaska Airways^^^^^http://en.wikipedia.org/wiki/Transwest_Air^en|Athabaska|p=en|Athabaska Airways|h^YPA^air-transwest-air^1
 air-tyrolean-airways-v1^1^1978-01-01^2015-03-31^TYR^VO^734^Tyrolean Airways^^^^^http://en.wikipedia.org/wiki/Tyrolean_Airways^en|Tyrolean Airways|^^air-tyrolean-airways^1
 air-valuair-v1^1^2004-01-01^2014-10-26^VLU^VF^896^Valuair^^^^^http://en.wikipedia.org/wiki/Valuair^en|Valuair|h=en|Jetstar Asia Airways|=sign|VALUAIR|==zh|惠旅航空|^SIN^air-valuair^1
