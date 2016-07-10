@@ -48,6 +48,7 @@ PST^R^0^1^^^^^PST used to be Preston Airport, Cuba (CU), Geonames ID: 3543522
 QEN^I^0^1^^^^^QEN corresponds to SITA, Switzerland (CH)
 QES^I^0^1^^^^^QES corresponds to SITA, Switzerland (CH)
 QGW^R^1^0^^^^^As of May 2016, missing from reference data
+QHK^R^0^1^^^^^QHK used to be Shahre Kord, Iran (IR) Geonames ID: 115770. The airport and city are now assigned the CQD IATA code
 QHX^R^1^0^^^^QHX^As of May 2016, QHX is in BAR/Qionghai, Hainan, China (CN)
 QKC^R^0^1^^^^^QKC used to be Karaj, Iran (IR). It is now assigned PYK, Geonames ID: 128747
 QOE^R^1^0^^^^^As of May 2016, missing from reference data
@@ -70,6 +71,7 @@ QXS^I^0^1^^^^^QXT corresponds to SITA Aircom, Switzerland (CH)
 QXT^I^0^1^^^^^QXT corresponds to SITA Network, Switzerland (CH)
 QWI^R^0^1^^^^^QWI used to be Schleswig, Germany (DE), Geonames ID: 2838634. That code is apparently unknown from IATA. The IATA code associated to Schleswig is WBG
 RAT^R^0^1^^^^^RAT used to be Raduzhny Airport, Russia (RU), Geonames ID: 7668536
+REH^R^0^1^^^^^REH used to be Rehoboth Beach Airport, Delaware (DE), United States (US), Geonames ID: 4144284
 REQ^R^1^0^^^^^As of July 2016, missing from reference data
 RSC^R^0^1^^^^^RSC used to be Skulte railway station, Latvia (LV), Geonames ID: 455496. That code is apparently unknown from IATA
 RVH^R^0^1^^^^^RVH used to be Saint Petersburg Rzhevka Airport, Russia (RU), Geonames ID: 7668521
