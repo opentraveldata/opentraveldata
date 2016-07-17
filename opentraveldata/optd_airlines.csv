@@ -794,7 +794,6 @@ air-linea-aerea-de-servicio-v1^^^^LER^QL^782^Linea Aerea De Servicio^^^^^^1442^e
 air-lineas-aereas-del-estado-v1^^1940-01-01^^LDE^^^LADE^^^^^http://en.wikipedia.org/wiki/LADE^^en|LADE|s=en|Líneas Aéreas del Estado|=es|Líneas Aéreas del Estado|=sign|LADE|^^air-lineas-aereas-del-estado^1
 air-linea-tristica-aereotuy-v1^^1982-01-01^^TUY^^^Línea Turística Aereotuy^Linea Turistica Aereotuy^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_Tur%C3%ADstica_Aereotuy^^abbr|LTA|=en|Línea Turística Aereotuy|=es|Línea Turística Aereotuy|=sign|AEROTUY|^^air-linea-tristica-aereotuy^1
 air-linea-turistica-aereotuy-v1^1^1982-01-01^2015-06-30^^L4^445^Línea Turística Aereotuy (LTA)^^^^^http://en.wikipedia.org/wiki/L%C3%ADnea_Tur%C3%ADstica_Aereotuy^^en|Línea Turística Aereotuy (LTA)|^^air-linea-turistica-aereotuy^1
-air-link-conexion-aerea-v1^^2016-07-01^^^YQ^0^Link Conexion Aerea^^^^^^^en|Link Conexion Aerea|^^air-link-conexion-aerea^1
 air-links-air-v1^^1983-08-03^^LNQ^^^Links Air^^^^^http://en.wikipedia.org/wiki/Links_Air^^en|Links Air|^^air-links-air^1
 air-link-v1^^^^^V6^0^Air Link^^^^^^3765^en|Air Link|^^air-link^1
 air-lion-airlines-v1^^2000-06-30^^LNI^JT^990^Lion Air^^^^^http://en.wikipedia.org/wiki/Lion_Air^250449^en|Lion Air|^^air-lion-airlines^1
@@ -1182,7 +1181,7 @@ air-tanana-air-service-v1^^^^TNR^4E^0^Tanana Air Service^^^^^^^en|Tanana Air Ser
 air-tandem-aero-v1^^1998-01-01^^TDM^TQ^38^Tandem Aero^^^^^http://en.wikipedia.org/wiki/Tandem_Aero^^en|Tandem Aero|^^air-tandem-aero^1
 air-tap-portugal-v1^^1946-09-19^^TAP^TP^47^TAP Portugal^^Star Alliance^Member^^http://en.wikipedia.org/wiki/TAP_Portugal^83746^en|TAP Portugal|^^air-tap-portugal^1
 air-taquan-air-services-v1^^^^^K3^0^Taquan Air Services^^^^^^5998^en|Taquan Air Services|^^air-taquan-air-services^1
-air-tar-aerolineas-v1^^2014-01-14^^LCT^^^TAR Aerolineas^^^^^http://en.wikipedia.org/wiki/TAR_Aerolineas^^en|TAR|s=en|TAR Aerolineas|^^air-tar-aerolineas^1
+air-tar-aerolineas-v1^^2014-01-14^^LCT^YQ^^TAR Aerolíneas^TAR Aerolineas^^^^http://en.wikipedia.org/wiki/TAR_Aerolineas^^en|TAR|s=en|TAR Aerolíneas|p=en|LINK Conexión Aérea S.A. de C.V.|^^air-tar-aerolineas^1
 air-tarco-air-v1^^^^TRQ^3T^0^Tarco Air^Turan Air^^^^^1459^en|Tarco Air|=en|Turan Air|^^air-tarco-air^1
 air-tarom-v1^^1946-02-01^^ROT^RO^281^TAROM^^Skyteam^Member^^http://en.wikipedia.org/wiki/TAROM^39183^en|TAROM|^^air-tarom^1
 air-tashi-air-v1^^2011-12-07^^BTN^B3^0^Bhutan Airlines^Tashi Air^^^P^http://en.wikipedia.org/wiki/Bhutan_Airlines^^en|Bhutan Airlines|=en|Tashi Air|^^air-tashi-air^1
