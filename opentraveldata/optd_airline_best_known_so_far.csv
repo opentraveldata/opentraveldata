@@ -419,6 +419,7 @@ air-evelop-airlines-v1^^2013-01-01^^EVE^E9^783^Evelop Airlines^^^^^http://en.wik
 air-everts-v1^^^^^5V^840^Everts^Lviv Airlines^^^^^en|Everts|=en|Lviv Airlines|^^air-everts^1
 air-ewa-air-v1^^^^EWR^ZD^732^Ewa Air^Flying Dandy^^^^^en|Ewa Air|=en|Flying Dandy|^^air-ewa-air^1
 air-exec-air-v1^^^^^X7^0^Exec Air^Air Service^^^^^en|Exec Air|=en|Air Service|^^air-exec-air^1
+air-executive-express-aviation-v1^^2013-01-01^^LTD^6G^677^Executive Express Aviation^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^en|Southern Airways|=en|Executive Express Aviation LLC|^PIT^air-executive-express-aviation^1
 air-expressjet-airlines-inc-v1^^^^BTA^XE^477^Expressjet Airlines Inc^^^^^^en|Expressjet Airlines Inc|^^air-expressjet-airlines-inc^1
 air-express-jet-v1^^1979-01-01^^ASQ^EV^862^ExpressJet^^^^^http://en.wikipedia.org/wiki/ExpressJet^en|ExpressJet|^^air-express-jet^1
 air-far-eastern-v1^^1957-01-01^^FEA^FE^436^Far Eastern Air Transport^^^^^http://en.wikipedia.org/wiki/Far_Eastern_Air_Transport^abbr|FAT|=en|Far Eastern Air Transport|=pny|Yuǎndōng Hángkōng Gǔfènyǒuxiàngōngsī|=wuu|远东航空股份有限公司|=yue|遠東航空股份有限公司|^^air-far-eastern^1
@@ -899,7 +900,7 @@ air-south-african-airways-v1^^1934-02-01^^SAA^SA^83^South African Airways^SAA^^M
 air-south-african-express-v1^^1994-04-24^^EXY^XZ^29^South African Express^SA Express^^^^http://en.wikipedia.org/wiki/South_African_Express^en|South African Express|=en|SA Express|^^air-south-african-express^1
 air-south-airlines-v1^^1999-04-19^^OTL^YG^233^South Airlines^^^^^http://en.wikipedia.org/wiki/South_Airlines^en|South Airlines|^^air-south-airlines^1
 air-southern-air-charter-v1^^^^^PL^0^Southern Air Charter^^^^^^en|Southern Air Charter|^^air-southern-air-charter^1
-air-southern-airways-express-v1^^2013-01-01^^LTD^9X^677^Southern Airways Express^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^en|Southern Airways|=en|Executive Express Aviation|^MEM^air-southern-airways-express^1
+air-southern-airways-express-v1^^2013-01-01^^LTD^9X^504^Southern Airways Express^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^en|Southern Airways|=en|Executive Express Aviation LLC|^DSI=MEM^air-southern-airways-express^1
 air-southern-star-airlines-v1^^^^^4P^0^Travel Air^^^^^^en|Travel Air|^^air-southern-star-airlines^1
 air-southwest-airlines-v1^^1971-06-18^^SWA^WN^526^Southwest Airlines^^^^P^http://en.wikipedia.org/wiki/Southwest_Airlines^en|Southwest Airlines|^^air-southwest-airlines^1
 air-speed-alliance-westbahn-v1^^2011-12-11^^^5W^0^WESTBahn^^^^^http://en.wikipedia.org/wiki/WESTbahn^en|WESTBahn|ps=en|Speed Alliance WESTBahn|^LZS=XWW=ZSB^air-speed-alliance-westbahn^1
