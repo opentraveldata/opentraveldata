@@ -1250,7 +1250,7 @@ air-uni-airways-v1^^^^UIA^B7^525^Uni Airways^^^^^^8631^en|Uni Airways|^^air-uni-
 air-united-airlines-v1^^1931-03-28^^UAL^UA^16^United Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/United_Airlines^750161^en|United Airlines|^^air-united-airlines^1
 air-united-airways-bangladesh-v1^^^^^4H^584^United Airways Bangladesh^Trans Pacific^^^^^2395^en|United Airways Bangladesh|=en|Trans Pacific|^^air-united-airways-bangladesh^1
 air-universal-airlines-v1^^^^UVG^UW^751^Universal Airlines^^^^^^^en|Universal Airlines|^^air-universal-airlines^1
-air-ural-airlines-v1^^^^SVR^U6^262^Ural Airlines^^^^^^30891^en|Ural Airlines|^^air-ural-airlines^1
+air-ural-airlines-v1^^^^SVR^U6^262^Ural Airlines^^^^^http://en.wikipedia.org/wiki/Ural_Airlines^30891^en|Ural Airlines|^MOW=SVX^air-ural-airlines^1
 air-us-airways-v1^^1939-01-01^^AWE^US^37^US Airways^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/US_Airways^^en|US Airways|^^air-us-airways^1
 air-usa-jet-airlines-v1^^1994-01-01^^JUS^UJ^0^USA Jet Airlines^^^^^http://en.wikipedia.org/wiki/USA_Jet_Airlines^5645^en|USA Jet Airlines|^^air-usa-jet-airlines^1
 air-us-bangla-airlines-v1^^2014-07-17^^^BS^0^US-Bangla Airlines^^^^^http://en.wikipedia.org/wiki/US-Bangla_Airlines^2391^en|US-Bangla Airlines|^^air-us-bangla-airlines^1
@@ -1315,7 +1315,7 @@ air-wizz-air-ukraine-v1^1^2008-01-01^2015-04-20^WAU^WU^0^Wizz Air Ukraine^^^^^ht
 air-world-airways-v1^^^^WOA^WO^468^World Airways^^^^^^^en|World Airways|^^air-world-airways^1
 air-wow-air-v1^^^^^WW^0^Wow Air^^^^P^^9435^en|Wow Air|^^air-wow-air^1
 air-wright-air-services-v1^^1967-01-01^^WRF^8V^0^Wright Air Services^^^^P^http://en.wikipedia.org/wiki/Wright_Air_Service^11988^en|Wright Air Services|^^air-wright-air-services^1
-air-xiamen-airlines-v1^^1984-07-25^^CXA^MF^731^XiamenAir^^Skyteam^Member^^http://en.wikipedia.org/wiki/XiamenAir^145338^en|XiamenAir|^^air-xiamen-airlines^1
+air-xiamen-airlines-v1^^1984-07-25^^CXA^MF^731^XiamenAir^^Skyteam^Member^^http://en.wikipedia.org/wiki/XiamenAir^145338^en|XiamenAir|^XMN^air-xiamen-airlines^1
 air-xl-airways-france-v1^^^^XLF^SE^473^XL Airways France^Star Airlines^^^^^1791^en|XL Airways France|=en|Star Airlines|^^air-xl-airways-france^1
 air-xpressair-v1^^2003-01-01^^XAR^XN^0^XpressAir^^^^^http://en.wikipedia.org/wiki/XpressAir^2833^en|XpressAir|p=en|Express Air|h=en|fly express|h^BDO=PKU=PLM^air-xpressair^1
 air-xtra-airways-v1^^^^CXP^XP^0^Xtra Airways^^^^^^^en|Xtra Airways|^^air-xtra-airways^1
