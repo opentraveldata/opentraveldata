@@ -63,7 +63,7 @@ TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
 # IATA sub-directory
-IATA_DIR=${OPTD_DIR}data/IATA/
+IATA_DIR=${OPTD_DIR}data/IATA/archives/
 
 ##
 # Sanity check: that (executable) script should be located in the tools/
@@ -181,5 +181,9 @@ echo
 echo "Results"
 echo "-------"
 echo "The '${IATA_CSV_FILE}' file has been derived from '${IATA_TAB_FILE}'."
+echo "Suggested next step:"
+echo "git add ${IATA_CSV_FILE}"
+echo "git commit -m \"[POR] Added some screen-scraped data\" ${IATA_CSV_FILE}"
+echo "\rm -f ${IATA_TAB_FILE}"
 echo
 
