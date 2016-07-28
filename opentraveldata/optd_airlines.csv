@@ -1273,7 +1273,8 @@ air-videcom-v1^^^^^U1^0^Videcom International^^^^^http://en.wikipedia.org/wiki/V
 air-vieques-air-link-v1^^1965-01-01^^VES^V4^0^Vieques Air Link^^^^^http://en.wikipedia.org/wiki/Vieques_Air_Link^2282^en|Vieques Air Link|^^air-vieques-air-link^1
 air-vietjet-aviation-v1^^2011-12-25^^VJC^VJ^978^VietJet Air^^^^^http://en.wikipedia.org/wiki/VietJet_Air^36222^en|VietJet Air|=en|VietJet Aviation|^^air-vietjet-aviation^1
 air-vietnam-airlines-v1^^1956-01-01^^HVN^VN^738^Vietnam Airlines^^Skyteam^Member^^http://en.wikipedia.org/wiki/Vietnam_Airlines^129493^en|Vietnam Airlines|^^air-vietnam-airlines^1
-air-vietnam-air-service-v1^1^1987-12-31^2015-09-01^VFC^0V^368^Vietnam Air Services Company^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^^en|Vietnam Air Services Company|^^air-vietnam-air-service^1
+air-vietnam-air-service-v1^1^1987-12-31^2015-09-01^VFC^0V^368^Vietnam Air Services Company^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^^abbr|VASCO|h=en|SkyViet Aviation|p=en|Vietnam Air Services Company|h=ja|ベトナムエアサービス|=ko|바스코 항공|=vi|Công ty bay dịch vụ hàng không|=sign|VASCO AIR|=zh|越南航空服務公司|^HAN=SGN^air-vietnam-air-service^1
+air-vietnam-air-service-v2^^2016-05-01^^VFC^0V^368^SkyViet Aviation^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^2726^abbr|VASCO|h=en|SkyViet Aviation|p=en|Vietnam Air Services Company|h=ja|ベトナムエアサービス|=ko|바스코 항공|=vi|Công ty bay dịch vụ hàng không|=sign|VASCO AIR|=zh|越南航空服務公司|^HAN=SGN^air-vietnam-air-service^2
 air-villa-air-v1^^^^VQI^VP^0^Villa Air^^^^^^5124^en|Villa Air|^^air-villa-air^1
 air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^http://en.wikipedia.org/wiki/VIM_Airlines^^en|Vim Airlines|^^air-vim-airlines^1
 air-vincent-aviation-v1^^^^VIN^BF^0^Vincent Aviation^^^^P^^^en|Vincent Aviation|^^air-vincent-aviation^1
