@@ -401,7 +401,7 @@ air-emirates-v1^^1985-10-25^^UAE^EK^176^Emirates^^^^^http://en.wikipedia.org/wik
 air-endeavor-air-v1^^1985-01-01^^FLG^9E^430^Endeavor Air^^^^^http://en.wikipedia.org/wiki/Endeavor_Air^en|Endeavor Air|^^air-endeavor-air^1
 air-equaflight-service-v1^^^^^E7^965^Equaflight Service^Fly European^^^P^^en|Equaflight Service|=en|Fly European|^^air-equaflight-service^1
 air-equatorial-congo-airlines-v1^^2011-09-24^^PTI^LC^753^ECAir^^^^^^en|Equatorial Congo Airlines|=en|ECAir|ps=ja|エクアトリアル・コンゴ・エアラインズ|^^air-equatorial-congo-airlines^1
-air-era-aviation-v1^^1948-01-01^^ERH^7H^808^Era Aviation^^^^^http://en.wikipedia.org/wiki/Era_Aviation^en|Era Aviation|^^air-era-aviation^1
+air-era-aviation-v2^^2016-07-31^^RVF^7H^808^Ravn Alaska^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^2
 air-eritrean-airlines-v1^^^^ERT^B8^637^Eritrean Airlines^^^^^^en|Eritrean Airlines|^^air-eritrean-airlines^1
 air-ero-sun-d-or-v1^^^^ERO^2U^383^Ero Sun D Or^^^^P^^en|Ero Sun D Or|^^air-ero-sun-d-or^1
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^en|E Savtravel|^^air-e-savtravel^1
@@ -596,13 +596,12 @@ air-kenmore-air-v1^^^^KEN^M5^763^Kenmore Air^^^^^^en|Kenmore Air|^^air-kenmore-a
 air-kenn-borek-air-v1^^^^KBA^4K^0^Kenn Borek Air^^^^^^en|Kenn Borek Air|^^air-kenn-borek-air^1
 air-kenya-airways-v1^^1977-02-04^^KQA^KQ^706^Kenya Airways^^^Member^^http://en.wikipedia.org/wiki/Kenya_Airways^en|Kenya Airways|^^air-kenya-airways^1
 air-kharkiv-airlines-v1^^^^^KW^711^Kharkiv Airlines^^^^^^en|Kharkiv Airlines|^^air-kharkiv-airlines^1
-air-khors-air-v1^^1990-01-01^^KHO^KO^354^Khors Air^^^^^http://en.wikipedia.org/wiki/Khors_Air^en|Khors Air|^^air-khors-air^1
 air-kingfisher-airlines-v1^^^^KFR^^90^Kingfisher Airlines^^^Future^^^en|Kingfisher Airlines|^^air-kingfisher-airlines^1
 air-kish-airlines-v1^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^^en|Kish Airlines|=en|Trans Air|^^air-kish-airlines^1
 air-klm-cityhopper-v1^^1991-04-01^^KLC^WA^0^KLM Cityhopper^^^^^http://en.wikipedia.org/wiki/KLM_Cityhopper^en|KLM Cityhopper|^^air-klm-cityhopper^1
 air-klm-v1^^1919-10-07^^KLM^KL^74^KLM^KLM Royal Dutch Airlines^^Member^^http://en.wikipedia.org/wiki/KLM^en|KLM|=en|KLM Royal Dutch Airlines|^^air-klm^1
 air-kogalymavia-airlines-v1^^^^^7K^0^Kogalymavia Airlines^^^^^^en|Kogalymavia Airlines|^^air-kogalymavia-airlines^1
-air-komiaviatrans-v1^^1998-01-01^^KMA^^^Komiaviatrans^^^^^http://en.wikipedia.org/wiki/Komiaviatrans^en|Komiaviatrans|=ru|Комиавиатранс|^^air-komiaviatrans^1
+air-komiaviatrans-v1^^2016-07-01^^KMA^KO^0^Komiaviatrans^^^^^http://en.wikipedia.org/wiki/Komiaviatrans^en|Komiaviatrans|ps=en|OJSC "Komiaviatrans"|=ru|Комиавиатранс|^SCW^air-komiaviatrans^1
 air-korean-air-v1^^1969-03-01^^KAL^KE^180^Korean Air^^^Member^^http://en.wikipedia.org/wiki/Korean_Air^en|Korean Air|^^air-korean-air^1
 air-korongo-airlines-v1^^^^^ZC^557^Korongo Airlines^^^^^^en|Korongo Airlines|^^air-korongo-airlines^1
 air-krasavia-v1^^1992-01-01^^^KI^0^KrasAvia^^^^^http://en.wikipedia.org/wiki/KrasAvia^en|KrasAvia|^^air-krasavia^1

@@ -138,7 +138,7 @@
 7D^1^MGC Aviation<>Mgc Aviation
 7E^1^Sylt Air<>Sylt Air Gmbh
 7G^1^StarFlyer<>Star Flyer
-7H^1^Era Aviation<>Ravin Akaska
+7H^1^Ravn Alaska<>Ravn Akaska
 7H^2^<>Era Aviation
 7I^2^<>Insel Air
 7J^2^<>Tajik Air
@@ -544,7 +544,7 @@ ELY^2^El Al Israel Airlines<>El Al
 EM^1^Aero Benin<>Empire Airlines
 EQ^1^TAME<>Tame Linea Aerea Del Ecuador
 EQ^2^TAME EP Línea Aérea del Ecuador<>Tame
-ERH^1^Era Aviation<>Ravin Akaska
+ERH^1^<>Ravn Akaska
 ERH^2^<>Era Aviation
 ERO^2^<>Sun D Or
 ERT^2^<>Eritrean Air
@@ -828,7 +828,7 @@ KD^1^Kal Star Aviation<>Pt Kal Star Aviation
 KD^2^KD Avia<>Kd Avia
 KE^2^<>Korean Air
 KGA^2^<>Kyrgyzstan
-KHO^1^Khors Air<>Aircompany Khors
+KHO^1^<>Ojsc Komiaviatrans
 KI^1^KrasAvia<>Krasavia
 KI^2^<>Air Contact
 KJ^2^<>Bmed
@@ -844,7 +844,7 @@ KMF^2^<>Kam Air
 KNE^2^Nas Air<>Nasair
 KNI^1^Kal Star Aviation<>Pt Kal Star Aviation
 KNI^2^KD Avia<>Kd Avia
-KO^1^Khors Air<>Aircompany Khors
+KO^1^Komiaviatrans<>Ojsc Komiaviatrans
 KQ^2^<>Kenyaairway
 KQA^2^<>Kenyaairway
 KR^1^Air Bishkek<>Air Bishkek Aircompany
@@ -879,6 +879,8 @@ LC^1^ECAir<>Equatorial Congo Airline
 LC^2^<>Congo Airline
 LCO^1^LAN Cargo<>Lan Chile Cargo
 LCO^2^Ladeco<>N
+LCT^1^TAR Aerolíneas<>Link Conexion Aerea
+LCT^2^TAR Aerolineas<>
 LF^1^Corporate Flight Management<>Contour Airlines
 LF^2^<>Contour Airl
 LH^2^<>Lufthansa

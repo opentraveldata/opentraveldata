@@ -100,6 +100,7 @@ air-dutch-antilles-express-v1^1^2005-01-01^2013-09-19^DNL^9H^0^Dutch Antilles Ex
 air-eagle-atlantic-airlines-v1^1^2013-10-31^2014-12-31^EAB^E2^0^Eagle Atlantic Airlines^^^^P^http://en.wikipedia.org/wiki/Eagle_Atlantic_Airlines^en|Eagle Atlantic Airlines|^ACC^air-eagle-atlantic-airlines^1
 air-elysair-v1^1^2007-01-03^2009-04-04^AVI^A0^0^L'Avion^^^^^http://en.wikipedia.org/wiki/L%27Avion^en|OpenSkies|=en|L'Avion|h=en|Elysair SAS|h=sign|MISTRAL|=sign|ELYSAIR|h^ORY^air-elysair^1
 air-enkor-jsc-v1^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor^en|Enkor|^^air-enkor-jsc^1
+air-era-aviation-v1^1^1948-01-01^2016-06-30^ERH^7H^808^Era Aviation^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^1
 air-estafeta-carga-aerea-v1^1^^2013-12-31^^E7^^Estafeta Carga Aerea^Estafeta Carga Aerea^^^C^^en|Estafeta Carga Aerea|=en|Estafeta Carga Aerea|^^air-estafeta-carga-aerea^1
 air-estonian-air-v1^1^1991-01-01^2015-11-08^ELL^OV^960^Estonian Air^^^^^http://en.wikipedia.org/wiki/Estonian_Air^en|Estonian Air|^TLL^air-estonian-air^1
 air-euralair-v1^1^1964-01-01^2003-11-30^ERL^RN^0^Euralair^^^^^http://en.wikipedia.org/wiki/Euralair^en|Euralair|h=en|Air Horizons|p^^air-euralair^1
@@ -157,6 +158,7 @@ air-kartika-airlines-v1^1^2001-05-15^2010-12-31^KAE^3Y^0^Kartika Airlines^^^^^ht
 air-katmai-air-v1^1^^2015-12-31^^KT^0^Katmai Air^^^^^http://www.katmailand.com/air-services^en|Katmai Air|^BKF^air-katmai-air^1
 air-kato-airline-v1^1^1996-01-01^2008-09-01^KAT^6S^0^Kato Airlines^^^^^http://en.wikipedia.org/wiki/Kato_Airline^en|Kato Airlines|=en|Kato Air|ps^BOO=EVE=TRD^air-kato-airline^1
 air-kd-v1^1^1990-01-01^2013-09-30^KDC^XC^0^KD Air^^^^^http://en.wikipedia.org/wiki/KD_Air^en|KD Air|=sign|KAYDEE|^YVR^air-kd^1
+air-khors-air-v1^1^1990-01-01^2016-06-30^KHO^KO^354^Khors Air^^^^^http://en.wikipedia.org/wiki/Khors_Air^en|Khors Air|=uk|Авіакомпанія Хорс|^IEV^air-khors-air^1
 air-kyrgyz-airlines-v1^1^2013-01-01^2013-01-31^KGZ^LK^915^Kyrgyz Airlines^^^^^^en|Kyrgyz Airlines|^FRU^air-kyrgyz-airlines^1
 air-lade-v1^1^1940-09-01^2014-12-31^LDE^5U^0^LADE^Líneas Aéreas del Estado^^^^http://en.wikipedia.org/wiki/LADE^en|LADE|=en|Líneas Aéreas del Estado|^^air-lade^1
 air-lagunair-lineas-aeras-v1^1^2003-09-29^2008-12-31^LGA^N7^0^LagunAir^LagunAir Líneas Aéreas^^^^http://en.wikipedia.org/wiki/LagunAir^en|LagunAir|=en|LagunAir Líneas Aéreas|^^air-lagunair-lineas-aeras^1
