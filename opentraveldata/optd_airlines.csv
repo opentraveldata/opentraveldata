@@ -46,7 +46,7 @@ air-afghan-jet-v1^^^^^HN^714^Afghan Jet International^^^^^^^en|Afghan Jet Intern
 air-african-express-airways-v1^^^^^XU^0^African Express Airways^Link Airways^^^P^^1523^en|African Express Airways|=en|Link Airways|^^air-african-express-airways^1
 air-afric-aviation-v1^^2011-01-01^^^L8^348^Afric Aviation^^^^^http://en.wikipedia.org/wiki/Afric_Aviation^1116^en|Afric Aviation|^^air-afric-aviation^1
 air-africa-west-cargo-v1^^^^^FK^0^Africa West Cargo Ghd^^^^C^^^en|Africa West Cargo Ghd|^^air-africa-west-cargo^1
-air-africa-world-airlines-v1^^^^AFW^AW^394^Africa World Airlines^^^^^^4453^en|Africa World Airlines|^^air-africa-world-airlines^1
+air-africa-world-airlines-v1^^2012-09-21^^AFW^AW^394^Africa World Airlines^^^^^http://en.wikipedia.org/wiki/Africa_World_Airlines^4453^abbr|AWA|=en|Africa World Airlines|^ACC^air-africa-world-airlines^1
 air-afrijet-airlines-v1^1^2000-01-01^2008-12-31^FRJ^6F^0^Afrijet Airlines^^^^^http://en.wikipedia.org/wiki/Afrijet_Airlines^^en|Afrijet Airlines|^LOS^air-afrijet-airlines^1
 air-afrijet-business-service-v1^^2016-04-01^^ABS^J7^0^Afrijet Business Service^^^^^^127^en|Afrijet Business Service|^LBV^air-afrijet-business-service^1
 air-afriqiyah-airways-v1^^^^AAW^8U^546^Afriqiyah Airways^^^^^^993^en|Afriqiyah Airways|^^air-afriqiyah-airways^1
@@ -248,8 +248,8 @@ air-angkor-airways-v1^1^2007-01-01^2008-12-31^AKW^G6^0^Angkor Airways^^^^^http:/
 air-anguilla-air-services-v1^^^^AAS^Q3^0^Anguilla Air Services^^^^^^130^en|Anguilla Air Services|^^air-anguilla-air-services^1
 air-antrak-air-v1^^^^^O4^916^Antrak Air^^^^^^^en|Antrak Air|^^air-antrak-air^1
 air-apex-airline-v1^^2015-04-01^^^SO^0^Apex Airline^^^^^^1830^en|Apex Airline|^^air-apex-airline^1
+air-apg-airlines-v1^^2016-01-01^^RIV^GP^275^APG Airlines^^^^^^52^en|APG Airlines|^NCE^air-apg-airlines^1
 air-arctic-circle-air-v1^1^1953-01-01^2009-12-31^CIR^5F^0^Arctic Circle Air^^^^^http://en.wikipedia.org/wiki/Arctic_Circle_Air^^en|Arctic Circle Air|^SPN^air-arctic-circle-air^1
-air-arc-v1^^^^^XD^0^Arc^^^^^^^en|Arc|^^air-arc^1
 air-ariana-afghan-airlines-v1^^^^AFG^FG^255^Ariana Afghan Airlines^Ariana^^^^^183^en|Ariana Afghan Airlines|=en|Ariana|^^air-ariana-afghan-airlines^1
 air-arik-air-v1^^2006-10-30^^ARA^W3^725^Arik Air^^^^^http://en.wikipedia.org/wiki/Arik_Air^33993^en|Arik Air|^ABV=ACC=LOS^air-arik-air^1
 air-arkefly-v1^^2004-03-01^^TFL^OR^178^TUI Airlines Netherlands^Arkefly^^^PC^http://en.wikipedia.org/wiki/TUI_Airlines_Netherlands^2748^en|TUI Airlines Netherlands|=en|Arkefly|^^air-arkefly^1
@@ -605,7 +605,7 @@ air-ghadames-air-transport-v1^1^2004-01-01^2006-12-31^GHT^G6^0^Ghadames Air Tran
 air-girjet-v1^1^2003-07-31^2008-04-30^GJT^8G^0^Girjet^^^^^http://en.wikipedia.org/wiki/Girjet^^en|Girjet|^^air-girjet^1
 air-globus-v1^^^^GHA^GH^674^Globus^Ghana Air^OneWorld^Affiliate^^^16516^en|Globus|=en|Ghana Air|^^air-globus^1
 air-gmg-airlines-v1^^1998-04-06^^GMG^Z5^9^GMG Airlines^^^^^http://en.wikipedia.org/wiki/GMG_Airlines^^en|GMG Airlines|^^air-gmg-airlines^1
-air-go2sky-v1^^2013-02-14^^RLX^6G^0^Go2Sky^^^^^http://en.wikipedia.org/wiki/Go2Sky^67^en|Go2Sky|=sign|RELAX|^BTS^air-go2sky^1
+air-go2sky-v1^^2013-02-14^^RLX^6G^0^Go2Sky^^^^^http://en.wikipedia.org/wiki/Go2Sky^67^en|Go2Sky|=sign|RELAX|^TIA^air-go2sky^1
 air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/GoAir^54865^en|GoAir|^BOM=DEL^air-go-airlines^1
 air-gojet-airlines-v1^^2004-01-01^^GJS^G7^573^GoJet Airlines^^^^^http://en.wikipedia.org/wiki/GoJet_Airlines^103412^en|GoJet Airlines|^^air-gojet-airlines^1
 air-golden-myanmar-airlines-v1^^^^^Y5^509^Golden Myanmar Airlines^^^^^^773^en|Golden Myanmar Airlines|^^air-golden-myanmar-airlines^1
@@ -689,8 +689,8 @@ air-investavia-v1^1^2007-01-01^2015-06-30^TLG^IV^0^InvestAvia^^^^^^^en|InvestAvi
 air-iran-air-tours-v1^^1973-01-01^^IRB^B9^491^Iran Air Tours^^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours^11448^en|Iran Air Tours|^^air-iran-air-tours^1
 air-iran-air-v1^^1961-01-01^^IRA^IR^96^Iran Air^^^^^http://en.wikipedia.org/wiki/Iran_Air^11283^en|Iran Air|^^air-iran-air^1
 air-iran-aseman-airlines-v1^^1980-01-01^^IRC^EP^815^Iran Aseman Airlines^^^^^http://en.wikipedia.org/wiki/Iran_Aseman_Airlines^9652^en|Iran Aseman Airlines|^^air-iran-aseman-airlines^1
-air-iranian-naft-airline-v1^^^^IRG^NV^346^Iranian Naft Airline^^^^^^6157^en|Iranian Naft Airline|^^air-iranian-naft-airline^1
-air-iraqi-airways-v1^^2016-01-01^^IAW^IA^73^Iraqi Airways^^^^^^21130^en|Iraqi Airways|^BGW^air-iraqi-airways^1
+air-iranian-naft-airline-v1^^1992-01-01^^IRG^NV^346^Iranian Naft Airline^^^^^http://en.wikipedia.org/wiki/Iranian_Naft_Airlines^6157^en|Iranian Naft Airline|=fa|هواپیمائی نفت‎‎|=sign|NAFT|^AWZ=THR^air-iranian-naft-airline^1
+air-iraqi-airways-v1^^2016-01-01^^IAW^IA^73^Iraqi Airways^^^^^http://en.wikipedia.org/wiki/Iraqi_Airways^21130^ar|الخطوط الجوية العراقية|p=ar|Al-Khuṭūṭ al-Jawwiyyah al-`Irāqiyyah|=en|Iraqi Airways|^BGW=BSR=EBL=ISU=NJF^air-iraqi-airways^1
 air-iraqi-airways-v1^1^1946-01-28^2016-05-31^IAW^IA^73^Iraqi Airways^^^^^http://en.wikipedia.org/wiki/Iraqi_Airways^^en|Iraqi Airways|^BGW^air-iraqi-airways^1
 air-irtysh-air-v1^^^^MZA^IH^0^Jsc Irtysh Air^Falcon Air^^^^^^en|Jsc Irtysh Air|=en|Falcon Air|^^air-irtysh-air^1
 air-island-air-hawaii-v1^^1980-01-01^^MKU^WP^347^Island Air^^^^^http://en.wikipedia.org/wiki/Island_Air_%28Hawaii%29^10691^en|Island Air|^^air-island-air-hawaii^1
@@ -733,7 +733,7 @@ air-jet-time-v1^^2006-09-01^^JTG^JO^0^Jet Time^Jalways^^^^http://en.wikipedia.or
 air-jiangxi-air-v1^^2016-01-27^^CJX^RY^989^Jiangxi Air^^^^^http://en.wikipedia.org/wiki/Jiangxi_Air^1827^en|Jiangxi Air|=pny|Jiāngxī Hángkōng|=sign|AIR CRANE|=zh|江西航空|^^air-jiangxi-air^1
 air-jin-air-v1^^^^JNA^LJ^718^Jin Air^^^^^^24535^en|Jin Air|^^air-jin-air^1
 air-job-air-v1^^^^JBR^3B^0^Job Air^^^^^^^en|Job Air|^^air-job-air^1
-air-jordan-aviation-v1^^^^JAV^R5^151^Jordan Aviation^Malta Air^^^^^427^en|Jordan Aviation|=en|Malta Air|^^air-jordan-aviation^1
+air-jordan-aviation-v1^^2000-10-01^^JAV^R5^151^Jordan Aviation^^^^^http://en.wikipedia.org/wiki/Jordan_Aviation^427^en|Jordan Aviation|^AMM^air-jordan-aviation^1
 air-joy-air-v1^^2009-06-01^^JOY^JR^929^Joy Air^^^^^http://en.wikipedia.org/wiki/Joy_Air^^en|Joy Air|=sign|JOY AIR|=zh|幸福航空|^^air-joy-air^1
 air-jubba-airways-kenya-v1^^^^JBW^3J^535^Jubba Airways Kenya^Zip Air^^^^^993^en|Jubba Airways Kenya|=en|Zip Air|^^air-jubba-airways-kenya^1
 air-juneyao-airlines-v1^^^^DKH^HO^18^Juneyao Airlines^^^^^^28816^en|Juneyao Airlines|^^air-juneyao-airlines^1
@@ -824,6 +824,7 @@ air-malev-hungarian-airlines-v1^1^1956-11-25^2012-02-03^MAH^MA^182^MALÉV Hungar
 air-malindo-airways-v1^^2012-09-11^^^OD^816^Malindo Airways^^^^^http://en.wikipedia.org/wiki/Malindo_Air^66654^en|Malindo Airways|^^air-malindo-airways^1
 air-malmo-aviation-v1^1^1981-01-01^2016-02-29^SCW^TF^276^Malmö Aviation^Malmo Aviation^^^^http://en.wikipedia.org/wiki/Malm%C3%B6_Aviation^^en|Malmö Aviation|^^air-malmo-aviation^1
 air-malmo-aviation-v2^^2016-03-01^^BRA^TF^276^BRA^^^^P^http://en.wikipedia.org/wiki/BRA_%28airline%29^14405^en|BRA|ps=en|Braathens Regional Airlines|=en|Braathens Regional Aviation|=en|Malmö Aviation|h=en|Sundsvallsflyg|h=en|Kullaflyg|h=en|Kalmarflyg|h=en|Gotlandsflyg|h=en|Golden Air|h^BMA=THN^air-malmo-aviation^2
+air-malta-air-charter-v1^1^1990-01-01^2004-11-01^MAC^RS^0^Malta Air Charter^^^^^http://en.wikipedia.org/wiki/Malta_Air_Charter^^en|Malta Air Charter|^^air-malta-air-charter^1
 air-mandala-airlines-v1^^^^MDL^RI^488^Mandala Airlines^Pt Mandala^^^^^^en|Mandala Airlines|=en|Pt Mandala|^^air-mandala-airlines^1
 air-mandarin-airlines-v1^^^^MDA^AE^803^Mandarin Airlines^^Skyteam^Affiliate^^^9729^en|Mandarin Airlines|^^air-mandarin-airlines^1
 air-mango-v1^^2006-01-01^^MNO^JE^0^Mango^^^^^http://en.wikipedia.org/wiki/Mango_%28airline%29^12170^en|Mango|^^air-mango^1
@@ -1237,7 +1238,7 @@ air-trigana-air-v1^^2014-01-01^^^IL^0^Trigana Air Service^Istanbul Air^^^^^11032
 air-trip-v1^^^^^T4^661^Trip^^^^^^^en|Trip|^^air-trip^1
 air-tropic-air-v1^^1979-01-01^^TOS^9N^789^Tropic Air^^^^PC^http://en.wikipedia.org/wiki/Tropic_Air^68572^en|Tropic Air|^^air-tropic-air^1
 air-tuifly-nordic-v1^^^^BLX^6B^951^Tuifly Nordic^Britannia^^^^^4784^en|Tuifly Nordic|=en|Britannia|^^air-tuifly-nordic^1
-air-tuifly-v1^^2007-01-01^^TUI^X3^617^TUIfly^^^^^http://en.wikipedia.org/wiki/TUIfly^55941^en|TUIfly|^^air-tuifly^1
+air-tuifly-v1^^2007-01-01^^TUI^X3^617^TUIfly^^^^^http://en.wikipedia.org/wiki/TUIfly^55941^en|TUIfly|^MUC=STR=TXL^air-tuifly^1
 air-tunisair-express-v1^^^^^UG^150^Tunisair Express^Tuninter^^^^^1237^en|Tunisair Express|=en|Tuninter|^^air-tunisair-express^1
 air-tunisair-v1^^^^TAR^TU^199^Tunisair^Tunis Air^^^^^20783^en|Tunisair|=en|Tunis Air|^^air-tunisair^1
 air-turkish-airlines-v1^^1933-05-20^^THY^TK^235^Turkish Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Turkish_Airlines^428852^en|Turkish Airlines|^^air-turkish-airlines^1
@@ -1373,6 +1374,7 @@ gds-travelsky-technology-v1^^^^^1E^252^Travelsky Technology^Civil China^^^G^^^en
 gds-worldspan-v1^^^^WSP^1P^523^Travelport Worldspan^Worldspan^^^G^^^en|Travelport Worldspan|=en|Worldspan|^^gds-worldspan^1
 gds-worldticket-v1^^^^^W1^0^WorldTicket^^^^G^http://en.wikipedia.org/wiki/WorldTicket^60^en|WorldTicket|^^gds-worldticket^1
 tec-arc-reporting-v1^^^^ATA^X6^889^Airlines Reporting Corp^ARC^^^^^^en|Airlines Reporting Corp|=en|ARC|^^tec-arc-reporting^1
+tec-arc-v1^^^^^XD^0^Scheduled Airlines Traffic Offices^^^^^^^abbr|SATO|=en|Scheduled Airlines Traffic Offices|^^air-arc^1
 tec-bird-information-systems-v1^^^^^1R^0^Bird Information Systems^^^^^^^en|Bird Information Systems|^^tec-bird-information-systems^1
 tec-fantasia-v1^^^^APD^1Z^0^Fantasia Info Network^Asia Pacific^^^^^^en|Fantasia Info Network|=en|Asia Pacific|^^tec-fantasia^1
 tec-map-management-planning-v1^1^^2015-01-01^MPJ^AQ^0^Map Management Planning^^^^^^^en|Map Management Planning|^^tec-map-management-planning^1

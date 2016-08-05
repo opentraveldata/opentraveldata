@@ -138,7 +138,6 @@
 7D^1^MGC Aviation<>Mgc Aviation
 7E^1^Sylt Air<>Sylt Air Gmbh
 7G^1^StarFlyer<>Star Flyer
-7H^1^Ravn Alaska<>Ravn Akaska
 7H^2^<>Era Aviation
 7I^2^<>Insel Air
 7J^2^<>Tajik Air
@@ -239,6 +238,7 @@ AEE^2^<>Aegean Air
 AF^2^<>Air France
 AFL^2^<>Aeroflot
 AFR^2^<>Air France
+AFW^2^<>Africa World
 AG^2^<>Aruba
 AGT^2^<>Amadeus
 AH^2^<>Air Algerie
@@ -307,6 +307,7 @@ AUT^2^Cielos del Sur<>Austral L A
 AV^2^<>Avianca
 AVA^2^<>Avianca
 AVN^2^<>Air Vanuatu
+AW^2^<>Africa World
 AWI^2^<>Airwisconsi
 AWN^2^<>Air Comet
 AWQ^1^Indonesia AirAsia<>Pt Indonesia Airasia
@@ -544,7 +545,7 @@ ELY^2^El Al Israel Airlines<>El Al
 EM^1^Aero Benin<>Empire Airlines
 EQ^1^TAME<>Tame Linea Aerea Del Ecuador
 EQ^2^TAME EP Línea Aérea del Ecuador<>Tame
-ERH^1^<>Ravn Akaska
+ERH^1^<>Ravn Alaska
 ERH^2^<>Era Aviation
 ERO^2^<>Sun D Or
 ERT^2^<>Eritrean Air
@@ -654,6 +655,7 @@ GNR^2^<>Gambia Intl
 GO^1^Go<>
 GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
+GP^1^APG Airlines<>Apg Airlines
 GPD^2^<>Tradewind
 GQ^2^Cretan Aeronautical Exploitations<>Sky Express
 GR^2^<>Aurigny Air
@@ -722,6 +724,7 @@ I7^1^Int'Air Îles<>Inter Iles Air
 I7^2^Int'Air Iles<>Paramount Air
 IA^2^<>Iraqi Air
 IAE^1^IrAero<>Closed Jsc Iraero
+IAW^2^<>Iraqi Air
 IB^2^<>Iberia
 IBB^2^<>Binter Can
 IBE^2^<>Iberia
@@ -771,6 +774,7 @@ JA^2^Air Bosna<>
 JAF^2^TUI Airlines Belgium<>Jetairfly
 JAI^2^<>Jet Airways
 JAL^2^JAL<>J A L
+JAV^2^<>Jordan Avia
 JBR^2^<>Job Air
 JBU^1^JetBlue<>Jetblue Airways
 JBU^2^<>Jetblue Air
@@ -873,6 +877,7 @@ LAN^2^<>Lan Chile
 LAO^2^<>Lao Airlines
 LAP^1^LATAM Paraguay<>Latam Airlines Paraguay
 LAP^2^<>Lapsa
+LAV^1^AlbaStar<>Alba Star
 LB^2^LAB<>L A B
 LBT^2^<>Nouvelair
 LC^1^ECAir<>Equatorial Congo Airline
@@ -1149,6 +1154,7 @@ R2^1^<>Orenburg Airlines
 R2^2^<>Orenair
 R3^1^Yakutia Airlines<>Jsc Aircompany Yakutia
 R3^2^<>Yakutia Air
+R5^2^<>Jordan Avia
 R6^1^DOT LT<>Dot Lt
 R8^2^<>Kyrgyzstan
 R9^1^TAF Linhas Aereas<>
@@ -1549,6 +1555,7 @@ XAX^2^<>Airasiax
 XB^1^IATA<>Iata
 XB^2^<>Iata
 XC^2^<>K D Air
+XD^1^Scheduled Airlines Traffic Offices<>Arc
 XE^1^Expressjet Airlines Inc<>
 XG^1^Sun Express Germany<>Sunexpress Germany
 XJ^1^Thai AirAsia X<>Thai Airasia X Company
