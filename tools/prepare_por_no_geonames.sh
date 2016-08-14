@@ -9,6 +9,7 @@
 # - optd_por_exceptions.csv
 # - optd_tz_light.csv
 # - optd_por_tz.csv
+# - optd_countries.csv
 # - optd_cont.csv
 # - optd_usdot_wac.csv
 # - dump_from_ref_city.csv
@@ -80,6 +81,10 @@ OPTD_TZ_CNT_FILENAME=optd_tz_light.csv
 OPTD_TZ_POR_FILENAME=optd_por_tz.csv
 
 ##
+# List of country details
+OPTD_CTRY_DTLS_FILENAME=optd_countries.csv
+
+##
 # Mapping between the Countries and their corresponding continent
 OPTD_CNT_FILENAME=optd_cont.csv
 
@@ -132,7 +137,7 @@ EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
     echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
+    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
     echo
     exit -1
 fi
@@ -160,6 +165,7 @@ OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
 OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
 OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
 OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
+OPTD_CTRY_DTLS_FILE=${DATA_DIR}${OPTD_CTRY_DTLS_FILENAME}
 OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
 OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
 
@@ -192,7 +198,7 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
     echo
-	echo "Usage: $0 [<refdata directory of the OpenTravelData (OPTD) project Git clone> [<Reference data directory for data dump files> [<log level>]]]"
+	echo "Usage: $0 [<root directory of the OpenTravelData (OPTD) project Git clone> [<Reference data directory for data dump files> [<log level>]]]"
 	echo
 	echo " - Default log level: ${LOG_LEVEL}"
 	echo "   + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
@@ -207,6 +213,7 @@ then
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
 	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
 	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"
+	echo " - OPTD-maintained file of country details: '${OPTD_CTRY_DTLS_FILE}'"
 	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
 	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): '${OPTD_USDOT_FILE}'"
 
@@ -244,6 +251,7 @@ then
 	OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
 	OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
 	OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
+	OPTD_CTRY_DTLS_FILE=${DATA_DIR}${OPTD_CTRY_DTLS_FILENAME}
 	OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
 	OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
 fi
@@ -288,8 +296,8 @@ REF_NO_GEO_EXTRACTOR=${TOOLS_DIR}extract_non_geonames_por.awk
 awk -F'^' -v log_level=${LOG_LEVEL} \
 	-v optd_por_wrong_tz_file=${OPTD_POR_WRONG_TZ_FILE} \
 	-f ${REF_NO_GEO_EXTRACTOR} \
-    ${OPTD_REF_DPCTD_FILE} ${OPTD_POR_FILE} ${OPTD_PR_FILE} \
-	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} \
+    ${OPTD_REF_DPCTD_FILE} ${OPTD_POR_FILE} ${OPTD_CTRY_DTLS_FILE} \
+	${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} \
 	${OPTD_CNT_FILE} ${OPTD_USDOT_FILE} \
 	${GEO_REF_FILE} > ${REF_NO_GEO_WO_CTY_NAME_FILE}
 

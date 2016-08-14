@@ -8,6 +8,7 @@
 #    * Time-zones for a few POR:            optd_por_tz.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
+#    * Country details:                     optd_countries.csv
 #    * Country states:                      optd_country_states.csv
 #  * Geonames:                              dump_from_geonames.csv
 #
@@ -21,8 +22,8 @@
 #    namely add_city_name.awk, located in the very same directory.
 #
 # Sample output lines:
-# IEV^UKKK^^Y^6300960^^Kyiv Zhuliany International Airport^Kyiv Zhuliany International Airport^50.401694^30.449697^S^AIRP^0.0240196752049^^^^UA^^Ukraine^Europe^^^^^^^^^0^178^174^Europe/Kiev^2.0^3.0^2.0^2012-06-03^IEV^^^^^488^Ukraine^A^http://en.wikipedia.org/wiki/Kyiv_Zhuliany_International_Airport^en|Kyiv Zhuliany International Airport|=en|Kyiv International Airport|=en|Kyiv Airport|s=en|Kiev International Airport|=uk|Міжнародний аеропорт «Київ» (Жуляни)|=ru|Аэропорт «Киев» (Жуляны)|=ru|Международный аеропорт «Киев» (Жуляни)|
-# NCE^LFMN^^Y^6299418^^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.658411^7.215872^S^AIRP^0.157408761216^^^^FR^^France^Europe^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^NCE^^^^^427^France^CA^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza|=en|Nice Côte d'Azur International Airport|=es|Niza Aeropuerto|ps=fr|Aéroport de Nice Côte d'Azur|=en|Nice Airport|s
+# IEV^UKKK^^Y^6300960^^Kyiv Zhuliany International Airport^Kyiv Zhuliany International Airport^50.401694^30.449697^S^AIRP^0.0240196752049^^^^UA^^Ukraine^Europe^^^^^^^^^0^178^174^Europe/Kiev^2.0^3.0^2.0^2012-06-03^IEV^^^^^488^Ukraine^A^http://en.wikipedia.org/wiki/Kyiv_Zhuliany_International_Airport^en|Kyiv Zhuliany International Airport|=en|Kyiv International Airport|=en|Kyiv Airport|s=en|Kiev International Airport|=uk|Міжнародний аеропорт «Київ» (Жуляни)|=ru|Аэропорт «Киев» (Жуляны)|=ru|Международный аеропорт «Киев» (Жуляни)|^488^Ukraine^HRV
+# NCE^LFMN^^Y^6299418^^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.658411^7.215872^S^AIRP^0.157408761216^^^^FR^^France^Europe^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^NCE^^^^^427^France^CA^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza|=en|Nice Côte d'Azur International Airport|=es|Niza Aeropuerto|ps=fr|Aéroport de Nice Côte d'Azur|=en|Nice Airport|s^427^France^EUR
 #
 
 ##
@@ -41,6 +42,8 @@ BEGIN {
     ctry_name_list["ZZ"] = "Not relevant/available"
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
+	delete ctry_state_list
+	delete ctry_ccy_list
 
 	# Header
 	hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
@@ -54,7 +57,7 @@ BEGIN {
 	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
 	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
 	hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
-	hdr_line = hdr_line "^wac^wac_name"
+	hdr_line = hdr_line "^wac^wac_name^ccy_code"
 
     print (hdr_line)
 
@@ -214,6 +217,31 @@ BEGIN {
     registerPageRankValue(iata_code, por_type, $0, FNR, pr_value)
 }
 
+
+##
+# File of country details (optd_countries.csv)
+#
+# Sample lines:
+# iso_2char_code^iso_3char_code^iso_num_code^fips^name^cptl^area^pop^cont_code^tld^ccy_code^ccy_name^tel_pfx^zip_fmt^lang_code_list^geo_id^ngbr_ctry_code_list
+# FR^FRA^250^FR^France^Paris^547030^64768389^EU^.fr^EUR^Euro^33^#####^fr-FR=frp=br=co=ca=eu=oc^3017382^CH=DE=BE=LU=IT=AD=MC=ES
+# PF^PYF^258^FP^French Polynesia^Papeete^4167^270485^OC^.pf^XPF^Franc^689^#####^fr-PF=ty^4030656^
+# US^USA^840^US^United States^Washington^9629091^310232863^NA^.us^USD^Dollar^1^#####-####^en-US=es-US=haw=fr^6252001^CA=MX=CU
+#
+/^[A-Z]{2}\^[A-Z]{3}\^[0-9]{1,3}\^[A-Z]{0,2}\^[a-zA-Z., -]{2,50}/ {
+	# Country code
+	country_code = $1
+
+	# Currency code
+	ccy_code = $11
+
+	# Geonames ID
+	geo_id = $17
+
+    # Register the relationship between the country code and the currency code
+    ctry_ccy_list[country_code] = ccy_code
+}
+
+
 ##
 # File of country states (optd_country_states.csv)
 #
@@ -222,7 +250,7 @@ BEGIN {
 # BR^3455077^18^Paraná^PR
 # AU^2147291^06^Tasmania^TAS
 # US^5481136^NM^New Mexico^NM
-/^([A-Z]{2})\^([0-9]+)\^([0-9A-Z]+)\^([A-Z].+)\^([0-9A-Z]{1,3})$/ {
+/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}$/ {
     # Country code
     country_code = $1
 
@@ -286,6 +314,7 @@ BEGIN {
     # Register the time-zone ID associated to that country
     por_tz_list[iata_code] = tz_id
 }
+
 
 ##
 # File of country-continent mappings (optd_cont.csv).

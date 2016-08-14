@@ -1465,6 +1465,10 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	wac_name = getWorldAreaCodeName(world_area_code)
 	output_line = output_line FS world_area_code FS wac_name
 
+	# ^ Currency code
+	ccy_code = ctry_ccy_list[ctry_code]
+	output_line = output_line FS ccy_code
+
     #
 	FS = saved_fs
 

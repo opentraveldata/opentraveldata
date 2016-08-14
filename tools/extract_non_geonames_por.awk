@@ -7,6 +7,7 @@
 #    * PageRank values:                     ref_airport_pageranked.csv
 #    * Country-associated time-zones:       optd_tz_light.csv
 #    * Time-zones for a few POR:            optd_por_tz.csv
+#    * Country details:                     optd_countries.csv
 #    * Country-associated continents:       optd_cont.csv
 #    * US DOT World Area Codes (WAC):       optd_usdot_wac.csv
 #  * Referential data:                      dump_from_ref_city.csv
@@ -15,8 +16,8 @@
 #  * POR having wrong time-zone:            optd_por_tz_wrong.csv
 #
 # Sample output lines:
-# AHE^^^N^0^^Ahe PF^Ahe PF^-14.4806^-146.30279^P^PPLC^0.0111037543665^^^^PF^^French Polynesia^Oceania^^^^^^^^^^^^Pacific/Tahiti^^^^-1^AHE^Ahe PF^AHE|0|Ahe PF|Ahe PF^AHE^^C^^^823^French Polynesia
-# CGX^^^N^0^^Chicago IL US Merrill C Meigs^Chicago IL US Merrill C Meigs^41.85^-87.6^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^^^41^Illinois
+# AHE^^^N^0^^Ahe PF^Ahe PF^-14.4806^-146.30279^P^PPLC^0.0111037543665^^^^PF^^French Polynesia^Oceania^^^^^^^^^^^^Pacific/Tahiti^^^^-1^AHE^Ahe PF^AHE|0|Ahe PF|Ahe PF^AHE^^C^^^823^French Polynesia^EUR
+# CGX^^^N^0^^Chicago IL US Merrill C Meigs^Chicago IL US Merrill C Meigs^41.85^-87.6^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^^^41^Illinois^USD
 #
 
 ##
@@ -77,7 +78,7 @@ BEGIN {
 	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
 	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
 	hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
-	hdr_line = hdr_line "^wac^wac_name"
+	hdr_line = hdr_line "^wac^wac_name^ccy_code"
 
     print (hdr_line)
 
@@ -96,7 +97,7 @@ BEGIN {
 
 
 ##
-# File of deprecated, but still referenced, POR
+# File of rules for no longer valid (deprecated), but still referenced, POR
 #
 # Sample lines:
 # por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^comment
@@ -110,6 +111,7 @@ BEGIN {
 	# Register the fact that that POR is deprecated but still referenced
 	optd_por_ref_dpctd_list[iata_code] = 1
 }
+
 
 ##
 # File of PageRank values.
@@ -132,6 +134,30 @@ BEGIN {
 /^# \[PR\]   To: ([0-9]{4}-[0-9]{2}-[0-9]{2})$/ {
     pr_date_to = gensub ("^([^0-9]+)([0-9]{4}-[0-9]{2}-[0-9]{2})$", \
 						 "\\2", "g", $0)
+}
+
+
+##
+# File of country details (optd_countries.csv)
+#
+# Sample lines:
+# iso_2char_code^iso_3char_code^iso_num_code^fips^name^cptl^area^pop^cont_code^tld^ccy_code^ccy_name^tel_pfx^zip_fmt^lang_code_list^geo_id^ngbr_ctry_code_list
+# FR^FRA^250^FR^France^Paris^547030^64768389^EU^.fr^EUR^Euro^33^#####^fr-FR=frp=br=co=ca=eu=oc^3017382^CH=DE=BE=LU=IT=AD=MC=ES
+# PF^PYF^258^FP^French Polynesia^Papeete^4167^270485^OC^.pf^XPF^Franc^689^#####^fr-PF=ty^4030656^
+# US^USA^840^US^United States^Washington^9629091^310232863^NA^.us^USD^Dollar^1^#####-####^en-US=es-US=haw=fr^6252001^CA=MX=CU
+#
+/^[A-Z]{2}\^[A-Z]{3}\^[0-9]{1,3}\^[A-Z]{0,2}\^[a-zA-Z., -]{2,50}/ {
+	# Country code
+	country_code = $1
+
+	# Currency code
+	ccy_code = $11
+
+	# Geonames ID
+	geo_id = $17
+
+    # Register the relationship between the country code and the currency code
+    ctry_ccy_list[country_code] = ccy_code
 }
 
 
@@ -595,6 +621,10 @@ function getContinentName(myCountryCode) {
 											   country_code_alt)
 			wac_name = getWorldAreaCodeName(world_area_code)
 			out_line = out_line "^" world_area_code "^" wac_name
+
+			# ^ Currency code
+			ccy_code = ctry_ccy_list[country_code]
+			out_line = out_line "^" ccy_code
 
 			#
 			print (out_line)
