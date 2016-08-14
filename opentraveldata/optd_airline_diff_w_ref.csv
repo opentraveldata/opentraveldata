@@ -276,7 +276,6 @@ ANG^2^<>Air Niugini
 ANO^2^Capiteq Limited<>Airnorth
 AO^1^<>Avianova Lcc
 AO^2^<>Australian
-AOG^1^<>Aero Vip
 AP^1^AlbaStar<>Alba Star
 APD^1^Fantasia Info Network<>Fantasia Info Network Lt
 APF^1^Amapola Flyg<>Amapola Flyg Ab
@@ -350,6 +349,7 @@ BEK^2^<>Jsc Bek Air
 BEL^2^<>Brussels Air
 BER^2^<>Air Berlin
 BF^1^Vincent Aviation<>French Blue
+BF^2^<>French Blue
 BG^2^<>Biman
 BGH^1^BH Air<>Bh Air
 BGH^2^<>Bh Air
@@ -490,7 +490,7 @@ DER^2^<>Beijing Capit
 DG^1^Tiger Air Philippines<>Tigerair Philippines
 DG^2^<>Tigerair
 DI^1^Norwegian Air UK<>Norwegian Air Uk
-DI^2^<>Dba
+DI^2^<>Norwegian Uk
 DJ^1^AirAsia Japan<>Airasia Japan
 DJT^2^Dreamjet<>La Compagnie
 DK^1^Thomas Cook Airlines<>Thomas Cook Airlines A S
@@ -576,6 +576,7 @@ F8^2^<>Air Montreal
 F9^2^<>Frontier Air
 FBA^1^FlyBaghdad<>Fly Baghdad Airlines
 FBA^2^<>Islas Airways
+FBU^2^<>French Blue
 FC^1^Viva Colombia<>Fly Corporate
 FCB^1^Cobalt Air<>Cobaltair
 FD^1^Thai AirAsia<>Thai Airasia
@@ -627,7 +628,6 @@ GAO^1^<>Braathens Regional
 GAO^2^<>Golden Air
 GAP^2^<>Airphil Exp
 GBQ^1^<>Gambia Bird Airlines Ltd
-GC^1^<>Gambia Intl Airlines
 GC^2^<>Gambia Intl
 GE^1^TransAsia Airways<>Transasia Airways
 GE^2^<>Transasia
@@ -650,8 +650,6 @@ GM^1^Germania Flug<>Germania Flug Ag
 GM^2^<>Germania Flug
 GMI^2^<>Germania
 GN^2^<>Air Gabon
-GNR^1^<>Gambia Intl Airlines
-GNR^2^<>Gambia Intl
 GO^1^Go<>
 GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
@@ -1001,7 +999,6 @@ NGA^1^<>Wasaya Airways
 NGA^2^<>Nigeria Air
 NH^2^ANA<>All Nippon
 NI^2^Portugália–Companhia Portuguesa de Transportes Aéreos<>Portugalia
-NJ^1^Nordic Global Airlines<>Aero Vip
 NJS^1^<>National Jet Systems
 NK^2^<>Spirit Airlin
 NL^1^Shaheen Air<>Shaheen Air Intl
@@ -1016,7 +1013,7 @@ NQ^1^Air Japan<>Air Japan Company Ltd
 NR^1^Al-Naser Airlines<>Al Naser Airlines
 NRL^1^Nolinor Aviation<>Les Investissements Nolinor
 NRS^1^Norwegian Air UK<>Norwegian Air Uk
-NRS^2^<>Dba
+NRS^2^<>Norwegian Uk
 NSE^1^SATENA<>Satena
 NT^2^<>Binter Can
 NW^1^Northwest Airlines<>
@@ -1173,6 +1170,7 @@ RFR^2^RAF NO<>R A F No1
 RG^2^<>Rotana Jet
 RGR^2^<>Gromovairline
 RH^1^Robin Hood Aviation<>
+RIV^1^APG Airlines<>Apg Airlines
 RJD^2^<>Rotana Jet
 RK^1^Region Airline<>
 RLA^1^HOP Airlinair<>Hop Airlinair

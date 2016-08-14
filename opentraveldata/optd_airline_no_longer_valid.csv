@@ -23,6 +23,7 @@ air-air-bashkortostan-v1^1^2006-04-10^2013-10-09^^ZU^894^Air Bashkortostan^^^^^h
 air-air-horizons-v1^1^1962-01-01^2005-11-30^EUH^RN^0^Air Horizons^^^^^http://en.wikipedia.org/wiki/Air_Horizons^en|Euralair|h=en|Air Horizons|p^^air-air-horizons^1
 air-air-gabon-v1^1^1951-01-01^2006-12-31^AGN^GN^185^Air Gabon^^^^^http://en.wikipedia.org/wiki/Air_Gabon^en|Air Gabon|^LBV^air-air-gabon^1
 air-air-ivoire-v1^1^1960-01-01^2011-12-31^VUN^VU^943^Air Ivoire^^^^^http://en.wikipedia.org/wiki/Air_Ivoire^en|Air Ivoire|^^air-air-ivoire^1
+air-air-lituanica-v1^1^2013-05-01^2015-05-22^LTU^LT^431^Air Lituanica^^^^^http://en.wikipedia.org/wiki/Air_Lituanica^en|Air Lituanica|^VNO^air-air-lituanica^1
 air-air-luxor-v1^1^1988-01-01^2006-09-30^LXG^L8^0^Air Luxor^^^^^http://en.wikipedia.org/wiki/Air_Luxor^en|Air Luxor|^^air-air-luxor^1
 air-air-malawi-v1^1^1964-03-01^2013-02-28^AML^QM^167^Air Malawi^^^^^http://en.wikipedia.org/wiki/Air_Malawi^en|Air Malawi|^^air-air-malawi^1
 air-air-mali-v1^1^2005-01-01^2012-08-01^CMM^I5^261^Air Mali^^^^^http://en.wikipedia.org/wiki/Air_Mali_(2005)^en|Air Mali|^^air-air-mali^1
@@ -109,9 +110,9 @@ air-eurofly-v1^1^1989-05-26^2010-02-28^EEZ^GJ^0^Eurofly^^^^^http://en.wikipedia.
 air-eurolot-v1^1^1996-01-01^2015-03-31^ELO^K2^78^Eurolot^^^^^http://en.wikipedia.org/wiki/Eurolot^en|Eurolot|^^air-eurolot^1
 air-euromanx-v1^1^2002-08-19^2008-05-09^EMX^3W^0^EuroManx^^^^^http://en.wikipedia.org/wiki/EuroManx^en|Malawian Airlines|=en|EuroManx|^^air-euromanx^1
 air-european-executive-express-v1^1^1997-01-01^2005-12-31^EXC^RY^0^European Executive Express^^^^^http://en.wikipedia.org/wiki/European_Executive_Express^en|European Executive Express|^^air-european-executive-express^1
-air-executive-airlines-v1^1^2004-01-01^2013-04-01^EXK^OW^92^Executive Airlines^^^Affiliate^^http://en.wikipedia.org/wiki/Executive_Airlines^en|Executive Airlines|^SJU^air-executive-airlines^1
 air-executive-airlines-service-v1^1^1993-01-01^2006-07-31^EXW^OW^92^Nicon Airways^^^^^http://en.wikipedia.org/wiki/EAS_Airlines^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^1
 air-executive-airlines-service-v2^1^2007-08-01^2007-12-31^EXW^OW^92^Nicon Airways^^^^^http://en.wikipedia.org/wiki/Nicon_Airways^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^2
+air-executive-airlines-v1^1^2004-01-01^2013-04-01^EXK^OW^92^Executive Airlines^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/Executive_Airlines^en|Executive Airlines|^SJU^air-executive-airlines^1
 air-exel-nl-v1^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^^^^http://en.wikipedia.org/wiki/Air_Exel^en||=en|Air Exel|^^air-exel-nl^1
 air-eznis-airways-v1^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^^en|Eznis Airways|=en|Eznis Airways|^^air-eznis-airways^1
 air-farnair-switzerland-v1^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^http://en.wikipedia.org/wiki/Farnair_Switzerland^en|Farnair Switzerland|^^air-farnair-switzerland^1
@@ -126,7 +127,7 @@ air-freedom-airlines-v1^1^2002-01-01^2010-12-31^FRL^F8^0^Freedom Airlines^Air Mo
 air-freedom-air-v1^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^http://en.wikipedia.org/wiki/Freedom_Air_(Guam)^en|Freedom Air|^^air-freedom-air^1
 air-freshair-v1^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^en|Freshair|=en|Easeon Air|^^air-freshair^1
 air-gamair-v1^1^^2014-06-01^BIH^BS^0^British International^Gamair^^^^^en|British International|=en|Gamair|^^air-gamair^1
-air-gambia-airlines-v1^1^1996-01-23^2004-04-30^GNR^GC^34^Gambia International Airlines^Gambia Intl^^^^http://en.wikipedia.org/wiki/Gambia_International_Airlines^en|Gambia International Airlines|=en|Gambia Intl|^^air-gambia-airlines^1
+air-gambia-airlines-v1^1^1996-01-23^2004-04-30^GNR^GC^34^Gambia International Airlines^^^^^http://en.wikipedia.org/wiki/Gambia_International_Airlines^en|Gambia International Airlines|=en|Gambia Intl|^^air-gambia-airlines^1
 air-gambia-bird-airlines-v1^1^2012-10-01^2014-12-31^GBQ^3G^213^Gambia Bird^^^^^http://en.wikipedia.org/wiki/Gambia_Bird^en|Gambia Bird|^^air-gambia-bird-airlines^1
 air-euroline-airlines-v1^1^2004-07-01^2010-12-31^MJX^4L^0^Euroline Airlines^^^^^http://en.wikipedia.org/wiki/Georgian_International_Airlines^en|Georgian International Airlines|p=en|Euroline Airlines|h^^air-euroline-airlines^1
 air-euroline-airlines-v2^1^2011-01-01^2014-09-30^GIL^4L^0^Georgian International Airlines^^^^^http://en.wikipedia.org/wiki/Georgian_International_Airlines^en|Georgian International Airlines|p=en|Euroline Airlines|h^^air-euroline-airlines^2
@@ -147,6 +148,7 @@ air-hermes-airlines-v1^1^2011-08-01^2015-02-15^HRM^H3^490^Hermes Airlines^^^^^ht
 air-hesa-airlines-v1^1^2010-01-01^2015-12-31^SPN^H8^0^HESA Airlines^^^^^http://en.wikipedia.org/wiki/Sepahan_Airlines^en|HESA Airlines|^IFH^air-hesa-airlines^1
 air-highland-airways-v1^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Alba^^^^http://en.wikipedia.org/wiki/Highland_Airways^en|Highland Airways|=en|Air Alba|^^air-highland-airways^1
 air-indonesia-air-transport-v1^1^1968-01-01^2015-12-31^IDA^I7^0^Indonesia Air Transport^^^^^http://en.wikipedia.org/wiki/Indonesia_Air_Transport^abbr|IAT|=en|Indonesia Air Transport|=sign|INTRA|^^air-indonesia-air-transport^1
+air-interjet-gr-v1^1^^2015-12-31^INJ^^0^InterJet^^^^^http://en.wikipedia.org/wiki/InterJet^en|InterJet|^ATH^air-interjet-gr^1
 air-interlink-airlines-v1^1^1998-01-01^2010-12-31^ITK^ID^0^Interlink^^^^P^http://en.wikipedia.org/wiki/Interlink_Airlines^en|Interlink|^^air-interlink-airlines^1
 air-inter-airlines-v1^1^1999-12-17^2008-11-18^INX^6K^0^Inter Airlines^^^^^http://en.wikipedia.org/wiki/Inter_Airlines^en|Inter Airlines|^^air-inter-airlines^1
 air-investavia-v1^1^2007-01-01^2015-06-30^TLG^IV^0^InvestAvia^^^^^^en|InvestAvia|^^air-investavia^1
@@ -188,6 +190,7 @@ air-national-jet-systems-v1^1^1990-07-01^2009-02-28^NJS^NC^0^National Jet System
 air-nayzak-air-v1^1^2006-01-01^2009-12-31^NZA^M4^0^Nayzak Air^^^^^http://en.wikipedia.org/wiki/Nayzak_Air_Transport^ar|النيزك للنقل الجوي|=en|Nayzak Air|^^air-nayzak-air^1
 air-nice-helicopteres-v1^1^^2014-12-31^^JX^179^Nice Helicopteres^^^^^^en|Nice Helicopteres|^^air-nice-helicopteres^1
 air-nigeria-airways-v1^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^http://en.wikipedia.org/wiki/Nigeria_Airways^en|Nigeria Airways|^^air-nigeria-airways^1
+air-nordic-global-airlines-v1^1^2011-04-01^2015-05-31^NGB^NJ^0^Nordic Global Airlines^^^^C^http://en.wikipedia.org/wiki/Nordic_Global_Airlines^en|Nordic Global Airlines|^^air-nordic-global-airlines^1
 air-norfolk-air-v1^1^2006-05-01^2012-02-26^NLK^N5^0^Norfolk Air^^^^^http://en.wikipedia.org/wiki/Norfolk_Air^en|Norfolk Air|^^air-norfolk-air^1
 air-odessa-airlines-v1^1^1996-01-01^2006-12-31^ODS^5K^0^Odessa Airlines^^^^^http://en.wikipedia.org/wiki/Odessa_Airlines^en|Odessa Airlines|^^air-odessa-airlines^1
 air-olt-express-germany-v1^1^1958-01-01^2013-01-30^OLT^OL^704^OLT Express Germany^^^^^http://en.wikipedia.org/wiki/OLT_Express_Germany^en|OLT Express Germany|^^air-olt-express-germany^1
