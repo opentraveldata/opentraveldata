@@ -1,10 +1,11 @@
 ##
-# Extraction of the 
-# That AWK script extracts a list of abbreviations for country states,
+# Extraction of the states (administration level 1) of a few countries
+#
+# That AWK script extracts a list of codes and abbreviations for country states,
 # from the Geonames-derived 'allCountries_w_alt.txt' data file:
 #
-# See ../geonames/data/por/admin/aggregateGeonamesPor.sh for more details on
-# the way to derive that file from Geonames original data files.
+# See ../data/geonames/data/por/admin/aggregateGeonamesPor.sh for more details
+# on the way to derive that file from Geonames original data files.
 #
 
 ##
@@ -12,7 +13,8 @@
 # ^^^3455077^Paraná^Parana^-24.5^-51.33333^BR^^Brazil^South America^A^ADM1^18^Paraná^Parana^^^^^^10439601^^672^America/Sao_Paulo^-2.0^-3.0^-3.0^2015-06-08^Estado de Parana,Estado de Paraná,Estado do Parana,Estado do Paraná,PR,Parana,Paraná^http://en.wikipedia.org/wiki/Paran%C3%A1_%28state%29^|Paraná|ps||Estado do Paraná||abbr|PR||es|Estado de Paraná|p|es|Paraná|s
 #
 # Sample output lines:
-# AU^08^Western Australia^WA
+# ctry_code^geo_id^adm1_code^adm1_name^abbr
+# AU^2058645^08^Western Australia^WA
 
 
 ##
@@ -43,7 +45,7 @@ BEGIN {
 # POR entries corresponding to country states:
 # ^^^3455077^Paraná^Parana^-24.5^-51.33333^BR^^Brazil^South America^A^ADM1^18^Paraná^Parana^^^^^^10439601^^672^America/Sao_Paulo^-2.0^-3.0^-3.0^2015-06-08^Estado de Parana,Estado de Paraná,Estado do Parana,Estado do Paraná,PR,Parana,Paraná^http://en.wikipedia.org/wiki/Paran%C3%A1_%28state%29^|Paraná|ps||Estado do Paraná||abbr|PR||es|Estado de Paraná|p|es|Paraná|s
 #
-/^\^\^\^([0-9]{1,12})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
+/^\^\^\^([0-9]{1,15})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
   # Geonames ID
   geo_id = $4
 

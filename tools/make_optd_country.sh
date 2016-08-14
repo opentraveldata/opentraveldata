@@ -69,30 +69,30 @@ LOG_LEVEL=3
 
 ##
 # Geonames data store
-GEO_POR_DATA_DIR=${EXEC_PATH}../data/geonames/data/por/data/
+GEO_CTRY_DATA_DIR=${EXEC_PATH}../data/geonames/data/por/data/
 
 ##
 # OPTD directory
 DATA_DIR=${EXEC_PATH}../opentraveldata/
 
 ##
-# Extract airport/city information from the Geonames data file
-GEO_POR_FILENAME=allCountries_w_alt.txt
-GEO_POR_FILE=${GEO_POR_DATA_DIR}${GEO_POR_FILENAME}
+# Country details, as maintained by Geonames
+GEO_CTRY_FILENAME=countryInfo.txt
+GEO_CTRY_FILE=${GEO_CTRY_DATA_DIR}${GEO_CTRY_FILENAME}
 
 ##
 # Generated file
-OPTD_CTRY_ST_LST_FILENAME=optd_country_states.csv
-OPTD_CTRY_ST_LST_FILE=${DATA_DIR}${OPTD_CTRY_ST_LST_FILENAME}
+OPTD_CTRY_FILENAME=optd_countries.csv
+OPTD_CTRY_FILE=${DATA_DIR}${OPTD_CTRY_FILENAME}
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ];
 then
 	echo
 	echo "Usage: $0"
-	echo "  - Geonames detailed POR entry data file (~10 millions records): '${GEO_POR_FILE}'"
+	echo "  - Geonames country data file (~250 records): '${GEO_CTRY_FILE}'"
 	echo
-	echo "  - Generated (CSV-formatted) data file: '${OPTD_CTRY_ST_LST_FILE}'"
+	echo "  - Generated (CSV-formatted) data file: '${OPTD_CTRY_FILE}'"
 	echo
 	exit
 fi
@@ -113,9 +113,9 @@ fi
 ##
 #
 echo
-echo "Extracting country/state-related information from '${GEO_POR_FILE}'"
-STATE_EXTRACTOR=${EXEC_PATH}extract_states.awk
-time awk -F'^' -f ${STATE_EXTRACTOR} ${GEO_POR_FILE} > ${OPTD_CTRY_ST_LST_FILE}
+echo "Extracting country/state-related information from '${GEO_CTRY_FILE}'"
+STATE_EXTRACTOR=${EXEC_PATH}make_optd_country.awk
+time awk -F'	' -f ${STATE_EXTRACTOR} ${GEO_CTRY_FILE} > ${OPTD_CTRY_FILE}
 echo "... Done"
 echo
 
@@ -126,9 +126,9 @@ echo
 echo "Reporting step"
 echo "--------------"
 echo
-echo "From the '${GEO_POR_FILE}' Geonames input data file, the '${OPTD_CTRY_ST_LST_FILE}' data file has been derived."
+echo "From the '${GEO_CTRY_FILE}' Geonames input data file, the '${OPTD_CTRY_FILE}' data file has been derived."
 echo
 echo "Suggested next steps:"
-echo "git add ${OPTD_CTRY_ST_LST_FILE}"
-echo "git commit -m \"[Countries] Updated the list of states per country.\" ${DATA_DIR}/${OPTD_CTRY_ST_LST_FILE}"
+echo "git add ${OPTD_CTRY_FILE}"
+echo "git commit -m \"[Countries] Updated the list of countries.\" ${DATA_DIR}/${OPTD_CTRY_FILE}"
 echo

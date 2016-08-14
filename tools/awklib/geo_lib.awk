@@ -232,6 +232,30 @@ function capitaliseWords(__cwInStr) {
 }
 
 ##
+# Transform the separator of a given list
+function changeSepInList(__csilList, __csilListOrgSep, __csilListTgtSep) {
+	# Back up
+	saved_sep = FS
+	saved_out_sep = OFS
+	saved_line = $0
+
+	#
+	OFS = __csilListTgtSep
+	$0 = __csilList
+	NF++
+	NF--
+	output_list = $0
+
+	# Restore
+	OFS = saved_out_sep
+	FS = saved_sep
+	$0 = saved_line
+
+	#
+	return output_list
+}
+
+##
 # State whether the POR is (matches with) a city
 function isLocTypeCity(__iltcParamLocationType) {
     __resultIsCity = match (__iltcParamLocationType, "[CO]")
