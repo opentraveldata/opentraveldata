@@ -240,9 +240,10 @@ function changeSepInList(__csilList, __csilListOrgSep, __csilListTgtSep) {
 	saved_line = $0
 
 	#
+	FS = __csilListOrgSep
 	OFS = __csilListTgtSep
 	$0 = __csilList
-	NF++
+	$(NF+1) = ""
 	NF--
 	output_list = $0
 
