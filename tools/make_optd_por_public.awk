@@ -358,7 +358,7 @@ BEGIN {
 # 427^42701^France^Europe^France^Independent State in the World^Paris^^FR^^^^1950-01-01^^Includes Corsica^1^
 # 802^80201^Australia^Australasia and Oceania^Australia^Independent State in the World^Canberra^^AU^^^^1950-01-01^^Includes: Norfolk Island and Tasmania^1^
 # 906^90601^British Columbia^Canada and Greenland^Canada^Independent State in the World^Ottawa^^CA^BC^British Columbia^^1950-01-01^^^1^
-/^([0-9.]{1,3})\^([0-9.]{1,5})\^([A-Za-z,.()' \-]+)\^([A-Za-z,.()' \-]+)\^([A-Za-z,.()' \-]+)\^(Dependency and Area of Special Sovereignty|Independent State in the World)\^([A-Za-z,.()' \-]*)\^([A-Za-z0-9,.()' \-]*)\^([A-Z]{0,2})\^([A-Z]{0,2})\^/ {
+/^[0-9.]{1,3}\^[0-9.]{1,5}\^[A-Za-z,.()' \-]+\^[A-Za-z,.()' \-]+\^[A-Za-z,.()' \-]+\^(Dependency and Area of Special Sovereignty|Independent State in the World)\^[A-Za-z,.()' \-]*\^[A-Za-z0-9,.()' \-]*\^[A-Z]{0,2}\^[A-Z]{0,2}\^/ {
     # World Area Code (WAC)
     world_area_code = $1
 

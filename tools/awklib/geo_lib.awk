@@ -2095,7 +2095,6 @@ function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
 # Register a few relationships for the World Area Code (WAC)
 function registerWACLists(__rwlWorldAreaCode, __rwlThroughDate,			\
 						  __rwlCountryIsoCode, __rwlStateCode, __rwlWACName) {
-
     # Register the WAC associated to that country (e.g., 401 for 'AL'/Albania)
 	if (__rwlThroughDate == "" && __rwlCountryIsoCode) {
 		wac_by_ctry_code_list[__rwlCountryIsoCode] = __rwlWorldAreaCode
