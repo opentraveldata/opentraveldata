@@ -305,11 +305,9 @@ awk -F'^' -f ${CITY_WRITER} \
 #exit
 
 ##
-# Extract the header into temporary files
+# Extract the header into a temporary file
 OPTD_POR_FILE_HEADER=${OPTD_POR_FILE}.tmp.hdr
-##
-# Header
-echo "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id^name^asciiname^latitude^longitude^fclass^fcode^page_rank^date_from^date_until^comment^country_code^cc2^country_name^continent_name^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3_code^adm4_code^population^elevation^gtopo30^timezone^gmt_offset^dst_offset^raw_offset^moddate^city_code_list^city_name_list^city_detail_list^tvl_por_list^state_code^location_type^wiki_link^alt_name_section^wac^wac_name" > ${OPTD_POR_FILE_HEADER}
+grep "^iata_code\(.\+\)" ${OPTD_POR_WITH_NO_CTY_NAME} > ${OPTD_POR_FILE_HEADER}
 
 # Remove the headers
 sed -e "s/^iata_code\(.\+\)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
