@@ -26,8 +26,14 @@ Curated
   valid for some sources while not/no longer valid for some other sources.
   Those exception rules allow to silent quality assurance scripts on already
   known (and tracked) issues.
-* `optd_regions.csv` and optd_region_details.csv are the list of regions
-  from various projects or institutions (UN WTO, Geonames).
+* `optd_regions.csv` and `optd_region_details.csv` are the list of regions
+  and sub-regions from various projects or institutions (UN WTO, Geonames),
+  which are called "users" here.
+  The whole idea is that each user may specify different list of countries
+  and their associated details. For instance, some users will have Australia
+  part of Asia, while other users will consider that Australia is a continent
+  in itself. Some users will consider that Kosovo is an independent country,
+  while some other users will not recognize that country.
 * `optd_usdot_wac.csv` is the list of World Area Codes (WAC), as maintained
   by the US Department of Transportation (DOT):
   http://www.transtats.bts.gov/Fields.asp?Table_ID=315
@@ -53,7 +59,9 @@ Mixed
 * `optd_por_tz.csv`. Overall curated, but regurlaly generated thanks to GeoBases
   and Geonames
 * `optd_country_region_info.csv` and `optd_cont.csv` are the lists of countries,
-  with their associated details. Those are generated from Geonames. 
+  with their associated details. Those are generated from Geonames.
+  Note that there are no script to generate those files yet. As a matter of
+  fact, those two files should be replaced by `optd_countries.csv`.
 * `optd_por_diff_w_geonames.csv` is the list of geographical distances
   for the POR, as known from `optd_por_best_known_so_far.csv` on one hand,
   and as known by Geonames on the other hand.
