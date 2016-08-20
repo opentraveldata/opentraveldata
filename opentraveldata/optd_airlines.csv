@@ -74,7 +74,6 @@ air-air-bagan-v1^^^^^W9^17^Air Bagan^^^^^^^en|Air Bagan|^^air-air-bagan^1
 air-air-baltic-v1^^1995-01-01^^BTI^BT^657^airBaltic^^^^^http://en.wikipedia.org/wiki/AirBaltic^43959^en|airBaltic|^^air-air-baltic^1
 air-air-bashkortostan-v1^1^2006-04-10^2013-10-09^^ZU^894^Air Bashkortostan^^^^^http://en.wikipedia.org/wiki/Air_Bashkortostan^^en|Air Bashkortostan|^^air-air-bashkortostan^1
 air-air-berlin-v1^^1979-01-01^^BER^AB^745^Air Berlin^^OneWorld^Member^^http://en.wikipedia.org/wiki/Air_Berlin^103098^en|Air Berlin|^TXL^air-air-berlin^1
-air-air-bishkek-v1^^2004-01-01^^EAA^KR^265^Air Bishkek^^^^^http://en.wikipedia.org/wiki/Air_Bishkek^^en|Air Bishkek|p=en|Eastok Avia|h=en|Kyrgyz Airways|h^^air-air-bishkek^1
 air-airblue-v1^^2004-06-18^^ABQ^PA^84^Airblue^Florida Coast^^^P^http://en.wikipedia.org/wiki/Airblue^6355^en|Airblue|=en|Florida Coast|^^air-airblue^1
 air-air-botswana-v1^^^^BOT^BP^636^Air Botswana^^^^^^8034^en|Air Botswana|^^air-air-botswana^1
 air-air-bretagne-v1^^^^OMQ^3E^0^Multi Aero^Air Bretagne^^^^^6568^en|Multi Aero|=en|Air Bretagne|^^air-air-bretagne^1
@@ -488,6 +487,9 @@ air-eastern-airways-v1^^1997-01-01^^EZE^T3^467^Eastern Airways^^^^^http://en.wik
 air-eastern-caribbean-airlines-v1^^^^^JI^0^Eastern Caribbean Airlines^^^^^^1065^en|Eastern Caribbean Airlines|^^air-eastern-caribbean-airlines^1
 air-east-horizon-airlines-v1^^^^EHN^EA^0^East Horizon Airlines^^^^^^^en|East Horizon Airlines|^^air-east-horizon-airlines^1
 air-east-line-v1^^^^^1T^0^East Line^^^^^^^en|East Line|^^air-east-line^1
+air-eastok-avia-v1^1^2006-06-01^2010-04-30^EAA^E4^265^Eastok Avia^^^^^http://en.wikipedia.org/wiki/Air_Bishkek^^en|Eastok Avia|p^FRU^air-eastok-avia^1
+air-eastok-avia-v2^1^2010-05-01^2011-03-31^EAA^KR^265^Kyrgyz Airways^^^^^http://en.wikipedia.org/wiki/Air_Bishkek^^en|Kyrgyz Airways|p=en|Eastok Avia|h^FRU^air-eastok-avia^2
+air-eastok-avia-v3^^2011-04-01^^EAA^KR^265^Air Bishkek^^^^^http://en.wikipedia.org/wiki/Air_Bishkek^^en|Air Bishkek|p=en|Kyrgyz Airways|h=en|Eastok Avia|h^FRU^air-eastok-avia^3
 air-east-star-v1^^1988-01-01^^ATN^8C^813^Air Transport International^East Star^^^^http://en.wikipedia.org/wiki/Air_Transport_International^31110^en|Air Transport International|=en|East Star|^^air-east-star^1
 air-easyfly-colombia^^2007-01-01^^EFY^VE^0^EasyFly^^^^^http://en.wikipedia.org/wiki/EasyFly^41390^en|EasyFly|ps=en|Empresa Aérea de Servicios y Facilitación Logística Integral|=sign|EASYFLY|^BGA=BOG=EOH^air-easyfly-colombia^1
 air-easyjet-switzerland-v1^^1989-03-23^^EZS^DS^0^easyJet Switzerland^^^^^http://en.wikipedia.org/wiki/EasyJet_Switzerland^^en|easyJet Switzerland|^^air-easyjet-switzerland^1
@@ -497,6 +499,7 @@ air-egyptair-v1^^1933-07-01^^MSR^MS^77^EgyptAir^^Star Alliance^Member^^http://en
 air-el-al-v1^^1948-01-01^^ELY^LY^114^El Al^El Al Israel Airlines^^^^http://en.wikipedia.org/wiki/El_Al^30852^en|El Al|=en|El Al Israel Airlines|^^air-el-al^1
 air-ellinair-v1^^2014-02-19^^ELB^EL^0^Ellinair^^^^^http://en.wikipedia.org/wiki/Ellinair^1972^en|Ellinair|^^air-ellinair^1
 air-elysair-v1^1^2007-01-03^2009-04-04^AVI^A0^0^L'Avion^^^^^http://en.wikipedia.org/wiki/L%27Avion^^en|OpenSkies|=en|L'Avion|h=en|Elysair SAS|h=sign|MISTRAL|=sign|ELYSAIR|h^ORY^air-elysair^1
+air-elysian-airlines-v1^1^2006-01-01^2010-12-31^GIE^E4^^Elysian Airlines^^^^^http://en.wikipedia.org/wiki/Elysian_Airlines^^en|Elysian Airlines|^CKY=MLW^air-elysian-airlines^1
 air-emirates-v1^^1985-10-25^^UAE^EK^176^Emirates^^^^^http://en.wikipedia.org/wiki/Emirates_%28airline%29^211337^en|Emirates|^^air-emirates^1
 air-endeavor-air-v1^^1985-01-01^^FLG^9E^430^Endeavor Air^^^^^http://en.wikipedia.org/wiki/Endeavor_Air^220058^en|Endeavor Air|^^air-endeavor-air^1
 air-enkor-jsc-v1^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor^^en|Enkor|^^air-enkor-jsc^1
@@ -508,7 +511,7 @@ air-eritrean-airlines-v1^^^^ERT^B8^637^Eritrean Airlines^^^^^^178^en|Eritrean Ai
 air-ero-sun-d-or-v1^^^^ERO^2U^383^Ero Sun D Or^^^^P^^^en|Ero Sun D Or|^^air-ero-sun-d-or^1
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^^en|E Savtravel|^^air-e-savtravel^1
 air-estafeta-carga-aerea-v1^1^^2013-12-31^^E7^^Estafeta Carga Aerea^Estafeta Carga Aerea^^^C^^^en|Estafeta Carga Aerea|=en|Estafeta Carga Aerea|^^air-estafeta-carga-aerea^1
-air-estelar-latinoamerica-v1^^^^^E4^52^Estelar Latinoamerica^^^^^^1050^en|Estelar Latinoamerica|^^air-estelar-latinoamerica^1
+air-estelar-latinoamerica-v1^^2009-01-01^^ETR^E4^52^Estelar Latinoamerica^^^^^http://es.wikipedia.org/wiki/Estelar_Latinoamerica^1050^en|Estelar Latinoamerica|^CCS=CUM=PMV^air-estelar-latinoamerica^1
 air-estonian-air-v1^1^1991-01-01^2015-11-08^ELL^OV^960^Estonian Air^^^^^http://en.wikipedia.org/wiki/Estonian_Air^^en|Estonian Air|^TLL^air-estonian-air^1
 air-ethiopian-airlines-v1^^1946-04-08^^ETH^ET^71^Ethiopian Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Ethiopian_Airlines^91822^en|Ethiopian Airlines|^^air-ethiopian-airlines^1
 air-etihad-airways-v1^^2003-01-01^^ETD^EY^607^Etihad Airways^^^^^http://en.wikipedia.org/wiki/Etihad_Airways^117754^en|Etihad Airways|^^air-etihad-airways^1
@@ -1214,7 +1217,7 @@ air-tibet-airlines-v1^1^2010-03-01^2013-12-31^TBA^TV^88^Tibet Airlines^^^^^http:
 air-tibet-airlines-v2^1^2014-01-01^2014-02-01^TBA^^^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^2
 air-tibet-airlines-v3^^2014-02-02^^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^31^en|Tibet Airlines|=sign|TIBET|^CTU^air-tibet-airlines^3
 air-tiger-air-australia-v1^^^^^TT^0^Tiger Airways Australia^Air Lithuania^^^^^26962^en|Tiger Airways Australia|=en|Air Lithuania|^^air-tiger-air-australia^1
-air-tiger-air-philippines-v1^^^^SRQ^DG^931^Tiger Air Philippines^^^^^^30535^en|Tiger Air Philippines|^^air-tiger-air-philippines^1
+air-tiger-air-philippines-v1^^1993-01-01^^SRQ^DG^931^Cebgo^^^^^http://en.wikipedia.org/wiki/Cebgo^30535^abbr|SEAir|h=en|Cebgo|p=en|South East Asian Airlines|h=en|Tigerair Philippines|h^CEB=MNL^air-tiger-air-philippines^1
 air-tiger-air-taiwan-v1^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^7223^en|Tigerair Taiwan|^^air-tiger-air-taiwan^1
 air-tiger-air-v1^^2003-12-12^^TGW^TR^388^Tigerair^Tiger Airways Singapore^^^^http://en.wikipedia.org/wiki/Tigerair^32563^en|Tigerair|=en|Tiger Airways Singapore|^^air-tiger-air^1
 air-tik-systems-v1^^^^^T1^0^Tik Systems^^^^^^^en|Tik Systems|^^air-tik-systems^1
