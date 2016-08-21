@@ -34,6 +34,12 @@ Curated
   part of Asia, while other users will consider that Australia is a continent
   in itself. Some users will consider that Kosovo is an independent country,
   while some other users will not recognize that country.
+  Those specifications are being migrated into a dedicated directory,
+  `curated/regions`, and the data files follow a naming convention,
+  `optd_region_NNNN_Uuuu.csv`, where `NNNN` corresponds to the user ID and
+  `Uuuu` corresponds to the user name.
+  A lot of work still needs to be done before the other region data files
+  may be decommissioned.
 * `optd_usdot_wac.csv` is the list of World Area Codes (WAC), as maintained
   by the US Department of Transportation (DOT):
   http://www.transtats.bts.gov/Fields.asp?Table_ID=315
