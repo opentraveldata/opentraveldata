@@ -7,7 +7,7 @@
 0O^1^STA Travel<>Sta Travel
 0O^2^<>Sta Travel
 0P^1^Palau Pacific Airways<>Palau Asia Pacific Air
-0V^1^SkyViet Aviation<>
+0V^1^Vietnam Air Services Company<>
 1A^2^<>Amadeus
 1C^1^EDS Information Business<>Eds Information Business
 1D^1^Raddix Solutions<>Raddix Solutions Intl
@@ -654,7 +654,7 @@ GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
 GP^1^APG Airlines<>Apg Airlines
 GPD^2^<>Tradewind
-GQ^2^Cretan Aeronautical Exploitations<>Sky Express
+GQ^2^<>Sky Express
 GR^2^<>Aurigny Air
 GRL^2^<>Air Greenland
 GS^2^<>Tianjin
@@ -986,6 +986,10 @@ N2^1^Dagestan Airlines<>
 N5^1^Nolinor Aviation<>Les Investissements Nolinor
 N7^1^Nordic Regional Airlines<>
 N7^2^Norra<>Lagun Air
+NA^1^Nesma Airlines Company<>North American Airlines
+NA^2^<>North America
+NAO^1^<>North American Airlines
+NAO^2^<>North America
 NAX^1^Norwegian Air Shuttle (NAS)<>Norwegian Air Shuttle
 NAX^2^<>Norwegian Air
 NB^1^Sterling Airlines<>Skypower Express
