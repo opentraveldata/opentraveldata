@@ -210,7 +210,6 @@ air-armenia-airways-v1^^2013-01-01^^AMW^6A^616^Armenia Airways^^^^^^en|Armenia A
 air-aruba-airlines-v1^^2013-01-01^^^AG^209^Aruba Airlines^^^^^http://en.wikipedia.org/wiki/Aruba_Airlines^en|Aruba Airlines|^^air-aruba-airlines^1
 air-aserca-v1^^^^OCA^R7^717^Aserca^Aserca^^^^^en|Aserca|=en|Aserca|^^air-aserca^1
 air-asiana-airlines-v1^^1988-02-17^^AAR^OZ^988^Asiana Airlines^^^Member^^http://en.wikipedia.org/wiki/Asiana_Airlines^en|Asiana Airlines|^^air-asiana-airlines^1
-air-asian-express-airline-v1^^^^^KV^360^Asian Express Airline^Kavminvodyav^^^^^en|Asian Express Airline|=en|Kavminvodyav|^^air-asian-express-airline^1
 air-asian-wings-airways-v1^^^^^YJ^601^Asian Wings Airways^^^^^^en|Asian Wings Airways|^^air-asian-wings-airways^1
 air-asia-atlantic-airlines-v1^^2013-08-19^^AAQ^HB^943^Asia Atlantic Airlines^^^^^http://en.wikipedia.org/wiki/Asia_Atlantic_Airlines^en|Asia Atlantic Airlines|^^air-asia-atlantic-airlines^1
 air-asky-v1^^^^^KP^32^Asky^Asky^^^^^en|Asky|=en|Asky|^^air-asky^1
@@ -261,7 +260,6 @@ air-bemidji-airlines-v1^^^^BMJ^CH^872^Bemidji Airlines^^^^^^en|Bemidji Airlines|
 air-bering-air-v1^^1979-10-03^^BRG^8E^0^Bering Air^^^^^http://en.wikipedia.org/wiki/Bering_Air^en|Bering Air|^^air-bering-air^1
 air-berjaya-air-v1^^1989-01-01^^BVT^J8^801^Berjaya Air^^^^^http://en.wikipedia.org/wiki/Berjaya_Air^en|Berjaya Air|^^air-berjaya-air^1
 air-bh-air-v1^^2002-01-01^^BGH^8H^366^BH Air^^^^^http://en.wikipedia.org/wiki/BH_Air^en|BH Air|^^air-bh-air^1
-air-bh-airlines-v1^^1994-01-01^^BON^JA^995^B&H Airlines^Air Bosna^^^^http://en.wikipedia.org/wiki/B%26H_Airlines^en|B&H Airlines|=en|Air Bosna|^^air-bh-airlines^1
 air-tashi-air-v1^^2011-12-07^^BTN^B3^0^Bhutan Airlines^Tashi Air^^^P^http://en.wikipedia.org/wiki/Bhutan_Airlines^en|Bhutan Airlines|=en|Tashi Air|^^air-tashi-air^1
 air-biman-bangladesh-airline-v1^^1972-02-04^^BBC^BG^997^Biman Bangladesh Airline^^^^^http://en.wikipedia.org/wiki/Biman_Bangladesh_Airlines^en|Biman Bangladesh Airline|^^air-biman-bangladesh-airline^1
 air-binter-canarias-v1^^1989-03-26^^IBB^NT^474^Binter Canarias^^^^^http://en.wikipedia.org/wiki/Binter_Canarias^en|Binter Canarias|^^air-binter-canarias^1
@@ -883,6 +881,7 @@ air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/w
 air-sky-taxi-v1^^2000-01-01^^IGA^TE^0^Sky Taxi^^^^^http://en.wikipedia.org/wiki/SkyTaxi_%28airline%29^en|Sky Taxi|^^air-sky-taxi^1
 air-skytrans-regional-v1^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^en|Skytrans Regional|=en|Mineralnye Vo|^^air-skytrans-regional^1
 air-skywest-airlines-v1^^1972-01-01^^SKW^OO^302^SkyWest Airlines^^^^^http://en.wikipedia.org/wiki/SkyWest_Airlines^en|SkyWest Airlines|^^air-skywest-airlines^1
+air-sky-regional-airlines-v1^^2011-05-01^^SKV^KV^0^Sky Regional Airlines^^^^^http://en.wikipedia.org/wiki/Sky_Regional_Airlines^en|Sky Regional Airlines|^YUL=YYZ^air-sky-regional-airlines^1
 air-sky-wings-asia-airlines-v1^^2011-06-13^^SWM^ZA^969^Sky Angkor Airlines^Skywings Asia Airlines^^^^http://en.wikipedia.org/wiki/Sky_Angkor_Airlines^en|Sky Angkor Airlines|=en|Skywings Asia Airlines|^^air-sky-wings-asia-airlines^1
 air-skyward-express-v1^^2016-08-01^^SEW^OW^0^Skyward Express^^^^^^en|Skyward Express|p=en|Skyward International Aviation|h^WIL^air-skyward-express^1
 air-skywise-v1^^2015-02-11^^SWZ^C9^0^Skywise^Cabolor^^^^http://en.wikipedia.org/wiki/Skywise_%28airline%29^en|Skywise|=en|Cabolor|^^air-skywise^1
