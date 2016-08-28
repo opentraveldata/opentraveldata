@@ -28,10 +28,12 @@ IAT^IR^0^1^^^^^IAT corresponds to IATA Traffic Services, and there is no specifi
 III^R^0^1^^^^^III is city name test, France (FR)
 ITU^R^1^0^^^^BVV^As of May 2016, ITU and BVV are in ITU/Iturup Island, Sakhalin, Russia
 IUS^R^1^0^^^^IUS^As of May 2016, IUS/Inus, Papua New Guinea (PG), cannot be distinguished from WKN/Wakunai
+JHC^R^0^1^^^^^JHC used to reference Garden City Island Heliport, New York (NY), United States (US), but does not exist, Geonames ID: 5118226
 JHL^R^1^0^^^^JHL^As of May 2016, JHL is in HZP/Fort MacKay, Alberta, Canada (CA)
 JQJ^R^1^0^^^^JIQ^As of May 2016, JQJ is in JQJ/Qianjiang, Hubei, China (CN), not in JIQ/Qianjiang, Chongqing, China (CN), 404km from each other
 JSJ^R^1^0^^^^^As of August 2016, missing from reference data
 JYQ^R^1^0^^^^YDD^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
+KCI^R^0^1^^^^^KCI used to reference Kun Airport, East Timor (TL), but does not exist, Geonames ID: 8521421
 LUF^R^0^1^1^^2016-06-02^^LUF used to be Litchfield Park Airport, Arizona (AZ), United States (US), Geonames ID: 7132272
 MJI^R^1^0^^^^MJI^As of May 2016, MJI is in TIP/Tripoli, Libya (LY)
 MKF^R^0^1^1^^2016-08-12^^MKF used to be McKenna AAF, Georgia (GA), United States (US), Geonames ID: 11237559
