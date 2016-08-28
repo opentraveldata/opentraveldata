@@ -218,8 +218,6 @@ QMO^Europe/Brussels
 QMP^America/New_York
 QMS^Asia/Seoul
 QMU^Europe/Paris
-QMX^America/Chicago
-QMY^America/Chicago
 QMZ^Europe/Berlin
 QNB^Asia/Kolkata
 QNF^Asia/Kolkata
@@ -269,14 +267,12 @@ QTP^Europe/Oslo
 QTR^Asia/Damascus
 QTS^Asia/Shanghai
 QTT^Africa/Cairo
-QTV^Europe/Paris
 QTX^Europe/Rome
 QTY^Asia/Tokyo
 QUC^America/Caracas
 QUD^Africa/Cairo
 QUH^Africa/Cairo
 QUJ^Asia/Seoul
-QUK^Europe/London
 QUR^Indian/Antananarivo
 QUT^Asia/Tokyo
 QUU^Asia/Seoul
@@ -305,8 +301,6 @@ QWU^Europe/Berlin
 QWY^America/Los_Angeles
 QXI^Europe/Helsinki
 QXK^Europe/Paris
-QXL^Europe/London
-QXM^Europe/London
 QXX^America/Chicago
 QXY^America/Chicago
 QYA^Asia/Seoul
@@ -323,9 +317,6 @@ QZK^Europe/Helsinki
 QZM^Australia/Brisbane
 QZS^Europe/Oslo
 QZT^Africa/Tripoli
-QZW^America/Chicago
-QZX^America/Chicago
-QZY^America/Chicago
 RCK^America/Chicago
 REE^America/Chicago
 RLR^Indian/Antananarivo
@@ -340,7 +331,6 @@ SLO^America/Chicago
 SPO^Europe/Madrid
 SPQ^America/Los_Angeles
 SQB^America/Bogota
-SWI^Europe/London
 SYV^America/New_York
 TFR^Africa/Cairo
 THM^America/Los_Angeles
@@ -368,7 +358,6 @@ XBF^Europe/Paris
 XBH^Europe/Paris
 XBU^Europe/Paris
 XBX^Europe/Paris
-XCA^America/Moncton
 XCE^Europe/Paris
 XCF^Europe/Paris
 XCK^Europe/Paris

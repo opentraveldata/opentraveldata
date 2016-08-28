@@ -58,6 +58,8 @@ QGW^R^1^0^^^^^As of May 2016, missing from reference data
 QHK^R^0^1^^^^^QHK used to be Shahre Kord, Iran (IR) Geonames ID: 115770. The airport and city are now assigned the CQD IATA code
 QHX^R^1^0^^^^QHX^As of May 2016, QHX is in BAR/Qionghai, Hainan, China (CN)
 QKC^R^0^1^^^^^QKC used to be Karaj, Iran (IR). It is now assigned PYK, Geonames ID: 128747
+QMX^IR^0^1^^^^^QMX is a fictitious point
+QMY^IR^0^1^^^^^QMY is a fictitious point
 QOE^R^1^0^^^^^As of May 2016, missing from reference data
 QQA^R^0^1^^^^^QQA is BritRail Zone A, United Kingdom (GB)
 QQB^R^0^1^^^^^QQB is BritRail Zone B, United Kingdom (GB)
@@ -72,11 +74,18 @@ QQO^R^0^1^^^^^QQO is BritRail Zone O, United Kingdom (GB)
 QQV^R^0^1^^^^^QQV is BritRail Zone V, United Kingdom (GB)
 QQZ^R^0^1^^^^^QQZ is BritRail Zone Z, United Kingdom (GB)
 QSP^I^0^1^^^^^QSP corresponds to Reserved Network Service Code, and there is no specific geographical location associated to it
+QTV^IR^0^1^^^^^QTV is a fictitious point
+QUK^IR^0^1^^^^^QUK is a fictitious point
+QWI^R^0^1^^^^^QWI used to be Schleswig, Germany (DE), Geonames ID: 2838634. That code is apparently unknown from IATA. The IATA code associated to Schleswig is WBG
 QXH^R^1^0^^^^^As of May 2016, missing from reference data
+QXL^IR^0^1^^^^^QXL is a fictitious point
+QXM^IR^0^1^^^^^QXM is a fictitious point
 QXN^I^0^1^^^^^QXN corresponds to SITA Network, Switzerland (CH)
 QXS^I^0^1^^^^^QXT corresponds to SITA Aircom, Switzerland (CH)
 QXT^I^0^1^^^^^QXT corresponds to SITA Network, Switzerland (CH)
-QWI^R^0^1^^^^^QWI used to be Schleswig, Germany (DE), Geonames ID: 2838634. That code is apparently unknown from IATA. The IATA code associated to Schleswig is WBG
+QZW^IR^0^1^^^^^QZW is a fictitious point
+QZX^IR^0^1^^^^^QZX is a fictitious point
+QZY^IR^0^1^^^^^QZY is a fictitious point
 RAT^R^0^1^^^^^RAT used to be Raduzhny Airport, Russia (RU), Geonames ID: 7668536
 REH^R^0^1^^^^^REH used to be Rehoboth Beach Airport, Delaware (DE), United States (US), Geonames ID: 4144284
 REQ^R^1^0^^^^^As of July 2016, missing from reference data
@@ -89,6 +98,7 @@ SGS^R^0^1^^^^^SGS used to be Sanga Sanga Airport, Philippines (PH), Geonames ID:
 SHP^INR^1^0^^^^^As of July 2016, no longer referenced by anyone, including IATA (though used in flight schedules)
 SPL^R^1^0^^^^SPL^As of May 2016, SPL is in AMS/Amsterdam, Netherlands (NL)
 SUZ^INOR^1^0^^^^SUZ^As of May 2016, SUZ/Suria and HEO/Haelogo, Papua New Guinea (PG), are at the same location. Since Haelogo exists, but Suria does not seem so, it is logical to consider that SUZ airport is in HEO. Ultimately, IATA should fix that duplication issue
+SWI^R^0^1^^^^^SWI used to be Swindon, United Kingdom (GB), Geonames ID: 2636389. XWS is the new IATA code for Swindon
 SZQ^R^0^1^^^^^SZQ used to be Saenz Pena, Argentina (AR), Geonames ID: 7731531
 TAJ^R^1^0^^^^TAJ^As of May 2016, TAJ/Tadji is in ATP/Aitape, Papua New Guinea (PG)
 TEJ^R^1^0^1^^2016-06-06^TEJ^As of May 2016, TEJ/Teruel is in TEV/Teruel, Spain (ES). Teruel was referenced twice with two different codes (TEJ and TEV). IATA has fixed that in 2015
@@ -103,6 +113,7 @@ VVV^R^0^1^^^^^VVV corresponds to pseudo message, and there is no specific geogra
 VWY^R^0^1^^^^^VWY used to be Nilgiris Airport, India (IN), Geonames ID: 1261391
 WDS^R^1^0^^^^EJQ^As of May 2016, WDS is in WDS/Shiyan, Hubei, China (CN)
 WIE^R^1^0^^^^UWE^As of May 2016, WIE is in WIE/Wiesbaden, Germany (DE)
+XCA^IR^0^1^^^^^XCA is a fictitious point
 XFW^R^1^0^^^^XFW^As of May 2016, XFW is in HAM/Hamburg, Germany (DE)
 XIE^R^0^1^^^^^XIE used to be Xienglom Airport, Laos (LA), Geonames ID: 8245855
 XLC^I^0^1^^^^^XLC is a fictitious point
