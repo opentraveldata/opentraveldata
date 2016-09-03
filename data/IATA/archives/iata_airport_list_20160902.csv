@@ -495,6 +495,7 @@ AUH^Abu Dhabi^^AE^^^AUH^International^0301^A
 AUH^Abu Dhabi^^AE^^^AYM^Yas Island SPB^^A
 AUH^Abu Dhabi^^AE^^^AZI^Bateen^^A
 AUH^Abu Dhabi^^AE^^^DHF^Al Dhafra AB^^A
+AUH^Abu Dhabi^^AE^^^XBW^NP Bus Station^^B
 AUH^Abu Dhabi^^AE^^^ZVJ^EK Bus Station^^B
 AUI^Aua Island^^PG^1^^AUI^Aua Island^0302^A
 AUJ^Ambunti^^PG^1^^AUJ^Ambunti^0303^A
@@ -2178,6 +2179,7 @@ DXB^Dubai^^AE^^^DXB^Metropolitan Area^^C
 DXB^Dubai^^AE^^^DXB^International^1319^A
 DXB^Dubai^^AE^^^NHD^Minhad AB^^A
 DXB^Dubai^^AE^^^XEU^Hyatt Rgncy EY Bus Stn^^B
+DXB^Dubai^^AE^^^XHB^NP Bus Station^^B
 DXB^Dubai^^AE^^^XMB^Marina Mall EY Bus Stn^^B
 DXB^Dubai^^AE^^^XNB^Travel Mall EY Bus Stn^^B
 DXB^Dubai^^AE^^^ZJF^Jebel Ali Free Zone^^O
@@ -3999,7 +4001,6 @@ KCE^Collinsville^QL^AU^2^B^KCE^Collinsville^2390^A
 KCF^Kadanwari^^PK^^^KCF^Thar^^A
 KCH^Kuching^^MY^^^KCH^International^2392^A
 KCH^Kuching^^MY^^^ZGY^Kuching Port^^P
-KCI^Kun^^TL^^^KCI^Kun^^A
 KCJ^Komaio^^PG^1^^KCJ^Komaio^^A
 KCK^Kirensk^^RU^7^^KCK^Kirensk^^A
 KCL^Chignik^AK^US^5^^KBW^Chignik Bay SPB^^A
@@ -5880,7 +5881,7 @@ NLD^Nuevo Laredo^^MX^1^A^NLD^Quetzalcoatl Intl^3532^A
 NLE^Niles^MI^US^1^^NLE^Jerry Tyler Memorial^^A
 NLF^Darnley Island^QL^AU^2^B^NLF^Darnley Island^^A
 NLG^Nelson Lagoon^AK^US^5^^NLG^Nelson Lagoon^^A
-NLH^Ninglang^060^CN^^^NLH^Luguhu^^A
+NLH^Ninglang^^CN^^^NLH^Luguhu^^A
 NLI^Nikolayevsk-na-Amure^^RU^9^^NLI^Nikolayevsk-na-Amure^^A
 NLK^Norfolk Island^^NF^^^NLK^Norfolk Island^3533^A
 NLL^Nullagine^WA^AU^4^^NLL^Nullagine^3534^A
