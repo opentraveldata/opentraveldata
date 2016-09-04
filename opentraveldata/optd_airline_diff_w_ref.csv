@@ -174,7 +174,7 @@
 8W^1^Fly All Ways Airlines<>Fly Always
 8W^2^<>Private Wings
 8Y^2^<>Airburundi
-8Z^1^Amadeus PDF 8Z<>Amadeus Pdf 8z
+8Z^1^Congo Airways<>Amadeus Pdf 8z
 9A^1^Aladia Airlines<>
 9B^1^AccesRail<>Accesrail
 9B^2^<>Accesrail
@@ -445,6 +445,7 @@ CRL^2^<>Corse Air
 CRN^1^Aero Caribbean<>Aerocaribbean
 CS^2^<>Continl Micro
 CSA^2^<>Czech Airline
+CSG^1^<>Air Caucasus
 CSG^2^<>Air Caucasus
 CSH^2^<>Shangai Airli
 CSN^2^<>China South
@@ -845,6 +846,8 @@ KNE^2^Nas Air<>Nasair
 KNI^1^Kal Star Aviation<>Pt Kal Star Aviation
 KNI^2^KD Avia<>Kd Avia
 KO^1^Komiaviatrans<>Ojsc Komiaviatrans
+KP^1^ASKY Airlines<>Asky
+KP^2^<>Asky
 KQ^2^<>Kenyaairway
 KQA^2^<>Kenyaairway
 KR^1^Air Bishkek<>Air Bishkek Aircompany
@@ -853,6 +856,7 @@ KT^1^SiAvia<>Siavia
 KTC^2^<>Korsar
 KTK^2^<>Athens Airway
 KU^2^<>Kuwait Air
+KV^1^<>Sky Regional Airlines
 KV^2^<>Kavminvodyav
 KW^2^<>Kharkiv
 KX^2^<>Cayman Air
@@ -927,8 +931,7 @@ LYN^2^<>Kyrgyzstan
 M2^1^MHS Aviation<>Mhs Aviation
 M3^1^North Flying<>North Flying As
 M4^2^<>M4 NAYZAK Air
-M8^1^Magnum Air<>Skyjet
-M8^2^SkyJet Airlines<>
+M8^1^SKYJET Airlines<>Skyjet
 MAS^2^<>Malaysia
 MAU^2^<>Air Mauriti
 MB^2^<>Mng Air Cargo
@@ -986,6 +989,8 @@ N2^1^Dagestan Airlines<>
 N5^1^Nolinor Aviation<>Les Investissements Nolinor
 N7^1^Nordic Regional Airlines<>
 N7^2^Norra<>Lagun Air
+N9^1^Novair<>Nova Airlines
+N9^2^<>Northcoast Av
 NA^1^Nesma Airlines Company<>North American Airlines
 NA^2^<>North America
 NAO^1^<>North American Airlines
@@ -1012,6 +1017,7 @@ NMA^2^<>Nesma
 NMB^2^<>Air Namibia
 NN^2^<>Vim Airlines
 NO^1^Neos<>Neos Spa
+NOV^1^Nova Airways<>Nova Airlines
 NQ^1^Air Japan<>Air Japan Company Ltd
 NR^1^Al-Naser Airlines<>Al Naser Airlines
 NRL^1^Nolinor Aviation<>Les Investissements Nolinor
@@ -1019,6 +1025,8 @@ NRS^1^Norwegian Air UK<>Norwegian Air Uk
 NRS^2^<>Norwegian Uk
 NSE^1^SATENA<>Satena
 NT^2^<>Binter Can
+NVR^1^Novair<>Nova Airlines
+NVR^2^<>Northcoast Av
 NW^1^Northwest Airlines<>
 NW^2^Nwest Airlines<>Nwest Airli
 NX^2^<>Air Macau
@@ -1026,6 +1034,7 @@ NY^2^<>Air Iceland
 O2^1^Jet Air<>
 O7^1^Orenburg Region Airlines<>Sue Orenburg Region
 O8^2^<>Siam Air
+O9^1^Nova Airways<>Nova Airlines
 OA^2^<>Olympic Air
 OAL^2^<>Olympic Air
 OAS^2^<>Oman Air
@@ -1193,6 +1202,7 @@ RPB^1^Copa Airlines Colombia<>Aero Republica
 RPB^2^AeroRepública<>Aerorepublica
 RQ^2^<>Kam Air
 RR^2^RAF NO<>R A F No1
+RS^1^Sky Regional Airlines<>Air Seoul
 RSH^2^<>Jet Lite
 RT^2^<>Rak Airways
 RVL^1^<>Air Vallee
@@ -1431,6 +1441,7 @@ UU^2^<>Air Austral
 UW^1^Universal Airlines<>
 UW^2^<>Universal Air
 UX^2^<>Air Europa
+UY^1^Sky Prime Charter<>Air Caucasus
 UY^2^<>Air Caucasus
 UZB^2^<>Uzbekistan
 V1^1^IBS Software Services Americas<>Ibs Software Services Americas
@@ -1576,7 +1587,7 @@ XV^1^<>Bvi Airways
 XW^1^NokScoot<>Nokscoot Airlines
 XW^2^NokScoot Airlines Company Limited<>
 XY^2^Nas Air<>Nasair
-XYO^1^Amadeus PDF 8Z<>Amadeus Pdf 8z
+XYO^1^<>Amadeus Pdf 8z
 XYS^1^Amadeus PDF 0E<>Amadeus Pdf 0e
 XYW^1^Amadeus PDF 7S<>Amadeus Pdf 7s
 XYW^2^Amadeus 7S<>Amadeus 7s
