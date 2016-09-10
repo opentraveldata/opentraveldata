@@ -833,7 +833,9 @@ KHO^1^<>Ojsc Komiaviatrans
 KI^1^KrasAvia<>Krasavia
 KI^2^<>Air Contact
 KJ^2^<>Bmed
+KK^1^AtlasGlobal<>Atlasglobal
 KK^2^<>Atlasjet
+KKK^1^AtlasGlobal<>Atlasglobal
 KKK^2^<>Atlasjet
 KL^1^KLM<>Klm Royal Dutch Airlines
 KL^2^KLM Royal Dutch Airlines<>Klm
@@ -991,9 +993,9 @@ N7^1^Nordic Regional Airlines<>
 N7^2^Norra<>Lagun Air
 N9^1^Novair<>Nova Airlines
 N9^2^<>Northcoast Av
-NA^1^Nesma Airlines Company<>North American Airlines
+NA^1^Nesma Airlines<>Nesma Airlines Company
 NA^2^<>North America
-NAO^1^<>North American Airlines
+NAO^1^<>Nesma Airlines Company
 NAO^2^<>North America
 NAX^1^Norwegian Air Shuttle (NAS)<>Norwegian Air Shuttle
 NAX^2^<>Norwegian Air
@@ -1264,6 +1266,8 @@ SJY^1^Sriwijaya Air<>Pt Sriwijaya Air
 SK^2^<>Sas
 SKG^1^Sky Gabon<>Skygreece Airlines
 SKU^2^<>Sky Airline
+SKV^1^<>Sky Regional Airlines
+SKV^2^<>Kavminvodyav
 SKW^1^SkyWest Airlines<>Skywest Airlines
 SKW^2^<>Sky West
 SLI^1^Aeroméxico Connect<>Aerolitoral
