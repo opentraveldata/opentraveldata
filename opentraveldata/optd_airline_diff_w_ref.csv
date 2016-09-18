@@ -7,7 +7,7 @@
 0O^1^STA Travel<>Sta Travel
 0O^2^<>Sta Travel
 0P^1^Palau Pacific Airways<>Palau Asia Pacific Air
-0V^1^Vietnam Air Services Company<>
+0V^1^Vietnam Air Services Company<>Vietnam Air Service
 1A^2^<>Amadeus
 1C^1^EDS Information Business<>Eds Information Business
 1D^1^Raddix Solutions<>Raddix Solutions Intl
@@ -36,6 +36,7 @@
 2I^2^<>Star Peru
 2J^2^<>Air Burkina
 2L^2^2L Helvetic<>2l HELVETIC
+2M^1^Maya Island Air<>
 2P^2^<>Airphil Exp
 2Q^1^Air Cargo Carriers<>
 2R^1^VIA Rail Canada<>Via Rail Canada Inc
@@ -594,8 +595,8 @@ FLI^2^<>Atl Airways
 FM^2^<>Shangai Airli
 FMI^1^FMI Air<>Fmi Air
 FMI^2^<>Intair Inc
-FN^1^Fastjet Tanzania<>Fastjet Airlines
-FN^2^<>Regional Air
+FN^1^Fastjet<>Fastjet Airlines
+FN^2^<>Fastjet
 FPO^1^ASL Airlines France<>Asl Airlines France
 FPO^2^<>Europ Airpost
 FPY^1^Compagnie Africaine d'Aviation<>Compagnie Africaine D Aviation
@@ -606,8 +607,8 @@ FS^1^Syphax Airlines<>Syphax Airlines Sa
 FS^2^<>Syphax Airl
 FT^1^FlyEgypt<>Flyegypt
 FTT^2^<>Frontier Air
-FTZ^1^Fastjet Tanzania<>Fastjet Airlines
-FTZ^2^<>Regional Air
+FTZ^1^Fastjet<>Fastjet Airlines
+FTZ^2^<>Fastjet
 FV^1^Rossiya<>Rossiya Airlines
 FWI^2^<>Air Caraibes
 FXI^2^<>Air Iceland
@@ -767,7 +768,6 @@ J4^2^<>Jet For You
 J6^1^Jet-Ops<>Airways International
 J6^2^Seawings<>
 J7^2^<>Centre Avia
-JA^1^<>B H Airlines
 JAF^2^TUI Airlines Belgium<>Jetairfly
 JAI^2^<>Jet Airways
 JAL^2^JAL<>J A L
@@ -983,6 +983,7 @@ MW^1^Mokulele Airlines<>Mokulele Flight Service
 MW^2^<>Mokulele
 MX^2^<>Mexicana
 MXA^2^<>Mexicana
+MY^1^MASwings<>Maya Island Air
 MY^2^<>Maya Island
 MYD^2^<>Maya Island
 MZ^2^<>Merpati
@@ -994,8 +995,6 @@ N9^1^Novair<>Nova Airlines
 N9^2^<>Northcoast Av
 NA^1^Nesma Airlines<>Nesma Airlines Company
 NA^2^<>North America
-NAO^1^<>Nesma Airlines Company
-NAO^2^<>North America
 NAX^1^Norwegian Air Shuttle (NAS)<>Norwegian Air Shuttle
 NAX^2^<>Norwegian Air
 NB^1^Sterling Airlines<>Skypower Express
@@ -1018,7 +1017,6 @@ NMA^2^<>Nesma
 NMB^2^<>Air Namibia
 NN^2^<>Vim Airlines
 NO^1^Neos<>Neos Spa
-NOV^1^Nova Airways<>Nova Airlines
 NQ^1^Air Japan<>Air Japan Company Ltd
 NR^1^Al-Naser Airlines<>Al Naser Airlines
 NRL^1^Nolinor Aviation<>Les Investissements Nolinor
@@ -1035,7 +1033,6 @@ NY^2^<>Air Iceland
 O2^1^Jet Air<>
 O7^1^Orenburg Region Airlines<>Sue Orenburg Region
 O8^2^<>Siam Air
-O9^1^Nova Airways<>Nova Airlines
 OA^2^<>Olympic Air
 OAL^2^<>Olympic Air
 OAS^2^<>Oman Air
@@ -1274,8 +1271,6 @@ SLI^2^Aeromexico Connect<>
 SLK^1^SilkAir<>Silkair
 SLK^2^<>Silkair
 SM^2^<>Air Cairo
-SMK^1^<>City Airways
-SMK^2^<>Alpi Eagles
 SMR^1^Somon Air<>Aircompany Somon Air
 SMR^2^<>Somon Air
 SMX^1^<>C A I First S P A
@@ -1487,8 +1482,8 @@ VM^2^<>Viaggio Air
 VN^2^<>Vietnam Air
 VNA^2^<>Warbelow
 VO^1^<>Tyrolean Airways
-VOE^2^<>Volotea
 VOI^2^Concesionaria Vuela Compañía de Aviación<>Eagle Aviatn
+VOL^2^<>Volotea
 VR^2^TACV<>T A C V
 VRD^2^<>Virgin Usa
 VRR^1^VIA Rail Canada<>Via Rail Canada Inc

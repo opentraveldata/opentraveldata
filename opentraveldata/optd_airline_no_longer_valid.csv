@@ -186,10 +186,12 @@ air-mat-airways-v1^1^2009-01-01^2011-12-31^^6F^0^MAT Airways^^^^^http://en.wikip
 air-mat-macedonian-airlines-v1^1^1994-01-01^2009-09-01^MAK^IN^0^MAT Macedonian Airlines^^^^^http://en.wikipedia.org/wiki/MAT_Macedonian_Airlines^en|MAT Macedonian Airlines|^^air-mat-macedonian-airlines^1
 air-maxjet-airways-v1^1^2003-01-01^2007-12-24^MXJ^MY^0^MAXjet Airways^^^^^http://en.wikipedia.org/wiki/MAXjet_Airways^en|MAXjet Airways|^^air-maxjet-airways^1
 air-max-air-nigeria-v1^1^2008-01-01^2015-04-01^NGL^VM^0^Max Air^^^^^http://en.wikipedia.org/wiki/Max_Air^en|Max Air|^^air-max-air-nigeria^1
+air-maya-island-air-v1^1^1962-01-01^2016-08-31^MYD^MY^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^en|Maya Island Air|^BZE=TZA^air-maya-island-air^1
 air-merpati-nusantara-airlines-v1^1^1962-09-06^2014-02-15^MMA^MZ^532^Merpati Nusantara Airlines^^^^^http://en.wikipedia.org/wiki/Merpati_Nusantara_Airlines^en|Merpati Nusantara Airlines|=ja|メルパチ・ヌサンタラ航空|=ko|메르파티 누산타라 항공|=sign|MERPATI|^^air-merpati-nusantara-airlines^1
 air-midwest-airlines-v1^1^1948-01-01^2011-12-31^MEP^YX^0^Midwest Airlines^^^^^http://en.wikipedia.org/wiki/Midwest_Airlines^en|Midwest Airlines|^^air-midwest-airlines^1
 air-midwest-connect-v1^1^1994-01-01^2009-12-31^SYX^AL^0^Midwest Connect^Skyway Airlines^^^^http://en.wikipedia.org/wiki/Midwest_Connect^en|Midwest Connect|=en|Skyway Airlines|^^air-midwest-connect^1
 air-minoan-air-v1^1^2011-09-07^2015-12-31^MAV^^^Minoan Air^^^^^http://en.wikipedia.org/wiki/Minoan_Air^en|Minoan Air|=en|First Airways|h=gr|Μινωικές Αερογραμμές|^HER^air-minoan-air^1
+air-moldavian-airlines-v1^1^1994-08-19^2015-12-31^MDV^2M^860^Moldavian Airlines^^^^^http://en.wikipedia.org/wiki/Moldavian_Airlines^en|Moldavian Airlines|=sign|MOLDAVIAN|^KIV^air-moldavian-airlines^1
 air-moskovia-airlines-v1^1^1995-10-04^2014-08-01^GAI^3R^520^Moskovia Airlines^^^^^http://en.wikipedia.org/wiki/Moskovia_Airlines^en|Moskovia Airlines|=en|Gromov Air|h=ru|Авиакомпания "Московия"|=sign|GROMOV AIRLINE|^^air-moskovia-airlines^1
 air-national-airways-cameroon-v1^1^1999-11-01^2000-03-01^^9O^357^National Airways Cameroon^Aircameroon^^^^http://en.wikipedia.org/wiki/National_Airways_Cameroon^en|National Airways Cameroon|=en|Aircameroon|^^air-national-airways-cameroon^1
 air-national-jet-systems-v1^1^1990-07-01^2009-02-28^NJS^NC^0^National Jet Systems^^^Affiliate^^http://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^1
@@ -219,8 +221,9 @@ air-salsa-d-haiti-v1^1^2008-01-01^2015-04-01^SLC^SO^340^Salsa d'Haiti^^^^^http:/
 air-samara-airlines-v1^1^1992-01-01^2008-12-31^BRZ^E5^0^Samara Airlines^^^^^http://en.wikipedia.org/wiki/Samara_Airlines^en|Samara Airlines|^^air-samara-airlines^1
 air-sarit-airlines-v1^1^1997-01-01^2004-06-30^BDR^J4^0^Badr Airlines^^^^^http://en.wikipedia.org/wiki/Badr_Airlines^en|Badr Airlines|p=en|Sarit Airlines|h^^air-sarit-airlines^1
 air-sas-braathens-v1^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^^^Member^^http://en.wikipedia.org/wiki/SAS_Braathens^en|SAS Braathens|^^air-sas-braathens^1
-air-scotairways-v1^1^^2013-03-31^SAY^CB^969^ScotAirways^ScotAirways^^^^http://en.wikipedia.org/wiki/Suckling_Airways^en|ScotAirways|=en|ScotAirways|^^air-scotairways^1
-air-shanxi-airlines-v1^1^2001-07-06^2009-12-31^CXI^8C^0^Shanxi Airlines^Gamair^^^^http://en.wikipedia.org/wiki/Shanxi_Airlines^en|Shanxi Airlines|=sign|SHANXI|^^air-shanxi-airlines^1
+air-scotairways-v1^1^^2013-03-31^SAY^CB^969^ScotAirways^^^^^http://en.wikipedia.org/wiki/Suckling_Airways^en|ScotAirways|=en|ScotAirways|^^air-scotairways^1
+air-semeyavia-v1^1^1997-01-01^2013-12-31^SMK^E8^0^SA Regional Airlines^^^^^http://en.wikipedia.org/wiki/Semeyavia^en|SA Regional Airlines|p=en|Semeyavia|h=ru|Семейавиа|h^ALA^air-semeyavia^1
+air-shanxi-airlines-v1^1^2001-07-06^2009-12-31^CXI^8C^0^Shanxi Airlines^^^^^http://en.wikipedia.org/wiki/Shanxi_Airlines^en|Shanxi Airlines|=sign|SHANXI|^^air-shanxi-airlines^1
 air-sky-airlines-v1^1^2001-01-01^2013-06-04^SHY^ZY^438^Sky Airlines^^^^^http://en.wikipedia.org/wiki/Sky_Airlines^en|Sky Airlines|^^air-sky-airlines^1
 air-sky-bishek-v1^1^2012-01-01^2015-06-30^BIS^GY^0^Sky Bishek^^^^^^en|Sky Bishek|^^air-sky-bishek^1
 air-sky-express-v1^1^2007-01-29^2011-10-29^SXR^XW^0^Sky Express^^^^^http://en.wikipedia.org/wiki/Sky_Express^en|Sky Express|^^air-sky-express^1
