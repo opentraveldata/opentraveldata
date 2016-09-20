@@ -1103,7 +1103,8 @@ PK^2^<>P I A
 PM^1^Canaryfly<>Canary Fly
 PM^2^<>Canary Fly
 PP^2^<>Jet Aviation
-PQ^1^Philippines AirAsia<>Airasia Philippines
+PQ^1^AirAsia Philippines<>Airasia Philippines
+PQ^2^<>Panafrican
 PR^2^<>Philippine
 PRI^2^JetX<>Primera Air
 PS^1^Ukraine International Airlines<>Ukraine Intl Airlines
@@ -1572,7 +1573,7 @@ XK^2^<>Air Corsica
 XL^1^LATAM Ecuador<>Latam Airlines Ecuador
 XL^2^<>Lan Ecuador
 XLF^1^XL Airways France<>Xl Airways France
-XM^1^<>C A I First S P A
+XM^1^Zimex Aviation<>C A I First S P A
 XM^2^<>Cai First Spa
 XN^1^XpressAir<>Travel Express Aviation
 XP^2^<>Xtra Airways
@@ -1615,7 +1616,7 @@ YW^2^<>Air Nostrum
 YX^2^<>Republic Airl
 YZ^2^<>Alas Uruguay
 Z2^1^AirAsia Zest<>Airasia Zest
-Z2^2^Zest Air<>Zest Airways
+Z2^2^<>Zest Airways
 Z3^1^PM Air<>Pm Air Llc
 Z4^1^Zagrosjet<>Zagros Jet
 Z4^2^<>Zagros Air

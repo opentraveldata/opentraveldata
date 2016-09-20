@@ -52,7 +52,7 @@ air-air-asia-india-v1^^2014-06-12^^^I5^0^AirAsia India^^^^^http://en.wikipedia.o
 air-air-asia-indonesia-v1^^2000-06-22^^AWQ^QZ^975^Indonesia AirAsia^Awair^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia^en|Indonesia AirAsia|=en|Awair|^^air-air-asia-indonesia^1
 air-air-asia-indonesia-extra-v1^^2014-12-26^^INX^XT^0^^Indonesia AirAsia X^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia_X^en||=en|Indonesia AirAsia X|^^air-air-asia-indonesia-extra^1
 air-air-asia-japan-v1^^2012-08-01^^WAJ^DJ^0^AirAsia Japan^^^^^http://en.wikipedia.org/wiki/AirAsia_Japan^en|AirAsia Japan|=ja|エアアジア・ジャパン株式会社|=ja|Eāajia Japan Kabushiki-Gaisha|^^air-air-asia-japan^1
-air-air-asia-philippines-v1^^^^APG^PQ^0^Philippines AirAsia^Panafrican^^^^http://en.wikipedia.org/wiki/Philippines_AirAsia^en|Philippines AirAsia|=en|Panafrican|^^air-air-asia-philippines^1
+air-air-asia-philippines-v1^^2010-12-01^^APG^PQ^62^AirAsia Philippines^^^^^http://en.wikipedia.org/wiki/AirAsia_Philippines^en|AirAsia Philippines|^MNL^air-air-asia-philippines^1
 air-air-asia-x-v1^^^^XAX^D7^843^AirAsia X^^^^^http://en.wikipedia.org/wiki/AirAsia_X^en|AirAsia X|^^air-air-asia-x^1
 air-air-astana-v1^^2002-05-15^^KZR^KC^465^Air Astana^^^^^http://en.wikipedia.org/wiki/Air_Astana^en|Air Astana|^TSE^air-air-astana^1
 air-air-austral-v1^^1975-01-01^^REU^UU^760^Air Austral^^^^^http://en.wikipedia.org/wiki/Air_Austral^en|Air Austral|^^air-air-austral^1
@@ -172,7 +172,6 @@ air-alaska-seaplane-service-v1^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^^
 air-dart-ltd-v1^^2016-01-01^^LID^D4^443^DART Ltd^^^^^^en|DART Ltd|^IEV^air-dart-ltd^1
 air-alitalia-v1^^1999-03-01^^AZA^AZ^55^Alitalia^Alitalia S.A.I.^^Member^^http://en.wikipedia.org/wiki/Alitalia^en|Alitalia|=en|Alitalia S.A.I.|^^air-alitalia^1
 air-alitalia-cityliner-v1^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^^Affiliate^^http://en.wikipedia.org/wiki/Alitalia_CityLiner^en|Alitalia CityLiner|=en|Air One CityLiner|^^air-alitalia-cityliner^1
-air-alitalia-express-v1^^2009-01-13^2015-02-06^SMX^XM^^Alitalia Express^C.A.I. First^^^^https://en.wikipedia.org/wiki/C.A.I._First^en|Alitalia Express|=en|C.A.I. First|^^air-alitalia-express^1
 air-allegiant-air-v1^^1998-06-01^^AAY^G4^268^Allegiant Air^^^^^http://en.wikipedia.org/wiki/Allegiant_Air^en|Allegiant Air|^^air-allegiant-air^1
 air-alliance-airlines-v1^^^^FWQ^QQ^0^Alliance Airlines^^^^PT^^en|Alliance Airlines|^^air-alliance-airlines^1
 air-all-nippon-airways-v1^^1952-12-27^^ANA^NH^205^All Nippon Airways^ANA^^Member^^http://en.wikipedia.org/wiki/All_Nippon_Airways^en|All Nippon Airways|=en|ANA|^^air-all-nippon-airways^1
@@ -1090,8 +1089,9 @@ air-zambia-skyways-v1^^^^^K8^241^Zambia Skyways^^^^^^en|Zambia Skyways|^^air-zam
 air-anguilla-air-services-v1^^^^AAS^Q3^0^Anguilla Air Services^^^^^^en|Anguilla Air Services|^^air-anguilla-air-services^1
 air-antrak-air-v1^^^^^O4^916^Antrak Air^^^^^^en|Antrak Air|^^air-antrak-air^1
 air-zanair-v1^^^^TAN^B4^698^Zanair^^^^^^en|Zanair|^^air-zanair^1
-air-zestair-v1^^^^EZD^Z2^457^AirAsia Zest^Zest Air^^^P^http://en.wikipedia.org/wiki/AirAsia_Zest^en|AirAsia Zest|=en|Zest Air|^^air-zestair^1
+air-zestair-v1^^1995-09-01^^EZD^Z2^457^AirAsia Zest^^^^P^http://en.wikipedia.org/wiki/AirAsia_Zest^en|AirAsia Zest|p=en|Zest Air|^CEB=KLO=MNL^air-zestair^1
 air-zhejiang-loong-airlines-v1^^2013-12-29^^CDC^GJ^891^Zhejiang Loong Airlines^Eurofly^^^^http://en.wikipedia.org/wiki/Loong_Air^en|Zhejiang Loong Airlines|=pny|Chánglóng Hángkōng|=sign|HUALONG|=wuu|长龙航空|=yue|長龍航空|^^air-zhejiang-loong-airlines^1
+air-zimex-aviation-v1^^^^IMX^XM^0^Zimex Aviation^^^^^http://en.wikipedia.org/wiki/Zimex_Aviation^en|Zimex Aviation|^^air-zimex-aviation^1
 alc-oneworld-v1^^^^^*O^0^Oneworld^^^^^^en|Oneworld|^^alc-oneworld^1
 alc-skyteam-v1^^^^^*S^0^Skyteam^^^^^^en|Skyteam|^^alc-skyteam^1
 alc-star-alliance-v1^^^^^*A^0^Star Alliance^^^^^^en|Star Alliance|^^alc-star-alliance^1
