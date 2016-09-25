@@ -66,7 +66,11 @@ AIRPORT_PR_FILE=${DATA_DIR}${AIRPORT_PR_FILENAME}
 # Comparison files
 COMP_FILE_COORD=${TMP_DIR}${COMP_FILE_COORD_FILENAME}
 COMP_FILE_DIST=${TMP_DIR}${COMP_FILE_DIST_FILENAME}
-POR_MAIN_DIFF=${TMP_DIR}${POR_MAIN_DIFF_FILENAME}
+POR_MAIN_DIFF=${DATA_DIR}${POR_MAIN_DIFF_FILENAME}
+
+##
+# Temporary
+POR_MAIN_DIFF_TMP=${TMP_DIR}${POR_MAIN_DIFF_FILENAME}.tmp
 
 
 if [ "$1" = "-h" -o "$1" = "--help" ];
@@ -205,7 +209,6 @@ POR_ALL_DIFF_NB=`wc -l ${COMP_FILE_DIST} | cut -d' ' -f1`
 ##
 # Filter the difference data file for all the distances greater than
 # ${COMP_MIN_DIST} (in km; by default 1km).
-POR_MAIN_DIFF_TMP=${POR_MAIN_DIFF}.tmp
 awk -F'^' -v comp_min_dist=${COMP_MIN_DIST} \
 	'{if ($2 >= comp_min_dist) {print($1 "^" $2 "^" $3 "^" $4)}}' \
 	${COMP_FILE_DIST} > ${POR_MAIN_DIFF_TMP}
@@ -236,8 +239,6 @@ then
 	echo "To see the ${POR_MAIN_DIFF_NB} main differences (greater than ${COMP_MIN_DIST} kms), over ${POR_ALL_DIFF_NB} differences in all,"
 	echo "between the Geonames coordinates ('${GEO_FILE_1}') and the best known ones ('${GEO_FILE_2}'),"
 	echo "sorted by distance (in km), just do: less ${POR_MAIN_DIFF}"
-	echo "After examining the file, you can copy it into the opentraveldata/ sub-directory:"
-	echo "\cp ${POR_MAIN_DIFF} ${DATA_DIR}"
 	echo
 else
 	echo
@@ -246,5 +247,4 @@ else
 	echo "There are no difference (greater than ${COMP_MIN_DIST} kms) between the"
 	echo "Geonames coordinates and the best known ones."
 	echo
-	\rm -f ${POR_MAIN_DIFF}
 fi

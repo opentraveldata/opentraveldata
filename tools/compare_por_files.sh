@@ -65,7 +65,7 @@ AIRPORT_PR_FILE=${DATA_DIR}${AIRPORT_PR_FILENAME}
 # Comparison files
 POR_MAIN_DIFF_FILENAME=optd_por_diff_w_geonames.csv
 #
-POR_MAIN_DIFF=${TMP_DIR}${POR_MAIN_DIFF_FILENAME}
+POR_MAIN_DIFF=${DATA_DIR}${POR_MAIN_DIFF_FILENAME}
 
 # Minimal distance triggering a difference (in km)
 COMP_MIN_DIST=10
@@ -110,7 +110,7 @@ then
 		\rm -f ${GEONAME_FILE_MISSING} ${OPTD_BEST_FILE_MISSING} \
 			${OPTD_BEST_FILE_HEADER} ${OPTD_BEST_WITH_NOHD} \
 			${GEONAME_FILE} ${GEONAME_FILE_SORTED} ${GEONAME_FILE_SORTED_CUT} \
-			${AIRPORT_PR_SORTED} ${AIRPORT_PR_SORTED_CUT} ${POR_MAIN_DIFF}
+			${AIRPORT_PR_SORTED} ${AIRPORT_PR_SORTED_CUT}
 	fi
 	exit
 fi
@@ -421,7 +421,7 @@ fi
 
 
 ##
-# Compare the Geonames coordinates to the best known ones (unil now).
+# Compare the Geonames coordinates to the best known ones (until now).
 # It generates a data file (${POR_MAIN_DIFF}, e.g., optd_por_diff_w_geonames.csv)
 # containing the greatest distances (in km), for each airport/city, between
 # both sets of coordinates (Geonames and best known ones).
