@@ -89,6 +89,8 @@
 4Z^2^<>Sa Airlink
 5D^1^Aeroméxico Connect<>Aerolitoral
 5D^2^Aeromexico Connect<>
+5E^1^East Coast Flight Services<>Siam Ga
+5E^2^<>Base Regional
 5F^2^<>Fly One
 5G^1^<>Aerocuahonte
 5G^2^<>Skyservice
@@ -96,6 +98,7 @@
 5I^1^ALSA<>Alsa Grupo Slu
 5I^2^Alsa Grupo SLU<>Air G
 5J^1^Cebu Pacific<>Cebu Air
+5J^2^<>Cebu Air
 5K^1^Hi Fly<>Hi Fly Transportes Aereo
 5K^2^<>Sac Odessa
 5L^2^<>Aerosur
@@ -132,6 +135,8 @@
 6Q^2^Slovak Arlines<>Slovak Arlns
 6S^2^<>Kato Airlines
 6T^2^<>Air Mandalay
+6U^1^<>Acg Air Cargo Germany
+6U^2^<>Air Ukraine
 6Y^1^SmartLynx Airlines<>Smartlynx Airlines
 7A^2^<>Haines Air
 7B^2^<>Flyblue Crane
@@ -174,6 +179,7 @@
 8V^2^<>Wright Air
 8W^1^Fly All Ways Airlines<>Fly Always
 8W^2^<>Private Wings
+8Y^1^Pan Pacific Airlines<>Air Burundi
 8Y^2^<>Airburundi
 8Z^1^Congo Airways<>Amadeus Pdf 8z
 9A^1^Aladia Airlines<>
@@ -228,6 +234,8 @@ ABS^1^Transwest Air<>Afrijet Business Service
 ABS^2^<>Centre Avia
 AC^2^<>Air Canada
 ACA^2^<>Air Canada
+ACX^1^<>Acg Air Cargo Germany
+ACX^2^<>Air Ukraine
 AD^1^Azul Brazilian Airlines<>Azul Linhas Aereas Brasileiras
 AD^2^Azul Linhas Aéreas Brasileiras<>Azul Linhas
 ADO^1^Air Do<>Airdo
@@ -339,6 +347,8 @@ BAW^2^<>British A W
 BB^2^<>Seaborne Air
 BBC^2^<>Biman
 BBG^1^Bluebird Airways<>Blue Bird Airways
+BBR^1^SBA Airlines<>Santa Barbara Airlines
+BBR^2^<>Santa Barbara
 BCC^1^<>Transnusa Aviation
 BCC^2^<>Carribean Air
 BCY^1^CityJet<>Cityjet
@@ -415,6 +425,7 @@ CCA^2^<>Air China
 CCM^2^<>Air Corsica
 CDG^2^<>Shandong Airl
 CEB^1^Cebu Pacific<>Cebu Air
+CEB^2^<>Cebu Air
 CES^2^<>China East
 CF^1^China Postal Airlines<>City Airline
 CFE^1^BA CityFlyer<>Ba Cityflyer
@@ -440,7 +451,8 @@ CO^1^Cobalt Air<>Cobaltair
 CP^2^<>Canadian
 CPA^2^<>Cathaypacific
 CR^1^OAG Worldwide<>Oag Worldwide
-CRD^2^Cameroon Airlines Corporation<>Camair Co
+CRD^1^Camair-Co<>Camair Co
+CRD^2^<>Camair Co
 CRK^2^<>Hongkong Air
 CRL^2^<>Corse Air
 CRN^1^Aero Caribbean<>Aerocaribbean
@@ -568,6 +580,8 @@ EZE^2^<>Eastern Air
 EZS^1^easyJet Switzerland<>Easyjet Switzerland
 EZY^1^easyJet<>Easyjet
 EZY^2^<>Easyjet
+F3^1^FAI rent-a-jet<>Skyking
+F3^2^<>Fly 1st Class
 F5^1^Fly 540<>
 F6^1^<>Plus Ultra
 F6^2^<>Fst Cambodia
@@ -856,6 +870,7 @@ KQA^2^<>Kenyaairway
 KR^1^Air Bishkek<>Air Bishkek Aircompany
 KR^2^<>Air Bishkek
 KT^1^SiAvia<>Siavia
+KTC^1^<>Kyrgyz Trans Avia
 KTC^2^<>Korsar
 KTK^2^<>Athens Airway
 KU^2^<>Kuwait Air
@@ -944,6 +959,8 @@ MCM^2^<>Heliairmona
 MD^2^<>Madagascar
 MDA^2^<>Mandarin Air
 MDG^2^<>Madagascar
+MDL^1^<>Mandala Airlines
+MDL^2^<>Pt Mandala
 ME^2^<>Middle East
 MEA^2^<>Middle East
 MEP^2^<>Republic Airl
@@ -1033,6 +1050,7 @@ NX^2^<>Air Macau
 NY^2^<>Air Iceland
 O2^1^Jet Air<>
 O7^1^Orenburg Region Airlines<>Sue Orenburg Region
+O8^1^<>Siam Air Transport
 O8^2^<>Siam Air
 OA^2^<>Olympic Air
 OAL^2^<>Olympic Air
@@ -1044,7 +1062,7 @@ OBS^1^Orbest<>Orbest Ghd
 OD^2^<>Malindo Airw
 ODS^1^<>Hi Fly Transportes Aereo
 ODS^2^<>Sac Odessa
-OF^1^Air Finland<>
+OF^1^Overland Airways<>
 OG^1^Air Freight NZ<>Air Freight Nz
 OG^2^<>N
 OH^1^PSA Airlines<>Psa Airlines
@@ -1053,7 +1071,7 @@ OJ^2^<>Overland Air
 OK^2^<>Czech Airline
 OKS^2^<>Slok Air
 OL^1^Polynesian Airlines<>Polynesian
-OLA^1^<>Fly Jamaica Airways
+OLA^1^Overland Airways<>Fly Jamaica Airways
 OLA^2^<>Overland Air
 OM^2^<>Miat
 OMT^1^CM Airlines<>Cm Airlines
@@ -1084,6 +1102,7 @@ P9^2^<>Peruvian Air
 PA^2^Florida Coast<>Airblue
 PAL^2^<>Philippine
 PAO^1^Polynesian Airlines<>Polynesian
+PBU^1^<>Air Burundi
 PBU^2^<>Airburundi
 PC^2^<>Pegasus
 PCP^1^PAL Airlines<>Aerolinea Principal Chile
@@ -1131,7 +1150,8 @@ Q7^1^Sky Bahamas Airlines<>Skybahamas Airlines
 Q8^2^<>Trans Air
 QA^1^Cimber<>
 QA^2^<>Cimber
-QC^2^Cameroon Airlines Corporation<>Camair Co
+QC^1^Camair-Co<>Camair Co
+QC^2^<>Camair Co
 QD^1^Dobrolet Airlines<>Dobrolet Lcc
 QE^1^Fars Qeshm Airlines<>
 QF^1^Qantas<>Qantas Airways
@@ -1182,6 +1202,8 @@ RFR^2^RAF NO<>R A F No1
 RG^2^<>Rotana Jet
 RGR^2^<>Gromovairline
 RH^1^Robin Hood Aviation<>
+RI^1^Air Costa Rica<>Mandala Airlines
+RI^2^<>Pt Mandala
 RIV^1^APG Airlines<>Apg Airlines
 RJD^2^<>Rotana Jet
 RK^1^Region Airline<>
@@ -1219,6 +1241,8 @@ RZO^2^<>Sata Intl
 S0^2^<>Slok Air
 S1^2^LSY<>
 S2^2^<>Jet Lite
+S3^1^SBA Airlines<>Santa Barbara Airlines
+S3^2^<>Santa Barbara
 S4^1^SATA International<>Sata Azores Airlines
 S4^2^<>Sata Intl
 S5^1^Shuttle America<>Small Planet
