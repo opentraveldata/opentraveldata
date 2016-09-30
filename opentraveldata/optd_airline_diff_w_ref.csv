@@ -301,7 +301,7 @@ ASA^2^<>Alaska A L
 ASD^2^<>Air Sinai
 ASL^2^<>J A T
 ASN^1^Hevilift<>Hevi Lift Png Pty Ltd
-ASQ^1^ExpressJet<>Expressjet Airlines
+ASQ^1^ExpressJet Airlines<>Expressjet Airlines
 AT^2^<>R Air Maroc
 ATA^2^ARC<>Arc
 AU^1^Austral Líneas Aéreas<>Austral Lineas Aereas
@@ -388,7 +388,6 @@ BS^1^US-Bangla Airlines<>Us Bangla Airlines Ltd
 BS^2^<>Gamair Ltd
 BT^1^airBaltic<>Air Baltic
 BT^2^<>Air Baltic
-BTA^1^Expressjet Airlines Inc<>
 BTI^1^airBaltic<>Air Baltic
 BTI^2^<>Air Baltic
 BTN^1^Bhutan Airlines<>Tashi Air
@@ -480,7 +479,7 @@ CZ^2^<>China South
 D2^1^Severstal Air Company<>Severstal Aircompany
 D2^2^<>Severstal Air
 D4^1^DART Ltd<>Dart Limited Trust
-D5^1^Dauair<>
+D5^2^<>Dauair
 D6^1^Interair<>Inter Air
 D6^2^<>Inter Air
 D7^1^AirAsia X<>Airasiax Sdn Bhd
@@ -488,7 +487,7 @@ D7^2^<>Airasiax
 D8^1^Norwegian Air International<>Norwegian Air International Ltd
 D8^2^<>Norwegian Air
 D9^1^Donavia<>Jsc Donavia
-DAE^1^Dauair<>
+DAE^2^<>Dauair
 DAH^2^<>Air Algerie
 DAL^2^<>Delta Air
 DAN^1^Dana Air<>Dana Airlines Limited
@@ -566,7 +565,7 @@ ESR^2^<>Eastar Jet
 ET^2^<>Ethiopian
 ETD^2^<>Etihad Air
 ETH^2^<>Ethiopian
-EV^1^ExpressJet<>Expressjet Airlines
+EV^1^ExpressJet Airlines<>Expressjet Airlines
 EVA^1^EVA Air<>Eva Air
 EVA^2^<>Eva Airways
 EVE^2^<>Evelop Air
@@ -633,8 +632,8 @@ FZ^2^Dubai Aviation Corporation<>Flydubai
 FZW^1^Zimbabwe flyafrica.com<>Fly Africa Zimbabwe
 FZW^2^<>Easeon Air
 G2^1^Jet Express<>Guinea Airlines
-G3^1^Gol Transportes Aéreos<>Vrg Linhas Aereas S A
-G3^2^VRG Linhas Aéreas<>Vrg Linhas As
+G3^1^Gol Transportes Aéreos<>Gol Linhas Aereas S A
+G3^2^<>Vrg Linhas As
 G4^2^<>Guizhou Air
 G5^2^<>Jsc Air Enkor
 G7^1^GoJet Airlines<>Gojet Airlines
@@ -660,8 +659,8 @@ GJS^1^GoJet Airlines<>Gojet Airlines
 GL^2^<>Air Greenland
 GLA^1^Great Lakes Airlines<>Great Lakes Aviation
 GLA^2^<>Great Lakes
-GLO^1^Gol Transportes Aéreos<>Vrg Linhas Aereas S A
-GLO^2^VRG Linhas Aéreas<>Vrg Linhas As
+GLO^1^Gol Transportes Aéreos<>Gol Linhas Aereas S A
+GLO^2^<>Vrg Linhas As
 GM^1^Germania Flug<>Germania Flug Ag
 GM^2^<>Germania Flug
 GMI^2^<>Germania
@@ -1591,7 +1590,7 @@ XB^1^IATA<>Iata
 XB^2^<>Iata
 XC^2^<>K D Air
 XD^1^Scheduled Airlines Traffic Offices<>Arc
-XE^1^Expressjet Airlines Inc<>
+XE^1^Delux Public Charter<>Jetsuitex
 XG^1^Sun Express Germany<>Sunexpress Germany
 XJ^1^Thai AirAsia X<>Thai Airasia X Company
 XK^2^<>Air Corsica

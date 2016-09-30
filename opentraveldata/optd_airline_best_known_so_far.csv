@@ -361,9 +361,9 @@ air-dac-east-africa-v1^^2011-01-01^^^JX^704^DAC East Africa^^^^^http://en.wikipe
 air-dagestan-airlines-v1^^^^^N2^0^Dagestan Airlines^^^^^^en|Dagestan Airlines|^^air-dagestan-airlines^1
 air-dana-airlines-v1^^2008-01-01^^DAN^9J^234^Dana Air^^^^^http://en.wikipedia.org/wiki/Dana_Air^en|Dana Air|^^air-dana-airlines^1
 air-danish-air-transport-v1^^1989-01-01^^DTR^DX^243^Danish Air Transport^^^^^http://en.wikipedia.org/wiki/Danish_Air_Transport^en|Danish Air Transport|^^air-danish-air-transport^1
-air-dauair-v1^^^^DAE^D5^0^Dauair^Dauair^^^^^en|Dauair|=en|Dauair|^^air-dauair^1
 air-delta-air-lines-v1^^1929-06-17^^DAL^DL^6^Delta Air Lines^^^Member^^http://en.wikipedia.org/wiki/Delta_Air_Lines^en|Delta Air Lines|^^air-delta-air-lines^1
 air-delta-connection-v1^^^^DCP^DQ^521^Delta Connection^Coastal Air^^^^^en|Delta Connection|=en|Coastal Air|^^air-delta-connection^1
+air-delux-public-charter-v1^^2015-01-01^^JSX^XE^0^Delux Public Charter^^^^^^en|Delux Public Charter|^^air-delux-public-charter^1
 air-denim-air-v2^^2016-04-01^^DNM^G6^0^Denim Air^^^^^http://en.wikipedia.org/wiki/Denim_Air^en|Denim Air|^AMS=MST^air-denim-air^2
 air-djibouti-air-v1^^^^^DZ^893^Donghai Airlines^^^^^^en|Donghai Airlines|^^air-djibouti-air^1
 air-dniproavia-v1^^1996-01-01^^UDN^Z6^181^Dniproavia^^^^^http://en.wikipedia.org/wiki/Dniproavia^en|Dniproavia|^^air-dniproavia^1
@@ -419,8 +419,7 @@ air-everts-v1^^^^^5V^840^Everts^Lviv Airlines^^^^^en|Everts|=en|Lviv Airlines|^^
 air-ewa-air-v1^^^^EWR^ZD^732^Ewa Air^Flying Dandy^^^^^en|Ewa Air|=en|Flying Dandy|^^air-ewa-air^1
 air-exec-air-v1^^^^^X7^0^Exec Air^Air Service^^^^^en|Exec Air|=en|Air Service|^^air-exec-air^1
 air-executive-express-aviation-v1^^2013-01-01^^LTD^6G^677^Executive Express Aviation^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^en|Southern Airways|=en|Executive Express Aviation LLC|^PIT^air-executive-express-aviation^1
-air-expressjet-airlines-inc-v1^^^^BTA^XE^477^Expressjet Airlines Inc^^^^^^en|Expressjet Airlines Inc|^^air-expressjet-airlines-inc^1
-air-express-jet-v1^^1979-01-01^^ASQ^EV^0^ExpressJet^^^^^http://en.wikipedia.org/wiki/ExpressJet^en|ExpressJet|^^air-express-jet^1
+air-expressjet-airlines-v1^^2001-01-01^^ASQ^EV^862^ExpressJet Airlines^^^^^http://en.wikipedia.org/wiki/ExpressJet^en|ExpressJet Airlines|p=en|Continental Express|h=en|Bar Harbor Airlines|h=en|Britt Airways|h=en|Rocky Mountain Airways|h=en|ASA - Atlantic Southeast Airlines|h^ATL^air-expressjet-airlines^1
 air-fai-rent-a-jet-v1^^1987-01-01^^IFA^F3^0^FAI rent-a-jet^^^^^http://en.wikipedia.org/wiki/FAI_rent-a-jet^en|FAI rent-a-jet|p=en|Flight Ambulance International|^NUE^air-fai-rent-a-jet^1
 air-far-eastern-v1^^1957-01-01^^FEA^FE^436^Far Eastern Air Transport^^^^^http://en.wikipedia.org/wiki/Far_Eastern_Air_Transport^abbr|FAT|=en|Far Eastern Air Transport|=pny|Yuǎndōng Hángkōng Gǔfènyǒuxiàngōngsī|=wuu|远东航空股份有限公司|=yue|遠東航空股份有限公司|^^air-far-eastern^1
 air-fars-qeshm-airlines-v1^^^^QFZ^QE^721^Fars Qeshm Airlines^Crossair Eur^^^^^en|Fars Qeshm Airlines|=en|Crossair Eur|^^air-fars-qeshm-airlines^1
@@ -474,7 +473,7 @@ air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/
 air-go-v1^^^^GOE^GO^0^Go^^^^^^en|Go|^^air-go^1
 air-go2sky-v1^^2013-02-14^^RLX^6G^0^Go2Sky^^^^^http://en.wikipedia.org/wiki/Go2Sky^en|Go2Sky|=sign|RELAX|^TIA^air-go2sky^1
 air-gojet-airlines-v1^^2004-01-01^^GJS^G7^573^GoJet Airlines^^^^^http://en.wikipedia.org/wiki/GoJet_Airlines^en|GoJet Airlines|^^air-gojet-airlines^1
-air-gol-transportes-aereos-v2^^2016-05-01^^GLO^G3^127^Gol Transportes Aéreos^VRG Linhas Aéreas^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|^^air-gol-transportes-aereos^2
+air-gol-transportes-aereos-v2^^2016-05-01^^GLO^G3^127^Gol Transportes Aéreos^^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|=en|Gol Linhas Aéreas Inteligentes|^CGH^air-gol-transportes-aereos^2
 air-golden-myanmar-airlines-v1^^^^^Y5^509^Golden Myanmar Airlines^^^^^^en|Golden Myanmar Airlines|^^air-golden-myanmar-airlines^1
 air-grand-china-air-v1^^2007-01-01^^GDC^CN^895^Grand China Air^^^^^http://en.wikipedia.org/wiki/Grand_China_Air^abbr|GCA|=en|Grand China Air|=pny|Dà Xīn Huá Hángkōng|=sign|GRAND CHINA|=wuu|大新华航空|=yue|大新華航空|^^air-grand-china-air^1
 air-grant-aviation-v1^^1993-01-01^^SWV^GV^0^Grant Aviation^^^^^http://en.wikipedia.org/wiki/Grant_Aviation^en|Grant Aviation|^AKN=ANC=BET^air-grant-aviation^1
