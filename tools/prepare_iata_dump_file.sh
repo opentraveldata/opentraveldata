@@ -4,6 +4,8 @@
 # - the file-path of the data dump file extracted from Innovata.
 #
 
+##
+#
 displayIATADetails() {
     echo
     echo "####### Note #######"
@@ -11,6 +13,14 @@ displayIATADetails() {
     echo "# The IATA dump file ('${IATA_TAB_FILENAME}') should be in the ${TOOLS_DIR} directory"
     echo "#####################"
     echo
+}
+
+##
+# Cleaning
+cleanTempFiles() {
+	\rm -f ${IATA_CSV_UNSTD_FILE} ${IATA_CSV_HDR_FILE} \
+		${IATA_CSV_UNSTD_NOHDR_FILE} ${IATA_CSV_NOHDR_FILE}
+		
 }
 
 ##
@@ -118,6 +128,13 @@ GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
 IATA_CSV_FILE=${IATA_DIR}${IATA_CSV_FILENAME}
 
 ##
+# Temporary
+IATA_CSV_UNSTD_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.unsorted
+IATA_CSV_HDR_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.hdr
+IATA_CSV_UNSTD_NOHDR_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.unsorted_nohdr
+IATA_CSV_NOHDR_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.nohdr
+
+##
 #
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
@@ -161,6 +178,15 @@ then
 fi
 
 ##
+# Cleaning
+#
+if [ "$1" = "--clean" ]
+then
+	cleanTempFiles
+	exit
+fi
+
+##
 # Log level
 if [ "$2" != "" ]
 then
@@ -169,11 +195,32 @@ fi
 
 
 ##
-# Add the header
+# Convert the format
 CONVERTER=prepare_iata_dump_file.awk
-awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_FILE}
+awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
 #CONVERTER=prepare_iata_dump_file_from_tsv.awk
-#awk -F'\t' -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_FILE}
+#awk -F'\t' -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
+
+##
+# Sort by IATA code
+
+# Extract the header into a temporary file
+grep "^city_code\(.\+\)" ${IATA_CSV_UNSTD_FILE} > ${IATA_CSV_HDR_FILE}
+
+# Remove the header from the unsorted file
+sed -e "s/^city_code\(.\+\)//g" ${IATA_CSV_UNSTD_FILE} \
+	> ${IATA_CSV_UNSTD_NOHDR_FILE}
+sed -i -e "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
+
+# Sort by IATA code the header-less file
+sort -t'^' -k1,1 ${IATA_CSV_UNSTD_NOHDR_FILE} > ${IATA_CSV_NOHDR_FILE}
+
+# Reinject the header into the sorted file
+cat ${IATA_CSV_HDR_FILE} ${IATA_CSV_NOHDR_FILE} > ${IATA_CSV_FILE}
+
+##
+# Cleaning
+cleanTempFiles
 
 ##
 # Reporting

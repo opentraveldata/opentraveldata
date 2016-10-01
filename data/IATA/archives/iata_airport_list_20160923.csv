@@ -107,8 +107,8 @@ ADN^Andes^^CO^^^ADN^Andes^^A
 ADO^Andamooka^SA^AU^3^^ADO^Andamooka^0055^A
 ADP^Ampara^^LK^^^ADP^Gal Oya^^A
 ADP^Ampara^^LK^^^AFK^Kondavattavan Tank SPB^^A
-ADQ^Kodiak^AK^US^5^^ADQ^Metropolitan Area^^C
 ADQ^Kodiak^AK^US^5^^ADQ^Kodiak Airport^^A
+ADQ^Kodiak^AK^US^5^^ADQ^Metropolitan Area^^C
 ADQ^Kodiak^AK^US^5^^KDK^Municipal^2403^A
 ADR^Andrews^SC^US^1^^ADR^Robert F. Swinnie^0058^A
 ADT^Ada^OK^US^2^^ADT^Municipal^^A
@@ -132,8 +132,8 @@ AER^Sochi^^RU^2^^AER^International^0066^A
 AES^Alesund^^NO^^^AES^Vigra^0067^A
 AET^Allakaket^AK^US^5^^AET^Allakaket^0068^A
 AEU^Abu Musa Island^^IR^^^AEU^Abu Musa Island^^A
-AEX^Alexandria^LA^US^2^^AEX^Metropolitan Area^^C
 AEX^Alexandria^LA^US^2^^AEX^International^^A
+AEX^Alexandria^LA^US^2^^AEX^Metropolitan Area^^C
 AEX^Alexandria^LA^US^2^^ESF^Esler Regional^1460^A
 AEY^Akureyri^^IS^^^AEY^Akureyri^0069^A
 AFA^San Rafael^MD^AR^^^AFA^San Rafael^0070^A
@@ -152,8 +152,8 @@ AGD^Anggi^^ID^3^^AGD^Anggi^^A
 AGE^Wangerooge^^DE^^^AGE^Wangerooge^0076^A
 AGF^Agen^^FR^^^AGF^La Garenne^0077^A
 AGG^Angoram^^PG^1^^AGG^Angoram^0078^A
-AGH^Angelholm/Helsingborg^^SE^^^AGH^Metropolitan Area^^C
 AGH^Angelholm/Helsingborg^^SE^^^AGH^Airport^0079^A
+AGH^Angelholm/Helsingborg^^SE^^^AGH^Metropolitan Area^^C
 AGH^Angelholm/Helsingborg^^SE^^^JHE^Heliport^^H
 AGH^Angelholm/Helsingborg^^SE^^^XYH^Helsingborg C Rail Stn^^R
 AGH^Angelholm/Helsingborg^^SE^^^XYQ^Angelholm Railway Stn^^R
@@ -234,8 +234,8 @@ AKH^Al Kharj^^SA^^^AKH^Prince Sultan AB^^A
 AKI^Akiak^AK^US^5^^AKI^Akiak^0131^A
 AKJ^Asahikawa^^JP^^^AKJ^Asahikawa^0132^A
 AKK^Akhiok^AK^US^5^^AKK^Akhiok^0133^A
-AKL^Auckland^^NZ^1^^AKL^Metropolitan Area^^C
 AKL^Auckland^^NZ^1^^AKL^International^0134^A
+AKL^Auckland^^NZ^1^^AKL^Metropolitan Area^^C
 AKL^Auckland^^NZ^1^^MHB^Mechanics Bay Heliport^3128^H
 AKL^Auckland^^NZ^1^^XNZ^Ferry Port^^P
 AKM^Zakouma^^TD^^^AKM^Zakouma^0135^A
@@ -280,8 +280,8 @@ ALU^Alula^^SO^^^ALU^Alula^0161^A
 ALV^Andorra la Vella^^AD^^^ALV^Off-line Point^^O
 ALW^Walla Walla^WA^US^4^^ALW^Regional^0162^A
 ALX^Alexander City^AL^US^2^^ALX^Thomas C Russell Field^^A
-ALY^Alexandria^^EG^^^ALY^Metropolitan Area^^C
 ALY^Alexandria^^EG^^^ALY^El Nouzha^0163^A
+ALY^Alexandria^^EG^^^ALY^Metropolitan Area^^C
 ALY^Alexandria^^EG^^^HBE^Borg el Arab^^A
 ALZ^Alitak^AK^US^5^^ALZ^Sea Plane Base^0164^A
 AMA^Amarillo^TX^US^2^^AMA^Metropolitan Area^^C
@@ -328,8 +328,8 @@ ANF^Antofagasta^^CL^1^^ANF^Cerro Moreno^0191^A
 ANG^Angouleme^^FR^^^ANG^Brie-Champniers^^A
 ANI^Aniak^AK^US^5^^ANI^Aniak^0193^A
 ANJ^Zanaga^^CG^^^ANJ^Zanaga^0194^A
-ANK^Ankara^^TR^^^ANK^Metropolitan Area^^C
 ANK^Ankara^^TR^^^ANK^Etimesgut^^A
+ANK^Ankara^^TR^^^ANK^Metropolitan Area^^C
 ANK^Ankara^^TR^^^ESB^Esenboga^1456^A
 ANL^Andulo^^AO^^^ANL^Andulo^0195^A
 ANM^Antalaha^^MG^^^ANM^Antsirabato^0196^A
@@ -387,8 +387,8 @@ APS^Anapolis^GO^BR^1^^APS^Anapolis^^A
 APT^Jasper^TN^US^2^^APT^Marion County^^A
 APU^Apucarana^PR^BR^1^^APU^Captain Joao Busse^^A
 APV^Apple Valley^CA^US^4^^APV^Apple Valley^0226^A
-APW^Apia^^WS^^^APW^Metropolitan Area^^C
 APW^Apia^^WS^^^APW^Faleolo Intl^0227^A
+APW^Apia^^WS^^^APW^Metropolitan Area^^C
 APW^Apia^^WS^^^FGI^Fagali'i^1541^A
 APX^Arapongas^PR^BR^1^^APX^Alberto Bertelli^^A
 APY^Alto Parnaiba^MA^BR^1^A^APY^Alto Parnaiba^0228^A
@@ -464,15 +464,15 @@ ATH^Athens^^GR^^^ATH^Eleftherios Venizelos^^A
 ATI^Artigas^^UY^^^ATI^Artigas^0283^A
 ATJ^Antsirabe^^MG^^^ATJ^Antsirabe^^A
 ATK^Atqasuk^AK^US^5^^ATK^E.Burnell Sr Memorial^^A
-ATL^Atlanta^GA^US^1^^ATL^Metropolitan Area^^C
 ATL^Atlanta^GA^US^1^^ATL^Hartsfield-Jackson Int^0284^A
+ATL^Atlanta^GA^US^1^^ATL^Metropolitan Area^^C
 ATL^Atlanta^GA^US^1^^FTY^Fulton County^^A
 ATL^Atlanta^GA^US^1^^PDK^DeKalb-Peachtree^3855^A
 ATM^Altamira^PA^BR^1^A^ATM^Altamira^0285^A
 ATN^Namatanai^^PG^1^^ATN^Namatanai^0286^A
 ATO^Athens^OH^US^1^^ATO^Ohio University^0287^A
-ATP^Aitape^^PG^1^^ATP^Metropolitan Area^^C
 ATP^Aitape^^PG^1^^ATP^Aitape Airstrip^0288^A
+ATP^Aitape^^PG^1^^ATP^Metropolitan Area^^C
 ATP^Aitape^^PG^1^^TAJ^Tadji^4810^A
 ATQ^Amritsar^^IN^^^ATQ^Sri Guru Ram Dass Jee^0289^A
 ATR^Atar^^MR^^^ATR^International^0290^A
@@ -490,8 +490,8 @@ AUD^Augustus Downs^QL^AU^2^B^AUD^Augustus Downs^0299^A
 AUE^Abu Rudeis^^EG^^^AUE^Abu Rudeis^^A
 AUF^Auxerre^^FR^^^AUF^Branches^^A
 AUG^Augusta^ME^US^1^^AUG^State^0300^A
-AUH^Abu Dhabi^^AE^^^AUH^Metropolitan Area^^C
 AUH^Abu Dhabi^^AE^^^AUH^International^0301^A
+AUH^Abu Dhabi^^AE^^^AUH^Metropolitan Area^^C
 AUH^Abu Dhabi^^AE^^^AYM^Yas Island SPB^^A
 AUH^Abu Dhabi^^AE^^^AZI^Bateen^^A
 AUH^Abu Dhabi^^AE^^^DHF^Al Dhafra AB^^A
@@ -507,14 +507,14 @@ AUO^Auburn^AL^US^2^^AUO^Auburn University Rgnl^0306^A
 AUP^Agaun^^PG^1^^AUP^Agaun^0307^A
 AUQ^Hiva Oa^^PF^1^^AUQ^Atuona^0308^A
 AUR^Aurillac^^FR^^^AUR^Aurillac^0309^A
-AUS^Austin^TX^US^2^^AUS^Metropolitan Area^^C
 AUS^Austin^TX^US^2^^AUS^Austin-Bergstrom Intl^0310^A
+AUS^Austin^TX^US^2^^AUS^Metropolitan Area^^C
 AUS^Austin^TX^US^2^^MMR^Mabry ARNG Heliport^^H
 AUT^Atauro^^TL^^^AUT^Atauro^0311^A
 AUU^Aurukun^QL^AU^2^B^AUU^Aurukun^0312^A
 AUV^Aumo^^PG^1^^AUV^Aumo^^A
-AUW^Wausau^WI^US^2^^AUW^Metropolitan Area^^C
 AUW^Wausau^WI^US^2^^AUW^Downtown Apt^0313^A
+AUW^Wausau^WI^US^2^^AUW^Metropolitan Area^^C
 AUW^Wausau^WI^US^2^^CWA^Central Wisconsin^1117^A
 AUX^Araguaina^TO^BR^1^A^AUX^Araguaina^0314^A
 AUY^Anatom Island^^VU^^^AUY^Anatom Island^0315^A
@@ -713,16 +713,16 @@ BEM^Beni Mellal^^MA^^^BEM^National^^A
 BEN^Benghazi^^LY^^^BEN^Benina Intl^0445^A
 BEP^Bellary^^IN^^^BEP^Bellary^^A
 BEQ^Bury St Edmunds^^GB^^^BEQ^Honington RAF^^A
-BER^Berlin^^DE^^^BER^Metropolitan Area^^C
 BER^Berlin^^DE^^^BER^Brandenburg^^A
+BER^Berlin^^DE^^^BER^Metropolitan Area^^C
 BER^Berlin^^DE^^^QPP^Hbf Railway Station^^R
 BER^Berlin^^DE^^^QWB^Ostbahnhof Railway St^^R
 BER^Berlin^^DE^^^QWC^Zoo Railway Station^^R
 BER^Berlin^^DE^^^SXF^Schoenefeld^4774^A
 BER^Berlin^^DE^^^TXL^Tegel^5115^A
 BES^Brest^^FR^^^BES^Bretagne^0447^A
-BET^Bethel^AK^US^5^^BET^Metropolitan Area^^C
 BET^Bethel^AK^US^5^^BET^Airport^0448^A
+BET^Bethel^AK^US^5^^BET^Metropolitan Area^^C
 BET^Bethel^AK^US^5^^JBT^Sea Plane Base^^A
 BEU^Bedourie^QL^AU^2^B^BEU^Bedourie^0449^A
 BEV^Beersheba^^IL^^^BEV^Beersheba^0450^A
@@ -743,8 +743,8 @@ BFO^Chiredzi^^ZW^^^BFO^Buffalo Range^0462^A
 BFP^Beaver Falls^PA^US^1^^BFP^Beaver Falls^^A
 BFQ^Bahia Pina^^PA^^^BFQ^Bahia Pina^^A
 BFR^Bedford^IN^US^1^^BFR^Virgil I Grissom Muni^^A
-BFS^Belfast^^GB^^^BFS^Metropolitan Area^^C
 BFS^Belfast^^GB^^^BFS^International^0463^A
+BFS^Belfast^^GB^^^BFS^Metropolitan Area^^C
 BFS^Belfast^^GB^^^BHD^George Best City Apt^5889^A
 BFT^Beaufort^SC^US^1^^BFT^Beaufort County^0464^A
 BFU^Bengbu^^CN^^^BFU^Bengbu^^A
@@ -979,8 +979,8 @@ BOO^Bodo^^NO^^^BOO^Bodo^0625^A
 BOP^Bouar^^CF^^^BOP^Bouar^0626^A
 BOQ^Boku^^PG^2^^BOQ^Boku^0627^A
 BOR^Belfort^^FR^^^BOR^Off-line Point^^O
-BOS^Boston^MA^US^1^^BOS^Metropolitan Area^^C
 BOS^Boston^MA^US^1^^BOS^Edward L. Logan Intl^0629^A
+BOS^Boston^MA^US^1^^BOS^Metropolitan Area^^C
 BOS^Boston^MA^US^1^^PSM^Portsmouth Pease Intl^^A
 BOS^Boston^MA^US^1^^ZRU^Route 128 Railway Stn^^R
 BOS^Boston^MA^US^1^^ZTO^South Railway Station^^R
@@ -1006,8 +1006,8 @@ BPN^Balikpapan^^ID^2^^BPN^Sepinggan^0636^A
 BPO^Bo'ao^^CN^^^BPO^Railway Station^^R
 BPS^Porto Seguro^BA^BR^1^A^BPS^Porto Seguro^0637^A
 BPT^Beaumont/Port Arthur^TX^US^2^^BMT^Beaumont Municipal^^A
-BPT^Beaumont/Port Arthur^TX^US^2^^BPT^Metropolitan Area^^C
 BPT^Beaumont/Port Arthur^TX^US^2^^BPT^Jack Brooks Regional^0638^A
+BPT^Beaumont/Port Arthur^TX^US^2^^BPT^Metropolitan Area^^C
 BPU^Beppu^^JP^^^BPU^Off-line Point^0639^O
 BPX^Qamdo/Changdu^^CN^^^BPX^Bamda/Bangda^^A
 BPY^Besalampy^^MG^^^BPY^Besalampy^0640^A
@@ -1038,8 +1038,8 @@ BRJ^Bright^VI^AU^2^^BRJ^Bright^^A
 BRK^Bourke^NS^AU^2^^BRK^Bourke^0656^A
 BRL^Burlington^IA^US^2^^BRL^Southeast Iowa Rgnl^0657^A
 BRM^Barquisimeto^^VE^^^BRM^Jacinto Lara Intl^0658^A
-BRN^Bern^^CH^^^BRN^Metropolitan Area^^C
 BRN^Bern^^CH^^^BRN^Belp^0659^A
+BRN^Bern^^CH^^^BRN^Metropolitan Area^^C
 BRN^Bern^^CH^^^ZDJ^Railway Station^^R
 BRO^Brownsville^TX^US^2^^BRO^South Padre Is. Intl^0660^A
 BRP^Biaru^^PG^1^^BRP^Biaru^0661^A
@@ -1050,8 +1050,8 @@ BRS^Bristol^^GB^^^BPR^Parkway Railway St.^^R
 BRS^Bristol^^GB^^^BRS^Bristol^0664^A
 BRS^Bristol^^GB^^^TPB^Temple Meads Rail St.^^R
 BRT^Bathurst Island^NT^AU^3^A^BRT^Bathurst Island^0665^A
-BRU^Brussels^^BE^^^BRU^Metropolitan Area^^C
 BRU^Brussels^^BE^^^BRU^Brussels Airport^0666^A
+BRU^Brussels^^BE^^^BRU^Metropolitan Area^^C
 BRU^Brussels^^BE^^^CRL^Brussels S. Charleroi^^A
 BRU^Brussels^^BE^^^ZYR^Midi Railway Station^^R
 BRV^Bremerhaven^^DE^^^BRV^Bremerhaven^0667^A
@@ -1174,8 +1174,8 @@ BWE^Braunschweig/Wolfsburg^^DE^^^ZQU^Wolfsburg Rail Station^^R
 BWF^Barrow-in-Furness^^GB^^^BWF^Walney Island^^A
 BWG^Bowling Green^KY^US^2^^BWG^Warren County Regional^0741^A
 BWH^Butterworth^^MY^^^BWH^Butterworth^^A
-BWI^Baltimore^MD^US^1^^BWI^Metropolitan Area^^C
 BWI^Baltimore^MD^US^1^^BWI^Baltimore/Wash. Intl^0742^A
+BWI^Baltimore^MD^US^1^^BWI^Metropolitan Area^^C
 BWI^Baltimore^MD^US^1^^GBO^Greenbelt Rail Station^^R
 BWI^Baltimore^MD^US^1^^MTN^Martin State^^A
 BWI^Baltimore^MD^US^1^^ZBP^Penn Railway Station^^R
@@ -1217,8 +1217,8 @@ BYC^Yacuiba^^BO^^^BYC^Yacuiba^0757^A
 BYD^Al Bayda^^YE^^^BYD^Al Bayda^0758^A
 BYF^Albert^^FR^^^BYF^Bray^^A
 BYG^Buffalo^WY^US^3^^BYG^Johnson County^0759^A
-BYH^Blytheville^AR^US^2^^BYH^Metropolitan Area^^C
 BYH^Blytheville^AR^US^2^^BYH^Arkansas Intl^^A
+BYH^Blytheville^AR^US^2^^BYH^Metropolitan Area^^C
 BYH^Blytheville^AR^US^2^^HKA^Municipal^1951^A
 BYI^Burley/Rupert^ID^US^3^^BYI^Burley Municipal^0760^A
 BYJ^Beja^^PT^1^^BYJ^International^^A
@@ -1263,8 +1263,8 @@ CAA^Catacamas^^HN^^^CAA^El Aguacate^0778^A
 CAB^Cabinda^^AO^^^CAB^Cabinda^0779^A
 CAC^Cascavel^PR^BR^1^^CAC^A.Mendes da Silva^0780^A
 CAD^Cadillac^MI^US^1^^CAD^Wexford County^0781^A
-CAE^Columbia^SC^US^1^^CAE^Metropolitan Area^^C
 CAE^Columbia^SC^US^1^^CAE^Metropolitan^0000^A
+CAE^Columbia^SC^US^1^^CAE^Metropolitan Area^^C
 CAE^Columbia^SC^US^1^^CUB^Owens Field^^A
 CAE^Columbia^SC^US^1^^MMT^McEntire JNGB^^A
 CAF^Carauari^AM^BR^2^A^CAF^Carauari^0783^A
@@ -1282,8 +1282,8 @@ CAO^Clayton^NM^US^3^^CAO^Municipal Airpark^^A
 CAP^Cap-Haitien^^HT^^^CAP^Hugo Chavez Intl^0792^A
 CAQ^Caucasia^^CO^^^CAQ^Juan H. White^0793^A
 CAR^Caribou^ME^US^1^^CAR^Municipal^^A
-CAS^Casablanca^^MA^^^CAS^Metropolitan Area^^C
 CAS^Casablanca^^MA^^^CAS^Anfa^0794^A
+CAS^Casablanca^^MA^^^CAS^Metropolitan Area^^C
 CAS^Casablanca^^MA^^^CMN^Mohammed V^0973^A
 CAT^Cascais^^PT^1^^CAT^Tires^^A
 CAU^Caruaru^PE^BR^1^A^CAU^Oscar Laranjeiras^^A
@@ -1358,8 +1358,8 @@ CDS^Childress^TX^US^2^^CDS^Municipal^^A
 CDT^Castellon de la Plana^^ES^1^^CDT^Airport^^A
 CDT^Castellon de la Plana^^ES^1^^CPJ^Railway Station^^R
 CDU^Camden^NS^AU^2^^CDU^Camden^^A
-CDV^Cordova^AK^US^5^^CDV^Metropolitan Area^^C
 CDV^Cordova^AK^US^5^^CDV^Merle K (Mudhole)Smith^^A
+CDV^Cordova^AK^US^5^^CDV^Metropolitan Area^^C
 CDV^Cordova^AK^US^5^^CKU^Municipal^^A
 CDW^Caldwell^NJ^US^1^^CDW^Essex County^0846^A
 CDY^Mapun^^PH^^^CDY^Cagayan de Sulu^^A
@@ -1378,8 +1378,8 @@ CEM^Central^AK^US^5^^CEM^Central^0856^A
 CEN^Ciudad Obregon^^MX^2^A^CEN^International^0857^A
 CEO^Waku-Kungo^^AO^^^CEO^Waku-Kungo^0858^A
 CEP^Concepcion^^BO^^^CEP^Concepcion^0859^A
-CEQ^Cannes^^FR^^^CEQ^Metropolitan Area^^C
 CEQ^Cannes^^FR^^^CEQ^Mandelieu^^A
+CEQ^Cannes^^FR^^^CEQ^Metropolitan Area^^C
 CEQ^Cannes^^FR^^^JCA^Palm Beach Heliport^^H
 CEQ^Cannes^^FR^^^QYW^Le Vieux Port Harbour^^P
 CER^Cherbourg^^FR^^^CER^Maupertus^0860^A
@@ -1420,8 +1420,8 @@ CGI^Cape Girardeau^MO^US^2^^CGI^Regional^0881^A
 CGJ^Chingola^^ZM^^^CGJ^Kasompe^^A
 CGM^Camiguin Island^^PH^^^CGM^Mambajao^^A
 CGN^Cologne/Bonn^^DE^^^BNJ^Bonn Hbf Railway St^^R
-CGN^Cologne/Bonn^^DE^^^CGN^Metropolitan Area^^C
 CGN^Cologne/Bonn^^DE^^^CGN^Airport^^A
+CGN^Cologne/Bonn^^DE^^^CGN^Metropolitan Area^^C
 CGN^Cologne/Bonn^^DE^^^QBB^Bonn Thomastr. Bus Stn^^B
 CGN^Cologne/Bonn^^DE^^^QKL^Cologne Hbf Rail St^^R
 CGN^Cologne/Bonn^^DE^^^QKU^Messe/Deutz Rail Stn^^R
@@ -1529,8 +1529,8 @@ CLA^Comilla^^BD^^^CLA^Comilla^0944^A
 CLB^Colchester^^GB^^^CLB^Bus Station^^B
 CLE^Cleveland^OH^US^1^^BKL^Burke Lakefront^0543^A
 CLE^Cleveland^OH^US^1^^CGF^Cuyahoga County^^A
-CLE^Cleveland^OH^US^1^^CLE^Metropolitan Area^^C
 CLE^Cleveland^OH^US^1^^CLE^Hopkins International^0947^A
+CLE^Cleveland^OH^US^1^^CLE^Metropolitan Area^^C
 CLF^Coltishall^^GB^^^CLF^Off-line Point^^O
 CLG^Coalinga^CA^US^4^^CLG^Municipal^^A
 CLH^Coolah^NS^AU^2^^CLH^Coolah^0948^A
@@ -1544,8 +1544,8 @@ CLP^Clarks Point^AK^US^5^^CLP^Clarks Point^0954^A
 CLQ^Colima^^MX^1^^CLQ^Miguel de la Madrid^0955^A
 CLR^Calipatria^CA^US^4^^CLR^Cliff Hatfield Mem.^^A
 CLS^Chehalis^WA^US^4^^CLS^Chehalis-Centralia^0956^A
-CLT^Charlotte^NC^US^1^^CLT^Metropolitan Area^^C
 CLT^Charlotte^NC^US^1^^CLT^Douglas Intl^0957^A
+CLT^Charlotte^NC^US^1^^CLT^Metropolitan Area^^C
 CLT^Charlotte^NC^US^1^^QWG^Wilgrove Air Park^^A
 CLU^Columbus^IN^US^1^^CLU^Municipal^0958^A
 CLV^Caldas Novas^GO^BR^1^^CLV^Nelson R. Guimaraes^^A
@@ -1554,8 +1554,8 @@ CLY^Calvi^^FR^^^CLY^Ste Catherine^0961^A
 CLZ^Calabozo^^VE^^^CLZ^Calabozo^0962^A
 CMA^Cunnamulla^QL^AU^2^B^CMA^Cunnamulla^0963^A
 CMB^Colombo^^LK^^^BYV^Beira Lake SPB^^A
-CMB^Colombo^^LK^^^CMB^Metropolitan Area^^C
 CMB^Colombo^^LK^^^CMB^Bandaranaike Intl^^A
+CMB^Colombo^^LK^^^CMB^Metropolitan Area^^C
 CMB^Colombo^^LK^^^DGM^Dandugama SPB^^A
 CMB^Colombo^^LK^^^KEZ^Kelani-Peliyagoda SPB^^A
 CMB^Colombo^^LK^^^RML^Ratmalana^4265^A
@@ -1642,8 +1642,8 @@ CPD^Coober Pedy^SA^AU^3^^CPD^Coober Pedy^1025^A
 CPE^Campeche^^MX^1^^CPE^A.Acuna Ongay Intl^1026^A
 CPF^Cepu^^ID^1^^CPF^Nglonram^^A
 CPG^Carmen de Patagones^BA^AR^^^CPG^Carmen de Patagones^^A
-CPH^Copenhagen^^DK^^^CPH^Metropolitan Area^^C
 CPH^Copenhagen^^DK^^^CPH^Kastrup^^A
+CPH^Copenhagen^^DK^^^CPH^Metropolitan Area^^C
 CPH^Copenhagen^^DK^^^RKE^Roskilde^^A
 CPH^Copenhagen^^DK^^^ZGH^Copenhagen H Rail Stn^^R
 CPI^Cape Orford^^PG^1^^CPI^Cape Orford^^A
@@ -1677,8 +1677,8 @@ CRJ^Coorabie^SA^AU^3^^CRJ^Coorabie^^A
 CRK^Angeles/Mabalacat^^PH^^^CRK^Clark Intl^^A
 CRM^Catarman^^PH^^^CRM^National^1053^A
 CRO^Corcoran^CA^US^4^^CRO^Corcoran^^A
-CRP^Corpus Christi^TX^US^2^^CRP^Metropolitan Area^^C
 CRP^Corpus Christi^TX^US^2^^CRP^International^^A
+CRP^Corpus Christi^TX^US^2^^CRP^Metropolitan Area^^C
 CRP^Corpus Christi^TX^US^2^^CUX^Cuddihy Field^^A
 CRP^Corpus Christi^TX^US^2^^NGP^NAS (Truax Field)^3512^A
 CRP^Corpus Christi^TX^US^2^^NGW^Cabaniss Field NOLF^^A
@@ -1698,8 +1698,8 @@ CSC^Canas^^CR^^^CSC^Mojica^^A
 CSD^Cresswell Downs^NT^AU^3^A^CSD^Cresswell Downs^1064^A
 CSE^Crested Butte^CO^US^3^^CSE^Buckhorn Ranch^1065^A
 CSF^Creil^^FR^^^CSF^Creil^^A
-CSG^Columbus^GA^US^1^^CSG^Metropolitan Area^^C
 CSG^Columbus^GA^US^1^^CSG^Columbus Apt^^A
+CSG^Columbus^GA^US^1^^CSG^Metropolitan Area^^C
 CSG^Columbus^GA^US^1^^LSF^Lawson AAF-Ft Benning^^A
 CSH^Solovetsky^^RU^2^^CSH^Solovki^^A
 CSI^Casino^NS^AU^2^^CSI^Casino^1068^A
@@ -1873,8 +1873,8 @@ DAT^Datong^^CN^^^DAT^Beijiazao^^A
 DAU^Daru^^PG^1^^DAU^Daru^1169^A
 DAV^David^^PA^^^DAV^Enrique Malek Intl^1170^A
 DAX^Dazhou^^CN^^^DAX^Heshi^^A
-DAY^Dayton^OH^US^1^^DAY^Metropolitan Area^^C
 DAY^Dayton^OH^US^1^^DAY^James M. Cox Intl^1171^A
+DAY^Dayton^OH^US^1^^DAY^Metropolitan Area^^C
 DAY^Dayton^OH^US^1^^FFO^Wright-Patterson AFB^^A
 DAY^Dayton^OH^US^1^^MGY^Wright Brothers^^A
 DAZ^Darwaz^^AF^^^DAZ^Darwaz^1172^A
@@ -1920,8 +1920,8 @@ DEM^Dembi Dolo^^ET^^^DEM^Dembi Dolo^1194^A
 DEN^Denver^CO^US^3^^APA^Centennial^^A
 DEN^Denver^CO^US^3^^BFK^Aurora/Buckley AFB^^A
 DEN^Denver^CO^US^3^^BJC^Rocky Mountain Metrop.^^A
-DEN^Denver^CO^US^3^^DEN^Metropolitan Area^^C
 DEN^Denver^CO^US^3^^DEN^International^1195^A
+DEN^Denver^CO^US^3^^DEN^Metropolitan Area^^C
 DEN^Denver^CO^US^3^^QWM^Longmont Bus Station^^B
 DEO^Dearborn^MI^US^1^^DEO^Hyatt Regency H/P^1196^H
 DEP^Deparijo^^IN^^^DEP^Deparijo^^A
@@ -1934,8 +1934,8 @@ DFI^Defiance^OH^US^1^^DFI^Memorial^^A
 DFP^Drumduff^QL^AU^2^B^DFP^Drumduff^1201^A
 DFW^Dallas^TX^US^2^^ADS^Addison^^A
 DFW^Dallas^TX^US^2^^DAL^Love Field^1165^A
-DFW^Dallas^TX^US^2^^DFW^Metropolitan Area^^C
 DFW^Dallas^TX^US^2^^DFW^Dallas/FT Worth Intl^1202^A
+DFW^Dallas^TX^US^2^^DFW^Metropolitan Area^^C
 DFW^Dallas^TX^US^2^^JDB^CBD Vertiport^^H
 DFW^Dallas^TX^US^2^^RBD^Executive^^A
 DGA^Dangriga^^BZ^^^DGA^Dangriga^1203^A
@@ -2056,8 +2056,8 @@ DOI^Doini Island^^PG^1^^DOI^Doini Island^^A
 DOK^Donetsk^^UA^^^DOK^International^1268^A
 DOL^Deauville^^FR^^^DOL^St Gatien^1269^A
 DOM^Dominica^^DM^^^DCF^Canefield^^A
-DOM^Dominica^^DM^^^DOM^Metropolitan Area^^C
 DOM^Dominica^^DM^^^DOM^Melville Hall^^A
+DOM^Dominica^^DM^^^DOM^Metropolitan Area^^C
 DON^Dos Lagunas^^GT^^^DON^Dos Lagunas^^A
 DOO^Dorobisoro^^PG^1^^DOO^Dorobisoro^1272^A
 DOP^Dolpa^^NP^^^DOP^Dolpa^1273^A
@@ -2094,15 +2094,15 @@ DRJ^Drietabbetje^^SR^^^DRJ^Drietabbetje^^A
 DRK^Drake Bay^^CR^^^DRK^Drake Bay^^A
 DRN^Dirranbandi^QL^AU^2^B^DRN^Dirranbandi^1285^A
 DRO^Durango^CO^US^3^^AMK^Animas Air Park^^A
-DRO^Durango^CO^US^3^^DRO^Metropolitan Area^^C
 DRO^Durango^CO^US^3^^DRO^La Plata County^^A
+DRO^Durango^CO^US^3^^DRO^Metropolitan Area^^C
 DRR^Durrie^QL^AU^2^B^DRR^Durrie^1287^A
 DRS^Dresden^^DE^^^DRS^Dresden^1288^A
 DRS^Dresden^^DE^^^DRX^Bus Station^^B
 DRS^Dresden^^DE^^^XIR^Hbf Railway Station^^R
 DRT^Del Rio^TX^US^2^^DLF^Laughlin AFB^^A
-DRT^Del Rio^TX^US^2^^DRT^Metropolitan Area^^C
 DRT^Del Rio^TX^US^2^^DRT^International^^A
+DRT^Del Rio^TX^US^2^^DRT^Metropolitan Area^^C
 DRU^Drummond^MT^US^3^^DRU^Drummond^1290^A
 DRV^Dharavandhoo Island^^MV^^^DRV^Dharavandhoo Island^^A
 DRW^Darwin^NT^AU^3^A^DRW^International^1291^A
@@ -2143,18 +2143,18 @@ DUE^Dundo^^AO^^^DUE^Dundo^^A
 DUF^Corolla^NC^US^1^^DUF^Pine Island^^A
 DUG^Douglas/Bisbee^AZ^US^3^A^BSQ^Bisbee Municipal^^A
 DUG^Douglas/Bisbee^AZ^US^3^A^DGL^Douglas Municipal^^A
-DUG^Douglas/Bisbee^AZ^US^3^A^DUG^Metropolitan Area^^C
 DUG^Douglas/Bisbee^AZ^US^3^A^DUG^Bisbee-Douglas Intl^1305^A
+DUG^Douglas/Bisbee^AZ^US^3^A^DUG^Metropolitan Area^^C
 DUI^Duisburg^^DE^^^DUI^Hbf Railway Station^^R
 DUJ^DuBois^PA^US^1^^DUJ^Regional^1306^A
 DUK^Mtubatuba^^ZA^^^DUK^Dukuduku^^A
 DUM^Dumai^^ID^1^^DUM^Pinang Kampai^^A
 DUQ^Duncan^BC^CA^6^^DUQ^Duncan^1308^A
-DUR^Durban^^ZA^^^DUR^Metropolitan Area^^C
 DUR^Durban^^ZA^^^DUR^King Shaka Intl^^A
+DUR^Durban^^ZA^^^DUR^Metropolitan Area^^C
 DUR^Durban^^ZA^^^VIR^Virginia^^A
-DUS^Duesseldorf^^DE^^^DUS^Metropolitan Area^^C
 DUS^Duesseldorf^^DE^^^DUS^International^1310^A
+DUS^Duesseldorf^^DE^^^DUS^Metropolitan Area^^C
 DUS^Duesseldorf^^DE^^^MGL^Moenchengladbach^^A
 DUS^Duesseldorf^^DE^^^NRN^Weeze^^A
 DUS^Duesseldorf^^DE^^^QDU^Hbf Railway Station^^R
@@ -2175,8 +2175,8 @@ DXA^Les Deux Alpes^^FR^^^DXA^Off-line Point^^O
 DXB^Dubai^^AE^^^DCG^Dubai Creek SPB^^A
 DXB^Dubai^^AE^^^DJH^Jebel Ali SPB^^A
 DXB^Dubai^^AE^^^DWC^Al Maktoum Intl^^A
-DXB^Dubai^^AE^^^DXB^Metropolitan Area^^C
 DXB^Dubai^^AE^^^DXB^International^1319^A
+DXB^Dubai^^AE^^^DXB^Metropolitan Area^^C
 DXB^Dubai^^AE^^^NHD^Minhad AB^^A
 DXB^Dubai^^AE^^^XEU^Hyatt Rgncy EY Bus Stn^^B
 DXB^Dubai^^AE^^^XHB^NP Bus Station^^B
@@ -2322,8 +2322,8 @@ ELM^Elmira/Corning^NY^US^1^^ELM^Regional^^A
 ELN^Ellensburg^WA^US^4^^ELN^Bowers Field^1399^A
 ELO^Eldorado^MI^AR^^^ELO^Eldorado^1400^A
 ELP^El Paso^TX^US^3^^BIF^Biggs AAF^^A
-ELP^El Paso^TX^US^3^^ELP^Metropolitan Area^^C
 ELP^El Paso^TX^US^3^^ELP^International^1401^A
+ELP^El Paso^TX^US^3^^ELP^Metropolitan Area^^C
 ELQ^Gassim^^SA^^^ELQ^Gassim^1402^A
 ELR^Elelim^^ID^3^^ELR^Elelim^^A
 ELS^East London^^ZA^^^ELS^East London^1403^A
@@ -2471,8 +2471,8 @@ EYL^Yelimane^^ML^^^EYL^Yelimane^1496^A
 EYP^Yopal^^CO^^^EYP^El Alcaravan^1497^A
 EYR^Yerington^NV^US^4^^EYR^Yerington^1498^A
 EYS^Eliye Springs^^KE^^^EYS^Eliye Springs^^A
-EYW^Key West^FL^US^1^^EYW^Metropolitan Area^^C
 EYW^Key West^FL^US^1^^EYW^International^1499^A
+EYW^Key West^FL^US^1^^EYW^Metropolitan Area^^C
 EYW^Key West^FL^US^1^^NQX^NAS (Boca Chica Field)^3566^A
 EZS^Elazig^^TR^^^EZS^Elazig^1501^A
 EZV^Berezovo^^RU^4^^EZV^Berezovo^^A
@@ -2484,8 +2484,8 @@ FAF^Fort Eustis^VA^US^1^^FAF^Felker AAF^^A
 FAG^Fagurholsmyri^^IS^^^FAG^Fagurholsmyri^1504^A
 FAH^Farah^^AF^^^FAH^Farah^1505^A
 FAI^Fairbanks^AK^US^5^^EIL^Eielson AFB^^A
-FAI^Fairbanks^AK^US^5^^FAI^Metropolitan Area^^C
 FAI^Fairbanks^AK^US^5^^FAI^International^1506^A
+FAI^Fairbanks^AK^US^5^^FAI^Metropolitan Area^^C
 FAI^Fairbanks^AK^US^5^^FBK^Ladd AAF^^A
 FAI^Fairbanks^AK^US^5^^MTX^Metro Field^3368^A
 FAJ^Fajardo^^PR^^^FAJ^Diego Jimenez Torres^1507^A
@@ -2577,8 +2577,8 @@ FLD^Fond du Lac^WI^US^2^^FLD^Fond du Lac County^1559^A
 FLF^Flensburg^^DE^^^FLF^Schaeferhaus^1560^A
 FLH^Flotta^^GB^^^FLH^Flotta^1562^A
 FLI^Flateyri^^IS^^^FLI^Holt^1563^A
-FLL^Fort Lauderdale^FL^US^1^^FLL^Metropolitan Area^^C
 FLL^Fort Lauderdale^FL^US^1^^FLL^International^1564^A
+FLL^Fort Lauderdale^FL^US^1^^FLL^Metropolitan Area^^C
 FLL^Fort Lauderdale^FL^US^1^^FXE^Executive^1640^A
 FLL^Fort Lauderdale^FL^US^1^^ZFT^Tri-Rail Station^^R
 FLM^Filadelfia^^PY^^^FLM^Filadelfia^^A
@@ -2608,8 +2608,8 @@ FMU^Florence^OR^US^4^^FMU^Municipal^^A
 FMY^Fort Myers^FL^US^1^^FMY^Metropolitan Area^^C
 FMY^Fort Myers^FL^US^1^^FMY^Page Field^^A
 FMY^Fort Myers^FL^US^1^^RSW^Southwest Florida Intl^1577^A
-FNA^Freetown^^SL^^^FNA^Metropolitan Area^^C
 FNA^Freetown^^SL^^^FNA^Lungi International^1578^A
+FNA^Freetown^^SL^^^FNA^Metropolitan Area^^C
 FNA^Freetown^^SL^^^HGS^Hastings^1934^A
 FNA^Freetown^^SL^^^JMY^Mammy Yoko Heliport^^H
 FNB^Neubrandenburg^^DE^^^FNB^Trollenhagen^^A
@@ -2644,16 +2644,16 @@ FOY^Foya^^LR^^^FOY^Foya^1599^A
 FPO^Freeport^^BS^^^FPO^Grand Bahama Intl^1600^A
 FPR^Fort Pierce^FL^US^1^^FPR^St Lucie County Intl^1601^A
 FPY^Perry^FL^US^1^^FPY^Perry-Foley^^A
-FRA^Frankfurt^^DE^^^FRA^Metropolitan Area^^C
 FRA^Frankfurt^^DE^^^FRA^International^1602^A
+FRA^Frankfurt^^DE^^^FRA^Metropolitan Area^^C
 FRA^Frankfurt^^DE^^^HHN^Hahn^^A
 FRA^Frankfurt^^DE^^^QGV^Neu Isenburg Rail St^^R
 FRA^Frankfurt^^DE^^^ZRB^Hbf Railway Station^^R
 FRB^Forbes^NS^AU^2^^FRB^Forbes^^A
 FRC^Franca^SP^BR^1^^FRC^Tenente Lund Presetto^1603^A
 FRD^Friday Harbor^WA^US^4^^FBS^Sea Plane Base^^A
-FRD^Friday Harbor^WA^US^4^^FRD^Metropolitan Area^^C
 FRD^Friday Harbor^WA^US^4^^FRD^Airport^1604^A
+FRD^Friday Harbor^WA^US^4^^FRD^Metropolitan Area^^C
 FRE^Fera Island^^SB^^^FRE^Fera Island^1605^A
 FRG^Farmingdale^NY^US^1^^FRG^Republic^1606^A
 FRH^French Lick^IN^US^1^^FRH^Municipal^1607^A
@@ -2706,8 +2706,8 @@ FUT^Futuna Island^^WF^^^FUT^Pointe Vele^1636^A
 FVL^Flora Valley^WA^AU^4^^FVL^Flora Valley^0000^A
 FVM^Fuvahmulak Island^^MV^^^FVM^Fuvahmulak Island^^A
 FVR^Forrest River Mission^WA^AU^4^^FVR^Forrest River Mission^0000^A
-FWA^Fort Wayne^IN^US^1^^FWA^Metropolitan Area^^C
 FWA^Fort Wayne^IN^US^1^^FWA^International^1637^A
+FWA^Fort Wayne^IN^US^1^^FWA^Metropolitan Area^^C
 FWA^Fort Wayne^IN^US^1^^SMD^Smith Field^^A
 FWL^Farewell^AK^US^5^^FWL^Farewell^1638^A
 FWM^Fort William^^GB^^^FWM^Railway Station^1639^R
@@ -2718,8 +2718,8 @@ FYM^Fayetteville^TN^US^2^^FYM^Municipal^^A
 FYN^Fuyun^^CN^^^FYN^Fuyun^^A
 FYT^Faya-Largeau^^TD^^^FYT^Faya-Largeau^1643^A
 FYU^Fort Yukon^AK^US^5^^FYU^Fort Yukon^1644^A
-FYV^Fayetteville/Springd.^AR^US^2^^FYV^Metropolitan Area^^C
 FYV^Fayetteville/Springd.^AR^US^2^^FYV^Drake Field^1645^A
+FYV^Fayetteville/Springd.^AR^US^2^^FYV^Metropolitan Area^^C
 FYV^Fayetteville/Springd.^AR^US^2^^SPZ^Springdale Municipal^^A
 FYV^Fayetteville/Springd.^AR^US^2^^XNA^Northwest Arkansas Rgn^^A
 FZO^Filton^^GB^^^FZO^Filton^^A
@@ -2810,8 +2810,8 @@ GEC^Gecitkale^^CY^^^GEC^Gecitkale^^A
 GED^Georgetown^DE^US^1^^GED^Sussex County^1695^A
 GEE^George Town^TS^AU^2^A^GEE^George Town^^A
 GEF^Geva^^SB^^^GEF^Geva^^A
-GEG^Spokane^WA^US^4^^GEG^Metropolitan Area^^C
 GEG^Spokane^WA^US^4^^GEG^International^1696^A
+GEG^Spokane^WA^US^4^^GEG^Metropolitan Area^^C
 GEG^Spokane^WA^US^4^^SFF^Felts Field^^A
 GEG^Spokane^WA^US^4^^SKA^Fairchild AFB^^A
 GEL^Santo Angelo^RS^BR^1^^GEL^Sepe Tiaraju^1697^A
@@ -2886,8 +2886,8 @@ GKL^Great Keppel Island^QL^AU^2^B^GKL^Great Keppel Island^1746^A
 GKN^Gulkana^AK^US^5^^GKN^Gulkana^1747^A
 GKO^Kongo Boumba^^GA^^^GKO^Kongo Boumba^1748^A
 GKT^Sevierville^TN^US^1^^GKT^Gatlinburg^^A
-GLA^Glasgow^^GB^^^GLA^Metropolitan Area^^C
 GLA^Glasgow^^GB^^^GLA^International^^A
+GLA^Glasgow^^GB^^^GLA^Metropolitan Area^^C
 GLA^Glasgow^^GB^^^PIK^Prestwick^3923^A
 GLA^Glasgow^^GB^^^ZGG^Central Railway Stn^^R
 GLB^Globe^AZ^US^3^A^GLB^San Carlos Apache^^A
@@ -2960,8 +2960,8 @@ GOP^Gorakhpur^^IN^^^GOP^Gorakhpur^1790^A
 GOQ^Golmud^^CN^^^GOQ^Golmud^1791^A
 GOR^Gore^^ET^^^GOR^Gore^1792^A
 GOS^Gosford^NS^AU^2^^GOS^Gosford^1793^A
-GOT^Goteborg^^SE^^^GOT^Metropolitan Area^^C
 GOT^Goteborg^^SE^^^GOT^Landvetter^1794^A
+GOT^Goteborg^^SE^^^GOT^Metropolitan Area^^C
 GOT^Goteborg^^SE^^^GSE^City Airport^^A
 GOT^Goteborg^^SE^^^XWL^Goteborg C Railway Stn^^R
 GOU^Garoua^^CM^^^GOU^International^1795^A
@@ -3018,22 +3018,22 @@ GSN^Mount Gunson^SA^AU^3^^GSN^Mount Gunson^1825^A
 GSO^Greensboro/High Point^NC^US^1^^GSO^Piedmont Triad Intl^1826^A
 GSP^Greenville/Spartanburg^SC^US^1^^GDC^Donaldson Field^1684^A
 GSP^Greenville/Spartanburg^SC^US^1^^GMU^Greenville Downtown Ap^1772^A
-GSP^Greenville/Spartanburg^SC^US^1^^GSP^Metropolitan Area^^C
 GSP^Greenville/Spartanburg^SC^US^1^^GSP^International^1827^A
+GSP^Greenville/Spartanburg^SC^US^1^^GSP^Metropolitan Area^^C
 GSP^Greenville/Spartanburg^SC^US^1^^SPA^Spartanb. Downtown Mem^^A
 GSQ^Shark el-Owainat^^EG^^^GSQ^International^^A
 GSR^Gardo^^SO^^^GSR^Gardo^1828^A
 GSS^Sabie^^ZA^^^GSS^Sabi Sabi^^A
 GST^Gustavus^AK^US^5^^BQV^Bartlett Cove SPB^0647^A
-GST^Gustavus^AK^US^5^^GST^Metropolitan Area^^C
 GST^Gustavus^AK^US^5^^GST^Airport^1829^A
+GST^Gustavus^AK^US^5^^GST^Metropolitan Area^^C
 GSU^Gedaref^^SD^^^GSU^Gedaref^1830^A
 GSY^Grimsby^^GB^^^GSY^Grimsby Town Rail Stn^^R
 GTA^Gatokae^^SB^^^GTA^Gatokae^^A
 GTE^Groote Eylandt^NT^AU^3^A^GTE^Groote Eylandt^1831^A
 GTF^Great Falls^MT^US^3^^GFA^Malmstrom AFB Heliport^^H
-GTF^Great Falls^MT^US^3^^GTF^Metropolitan Area^^C
 GTF^Great Falls^MT^US^3^^GTF^International^1832^A
+GTF^Great Falls^MT^US^3^^GTF^Metropolitan Area^^C
 GTG^Grantsburg^WI^US^2^^GTG^Municipal^^A
 GTI^Guettin^^DE^^^GTI^Guettin^^A
 GTO^Gorontalo^^ID^2^^GTO^Djalaluddin^1833^A
@@ -3054,8 +3054,8 @@ GUH^Gunnedah^NS^AU^2^^GUH^Gunnedah^1843^A
 GUI^Guiria^^VE^^^GUI^Guiria^1844^A
 GUJ^Guaratingueta^SP^BR^1^^GUJ^Guaratingueta^^A
 GUL^Goulburn^NS^AU^2^^GUL^Goulburn^1845^A
-GUM^Guam^^GU^^^GUM^Metropolitan Area^^C
 GUM^Guam^^GU^^^GUM^A.B. Won Pat Intl^1846^A
+GUM^Guam^^GU^^^GUM^Metropolitan Area^^C
 GUM^Guam^^GU^^^UAM^Andersen AFB^^A
 GUP^Gallup^NM^US^3^^GUP^Municipal^1848^A
 GUQ^Guanare^^VE^^^GUQ^Guanare^1849^A
@@ -3124,15 +3124,15 @@ HAG^The Hague^^NL^^^HAG^SITA Functions^^O
 HAG^The Hague^^NL^^^ZXY^Holland Spoor Rail Stn^^R
 HAG^The Hague^^NL^^^ZYH^Centraal Railway Stn^^R
 HAI^Three Rivers^MI^US^1^^HAI^Municipal Dr. Haines^^A
-HAJ^Hannover^^DE^^^HAJ^Metropolitan Area^^C
 HAJ^Hannover^^DE^^^HAJ^Airport^1888^A
+HAJ^Hannover^^DE^^^HAJ^Metropolitan Area^^C
 HAJ^Hannover^^DE^^^HBZ^Bus Station^^B
 HAJ^Hannover^^DE^^^ZVM^Messe/Laatzen Rail St^^R
 HAJ^Hannover^^DE^^^ZVR^Hbf Railway Station^^R
 HAK^Haikou^^CN^^^HAK^Meilan Intl^1889^A
 HAL^Halali^^NA^^^HAL^Halali^1890^A
-HAM^Hamburg^^DE^^^HAM^Metropolitan Area^^C
 HAM^Hamburg^^DE^^^HAM^Hamburg Airport^1891^A
+HAM^Hamburg^^DE^^^HAM^Metropolitan Area^^C
 HAM^Hamburg^^DE^^^LBC^Luebeck-Blankensee^^A
 HAM^Hamburg^^DE^^^OBZ^Bus Station^^B
 HAM^Hamburg^^DE^^^XFW^Finkenwerder^^A
@@ -3141,8 +3141,8 @@ HAN^Hanoi^^VN^^^HAN^Noi Bai Intl^^A
 HAO^Hamilton^OH^US^1^^HAO^Butler County Regional^^A
 HAP^Long Island/Happy Bay^QL^AU^2^B^HAP^Heliport^^H
 HAQ^Hanimaadhoo Island^^MV^^^HAQ^Hanimaadhoo Island^^A
-HAR^Harrisburg^PA^US^1^^HAR^Metropolitan Area^^C
 HAR^Harrisburg^PA^US^1^^HAR^Capital City^^A
+HAR^Harrisburg^PA^US^1^^HAR^Metropolitan Area^^C
 HAR^Harrisburg^PA^US^1^^MDT^International^3064^A
 HAR^Harrisburg^PA^US^1^^ZUG^Railway Station^^R
 HAS^Hail^^SA^^^HAS^Hail^1894^A
@@ -3190,8 +3190,8 @@ HEH^Heho^^MM^^^HEH^Heho^1915^A
 HEI^Heide/Buesum^^DE^^^HEI^Heide/Buesum^^A
 HEK^Heihe^^CN^^^HEK^Heihe^^A
 HEL^Helsinki^^FI^^^HEC^Central Railway Stn^^R
-HEL^Helsinki^^FI^^^HEL^Metropolitan Area^^C
 HEL^Helsinki^^FI^^^HEL^Helsinki-Vantaa^1917^A
+HEL^Helsinki^^FI^^^HEL^Metropolitan Area^^C
 HEL^Helsinki^^FI^^^HEM^Helsinki-Malmi^^A
 HEL^Helsinki^^FI^^^HEN^Hernesaari Heliport^^H
 HEL^Helsinki^^FI^^^HVT^Tikkurila Railway Stn^^R
@@ -3203,8 +3203,8 @@ HEV^Huelva^^ES^1^^HEV^Railway Station^^R
 HEZ^Natchez^MS^US^2^^HEZ^Adams County^1921^A
 HFA^Haifa^^IL^^^HFA^Haifa^1922^A
 HFD^Hartford^CT^US^1^^BDL^Bradley International^0422^A
-HFD^Hartford^CT^US^1^^HFD^Metropolitan Area^^C
 HFD^Hartford^CT^US^1^^HFD^Brainard^1923^A
+HFD^Hartford^CT^US^1^^HFD^Metropolitan Area^^C
 HFD^Hartford^CT^US^1^^ZRT^Railway Station^^R
 HFE^Hefei^^CN^^^HFE^Xinqiao Intl^1924^A
 HFE^Hefei^^CN^^^KFI^Railway Station^^R
@@ -3256,8 +3256,8 @@ HKD^Hakodate^^JP^^^HKD^Hakodate^1952^A
 HKG^Hong Kong^^HK^^^HHK^CZ Bus Station^^B
 HKG^Hong Kong^^HK^^^HHP^Sheung Wan Heliport^1939^H
 HKG^Hong Kong^^HK^^^HKC^China Ferry Terminal^^P
-HKG^Hong Kong^^HK^^^HKG^Metropolitan Area^^C
 HKG^Hong Kong^^HK^^^HKG^International^1953^A
+HKG^Hong Kong^^HK^^^HKG^Metropolitan Area^^C
 HKG^Hong Kong^^HK^^^XJH^Harbour^^P
 HKK^Hokitika^^NZ^1^^HKK^Hokitika^1954^A
 HKN^Hoskins^^PG^1^^HKN^Hoskins^1955^A
@@ -3306,8 +3306,8 @@ HNY^Hengyang^^CN^^^HBP^Railway Station^^R
 HNY^Hengyang^^CN^^^HNY^Bajialing^^A
 HOA^Hola^^KE^^^HOA^Hola^1982^A
 HOB^Hobbs^NM^US^3^^HBB^Industrial Airpark^^A
-HOB^Hobbs^NM^US^3^^HOB^Metropolitan Area^^C
 HOB^Hobbs^NM^US^3^^HOB^Lea County Regional^1983^A
+HOB^Hobbs^NM^US^3^^HOB^Metropolitan Area^^C
 HOC^Komako^^PG^1^^HOC^Komako^^A
 HOD^Hodeidah^^YE^^^HOD^International^1984^A
 HOE^Houeisay^^LA^^^HOE^Houeisay^^A
@@ -3380,8 +3380,8 @@ HSN^Zhoushan^^CN^^^HSN^Putuoshan^^A
 HSP^Hot Springs^VA^US^1^^HSP^Ingalls Field^2016^A
 HSS^Hisar^^IN^^^HSS^Hisar^^A
 HST^Homestead^FL^US^1^^HST^ARB^^A
-HSV^Huntsville^AL^US^2^^HSV^Metropolitan Area^^C
 HSV^Huntsville^AL^US^2^^HSV^Intl-Carl T.Jones Fld^2017^A
+HSV^Huntsville^AL^US^2^^HSV^Metropolitan Area^^C
 HSV^Huntsville^AL^US^2^^HUA^Redstone AAF^^A
 HSZ^Hsinchu^^TW^^^HSZ^Hsinchu^^A
 HTA^Chita^^RU^8^^HTA^Kadala^^A
@@ -3492,8 +3492,8 @@ ICS^Cascade^ID^US^3^^ICS^Cascade^^A
 ICT^Wichita^KS^US^2^^BEC^Beech Factory Apt^^A
 ICT^Wichita^KS^US^2^^CEA^Cessna Aircraft Field^^A
 ICT^Wichita^KS^US^2^^IAB^McConnell AFB^^A
-ICT^Wichita^KS^US^2^^ICT^Metropolitan Area^^C
 ICT^Wichita^KS^US^2^^ICT^Dwight D. Eisenhower^2071^A
+ICT^Wichita^KS^US^2^^ICT^Metropolitan Area^^C
 ICY^Icy Bay^AK^US^5^^ICY^Icy Bay^2072^A
 IDA^Idaho Falls^ID^US^3^^IDA^Regional^2073^A
 IDB^Idre^^SE^^^IDB^Idre^^A
@@ -3640,8 +3640,8 @@ IPE^Ipil^^PH^^^IPE^Ipil^^A
 IPG^Ipiranga^AM^BR^2^A^IPG^Ipiranga^^A
 IPH^Ipoh^^MY^^^IPH^Sultan Azlan Shah^2164^A
 IPI^Ipiales^^CO^^^IPI^San Luis^2165^A
-IPL^Imperial/El Centro^CA^US^4^^IPL^Metropolitan Area^^C
 IPL^Imperial/El Centro^CA^US^4^^IPL^Imperial County^^A
+IPL^Imperial/El Centro^CA^US^4^^IPL^Metropolitan Area^^C
 IPL^Imperial/El Centro^CA^US^4^^NJK^El Centro NAF^^A
 IPN^Ipatinga^MG^BR^1^^IPN^Usiminas^2167^A
 IPT^Williamsport^PA^US^1^^IPT^Regional^2169^A
@@ -3685,8 +3685,8 @@ ISO^Kinston^NC^US^1^^ISO^Regional Jetport^2192^A
 ISP^Islip^NY^US^1^^ISP^Long Island MacArthur^2193^A
 ISQ^Manistique^MI^US^1^^ISQ^Schoolcraft County^^A
 ISS^Wiscasset^ME^US^1^^ISS^Wiscasset^2194^A
-IST^Istanbul^^TR^^^IST^Metropolitan Area^^C
 IST^Istanbul^^TR^^^IST^Ataturk^2195^A
+IST^Istanbul^^TR^^^IST^Metropolitan Area^^C
 IST^Istanbul^^TR^^^SAW^Sabiha Gokcen^^A
 ISU^Sulaymaniyah^^IQ^^^ISU^International^^A
 ISW^Wisconsin Rapids^WI^US^2^^ISW^South Wood County^2196^A
@@ -3763,8 +3763,8 @@ JAK^Jacmel^^HT^^^JAK^Jacmel^2252^A
 JAL^Jalapa^^MX^1^^JAL^El Lencero^2253^A
 JAM^Jambol^^BG^^^JAM^Bezmer^2254^A
 JAN^Jackson^MS^US^2^^HKS^Hawkins Field^^A
-JAN^Jackson^MS^US^2^^JAN^Metropolitan Area^^C
 JAN^Jackson^MS^US^2^^JAN^Medgar W. Evers Intl^^A
+JAN^Jackson^MS^US^2^^JAN^Metropolitan Area^^C
 JAP^Puntarenas^^CR^^^JAP^Chacarita^^A
 JAQ^Jacquinot Bay^^PG^1^^JAQ^Jacquinot Bay^2256^A
 JAR^Jahrom^^IR^^^JAR^Jahrom^^A
@@ -3773,8 +3773,8 @@ JAT^Jabot Island^^MH^^^JAT^Jabot Island^^A
 JAU^Jauja^^PE^^^JAU^Francisco Carle^^A
 JAV^Ilulissat^^GL^1^^JAV^Ilulissat^^A
 JAX^Jacksonville^FL^US^1^^CRG^Executive (Craig)^^A
-JAX^Jacksonville^FL^US^1^^JAX^Metropolitan Area^^C
 JAX^Jacksonville^FL^US^1^^JAX^International^2258^A
+JAX^Jacksonville^FL^US^1^^JAX^Metropolitan Area^^C
 JAX^Jacksonville^FL^US^1^^NEN^Whitehouse NOLF^^A
 JAX^Jacksonville^FL^US^1^^NIP^NAS (Towers Field)^^A
 JAX^Jacksonville^FL^US^1^^VQQ^Cecil^^A
@@ -4005,8 +4005,8 @@ KCJ^Komaio^^PG^1^^KCJ^Komaio^^A
 KCK^Kirensk^^RU^7^^KCK^Kirensk^^A
 KCL^Chignik^AK^US^5^^KBW^Chignik Bay SPB^^A
 KCL^Chignik^AK^US^5^^KCG^Chignik Airport^^A
-KCL^Chignik^AK^US^5^^KCL^Metropolitan Area^^C
 KCL^Chignik^AK^US^5^^KCL^Chignik Lagoon^2391^A
+KCL^Chignik^AK^US^5^^KCL^Metropolitan Area^^C
 KCL^Chignik^AK^US^5^^KCQ^Chignik Lake^^A
 KCM^Kahramanmaras^^TR^^^KCM^Kahramanmaras^^A
 KCN^Chernofski Harbor^AK^US^5^^KCN^Sea Plane Base^2394^A
@@ -4363,8 +4363,8 @@ KTJ^Kichwa Tembo^^KE^^^KTJ^Kichwa Tembo^^A
 KTK^Kunua^^PG^2^^KTK^Kunua^2622^A
 KTL^Kitale^^KE^^^KTL^Kitale^2623^A
 KTM^Kathmandu^^NP^^^KTM^Tribhuvan Intl^2624^A
-KTN^Ketchikan^AK^US^5^^KTN^Metropolitan Area^^C
 KTN^Ketchikan^AK^US^5^^KTN^International^2625^A
+KTN^Ketchikan^AK^US^5^^KTN^Metropolitan Area^^C
 KTN^Ketchikan^AK^US^5^^WFB^Harbor SPB^^A
 KTO^Kato^^GY^^^KTO^Kato^2626^A
 KTQ^Kitee^^FI^^^KTQ^Kitee^^A
@@ -4390,8 +4390,8 @@ KUH^Kushiro^^JP^^^KUH^Kushiro^2635^A
 KUI^Kawau Island^^NZ^1^^KUI^Off-line Point^2636^O
 KUJ^Kushimoto^^JP^^^KUJ^Off-line Point^2637^O
 KUK^Kasigluk^AK^US^5^^KUK^Kasigluk^2638^A
-KUL^Kuala Lumpur^^MY^^^KUL^Metropolitan Area^^C
 KUL^Kuala Lumpur^^MY^^^KUL^International^^A
+KUL^Kuala Lumpur^^MY^^^KUL^Metropolitan Area^^C
 KUL^Kuala Lumpur^^MY^^^SZB^Sultan Abdul Aziz Shah^^A
 KUL^Kuala Lumpur^^MY^^^XKL^Sentral Railway Stn^^R
 KUM^Yakushima^^JP^^^KUM^Yakushima^2640^A
@@ -4496,8 +4496,8 @@ LAQ^Beida^^LY^^^LAQ^Labraq^2704^A
 LAR^Laramie^WY^US^3^^LAR^Regional^2705^A
 LAS^Las Vegas^NV^US^4^^BLD^Boulder City Municipal^^A
 LAS^Las Vegas^NV^US^4^^HSH^Henderson ExecutiveA^^A
-LAS^Las Vegas^NV^US^4^^LAS^Metropolitan Area^^C
 LAS^Las Vegas^NV^US^4^^LAS^McCarran International^2706^A
+LAS^Las Vegas^NV^US^4^^LAS^Metropolitan Area^^C
 LAS^Las Vegas^NV^US^4^^LSV^Nellis AFB^^A
 LAS^Las Vegas^NV^US^4^^VGT^North Las Vegas Arpt^^A
 LAU^Lamu^^KE^^^LAU^Manda^2707^A
@@ -4508,8 +4508,8 @@ LAX^Los Angeles^CA^US^4^^JBP^Commerce Bus. Park H/P^^H
 LAX^Los Angeles^CA^US^4^^JID^City of Industry H/P^^H
 LAX^Los Angeles^CA^US^4^^JLX^Union Stn Annex H/P^^H
 LAX^Los Angeles^CA^US^4^^JWC^Warner Cntr Plaza H/P^^H
-LAX^Los Angeles^CA^US^4^^LAX^Metropolitan Area^^C
 LAX^Los Angeles^CA^US^4^^LAX^International^2710^A
+LAX^Los Angeles^CA^US^4^^LAX^Metropolitan Area^^C
 LAX^Los Angeles^CA^US^4^^QLO^Ferry Port^^P
 LAX^Los Angeles^CA^US^4^^VNY^Van Nuys^5319^A
 LAX^Los Angeles^CA^US^4^^WHP^Whiteman^^A
@@ -4619,8 +4619,8 @@ LET^Leticia^^CO^^^LET^Alfredo V. Cobb Intl^2762^A
 LEU^Seo de Urgel^^ES^1^^LEU^Seo de Urgel^^A
 LEV^Levuka^^FJ^^^LEV^Bureta^2763^A
 LEW^Lewiston/Auburn^ME^US^1^^LEW^Municipal^2764^A
-LEX^Lexington^KY^US^1^^LEX^Metropolitan Area^^C
 LEX^Lexington^KY^US^1^^LEX^Blue Grass^2765^A
+LEX^Lexington^KY^US^1^^LEX^Metropolitan Area^^C
 LEX^Lexington^KY^US^1^^LSD^Creech Heliport^^H
 LEY^Lelystad^^NL^^^LEY^Lelystad^^A
 LEZ^La Esperanza^^HN^^^LEZ^La Esperanza^2766^A
@@ -4823,8 +4823,8 @@ LOY^Loyengalani^^KE^^^LOY^Loyengalani^^A
 LOZ^London/Corbin^KY^US^1^^LOZ^Magee Field^2879^A
 LPA^Gran Canaria^^ES^2^^LPA^Gran Canaria^2880^A
 LPB^La Paz^^BO^^^LPB^El Alto Intl^2881^A
-LPC^Lompoc^CA^US^4^^LPC^Metropolitan Area^^C
 LPC^Lompoc^CA^US^4^^LPC^Lompoc Apt^2882^A
+LPC^Lompoc^CA^US^4^^LPC^Metropolitan Area^^C
 LPC^Lompoc^CA^US^4^^VBG^Vandenberg AFB^^A
 LPD^La Pedrera^^CO^^^LPD^La Pedrera^2883^A
 LPE^La Primavera^^CO^^^LPE^La Primavera^^A
@@ -4904,8 +4904,8 @@ LTP^Lyndhurst Station^QL^AU^2^B^LTP^Lyndhurst Station^2929^A
 LTQ^Le Touquet-Paris-Plage^^FR^^^LTQ^Le Touquet-Paris-Plage^2930^A
 LTR^Letterkenny^^IE^^^LTR^Letterkenny^^A
 LTS^Altus^OK^US^2^^AXS^Quartz Moutain Rgnl^0338^A
-LTS^Altus^OK^US^2^^LTS^Metropolitan Area^^C
 LTS^Altus^OK^US^2^^LTS^AFB^^A
+LTS^Altus^OK^US^2^^LTS^Metropolitan Area^^C
 LTT^St-Tropez^^FR^^^LTT^La Mole^^A
 LTT^St-Tropez^^FR^^^XPZ^Harbour^^P
 LTU^Latur^^IN^^^LTU^Latur^^A
@@ -4921,8 +4921,8 @@ LUG^Lugano^^CH^^^LUG^Agno^2937^A
 LUH^Ludhiana^^IN^^^LUH^Ludhiana^^A
 LUI^La Union^^HN^^^LUI^La Union^2938^A
 LUL^Hattiesburg/Laurel^MS^US^2^^HBG^Bobby L. Chain Muni^^A
-LUL^Hattiesburg/Laurel^MS^US^2^^LUL^Metropolitan Area^^C
 LUL^Hattiesburg/Laurel^MS^US^2^^LUL^Hesler-Noble Field^^A
+LUL^Hattiesburg/Laurel^MS^US^2^^LUL^Metropolitan Area^^C
 LUL^Hattiesburg/Laurel^MS^US^2^^PIB^Regional^^A
 LUM^Mangshi^^CN^^^LUM^Dehong Mangshi^^A
 LUN^Lusaka^^ZM^^^LUN^International^2939^A
@@ -5005,14 +5005,14 @@ LZU^Lawrenceville^GA^US^1^^LZU^Gwinnett County^^A
 LZY^Nyingchi/Linzhi^^CN^^^LZY^Mainling/Milin^^A
 MAA^Chennai^^IN^^^MAA^International^^A
 MAB^Maraba^PA^BR^1^A^MAB^Joao Correa da Rocha^2986^A
-MAD^Madrid^^ES^1^^MAD^Metropolitan Area^^C
 MAD^Madrid^^ES^1^^MAD^Adolfo Suarez-Barajas^2987^A
+MAD^Madrid^^ES^1^^MAD^Metropolitan Area^^C
 MAD^Madrid^^ES^1^^TOJ^Torrejon^^A
 MAD^Madrid^^ES^1^^XOC^Atocha Railway St.^^R
 MAD^Madrid^^ES^1^^XTI^Chamartin Railway St.^^R
 MAE^Madera^CA^US^4^^MAE^Municipal^^A
-MAF^Midland^TX^US^2^^MAF^Metropolitan Area^^C
 MAF^Midland^TX^US^2^^MAF^International^2988^A
+MAF^Midland^TX^US^2^^MAF^Metropolitan Area^^C
 MAF^Midland^TX^US^2^^MDD^Airpark^^A
 MAG^Madang^^PG^1^^MAG^Madang^2989^A
 MAH^Menorca^^ES^1^^MAH^Menorca^2990^A
@@ -5092,8 +5092,8 @@ MCZ^Maceio^AL^BR^1^A^MCZ^Zumbi dos Palmares Int^3049^A
 MDB^Melinda^^BZ^^^MDB^Melinda^3050^A
 MDC^Manado^^ID^2^^MDC^Sam Ratulangi^3051^A
 MDE^Medellin^^CO^^^EOH^Enrique Olaya Herrera^^A
-MDE^Medellin^^CO^^^MDE^Metropolitan Area^^C
 MDE^Medellin^^CO^^^MDE^Jose Maria Cordova Int^3052^A
+MDE^Medellin^^CO^^^MDE^Metropolitan Area^^C
 MDF^Medford^WI^US^2^^MDF^Taylor County^^A
 MDG^Mudanjiang^^CN^^^MDG^Hailang^^A
 MDH^Carbondale/Murphysboro^IL^US^2^^MDH^Southern Illinois^3053^A
@@ -5127,8 +5127,8 @@ MEL^Melbourne^VI^AU^2^^AVV^Avalon^^A
 MEL^Melbourne^VI^AU^2^^KAH^Yarra Bank Heliport^2358^H
 MEL^Melbourne^VI^AU^2^^MBW^Moorabbin^^A
 MEL^Melbourne^VI^AU^2^^MEB^Essendon^3072^A
-MEL^Melbourne^VI^AU^2^^MEL^Metropolitan Area^^C
 MEL^Melbourne^VI^AU^2^^MEL^Melbourne Airport^3081^A
+MEL^Melbourne^VI^AU^2^^MEL^Metropolitan Area^^C
 MEL^Melbourne^VI^AU^2^^XOM^Ferry Port^^P
 MEM^Memphis^TN^US^2^^MEM^International^3082^A
 MEN^Mende^^FR^^^MEN^Brenoux^3083^A
@@ -5142,8 +5142,8 @@ MEU^Monte Dourado^PA^BR^1^A^MEU^Serra do Areao^^A
 MEV^Minden^NV^US^4^^MEV^Minden-Tahoe^3088^A
 MEW^Mweka^^CD^2^^MEW^Mweka^3089^A
 MEX^Mexico City^^MX^1^^AZP^Atizapan-Jimenez Cantu^^A
-MEX^Mexico City^^MX^1^^MEX^Metropolitan Area^^C
 MEX^Mexico City^^MX^1^^MEX^Benito Juarez Intl^3090^A
+MEX^Mexico City^^MX^1^^MEX^Metropolitan Area^^C
 MEX^Mexico City^^MX^1^^NLU^Santa Lucia AFB^^A
 MEX^Mexico City^^MX^1^^TLC^Toluca-A.Lopez Mateos^^A
 MEY^Meghauli^^NP^^^MEY^Meghauli^3091^A
@@ -5226,8 +5226,8 @@ MHW^Monteagudo^^BO^^^MHW^Monteagudo^0000^A
 MHX^Manihiki Atoll^^CK^^^MHX^Manihiki Atoll^^A
 MHY^Morehead^^PG^1^^MHY^Morehead^3139^A
 MHZ^Mildenhall^^GB^^^MHZ^RAF Station^^A
-MIA^Miami^FL^US^1^^MIA^Metropolitan Area^^C
 MIA^Miami^FL^US^1^^MIA^International^3140^A
+MIA^Miami^FL^US^1^^MIA^Metropolitan Area^^C
 MIA^Miami^FL^US^1^^MPB^Sea Plane Base^3283^A
 MIA^Miami^FL^US^1^^OPF^Opa-locka Executive^^A
 MIA^Miami^FL^US^1^^TMB^Miami Executive^^A
@@ -5289,11 +5289,11 @@ MKA^Marianske Lazne^^CZ^^^MKA^Marianske Lazne^3170^A
 MKB^Mekambo^^GA^^^MKB^Mekambo^3171^A
 MKC^Kansas City^MO^US^2^^JCI^New Century Aircenter^^A
 MKC^Kansas City^MO^US^2^^MCI^International^3033^A
-MKC^Kansas City^MO^US^2^^MKC^Metropolitan Area^^C
 MKC^Kansas City^MO^US^2^^MKC^C.B. Wheeler Downtown^3172^A
+MKC^Kansas City^MO^US^2^^MKC^Metropolitan Area^^C
 MKC^Kansas City^MO^US^2^^OJC^Johnson Co Executive^3667^A
-MKE^Milwaukee^WI^US^2^^MKE^Metropolitan Area^^C
 MKE^Milwaukee^WI^US^2^^MKE^General Mitchell Intl^3174^A
+MKE^Milwaukee^WI^US^2^^MKE^Metropolitan Area^^C
 MKE^Milwaukee^WI^US^2^^MWC^Lawrence J Timmerman^^A
 MKE^Milwaukee^WI^US^2^^ZML^Intermodal Station^^R
 MKG^Muskegon^MI^US^1^^MKG^Muskegon County^3175^A
@@ -5421,8 +5421,8 @@ MOQ^Morondava^^MG^^^MOQ^Morondava^3274^A
 MOR^Morristown^TN^US^1^^MOR^Moore-Murrell^3275^A
 MOS^Moses Point^AK^US^5^^MOS^Moses Point^3276^A
 MOT^Minot^ND^US^2^^MIB^AFB^^A
-MOT^Minot^ND^US^2^^MOT^Metropolitan Area^^C
 MOT^Minot^ND^US^2^^MOT^International^3277^A
+MOT^Minot^ND^US^2^^MOT^Metropolitan Area^^C
 MOU^Mountain Village^AK^US^5^^MOU^Mountain Village^3278^A
 MOV^Moranbah^QL^AU^2^B^MOV^Moranbah^3279^A
 MOW^Moscow^^RU^2^^DME^Domodedovo^1245^A
@@ -5527,12 +5527,12 @@ MSN^Madison^WI^US^2^^MSN^Dane County Regional^^A
 MSO^Missoula^MT^US^3^^MSO^International^3336^A
 MSP^Minneapolis/St Paul^MN^US^2^^FCM^Flying Cloud^^A
 MSP^Minneapolis/St Paul^MN^US^2^^MIC^Crystal^^A
-MSP^Minneapolis/St Paul^MN^US^2^^MSP^Metropolitan Area^^C
 MSP^Minneapolis/St Paul^MN^US^2^^MSP^International^3337^A
+MSP^Minneapolis/St Paul^MN^US^2^^MSP^Metropolitan Area^^C
 MSP^Minneapolis/St Paul^MN^US^2^^STP^St Paul Downtown Apt^^A
 MSQ^Minsk^^BY^^^MHP^Minsk -1^0000^A
-MSQ^Minsk^^BY^^^MSQ^Metropolitan Area^0000^C
 MSQ^Minsk^^BY^^^MSQ^International^0000^A
+MSQ^Minsk^^BY^^^MSQ^Metropolitan Area^0000^C
 MSR^Mus^^TR^^^MSR^Mus^^A
 MSS^Massena^NY^US^1^^MSS^International^3340^A
 MST^Maastricht^^NL^^^MST^Maastricht/Aachen^^A
@@ -5541,8 +5541,8 @@ MSU^Maseru^^LS^^^MSU^Moshoeshoe I Intl^^A
 MSV^Monticello^NY^US^1^^MSV^Sullivan County Intl^3343^A
 MSW^Massawa^^ER^^^MSW^International^3344^A
 MSX^Mossendjo^^CG^^^MSX^Mossendjo^3345^A
-MSY^New Orleans^LA^US^2^^MSY^Metropolitan Area^^C
 MSY^New Orleans^LA^US^2^^MSY^Louis Armstrong Intl^3346^A
+MSY^New Orleans^LA^US^2^^MSY^Metropolitan Area^^C
 MSY^New Orleans^LA^US^2^^NBG^NAS JRB/A.Callender^^A
 MSY^New Orleans^LA^US^2^^NEW^Lakefront^3505^A
 MSZ^Namibe^^AO^^^MSZ^Yuri Gagarin^^A
@@ -5569,8 +5569,8 @@ MTT^Minatitlan^^MX^1^^MTT^Coatzacoalcos^3364^A
 MTU^Montepuez^^MZ^^^MTU^Montepuez^3365^A
 MTV^Mota Lava Island^^VU^^^MTV^Mota Lava Island^3366^A
 MTW^Manitowoc^WI^US^2^^MTW^Manitowoc County^3367^A
-MTY^Monterrey^^MX^1^^MTY^Metropolitan Area^^C
 MTY^Monterrey^^MX^1^^MTY^Mariano Escobedo Intl^3369^A
+MTY^Monterrey^^MX^1^^MTY^Metropolitan Area^^C
 MTY^Monterrey^^MX^1^^NTR^Del Norte Intl^^A
 MTZ^Masada^^IL^^^MTZ^Bar Yehuda^3370^A
 MUA^Munda^^SB^^^MUA^Munda^3371^A
@@ -5578,8 +5578,8 @@ MUB^Maun^^BW^^^MUB^Maun^3372^A
 MUC^Munich^^DE^^^AGB^Augsburg Airport^^A
 MUC^Munich^^DE^^^AGY^Augsburg Hbf Rail Stn^^R
 MUC^Munich^^DE^^^AUB^Augsburg Bus Station^^B
-MUC^Munich^^DE^^^MUC^Metropolitan Area^^C
 MUC^Munich^^DE^^^MUC^International^3373^A
+MUC^Munich^^DE^^^MUC^Metropolitan Area^^C
 MUC^Munich^^DE^^^ZMU^Hbf Railway Station^^R
 MUD^Mueda^^MZ^^^MUD^Mueda^^A
 MUE^Kamuela^HI^US^6^A^MUE^Waimea-Kohala^3374^A
@@ -5691,8 +5691,8 @@ MYO^Myroodah Station^WA^AU^4^^MYO^Myroodah Station^3445^A
 MYP^Mary^^TM^^^MYP^Mary^^A
 MYQ^Mysore^^IN^^^MYQ^Mandakalli^^A
 MYR^Myrtle Beach^SC^US^1^^CRE^Grand Strand^1048^A
-MYR^Myrtle Beach^SC^US^1^^MYR^Metropolitan Area^^C
 MYR^Myrtle Beach^SC^US^1^^MYR^International^3446^A
+MYR^Myrtle Beach^SC^US^1^^MYR^Metropolitan Area^^C
 MYT^Myitkyina^^MM^^^MYT^Myitkyina^3447^A
 MYU^Mekoryuk^AK^US^5^^MYU^Mekoryuk^3448^A
 MYV^Marysville^CA^US^4^^BAB^Beale AFB^^A
@@ -5760,8 +5760,8 @@ NBE^Enfidha^^TN^^^NBE^Hammamet^^A
 NBH^Nambucca^NS^AU^2^^NBH^Nambucca^^A
 NBL^San Blas^^PA^^^NBL^Wannukandi^^A
 NBN^Annobon^^GQ^^^NBN^Annobon^^A
-NBO^Nairobi^^KE^^^NBO^Metropolitan Area^^C
 NBO^Nairobi^^KE^^^NBO^Jomo Kenyatta Intl^3485^A
+NBO^Nairobi^^KE^^^NBO^Metropolitan Area^^C
 NBO^Nairobi^^KE^^^WIL^Wilson^5415^A
 NBS^Baishan^^CN^^^NBS^Changbaishan^^A
 NBX^Nabire^^ID^3^^NBX^Nabire^3486^A
@@ -5822,8 +5822,8 @@ NGI^Gau Island^^FJ^^^NGI^Gau Island^3510^A
 NGK^Nogliki^^RU^10^^NGK^Nogliki^^A
 NGL^Ngala^^ZA^^^NGL^Ngala^^A
 NGN^Nargana^^PA^^^NGN^Nargana^^A
-NGO^Nagoya^^JP^^^NGO^Metropolitan Area^^C
 NGO^Nagoya^^JP^^^NGO^Chubu Centrair Intl^3511^A
+NGO^Nagoya^^JP^^^NGO^Metropolitan Area^^C
 NGO^Nagoya^^JP^^^NGY^EK Bus Station^^B
 NGO^Nagoya^^JP^^^NKM^Nagoya (Komaki)^^A
 NGQ^Shiquanhe^^CN^^^NGQ^Ngari Gunsa/Ali Kunsha^^A
@@ -5832,8 +5832,8 @@ NGS^Nagasaki^^JP^^^NGS^Nagasaki Airport^^A
 NGS^Nagasaki^^JP^^^OMJ^Omura^^A
 NGX^Manang^^NP^^^NGX^Manang^^A
 NHA^Nha Trang^^VN^^^CXR^Cam Ranh Intl^^A
-NHA^Nha Trang^^VN^^^NHA^Metropolitan Area^^C
 NHA^Nha Trang^^VN^^^NHA^Air Base^3513^A
+NHA^Nha Trang^^VN^^^NHA^Metropolitan Area^^C
 NHF^New Halfa^^SD^^^NHF^New Halfa^3514^A
 NHK^Patuxent River^MD^US^1^^NHK^NAS (Trapnell Field)^^A
 NHS^Nushki^^PK^^^NHS^Nushki^^A
@@ -5930,8 +5930,8 @@ NOR^Nordfjordur^^IS^^^NOR^Nordfjordur^3554^A
 NOS^Nosy-Be^^MG^^^NOS^Fascene^3555^A
 NOT^Novato^CA^US^4^^NOT^Marin County^3556^A
 NOU^Noumea^^NC^^^GEA^Magenta^1694^A
-NOU^Noumea^^NC^^^NOU^Metropolitan Area^^C
 NOU^Noumea^^NC^^^NOU^La Tontouta^3557^A
+NOU^Noumea^^NC^^^NOU^Metropolitan Area^^C
 NOV^Huambo^^AO^^^NOV^Albano Machado^3558^A
 NOZ^Novokuznetsk^^RU^6^^NOZ^Spichenkovo^^A
 NPE^Napier/Hastings^^NZ^1^^NPE^Hawke's Bay^3559^A
@@ -6071,8 +6071,8 @@ OAH^Shindand^^AF^^^OAH^Air Base^^A
 OAI^Bagram^^AF^^^OAI^Bagram^^A
 OAJ^Jacksonville^NC^US^1^^OAJ^Albert J Ellis^3610^A
 OAK^Oakland^CA^US^4^^JCE^Convention Center H/P^^H
-OAK^Oakland^CA^US^4^^OAK^Metropolitan Area^^C
 OAK^Oakland^CA^US^4^^OAK^International^3611^A
+OAK^Oakland^CA^US^4^^OAK^Metropolitan Area^^C
 OAK^Oakland^CA^US^4^^OBT^Coliseum Railway Stn^^R
 OAL^Cacoal^RO^BR^2^A^OAL^Capital do Cafe^^A
 OAM^Oamaru^^NZ^1^^OAM^Oamaru^3612^A
@@ -6138,8 +6138,8 @@ OFU^Ofu Island^^AS^^^OFU^Ofu Island^^A
 OGA^Ogallala^NE^US^3^^OGA^Searle Field^3648^A
 OGB^Orangeburg^SC^US^1^^OGB^Municipal^3649^A
 OGD^Ogden^UT^US^3^^HIF^Hill AFB^^A
-OGD^Ogden^UT^US^3^^OGD^Metropolitan Area^^C
 OGD^Ogden^UT^US^3^^OGD^Hinckley^3650^A
+OGD^Ogden^UT^US^3^^OGD^Metropolitan Area^^C
 OGE^Ogeramnang^^PG^1^^OGE^Ogeramnang^3651^A
 OGG^Kahului^HI^US^6^A^OGG^Kahului^3652^A
 OGM^Ustupo Island^^PA^^^OGM^Ustupo Ogobsucum^^A
@@ -6218,8 +6218,8 @@ OLY^Olney/Noble^IL^US^2^^OLY^Olney/Noble^^A
 OLZ^Olekminsk^^RU^8^^OLZ^Olekminsk^^A
 OMA^Omaha^NE^US^2^^MIQ^Millard^3149^A
 OMA^Omaha^NE^US^2^^OFF^Offutt AFB^^A
-OMA^Omaha^NE^US^2^^OMA^Metropolitan Area^^C
 OMA^Omaha^NE^US^2^^OMA^Eppley Airfield^3692^A
+OMA^Omaha^NE^US^2^^OMA^Metropolitan Area^^C
 OMB^Omboue^^GA^^^OMB^Omboue-Hopital^3693^A
 OMC^Ormoc^^PH^^^OMC^Ormoc^3694^A
 OMD^Oranjemund^^NA^^^OMD^Oranjemund^^A
@@ -6277,20 +6277,20 @@ ORB^Orebro^^SE^^^XWR^Orebro C Railway Stn^^R
 ORC^Orocue^^CO^^^ORC^Orocue^3728^A
 ORE^Orleans^^FR^^^ORE^St Denis de l'Hotel^^A
 ORF^Norfolk^VA^US^1^^NGU^NS (Chambers Field)^^A
-ORF^Norfolk^VA^US^1^^ORF^Metropolitan Area^^C
 ORF^Norfolk^VA^US^1^^ORF^International^3730^A
+ORF^Norfolk^VA^US^1^^ORF^Metropolitan Area^^C
 ORH^Worcester^MA^US^1^^ORH^Regional^3732^A
 ORI^Port Lions^AK^US^5^^ORI^Port Lions^3733^A
 ORJ^Orinduik^^GY^^^ORJ^Orinduik^3734^A
 ORK^Cork^^IE^^^ORK^International^3735^A
 ORL^Orlando^FL^US^1^^ISM^Kissimmee Gateway^^A
 ORL^Orlando^FL^US^1^^MCO^International^3039^A
-ORL^Orlando^FL^US^1^^ORL^Metropolitan Area^^C
 ORL^Orlando^FL^US^1^^ORL^Executive^^A
+ORL^Orlando^FL^US^1^^ORL^Metropolitan Area^^C
 ORL^Orlando^FL^US^1^^SFB^Sanford Intl^^A
 ORM^Northampton^^GB^^^ORM^Sywell^3736^A
-ORN^Oran^^DZ^^^ORN^Metropolitan Area^^C
 ORN^Oran^^DZ^^^ORN^Ahmed Ben Bella^3737^A
+ORN^Oran^^DZ^^^ORN^Metropolitan Area^^C
 ORN^Oran^^DZ^^^TAF^Tafaraoui^^A
 ORO^Yoro^^HN^^^ORO^Yoro^3738^A
 ORP^Orapa^^BW^^^ORP^Orapa^3739^A
@@ -6315,8 +6315,8 @@ OSG^Ossima^^PG^1^^OSG^Ossima^^A
 OSH^Oshkosh^WI^US^2^^OSH^Wittman Regional^3751^A
 OSI^Osijek^^HR^^^OSI^Osijek^3752^A
 OSK^Oskarshamn^^SE^^^OSK^Oskarshamn^3753^A
-OSL^Oslo^^NO^^^OSL^Metropolitan Area^^C
 OSL^Oslo^^NO^^^OSL^Gardermoen^^A
+OSL^Oslo^^NO^^^OSL^Metropolitan Area^^C
 OSL^Oslo^^NO^^^RYG^Moss-Rygge^^A
 OSL^Oslo^^NO^^^TRF^Sandefjord-Torp^^A
 OSL^Oslo^^NO^^^XZO^Oslo S Railway Station^^R
@@ -6407,8 +6407,8 @@ OZL^Orzola^^ES^2^^OZL^Ferry Port^^P
 OZP^Moron^^ES^1^^OZP^Air Base^^A
 OZR^Fort Rucker/Ozark^AL^US^2^^HEY^Hanchey Army Heliport^^H
 OZR^Fort Rucker/Ozark^AL^US^2^^LOR^Lowe AHP^^H
-OZR^Fort Rucker/Ozark^AL^US^2^^OZR^Metropolitan Area^^C
 OZR^Fort Rucker/Ozark^AL^US^2^^OZR^Cairns AAF^^A
+OZR^Fort Rucker/Ozark^AL^US^2^^OZR^Metropolitan Area^^C
 OZU^Montilla^^ES^1^^OZU^Railway Station^^R
 OZZ^Ouarzazate^^MA^^^OZZ^Ouarzazate^3805^A
 PAA^Hpa-an^^MM^^^PAA^Hpa-an^3806^A
@@ -6463,8 +6463,8 @@ PBI^West Palm Beach^FL^US^1^^ZWP^Tri-Rail Station^^R
 PBJ^Paama Island^^VU^^^PBJ^Paama Island^^A
 PBL^Puerto Cabello^^VE^^^PBL^Bartolome Salom Intl^3832^A
 PBM^Paramaribo^^SR^^^ORG^Zorg en Hoop^3731^A
-PBM^Paramaribo^^SR^^^PBM^Metropolitan Area^^C
 PBM^Paramaribo^^SR^^^PBM^Johan A. Pengel Intl^3833^A
+PBM^Paramaribo^^SR^^^PBM^Metropolitan Area^^C
 PBN^Porto Amboim^^AO^^^PBN^Porto Amboim^3834^A
 PBO^Paraburdoo^WA^AU^4^^PBO^Paraburdoo^3835^A
 PBP^Islita^^CR^^^PBP^Islita^^A
@@ -6590,8 +6590,8 @@ PHF^Newport News/Williamsb^VA^US^1^^ZWW^Newport News Rail Stn^^R
 PHI^Pinheiro^MA^BR^1^A^PHI^Pinheiro^^A
 PHK^Pahokee^FL^US^1^^PHK^Palm Beach Co Glades^^A
 PHL^Philadelphia^PA^US^1^^BBX^Wings Field^^A
-PHL^Philadelphia^PA^US^1^^PHL^Metropolitan Area^^C
 PHL^Philadelphia^PA^US^1^^PHL^International^3908^A
+PHL^Philadelphia^PA^US^1^^PHL^Metropolitan Area^^C
 PHL^Philadelphia^PA^US^1^^PNE^Northeast Philadelphia^3988^A
 PHL^Philadelphia^PA^US^1^^PSQ^Essington SPB^^A
 PHL^Philadelphia^PA^US^1^^TTN^Trenton-Mercer^^A
@@ -6634,8 +6634,8 @@ PIR^Pierre^SD^US^2^^PIR^Regional^3929^A
 PIS^Poitiers^^FR^^^PIS^Biard^3930^A
 PIS^Poitiers^^FR^^^XOP^Railway Station^^R
 PIT^Pittsburgh^PA^US^1^^AGC^Allegheny County^^A
-PIT^Pittsburgh^PA^US^1^^PIT^Metropolitan Area^^C
 PIT^Pittsburgh^PA^US^1^^PIT^International^3931^A
+PIT^Pittsburgh^PA^US^1^^PIT^Metropolitan Area^^C
 PIU^Piura^^PE^^^PIU^G.Concha Iberico Intl^3932^A
 PIV^Pirapora^MG^BR^1^^PIV^Pirapora^^A
 PIW^Pikwitonei^MB^CA^4^^PIW^Pikwitonei^^A
@@ -6732,8 +6732,8 @@ PNQ^Pune^^IN^^^PNQ^Lohegaon^3996^A
 PNR^Pointe-Noire^^CG^^^PNR^Pointe-Noire^3997^A
 PNS^Pensacola^FL^US^2^^NPA^NAS (F.Sherman Field)^^A
 PNS^Pensacola^FL^US^2^^NUN^Saufley Field NOLF^^A
-PNS^Pensacola^FL^US^2^^PNS^Metropolitan Area^^C
 PNS^Pensacola^FL^US^2^^PNS^International^3998^A
+PNS^Pensacola^FL^US^2^^PNS^Metropolitan Area^^C
 PNT^Puerto Natales^^CL^1^^PNT^Teniente J. Gallardo^^A
 PNU^Panguitch^UT^US^3^^PNU^Municipal^^A
 PNV^Panevezys^^LT^^^PNV^Pajuostis^^A
@@ -6841,8 +6841,8 @@ PSL^Perth^^GB^^^PSL^Scone^^A
 PSL^Perth^^GB^^^ZXP^Railway Station^^R
 PSN^Palestine^TX^US^2^^PSN^Municipal^4072^A
 PSO^Pasto^^CO^^^PSO^Antonio Narino^4073^A
-PSP^Palm Springs^CA^US^4^^PSP^Metropolitan Area^^C
 PSP^Palm Springs^CA^US^4^^PSP^International^4074^A
+PSP^Palm Springs^CA^US^4^^PSP^Metropolitan Area^^C
 PSP^Palm Springs^CA^US^4^^UDD^Bermuda Dunes^^A
 PSR^Pescara^^IT^^^PSR^Abruzzo^4075^A
 PSR^Pescara^^IT^^^PXC^Bus Station^^B
@@ -7912,8 +7912,8 @@ SAA^Saratoga^WY^US^3^^SAA^Shively Field^4354^A
 SAB^Saba^^BQ^^^SAB^Juancho E. Yrausquin^4355^A
 SAC^Sacramento^CA^US^4^^MCC^McClellan^^A
 SAC^Sacramento^CA^US^4^^MHR^Mather^^A
-SAC^Sacramento^CA^US^4^^SAC^Metropolitan Area^^C
 SAC^Sacramento^CA^US^4^^SAC^Executive^^A
+SAC^Sacramento^CA^US^4^^SAC^Metropolitan Area^^C
 SAC^Sacramento^CA^US^4^^SCK^Stockton Metropolitan^^A
 SAC^Sacramento^CA^US^4^^SMF^International^4579^A
 SAD^Safford^AZ^US^3^A^SAD^Regional^4356^A
@@ -7929,8 +7929,8 @@ SAN^San Diego^CA^US^4^^CLD^McClellan-Palomar^^A
 SAN^San Diego^CA^US^4^^MYF^Montgomery Field^3438^A
 SAN^San Diego^CA^US^4^^NKX^Miramar MCAS^^A
 SAN^San Diego^CA^US^4^^NZY^North Island NAS^^A
-SAN^San Diego^CA^US^4^^SAN^Metropolitan Area^^C
 SAN^San Diego^CA^US^4^^SAN^International^4365^A
+SAN^San Diego^CA^US^4^^SAN^Metropolitan Area^^C
 SAN^San Diego^CA^US^4^^SDM^Brown Field Municipal^^A
 SAN^San Diego^CA^US^4^^SEE^Gillespie Field^^A
 SAO^Sao Paulo^SP^BR^1^^CGH^Congonhas^0880^A
@@ -7943,13 +7943,13 @@ SAR^Sparta^IL^US^2^^SAR^Sparta Community^^A
 SAS^Salton City^CA^US^4^^SAS^Salton Sea^^A
 SAT^San Antonio^TX^US^2^^MDA^Martindale AHP^^H
 SAT^San Antonio^TX^US^2^^RND^Randolph AFB^^A
-SAT^San Antonio^TX^US^2^^SAT^Metropolitan Area^^C
 SAT^San Antonio^TX^US^2^^SAT^International^4369^A
+SAT^San Antonio^TX^US^2^^SAT^Metropolitan Area^^C
 SAT^San Antonio^TX^US^2^^SKF^Lackland AFB-Kelly Fld^^A
 SAT^San Antonio^TX^US^2^^SSF^Stinson Municipal^^A
 SAU^Sawu^^ID^2^^SAU^Tardamu^4370^A
-SAV^Savannah^GA^US^1^^SAV^Metropolitan Area^^C
 SAV^Savannah^GA^US^1^^SAV^Hilton Head^4371^A
+SAV^Savannah^GA^US^1^^SAV^Metropolitan Area^^C
 SAV^Savannah^GA^US^1^^SVN^Hunter AAF^^A
 SAX^Sambu^^PA^^^SAX^Sambu^^A
 SAY^Siena^^IT^^^SAY^Ampugnano^^A
@@ -8012,8 +8012,8 @@ SDC^Sand Creek^^GY^^^SDC^Sand Creek^4409^A
 SDD^Lubango^^AO^^^SDD^Mukanka^4410^A
 SDE^Santiago del Estero^SE^AR^^^SDE^A. de la Paz Aragonez^4411^A
 SDF^Louisville^KY^US^1^^LOU^Bowman Field^^A
-SDF^Louisville^KY^US^1^^SDF^Metropolitan Area^^C
 SDF^Louisville^KY^US^1^^SDF^Intl-Standiford Fld^4412^A
+SDF^Louisville^KY^US^1^^SDF^Metropolitan Area^^C
 SDG^Sanandaj^^IR^^^SDG^Sanandaj^4413^A
 SDH^Santa Rosa de Copan^^HN^^^SDH^Santa Rosa de Copan^4414^A
 SDI^Saidor^^PG^1^^SDI^Saidor^4415^A
@@ -8025,8 +8025,8 @@ SDL^Sundsvall/Harnosand^^SE^^^XYZ^Harnosand Railway Stn^^R
 SDN^Sandane^^NO^^^SDN^Anda^4419^A
 SDP^Sand Point^AK^US^5^^SDP^Sand Point^4420^A
 SDQ^Santo Domingo^^DO^^^JBQ^Dr.Joaquin Balaguer^^A
-SDQ^Santo Domingo^^DO^^^SDQ^Metropolitan Area^^C
 SDQ^Santo Domingo^^DO^^^SDQ^Las Americas Intl^4421^A
+SDQ^Santo Domingo^^DO^^^SDQ^Metropolitan Area^^C
 SDR^Santander^^ES^1^^SDR^Airport^4422^A
 SDR^Santander^^ES^1^^YJL^Railway Station^^R
 SDS^Sado^^JP^^^SDS^Sado^4423^A
@@ -8114,8 +8114,8 @@ SGX^Songea^^TZ^^^SGX^Songea^4476^A
 SGY^Skagway^AK^US^5^^SGY^Skagway^4477^A
 SGZ^Songkhla^^TH^^^SGZ^Songkhla^4478^A
 SHA^Shanghai^^CN^^^PVG^Pudong Intl^^A
-SHA^Shanghai^^CN^^^SHA^Metropolitan Area^^C
 SHA^Shanghai^^CN^^^SHA^Hongqiao Intl^4479^A
+SHA^Shanghai^^CN^^^SHA^Metropolitan Area^^C
 SHB^Nakashibetsu^^JP^^^SHB^Nakashibetsu^4480^A
 SHC^Inda Selassie^^ET^^^SHC^Shire^^A
 SHD^Staunton/Waynesboro^VA^US^1^^SHD^Shenandoah Valley Rgnl^4481^A
@@ -8160,8 +8160,8 @@ SIL^Sila^^PG^1^^SIL^Sila^4506^A
 SIM^Simbai^^PG^1^^SIM^Simbai^4507^A
 SIN^Singapore^^SG^^^MCR^Marina Bay Cruise Center^^P
 SIN^Singapore^^SG^^^QPG^Paya Lebar^^A
-SIN^Singapore^^SG^^^SIN^Metropolitan Area^^C
 SIN^Singapore^^SG^^^SIN^Changi^4508^A
+SIN^Singapore^^SG^^^SIN^Metropolitan Area^^C
 SIN^Singapore^^SG^^^TGA^Tengah^^A
 SIN^Singapore^^SG^^^XSP^Seletar^^A
 SIO^Smithton^TS^AU^2^A^SIO^Smithton^4509^A
@@ -8202,8 +8202,8 @@ SJR^San Juan de Uraba^^CO^^^SJR^San Juan de Uraba^4532^A
 SJS^San Jose de Chiquitos^^BO^^^SJS^San Jose de Chiquitos^4533^A
 SJT^San Angelo^TX^US^2^^SJT^Regional (Mathis Fld)^4534^A
 SJU^San Juan^^PR^^^SIG^F.L. Ribas Dominicci^4502^A
-SJU^San Juan^^PR^^^SJU^Metropolitan Area^^C
 SJU^San Juan^^PR^^^SJU^Luis Munoz Marin Intl^4535^A
+SJU^San Juan^^PR^^^SJU^Metropolitan Area^^C
 SJV^San Javier^^BO^^^SJV^San Javier^4536^A
 SJW^Shijiazhuang^^CN^^^QSJ^Railway Station^^R
 SJW^Shijiazhuang^^CN^^^SJW^Zhengding Intl^^A
@@ -8256,8 +8256,8 @@ SLQ^Sleetmute^AK^US^5^^SLQ^Sleetmute^4568^A
 SLR^Sulphur Springs^TX^US^2^^SLR^Municipal^^A
 SLS^Silistra^^BG^^^SLS^Polkovnik-Lambrinovo^4569^A
 SLT^Salida^CO^US^3^^SLT^Harriet Alexander Fld^4570^A
-SLU^St Lucia^^LC^^^SLU^Metropolitan Area^^C
 SLU^St Lucia^^LC^^^SLU^George F.L. Charles^4571^A
+SLU^St Lucia^^LC^^^SLU^Metropolitan Area^^C
 SLU^St Lucia^^LC^^^UVF^Hewanorra Intl^5232^A
 SLV^Shimla^^IN^^^SLV^Shimla^^A
 SLW^Saltillo^^MX^1^^SLW^Plan de Guadalupe Intl^4573^A
@@ -8415,8 +8415,8 @@ SRV^Stony River^AK^US^5^^SRV^Stony River^4680^A
 SRW^Salisbury^NC^US^1^^SRW^Rowan County^4681^A
 SRX^Sirte^^LY^^^SRX^Gardabya^4682^A
 SRY^Sari^^IR^^^SRY^Dasht-e-Naz^^A
-SRZ^Santa Cruz^^BO^^^SRZ^Metropolitan Area^^C
 SRZ^Santa Cruz^^BO^^^SRZ^El Trompillo^4683^A
+SRZ^Santa Cruz^^BO^^^SRZ^Metropolitan Area^^C
 SRZ^Santa Cruz^^BO^^^VVI^Viru Viru Intl^^A
 SSA^Salvador^BA^BR^1^A^SSA^Luis E. Magalhaes Intl^4684^A
 SSC^Sumter^SC^US^1^^SSC^Metropolitan Area^^C
@@ -8427,8 +8427,8 @@ SSE^Solapur^^IN^^^SSE^Solapur^^A
 SSG^Malabo^^GQ^^^SSG^International^4686^A
 SSH^Sharm el-Sheikh^^EG^^^SSH^International^4687^A
 SSI^Brunswick^GA^US^1^^BQK^Golden Isles^0642^A
-SSI^Brunswick^GA^US^1^^SSI^Metropolitan Area^^C
 SSI^Brunswick^GA^US^1^^SSI^Malcolm McKinnon^^A
+SSI^Brunswick^GA^US^1^^SSI^Metropolitan Area^^C
 SSJ^Sandnessjoen^^NO^^^SSJ^Stokka^4689^A
 SSK^Sturt Creek^WA^AU^4^^SSK^Sturt Creek^4690^A
 SSL^Santa Rosalia^^CO^^^SSL^Santa Rosalia^^A
@@ -8458,8 +8458,8 @@ STI^Santiago^^DO^^^STI^Cibao Intl^4708^A
 STJ^St Joseph^MO^US^2^^STJ^Rosecrans Memorial^4709^A
 STK^Sterling^CO^US^3^^STK^Municipal^4710^A
 STL^St Louis^MO^US^2^^CPS^Downtown Airport^1035^A
-STL^St Louis^MO^US^2^^STL^Metropolitan Area^^C
 STL^St Louis^MO^US^2^^STL^Lambert-St Louis Intl^4711^A
+STL^St Louis^MO^US^2^^STL^Metropolitan Area^^C
 STL^St Louis^MO^US^2^^SUS^Spirit Of St Louis^4735^A
 STL^St Louis^MO^US^2^^ZSV^Gateway Railway Station^^R
 STM^Santarem^PA^BR^1^A^STM^Maestro Wilson Fonseca^4712^A
@@ -8474,13 +8474,13 @@ STR^Stuttgart^^DE^^^STR^Airport^4714^A
 STR^Stuttgart^^DE^^^ZWS^Hbf Railway Station^^R
 STS^Santa Rosa^CA^US^4^^STS^Charles M. Schulz^4715^A
 STT^St Thomas Island^^VI^^^SPB^Charlotte Amalie SPB^4641^A
-STT^St Thomas Island^^VI^^^STT^Metropolitan Area^^C
 STT^St Thomas Island^^VI^^^STT^Cyril E. King^4716^A
+STT^St Thomas Island^^VI^^^STT^Metropolitan Area^^C
 STV^Surat^^IN^^^STV^Surat^5887^A
 STW^Stavropol^^RU^2^^STW^Shpakovskoye^4718^A
 STX^St Croix Island^^VI^^^SSB^Christiansted SPB^4685^A
-STX^St Croix Island^^VI^^^STX^Metropolitan Area^^C
 STX^St Croix Island^^VI^^^STX^Henry E. Rohlsen^4719^A
+STX^St Croix Island^^VI^^^STX^Metropolitan Area^^C
 STY^Salto^^UY^^^STY^Nueva Hesperides^4720^A
 STZ^Santa Terezinha^MT^BR^2^^STZ^Santa Terezinha^4721^A
 SUA^Stuart^FL^US^1^^SUA^Witham Field^4722^A
@@ -8594,8 +8594,8 @@ SYC^Shiringayoc^^PE^^^SYC^Shiringayoc^^A
 SYD^Sydney^NS^AU^2^^BWU^Bankstown^^A
 SYD^Sydney^NS^AU^2^^LBH^Palm Beach SPB^^A
 SYD^Sydney^NS^AU^2^^RSE^Rose Bay SPB^^A
-SYD^Sydney^NS^AU^2^^SYD^Metropolitan Area^^C
 SYD^Sydney^NS^AU^2^^SYD^Kingsford Smith^4786^A
+SYD^Sydney^NS^AU^2^^SYD^Metropolitan Area^^C
 SYD^Sydney^NS^AU^2^^XYS^Ferry Port^^P
 SYE^Sadah^^YE^^^SYE^Sadah^4787^A
 SYF^Gabriola Island^BC^CA^6^^SYF^Silva Bay SPB^^A
@@ -8809,8 +8809,8 @@ THO^Thorshofn^^IS^^^THO^Thorshofn^4908^A
 THP^Thermopolis^WY^US^3^^THP^Hot Springs County^^A
 THQ^Tianshui^^CN^^^THQ^Maijishan^^A
 THR^Tehran^^IR^^^IKA^Imam Khomeini Intl^^A
-THR^Tehran^^IR^^^THR^Metropolitan Area^^C
 THR^Tehran^^IR^^^THR^Mehrabad Intl^4909^A
+THR^Tehran^^IR^^^THR^Metropolitan Area^^C
 THS^Sukhothai^^TH^^^THS^Sukhothai^^A
 THT^Tamchakett^^MR^^^THT^Tamchakett^4910^A
 THU^Pituffik^^GL^2^^THU^Thule Air Base^^A
@@ -8909,8 +8909,8 @@ TLS^Toulouse^^FR^^^TXQ^Matabiau Railway Stn^^R
 TLT^Tuluksak^AK^US^5^^TLT^Tuluksak^4964^A
 TLU^Tolu^^CO^^^TLU^Golfo de Morrosquillo^4965^A
 TLV^Tel Aviv-Yafo^^IL^^^SDV^Sde Dov^4426^A
-TLV^Tel Aviv-Yafo^^IL^^^TLV^Metropolitan Area^^C
 TLV^Tel Aviv-Yafo^^IL^^^TLV^Ben Gurion Intl^4966^A
+TLV^Tel Aviv-Yafo^^IL^^^TLV^Metropolitan Area^^C
 TLW^Talasea^^PG^1^^TLW^Talasea^4967^A
 TLX^Talca^^CL^1^^TLX^Panguilemo^^A
 TLY^Plastun^^RU^9^^TLY^Plastun^^A
@@ -8976,8 +8976,8 @@ TOH^Torres Islands^^VU^^^TOH^Torres Islands^^A
 TOI^Troy^AL^US^2^^TOI^Municipal^^A
 TOK^Torokina^^PG^2^^TOK^Torokina^4999^A
 TOL^Toledo^OH^US^1^^TDZ^Executive^^A
-TOL^Toledo^OH^US^1^^TOL^Metropolitan Area^^C
 TOL^Toledo^OH^US^1^^TOL^Express^5000^A
+TOL^Toledo^OH^US^1^^TOL^Metropolitan Area^^C
 TOM^Tombouctou^^ML^^^TOM^Tombouctou^5001^A
 TON^Tonu^^PG^2^^TON^Tonu^5002^A
 TOO^San Vito^^CR^^^TOO^San Vito^^A
@@ -9002,8 +9002,8 @@ TPA^Tampa^FL^US^1^^KYO^North Aero Park^^A
 TPA^Tampa^FL^US^1^^MCF^MacDill AFB^^A
 TPA^Tampa^FL^US^1^^PIE^St.Pete-Clearwater Int^^A
 TPA^Tampa^FL^US^1^^SPG^St Pete-Albert Whitted^^A
-TPA^Tampa^FL^US^1^^TPA^Metropolitan Area^^C
 TPA^Tampa^FL^US^1^^TPA^International^5013^A
+TPA^Tampa^FL^US^1^^TPA^Metropolitan Area^^C
 TPA^Tampa^FL^US^1^^TPF^Peter O. Knight^^A
 TPC^Tarapoa^^EC^1^^TPC^Tarapoa^5014^A
 TPE^Taipei^^TW^^^TPE^Metropolitan Area^^C
@@ -9121,8 +9121,8 @@ TUI^Turaif^^SA^^^TUI^Turaif^5082^A
 TUJ^Tum^^ET^^^TUJ^Tum^5083^A
 TUK^Turbat^^PK^^^TUK^International^5084^A
 TUL^Tulsa^OK^US^2^^RVS^Richard Lloyd Jones Jr.^4340^A
-TUL^Tulsa^OK^US^2^^TUL^Metropolitan Area^^C
 TUL^Tulsa^OK^US^2^^TUL^International^5085^A
+TUL^Tulsa^OK^US^2^^TUL^Metropolitan Area^^C
 TUM^Tumut^NS^AU^2^^TUM^Tumut^5086^A
 TUN^Tunis^^TN^^^TUN^Carthage^5087^A
 TUO^Taupo^^NZ^1^^TUO^Taupo^5088^A
@@ -9131,8 +9131,8 @@ TUQ^Tougan^^BF^^^TUQ^Tougan^5090^A
 TUR^Tucurui^PA^BR^1^A^TUR^Tucurui^5091^A
 TUS^Tucson^AZ^US^3^A^AVW^Marana Regional^^A
 TUS^Tucson^AZ^US^3^A^DMA^Davis-Monthan AFB^^A
-TUS^Tucson^AZ^US^3^A^TUS^Metropolitan Area^^C
 TUS^Tucson^AZ^US^3^A^TUS^International^5092^A
+TUS^Tucson^AZ^US^3^A^TUS^Metropolitan Area^^C
 TUT^Tauta^^PG^1^^TUT^Tauta^^A
 TUU^Tabuk^^SA^^^TUU^Tabuk^5093^A
 TUV^Tucupita^^VE^^^TUV^San Rafael^5094^A
@@ -9212,8 +9212,8 @@ UBP^Ubon Ratchathani^^TH^^^UBP^Ubon Ratchathani^5142^A
 UBR^Ubrub^^ID^3^^UBR^Ubrub^^A
 UBS^Columbus^MS^US^2^^CBM^AFB^^A
 UBS^Columbus^MS^US^2^^GTR^Golden Triangle Rgnl^1834^A
-UBS^Columbus^MS^US^2^^UBS^Metropolitan Area^^C
 UBS^Columbus^MS^US^2^^UBS^Lowndes County^^A
+UBS^Columbus^MS^US^2^^UBS^Metropolitan Area^^C
 UBT^Ubatuba^SP^BR^1^^UBT^Gastao Madeira^5143^A
 UBU^Kalumburu^WA^AU^4^^UBU^Kalumburu^5144^A
 UCB^Ulanqab^^CN^^^UCB^Ulanqab^^A
@@ -9427,8 +9427,8 @@ VBY^Visby^^SE^^^VBY^Visby^5254^A
 VCA^Can Tho^^VN^^^VCA^International^5255^A
 VCD^Victoria River Downs^NT^AU^3^A^VCD^Victoria River Downs^^A
 VCE^Venice^^IT^^^TSF^Treviso/Sant'Angelo^^A
-VCE^Venice^^IT^^^VCE^Metropolitan Area^^C
 VCE^Venice^^IT^^^VCE^Marco Polo^5257^A
+VCE^Venice^^IT^^^VCE^Metropolitan Area^^C
 VCE^Venice^^IT^^^XVQ^Santa Lucia Rail Stn^^R
 VCE^Venice^^IT^^^XVY^Mestre Railway Station^^R
 VCF^Valcheta^RN^AR^^^VCF^Valcheta^^A
@@ -9545,8 +9545,8 @@ VPE^Ondjiva^^AO^^^VPE^Ondjiva^5324^A
 VPG^Vipingo^^KE^^^VPG^Vipingo^^A
 VPN^Vopnafjordur^^IS^^^VPN^Vopnafjordur^5325^A
 VPS^Destin/Ft Walton Beach^FL^US^2^^DSI^Destin Executive^^A
-VPS^Destin/Ft Walton Beach^FL^US^2^^VPS^Metropolitan Area^^C
 VPS^Destin/Ft Walton Beach^FL^US^2^^VPS^Destin-Ft Walton Beach^^A
+VPS^Destin/Ft Walton Beach^FL^US^2^^VPS^Metropolitan Area^^C
 VPY^Chimoio^^MZ^^^VPY^Chimoio^^A
 VPZ^Valparaiso^IN^US^2^^VPZ^Porter Co. Municipal^5328^A
 VQS^Vieques^^PR^^^VQS^A.Rivera Rodriguez^5329^A
@@ -9651,8 +9651,8 @@ WDG^Enid^OK^US^2^^END^Vance AFB^^A
 WDG^Enid^OK^US^2^^WDG^Metropolitan Area^^C
 WDG^Enid^OK^US^2^^WDG^Woodring Regional^5389^A
 WDH^Windhoek^^NA^^^ERS^Eros^1451^A
-WDH^Windhoek^^NA^^^WDH^Metropolitan Area^^C
 WDH^Windhoek^^NA^^^WDH^Hosea Kutako Intl^^A
+WDH^Windhoek^^NA^^^WDH^Metropolitan Area^^C
 WDH^Windhoek^^NA^^^ZWH^Railway Station^^R
 WDI^Wondai^QL^AU^2^B^WDI^Wondai^^A
 WDN^Waldron Island^WA^US^4^^WDN^Waldronaire^^A
@@ -10343,8 +10343,8 @@ YAU^Kattiniq^QC^CA^3^^YAU^Donaldson^^A
 YAV^Mayne Island^BC^CA^6^^YAV^Miners Bay SPB^^A
 YAX^Angling Lake^ON^CA^4^^YAX^Wapekeka^^A
 YAY^St Anthony^NL^CA^1^^YAY^St Anthony^5577^A
-YAZ^Tofino^BC^CA^6^^YAZ^Metropolitan Area^^C
 YAZ^Tofino^BC^CA^6^^YAZ^Long Beach^5578^A
+YAZ^Tofino^BC^CA^6^^YAZ^Metropolitan Area^^C
 YAZ^Tofino^BC^CA^6^^YTP^Harbour SPB^^A
 YBA^Banff^AB^CA^5^^YBA^Banff^^A
 YBB^Kugaaruk^NU^CA^5^^YBB^Kugaaruk^^A
@@ -10356,8 +10356,8 @@ YBH^Bull Harbour^BC^CA^6^^YBH^SPB^^A
 YBI^Black Tickle^NL^CA^2^^YBI^Black Tickle^^A
 YBJ^Baie-Johan-Beetz^QC^CA^3^^YBJ^SPB^5582^A
 YBK^Baker Lake^NU^CA^4^^YBK^Baker Lake^5583^A
-YBL^Campbell River^BC^CA^6^^YBL^Metropolitan Area^^C
 YBL^Campbell River^BC^CA^6^^YBL^Airport^5584^A
+YBL^Campbell River^BC^CA^6^^YBL^Metropolitan Area^^C
 YBL^Campbell River^BC^CA^6^^YHH^SPB^^A
 YBN^Borden^ON^CA^3^^YBN^CFB Heliport^^H
 YBO^Bob Quinn Lake^BC^CA^6^^YBO^Bob Quinn Lake^^A
@@ -10373,8 +10373,8 @@ YBY^Bonnyville^AB^CA^5^^YBY^Bonnyville^^A
 YCA^Courtenay^BC^CA^6^^YCA^Airpark^^A
 YCB^Cambridge Bay^NU^CA^5^^YCB^Cambridge Bay^5589^A
 YCC^Cornwall^ON^CA^3^^YCC^Regional^^A
-YCD^Nanaimo^BC^CA^6^^YCD^Metropolitan Area^^C
 YCD^Nanaimo^BC^CA^6^^YCD^Airport^5590^A
+YCD^Nanaimo^BC^CA^6^^YCD^Metropolitan Area^^C
 YCD^Nanaimo^BC^CA^6^^ZNA^Harbour SPB^5847^A
 YCE^Centralia^ON^CA^3^^YCE^James T Field Memorial^^A
 YCF^Cortes Bay^BC^CA^6^^YCF^SPB^^A
@@ -10516,8 +10516,8 @@ YKJ^Key Lake^SK^CA^4^A^YKJ^Key Lake^^A
 YKK^Kitkatla^BC^CA^6^^YKK^SPB^^A
 YKL^Schefferville^QC^CA^3^^YKL^Schefferville^5647^A
 YKM^Yakima^WA^US^4^^FCT^Vagabond AHP^^H
-YKM^Yakima^WA^US^4^^YKM^Metropolitan Area^^C
 YKM^Yakima^WA^US^4^^YKM^Air Terminal^5648^A
+YKM^Yakima^WA^US^4^^YKM^Metropolitan Area^^C
 YKN^Yankton^SD^US^2^^YKN^Chan Gurney Municipal^5649^A
 YKO^Hakkari^^TR^^^YKO^Yuksekova^^A
 YKQ^Waskaganish^QC^CA^3^^YKQ^Waskaganish^5650^A
@@ -10610,8 +10610,8 @@ YOT^Yotvata^^IL^^^YOT^Yotvata^^A
 YOW^Ottawa^ON^CA^3^^XDS^Ottawa Railway Station^^R
 YOW^Ottawa^ON^CA^3^^XGE^Central Bus Station^^B
 YOW^Ottawa^ON^CA^3^^YND^Gatineau^^A
-YOW^Ottawa^ON^CA^3^^YOW^Metropolitan Area^^C
 YOW^Ottawa^ON^CA^3^^YOW^Macdonald-Cartier Intl^5684^A
+YOW^Ottawa^ON^CA^3^^YOW^Metropolitan Area^^C
 YOW^Ottawa^ON^CA^3^^YRO^Rockcliffe^^A
 YOW^Ottawa^ON^CA^3^^ZIF^Fallowfield Rail Stn^^R
 YOY^Valcartier^QC^CA^3^^YOY^CFB Heliport^^H
@@ -10630,8 +10630,8 @@ YPN^Port-Menier^QC^CA^3^^YPN^Port-Menier^5692^A
 YPO^Peawanuck^ON^CA^3^^YPO^Peawanuck^^A
 YPQ^Peterborough^ON^CA^3^^YPQ^Peterborough^5693^A
 YPR^Prince Rupert^BC^CA^6^^XDW^Railway Station^^R
-YPR^Prince Rupert^BC^CA^6^^YPR^Metropolitan Area^^C
 YPR^Prince Rupert^BC^CA^6^^YPR^Airport^5694^A
+YPR^Prince Rupert^BC^CA^6^^YPR^Metropolitan Area^^C
 YPR^Prince Rupert^BC^CA^6^^ZSW^Seal Cove SPB^5868^A
 YPS^Port Hawkesbury^NS^CA^2^^YPS^Port Hawkesbury^^A
 YPT^Pender Harbour^BC^CA^6^^YPT^SPB^^A
@@ -10737,15 +10737,15 @@ YUD^Umiujaq^QC^CA^3^^YUD^Umiujaq^^A
 YUE^Yuendumu^NT^AU^3^A^YUE^Yuendumu^5744^A
 YUG^Yueyang^^CN^^^YUG^Railway Station^^R
 YUM^Yuma^AZ^US^3^A^LGF^Laguna AAF^^A
-YUM^Yuma^AZ^US^3^A^YUM^Metropolitan Area^^C
 YUM^Yuma^AZ^US^3^A^YUM^International^5747^A
+YUM^Yuma^AZ^US^3^A^YUM^Metropolitan Area^^C
 YUS^Yushu^^CN^^^YUS^Batang^^A
 YUT^Repulse Bay^NU^CA^4^^YUT^Repulse Bay^^A
 YUX^Hall Beach^NU^CA^3^^YUX^Hall Beach^5748^A
 YUY^Rouyn-Noranda^QC^CA^3^^YUY^Rouyn-Noranda^5749^A
 YVA^Moroni^^KM^^^HAH^Prince Said Ibrahim^^A
-YVA^Moroni^^KM^^^YVA^Metropolitan Area^^C
 YVA^Moroni^^KM^^^YVA^Iconi^5750^A
+YVA^Moroni^^KM^^^YVA^Metropolitan Area^^C
 YVB^Bonaventure^QC^CA^3^^YVB^Bonaventure^5751^A
 YVC^La Ronge^SK^CA^4^A^YVC^Barber Field^5752^A
 YVD^Yeva^^PG^1^^YVD^Yeva^^A
@@ -10761,8 +10761,8 @@ YVQ^Norman Wells^NT^CA^5^^YVQ^Norman Wells^5757^A
 YVR^Vancouver^BC^CA^6^^CXH^Harbour SPB^1128^A
 YVR^Vancouver^BC^CA^6^^XEA^Pacif. Central Rail St^^R
 YVR^Vancouver^BC^CA^6^^YDT^Boundary Bay^^A
-YVR^Vancouver^BC^CA^6^^YVR^Metropolitan Area^^C
 YVR^Vancouver^BC^CA^6^^YVR^International^5758^A
+YVR^Vancouver^BC^CA^6^^YVR^Metropolitan Area^^C
 YVS^Ski^^NO^^^YVS^Railway Station^^R
 YVT^Buffalo Narrows^SK^CA^4^A^YVT^Buffalo Narrows^5759^A
 YVV^Wiarton^ON^CA^3^^YVV^Wiarton^^A
@@ -10807,8 +10807,8 @@ YYG^Charlottetown^PE^CA^2^^YYG^Charlottetown^5786^A
 YYH^Taloyoak^NU^CA^5^^YYH^Taloyoak^^A
 YYI^Rivers^MB^CA^4^^YYI^Rivers^^A
 YYJ^Victoria^BC^CA^6^^YWH^Inner Harbour SPB^5761^A
-YYJ^Victoria^BC^CA^6^^YYJ^Metropolitan Area^^C
 YYJ^Victoria^BC^CA^6^^YYJ^International^5788^A
+YYJ^Victoria^BC^CA^6^^YYJ^Metropolitan Area^^C
 YYL^Lynn Lake^MB^CA^4^^YYL^Lynn Lake^5789^A
 YYM^Cowley^AB^CA^5^^YYM^Cowley^^A
 YYN^Swift Current^SK^CA^4^A^YYN^Swift Current^5790^A
