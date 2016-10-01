@@ -795,6 +795,7 @@ air-lao-airlines-v1^^^^LAO^QV^627^Lao Airlines^^^^^^13727^en|Lao Airlines|^^air-
 air-lao-central-airlines-v1^1^2010-01-01^2014-12-31^LKA^LF^971^Lao Central^^^^^http://en.wikipedia.org/wiki/Lao_Central_Airlines^^en|Lao Central|=sign|NAKLAO|^VTE^air-lao-central-airlines^1
 air-lao-skyway-v1^1^2002-01-01^2013-12-31^LLL^LK^0^Lao Air^^^^^http://en.wikipedia.org/wiki/Lao_Skyway^^en|Lao Air|h=en|Lao Skyway|p^VTE^air-lao-skyway^1
 air-lao-skyway-v2^^2014-01-01^^LLL^LK^0^Lao Skyway^^^^^http://en.wikipedia.org/wiki/Lao_Skyway^918^en|Lao Air|h=en|Lao Skyway|p^VTE^air-lao-skyway^2
+air-latam-cargo-brasil-v1^^1995-01-01^^LTG^M3^0^LATAM Cargo Brasil^^^^^http://en.wikipedia.org/wiki/LATAM_Cargo_Brasil^171^en|LATAM Cargo Brasil|p=en|Aerolíneas Brasileiras S.A.|h=abbr|ABSA|h^VCP^air-latam-cargo-brasil^1
 air-latpass-airlines-v1^^^^LTP^QJ^0^Latpass Airlines^^^^^^^en|Latpass Airlines|^^air-latpass-airlines^1
 air-lc-busre-v1^^1993-01-01^^^W4^107^LC Perú^LC Busre^^^^http://en.wikipedia.org/wiki/LC_Per%C3%BA^13699^en|LC Perú|=en|LC Busre|^^air-lc-busre^1
 air-lepl-v1^^^^^LB^0^Lepl^LAB^^^^^1682^en|Lepl|=en|LAB|^^air-lepl^1
@@ -911,7 +912,7 @@ air-nice-helicopteres-v1^1^^2014-12-31^^JX^179^Nice Helicopteres^^^^^^^en|Nice H
 air-niger-airlines-v1^^2014-01-01^^NIN^6N^720^Niger Airlines^^^^^^419^en|Niger Airlines|^NIM^air-niger-airlines^1
 air-niger-airways-v1^^2016-08-01^^^NJ^0^Niger Airways^^^^^^^en|Niger Airways|^NIM^air-niger-airways^1
 air-nigeria-airways-v1^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^http://en.wikipedia.org/wiki/Nigeria_Airways^^en|Nigeria Airways|^^air-nigeria-airways^1
-air-nigerian-eagle-v1^^^^NIG^NG^708^Aero Contractors Company Nigeria^^^^^^^en|Aero Contractors Company Nigeria|^^air-nigerian-eagle^1
+air-nigerian-eagle-v1^^1959-01-01^^NIG^NG^708^Aero Contractors^^^^^http://en.wikipedia.org/wiki/Aero_Contractors_(Nigeria)^^en|Aero Contractors|^LOS^air-nigerian-eagle^1
 air-niki-v1^^2003-01-01^^NLY^HG^0^Niki^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Niki_%28airline%29^24712^en|Niki|^^air-niki^1
 air-nile-air-v1^^^^NIA^NP^325^Nile Air^Nile Air^^^^^4035^en|Nile Air|=en|Nile Air|^^air-nile-air^1
 air-nok-air-v1^^^^^DD^0^Nok Air^^^^^^67050^en|Nok Air|^^air-nok-air^1
@@ -924,7 +925,7 @@ air-nordic-regional-airlines-v1^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^N
 air-nord-wind-v1^^^^NWS^N4^0^Nord Wind^^^^^^^en|Nord Wind|^^air-nord-wind^1
 air-norfolk-air-v1^1^2006-05-01^2012-02-26^NLK^N5^0^Norfolk Air^^^^^http://en.wikipedia.org/wiki/Norfolk_Air^^en|Norfolk Air|^^air-norfolk-air^1
 air-north-american-airlines-v1^1^1989-01-01^2014-06-09^NAO^NA^455^North American Airlines^^^^^http://en.wikipedia.org/wiki/North_American_Airlines^^en|North American Airlines|=sign|NORTH AMERICAN|^BWI=JFK^air-north-american-airlines^1
-air-north-flying-v1^^2014-01-01^^^M3^0^North Flying^^^^^^171^en|North Flying|^^air-north-flying^1
+air-north-flying-v1^^2014-01-01^^NFA^^0^North Flying^^^^^http://en.wikipedia.org/wiki/North_Flying^^en|North Flying|^AAL^air-north-flying^1
 air-northwest-airlines-v1^^^^^NW^0^Northwest Airlines^Nwest Airlines^^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1
 air-northwestern-air-lease-v1^^^^PLR^J3^0^Northwestern Air Lease^Nw Air Lease^^^^^4345^en|Northwestern Air Lease|=en|Nw Air Lease|^^air-northwestern-air-lease^1
 air-north-wright-air-v1^^^^^HW^0^North Wright Air^North Wright^^^^^6858^en|North Wright Air|=en|North Wright|^^air-north-wright-air^1
