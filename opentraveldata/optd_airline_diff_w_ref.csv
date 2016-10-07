@@ -1376,7 +1376,7 @@ TG^2^<>Thai
 TGU^1^Transportes Aéreos Guatemaltecos<>Transportes Aereos
 TGU^2^TAG<>L A D E
 TGW^1^Tigerair<>Tiger Airways
-TGW^2^Tiger Airways Singapore<>
+TGW^2^<>Tiger Airways
 THA^1^Thai Airways<>Thai Airways International
 THA^2^<>Thai
 THD^2^Rheintalflg<>Thai Smile
@@ -1397,12 +1397,14 @@ TP^1^TAP Portugal<>Tap Portugal
 TP^2^<>Tap Portugal
 TPC^2^<>Aircaledoni
 TR^1^Tigerair<>Tiger Airways
-TR^2^Tiger Airways Singapore<>
+TR^2^<>Tiger Airways
 TRA^2^<>Transavia
 TS^2^<>Air Transat
 TSC^2^<>Air Transat
 TSG^2^<>Trans Air
 TSO^2^<>Transaero
+TT^1^Tigerair Australia<>Tiger Airways Australia
+TT^2^<>Air Lithuania
 TTF^2^<>Infini Travel
 TUA^2^<>Turkmenistan
 TUI^1^TUIfly<>Tuifly

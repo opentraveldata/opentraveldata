@@ -139,6 +139,7 @@ air-airline-service-v1^^^^^ZZ^0^Airline Service^^^^^^^en|Airline Service|^^air-a
 air-airlines-png-v1^^1987-01-01^^^CG^626^Airlines PNG^^^^^http://en.wikipedia.org/wiki/Airlines_PNG^20506^en|Airlines PNG|^^air-airlines-png^1
 air-airline-taimyr-v1^^2009-01-01^^TYA^Y7^476^NordStar^Taimyr Air Company^^^^http://en.wikipedia.org/wiki/NordStar^4349^en|NordStar|=en|Taimyr Air Company|^^air-airline-taimyr^1
 air-airlink-papua-new-guinea-v1^1^1990-06-01^2007-07-30^^ND^^Airlink (Papua New Guinea)^^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^^en|Airlink (Papua New Guinea)|^^air-airlink-papua-new-guinea^1
+air-air-lithuania-v1^1^1991-09-13^2005-11-23^KLA^TT^0^Air Lithuania^^^^^http://en.wikipedia.org/wiki/Air_Lithuania^^en|Air Lithuania|=sign|KAUNAS|^KUN^air-air-lithuania^1
 air-air-lituanica-v1^1^2013-05-01^2015-05-22^LTU^LT^431^Air Lituanica^^^^^http://en.wikipedia.org/wiki/Air_Lituanica^^en|Air Lituanica|^VNO^air-air-lituanica^1
 air-air-luxor-v1^1^1988-01-01^2006-09-30^LXG^L8^0^Air Luxor^^^^^http://en.wikipedia.org/wiki/Air_Luxor^^en|Air Luxor|^^air-air-luxor^1
 air-air-macau-v1^^1995-11-09^^AMU^NX^675^Air Macau^^^^^http://en.wikipedia.org/wiki/Air_Macau^26869^en|Air Macau|=pny|Àomén Hángkōng|=wuu|澳门航空|=yue|澳門航空|^^air-air-macau^1
@@ -1229,10 +1230,10 @@ air-tibet-airlines-v1^1^2010-03-01^2013-12-31^TBA^TV^88^Tibet Airlines^^^^^http:
 air-tibet-airlines-v2^1^2014-01-01^2014-02-01^TBA^^^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^2
 air-tibet-airlines-v3^^2014-02-02^^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^14578^en|Tibet Airlines|=sign|TIBET|^CTU^air-tibet-airlines^3
 air-tica-air-international-v1^^2014-01-01^^^RI^0^Air Costa Rica^^^^^http://en.wikipedia.org/wiki/Air_Costa_Rica^^en|Air Costa Rica|p=en|Tica Air International|h^SJO^air-tica-air-international^1
-air-tiger-air-australia-v1^^^^^TT^0^Tiger Airways Australia^Air Lithuania^^^^^27740^en|Tiger Airways Australia|=en|Air Lithuania|^^air-tiger-air-australia^1
+air-tiger-air-australia-v1^^2007-11-23^^TGW^TT^0^Tigerair Australia^^^^^http://en.wikipedia.org/wiki/Tigerair_Australia^27740^en|Tigerair Australia|^BNE=MEL=SYD^air-tiger-air-australia^1
 air-tiger-air-philippines-v1^^1993-01-01^^SRQ^DG^931^Cebgo^^^^^http://en.wikipedia.org/wiki/Cebgo^31901^abbr|SEAir|h=en|Cebgo|p=en|South East Asian Airlines|h=en|Tigerair Philippines|h^CEB=MNL^air-tiger-air-philippines^1
-air-tiger-air-taiwan-v1^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^5549^en|Tigerair Taiwan|^^air-tiger-air-taiwan^1
-air-tiger-air-v1^^2003-12-12^^TGW^TR^388^Tigerair^Tiger Airways Singapore^^^^http://en.wikipedia.org/wiki/Tigerair^33165^en|Tigerair|=en|Tiger Airways Singapore|^^air-tiger-air^1
+air-tiger-air-taiwan-v1^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^5549^en|Tigerair Taiwan|^TPE^air-tiger-air-taiwan^1
+air-tiger-air-v1^^2003-12-12^^TGW^TR^388^Tigerair^^^^^http://en.wikipedia.org/wiki/Tigerair^33165^en|Tigerair|ps=en|Tiger Airways Singapore|=sign|GO CAT|^SIN^air-tiger-air^1
 air-tik-systems-v1^^^^^T1^0^Tik Systems^^^^^^^en|Tik Systems|^^air-tik-systems^1
 air-titan-airways-v1^^^^^ZT^0^Titan Airways^^^^^^104^en|Titan Airways|^^air-titan-airways^1
 air-tnt-airways-v1^^^^TAY^3V^756^Tnt Airways^Viking Air^^^^^^en|Tnt Airways|=en|Viking Air|^^air-tnt-airways^1
