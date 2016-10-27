@@ -99,6 +99,8 @@ air-air-contact-v1^^^^^KI^0^Air Contact^^^^^^16^en|Air Contact|^^air-air-contact
 air-air-corsica-v1^^2010-01-01^^CCM^XK^146^Air Corsica^^^^^http://en.wikipedia.org/wiki/Air_Corsica^18982^en|Air Corsica|^AJA^air-air-corsica^1
 air-air-cote-d-ivoire-v1^^^^^HF^483^Air Cote D Ivoire^Aircoteivoire^^^^^15318^en|Air Cote D Ivoire|=en|Aircoteivoire|^^air-air-cote-d-ivoire^1
 air-air-creebec-v1^^^^CRQ^YN^219^Air Creebec^Air Creebec^^^^^10498^en|Air Creebec|=en|Air Creebec|^^air-air-creebec^1
+air-air-djibouti-v1^1^1963-01-01^2002-12-31^^IV^0^Air Djibouti^^^^^http://en.wikipedia.org/wiki/Air_Djibouti^^en|Air Djibouti|p=en|Red Sea Airlines|^JIB^air-air-djibouti^1
+air-air-djibouti-v2^^2015-01-01^^^IV^0^Air Djibouti^^^^^http://en.wikipedia.org/wiki/Air_Djibouti^6^en|Air Djibouti|p=en|Red Sea Airlines|^JIB^air-air-djibouti^2
 air-air-dolomiti-v1^^^^DLA^EN^101^Air Dolomiti^Air Dolomiti^^^^^23540^en|Air Dolomiti|=en|Air Dolomiti|^^air-air-dolomiti^1
 air-air-east-v1^^^^^ER^0^Air East^^^^^^^en|Air East|^^air-air-east^1
 air-aires-v1^^1981-01-01^^ARE^4C^35^LATAM Colombia^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/LATAM_Colombia^^en|LATAM Colombia|p=en|LAN Colombia|h=en|Aerovías de Integración Regional|h=abbr|AIRES|h=ko|란 콜롬비아|^BOG^air-aires^1
@@ -1321,7 +1323,7 @@ air-volga-dnepr-airline-v1^^^^^VI^412^Volga Dnepr Airline^^^^^^^en|Volga Dnepr A
 air-volotea-v1^^2012-03-01^^VOL^V7^712^Volotea^^^^^http://en.wikipedia.org/wiki/Volotea^33829^en|Volotea|^BOD=BRI=NAP=NTE=OLB=PMI=PMO=SXB=TLS=VCE=VRN^air-volotea^1
 air-vueling-airlines-v1^^2004-01-01^^VLG^VY^30^Vueling^^^^^http://en.wikipedia.org/wiki/Vueling^189952^en|Vueling|^^air-vueling-airlines^1
 air-vuelos-economicos-v1^^^^VAR^VU^0^Vuelos Economicos^^^^^^863^en|Vuelos Economicos|^^air-vuelos-economicos^1
-air-vvb-aviation-malta-v1^^2015-01-01^^SGO^IV^0^VVB Aviation Malta^^^^^^6^en|VVB Aviation Malta|^MLA^air-vvb-aviation-malta^1
+air-vvb-aviation-malta-v1^1^2015-01-01^2015-12-31^SGO^IV^0^VVB Aviation Malta^^^^^^^en|VVB Aviation Malta|^MLA^air-vvb-aviation-malta^1
 air-warbelows-air-ventures-v1^^^^VNA^4W^0^Warbelows Air Ventures^^^^^^8109^en|Warbelows Air Ventures|^^air-warbelows-air-ventures^1
 air-wasaya-airways-v1^1^1989-01-01^2014-08-31^WSG^WT^0^Wasaya Airways^^^^^http://en.wikipedia.org/wiki/Wasaya_Airways^^en|Wasaya Airways|^YQT^air-wasaya-airways^1
 air-wasaya-airways-v2^^2014-09-01^^WSG^^0^Wasaya Airways^^^^^http://en.wikipedia.org/wiki/Wasaya_Airways^^en|Wasaya Airways|^YQT^air-wasaya-airways^2
