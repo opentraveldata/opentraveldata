@@ -586,7 +586,7 @@ air-fly-excellent-v1^1^2007-01-01^2008-12-31^FXL^F3^0^Fly Excellent^^^^^^^en|Fly
 air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^37468^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
 air-fly-georgia-v1^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^http://en.wikipedia.org/wiki/Fly_Georgia^^en|Fly Georgia|^^air-fly-georgia^1
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^1090^en|Fly Jamaica Airways|^KIN^air-fly-jamaica-airways^1
-air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^976^en|Fly Kiss|^LRT=LYS^air-fly-kiss^1
+air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^976^en|Fly Kiss|^BES=CFE^air-fly-kiss^1
 air-fly-one-moldova-v1^^2013-01-01^^FIA^5F^130^Fly One^^^^^http://en.wikipedia.org/wiki/Fly_One_S.R.L.^3611^en|Fly One|^KIV^air-fly-one-moldova^1
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^http://en.wikipedia.org/wiki/Fly_Salone^^en|Fly Salone|^^air-fly-salone^1
 air-flywell-airlines-v1^1^1995-01-01^2003-12-12^FEM^YZ^0^Zimbabwe Airlink^Flywell Airlines^^^P^http://en.wikipedia.org/wiki/Zimbabwe_Airlink^^en|Zimbabwe Airlink|=en|Flywell Airlines|^^air-flywell-airlines^1
@@ -1095,7 +1095,7 @@ air-shun-tak-china-v1^^^^^8S^802^Shun Tak China^^^^^^^en|Shun Tak China|^^air-sh
 air-shuttle-america-v1^^1995-01-01^^TCF^S5^0^Shuttle America^^^^^http://en.wikipedia.org/wiki/Shuttle_America^61290^en|Shuttle America|^^air-shuttle-america^1
 air-siam-air-transport-v1^1^2014-01-01^2016-09-30^SQM^O8^874^Siam Air^^^^^http://en.wikipedia.org/wiki/Siam_Air^^en|Siam Air|^DMK^air-siam-air-transport^1
 air-siam-ga-v1^1^2002-01-01^2014-12-31^SGN^5E^0^SGA Airlines^^^^^http://en.wikipedia.org/wiki/SGA_Airlines^^en|SGA Airlines|ps=en|Siam GA|s=en|Siam General Aviation|=th|บริษัท สยาม เจนเนอรัล เอวิเอชั่น จำกัด|^DMK^air-siam-ga^1
-air-siavia-v1^^2012-01-01^^SVB^KT^0^SiAvia^^^^^http://www.siavia.com^976^en|SiAvia|^LJU^air-siavia^1
+air-siavia-v1^1^2012-01-01^2015-12-31^SVB^KT^0^SiAvia^^^^^http://www.siavia.com^^en|SiAvia|^LJU^air-siavia^1
 air-siberia-airlines-v1^^1992-05-01^^SBI^S7^421^S7 Airlines^^OneWorld^Member^^http://en.wikipedia.org/wiki/S7_Airlines^73474^en|S7 Airlines|^^air-siberia-airlines^1
 air-sichuan-airlines-v1^^1988-01-01^^CSC^3U^876^Sichuan Airlines^^^^^http://en.wikipedia.org/wiki/Sichuan_Airlines^177738^en|Sichuan Airlines|^^air-sichuan-airlines^1
 air-silkair-v1^^1992-01-01^^SLK^MI^629^SilkAir^^^^^http://en.wikipedia.org/wiki/SilkAir^43025^en|SilkAir|^^air-silkair^1
