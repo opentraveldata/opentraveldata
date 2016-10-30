@@ -133,7 +133,7 @@
 6O^1^Orbest<>Orbest Ghd
 6P^2^<>Clubair
 6Q^2^Slovak Arlines<>Slovak Arlns
-6S^2^<>Kato Airlines
+6S^2^<>Saudi Gulf
 6T^2^<>Air Mandalay
 6U^1^<>Acg Air Cargo Germany
 6U^2^<>Air Ukraine
@@ -672,6 +672,7 @@ GO^1^Go<>
 GOW^1^GoAir<>Go Airlines
 GOZ^2^<>Groznyy Avia
 GP^1^APG Airlines<>Apg Airlines
+GP^2^<>Apg Airlines
 GPD^2^<>Tradewind
 GQ^2^<>Sky Express
 GR^2^<>Aurigny Air
@@ -801,6 +802,7 @@ JJ^1^LATAM Brasil<>Latam Airlines Brasil
 JJ^2^<>Tam Linh Aer
 JJA^2^<>Jeju Air
 JL^2^JAL<>J A L
+JN^1^<>New Livingston
 JNA^2^<>Jin Air
 JP^2^<>Adria
 JQ^2^Jetstar Airways<>Jetstar
@@ -963,7 +965,6 @@ MD^2^<>Madagascar
 MDA^2^<>Mandarin Air
 MDG^2^<>Madagascar
 MDL^1^<>Mandala Airlines
-MDL^2^<>Pt Mandala
 ME^2^<>Middle East
 MEA^2^<>Middle East
 MEP^2^<>Republic Airl
@@ -1047,6 +1048,7 @@ NRS^1^Norwegian Air UK<>Norwegian Air Uk
 NRS^2^<>Norwegian Uk
 NSE^1^SATENA<>Satena
 NT^2^<>Binter Can
+NVL^1^<>New Livingston
 NVR^1^Novair<>Nova Airlines
 NVR^2^<>Northcoast Av
 NW^1^Northwest Airlines<>
@@ -1205,8 +1207,8 @@ RG^2^<>Rotana Jet
 RGR^2^<>Gromovairline
 RH^1^Robin Hood Aviation<>
 RI^1^Air Costa Rica<>Mandala Airlines
-RI^2^<>Pt Mandala
 RIV^1^APG Airlines<>Apg Airlines
+RIV^2^<>Apg Airlines
 RJD^2^<>Rotana Jet
 RK^1^Region Airline<>
 RLA^1^HOP Airlinair<>Hop Airlinair
@@ -1294,6 +1296,8 @@ SKV^1^<>Sky Regional Airlines
 SKV^2^<>Kavminvodyav
 SKW^1^SkyWest Airlines<>Skywest Airlines
 SKW^2^<>Sky West
+SL^1^Thai Lion Air<>Thai Lion Mentari
+SL^2^Rio Sul<>Thai Lion Air
 SLI^1^Aeroméxico Connect<>Aerolitoral
 SLI^2^Aeromexico Connect<>
 SLK^1^SilkAir<>Silkair

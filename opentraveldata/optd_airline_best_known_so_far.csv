@@ -264,7 +264,7 @@ air-blue1-v1^^1988-01-01^^BLF^KF^142^Blue1^^^^^http://en.wikipedia.org/wiki/Blue
 air-blue-air-airline-v1^^2004-12-01^^BMS^0B^0^Blue Air^^^^^http://en.wikipedia.org/wiki/Blue_Air^en|Blue Air|^^air-blue-air-airline^1
 air-bluebird-airways-v1^^2008-01-01^^BBG^BZ^0^Bluebird Airways^^^^^http://en.wikipedia.org/wiki/Bluebird_Airways^en|Bluebird Airways|^^air-bluebird-airways^1
 air-bluebird-cargo-v1^^2001-03-01^^BBD^BF^^Bluebird Cargo^^^^C^http://en.wikipedia.org/wiki/Bluebird_Cargo^en|Bluebird Cargo|^^air-bluebird-cargo^1
-air-blue-islands-v1^^^^BCI^SI^821^Blue Islands^Blue Islands^^^^^en|Blue Islands|=en|Blue Islands|^^air-blue-islands^1
+air-blue-islands-v1^^1999-01-01^^BCI^SI^821^Blue Islands^^^^^http://en.wikipedia.org/wiki/Blue_Islands^en|Blue Islands|^GCI=JER^air-blue-islands^1
 air-blue-panorama-airlines-v1^^^^BPA^BV^4^Blue Panorama Airlines^Blue Panorama^^^^^en|Blue Panorama Airlines|=en|Blue Panorama|^^air-blue-panorama-airlines^1
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^http://en.wikipedia.org/wiki/BMI_Regional^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^http://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^en|Boliviana de Aviación (BoA)|^^air-boliviana-de-aviacion^1
@@ -631,7 +631,7 @@ air-lineas-aereas-del-estado-v1^^1940-01-01^^LDE^^^LADE^^^^^http://en.wikipedia.
 air-link-v1^^^^^V6^0^Air Link^^^^^^en|Air Link|^^air-link^1
 air-links-air-v1^^1983-08-03^^LNQ^^^Links Air^^^^^http://en.wikipedia.org/wiki/Links_Air^en|Links Air|^^air-links-air^1
 air-lion-airlines-v1^^2000-06-30^^LNI^JT^990^Lion Air^^^^^http://en.wikipedia.org/wiki/Lion_Air^en|Lion Air|^^air-lion-airlines^1
-air-lion-air-v1^^^^^SL^0^Thai Lion Mentari^Rio Sul^^^^^en|Thai Lion Mentari|=en|Rio Sul|^^air-lion-air^1
+air-lion-air-v1^^2013-12-04^^TLM^SL^310^Thai Lion Air^Rio Sul^^^^http://en.wikipedia.org/wiki/Thai_Lion_Air^en|Thai Lion Air|p=en|Thai Lion Mentari|=en|Rio Sul|=ja|タイ・ライオン・エア|=ko|타이 라이온 에어|=sign|MENTARI|=th|ไทยไลอ้อนแอร์|=zh|泰國獅子航空|^DMK^air-lion-air^1
 air-loganair-v1^^^^^LM^682^Loganair^Livingston^^^^^en|Loganair|=en|Livingston|^^air-loganair^1
 air-longjiang-airlines-v1^^2016-08-01^^SNG^LT^867^Longjiang Airlines^^^^^^en|Longjiang Airlines|^HRB^air-longjiang-airlines^1
 air-lot-v1^^1929-01-01^^LOT^LO^80^LOT Polish Airlines^^^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^en|LOT Polish Airlines|=en|LOT|ps^WAW^air-lot^1
@@ -702,7 +702,6 @@ air-nesma-airlines-company-v1^^2016-08-01^^^NA^646^Nesma Airlines^^^^^http://en.
 air-nesma-airlines-v1^^2010-07-18^^NMA^NE^477^Nesma Airlines^^^^^http://en.wikipedia.org/wiki/Nesma_Airlines^en|Nesma Airlines|^CAI^air-nesma-airlines^1
 air-netjets-aviation-v1^^^^^1I^0^Netjets Aviation^^^^^^en|Netjets Aviation|^^air-netjets-aviation^1
 air-new-england-airlines-v1^^^^NEA^EJ^0^New England Airlines^New Englan^^^^^en|New England Airlines|=en|New Englan|^^air-new-england-airlines^1
-air-new-livingston-v1^^^^NVL^JN^401^New Livingston^Newlivingston^^^^^en|New Livingston|=en|Newlivingston|^^air-new-livingston^1
 air-nextjet-v1^^^^NTJ^2N^121^Nextjet^Nextjet^^^^^en|Nextjet|=en|Nextjet|^^air-nextjet^1
 air-nordic-regional-airlines-v1^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^Norra^^^^http://en.wikipedia.org/wiki/Nordic_Regional_Airlines^en|Nordic Regional Airlines|=en|Norra|^^air-nordic-regional-airlines^1
 air-niger-airlines-v1^^2014-01-01^^NIN^6N^720^Niger Airlines^^^^^^en|Niger Airlines|^NIM^air-niger-airlines^1
@@ -833,7 +832,7 @@ air-sata-air-acores-v1^^1947-06-15^^RZO^SP^737^SATA Air Açores^^^^^http://en.wi
 air-sata-v1^^1991-01-01^^RZO^S4^331^SATA International^^^^^http://en.wikipedia.org/wiki/SATA_International^en|SATA International|^^air-sata^1
 air-satena-v1^^1962-01-01^^NSE^9R^0^SATENA^^^^^http://en.wikipedia.org/wiki/SATENA^en|SATENA|^^air-satena^1
 air-saudi-arabian-airlines-v1^^1945-01-01^^SVA^SV^65^Saudia^Saudi Arabian Airlines^^Member^^http://en.wikipedia.org/wiki/Saudia^en|Saudia|=en|Saudi Arabian Airlines|^^air-saudi-arabian-airlines^1
-air-saudi-gulf-airlines-v1^^2016-09-01^^SGQ^6S^571^Saudi Gulf Airlines^^^^^http://en.wikipedia.org/wiki/Saudigulf^ar|السعودية الخليجية|=en|Saudi Gulf Airlines|^DMM^air-saudi-gulf-airlines^1
+air-saudi-gulf-airlines-v1^^2016-09-01^^SGQ^6S^571^Saudi Gulf Airlines^^^^^http://en.wikipedia.org/wiki/SaudiGulf_Airlines^ar|السعودية الخليجية|=en|Saudi Gulf Airlines|^DMM^air-saudi-gulf-airlines^1
 air-sayakhat-airlines-v1^^^^SAH^W7^271^Sayakhat Airlines^Sayakhat Air^^^^^en|Sayakhat Airlines|=en|Sayakhat Air|^^air-sayakhat-airlines^1
 air-scandinavian-airlines-v1^^1946-08-01^^SAS^SK^117^Scandinavian Airlines^^^Member^^http://en.wikipedia.org/wiki/Scandinavian_Airlines^en|Scandinavian Airlines|=en|SAS|ps^^air-scandinavian-airlines^1
 air-scat-airlines-v1^^1997-01-01^^VSV^DV^655^SCAT Airlines^^^^^http://en.wikipedia.org/wiki/SCAT_Airlines^en|SCAT Airlines|^^air-scat-airlines^1
