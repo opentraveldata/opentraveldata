@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import getopt, sys, csv
+import getopt, sys, re, csv
 import networkx as nx
 
 #
@@ -17,10 +17,11 @@ def usage (script_name, usage_doc):
     print (usage_doc)
     print ("")
     print ("Options:")
-    print ("  -h, --help    : outputs this help and exits")
-    print ("  -v, --verbose : verbose output (debugging)")
-    print ("  -o <path>     : path to output file (if blank, stdout)")
-    print ("  <path>        : input file (if blank, stdin)")
+    print ("  -h, --help                 : outputs this help and exits")
+    print ("  -v, --verbose              : verbose output (debugging)")
+    print ("  -o, --output <path>        : path to output file")
+    print ("  -a, --airline-por <airline POR file-path> : File of best known POR details")
+    print ("  -b, --best-known-por <OPTD best known POR file-path> : File of best known POR details")
     print ("")
 	
 
@@ -33,25 +34,22 @@ def handle_opt (usage_doc):
     """
 
     try:
-        opts, args = getopt.getopt (sys.argv[1:], "hv:o:",
-                                    ["help", "verbose", "output"])
+        opts, args = getopt.getopt (sys.argv[1:], "hv:o:a:b:",
+                                    ["help", "verbose", "output",
+                                     "airline-por", "best-known-por"])
 
     except (getopt.GetoptError, err):
         # Print help information and exit. It will print something like
-        # "option -a not recognized"
+        # "option -d not recognized"
         print (str (err))
         usage (sys.argv[0], usage_doc)
         sys.exit(2)
 	
     # Options
     verboseFlag = False
-    input_filename = ''
-    output_filename = ''
-    output_file = sys.stdout #'/dev/stdout'
-
-    # Input stream/file
-    if len (args) != 0:
-        input_filename = args[0]
+    por_airline_filename = '../opentraveldata/optd_airline_por_rcld.csv'
+    por_bestknown_filename = '../opentraveldata/optd_por_best_known_so_far.csv'
+    output_filename = '../opentraveldata/ref_airport_pageranked_new.csv'
 
     # Handling
     for o, a in opts:
@@ -60,38 +58,76 @@ def handle_opt (usage_doc):
             sys.exit()
         elif o in ("-v", "--verbose"):
             verboseFlag = True
+        elif o in ("-a", "--airline-por"):
+            por_airline_filename = a
+        elif o in ("-b", "--best-known-por"):
+            por_bestknown_filename = a
         elif o in ("-o", "--output"):
             output_filename = a
         else:
             assert False, "Unhandled option"
 
-    # Output file
-    if (output_filename != ''):
-        output_file = open (output_filename, 'w')
-
     # 
-    print ("Input stream/file: '" + input_filename + "'")
+    print ("Stream/file of best known POR details: '" + por_airline_filename + "'")
+    print ("Stream/file of airline flights: '" + por_bestknown_filename + "'")
     print ("Output stream/file: '" + output_filename + "'")
-    return (verboseFlag, input_filename, output_file)
+    return (verboseFlag, por_airline_filename, por_bestknown_filename, output_filename)
 
+#
+# Store the POR details
+#
+def storePOR (por_dict, por_code, por_type):
+    if not (por_code in por_dict):
+        por_dict[por_code] = dict()
+        por_dict[por_code][por_type] = {'iata_code': por_code, 'loc_type': por_type}
+    
+    return
+#
+# Extract the best known details of POR from the OpenTravelData CSV file
+#
+def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
+    """
+    Derive a dictionary of all the POR referenced within the OpenTravelData
+    project as 'best known so far' (bksf)
+    """
+
+    # Initialize the dictionary of POR
+    por_dict = dict()
+    
+    # Browse the input file
+    # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
+    pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
+    with open (optd_por_bestknown_filename, newline='') as csvfile:
+        file_reader = csv.DictReader (csvfile, delimiter='^')
+        for line in file_reader:
+            # Extract the POR type from the primary key
+            por_pk = line['pk']
+            match = pk_re.match (por_pk)
+            por_type = match.group (2)
+
+            # Extract the IATA code
+            por_code = line['iata_code']
+
+            # Store the POR
+            storePOR (por_dict, por_code, por_type)
+            storePOR (por_dict, por_code, por_type)
+
+    return (por_dict)
 
 #
 # Generate a directional graph from the CSV file
 #
-def deriveGraph (optd_airline_por_filename, verboseFlag):
+def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
     """
     Derive two NetworkX directional graphs from the given input file:
      - One with, as weight, the monthly average number of seats
      - One with, as weight, the monthly flight frequency
     """
 
-    # Initialize the dictionary of POR
-    por_dict = dict()
-    
     # Initialise the NetworkX directional graphs (DiGraph)
     dg_seats = nx.DiGraph(); dg_freq = nx.DiGraph()
 
-    # Browse the input file (may be stdin)
+    # Browse the input file
     with open (optd_airline_por_filename, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for line in file_reader:
@@ -100,22 +136,35 @@ def deriveGraph (optd_airline_por_filename, verboseFlag):
             apt_dst = line['apt_dst']
 
             # Store the POR
+            errorMsg = "Error: POR in flight schedule, but not in OpenTravelData list of best known POR: "
+            porExists = True
             if not (apt_org in por_dict):
-                por_dict[apt_org] = dict()
+                porExists = False
+                sys.stderr.write (errorMsg + apt_org + "\n")
             if not (apt_dst in por_dict):
-                por_dict[apt_dst] = dict()
+                porExists = False
+                sys.stderr.write (errorMsg + apt_dst + "\n")
 
-            # Extract the average number of seats
-            seats = line['seats_mtly_avg']
+            if porExists == True:
+                # Extract the average number of seats
+                seats = line['seats_mtly_avg']
 
-            # Extract the average frequency
-            freq = line['freq_mtly_avg']
+                # Extract the average frequency
+                freq = line['freq_mtly_avg']
 
-            # Store the weights into the corresponding schedules
-            dg_seats.add_edge (apt_org, apt_dst, weight = float(seats))
-            dg_freq.add_edge (apt_org, apt_dst, weight = float(freq))
+                # Retrieve the POR dictionaries
+                apt_org_dict = por_dict[apt_org]
+                apt_dst_dict = por_dict[apt_dst]
+                
+                # Store the weights for the corresponding flight legs
+                for apt_org_type in apt_org_dict:
+                    apt_org_pk = (apt_org, apt_org_type)
+                    for apt_dst_type in apt_dst_dict:
+                        apt_dst_pk = (apt_dst, apt_dst_type)
+                        dg_seats.add_edge (apt_org_pk, apt_dst_pk, weight = float(seats))
+                        dg_freq.add_edge (apt_org_pk, apt_dst_pk, weight = float(freq))
 
-    return (por_dict, dg_seats, dg_freq)
+    return (dg_seats, dg_freq)
 
 
 #
@@ -136,7 +185,7 @@ def normalizePR (por_dict, prTypeStr, prdict, verboseFlag):
     # print ('Nb of legs: ' + str(nb_of_por))
 
     # Derive the maximum PageRank value
-    for (idx_por, page_rank) in prdict.items():
+    for (idx_por_pk, page_rank) in prdict.items():
         # Update the maximum rank, if needed
         if page_rank > rank_max: rank_max = page_rank
 
@@ -144,19 +193,21 @@ def normalizePR (por_dict, prTypeStr, prdict, verboseFlag):
     # print ('Max PageRank value: ' + str(rank_max))
 
     # Store the PageRank values into the global POR
-    for (idx_por, page_rank) in prdict.items():
+    for (idx_por_pk, page_rank) in prdict.items():
         # Normalise the PageRank value
         normalised_page_rank = page_rank / rank_max
 
         # Store the normalized PageRank value
-        por_dict[idx_por][prTypeStr] = normalised_page_rank
+        idx_por = idx_por_pk[0]
+        idx_por_type = idx_por_pk[1]
+        por_dict[idx_por][idx_por_type][prTypeStr] = normalised_page_rank
 
     return
 
 #
 # Print the PageRank values into the given file
 #
-def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_file, verboseFlag):
+def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, verboseFlag):
     """
     Generate a CSV data file with, for every POR, two PageRank values:
      - One based on the monthly average number of seats
@@ -168,19 +219,21 @@ def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_file, verb
     normalizePR (por_dict, "pr_seats", prdict_seats, verboseFlag)
     normalizePR (por_dict, "pr_freq", prdict_freq, verboseFlag)
 
-    # Write the header
-    headerStr = "iata_code^pr_seats^pr_freq"
-    output_file.write (headerStr + '\n')
+    # Dump the details into the given CSV output file
+    fieldnames = ['iata_code', 'loc_type', 'pr_seats', 'pr_freq']
+    with open (output_filename, 'w', newline='') as output_csv:
+        #
+        fileWriter = csv.DictWriter (output_csv, delimiter='^',
+                                     fieldnames = fieldnames)
 
-    # Dump the PageRank values
-    for (idx_por, pr_dict) in por_dict.items():
-        # Extract the seats-based PageRank value
-        pr_seats = pr_dict['pr_seats']
-        pr_freq = pr_dict['pr_freq']
+        # Write the header
+        fileWriter.writeheader()
 
-        # Dump the details into the given CSV output file
-        por_output_str = str(idx_por) + '^' + str(pr_seats) + '^' + str(pr_freq)
-        output_file.write (por_output_str + '\n')
+        # Browse the POR having a PageRank value and dump the details
+        for (idx_por, pr_dict_full) in por_dict.items():
+            for (idx_por_type, pr_dict) in pr_dict_full.items():
+                if 'pr_seats' in pr_dict:
+                    fileWriter.writerow (pr_dict)
 
     return
 
@@ -195,12 +248,15 @@ def main():
 
     # Parse command options
     usageStr = "That script derives the PageRank values for a flight schedule"
-    verboseFlag, input_file, output_file = handle_opt (usageStr)
+    (verboseFlag, por_airline_filename, por_bestknown_filename, output_filename) = handle_opt (usageStr)
 
+    # Extract the POR from OpenTravelData best known details
+    por_dict = extractBksfPOR (por_bestknown_filename, verboseFlag)
+    
     # Build directional graphs from the file of flight schedule:
     # - One with, as weight, the monthly average number of seats
     # - One with, as weight, the monthly flight frequency
-    (por_dict, dict_seats, dict_freq) = deriveGraph (input_file, verboseFlag)
+    (dict_seats, dict_freq) = deriveGraph (por_dict, por_airline_filename, verboseFlag)
 
     # Derive the PageRank values
     prdict_seats = nx.pagerank (dict_seats)
@@ -212,7 +268,7 @@ def main():
 
     # Dump the page ranked POR into the output file
     dump_page_ranked_por (por_dict, prdict_seats, prdict_freq,
-                          output_file, verboseFlag)
+                          output_filename, verboseFlag)
 
 
 #
