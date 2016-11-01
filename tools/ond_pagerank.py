@@ -127,17 +127,24 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
     Derive two NetworkX directional graphs from the given input file:
      - One with, as weight, the monthly average number of seats
      - One with, as weight, the monthly flight frequency
-    
-    IEV-A^IEV
-    IEV-C^IEV
-    CHI-C^CHI
-    DPA-A^CHI
-    MDW-A^CHI
-    ORD-A^CHI
-    PWK-A^CHI
-    RFD-A^CHI,RFD
 
-    
+    POR records, as appearing in the file of best known details:
+    FNL-A^FNL
+    FNL-C^FNL
+    CHI-C^CHI
+    RFD-A^CHI,RFD
+    RFD-C^RFD
+
+    Raw flight leg records, with their weights:
+    7Q^FNL^RFD^450.0
+
+    Extrapolated/rebuilt flight leg records:
+    7Q^FNL-C^FNL-A^450.0
+    7Q^FNL-A^RFD-A^450.0
+    7Q^RFD-A^CHI-C^450.0
+    7Q^RFD-A^RFD-C^450.0
+    And the derived graph:
+    FNL-C--450.0--FNK-A--450.0--RFD-A--450.0--{RFD-C,CHI-C}
     """
 
     # Initialise the NetworkX directional graphs (DiGraph)
@@ -152,7 +159,7 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
             apt_dst = line['apt_dst']
 
             # Store the POR
-            errorMsg = "Error: POR in flight schedule, but not in OpenTravelData list of best known POR: "
+            errorMsg = "Warning: POR in flight schedule, but not in OpenTravelData list of best known POR: "
             porExists = True
             if not (apt_org in por_dict):
                 porExists = False
@@ -187,6 +194,16 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
 
     return (dg_seats, dg_freq)
 
+#
+# Filter in only the fields to be dumped into the CSV file
+# ['iata_code', 'loc_type', 'pr_seats', 'pr_freq']
+#
+def filterOutFields (pr_dict):
+    pr_dict_fltd = {'iata_code': pr_dict['iata_code'],
+                    'loc_type': pr_dict['loc_type'],
+                    'pr_seats': pr_dict['pr_seats'],
+                    'pr_freq': pr_dict['pr_freq']}
+    return pr_dict_fltd
 
 #
 # Normalize the PageRank values, and store them into the global POR dictionary
@@ -254,7 +271,9 @@ def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, 
         for (idx_por, pr_dict_full) in por_dict.items():
             for (idx_por_type, pr_dict) in pr_dict_full.items():
                 if 'pr_seats' in pr_dict:
-                    fileWriter.writerow (pr_dict)
+                    # Filter out the fields not to be dumpred into the CSV file
+                    pr_dict_fltd = filterOutFields (pr_dict)
+                    fileWriter.writerow (pr_dict_fltd)
 
     return
 
