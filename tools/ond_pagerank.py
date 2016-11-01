@@ -76,10 +76,12 @@ def handle_opt (usage_doc):
 #
 # Store the POR details
 #
-def storePOR (por_dict, por_code, por_type):
+def storePOR (por_dict, por_code, por_type, por_cty_code_list):
     if not (por_code in por_dict):
         por_dict[por_code] = dict()
-        por_dict[por_code][por_type] = {'iata_code': por_code, 'loc_type': por_type}
+        por_dict[por_code][por_type] = {'iata_code': por_code,
+                                        'loc_type': por_type,
+                                        'cty_code_list': por_cty_code_list}
     
     return
 #
@@ -108,9 +110,12 @@ def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
             # Extract the IATA code
             por_code = line['iata_code']
 
+            # Extract the list of city codes
+            ctyCodeListStr = line['city_code']
+            por_cty_code_list = ctyCodeListStr.join (',')
+            
             # Store the POR
-            storePOR (por_dict, por_code, por_type)
-            storePOR (por_dict, por_code, por_type)
+            storePOR (por_dict, por_code, por_type, por_cty_code_list)
 
     return (por_dict)
 
@@ -122,6 +127,17 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
     Derive two NetworkX directional graphs from the given input file:
      - One with, as weight, the monthly average number of seats
      - One with, as weight, the monthly flight frequency
+    
+    IEV-A^IEV
+    IEV-C^IEV
+    CHI-C^CHI
+    DPA-A^CHI
+    MDW-A^CHI
+    ORD-A^CHI
+    PWK-A^CHI
+    RFD-A^CHI,RFD
+
+    
     """
 
     # Initialise the NetworkX directional graphs (DiGraph)
@@ -141,28 +157,33 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
             if not (apt_org in por_dict):
                 porExists = False
                 sys.stderr.write (errorMsg + apt_org + "\n")
+                continue
             if not (apt_dst in por_dict):
                 porExists = False
                 sys.stderr.write (errorMsg + apt_dst + "\n")
+                continue
 
-            if porExists == True:
-                # Extract the average number of seats
-                seats = line['seats_mtly_avg']
+            # Extract the average number of seats
+            seats = line['seats_mtly_avg']
 
-                # Extract the average frequency
-                freq = line['freq_mtly_avg']
+            # Extract the average frequency
+            freq = line['freq_mtly_avg']
 
-                # Retrieve the POR dictionaries
-                apt_org_dict = por_dict[apt_org]
-                apt_dst_dict = por_dict[apt_dst]
+            # Retrieve the POR dictionaries
+            apt_org_dict = por_dict[apt_org]
+            apt_dst_dict = por_dict[apt_dst]
                 
-                # Store the weights for the corresponding flight legs
-                for apt_org_type in apt_org_dict:
-                    apt_org_pk = (apt_org, apt_org_type)
-                    for apt_dst_type in apt_dst_dict:
-                        apt_dst_pk = (apt_dst, apt_dst_type)
-                        dg_seats.add_edge (apt_org_pk, apt_dst_pk, weight = float(seats))
-                        dg_freq.add_edge (apt_org_pk, apt_dst_pk, weight = float(freq))
+            # Store the weights for the corresponding flight legs
+            for apt_org_type in apt_org_dict:
+                apt_org_pk = (apt_org, apt_org_type)
+                for apt_dst_type in apt_dst_dict:
+                    apt_dst_pk = (apt_dst, apt_dst_type)
+
+                    #
+                    dg_seats.add_edge (apt_org_pk, apt_dst_pk,
+                                       weight = float(seats))
+                    dg_freq.add_edge (apt_org_pk, apt_dst_pk,
+                                      weight = float(freq))
 
     return (dg_seats, dg_freq)
 
