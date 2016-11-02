@@ -82,7 +82,6 @@ MDV^Africa/Libreville
 MFW^Africa/Maputo
 MGI^America/Chicago
 MHB^Pacific/Auckland
-MHL^America/Anchorage
 MMR^America/Chicago
 MMS^America/Chicago
 MOX^America/Chicago
@@ -95,7 +94,6 @@ MWS^America/Denver
 NAX^Pacific/Honolulu
 NBP^America/New_York
 NFF^Asia/Shanghai
-NLE^America/Indiana/Indianapolis
 NMG^America/Panama
 NRI^America/Chicago
 NSX^America/Tortola
@@ -328,7 +326,6 @@ SPQ^America/Los_Angeles
 SQB^America/Bogota
 SYV^America/New_York
 TFR^Africa/Cairo
-THM^America/Los_Angeles
 TIS^Pacific/Port_Moresby
 TRP^America/Juneau
 TWE^America/Dawson_Creek
@@ -660,7 +657,6 @@ ZTZ^Europe/Berlin
 ZUB^Asia/Tbilisi
 ZUG^America/New_York
 ZUK^America/Chicago
-ZUN^America/Chicago
 ZUO^Europe/Amsterdam
 ZUP^Europe/Amsterdam
 ZUQ^Europe/Amsterdam
