@@ -76,12 +76,13 @@ def handle_opt (usage_doc):
 #
 # Store the POR details
 #
-def storePOR (por_dict, por_code, por_type, por_cty_code_list):
+def storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list):
     if not (por_code in por_dict):
         por_dict[por_code] = dict()
         por_dict[por_code][por_type] = {'iata_code': por_code,
-                                        'loc_type': por_type,
-                                        'cty_code_list': por_cty_code_list}
+                                        'location_type': por_type,
+                                        'geoname_id': por_geoid,
+                                        'city_code_list': por_cty_code_list}
     
     return
 #
@@ -106,6 +107,7 @@ def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
             por_pk = line['pk']
             match = pk_re.match (por_pk)
             por_type = match.group (2)
+            por_geoid = match.group (3)
 
             # Extract the IATA code
             por_code = line['iata_code']
@@ -115,7 +117,7 @@ def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
             por_cty_code_list = ctyCodeListStr.join (',')
             
             # Store the POR
-            storePOR (por_dict, por_code, por_type, por_cty_code_list)
+            storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list)
 
     return (por_dict)
 
@@ -196,13 +198,31 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
 
 #
 # Filter in only the fields to be dumped into the CSV file
-# ['iata_code', 'loc_type', 'pr_seats', 'pr_freq']
+# ['pk', 'iata_code', 'pr_seats', 'pr_freq']
 #
-def filterOutFields (pr_dict):
-    pr_dict_fltd = {'iata_code': pr_dict['iata_code'],
-                    'loc_type': pr_dict['loc_type'],
-                    'pr_seats': pr_dict['pr_seats'],
-                    'pr_freq': pr_dict['pr_freq']}
+def filterOutFields (pr_dict, fieldnames):
+    # Retrieve the IATA code
+    assert (fieldnames[1] == 'iata_code'), "The second field is not 'iata_code'!"
+    por_code = pr_dict[fieldnames[1]]
+    
+    # Retrieve the location type
+    por_type = pr_dict['location_type']
+    
+    # Derive the primary key (IATA code combined with the location  type)
+    por_pk = por_code + '-' + por_type
+    
+    # Retrieve the PageRank derived from the average number of seats
+    assert (fieldnames[2] == 'pr_seats'), "The third field is not 'pr_seats'!"
+    pr_seats = pr_dict[fieldnames[2]]
+    
+    # Retrieve the PageRank derived from the average flight frequency
+    assert (fieldnames[3] == 'pr_freq'), "The third field is not 'pr_freq'!"
+    pr_freq = pr_dict[fieldnames[3]]
+    
+    pr_dict_fltd = {fieldnames[0]: por_pk,
+                    fieldnames[1]: por_code,
+                    fieldnames[2]: pr_seats,
+                    fieldnames[3]: pr_freq}
     return pr_dict_fltd
 
 #
@@ -258,7 +278,7 @@ def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, 
     normalizePR (por_dict, "pr_freq", prdict_freq, verboseFlag)
 
     # Dump the details into the given CSV output file
-    fieldnames = ['iata_code', 'loc_type', 'pr_seats', 'pr_freq']
+    fieldnames = ['pk', 'iata_code', 'pr_seats', 'pr_freq']
     with open (output_filename, 'w', newline='') as output_csv:
         #
         fileWriter = csv.DictWriter (output_csv, delimiter='^',
@@ -272,7 +292,7 @@ def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, 
             for (idx_por_type, pr_dict) in pr_dict_full.items():
                 if 'pr_seats' in pr_dict:
                     # Filter out the fields not to be dumpred into the CSV file
-                    pr_dict_fltd = filterOutFields (pr_dict)
+                    pr_dict_fltd = filterOutFields (pr_dict, fieldnames)
                     fileWriter.writerow (pr_dict_fltd)
 
     return
