@@ -74,6 +74,43 @@ def handle_opt (usage_doc):
     return (verboseFlag, por_airline_filename, por_bestknown_filename, output_filename)
 
 #
+# Derive the (isTravel, isCity) flag pair from the location type
+#
+def getTravelCityFlags (por_type):
+    """
+    The location type comes from the IATA specification:
+    - City-related:
+      - C for a populated place (usually a city, "metropolitan area",
+      in IATA parlance)
+      - O for an off-line point (usually both a populated place and a
+      travel-related POR)
+    - Travel-related:
+      - A for airport
+      - H for heliport
+      - R for railway station
+      - B for bus station
+      - P for ferry port
+    - Combination of a city (C) and travel-related: CA, CH, CR, CB, CP
+
+    OpenTravelData (http://github.com/opentraveldata/opentraveldata) tries to
+    distinguish between city- and travel-related POR, but there is still
+    a significant backlog of POR "to split" (see for instance
+    http://github.com/opentraveldata/opentraveldata/pull/42)
+
+    """
+
+    isTravel = True
+    isCity = False
+
+    # The POR is only city-related
+    if (por_type == 'C'): isTravel = False
+
+    #
+    if ('C' in por_type or 'O' in por_type): isCity = True
+
+    return (isTravel, isCity)
+
+#
 # Store the POR details
 #
 def storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list):
