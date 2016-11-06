@@ -136,9 +136,9 @@ def isTravel (por_type):
     return isTravel
 
 #
-# State whether the POR is city-related.
+# State whether the POR is city-only-related.
 #
-def isCity (por_type):
+def isCityOnlyFromPK (por_pk):
     """
     The location type comes from the IATA specification:
     - City-related:
@@ -154,12 +154,17 @@ def isCity (por_type):
       - P for ferry port
     - Combination of a city (C) and travel-related: CA, CH, CR, CB, CP
     """
+    # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
+    pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
+    pk_match = pk_re.match (por_pk)
+    por_type = pk_match.group (2)
+
     # The POR is only city-related, it is not travel-related
-    if ('C' in por_type or por_type == 'O'):
-        isCity = True
+    if (por_type == 'C'):
+        isCityOnly = True
     else:
-        isCity = False
-    return isCity
+        isCityOnly = False
+    return isCityOnly
 
 #
 # Extract the location type (eg, 'CA', 'A') from the primary key (eg,
@@ -243,6 +248,21 @@ def getTravelPK (por_dict_list):
             break
 
     return por_tvl_pk
+
+#
+# Get the list primary keys for the city-only POR
+#
+def getCityCodePKList (por_all_dict, por_code, por_pk):
+    por_dict = por_all_dict[por_code][por_pk]
+    cty_code_list = por_dict['city_code_list']
+    apt_org_cty_pk_list = []
+    for cty_code in cty_code_list:
+        por_cty_full_dict = por_all_dict[cty_code]
+        for por_cty_pk in por_cty_full_dict:
+            isCityOnly = isCityOnlyFromPK (por_cty_pk)
+            if (isCityOnly == True):
+                apt_org_cty_pk_list.append (cty_code)
+    return apt_org_cty_pk_list
 
 #
 # Store the POR details
@@ -374,15 +394,15 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
             apt_org_tvl_pk = getTravelPK (apt_org_dict_list)
             apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
                 
+            # Get the list primary keys for the city-only POR
+            apt_org_cty_pk_list = getCityCodePKList (por_all_dict, apt_org, apt_org_tvl_pk)
+            apt_dst_cty_pk_list = getCityCodePKList (por_all_dict, apt_dst, apt_dst_tvl_pk)
+
+
             # Determine whether there is a need for extra edges.
             # Those extra edges are (potentially) between the city-
             # and travel-related origin POR.
-            for (apt_org_pk, apt_org_dict) in apt_org_dict_list.items():
-                apt_org_type = getTypeFromPK (apt_org_pk)
-                is_travel = isTravel (apt_org_type)
-                if (is_travel == True):
-                    continue
-                        
+            for apt_org_pk in apt_org_cty_pk_list:
                 # Store the extra flight leg edge
                 storeEdge (apt_org_pk, apt_org_tvl_pk, nb_seats, nb_freq,
                            dg_seats, dg_freq)
@@ -390,12 +410,7 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
             # Determine whether there is a need for extra edges.
             # Those extra edges are (potentially) between the city-
             # and travel-related origin POR.
-            for (apt_dst_pk, apt_dst_dict) in apt_dst_dict_list.items():
-                apt_dst_type = getTypeFromPK (apt_dst_pk)
-                is_travel = isTravel (apt_dst_type)
-                if (is_travel == True):
-                    continue
-                        
+            for apt_dst_pk in apt_dst_cty_pk_list:
                 # Store the extra flight leg edge
                 storeEdge (apt_dst_pk, apt_dst_tvl_pk, nb_seats, nb_freq,
                            dg_seats, dg_freq)
