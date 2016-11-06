@@ -110,6 +110,79 @@ def getTravelCityFlags (por_type):
     return (isTravel, isCity)
 
 #
+# State whether the POR is travel-related.
+#
+def isTravel (por_type):
+    """
+    The location type comes from the IATA specification:
+    - City-related:
+      - C for a populated place (usually a city, "metropolitan area",
+      in IATA parlance)
+      - O for an off-line point (usually both a populated place and a
+      travel-related POR)
+    - Travel-related:
+      - A for airport
+      - H for heliport
+      - R for railway station
+      - B for bus station
+      - P for ferry port
+    - Combination of a city (C) and travel-related: CA, CH, CR, CB, CP
+    """
+    # The POR is only city-related, it is not travel-related
+    if (por_type == 'C'):
+        isTravel = False
+    else:
+        isTravel = True
+    return isTravel
+
+#
+# State whether the POR is city-related.
+#
+def isCity (por_type):
+    """
+    The location type comes from the IATA specification:
+    - City-related:
+      - C for a populated place (usually a city, "metropolitan area",
+      in IATA parlance)
+      - O for an off-line point (usually both a populated place and a
+      travel-related POR)
+    - Travel-related:
+      - A for airport
+      - H for heliport
+      - R for railway station
+      - B for bus station
+      - P for ferry port
+    - Combination of a city (C) and travel-related: CA, CH, CR, CB, CP
+    """
+    # The POR is only city-related, it is not travel-related
+    if ('C' in por_type or por_type == 'O'):
+        isCity = True
+    else:
+        isCity = False
+    return isCity
+
+#
+# Extract the location type (eg, 'CA', 'A') from the primary key (eg,
+# 'EWR-A-5101809')
+#
+def getTypeFromPK (por_pk):
+    # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
+    pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
+    pk_match = pk_re.match (por_pk)
+    por_type = pk_match.group (2)
+    return por_type
+
+#
+# Extract the POR code (eg, 'EWR') from the primary key (eg, 'EWR-A-5101809')
+#
+def getCodeFromPK (por_pk):
+    # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
+    pk_regexp = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
+    pk_match = pk_regexp.match (por_pk)
+    por_code = pk_match.group (1)
+    return por_code
+
+#
 # State whether the location type is merged (eg, 'CA', 'CR', or 'O';
 # as opposed to, eg, 'C', 'A', 'R').
 #
@@ -127,11 +200,11 @@ def isMerged (por_dict_list):
 # no distinct city-related POR (ie, 'C'): both types are merged within
 # a single POR.
 #
-def getTravelCityPair (por_dict_list):
+def getTravelPOR (por_dict_list):
     por_tvl = None
     por_cty = None
     
-    for (por_type, por_dict) in por_dict_list.items():
+    for (por_pk, por_dict) in por_dict_list.items():
         (isTravel, isCity) = getTravelCityFlags (por_type)
         if (isTravel == True): por_tvl = por_dict
         if (isCity == True): por_cty = por_dict
@@ -139,31 +212,63 @@ def getTravelCityPair (por_dict_list):
     return (por_tvl, por_cty)
 
 #
+# Build the primary key (IATA code, location type, Geonames ID)
+#
+def buildPK (por_code, por_type, por_geoid):
+    try:
+        por_pk = por_code + '-' + por_type + '-' + por_geoid
+    except:
+        print (str(por_code) + '-' + str(por_type) + '-' + str(por_geoid))
+        raise
+    return por_pk
+
+#
+# Extract the list of primary keys from the dictionary of POR
+#
+def getPKList (por_dict_list):
+    por_pk_list = list(por_dict_list.keys())
+    return por_pk_list
+
+#
+# Extract the primary key of the travel-related POR.
+# There can only be one such POR.
+#
+def getTravelPK (por_dict_list):
+    por_tvl_pk = None
+    for por_pk in por_dict_list:
+        por_type = getTypeFromPK (por_pk)
+        is_travel = isTravel (por_type)
+        if (is_travel == True):
+            por_tvl_pk = por_pk
+            break
+
+    return por_tvl_pk
+
+#
 # Store the POR details
 #
-def storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list):
-    if not (por_code in por_dict):
-        por_dict[por_code] = dict()
-        por_dict[por_code][por_type] = {'iata_code': por_code,
-                                        'location_type': por_type,
-                                        'geoname_id': por_geoid,
-                                        'city_code_list': por_cty_code_list}
+def storePOR (por_all_dict, por_code, por_type, por_geoid, por_cty_code_list):
+    # Initialize the per-POR dictionary when needed
+    if (not por_code in por_all_dict):
+        por_all_dict[por_code] = dict()
+
+    por_pk = buildPK (por_code, por_type, por_geoid)
+    por_all_dict[por_code][por_pk] = {'iata_code': por_code,
+                                      'location_type': por_type,
+                                      'geoname_id': por_geoid,
+                                      'city_code_list': por_cty_code_list}
     
     return
 
 #
 # Extract the best known details of POR from the OpenTravelData CSV file
 #
-def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
+def extractBksfPOR (por_all_dict, optd_por_bestknown_filename, verboseFlag):
     """
     Derive a dictionary of all the POR referenced within the OpenTravelData
     project as 'best known so far' (bksf)
     """
-
-    # Initialize the dictionary of POR
-    por_dict = dict()
-    
-    # Browse the input file
+    # Browse the input file.
     # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
     pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
     with open (optd_por_bestknown_filename, newline='') as csvfile:
@@ -181,48 +286,55 @@ def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
             # Extract the list of city codes
             ctyCodeListStr = line['city_code']
             por_cty_code_list = ctyCodeListStr.split (',')
-            
-            # Store the POR
-            storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list)
 
-    return (por_dict)
+            # Store the POR
+            storePOR (por_all_dict, por_code, por_type, por_geoid, por_cty_code_list)
+
+    return (por_all_dict)
 
 #
 # Store the flight leg edges into both directional graphs
 #
-def storeEdge (por_org_pk, por_dst_pk, seats, freq, dg_seats, dg_freq):
+def storeEdge (por_org_pk, por_dst_pk, nb_seats, nb_freq, dg_seats, dg_freq):
     # Store the weights for the corresponding flight legs
-    dg_seats.add_edge (por_org_pk, por_dst_pk, weight = float(seats))
-    dg_freq.add_edge (por_org_pk, por_dst_pk, weight = float(freq))
+    dg_seats.add_edge (por_org_pk, por_dst_pk, weight = float(nb_seats))
+    dg_freq.add_edge (por_org_pk, por_dst_pk, weight = float(nb_freq))
     return
 
 #
 # Generate a directional graph from the CSV file
 #
-def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
+def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
     """
     Derive two NetworkX directional graphs from the given input file:
      - One with, as weight, the monthly average number of seats
      - One with, as weight, the monthly flight frequency
 
     POR records, as appearing in the file of best known details:
-    FNL-A^FNL
-    FNL-C^FNL
-    CHI-C^CHI
-    RFD-A^CHI,RFD
-    RFD-C^RFD
+
+    EWR-A-5101809^NYC,EWR
+    EWR-C-5099738^EWR
+    EWR-C-5101798^EWR
+    CHI-C-4887398^CHI
+    ORD-A-4887479^CHI
+    IFO-CA-6300962^IFO
+    KBP-A-6300952^IEV
 
     Raw flight leg records, with their weights:
-    7Q^FNL^RFD^450.0
+    AA^EWR^ORD^450.0
+    PS^IFO^KBP^200.0
 
     Extrapolated/rebuilt flight leg records:
-    7Q^FNL-C^FNL-A^450.0
-    7Q^FNL-A^RFD-A^450.0
-    7Q^RFD-A^CHI-C^450.0
-    7Q^RFD-A^RFD-C^450.0
+    AA^NYC-C^EWR-A^450.0
+    AA^EWR-C^EWR-A^450.0
+    AA^EWR-A^ORD-A^450.0
+    AA^ORD-A^CHI-C^450.0
+    PS^IFO-CA^KBP-A^200.0
+    PS^KBP-A^IEV-C^200.0
 
     And the derived graph:
-    FNL-C--450.0--FNK-A--450.0--RFD-A--450.0--{RFD-C,CHI-C}
+    {NYC-C,EWR-C}--450.0--EWR-A--450.0--ORD-A--450.0--CHI-C
+    IFO-CA--200.0--KBP-A--200.0--IEV-C
     """
 
     # Initialise the NetworkX directional graphs (DiGraph)
@@ -239,59 +351,58 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
             # Store the POR
             errorMsg = "Warning: POR in flight schedule, but not in OpenTravelData list of best known POR: "
             porExists = True
-            if not (apt_org in por_dict):
+            if not (apt_org in por_all_dict):
                 porExists = False
                 sys.stderr.write (errorMsg + apt_org + "\n")
                 continue
-            if not (apt_dst in por_dict):
+            if not (apt_dst in por_all_dict):
                 porExists = False
                 sys.stderr.write (errorMsg + apt_dst + "\n")
                 continue
 
             # Extract the average number of seats
-            seats = line['seats_mtly_avg']
+            nb_seats = line['seats_mtly_avg']
 
             # Extract the average frequency
-            freq = line['freq_mtly_avg']
+            nb_freq = line['freq_mtly_avg']
 
             # Retrieve the POR dictionaries
-            apt_org_dict_list = por_dict[apt_org]
-            apt_dst_dict_list = por_dict[apt_dst]
+            apt_org_dict_list = por_all_dict[apt_org]
+            apt_dst_dict_list = por_all_dict[apt_dst]
 
-            # Determine whether there is a need for an extra edge.
-            # That extra edge is (potentially) between the city-
+            # Retrieve the primary keys of the travel-related POR
+            apt_org_tvl_pk = getTravelPK (apt_org_dict_list)
+            apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
+                
+            # Determine whether there is a need for extra edges.
+            # Those extra edges are (potentially) between the city-
             # and travel-related origin POR.
-            isOrgMerged = isMerged (apt_org_dict_list)
-            if (isOrgMerged == True):
-                # Build the primary key
-                apt_org_pk = (apt_org, 'CA')
-            else:
-                # Build the primary keys
-                apt_org_pk = (apt_org, 'A')
-                apt_org_cty_pk = (apt_org, 'C')
-
+            for (apt_org_pk, apt_org_dict) in apt_org_dict_list.items():
+                apt_org_type = getTypeFromPK (apt_org_pk)
+                is_travel = isTravel (apt_org_type)
+                if (is_travel == True):
+                    continue
+                        
                 # Store the extra flight leg edge
-                storeEdge (apt_org_cty_pk, apt_org_pk, seats, freq,
+                storeEdge (apt_org_pk, apt_org_tvl_pk, nb_seats, nb_freq,
                            dg_seats, dg_freq)
 
-            # Determine whether there is a need for an extra edge.
-            # That extra edge is (potentially) between the city-
-            # and travel-related destination POR.
-            isDstMerged = isMerged (apt_dst_dict_list)
-            if (isDstMerged == True):
-                # Build the primary key
-                apt_dst_pk = (apt_dst, 'CA')
-            else:
-                # Build the primary keys
-                apt_dst_pk = (apt_dst, 'A')
-                apt_dst_cty_pk = (apt_dst, 'C')
-
+            # Determine whether there is a need for extra edges.
+            # Those extra edges are (potentially) between the city-
+            # and travel-related origin POR.
+            for (apt_dst_pk, apt_dst_dict) in apt_dst_dict_list.items():
+                apt_dst_type = getTypeFromPK (apt_dst_pk)
+                is_travel = isTravel (apt_dst_type)
+                if (is_travel == True):
+                    continue
+                        
                 # Store the extra flight leg edge
-                storeEdge (apt_dst_pk, apt_dst_cty_pk, seats, freq,
+                storeEdge (apt_dst_pk, apt_dst_tvl_pk, nb_seats, nb_freq,
                            dg_seats, dg_freq)
 
             # Store the flight leg edge
-            storeEdge (apt_org_pk, apt_dst_pk, seats, freq, dg_seats, dg_freq)
+            storeEdge (apt_org_tvl_pk, apt_dst_tvl_pk, nb_seats, nb_freq,
+                       dg_seats, dg_freq)
 
 
     return (dg_seats, dg_freq)
@@ -304,12 +415,15 @@ def filterOutFields (pr_dict, fieldnames):
     # Retrieve the IATA code
     assert (fieldnames[1] == 'iata_code'), "The second field is not 'iata_code'!"
     por_code = pr_dict[fieldnames[1]]
-    
+
     # Retrieve the location type
     por_type = pr_dict['location_type']
     
+    # Retrieve the Geonames ID
+    por_geoid = pr_dict['geoname_id']
+
     # Derive the primary key (IATA code combined with the location  type)
-    por_pk = por_code + '-' + por_type
+    por_pk = buildPK (por_code, por_type, por_geoid)
     
     # Retrieve the PageRank derived from the average number of seats
     assert (fieldnames[2] == 'pr_seats'), "The third field is not 'pr_seats'!"
@@ -328,13 +442,13 @@ def filterOutFields (pr_dict, fieldnames):
 #
 # Normalize the PageRank values, and store them into the global POR dictionary
 #
-def normalizePR (por_dict, prTypeStr, prdict, verboseFlag):
+def normalizePR (por_all_dict, prTypeStr, pr_dict, verboseFlag):
     """
     Store the PageRank values into the global POR dictionary
     """
 
     # Number of POR (points of reference)
-    nb_of_por = len(prdict)
+    nb_of_por = len (pr_dict)
 
     # Maximum rank
     rank_max = 1e-10
@@ -343,7 +457,7 @@ def normalizePR (por_dict, prTypeStr, prdict, verboseFlag):
     # print ('Nb of legs: ' + str(nb_of_por))
 
     # Derive the maximum PageRank value
-    for (idx_por_pk, page_rank) in prdict.items():
+    for (idx_por_pk, page_rank) in pr_dict.items():
         # Update the maximum rank, if needed
         if page_rank > rank_max: rank_max = page_rank
 
@@ -351,21 +465,20 @@ def normalizePR (por_dict, prTypeStr, prdict, verboseFlag):
     # print ('Max PageRank value: ' + str(rank_max))
 
     # Store the PageRank values into the global POR
-    for (idx_por_pk, page_rank) in prdict.items():
+    for (idx_por_pk, page_rank) in pr_dict.items():
         # Normalise the PageRank value
         normalised_page_rank = page_rank / rank_max
 
         # Store the normalized PageRank value
-        idx_por = idx_por_pk[0]
-        idx_por_type = idx_por_pk[1]
-        por_dict[idx_por][idx_por_type][prTypeStr] = normalised_page_rank
+        idx_por = getCodeFromPK (idx_por_pk)
+        por_all_dict[idx_por][idx_por_pk][prTypeStr] = normalised_page_rank
 
     return
 
 #
 # Print the PageRank values into the given file
 #
-def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, verboseFlag):
+def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq, output_filename, verboseFlag):
     """
     Generate a CSV data file with, for every POR, two PageRank values:
      - One based on the monthly average number of seats
@@ -373,9 +486,9 @@ def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, 
     """
 
     # Normalize the PageRank values, and store them in the global POR
-    # dictionary ('por_dict')
-    normalizePR (por_dict, "pr_seats", prdict_seats, verboseFlag)
-    normalizePR (por_dict, "pr_freq", prdict_freq, verboseFlag)
+    # dictionary ('por_all_dict')
+    normalizePR (por_all_dict, "pr_seats", prdict_seats, verboseFlag)
+    normalizePR (por_all_dict, "pr_freq", prdict_freq, verboseFlag)
 
     # Dump the details into the given CSV output file
     fieldnames = ['pk', 'iata_code', 'pr_seats', 'pr_freq']
@@ -388,7 +501,7 @@ def dump_page_ranked_por (por_dict, prdict_seats, prdict_freq, output_filename, 
         fileWriter.writeheader()
 
         # Browse the POR having a PageRank value and dump the details
-        for (idx_por, pr_dict_full) in por_dict.items():
+        for (idx_por, pr_dict_full) in por_all_dict.items():
             for (idx_por_type, pr_dict) in pr_dict_full.items():
                 if 'pr_seats' in pr_dict:
                     # Filter out the fields not to be dumpred into the CSV file
@@ -411,12 +524,13 @@ def main():
     (verboseFlag, por_airline_filename, por_bestknown_filename, output_filename) = handle_opt (usageStr)
 
     # Extract the POR from OpenTravelData best known details
-    por_dict = extractBksfPOR (por_bestknown_filename, verboseFlag)
+    por_all_dict = dict()
+    extractBksfPOR (por_all_dict, por_bestknown_filename, verboseFlag)
     
     # Build directional graphs from the file of flight schedule:
     # - One with, as weight, the monthly average number of seats
     # - One with, as weight, the monthly flight frequency
-    (dict_seats, dict_freq) = deriveGraph (por_dict, por_airline_filename, verboseFlag)
+    (dict_seats, dict_freq) = deriveGraph (por_all_dict, por_airline_filename, verboseFlag)
 
     # Derive the PageRank values
     prdict_seats = nx.pagerank (dict_seats)
@@ -427,7 +541,7 @@ def main():
     # print (prdict_freq)
 
     # Dump the page ranked POR into the output file
-    dump_page_ranked_por (por_dict, prdict_seats, prdict_freq,
+    dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
                           output_filename, verboseFlag)
 
 
