@@ -98,17 +98,45 @@ def getTravelCityFlags (por_type):
     http://github.com/opentraveldata/opentraveldata/pull/42)
 
     """
-
     isTravel = True
     isCity = False
 
-    # The POR is only city-related
+    # The POR is only city-related, it is not travel-related
     if (por_type == 'C'): isTravel = False
 
-    #
+    # The POR is at least city-related, it can be as well travel-related
     if ('C' in por_type or 'O' in por_type): isCity = True
 
     return (isTravel, isCity)
+
+#
+# State whether the location type is merged (eg, 'CA', 'CR', or 'O';
+# as opposed to, eg, 'C', 'A', 'R').
+#
+def isMerged (por_dict_list):
+    if (len (por_dict_list) == 1):
+        isMerged = True
+    else:
+        isMerged = False
+    return isMerged
+
+#
+# Retrieve the pair of travel- and city-related POR. There is always a
+# travel-related POR, and a city-related POR; however, both may be merged.
+# If the location type is merged (eg, 'CA', 'CR', or 'O'), then there is
+# no distinct city-related POR (ie, 'C'): both types are merged within
+# a single POR.
+#
+def getTravelCityPair (por_dict_list):
+    por_tvl = None
+    por_cty = None
+    
+    for (por_type, por_dict) in por_dict_list.items():
+        (isTravel, isCity) = getTravelCityFlags (por_type)
+        if (isTravel == True): por_tvl = por_dict
+        if (isCity == True): por_cty = por_dict
+
+    return (por_tvl, por_cty)
 
 #
 # Store the POR details
@@ -122,6 +150,7 @@ def storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list):
                                         'city_code_list': por_cty_code_list}
     
     return
+
 #
 # Extract the best known details of POR from the OpenTravelData CSV file
 #
@@ -151,12 +180,21 @@ def extractBksfPOR (optd_por_bestknown_filename, verboseFlag):
 
             # Extract the list of city codes
             ctyCodeListStr = line['city_code']
-            por_cty_code_list = ctyCodeListStr.join (',')
+            por_cty_code_list = ctyCodeListStr.split (',')
             
             # Store the POR
             storePOR (por_dict, por_code, por_type, por_geoid, por_cty_code_list)
 
     return (por_dict)
+
+#
+# Store the flight leg edges into both directional graphs
+#
+def storeEdge (por_org_pk, por_dst_pk, seats, freq, dg_seats, dg_freq):
+    # Store the weights for the corresponding flight legs
+    dg_seats.add_edge (por_org_pk, por_dst_pk, weight = float(seats))
+    dg_freq.add_edge (por_org_pk, por_dst_pk, weight = float(freq))
+    return
 
 #
 # Generate a directional graph from the CSV file
@@ -182,6 +220,7 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
     7Q^FNL-A^RFD-A^450.0
     7Q^RFD-A^CHI-C^450.0
     7Q^RFD-A^RFD-C^450.0
+
     And the derived graph:
     FNL-C--450.0--FNK-A--450.0--RFD-A--450.0--{RFD-C,CHI-C}
     """
@@ -216,20 +255,44 @@ def deriveGraph (por_dict, optd_airline_por_filename, verboseFlag):
             freq = line['freq_mtly_avg']
 
             # Retrieve the POR dictionaries
-            apt_org_dict = por_dict[apt_org]
-            apt_dst_dict = por_dict[apt_dst]
-                
-            # Store the weights for the corresponding flight legs
-            for apt_org_type in apt_org_dict:
-                apt_org_pk = (apt_org, apt_org_type)
-                for apt_dst_type in apt_dst_dict:
-                    apt_dst_pk = (apt_dst, apt_dst_type)
+            apt_org_dict_list = por_dict[apt_org]
+            apt_dst_dict_list = por_dict[apt_dst]
 
-                    #
-                    dg_seats.add_edge (apt_org_pk, apt_dst_pk,
-                                       weight = float(seats))
-                    dg_freq.add_edge (apt_org_pk, apt_dst_pk,
-                                      weight = float(freq))
+            # Determine whether there is a need for an extra edge.
+            # That extra edge is (potentially) between the city-
+            # and travel-related origin POR.
+            isOrgMerged = isMerged (apt_org_dict_list)
+            if (isOrgMerged == True):
+                # Build the primary key
+                apt_org_pk = (apt_org, 'CA')
+            else:
+                # Build the primary keys
+                apt_org_pk = (apt_org, 'A')
+                apt_org_cty_pk = (apt_org, 'C')
+
+                # Store the extra flight leg edge
+                storeEdge (apt_org_cty_pk, apt_org_pk, seats, freq,
+                           dg_seats, dg_freq)
+
+            # Determine whether there is a need for an extra edge.
+            # That extra edge is (potentially) between the city-
+            # and travel-related destination POR.
+            isDstMerged = isMerged (apt_dst_dict_list)
+            if (isDstMerged == True):
+                # Build the primary key
+                apt_dst_pk = (apt_dst, 'CA')
+            else:
+                # Build the primary keys
+                apt_dst_pk = (apt_dst, 'A')
+                apt_dst_cty_pk = (apt_dst, 'C')
+
+                # Store the extra flight leg edge
+                storeEdge (apt_dst_pk, apt_dst_cty_pk, seats, freq,
+                           dg_seats, dg_freq)
+
+            # Store the flight leg edge
+            storeEdge (apt_org_pk, apt_dst_pk, seats, freq, dg_seats, dg_freq)
+
 
     return (dg_seats, dg_freq)
 
