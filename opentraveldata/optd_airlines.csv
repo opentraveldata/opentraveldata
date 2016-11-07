@@ -580,7 +580,7 @@ air-flybaghdad-v1^^2015-06-15^^FBA^IF^0^FlyBaghdad^^^^^http://en.wikipedia.org/w
 air-flybe-v1^^1979-01-01^^BEE^BE^267^Flybe^Brit Europ^^^^http://en.wikipedia.org/wiki/Flybe^89393^en|Flybe|=en|Brit Europ|^^air-flybe^1
 air-fly-blue-crane-v1^^2015-09-01^^^7B^562^Fly Blue Crane^^^^^http://en.wikipedia.org/wiki/Fly_Blue_Crane^1475^en|Fly Blue Crane|^JNB^air-fly-blue-crane^1
 air-fly-caminter-v1^^2016-03-17^^^EF^448^Fly CamInter^^^^^^^en|Fly CamInter|=en|Equa2C|h^DLA^air-fly-caminter^1
-air-flycongo-v1^1^^2013-31-12^ALX^EO^663^Flycongo^^^^^^^en|Flycongo|^^air-flycongo^1
+air-flycongo-v1^1^^2013-12-31^ALX^EO^663^Flycongo^^^^^^^en|Flycongo|^^air-flycongo^1
 air-fly-corporate-v1^^2016-01-01^^^FC^441^Fly Corporate^^^^^^1025^en|Fly Corporate|p=en|Vee H Aviation Pty Ltd|^BNE^air-fly-corporate^1
 air-flydamas-v1^^^^^4J^0^Flydamas Airlines^^^^^^785^en|Flydamas Airlines|^^air-flydamas^1
 air-flydubai-v1^^2009-06-01^^FDB^FZ^141^flydubai^Dubai Aviation Corporation^^^^http://en.wikipedia.org/wiki/Flydubai^86723^en|flydubai|=en|Dubai Aviation Corporation|^^air-flydubai^1
@@ -1308,7 +1308,7 @@ air-vietnam-air-service-v1^1^1987-12-31^2015-09-01^VFC^0V^368^Vietnam Air Servic
 air-vietnam-air-service-v2^^2016-05-01^^VFC^0V^338^Vietnam Air Services Company^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^330^abbr|VASCO|h=en|SkyViet Aviation|h=en|Vietnam Air Services Company|p=ja|ベトナムエアサービス|=ko|바스코 항공|=vi|Công ty bay dịch vụ hàng không|=sign|VASCO AIR|=zh|越南航空服務公司|^HAN=PQC=SGN^air-vietnam-air-service^2
 air-villa-air-v1^^^^VQI^VP^0^Villa Air^^^^^^5124^en|Villa Air|^^air-villa-air^1
 air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^http://en.wikipedia.org/wiki/VIM_Airlines^483^en|Vim Airlines|^^air-vim-airlines^1
-air-vincent-aviation-v1^^^^VIN^BF^0^Vincent Aviation^^^^P^^60^en|Vincent Aviation|^^air-vincent-aviation^1
+air-vincent-aviation-v1^^1992-01-01^2014-10-24^VIN^BF^0^Vincent Aviation^^^^P^^60^en|Vincent Aviation|^^air-vincent-aviation^1
 air-vip-wings-v1^1^2000-05-23^2013-11-20^VPA^V5^0^Danube Wings^VIP Wings^^^^http://en.wikipedia.org/wiki/Danube_Wings^^en|Danube Wings|=en|VIP Wings|^^air-vip-wings^1
 air-virgin-america-v1^^2007-08-08^^VRD^VX^984^Virgin America^^^^^http://en.wikipedia.org/wiki/Virgin_America^71427^en|Virgin America|^^air-virgin-america^1
 air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^http://en.wikipedia.org/wiki/Virgin_Atlantic^22459^en|Virgin Atlantic|^^air-virgin-atlantic^1
