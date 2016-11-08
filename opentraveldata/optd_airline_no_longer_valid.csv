@@ -14,6 +14,7 @@ air-air-cargo-carriers-v1^1^1986-01-01^2003-12-31^SNC^2Q^0^Air Cargo Carriers^^^
 air-air-cargo-germany-v1^1^2009-01-01^2013-12-31^ACX^6U^0^Air Cargo Germany^^^^C^http://en.wikipedia.org/wiki/Air_Cargo_Germany^en|Air Cargo Germany|p=abbr|ACG|^HHN^air-air-cargo-germany^1
 air-air-caucasus-v1^1^2013-01-01^2014-12-31^CSG^UY^49^Air Caucasus^^^^^http://en.wikipedia.org/wiki/Air_Caucasus^en|Air Caucasus|^TBS^air-air-caucasus^1
 air-air-comet-v1^1^1996-01-01^2009-12-21^MPD^A7^0^Air Comet^Air Plus Comet^^^^http://en.wikipedia.org/wiki/Air_Comet^en|Air Comet|=en|Air Plus Comet|^^air-air-comet^1
+air-air-contact-v1^^^^^KI^0^Air Contact^^^^^^^en|Air Contact|^^air-air-contact^1
 air-air-mediterranee-v1^1^1995-01-01^2016-02-15^BIE^ML^853^Air Mediterranee^^^^^http://en.wikipedia.org/wiki/Air_M%C3%A9diterran%C3%A9e^en|Air Mediterranee|^LDE=LYS=NTE^air-air-mediterranee^1
 air-air-mekong-v1^1^2009-01-01^2013-12-31^MKG^P8^819^Air Mekong^^^^^http://en.wikipedia.org/wiki/Air_Mekong^en|Air Mekong|^HAN=SGN^air-air-mekong^1
 air-air-ukraine-v1^1^1992-01-01^2002-12-31^UKR^6U^0^Air Ukraine^^^^^http://en.wikipedia.org/wiki/Air_Ukraine^en|Air Ukraine|^KBP^air-air-ukraine^1
@@ -238,6 +239,7 @@ air-pluna-v1^1^1936-09-01^2012-07-05^PUA^PU^286^PLUNA^^^^^http://en.wikipedia.or
 air-pmt-air-v1^1^2003-01-14^2008-12-31^PMT^U4^0^PMTair^^^^^http://en.wikipedia.org/wiki/PMTair^en|PMTair|s=en|Progress MulTi Air|^^air-pmt-air^1
 air-polet-airlines-v1^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://en.wikipedia.org/wiki/Polet_Airlines^en|Polet Airlines|=ru|Авиакомпания Полёт|^^air-polet-airlines^1
 air-prima-air-v1^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^http://en.wikipedia.org/wiki/Prima_Air^en|Prima Air|^^air-prima-air^1
+air-primera-air-scandinavia-v1^^2003-01-01^^PRI^PF^834^Primera Air Scandinavia^JetX^^^^http://en.wikipedia.org/wiki/Primera_Air^3847^en|Primera Air Scandinavia|=en|JetX|^^air-primera-air-scandinavia^1
 air-private-wings-v1^1^1991-01-01^2016-05-31^PWF^8W^0^Private Wings^^^^^http://en.wikipedia.org/wiki/Private_Wings^en|Private Wings|^SXF^air-private-wings^1
 air-rak-airways-v1^1^2007-01-01^2014-01-01^RKM^RT^0^RAK Airways^^^^^http://en.wikipedia.org/wiki/RAK_Airways^en|RAK Airways|^^air-rak-airways^1
 air-rheintalflug-v1^1^^2013-12-31^^WE^0^Rheintal flug^^^^^^en|Rheintal flug|^^air-rheintalflug^1
@@ -303,3 +305,4 @@ air-zambian-airways-v1^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http
 tec-map-management-planning-v1^1^^2015-01-01^MPJ^AQ^0^Map Management Planning^^^^^^en|Map Management Planning|^^tec-map-management-planning^1
 trn-express-rail-link-malaysia-v1^1^^2014-06-01^^5Y^0^Express Rail Link^^^^R^http://en.wikipedia.org/wiki/Express_Rail_Link^en|Express Rail Link|^^trn-express-rail-link-malaysia^1
 trn-nuovo-trasporto-viaggiatori-v1^1^2012-04-01^2014-12-31^^2Q^0^Nuovo Trasporto Viaggiatori^^^^^http://en.wikipedia.org/wiki/Nuovo_Trasporto_Viaggiatori^en|Nuovo Trasporto Viaggiatori|^^trn-nuovo-trasporto-viaggiatori^1
+trn-renfe-viajeros-v1^^1941-01-24^^^4R^0^Renfe Viajeros^^^^^http://en.wikipedia.org/wiki/Renfe_Operadora^^en|Renfe Viajeros|^^trn-renfe-viajeros^1
