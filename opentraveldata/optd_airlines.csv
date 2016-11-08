@@ -333,7 +333,7 @@ air-bismilah-airlines-v1^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^ht
 air-blue1-v1^^1988-01-01^^BLF^KF^142^Blue1^^^^^http://en.wikipedia.org/wiki/Blue1^^en|Blue1|^^air-blue1^1
 air-blue-air-airline-v1^^2004-12-01^^BMS^0B^0^Blue Air^^^^^http://en.wikipedia.org/wiki/Blue_Air^52148^en|Blue Air|^^air-blue-air-airline^1
 air-bluebird-airways-v1^^2008-01-01^^BBG^BZ^0^Bluebird Airways^^^^^http://en.wikipedia.org/wiki/Bluebird_Airways^^en|Bluebird Airways|^^air-bluebird-airways^1
-air-bluebird-cargo-v1^^2001-03-01^^BBD^BF^^Bluebird Cargo^^^^C^http://en.wikipedia.org/wiki/Bluebird_Cargo^60^en|Bluebird Cargo|^^air-bluebird-cargo^1
+air-bluebird-cargo-v1^^2001-03-01^^BBD^BF^^Bluebird Cargo^^^^C^http://en.wikipedia.org/wiki/Bluebird_Cargo^60^en|Bluebird Cargo|^KEF^air-bluebird-cargo^1
 air-blue-islands-v1^^1999-01-01^^BCI^SI^821^Blue Islands^^^^^http://en.wikipedia.org/wiki/Blue_Islands^7829^en|Blue Islands|^GCI=JER^air-blue-islands^1
 air-blue-panorama-airlines-v1^^^^BPA^BV^4^Blue Panorama Airlines^Blue Panorama^^^^^9263^en|Blue Panorama Airlines|=en|Blue Panorama|^^air-blue-panorama-airlines^1
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^http://en.wikipedia.org/wiki/BMI_Regional^28585^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1
@@ -1308,7 +1308,7 @@ air-vietnam-air-service-v1^1^1987-12-31^2015-09-01^VFC^0V^368^Vietnam Air Servic
 air-vietnam-air-service-v2^^2016-05-01^^VFC^0V^338^Vietnam Air Services Company^^^^^http://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^330^abbr|VASCO|h=en|SkyViet Aviation|h=en|Vietnam Air Services Company|p=ja|ベトナムエアサービス|=ko|바스코 항공|=vi|Công ty bay dịch vụ hàng không|=sign|VASCO AIR|=zh|越南航空服務公司|^HAN=PQC=SGN^air-vietnam-air-service^2
 air-villa-air-v1^^^^VQI^VP^0^Villa Air^^^^^^5124^en|Villa Air|^^air-villa-air^1
 air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^http://en.wikipedia.org/wiki/VIM_Airlines^483^en|Vim Airlines|^^air-vim-airlines^1
-air-vincent-aviation-v1^^^^VIN^BF^0^Vincent Aviation^^^^P^^60^en|Vincent Aviation|^^air-vincent-aviation^1
+air-vincent-aviation-v1^1^1992-01-01^2014-10-24^VIN^BF^0^Vincent Aviation^^^^P^http://en.wikipedia.org/wiki/Vincent_Aviation^^en|Vincent Aviation|^WLG^air-vincent-aviation^1
 air-vip-wings-v1^1^2000-05-23^2013-11-20^VPA^V5^0^Danube Wings^VIP Wings^^^^http://en.wikipedia.org/wiki/Danube_Wings^^en|Danube Wings|=en|VIP Wings|^^air-vip-wings^1
 air-virgin-america-v1^^2007-08-08^^VRD^VX^984^Virgin America^^^^^http://en.wikipedia.org/wiki/Virgin_America^71427^en|Virgin America|^^air-virgin-america^1
 air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^http://en.wikipedia.org/wiki/Virgin_Atlantic^22459^en|Virgin Atlantic|^^air-virgin-atlantic^1
