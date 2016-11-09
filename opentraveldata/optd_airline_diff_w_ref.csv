@@ -2,7 +2,7 @@
 0B^2^<>Blue Air
 0C^1^Catovair<>
 0C^2^<>Catovair
-0E^1^Amadeus PDF 0E<>Amadeus Pdf 0e
+0E^1^<>Amadeus Pdf 0e
 0J^1^Premium Jet AG<>Premium Jet Ag
 0O^1^STA Travel<>Sta Travel
 0O^2^<>Sta Travel
@@ -44,7 +44,9 @@
 2S^2^<>Island Exp
 2U^2^<>Sun D Or
 2V^2^<>Amtrak
-2Y^1^Amadeus PDF 2Y<>Amadeus Pdf 2y
+2X^1^<>Amadeus Two
+2X^2^<>Amadeus Two
+2Y^1^<>Amadeus Pdf 2y
 2Y^2^<>Air Andaman
 2Z^2^<>Passaredo
 3B^2^<>Job Air
@@ -79,6 +81,7 @@
 4N^2^<>Air North
 4O^2^<>Interjet
 4Q^2^<>Safi Airways
+4R^1^Royal Flight<>Renfe Viajeros
 4R^2^<>Hamburg Intl
 4U^2^<>Germanwings
 4V^1^Lacbravo<>Lignes Aeriennes Congo
@@ -137,6 +140,8 @@
 6T^2^<>Air Mandalay
 6U^1^<>Acg Air Cargo Germany
 6U^2^<>Air Ukraine
+6X^1^<>Amadeus Six
+6X^2^<>Amadeus Six
 6Y^1^SmartLynx Airlines<>Smartlynx Airlines
 7A^1^Express Air Cargo<>Air Jet
 7A^2^<>Haines Air
@@ -159,6 +164,8 @@
 7S^2^Arctic Transportation Services<>Amadeus 7s
 7V^2^Federal Airlines<>Federal Airl
 7W^2^<>Wind Rose
+7X^1^<>Amadeus Seven
+7X^2^<>Amadeus Seven
 8B^1^TransNusa Air Services<>Transnusa Aviation
 8B^2^<>Carribean Air
 8E^2^<>Bering Air
@@ -180,6 +187,8 @@
 8V^2^<>Wright Air
 8W^1^Fly All Ways Airlines<>Fly Always
 8W^2^<>Private Wings
+8X^1^<>Amadeus Eight
+8X^2^<>Amadeus Eight
 8Y^1^Pan Pacific Airlines<>Air Burundi
 8Y^2^<>Airburundi
 8Z^1^Congo Airways<>Amadeus Pdf 8z
@@ -204,8 +213,8 @@
 9P^2^Petra Airlines<>
 9Q^2^PB Air<>Pb Air
 9R^1^SATENA<>Satena
-9S^1^Amadeus PDF 9S<>Amadeus Pdf 9s
-9S^2^Amadeus 9S<>Amadeus 9s
+9S^1^<>Amadeus Pdf 9s
+9S^2^<>Amadeus 9s
 9T^1^Transwest Air<>Act Havayollari
 9T^2^<>Athabaska
 9U^2^<>Air Moldova
@@ -213,7 +222,7 @@
 9V^2^<>Avior
 9W^2^<>Jet Airways
 9Y^2^<>Fly Georgia
-9Z^1^Amadeus PDF 9Z<>Amadeus Pdf 9z
+9Z^1^<>Amadeus Pdf 9z
 A0^2^<>Macair Jet
 A1^1^G Switch Works<>G2 Switch Works
 A2^2^<>Astra Airline
@@ -793,7 +802,6 @@ JAV^2^<>Jordan Avia
 JBR^2^<>Job Air
 JBU^1^JetBlue<>Jetblue Airways
 JBU^2^<>Jetblue Air
-JC^1^JAL Express<>Japan Air Commuter
 JD^2^<>Beijing Capit
 JF^2^<>Jet Asia
 JI^1^Eastern Caribbean Airlines<>Meraj Air
@@ -827,7 +835,6 @@ K5^2^<>Wings Alaska
 K6^2^<>Cambodia Air
 K7^1^Air KBZ<>Air Kbz
 K7^2^<>Arizona
-K8^1^Zambia Skyways<>Kan Air
 K9^1^Kalitta Charters<>
 KA^1^Cathay Dragon<>Dragonair
 KA^2^<>Hk Dragon
@@ -927,6 +934,8 @@ LNE^1^LATAM Ecuador<>Latam Airlines Ecuador
 LNE^2^<>Lan Ecuador
 LO^1^LOT Polish Airlines<>Lot Polish Airlines
 LO^2^<>Lot
+LOC^1^<>Air Azul
+LOC^2^<>Carribean Sun
 LOT^1^LOT Polish Airlines<>Lot Polish Airlines
 LOT^2^<>Lot
 LP^1^LATAM Perú<>Lan Peru Sa
@@ -1113,7 +1122,7 @@ PCP^2^Aerolinea Principal Chile<>
 PD^2^<>Porter Air
 PE^2^<>Peoples Vienn
 PEV^2^<>Peoples Vienn
-PF^2^JetX<>Primera Air
+PF^2^<>Primera Air
 PG^2^<>Bangkok Air
 PGA^2^Portugália–Companhia Portuguesa de Transportes Aéreos<>Portugalia
 PGT^2^<>Pegasus
@@ -1129,7 +1138,7 @@ PP^2^<>Jet Aviation
 PQ^1^AirAsia Philippines<>Airasia Philippines
 PQ^2^<>Panafrican
 PR^2^<>Philippine
-PRI^2^JetX<>Primera Air
+PRI^2^<>Primera Air
 PS^1^Ukraine International Airlines<>Ukraine Intl Airlines
 PS^2^<>Ukraine Intl
 PSC^1^Pascan Aviation<>Pascan Aviation Inc
@@ -1619,12 +1628,20 @@ XV^1^<>Bvi Airways
 XW^1^NokScoot<>Nokscoot Airlines
 XW^2^NokScoot Airlines Company Limited<>
 XY^2^Nas Air<>Nasair
+XYA^1^<>Amadeus Two
+XYA^2^<>Amadeus Two
+XYB^1^<>Amadeus Six
+XYB^2^<>Amadeus Six
+XYC^1^<>Amadeus Seven
+XYC^2^<>Amadeus Seven
+XYD^1^<>Amadeus Eight
+XYD^2^<>Amadeus Eight
 XYO^1^<>Amadeus Pdf 8z
-XYS^1^Amadeus PDF 0E<>Amadeus Pdf 0e
-XYW^1^Amadeus PDF 7S<>Amadeus Pdf 7s
-XYW^2^Amadeus 7S<>Amadeus 7s
-XYX^1^Amadeus PDF 9S<>Amadeus Pdf 9s
-XYX^2^Amadeus 9S<>Amadeus 9s
+XYS^1^<>Amadeus Pdf 0e
+XYW^1^<>Amadeus Pdf 7s
+XYW^2^<>Amadeus 7s
+XYX^1^<>Amadeus Pdf 9s
+XYX^2^<>Amadeus 9s
 XZ^2^SA Express<>Eastair
 Y0^2^<>Yellow Air
 Y4^2^Concesionaria Vuela Compañía de Aviación<>Eagle Aviatn
@@ -1672,6 +1689,8 @@ ZL^2^<>Regional Exp
 ZM^1^Pegasus Asia<>Air Manas
 ZM^2^Air Manas<>Pegasus Asia
 ZP^1^Silk Way Airlines<>Amaszonas Del Paraguay
+ZQ^1^<>Air Azul
+ZQ^2^<>Carribean Sun
 ZS^1^Kazaviaspas<>Jsc Kazaviaspas
 ZU^1^Sunair<>Sunair Aviation
 ZV^2^<>Air Midwest
