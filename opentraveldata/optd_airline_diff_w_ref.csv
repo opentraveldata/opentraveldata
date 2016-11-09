@@ -637,7 +637,7 @@ FTZ^2^<>Fastjet
 FV^1^Rossiya<>Rossiya Airlines
 FWI^2^<>Air Caraibes
 FXI^2^<>Air Iceland
-FY^2^FlyFirefly Sdn Bhd<>Nw Regional
+FY^2^<>Nw Regional
 FZ^1^flydubai<>Flydubai
 FZ^2^Dubai Aviation Corporation<>Flydubai
 FZW^1^Zimbabwe flyafrica.com<>Fly Africa Zimbabwe
@@ -710,7 +710,6 @@ H9^2^<>Himalaya
 HA^2^<>Hawaiian Air
 HAL^2^<>Hawaiian Air
 HAY^1^<>Skippers Aviation Pty
-HB^1^Homer Air<>Asia Atlantic Airlines
 HD^1^Air Do<>Airdo
 HD^2^Hokkaido International Airlines<>
 HDA^1^Cathay Dragon<>Dragonair
@@ -762,7 +761,8 @@ IF^1^FlyBaghdad<>Fly Baghdad Airlines
 IF^2^<>Islas Airways
 IG^2^<>Meridiana Fly
 II^1^IBC Airways<>Ibc Airways Inc
-IK^1^Kaya Airlines<>Llc Ikar
+IK^1^Pegas Fly<>Llc Ikar
+IK^2^<>Imair Air
 IKA^2^<>Itek Air
 IL^1^Trigana Air Service<>Pt Trigana Air Service
 IM^1^Mint Líneas Aéreas<>
@@ -843,7 +843,7 @@ KAE^1^<>Kartika Airlines
 KAE^2^<>Kartika Air
 KAL^2^<>Korean Air
 KAP^2^<>Cape Air
-KAR^1^Ikar<>Llc Ikar
+KAR^1^Pegas Fly<>Llc Ikar
 KAR^2^<>Imair Air
 KB^2^<>Druk Air
 KBA^2^<>Kenn Borek
@@ -1357,7 +1357,6 @@ SZ^1^Somon Air<>Aircompany Somon Air
 SZ^2^<>Somon Air
 T0^1^Avianca Perú<>Taca Peru
 T0^2^TACA Peru<>Taca Peru
-T2^1^Nakina Air Service<>Fly Art
 T2^2^<>Taba Aereos
 T3^2^<>Eastern Air
 T5^2^<>Turkmenistan

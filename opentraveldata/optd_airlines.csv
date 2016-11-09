@@ -383,7 +383,7 @@ air-cayman-airways-v1^^^^CAY^KX^378^Cayman Airways^^^^^^10499^en|Cayman Airways|
 air-cebu-air-v1^^1996-03-08^^CEB^5J^203^Cebu Pacific^^^^^http://en.wikipedia.org/wiki/Cebu_Pacific^110488^en|Cebu Pacific|=en|Cebu Air|^CEB^air-cebu-air^1
 air-ceiba-v1^^^^^C2^304^Ceiba Intercontinental^Ceiba^^^^^5487^en|Ceiba Intercontinental|=en|Ceiba|^^air-ceiba^1
 air-cemair-v1^^2005-01-01^^^5Z^225^CemAir^^^^^http://en.wikipedia.org/wiki/CemAir^5515^en|CemAir|^^air-cemair^1
-air-central-air-transport-services-v1^^^^^ZO^0^Central Air Transport Services^^^^^^^en|Central Air Transport Services|^^air-central-air-transport-services^1
+air-central-air-transport-services-v1^1^2008-01-01^2015-12-31^^ZO^0^Central Air Transport Services^^^^^http://en.wikipedia.org/wiki/Central_Air_Transport_Services_(CATS)^^en|Central Air Transport Services|=abbr|CATS|^^air-central-air-transport-services^1
 air-central-mountain-air-v1^^^^GLR^9M^634^Central Mountain Air^^^^^^6779^en|Central Mountain Air|^^air-central-mountain-air^1
 air-centralwings-v1^^^^CLW^C0^0^Centralwings^^^^^^^en|Centralwings|^^air-centralwings^1
 air-centre-avia-v1^1^2000-01-01^2010-12-31^CVC^J7^0^Centre-Avia^^^^^http://en.wikipedia.org/wiki/Centre-Avia^^en|Centre-Avia|=ru|Авиакомпания "ЦЕНТР-АВИА"|^BKA^air-centre-avia^1
@@ -584,7 +584,7 @@ air-flydamas-v1^^^^^4J^0^Flydamas Airlines^^^^^^785^en|Flydamas Airlines|^^air-f
 air-flydubai-v1^^2009-06-01^^FDB^FZ^141^flydubai^Dubai Aviation Corporation^^^^http://en.wikipedia.org/wiki/Flydubai^86723^en|flydubai|=en|Dubai Aviation Corporation|^^air-flydubai^1
 air-flyegypt-v1^^2015-02-12^^FEG^FT^0^FlyEgypt^^^^^http://en.wikipedia.org/wiki/FlyEgypt^247^en|FlyEgypt|^KWI^air-flyegypt^1
 air-fly-excellent-v1^1^2007-01-01^2008-12-31^FXL^F3^0^Fly Excellent^^^^^^^en|Fly Excellent|^ARN^air-fly-excellent^1
-air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^FlyFirefly Sdn Bhd^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^36906^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
+air-flyfirefly-v1^^2007-01-01^^FFM^FY^918^Flyfirefly^^^^^http://en.wikipedia.org/wiki/Firefly_%28airline%29^36906^en|Flyfirefly|=en|FlyFirefly Sdn Bhd|^^air-flyfirefly^1
 air-fly-georgia-v1^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^http://en.wikipedia.org/wiki/Fly_Georgia^^en|Fly Georgia|^^air-fly-georgia^1
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http://en.wikipedia.org/wiki/Fly_Jamaica_Airways^1171^en|Fly Jamaica Airways|^KIN^air-fly-jamaica-airways^1
 air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^976^en|Fly Kiss|^BES=CFE^air-fly-kiss^1
@@ -669,7 +669,7 @@ air-himalaya-airlines-v1^^2015-04-01^^HIM^H9^769^Himalaya Airlines^^^^^http://en
 air-hokkaido-air-system-v1^^1997-09-30^^NTH^^^Hokkaido Air System^^^^^http://en.wikipedia.org/wiki/Hokkaido_Air_System^^en|Hokkaido Air System|=jp|株式会社北海道エアシステム|^^air-hokkaido-air-system^1
 air-hokkaido-v1^^1998-05-12^^ADO^HD^0^Air Do^Hokkaido International Airlines^^^^http://en.wikipedia.org/wiki/Air_Do^50974^en|Air Do|=en|Hokkaido International Airlines|^^air-hokkaido^1
 air-holidays-czech-airlines-v1^^^^^HC^0^Holidays Czech Airlines^Aero Tropics^^^^^^en|Holidays Czech Airlines|=en|Aero Tropics|^^air-holidays-czech-airlines^1
-air-homer-air-v1^^^^^HB^^Homer Air^^^^^^386^en|Homer Air|^^air-homer-air^1
+air-homer-air-service-v1^1^1973-01-01^2015-12-31^^HB^^Homer Air^^^^^^^en|Homer Air|^HOM^air-homer-air-service^1
 air-hong-kong-airlines-v1^^^^CRK^HX^851^Hong Kong Airlines^^^^^^33530^en|Hong Kong Airlines|^^air-hong-kong-airlines^1
 air-hong-kong-express-airways-v1^^^^HKE^UO^128^Hong Kong Express Airways^^^^^^17710^en|Hong Kong Express Airways|^^air-hong-kong-express-airways^1
 air-hop-airlinair-v1^^^^RLA^AN^0^HOP Airlinair^^^^^http://en.wikipedia.org/wiki/Airlinair^^en|HOP Airlinair|^^air-hop-airlinair^1
@@ -686,8 +686,9 @@ air-iberworld-airlines-v1^^1998-04-11^^IWD^IP^560^Iberworld Airlines^Atyrauauejo
 air-ibex-airlines-v1^^2000-08-07^^IBX^FW^0^Ibex Airlines^^^^^http://en.wikipedia.org/wiki/Ibex_Airlines^27486^en|Ibex Airlines|^^air-ibex-airlines^1
 air-icelandair-v1^^1937-01-01^^ICE^FI^108^Icelandair^^^^^http://en.wikipedia.org/wiki/Icelandair^25117^en|Icelandair|^^air-icelandair^1
 air-ihy-izmir-havayollari-v1^^^^IZM^4I^597^Ihy Izmir Havayollari^^^^^^^en|Ihy Izmir Havayollari|^^air-ihy-izmir-havayollari^1
-air-ikar-v1^^1993-06-15^^KAR^IK^0^Ikar^^^^^http://en.wikipedia.org/wiki/Ikar_(airline)^42^en|Ikar|^^air-ikar^1
+air-ikar-v1^^1993-06-15^^KAR^IK^770^Pegas Fly^^^^^http://en.wikipedia.org/wiki/Pegas_FlyIkar^42^en|Pegas Fly|p=en|Ikar|h^KJA^air-ikar^1
 air-iliamna-air-v1^^^^IAR^V8^0^Iliamna Air^Contact Air^^^^^785^en|Iliamna Air|=en|Contact Air|^^air-iliamna-air^1
+air-imair-airlines-v1^1^1994-01-01^2009-11-23^ITX^IK^0^Imair Airlines^^^^^http://en.wikipedia.org/wiki/Imair_Airlines^^en|Imair Airlines|p=en|Improtex|h^GYD^air-imair-airlines^1
 air-indigo-v1^^2006-08-04^^IGO^6E^0^IndiGo^^^^^http://en.wikipedia.org/wiki/IndiGo^332488^en|IndiGo|^^air-indigo^1
 air-indonesia-air-transport-v1^1^1968-01-01^2015-12-31^IDA^I7^0^Indonesia Air Transport^^^^^http://en.wikipedia.org/wiki/Indonesia_Air_Transport^^abbr|IAT|=en|Indonesia Air Transport|=sign|INTRA|^^air-indonesia-air-transport^1
 air-insel-air-aruba-v1^^2014-01-01^^NLU^8I^778^Insel Air Aruba^^^^^http://en.wikipedia.org/wiki/Insel_Air^1546^en|Insel Air Aruba|^^air-insel-air-aruba^1
@@ -761,7 +762,7 @@ air-kartika-airlines-v1^1^2001-05-15^2010-12-31^KAE^3Y^0^Kartika Airlines^^^^^ht
 air-katekavia-v1^^1995-05-01^^KTK^ZF^0^Azur Air^^^^^http://en.wikipedia.org/wiki/Azur_Air^^en|Azur Air|=en|Katekavia|h=ru|АЗУР эйр|=ru|Катэкавиа|h^^air-katekavia^1
 air-katmai-air-v1^1^^2015-12-31^^KT^0^Katmai Air^^^^^http://www.katmailand.com/air-services^^en|Katmai Air|^BKF^air-katmai-air^1
 air-kato-airline-v1^1^1996-01-01^2008-09-01^KAT^6S^0^Kato Airlines^^^^^http://en.wikipedia.org/wiki/Kato_Airline^^en|Kato Airlines|=en|Kato Air|ps^BOO=EVE=TRD^air-kato-airline^1
-air-kaya-airlines-v1^^1991-01-01^^KYY^IK^0^Kaya Airlines^Imair Air^^^^http://en.wikipedia.org/wiki/Kaya_Airlines^42^en|Kaya Airlines|=en|Imair Air|^^air-kaya-airlines^1
+air-kaya-airlines-v1^1^1991-01-01^2015-12-31^KYY^IK^0^Kaya Airlines^^^^^http://en.wikipedia.org/wiki/Kaya_Airlines^^en|Kaya Airlines|p=en|Transairways|h=en|Sabin Air|h^MPM^air-kaya-airlines^1
 air-kd-v1^1^1990-01-01^2013-09-30^KDC^XC^0^KD Air^^^^^http://en.wikipedia.org/wiki/KD_Air^^en|KD Air|=sign|KAYDEE|^YVR^air-kd^1
 air-kd-v2^^2013-10-01^^KDC^^0^KD Air^^^^^http://en.wikipedia.org/wiki/KD_Air^^en|KD Air|=sign|KAYDEE|^YVR^air-kd^2
 air-kenmore-air-v1^^^^KEN^M5^763^Kenmore Air^^^^^^814^en|Kenmore Air|^^air-kenmore-air^1
@@ -891,7 +892,7 @@ air-ms-royal-airlines-v1^^^^^R0^333^MS Royal Airlines^^^^^^^en|MS Royal Airlines
 air-myanmar-airways-v1^^1946-01-01^^MMA^8M^599^Myanmar Airways International^^^^^http://en.wikipedia.org/wiki/Myanmar_Airways_International^3235^en|Myanmar Airways International|^RGN^air-myanmar-airways^1
 air-myanmar-utd-v1^^1948-09-15^^UBA^UB^665^Myanmar National Airlines^UTD Myanmar^^^^http://en.wikipedia.org/wiki/Myanmar_National_Airlines^8925^en|Myanmar National Airlines|=en|UTD Myanmar|^^air-myanmar-utd^1
 air-nacil-indian-airline-v1^^^^^IC^58^Nacil Indian Airline^^^^^^^en|Nacil Indian Airline|^^air-nacil-indian-airline^1
-air-nakina-air-service-v1^^1973-01-01^^^T2^0^Nakina Air Service^^^^^http://en.wikipedia.org/wiki/Nakina_Air_Service^^en|Nakina Air Service|=sign|NAKINA|^YQN^air-nakina-air-service^1
+air-nakina-air-service-v1^1^1973-01-01^2015-12-31^^T2^0^Nakina Air Service^^^^^http://en.wikipedia.org/wiki/Nakina_Air_Service^^en|Nakina Air Service|=sign|NAKINA|^YQN^air-nakina-air-service^1
 air-nam-air-v1^^2013-12-11^^NIH^IN^274^NAM Air^^^^^http://en.wikipedia.org/wiki/NAM_Air^31319^en|NAM Air|^^air-nam-air^1
 air-nasair-uair-v1^^^^^UE^770^Nasair^^^^^^^en|Nasair|^^air-nasair-uair^1
 air-nasair-v1^^2007-02-01^^KNE^XY^593^Flynas^Nas Air^^^^http://en.wikipedia.org/wiki/Flynas^44415^en|Flynas|=en|Nas Air|^^air-nasair^1
