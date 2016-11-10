@@ -239,7 +239,6 @@ air-ab-aviation-v1^^2013-01-01^^AYD^Y6^0^AB Aviation^^^^^http://en.wikipedia.org
 air-batik-air-indonesia-v1^^2013-05-03^^BTK^ID^0^Batik Air^^^^P^http://en.wikipedia.org/wiki/Batik_Air^en|Batik Air|^^air-batik-air-indonesia^1
 air-bb-airways-v1^^2012-09-13^^^BO^505^BB Airways^^^^^http://en.wikipedia.org/wiki/BB_Airways^en|BB Airways|^^air-bb-airways^1
 air-bearskin-airlines-v1^^1963-07-17^^BLS^JV^632^Bearskin Airlines^^^^^http://en.wikipedia.org/wiki/Bearskin_Airlines^en|Bearskin Airlines|^^air-bearskin-airlines^1
-air-beijing-capital-airlines-v1^^2010-05-01^^CBJ^JD^898^Beijing Capital Airlines^^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^en|Beijing Capital Airlines|p=en|Capital_Airlines|s=en|Deer Jet Airlines|h=en|Deer Air|=pny|Shǒudū Hángkōng|p=pny|Jīnlù Hángkōng|=sign|CAPITAL JET|=zh|首都航空|p=zh|金鹿航空|h^HAK=HGH=PEK=SHE=SYX=XIY^air-beijing-capital-airlines^1
 air-bek-air-v1^^^^BEK^Z9^183^Jsc Bek Air^^^^^^en|Jsc Bek Air|^^air-bek-air^1
 air-belair-airlines-v1^^^^^4T^0^Belair Airlines^Russian Air^^^^^en|Belair Airlines|=en|Russian Air|^^air-belair-airlines^1
 air-belavia-v1^^1996-03-05^^BRU^B2^628^Belavia^^^^^http://en.wikipedia.org/wiki/Belavia^en|Belavia|^^air-belavia^1
@@ -349,6 +348,7 @@ air-dac-east-africa-v1^^2011-01-01^^^JX^704^DAC East Africa^^^^^http://en.wikipe
 air-dagestan-airlines-v1^^^^^N2^0^Dagestan Airlines^^^^^^en|Dagestan Airlines|^^air-dagestan-airlines^1
 air-dana-airlines-v1^^2008-01-01^^DAN^9J^234^Dana Air^^^^^http://en.wikipedia.org/wiki/Dana_Air^en|Dana Air|^^air-dana-airlines^1
 air-danish-air-transport-v1^^1989-01-01^^DTR^DX^243^Danish Air Transport^^^^^http://en.wikipedia.org/wiki/Danish_Air_Transport^en|Danish Air Transport|^^air-danish-air-transport^1
+air-deer-jet-airlines-v2^^2010-05-04^^CBJ^JD^898^Beijing Capital Airlines^^^^^http://en.wikipedia.org/wiki/Beijing_Capital_Airlines^en|Beijing Capital Airlines|p=en|Capital Airlines|s=en|Deer Jet Airlines|h=en|Deer Air|=pny|Shǒudū Hángkōng|p=pny|Jīnlù Hángkōng|=sign|CAPITAL JET|=zh|首都航空|p=zh|金鹿航空|h^HAK=HGH=PEK=SHE=SYX=XIY^air-deer-jet-airlines^2
 air-delta-air-lines-v1^^1929-06-17^^DAL^DL^6^Delta Air Lines^^^Member^^http://en.wikipedia.org/wiki/Delta_Air_Lines^en|Delta Air Lines|^^air-delta-air-lines^1
 air-delta-connection-v1^^^^DCP^DQ^521^Delta Connection^Coastal Air^^^^^en|Delta Connection|=en|Coastal Air|^^air-delta-connection^1
 air-delux-public-charter-v1^^2015-01-01^^JSX^XE^0^Delux Public Charter^^^^^^en|Delux Public Charter|^^air-delux-public-charter^1
@@ -386,7 +386,7 @@ air-endeavor-air-v1^^1985-01-01^^FLG^9E^430^Endeavor Air^^^^^http://en.wikipedia
 air-enter_air_v1^^2009-10-15^^ENT^E4^^Enter Air^^^^T^http://en.wikipedia.org/wiki/Enter_Air^en|Enter Air Spolka z.o.o.|^WAW=POZ=AGP=GRO=CFU^air-enter_air^1
 air-equaflight-service-v1^^^^^E7^965^Equaflight Service^Fly European^^^P^^en|Equaflight Service|=en|Fly European|^^air-equaflight-service^1
 air-equatorial-congo-airlines-v1^^2011-09-24^^PTI^LC^753^ECAir^^^^^^en|Equatorial Congo Airlines|=en|ECAir|ps=ja|エクアトリアル・コンゴ・エアラインズ|^^air-equatorial-congo-airlines^1
-air-era-aviation-v2^^2016-07-31^^RVF^7H^808^Ravn Alaska^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^2
+air-era-aviation-v2^^2016-07-01^^RVF^7H^808^Ravn Alaska^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^2
 air-eritrean-airlines-v1^^^^ERT^B8^637^Eritrean Airlines^^^^^^en|Eritrean Airlines|^^air-eritrean-airlines^1
 air-ero-sun-d-or-v1^^^^ERO^2U^383^Ero Sun D Or^^^^P^^en|Ero Sun D Or|^^air-ero-sun-d-or^1
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^en|E Savtravel|^^air-e-savtravel^1
@@ -462,7 +462,7 @@ air-go-airlines-v1^^2005-11-01^^GOW^G8^0^GoAir^^^^^http://en.wikipedia.org/wiki/
 air-go-v1^^^^GOE^GO^0^Go^^^^^^en|Go|^^air-go^1
 air-go2sky-v1^^2013-02-14^^RLX^6G^0^Go2Sky^^^^^http://en.wikipedia.org/wiki/Go2Sky^en|Go2Sky|=sign|RELAX|^TIA^air-go2sky^1
 air-gojet-airlines-v1^^2004-01-01^^GJS^G7^573^GoJet Airlines^^^^^http://en.wikipedia.org/wiki/GoJet_Airlines^en|GoJet Airlines|^^air-gojet-airlines^1
-air-gol-transportes-aereos-v2^^2016-05-01^^GLO^G3^127^Gol Transportes Aéreos^^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|=en|Gol Linhas Aéreas Inteligentes|^CGH^air-gol-transportes-aereos^2
+air-gol-transportes-aereos-v1^^2001-01-15^^GLO^G3^127^Gol Transportes Aéreos^^^^^http://en.wikipedia.org/wiki/Gol_Transportes_A%C3%A9reos^en|Gol Transportes Aéreos|p=en|VRG Linhas Aéreas|h=en|Gol Linhas Aéreas Inteligentes|^CGH^air-gol-transportes-aereos^1
 air-golden-myanmar-airlines-v1^^^^^Y5^509^Golden Myanmar Airlines^^^^^^en|Golden Myanmar Airlines|^^air-golden-myanmar-airlines^1
 air-grand-china-air-v1^^2007-01-01^^GDC^CN^895^Grand China Air^^^^^http://en.wikipedia.org/wiki/Grand_China_Air^abbr|GCA|=en|Grand China Air|=pny|Dà Xīn Huá Hángkōng|=sign|GRAND CHINA|=wuu|大新华航空|=yue|大新華航空|^^air-grand-china-air^1
 air-grant-aviation-v1^^1993-01-01^^SWV^GV^0^Grant Aviation^^^^^http://en.wikipedia.org/wiki/Grant_Aviation^en|Grant Aviation|^AKN=ANC=BET^air-grant-aviation^1
