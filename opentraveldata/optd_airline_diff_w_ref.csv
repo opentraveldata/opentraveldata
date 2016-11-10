@@ -37,6 +37,7 @@
 2J^2^<>Air Burkina
 2L^2^2L Helvetic<>2l HELVETIC
 2M^1^Maya Island Air<>
+2N^2^<>Nextjet
 2P^2^<>Airphil Exp
 2Q^1^Air Cargo Carriers<>
 2R^1^VIA Rail Canada<>Via Rail Canada Inc
@@ -81,7 +82,7 @@
 4N^2^<>Air North
 4O^2^<>Interjet
 4Q^2^<>Safi Airways
-4R^1^Royal Flight<>Renfe Viajeros
+4R^1^<>Renfe Viajeros
 4R^2^<>Hamburg Intl
 4U^2^<>Germanwings
 4V^1^Lacbravo<>Lignes Aeriennes Congo
@@ -118,7 +119,6 @@
 5U^2^TAG<>L A D E
 5W^1^WESTBahn<>Speed Alliance Westbahn
 5W^2^<>Executive Exp
-5Y^1^Isles of Scilly Skybus<>Atlas Air
 5Y^2^<>Express Rail
 5Z^1^CemAir<>Cemair
 5Z^2^<>Cemair
@@ -154,8 +154,8 @@
 7I^2^<>Insel Air
 7J^2^<>Tajik Air
 7L^1^Aero Caribbean<>Aerocaribbean
-7N^1^Pan American World Airways Dominicana<>Pan American World
-7N^2^PAWA Dominicana<>Pawad
+7N^1^PAWA Dominicana<>Pan American World
+7N^2^<>Pawad
 7O^1^Travel Service Hungary<>Travel Service Legoforgalmi
 7P^2^<>Apa Intl
 7R^1^RusLine<>Rusline
@@ -221,6 +221,7 @@
 9V^1^Avior Airlines<>Avior
 9V^2^<>Avior
 9W^2^<>Jet Airways
+9Y^1^<>National Airways
 9Y^2^<>Fly Georgia
 9Z^1^<>Amadeus Pdf 9z
 A0^2^<>Macair Jet
@@ -293,6 +294,7 @@ ANA^2^ANA<>All Nippon
 ANE^2^<>Air Nostrum
 ANG^2^<>Air Niugini
 ANO^2^Capiteq Limited<>Airnorth
+ANZ^2^<>New Zealand
 AO^1^<>Avianova Lcc
 AO^2^<>Australian
 AP^1^AlbaStar<>Alba Star
@@ -459,7 +461,7 @@ CO^1^Cobalt Air<>Cobaltair
 CP^2^<>Canadian
 CPA^2^<>Cathaypacific
 CR^1^OAG Worldwide<>Oag Worldwide
-CRD^1^Camair-Co<>Camair Co
+CRD^1^<>Camair Co
 CRD^2^<>Camair Co
 CRK^2^<>Hongkong Air
 CRL^2^<>Corse Air
@@ -786,6 +788,7 @@ IW^1^Wings Air<>Pt Wings Abadi Airlines
 IW^2^<>Air Lib
 IY^2^<>Yemen Airways
 IYE^2^<>Yemen Airways
+IZG^1^<>Zagros Airlines
 J0^1^Jetlink Express<>
 J0^2^<>Jetlink Exprs
 J1^1^OntJet<>
@@ -1056,6 +1059,7 @@ NRS^1^Norwegian Air UK<>Norwegian Air Uk
 NRS^2^<>Norwegian Uk
 NSE^1^SATENA<>Satena
 NT^2^<>Binter Can
+NTJ^2^<>Nextjet
 NVL^1^<>New Livingston
 NVR^1^Novair<>Nova Airlines
 NVR^2^<>Northcoast Av
@@ -1063,6 +1067,7 @@ NW^1^Northwest Airlines<>
 NW^2^Nwest Airlines<>Nwest Airli
 NX^2^<>Air Macau
 NY^2^<>Air Iceland
+NZ^2^<>New Zealand
 O2^1^Jet Air<>
 O7^1^Orenburg Region Airlines<>Sue Orenburg Region
 O8^1^<>Siam Air Transport
@@ -1149,8 +1154,8 @@ PTR^2^Petra Airlines<>
 PU^1^Plus Ultra Líneas Aéreas<>Plus Ultra Lineas Aereas
 PU^2^<>Plus Ultra
 PW^2^<>Precision Air
-PWD^1^Pan American World Airways Dominicana<>Pan American World
-PWD^2^PAWA Dominicana<>Pawad
+PWD^1^PAWA Dominicana<>Pan American World
+PWD^2^<>Pawad
 PX^2^<>Air Niugini
 PZ^1^LATAM Paraguay<>Latam Airlines Paraguay
 PZ^2^<>Lapsa
@@ -1199,6 +1204,7 @@ R5^2^<>Jordan Avia
 R6^1^DOT LT<>Dot Lt
 R8^2^<>Kyrgyzstan
 R9^1^TAF Linhas Aereas<>
+RA^2^<>Nepal Air
 RAM^2^<>R Air Maroc
 RAT^2^<>Rak Airways
 RB^2^<>Syrian Air
@@ -1225,6 +1231,7 @@ RLE^2^Saffron Aviation<>
 RLU^1^RusLine<>Rusline
 RLU^2^<>Rusline
 RN^2^<>Euralair
+RNA^2^<>Nepal Air
 RO^1^TAROM<>Tarom
 RO^2^<>Tarom
 ROI^1^Avior Airlines<>Avior
@@ -1687,6 +1694,7 @@ ZK^2^<>Great Lakes
 ZL^2^<>Regional Exp
 ZM^1^Pegasus Asia<>Air Manas
 ZM^2^Air Manas<>Pegasus Asia
+ZO^1^<>Zagros Airlines
 ZP^1^Silk Way Airlines<>Amaszonas Del Paraguay
 ZQ^1^<>Air Azul
 ZQ^2^<>Carribean Sun
