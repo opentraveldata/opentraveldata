@@ -30,6 +30,8 @@
 2A^2^<>Deutsche Bahn
 2C^1^SNCF<>Sncf
 2D^2^<>Dynamic
+2F^1^Fair Aviation<>Fair Aviation Pty Ltd
+2F^2^<>Frontier
 2H^1^Thalys<>Thalys International
 2H^2^<>Thalys
 2I^1^Star Perú<>Star Peru
@@ -298,6 +300,7 @@ ANZ^2^<>New Zealand
 AO^1^<>Avianova Lcc
 AO^2^<>Australian
 AP^1^AlbaStar<>Alba Star
+AP^2^<>Alba Star
 APD^1^Fantasia Info Network<>Fantasia Info Network Lt
 APF^1^Amapola Flyg<>Amapola Flyg Ab
 AR^1^Aerolíneas Argentinas<>Aerolineas Argentinas
@@ -911,6 +914,7 @@ LAO^2^<>Lao Airlines
 LAP^1^LATAM Paraguay<>Latam Airlines Paraguay
 LAP^2^<>Lapsa
 LAV^1^AlbaStar<>Alba Star
+LAV^2^<>Alba Star
 LB^2^LAB<>L A B
 LBT^2^<>Nouvelair
 LC^1^ECAir<>Equatorial Congo Airline

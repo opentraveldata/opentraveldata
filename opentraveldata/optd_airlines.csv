@@ -50,6 +50,7 @@ air-africa-west-cargo-v1^^^^^FK^0^Africa West Cargo Ghd^^^^C^^^en|Africa West Ca
 air-africa-world-airlines-v1^^2012-09-21^^AFW^AW^394^Africa World Airlines^^^^^http://en.wikipedia.org/wiki/Africa_World_Airlines^6170^abbr|AWA|=en|Africa World Airlines|^ACC^air-africa-world-airlines^1
 air-afrijet-airlines-v1^1^2000-01-01^2008-12-31^FRJ^6F^0^Afrijet Airlines^^^^^http://en.wikipedia.org/wiki/Afrijet_Airlines^^en|Afrijet Airlines|^LOS^air-afrijet-airlines^1
 air-afrijet-business-service-v1^^2016-04-01^^ABS^J7^0^Afrijet Business Service^^^^^^807^en|Afrijet Business Service|^LBV^air-afrijet-business-service^1
+air-afrinat-international-airlines-v1^1^2004-01-01^2004-01-01^AFU^Q9^0^Afrinat International Airlines^^^^^http://en.wikipedia.org/wiki/Afrinat_International_Airlines^^en|Afrinat International Airlines|^BJL^air-afrinat-international-airlines^1
 air-afriqiyah-airways-v1^^^^AAW^8U^546^Afriqiyah Airways^^^^^^2449^en|Afriqiyah Airways|^^air-afriqiyah-airways^1
 air-aigle-azur-v1^^1946-01-01^^AAF^ZI^439^Aigle Azur^^^^^http://en.wikipedia.org/wiki/Aigle_Azur^6304^en|Aigle Azur|^^air-aigle-azur^1
 air-air-algerie-v1^^1947-03-15^^DAH^AH^124^Air Algerie^^^^^http://en.wikipedia.org/wiki/Air_Alg%C3%A9rie^69878^en|Air Algerie|^^air-air-algerie^1
@@ -516,7 +517,7 @@ air-enkor-jsc-v1^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.
 air-equaflight-service-v1^^^^^E7^965^Equaflight Service^Fly European^^^P^^157^en|Equaflight Service|=en|Fly European|^^air-equaflight-service^1
 air-equatorial-congo-airlines-v1^^2011-09-24^^PTI^LC^753^ECAir^^^^^^^en|Equatorial Congo Airlines|=en|ECAir|ps=ja|エクアトリアル・コンゴ・エアラインズ|^^air-equatorial-congo-airlines^1
 air-era-aviation-v1^1^1948-01-01^2016-06-30^ERH^7H^808^Era Aviation^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^1
-air-era-aviation-v2^^2016-07-01^^RVF^7H^808^Ravn Alaska^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^27028^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^2
+air-era-aviation-v2^^2016-07-01^^RVF^7H^808^Ravn Alaska^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^27028^en|Ravn Alaska|p=en|Corvus Airlines|=en|Frontier Flying Service|h=en|Frontier Alaska|h=en|Hageland Aviation|h=en|Era Alaska|h=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^2
 air-eritrean-airlines-v1^^^^ERT^B8^637^Eritrean Airlines^^^^^^406^en|Eritrean Airlines|^^air-eritrean-airlines^1
 air-ero-sun-d-or-v1^^^^ERO^2U^383^Ero Sun D Or^^^^P^^^en|Ero Sun D Or|^^air-ero-sun-d-or^1
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^^en|E Savtravel|^^air-e-savtravel^1
@@ -554,6 +555,7 @@ air-exel-nl-v1^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^^^^http://en.wikipedia
 air-express-air-cargo-v1^^^2015-01-01^XRC^7A^336^Express Air Cargo^^^^^http://en.wikipedia.org/wiki/Express_Air_Cargo^^en|Express Air Cargo|^^air-express-air-cargo^1
 air-expressjet-airlines-v1^^2001-01-01^^ASQ^EV^862^ExpressJet Airlines^^^^^http://en.wikipedia.org/wiki/ExpressJet^516617^en|ExpressJet Airlines|p=en|Continental Express|h=en|Bar Harbor Airlines|h=en|Britt Airways|h=en|Rocky Mountain Airways|h=en|ASA - Atlantic Southeast Airlines|h^ATL^air-expressjet-airlines^1
 air-eznis-airways-v1^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^^^en|Eznis Airways|=en|Eznis Airways|^^air-eznis-airways^1
+air-fair-aviation-v1^^2016-11-01^^FAV^2F^0^Fair Aviation^^^^^^^en|Fair Aviation|^HLA^air-fair-aviation^1
 air-fai-rent-a-jet-v1^^1987-01-01^^IFA^F3^0^FAI rent-a-jet^^^^^http://en.wikipedia.org/wiki/FAI_rent-a-jet^^en|FAI rent-a-jet|p=en|Flight Ambulance International|^NUE^air-fai-rent-a-jet^1
 air-far-eastern-v1^^1957-01-01^^FEA^FE^436^Far Eastern Air Transport^^^^^http://en.wikipedia.org/wiki/Far_Eastern_Air_Transport^2207^abbr|FAT|=en|Far Eastern Air Transport|=pny|Yuǎndōng Hángkōng Gǔfènyǒuxiàngōngsī|=wuu|远东航空股份有限公司|=yue|遠東航空股份有限公司|^^air-far-eastern^1
 air-farnair-switzerland-v1^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^http://en.wikipedia.org/wiki/Farnair_Switzerland^^en|Farnair Switzerland|^^air-farnair-switzerland^1
@@ -602,7 +604,6 @@ air-french-blue-v1^^2016-01-01^^FBU^BF^396^French Blue^^^^^http://en.wikipedia.o
 air-french-military-force-v1^^^^^RD^0^French Military Force^Ryan^^^^^^en|French Military Force|=en|Ryan|^^air-french-military-force^1
 air-freshair-v1^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^^en|Freshair|=en|Easeon Air|^^air-freshair^1
 air-frontier-airlines-v1^^1994-07-05^^FTT^F9^422^Frontier Airlines^^^^^http://en.wikipedia.org/wiki/Frontier_Airlines^43142^en|Frontier Airlines|^^air-frontier-airlines^1
-air-frontier-flying-service-v1^^^^AFU^2F^0^Afrinat International Airlines^Frontier^^^^^^en|Afrinat International Airlines|=en|Frontier|^^air-frontier-flying-service^1
 air-fuji-dream-airlines-v1^^^^FDA^JH^0^Fuji Dream Airlines^Nordeste^^^^^22845^en|Fuji Dream Airlines|=en|Nordeste|^^air-fuji-dream-airlines^1
 air-fuzhou-airlines-v1^^2014-10-30^^FZA^FU^666^Fuzhou Airlines^^^^^http://en.wikipedia.org/wiki/Fuzhou_Airlines^900^en|Fuzhou Airlines|^^air-fuzhou-airlines^1
 air-gading-sari-aviation-v1^^2006-01-01^^GSB^3G^380^AsiaCargo Express^^^^C^http://en.wikipedia.org/wiki/Gading_Sari^^en|AsiaCargo Express|p=en|Gading Sari|h^^air-gading-sari-aviation^1
