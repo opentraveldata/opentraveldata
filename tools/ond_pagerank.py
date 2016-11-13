@@ -252,7 +252,7 @@ def getTravelPK (por_dict_list):
 #
 # Get the list of primary keys for the city-only POR
 #
-def getCityCodePKList (por_all_dict, por_code, por_pk):
+def getCityPKList (por_all_dict, por_code, por_pk):
     por_dict = por_all_dict[por_code][por_pk]
     cty_code_list = por_dict['city_code_list']
     por_cty_pk_list = []
@@ -261,7 +261,7 @@ def getCityCodePKList (por_all_dict, por_code, por_pk):
         for por_cty_pk in por_cty_full_dict:
             isCityOnly = isCityOnlyFromPK (por_cty_pk)
             if (isCityOnly == True):
-                por_cty_pk_list.append (cty_code)
+                por_cty_pk_list.append (por_cty_pk)
     return por_cty_pk_list
 
 #
@@ -316,9 +316,14 @@ def extractBksfPOR (por_all_dict, optd_por_bestknown_filename, verboseFlag):
 # Store the flight leg edges into both directional graphs
 #
 def storeEdge (por_org_pk, por_dst_pk, nb_seats, nb_freq, dg_seats, dg_freq):
-    # Store the weights for the corresponding flight legs
-    dg_seats.add_edge (por_org_pk, por_dst_pk, weight = float(nb_seats))
-    dg_freq.add_edge (por_org_pk, por_dst_pk, weight = float(nb_freq))
+    # Store/add the weights for the corresponding flight legs
+    isEdgeExisting = dg_seats.has_edge (por_org_pk, por_dst_pk)
+    if (isEdgeExisting == False):
+        dg_seats.add_edge (por_org_pk, por_dst_pk, weight = float(nb_seats))
+        dg_freq.add_edge (por_org_pk, por_dst_pk, weight = float(nb_freq))
+    else:
+        dg_seats[por_org_pk][por_dst_pk]['weight'] += float(nb_seats)
+        dg_freq[por_org_pk][por_dst_pk]['weight'] += float(nb_freq)
     return
 
 #
@@ -398,10 +403,10 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
             apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
                 
             # Get the list of primary keys for the city-only POR
-            apt_org_cty_pk_list = getCityCodePKList (por_all_dict,
-                                                     apt_org, apt_org_tvl_pk)
-            apt_dst_cty_pk_list = getCityCodePKList (por_all_dict,
-                                                     apt_dst, apt_dst_tvl_pk)
+            apt_org_cty_pk_list = getCityPKList (por_all_dict,
+                                                 apt_org, apt_org_tvl_pk)
+            apt_dst_cty_pk_list = getCityPKList (por_all_dict,
+                                                 apt_dst, apt_dst_tvl_pk)
 
 
             # Determine whether there is a need for extra edges.
@@ -426,6 +431,34 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
 
 
     return (dg_seats, dg_freq)
+
+#
+# Print the directed graph (DiGraph) into the corresponding CSV file 
+#
+def dump_digraph (dg, output_filename, verboseFlag):
+    """
+    Generate a CSV data file with, for every edge of the DiGraph:
+     - The origin POR primary key
+     - The destination POR primary key
+     - The weight, which is usually either the total capacity
+       or the total frequency
+    """
+
+    fieldnames = ['org_pk', 'dst_pk', 'weight']
+    with open (output_filename, 'w', newline='') as output_csv:
+        #
+        fileWriter = csv.DictWriter (output_csv, delimiter='^',
+                                     fieldnames = fieldnames)
+        # Write the header
+        fileWriter.writeheader()
+
+        #
+        for (org_pk, dst_pk, edge_data) in dg.edges (data = True):
+            edge_weight = edge_data['weight']
+            fileWriter.writerow ({'org_pk': org_pk, 'dst_pk': dst_pk,
+                                  'weight': edge_weight})
+        
+    return
 
 #
 # Filter in only the fields to be dumped into the CSV file
@@ -553,8 +586,9 @@ def main():
     (dict_seats, dict_freq) = deriveGraph (por_all_dict, por_airline_filename, verboseFlag)
 
     # DEBUG
-    # print (str(dict_seats))
-    # print (str(dict_freq))
+    dump_digraph (dict_seats, "../opentraveldata/optd_airline_por_cumulated.csv",
+                  verboseFlag)
+    # dump_digraph (dict_freq, output_filename, verboseFlag)
     
     # Derive the PageRank values
     prdict_seats = nx.pagerank (dict_seats)
