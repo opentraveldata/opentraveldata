@@ -250,19 +250,19 @@ def getTravelPK (por_dict_list):
     return por_tvl_pk
 
 #
-# Get the list primary keys for the city-only POR
+# Get the list of primary keys for the city-only POR
 #
 def getCityCodePKList (por_all_dict, por_code, por_pk):
     por_dict = por_all_dict[por_code][por_pk]
     cty_code_list = por_dict['city_code_list']
-    apt_org_cty_pk_list = []
+    por_cty_pk_list = []
     for cty_code in cty_code_list:
         por_cty_full_dict = por_all_dict[cty_code]
         for por_cty_pk in por_cty_full_dict:
             isCityOnly = isCityOnlyFromPK (por_cty_pk)
             if (isCityOnly == True):
-                apt_org_cty_pk_list.append (cty_code)
-    return apt_org_cty_pk_list
+                por_cty_pk_list.append (cty_code)
+    return por_cty_pk_list
 
 #
 # Store the POR details
@@ -337,24 +337,27 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
     EWR-C-5101798^EWR
     CHI-C-4887398^CHI
     ORD-A-4887479^CHI
+    IEV-C-703448^IEV
     IFO-CA-6300962^IFO
     KBP-A-6300952^IEV
+    NYC-C-5128581^NYC
 
     Raw flight leg records, with their weights:
     AA^EWR^ORD^450.0
     PS^IFO^KBP^200.0
 
     Extrapolated/rebuilt flight leg records:
-    AA^NYC-C^EWR-A^450.0
-    AA^EWR-C^EWR-A^450.0
-    AA^EWR-A^ORD-A^450.0
-    AA^ORD-A^CHI-C^450.0
-    PS^IFO-CA^KBP-A^200.0
-    PS^KBP-A^IEV-C^200.0
+    AA^NYC-C-5128581^EWR-A-5101809^450.0
+    AA^EWR-C-5099738^EWR-A-5101809^450.0
+    AA^EWR-C-5101798^EWR-A-5101809^450.0
+    AA^EWR-A-5101809^ORD-A-4887479^450.0
+    AA^ORD-A-4887479^CHI-C-4887398^450.0
+    PS^IFO-CA-6300962^KBP-A-6300952^200.0
+    PS^KBP-A-6300952^IEV-C-703448^200.0
 
     And the derived graph:
-    {NYC-C,EWR-C}--450.0--EWR-A--450.0--ORD-A--450.0--CHI-C
-    IFO-CA--200.0--KBP-A--200.0--IEV-C
+    {(NYC-C-5128581),(EWR-C-5099738),(EWR-C-5101798)}--450.0--(EWR-A-5101809)--450.0--(ORD-A-4887479)--450.0--(CHI-C-4887398)
+    (IFO-CA-6300962)--200.0--(KBP-A-6300952)--200.0--(IEV-C-703448)
     """
 
     # Initialise the NetworkX directional graphs (DiGraph)
@@ -394,25 +397,27 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
             apt_org_tvl_pk = getTravelPK (apt_org_dict_list)
             apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
                 
-            # Get the list primary keys for the city-only POR
-            apt_org_cty_pk_list = getCityCodePKList (por_all_dict, apt_org, apt_org_tvl_pk)
-            apt_dst_cty_pk_list = getCityCodePKList (por_all_dict, apt_dst, apt_dst_tvl_pk)
+            # Get the list of primary keys for the city-only POR
+            apt_org_cty_pk_list = getCityCodePKList (por_all_dict,
+                                                     apt_org, apt_org_tvl_pk)
+            apt_dst_cty_pk_list = getCityCodePKList (por_all_dict,
+                                                     apt_dst, apt_dst_tvl_pk)
 
 
             # Determine whether there is a need for extra edges.
             # Those extra edges are (potentially) between the city-
             # and travel-related origin POR.
-            for apt_org_pk in apt_org_cty_pk_list:
+            for apt_org_cty_pk in apt_org_cty_pk_list:
                 # Store the extra flight leg edge
-                storeEdge (apt_org_pk, apt_org_tvl_pk, nb_seats, nb_freq,
+                storeEdge (apt_org_cty_pk, apt_org_tvl_pk, nb_seats, nb_freq,
                            dg_seats, dg_freq)
 
             # Determine whether there is a need for extra edges.
             # Those extra edges are (potentially) between the city-
             # and travel-related origin POR.
-            for apt_dst_pk in apt_dst_cty_pk_list:
+            for apt_dst_cty_pk in apt_dst_cty_pk_list:
                 # Store the extra flight leg edge
-                storeEdge (apt_dst_pk, apt_dst_tvl_pk, nb_seats, nb_freq,
+                storeEdge (apt_dst_tvl_pk, apt_dst_cty_pk, nb_seats, nb_freq,
                            dg_seats, dg_freq)
 
             # Store the flight leg edge
@@ -547,13 +552,17 @@ def main():
     # - One with, as weight, the monthly flight frequency
     (dict_seats, dict_freq) = deriveGraph (por_all_dict, por_airline_filename, verboseFlag)
 
+    # DEBUG
+    # print (str(dict_seats))
+    # print (str(dict_freq))
+    
     # Derive the PageRank values
     prdict_seats = nx.pagerank (dict_seats)
     prdict_freq = nx.pagerank (dict_freq)
 
     # DEBUG
-    # print (prdict_seats)
-    # print (prdict_freq)
+    # print (str(prdict_seats))
+    # print (str(prdict_freq))
 
     # Dump the page ranked POR into the output file
     dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
