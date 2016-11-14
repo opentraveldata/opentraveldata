@@ -296,7 +296,6 @@ air-central-mountain-air-v1^^^^GLR^9M^634^Central Mountain Air^^^^^^en|Central M
 air-centralwings-v1^^^^CLW^C0^0^Centralwings^^^^^^en|Centralwings|^^air-centralwings^1
 air-chalair-aviation-v1^^^^CLG^CE^980^Chalair Aviation^Chalair^^^^^en|Chalair Aviation|=en|Chalair|^^air-chalair-aviation^1
 air-challenge-aero-v1^^^^CHG^^^Challenge Aero^^^^T^^en|Challenge Aero|^^air-challenge-aero^1
-air-champion-air-v1^^^^CCP^MG^0^Champion Air^Mgm Grand^^^^^en|Champion Air|=en|Mgm Grand|^^air-champion-air^1
 air-champlain-enterprises-v1^^1989-08-01^^UCA^C5^841^CommutAir^Champlain Enterprises^^^^http://en.wikipedia.org/wiki/CommutAir^en|CommutAir|=en|Champlain Enterprises|^^air-champlain-enterprises^1
 air-cham-wings-airlines-v1^^^^SAW^6Q^386^Cham Wings Airlines^Slovak Arlines^^^^^en|Cham Wings Airlines|=en|Slovak Arlines|^^air-cham-wings-airlines^1
 air-chang-an-airlines-v1^^1992-04-11^^CGN^9H^856^Chang An Airlines^^^^^http://en.wikipedia.org/wiki/Chang_An_Airlines^en|Chang An Airlines|=es|Chang'an Airlines|=fr|Chang'an Airlines|=ja|長安航空|=pny|Cháng'ān Hángkōng|=sign|CHANGAN|=zh|长安航空|^^air-chang-an-airlines^1
@@ -652,7 +651,8 @@ air-mesa-airlines-v1^^1980-10-12^^ASH^YV^533^Mesa Airlines^^^^^http://en.wikiped
 air-mesaba-airlines-v1^^2014-06-17^^TAX^XJ^0^Thai AirAsia X^Mesaba Air^^^^http://en.wikipedia.org/wiki/Thai_AirAsia_X^en|Thai AirAsia X|=en|Mesaba Air|^^air-mesaba-airlines^1
 air-mgc-aviation-v1^^2012-01-01^^^7D^0^MGC Aviation^^^^^^en|MGC Aviation|^^air-mgc-aviation^1
 air-mhs-aviation-v1^^^^^M2^0^MHS Aviation^^^^^^en|MHS Aviation|^^air-mhs-aviation^1
-air-miami-air-v1^^^^BSK^LL^0^Miami Air International^^^^^^en|Miami Air International|^^air-miami-air^1
+air-miami-air-international-v1^^1991-10-01^^BSK^LL^0^Miami Air International^^^^^http://en.wikipedia.org/wiki/Miami_Air_International^en|Miami Air International|^MIA^air-miami-air-international^1
+air-miami-air-lease-v1^^1971-01-01^^MGD^MG^424^Miami Air Lease^^^^^^en|Miami Air Lease|^MIA^air-miami-air-lease^1
 air-miat-mongolian-airlines-v1^^^^MGL^OM^289^Miat Mongolian Airlines^^^^^^en|Miat Mongolian Airlines|^^air-miat-mongolian-airlines^1
 air-middle-east-airlines-v1^^^^MEA^ME^76^Middle East Airlines^^^Member^^^en|Middle East Airlines|^^air-middle-east-airlines^1
 air-mid-africa-aviation-v1^^2014-01-01^^MFG^8G^0^Mid Africa Aviation^^^^^^en|Mid Africa Aviation|^^air-mid-africa-aviation^1
