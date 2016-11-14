@@ -217,6 +217,7 @@ air-austrian-airlines-v1^^1957-09-30^^AUA^OS^257^Austrian Airlines^^^Member^^htt
 air-avanza-v1^^^^^6V^0^Avanza^Mars Rk^^^^^en|Avanza|=en|Mars Rk|^^air-avanza^1
 air-avianca-v1^^1919-12-05^^AVA^AV^134^Avianca^^^^^http://en.wikipedia.org/wiki/Avianca^en|Avianca|^^air-avianca^1
 air-aviastar-mandiri-v1^^2003-01-01^^VIT^^0^Aviastar Mandiri^^^^^http://en.wikipedia.org/wiki/Aviastar_(Indonesia)^en|Aviastar|s=en|Aviastar Mandiri|^^air-aviastar-mandiri^1
+air-aviastar-tu-v1^^2004-01-01^^TUP^4B^210^Aviastar TU^^^^^http://en.wikipedia.org/wiki/Aviastar-TU^en|Aviastar TU|=ru|Авиастар-ТУ|=sign|TUPOLEVAIR|^ZIA^air-aviastar-tu^1
 air-aviateca-v1^^^^GUG^GU^240^Aviateca^^^^^^en|Aviateca|^^air-aviateca^1
 air-aviation-starlink-v1^^^^^Q4^0^Aviation Starlink^Swazi Express^^^^^en|Aviation Starlink|=en|Swazi Express|^^air-aviation-starlink^1
 air-aviator-aviation-v1^^^^^T9^0^Aviator Aviation^^^^^^en|Aviator Aviation|^^air-aviator-aviation^1
@@ -258,7 +259,7 @@ air-blue-islands-v1^^1999-01-01^^BCI^SI^821^Blue Islands^^^^^http://en.wikipedia
 air-blue-panorama-airlines-v1^^^^BPA^BV^4^Blue Panorama Airlines^Blue Panorama^^^^^en|Blue Panorama Airlines|=en|Blue Panorama|^^air-blue-panorama-airlines^1
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^http://en.wikipedia.org/wiki/BMI_Regional^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^http://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^en|Boliviana de Aviación (BoA)|^^air-boliviana-de-aviacion^1
-air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^http://en.wikipedia.org/wiki/Boutique_Air^en|Boutique Air|^^air-boutique-air^1
+air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^http://en.wikipedia.org/wiki/Boutique_Air^en|Boutique Air|^SFO^air-boutique-air^1
 air-bqb-v1^^^^BEA^5Q^567^BQB Líneas Aéreas^^^^P^http://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^en|BQB Líneas Aéreas|^^air-bqb^1
 air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^http://en.wikipedia.org/wiki/Braathens_Regional_Aviation^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1
 air-branson-air-express-v1^^2010-05-17^^^1X^0^Branson Air Express^^^^^http://en.wikipedia.org/wiki/Branson_Air_Express^en|Branson Air Express|=en|FlyBranson Travel|^SFB^air-branson-air-express^1
