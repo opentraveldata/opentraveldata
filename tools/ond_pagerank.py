@@ -51,7 +51,7 @@ def handle_opt (usage_doc):
     verboseFlag = False
     por_airline_filename = '../opentraveldata/optd_airline_por_rcld.csv'
     por_bestknown_filename = '../opentraveldata/optd_por_best_known_so_far.csv'
-    output_filename = '../opentraveldata/ref_airport_pageranked_new.csv'
+    output_filename = '../opentraveldata/ref_airport_pageranked.csv'
 
     # Handling
     for o, a in opts:
@@ -573,7 +573,7 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
     normalizePR (por_all_dict, "pr_freq", prdict_freq, verboseFlag)
 
     # Sort the dictionary by the average number of seats
-    # por_all_dict_sorted = sortPORDict (por_all_dict)
+    por_all_dict_sorted = sortPORDict (por_all_dict)
 
     # Dump the details into the given CSV output file
     fieldnames = ['pk', 'iata_code', 'pr_seats', 'pr_freq']
@@ -587,7 +587,7 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
         fileWriter.writeheader()
 
         # Browse the POR having a PageRank value and dump the details
-        for (idx_por, pr_dict_full) in por_all_dict.items():
+        for (idx_por, pr_dict_full) in por_all_dict_sorted.items():
             for (idx_por_type, pr_dict) in pr_dict_full.items():
                 if 'pr_seats' in pr_dict:
                     # Filter out the fields not to be dumpred into the CSV file
@@ -619,8 +619,7 @@ def main():
     (dict_seats, dict_freq) = deriveGraph (por_all_dict, por_airline_filename, verboseFlag)
 
     # DEBUG
-    dump_digraph (dict_seats, "../opentraveldata/optd_airline_por_cumulated.csv",
-                  verboseFlag)
+    # dump_digraph (dict_seats, "../opentraveldata/optd_airline_por_cumulated.csv", verboseFlag)
     # dump_digraph (dict_freq, output_filename, verboseFlag)
     
     # Derive the PageRank values

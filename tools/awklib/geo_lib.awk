@@ -1044,8 +1044,8 @@ function resetInnovataLineList() {
 ##
 # Reset the list of the OPTD-maintained PageRank entries
 function resetPageRankList() {
-    delete optd_pr_city_list
-    delete optd_pr_tvl_list
+    delete optd_pr_seats_list
+    delete optd_pr_freq_list
 }
 
 ##
@@ -1211,50 +1211,21 @@ function geoDistance(__gdLat1, __gdLon1, __gdLat2, __gdLon2) {
 
 ##
 # Retrieve the PageRank value for that POR
-function getPageRank(__gprParamIataCode, __gprParamLocType) {
-    # Check whether it is a city
-    is_city = isLocTypeCity(__gprParamLocType)
-
-    # Check whether it is travel-related
-    is_tvl = isLocTypeTvlRtd(__gprParamLocType)
-	
-    if (is_city != 0) {
-		__gprPR = optd_pr_city_list[__gprParamIataCode]
-	
-    } else if (is_tvl != 0) {
-		__gprPR = optd_pr_tvl_list[__gprParamIataCode]
-
-    } else {
-		__gprPR = 0.001
-    }
-
+#
+function getPageRank(__gprParamPK) {
+	__gprPR = optd_pr_seats_list[__gprParamPK]
     return __gprPR
 }
 
 ##
-# Register the PageRank value for the given POR, specified by a
-# (IATA code, pseudo location type) combination.
-# The location type is a pseudo one, because it originally comes from
-# the analysis of schedule files; hence, one can distinguish only between
-# a city and a travel-related POR.
-function registerPageRankValue(__rprlParamIataCode, __rprlParamLocType, \
-							   __rprlParamFullLine, __rprlParamNbOfPOR, \
-							   __rprlParamPRValue) {
-    # Check whether it is a city
-    is_city = isLocTypeCity(__rprlParamLocType)
-
-    # Check whether it is travel-related
-    is_tvl = isLocTypeTvlRtd(__rprlParamLocType)
-
-    # Store the PageRank value for that POR
-    if (is_city != 0) {
-		addFieldToList(__rprlParamIataCode, optd_pr_city_list,	\
-					   __rprlParamPRValue)
-    }
-    if (is_tvl != 0) {
-		addFieldToList(__rprlParamIataCode, optd_pr_tvl_list, __rprlParamPRValue)
-    }
-
+# Register the PageRank values for the given POR, specified by a
+# primary key, ie a (IATA code, location type, Geonames ID) combination.
+#
+function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
+								__rprlParamPRFreq) {
+	addFieldToList(__rprlParamPK, optd_pr_seats_list, __rprlParamPRSeats)
+	
+	addFieldToList(__rprlParamPK, optd_pr_freq_list, __rprlParamPRSeats)
 }
 
 ##
@@ -1297,6 +1268,9 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	# Geonames ID
 	geonames_id = $4
 
+	# Primary key
+	pk = getPrimaryKey(iata_code, __dgplOPTDLocType, geonames_id)
+	
 	# UTF8 name
 	name_utf8 = $5
 
@@ -1395,7 +1369,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	altname_section = $33
 
 	# PageRank value
-	page_rank = getPageRank(iata_code, __dgplOPTDLocType)
+	page_rank = getPageRank(pk)
 
 	# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Envelope ID
 	output_line = iata_code FS icao_code FS faa_code FS "Y" FS geonames_id FS
