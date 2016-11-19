@@ -303,6 +303,8 @@ AP^1^AlbaStar<>Alba Star
 AP^2^<>Alba Star
 APD^1^Fantasia Info Network<>Fantasia Info Network Lt
 APF^1^Amapola Flyg<>Amapola Flyg Ab
+APK^1^Air Peace<>Air Peace Limited
+APK^2^<>Sosa
 AR^1^Aerolíneas Argentinas<>Aerolineas Argentinas
 AR^2^<>Argentinas
 ARA^2^<>Arik Air
@@ -717,7 +719,7 @@ HAL^2^<>Hawaiian Air
 HAY^1^<>Skippers Aviation Pty
 HD^1^Air Do<>Airdo
 HD^2^Hokkaido International Airlines<>
-HDA^1^Cathay Dragon<>Dragonair
+HDA^1^Hong Kong Dragon Airlines<>Cathay Dragon
 HDA^2^<>Hk Dragon
 HE^1^LGW Luftfahrtges Walter<>Lgw Luftfahrtges Walter
 HER^2^<>Hex Air
@@ -842,7 +844,7 @@ K6^2^<>Cambodia Air
 K7^1^Air KBZ<>Air Kbz
 K7^2^<>Arizona
 K9^1^Kalitta Charters<>
-KA^1^Cathay Dragon<>Dragonair
+KA^1^Hong Kong Dragon Airlines<>Cathay Dragon
 KA^2^<>Hk Dragon
 KAC^2^<>Kuwait Air
 KAE^1^<>Kartika Airlines
@@ -915,7 +917,7 @@ LAP^1^LATAM Paraguay<>Latam Airlines Paraguay
 LAP^2^<>Lapsa
 LAV^1^AlbaStar<>Alba Star
 LAV^2^<>Alba Star
-LB^2^LAB<>L A B
+LB^2^<>L A B
 LBT^2^<>Nouvelair
 LC^1^ECAir<>Equatorial Congo Airline
 LC^2^<>Congo Airline
@@ -979,7 +981,7 @@ MCM^2^<>Heliairmona
 MD^2^<>Madagascar
 MDA^2^<>Mandarin Air
 MDG^2^<>Madagascar
-MDL^1^<>Mandala Airlines
+MDL^1^Air Costa Rica<>Tica Air International
 ME^2^<>Middle East
 MEA^2^<>Middle East
 MEP^2^<>Republic Airl
@@ -1112,6 +1114,7 @@ OX^2^<>Orient Thai
 OY^1^Andes Líneas Aéreas<>Andes Lineas Aereas
 OY^2^<>Andes
 OZ^2^<>Asiana
+P4^1^Air Peace<>Air Peace Limited
 P4^2^<>Sosa
 P5^1^Copa Airlines Colombia<>Aero Republica
 P5^2^AeroRepública<>Aerorepublica
@@ -1225,7 +1228,7 @@ RFR^2^RAF NO<>R A F No1
 RG^2^<>Rotana Jet
 RGR^2^<>Gromovairline
 RH^1^Robin Hood Aviation<>
-RI^1^Air Costa Rica<>Mandala Airlines
+RI^1^Air Costa Rica<>Tica Air International
 RIV^1^APG Airlines<>Apg Airlines
 RIV^2^<>Apg Airlines
 RJD^2^<>Rotana Jet
