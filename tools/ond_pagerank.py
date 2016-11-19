@@ -580,7 +580,8 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
     with open (output_filename, 'w', newline='') as output_csv:
         #
         fileWriter = csv.DictWriter (output_csv, delimiter='^',
-                                     fieldnames = fieldnames)
+                                     fieldnames = fieldnames,
+                                     dialect = 'unix', quoting = csv.QUOTE_NONE)
 
         # Write the header
         fileWriter.writeheader()
