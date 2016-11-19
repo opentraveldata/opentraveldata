@@ -2,6 +2,8 @@
 
 import getopt, sys, re, csv
 import networkx as nx
+from operator import itemgetter
+from collections import OrderedDict
 
 #
 # Usage
@@ -250,6 +252,16 @@ def getTravelPK (por_dict_list):
     return por_tvl_pk
 
 #
+# Get all the POR primary keys corresponding to a given IATA code
+#
+def getPORPKList (por_all_dict, por_code):
+    por_dict = por_all_dict[por_code]
+    por_pk_list = []
+    for por_pk in por_pk_list:
+        por_pk_list.append (por_pk)
+    return por_pk_list
+
+#
 # Get the list of primary keys for the city-only POR
 #
 def getCityPKList (por_all_dict, por_code, por_pk):
@@ -259,6 +271,9 @@ def getCityPKList (por_all_dict, por_code, por_pk):
     for cty_code in cty_code_list:
         por_cty_full_dict = por_all_dict[cty_code]
         for por_cty_pk in por_cty_full_dict:
+            # Filter out the already known primary keys
+            if (por_pk == por_cty_pk): continue
+            # Keep the POR, which are cities only (ie, 'C')
             isCityOnly = isCityOnlyFromPK (por_cty_pk)
             if (isCityOnly == True):
                 por_cty_pk_list.append (por_cty_pk)
@@ -352,15 +367,22 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
     PS^IFO^KBP^200.0
 
     Extrapolated/rebuilt flight leg records:
-    AA^NYC-C-5128581^EWR-A-5101809^450.0
-    AA^EWR-C-5099738^EWR-A-5101809^450.0
-    AA^EWR-C-5101798^EWR-A-5101809^450.0
+    AA^NYC-C-5128581^ORD-A-4887479^450.0
+    AA^EWR-C-5099738^ORD-A-4887479^450.0
+    AA^EWR-C-5101798^ORD-A-4887479^450.0
     AA^EWR-A-5101809^ORD-A-4887479^450.0
-    AA^ORD-A-4887479^CHI-C-4887398^450.0
+    AA^NYC-C-5128581^CHI-C-4887398^450.0
+    AA^EWR-C-5099738^CHI-C-4887398^450.0
+    AA^EWR-C-5101798^CHI-C-4887398^450.0
+    AA^EWR-A-5101809^CHI-C-4887398^450.0
     PS^IFO-CA-6300962^KBP-A-6300952^200.0
-    PS^KBP-A-6300952^IEV-C-703448^200.0
+    PS^IFO-CA-6300962^IEV-C-703448^200.0
 
     And the derived graph:
+    {(NYC-C-5128581),(EWR-C-5099738),(EWR-C-5101798),(EWR-A-5101809)}--450.0--{(ORD-A-4887479),(CHI-C-4887398)}
+    (IFO-CA-6300962)--200.0--{(KBP-A-6300952),(IEV-C-703448)}
+
+    Intuitive version, but which does not value the cities enough:
     {(NYC-C-5128581),(EWR-C-5099738),(EWR-C-5101798)}--450.0--(EWR-A-5101809)--450.0--(ORD-A-4887479)--450.0--(CHI-C-4887398)
     (IFO-CA-6300962)--200.0--(KBP-A-6300952)--200.0--(IEV-C-703448)
     """
@@ -398,39 +420,45 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
             apt_org_dict_list = por_all_dict[apt_org]
             apt_dst_dict_list = por_all_dict[apt_dst]
 
-            # Retrieve the primary keys of the travel-related POR
+            # Retrieve the primary key of the travel-related POR
+            # There should be only one. For instance:
+            #  EWR -> EWR-A-5101809
+            #  ORD -> ORD-A-4887479
+            #  IFO -> IFO-CA-6300962
+            #  KBP -> KBP-A-6300952
             apt_org_tvl_pk = getTravelPK (apt_org_dict_list)
             apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
-                
-            # Get the list of primary keys for the city-only POR
-            apt_org_cty_pk_list = getCityPKList (por_all_dict,
-                                                 apt_org, apt_org_tvl_pk)
-            apt_dst_cty_pk_list = getCityPKList (por_all_dict,
-                                                 apt_dst, apt_dst_tvl_pk)
 
+            # Retrieve the (list of primary key of the) cities served
+            # by the travel-related POR. For instance:
+            #  EWR-A-5101809 -> NYC-C-5128581, EWR-C-5099738, EWR-C-5101798
+            #  ORD-A-4887479 -> CHI-C-4887398
+            apt_org_pk_list = getCityPKList (por_all_dict, apt_org,
+                                             apt_org_tvl_pk)
+            apt_dst_pk_list = getCityPKList (por_all_dict, apt_dst,
+                                             apt_dst_tvl_pk)
 
-            # Determine whether there is a need for extra edges.
-            # Those extra edges are (potentially) between the city-
-            # and travel-related origin POR.
-            for apt_org_cty_pk in apt_org_cty_pk_list:
-                # Store the extra flight leg edge
-                storeEdge (apt_org_cty_pk, apt_org_tvl_pk, nb_seats, nb_freq,
-                           dg_seats, dg_freq)
+            # Add back the travel-related POR (primary key) to the list
+            # of POR (primary keys). For instance:
+            apt_org_pk_list.append (apt_org_tvl_pk)
+            apt_dst_pk_list.append (apt_dst_tvl_pk)
 
-            # Determine whether there is a need for extra edges.
-            # Those extra edges are (potentially) between the city-
-            # and travel-related origin POR.
-            for apt_dst_cty_pk in apt_dst_cty_pk_list:
-                # Store the extra flight leg edge
-                storeEdge (apt_dst_tvl_pk, apt_dst_cty_pk, nb_seats, nb_freq,
-                           dg_seats, dg_freq)
-
-            # Store the flight leg edge
-            storeEdge (apt_org_tvl_pk, apt_dst_tvl_pk, nb_seats, nb_freq,
-                       dg_seats, dg_freq)
-
+            # Derive all the edge combinations
+            for apt_org_pk in apt_org_pk_list:
+                for apt_dst_pk in apt_dst_pk_list:
+                    # Store the flight leg edge
+                    storeEdge (apt_org_pk, apt_dst_pk, nb_seats, nb_freq,
+                               dg_seats, dg_freq)
 
     return (dg_seats, dg_freq)
+
+#
+# Sort the dictionary according to the values (weights, here)
+# Does not work for now
+def sortPORDict (unsorted_dict):
+    sorted_dict = OrderedDict (sorted (unsorted_dict.items(),
+                                       key = lambda t: list(t[1].keys())[0]))
+    return sorted_dict
 
 #
 # Print the directed graph (DiGraph) into the corresponding CSV file 
@@ -531,7 +559,8 @@ def normalizePR (por_all_dict, prTypeStr, pr_dict, verboseFlag):
 #
 # Print the PageRank values into the given file
 #
-def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq, output_filename, verboseFlag):
+def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
+                          output_filename, verboseFlag):
     """
     Generate a CSV data file with, for every POR, two PageRank values:
      - One based on the monthly average number of seats
@@ -542,6 +571,9 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq, output_filena
     # dictionary ('por_all_dict')
     normalizePR (por_all_dict, "pr_seats", prdict_seats, verboseFlag)
     normalizePR (por_all_dict, "pr_freq", prdict_freq, verboseFlag)
+
+    # Sort the dictionary by the average number of seats
+    # por_all_dict_sorted = sortPORDict (por_all_dict)
 
     # Dump the details into the given CSV output file
     fieldnames = ['pk', 'iata_code', 'pr_seats', 'pr_freq']
