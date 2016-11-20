@@ -578,7 +578,6 @@ air-kenmore-air-v1^^^^KEN^M5^763^Kenmore Air^^^^^^en|Kenmore Air|^^air-kenmore-a
 air-kenn-borek-air-v1^^^^KBA^4K^0^Kenn Borek Air^^^^^^en|Kenn Borek Air|^^air-kenn-borek-air^1
 air-kenya-airways-v1^^1977-02-04^^KQA^KQ^706^Kenya Airways^^^Member^^http://en.wikipedia.org/wiki/Kenya_Airways^en|Kenya Airways|^^air-kenya-airways^1
 air-kharkiv-airlines-v1^^^^^KW^711^Kharkiv Airlines^^^^^^en|Kharkiv Airlines|^^air-kharkiv-airlines^1
-air-kingfisher-airlines-v1^^^^KFR^^90^Kingfisher Airlines^^^Future^^^en|Kingfisher Airlines|^^air-kingfisher-airlines^1
 air-kish-airlines-v1^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^^en|Kish Airlines|=en|Trans Air|^^air-kish-airlines^1
 air-klm-cityhopper-v1^^1991-04-01^^KLC^WA^0^KLM Cityhopper^^^^^http://en.wikipedia.org/wiki/KLM_Cityhopper^en|KLM Cityhopper|^^air-klm-cityhopper^1
 air-klm-v1^^1919-10-07^^KLM^KL^74^KLM^KLM Royal Dutch Airlines^^Member^^http://en.wikipedia.org/wiki/KLM^en|KLM|=en|KLM Royal Dutch Airlines|^^air-klm^1
@@ -844,7 +843,7 @@ air-silver-airways-v1^^2010-01-01^^GFT^3M^449^Silver Airways^^^^PC^http://en.wik
 air-singapore-airlines-v1^^1947-05-01^^SIA^SQ^618^Singapore Airlines^^^Member^^http://en.wikipedia.org/wiki/Singapore_Airlines^en|Singapore Airlines|^^air-singapore-airlines^1
 air-sirena-v1^^^^^1M^0^Sirena Jsc^Sertel^^^^^en|Sirena Jsc|=en|Sertel|^^air-sirena^1
 air-sirena-travel-v1^^^^^1H^446^Sirena Travel^^^^^^en|Sirena Travel|^^air-sirena-travel^1
-air-skippers-aviation-v1^^2016-01-01^^^HK^0^Skippers Aviation^^^^^http://en.wikipedia.org/wiki/Skippers_Aviation^en|Skippers Aviation|^^air-skippers-aviation^1
+air-skippers-aviation-v2^^2016-01-01^^^HK^0^Skippers Aviation^^^^^http://en.wikipedia.org/wiki/Skippers_Aviation^en|Skippers Aviation|^^air-skippers-aviation^2
 air-sky-airline-v1^^2001-12-01^^SKU^H2^605^Sky Airline^^^^^http://en.wikipedia.org/wiki/Sky_Airline^en|Sky Airline|^^air-sky-airline^1
 air-sky-bahamas-airlines-v1^^^^SBM^Q7^0^Sky Bahamas Airlines^^^^^^en|Sky Bahamas Airlines|^^air-sky-bahamas-airlines^1
 air-sky-express-greece-v1^^2005-07-01^^SEH^GQ^633^Sky Express^^^^^http://en.wikipedia.org/wiki/Sky_Express_%28Greece%29^en|Sky Express|=en|Cretan Aeronautical Exploitations|h^HER=MJT=RHO^air-sky-express-greece^1
@@ -950,7 +949,7 @@ air-tibet-airlines-v3^^2014-02-02^^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipe
 air-tica-air-international-v1^^2014-01-01^^MDL^RI^370^Air Costa Rica^^^^^http://en.wikipedia.org/wiki/Air_Costa_Rica^en|Air Costa Rica|p=en|Tica Air International|h^SJO^air-tica-air-international^1
 air-tiger-air-philippines-v1^^1993-01-01^^SRQ^DG^931^Cebgo^^^^^http://en.wikipedia.org/wiki/Cebgo^abbr|SEAir|h=en|Cebgo|p=en|South East Asian Airlines|h=en|Tigerair Philippines|h^CEB=MNL^air-tiger-air-philippines^1
 air-tiger-air-australia-v1^^2007-11-23^^TGW^TT^0^Tigerair Australia^^^^^http://en.wikipedia.org/wiki/Tigerair_Australia^en|Tigerair Australia|^BNE=MEL=SYD^air-tiger-air-australia^1
-air-tiger-air-taiwan-v1^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^en|Tigerair Taiwan|^TPE^air-tiger-air-taiwan^1
+air-tiger-air-taiwan-v1^^2014-09-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^en|Tigerair Taiwan|^TPE^air-tiger-air-taiwan^1
 air-tiger-air-v1^^2003-12-12^^TGW^TR^388^Tigerair^^^^^http://en.wikipedia.org/wiki/Tigerair^en|Tigerair|ps=en|Tiger Airways Singapore|=sign|GO CAT|^SIN^air-tiger-air^1
 air-tik-systems-v1^^^^^T1^0^Tik Systems^^^^^^en|Tik Systems|^^air-tik-systems^1
 air-titan-airways-v1^^^^^ZT^0^Titan Airways^^^^^^en|Titan Airways|^^air-titan-airways^1
@@ -1001,7 +1000,7 @@ air-utair-ukraine-v1^^2008-09-01^^UTN^QU^761^UTair Ukraine^^^^^http://en.wikiped
 air-uzbekistan-airways-v1^^^^UZB^HY^250^Uzbekistan Airways^^^^^^en|Uzbekistan Airways|^^air-uzbekistan-airways^1
 air-v-air-v1^^2014-12-17^^VAX^ZV^189^V Air^^^^^http://en.wikipedia.org/wiki/V_Air^en|V Air|^^air-v-air^1
 air-van-air-europe-v1^^^^^V9^0^Van Air Europe^^^^^^en|Van Air Europe|^^air-van-air-europe^1
-air-vanilla-air-v1^^2013-11-01^^VNL^JW^842^Vanilla Air^AirAsia Japan^^^^http://en.wikipedia.org/wiki/Vanilla_Air^en|Vanilla Air|=en|AirAsia Japan|^^air-vanilla-air^1
+air-vanilla-air-v1^^2012-08-01^^VNL^JW^842^Vanilla Air^^^^^http://en.wikipedia.org/wiki/Vanilla_Air^en|Vanilla Air|p=en|AirAsia Japan|h^NRT^air-vanilla-air^1
 air-viaair-v1^^2014-01-01^^SRY^VC^359^ViaAir^^^^^http://en.wikipedia.org/wiki/ViaAir^en|ViaAir|=en|Via Airlines|^^air-viaair^1
 air-vieques-air-link-v1^^1965-01-01^^VES^V4^0^Vieques Air Link^^^^^http://en.wikipedia.org/wiki/Vieques_Air_Link^en|Vieques Air Link|^^air-vieques-air-link^1
 air-videcom-v1^^^^^U1^0^Videcom International^^^^^http://en.wikipedia.org/wiki/Videcom_international^en|Videcom International|^^air-videcom^1
