@@ -216,7 +216,8 @@ fi
 ##
 # Dos to Unix format (in place) translation
 DOESDOS2UNIXEXIST=`type dos2unix 2>&1 | grep -q "not found" && echo "N" || echo "Y"`
-if [ "$DOESDOS2UNIXEXIST" = "Y"]
+if [ "$DOESDOS2UNIXEXIST" = "Y" ]
+then
 	dos2unix ${INN_RAW_FILE}
 else
 	echo "dos2unix cannot be found. Please install it"
