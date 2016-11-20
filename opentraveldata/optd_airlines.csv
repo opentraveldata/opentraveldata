@@ -1115,7 +1115,7 @@ air-silver-airways-v1^^2010-01-01^^GFT^3M^449^Silver Airways^^^^PC^http://en.wik
 air-singapore-airlines-v1^^1947-05-01^^SIA^SQ^618^Singapore Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Singapore_Airlines^86252^en|Singapore Airlines|^^air-singapore-airlines^1
 air-sirena-travel-v1^^^^^1H^446^Sirena Travel^^^^^^^en|Sirena Travel|^^air-sirena-travel^1
 air-sirena-v1^^^^^1M^0^Sirena Jsc^Sertel^^^^^^en|Sirena Jsc|=en|Sertel|^^air-sirena^1
-air-skippers-aviation-v1^^2016-01-01^^^HK^0^Skippers Aviation^^^^^http://en.wikipedia.org/wiki/Skippers_Aviation^2877^en|Skippers Aviation|^^air-skippers-aviation^1
+air-skippers-aviation-v2^^2016-01-01^^^HK^0^Skippers Aviation^^^^^http://en.wikipedia.org/wiki/Skippers_Aviation^2877^en|Skippers Aviation|^^air-skippers-aviation^2
 air-sky-airlines-v1^1^2001-01-01^2013-06-04^SHY^ZY^438^Sky Airlines^^^^^http://en.wikipedia.org/wiki/Sky_Airlines^^en|Sky Airlines|^^air-sky-airlines^1
 air-sky-airline-v1^^2001-12-01^^SKU^H2^605^Sky Airline^^^^^http://en.wikipedia.org/wiki/Sky_Airline^16437^en|Sky Airline|^^air-sky-airline^1
 air-skyair-v1^1^2010-01-26^2016-09-30^^S8^0^SkyAir^^^^^http://en.wikipedia.org/wiki/SkyAir^^en|SkyAir|p=en|Sky Capital Airlines|^DAC^air-skyair^1
@@ -1246,7 +1246,8 @@ air-tibet-airlines-v3^^2014-02-02^^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipe
 air-tica-air-international-v1^^2014-01-01^^MDL^RI^370^Air Costa Rica^^^^^http://en.wikipedia.org/wiki/Air_Costa_Rica^^en|Air Costa Rica|p=en|Tica Air International|h^SJO^air-tica-air-international^1
 air-tiger-air-australia-v1^^2007-11-23^^TGW^TT^0^Tigerair Australia^^^^^http://en.wikipedia.org/wiki/Tigerair_Australia^27189^en|Tigerair Australia|^BNE=MEL=SYD^air-tiger-air-australia^1
 air-tiger-air-philippines-v1^^1993-01-01^^SRQ^DG^931^Cebgo^^^^^http://en.wikipedia.org/wiki/Cebgo^32044^abbr|SEAir|h=en|Cebgo|p=en|South East Asian Airlines|h=en|Tigerair Philippines|h^CEB=MNL^air-tiger-air-philippines^1
-air-tiger-air-taiwan-v1^^2014-11-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^4081^en|Tigerair Taiwan|^TPE^air-tiger-air-taiwan^1
+air-tiger-air-taiwan-v1^^2014-09-26^^TTW^IT^608^Tigerair Taiwan^^^^^http://en.wikipedia.org/wiki/Tigerair_Taiwan^4081^en|Tigerair Taiwan|^TPE^air-tiger-air-taiwan^1
+air-kingfisher-airlines-v1^^2004-01-01^2012-10-20^KFR^IT^^Kingfisher Airlines^^^^^https://en.wikipedia.org/wiki/Kingfisher_Airlines^^en|Kingfisher Airlines|^BLR^air-kingfisher-airlines^1
 air-tiger-air-v1^^2003-12-12^^TGW^TR^388^Tigerair^^^^^http://en.wikipedia.org/wiki/Tigerair^32271^en|Tigerair|ps=en|Tiger Airways Singapore|=sign|GO CAT|^SIN^air-tiger-air^1
 air-tik-systems-v1^^^^^T1^0^Tik Systems^^^^^^^en|Tik Systems|^^air-tik-systems^1
 air-titan-airways-v1^^^^^ZT^0^Titan Airways^^^^^^104^en|Titan Airways|^^air-titan-airways^1
@@ -1302,7 +1303,8 @@ air-uzbekistan-airways-v1^^^^UZB^HY^250^Uzbekistan Airways^^^^^^19402^en|Uzbekis
 air-v-air-v1^^2014-12-17^^VAX^ZV^189^V Air^^^^^http://en.wikipedia.org/wiki/V_Air^^en|V Air|^^air-v-air^1
 air-valuair-v1^1^2004-01-01^2014-10-26^VLU^VF^896^Valuair^^^^^http://en.wikipedia.org/wiki/Valuair^^en|Valuair|h=en|Jetstar Asia Airways|=sign|VALUAIR|==zh|惠旅航空|^SIN^air-valuair^1
 air-van-air-europe-v1^^^^^V9^0^Van Air Europe^^^^^^5023^en|Van Air Europe|^^air-van-air-europe^1
-air-vanilla-air-v1^^2013-11-01^^VNL^JW^842^Vanilla Air^AirAsia Japan^^^^http://en.wikipedia.org/wiki/Vanilla_Air^4774^en|Vanilla Air|=en|AirAsia Japan|^^air-vanilla-air^1
+air-vanilla-air-v1^^2012-08-01^^VNL^JW^842^Vanilla Air^AirAsia Japan^^^^http://en.wikipedia.org/wiki/Vanilla_Air^4774^en|Vanilla Air|=en|AirAsia Japan|^^air-vanilla-air^1
+air-skippers-aviation-v1^^2009-01-01^2012-04-30^^JW^0^Skippers Aviation^^^^^http://en.wikipedia.org/wiki/Skippers_Aviation^^en|Skippers Aviation|^PER^air-skippers-aviation^1
 air-varig-v1^1^1927-05-07^2008-10-19^VRG^RG^^Varig Linhas^Viação Aérea Rio-Grandense S.A^^^^http://en.wikipedia.org/wiki/Varig^^en|Varig Linhas|=en|Viação Aérea Rio-Grandense S.A|^^air-varig^1
 air-velvet-sky-v1^1^2011-03-22^2012-02-27^VEL^VZ^0^Velvet Sky^^^^^http://en.wikipedia.org/wiki/Velvet_Sky_%28airline%29^^en|Velvet Sky|=ko|벨벳 스카이|=sign|VELVET|^^air-velvet-sky^1
 air-viaair-v1^^2014-01-01^^SRY^VC^359^ViaAir^^^^^http://en.wikipedia.org/wiki/ViaAir^5559^en|ViaAir|=en|Via Airlines|^^air-viaair^1
@@ -1372,7 +1374,7 @@ air-ygnus-air-v1^^^^RGN^Y2^571^Ygnus Air^^^^^^^en|Ygnus Air|^^air-ygnus-air^1
 air-yunnan-hongtu-airlines-v1^^2016-01-01^^HTU^A6^389^Yunnan Hongtu Airline^^^^^http://en.wikipedia.org/wiki/Yunnan_Hongtu_Airlines^^en|Yunnan Hongtu Airlines|=wuu|云南红土航空股份有限公司|=yue|雲南紅土航空股份有限公司|=pny|Yúnnán Hóngtǔ Hángkōng Gǔfèn Yǒuxiàn Gōngsī|^KMG^air-yunnan-hongtu-airlines^1
 air-yunnan-yingan-airline-v1^^^^^YI^852^Yunnan Yingan Airline^^^^^^^en|Yunnan Yingan Airline|^^air-yunnan-yingan-airline^1
 air-yute-air-alaska-v1^^1950-01-01^^TUD^4Y^0^Flight Alaska^Yute Air Alaska^^^PT^http://en.wikipedia.org/wiki/Flight_Alaska^35928^en|Flight Alaska|=en|Yute Air Alaska|^^air-yute-air-alaska^1
-air-zagros-airlines-v1^1^2005-01-01^2015-12-31^IZG^ZV^0^Zagros Airlines^^^^^http://en.wikipedia.org/wiki/Zagros_Airlines^^en|Zagros Airlines|^ABD^air-zagros-airlines^1
+air-zagros-airlines-v1^1^2005-01-01^2014-11-30^IZG^ZV^0^Zagros Airlines^^^^^http://en.wikipedia.org/wiki/Zagros_Airlines^^en|Zagros Airlines|^ABD^air-zagros-airlines^1
 air-zagros-air-v1^^2005-10-01^^GZQ^Z4^541^Zagrosjet^^^^^http://en.wikipedia.org/wiki/Zagrosjet^1726^en|Zagrosjet|p=en|Zagros Air|h^EBL^air-zagros-air^1
 air-zambezi-airlines-v1^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^^^en|Zambezi Airlines|^^air-zambezi-airlines^1
 air-zambian-airways-v1^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http://en.wikipedia.org/wiki/Zambian_Airways^^en|Zambian Airways|^^air-zambian-airways^1
