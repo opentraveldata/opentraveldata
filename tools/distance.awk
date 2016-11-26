@@ -74,69 +74,57 @@ BEGINFILE {
 
 
 ##
-# File of PageRank values.
+# Content of file of PageRank values (ref_airport_pageranked.csv).
 #
-# Note that the location types of that file are not the same as the ones
-# in the optd_por_best_known_so_far.csv file. Indeed, the location types
-# take a value from three possible ones: 'C', 'A' or 'CA', where 'A' actually
-# means travel-related rather than airport. There are distinct entries for
-# the city and for the corresponding travel-related POR, only when there are
-# several travel-related POR serving the city.
-#
-# In the optd_por_best_known_so_far.csv file, instead, there are distinct
-# entries when Geonames has got itself distinct entries.
-#
-# For instance:
-#  * NCE has got:
-#    - 2 distinct entries in the optd_por_best_known_so_far.csv file:
-#       NCE-A-6299418^NCE^43.658411^7.215872^NCE^
-#       NCE-C-2990440^NCE^43.70313^7.26608^NCE^
-#    - 1 entry in the file of PageRank values:
-#       NCE-CA^NCE^0.161281957529
-#  * IEV has got:
-#    - 2 distinct entries in the optd_por_best_known_so_far.csv file:
-#       IEV-A-6300960^IEV^50.401694^30.449697^IEV^
-#       IEV-C-703448^IEV^50.401694^30.449697^IEV^
-#    - 2 entries in the file of PageRank values:
-#       IEV-C^IEV^0.109334523229
-#       IEV-A^IEV^0.0280192004497
+# Content:
+# --------
+# The beginning of the line is the same as within optd_por_best_known_so_far.csv,
+# ie, the primary key and the IATA code, followed by two PageRank values,
+# respectively for the average number of seats and the average flight
+# frequencies
 #
 # Sample input lines:
-#   LON-C^LON^1.0
-#   PAR-C^PAR^0.994632137197
-#   NYC-C^NYC^0.948221089373
-#   CHI-C^CHI^0.768305897463
-#   ATL-A^ATL^0.686723208248
-#   ATL-C^ATL^0.686723208248
-#   NCE-CA^NCE^0.158985215433
-#   ORD-A^ORD^0.677280625337
-#   CDG-A^CDG^0.647060165878
+# pk^iata_code^pr_seats^pr_freq
+# LON-C-2643743^LON^1.0^1.0
+# MOW-C-524901^MOW^0.8229903723953657^0.9681633902820295
+# NYC-C-5128581^NYC^0.7658367710524969^0.8839448294206996
+# PAR-C-2988507^PAR^0.6770801656831421^0.699332558702537
+# IST-C-745044^IST^0.6323471740536254^0.7172930511408985
+# CHI-C-4887398^CHI^0.6262218825585703^0.79279205301558
+# ATL-C-4180439^ATL^0.6087993220352576^0.6478882503835618
+# ATL-A-4199556^ATL^0.6085970363321758^0.6472849729692148
+# EWR-A-5101809^EWR^0.2394765390077882^0.30017886155993007
+# EWR-C-5099738^EWR^0.2394765390077882^0.30017886155993007
+# EWR-C-5101798^EWR^0.23947653900778815^0.30017886155993007
 #
-  /^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,15})$/ {
-	  # Primary key (IATA code and location pseudo-code)
-	  pk = $1
+/^[A-Z]{3}-[A-Z]{1,2}-[0-9]{1,15}\^[A-Z]{3}\^[0-9.]{1,30}\^[0-9.]{1,30}$/ {
+    # Primary key (IATA code and location pseudo-code)
+    pk = $1
+    getPrimaryKeyAsArray(pk, pk_array)
 
-	  # IATA code
-	  iata_code = substr (pk, 1, 3)
+    # IATA code
+    iata_code = pk_array[1]
 
-	  # Location pseudo-type ('C' means City, but 'A' means any related to travel,
-	  # e.g., airport, heliport, port, bus or train station)
-	  por_type = substr (pk, 5)
+    # Location type
+    por_type = pk_array[2]
 
-	  # Sanity check
-	  if (iata_code != $2) {
-		  print ("[" awk_file "] !!! Error at record #" FNR \
-				 ": the IATA code ('" iata_code			  \
-				 "') should be equal to the field #2 ('" $2 \
-				 "'), but is not. The whole line " $0) > error_stream
-	  }
+    # Sanity check
+    if (iata_code != $2) {
+		print ("[" awk_file "] !!! Error at record #" FNR \
+			   ": the IATA code ('" iata_code			  \
+			   "') should be equal to the field #2 ('" $2 \
+			   "'), but is not. The whole line " $0) > error_stream
+    }
 
-	  # PageRank value
-	  pr_value = $3
+    # PageRank value for the average number of seats
+    pr_seats = $3
 
-	  #
-	  registerPageRankValue(iata_code, por_type, $0, FNR, pr_value)
-  }
+    # PageRank value for the average flight frequencies
+    pr_freq = $4
+
+    #
+    registerPageRankValues(pk, pr_seats, pr_freq)
+}
 
 
 ##
@@ -152,7 +140,7 @@ BEGINFILE {
 #  * POR only in the list of best known coordinates, without a PageRank
 #    -  (6) XIT-R-0^XIT^51.42^12.42^LEJ^
 #
-  /^([A-Z]{3})-([A-Z]{0,2})-([0-9]{1,10})\^([A-Z]{3})\^([0-9.+-]{0,12})\^/ {
+  /^[A-Z]{3}-[A-Z]{0,2}-[0-9]{1,10}\^[A-Z]{3}\^[0-9.+-]{0,12}\^/ {
 
 	  # Primary key (IATA code, location type and Geonames ID)
 	  pk = $1
@@ -222,6 +210,11 @@ BEGINFILE {
 	  } else if (NF == 8 || NF == 6) {
 		  # The POR (point of reference) is not known from Geonames.
 		  # So, there is no difference to calculate: do nothing else here.
+
+	  } else if (NF == 4) {
+		  # It corresponds to the ref_airport_pageranked.csv file (because
+		  # the beginning of the line is the same). As that file has already
+		  # been analysed above, nothing more has to be done here
 
 	  } else {
 		  # Do nothing
