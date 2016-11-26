@@ -1046,6 +1046,7 @@ function resetInnovataLineList() {
 function resetPageRankList() {
     delete optd_pr_seats_list
     delete optd_pr_freq_list
+    delete optd_pr_list
 }
 
 ##
@@ -1212,20 +1213,38 @@ function geoDistance(__gdLat1, __gdLon1, __gdLat2, __gdLon2) {
 ##
 # Retrieve the PageRank value for that POR
 #
-function getPageRank(__gprParamPK) {
+function getPageRankFromCodeAndLocType(__gprParamIataCode, __gprParamLocType) {
+	__gprKey = __gprParamIataCode "-" __gprParamLocType
+	__gprPR = optd_pr_list[__gprKey]
+    return __gprPR
+}
+
+##
+# Retrieve the PageRank value for that POR
+#
+function getPageRankFromPK(__gprParamPK) {
 	__gprPR = optd_pr_seats_list[__gprParamPK]
     return __gprPR
 }
 
 ##
-# Register the PageRank values for the given POR, specified by a
-# primary key, ie a (IATA code, location type, Geonames ID) combination.
+# Register the PageRank values for the given POR:
+#  1. Specified by a primary key, ie a (IATA code, location type, Geonames ID)
+#     combination.
+#  2. Specified by a (IATA code, location type) combination
 #
 function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
 								__rprlParamPRFreq) {
 	addFieldToList(__rprlParamPK, optd_pr_seats_list, __rprlParamPRSeats)
 	
-	addFieldToList(__rprlParamPK, optd_pr_freq_list, __rprlParamPRSeats)
+	addFieldToList(__rprlParamPK, optd_pr_freq_list, __rprlParamPRFreq)
+
+    # Extract the primary key fields
+    getPrimaryKeyAsArray(__rprlParamPK, myPKArray)
+    __rprlIataCode = myPKArray[1]
+    __rprlLocationType = myPKArray[2]
+	__rprlKey = __rprlIataCode "-" __rprlLocationType
+	addFieldToList(__rprlKey, optd_pr_list, __rprlParamPRSeats)
 }
 
 ##
@@ -1369,7 +1388,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	altname_section = $33
 
 	# PageRank value
-	page_rank = getPageRank(pk)
+	page_rank = getPageRankFromPK(pk)
 
 	# IATA code ^ ICAO code ^ FAA ^ Is in Geonames ^ GeonameID ^ Envelope ID
 	output_line = iata_code FS icao_code FS faa_code FS "Y" FS geonames_id FS

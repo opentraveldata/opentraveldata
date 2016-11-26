@@ -467,7 +467,7 @@ function getContinentName(myCountryCode) {
 			isGeonamesStr = "N"
 
 			# PageRank value
-			page_rank = getPageRank(iata_code, location_type)
+			page_rank = getPageRankFromCodeAndLocType(iata_code, location_type)
 
 			# Name and ASCII name
 			name_utf8 = capitaliseWords($6)

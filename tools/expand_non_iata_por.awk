@@ -65,7 +65,7 @@ BEGIN {
 		iata_code = $1
 
 		# PageRank value
-		page_rank = getPageRank(iata_code, location_type)
+		page_rank = getPageRankFromCodeAndLocType(iata_code, location_type)
 
 		# Is in Geonames?
 		geonameID = "0"

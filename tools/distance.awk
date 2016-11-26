@@ -69,8 +69,8 @@ BEGINFILE {
 
     # Register the OPTD-maintained line
     registerOPTDLine(pk, iata_code2, latitude, longitude,	\
-		     srvd_city_code, beg_date, full_line)
-}
+					 srvd_city_code, beg_date, full_line)
+  }
 
 
 ##
@@ -112,31 +112,31 @@ BEGINFILE {
 #   ORD-A^ORD^0.677280625337
 #   CDG-A^CDG^0.647060165878
 #
-/^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,15})$/ {
-    # Primary key (IATA code and location pseudo-code)
-    pk = $1
+  /^([A-Z]{3})-([A-Z]{1,2})\^([A-Z]{3})\^([0-9.]{1,15})$/ {
+	  # Primary key (IATA code and location pseudo-code)
+	  pk = $1
 
-    # IATA code
-    iata_code = substr (pk, 1, 3)
+	  # IATA code
+	  iata_code = substr (pk, 1, 3)
 
-    # Location pseudo-type ('C' means City, but 'A' means any related to travel,
-    # e.g., airport, heliport, port, bus or train station)
-    por_type = substr (pk, 5)
+	  # Location pseudo-type ('C' means City, but 'A' means any related to travel,
+	  # e.g., airport, heliport, port, bus or train station)
+	  por_type = substr (pk, 5)
 
-    # Sanity check
-    if (iata_code != $2) {
-	print ("[" awk_file "] !!! Error at record #" FNR \
-	       ": the IATA code ('" iata_code			  \
-	       "') should be equal to the field #2 ('" $2 \
-	       "'), but is not. The whole line " $0) > error_stream
-    }
+	  # Sanity check
+	  if (iata_code != $2) {
+		  print ("[" awk_file "] !!! Error at record #" FNR \
+				 ": the IATA code ('" iata_code			  \
+				 "') should be equal to the field #2 ('" $2 \
+				 "'), but is not. The whole line " $0) > error_stream
+	  }
 
-    # PageRank value
-    pr_value = $3
+	  # PageRank value
+	  pr_value = $3
 
-    #
-    registerPageRankValue(iata_code, por_type, $0, FNR, pr_value)
-}
+	  #
+	  registerPageRankValue(iata_code, por_type, $0, FNR, pr_value)
+  }
 
 
 ##
@@ -152,82 +152,82 @@ BEGINFILE {
 #  * POR only in the list of best known coordinates, without a PageRank
 #    -  (6) XIT-R-0^XIT^51.42^12.42^LEJ^
 #
-/^([A-Z]{3})-([A-Z]{0,2})-([0-9]{1,10})\^([A-Z]{3})\^([0-9.+-]{0,12})\^/ {
+  /^([A-Z]{3})-([A-Z]{0,2})-([0-9]{1,10})\^([A-Z]{3})\^([0-9.+-]{0,12})\^/ {
 
-    # Primary key (IATA code, location type and Geonames ID)
-    pk = $1
+	  # Primary key (IATA code, location type and Geonames ID)
+	  pk = $1
 
-    # Location type (extracted from the primary key)
-    location_type = gensub ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$",	\
-			    "\\2", "g", pk)
+	  # Location type (extracted from the primary key)
+	  location_type = gensub ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$",	\
+							  "\\2", "g", pk)
 
-    # Geonames ID
-    geonames_id = gensub ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$",	\
-			  "\\3",	"g", pk)
+	  # Geonames ID
+	  geonames_id = gensub ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,10})$",	\
+							"\\3",	"g", pk)
 
-    # IATA code
-    iata_code = $2
+	  # IATA code
+	  iata_code = $2
 	
-    # PageRank value
-    page_rank = getPageRank(iata_code, location_type)
+	  # PageRank value
+	  page_rank = getPageRankFromCodeAndLocType(iata_code, location_type)
 
-    # Best known geographical coordinates (fields #3 and #4)
-    if (NF >= 8) {
-	lat1 = $3
-	lon1 = $4
-    } else {
-	lat1 = 0
-	lon1 = 0
-    }
+	  # Best known geographical coordinates (fields #3 and #4)
+	  if (NF >= 8) {
+		  lat1 = $3
+		  lon1 = $4
+	  } else {
+		  lat1 = 0
+		  lon1 = 0
+	  }
 
-    # Geonames geographical coordinates, when existing (fields #8 and #9)
-    if (NF == 11 || NF == 9) {
-	lat2 = $8
-	lon2 = $9
-    } else {
-	lat2 = 0
-	lon2 = 0
-    }
+	  # Geonames geographical coordinates, when existing (fields #8 and #9)
+	  if (NF == 11 || NF == 9) {
+		  lat2 = $8
+		  lon2 = $9
+	  } else {
+		  lat2 = 0
+		  lon2 = 0
+	  }
 
-    # For now, calculate the distance only when the POR exists in both
-    # input files
-    if (NF == 11 || NF == 9) {
-	# Delegate the distance calculation
-	distance = geoDistance(lat1, lon1, lat2, lon2)
+	  # For now, calculate the distance only when the POR exists in both
+	  # input files
+	  if (NF == 11 || NF == 9) {
+		  # Delegate the distance calculation
+		  distance = geoDistance(lat1, lon1, lat2, lon2)
 
-	# IATA code
-	printf ("%s", iata_code "-")
+		  # IATA code
+		  printf ("%s", iata_code "-")
 
-	# Location type
-	printf ("%2s", location_type)
+		  # Location type
+		  printf ("%2s", location_type)
 
-	# Distance, in km
-	printf ("^%6.0f", distance/1000.0)
+		  # Distance, in km
+		  printf ("^%6.0f", distance/1000.0)
 		
-	# PageRank (the maximum being 100%, i.e., 1.0, usually for ORD/Chicago)
-	printf ("^%21.20f", page_rank)
+		  # PageRank (the maximum being 100%, i.e., 1.0, usually for ORD/Chicago)
+		  printf ("^%21.20f", page_rank)
 
-	# Popularity, in number of passengers
-	# printf ("^%9.0f", pagerank)
+		  # Popularity, in number of passengers
+		  # printf ("^%9.0f", pagerank)
 
-	# Distance x PageRank
-	printf ("^%8.0f", page_rank*distance)
+		  # Distance x PageRank
+		  printf ("^%8.0f", page_rank*distance)
 
-	# Distance x popularity
-	# printf ("^%8.0f", popularity*distance/1000000.0)
+		  # Distance x popularity
+		  # printf ("^%8.0f", popularity*distance/1000000.0)
 
-	# End-of-line
-	printf ("%s", "\n")
+		  # End-of-line
+		  printf ("%s", "\n")
 
-    } else if (NF == 8 || NF == 6) {
-	# The POR (point of reference) is not known from Geonames.
-	# So, there is no difference to calculate: do nothing else here.
+	  } else if (NF == 8 || NF == 6) {
+		  # The POR (point of reference) is not known from Geonames.
+		  # So, there is no difference to calculate: do nothing else here.
 
-    } else {
-	# Do nothing
-	print ("!!!! For " FNR " record, there are " NF \
-	       " fields, whereas 6, 8, 9 or 11 are expected: " $0) \
-	    > "/dev/stderr"
-    }
+	  } else {
+		  # Do nothing
+		  print ("!!!! For " FNR " record, there are " NF \
+				 " fields, whereas 6, 8, 9 or 11 are expected: " $0) \
+			  > "/dev/stderr"
+	  }
 
-}
+  }
