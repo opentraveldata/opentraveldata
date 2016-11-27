@@ -38,7 +38,7 @@
 2I^2^<>Star Peru
 2J^2^<>Air Burkina
 2L^2^2L Helvetic<>2l HELVETIC
-2M^1^Maya Island Air<>
+2M^2^<>Maya Island
 2N^2^<>Nextjet
 2P^2^<>Airphil Exp
 2Q^1^Air Cargo Carriers<>
@@ -474,7 +474,6 @@ CRN^1^Aero Caribbean<>Aerocaribbean
 CS^2^<>Continl Micro
 CSA^2^<>Czech Airline
 CSG^1^<>Air Caucasus
-CSG^2^<>Air Caucasus
 CSH^2^<>Shangai Airli
 CSN^2^<>China South
 CSQ^1^IBC Airways<>Ibc Airways Inc
@@ -1022,9 +1021,7 @@ MW^1^Mokulele Airlines<>Mokulele Flight Service
 MW^2^<>Mokulele
 MX^1^<>Mexicana
 MXA^1^<>Mexicana
-MY^1^MASwings<>Maya Island Air
-MY^2^<>Maya Island
-MYD^2^<>Maya Island
+MY^1^MASwings<>
 MZ^2^<>Merpati
 N2^1^Dagestan Airlines<>
 N5^1^Nolinor Aviation<>Les Investissements Nolinor
@@ -1335,6 +1332,8 @@ SP^2^<>Sata
 SQ^2^<>Singapore
 SRK^1^SkyWork Airlines<>Skywork Airlines
 SRK^2^<>Skywork Air
+SRN^1^SprintAir<>Sprintair
+SRN^2^<>Pantanal Linh
 SRQ^2^<>Tigerair
 SRU^1^Star Perú<>Star Peru
 SRU^2^<>Star Peru
@@ -1496,7 +1495,6 @@ UW^1^Universal Airlines<>
 UW^2^<>Universal Air
 UX^2^<>Air Europa
 UY^1^Sky Prime Charter<>Air Caucasus
-UY^2^<>Air Caucasus
 UZB^2^<>Uzbekistan
 V1^1^IBS Software Services Americas<>Ibs Software Services Americas
 V4^1^Vieques Air Link<>Vieques Air
