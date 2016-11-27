@@ -1288,7 +1288,7 @@ CAS^Casablanca^^MA^^^CMN^Mohammed V^0973^A
 CAT^Cascais^^PT^1^^CAT^Tires^^A
 CAU^Caruaru^PE^BR^1^A^CAU^Oscar Laranjeiras^^A
 CAV^Cazombo^^AO^^^CAV^Cazombo^0795^A
-CAW^Campos^RJ^BR^1^^CAW^Bartolomeu Lisandro^0796^A
+CAW^Campos dos Goytacaze^RJ^BR^1^^CAW^Bartolomeu Lisandro^0796^A
 CAX^Carlisle^^GB^^^CAX^Carlisle^0797^A
 CAX^Carlisle^^GB^^^CXX^Central Railway Stn.^^R
 CAY^Cayenne^^GF^^^CAY^Felix Eboue^0798^A
@@ -1344,7 +1344,7 @@ CDA^Cooinda^NT^AU^3^A^CDA^Cooinda^^A
 CDB^Cold Bay^AK^US^5^^CDB^Cold Bay^0835^A
 CDC^Cedar City^UT^US^3^^CDC^Regional^0836^A
 CDD^Cauquira^^HN^^^CDD^Cauquira^^A
-CDE^Chengde^060^CN^^^CDE^Puning^^A
+CDE^Chengde^^CN^^^CDE^Puning^^A
 CDH^Camden^AR^US^2^^CDH^Harrell Field^0839^A
 CDI^Cachoeiro Itapemirim^ES^BR^1^^CDI^Raimundo de Andrade^^A
 CDJ^Conceicao do Araguaia^PA^BR^1^A^CDJ^Conceicao do Araguaia^0841^A
@@ -3112,7 +3112,7 @@ GZA^Gaza^^PS^^^GZA^Yasser Arafat Intl^^A
 GZI^Ghazni^^AF^^^GZI^Ghazni^1880^A
 GZM^Gozo^^MT^^^GZM^Heliport^^H
 GZO^Gizo^^SB^^^GZO^Nusatupe^1881^A
-GZP^Gazipasa^^TR^^^GZP^Gazipasa^^A
+GZP^Gazipasa^^TR^^^GZP^Gazipasa Alanya^^A
 GZT^Gaziantep^^TR^^^GZT^Oguzeli^1882^A
 GZW^Ghazvin^^IR^^^GZW^Ghazvin^^A
 HAA^Hasvik^^NO^^^HAA^Hasvik^^A
@@ -3867,6 +3867,7 @@ JLS^Jales^SP^BR^1^^JLS^Jales^^A
 JMB^Jamba^^AO^^^JMB^Jamba^2304^A
 JMC^Sausalito^CA^US^4^^JMC^Commodore Center H/P^2305^H
 JMH^Schaumburg^IL^US^2^^JMH^Marriott Heliport^^H
+JMJ^Lancang^240^CN^^^JMJ^Jingmai^^A
 JMK^Mykonos^^GR^^^JMK^Mykonos^2306^A
 JMO^Jomsom^^NP^^^JMO^Jomsom^2307^A
 JMS^Jamestown^ND^US^2^^JMS^Regional^2308^A
@@ -7441,6 +7442,7 @@ QUM^Qom^^IR^^^QUM^Off-line Point^^O
 QUN^Chuncheon^^KR^^^QUN^Off-line Point^^O
 QUO^Uyo^^NG^^^QUO^Akwa Ibom Intl^^A
 QUP^Saqqaq^^GL^1^^QUP^Heliport^^H
+QUQ^Caceres^^ES^1^^EXC^Bus Station^^B
 QUQ^Caceres^^ES^1^^QUQ^Railway Station^^R
 QUR^Muriae^MG^BR^1^^QUR^Off-line Point^^O
 QUS^Gusau^^NG^^^QUS^Off-line Point^^O
@@ -7490,6 +7492,7 @@ QWT^Talavera de la Reina^^ES^1^^QWT^Off-line Point^^O
 QWU^Wuerzburg^^DE^^^QWU^Hbf Railway Station^^R
 QWV^Valjevo^^RS^^^QWV^Off-line Point^^O
 QWW^Navalmoral de la Mata^^ES^1^^QWW^Off-line Point^^O
+QWX^Merida^^ES^1^^EXA^Bus Station^^B
 QWX^Merida^^ES^1^^QWX^Railway Station^^R
 QWZ^Best^^NL^^^QWZ^Bus Station^^B
 QXB^Aix-en-Provence^^FR^^^QXB^TGV Railway Station^^R
@@ -10713,6 +10716,7 @@ YSM^Fort Smith^NT^CA^5^^YSM^Fort Smith^5730^A
 YSN^Salmon Arm^BC^CA^6^^YSN^Salmon Arm^^A
 YSO^Postville^NL^CA^2^^YSO^Postville^^A
 YSP^Marathon^ON^CA^3^^YSP^Marathon^^A
+YSQ^SongYuan^^CN^^^YSQ^ChaGanHu^^A
 YST^St Theresa Point^MB^CA^4^^YST^St Theresa Point^5732^A
 YSU^Summerside^PE^CA^2^^YSU^Summerside^5733^A
 YSW^Salluit^QC^CA^3^^YZG^Salluit^5798^A
