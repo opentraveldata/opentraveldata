@@ -2,13 +2,26 @@
 
 import getopt, sys, re, csv
 import networkx as nx
-from operator import itemgetter
-from collections import OrderedDict
+from operator import add
+from collections import OrderedDict, Mapping
+from itertools import chain
+
+#
+# Default file-paths for input and output data files
+#
+def_por_airline_filepath = '../opentraveldata/optd_airline_por_rcld.csv'
+def_por_bestknown_filepath = '../opentraveldata/optd_por_best_known_so_far.csv'
+def_airline_bestknown_filepath = '../opentraveldata/optd_airline_best_known_so_far.csv'
+def_pr_out_filepath = '../opentraveldata/ref_airport_pageranked.csv'
+def_freq_out_filepath = '../opentraveldata/ref_airline_nb_of_flights.csv'
+
+#
+_FLAG_FIRST = object()
 
 #
 # Usage
 #
-def usage (script_name, usage_doc):
+def usage (script_name):
     """
     Display the usage.
     """
@@ -16,29 +29,41 @@ def usage (script_name, usage_doc):
     print ("")
     print ("Usage: %s [options]" % script_name)
     print ("")
-    print (usage_doc)
+    print ("That script derives both PageRank values for POR and flight frequencies for airlines")
     print ("")
     print ("Options:")
     print ("  -h, --help                 : outputs this help and exits")
     print ("  -v, --verbose              : verbose output (debugging)")
-    print ("  -o, --output <path>        : path to output file")
-    print ("  -a, --airline-por <airline POR file-path> : File of best known POR details")
-    print ("  -b, --best-known-por <OPTD best known POR file-path> : File of best known POR details")
-    print ("")
-	
+    print ("  -s, --airline-por <airline POR file-path> :")
+    print ("\tInput data file of airline flights")
+    print ("\tDefault: '" + def_por_airline_filepath + "'")
+    print ("  -b, --best-known-por <OPTD best known POR file-path> :")
+    print ("\tInput data file of best known POR details")
+    print ("\tDefault: '" + def_por_bestknown_filepath + "'")
+    print ("  -a, --best-known-airline <OPTD best known airlines file-path> :")
+    print ("\tInput data file of best known airline details")
+    print ("\tDefault: '" + def_airline_bestknown_filepath + "'")
+    print ("  -p, --pr-out <PageRank file-path> :")
+    print ("\tOutput data file of PageRank values")
+    print ("\tDefault: '" + def_pr_out_filepath + "'")
+    print ("  -f, --freq-out <Flight frequency file-path> :")
+    print ("\tOutput data file of flight frequency values")
+    print ("\tDefault: '" + def_freq_out_filepath + "'")
+    print ("")	
 
 #
 # Command-line arguments
 #
-def handle_opt (usage_doc):
+def handle_opt():
     """
     Handle the command-line options
     """
 
     try:
         opts, args = getopt.getopt (sys.argv[1:], "hv:o:a:b:",
-                                    ["help", "verbose", "output",
-                                     "airline-por", "best-known-por"])
+                                    ["help", "verbose", "airline-por", 
+                                     "best-known-por", "best-known-airline",
+                                     "pr-out", "freq-out"])
 
     except (getopt.GetoptError, err):
         # Print help information and exit. It will print something like
@@ -49,31 +74,55 @@ def handle_opt (usage_doc):
 	
     # Options
     verboseFlag = False
-    por_airline_filename = '../opentraveldata/optd_airline_por_rcld.csv'
-    por_bestknown_filename = '../opentraveldata/optd_por_best_known_so_far.csv'
-    output_filename = '../opentraveldata/ref_airport_pageranked.csv'
+    por_airline_filepath = def_por_airline_filepath
+    por_bestknown_filepath = def_por_bestknown_filepath
+    airline_bestknown_filepath = def_airline_bestknown_filepath
+    pr_out_filepath = def_pr_out_filepath
+    freq_out_filepath = def_freq_out_filepath
 
     # Handling
     for o, a in opts:
         if o in ("-h", "--help"):
-            usage (sys.argv[0], usage_doc)
+            usage (sys.argv[0])
             sys.exit()
         elif o in ("-v", "--verbose"):
             verboseFlag = True
-        elif o in ("-a", "--airline-por"):
-            por_airline_filename = a
+        elif o in ("-s", "--airline-por"):
+            por_airline_filepath = a
         elif o in ("-b", "--best-known-por"):
-            por_bestknown_filename = a
-        elif o in ("-o", "--output"):
-            output_filename = a
+            por_bestknown_filepath = a
+        elif o in ("-a", "--best-known-airline"):
+            airline_bestknown_filepath = a
+        elif o in ("-p", "--pr-out"):
+            pr_out_filepath = a
+        elif o in ("-f", "--freq-out"):
+            freq_out_filepath = a
         else:
             assert False, "Unhandled option"
 
     # 
-    print ("Stream/file of best known POR details: '" + por_airline_filename + "'")
-    print ("Stream/file of airline flights: '" + por_bestknown_filename + "'")
-    print ("Output stream/file: '" + output_filename + "'")
-    return (verboseFlag, por_airline_filename, por_bestknown_filename, output_filename)
+    print ("Input data file of airline flights: '" + por_airline_filepath + "'")
+    print ("Input data file of best known POR details: '" + por_bestknown_filepath + "'")
+    print ("Input data file of best known airline details: '" + airline_bestknown_filepath + "'")
+    print ("Output data file of PageRank values: '" + pr_out_filepath + "'")
+    print ("Output data file of flight frequency values: '" + freq_out_filepath + "'")
+    return (verboseFlag, por_airline_filepath, por_bestknown_filepath, airline_bestknown_filepath, pr_out_filepath, freq_out_filepath)
+
+#
+# Flatten any dictionary
+# See also: http://stackoverflow.com/questions/6027558/flatten-nested-python-dictionaries-compressing-keys
+#
+def flattenDict (d, join = add, lift = lambda x: x):
+    results = []
+    def visit (subdict, results, partialKey):
+        for k,v in subdict.items():
+            newKey = lift(k) if partialKey==_FLAG_FIRST else join(partialKey, lift(k))
+            if isinstance (v,Mapping):
+                visit (v, results, newKey)
+            else:
+                results.append ((newKey, v))
+    visit (d, results, _FLAG_FIRST)
+    return results
 
 #
 # Derive the (isTravel, isCity) flag pair from the location type
@@ -243,6 +292,10 @@ def getPKList (por_dict_list):
 def getTravelPK (por_dict_list):
     por_tvl_pk = None
     for por_pk in por_dict_list:
+        # Filter out the records not appearing in the schedule
+        if por_pk == 'notified': continue
+
+        #
         por_type = getTypeFromPK (por_pk)
         is_travel = isTravel (por_type)
         if (is_travel == True):
@@ -258,6 +311,10 @@ def getPORPKList (por_all_dict, por_code):
     por_dict = por_all_dict[por_code]
     por_pk_list = []
     for por_pk in por_pk_list:
+        # Filter out the records not appearing in the schedule
+        if por_pk == 'notified': continue
+
+        #
         por_pk_list.append (por_pk)
     return por_pk_list
 
@@ -269,10 +326,12 @@ def getCityPKList (por_all_dict, por_code, por_pk):
     cty_code_list = por_dict['city_code_list']
     por_cty_pk_list = []
     for cty_code in cty_code_list:
+
         por_cty_full_dict = por_all_dict[cty_code]
         for por_cty_pk in por_cty_full_dict:
             # Filter out the already known primary keys
-            if (por_pk == por_cty_pk): continue
+            if por_pk == por_cty_pk or por_cty_pk == 'notified': continue
+
             # Keep the POR, which are cities only (ie, 'C')
             isCityOnly = isCityOnlyFromPK (por_cty_pk)
             if (isCityOnly == True):
@@ -292,13 +351,14 @@ def storePOR (por_all_dict, por_code, por_type, por_geoid, por_cty_code_list):
                                       'location_type': por_type,
                                       'geoname_id': por_geoid,
                                       'city_code_list': por_cty_code_list}
+    por_all_dict[por_code]['notified'] = False
     
     return
 
 #
 # Extract the best known details of POR from the OpenTravelData CSV file
 #
-def extractBksfPOR (por_all_dict, optd_por_bestknown_filename, verboseFlag):
+def extractBksfPOR (por_all_dict, por_bestknown_filepath, verboseFlag):
     """
     Derive a dictionary of all the POR referenced within the OpenTravelData
     project as 'best known so far' (bksf)
@@ -306,7 +366,7 @@ def extractBksfPOR (por_all_dict, optd_por_bestknown_filename, verboseFlag):
     # Browse the input file.
     # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
     pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
-    with open (optd_por_bestknown_filename, newline='') as csvfile:
+    with open (por_bestknown_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for line in file_reader:
             # Extract the POR type from the primary key
@@ -342,9 +402,50 @@ def storeEdge (por_org_pk, por_dst_pk, nb_seats, nb_freq, dg_seats, dg_freq):
     return
 
 #
-# Generate a directional graph from the CSV file
+# Extract the best known details of POR from the OpenTravelData CSV file
 #
-def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
+# pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type^wiki_link^flt_freq^alt_names^bases^key^version
+#
+def extractBksfAirline (airline_all_dict, airline_bestknown_filepath,
+                        verboseFlag):
+    """
+    Derive a dictionary of all the airlines referenced within the OpenTravelData
+    project as 'best known so far' (bksf)
+    """
+    with open (airline_bestknown_filepath, newline='') as csvfile:
+        file_reader = csv.DictReader (csvfile, delimiter='^')
+        for row in file_reader:
+            #pk = row['pk']
+            iata_code = row['2char_code']
+            icao_code = row['3char_code']
+            airline_code = iata_code
+            if icao_code == "": icao_code = "ZZZ"
+            if airline_code == "": airline_code = icao_code
+            env_id = row['env_id']
+            airline_name = row['name']
+
+            # Register the airline, if active and not already registered
+            if not (airline_code in airline_all_dict) and env_id == '':
+                airline_all_dict[airline_code] = dict()
+
+            if env_id == '':
+                airline_all_dict[airline_code] = {'iata_code': iata_code,
+                                                  'icao_code': icao_code,
+                                                  'nb_seats': 0.0,
+                                                  'flt_freq': 0.0,
+                                                  'notified': False}
+
+    return
+
+#
+# Analyze the data file of airline POR, and derive two main structures:
+#  1. Airline-based flight frequencies, collected within the main airline
+#     dictionary (airline_all_dict)
+#  2. POR-based number of seats and flight frequencies, collected into
+#     two dedicated NetworkX directional graphs (dg_seats and dg_freq)
+#
+def analyzeAirlinePOR (por_all_dict, airline_all_dict, airline_por_filepath,
+                       verboseFlag):
     """
     Derive two NetworkX directional graphs from the given input file:
      - One with, as weight, the monthly average number of seats
@@ -391,31 +492,61 @@ def deriveGraph (por_all_dict, optd_airline_por_filename, verboseFlag):
     dg_seats = nx.DiGraph(); dg_freq = nx.DiGraph()
 
     # Browse the input file
-    with open (optd_airline_por_filename, newline='') as csvfile:
+    with open (airline_por_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for line in file_reader:
+            # Extract the airline IATA code
+            airline_code = line['airline_code']
+
             # Extract the origin and destination POR
             apt_org = line['apt_org']
             apt_dst = line['apt_dst']
 
             # Store the POR
             errorMsg = "Warning: POR in flight schedule, but not in OpenTravelData list of best known POR: "
-            porExists = True
             if not (apt_org in por_all_dict):
-                porExists = False
+                por_all_dict[apt_org] = dict()
+                por_all_dict[apt_org]['notified'] = True
                 sys.stderr.write (errorMsg + apt_org + "\n")
                 continue
             if not (apt_dst in por_all_dict):
-                porExists = False
+                por_all_dict[apt_dst] = dict()
+                por_all_dict[apt_dst]['notified'] = True
                 sys.stderr.write (errorMsg + apt_dst + "\n")
                 continue
 
+            # The POR cannot be found in OpenTravelData, but the error has
+            # already been reported
+            if por_all_dict[apt_org]['notified'] == True or por_all_dict[apt_dst]['notified'] == True:
+                continue
+            
             # Extract the average number of seats
             nb_seats = line['seats_mtly_avg']
 
             # Extract the average frequency
             nb_freq = line['freq_mtly_avg']
 
+
+            ##
+            # Airlines
+            ##
+            if airline_code in airline_all_dict:
+                airline_dict = airline_all_dict[airline_code]
+                hasBeenNotified = airline_all_dict[airline_code]['notified']
+                if hasBeenNotified == False:
+                    airline_all_dict[airline_code]['flt_freq'] += float(nb_freq)
+                    airline_all_dict[airline_code]['nb_seats'] += float(nb_seats)
+            else:
+                airline_all_dict[airline_code] = dict()
+                airline_all_dict[airline_code]['notified'] = True
+                errorMsg = "Warning: airline in flight schedule, but not in OpenTravelData list of best known airlines: "
+                sys.stderr.write (errorMsg + airline_code + "\n")
+
+            
+            ##
+            # POR
+            ##
+            
             # Retrieve the POR dictionaries
             apt_org_dict_list = por_all_dict[apt_org]
             apt_dst_dict_list = por_all_dict[apt_dst]
@@ -461,9 +592,25 @@ def sortPORDict (unsorted_dict):
     return sorted_dict
 
 #
+# Sort the dictionary according to the values (flt_freq, here)
+# Does not work for now
+def sortAirlineDict (unsorted_dict):
+    sorted_dict = OrderedDict (sorted (unsorted_dict.items(),
+                                       key = lambda t: list(t[1].keys())[0]))
+
+    # sorted_dict = dict (flattenDict (unsorted_dict, join = lambda a, b: a))
+    # sorted_dict = dict (flattenDict (unsorted_dict))
+
+    # DEBUG
+    # from pprint import pprint as pp
+    # pp (sorted_dict)
+
+    return sorted_dict
+
+#
 # Print the directed graph (DiGraph) into the corresponding CSV file 
 #
-def dump_digraph (dg, output_filename, verboseFlag):
+def dump_digraph (dg, output_filepath, verboseFlag):
     """
     Generate a CSV data file with, for every edge of the DiGraph:
      - The origin POR primary key
@@ -473,7 +620,7 @@ def dump_digraph (dg, output_filename, verboseFlag):
     """
 
     fieldnames = ['org_pk', 'dst_pk', 'weight']
-    with open (output_filename, 'w', newline='') as output_csv:
+    with open (output_filepath, 'w', newline='') as output_csv:
         #
         fileWriter = csv.DictWriter (output_csv, delimiter='^',
                                      fieldnames = fieldnames)
@@ -492,7 +639,7 @@ def dump_digraph (dg, output_filename, verboseFlag):
 # Filter in only the fields to be dumped into the CSV file
 # ['pk', 'iata_code', 'pr_seats', 'pr_freq']
 #
-def filterOutFields (pr_dict, fieldnames):
+def filterOutPORFields (pr_dict, fieldnames):
     # Retrieve the IATA code
     assert (fieldnames[1] == 'iata_code'), "The second field is not 'iata_code'!"
     por_code = pr_dict[fieldnames[1]]
@@ -519,6 +666,32 @@ def filterOutFields (pr_dict, fieldnames):
                     fieldnames[2]: pr_seats,
                     fieldnames[3]: pr_freq}
     return pr_dict_fltd
+
+#
+# Filter in only the fields to be dumped into the CSV file
+# ['iata_code', 'icao_code', 'nb_seats', 'flight_freq']
+#
+def filterOutAirlineFields (airline_dict, fieldnames):
+    # Retrieve the IATA code
+    assert (fieldnames[0] == 'iata_code'), "The first field is not 'iata_code'!"
+    iata_code = airline_dict[fieldnames[0]]
+
+    # Retrieve the ICAO code
+    assert (fieldnames[1] == 'icao_code'), "The second field is not 'icao_code'!"
+    icao_code = airline_dict[fieldnames[1]]
+
+    # Retrieve the number of seats
+    assert (fieldnames[2] == 'nb_seats'), "The third field is not 'nb_seats'!"
+    nb_seats = airline_dict[fieldnames[2]]
+
+    # Retrieve the flight frequency
+    assert (fieldnames[3] == 'flight_freq'), "The fourth field is not 'flight_freq'!"
+    flt_freq = airline_dict['flt_freq']
+
+    #
+    airline_dict_fltd = {fieldnames[0]: iata_code, fieldnames[1]: icao_code,
+                         fieldnames[2]: nb_seats, fieldnames[3]: flt_freq}
+    return airline_dict_fltd
 
 #
 # Normalize the PageRank values, and store them into the global POR dictionary
@@ -560,13 +733,13 @@ def normalizePR (por_all_dict, prTypeStr, pr_dict, verboseFlag):
 # Print the PageRank values into the given file
 #
 def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
-                          output_filename, verboseFlag):
+                          output_filepath, verboseFlag):
     """
     Generate a CSV data file with, for every POR, two PageRank values:
      - One based on the monthly average number of seats
      - The other one based on the monthly average flight frequency
     """
-
+    
     # Normalize the PageRank values, and store them in the global POR
     # dictionary ('por_all_dict')
     normalizePR (por_all_dict, "pr_seats", prdict_seats, verboseFlag)
@@ -577,7 +750,7 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
 
     # Dump the details into the given CSV output file
     fieldnames = ['pk', 'iata_code', 'pr_seats', 'pr_freq']
-    with open (output_filename, 'w', newline='') as output_csv:
+    with open (output_filepath, 'w', newline='') as output_csv:
         #
         fileWriter = csv.DictWriter (output_csv, delimiter='^',
                                      fieldnames = fieldnames,
@@ -588,11 +761,53 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
 
         # Browse the POR having a PageRank value and dump the details
         for (idx_por, pr_dict_full) in por_all_dict_sorted.items():
+            # Filter out the records not appearing in the schedule
+            if 'notified' in pr_dict_full: del pr_dict_full['notified']
+
             for (idx_por_type, pr_dict) in pr_dict_full.items():
                 if 'pr_seats' in pr_dict:
-                    # Filter out the fields not to be dumpred into the CSV file
-                    pr_dict_fltd = filterOutFields (pr_dict, fieldnames)
+                    # Filter out the fields not to be dumped into the CSV file
+                    pr_dict_fltd = filterOutPORFields (pr_dict, fieldnames)
                     fileWriter.writerow (pr_dict_fltd)
+
+    return
+
+#
+# Print the flight frequencies into the given file
+#
+def dump_freq_airline (airline_all_dict, output_filepath, verboseFlag):
+    """
+    Generate a CSV data file with, for every airline, the flight frequency
+    """
+
+    # Sort the dictionary by the average number of seats
+    airline_all_dict_sorted = sortAirlineDict (airline_all_dict)
+
+    # Dump the details into the given CSV output file
+    fieldnames = ['iata_code', 'icao_code', 'nb_seats', 'flight_freq']
+    with open (output_filepath, 'w', newline='') as output_csv:
+        #
+        fileWriter = csv.DictWriter (output_csv, delimiter='^',
+                                     fieldnames = fieldnames,
+                                     dialect = 'unix', quoting = csv.QUOTE_NONE)
+
+        # Write the header
+        fileWriter.writeheader()
+
+        # Browse the POR having a PageRank value and dump the details
+        for (idx_airline, airline_dict) in airline_all_dict_sorted.items():
+            # Filter out part of the records not appearing in schedule
+            if not 'flt_freq' in airline_dict: continue
+
+            # Retrieve the flight frequency
+            flt_freq = airline_dict['flt_freq']
+
+            # Filter out the remaining of the records not appearing in schedule
+            if flt_freq == 0.0: continue
+            
+            # Filter out the fields not to be dumped into the CSV file
+            airline_dict_fltd = filterOutAirlineFields (airline_dict, fieldnames)
+            fileWriter.writerow (airline_dict_fltd)
 
     return
 
@@ -606,21 +821,27 @@ def main():
     """
 
     # Parse command options
-    usageStr = "That script derives the PageRank values for a flight schedule"
-    (verboseFlag, por_airline_filename, por_bestknown_filename, output_filename) = handle_opt (usageStr)
+    (verboseFlag, por_airline_filepath, por_bestknown_filepath, airline_bestknown_filepath, pr_out_filepath, freq_out_filepath) = handle_opt()
 
     # Extract the POR from OpenTravelData best known details
     por_all_dict = dict()
-    extractBksfPOR (por_all_dict, por_bestknown_filename, verboseFlag)
-    
+    extractBksfPOR (por_all_dict, por_bestknown_filepath, verboseFlag)
+
+    # Extract the airlines from OpenTravelData best known details
+    airline_all_dict = dict()
+    extractBksfAirline (airline_all_dict, airline_bestknown_filepath,
+                        verboseFlag)    
+
     # Build directional graphs from the file of flight schedule:
     # - One with, as weight, the monthly average number of seats
     # - One with, as weight, the monthly flight frequency
-    (dict_seats, dict_freq) = deriveGraph (por_all_dict, por_airline_filename, verboseFlag)
+    (dict_seats, dict_freq) = analyzeAirlinePOR (por_all_dict, airline_all_dict,
+                                                 por_airline_filepath,
+                                                 verboseFlag)
 
     # DEBUG
     # dump_digraph (dict_seats, "../opentraveldata/optd_airline_por_cumulated.csv", verboseFlag)
-    # dump_digraph (dict_freq, output_filename, verboseFlag)
+    # dump_digraph (dict_freq, pr_out_filepath, verboseFlag)
     
     # Derive the PageRank values
     prdict_seats = nx.pagerank (dict_seats)
@@ -630,9 +851,12 @@ def main():
     # print (str(prdict_seats))
     # print (str(prdict_freq))
 
-    # Dump the page ranked POR into the output file
+    # Dump the PageRank values for POR into the output file
     dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
-                          output_filename, verboseFlag)
+                          pr_out_filepath, verboseFlag)
+
+    # Dump the flight frequencies for airlines into the output file
+    dump_freq_airline (airline_all_dict, freq_out_filepath, verboseFlag)
 
 
 #

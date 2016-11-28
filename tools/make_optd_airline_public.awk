@@ -42,6 +42,7 @@ BEGIN {
     # Initialisation
     delete aln_name
     delete aln_name2
+	delete nb_seats
     delete flt_freq
 
     # Header
@@ -100,21 +101,29 @@ BEGIN {
 }
 
 ##
-# OPTD-maintained list of flight-date frequencies
+# OPTD-maintained list of flight frequencies
 #
 # Sample input lines:
-# airline_code_2c^flight_freq
-# AA^1166458
-# BA^296328
-# WI^13
-/^([*A-Z0-9]{2})\^([0-9]+)$/ {
+# iata_code^icao_code^nb_seats^flight_freq
+# AA^AAL^21500473.30^197336.13
+# DL^DAL^19361204.47^163349.86
+# WN^SWA^16850529.96^114458.43
+# UA^UAL^15434154.16^143459.24
+# FR^RYR^12034233.17^63682.58
+/^[*A-Z0-9]{0,2}\^[A-Z0-9]{3}\^[0-9.]{1,30}\^[0-9.]{1,30}$/ {
 
-    if (NF == 2) {
-	# IATA 2-char code
-	code_2char = $1
+    if (NF == 4) {
+		# IATA code
+		iata_code = $1
 
-	# Flight-date frequencies
-	flt_freq[code_2char] = $2
+		# ICAO code
+		icao_code = $2
+
+		# Number of seats
+		nb_seats[iata_code, icao_code] = $3
+
+		# Flight frequencies
+		flt_freq[iata_code, icao_code] = $4
 
     } else {
 		print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
@@ -149,9 +158,11 @@ BEGIN {
 
 		# 3-char (ICAO) code
 		code_3char = $5
+		icao_code = code_3char
 
 		# 2-char (IATA) code
 		code_2char = $6
+		iata_code = code_2char
 
 		# Ticketing code
 		code_tkt = $7
@@ -188,9 +199,14 @@ BEGIN {
 
         # Retrieve the flight-date frequency, if existing,
 		# and if the airline is still active
-		air_freq = ""
-		if (code_2char != "" && env_id == "") {
-			air_freq = flt_freq[code_2char]
+		if (env_id == "") {
+			if (icao_code == "") {
+				icao_code = "ZZZ"
+			}
+			air_freq = flt_freq[iata_code, icao_code]
+			if (air_freq != "") {
+				air_freq = int(air_freq)
+			}
 		}
 
 		# Build the output line
