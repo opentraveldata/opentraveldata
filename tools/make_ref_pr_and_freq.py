@@ -49,7 +49,7 @@ def usage (script_name):
     print ("  -f, --freq-out <Flight frequency file-path> :")
     print ("\tOutput data file of flight frequency values")
     print ("\tDefault: '" + def_freq_out_filepath + "'")
-    print ("")	
+    print ("")  
 
 #
 # Command-line arguments
@@ -71,7 +71,7 @@ def handle_opt():
         print (str (err))
         usage (sys.argv[0], usage_doc)
         sys.exit(2)
-	
+    
     # Options
     verboseFlag = False
     por_airline_filepath = def_por_airline_filepath
@@ -431,8 +431,8 @@ def extractBksfAirline (airline_all_dict, airline_bestknown_filepath,
             if env_id == '':
                 airline_all_dict[airline_code] = {'iata_code': iata_code,
                                                   'icao_code': icao_code,
-                                                  'nb_seats': 0.0,
-                                                  'flt_freq': 0.0,
+                                                  'nb_seats': 0,
+                                                  'flt_freq': 0,
                                                   'notified': False}
 
     return
@@ -521,10 +521,10 @@ def analyzeAirlinePOR (por_all_dict, airline_all_dict, airline_por_filepath,
                 continue
             
             # Extract the average number of seats
-            nb_seats = line['seats_mtly_avg']
+            nb_seats = int(round(float((line['seats_mtly_avg']))))
 
             # Extract the average frequency
-            nb_freq = line['freq_mtly_avg']
+            nb_freq = int(round(float(line['freq_mtly_avg'])))
 
 
             ##
@@ -534,8 +534,8 @@ def analyzeAirlinePOR (por_all_dict, airline_all_dict, airline_por_filepath,
                 airline_dict = airline_all_dict[airline_code]
                 hasBeenNotified = airline_all_dict[airline_code]['notified']
                 if hasBeenNotified == False:
-                    airline_all_dict[airline_code]['flt_freq'] += float(nb_freq)
-                    airline_all_dict[airline_code]['nb_seats'] += float(nb_seats)
+                    airline_all_dict[airline_code]['flt_freq'] += nb_freq
+                    airline_all_dict[airline_code]['nb_seats'] += nb_seats
             else:
                 airline_all_dict[airline_code] = dict()
                 airline_all_dict[airline_code]['notified'] = True
@@ -587,24 +587,36 @@ def analyzeAirlinePOR (por_all_dict, airline_all_dict, airline_por_filepath,
 # Sort the dictionary according to the values (weights, here)
 # Does not work for now
 def sortPORDict (unsorted_dict):
+
+    def sort_function(t):
+        try: 
+            k, v = t
+            return v['pr_seats']
+        except KeyError:
+            return 0
+    
     sorted_dict = OrderedDict (sorted (unsorted_dict.items(),
-                                       key = lambda t: list(t[1].keys())[0]))
+                                       key=sort_function, reverse=True))
     return sorted_dict
 
 #
 # Sort the dictionary according to the values (flt_freq, here)
 # Does not work for now
 def sortAirlineDict (unsorted_dict):
-    sorted_dict = OrderedDict (sorted (unsorted_dict.items(),
-                                       key = lambda t: list(t[1].keys())[0]))
-
-    # sorted_dict = dict (flattenDict (unsorted_dict, join = lambda a, b: a))
-    # sorted_dict = dict (flattenDict (unsorted_dict))
+    
+    def sort_function(t):
+        try: 
+            k, v = t
+            return v['nb_seats']
+        except KeyError:
+            return 0
+    
+    sorted_dict = OrderedDict (sorted (unsorted_dict.items(), key = sort_function, reverse=True))
 
     # DEBUG
     # from pprint import pprint as pp
     # pp (sorted_dict)
-
+    
     return sorted_dict
 
 #
@@ -745,8 +757,17 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
     normalizePR (por_all_dict, "pr_seats", prdict_seats, verboseFlag)
     normalizePR (por_all_dict, "pr_freq", prdict_freq, verboseFlag)
 
+    def flattenDict(d):
+        flattened_dict = {}
+        for k1, v1 in d.items():
+            for k2, v2 in v1.items():
+                if k2 != "notified":
+                    flattened_dict[k2] = v2
+        return flattened_dict
+
+    flattened_dict = flattenDict(por_all_dict)
     # Sort the dictionary by the average number of seats
-    por_all_dict_sorted = sortPORDict (por_all_dict)
+    por_all_dict_sorted = sortPORDict (flattened_dict)
 
     # Dump the details into the given CSV output file
     fieldnames = ['pk', 'iata_code', 'pr_seats', 'pr_freq']
@@ -760,15 +781,11 @@ def dump_page_ranked_por (por_all_dict, prdict_seats, prdict_freq,
         fileWriter.writeheader()
 
         # Browse the POR having a PageRank value and dump the details
-        for (idx_por, pr_dict_full) in por_all_dict_sorted.items():
-            # Filter out the records not appearing in the schedule
-            if 'notified' in pr_dict_full: del pr_dict_full['notified']
-
-            for (idx_por_type, pr_dict) in pr_dict_full.items():
-                if 'pr_seats' in pr_dict:
-                    # Filter out the fields not to be dumped into the CSV file
-                    pr_dict_fltd = filterOutPORFields (pr_dict, fieldnames)
-                    fileWriter.writerow (pr_dict_fltd)
+        for (idx_por_type, pr_dict) in por_all_dict_sorted.items():
+            if 'pr_seats' in pr_dict:
+                # Filter out the fields not to be dumped into the CSV file
+                pr_dict_fltd = filterOutPORFields (pr_dict, fieldnames)
+                fileWriter.writerow (pr_dict_fltd)
 
     return
 
@@ -864,4 +881,3 @@ def main():
 #
 if __name__ == "__main__":
     main()
-
