@@ -473,7 +473,6 @@ CRL^2^<>Corse Air
 CRN^1^Aero Caribbean<>Aerocaribbean
 CS^2^<>Continl Micro
 CSA^2^<>Czech Airline
-CSG^1^<>Air Caucasus
 CSH^2^<>Shangai Airli
 CSN^2^<>China South
 CSQ^1^IBC Airways<>Ibc Airways Inc
@@ -549,7 +548,6 @@ E8^2^<>Alpi Eagles
 E9^2^<>Evelop Air
 EA^1^East Air Lines<>Eastern Airlines
 EAA^1^Air Bishkek<>Air Bishkek Aircompany
-EAA^2^<>Air Bishkek
 EAL^1^East Air Lines<>Eastern Airlines
 EB^2^Pullmantur Air<>Pullmantur
 EC^1^OpenSkies<>Openskies
@@ -885,7 +883,6 @@ KP^2^<>Asky
 KQ^2^<>Kenyaairway
 KQA^2^<>Kenyaairway
 KR^1^Air Bishkek<>Air Bishkek Aircompany
-KR^2^<>Air Bishkek
 KT^1^Fly Kiss<>Siavia
 KTC^1^<>Kyrgyz Trans Avia
 KTC^2^<>Korsar
@@ -1022,6 +1019,7 @@ MW^2^<>Mokulele
 MX^1^<>Mexicana
 MXA^1^<>Mexicana
 MY^1^MASwings<>
+MYD^2^<>Maya Island
 MZ^2^<>Merpati
 N2^1^Dagestan Airlines<>
 N5^1^Nolinor Aviation<>Les Investissements Nolinor
@@ -1030,7 +1028,7 @@ N7^2^Norra<>Lagun Air
 N9^1^Novair<>Nova Airlines
 N9^2^<>Northcoast Av
 NA^1^Nesma Airlines<>Nesma Airlines Company
-NA^2^<>North America
+NA^2^<>Nesma Air
 NAX^1^Norwegian Air Shuttle (NAS)<>Norwegian Air Shuttle
 NAX^2^<>Norwegian Air
 NB^1^Sterling Airlines<>Skypower Express
@@ -1494,7 +1492,6 @@ UU^2^<>Air Austral
 UW^1^Universal Airlines<>
 UW^2^<>Universal Air
 UX^2^<>Air Europa
-UY^1^Sky Prime Charter<>Air Caucasus
 UZB^2^<>Uzbekistan
 V1^1^IBS Software Services Americas<>Ibs Software Services Americas
 V4^1^Vieques Air Link<>Vieques Air
@@ -1688,7 +1685,7 @@ Z7^2^<>Easeon Air
 Z8^1^Línea Aérea Amaszonas<>Amaszonas S A
 Z9^2^<>Jsc Bek Air
 ZA^2^Skywings Asia Airlines<>
-ZC^2^<>Korongo Air
+ZC^1^<>Korongo Airlines
 ZE^2^<>Eastar Jet
 ZF^2^<>Athens Airway
 ZG^2^<>Groznyy Avia
