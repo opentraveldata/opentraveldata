@@ -4,7 +4,7 @@ OneWorld^Affiliate^HG^Niki^2012-03-20^^
 OneWorld^Member^AA^American Airlines^1999-02-01^^
 OneWorld^Affiliate^MQ^Envoy Air^1999-02-01^^
 OneWorld^Affiliate^AX^Trans States Airlines^1999-02-01^^
-OneWorld^Affiliate^US^US Airways^2014-03-31^^
+OneWorld^Affiliate^US^US Airways^2014-04-01^^
 OneWorld^Member^BA^British Airways^1999-02-01^^
 OneWorld^Affiliate^CJ^BA CityFlyer^1999-02-01^^
 OneWorld^Affiliate^MN^Comair^1999-02-01^^
@@ -47,7 +47,7 @@ Skyteam^Member^AF^Air France^2000-06-22^^
 Skyteam^Affiliate^A5^HOP!^2013-03-31^^
 Skyteam^Affiliate^DB^HOP Brit Air^2000-06-22^2013-03-30^1
 Skyteam^Affiliate^WX^CityJet^2000-06-22^^
-Skyteam^Affiliate^YS^HOP Regional^^2013-03-30^1
+Skyteam^Affiliate^YS^HOP Regional^2000-06-22^2013-03-30^1
 Skyteam^Member^AZ^Alitalia^2001-07-27^^
 Skyteam^Affiliate^CT^Alitalia CityLiner^2006-06-01^^
 Skyteam^Member^CI^China Airlines^2011-09-28^^
@@ -78,7 +78,7 @@ Star Alliance^Member^AV^Avianca^2012-06-01^^
 Star Alliance^Member^BR^EVA Air^2013-06-01^^
 Star Alliance^Member^CA^Air China^2007-12-01^^
 Star Alliance^Member^CO^Continental Airlines^2009-10-27^2012-03-03^2
-Star Alliance^Affiliate^CL^Lufthansa CityLine^^^
+Star Alliance^Affiliate^CL^Lufthansa CityLine^1999-05-01^^
 Star Alliance^Member^CM^Copa Airlines^2012-06-01^^
 Star Alliance^Member^ET^Ethiopian Airlines^2011-12-01^^
 Star Alliance^Member^JJ^TAM Linhas Aereas^2010-05-01^2014-03-31^1
