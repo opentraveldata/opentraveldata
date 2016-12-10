@@ -355,6 +355,8 @@ B2^2^<>Belavia
 B3^1^Bhutan Airlines<>Tashi Air
 B3^2^Tashi Air<>Bellview Air
 B4^2^<>Zanair
+B5^1^Fly-SAX<>East African Safari Air
+B5^2^<>Safari Air
 B6^1^JetBlue<>Jetblue Airways
 B6^2^<>Jetblue Air
 B7^2^<>Uni Airways
@@ -409,7 +411,7 @@ BTI^2^<>Air Baltic
 BTN^1^Bhutan Airlines<>Tashi Air
 BTN^2^Tashi Air<>Bellview Air
 BU^1^Compagnie Africaine d'Aviation<>Compagnie Africaine D Aviation
-BU^2^flyCAA<>Africaine
+BU^2^<>Africaine
 BVI^1^<>Bvi Airways
 BW^2^<>Caribbean Air
 BWA^2^<>Caribbean Air
@@ -629,7 +631,7 @@ FN^2^<>Fastjet
 FPO^1^ASL Airlines France<>Asl Airlines France
 FPO^2^<>Europ Airpost
 FPY^1^Compagnie Africaine d'Aviation<>Compagnie Africaine D Aviation
-FPY^2^flyCAA<>Africaine
+FPY^2^<>Africaine
 FQ^1^<>Brindabella Airlines
 FR^2^<>Ryanair Ltd
 FS^1^Syphax Airlines<>Syphax Airlines Sa
