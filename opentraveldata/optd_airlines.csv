@@ -703,7 +703,7 @@ air-intercaribbean-airways-v1^^1992-01-01^^IWY^JY^653^InterCaribbean Airways^Air
 air-inter-iles-air-v1^^2007-01-01^^IIA^I7^0^Int'Air Îles^Int'Air Iles^^^^http://en.wikipedia.org/wiki/Int'Air_%C3%8Eles^625^en|Int'Air Îles|p=en|Inter Îles Air|h^^air-inter-iles-air^1
 air-interjet-gr-v1^1^^2015-12-31^INJ^^0^InterJet^^^^^http://en.wikipedia.org/wiki/InterJet^^en|InterJet|^ATH^air-interjet-gr^1
 air-interlink-airlines-v1^1^1998-01-01^2010-12-31^ITK^ID^0^Interlink^^^^P^http://en.wikipedia.org/wiki/Interlink_Airlines^^en|Interlink|^^air-interlink-airlines^1
-air-intersky-v1^^^^ISK^3L^222^Intersky Luftfahrt^Intersky^^^^^^en|Intersky Luftfahrt|=en|Intersky|^^air-intersky^1
+air-intersky-v1^1^2002-11-05^2015-11-05^ISK^3L^222^InterSky^^^^^http://en.wikipedia.org/wiki/InterSky^^en|Intersky Luftfahrt|=en|InterSky|ps^FDH^air-intersky^1
 air-investavia-v1^1^2007-01-01^2015-06-30^TLG^IV^0^InvestAvia^^^^^^^en|InvestAvia|^^air-investavia^1
 air-iran-air-tours-v1^^1973-01-01^^IRB^B9^491^Iran Air Tours^^^^^http://en.wikipedia.org/wiki/Iran_Air_Tours^1091^en|Iran Air Tours|^^air-iran-air-tours^1
 air-iran-air-v1^^1961-01-01^^IRA^IR^96^Iran Air^^^^^http://en.wikipedia.org/wiki/Iran_Air^2239^en|Iran Air|^^air-iran-air^1
@@ -1161,7 +1161,7 @@ air-south-african-airways-v1^^1934-02-01^^SAA^SA^83^South African Airways^SAA^St
 air-south-african-express-v1^^1994-04-24^^EXY^XZ^29^South African Express^SA Express^^^^http://en.wikipedia.org/wiki/South_African_Express^^en|South African Express|=en|SA Express|^^air-south-african-express^1
 air-south-airlines-v1^^1999-04-19^^OTL^YG^233^South Airlines^^^^^http://en.wikipedia.org/wiki/South_Airlines^^en|South Airlines|^^air-south-airlines^1
 air-southern-air-charter-v1^^^^^PL^0^Southern Air Charter^^^^^^958^en|Southern Air Charter|^^air-southern-air-charter^1
-air-southern-airways-express-v1^^2013-01-01^^LTD^9X^504^Southern Airways Express^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^2200^en|Southern Airways|=en|Executive Express Aviation LLC|^DSI=MEM^air-southern-airways-express^1
+air-southern-airways-express-v1^^2013-01-01^^FDY^9X^504^Southern Airways Express^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^^en|Southern Airways|=en|Executive Express Aviation LLC|^DSI=MEM^air-southern-airways-express^1
 air-southern-star-airlines-v1^^^^^4P^0^Travel Air^^^^^^327^en|Travel Air|^^air-southern-star-airlines^1
 air-southwest-airlines-v1^^1971-06-18^^SWA^WN^526^Southwest Airlines^^^^P^http://en.wikipedia.org/wiki/Southwest_Airlines^114410^en|Southwest Airlines|^^air-southwest-airlines^1
 air-spanair-v1^1^1988-03-01^2012-01-27^JKK^JK^680^Spanair^^^^^http://en.wikipedia.org/wiki/Spanair^^en|Spanair|^MAD=PMI=TFN^air-spanair^1

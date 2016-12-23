@@ -59,6 +59,7 @@
 3H^2^<>Air Inuit
 3K^1^Jetstar Asia Airways<>Jetstar Asia
 3K^2^<>Jetstar Asia
+3L^1^<>Intersky Luftfahrt
 3M^1^Silver Airways<>Silver Airways Corp
 3M^2^<>Silver Airway
 3O^2^<>Air Arabiamar
@@ -223,6 +224,7 @@
 9V^1^Avior Airlines<>Avior
 9V^2^<>Avior
 9W^2^<>Jet Airways
+9X^2^<>Southern
 9Y^1^<>National Airways
 9Y^2^<>Fly Georgia
 9Z^1^<>Amadeus Pdf 9z
@@ -612,7 +614,7 @@ FC^1^Viva Colombia<>Fly Corporate
 FCB^1^Cobalt Air<>Cobaltair
 FD^1^Thai AirAsia<>Thai Airasia
 FD^2^<>Thai Airasia
-FDY^1^<>Southern Airways Express
+FDY^2^<>Southern
 FE^1^Far Eastern Air Transport<>Far Eastern
 FEG^1^FlyEgypt<>Flyegypt
 FFV^2^<>Five Fourty
@@ -783,6 +785,7 @@ IRA^2^<>Iran Air
 IRM^2^<>Mahan Air
 IS^1^AIS Airlines<>Ais Airlines B V
 IS^2^<>Island Air
+ISK^1^<>Intersky Luftfahrt
 ISS^2^<>Meridiana Fly
 ITI^1^ITI Air<>Island Transvoyager
 ITI^2^Island Transvoyager<>Tavrey Airco
@@ -957,7 +960,7 @@ LRC^2^<>L A C S A
 LRS^1^SANSA Airlines<>Sansa
 LRS^2^<>Pan Am Exp
 LS^1^Jet2.com<>Jet2 Com
-LTD^1^Southern Airways Express<>Executive Express
+LTD^1^Executive Express Aviation<>Executive Express
 LTD^2^<>Air Wales
 LU^1^LAN Express<>Latam Airlines Chile
 LU^2^<>Theron Air
