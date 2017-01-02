@@ -123,7 +123,7 @@ air-air-horizons-v1^1^1962-01-01^2005-11-30^EUH^RN^0^Air Horizons^^^^^http://en.
 air-air-iceland-v1^^1997-01-01^^FXI^NY^882^Air Iceland^^^^^http://en.wikipedia.org/wiki/Air_Iceland^698^en|Air Iceland|=is|Flugfélag Íslands|=sign|FAXI|^RKV^air-air-iceland^1
 air-air-incheon-v1^^2013-01-01^^IAH^KJ^994^Air Incheon^^^^^http://en.wikipedia.org/wiki/Air_Incheon^^en|Air Incheon|^ICN^air-air-incheon^1
 air-air-india-charters-v1^^2005-04-29^^AXB^IX^0^Air India Express^^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Air_India_Express^2209^en|Air India Express|p=en|Air India Charters Limited|=abbr|AICL|^BOM=CCJ=COK=TRV^air-air-india-charters^1
-air-air-india-regional-v1^^1996-06-21^^LLR^9I^0^Air India Regional^Alliance Air^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Air_India_Regional^1539^en|Air India Regional|=en|Alliance Air|^^air-air-india-regional^1
+air-air-india-regional-v1^^1996-06-21^^LLR^9I^0^Air India Regional^^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Air_India_Regional^1539^en|Air India Regional|=en|Alliance Air|h=en|Airline Allied Services Limited|^BOM^air-air-india-regional^1
 air-air-india-v1^^1932-10-15^^AIC^AI^98^Air India^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Air_India^12438^en|Air India|^^air-air-india^1
 air-air-indus-v1^^^^MPK^I6^315^Air Indus^^^^^^^en|Air Indus|^^air-air-indus^1
 air-air-inuit-v1^^1978-11-01^^AIE^3H^466^Air Inuit^^^^^http://en.wikipedia.org/wiki/Air_Inuit^1526^en|Air Inuit|^^air-air-inuit^1
@@ -659,7 +659,7 @@ air-helicopteros-del-sureste-v1^^^^^UV^662^Helicopteros Del Sureste^^^^^^^en|Hel
 air-helijet-v1^^^^JBA^JB^613^Helijet International^Helijet^^^^^^en|Helijet International|=en|Helijet|^^air-helijet^1
 air-heli-securite-v1^1^^2015-01-01^HLI^H4^0^Heli Securite^^^^^^^en|Heli Securite|^^air-heli-securite^1
 air-heli-security-saint-tropez-v1^^2014-01-01^^HLI^HS^0^Heli Sécurité^^^^^^^en|Heli Sécurité|=en|Helicopter Airline Saint-Tropez|^MCM=NCE^air-heli-security-saint-tropez^1
-air-helitrans-as-v1^1^1996-06-21^2015-01-01^LLR^9I^0^Helitrans^Helitrans AS^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Helitrans^^en|Helitrans|=en|Helitrans AS|^^air-helitrans-as^1
+air-helitrans-as-v1^1^1996-06-21^2015-01-01^HDR^9I^0^Helitrans^^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Helitrans^^en|Helitrans|^TRD^air-helitrans-as^1
 air-helitt-lineas-aereas-v1^1^2011-11-01^2014-10-31^HTH^H9^221^Helitt Líneas Aereas^^^^^http://en.wikipedia.org/wiki/Helitt_L%C3%ADneas_A%C3%A9reas^^en|Helitt Líneas Aereas|^^air-helitt-lineas-aereas^1
 air-hellas-jet-v1^^^^HEJ^HJ^681^Hellas Jet^Hellenic Star^^^^^^en|Hellas Jet|=en|Hellenic Star|^^air-hellas-jet^1
 air-hellenic-imperial-airways-v1^1^2006-05-01^2015-05-01^IMP^HT^570^Hellenic Imperial Airways^^^^^http://en.wikipedia.org/wiki/Hellenic_Imperial_Airways^^en|Hellenic Imperial Airways|^^air-hellenic-imperial-airways^1
