@@ -8,10 +8,8 @@
 # ---------------------------------------------------------------
 #
 cd <OPTD_ROOT_DIR>/tools
-./make_optd_por_public.sh
-./make_optd_por_public.sh --clean
-cd ../opentraveldata
-git add optd_por_public.csv
+./make_optd_por_public.sh && ./make_optd_por_public.sh --clean
+git add ../opentraveldata/optd_por_public.csv
 git diff --cached optd_por_public.csv
 git ci -m "[POR] Integrated the latest updates from Geonames."
 
@@ -20,19 +18,29 @@ git ci -m "[POR] Integrated the latest updates from Geonames."
 # 2.1. Update from Geonames
 # -------------------------
 #
-# The Geonames data has been updated, i.e., new Geonames data files have been
-# downloaded and the allCountries_w_alt.txt data file has been recomputed.
-#
+# The Geonames data may be updated, i.e., new Geonames data files are
+# downloaded and the allCountries_w_alt.txt data file is recomputed:
+cd <OPTD_ROOT_DIR>/data/geonames/data
+time ./getDataFromGeonamesWebsite.sh
+cd por/data
+\rm -f *~ ../../zip/*~
+cd -
+cd por/admin
+./aggregateGeonamesPor.sh
+cd -
+ls -laFh --color por/data/al*
 
-# Generate four por_*_YYYYMMDD.csv data files
+# Back in OPTD, generate two por_*iata_YYYYMMDD.csv data files:
+# * por_iata_YYYYMMDD.csv references all the POR having a IATA code in Geonames
+# * por_noiata_YYYYMMDD.csv references all the POR having no IATA code (but
+#   which could have one in Geonames)
 cd <OPTD_ROOT_DIR>/tools
-./extract_por_with_iata_icao.sh
+./extract_por_with_iata_icao.sh && ./extract_por_with_iata_icao.sh --clean
 
 # Copy the generated por_iata_YYYYMMDD.csv file into dump_from_geonames.csv
 cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 
-# Cleaning
-./extract_por_with_iata_icao.sh --clean
+# Note that the por_noiata_YYYYMMDD.csv has usually a size of around 1.5 GB.
 
 # Recompute the OPTD-maintained POR file: do 1.1.
 
@@ -44,6 +52,18 @@ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 # The reference data has been updated, i.e., the
 # dump_from_crb_city.csv file has been recomputed.
 #
+# Recompte the light file of reference POR:
+sh prepare_por_ref_light.sh && sh prepare_por_ref_light.sh --clean
+# It should generate the ../opentraveldata/optd_por_ref.csv file. That latter
+# is not used: it is kept just for reference (hence the name).
+git add ../opentraveldata/optd_por_ref.csv
+
+# Recompute the file of POR not present in Geonames:
+sh prepare_por_no_geonames.sh && sh prepare_por_no_geonames.sh --clean
+# Note that the ../opentraveldata/optd_por_exceptions.csv file may need
+# to be updated, if the above script reports some errors/warnings.
+# That script should generate the ../opentraveldata/optd_por_no_geonames.csv file
+git add ../opentraveldata/optd_por_no_geonames.csv
 
 # Recompute the OPTD-maintained POR file: do 1.1.
 
@@ -52,8 +72,9 @@ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 # -------------------------
 #
 # The Innovata data may be updated, i.e., new Innovata data files have been
-# downloaded and the dump_from_innovata.csv has to be recomputed.
-# That file is just used for comparison purpose.
+# downloaded privately, and the dump_from_innovata.csv has to be recomputed.
+# That file is just used for private reference purpose: no Innovata data is
+# used within the OpenTravelData project.
 #
 # Typical commands:
 cd <OPTD_ROOT_DIR>/tools
@@ -66,17 +87,27 @@ git add ../data/Innovata/innovata_stations.dat
 git commit -m "[POR] New updates for some sources." ../data/Innovata
 
 ##
-# 2.2. Update from Schedules
-# --------------------------
+# 2.2. Update from screen-scraped flight routes
+# ---------------------------------------------
 #
 cd <OPTD_ROOT_DIR>/tools
-# Get the oag_schedule_opt_YYMMDD_all.csv file
-./prepare_airline_por_dump_file.sh oag_schedule_opt_YYMMDD_all.csv
-# It should generate a dump_from_airline_por.csv file
-cp dump_from_airline_por.csv ../opentraveldata/optd_airline_por.csv
-git add ../opentraveldata/optd_airline_por.csv
-git commit -m "[Airlines] Updated with latest POR network information." ../opentraveldata
+# The following Python script uses optd_airline_por_rcld.csv
+./make_optd_ref_pr_and_freq.py
 
+# It should generate two files:
+# * Importance of airlines (by flight frequency): ref_airline_nb_of_flights.csv
+# * PageRank values of POR: ref_airport_pageranked.csv
+
+# Recalculate the OPTD file of airlines:
+./make_optd_airline_public.sh && ./make_optd_airline_public.sh --clean
+git add ../opentraveldata/ref_airline_nb_of_flights.csv
+git add ../opentraveldata/optd_airlines.csv
+git commit -m "[Airlines] Updated the flight frequencies" ../opentraveldata/ref_airline_nb_of_flights.csv ../opentraveldata/optd_airlines.csv
+
+# Recalculate the OPTD file of POR:
+./make_optd_por_public.sh && ./make_optd_por_public.sh --clean
+git add ../opentraveldata/ref_airport_pageranked.csv
+git add ../opentraveldata/optd_por_public.csv
 
 ##
 # 3.1. Compute the differences among all the POR files
@@ -84,31 +115,28 @@ git commit -m "[Airlines] Updated with latest POR network information." ../opent
 #
 
 cd <OPTD_ROOT_DIR>/tools
-./compare_por_files.sh
+./compare_por_files.sh && ./compare_por_files.sh --clean
 
 # A data file, summing up all the differences, is generated, namely
-# 'optd_por_diff_w_geonames.csv'. Those differences correspond to the
-# geographical distance weighted by the airport importance (expressed
-# as the PageRank derived from the flight schedules for a whole year).
+# ../opentraveldata/optd_por_diff_w_geonames.csv.
+# Those differences correspond to the geographical distance weighted
+# by the airport importance (expressed as the PageRank values derived
+# from the flight routes for a whole year).
 # That file is sorted by decreasing differences.
-less optd_por_diff_w_geonames.csv
-diff -c optd_por_diff_w_geonames.csv ../opentraveldata/optd_por_diff_w_geonames.csv
-
-# When the differences have been analysed:
-\mv -f optd_por_diff_w_geonames.csv ../opentraveldata/
 git add ../opentraveldata/optd_por_diff_w_geonames.csv
-./compare_por_files.sh --clean
-
+git diff --cached ../opentraveldata/optd_por_diff_w_geonames.csv
+git commit -m "[POR] New geographical differences"
 
 # To see the respective details of a given POR (point of reference),
 # a reminder script is available:
 ./extract_por_info.sh
 
 # It should give something like:
-grep "^LHR" ../ORI/optd_por_best_known_so_far.csv \
-	 dump_from_crb_city.csv dump_from_geonames.csv dump_from_innovata.csv \
-     ../opentraveldata/por_in_schedule/por_schedule_counts_2011_01_to_2013_10.csv \
-     ../opentraveldata/ref_airport_pageranked.csv
+grep "^XCG" ../opentraveldata/optd_por_best_known_so_far.csv \
+ dump_from_ref_city.csv dump_from_geonames.csv dump_from_innovata.csv \
+ ../opentraveldata/por_in_schedule/por_schedule_counts_2011_01_to_2013_10.csv \
+ ../opentraveldata/ref_airport_pageranked.csv \
+ ../data/IATA/iata_airport_list_latest.csv
 
 
 # Then, compare
@@ -148,8 +176,8 @@ git add ../opentraveldata/optd_por_best_known_so_far.csv
 # A new POR, still unknown from OPTD, may have been specified within Geonames.
 #
 # The procedure is exactly the same as in 4.1: manually edit the
-# ../opentraveldata/optd_por_best_known_so_far.csv and re-generate the OPTD-maintained
-# POR file (step 1.1).
+# ../opentraveldata/optd_por_best_known_so_far.csv
+# and re-generate the OPTD-maintained POR file (step 1.1).
 
 
 ##
@@ -179,9 +207,9 @@ git add ../opentraveldata/optd_por_best_known_so_far.csv
 #      pageranked_por_in_iata_but_missing_from_geonames.csv files:
 ./generate_por_lists_for_geonames.sh
 
-# If any POR is not in reference data, it will appear and the program will exit (no file
-# will be generated); follow the suggestion to remove those entries from
-# the dump_from_geonames.csv.missing file.
+# If any POR is not in reference data, it will appear and the program
+# will exit (no file will be generated); follow the suggestion to remove
+# those entries from the dump_from_geonames.csv.missing file.
 
 # 7.3. Send the por_in_iata_but_missing_from_geonames.csv file to Geonames
 gzip por_in_iata_but_missing_from_geonames.csv
@@ -260,8 +288,8 @@ sh prepare_geonames_dump_file.sh --clean
 # -----------------------------------------------------
 #
 ./generate_por_apt_list_for_geonames.sh
-wc -l ../ORI/optd_por_apt_for_geonames.csv
-less ../ORI/optd_por_apt_for_geonames.csv
+wc -l ../opentraveldata/optd_por_apt_for_geonames.csv
+less ../opentraveldata/optd_por_apt_for_geonames.csv
 
 
 ##--------------------------------------------------------------------##
