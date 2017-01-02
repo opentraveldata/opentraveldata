@@ -609,7 +609,8 @@ air-freshair-v1^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^^en|Freshair|=en|
 air-frontier-airlines-v1^^1994-07-05^^FTT^F9^422^Frontier Airlines^^^^^http://en.wikipedia.org/wiki/Frontier_Airlines^9873^en|Frontier Airlines|^^air-frontier-airlines^1
 air-fuji-dream-airlines-v1^^^^FDA^JH^0^Fuji Dream Airlines^Nordeste^^^^^2000^en|Fuji Dream Airlines|=en|Nordeste|^^air-fuji-dream-airlines^1
 air-fuzhou-airlines-v1^^2014-10-30^^FZA^FU^666^Fuzhou Airlines^^^^^http://en.wikipedia.org/wiki/Fuzhou_Airlines^1864^en|Fuzhou Airlines|^^air-fuzhou-airlines^1
-air-gading-sari-aviation-v1^^2006-01-01^^GSB^3G^380^AsiaCargo Express^^^^C^http://en.wikipedia.org/wiki/Gading_Sari^^en|AsiaCargo Express|p=en|Gading Sari|h^^air-gading-sari-aviation^1
+air-gading-sari-aviation-v1^1^2006-01-01^2015-01-31^GSB^^380^AsiaCargo Express^^^^C^http://en.wikipedia.org/wiki/AsiaCargo_Express^^en|AsiaCargo Express|ps=en|DRB-HICOM AsiaCargo Express|=en|Gading Sari|h^KUL^air-gading-sari-aviation^1
+air-gading-sari-aviation-v2^^2015-02-01^^CXM^3G^380^AsiaCargo Express^^^^C^http://en.wikipedia.org/wiki/AsiaCargo_Express^^en|AsiaCargo Express|ps=en|DRB-HICOM AsiaCargo Express|=en|Gading Sari|h^KUL^air-gading-sari-aviation^2
 air-gamair-v1^1^^2014-06-01^BIH^BS^0^British International^Gamair^^^^^^en|British International|=en|Gamair|^^air-gamair^1
 air-gambia-airlines-v1^1^1996-01-23^2004-04-30^GNR^GC^34^Gambia International Airlines^^^^^http://en.wikipedia.org/wiki/Gambia_International_Airlines^^en|Gambia International Airlines|=en|Gambia Intl|^^air-gambia-airlines^1
 air-gambia-bird-airlines-v1^1^2012-10-01^2014-12-31^GBQ^3G^213^Gambia Bird^^^^^http://en.wikipedia.org/wiki/Gambia_Bird^^en|Gambia Bird|^^air-gambia-bird-airlines^1
