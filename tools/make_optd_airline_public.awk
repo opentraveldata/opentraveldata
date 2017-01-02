@@ -6,7 +6,6 @@
 #    * Alliance memberships:                optd_airline_alliance_membership.csv
 #    * No longer valid airlines:            optd_airline_no_longer_valid.csv
 #    * Nb of flight-dates:                  ref_airline_nb_of_flights.csv
-#  * Referential Data:                      dump_from_ref_airline.csv
 #  * [Future] Geonames list of airlines:    dump_from_geonames.csv
 #
 # Sample output lines:
@@ -32,16 +31,11 @@ BEGIN {
     awk_file = "make_optd_airline_public.awk"
 
     # Generated file for name differences
-    if (air_name_ref_diff_file == "") {
-		air_name_ref_diff_file = "optd_airline_diff_w_ref.csv"
-    }
     if (air_name_alc_diff_file == "") {
 		air_name_alc_diff_file = "optd_airline_diff_w_alc.csv"
     }
 
     # Initialisation
-    delete aln_name
-    delete aln_name2
 	delete nb_seats
     delete flt_freq
 
@@ -61,15 +55,15 @@ BEGIN {
 ##
 # OPTD-maintained list of alliance memberships
 #
+# By requiring the env_id field to be empty, only active alliance memberships are considered.
+#
 # Sample input lines:
 # alliance_name^alliance_type^airline_iata_code_2c^airline_name^from_date^to_date^env_id
 # Skyteam^Member^AF^Air France^2000-06-22^^
 # OneWorld^Member^BA^British Airways^1999-02-01^^
 # Star Alliance^Member^LH^Lufthansa^1999-05-01^^
-
-# By requiring the env_id field to be empty, only active alliance memberships are considered.
-
-/^([A-Za-z ]+)\^([A-Za-z]+)\^([*A-Z0-9]{2})\^(.+)\^[0-9-]*\^[0-9-]*\^$/ {
+#
+/^[A-Za-z ]+\^[A-Za-z]+\^[*A-Z0-9]{2}\^.+\^[0-9-]*\^[0-9-]*\^$/ {
     # Alliance name
     alliance_name = $1
 
@@ -134,13 +128,27 @@ BEGIN {
 ##
 # OPTD-maintained list of airline details
 #
-# Sample input lines:
+# Note that two files are processed as input here:
+# * Best known airlines:        optd_airline_best_known_so_far.csv
+# * No longer valid airlines:   optd_airline_no_longer_valid.csv
+# Both files have the same format. The only difference is the env_id field:
+# * Empty for active airlines
+# * An incremental numeric code (normally equal to the version number)
+#   for no longer active airlines
 #
+# Common header for both files:
 # pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link^alt_names^bases^key^version
+#
+# Sample input lines for optd_airline_best_known_so_far.csv:
 # air-abc-aerolineas-v1^^2005-12-01^^AIJ^4O^837^Interjet^ABC Aerolíneas^^^^http://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|^MEX=TLC^air-abc-aerolineas^1
 # gds-abacus-v1^^^^^1B^0^Abacus^Abacus^^^G^^en|Abacus|=en|Abacus|^^gds-abacus^1
 # tec-bird-information-systems-v1^^^^^1R^0^Bird Information Systems^^^^^^en|Bird Information Systems|^^tec-bird-information-systems^1
 # trn-accesrail^^^^^9B^450^AccesRail^^^^R^http://en.wikipedia.org/wiki/9B^en|AccesRail|^^trn-accesrail^1
+#
+# Sample input lines for optd_airline_no_longer_valid.csv:
+# air-aerosvit-airlines-v1^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^http://en.wikipedia.org/wiki/Aerosvit_Airlines^en|AeroSvit Airlines|^^air-aerosvit-airlines^1
+# air-avianova-v1^1^2009-08-27^2011-10-10^NET^AO^0^Avianova^^^^^http://en.wikipedia.org/wiki/Avianova_(Russia)^en|Avianova Lcc|^MOW^air-avianova^1
+#
 /^[a-z]{3}-[a-z0-9\-]+\^[0-9]*\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([A-Z0-9]{3})?\^([A-Z0-9*]{2})?\^/ {
 
     if (NF == 17) {
@@ -150,7 +158,7 @@ BEGIN {
 		# Envelope ID
 		env_id = $2
 
-		# Validity from
+        # Validity from
 		valid_from = $3
 
 		# Validity to
@@ -167,11 +175,11 @@ BEGIN {
 		# Ticketing code
 		code_tkt = $7
 
-		# Name
-		name = $8
+		# UTF8 version of the name
+		name_utf8 = $8
 
-		# Name2
-		name2 = $9
+		# ASCII version of the name
+		name_asc = $9
 
 		# Alliance code (taken from optd_airline_alliance_membership.csv)
 		alc_code = air_alliance_all_names[code_2char]
@@ -212,23 +220,14 @@ BEGIN {
 		# Build the output line
 		output_line = pk "^" env_id "^" valid_from "^" valid_to
 		output_line = output_line "^" code_3char "^" code_2char "^" code_tkt
-		output_line = output_line "^" name "^" name2 "^" alc_code "^" alc_status
+		output_line = output_line "^" name_utf8 "^" name_asc
+		output_line = output_line "^" alc_code "^" alc_status
 		output_line = output_line "^" type "^" wiki_link "^" air_freq
 		output_line = output_line "^" alt_names "^" bases
 		output_line = output_line "^" key "^" version
 
 		# Print the full line
 		print (output_line)
-
-		# Register the airline names
-		if (code_2char != "" && env_id == "") {
-			aln_name[code_2char] = name
-			aln_name2[code_2char] = name2
-		}
-		if (code_3char != "" && env_id == "") {
-			aln_name[code_3char] = name
-			aln_name2[code_3char] = name2
-		}
 
 		# Alliance name from the OPTD-maintained file of alliance
 		# membership
@@ -237,80 +236,13 @@ BEGIN {
 
 			# Difference for the airline names between the files
 			# of best known details and that of the alliance list
-			if (air_name_from_alliance != "" &&		\
-				name != air_name_from_alliance) {
-				print (code_2char "^" code_3char			\
-					   "^" name "^" air_name_from_alliance) \
+			if (air_name_from_alliance != "" &&			\
+				name_utf8 != air_name_from_alliance) {
+				print (code_2char "^" code_3char					\
+					   "^" name_utf8 "^" air_name_from_alliance)	\
 					> air_name_alc_diff_file
 			}
 		}
-
-    } else {
-		print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
-			   " fields: " $0) > error_stream
-    }
-}
-
-##
-# Aggregated content from reference data
-#
-# Sample input lines:
-# *A^^*A^0^Star Alliance^
-# *O^^*O^0^Oneworld^
-# *S^^*S^0^Skyteam^
-# AF^AFR^AF^57^Air France^Air France
-# AFR^AFR^AF^57^Air France^Air France
-# BA^BAW^BA^125^British Airways^British A/W
-# BAW^BAW^BA^125^British Airways^British A/W
-# DLH^DLH^LH^220^Lufthansa^Lufthansa
-# LH^DLH^LH^220^Lufthansa^Lufthansa
-#
-/^([*A-Z0-9]{2,3})\^([A-Z]{3})?\^([*A-Z0-9]{2})\^([0-9]+)\^/ {
-
-    if (NF == 6) {
-		# Primary key
-		pk = $1
-
-		# IATA 3-character code
-		iata_code_3c = $2
-
-		# IATA 2-character code
-		iata_code_2c = $3
-
-		# Numeric code
-		numeric_code = $4
-
-		# Names
-		air_name = $5
-		air_name_alt = $6
-
-		# Alliance details
-		alliance_type = air_alliance_types[iata_code_2c] 
-		alliance_name = air_alliance_all_names[iata_code_2c]
-
-		# Unified code ^ IATA 3-char-code ^ IATA 2-char-code ^ Numeric code
-		current_line = pk "^" iata_code_3c "^" iata_code_2c "^" numeric_code 
-
-		# ^ Name ^ Alternate name
-		current_line = current_line "^" air_name "^" air_name_alt
-
-		# ^ Alliance name ^ Alliance membership type
-		current_line = current_line "^" alliance_name "^" alliance_type
-
-		# Difference between OPTD and reference data
-		optd_name = aln_name[pk]
-		optd_name2 = aln_name2[pk]
-		if (air_name != optd_name) {
-			print (pk "^1^" optd_name "<>" air_name)	\
-				> air_name_ref_diff_file
-		}
-		if (air_name_alt != optd_name2) {
-			print (pk "^2^" optd_name2 "<>" air_name_alt)	\
-				> air_name_ref_diff_file
-		}
-
-		# Print the full line (old version, as is)
-		# print (current_line)
 
     } else {
 		print ("[" awk_file "] !!!! Error for row #" FNR ", having " NF \
