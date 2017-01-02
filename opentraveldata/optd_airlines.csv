@@ -214,7 +214,8 @@ air-alajnihah-air-transport-v1^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^ht
 air-alaska-airlines-v1^^1944-06-06^^ASA^AS^27^Alaska Airlines^^^^^http://en.wikipedia.org/wiki/Alaska_Airlines^30394^en|Alaska Airlines|^^air-alaska-airlines^1
 air-alaska-seaplane-service-v1^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^^1209^en|Alaska Seaplane Service|=en|Stock Sochi|^^air-alaska-seaplane-service^1
 air-alas-uruguay-v1^^2015-02-01^^ALY^YZ^570^Alas Uruguay^^^^^http://en.wikipedia.org/wiki/Alas_Uruguay^140^en|Alas Uruguay|^^air-alas-uruguay^1
-air-albastar-spain-v1^^2010-07-31^^LAV^AP^374^AlbaStar^^^^^http://en.wikipedia.org/wiki/AlbaStar^^en|AlbaStar|^PMI^air-albastar-spain^1
+air-albastar-spain-v1^1^2010-07-31^2014-10-30^LAV^^374^AlbaStar^^^^^http://en.wikipedia.org/wiki/AlbaStar^^en|AlbaStar|^PMI^air-albastar-spain^1
+air-albastar-spain-v2^^2014-11-01^^LAV^AP^374^AlbaStar^^^^^http://en.wikipedia.org/wiki/AlbaStar^^en|AlbaStar|^PMI^air-albastar-spain^2
 air-albawings-v1^^2016-01-01^^AWT^2B^0^Albawings^^^^^http://en.wikipedia.org/wiki/Albawings^128^en|Albawings|^TIA^air-albawings^1
 air-alidaunia-v1^1^^2015-12-31^LID^D4^0^Alidaunia^^^^^^^en|Alidaunia|^^air-alidaunia^1
 air-alitalia-cityliner-v1^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^Skyteam^Affiliate^^http://en.wikipedia.org/wiki/Alitalia_CityLiner^^en|Alitalia CityLiner|=en|Air One CityLiner|^^air-alitalia-cityliner^1
@@ -1323,7 +1324,7 @@ air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^http://en.wik
 air-virgin-australia-int-v1^1^2009-02-27^2011-12-07^VAU^VA^795^Virgin Australia International^^^^^http://en.wikipedia.org/wiki/V_Australia^^en|Virgin Australia International|=en|V Australia|^^air-virgin-australia-int^1
 air-virgin-australia-regional-v1^1^1963-01-01^2000-08-30^VOZ^DJ^608^Virgin Australia Regional^^^^^http://en.wikipedia.org/wiki/Virgin_Australia_Regional_Airlines^^en|Virgin Australia Regional|=en|SkyWest|^^air-virgin-australia-regional^1
 air-virgin-australia-v1^1^2000-08-31^2012-12-31^VOZ^DJ^856^Virgin Australia^^^^^http://en.wikipedia.org/wiki/Virgin_Australia^^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^^air-virgin-australia^1
-air-virgin-australia-v2^^2013-01-01^^VOZ^VA^856^Virgin Australia^^^^^http://en.wikipedia.org/wiki/Virgin_Australia^15196^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^^air-virgin-australia^2
+air-virgin-australia-v2^^2013-01-01^^VOZ^VA^856^Virgin Australia^^^^^http://en.wikipedia.org/wiki/Virgin_Australia^15196^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^AKL=BNE=MEL=SYD^air-virgin-australia^2
 air-vision-airlines-v1^^^^RBY^V2^0^Vision Airlines^^^^^^^en|Vision Airlines|^^air-vision-airlines^1
 air-vista-georgia-v1^1^2014-08-04^2015-05-31^AJD^GT^0^flyvista^^^^^http://en.wikipedia.org/wiki/Flyvista^^en|flyvista|p=en|Vista Georgia|^TBS^air-vista-georgia^1
 air-viva-colombia-v1^^2012-12-25^^VVC^FC^641^Viva Colombia^^^^^http://en.wikipedia.org/wiki/VivaColombia^1855^en|Viva Colombia|p=en|Fast Colombia S.A.S|^MDE^air-viva-colombia^1

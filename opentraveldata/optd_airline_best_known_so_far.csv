@@ -159,7 +159,7 @@ air-air-zimbabwe-v1^^1980-04-02^^AZW^UM^168^Air Zimbabwe^^^^^http://en.wikipedia
 air-aircompany-armenia-v1^^2016-05-01^^NGT^RM^437^Aircompany Armenia^^^^^^en|Aircompany Armenia|^EVN^air-aircompany-armenia^1
 air-airwing-v1^^2004-01-01^^NWG^^^Airwing^^^^^http://en.wikipedia.org/wiki/Airwing^en|Airwing|^^air-airwing^1
 air-ais-airlines-v1^^2009-01-01^^PNX^IS^0^AIS Airlines^^^^^http://en.wikipedia.org/wiki/AIS_Airlines^en|AIS Airlines|^^air-ais-airlines^1
-air-albastar-spain-v1^^2010-07-31^^LAV^AP^374^AlbaStar^^^^^http://en.wikipedia.org/wiki/AlbaStar^en|AlbaStar|^PMI^air-albastar-spain^1
+air-albastar-spain-v2^^2014-11-01^^LAV^AP^374^AlbaStar^^^^^http://en.wikipedia.org/wiki/AlbaStar^en|AlbaStar|^PMI^air-albastar-spain^2
 air-albawings-v1^^2016-01-01^^AWT^2B^0^Albawings^^^^^http://en.wikipedia.org/wiki/Albawings^en|Albawings|^TIA^air-albawings^1
 air-aklak-air-v1^^^^AKK^6L^709^Aklak Air^^^^^^en|Aklak Air|^^air-aklak-air^1
 air-al-naser-airlines-v2^^2015-04-01^^^NR^0^Al-Naser Airlines^^^^^http://en.wikipedia.org/wiki/Al-Naser_Airlines^en|Al-Naser Airlines|^^air-al-naser-airlines^2
@@ -1009,7 +1009,7 @@ air-villa-air-v1^^^^VQI^VP^0^Villa Air^^^^^^en|Villa Air|^^air-villa-air^1
 air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^http://en.wikipedia.org/wiki/VIM_Airlines^en|Vim Airlines|^^air-vim-airlines^1
 air-virgin-america-v1^^2007-08-08^^VRD^VX^984^Virgin America^^^^^http://en.wikipedia.org/wiki/Virgin_America^en|Virgin America|^^air-virgin-america^1
 air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^http://en.wikipedia.org/wiki/Virgin_Atlantic^en|Virgin Atlantic|^^air-virgin-atlantic^1
-air-virgin-australia-v2^^2013-01-01^^VOZ^VA^856^Virgin Australia^^^^^http://en.wikipedia.org/wiki/Virgin_Australia^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^^air-virgin-australia^2
+air-virgin-australia-v2^^2013-01-01^^VOZ^VA^856^Virgin Australia^^^^^http://en.wikipedia.org/wiki/Virgin_Australia^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^AKL=BNE=MEL=SYD^air-virgin-australia^2
 air-vision-airlines-v1^^^^RBY^V2^0^Vision Airlines^^^^^^en|Vision Airlines|^^air-vision-airlines^1
 air-air-guilin-v1^^2016-01-01^^CGH^GT^730^Air Guilin^^^^^http://en.wikipedia.org/wiki/Air_Guilin^en|Air Guilin|=pny|Guìlín Hángkōng|=zh|桂林航空|^KWL^air-air-guilin^1
 air-viva-colombia-v1^^2012-12-25^^VVC^FC^641^Viva Colombia^^^^^http://en.wikipedia.org/wiki/VivaColombia^en|Viva Colombia|p=en|Fast Colombia S.A.S|^MDE^air-viva-colombia^1
