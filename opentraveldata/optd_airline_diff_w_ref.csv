@@ -1505,8 +1505,9 @@ V5^2^<>Royal Aruban
 V6^1^Air Link<>Vi Air Link
 V7^2^<>Volotea
 VA^1^Virgin Australia<>Virgin Australia Intl
-VA^2^Virgin Blue<>V Australia
-VAU^1^Virgin Australia International<>Virgin Australia Intl
+VA^2^<>V Australia
+VAU^1^<>Virgin Australia Intl
+VAU^2^<>V Australia
 VBW^2^<>Air Burkina
 VC^1^ViaAir<>Via Airlines
 VE^1^EasyFly<>C A I Second S P A
