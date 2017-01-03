@@ -44,7 +44,7 @@ BEGIN {
 	header_line = header_line "^num_code^name^name2"
     header_line = header_line "^alliance_code^alliance_status^type"
     header_line = header_line "^wiki_link^flt_freq^alt_names^bases"
-    header_line = header_line "^key^version"
+    header_line = header_line "^key^version^parent_pk_list^successor_pk_list"
     print (header_line)
 
     #
@@ -137,21 +137,21 @@ BEGIN {
 #   for no longer active airlines
 #
 # Common header for both files:
-# pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type(Cargo;Pax scheduled;Dummy;Gds;charTer;Ferry;Rail)^wiki_link^alt_names^bases^key^version
+# pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type^wiki_link^alt_names^bases^key^version^parent_pk_list
 #
 # Sample input lines for optd_airline_best_known_so_far.csv:
-# air-abc-aerolineas-v1^^2005-12-01^^AIJ^4O^837^Interjet^ABC Aerolíneas^^^^http://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|^MEX=TLC^air-abc-aerolineas^1
-# gds-abacus-v1^^^^^1B^0^Abacus^Abacus^^^G^^en|Abacus|=en|Abacus|^^gds-abacus^1
-# tec-bird-information-systems-v1^^^^^1R^0^Bird Information Systems^^^^^^en|Bird Information Systems|^^tec-bird-information-systems^1
-# trn-accesrail^^^^^9B^450^AccesRail^^^^R^http://en.wikipedia.org/wiki/9B^en|AccesRail|^^trn-accesrail^1
+# air-abc-aerolineas-v1^^2005-12-01^^AIJ^4O^837^Interjet^ABC Aerolíneas^^^^http://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|^MEX=TLC^air-abc-aerolineas^1^
+# gds-abacus-v1^^^^^1B^0^Abacus^Abacus^^^G^^en|Abacus|=en|Abacus|^^gds-abacus^1^
+# tec-bird-information-systems-v1^^^^^1R^0^Bird Information Systems^^^^^^en|Bird Information Systems|^^tec-bird-information-systems^1^
+# trn-accesrail^^^^^9B^450^AccesRail^^^^R^http://en.wikipedia.org/wiki/9B^en|AccesRail|^^trn-accesrail^1^
 #
 # Sample input lines for optd_airline_no_longer_valid.csv:
-# air-aerosvit-airlines-v1^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^http://en.wikipedia.org/wiki/Aerosvit_Airlines^en|AeroSvit Airlines|^^air-aerosvit-airlines^1
-# air-avianova-v1^1^2009-08-27^2011-10-10^NET^AO^0^Avianova^^^^^http://en.wikipedia.org/wiki/Avianova_(Russia)^en|Avianova Lcc|^MOW^air-avianova^1
+# air-aerosvit-airlines-v1^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^http://en.wikipedia.org/wiki/Aerosvit_Airlines^en|AeroSvit Airlines|^^air-aerosvit-airlines^1^
+# air-avianova-v1^1^2009-08-27^2011-10-10^NET^AO^0^Avianova^^^^^http://en.wikipedia.org/wiki/Avianova_(Russia)^en|Avianova Lcc|^MOW^air-avianova^1^
 #
 /^[a-z]{3}-[a-z0-9\-]+\^[0-9]*\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([A-Z0-9]{3})?\^([A-Z0-9*]{2})?\^/ {
 
-    if (NF == 17) {
+    if (NF == 18) {
 		# Primary key
 		pk = $1
 
@@ -205,6 +205,10 @@ BEGIN {
 		# Version
 		version = $17
 
+		# List of parent primary keys
+		parent_pk_list = $18
+		successor_pk_list = ""
+
         # Retrieve the flight-date frequency, if existing,
 		# and if the airline is still active
 		if (env_id == "") {
@@ -225,6 +229,7 @@ BEGIN {
 		output_line = output_line "^" type "^" wiki_link "^" air_freq
 		output_line = output_line "^" alt_names "^" bases
 		output_line = output_line "^" key "^" version
+		output_line = output_line "^" parent_pk_list "^" successor_pk_list
 
 		# Print the full line
 		print (output_line)
