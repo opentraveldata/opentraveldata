@@ -390,8 +390,7 @@ def dump_airlines (global_dict, output_filepath, verboseFlag):
         #
         fileWriter = csv.DictWriter (output_csv, delimiter='^',
                                      fieldnames = fieldnames,
-                                     dialect = 'unix', quoting = csv.QUOTE_NONE,
-                                     escapechar = '"')
+                                     dialect = 'unix', quoting = csv.QUOTE_NONE)
 
         # Write the header
         fileWriter.writeheader()
