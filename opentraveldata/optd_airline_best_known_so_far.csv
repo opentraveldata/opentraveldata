@@ -498,8 +498,8 @@ air-holidays-czech-airlines-v1^^^^^HC^0^Holidays Czech Airlines^Aero Tropics^^^^
 air-hong-kong-airlines-v1^^^^CRK^HX^851^Hong Kong Airlines^^^^^^en|Hong Kong Airlines|^^air-hong-kong-airlines^1^
 air-hong-kong-express-airways-v1^^^^HKE^UO^128^Hong Kong Express Airways^^^^^^en|Hong Kong Express Airways|^^air-hong-kong-express-airways^1^
 air-hop-airlinair-v1^^^^RLA^AN^0^HOP Airlinair^^^^^http://en.wikipedia.org/wiki/Airlinair^en|HOP Airlinair|^^air-hop-airlinair^1^
-air-hop-brit-air-v1^^1975-01-01^^BZH^DB^750^HOP Brit Air^^^Affiliate^^http://en.wikipedia.org/wiki/Brit_Air^en|HOP Brit Air|^^air-hop-brit-air^1^
-air-hop-regional-v1^^2001-01-01^^RAE^YS^0^Regional^Régional Compagnie Aérienne Européenne^^Affiliate^^http://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^en|Regional|=en|Régional Compagnie Aérienne Européenne|^^air-hop-regional^1^
+air-hop-brit-air-v1^^1975-01-01^^BZH^DB^750^HOP Brit Air^^^^^http://en.wikipedia.org/wiki/Brit_Air^en|HOP Brit Air|^^air-hop-brit-air^1^
+air-hop-regional-v1^^2001-01-01^^RAE^YS^0^Regional^Régional Compagnie Aérienne Européenne^^^^http://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^en|Regional|=en|Régional Compagnie Aérienne Européenne|^^air-hop-regional^1^
 air-hop-v1^^2013-03-31^^HOP^A5^163^HOP!^^^^P^http://en.wikipedia.org/wiki/HOP!^en|HOP!|^^air-hop^1^
 air-horizon-air-v1^^1981-09-01^^QXE^QX^481^Horizon Air^^^^^http://en.wikipedia.org/wiki/Horizon_Air^en|Horizon Air|^^air-horizon-air^1^
 air-hs-aviation-v1^^^^APF^HP^0^Amapola Flyg^^^^^^en|Amapola Flyg|^^air-hs-aviation^1^
@@ -636,7 +636,7 @@ air-mango-v1^^2006-01-01^^MNO^JE^0^Mango^^^^^http://en.wikipedia.org/wiki/Mango_
 air-mann-yadanarpon-v1^^2014-02-01^^MYP^7Y^0^Mann Yadanarpon Airlines^^^^^http://en.wikipedia.org/wiki/Mann_Yadanarpon_Airlines^en|Mann Yadanarpon Airlines|^^air-mann-yadanarpon^1^
 air-manx-v1^^^^^NM^0^Manx^^^^^^en|Manx|^^air-manx^1^
 air-martinair-v1^^^^MPH^MP^129^Martinair^^^^^^en|Martinair|^^air-martinair^1^
-air-maswings-v1^^2007-10-01^^MWG^MY^819^MASwings^^^Member^^http://en.wikipedia.org/wiki/MASwings^en|MASwings|p=en|MASwings Sendirian Berhad|^BKI=KCH=MYY^air-maswings^1^
+air-maswings-v1^^2007-10-01^^MWG^MY^819^MASwings^^^^^http://en.wikipedia.org/wiki/MASwings^en|MASwings|p=en|MASwings Sendirian Berhad|^BKI=KCH=MYY^air-maswings^1^
 air-mauritania-airways-v1^^^^^YD^0^Mauritania Airways^^^^^^en|Mauritania Airways|^^air-mauritania-airways^1^
 air-mauritanian-airlines-v1^^^^^L6^495^Mauritanian Airlines Int^^^^^^en|Mauritanian Airlines Int|^^air-mauritanian-airlines^1^
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^en|Mayair|=en|Aeromonterr|^^air-mayair^1^
@@ -911,7 +911,7 @@ air-syphax-airlines-sa-v1^^2012-04-29^^SYA^FS^393^Syphax Airlines^^^^^http://en.
 air-syrian-arab-airlines-v1^^^^SYR^RB^70^Syrian Arab Airlines^^^^^^en|Syrian Arab Airlines|^^air-syrian-arab-airlines^1^
 air-taag-v1^^^^DTA^DT^118^Taag^^^^^^en|Taag|^^air-taag^1^
 air-taban-airlines-v1^^^^TBM^HH^283^Taban Airlines^^^^^^en|Taban Airlines|^^air-taban-airlines^1^
-air-taca-airlines-v1^^1931-01-01^^TAI^TA^202^Avianca El Salvador^TACA Airlines^^Member^^http://en.wikipedia.org/wiki/Avianca_El_Salvador^en|Avianca El Salvador|=en|TACA Airlines|^^air-taca-airlines^1^
+air-taca-airlines-v1^^1931-01-01^^TAI^TA^202^Avianca El Salvador^TACA Airlines^^^^http://en.wikipedia.org/wiki/Avianca_El_Salvador^en|Avianca El Salvador|=en|TACA Airlines|^^air-taca-airlines^1^
 air-taca-peru-v1^^1999-07-01^^TPU^T0^530^Avianca Perú^TACA Peru^^^^http://en.wikipedia.org/wiki/Avianca_Peru^en|Avianca Perú|=en|TACA Peru|^^air-taca-peru^1^
 air-tacv-cabo-verde-airlines-v1^^^^TCV^VR^696^Tacv Cabo Verde Airlines^TACV^^^^^en|Tacv Cabo Verde Airlines|=en|TACV|^^air-tacv-cabo-verde-airlines^1^
 air-taf-linhas-aereas-v1^^^^TSD^R9^418^TAF Linhas Aereas^Air Charter^^^^^en|TAF Linhas Aereas|=en|Air Charter|^^air-taf-linhas-aereas^1^

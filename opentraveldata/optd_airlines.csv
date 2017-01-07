@@ -553,7 +553,7 @@ air-ewa-air-v1^^^^EWR^ZD^732^Ewa Air^Flying Dandy^^^^^189^en|Ewa Air|=en|Flying 
 air-exec-air-v1^^^^^X7^0^Exec Air^Air Service^^^^^34^en|Exec Air|=en|Air Service|^^air-exec-air^1^^
 air-executive-airlines-service-v1^1^1993-01-01^2006-07-31^EXW^OW^92^Nicon Airways^^^^^http://en.wikipedia.org/wiki/EAS_Airlines^^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^1^^
 air-executive-airlines-service-v2^2^2007-08-01^2007-12-31^EXW^OW^92^Nicon Airways^^^^^http://en.wikipedia.org/wiki/Nicon_Airways^^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^2^^
-air-executive-airlines-v1^1^2004-01-01^2013-04-01^EXK^OW^92^Executive Airlines^^^^^http://en.wikipedia.org/wiki/Executive_Airlines^^en|Executive Airlines|^SJU^air-executive-airlines^1^^
+air-executive-airlines-v1^1^2004-01-01^2013-04-01^EXK^OW^92^Executive Airlines^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/Executive_Airlines^^en|Executive Airlines|^SJU^air-executive-airlines^1^^
 air-executive-express-aviation-v1^^2013-01-01^^LTD^6G^677^Executive Express Aviation^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^^en|Southern Airways|=en|Executive Express Aviation LLC|^PIT^air-executive-express-aviation^1^^
 air-exel-nl-v1^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^^^^http://en.wikipedia.org/wiki/Air_Exel^^en||=en|Air Exel|^^air-exel-nl^1^^
 air-express-air-cargo-v1^^^2015-01-01^XRC^7A^336^Express Air Cargo^^^^^http://en.wikipedia.org/wiki/Express_Air_Cargo^^en|Express Air Cargo|^^air-express-air-cargo^1^^
@@ -727,7 +727,7 @@ air-israir-airlines-v1^^^^ISR^6H^818^Israir Airlines^Israir Airlin^^^^^983^en|Is
 air-ital-v1^^^^^1Q^0^Joint Stock Company Ital^^^^^^^en|Joint Stock Company Ital|^^air-ital^1^^
 air-itek-air-v1^^^^IKA^GI^420^Itek Air^^^^^^^en|Itek Air|^^air-itek-air^1^^
 air-izhavia-v1^^^^IZA^I8^25^Izhavia^Aboriginalair^^^^^385^en|Izhavia|=en|Aboriginalair|^^air-izhavia^1^^
-air-jal-express-v1^1^1998-07-01^2014-09-30^JEX^JC^0^JAL Express^^^^^http://en.wikipedia.org/wiki/JAL_Express^^en|JAL Express|^HND^air-jal-express^1^^
+air-jal-express-v1^1^1998-07-01^2014-09-30^JEX^JC^0^JAL Express^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^^en|JAL Express|^HND^air-jal-express^1^^
 air-japan-air-commuter-v1^^1983-07-01^^JAC^JC^0^Japan Air Commuter^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Japan_Air_Commuter^3084^en|Japan Air Commuter|^KOJ^air-japan-air-commuter^1^^
 air-japan-airlines-v1^^1951-10-25^^JAL^JL^131^Japan Airlines^JAL^OneWorld^Member^^http://en.wikipedia.org/wiki/Japan_Airlines^23910^en|Japan Airlines|=en|JAL|^^air-japan-airlines^1^^
 air-japan-transocean-air-v1^^^^JTA^NU^353^Japan Transocean Air^Japan Transoc^OneWorld^Affiliate^^^2200^en|Japan Transocean Air|=en|Japan Transoc|^^air-japan-transocean-air^1^^
@@ -910,7 +910,7 @@ air-national-airways-corporation-charter-za-v1^1^1946-01-01^2015-12-31^NTN^^0^NA
 air-national-airways-corporation-nz-v1^1^1945-01-01^1978-12-31^^NZ^0^National Airways Corporation^^^^^http://en.wikipedia.org/wiki/New_Zealand_National_Airways_Corporation^^en|National Airways Corporation|^^air-national-airways-corporation-nz^1^^
 air-national-airways-ethiopia-v1^1^2007-11-01^2015-12-31^^9Y^789^National Airways Ethiopia^^^^^http://en.wikipedia.org/wiki/National_Airways_Ethiopia^^en|National Airways Ethiopia|^ADD^air-national-airways-ethiopia^1^^
 air-national-airways-gabon-v1^1^2002-01-01^2015-12-31^NRG^^0^Nationale Regionale Transport^^^^^http://en.wikipedia.org/wiki/Nationale_Regionale_Transport^^abbr|NRT|=en|Nationale Regionale Transport|p=en|National Airways Gabon|h^LBV^air-national-airways-gabon^1^^
-air-national-jet-systems-v1^1^1990-07-01^2009-02-28^NJS^NC^0^National Jet Systems^^^^^http://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^1^^
+air-national-jet-systems-v1^1^1990-07-01^2009-02-28^NJS^NC^0^National Jet Systems^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^1^^
 air-national-jet-systems-v2^^2009-03-01^^JTE^NC^0^Cobham Aviation Services Australia^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^2^^
 air-nature-air-v1^^^^^5C^0^Nature Air^^^^^^1606^en|Nature Air|^^air-nature-air^1^^
 air-naturelink-aviation-v1^1^1997-01-01^2011-12-31^NRK^^0^Naturelink Aviation^^^^^http://en.wikipedia.org/wiki/National_Airways_Corporation^^abbr|NAC|=en|NAC Charter|ps=en|National Airways Corporation|=en|Naturelink Aviation|h^PRY^air-naturelink-aviation^1^^
@@ -1076,7 +1076,7 @@ air-santa-barbara-airlines-v1^^1995-11-01^^BBR^S3^249^SBA Airlines^^^^^http://en
 air-saratov-airlines-v1^^^^^6W^26^Saratov Airlines^^^^^^648^en|Saratov Airlines|^^air-saratov-airlines^1^^
 air-sarit-airlines-v1^1^1997-01-01^2004-06-30^BDR^J4^0^Badr Airlines^^^^^http://en.wikipedia.org/wiki/Badr_Airlines^^en|Badr Airlines|p=en|Sarit Airlines|h^^air-sarit-airlines^1^^
 air-sarit-airlines-v2^^2004-07-01^^BDR^J4^0^Badr Airlines^^^^^http://en.wikipedia.org/wiki/Badr_Airlines^478^en|Badr Airlines|p=en|Sarit Airlines|h^^air-sarit-airlines^2^^
-air-sas-braathens-v1^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^^^^^http://en.wikipedia.org/wiki/SAS_Braathens^^en|SAS Braathens|^^air-sas-braathens^1^^
+air-sas-braathens-v1^1^1946-01-01^2007-12-31^CNO^BU^117^Scandinavian Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/SAS_Braathens^^en|SAS Braathens|^^air-sas-braathens^1^^
 air-sat-airlines-v1^^2013-12-08^^SHU^HZ^598^Aurora Airlines^SAT Airlines^^^^http://en.wikipedia.org/wiki/Aurora_(airline)^607^en|Aurora Airlines|=en|SAT Airlines|^^air-sat-airlines^1^^
 air-sata-air-acores-v1^^1947-06-15^^RZO^SP^737^SATA Air Açores^^^^^http://en.wikipedia.org/wiki/SATA_Air_A%C3%A7ores^1195^en|SATA Air Açores|^^air-sata-air-acores^1^^
 air-sata-v1^^1991-01-01^^RZO^S4^331^SATA International^^^^^http://en.wikipedia.org/wiki/SATA_International^567^en|SATA International|^^air-sata^1^^

@@ -158,8 +158,8 @@ def extractAirlineDetails (global_dict, airline_filepath, verboseFlag):
             num_code = row['num_code']
             air_name_utf8 = row['name']
             air_name_asc = row['name2']
-            alliance_code = ""
-            alliance_status = ""
+            alliance_code = row['alliance_code']
+            alliance_status = row['alliance_status']
             air_type = row['type']
             wiki_link = row['wiki_link']
             alt_names = row['alt_names']
