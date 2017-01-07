@@ -341,7 +341,37 @@ def calculateSuccessors (global_dict, verboseFlag):
 
     # Extract a handler on the airline-dedicated directory
     airline_all_dict = global_dict['airlines']
-    
+
+    # Browse all the airlines
+    for (idx_airline, airline_dict) in airline_all_dict.items():
+        # Retrieve the primary key
+        pk = airline_dict['pk']
+        iata_code = airline_dict['2char_code']
+        icao_code = airline_dict['3char_code']
+
+        # Retrieve the list of parents
+        parent_pk_list_str = airline_dict['parent_pk_list']
+        parent_pk_tuple_list = parent_pk_list_str.split("=")
+
+        # Filter out the records having no specified parent (most of the cases)
+        if len(parent_pk_list_str) == 0: continue
+
+        # Browse the list of parent types and primary keys
+        for parent_tuple_str in parent_pk_tuple_list:
+            parent_tuple = parent_tuple_str.split("|")
+            parent_type = parent_tuple[0]
+            parent_pk = parent_tuple[1]
+            
+            # Retrieve the parent airline corresponding to the PK
+            parent_airline_dict = airline_all_dict[parent_pk]
+            parent_airline_successor_list_str = parent_airline_dict['successor_pk_list']
+
+            # Set the successor (back link) in that parent airline
+            successor_tuple_str = parent_type + "|" + pk
+            if (parent_airline_successor_list_str != ""):
+                parent_airline_dict['successor_pk_list'] += "="
+            parent_airline_dict['successor_pk_list'] += successor_tuple_str
+
     return
 
 #
