@@ -99,6 +99,7 @@ def handle_opt():
     # Report the configuration
     print ("Input data file of best known airline details: '" + airline_bestknown_filepath + "'")
     print ("Input data file of no longer valid airline details: '" + airline_no_longer_valid_filepath + "'")
+    print ("Input data file of airline alliance details: '" + airline_alliance_filepath + "'")
     print ("Input data file of flight frequency values: '" + freq_filepath + "'")
     print ("Output data file of airline details: '" + airline_filepath + "'")
     return (verboseFlag, airline_bestknown_filepath,
@@ -106,15 +107,45 @@ def handle_opt():
             freq_filepath, airline_filepath)
 
 #
+# Initialize the airline-related dictionaries
+#
+def initializeAirlineDictionaries ():
+    global_dict = dict()
+
+    # Add the dictionary holding all the details for every airline
+    global_dict['airlines'] = dict()
+
+    # Add the dictionary holding, for every IATA code, the corresponding list
+    # of airlines. Usually, there is a single active airline corresponding to
+    # a given IATA code. However, there are some so-called IATA commercial
+    # duplicates, always operating in distinct geographical regions. And,
+    # more commonly, a given IATA code may have been given to quite a few
+    # (now deprecated) airlines during the history.
+    global_dict['airline-code-by-iata'] = dict()
+    global_dict['airline-pk-by-code'] = dict()
+    
+    # Add the dictionary holding all the details for every alliance
+    global_dict['alliances'] = dict()
+    
+    return global_dict
+
+#
 # Extract the details of airlines from the OpenTravelData CSV files
 #
 # pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type^wiki_link^alt_names^bases^key^version^parent_pk_list
 #
-def extractAirlineDetails (airline_all_dict, airline_filepath, verboseFlag):
+def extractAirlineDetails (global_dict, airline_filepath, verboseFlag):
     """
     Derive a dictionary of all the airlines referenced within the OpenTravelData
-    project as 'best known so far' (bksf)
+    project
     """
+
+    # Extract a handler on the airline-dedicated directory
+    airline_all_dict = global_dict['airlines']
+    airline_code_list_by_iata = global_dict['airline-code-by-iata']
+    airline_pk_list_by_code = global_dict['airline-pk-by-code']
+    
+    # Parse the OPTD data file
     with open (airline_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for row in file_reader:
@@ -137,28 +168,87 @@ def extractAirlineDetails (airline_all_dict, airline_filepath, verboseFlag):
             air_version = row['version']
             parent_pk_list = row['parent_pk_list']
 
-            # Register the airline, if not already registered
+            # Derive the airline aggregated code (ie, IATA and ICAO)
             air_code = iata_code + "^" + icao_code
+
+            # Register the airline aggregated code in the list indexed
+            # by IATA codes
+            if not (iata_code in airline_code_list_by_iata):
+                airline_code_list_by_iata[iata_code] = []
+            else:
+                airline_air_code_list = airline_code_list_by_iata[iata_code]
+                airline_air_code_list.append (air_code)
+
+            # Register the airline pk in the list indexed by aggregated codes
+            if not (air_code in airline_pk_list_by_code):
+                airline_pk_list_by_code[air_code] = []
+            else:
+                airline_pk_list = airline_pk_list_by_code[air_code]
+                airline_pk_list.append (pk)
+                
+            # Register all the airline details in the list indexed by pk
             if not (air_code in airline_all_dict):
-                airline_all_dict[air_code] = {'pk': pk, 'key': air_key,
-                                              'version': air_version,
-                                              'env_id': env_id,
-                                              'validity_from': validity_from,
-                                              'validity_to': validity_to,
-                                              '2char_code': iata_code,
-                                              '3char_code': icao_code,
-                                              'num_code': num_code,
-                                              'type': air_type,
-                                              'name': air_name_utf8,
-                                              'name2': air_name_asc,
-                                              'alliance_code': alliance_code,
-                                              'alliance_status': alliance_status,
-                                              'wiki_link': wiki_link,
-                                              'alt_names': alt_names,
-                                              'bases': bases,
-                                              'parent_pk_list': parent_pk_list,
-                                              'successor_pk_list': "",
-                                              'flt_freq': 0}
+                airline_all_dict[pk] = {'pk': pk, 'key': air_key,
+                                        'version': air_version,
+                                        'env_id': env_id,
+                                        'validity_from': validity_from,
+                                        'validity_to': validity_to,
+                                        '2char_code': iata_code,
+                                        '3char_code': icao_code,
+                                        'num_code': num_code,
+                                        'type': air_type,
+                                        'name': air_name_utf8,
+                                        'name2': air_name_asc,
+                                        'alliance_code': alliance_code,
+                                        'alliance_status': alliance_status,
+                                        'wiki_link': wiki_link,
+                                        'alt_names': alt_names,
+                                        'bases': bases,
+                                        'parent_pk_list': parent_pk_list,
+                                        'successor_pk_list': "",
+                                        'flt_freq': 0}
+
+    return
+
+#
+# Extract the details of alliances from the OpenTravelData CSV file
+#
+# alliance_name^alliance_type^airline_iata_code_2c^airline_name^from_date^to_date^env_id
+#
+def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
+    """
+    Complete the airline details with the alliance details
+    """
+
+    # Extract handlers on the airline-dedicated directories
+    airline_all_dict = global_dict['airlines']
+    airline_code_list_dict = global_dict['airline-code-by-iata']
+    airline_pk_list_dict = global_dict['airline-pk-by-code']
+    
+    # Extract a handler on the alliance-dedicated directory
+    alliance_dict = global_dict['alliances']
+    
+    with open (alliance_filepath, newline='') as csvfile:
+        file_reader = csv.DictReader (csvfile, delimiter='^')
+        for row in file_reader:
+            alliance_name = row['alliance_name']
+            alliance_type = row['alliance_type']
+            air_iata_code = row['airline_iata_code_2c']
+            air_name = row['airline_name']
+            env_id = row['env_id']
+
+            # When the rule is no longer valid, just discard it for now
+            # TODO: complete the alliance details, even for no longer valid
+            #       airlines
+            if (env_id != ""): continue
+            
+            # Browse all the airlines corresponding to that IATA code
+            air_code_list = airline_code_list_dict[air_iata_code]
+            for air_code in air_code_list:
+                pk_list = airline_pk_list_dict[air_code]
+                for pk in pk_list:
+                    airline_dict = airline_all_dict[pk]
+                
 
     return
 
@@ -167,10 +257,17 @@ def extractAirlineDetails (airline_all_dict, airline_filepath, verboseFlag):
 #
 # iata_code^icao_code^nb_seats^flight_freq
 #
-def extractFrequencies (airline_all_dict, freq_filepath, verboseFlag):
+def extractFrequencies (global_dict, freq_filepath, verboseFlag):
     """
     Complete the airline details with the flight route frequencies
     """
+
+    # Extract handlers on the airline-dedicated directories
+    airline_all_dict = global_dict['airlines']
+    airline_code_list_dict = global_dict['airline-code-by-iata']
+    airline_pk_list_dict = global_dict['airline-pk-by-code']
+
+    #
     with open (freq_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for row in file_reader:
@@ -179,25 +276,56 @@ def extractFrequencies (airline_all_dict, freq_filepath, verboseFlag):
             if (icao_code == "ZZZ"): icao_code = ""
             flt_freq = int(row['flight_freq'])
 
+            # Derive the aggregated airline code (IATA and ICAO codes)
             air_code = iata_code + "^" + icao_code
-            if not (air_code in airline_all_dict):
-                print ("The airline '" + iata_code + "/" + icao_code
+            if not (air_code in airline_pk_list_dict):
+                print ("[Error] The airline '" + iata_code + "/" + icao_code
                        + "' cannot be found in the OPTD airline data files ('"
                        + def_airline_bestknown_filepath + "' and '"
                        + def_airline_no_longer_valid_filepath + "')")
                 raise KeyError
             else:
-                airline_all_dict[air_code]['flt_freq'] = flt_freq
+                # Retrieve only the active airline
+                pk_list = airline_pk_list_dict[air_code]
+                activeAirlinePK = ""
+                nbOfActiveAirlines = 0
+                for pk in pk_list:
+                    airline_dict = airline_all_dict[pk]
+                    env_id = airline_dict['env_id']
+                    if (env_id != ""): continue
+                    else:
+                        activeAirlinePK = airline_dict['pk']
+                        nbOfActiveAirlines += 1
+
+                # Sanity checks
+                if (nbOfActiveAirlines == 0):
+                    print ("[Error] The airline '" + iata_code + "/" + icao_code
+                           + "' has no active record. List of PK: "
+                           + str(pk_list))
+                    raise KeyError
+                if (nbOfActiveAirlines >= 2):
+                    print ("[Warning] The airline '" + iata_code + "/"
+                           + icao_code
+                           + "' has " + str(nbOfActiveAirlines)
+                           + " active records: " + str(pk_list)
+                           + ". Only '" + activeAirlinePK + "' is retained here")
+
+                # Set the flight frequency on the retrieved airline record
+                airline_all_dict[activeAirlinePK]['flt_freq'] = flt_freq
 
     return
 
 #
 # Derive the successors (eg, "merged into" or "rebranded as")
 #
-def calculateSuccessors (airline_all_dict, verboseFlag):
+def calculateSuccessors (global_dict, verboseFlag):
     """
     Derive the successors (eg, 'merged into' or 'rebranded as')
     """
+
+    # Extract a handler on the airline-dedicated directory
+    airline_all_dict = global_dict['airlines']
+    
     return
 
 #
@@ -224,10 +352,13 @@ def sortAirlineDict (unsorted_dict):
 #
 # Dump the details of all the airlines into the given file
 #
-def dump_airlines (airline_all_dict, output_filepath, verboseFlag):
+def dump_airlines (global_dict, output_filepath, verboseFlag):
     """
     Generate a CSV data file with the details of all the airlines
     """
+
+    # Extract a handler on the airline-dedicated directory
+    airline_all_dict = global_dict['airlines']
 
     # Sort the dictionary by the average number of seats
     airline_all_dict_sorted = sortAirlineDict (airline_all_dict)
@@ -268,26 +399,30 @@ def main():
     # Parse command options
     (verboseFlag, airline_bestknown_filepath, airline_no_longer_valid_filepath, airline_alliance_filepath, freq_filepath, airline_filepath) = handle_opt()
 
+    # Initialize the airline-related dictionaries
+    global_dict = initializeAirlineDictionaries()
+
     # Extract the airline details from OpenTravelData (both from the file
     # of best known details and from the file of no longer valid airlines)
-    airline_all_dict = dict()
-    extractAirlineDetails (airline_all_dict, airline_bestknown_filepath,
-                           verboseFlag)
-    extractAirlineDetails (airline_all_dict, airline_no_longer_valid_filepath,
+    extractAirlineDetails (global_dict, airline_bestknown_filepath, verboseFlag)
+    extractAirlineDetails (global_dict, airline_no_longer_valid_filepath,
                            verboseFlag)
 
+    # Add the alliance details
+    extractAllianceDetails (global_dict, airline_alliance_filepath, verboseFlag)
+    
     # Add the flight frequencies
-    extractFrequencies (airline_all_dict, freq_filepath, verboseFlag)
+    extractFrequencies (global_dict, freq_filepath, verboseFlag)
 
     # DEBUG
     # from pprint import pprint as pp
     # pp (airline_all_dict)
 
     # Derive the successors (eg, "merged into" or "rebranded as")
-    calculateSuccessors (airline_all_dict, verboseFlag)
+    calculateSuccessors (global_dict, verboseFlag)
 
     # Dump the airline details into the output file
-    dump_airlines (airline_all_dict, airline_filepath, verboseFlag)
+    dump_airlines (global_dict, airline_filepath, verboseFlag)
 
 
 #
