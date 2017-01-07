@@ -347,8 +347,14 @@ def getCityPKList (por_all_dict, por_code, por_pk):
     cty_code_list = por_dict['city_code_list']
     por_cty_pk_list = []
     for cty_code in cty_code_list:
-        
-        por_cty_full_dict = por_all_dict[cty_code]
+
+        try:
+            por_cty_full_dict = por_all_dict[cty_code]
+        except KeyError:
+            print ("[Error] Code: " + por_code + "; PK: " + por_pk + "; cty_code_list: " + str(cty_code_list) + "; idx/cty_code: " + cty_code)
+            print ("[Error] Usually, it comes from the fact that the Geonames ID in optd_por_best_known_so_far.csv is not the right one (see optd_por_public.csv for the right Geonames ID)")
+            raise KeyError
+
         for por_cty_pk in por_cty_full_dict:
             # Filter out the already known primary keys
             if por_pk == por_cty_pk or por_cty_pk == 'notified': continue
@@ -913,10 +919,18 @@ def main():
     por_pk_4_zzz_dict = dict()
     extractPOR (por_all_dict, por_pk_4_zzz_dict, por_filepath, verboseFlag)
 
+    # DEBUG
+    # from pprint import pprint as pp
+    # pp (por_all_dict)
+
     # Extract the airlines from OpenTravelData best known details
     airline_all_dict = dict()
     extractBksfAirline (airline_all_dict, airline_bestknown_filepath,
                         verboseFlag)    
+
+    # DEBUG
+    # from pprint import pprint as pp
+    # pp (airline_all_dict)
 
     # Build directional graphs from the file of flight schedule:
     # - One with, as weight, the monthly average number of seats
