@@ -462,6 +462,9 @@ def extractBksfAirline (airline_all_dict, airline_bestknown_filepath,
             if not (airline_code in airline_all_dict) and env_id == '':
                 airline_all_dict[airline_code] = dict()
 
+            # TODO: there may be several active airlines for the same IATA code.
+            #       Optimally, select the airline based on its base/region.
+            #       Quick win: register the flt_freq for all those airlines
             if env_id == '':
                 airline_all_dict[airline_code] = {'iata_code': iata_code,
                                                   'icao_code': icao_code,
