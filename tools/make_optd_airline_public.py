@@ -175,16 +175,16 @@ def extractAirlineDetails (global_dict, airline_filepath, verboseFlag):
             # by IATA codes
             if not (iata_code in airline_code_list_by_iata):
                 airline_code_list_by_iata[iata_code] = []
-            else:
-                airline_air_code_list = airline_code_list_by_iata[iata_code]
-                airline_air_code_list.append (air_code)
+
+            airline_air_code_list = airline_code_list_by_iata[iata_code]
+            airline_air_code_list.append (air_code)
 
             # Register the airline pk in the list indexed by aggregated codes
             if not (air_code in airline_pk_list_by_code):
                 airline_pk_list_by_code[air_code] = []
-            else:
-                airline_pk_list = airline_pk_list_by_code[air_code]
-                airline_pk_list.append (pk)
+
+            airline_pk_list = airline_pk_list_by_code[air_code]
+            airline_pk_list.append (pk)
                 
             # Register all the airline details in the list indexed by pk
             if not (air_code in airline_all_dict):
@@ -411,12 +411,16 @@ def main():
     # Add the alliance details
     extractAllianceDetails (global_dict, airline_alliance_filepath, verboseFlag)
     
+    # DEBUG
+    # from pprint import pprint as pp
+    # pp (global_dict)
+
     # Add the flight frequencies
     extractFrequencies (global_dict, freq_filepath, verboseFlag)
 
     # DEBUG
     # from pprint import pprint as pp
-    # pp (airline_all_dict)
+    # pp (global_dict)
 
     # Derive the successors (eg, "merged into" or "rebranded as")
     calculateSuccessors (global_dict, verboseFlag)
