@@ -517,6 +517,7 @@ air-elysian-airlines-v1^1^2006-01-01^2010-12-31^GIE^E4^^Elysian Airlines^^^^^htt
 air-emirates-v1^^1985-10-25^^UAE^EK^176^Emirates^^^^^http://en.wikipedia.org/wiki/Emirates_%28airline%29^16339^en|Emirates|^^air-emirates^1^^
 air-endeavor-air-v1^^1985-01-01^^FLG^9E^430^Endeavor Air^^^^^http://en.wikipedia.org/wiki/Endeavor_Air^^en|Endeavor Air|^^air-endeavor-air^1^^
 air-enkor-jsc-v1^1^1986-01-01^2005-12-31^ENK^H6^0^Enkor^^^^^http://en.wikipedia.org/wiki/Enkor^^en|Enkor|^^air-enkor-jsc^1^^
+air-enter-air-v1^^2009-10-15^^ENT^E4^^Enter Air^^^^T^http://en.wikipedia.org/wiki/Enter_Air^^en|Enter Air|ps=en|Enter Air Spolka z.o.o.|^WAW=POZ=AGP=GRO=CFU^air-enter-air^1^^
 air-equaflight-service-v1^^^^^E7^965^Equaflight Service^Fly European^^^P^^48^en|Equaflight Service|=en|Fly European|^^air-equaflight-service^1^^
 air-equatorial-congo-airlines-v1^^2011-09-24^^PTI^LC^753^ECAir^^^^^^338^en|Equatorial Congo Airlines|=en|ECAir|ps=ja|エクアトリアル・コンゴ・エアラインズ|^^air-equatorial-congo-airlines^1^^
 air-era-aviation-v1^1^1948-01-01^2016-06-30^ERH^7H^808^Era Aviation^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^^en|Ravn Alaska|p=en|Corvus Airlines|=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^1^^
@@ -607,6 +608,7 @@ air-french-blue-v1^^2016-01-01^^FBU^BF^396^French Blue^^^^^http://en.wikipedia.o
 air-french-military-force-v1^^^^^RD^0^French Military Force^Ryan^^^^^^en|French Military Force|=en|Ryan|^^air-french-military-force^1^^
 air-freshair-v1^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^^en|Freshair|=en|Easeon Air|^^air-freshair^1^^
 air-frontier-airlines-v1^^1994-07-05^^FTT^F9^422^Frontier Airlines^^^^^http://en.wikipedia.org/wiki/Frontier_Airlines^9873^en|Frontier Airlines|^^air-frontier-airlines^1^^
+air-frontier-flying-service-v1^1^1950-01-01^2014-12-31^FTA^2F^0^Frontier Flying Service^^^^^http://en.wikipedia.org/wiki/Frontier_Flying_Service^^en|Ravn Alaska|p=en|Corvus Airlines|=en|Frontier Flying Service|h=en|Frontier Alaska|h=en|Hageland Aviation|h=en|Era Alaska|h=en|Era Aviation|h=sign|Raven Flight|^FAI^air-frontier-flying-service^1^^
 air-fuji-dream-airlines-v1^^^^FDA^JH^0^Fuji Dream Airlines^Nordeste^^^^^2000^en|Fuji Dream Airlines|=en|Nordeste|^^air-fuji-dream-airlines^1^^
 air-fuzhou-airlines-v1^^2014-10-30^^FZA^FU^666^Fuzhou Airlines^^^^^http://en.wikipedia.org/wiki/Fuzhou_Airlines^1864^en|Fuzhou Airlines|^^air-fuzhou-airlines^1^^
 air-gading-sari-aviation-v1^1^2006-01-01^2015-01-31^GSB^^380^AsiaCargo Express^^^^C^http://en.wikipedia.org/wiki/AsiaCargo_Express^^en|AsiaCargo Express|ps=en|DRB-HICOM AsiaCargo Express|=en|Gading Sari|h^KUL^air-gading-sari-aviation^1^^
@@ -970,8 +972,8 @@ air-orenburg-region-airlines-v1^^^^^O7^0^Orenburg Region Airlines^^^^^^1605^en|O
 air-oriental-air-bridge-v1^^^^NGK^OC^0^Oriental Air Bridge^Omni Aviacao^^^^^674^en|Oriental Air Bridge|=en|Omni Aviacao|^^air-oriental-air-bridge^1^^
 air-orient-thai-airlines-v1^^1995-01-01^^OEA^OX^578^Orient Thai Airlines^^^^^http://en.wikipedia.org/wiki/Orient_Thai_Airlines^658^en|Orient Thai Airlines|^^air-orient-thai-airlines^1^^
 air-our-airline-v1^^1970-02-14^^RON^ON^123^Nauru Airlines^Our Airline^^^^http://en.wikipedia.org/wiki/Nauru_Airlines^90^en|Nauru Airlines|=en|Our Airline|^^air-our-airline^1^^
-air-overland-airways-v1^^2002-01-01^^OLA^OF^0^Overland Airways^^^^C^http://en.wikipedia.org/wiki/Overland_Airways^252^en|Overland Airways|^ABV^air-overland-airways^1^^
-air-overland-airways-v1^1^2003-11-26^2015-12-31^OLA^OJ^0^Overland Airways^^^^^http://en.wikipedia.org/wiki/Overland_Airways^^en|Overland Airways|^^air-overland-airways^1^^
+air-overland-airways-v1^1^2003-11-26^2015-12-31^OLA^OJ^0^Overland Airways^^^^^http://en.wikipedia.org/wiki/Overland_Airways^^en|Overland Airways|^ABV^air-overland-airways^1^^
+air-overland-airways-v2^^2016-01-01^^OLA^OF^0^Overland Airways^^^^C^http://en.wikipedia.org/wiki/Overland_Airways^252^en|Overland Airways|^ABV^air-overland-airways^2^^
 air-pacific-airways-v1^^^^^3F^0^Pacific Airways^^^^^^696^en|Pacific Airways|^^air-pacific-airways^1^^
 air-pacific-coastal-airlines-v1^^^^PCO^8P^905^Pacific Coastal Airlines^Pac Coastal^^^^^2070^en|Pacific Coastal Airlines|=en|Pac Coastal|^^air-pacific-coastal-airlines^1^^
 air-pacific-wings-v1^^^^ANV^LW^568^Pacific Wings^Air Nevada^^^^^^en|Pacific Wings|=en|Air Nevada|^^air-pacific-wings^1^^

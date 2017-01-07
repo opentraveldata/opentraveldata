@@ -206,7 +206,7 @@ def extractAirlineDetails (global_dict, airline_filepath, verboseFlag):
                                         'bases': bases,
                                         'parent_pk_list': parent_pk_list,
                                         'successor_pk_list': "",
-                                        'flt_freq': 0}
+                                        'flt_freq': ""}
 
     return
 
@@ -235,20 +235,36 @@ def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
             alliance_type = row['alliance_type']
             air_iata_code = row['airline_iata_code_2c']
             air_name = row['airline_name']
-            env_id = row['env_id']
+            alliance_env_id = row['env_id']
 
             # When the rule is no longer valid, just discard it for now
             # TODO: complete the alliance details, even for no longer valid
             #       airlines
-            if (env_id != ""): continue
+            if (alliance_env_id != ""): continue
             
             # Browse all the airlines corresponding to that IATA code
             air_code_list = airline_code_list_dict[air_iata_code]
             for air_code in air_code_list:
                 pk_list = airline_pk_list_dict[air_code]
                 for pk in pk_list:
+                    # Retrieve the dictionary with all the airline details
                     airline_dict = airline_all_dict[pk]
-                
+
+                    # Filter out the non active airlines
+                    air_env_id = airline_dict['env_id']
+                    if (air_env_id != ""): continue
+
+                    # Sanity check on the name
+                    air_name_org = airline_dict['name']
+                    if (air_name_org != air_name):
+                        print ("[Error] The airline '" + air_iata_code
+                               + "' has different names in the best known and alliance files, resp. '"
+                               + air_name_org + "' and '" + air_name + "'")
+                        raise Exception
+
+                    # Set the alliance name and status
+                    airline_dict['alliance_code'] = alliance_name
+                    airline_dict['alliance_status'] = alliance_type
 
     return
 

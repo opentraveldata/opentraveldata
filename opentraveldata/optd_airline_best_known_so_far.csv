@@ -383,7 +383,7 @@ air-el-al-v1^^1948-01-01^^ELY^LY^114^El Al^El Al Israel Airlines^^^^http://en.wi
 air-ellinair-v1^^2014-02-19^^ELB^EL^0^Ellinair^^^^^http://en.wikipedia.org/wiki/Ellinair^en|Ellinair|^^air-ellinair^1^
 air-emirates-v1^^1985-10-25^^UAE^EK^176^Emirates^^^^^http://en.wikipedia.org/wiki/Emirates_%28airline%29^en|Emirates|^^air-emirates^1^
 air-endeavor-air-v1^^1985-01-01^^FLG^9E^430^Endeavor Air^^^^^http://en.wikipedia.org/wiki/Endeavor_Air^en|Endeavor Air|^^air-endeavor-air^1^
-air-enter_air_v1^^2009-10-15^^ENT^E4^^Enter Air^^^^T^http://en.wikipedia.org/wiki/Enter_Air^en|Enter Air Spolka z.o.o.|^WAW=POZ=AGP=GRO=CFU^air-enter_air^1^
+air-enter-air-v1^^2009-10-15^^ENT^E4^^Enter Air^^^^T^http://en.wikipedia.org/wiki/Enter_Air^en|Enter Air|ps=en|Enter Air Spolka z.o.o.|^WAW=POZ=AGP=GRO=CFU^air-enter-air^1^
 air-equaflight-service-v1^^^^^E7^965^Equaflight Service^Fly European^^^P^^en|Equaflight Service|=en|Fly European|^^air-equaflight-service^1^
 air-equatorial-congo-airlines-v1^^2011-09-24^^PTI^LC^753^ECAir^^^^^^en|Equatorial Congo Airlines|=en|ECAir|ps=ja|エクアトリアル・コンゴ・エアラインズ|^^air-equatorial-congo-airlines^1^
 air-era-aviation-v2^^2016-07-01^^RVF^7H^808^Ravn Alaska^^^^^http://en.wikipedia.org/wiki/Ravn_Alaska^en|Ravn Alaska|p=en|Corvus Airlines|=en|Frontier Flying Service|h=en|Frontier Alaska|h=en|Hageland Aviation|h=en|Era Alaska|h=en|Era Aviation|h=sign|Raven Flight|^ANC=FAI^air-era-aviation^2^
@@ -722,7 +722,7 @@ air-orenburg-region-airlines-v1^^^^^O7^0^Orenburg Region Airlines^^^^^^en|Orenbu
 air-oriental-air-bridge-v1^^^^NGK^OC^0^Oriental Air Bridge^Omni Aviacao^^^^^en|Oriental Air Bridge|=en|Omni Aviacao|^^air-oriental-air-bridge^1^
 air-orient-thai-airlines-v1^^1995-01-01^^OEA^OX^578^Orient Thai Airlines^^^^^http://en.wikipedia.org/wiki/Orient_Thai_Airlines^en|Orient Thai Airlines|^^air-orient-thai-airlines^1^
 air-our-airline-v1^^1970-02-14^^RON^ON^123^Nauru Airlines^Our Airline^^^^http://en.wikipedia.org/wiki/Nauru_Airlines^en|Nauru Airlines|=en|Our Airline|^^air-our-airline^1^
-air-overland-airways-v1^^2002-01-01^^OLA^OF^0^Overland Airways^^^^C^http://en.wikipedia.org/wiki/Overland_Airways^en|Overland Airways|^ABV^air-overland-airways^1^
+air-overland-airways-v2^^2016-01-01^^OLA^OF^0^Overland Airways^^^^C^http://en.wikipedia.org/wiki/Overland_Airways^en|Overland Airways|^ABV^air-overland-airways^2^
 air-pacific-airways-v1^^^^^3F^0^Pacific Airways^^^^^^en|Pacific Airways|^^air-pacific-airways^1^
 air-pacific-coastal-airlines-v1^^^^PCO^8P^905^Pacific Coastal Airlines^Pac Coastal^^^^^en|Pacific Coastal Airlines|=en|Pac Coastal|^^air-pacific-coastal-airlines^1^
 air-pacific-wings-v1^^^^ANV^LW^568^Pacific Wings^Air Nevada^^^^^en|Pacific Wings|=en|Air Nevada|^^air-pacific-wings^1^
