@@ -580,7 +580,7 @@ air-kish-airlines-v1^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^^en|Kish Airlines|
 air-klm-cityhopper-v1^^1991-04-01^^KLC^WA^0^KLM Cityhopper^^^^^http://en.wikipedia.org/wiki/KLM_Cityhopper^en|KLM Cityhopper|^^air-klm-cityhopper^1^
 air-klm-v1^^1919-10-07^^KLM^KL^74^KLM^KLM Royal Dutch Airlines^^Member^^http://en.wikipedia.org/wiki/KLM^en|KLM|=en|KLM Royal Dutch Airlines|^^air-klm^1^
 air-kogalymavia-airlines-v1^^^^^7K^0^Kogalymavia Airlines^^^^^^en|Kogalymavia Airlines|^^air-kogalymavia-airlines^1^
-air-komiaviatrans-v1^^2016-07-01^^KMA^KO^0^Komiaviatrans^^^^^http://en.wikipedia.org/wiki/Komiaviatrans^en|Komiaviatrans|ps=en|OJSC "Komiaviatrans"|=ru|Комиавиатранс|^SCW^air-komiaviatrans^1^
+air-komiaviatrans-v1^^2016-07-01^^KMA^KO^0^Komiaviatrans^^^^^http://en.wikipedia.org/wiki/Komiaviatrans^en|Komiaviatrans|ps=en|OJSC Komiaviatrans|=ru|Комиавиатранс|^SCW^air-komiaviatrans^1^
 air-korean-air-v1^^1969-03-01^^KAL^KE^180^Korean Air^^^Member^^http://en.wikipedia.org/wiki/Korean_Air^en|Korean Air|^^air-korean-air^1^
 air-krasavia-v1^^1992-01-01^^^KI^0^KrasAvia^^^^^http://en.wikipedia.org/wiki/KrasAvia^en|KrasAvia|^^air-krasavia^1^
 air-kuban-airlines-v1^^^^SKG^GW^0^SkyGreece Airlines^^^^^^en|SkyGreece Airlines|^^air-kuban-airlines^1^
@@ -1039,7 +1039,7 @@ air-xiamen-airlines-v1^^1984-07-25^^CXA^MF^731^XiamenAir^^^Member^^http://en.wik
 air-xl-airways-france-v1^^^^XLF^SE^473^XL Airways France^Star Airlines^^^^^en|XL Airways France|=en|Star Airlines|^^air-xl-airways-france^1^
 air-xpressair-v1^^2003-01-01^^XAR^XN^0^XpressAir^^^^^http://en.wikipedia.org/wiki/XpressAir^en|XpressAir|p=en|Express Air|h=en|fly express|h^BDO=PKU=PLM^air-xpressair^1^
 air-xtra-airways-v1^^^^CXP^XP^0^Xtra Airways^^^^^^en|Xtra Airways|^^air-xtra-airways^1^
-air-yakutia-airlines-v1^^2002-01-01^^SYL^R3^849^Yakutia Airlines^^^^^http://en.wikipedia.org/wiki/Yakutia_Airlines^en|Yakutia Airlines|p=en|JSC "Aircompany "Yakutia"|=ru|ОАО «Авиакомпания „Якутия“»|^GDX=IKT=KHV=NER=OVB=VKO=VVO=YKS^air-yakutia-airlines^1^
+air-yakutia-airlines-v1^^2002-01-01^^SYL^R3^849^Yakutia Airlines^^^^^http://en.wikipedia.org/wiki/Yakutia_Airlines^en|Yakutia Airlines|p=en|JSC Aircompany Yakutia|=ru|ОАО Авиакомпания «Якутия»|^GDX=IKT=KHV=NER=OVB=VKO=VVO=YKS^air-yakutia-airlines^1^
 air-yamal-airlines-v1^^^^LLM^YC^664^Yamal Airlines^^^^^^en|Yamal Airlines|^^air-yamal-airlines^1^
 air-yan-air-v1^^^^^YE^206^Yan Air^^^^P^^en|Yan Air|^^air-yan-air^1^
 air-yangon-airways-v1^^^^AYG^YH^0^Yangon Airways^^^^^^en|Yangon Airways|^^air-yangon-airways^1^
