@@ -55,7 +55,7 @@ BEGIN {
 # trn-accesrail^^^^^9B^450^AccesRail^^^^R^http://en.wikipedia.org/wiki/9B^en|AccesRail|^^trn-accesrail^1
 /^[a-z]{3}-[a-z0-9\-]+\^\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([0-9]{4}-[0-9]{2}-[0-9]{2})?\^([A-Z0-9]{3})?\^([A-Z0-9*]{2})?\^/ {
 
-    if (NF == 17) {
+    if (NF == 18) {
 		# Primary key
 		pk = $1
 
