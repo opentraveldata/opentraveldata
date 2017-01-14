@@ -374,6 +374,7 @@ air-canadian-north-v1^^1989-01-01^^MPE^5T^518^Canadian North^^^^^http://en.wikip
 air-canary-fly-v1^^2010-01-01^^CNF^PM^496^Canaryfly^^^^^http://en.wikipedia.org/wiki/Canaryfly^928^en|Canaryfly|^^air-canary-fly^1^^
 air-canjet-airlines-v1^^^^CJA^C6^0^Canjet Airlines^Bright Airlines^^^^^^en|Canjet Airlines|=en|Bright Airlines|^^air-canjet-airlines^1^^
 air-cape-air-v1^^1989-01-01^^KAP^9K^306^Cape Air^^^^^http://en.wikipedia.org/wiki/Cape_Air^9813^en|Cape Air|^^air-cape-air^1^^
+air-cargologicair-v1^^^^CLU^P3^560^CargoLogicAir^^^^^http://en.wikipedia.org/wiki/CargoLogicAir^^en|CargoLogicAir|=ko|카고 로직 에어|=sign|FIREBIRD|^STN^air-cargologicair^1^^
 air-cargolux-italia-v1^1^^2013-12-31^^C8^0^Cargolux Italia^^^^C^^^en|Cargolux Italia|^^air-cargolux-italia^1^^
 air-cargolux-v1^^1970-03-04^^CLX^CV^172^Cargolux^^^^C^http://en.wikipedia.org/wiki/Cargolux^^en|Cargolux|^^air-cargolux^1^^
 air-carib-aviation-v1^^^^^3Q^0^Carib Aviation Limited^Yunnan Air^^^^^^en|Carib Aviation Limited|=en|Yunnan Air|^^air-carib-aviation^1^^
@@ -985,8 +986,7 @@ air-pantanal-linhas-aereas-v1^1^1993-01-01^2013-12-31^PTN^GP^0^Pantanal Linhas A
 air-papillon-airways-v1^^^^^HI^563^Papillon Airways^Papillonair^^^^^^en|Papillon Airways|=en|Papillonair|^^air-papillon-airways^1^^
 air-paramount-airways-v1^1^2005-10-01^2010-08-31^PMW^I7^0^Paramount Airways^^^^^http://en.wikipedia.org/wiki/Paramount_Airways^^en|Paramount Airways|^^air-paramount-airways^1^^
 air-pascan-aviation-v1^^^^PSC^P6^0^Pascan Aviation^^^^^^699^en|Pascan Aviation|^^air-pascan-aviation^1^^
-air-passaredo-transportes-v1^^2014-05-01^^PTB^2Z^678^Passaredo Transportes^^^^P^http://en.wikipedia.org/wiki/Passaredo_Linhas_A%C3%A9reas^2012^en|Passaredo Transportes|^^air-passaredo-transportes^1^^
-air-passaredo-v1^^^^PTB^P3^0^Passaredo^^^^^^^en|Passaredo|^^air-passaredo^1^^
+air-passaredo-transportes-v1^^2014-05-01^^PTB^2Z^678^Passaredo Transportes^^^^P^http://en.wikipedia.org/wiki/Passaredo_Linhas_A%C3%A9reas^2012^en|Passaredo Transportes|=pt|Passaredo Líneas Aéreas|^GYN=RAO^air-passaredo-transportes^1^^
 air-pawa-dominicana-v1^^2003-01-01^^PWD^7N^185^PAWA Dominicana^^^^^http://en.wikipedia.org/wiki/PAWA_Dominicana^387^en|Pan American World Airways Dominicana|=en|PAWA Dominicana|s^^air-pawa-dominicana^1^^
 air-peach-aviation-v1^^^^APJ^MM^0^Peach Aviation^Medellin^^^^^2850^en|Peach Aviation|=en|Medellin|^^air-peach-aviation^1^^
 air-pegasus-airlines-v1^^1990-01-01^^PGT^PC^624^Pegasus Airlines^^^^^http://en.wikipedia.org/wiki/Pegasus_Airlines^13832^en|Pegasus Airlines|^^air-pegasus-airlines^1^^
