@@ -58,6 +58,7 @@
 #  * OAS:   Oasis (e.g., Kufra Oasis)
 #  * RSRT:  Resort (e.g., Sun City Resort)
 #  * CMPx:  Camp (e.g., Savuti Rest Camp)
+#  * MILB:  Military base (e.g., Canadian Forces Station Alert)
 #  * CHN:   Channel/sound (e.g., Greenway sound)
 #  * PRK:   Park (e.g., Serengeti National Park)
 #  * RESx:  Reserve (e.g., Maasai-Mara National Reserve)

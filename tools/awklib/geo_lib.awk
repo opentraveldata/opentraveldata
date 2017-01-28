@@ -311,6 +311,7 @@ function isFeatCodeCity(__ifccParamFeatureCode) {
     __resultIsCity += match (__ifccParamFeatureCode, "^OAS")
     __resultIsCity += match (__ifccParamFeatureCode, "^RSRT")
     __resultIsCity += match (__ifccParamFeatureCode, "^CMP")
+    __resultIsCity += match (__ifccParamFeatureCode, "^MILB")
     __resultIsCity += match (__ifccParamFeatureCode, "^PRK")
     __resultIsCity += match (__ifccParamFeatureCode, "^RES")
     __resultIsCity += match (__ifccParamFeatureCode, "^AMUS")
