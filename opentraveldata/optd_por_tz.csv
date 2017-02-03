@@ -68,7 +68,6 @@ JSD^America/New_York
 JTO^America/Los_Angeles
 JWC^America/Los_Angeles
 JWH^America/Chicago
-JWL^America/Chicago
 KAM^Asia/Aden
 KBE^America/Anchorage
 KOQ^Europe/Berlin
@@ -316,7 +315,6 @@ RON^America/Bogota
 RRL^America/Chicago
 RSE^Australia/Sydney
 RSY^Europe/Paris
-RTL^America/Chicago
 RWP^Asia/Karachi
 SJG^America/Bogota
 SLO^America/Chicago
@@ -509,7 +507,6 @@ ZBZ^Asia/Shanghai
 ZCF^Europe/Berlin
 ZCK^Europe/Berlin
 ZCY^Europe/Berlin
-ZDB^Europe/Zurich
 ZDN^Europe/Prague
 ZDO^Europe/Zurich
 ZDQ^Europe/Zurich
