@@ -59,6 +59,7 @@
 #  * PT:    Point (e.g., Long Point)
 #  * PLATx: Plateau (e.g., Truscott-Mungalalu Plateau)
 #  * VLC:   Volcano (e.g., Arenal Volcano)
+#  * PASS:  Pass (e.g., Macmillan Pass)
 #  * MTx:   Mountain (e.g., Mount Hotham)
 #  * RK:    Rock (e.g., Ayers Rock)
 #  * CNYN:  Canyon (e.g., Grand Canyon)
