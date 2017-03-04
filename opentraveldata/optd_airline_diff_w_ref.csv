@@ -58,6 +58,8 @@ code^name_version^name_optd^name_ref
 3D^2^<>Denim Air
 3G^1^AsiaCargo Express<>Gambia Bird Airlines Ltd
 3H^2^<>Air Inuit
+3J^1^<>Jubba Airways Kenya
+3J^2^<>Zip Air
 3K^1^Jetstar Asia Airways<>Jetstar Asia
 3K^2^<>Jetstar Asia
 3L^1^<>Intersky Luftfahrt
@@ -120,7 +122,7 @@ code^name_version^name_optd^name_ref
 5R^2^<>Karthago Air
 5T^2^<>Canadiannorth
 5U^1^Transportes Aéreos Guatemaltecos<>Transportes Aereos
-5U^2^TAG<>L A D E
+5U^2^<>Tag
 5W^1^WESTBahn<>Speed Alliance Westbahn
 5W^2^<>Executive Exp
 5Y^2^<>Express Rail
@@ -180,6 +182,7 @@ code^name_version^name_optd^name_ref
 8H^2^<>Bh Air
 8I^2^<>Insel Air Aru
 8J^1^Línea Aerea Eco Jet<>Linea Aerea Eco Jet
+8L^2^<>Lucky Air
 8M^1^Myanmar Airways International<>Myanmar Airways Intl
 8M^2^<>Myanmar
 8N^2^<>Regional Air
@@ -208,6 +211,7 @@ code^name_version^name_optd^name_ref
 9H^2^<>Dae
 9I^1^Air India Regional<>Alliance Air
 9J^1^Dana Air<>Dana Airlines Limited
+9J^2^<>Dana Airlines
 9K^2^<>Cape Air
 9L^2^<>Colgan Air
 9N^1^Tropic Air<>Tropic Air Limited
@@ -232,9 +236,12 @@ A0^2^<>Macair Jet
 A1^1^G Switch Works<>G2 Switch Works
 A2^2^<>Astra Airline
 A3^2^<>Aegean Air
+A4^1^South Wind<>
+A4^2^<>South Winds
 A5^1^HOP!<>Hop
 A5^2^<>Airlinair
 A6^1^Yunnan Hongtu Airline<>Yunnan Hong Tu Airlines
+A7^1^<>Aereo Calafia
 A7^2^<>Air Comet
 A8^1^Aerolink Uganda<>Aerolink Uganda Limited
 A8^2^<>Benin Golf
@@ -336,7 +343,6 @@ AVA^2^<>Avianca
 AVN^2^<>Air Vanuatu
 AW^2^<>Africa World
 AWI^2^<>Airwisconsi
-AWN^2^<>Air Comet
 AWQ^1^Indonesia AirAsia<>Pt Indonesia Airasia
 AWQ^2^Awair<>Ptindairasia
 AWU^1^Sylt Air<>Sylt Air Gmbh
@@ -399,6 +405,8 @@ BMS^2^<>Blue Air
 BN^1^Bahrain Air<>
 BO^1^BB Airways<>Bb Airways
 BOT^2^<>Air Botswan
+BOV^1^Boliviana de Aviación (BoA)<>Boliviana De Aviacion
+BOV^2^<>Boliviana
 BP^2^<>Air Botswan
 BR^1^EVA Air<>Eva Air
 BR^2^<>Eva Airways
@@ -449,12 +457,11 @@ CES^2^<>China East
 CF^1^China Postal Airlines<>City Airline
 CFE^1^BA CityFlyer<>Ba Cityflyer
 CFG^2^<>Condor
-CG^1^Airlines PNG<>Airlines Png
+CG^1^PNG Air<>Png Air
 CG^2^<>Airl Of Png
 CH^2^<>Bemidji
 CHH^2^<>Hainan Air
 CI^2^<>China Air
-CIM^1^Cimber<>Cimber A S
 CJ^1^BA CityFlyer<>Ba Cityflyer
 CJA^2^Bright Airlines<>Bright Arl
 CL^1^Lufthansa CityLine<>Lufthansa Cityline
@@ -509,6 +516,7 @@ DAE^2^<>Dauair
 DAH^2^<>Air Algerie
 DAL^2^<>Delta Air
 DAN^1^Dana Air<>Dana Airlines Limited
+DAN^2^<>Dana Airlines
 DAP^1^Aerovias DAP<>Aerovias Dap
 DAP^2^<>Royal Aruban
 DB^1^HOP Brit Air<>Hop Brit Air
@@ -576,6 +584,7 @@ ELY^2^El Al Israel Airlines<>El Al
 EM^1^Aero Benin<>Empire Airlines
 EQ^1^TAME<>Tame Linea Aerea Del Ecuador
 EQ^2^TAME EP Línea Aérea del Ecuador<>Tame
+ER^1^SereneAir<>Serene Air
 ERH^1^<>Ravn Alaska
 ERH^2^<>Era Aviation
 ERO^2^<>Sun D Or
@@ -664,7 +673,6 @@ GAP^2^<>Airphil Exp
 GBQ^1^<>Gambia Bird Airlines Ltd
 GC^2^<>Gambia Intl
 GE^1^TransAsia Airways<>Transasia Airways
-GE^2^<>Transasia
 GF^2^<>Gulf Air
 GFA^2^<>Gulf Air
 GFT^1^Silver Airways<>Silver Airways Corp
@@ -769,7 +777,7 @@ IF^1^FlyBaghdad<>Fly Baghdad Airlines
 IF^2^<>Islas Airways
 IG^2^<>Meridiana Fly
 II^1^IBC Airways<>Ibc Airways Inc
-IK^1^Pegas Fly<>Llc Ikar
+IK^1^Pegas Fly<>Air Kiribati
 IK^2^<>Imair Air
 IKA^2^<>Itek Air
 IL^1^Trigana Air Service<>Pt Trigana Air Service
@@ -812,6 +820,8 @@ JAV^2^<>Jordan Avia
 JBR^2^<>Job Air
 JBU^1^JetBlue<>Jetblue Airways
 JBU^2^<>Jetblue Air
+JBW^1^<>Jubba Airways Kenya
+JBW^2^<>Zip Air
 JD^2^<>Beijing Capit
 JF^2^<>Jet Asia
 JI^1^Eastern Caribbean Airlines<>Meraj Air
@@ -835,8 +845,6 @@ JX^1^DAC East Africa<>Dac Aviation
 JX^2^<>Nice Helicopt
 JY^1^InterCaribbean Airways<>Intercaribbean Airways
 JY^2^Air Turcks<>Intercaribean
-JZ^1^Jatayu Airlines<>Jatayu Gelang Sejahtera
-JZ^2^Jatayu Gelang Sejahtera<>
 K2^1^<>Eurolot
 K4^1^ALS<>Als Ltd
 K5^1^SeaPort<>Seaport Airlines
@@ -852,8 +860,6 @@ KAE^1^<>Kartika Airlines
 KAE^2^<>Kartika Air
 KAL^2^<>Korean Air
 KAP^2^<>Cape Air
-KAR^1^Pegas Fly<>Llc Ikar
-KAR^2^<>Imair Air
 KB^2^<>Druk Air
 KBA^2^<>Kenn Borek
 KBZ^1^Air KBZ<>Air Kbz
@@ -1102,7 +1108,8 @@ ON^2^Our Airline<>Air Nauru
 OO^1^SkyWest Airlines<>Skywest Airlines
 OO^2^<>Sky West
 OP^2^<>Olympic Airls
-OR^1^TUI Airlines Netherlands<>Tuifly Netherlands
+OR^1^TUI Airlines Netherlands<>Tui Fly Netherlands
+OR^2^<>Arkefly
 ORB^1^<>Orenburg Airlines
 ORB^2^<>Orenair
 OS^2^<>Austrianair
@@ -1290,10 +1297,10 @@ SCW^2^<>Bra
 SCX^2^<>Sun Country
 SD^2^<>Sudan Air
 SDM^1^Rossiya<>Rossiya Airlines
-SDR^1^<>City Airline
 SE^1^XL Airways France<>Xl Airways France
 SEJ^1^SpiceJet<>Spicejet
 SEJ^2^<>Sempati Air
+SEP^1^SereneAir<>Serene Air
 SEY^2^<>Air Seychel
 SF^2^<>Tassili Air
 SFW^2^<>Safi Airways
@@ -1305,7 +1312,6 @@ SGO^1^<>Vvb Aviation Malta
 SHE^1^<>Sky Express
 SHE^2^<>Sky Express
 SHU^2^SAT Airlines<>Aurora Air
-SHY^1^<>Sky Airlines
 SIA^2^<>Singapore
 SIT^1^SITA<>Sita
 SJ^1^Sriwijaya Air<>Pt Sriwijaya Air
@@ -1398,12 +1404,13 @@ TBZ^1^ATA Airlines<>Ata Airlines
 TCV^2^TACV<>T A C V
 TF^1^BRA<>Braathens Regional Aviation Ab
 TF^2^<>Bra
-TFL^1^TUI Airlines Netherlands<>Tuifly Netherlands
+TFL^1^TUI Airlines Netherlands<>Tui Fly Netherlands
+TFL^2^<>Arkefly
 TG^1^Thai Airways<>Thai Airways International
 TG^2^<>Thai
 TGU^1^Transportes Aéreos Guatemaltecos<>Transportes Aereos
-TGU^2^TAG<>L A D E
-TGW^1^Tigerair<>Tiger Airways
+TGU^2^<>Tag
+TGW^1^Tigerair<>Tiger Airways Singapore
 TGW^2^<>Tiger Airways
 THA^1^Thai Airways<>Thai Airways International
 THA^2^<>Thai
@@ -1417,14 +1424,13 @@ TL^2^Capiteq Limited<>Airnorth
 TM^2^<>Lam
 TN^2^<>Air Tahiti
 TNA^1^TransAsia Airways<>Transasia Airways
-TNA^2^<>Transasia
 TNR^2^<>Tanana Air
 TOM^1^Thomson Airways<>Thomson Airways Ltd
 TOM^2^Britannia Airways<>Britannia
 TP^1^TAP Portugal<>Tap Portugal
 TP^2^<>Tap Portugal
 TPC^2^<>Aircaledoni
-TR^1^Tigerair<>Tiger Airways
+TR^1^Tigerair<>Tiger Airways Singapore
 TR^2^<>Tiger Airways
 TRA^2^<>Transavia
 TS^2^<>Air Transat
@@ -1503,9 +1509,8 @@ V5^1^Aerovias DAP<>Aerovias Dap
 V5^2^<>Royal Aruban
 V6^1^Air Link<>Vi Air Link
 V7^2^<>Volotea
-VA^1^Virgin Australia<>Virgin Australia Intl
 VA^2^<>V Australia
-VAU^1^<>Virgin Australia Intl
+VAU^1^<>Virgin Australia
 VAU^2^<>V Australia
 VBW^2^<>Air Burkina
 VC^1^ViaAir<>Via Airlines
@@ -1710,4 +1715,3 @@ ZU^1^Sunair<>Sunair Aviation
 ZV^2^<>Air Midwest
 ZW^2^<>Airwisconsi
 ZX^2^Air Alliance<>
-ZY^1^<>Sky Airlines

@@ -4,6 +4,7 @@ air-act-airlines-v1^1^2004-01-01^2010-12-31^RUN^9T^556^ACT Airlines^^^^^http://e
 air-aero-california-v1^1^1960-01-01^2008-07-23^SER^JR^0^Aero California^^^^^http://en.wikipedia.org/wiki/Aero_California^en|Aero California|p=en|AeroCal|s=sign|AEROCALIFORNIA|^^air-aero-california^1^
 air-aero-cuahonte-v1^1^1957-11-01^2007-12-31^CUO^5G^0^Aero Cuahonte^^^^^http://en.wikipedia.org/wiki/Aero_Cuahonte^en|Aero Cuahonte|^UPN^air-aero-cuahonte^1^
 air-aero-flight-v1^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^http://en.wikipedia.org/wiki/Aero_Flight^en|Aero Flight|^^air-aero-flight^1^
+air-aerocomercial-oriente-norte-v1^1^2005-01-01^2016-12-31^AEK^A4^702^Aerocon^^^^^http://en.wikipedia.org/wiki/Aerocon^en|Aerocon|p=en|Aerocomercial Oriente Norte|^^air-aerocomercial-oriente-norte^1^
 air-aeropelican-air-services-v1^1^1971-07-01^2013-12-31^PEL^OT^0^Aeropelican Air Services^^^^^http://en.wikipedia.org/wiki/Aeropelican_Air_Services^en|Aeropelican Air Services|^^air-aeropelican-air-services^1^
 air-aeroperlas-v1^1^1970-01-01^2012-02-29^APP^WL^54^Aeroperlas^^^^^http://en.wikipedia.org/wiki/Aeroperlas^en|Aeroperlas|=es|Aerolíneas Islas de Las Perlas|^DAV=PAC^air-aeroperlas^1^
 air-aerosur-v1^1^1992-01-01^2012-12-31^RSU^5L^275^AeroSur^^^^^http://en.wikipedia.org/wiki/AeroSur^en|AeroSur|^^air-aerosur^1^
@@ -19,13 +20,15 @@ air-air-burundi-v1^1^1971-01-01^2009-12-31^PBU^8Y^0^Air Burundi^^^^^http://en.wi
 air-air-cargo-carriers-v1^1^1986-01-01^2003-12-31^SNC^2Q^0^Air Cargo Carriers^^^^C^http://en.wikipedia.org/wiki/Air_Cargo_Carriers^en|Air Cargo Carriers|^^air-air-cargo-carriers^1^
 air-air-cargo-germany-v1^1^2009-01-01^2013-12-31^ACX^6U^0^Air Cargo Germany^^^^C^http://en.wikipedia.org/wiki/Air_Cargo_Germany^en|Air Cargo Germany|p=abbr|ACG|^HHN^air-air-cargo-germany^1^
 air-air-caucasus-v1^1^2013-01-01^2014-12-31^CSG^UY^49^Air Caucasus^^^^^http://en.wikipedia.org/wiki/Air_Caucasus^en|Air Caucasus|^TBS^air-air-caucasus^1^
-air-air-comet-v1^1^1996-01-01^2009-12-21^MPD^A7^0^Air Comet^Air Plus Comet^^^^http://en.wikipedia.org/wiki/Air_Comet^en|Air Comet|=en|Air Plus Comet|^^air-air-comet^1^
+air-air-comet-v1^1^1996-01-01^2009-12-21^MPD^A7^0^Air Comet^^^^^http://en.wikipedia.org/wiki/Air_Comet^en|Air Comet|=en|Air Plus Comet|h^MAD^air-air-comet^1^
 air-air-djibouti-v1^1^1963-01-01^2002-12-31^^IV^0^Air Djibouti^^^^^http://en.wikipedia.org/wiki/Air_Djibouti^en|Air Djibouti|p=en|Red Sea Airlines|^JIB^air-air-djibouti^1^
+air-air-east-v1^1^1967-01-01^1974-12-31^^ER^0^Air East^^^^^http://en.wikipedia.org/wiki/Air_East^en|Air East|^JST^air-air-east^1^
 air-air-finland-v1^1^2003-01-01^2012-06-26^FIF^OF^442^Air Finland^^^^^http://en.wikipedia.org/wiki/Air_Finland^en|Air Finland|=sign|AIR FINLAND|^HEL^air-air-finland^1^
 air-air-gabon-v1^1^1951-01-01^2006-12-31^AGN^GN^185^Air Gabon^^^^^http://en.wikipedia.org/wiki/Air_Gabon^en|Air Gabon|^LBV^air-air-gabon^1^
 air-air-horizons-v1^1^1962-01-01^2005-11-30^EUH^RN^0^Air Horizons^^^^^http://en.wikipedia.org/wiki/Air_Horizons^en|Euralair|h=en|Air Horizons|p^^air-air-horizons^1^
 air-air-ivoire-v1^1^1960-01-01^2011-12-31^VUN^VU^943^Air Ivoire^^^^^http://en.wikipedia.org/wiki/Air_Ivoire^en|Air Ivoire|^^air-air-ivoire^1^
 air-air-jet-v1^1^2015-01-01^2015-12-31^^7A^0^Air Jet^^^^^^en|Air Jet|^^air-air-jet^1^
+air-air-jamaica-v1^1^1968-10-01^2015-12-31^BWA^BW^0^Air Jamaica^^^^^http://en.wikipedia.org/wiki/Air_Jamaica^en|Air Jamaica|^KIN=MBJ^air-air-jamaica^1^
 air-airlink-papua-new-guinea-v1^1^1990-06-01^2007-07-30^^ND^^Airlink (Papua New Guinea)^^^^^http://en.wikipedia.org/wiki/Airlink_(Papua_New_Guinea)^en|Airlink (Papua New Guinea)|^^air-airlink-papua-new-guinea^1^
 air-air-lithuania-v1^1^1991-09-13^2005-11-23^KLA^TT^0^Air Lithuania^^^^^http://en.wikipedia.org/wiki/Air_Lithuania^en|Air Lithuania|=sign|KAUNAS|^KUN^air-air-lithuania^1^
 air-air-lituanica-v1^1^2013-05-01^2015-05-22^LTU^LT^431^Air Lituanica^^^^^http://en.wikipedia.org/wiki/Air_Lituanica^en|Air Lituanica|^VNO^air-air-lituanica^1^
@@ -41,6 +44,7 @@ air-air-next-v1^1^2004-08-20^2010-12-31^NXA^7A^0^Air Next^Haines Air^^^^http://e
 air-air-nippon-v1^1^1974-10-10^2012-04-01^ANK^EL^0^Air Nippon^^^^^http://en.wikipedia.org/wiki/Air_Nippon^en|Air Nippon|^^air-air-nippon^1^
 air-air-one-v1^1^1983-01-01^2014-10-30^ADH^AP^867^Air One^^^^^http://en.wikipedia.org/wiki/Air_One^en|Air One|p=en|Aliadriatica|h^FCO^air-air-one^1^
 air-air-onix-v1^1^2012-04-28^2013-12-31^^OG^130^Air Onix^^^^^http://en.wikipedia.org/wiki/Air_Onix^en|Air Onix|^^air-air-onix^1^
+air-air-niamey-v1^1^2007-01-01^2010-12-31^AWN^A7^0^Air Niamey^^^^^http://en.wikipedia.org/wiki/Air_Niamey^en|Air Niamey|^NIM^air-air-niamey^1^
 air-air-slovakia-v1^1^1994-01-01^2010-06-01^SVK^GM^0^Air Slovakia^^^^^http://en.wikipedia.org/wiki/Air_Slovakia^en|Air Slovakia|^^air-air-slovakia^1^
 air-air-sunshine-v1^1^1982-01-01^2015-06-30^RSI^YI^0^Air Sunshine^^^^^http://en.wikipedia.org/wiki/Air_Sunshine^en|Air Sunshine|^^air-air-sunshine^1^
 air-air-ukraine-v1^1^1992-01-01^2002-12-31^UKR^6U^0^Air Ukraine^^^^^http://en.wikipedia.org/wiki/Air_Ukraine^en|Air Ukraine|^KBP^air-air-ukraine^1^
@@ -105,7 +109,7 @@ air-charter-air-transport-v1^1^1997-01-01^2014-12-31^SRY^VC^0^Charter Air Transp
 air-china-xinhua-airlines-v1^1^1992-01-01^2007-11-29^CXH^XW^0^China Xinhua Airlines^^^^^http://en.wikipedia.org/wiki/China_Xinhua_Airlines^en|China Xinhua Airlines|=pny|Zhōngguó Xīnhuá Hángkōng|=sign|XINHUA|=yue|中國新華航空|=wuu|中国新华航空|^^air-china-xinhua-airlines^1^
 air-cimber-air-v1^1^1950-01-01^2012-12-31^CIM^QI^647^Cimber Sterling^Cimber Air^^^^http://en.wikipedia.org/wiki/Cimber_Sterling^en|Cimber Sterling|=en|Cimber Air|^^air-cimber-air^1^
 air-cirrus-airlines-v1^1^1995-02-01^2012-01-20^RUS^C9^251^Cirrus Airlines^^^^^http://en.wikipedia.org/wiki/Cirrus_Airlines^en|Cirrus Airlines|^^air-cirrus-airlines^1^
-air-city-airline-v1^1^1997-01-01^2011-11-29^SDR^CF^419^City Airline^Skyways^^^^http://en.wikipedia.org/wiki/City_Airline^en|City Airline|=en|Skyways|^^air-city-airline^1^
+air-city-airline-v1^1^1997-01-01^2011-11-29^SDR^CF^419^City Airline^^^^^http://en.wikipedia.org/wiki/City_Airline^en|City Airline|=en|Skyways|^GOT^air-city-airline^1^
 air-club-air-v1^1^2002-10-01^2008-05-31^ISG^6P^0^Club Air^^^^^http://en.wikipedia.org/wiki/Club_Air^en|Club Air|^^air-club-air^1^
 air-comair-delta-v1^1^1977-01-01^2012-09-29^COM^OH^0^Comair^^^^^http://en.wikipedia.org/wiki/Comair^en|Comair|^^air-comair-delta^1^
 air-congo-express-v1^1^2010-01-01^2014-01-01^CXR^9X^0^Congo Express^New Axis Air^^^^http://en.wikipedia.org/wiki/Congo_Express^en|Congo Express|=en|New Axis Air|^^air-congo-express^1^
@@ -193,6 +197,8 @@ air-island-airlines-v1^1^1930-01-01^2015-12-11^ISA^IS^0^Island Airlines^^^^^http
 air-islas-airways-v1^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^http://en.wikipedia.org/wiki/Islas_Airways^en|Islas Airways|^^air-islas-airways^1^
 air-isles-of-scilly-skybus-v1^1^1984-03-01^2015-12-31^IOS^5Y^^Isles of Scilly Skybus^^^^^http://en.wikipedia.org/wiki/Isles_of_Scilly_Skybus^en|Isles of Scilly Skybus|=sign|SCILLONIA|^PZE^air-isles-of-scilly-skybus^1^
 air-jal-express-v1^1^1998-07-01^2014-09-30^JEX^JC^0^JAL Express^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^en|JAL Express|^HND^air-jal-express^1^
+air-jatayu-gelang-sejahtera-v1^1^2014-01-25^2016-12-31^JTY^JZ^0^Jatayu Airlines^^^^^http://en.wikipedia.org/wiki/Jatayu_Airlines^en|Jatayu Airlines|=en|Jatayu Gelang Sejahtera|^^air-jatayu-gelang-sejahtera^1^
+air-jubba-airways-kenya-v1^1^1954-01-01^2016-12-31^JUB^3J^535^Jubba Airways Kenya^^^^^http://en.wikipedia.org/wiki/Jubba_Airways^en|Jubba Airways Kenya|^HGA=MGQ^air-jubba-airways-kenya^1^
 air-karthago-airlines-v1^1^2002-01-01^2010-12-31^KAJ^5R^0^Karthago Airlines^^^^^http://en.wikipedia.org/wiki/Nouvelair^en|Nouvelair|p=en|Karthago Airlines|h^DJE^air-karthago-airlines^1^
 air-kartika-airlines-v1^1^2001-05-15^2010-12-31^KAE^3Y^0^Kartika Airlines^^^^^http://en.wikipedia.org/wiki/Kartika_Airlines^en|Kartika Airlines|^HLP^air-kartika-airlines^1^
 air-katmai-air-v1^1^^2015-12-31^^KT^0^Katmai Air^^^^^http://www.katmailand.com/air-services^en|Katmai Air|^BKF^air-katmai-air^1^
