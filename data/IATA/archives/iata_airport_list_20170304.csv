@@ -980,6 +980,7 @@ BOQ^Boku^^PG^2^^BOQ^Boku^0627^A
 BOR^Belfort^^FR^^^BOR^Off-line Point^^O
 BOS^Boston^MA^US^1^^BOS^Edward L. Logan Intl^0629^A
 BOS^Boston^MA^US^1^^BOS^Metropolitan Area^^C
+BOS^Boston^MA^US^1^^BSZ^Harbour SPB^^A
 BOS^Boston^MA^US^1^^PSM^Portsmouth Pease Intl^^A
 BOS^Boston^MA^US^1^^ZRU^Route 128 Railway Stn^^R
 BOS^Boston^MA^US^1^^ZTO^South Railway Station^^R
@@ -3845,6 +3846,7 @@ JIR^Jiri^^NP^^^JIR^Jiri^2292^A
 JIU^Jiujiang^^CN^^^JIU^Lushan^^A
 JIW^Jiwani^^PK^^^JIW^Jiwani^2293^A
 JJA^Jajao^^SB^^^JJA^Jajao^^A
+JJD^Cruz^CE^BR^1^A^JJD^Jericoacoara^^A
 JJG^Jaguaruna^SC^BR^1^^JJG^Humberto Bortoluzzi^^A
 JJI^Juanjui^^PE^^^JJI^Juanjui^2294^A
 JJM^Meru-Kinna^^KE^^^JJM^Mulika Lodge^^A
@@ -4168,6 +4170,7 @@ KKO^Kaikohe^^NZ^1^^KKO^Kaikohe^2493^A
 KKP^Koolburra^QL^AU^2^B^KKP^Koolburra^2494^A
 KKQ^Krasnoselkup^^RU^4^^KKQ^Krasnoselkup^^A
 KKR^Kaukura^^PF^2^^KKR^Kaukura^2495^A
+KKS^Kashan^^IR^^^KKS^Kashan^^A
 KKT^Kentland^IN^US^2^^KKT^Municipal^2496^A
 KKU^Ekuk^AK^US^5^^KKU^Ekuk^2497^A
 KKW^Kikwit^^CD^1^^KKW^Kikwit^2498^A
@@ -4312,7 +4315,7 @@ KRL^Korla^^CN^^^KRL^Korla^^A
 KRM^Karanambo^^GY^^^KRM^Karanambo^2596^A
 KRN^Kiruna^^SE^^^KRN^Kiruna^2597^A
 KRO^Kurgan^^RU^4^^KRO^Kurgan^^A
-KRP^Karup^^DK^^^KRP^Karup^2599^A
+KRP^Karup^^DK^^^KRP^Midtjyllands^2599^A
 KRQ^Kramatorsk^^UA^^^KRQ^Kramatorsk^^A
 KRR^Krasnodar^^RU^2^^KRR^Pashkovsky^2600^A
 KRS^Kristiansand^^NO^^^KRS^Kjevik^2601^A
@@ -5281,6 +5284,7 @@ MJR^Miramar^BA^AR^^^MJR^Miramar^^A
 MJS^Maganja da Costa^^MZ^^^MJS^Maganja da Costa^^A
 MJT^Mytilini^^GR^^^MJT^Odysseas Elytis^3167^A
 MJU^Mamuju^^ID^2^^MJU^Tampa Padang^3168^A
+MJV^Murcia^^ES^1^^EMU^Bus Station^^B
 MJV^Murcia^^ES^1^^MJV^San Javier^3169^A
 MJV^Murcia^^ES^1^^XUT^Railway Station^^R
 MJW^Mahenye^^ZW^^^MJW^Mahenye^^A
@@ -6052,6 +6056,7 @@ NYC^New York^NY^US^1^^NBP^Battery Pk City Ferry^^P
 NYC^New York^NY^US^1^^NES^East 34th St Ferry^^P
 NYC^New York^NY^US^1^^NWS^Pier 11/Wall St. Ferry^^P
 NYC^New York^NY^US^1^^NYC^Metropolitan Area^^C
+NYC^New York^NY^US^1^^NYS^Skyports SPB^^A
 NYC^New York^NY^US^1^^SWF^Stewart International^^A
 NYC^New York^NY^US^1^^TSS^East 34th St Heliport^5060^H
 NYC^New York^NY^US^1^^XNY^39th Street Ferry^^P
@@ -8519,7 +8524,7 @@ SUZ^Suria^^PG^1^^SUZ^Suria^^A
 SVA^Savoonga^AK^US^5^^SVA^Savoonga^4739^A
 SVB^Sambava^^MG^^^SVB^Sambava^4740^A
 SVC^Silver City^NM^US^3^^SVC^Grant County^4741^A
-SVD^St Vincent^^VC^^^SVD^E.T. Joshua^4742^A
+SVD^St Vincent^^VC^^^SVD^Argyle International^^A
 SVE^Susanville^CA^US^4^^SVE^Municipal^^A
 SVF^Save^^BJ^^^SVF^Save^^A
 SVG^Stavanger^^NO^^^SVG^Sola^4743^A
