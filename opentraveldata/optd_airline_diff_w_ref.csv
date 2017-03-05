@@ -58,7 +58,6 @@ code^name_version^name_optd^name_ref
 3D^2^<>Denim Air
 3G^1^AsiaCargo Express<>Gambia Bird Airlines Ltd
 3H^2^<>Air Inuit
-3J^1^<>Jubba Airways Kenya
 3J^2^<>Zip Air
 3K^1^Jetstar Asia Airways<>Jetstar Asia
 3K^2^<>Jetstar Asia
@@ -241,8 +240,8 @@ A4^2^<>South Winds
 A5^1^HOP!<>Hop
 A5^2^<>Airlinair
 A6^1^Yunnan Hongtu Airline<>Yunnan Hong Tu Airlines
-A7^1^<>Aereo Calafia
-A7^2^<>Air Comet
+A7^1^Aéreo Calafia<>Aereo Calafia
+A7^2^Aereo Calafia<>Air Comet
 A8^1^Aerolink Uganda<>Aerolink Uganda Limited
 A8^2^<>Benin Golf
 AA^2^<>American
@@ -820,7 +819,6 @@ JAV^2^<>Jordan Avia
 JBR^2^<>Job Air
 JBU^1^JetBlue<>Jetblue Airways
 JBU^2^<>Jetblue Air
-JBW^1^<>Jubba Airways Kenya
 JBW^2^<>Zip Air
 JD^2^<>Beijing Capit
 JF^2^<>Jet Asia
@@ -840,11 +838,13 @@ JST^2^Jetstar Airways<>Jetstar
 JT^1^Lion Air<>Lion Airlines
 JT^2^<>Jaro Intl Arl
 JU^2^<>J A T
+JUB^1^<>Jubba Airways
 JV^2^<>Bearskin Air
 JX^1^DAC East Africa<>Dac Aviation
 JX^2^<>Nice Helicopt
 JY^1^InterCaribbean Airways<>Intercaribbean Airways
 JY^2^Air Turcks<>Intercaribean
+JZ^1^<>Jubba Airways
 K2^1^<>Eurolot
 K4^1^ALS<>Als Ltd
 K5^1^SeaPort<>Seaport Airlines

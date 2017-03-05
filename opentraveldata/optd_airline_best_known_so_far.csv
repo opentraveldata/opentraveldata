@@ -11,7 +11,7 @@ air-aer-lingus-v1^^1936-05-27^^EIN^EI^53^Aer Lingus^^^^^http://en.wikipedia.org/
 air-aero4m-v1^^2015-01-01^^AEH^H4^0^Aero4M^^^^^^en|Aero4M|^^air-aero4m^1^
 air-aero-airlines-v1^^^^^EE^350^Aero Airlines^^^^^^en|Aero Airlines|^^air-aero-airlines^1^
 air-aero-benin-v1^^^^^EM^282^Aero Benin^^^^^^en|Aero Benin|^^air-aero-benin^1^
-air-aero-calafia-v1^1993-01-01^2010-01-01^^CFV^A7^0^Aéreo Calafia^Aereo Calafia^^^^http://en.wikipedia.org/wiki/A%C3%A9reo_Calafia^en|Aéreo Calafia|=sign|CALAFIA|^CSL^air-aero-calafia^1^
+air-aero-calafia-v1^^1993-01-01^^CFV^A7^0^Aéreo Calafia^Aereo Calafia^^^^http://en.wikipedia.org/wiki/A%C3%A9reo_Calafia^en|Aéreo Calafia|=sign|CALAFIA|^CSL^air-aero-calafia^1^
 air-aero-caribbean-v1^^^^CRN^7L^164^Aero Caribbean^^^^^^en|Aero Caribbean|^^air-aero-caribbean^1^
 air-aero-charter-v1^^^^UCR^DW^187^Aero Charter^Helicopter Sh^^^^^en|Aero Charter|=en|Helicopter Sh|^^air-aero-charter^1^
 trn-south-wind-v1^^^^AEK^A4^702^Aerocomercial Oriente Norte^South Winds^^^^http://en.wikipedia.org/wiki/Aerocon^en|Aerocomercial Oriente Norte|=en|South Winds|^^trn-south-wind^1^
@@ -564,7 +564,7 @@ air-jin-air-v1^^^^JNA^LJ^718^Jin Air^^^^^^en|Jin Air|^^air-jin-air^1^
 air-job-air-v1^^^^JBR^3B^0^Job Air^^^^^^en|Job Air|^^air-job-air^1^
 air-jordan-aviation-v1^^2000-10-01^^JAV^R5^151^Jordan Aviation^^^^^http://en.wikipedia.org/wiki/Jordan_Aviation^en|Jordan Aviation|^AMM^air-jordan-aviation^1^
 air-joy-air-v1^^2009-06-01^^JOY^JR^929^Joy Air^^^^^http://en.wikipedia.org/wiki/Joy_Air^en|Joy Air|=sign|JOY AIR|=zh|幸福航空|^^air-joy-air^1^
-air-jubba-airways-kenya-v2^^2017-01-01^^JUB^JZ^0^Jubba Airways^^^^^http://en.wikipedia.org/wiki/Jubba_Airways^en|Jubba Airways|p=en|Jubba Airways Kenya|h^HGA=MGQ^air-jubba-airways-kenya^2^
+air-jubba-airways-kenya-v1^^1954-01-01^^JBW^3J^535^Jubba Airways Kenya^^^^^http://en.wikipedia.org/wiki/Jubba_Airways^en|Jubba Airways Kenya|^HGA=MGQ^air-jubba-airways-kenya^1^
 air-juneyao-airlines-v1^^^^DKH^HO^18^Juneyao Airlines^^^^^^en|Juneyao Airlines|^^air-juneyao-airlines^1^
 air-kalitta-charters-v1^^2001-12-01^^KFS^K9^0^Kalitta Charters^^^^^http://en.wikipedia.org/wiki/Kalitta_Charters^en|Kalitta Charters|^^air-kalitta-charters^1^
 air-kal-star-aviation-v1^^^^KNI^KD^0^Kal Star Aviation^KD Avia^^^^^en|Kal Star Aviation|=en|KD Avia|^^air-kal-star-aviation^1^
