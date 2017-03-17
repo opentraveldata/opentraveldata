@@ -7,6 +7,7 @@
 # See ../geonames/data/por/admin/aggregateGeonamesPor.sh for more details on
 # the way to derive that file from Geonames original data files.
 #
+#set -x
 
 ##
 # Temporary path
@@ -38,7 +39,7 @@ SNAPSHOT_DATE_HUMAN=`date`
 # Retrieve the latest schedule file
 POR_FILE_PFX1=por_iata
 POR_FILE_PFX2=por_noiata
-LATEST_EXTRACT_DATE=`ls ${EXEC_PATH}/${POR_FILE_PFX1}_????????.csv 2> /dev/null`
+LATEST_EXTRACT_DATE=`ls ${EXEC_PATH}${POR_FILE_PFX1}_????????.csv 2> /dev/null`
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
@@ -108,7 +109,7 @@ LATEST_DUMP_IATA_FILE=${TMP_DIR}${LATEST_DUMP_IATA_FILENAME}
 LATEST_DUMP_NOIATA_FILE=${TMP_DIR}${LATEST_DUMP_NOIATA_FILENAME}
 
 #
-if [ "$1" = "-h" -o "$1" = "--help" ];
+if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
 	echo "Usage: $0"
@@ -140,7 +141,7 @@ fi
 ##
 #
 if [ "$1" = "--clean" ]
-	then
+then
 	if [ "${TMP_DIR}" = "/tmp/por/" ]
 	then
 		\rm -rf ${TMP_DIR}
