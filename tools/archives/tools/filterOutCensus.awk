@@ -1,7 +1,9 @@
 
 #
 BEGIN {
+    #
     isFirstLine = 0
+    firstIataCode = ""
 }
 
 # Filter the changes
@@ -10,41 +12,52 @@ BEGIN {
 #
 function isCensusOnlyDifference(__icodLine1, __icodLine2) {
     orgLine = $0
+    FS = "^"
 
     # Extract the census
     $0 = __icodLine1
-    __icodeCensus1 = $29
+    __icodCensus1 = $29
     __icodCode1 = substr ($1, 2, 3)
 
-    $0 = __icodeLine2
+    $0 = __icodLine2
     __icodCensus2 = $29
     __icodCode2 = substr ($1, 2, 3)
 
     $0 = orgLine
 
-    # DEBUG
-    print ("[" __icodCode1 "][" __icodCode2 "] " __icodCensus1 " ==? " __icodeCensus2)
+    #
+    isCensusEqual = (__icodCensus1 == __icodCensus2)?1:0
 
-    return (__icodCensus1 == __icodCensus2)
+    # DEBUG
+    print ("[" __icodCode1 "][" __icodCode2 "] " __icodCensus1 " ==? " __icodCensus2)
+
+    return isCensusEqual
 }
 
 #
-/^[+-]/ {
+/^[+-][A-Z0-9]{3,4}/ {
     # IATA code
     iata_code = substr ($1, 2, 3)
 
-    #
-    isFirstLine = (isFirstLine + 1) % 2
+    # Compare the two lines having the same IATA code
     if (isFirstLine) {
 	line1 = $0
+	firstIataCode = iata_code
 
-    } else {
+    } else if (iata_code == firstIataCode) {
 	line2 = $0
 
+	#
 	isDiff = isCensusOnlyDifference(line1, line2)
+
+	#
+	firstIataCode = ""	
     }
     
+    #
+    isFirstLine = (isFirstLine + 1) % 2
+
     # 
-    print $0
+    # print $0
 }
 
