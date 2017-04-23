@@ -378,6 +378,15 @@ sort ${OPTD_BEST_MASTER} > ${OPTD_BEST_MASTER}.dup
 #    the entries of the OPTD-maintained list of best known geographical
 #    coordinates (optd_por_best_known_so_far.csv)
 #
+# On MacOS, wc adds a 5 white spaces before writing the number of lines
+if [ -f /usr/bin/sw_vers ]
+then
+	# MacOS detected
+	FIELD_1ST_CHAR=6
+else
+	# Not MacOS, so, supposedly GNU wc
+	FIELD_1ST_CHAR=1
+fi
 #echo "comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
@@ -395,7 +404,7 @@ echo
 if [ ${POR_NB_FILE2} -gt 0 ]
 then
 	comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${GEONAME_FILE_MISSING}
-	POR_MISSING_GEONAMES_NB=`wc -l ${GEONAME_FILE_MISSING} | cut -d' ' -f1`
+	POR_MISSING_GEONAMES_NB=`wc -l ${GEONAME_FILE_MISSING} | cut -d' ' -f${FIELD_1ST_CHAR}`
 	echo
 	echo "Suggestion step"
 	echo "---------------"
@@ -409,7 +418,7 @@ fi
 if [ ${POR_NB_FILE1} -gt 0 ]
 then
 	comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${OPTD_BEST_FILE_MISSING}
-	POR_MISSING_BEST_NB=`wc -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f1`
+	POR_MISSING_BEST_NB=`wc -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f${FIELD_1ST_CHAR}`
 	echo
 	echo "Suggestion step"
 	echo "---------------"

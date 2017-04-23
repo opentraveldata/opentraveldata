@@ -223,7 +223,16 @@ echo "dep_city^distance^page_rank^dist_weighted_by_page_rank" \
 
 ##
 # Count the differences
-POR_MAIN_DIFF_NB=`wc -l ${POR_MAIN_DIFF} | cut -d' ' -f1`
+# On MacOS, wc adds a 5 white spaces before writing the number of lines
+if [ -f /usr/bin/sw_vers ]
+then
+	# MacOS detected
+	FIELD_1ST_CHAR=6
+else
+	# Not MacOS, so, supposedly GNU wc
+	FIELD_1ST_CHAR=1
+fi
+POR_MAIN_DIFF_NB=`wc -l ${POR_MAIN_DIFF} | cut -d' ' -f${FIELD_1ST_CHAR}`
 
 ##
 # Clean
