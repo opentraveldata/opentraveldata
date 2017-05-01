@@ -24,9 +24,17 @@ cleanTempFiles() {
 }
 
 ##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+##
 # Snapshot date
-SNAPSHOT_DATE=`date "+%y%m%d"`
-SNAPSHOT_DATE_HUMAN=`date`
+SNAPSHOT_DATE=`$DATE_TOOL "+%y%m%d"`
+SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
 
 ##
 # Temporary path
@@ -105,10 +113,10 @@ else
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-	SNPSHT_DATE_HUMAN=`date -d ${SNPSHT_DATE}`
+	SNPSHT_DATE_HUMAN=`$DATE_TOOL -d ${SNPSHT_DATE}`
 else
-	SNPSHT_DATE_HUMAN=`date --date='last Thursday' "+%y%m%d"`
-	SNPSHT_DATE_HUMAN=`date --date='last Thursday'`
+	SNPSHT_DATE_HUMAN=`$DATE_TOOL --date='last Thursday' "+%y%m%d"`
+	SNPSHT_DATE_HUMAN=`$DATE_TOOL --date='last Thursday'`
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then

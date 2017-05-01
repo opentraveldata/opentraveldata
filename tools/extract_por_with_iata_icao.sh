@@ -31,9 +31,17 @@ then
 fi
 
 ##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+##
 # Snapshot date
-SNAPSHOT_DATE=`date "+%Y%m%d"`
-SNAPSHOT_DATE_HUMAN=`date`
+SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
+SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
 
 ##
 # Retrieve the latest schedule file
@@ -48,7 +56,7 @@ then
 fi
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
-	LATEST_EXTRACT_DATE_HUMAN=`date -d ${LATEST_EXTRACT_DATE}`
+	LATEST_EXTRACT_DATE_HUMAN=`$DATE_TOOL -d ${LATEST_EXTRACT_DATE}`
 fi
 if [ "${LATEST_EXTRACT_DATE}" != "" \
 	-a "${LATEST_EXTRACT_DATE}" != "${SNAPSHOT_DATE}" ]

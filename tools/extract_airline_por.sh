@@ -62,9 +62,17 @@ TOOLS_DIR=${OPTD_DIR}tools/
 LOG_LEVEL=4
 
 ##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+##
 # Snapshot date
-SNAPSHOT_DATE=`date "+%Y%m%d"`
-SNAPSHOT_DATE_HUMAN=`date`
+SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
+SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
 
 ##
 # Retrieve the latest schedule file
@@ -84,10 +92,10 @@ else
 fi
 if [ "${LST_EXTRACT_DATE}" != "" ]
 then
-	LST_EXTRACT_DATE_HUMAN=`date -d ${LST_EXTRACT_DATE}`
+	LST_EXTRACT_DATE_HUMAN=`$DATE_TOOL -d ${LST_EXTRACT_DATE}`
 else
-	LST_EXTRACT_DATE_HUMAN=`date --date='last Thursday' "+%y%m%d"`
-	LST_EXTRACT_DATE_HUMAN=`date --date='last Thursday'`
+	LST_EXTRACT_DATE_HUMAN=`$DATE_TOOL --date='last Thursday' "+%y%m%d"`
+	LST_EXTRACT_DATE_HUMAN=`$DATE_TOOL --date='last Thursday'`
 fi
 if [ "${LST_EXTRACT_DATE}" != "" ]
 then

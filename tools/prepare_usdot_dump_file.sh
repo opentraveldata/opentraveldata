@@ -1,10 +1,19 @@
 #!/bin/sh
 
+##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+
 displayUSDOTDetails() {
     ##
     # Snapshot date
-    SNAPSHOT_DATE=`date "+%Y%m%d"`
-    SNAPSHOT_DATE_HUMAN=`date`
+    SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
+    SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
     echo
     echo "####### Note #######"
     echo "# The World Area Code (WAC) data extraction file has to be obtained from the US DOT directly."

@@ -42,9 +42,17 @@ GEO_RAW_FILENAME=dump_from_geonames.csv
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 
 ##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+##
 # Snapshot date
-SNAPSHOT_DATE=`date "+%y%m%d"`
-SNAPSHOT_DATE_HUMAN=`date`
+SNAPSHOT_DATE=`$DATE_TOOL "+%y%m%d"`
+SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
 
 ##
 # Temporary path

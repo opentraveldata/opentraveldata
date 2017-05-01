@@ -82,9 +82,17 @@ LOG_LEVEL=3
 POR_SKD_DIR=${DATA_DIR}por_in_schedule/
 
 ##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+##
 # Snapshot date
-SNAPSHOT_DATE=`date "+%Y%m%d"`
-SNAPSHOT_DATE_HUMAN=`date`
+SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
+SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
 
 ##
 # Retrieve the latest schedule-derived POR data files
@@ -101,9 +109,9 @@ fi
 if [ "${LATEST_EXTRACT_PRD}" != "" ]
 then
 	LATEST_EXTRACT_PRD_BGN=`echo ${LATEST_EXTRACT_PRD} | sed -e "s/\([0-9]\+\)_\([0-9]\+\)_to_\([0-9]\+\)_\([0-9]\+\)/\1-\2-01/"`
-	LATEST_EXTRACT_PRD_BGN_HUMAN=`date -d ${LATEST_EXTRACT_PRD_BGN}`
+	LATEST_EXTRACT_PRD_BGN_HUMAN=`$DATE_TOOL -d ${LATEST_EXTRACT_PRD_BGN}`
 	LATEST_EXTRACT_PRD_END=`echo ${LATEST_EXTRACT_PRD} | sed -e "s/\([0-9]\+\)_\([0-9]\+\)_to_\([0-9]\+\)_\([0-9]\+\)/\3-\4-01/"`
-	LATEST_EXTRACT_PRD_END_HUMAN=`date -d ${LATEST_EXTRACT_PRD_END}`
+	LATEST_EXTRACT_PRD_END_HUMAN=`$DATE_TOOL -d ${LATEST_EXTRACT_PRD_END}`
 fi
 if [ "${LATEST_EXTRACT_PRD}" != "" \
 	-a "${LATEST_EXTRACT_PRD}" != "${SNAPSHOT_DATE}" ]

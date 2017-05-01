@@ -34,8 +34,17 @@ CODE_TYPE="iata"
 GEO_ALL_FILE_FILENAME=dump_from_geonames.csv.all
 GEO_ALL_FILE=${TMP_DIR}${GEO_ALL_FILE_FILENAME}
 
+##
+# MacOS 'date' vs GNU date
+DATE_TOOL=date
+if [ -f /usr/bin/sw_vers ]
+then
+	DATE_TOOL=gdate
+fi
+
+
 # Snapshot date
-SNAPSHOT_DATE=`date "+%Y%m%d"`
+SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ];
