@@ -12,6 +12,7 @@ DDL^I^0^1^^^^^DDL corresponds to ACARS, and there is no specific geographical lo
 DNE^R^0^1^1^^2016-09-08^^DNE used to be Dallas North Airport, Texas (TX), United States (US), Geonames ID: 4697474
 DPC^I^0^1^^^^^DPC corresponds to Data Processing Center, and there is no specific geographical location associated to it
 DUQ^R^0^1^^^^^DUQ used to be Duncan Airport, Canada (CA), Geonames ID: 5943865
+EBN^IR^0^1^^^^^EBN used to be Ebadon Island Airport, Marshall Islands (MH), Geonames ID: 7303963
 EHD^R^0^1^^^^^EHD is a pseudo city
 EHT^R^0^1^^^^^EHT used to be Rentschler Field Airport, East Hartford, Connecticut (CT), United States (US), Geonames ID: 4841419
 EJQ^R^1^0^^^^EJQ^As of May 2016, EJQ is in WDS/Shiyan, Hubei, China (CN)
@@ -36,6 +37,7 @@ JQJ^R^1^0^^^^JIQ^As of May 2016, JQJ is in JQJ/Qianjiang, Hubei, China (CN), not
 JSJ^R^1^0^^^^^As of August 2016, missing from reference data
 JYQ^R^1^0^^^^YDD^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
 KCI^R^0^1^^^^^KCI used to reference Kun Airport, East Timor (TL), but does not exist, Geonames ID: 8521421
+KMD^R^0^1^^^^^KMD used to be Mandji Airport, Gabon (GA), Geonames ID: 8298853
 LUF^R^0^1^1^^2016-06-02^^LUF used to be Litchfield Park Airport, Arizona (AZ), United States (US), Geonames ID: 7132272
 MJI^R^1^0^1^^2016-11-30^MJI^As of May 2016, MJI iss in TIP/Tripoli, Libya (LY)
 MKF^R^0^1^1^^2016-08-12^^MKF used to be McKenna AAF, Georgia (GA), United States (US), Geonames ID: 11237559
