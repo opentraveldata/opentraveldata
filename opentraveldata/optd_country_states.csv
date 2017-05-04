@@ -71,39 +71,39 @@ CA^6115047^10^Quebec^QC
 CA^6141242^11^Saskatchewan^SK
 CA^6185811^12^Yukon^YT
 CA^6354959^05^Newfoundland and Labrador^NL
-IN^0^01^Andaman and Nicobar^
-IN^0^02^Andhra Pradesh^
-IN^0^03^Assam^
-IN^0^05^Chandigarh^
-IN^0^07^NCT^
-IN^0^09^Gujarat^
-IN^0^10^Haryana^
-IN^0^11^Himachal Pradesh^
-IN^0^12^Kashmir^
-IN^0^13^Kerala^
-IN^0^14^Laccadives^
-IN^0^16^Maharashtra^
-IN^0^17^Manipur^
-IN^0^18^Meghalaya^
+IN^0^01^Andaman and Nicobar^AN
+IN^0^02^Andhra Pradesh^AP
+IN^0^03^Assam^AS
+IN^0^05^Chandigarh^CH
+IN^0^07^NCT^DL
+IN^0^09^Gujarat^GJ
+IN^0^10^Haryana^HR
+IN^0^11^Himachal Pradesh^HP
+IN^0^12^Kashmir^JK
+IN^0^13^Kerala^KL
+IN^0^14^Laccadives^LD
+IN^0^16^Maharashtra^MH
+IN^0^17^Manipur^MN
+IN^0^18^Meghalaya^ML
 IN^1267701^19^Karnataka^KA
-IN^0^20^Nagaland^
-IN^0^21^Odisha^
-IN^0^23^Punjab^
-IN^0^24^Rajasthan^
-IN^0^25^Tamil Nadu^
-IN^0^26^Tripura^
-IN^0^28^West Bengal^
+IN^0^20^Nagaland^NL
+IN^0^21^Odisha^OR
+IN^0^23^Punjab^PB
+IN^0^24^Rajasthan^RJ
+IN^0^25^Tamil Nadu^TN
+IN^0^26^Tripura^TR
+IN^0^28^West Bengal^WB
 IN^0^30^Arunachal Pradesh^AR
-IN^0^31^Mizoram^
-IN^0^32^Daman and Diu^
-IN^0^33^Goa^
-IN^0^34^Bihar^
-IN^0^35^Madhya Pradesh^
-IN^0^36^Uttar Pradesh^
-IN^0^37^Chhattisgarh^
-IN^0^38^Jharkhand^
-IN^0^39^Uttarakhand^
-IN^0^40^Telangana^
+IN^0^31^Mizoram^MZ
+IN^0^32^Daman and Diu^DD
+IN^0^33^Goa^GA
+IN^0^34^Bihar^BR
+IN^0^35^Madhya Pradesh^MP
+IN^0^36^Uttar Pradesh^UP
+IN^0^37^Chhattisgarh^CT
+IN^0^38^Jharkhand^JH
+IN^0^39^Uttarakhand^UT
+IN^0^40^Telangana^TG
 US^4099753^AR^Arkansas^AR
 US^4138106^DC^Washington, D.C.^DC
 US^4142224^DE^Delaware^DE
