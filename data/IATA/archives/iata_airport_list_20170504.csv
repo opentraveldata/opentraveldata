@@ -168,7 +168,7 @@ AGO^Magnolia^AR^US^2^^AGO^Municipal^0085^A
 AGP^Malaga^^ES^1^^AGP^Airport^0086^A
 AGP^Malaga^^ES^1^^YJM^Railway Station^^R
 AGQ^Agrinion^^GR^^^AGQ^G.Karaiskakis^0087^A
-AGR^Agra^^IN^^^AGR^Agra^0088^A
+AGR^Agra^UP^IN^^^AGR^Agra^0088^A
 AGS^Augusta^GA^US^1^^AGS^Metropolitan Area^^C
 AGS^Augusta^GA^US^1^^AGS^Regional (Bush Field)^0089^A
 AGS^Augusta^GA^US^1^^DNL^Daniel Field^^A
@@ -176,7 +176,7 @@ AGT^Ciudad del Este^^PY^^^AGT^Guarani Intl^^A
 AGU^Aguascalientes^^MX^1^^AGU^Jesus Teran Peredo Int^0091^A
 AGV^Acarigua^^VE^^^AGV^Oswaldo Guevara Mujica^0092^A
 AGW^Agnew^QL^AU^2^B^AGW^Agnew^0093^A
-AGX^Agatti Island^^IN^^^AGX^Agatti Island^^A
+AGX^Agatti Island^LD^IN^^^AGX^Agatti Island^^A
 AGZ^Aggeneys^^ZA^^^AGZ^Aggeneys^0096^A
 AHB^Abha^^SA^^^AHB^Abha^0097^A
 AHC^Herlong^CA^US^4^^AHC^Amedee AAF^^A
@@ -219,7 +219,7 @@ AJF^Jouf^^SA^^^AJF^Jouf^0121^A
 AJI^Agri^^TR^^^AJI^Agri^^A
 AJJ^Akjoujt^^MR^^^AJJ^Akjoujt^0122^A
 AJK^Arak^^IR^^^AJK^Araak^^A
-AJL^Aizawl^^IN^^^AJL^Lengpui^0123^A
+AJL^Aizawl^MZ^IN^^^AJL^Lengpui^0123^A
 AJN^Anjouan^^KM^^^AJN^Ouani^0124^A
 AJR^Arvidsjaur^^SE^^^AJR^Arvidsjaur^^A
 AJS^Punta Abreojos^^MX^2^^AJS^Punta Abreojos^0125^A
@@ -227,7 +227,7 @@ AJU^Aracaju^SE^BR^1^A^AJU^Santa Maria^0126^A
 AJY^Agadez^^NE^^^AJY^Manu Dayak Intl^0127^A
 AKA^Ankang^^CN^^^AKA^Wulipu^0128^A
 AKB^Atka^AK^US^6^^AKB^Atka^^A
-AKD^Akola^^IN^^^AKD^Akola^^A
+AKD^Akola^MH^IN^^^AKD^Akola^^A
 AKE^Akieni^^GA^^^AKE^Akieni^0129^A
 AKF^Kufra^^LY^^^AKF^Kufra^0130^A
 AKG^Anguganak^^PG^1^^AKG^Anguganak^^A
@@ -290,7 +290,7 @@ AMA^Amarillo^TX^US^2^^AMA^Rick Husband Intl^0165^A
 AMA^Amarillo^TX^US^2^^TDW^Tradewind^^A
 AMB^Ambilobe^^MG^^^AMB^Ambilobe^0166^A
 AMC^Am Timan^^TD^^^AMC^Am Timan^0167^A
-AMD^Ahmedabad^^IN^^^AMD^S.VallabhBhai Patel^0168^A
+AMD^Ahmedabad^GJ^IN^^^AMD^S.VallabhBhai Patel^0168^A
 AME^Alto Molocue^^MZ^^^AME^Alto Molocue^0169^A
 AMF^Ama^^PG^1^^AMF^Ama^0170^A
 AMG^Amboin^^PG^1^^AMG^Amboin^0171^A
@@ -474,7 +474,7 @@ ATO^Athens^OH^US^1^^ATO^Ohio University^0287^A
 ATP^Aitape^^PG^1^^ATP^Aitape Airstrip^0288^A
 ATP^Aitape^^PG^1^^ATP^Metropolitan Area^^C
 ATP^Aitape^^PG^1^^TAJ^Tadji^4810^A
-ATQ^Amritsar^^IN^^^ATQ^Sri Guru Ram Dass Jee^0289^A
+ATQ^Amritsar^PB^IN^^^ATQ^Sri Guru Ram Dass Jee^0289^A
 ATR^Atar^^MR^^^ATR^International^0290^A
 ATS^Artesia^NM^US^3^^ATS^Municipal^0291^A
 ATT^Atmautluak^AK^US^5^^ATT^Atmautluak^0292^A
@@ -626,7 +626,7 @@ BBD^Brady^TX^US^2^^BBD^Curtis Field^^A
 BBG^Butaritari^^KI^1^^BBG^Butaritari^0383^A
 BBH^Stralsund^^DE^^^BBH^Barth^^A
 BBH^Stralsund^^DE^^^ZSX^Railway Station^^R
-BBI^Bhubaneshwar^^IN^^^BBI^Biju Patnaik^0384^A
+BBI^Bhubaneshwar^OR^IN^^^BBI^Biju Patnaik^0384^A
 BBJ^Bitburg^^DE^^^BBJ^Bitburg^^A
 BBK^Kasane^^BW^^^BBK^Kasane^0385^A
 BBL^Ballera^QL^AU^2^B^BBL^Ballera^^A
@@ -685,7 +685,7 @@ BDM^Bandirma^^TR^^^BDM^Bandirma^0423^A
 BDN^Badin^^PK^^^BDN^Talhar^0424^A
 BDO^Bandung^^ID^1^^BDO^Husein Sastranegara^0425^A
 BDP^Bhadrapur^^NP^^^BDP^Chandragadhi^0426^A
-BDQ^Vadodara^^IN^^^BDQ^Vadodara^0427^A
+BDQ^Vadodara^GJ^IN^^^BDQ^Vadodara^0427^A
 BDR^Bridgeport^CT^US^1^^BDR^Igor I. Sikorsky Mem.^^A
 BDS^Brindisi^^IT^^^BDS^Casale^0429^A
 BDS^Brindisi^^IT^^^BQD^Railway Station^^R
@@ -707,11 +707,11 @@ BEG^Belgrade^^RS^^^BJY^Batajnica^^A
 BEH^Benton Harbor^MI^US^1^^BEH^Southwest Michigan Rgl^0441^A
 BEI^Beica^^ET^^^BEI^Beica^0442^A
 BEJ^Tanjung Redeb^^ID^2^^BEJ^Kalimarau^0443^A
-BEK^Bareilly^^IN^^^BEK^Bareilly^^A
+BEK^Bareilly^UP^IN^^^BEK^Bareilly^^A
 BEL^Belem^PA^BR^1^A^BEL^Val de Cans Intl^0444^A
 BEM^Beni Mellal^^MA^^^BEM^National^^A
 BEN^Benghazi^^LY^^^BEN^Benina Intl^0445^A
-BEP^Bellary^^IN^^^BEP^Bellary^^A
+BEP^Bellary^KA^IN^^^BEP^Bellary^^A
 BEQ^Bury St Edmunds^^GB^^^BEQ^Honington RAF^^A
 BER^Berlin^^DE^^^BER^Brandenburg^^A
 BER^Berlin^^DE^^^BER^Metropolitan Area^^C
@@ -784,18 +784,18 @@ BHF^Cupica^^CO^^^BHF^Cupica^^A
 BHG^Brus Laguna^^HN^^^BHG^Brus Laguna^0494^A
 BHH^Bisha^^SA^^^BHH^Bisha^0495^A
 BHI^Bahia Blanca^BA^AR^^^BHI^Comandante Espora^0496^A
-BHJ^Bhuj^^IN^^^BHJ^Shyamji Krishna Verma^0497^A
+BHJ^Bhuj^GJ^IN^^^BHJ^Shyamji Krishna Verma^0497^A
 BHK^Bukhara^^UZ^^^BHK^International^0498^A
 BHL^Bahia de los Angeles^^MX^3^^BHL^Bahia de los Angeles^0499^A
 BHM^Birmingham^AL^US^2^^BHM^Shuttlesworth Intl^0500^A
 BHN^Beihan^^YE^^^BHN^Beihan^0501^A
-BHO^Bhopal^^IN^^^BHO^Raja Bhoj^0502^A
+BHO^Bhopal^MP^IN^^^BHO^Raja Bhoj^0502^A
 BHP^Bhojpur^^NP^^^BHP^Bhojpur^0503^A
 BHQ^Broken Hill^NS^AU^3^^BHQ^Broken Hill^0504^A
 BHR^Bharatpur^^NP^^^BHR^Bharatpur^0505^A
 BHS^Bathurst^NS^AU^2^^BHS^Bathurst^0506^A
 BHT^Brighton Downs^QL^AU^2^B^BHT^Brighton Downs^0507^A
-BHU^Bhavnagar^^IN^^^BHU^Bhavnagar^0508^A
+BHU^Bhavnagar^GJ^IN^^^BHU^Bhavnagar^0508^A
 BHV^Bahawalpur^^PK^^^BHV^Bahawalpur^^A
 BHX^Birmingham^^GB^^^BHX^Birmingham^0509^A
 BHX^Birmingham^^GB^^^QQN^New Street Rail Stn^^R
@@ -857,7 +857,7 @@ BJW^Bajawa^^ID^2^^BJW^Soa^^A
 BJX^Leon/Guanajuato^^MX^1^^BJX^Del Bajio Intl^5885^A
 BJZ^Badajoz^^ES^1^^BJZ^Airport^0537^A
 BJZ^Badajoz^^ES^1^^BQZ^Railway Station^^R
-BKB^Bikaner^^IN^^^BKB^Nal^^A
+BKB^Bikaner^RJ^IN^^^BKB^Nal^^A
 BKC^Buckland^AK^US^5^^BKC^Buckland^0538^A
 BKD^Breckenridge^TX^US^2^^BKD^Stephens County^^A
 BKE^Baker City^OR^US^4^^BKE^Municipal^0539^A
@@ -904,7 +904,7 @@ BLO^Blonduos^^IS^^^BLO^Blonduos^0567^A
 BLP^Bellavista^^PE^^^BLP^Huallaga^0568^A
 BLQ^Bologna^^IT^^^BLQ^Guglielmo Marconi^0569^A
 BLQ^Bologna^^IT^^^IBT^Central Railway Stn^^R
-BLR^Bengaluru^^IN^^^BLR^Kempegowda Intl^0570^A
+BLR^Bengaluru^KA^IN^^^BLR^Kempegowda Intl^0570^A
 BLS^Bollon^QL^AU^2^B^BLS^Bollon^0571^A
 BLT^Blackwater^QL^AU^2^B^BLT^Blackwater^0572^A
 BLU^Emigrant Gap^CA^US^4^^BLU^Blue Canyon-Nyack^^A
@@ -974,7 +974,7 @@ BOI^Boise^ID^US^3^^BOI^Air Term. (Gowen Fld)^0620^A
 BOJ^Burgas^^BG^^^BOJ^Burgas^0621^A
 BOK^Brookings^OR^US^4^^BOK^Brookings^0622^A
 BOL^Ballykelly^^GB^^^BOL^Ballykelly^^A
-BOM^Mumbai^^IN^^^BOM^Chhatrapati Shivaji^6004^A
+BOM^Mumbai^MH^IN^^^BOM^Chhatrapati Shivaji^6004^A
 BON^Bonaire^^BQ^^^BON^Flamingo International^^A
 BOO^Bodo^^NO^^^BOO^Bodo^0625^A
 BOP^Bouar^^CF^^^BOP^Bouar^0626^A
@@ -1134,7 +1134,7 @@ BUL^Bulolo^^PG^1^^BUL^Bulolo^0712^A
 BUM^Butler^MO^US^2^^BUM^Memorial^^A
 BUN^Buenaventura^^CO^^^BUN^Gerardo Tobar Lopez^0713^A
 BUO^Burao^^SO^^^BUO^Burao^0714^A
-BUP^Bathinda^^IN^^^BUP^Bathinda^^A
+BUP^Bathinda^PB^IN^^^BUP^Bathinda^^A
 BUQ^Bulawayo^^ZW^^^BUQ^Joshua M. Nkomo Intl^0715^A
 BUR^Burbank^CA^US^4^^BUR^Bob Hope^0716^A
 BUS^Batumi^^GE^^^BUS^Batumi^0717^A
@@ -1298,7 +1298,7 @@ CAY^Cayenne^^GF^^^CAY^Felix Eboue^0798^A
 CAZ^Cobar^NS^AU^2^^CAZ^Cobar^0799^A
 CBB^Cochabamba^^BO^^^CBB^Jorge Wilstermann Intl^0801^A
 CBC^Cherrabun^WA^AU^4^^CBC^Cherrabun^0802^A
-CBD^Car Nicobar Island^^IN^^^CBD^AFB^^A
+CBD^Car Nicobar Island^AN^IN^^^CBD^AFB^^A
 CBE^Cumberland^MD^US^1^^CBE^Greater Cumberland Rgl^0803^A
 CBF^Council Bluffs^IA^US^2^^CBF^Municipal^^A
 CBG^Cambridge^^GB^^^CBG^Cambridge^0804^A
@@ -1328,7 +1328,7 @@ CCF^Carcassonne^^FR^^^CCF^Salvaza^0819^A
 CCG^Crane^TX^US^2^^CCG^Crane County^^A
 CCH^Chile Chico^^CL^1^^CCH^Chile Chico^0820^A
 CCI^Concordia^SC^BR^1^^CCI^Olavo Cecco Rigon^0821^A
-CCJ^Kozhikode^^IN^^^CCJ^International^^A
+CCJ^Kozhikode^KL^IN^^^CCJ^International^^A
 CCK^Cocos Islands^^CC^^^CCK^Cocos Islands^0822^A
 CCL^Chinchilla^QL^AU^2^B^CCL^Chinchilla^0823^A
 CCM^Criciuma^SC^BR^1^^CCM^Diomicio Freitas^0824^A
@@ -1338,7 +1338,7 @@ CCP^Concepcion^^CL^1^^CCP^Carriel Sur^0827^A
 CCR^Concord^CA^US^4^^CCR^Buchanan Field^0828^A
 CCS^Caracas^^VE^^^CCS^Simon Bolivar Intl^0829^A
 CCT^Catriel^RN^AR^^^CCT^Colonia Catriel^^A
-CCU^Kolkata^^IN^^^CCU^Subhas Chandra Bose^^A
+CCU^Kolkata^WB^IN^^^CCU^Subhas Chandra Bose^^A
 CCV^Craig Cove^^VU^^^CCV^Craig Cove^0831^A
 CCW^Cowell^SA^AU^3^^CCW^Cowell^0832^A
 CCX^Caceres^MT^BR^2^^CCX^Caceres^0833^A
@@ -1356,7 +1356,7 @@ CDK^Cedar Key^FL^US^1^^CDK^George T. Lewis^^A
 CDL^Candle^AK^US^5^^CDL^Candle^0842^A
 CDN^Camden^SC^US^1^^CDN^Woodward Field^^A
 CDO^Cradock^^ZA^^^CDO^Cradock^^A
-CDP^Cuddapah^^IN^^^CDP^Cuddapah^^A
+CDP^Cuddapah^AP^IN^^^CDP^Cuddapah^^A
 CDQ^Croydon^QL^AU^2^B^CDQ^Croydon^0843^A
 CDR^Chadron^NE^US^3^^CDR^Municipal^0844^A
 CDS^Childress^TX^US^2^^CDS^Municipal^^A
@@ -1497,7 +1497,7 @@ CIX^Chiclayo^^PE^^^CIX^J.A. Quinones Gonzalez^0922^A
 CIY^Comiso^^IT^^^CIY^Vincenzo Magliocco^0923^A
 CIZ^Coari^AM^BR^2^A^CIZ^Coari^^A
 CJA^Cajamarca^^PE^^^CJA^Armando R. Iglesias^0924^A
-CJB^Coimbatore^^IN^^^CJB^International^0925^A
+CJB^Coimbatore^TN^IN^^^CJB^International^0925^A
 CJC^Calama^^CL^1^^CJC^El Loa^0926^A
 CJD^Candilejas^^CO^^^CJD^Candilejas^0927^A
 CJF^Coondewanna^WA^AU^4^^CJF^Coondewanna^^A
@@ -1620,10 +1620,10 @@ COD^Cody^WY^US^3^^COD^Yellowstone Regional^1005^A
 COE^Coeur d'Alene^ID^US^4^^COE^Pappy Boyington Field^1006^A
 COF^Cocoa Beach^FL^US^1^^COF^Patrick AFB^^A
 COG^Condoto^^CO^^^COG^Mandinga^1007^A
-COH^Cooch Behar^^IN^^^COH^Cooch Behar^1008^A
+COH^Cooch Behar^WB^IN^^^COH^Cooch Behar^1008^A
 COI^Merritt Island^FL^US^1^^COI^Merritt Island^^A
 COJ^Coonabarabran^NS^AU^2^^COJ^Coonabarabran^1010^A
-COK^Kochi^^IN^^^COK^International^1011^A
+COK^Kochi^KL^IN^^^COK^International^1011^A
 COL^Coll Island^^GB^^^COL^Coll Island^1012^A
 COM^Coleman^TX^US^2^^COM^Municipal^^A
 CON^Concord^NH^US^1^^CON^Municipal^1013^A
@@ -1886,7 +1886,7 @@ DAZ^Darwaz^^AF^^^DAZ^Darwaz^1172^A
 DBA^Dalbandin^^PK^^^DBA^Dalbandin^^A
 DBB^Dabah^^EG^^^DBB^Al Alamain Intl^^A
 DBC^Baicheng^^CN^^^DBC^Chang'an^^A
-DBD^Dhanbad^^IN^^^DBD^Dhanbad^^A
+DBD^Dhanbad^JH^IN^^^DBD^Dhanbad^^A
 DBK^Kalpitiya^^LK^^^DBK^Dutch Bay SPB^^A
 DBM^Debre Marcos^^ET^^^DBM^Debre Marcos^1175^A
 DBN^Dublin^GA^US^1^^DBN^W.H. "Bud" Barron^1176^A
@@ -1906,6 +1906,7 @@ DCT^Duncan Town^^BS^^^DCT^Duncan Town^^A
 DCU^Decatur^AL^US^2^^DCU^Pryor Field Regional^^A
 DCY^Daocheng^^CN^^^DCY^Yading^^A
 DDC^Dodge City^KS^US^2^^DDC^Regional^1185^A
+DDD^Kudahuvadhoo^^MV^^^DDD^Dhaalu Atoll^^A
 DDG^Dandong^^CN^^^DDG^Langtou^^A
 DDI^Daydream Island^QL^AU^2^B^DDI^Heliport^1186^H
 DDL^ACARS^^^^^DDL^ACARS^^O
@@ -1915,12 +1916,12 @@ DDU^Dadu^^PK^^^DDU^Dadu^^A
 DEA^Dera Ghazi Khan^^PK^^^DEA^International^^A
 DEB^Debrecen^^HU^^^DEB^Debrecen^1189^A
 DEC^Decatur^IL^US^2^^DEC^Decatur^1190^A
-DED^Dehra Dun^^IN^^^DED^Jolly Grant^^A
+DED^Dehra Dun^UT^IN^^^DED^Jolly Grant^^A
 DEE^Yuzhno-Kurilsk^^RU^10^^DEE^Mendeleyevo^^A
 DEF^Dezful^^IR^^^DEF^Dezful^^A
 DEH^Decorah^IA^US^2^^DEH^Municipal^1191^A
 DEI^Denis Island^^SC^^^DEI^Denis Island^1192^A
-DEL^Delhi^^IN^^^DEL^Indira Gandhi Intl^1193^A
+DEL^Delhi^DL^IN^^^DEL^Indira Gandhi Intl^1193^A
 DEM^Dembi Dolo^^ET^^^DEM^Dembi Dolo^1194^A
 DEN^Denver^CO^US^3^^APA^Centennial^^A
 DEN^Denver^CO^US^3^^BFK^Aurora/Buckley AFB^^A
@@ -1929,7 +1930,7 @@ DEN^Denver^CO^US^3^^DEN^International^1195^A
 DEN^Denver^CO^US^3^^DEN^Metropolitan Area^^C
 DEN^Denver^CO^US^3^^QWM^Longmont Bus Station^^B
 DEO^Dearborn^MI^US^1^^DEO^Hyatt Regency H/P^1196^H
-DEP^Deparijo^^IN^^^DEP^Deparijo^^A
+DEP^Deparijo^AR^IN^^^DEP^Deparijo^^A
 DER^Derim^^PG^1^^DER^Derim^1197^A
 DES^Desroches Island^^SC^^^DES^Desroches Island^^A
 DEX^Yahukimo^^ID^3^^DEX^Nop Goliath^^A
@@ -1962,13 +1963,13 @@ DHB^Deer Harbor^WA^US^4^^DHB^Sea Plane Base^^A
 DHD^Durham Downs^QL^AU^2^B^DHD^Durham Downs^1211^A
 DHI^Dhangarhi^^NP^^^DHI^Dhangarhi^1212^A
 DHL^Dhala^^YE^^^DHL^Dhala^1213^A
-DHM^Dharamsala^^IN^^^DHM^Kangra^^A
+DHM^Dharamsala^HP^IN^^^DHM^Kangra^^A
 DHN^Dothan^AL^US^2^^DHN^Regional^1214^A
 DHO^Horn River^BC^CA^6^^DHO^Heliport^^H
 DHR^Den Helder^^NL^^^DHR^De Kooy^^A
 DHT^Dalhart^TX^US^2^^DHT^Municipal^^A
 DHU^Zhuzhou^^CN^^^DHU^Railway Station^^R
-DIB^Dibrugarh^^IN^^^DIB^Mohanbari^1215^A
+DIB^Dibrugarh^AS^IN^^^DIB^Mohanbari^1215^A
 DIE^Antsiranana^^MG^^^DIE^Arrachart^^A
 DIG^Deqen^^CN^^^DIG^Shangri-La^^A
 DIJ^Dijon^^FR^^^DIJ^Longvic^1217^A
@@ -1981,7 +1982,7 @@ DIP^Diapaga^^BF^^^DIP^Diapaga^1221^A
 DIQ^Divinopolis^MG^BR^1^^DIQ^Brigadeiro Cabral^^A
 DIR^Dire Dawa^^ET^^^DIR^Aba Tenna D Yilma Intl^1222^A
 DIS^Dolisie^^CG^^^DIS^Dolisie^1223^A
-DIU^Diu^^IN^^^DIU^Diu^^A
+DIU^Diu^DD^IN^^^DIU^Diu^^A
 DIV^Divo^^CI^^^DIV^Divo^^A
 DIW^Dikwella^^LK^^^DIW^Mawella Lagoon SPB^^A
 DIY^Diyarbakir^^TR^^^DIY^Diyarbakir^^A
@@ -2028,7 +2029,7 @@ DMN^Deming^NM^US^3^^DMN^Municipal^^A
 DMO^Sedalia^MO^US^2^^DMO^Regional^1246^A
 DMR^Dhamar^^YE^^^DMR^Dhamar^1247^A
 DMT^Diamantino^MT^BR^2^^DMT^Diamantino^^A
-DMU^Dimapur^^IN^^^DMU^Dimapur^1248^A
+DMU^Dimapur^NL^IN^^^DMU^Dimapur^1248^A
 DNB^Dunbar^QL^AU^2^B^DNB^Dunbar^^A
 DND^Dundee^^GB^^^DND^Airport^1250^A
 DND^Dundee^^GB^^^ZDU^Railway Station^^R
@@ -2748,11 +2749,11 @@ GAQ^Gao^^ML^^^GAQ^Korogoussou^1657^A
 GAR^Garaina^^PG^1^^GAR^Garaina^1658^A
 GAS^Garissa^^KE^^^GAS^Garissa^1659^A
 GAT^Gap^^FR^^^GAT^Tallard^1660^A
-GAU^Guwahati^^IN^^^GAU^Gopinath Bordoloi Intl^1661^A
+GAU^Guwahati^AS^IN^^^GAU^Gopinath Bordoloi Intl^1661^A
 GAV^Gag Island^^ID^3^^GAV^Gag Island^1662^A
 GAW^Gangaw^^MM^^^GAW^Gangaw^1663^A
 GAX^Gamba^^GA^^^GAX^Yenzi^1664^A
-GAY^Gaya^^IN^^^GAY^Gaya^1665^A
+GAY^Gaya^BR^IN^^^GAY^Gaya^1665^A
 GAZ^Guasopa^^PG^1^^GAZ^Guasopa^^A
 GBA^Kemble^^GB^^^GBA^Cotswold^^A
 GBB^Gabala^^AZ^^^GBB^International^^A
@@ -2786,6 +2787,7 @@ GCM^Grand Cayman^^KY^^^GCM^Owen Roberts Intl^1681^A
 GCN^Grand Canyon^AZ^US^3^A^FLG^Flagstaff Pulliam^^A
 GCN^Grand Canyon^AZ^US^3^A^GCN^Metropolitan Area^^C
 GCN^Grand Canyon^AZ^US^3^A^GCN^National Park^1682^A
+GCN^Grand Canyon^AZ^US^3^A^GCT^Bar Ten Ranch^^A
 GCN^Grand Canyon^AZ^US^3^A^VLE^Valle^^A
 GCW^Grand Canyon West^AZ^US^3^A^GCW^Grand Canyon West^^A
 GCY^Greeneville^TN^US^1^^GCY^Greene County Muni^^A
@@ -2953,7 +2955,7 @@ GOC^Gora^^PG^1^^GOC^Gora^^A
 GOE^Gonaili^^PG^1^^GOE^Gonaili^^A
 GOG^Gobabis^^NA^^^GOG^Gobabis^^A
 GOH^Nuuk^^GL^1^^GOH^Nuuk^^A
-GOI^Goa^^IN^^^GOI^Dabolim^^A
+GOI^Goa^GA^IN^^^GOI^Dabolim^^A
 GOJ^Nizhny Novgorod^^RU^2^^GOJ^Strigino^^A
 GOK^Guthrie^OK^US^2^^GOK^Guthrie-Edmond Rgnl^^A
 GOL^Gold Beach^OR^US^4^^GOL^Municipal^1786^A
@@ -2961,7 +2963,7 @@ GOM^Goma^^CD^2^^GOM^International^1787^A
 GON^Groton/New London^CT^US^1^^GON^Airport^^A
 GON^Groton/New London^CT^US^1^^ZGD^New London Railway Stn^^R
 GOO^Goondiwindi^QL^AU^2^B^GOO^Goondiwindi^1789^A
-GOP^Gorakhpur^^IN^^^GOP^Gorakhpur^1790^A
+GOP^Gorakhpur^UP^IN^^^GOP^Gorakhpur^1790^A
 GOQ^Golmud^^CN^^^GOQ^Golmud^1791^A
 GOR^Gore^^ET^^^GOR^Gore^1792^A
 GOS^Gosford^NS^AU^2^^GOS^Gosford^1793^A
@@ -3072,7 +3074,7 @@ GUT^Guetersloh^^DE^^^ZEX^Hbf Railway Station^^R
 GUU^Grundarfjordur^^IS^^^GUU^Grundarfjordur^1851^A
 GUV^Mougulu^^PG^1^^GUV^Mougulu^^A
 GUW^Atyrau^^KZ^1^^GUW^Atyrau^^A
-GUX^Guna^^IN^^^GUX^Guna^^A
+GUX^Guna^MP^IN^^^GUX^Guna^^A
 GUY^Guymon^OK^US^2^^GUY^Municipal^1852^A
 GUZ^Guarapari^ES^BR^1^^GUZ^Guarapari^^A
 GVA^Geneva^^CH^^^GVA^International^^A
@@ -3089,7 +3091,7 @@ GVX^Gavle^^SE^^^QYU^Gavle C Railway Stn^^R
 GWA^Gwa^^MM^^^GWA^Gwa^1862^A
 GWD^Gwadar^^PK^^^GWD^International^1863^A
 GWE^Gweru^^ZW^^^GWE^Gweru^1864^A
-GWL^Gwalior^^IN^^^GWL^Gwalior^1865^A
+GWL^Gwalior^MP^IN^^^GWL^Gwalior^1865^A
 GWN^Gnarowein^^PG^1^^GWN^Gnarowein^^A
 GWO^Greenwood^MS^US^2^^GWO^Leflore^1866^A
 GWS^Glenwood Springs^CO^US^3^^GWS^Municipal^^A
@@ -3166,7 +3168,7 @@ HBM^Macheng^^CN^^^HBM^North Railway Station^^R
 HBR^Hobart^OK^US^2^^HBR^Regional^^A
 HBU^Bulgan (Khovd)^^MN^^^HBU^Bulgan (Khovd)^^A
 HBV^Harbin^^CN^^^HBV^Harbinxi Railway Stn^^R
-HBX^Hubli^^IN^^^HBX^Hubli^5888^A
+HBX^Hubli^KA^IN^^^HBX^Hubli^5888^A
 HCA^Big Spring^TX^US^2^^HCA^McMahon-Wrinkle^1902^A
 HCC^Hudson^NY^US^1^^HCC^Columbia County^^A
 HCJ^Hechi^^CN^^^HCJ^Jin Cheng Jiang^^A
@@ -3256,7 +3258,7 @@ HIS^Hayman Island^QL^AU^2^B^HIS^Heliport^^H
 HIT^Haivaro^^PG^1^^HIT^Haivaro^^A
 HJJ^Huaihua^^CN^^^HJJ^Zhijiang^^A
 HJJ^Huaihua^^CN^^^UIG^Railway Station^^R
-HJR^Khajuraho^^IN^^^HJR^Khajuraho^1950^A
+HJR^Khajuraho^MP^IN^^^HJR^Khajuraho^1950^A
 HJT^Khujirt^^MN^^^HJT^Khujirt^^A
 HKB^Healy Lake^AK^US^5^^HKB^Healy Lake^^A
 HKD^Hakodate^^JP^^^HKD^Hakodate^1952^A
@@ -3385,7 +3387,7 @@ HSL^Huslia^AK^US^5^^HSL^Huslia^2014^A
 HSM^Horsham^VI^AU^2^^HSM^Horsham^2015^A
 HSN^Zhoushan^^CN^^^HSN^Putuoshan^^A
 HSP^Hot Springs^VA^US^1^^HSP^Ingalls Field^2016^A
-HSS^Hisar^^IN^^^HSS^Hisar^^A
+HSS^Hisar^HR^IN^^^HSS^Hisar^^A
 HST^Homestead^FL^US^1^^HST^ARB^^A
 HSV^Huntsville^AL^US^2^^HSV^Intl-Carl T.Jones Fld^2017^A
 HSV^Huntsville^AL^US^2^^HSV^Metropolitan Area^^C
@@ -3450,9 +3452,9 @@ HXD^Delingha^^CN^^^HXD^Delingha^^A
 HXX^Hay^NS^AU^2^^HXX^Hay^2047^A
 HYA^Hyannis^MA^US^1^^HYA^Barnstable Municipal^2048^A
 HYC^High Wycombe^^GB^^^HYC^Air Park/Booker^^A
-HYD^Hyderabad^^IN^^^BPM^Begumpet^^A
-HYD^Hyderabad^^IN^^^HYD^Metropolitan Area^^C
-HYD^Hyderabad^^IN^^^HYD^Rajiv Gandhi Int'l^^A
+HYD^Hyderabad^TG^IN^^^BPM^Begumpet^^A
+HYD^Hyderabad^TG^IN^^^HYD^Metropolitan Area^^C
+HYD^Hyderabad^TG^IN^^^HYD^Rajiv Gandhi Int'l^^A
 HYF^Hayfield^^PG^1^^HYF^Hayfield^2050^A
 HYG^Hydaburg^AK^US^5^^HYG^Sea Plane Base^2051^A
 HYL^Hollis^AK^US^5^^HYL^Clark Bay SPB^2052^A
@@ -3513,7 +3515,7 @@ IDK^Indulkana^SA^AU^3^^IDK^Indulkana^2076^A
 IDN^Indagen^^PG^1^^IDN^Indagen^2077^A
 IDO^Santa Isabel do Morro^TO^BR^1^A^IDO^Santa Isabel Do Morro^2078^A
 IDP^Independence^KS^US^2^^IDP^Municipal^^A
-IDR^Indore^^IN^^^IDR^Devi Ahilya Bai Holkar^2079^A
+IDR^Indore^MP^IN^^^IDR^Devi Ahilya Bai Holkar^2079^A
 IDY^Ile d'Yeu^^FR^^^IDY^Ile d'Yeu^^A
 IEG^Zielona Gora^^PL^^^IEG^Babimost^2080^A
 IEJ^Iejima^^JP^^^IEJ^Iejima^2081^A
@@ -3596,7 +3598,7 @@ ILZ^Zilina^^SK^^^ILZ^Zilina^2126^A
 IMA^Iamalele^^PG^1^^IMA^Iamalele^2127^A
 IMB^Imbaimadai^^GY^^^IMB^Imbaimadai^2128^A
 IMD^Imonda^^PG^1^^IMD^Imonda^2129^A
-IMF^Imphal^^IN^^^IMF^Imphal^2130^A
+IMF^Imphal^MN^IN^^^IMF^Imphal^2130^A
 IMG^Inhaminga^^MZ^^^IMG^Inhaminga^^A
 IMI^Ine Island^^MH^^^IMI^Ine Island^^A
 IMK^Simikot^^NP^^^IMK^Simikot^2131^A
@@ -3686,7 +3688,7 @@ ISG^Ishigaki^^JP^^^ISG^New Ishigaki^2184^A
 ISH^Ischia^^IT^^^ISH^Harbour^2185^P
 ISI^Isisford^QL^AU^2^B^ISI^Isisford^2186^A
 ISJ^Isla Mujeres^^MX^1^B^ISJ^Isla Mujeres^2187^A
-ISK^Nasik^^IN^^^ISK^Ozar^2188^A
+ISK^Nasik^MH^IN^^^ISK^Ozar^2188^A
 ISN^Williston^ND^US^2^^ISN^Sloulin Field Intl^2191^A
 ISO^Kinston^NC^US^1^^ISO^Regional Jetport^2192^A
 ISP^Islip^NY^US^1^^ISP^Long Island MacArthur^2193^A
@@ -3729,29 +3731,29 @@ IWD^Ironwood^MI^US^2^^IWD^Gogebic-Iron County^2218^A
 IWJ^Masuda^^JP^^^IWJ^Iwami^^A
 IWK^Iwakuni^^JP^^^IWK^Iwakuni^^A
 IWO^Iwoto (Iwo Jima)^^JP^^^IWO^Iwoto (Iwo Jima)^^A
-IXA^Agartala^^IN^^^IXA^Agartala^2219^A
-IXB^Bagdogra^^IN^^^IXB^Bagdogra^2220^A
-IXC^Chandigarh^^IN^^^IXC^Chandigarh^2221^A
-IXD^Allahabad^^IN^^^IXD^Allahabad^2222^A
-IXE^Mangalore^^IN^^^IXE^Mangalore^2223^A
-IXG^Belgaum^^IN^^^IXG^Sambre^2224^A
-IXH^Kailashahar^^IN^^^IXH^Kailashahar^2225^A
-IXI^Lilabari^^IN^^^IXI^Lilabari^2226^A
-IXJ^Jammu^^IN^^^IXJ^Satwari^2227^A
-IXK^Keshod^^IN^^^IXK^Keshod^2228^A
-IXL^Leh^^IN^^^IXL^Kushok Bakula Rimpoche^2229^A
-IXM^Madurai^^IN^^^IXM^Madurai^2230^A
-IXN^Khowai^^IN^^^IXN^Khowai^2231^A
-IXP^Pathankot^^IN^^^IXP^Pathankot^2232^A
-IXQ^Kamalpur^^IN^^^IXQ^Kamalpur^2233^A
-IXR^Ranchi^^IN^^^IXR^Birsa Munda^2234^A
-IXS^Silchar^^IN^^^IXS^Kumbhirgram^2235^A
-IXT^Pasighat^^IN^^^IXT^Pasighat^2236^A
-IXU^Aurangabad^^IN^^^IXU^Aurangabad^2237^A
-IXV^Along^^IN^^^IXV^Along^2238^A
-IXW^Jamshedpur^^IN^^^IXW^Sonari^2239^A
-IXY^Kandla^^IN^^^IXY^Kandla^2240^A
-IXZ^Port Blair^^IN^^^IXZ^Veer Savarkar Intl^2241^A
+IXA^Agartala^TR^IN^^^IXA^Agartala^2219^A
+IXB^Bagdogra^WB^IN^^^IXB^Bagdogra^2220^A
+IXC^Chandigarh^CH^IN^^^IXC^Chandigarh^2221^A
+IXD^Allahabad^UP^IN^^^IXD^Allahabad^2222^A
+IXE^Mangalore^KA^IN^^^IXE^Mangalore^2223^A
+IXG^Belgaum^KA^IN^^^IXG^Sambre^2224^A
+IXH^Kailashahar^TR^IN^^^IXH^Kailashahar^2225^A
+IXI^Lilabari^AS^IN^^^IXI^Lilabari^2226^A
+IXJ^Jammu^JK^IN^^^IXJ^Satwari^2227^A
+IXK^Keshod^GJ^IN^^^IXK^Keshod^2228^A
+IXL^Leh^JK^IN^^^IXL^Kushok Bakula Rimpoche^2229^A
+IXM^Madurai^TN^IN^^^IXM^Madurai^2230^A
+IXN^Khowai^TR^IN^^^IXN^Khowai^2231^A
+IXP^Pathankot^PB^IN^^^IXP^Pathankot^2232^A
+IXQ^Kamalpur^TR^IN^^^IXQ^Kamalpur^2233^A
+IXR^Ranchi^JH^IN^^^IXR^Birsa Munda^2234^A
+IXS^Silchar^AS^IN^^^IXS^Kumbhirgram^2235^A
+IXT^Pasighat^AR^IN^^^IXT^Pasighat^2236^A
+IXU^Aurangabad^MH^IN^^^IXU^Aurangabad^2237^A
+IXV^Along^AR^IN^^^IXV^Along^2238^A
+IXW^Jamshedpur^JH^IN^^^IXW^Sonari^2239^A
+IXY^Kandla^GJ^IN^^^IXY^Kandla^2240^A
+IXZ^Port Blair^AN^IN^^^IXZ^Veer Savarkar Intl^2241^A
 IYK^Inyokern^CA^US^4^^IYK^Inyokern^2242^A
 IZM^Izmir^^TR^^^ADB^Adnan Menderes^^A
 IZM^Izmir^^TR^^^IGL^Cigli AB^^A
@@ -3765,7 +3767,7 @@ JAE^Jaen^^PE^^^JAE^Aeropuerto de Shumba^^A
 JAF^Jaffna^^LK^^^JAF^Kankesanturai^2250^A
 JAG^Jacobabad^^PK^^^JAG^Jacobabad^^A
 JAH^Aubagne^^FR^^^JAH^Off-line Point^^O
-JAI^Jaipur^^IN^^^JAI^International^2251^A
+JAI^Jaipur^RJ^IN^^^JAI^International^2251^A
 JAK^Jacmel^^HT^^^JAK^Jacmel^2252^A
 JAL^Jalapa^^MX^1^^JAL^El Lencero^2253^A
 JAM^Jambol^^BG^^^JAM^Bezmer^2254^A
@@ -3802,7 +3804,7 @@ JDA^John Day^OR^US^4^^JDA^Grant County Regional^2265^A
 JDF^Juiz de Fora^MG^BR^1^^IZA^Presidente I. Franco^^A
 JDF^Juiz de Fora^MG^BR^1^^JDF^Francisco de Assis^2266^A
 JDG^Jeongseok^^KR^^^JDG^Jeongseok^^A
-JDH^Jodhpur^^IN^^^JDH^Jodhpur^2267^A
+JDH^Jodhpur^RJ^IN^^^JDH^Jodhpur^2267^A
 JDN^Jordan^MT^US^3^^JDN^Jordan^^A
 JDO^Juazeiro do Norte^CE^BR^1^A^JDO^O. Bezerra de Menezes^2268^A
 JDR^Sao Joao del Rei^MG^BR^1^^JDR^O. de Almeida Neves^^A
@@ -3820,8 +3822,8 @@ JEV^Evry^^FR^^^JEV^Off-line Point^^O
 JFM^Fremantle^WA^AU^4^^JFM^Heliport^^H
 JFN^Ashtabula^OH^US^1^^JFN^Northeast Ohio Rgnl^^A
 JFR^Paamiut^^GL^1^^JFR^Paamiut^^A
-JGA^Jamnagar^^IN^^^JGA^Govardhanpur^2279^A
-JGB^Jagdalpur^^IN^^^JGB^Jagdalpur^^A
+JGA^Jamnagar^GJ^IN^^^JGA^Govardhanpur^2279^A
+JGB^Jagdalpur^CT^IN^^^JGB^Jagdalpur^^A
 JGD^Jiagedaqi^^CN^^^JGD^Jiagedaqi^^A
 JGE^Geoje^^KR^^^JGE^Heliport^^H
 JGN^Jiayuguan^^CN^^^JGN^Jiayuguan^^A
@@ -3868,7 +3870,7 @@ JLA^Cooper Landing^AK^US^5^^JLA^Quartz Creek^^A
 JLD^Landskrona^^SE^^^JLD^Heliport^^H
 JLN^Joplin^MO^US^2^^JLN^Regional^2301^A
 JLP^Juan-les-Pins^^FR^^^JLP^Off-line Point^^O
-JLR^Jabalpur^^IN^^^JLR^Jabalpur^2303^A
+JLR^Jabalpur^MP^IN^^^JLR^Jabalpur^2303^A
 JLS^Jales^SP^BR^1^^JLS^Jales^^A
 JMB^Jamba^^AO^^^JMB^Jamba^2304^A
 JMC^Sausalito^CA^US^4^^JMC^Commodore Center H/P^2305^H
@@ -3906,12 +3908,12 @@ JPR^Ji-Parana^RO^BR^2^A^JPR^Jose Coleto^^A
 JQA^Qaarsut^^GL^1^^JQA^Qaarsut^^A
 JQE^Jaque^^PA^^^JQE^Jaque^^A
 JRF^Kapolei^HI^US^6^A^JRF^Kalaeloa^^A
-JRH^Jorhat^^IN^^^JRH^Rowriah^2326^A
+JRH^Jorhat^AS^IN^^^JRH^Rowriah^2326^A
 JRK^Arsuk^^GL^1^^JRK^Heliport^^H
 JRN^Juruena^MT^BR^2^^JRN^Juruena^^A
 JRO^Kilimanjaro^^TZ^^^JRO^International^2327^A
 JRS^Jerusalem^^^^^JRS^Jerusalem^2328^A
-JSA^Jaisalmer^^IN^^^JSA^Jaisalmer^^A
+JSA^Jaisalmer^RJ^IN^^^JSA^Jaisalmer^^A
 JSD^Stratford^CT^US^1^^JSD^Sikorsky Heliport^^H
 JSH^Siteia^^GR^^^JSH^Siteia^^A
 JSI^Skiathos^^GR^^^JSI^Alex. Papadiamantis^2329^A
@@ -4188,7 +4190,7 @@ KLD^Tver^^RU^2^^KLD^Migalovo^^A
 KLE^Kaele^^CM^^^KLE^Kaele^^A
 KLF^Kaluga^^RU^2^^KLF^Grabtsevo^^A
 KLG^Kalskag^AK^US^5^^KLG^Kalskag^2503^A
-KLH^Kolhapur^^IN^^^KLH^Kolhapur^^A
+KLH^Kolhapur^MH^IN^^^KLH^Kolhapur^^A
 KLI^Kotakoli^^CD^1^^KLI^Kotakoli^2504^A
 KLK^Kalokol^^KE^^^KLK^Fergusons Gulf^^A
 KLL^Levelock^AK^US^5^^KLL^Levelock^2506^A
@@ -4251,7 +4253,7 @@ KNQ^Kone^^NC^^^KNQ^Kone^2545^A
 KNR^Kangan^^IR^^^KNR^Jam^^A
 KNS^King Island^TS^AU^2^A^KNS^King Island^2546^A
 KNT^Kennett^MO^US^2^^KNT^Memorial^2547^A
-KNU^Kanpur^^IN^^^KNU^Kanpur^2548^A
+KNU^Kanpur^UP^IN^^^KNU^Kanpur^2548^A
 KNW^New Stuyahok^AK^US^5^^KNW^New Stuyahok^2549^A
 KNX^Kununurra^WA^AU^4^^KNX^Kununurra^2550^A
 KNZ^Kenieba^^ML^^^KNZ^Kenieba^2551^A
@@ -4379,7 +4381,7 @@ KTQ^Kitee^^FI^^^KTQ^Kitee^^A
 KTR^Katherine^NT^AU^3^A^KTR^RAAF Tindal^^A
 KTS^Brevig Mission^AK^US^5^^KTS^Brevig Mission^2629^A
 KTT^Kittila^^FI^^^KTT^Kittila^^A
-KTU^Kota^^IN^^^KTU^Kota^^A
+KTU^Kota^RJ^IN^^^KTU^Kota^^A
 KTV^Kamarata^^VE^^^KTV^Kamarata^2630^A
 KTW^Katowice^^PL^^^KTW^Pyrzowice^2631^A
 KTW^Katowice^^PL^^^ZFY^Bus Station^^B
@@ -4410,7 +4412,7 @@ KUQ^Kuri^^PG^1^^KUQ^Kuri^^A
 KUR^Kiran wa Munjan^^AF^^^KUR^Razer^2643^A
 KUS^Kulusuk^^GL^1^^KUS^Kulusuk^^A
 KUT^Kutaisi^^GE^^^KUT^Kopitnari^^A
-KUU^Kullu^^IN^^^KUU^Bhuntar^2645^A
+KUU^Kullu^HP^IN^^^KUU^Bhuntar^2645^A
 KUV^Gunsan^^KR^^^KUV^Gunsan^2646^A
 KUX^Kuyol^^PG^1^^KUX^Kuyol^^A
 KUY^Kamusi^^PG^1^^KUY^Kamusi^0000^A
@@ -4574,7 +4576,7 @@ LCQ^Lake City^FL^US^1^^LCQ^Lake City Gateway^^A
 LCR^La Chorrera^^CO^^^LCR^La Chorrera^^A
 LCV^Lucca^^IT^^^LCV^Tassignano^^A
 LCX^Longyan^^CN^^^LCX^Guanzhishan^^A
-LDA^Malda^^IN^^^LDA^Malda^^A
+LDA^Malda^WB^IN^^^LDA^Malda^^A
 LDB^Londrina^PR^BR^1^^LDB^Jose Richa^2738^A
 LDC^Lindeman Island^QL^AU^2^B^LDC^Lindeman Island^^A
 LDE^Lourdes/Tarbes^^FR^^^LDE^Pyrenees^^A
@@ -4718,7 +4720,7 @@ LKH^Long Akah^^MY^^^LKH^Long Akah^^A
 LKK^Kulik Lake^AK^US^5^^LKK^Kulik Lake^2821^A
 LKL^Lakselv^^NO^^^LKL^Banak^2822^A
 LKN^Leknes^^NO^^^LKN^Leknes^2824^A
-LKO^Lucknow^^IN^^^LKO^Chaudhary Charan Singh^2825^A
+LKO^Lucknow^UP^IN^^^LKO^Chaudhary Charan Singh^2825^A
 LKP^Lake Placid^NY^US^1^^LKP^Lake Placid^^A
 LKR^Las Khoreh^^SO^^^LKR^Las Khoreh^2826^A
 LKU^Lake Turkana^^KE^^^LKU^Lake Turkana^2828^A
@@ -4916,7 +4918,7 @@ LTS^Altus^OK^US^2^^LTS^AFB^^A
 LTS^Altus^OK^US^2^^LTS^Metropolitan Area^^C
 LTT^St-Tropez^^FR^^^LTT^La Mole^^A
 LTT^St-Tropez^^FR^^^XPZ^Harbour^^P
-LTU^Latur^^IN^^^LTU^Latur^^A
+LTU^Latur^MH^IN^^^LTU^Latur^^A
 LTV^Lotus Vale Station^QL^AU^2^B^LTV^Lotus Vale Station^2931^A
 LTW^Leonardtown^MD^US^1^^LTW^St Mary's County Rgnl^^A
 LTX^Latacunga^^EC^1^^LTX^Cotapaxi International^^A
@@ -4926,7 +4928,7 @@ LUC^Laucala Island^^FJ^^^LUC^Laucala Island^^A
 LUD^Luderitz^^NA^^^LUD^Luderitz^2935^A
 LUE^Lucenec^^SK^^^LUE^Lucenec^2936^A
 LUG^Lugano^^CH^^^LUG^Agno^2937^A
-LUH^Ludhiana^^IN^^^LUH^Ludhiana^^A
+LUH^Ludhiana^PB^IN^^^LUH^Ludhiana^^A
 LUI^La Union^^HN^^^LUI^La Union^2938^A
 LUL^Hattiesburg/Laurel^MS^US^2^^HBG^Bobby L. Chain Muni^^A
 LUL^Hattiesburg/Laurel^MS^US^2^^LUL^Hesler-Noble Field^^A
@@ -5011,7 +5013,7 @@ LZO^Luzhou^^CN^^^LZO^Lantian^^A
 LZR^Lizard Island^QL^AU^2^B^LZR^Lizard Island^2984^A
 LZU^Lawrenceville^GA^US^1^^LZU^Gwinnett County^^A
 LZY^Nyingchi/Linzhi^^CN^^^LZY^Mainling/Milin^^A
-MAA^Chennai^^IN^^^MAA^International^^A
+MAA^Chennai^TN^IN^^^MAA^International^^A
 MAB^Maraba^PA^BR^1^A^MAB^Joao Correa da Rocha^2986^A
 MAD^Madrid^^ES^1^^MAD^Adolfo Suarez-Barajas^2987^A
 MAD^Madrid^^ES^1^^MAD^Metropolitan Area^^C
@@ -5704,7 +5706,7 @@ MYM^Monkey Mountain^^GY^^^MYM^Monkey Mountain^3443^A
 MYN^Marib^^YE^^^MYN^Marib^3444^A
 MYO^Myroodah Station^WA^AU^4^^MYO^Myroodah Station^3445^A
 MYP^Mary^^TM^^^MYP^Mary^^A
-MYQ^Mysore^^IN^^^MYQ^Mandakalli^^A
+MYQ^Mysore^KA^IN^^^MYQ^Mandakalli^^A
 MYR^Myrtle Beach^SC^US^1^^CRE^Grand Strand^1048^A
 MYR^Myrtle Beach^SC^US^1^^MYR^International^3446^A
 MYR^Myrtle Beach^SC^US^1^^MYR^Metropolitan Area^^C
@@ -5735,7 +5737,7 @@ MZP^Motueka^^NZ^1^^MZP^Motueka^^A
 MZQ^Mkuze^^ZA^^^MZQ^Mkuze^^A
 MZR^Mazar-e Sharif^^AF^^^MZR^Mazar-e Sharif^3465^A
 MZT^Mazatlan^^MX^2^^MZT^Rafael Buelna Intl^3466^A
-MZU^Muzaffarpur^^IN^^^MZU^Muzaffarpur^3467^A
+MZU^Muzaffarpur^BR^IN^^^MZU^Muzaffarpur^3467^A
 MZV^Mulu^^MY^^^MZV^Mulu^^A
 MZW^Mecheria^^DZ^^^MZW^Mecheria^^A
 MZX^Mena^^ET^^^MZX^Mena^3468^A
@@ -5746,7 +5748,7 @@ NAC^Naracoorte^SA^AU^3^^NAC^Naracoorte^3472^A
 NAD^Macanal^^CO^^^NAD^Macanal^^A
 NAE^Natitingou^^BJ^^^NAE^Natitingou^^A
 NAF^Banaina^^ID^2^^NAF^Banaina^^A
-NAG^Nagpur^^IN^^^NAG^Dr.Ambedkar Intl^3473^A
+NAG^Nagpur^MH^IN^^^NAG^Dr.Ambedkar Intl^3473^A
 NAH^Tahuna^^ID^2^^NAH^Naha^3474^A
 NAI^Annai^^GY^^^NAI^Annai^3475^A
 NAJ^Nakchivan^^AZ^^^NAJ^Nakchivan^^A
@@ -5796,7 +5798,7 @@ NCU^Nukus^^UZ^^^NCU^Nukus^^A
 NCY^Annecy^^FR^^^NCY^Meythet^3495^A
 NDA^Banda Island^^ID^3^^NDA^Bandaneira^^A
 NDB^Nouadhibou^^MR^^^NDB^Nouadhibou^3496^A
-NDC^Nanded^^IN^^^NDC^Nanded^^A
+NDC^Nanded^MH^IN^^^NDC^Nanded^^A
 NDD^Sumbe^^AO^^^NDD^Sumbe^^A
 NDE^Mandera^^KE^^^NDE^Mandera^^A
 NDF^N'dalatando^^AO^^^NDF^N'dalatando^^A
@@ -5905,7 +5907,7 @@ NLS^Nicholson^WA^AU^4^^NLS^Nicholson^3536^A
 NLT^Xinyuan^^CN^^^NLT^Nalati^^A
 NLV^Mykolaiv^^UA^^^NLV^International^^A
 NMA^Namangan^^UZ^^^NMA^Namangan^^A
-NMB^Daman^^IN^^^NMB^Daman^^A
+NMB^Daman^DD^IN^^^NMB^Daman^^A
 NMC^Norman's Cay^^BS^^^NMC^Norman's Cay^3537^A
 NME^Nightmute^AK^US^5^^NME^Nightmute^3538^A
 NMG^San Miguel^^PA^^^NMG^San Miguel^^A
@@ -6045,7 +6047,7 @@ NVP^Novo Aripuana^AM^BR^2^A^NVP^Novo Aripuana^^A
 NVR^Novgorod^^RU^2^^NVR^Novgorod^^A
 NVS^Nevers^^FR^^^NVS^Fourchambault^3599^A
 NVT^Navegantes^SC^BR^1^^NVT^Victor Konder Intl^^A
-NVY^Neyveli^^IN^^^NVY^Neyveli^^A
+NVY^Neyveli^TN^IN^^^NVY^Neyveli^^A
 NWA^Moheli^^KM^^^NWA^Bandar es Salam^3600^A
 NWH^Newport^NH^US^1^^NWH^Parlin Field^3601^A
 NWI^Norwich^^GB^^^NWI^International^3602^A
@@ -6427,7 +6429,7 @@ OZR^Fort Rucker/Ozark^AL^US^2^^OZR^Metropolitan Area^^C
 OZU^Montilla^^ES^1^^OZU^Railway Station^^R
 OZZ^Ouarzazate^^MA^^^OZZ^Ouarzazate^3805^A
 PAA^Hpa-an^^MM^^^PAA^Hpa-an^3806^A
-PAB^Bilaspur^^IN^^^PAB^Bilaspur^^A
+PAB^Bilaspur^CT^IN^^^PAB^Bilaspur^^A
 PAD^Paderborn/Lippstadt^^DE^^^PAD^Paderborn/Lippstadt^3809^A
 PAE^Everett^WA^US^4^^PAE^Snohomish County^3810^A
 PAF^Pakuba^^UG^^^PAF^Pakuba^^A
@@ -6457,7 +6459,7 @@ PAR^Paris^^FR^^^XJY^Massy TGV Rail Station^^R
 PAR^Paris^^FR^^^XPG^Gare du Nord Rail Stn^^R
 PAR^Paris^^FR^^^XTT^Arc de Triomphe Bus St^^B
 PAS^Paros^^GR^^^PAS^Paros^^A
-PAT^Patna^^IN^^^PAT^Jayaprakash Narayan^3819^A
+PAT^Patna^BR^IN^^^PAT^Jayaprakash Narayan^3819^A
 PAU^Pauk^^MM^^^PAU^Pauk^3820^A
 PAV^Paulo Afonso^BA^BR^1^A^PAV^Paulo Afonso^3821^A
 PAW^Pambwa^^PG^1^^PAW^Pambwa^3822^A
@@ -6466,7 +6468,7 @@ PAY^Pamol^^MY^^^PAY^Pamol^3824^A
 PAZ^Poza Rica^^MX^1^^PAZ^El Tajin^3825^A
 PBB^Paranaiba^MS^BR^2^^PBB^Paranaiba^3827^A
 PBC^Puebla^^MX^1^^PBC^Hermanos Serdan Intl^^A
-PBD^Porbandar^^IN^^^PBD^Porbandar^3828^A
+PBD^Porbandar^GJ^IN^^^PBD^Porbandar^3828^A
 PBE^Puerto Berrio^^CO^^^PBE^Puerto Berrio^3829^A
 PBF^Pine Bluff^AR^US^2^^PBF^Grider Field^3830^A
 PBG^Plattsburgh^NY^US^1^^PBG^International^^A
@@ -6579,7 +6581,7 @@ PGC^Petersburg^WV^US^1^^PGC^Grant County^3889^A
 PGD^Punta Gorda^FL^US^1^^PGD^Punta Gorda^3890^A
 PGE^Yegepa^^PG^1^^PGE^Yegepa^^A
 PGF^Perpignan^^FR^^^PGF^Rivesaltes^3891^A
-PGH^Pantnagar^^IN^^^PGH^Pantnagar^3892^A
+PGH^Pantnagar^UT^IN^^^PGH^Pantnagar^3892^A
 PGI^Chitato^^AO^^^PGI^Chitato^3893^A
 PGK^Pangkalpinang^^ID^1^^PGK^Depati Amir^3894^A
 PGL^Pascagoula^MS^US^2^^PGL^Trent Lott Intl^^A
@@ -6743,7 +6745,7 @@ PNK^Pontianak^^ID^1^^PNK^Supadio^3991^A
 PNL^Pantelleria^^IT^^^PNL^Pantelleria^3992^A
 PNN^Princeton^ME^US^1^^PNN^Municipal^3993^A
 PNP^Popondetta^^PG^1^^PNP^Girua^3995^A
-PNQ^Pune^^IN^^^PNQ^Lohegaon^3996^A
+PNQ^Pune^MH^IN^^^PNQ^Lohegaon^3996^A
 PNR^Pointe-Noire^^CG^^^PNR^Pointe-Noire^3997^A
 PNS^Pensacola^FL^US^2^^NPA^NAS (F.Sherman Field)^^A
 PNS^Pensacola^FL^US^2^^NUN^Saufley Field NOLF^^A
@@ -6753,7 +6755,7 @@ PNT^Puerto Natales^^CL^3^^PNT^Teniente J. Gallardo^^A
 PNU^Panguitch^UT^US^3^^PNU^Municipal^^A
 PNV^Panevezys^^LT^^^PNV^Pajuostis^^A
 PNX^Sherman/Denison^TX^US^2^^PNX^North Texas Regional^4000^A
-PNY^Pondicherry^^IN^^^PNY^Pondicherry^^A
+PNY^Pondicherry^PY^IN^^^PNY^Pondicherry^^A
 PNZ^Petrolina^PE^BR^1^A^PNZ^Senador Nilo Coelho^4001^A
 POA^Porto Alegre^RS^BR^1^^POA^Salgado Filho Intl^4002^A
 POC^La Verne^CA^US^4^^POC^Brackett Field^4003^A
@@ -6911,7 +6913,7 @@ PUP^Po^^BF^^^PUP^Po^^A
 PUQ^Punta Arenas^^CL^3^^PUQ^C.Ibanez del Campo^4109^A
 PUR^Puerto Rico^^BO^^^PUR^Puerto Rico^4110^A
 PUS^Busan^^KR^^^PUS^Gimhae Intl^4111^A
-PUT^Puttaparthi^^IN^^^PUT^Sri Sathya Sai^^A
+PUT^Puttaparthi^AP^IN^^^PUT^Sri Sathya Sai^^A
 PUU^Puerto Asis^^CO^^^PUU^Tres de Mayo^4112^A
 PUV^Poum^^NC^^^PUV^Malabou^^A
 PUW^Pullman/Moscow ID^WA^US^4^^PUW^Regional^4113^A
@@ -6954,7 +6956,7 @@ PXR^Surin^^TH^^^PXR^Surin^^A
 PXS^Puerto de Santa Maria^^ES^1^^PXS^Railway Station^^R
 PXU^Pleiku^^VN^^^PXU^Pleiku^4139^A
 PYA^Puerto Boyaca^^CO^^^PYA^Velasquez^^A
-PYB^Jeypore^^IN^^^PYB^Jeypore^^A
+PYB^Jeypore^OR^IN^^^PYB^Jeypore^^A
 PYC^Playon Chico^^PA^^^PYC^Playon Chico^^A
 PYE^Penrhyn Atoll^^CK^^^PYE^Penrhyn Atoll^^A
 PYH^Puerto Ayacucho^^VE^^^PYH^Cacique Aramare^4141^A
@@ -7582,7 +7584,7 @@ RAF^Rafaela^SF^AR^^^RAF^Rafaela^^A
 RAG^Raglan^^NZ^1^^RAG^Raglan^^A
 RAH^Rafha^^SA^^^RAH^Rafha^4158^A
 RAI^Praia^^CV^^^RAI^International^^A
-RAJ^Rajkot^^IN^^^RAJ^Rajkot^4160^A
+RAJ^Rajkot^GJ^IN^^^RAJ^Rajkot^4160^A
 RAK^Marrakech^^MA^^^RAK^Menara^4161^A
 RAL^Riverside^CA^US^4^^JRD^Metro Center Heliport^^H
 RAL^Riverside^CA^US^4^^RAL^Metropolitan Area^^C
@@ -7651,7 +7653,7 @@ RDM^Redmond/Bend^OR^US^4^^RDM^Roberts Field^4196^A
 RDN^Redang Island^^MY^^^RDN^Redang Island^^A
 RDO^Radom^^PL^^^RDO^Radom^^A
 RDO^Radom^^PL^^^VRD^Bus Station^^B
-RDP^Durgapur^^IN^^^RDP^Kazi Nazrul Islam^^A
+RDP^Durgapur^WB^IN^^^RDP^Kazi Nazrul Islam^^A
 RDS^Rincon de los Sauces^NE^AR^^^RDS^Rincon de Los Sauces^^A
 RDT^Richard-Toll^^SN^^^RDT^Richard-Toll^4198^A
 RDU^Raleigh/Durham^NC^US^1^^RDU^International^^A
@@ -7677,7 +7679,7 @@ RES^Resistencia^CH^AR^^^RES^Resistencia^4209^A
 RET^Rost^^NO^^^RET^Rost^4210^A
 REU^Reus^^ES^1^^EER^Railway Station^^R
 REU^Reus^^ES^1^^REU^Reus^4211^A
-REW^Rewa^^IN^^^REW^Chorhata^^A
+REW^Rewa^MP^IN^^^REW^Chorhata^^A
 REX^Reynosa^^MX^1^A^REX^Lucio Blanco Intl^4212^A
 REY^Reyes^^BO^^^REY^Reyes^4213^A
 REZ^Resende^RJ^BR^1^^REZ^Resende^^A
@@ -7690,7 +7692,7 @@ RFR^Rio Frio^^CR^^^RFR^Rio Frio^4217^A
 RFS^Rosita^^NI^^^RFS^Rosita^^A
 RGA^Rio Grande^TF^AR^^^RGA^Hermes Quijada^4218^A
 RGE^Porgera^^PG^1^^RGE^Porgera^4219^A
-RGH^Balurghat^^IN^^^RGH^Balurghat^^A
+RGH^Balurghat^WB^IN^^^RGH^Balurghat^^A
 RGI^Rangiroa^^PF^2^^RGI^Rangiroa^4220^A
 RGK^Gorno-Altaysk^^RU^6^^RGK^Gorno-Altaysk^^A
 RGL^Rio Gallegos^SC^AR^^^RGL^Piloto N. Fernandez^4221^A
@@ -7734,10 +7736,10 @@ RIW^Riverton^WY^US^3^^RIW^Regional^4242^A
 RIX^Riga^^LV^^^RIX^International^4243^A
 RIY^Mukalla^^YE^^^RIY^Riyan^4244^A
 RIZ^Rizhao^^CN^^^RIZ^Shanzihe^^A
-RJA^Rajahmundry^^IN^^^RJA^Rajahmundry^^A
+RJA^Rajahmundry^AP^IN^^^RJA^Rajahmundry^^A
 RJB^Rajbiraj^^NP^^^RJB^Rajbiraj^4245^A
 RJH^Rajshahi^^BD^^^RJH^Shah Makhdum^4246^A
-RJI^Rajauri^^IN^^^RJI^Rajauri^^A
+RJI^Rajauri^JK^IN^^^RJI^Rajauri^^A
 RJK^Rijeka^^HR^^^RJK^Rijeka^4247^A
 RJL^Logrono^^ES^1^^LGV^Railway Station^^R
 RJL^Logrono^^ES^1^^LWG^Bus Station^^B
@@ -7766,7 +7768,7 @@ RLR^Isalo^^MG^^^RLR^Relais de la Reine^^A
 RLT^Arlit^^NE^^^RLT^Arlit^4259^A
 RMA^Roma^QL^AU^2^B^RMA^Roma^4261^A
 RMB^Buraimi^^OM^^^RMB^Buraimi^^A
-RMD^Ramagundam^^IN^^^RMD^Basantnagar^^A
+RMD^Ramagundam^TG^IN^^^RMD^Basantnagar^^A
 RME^Rome^NY^US^1^^RME^Griffiss Intl^^A
 RMF^Marsa  Alam^^EG^^^RMF^International^^A
 RMG^Rome^GA^US^1^^RMG^Richard B Russell Rgnl^4262^A
@@ -7833,7 +7835,7 @@ RPA^Rolpa^^NP^^^RPA^Rolpa^^A
 RPB^Roper Bar^NT^AU^3^A^RPB^Roper Bar^4295^A
 RPM^Ngukurr^NT^AU^3^A^RPM^Ngukurr^4296^A
 RPN^Rosh Pina^^IL^^^RPN^Ben Ya' akov^4297^A
-RPR^Raipur^^IN^^^RPR^Swami Vivekananda^4298^A
+RPR^Raipur^CT^IN^^^RPR^Swami Vivekananda^4298^A
 RPV^Roper Valley^NT^AU^3^A^RPV^Roper Valley^4299^A
 RPX^Roundup^MT^US^3^^RPX^Roundup^^A
 RQW^Qayyarah^^IQ^^^RQW^West^^A
@@ -7841,7 +7843,7 @@ RRA^Ronda^^ES^1^^RRA^Railway Station^^R
 RRE^Marree^SA^AU^3^^RRE^Marree^4300^A
 RRG^Rodrigues Island^^MU^^^RRG^Sir Gaetan Duval^4301^A
 RRI^Barora^^SB^^^RRI^Barora^^A
-RRK^Rourkela^^IN^^^RRK^Rourkela^4302^A
+RRK^Rourkela^OR^IN^^^RRK^Rourkela^4302^A
 RRL^Merrill^WI^US^2^^RRL^Municipal^^A
 RRM^Marromeu^^MZ^^^RRM^Marromeu^^A
 RRO^Sorrento^^IT^^^RRO^Harbour^^P
@@ -7863,7 +7865,7 @@ RSU^Yeosu/Suncheon^^KR^^^RSU^Yeosu/Suncheon^4315^A
 RSX^Rouses Point^NY^US^1^^RSX^Seaplane Base^^A
 RTA^Rotuma Island^^FJ^^^RTA^Rotuma Island^^A
 RTB^Roatan^^HN^^^RTB^Juan Manuel Galvez^4316^A
-RTC^Ratnagiri^^IN^^^RTC^Ratnagiri^^A
+RTC^Ratnagiri^MH^IN^^^RTC^Ratnagiri^^A
 RTD^Placida^FL^US^1^^RTD^Rotunda Heliport^^H
 RTG^Ruteng^^ID^2^^RTG^Frans Sales Lega^^A
 RTI^Roti^^ID^2^^RTI^David C. Saudale^4318^A
@@ -7886,7 +7888,7 @@ RUI^Ruidoso^NM^US^3^^RUI^Sierra Blanca Regional^4326^A
 RUK^Rukumkot^^NP^^^RUK^Chaurjahari^4327^A
 RUM^Rumjatar^^NP^^^RUM^Rumjatar^4328^A
 RUN^St-Denis^^RE^^^RUN^Roland Garros^4329^A
-RUP^Rupsi^^IN^^^RUP^Rupsi^4330^A
+RUP^Rupsi^AS^IN^^^RUP^Rupsi^4330^A
 RUR^Rurutu^^PF^2^^RUR^Rurutu^4331^A
 RUS^Marau^^SB^^^RUS^Marau^4332^A
 RUT^Rutland^VT^US^1^^RUT^Rutland^4333^A
@@ -8145,7 +8147,7 @@ SHH^Shishmaref^AK^US^5^^SHH^Shishmaref^4484^A
 SHI^Shimojishima^^JP^^^SHI^Shimojishima^4485^A
 SHJ^Sharjah^^AE^^^SHJ^Sharjah^4486^A
 SHK^Sehonghong^^LS^^^SHK^Sehonghong^4487^A
-SHL^Shillong^^IN^^^SHL^Barapani^^A
+SHL^Shillong^ML^IN^^^SHL^Barapani^^A
 SHM^Shirahama^^JP^^^SHM^Nanki-Shirahama^4488^A
 SHN^Shelton^WA^US^4^^SHN^Sanderson Field^4489^A
 SHQ^Southport^QL^AU^2^B^SHQ^Southport^^A
@@ -8277,7 +8279,7 @@ SLT^Salida^CO^US^3^^SLT^Harriet Alexander Fld^4570^A
 SLU^St Lucia^^LC^^^SLU^George F.L. Charles^4571^A
 SLU^St Lucia^^LC^^^SLU^Metropolitan Area^^C
 SLU^St Lucia^^LC^^^UVF^Hewanorra Intl^5232^A
-SLV^Shimla^^IN^^^SLV^Shimla^^A
+SLV^Shimla^HP^IN^^^SLV^Shimla^^A
 SLW^Saltillo^^MX^1^^SLW^Plan de Guadalupe Intl^4573^A
 SLX^Salt Cay^^TC^^^SLX^Salt Cay^4574^A
 SLY^Salekhard^^RU^4^^SLY^Salekhard^^A
@@ -8441,7 +8443,7 @@ SSC^Sumter^SC^US^1^^SSC^Metropolitan Area^^C
 SSC^Sumter^SC^US^1^^SSC^Shaw AFB^^A
 SSC^Sumter^SC^US^1^^SUM^Sumter Apt^4731^A
 SSD^San Felipe^^CO^^^SSD^San Felipe^^A
-SSE^Solapur^^IN^^^SSE^Solapur^^A
+SSE^Solapur^MH^IN^^^SSE^Solapur^^A
 SSG^Malabo^^GQ^^^SSG^International^4686^A
 SSH^Sharm el-Sheikh^^EG^^^SSH^International^4687^A
 SSI^Brunswick^GA^US^1^^BQK^Golden Isles^0642^A
@@ -8494,7 +8496,7 @@ STS^Santa Rosa^CA^US^4^^STS^Charles M. Schulz^4715^A
 STT^St Thomas Island^^VI^^^SPB^Charlotte Amalie SPB^4641^A
 STT^St Thomas Island^^VI^^^STT^Cyril E. King^4716^A
 STT^St Thomas Island^^VI^^^STT^Metropolitan Area^^C
-STV^Surat^^IN^^^STV^Surat^5887^A
+STV^Surat^GJ^IN^^^STV^Surat^5887^A
 STW^Stavropol^^RU^2^^STW^Shpakovskoye^4718^A
 STX^St Croix Island^^VI^^^SSB^Christiansted SPB^4685^A
 STX^St Croix Island^^VI^^^STX^Henry E. Rohlsen^4719^A
@@ -8597,11 +8599,11 @@ SXN^Sua Pan^^BW^^^SXN^Sua Pan^^A
 SXO^Sao Felix do Araguaia^MT^BR^2^^SXO^Sao Felix do Araguaia^^A
 SXP^Nunam Iqua^AK^US^5^^SXP^Sheldon Point^4779^A
 SXQ^Soldotna^AK^US^5^^SXQ^Soldotna^4780^A
-SXR^Srinagar^^IN^^^SXR^Sheikh ul Alam^4781^A
+SXR^Srinagar^JK^IN^^^SXR^Sheikh ul Alam^4781^A
 SXS^Sahabat^^MY^^^SXS^Sahabat^^A
 SXT^Taman Negara^^MY^^^SXT^Sungai Tiang^5297^A
 SXU^Sodo^^ET^^^SXU^Sodo^4782^A
-SXV^Salem^^IN^^^SXV^Salem^^A
+SXV^Salem^TN^IN^^^SXV^Salem^^A
 SXW^Sauren^^PG^1^^SXW^Sauren^^A
 SXX^Sao Felix do Xingu^PA^BR^1^A^SXX^Sao Felix do Xingu^^A
 SXY^Sidney^NY^US^1^^SXY^Municipal^4783^A
@@ -8730,7 +8732,7 @@ TCN^Tehuacan^^MX^1^^TCN^Tehuacan^4848^A
 TCO^Tumaco^^CO^^^TCO^La Florida^4849^A
 TCP^Taba^^EG^^^TCP^International^^A
 TCQ^Tacna^^PE^^^TCQ^C.Ciriani Santa Rosa^4850^A
-TCR^Tuticorin^^IN^^^TCR^Tuticorin^^A
+TCR^Tuticorin^TN^IN^^^TCR^Tuticorin^^A
 TCS^Truth or Consequences^NM^US^3^^TCS^Municipal^^A
 TCT^Takotna^AK^US^5^^TCT^Takotna^4851^A
 TCU^Thaba Nchu^^ZA^^^TCU^Thaba Nchu^^A
@@ -8761,7 +8763,7 @@ TEE^Tebessa^^DZ^^^TEE^Tbessa^4866^A
 TEF^Telfer^WA^AU^4^^TEF^Telfer^4867^A
 TEG^Tenkodogo^^BF^^^TEG^Tenkodogo^^A
 TEH^Tetlin^AK^US^5^^TEH^Tetlin^^A
-TEI^Tezu^^IN^^^TEI^Tezu^^A
+TEI^Tezu^AR^IN^^^TEI^Tezu^^A
 TEK^Tatitlek^AK^US^5^^TEK^Tatitlek^4868^A
 TEL^Telupid^^MY^^^TEL^Telupid^4869^A
 TEM^Temora^NS^AU^2^^TEM^Temora^4870^A
@@ -8778,7 +8780,7 @@ TEV^Teruel^^ES^1^^TEV^Airport^^A
 TEX^Telluride^CO^US^3^^TEX^Regional^^A
 TEX^Telluride^CO^US^3^^ZTL^Bus Station^^B
 TEY^Thingeyri^^IS^^^TEY^Selardalur^4877^A
-TEZ^Tezpur^^IN^^^TEZ^Tezpur^4878^A
+TEZ^Tezpur^AS^IN^^^TEZ^Tezpur^4878^A
 TFB^Tifalmin^^PG^1^^TFB^Tifalmin^^A
 TFC^Taormina^^IT^^^TFC^Harbour^^P
 TFF^Tefe^AM^BR^2^A^TFF^Tefe^4879^A
@@ -8852,7 +8854,7 @@ TIO^Tilin^^MM^^^TIO^Tilin^^A
 TIP^Tripoli^^LY^^^MJI^Mitiga^^A
 TIP^Tripoli^^LY^^^TIP^International^4923^A
 TIQ^Tinian^^MP^^^TIQ^International^^A
-TIR^Tirupati^^IN^^^TIR^Tirupati^4925^A
+TIR^Tirupati^AP^IN^^^TIR^Tirupati^4925^A
 TIS^Thursday Island^QL^AU^2^B^TIS^Heliport^4926^H
 TIU^Timaru^^NZ^1^^TIU^Richard Pearse^4927^A
 TIV^Tivat^^ME^^^TIV^Tivat^4928^A
@@ -8876,7 +8878,7 @@ TJN^Takume^^PF^2^^TJN^Takume^^A
 TJQ^Tanjung Pandan^^ID^1^^TJQ^H.A.S. Hanandjoeddin^^A
 TJS^Tanjung Selor^^ID^2^^TJS^Tanjung Harapan^^A
 TJU^Kulob^^TJ^^^TJU^Kulob^^A
-TJV^Thanjavur^^IN^^^TJV^Thanjavur^^A
+TJV^Thanjavur^TN^IN^^^TJV^Thanjavur^^A
 TKA^Talkeetna^AK^US^5^^TKA^Talkeetna^4935^A
 TKB^Tekadu^^PG^1^^TKB^Tekadu^^A
 TKC^Tiko^^CM^^^TKC^Tiko^4936^A
@@ -8966,7 +8968,7 @@ TNE^Tanegashima^^JP^^^TNE^Tanegashima^4988^A
 TNF^Toussus-le-Noble^^FR^^^TNF^Toussus-le-Noble^^A
 TNG^Tangier^^MA^^^TNG^Ibn Batouta^4989^A
 TNH^Tonghua^^CN^^^TNH^Sanyuanpu^^A
-TNI^Satna^^IN^^^TNI^Satna^^A
+TNI^Satna^MP^IN^^^TNI^Satna^^A
 TNJ^Tanjung Pinang^^ID^1^^TNJ^Raja Haji Fisabilillah^4990^A
 TNK^Tununak^AK^US^5^^TNK^Tununak^4991^A
 TNL^Ternopil^^UA^^^TNL^International^^A
@@ -9075,11 +9077,11 @@ TRR^Trincomalee^^LK^^^TRR^China Bay^5041^A
 TRS^Trieste^^IT^^^TRS^Ronchi dei Legionari^5042^A
 TRS^Trieste^^IT^^^TXB^Railway Station^^R
 TRU^Trujillo^^PE^^^TRU^C.Martinez de Pinillos^5044^A
-TRV^Thiruvananthapuram^^IN^^^TRV^International^^A
+TRV^Thiruvananthapuram^KL^IN^^^TRV^International^^A
 TRW^Tarawa^^KI^1^^TRW^Bonriki Intl^5046^A
 TRX^Trenton^MO^US^2^^TRX^Municipal^^A
 TRY^Tororo^^UG^^^TRY^Tororo^^A
-TRZ^Tiruchchirappalli^^IN^^^TRZ^Tiruchchirappalli^5048^A
+TRZ^Tiruchchirappalli^TN^IN^^^TRZ^Tiruchchirappalli^5048^A
 TSB^Tsumeb^^NA^^^TSB^Tsumeb^5050^A
 TSC^Taisha^^EC^1^^TSC^Taisha^5051^A
 TSD^Tshipise^^ZA^^^TSD^Tshipise^^A
@@ -9245,7 +9247,7 @@ UDE^Uden^^NL^^^UDE^Volkel AB^^A
 UDI^Uberlandia^MG^BR^1^^UDI^Cesar Bombonato^5148^A
 UDJ^Uzhhorod^^UA^^^UDJ^International^^A
 UDN^Udine^^IT^^^UDN^Campoformido^5149^A
-UDR^Udaipur^^IN^^^UDR^Maharana Pratap^5150^A
+UDR^Udaipur^RJ^IN^^^UDR^Maharana Pratap^5150^A
 UEE^Queenstown^TS^AU^2^A^UEE^Queenstown^5151^A
 UEL^Quelimane^^MZ^^^UEL^Quelimane^5152^A
 UEN^Urengoy^^RU^4^^UEN^Urengoy^^A
@@ -9468,7 +9470,7 @@ VDM^Viedma^RN^AR^^^VDM^Gobernador E. Castello^5264^A
 VDP^Valle de La Pascua^^VE^^^VDP^Valle de La Pascua^5265^A
 VDR^Villa Dolores^CD^AR^^^VDR^Villa Dolores^5266^A
 VDS^Vadso^^NO^^^VDS^Vadso^5267^A
-VDY^Vidyanagar^^IN^^^VDY^Jindal^^A
+VDY^Vidyanagar^KA^IN^^^VDY^Jindal^^A
 VDZ^Valdez^AK^US^5^^VDZ^Pioneer Field^5268^A
 VEE^Venetie^AK^US^5^^VEE^Venetie^5269^A
 VEG^Maikwak^^GY^^^VEG^Maikwak^5270^A
@@ -9478,7 +9480,7 @@ VEV^Barakoma^^SB^^^VEV^Barakoma^5273^A
 VEX^Tioga^ND^US^2^^VEX^Municipal^^A
 VEY^Vestmannaeyjar^^IS^^^VEY^Vestmannaeyjar^5274^A
 VFA^Victoria Falls^^ZW^^^VFA^International^5275^A
-VGA^Vijayawada^^IN^^^VGA^Vijayawada^5276^A
+VGA^Vijayawada^AP^IN^^^VGA^Vijayawada^5276^A
 VGD^Vologda^^RU^2^^VGD^Vologda^^A
 VGO^Vigo^^ES^1^^VBT^Bus Station^^B
 VGO^Vigo^^ES^1^^VGO^Airport^5278^A
@@ -9551,7 +9553,7 @@ VNE^Vannes^^FR^^^VNE^Meucon^5314^A
 VNL^Vinales^^CU^^^VNL^Bus Station^^B
 VNO^Vilnius^^LT^^^VNO^International^5315^A
 VNR^Vanrook Station^QL^AU^2^B^VNR^Vanrook Station^5316^A
-VNS^Varanasi^^IN^^^VNS^Lal Bahadur Shastri^5317^A
+VNS^Varanasi^UP^IN^^^VNS^Lal Bahadur Shastri^5317^A
 VNT^Ventspils^^LV^^^VNT^Ventspils^^A
 VNX^Vilankulos^^MZ^^^VNX^Vilankulos^5318^A
 VOG^Volgograd^^RU^2^^VOG^Gumrak^5320^A
@@ -9598,7 +9600,7 @@ VTL^Vittel^^FR^^^VTL^Champ de Courses^^A
 VTM^Nevatim^^IL^^^VTM^AFB^^A
 VTN^Valentine^NE^US^2^^VTN^Miller Field^5347^A
 VTU^Las Tunas^^CU^^^VTU^Hermanos Ameijeiras^5348^A
-VTZ^Vishakhapatnam^^IN^^^VTZ^Vishakhapatnam^5349^A
+VTZ^Vishakhapatnam^AP^IN^^^VTZ^Vishakhapatnam^5349^A
 VUP^Valledupar^^CO^^^VUP^Alfonso Lopez Pumarejo^5350^A
 VUS^Veliky Ustyug^^RU^2^^VUS^Veliky Ustyug^^A
 VUU^Liwonde^^MW^^^VUU^Mvuu Camp^^A
@@ -9693,7 +9695,7 @@ WFD^Woodford^^GB^^^WFD^Woodford^^A
 WFI^Fianarantsoa^^MG^^^WFI^Fianarantsoa^5399^A
 WFK^Frenchville^ME^US^1^^WFK^Northern Aroostook Rgl^^A
 WGA^Wagga Wagga^NS^AU^2^^WGA^Wagga Wagga^5401^A
-WGC^Warangal^^IN^^^WGC^Warangal^^A
+WGC^Warangal^TG^IN^^^WGC^Warangal^^A
 WGE^Walgett^NS^AU^2^^WGE^Walgett^5402^A
 WGF^Manama^^BH^^^WGF^Off-line Point^^O
 WGN^Shaoyang^^CN^^^SYG^Railway Station^^R
@@ -10971,7 +10973,7 @@ ZEM^Eastmain^QC^CA^3^^ZEM^Eastmain River^5821^A
 ZEN^Zenag^^PG^1^^ZEN^Zenag^^A
 ZEO^Savi Ragha^^PK^^^ZEO^Off-line Point^^O
 ZEQ^Dewsbury^^GB^^^ZEQ^Bus Station^^B
-ZER^Ziro^^IN^^^ZER^Ziro^^A
+ZER^Ziro^AR^IN^^^ZER^Ziro^^A
 ZES^Goeppingen^^DE^^^ZES^Off-line Point^^O
 ZET^Goslar^^DE^^^ZET^Off-line Point^^O
 ZEU^Goettingen^^DE^^^ZEU^Railway Station^^R
