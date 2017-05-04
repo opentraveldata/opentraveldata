@@ -29,11 +29,12 @@ BEGIN {
 	awk_file = "extract_states.awk"
 
     # List of selected countries
-	ctry_list["US"] = 1
-	ctry_list["CA"] = 1
-	ctry_list["BR"] = 1
 	ctry_list["AR"] = 1
 	ctry_list["AU"] = 1
+	ctry_list["BR"] = 1
+	ctry_list["CA"] = 1
+	ctry_list["IN"] = 1
+	ctry_list["US"] = 1
 
 	# Header
 	hdr_line = "ctry_code^geo_id^adm1_code^adm1_name^abbr"
