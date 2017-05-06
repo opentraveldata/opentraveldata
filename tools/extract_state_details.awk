@@ -4,7 +4,29 @@
 # It uses the following data sources:
 #  * OPTD-maintained lists of:
 #    * POR:             optd_por_public.csv
-#    * Country states:  optd_country_states.csv (that file will be modified)
+#    * Country states:  optd_country_states.csv (that file has then to be modified)
+#
+# The state codes are referenced by the ISO 3166 standard
+# (http://en.wikipedia.org/wiki/ISO_3166-2):
+# * United States:
+#  * http://en.wikipedia.org/wiki/ISO_3166-2:US
+#  * http://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States
+#  * http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations
+# * Argentina:
+#  * http://en.wikipedia.org/wiki/ISO_3166-2:AR
+#  * http://en.wikipedia.org/wiki/Provinces_of_Argentina
+# * Australia:
+#  * http://en.wikipedia.org/wiki/ISO_3166-2:AU
+#  * http://en.wikipedia.org/wiki/States_and_territories_of_Australia
+# * Brazil:
+#  * http://en.wikipedia.org/wiki/ISO_3166-2:BR
+#  * http://en.wikipedia.org/wiki/States_of_Brazil
+# * Canada:
+#  * http://en.wikipedia.org/wiki/ISO_3166-2:CA
+#  * http://en.wikipedia.org/wiki/Provinces_and_territories_of_Canada
+# * India:
+#  * http://en.wikipedia.org/wiki/ISO_3166-2:IN
+#  * http://en.wikipedia.org/wiki/States_and_union_territories_of_India
 #
 # Sample output lines:
 # AR^3430657^14^Misiones Province^MN
