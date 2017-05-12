@@ -156,7 +156,7 @@ air-eznis-airways-v1^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^^
 air-farnair-switzerland-v1^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^http://en.wikipedia.org/wiki/Farnair_Switzerland^en|Farnair Switzerland|^^air-farnair-switzerland^1^
 air-finncomm-airlines-v1^1^1993-01-01^2011-12-31^FCM^FC^216^Finncomm Airlines^^^^^http://en.wikipedia.org/wiki/Finncomm_Airlines^en|Finncomm Airlines|^^air-finncomm-airlines^1^
 air-florida-coastal-airlines-v1^1^1995-01-01^2014-06-06^FCL^PA^0^Florida Coastal Airlines^^^^P^http://en.wikipedia.org/wiki/Florida_Coastal_Airlines^en|Florida Coastal Airlines|^^air-florida-coastal-airlines^1^
-air-fly540-angola-v1^1^2011-01-01^2014-05-31^^FS^0^Fly540 Angola^^^^^http://en.wikipedia.org/wiki/Fly540_Angola^en|Fly540 Angola|^LAD^air-fly540-angola^1^
+air-fly540-angola-v1^1^2011-01-01^2014-05-31^^F5^0^Fly540 Angola^^^^^http://en.wikipedia.org/wiki/Fly540_Angola^en|Fly540 Angola|^LAD^air-fly540-angola^1^
 air-fly540-ghana-v1^1^2011-11-01^2014-05-31^FOX^5G^0^Fly540 Ghana^^^^^http://en.wikipedia.org/wiki/Royal_Fly-GH^en|Fly540 Ghana|h=en|Royal_Fly-GH|=en|Fly-GH|s^ACC^air-fly540-ghana^1^
 air-flycongo-v1^1^2012-03-24^2013-10-31^ALX^EO^663^FlyCongo^^^^^http://en.wikipedia.org/wiki/FlyCongo^en|FlyCongo|^FIH^air-flycongo^1^
 air-fly-excellent-v1^1^2007-01-01^2008-12-31^FXL^F3^0^Fly Excellent^^^^^^en|Fly Excellent|^ARN^air-fly-excellent^1^
@@ -197,6 +197,7 @@ air-island-airlines-v1^1^1930-01-01^2015-12-11^ISA^IS^0^Island Airlines^^^^^http
 air-islas-airways-v1^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^http://en.wikipedia.org/wiki/Islas_Airways^en|Islas Airways|^^air-islas-airways^1^
 air-isles-of-scilly-skybus-v1^1^1984-03-01^2015-12-31^IOS^5Y^^Isles of Scilly Skybus^^^^^http://en.wikipedia.org/wiki/Isles_of_Scilly_Skybus^en|Isles of Scilly Skybus|=sign|SCILLONIA|^PZE^air-isles-of-scilly-skybus^1^
 air-jal-express-v1^1^1998-07-01^2014-09-30^JEX^JC^0^JAL Express^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^en|JAL Express|^HND^air-jal-express^1^
+air-jat-airways-v1^1^2003-08-08^2013-10-25^JAT^JU^0^JAT Airways^^^^^http://de.wikipedia.org/w/index.php?title=JAT_Airways&redirect=no^en|JAT Airways|^^air-jat-airways^1^
 air-jatayu-gelang-sejahtera-v1^1^2014-01-25^2016-12-31^JTY^JZ^0^Jatayu Airlines^^^^^http://en.wikipedia.org/wiki/Jatayu_Airlines^en|Jatayu Airlines|=en|Jatayu Gelang Sejahtera|^^air-jatayu-gelang-sejahtera^1^
 air-karthago-airlines-v1^1^2002-01-01^2010-12-31^KAJ^5R^0^Karthago Airlines^^^^^http://en.wikipedia.org/wiki/Nouvelair^en|Nouvelair|p=en|Karthago Airlines|h^DJE^air-karthago-airlines^1^
 air-kartika-airlines-v1^1^2001-05-15^2010-12-31^KAE^3Y^0^Kartika Airlines^^^^^http://en.wikipedia.org/wiki/Kartika_Airlines^en|Kartika Airlines|^HLP^air-kartika-airlines^1^
@@ -301,6 +302,7 @@ air-sun-air-express-v1^1^2012-01-01^2016-03-07^FDY^6G^504^Sun Air Express^^^^^ht
 air-sunny-airways-v1^1^2011-08-16^2012-12-31^SUW^2S^0^Sunny Airways^^^^^http://en.wikipedia.org/wiki/Sunny_Airways^en|Sunny Airways|^BKK^air-sunny-airways^1^
 air-svenska-direktflyg-v1^1^2000-10-01^2015-12-31^HSV^HS^198^Direktflyg^^^^^http://en.wikipedia.org/wiki/Direktflyg^en|Direktflyg|p=en|Svenska Direktflyg AB|=en|Sundsvall Aero|h^^air-svenska-direktflyg^1^
 air-swe-fly-v1^1^1994-01-01^2005-09-30^SWV^WV^857^Swe Fly^^^^^http://en.wikipedia.org/wiki/Swe_Fly^en|Swe Fly|^^air-swe-fly^1^
+air-syphax-airlines-sa-v1^^2012-04-29^2015-10-30^SYA^FS^393^Syphax Airlines^^^^^http://en.wikipedia.org/wiki/Syphax_Airlines^en|Syphax Airlines|^^air-syphax-airlines-sa^1^
 air-taba-amazonica-v1^1^1976-01-01^2002-12-31^TAB^T2^0^TABA – Transportes Aéreos da Bacia Amazônica^^^^^http://en.wikipedia.org/wiki/TABA_%E2%80%93_Transportes_A%C3%A9reos_da_Bacia_Amaz%C3%B4nica^en|TABA – Transportes Aéreos da Bacia Amazônica|=abbr|TABA|^BEL^air-taba-amazonica^1^
 air-tavrey-airlines-v1^1^1995-01-01^2008-12-31^TVR^T6^0^Tavrey Airlines^Tavrey Aircompany^^^^http://en.wikipedia.org/wiki/Tavrey_Airlines^en|Tavrey Airlines|=en|Tavrey Aircompany|^^air-tavrey-airlines^1^
 air-tibet-airlines-v1^1^2010-03-01^2013-12-31^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^1^
