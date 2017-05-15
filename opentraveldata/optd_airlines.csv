@@ -589,8 +589,7 @@ air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^http:
 air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^http://www.fly-kiss.com^208^en|Fly Kiss|^BES=CFE^air-fly-kiss^1^^
 air-fly-one-moldova-v1^^2013-01-01^^FIA^5F^130^Fly One^^^^^http://en.wikipedia.org/wiki/Fly_One_S.R.L.^244^en|Fly One|^KIV^air-fly-one-moldova^1^^
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^http://en.wikipedia.org/wiki/Fly_Salone^1^en|Fly Salone|^^air-fly-salone^1^^
-air-fly540-angola-v1^1^2011-01-01^2014-05-31^^FS^0^Fly540 Angola^^^^^http://en.wikipedia.org/wiki/Fly540_Angola^^en|Fly540 Angola|^LAD^air-fly540-angola^1^^
-air-fly540-cosmic-air-v1^^^^^F5^548^Fly 540^Cosmic Air^^^^^^en|Fly 540|=en|Cosmic Air|^^air-fly540-cosmic-air^1^^
+air-fly540-angola-v1^1^2011-01-01^2014-05-31^^F5^0^Fly540 Angola^^^^^http://en.wikipedia.org/wiki/Fly540_Angola^^en|Fly540 Angola|^LAD^air-fly540-angola^1^^
 air-fly540-ghana-v1^1^2011-11-01^2014-05-31^FOX^5G^0^Fly540 Ghana^^^^^http://en.wikipedia.org/wiki/Royal_Fly-GH^^en|Fly540 Ghana|h=en|Royal_Fly-GH|=en|Fly-GH|s^ACC^air-fly540-ghana^1^^
 air-fly540-tanzania-v1^^2011-01-01^^FTZ^FN^334^Fastjet^^^^^http://en.wikipedia.org/wiki/Fastjet_Tanzania^863^en|Fastjet|p=en|Fastjet Tanzania|h=en|Fastjet Airlines Limited|=en|Fly540 Tanzania|h^DAR^air-fly540-tanzania^1^^
 air-fly540-v1^^2006-01-01^^FFV^5H^540^Five Fourty Aviation^^^^^http://en.wikipedia.org/wiki/Fly540^1203^en|Five Fourty Aviation|=en|Fly540|ps^NBO^air-fly540^1^^
@@ -736,6 +735,7 @@ air-jambojet-v1^^2014-04-01^^KQA^JM^702^Jambojet^^^^^http://en.wikipedia.org/wik
 air-japan-air-commuter-v1^^1983-07-01^^JAC^JC^0^Japan Air Commuter^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Japan_Air_Commuter^3090^en|Japan Air Commuter|^KOJ^air-japan-air-commuter^1^^
 air-japan-airlines-v1^^1951-10-25^^JAL^JL^131^Japan Airlines^JAL^OneWorld^Member^^http://en.wikipedia.org/wiki/Japan_Airlines^23964^en|Japan Airlines|=en|JAL|^^air-japan-airlines^1^^
 air-japan-transocean-air-v1^^^^JTA^NU^353^Japan Transocean Air^Japan Transoc^OneWorld^Affiliate^^^2206^en|Japan Transocean Air|=en|Japan Transoc|^^air-japan-transocean-air^1^^
+air-jat-airways-v1^1^2003-08-08^2013-10-25^JAT^JU^0^JAT Airways^^^^^http://de.wikipedia.org/w/index.php?title=JAT_Airways&redirect=no^^en|JAT Airways|^^air-jat-airways^1^^
 air-jatayu-gelang-sejahtera-v1^1^2014-01-25^2016-12-31^JTY^JZ^0^Jatayu Airlines^^^^^http://en.wikipedia.org/wiki/Jatayu_Airlines^^en|Jatayu Airlines|=en|Jatayu Gelang Sejahtera|^^air-jatayu-gelang-sejahtera^1^^
 air-jazeera-airways-v1^^^^^J9^486^Jazeera Airways^^^^^^960^en|Jazeera Airways|^^air-jazeera-airways^1^^
 air-jazz-aviation-v1^^^^JZA^QK^983^Jazz Aviation^Jazz Air^^^^^^en|Jazz Aviation|=en|Jazz Air|^^air-jazz-aviation^1^^
@@ -1209,7 +1209,7 @@ air-swiftair-v1^^1986-01-01^^SWT^WT^221^Swiftair^^^^^http://en.wikipedia.org/wik
 air-swiss-airlines-v1^^2002-01-01^^SWR^LX^724^Swiss International Air Lines^Swiss^Star Alliance^Member^^http://en.wikipedia.org/wiki/Swiss_International_Air_Lines^12667^en|Swiss International Air Lines|=en|Swiss|^^air-swiss-airlines^1^^
 air-swiss-global-air-lines-v1^^2005-01-01^^SWU^LZ^0^Swiss Global Air Lines^^^^^http://en.wikipedia.org/wiki/Swiss_Global_Air_Lines^^en|Swiss Global Air Lines|^ZRH^air-swiss-global-air-lines^1^^
 air-sylt-air-v1^^^^AWU^7E^0^Sylt Air^^^^^^94^en|Sylt Air|^^air-sylt-air^1^^
-air-syphax-airlines-sa-v1^^2012-04-29^^SYA^FS^393^Syphax Airlines^^^^^http://en.wikipedia.org/wiki/Syphax_Airlines^^en|Syphax Airlines|^^air-syphax-airlines-sa^1^^
+air-syphax-airlines-sa-v1^^2012-04-29^2015-10-30^SYA^FS^393^Syphax Airlines^^^^^http://en.wikipedia.org/wiki/Syphax_Airlines^^en|Syphax Airlines|^^air-syphax-airlines-sa^1^^
 air-syrian-arab-airlines-v1^^^^SYR^RB^70^Syrian Arab Airlines^^^^^^144^en|Syrian Arab Airlines|^^air-syrian-arab-airlines^1^^
 air-taag-v1^^^^DTA^DT^118^Taag^^^^^^1166^en|Taag|^^air-taag^1^^
 air-taba-amazonica-v1^1^1976-01-01^2002-12-31^TAB^T2^0^TABA – Transportes Aéreos da Bacia Amazônica^^^^^http://en.wikipedia.org/wiki/TABA_%E2%80%93_Transportes_A%C3%A9reos_da_Bacia_Amaz%C3%B4nica^^en|TABA – Transportes Aéreos da Bacia Amazônica|=abbr|TABA|^BEL^air-taba-amazonica^1^^
