@@ -496,7 +496,7 @@ air-dynamic-air-v1^^2010-10-01^^DYA^2D^54^Dynamic Airways^^^^T^http://en.wikiped
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^^en|E Savtravel|^^air-e-savtravel^1^^
 air-eagle-air-v1^^^^EGU^H7^0^Eagle Air^^^^^^93^en|Eagle Air|^^air-eagle-air^1^^
 air-eagle-atlantic-airlines-v1^1^2013-10-31^2014-12-31^EAB^E2^0^Eagle Atlantic Airlines^^^^P^http://en.wikipedia.org/wiki/Eagle_Atlantic_Airlines^^en|Eagle Atlantic Airlines|^ACC^air-eagle-atlantic-airlines^1^^
-air-east-african-safari-air-v1^^1989-01-01^^EXZ^B5^305^Fly-SAX^^^^^https://en.wikipedia.org/wiki/Fly-SAX^660^en|Fly-SAX|=en|East African Safari Air|h=en|East African Safari Air Express|h=en|Safari Air|h^NBO=WIL^air-east-african-safari-air^1^^
+air-east-african-safari-air-v1^^1989-01-01^^EXZ^B5^305^Fly-SAX^^^^^http://en.wikipedia.org/wiki/Fly-SAX^660^en|Fly-SAX|=en|East African Safari Air|h=en|East African Safari Air Express|h=en|Safari Air|h^NBO=WIL^air-east-african-safari-air^1^^
 air-east-air-v1^^^^ETJ^EG^447^East Air^Japan Asia^^^^^^en|East Air|=en|Japan Asia|^^air-east-air^1^^
 air-east-coast-flight-services-v1^^1991-01-01^^JTM^5E^0^East Coast Flight Services^^^^^^^en|East Coast Flight Services|^ESN^air-east-coast-flight-services^1^^
 air-east-horizon-airlines-v1^1^2013-12-01^2014-12-31^EHN^EA^0^East Horizon Airlines^^^^^http://en.wikipedia.org/wiki/East_Horizon_Airlines^^en|East Horizon Airlines|^HEA=KBL^air-east-horizon-airlines^1^^
@@ -763,7 +763,7 @@ air-job-air-v1^^^^JBR^3B^0^Job Air^^^^^^^en|Job Air|^^air-job-air^1^^
 air-jordan-aviation-v1^^2000-10-01^^JAV^R5^151^Jordan Aviation^^^^^http://en.wikipedia.org/wiki/Jordan_Aviation^108^en|Jordan Aviation|^AMM^air-jordan-aviation^1^^
 air-joy-air-v1^^2009-06-01^^JOY^JR^929^Joy Air^^^^^http://en.wikipedia.org/wiki/Joy_Air^2326^en|Joy Air|=sign|JOY AIR|=zh|幸福航空|^^air-joy-air^1^^
 air-jubba-airways-kenya-v1^^1954-01-01^^JBW^3J^535^Jubba Airways Kenya^^^^^http://en.wikipedia.org/wiki/Jubba_Airways^158^en|Jubba Airways Kenya|^HGA=MGQ^air-jubba-airways-kenya^1^^
-air-juneyao-airlines-v1^^^^DKH^HO^18^Juneyao Airlines^^Star Alliance^Affiliate^P^https://en.wikipedia.org/wiki/Juneyao_Airlines^8570^en|Juneyao Airlines|=zh|吉祥航空|^^air-juneyao-airlines^1^^
+air-juneyao-airlines-v1^^^^DKH^HO^18^Juneyao Airlines^^Star Alliance^Affiliate^P^http://en.wikipedia.org/wiki/Juneyao_Airlines^8570^en|Juneyao Airlines|=zh|吉祥航空|^^air-juneyao-airlines^1^^
 air-kal-star-aviation-v1^^^^KNI^KD^0^Kal Star Aviation^KD Avia^^^^^1969^en|Kal Star Aviation|=en|KD Avia|^^air-kal-star-aviation^1^^
 air-kalitta-charters-v1^^2001-12-01^^KFS^K9^0^Kalitta Charters^^^^^http://en.wikipedia.org/wiki/Kalitta_Charters^^en|Kalitta Charters|^^air-kalitta-charters^1^^
 air-kam-air-v1^^2003-11-08^^KMF^RQ^384^Kam Air^^^^^http://en.wikipedia.org/wiki/Kam_Air^506^en|Kam Air|^^air-kam-air^1^^
@@ -1142,6 +1142,7 @@ air-skyking-v1^^1990-01-01^^SGB^6K^0^Songbird Airways^^^^^http://en.wikipedia.or
 air-skymark-airlines-v1^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^http://en.wikipedia.org/wiki/Skymark_Airlines^4124^en|Skymark Airlines|^^air-skymark-airlines^1^^
 air-skynet-asia-v1^1^1997-01-01^2014-02-28^SNJ^LQ^0^Skynet Asia Airways^^^^^http://en.wikipedia.org/wiki/List_of_defunct_airlines_of_Japan^^en|Skynet Asia Airways|^HND^air-skynet-asia^1^^
 air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^2068^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^HND^air-skynet-asia^2^^
+air-skypower-express-airways-v1^^1985-01-01^^EAN^NB^0^Skypower Express Airways^^^^P^http://en.wikipedia.org/wiki/Skypower_Express_Airways^^Skypower Express Airways^^p=en^1^^
 air-skyservice-airlines-v1^1^1986-11-01^2010-03-31^SSV^5G^0^Skyservice^^^^^http://en.wikipedia.org/wiki/Skyservice^^en|Skyservice|ps=en|Skyservice Airlines Inc|^YYZ^air-skyservice-airlines^1^^
 air-skystar-airways-v1^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways^^en||=en|SkyStar Airways|^^air-skystar-airways^1^^
 air-skytrans-regional-v1^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^292^en|Skytrans Regional|=en|Mineralnye Vo|^^air-skytrans-regional^1^^
