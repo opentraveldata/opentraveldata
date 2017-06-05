@@ -564,7 +564,7 @@ air-job-air-v1^^^^JBR^3B^0^Job Air^^^^^^en|Job Air|^^air-job-air^1^
 air-jordan-aviation-v1^^2000-10-01^^JAV^R5^151^Jordan Aviation^^^^^http://en.wikipedia.org/wiki/Jordan_Aviation^en|Jordan Aviation|^AMM^air-jordan-aviation^1^
 air-joy-air-v1^^2009-06-01^^JOY^JR^929^Joy Air^^^^^http://en.wikipedia.org/wiki/Joy_Air^en|Joy Air|=sign|JOY AIR|=zh|幸福航空|^^air-joy-air^1^
 air-jubba-airways-kenya-v1^^1954-01-01^^JBW^3J^535^Jubba Airways Kenya^^^^^http://en.wikipedia.org/wiki/Jubba_Airways^en|Jubba Airways Kenya|^HGA=MGQ^air-jubba-airways-kenya^1^
-air-juneyao-airlines-v1^^^^DKH^HO^18^Juneyao Airlines^^^^^^en|Juneyao Airlines|^^air-juneyao-airlines^1^
+air-juneyao-airlines-v1^^^^DKH^HO^18^Juneyao Airlines^^^Affiliate^P^https://en.wikipedia.org/wiki/Juneyao_Airlines^en|Juneyao Airlines|=zh|吉祥航空|^^air-juneyao-airlines^1^
 air-kalitta-charters-v1^^2001-12-01^^KFS^K9^0^Kalitta Charters^^^^^http://en.wikipedia.org/wiki/Kalitta_Charters^en|Kalitta Charters|^^air-kalitta-charters^1^
 air-kal-star-aviation-v1^^^^KNI^KD^0^Kal Star Aviation^KD Avia^^^^^en|Kal Star Aviation|=en|KD Avia|^^air-kal-star-aviation^1^
 air-kam-air-v1^^2003-11-08^^KMF^RQ^384^Kam Air^^^^^http://en.wikipedia.org/wiki/Kam_Air^en|Kam Air|^^air-kam-air^1^
@@ -850,6 +850,7 @@ air-sky-gabon-v1^^2006-01-01^^SKG^GV^536^Sky Gabon^^^^C^http://en.wikipedia.org/
 air-skyking-v1^^1990-01-01^^SGB^6K^0^Songbird Airways^^^^^http://en.wikipedia.org/wiki/Songbird_Airways^en|Songbird Airways|p=en|Skyking|h^MIA^air-skyking^1^
 air-skymark-airlines-v1^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^http://en.wikipedia.org/wiki/Skymark_Airlines^en|Skymark Airlines|^^air-skymark-airlines^1^
 air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^HND^air-skynet-asia^2^
+air-skypower-express-airways-v1^^1985-01-01^^EAN^NB^0^Skypower Express Airways^^^^P^https://en.wikipedia.org/wiki/Skypower_Express_Airways^Skypower Express Airways^^p=en^1^
 air-sky-prime-charter-v1^^^^SPD^UY^532^Sky Prime Charter^^^^^^en|Sky Prime Charter|^RUH^air-sky-prime-charter^1^
 air-sky-taxi-v1^^2000-01-01^^IGA^TE^0^Sky Taxi^^^^^http://en.wikipedia.org/wiki/SkyTaxi_%28airline%29^en|Sky Taxi|^^air-sky-taxi^1^
 air-skytrans-regional-v1^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^en|Skytrans Regional|=en|Mineralnye Vo|^^air-skytrans-regional^1^
