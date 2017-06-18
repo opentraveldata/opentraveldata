@@ -1,6 +1,5 @@
 iata_code^tz
 BIX^America/Chicago
-BNH^America/New_York
 BNQ^Asia/Manila
 BVD^America/Anchorage
 BXC^America/New_York
@@ -99,7 +98,6 @@ NUJ^Asia/Tehran
 OCW^America/New_York
 OEO^America/Chicago
 OKS^America/Denver
-OSX^America/Chicago
 OZA^America/Chicago
 OZI^Europe/Madrid
 PBY^Australia/Brisbane
@@ -274,7 +272,6 @@ QVW^Europe/Helsinki
 QVX^Africa/Algiers
 QVY^Europe/Helsinki
 QVZ^Europe/Helsinki
-QWB^Europe/Berlin
 QWC^Europe/Berlin
 QWF^America/Denver
 QWH^America/Denver
