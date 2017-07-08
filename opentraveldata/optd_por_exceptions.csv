@@ -55,7 +55,7 @@ NNN^R^0^1^^^^^NNN corresponds to pseudo message, and there is no specific geogra
 NSA^R^0^1^^^^^NSA used to be Noosa Airport, Brazil (BR), Geonames ID: 8299129
 NZO^R^0^1^^^^^NZO used to be Nzoia Airport, Kenya (KE), Geonames ID: 8298862
 OBT^R^1^0^1^^2016-05-31^ODM^As of May 2016, OBT is in OAK/Oakland, California (CA), United States (US), not in ODM/Oakland, Maryland (MD), United States (US), thousands of km away
-OCE^R^0^1^^^^^OCE used to be Ocean City Airport, Maryland (MD), United States (US), Geonames ID: 4364313
+OCE^R^1^1^1^2013-12-31^2017-05-31^^OCE used to be Ocean City Airport, Maryland (MD), United States (US), Geonames ID: 4364313. For a few years, IATA no longer referenced that airport
 OFF^R^1^0^^^^^As of June 2016, missing from reference data
 OGM^R^1^0^^^^OGM^As of May 2016, OGM/Ustupo and UTU/Ustupo are the same place in Guna Yala, Panama (PA)
 ORQ^R^0^1^^^^^ORQ used to be Norwalk, Connecticut (CT), United States (US), Geonames ID: 4839822
