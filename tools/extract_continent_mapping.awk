@@ -1,7 +1,7 @@
 ##
-# That AWK script extracts the mapping every country and its corresponding
-# continent. For instance, Germany is located in Europe and Peru in
-# South America.
+# That AWK script extracts the mapping between every country
+# and its corresponding continent.
+# For instance, Germany is located in Europe and Peru in South America.
 #
 # 1. Input data files
 # -------------------
@@ -9,7 +9,7 @@
 # ------------------------------------
 # The continents are referenced by their short code, which can be found in the
 # continentCodes.txt file:
-# http://github.com/opentraveldata/optd/blob/trunk/refdata/geonames/data/por/data/continentCodes.txt
+# http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data/continentCodes.txt
 #
 # 1.2. Country information data file
 # ----------------------------------
