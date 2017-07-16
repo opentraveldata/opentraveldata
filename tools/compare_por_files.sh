@@ -382,17 +382,25 @@ sort ${OPTD_BEST_MASTER} > ${OPTD_BEST_MASTER}.dup
 if [ -f /usr/bin/sw_vers ]
 then
 	# MacOS detected
-	FIELD_1ST_CHAR=6
+	WC_TOOL=`which gwc`
+	if [ ! -x ${WC_TOOL} ]
+	then
+		echo
+		echo "Error. On MacOS, the GNU version of wc (gwc) must be installed."
+		echo "With HomeBrew, just type 'brew install coreutils'"
+		echo
+		exit -1
+	fi
 else
 	# Not MacOS, so, supposedly GNU wc
-	FIELD_1ST_CHAR=1
+	WC_TOOL=wc
 fi
 #echo "comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
-POR_NB_COMMON=`comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | wc -l`
-POR_NB_FILE1=`comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | wc -l`
-POR_NB_FILE2=`comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | wc -l`
+POR_NB_COMMON=`comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l`
+POR_NB_FILE1=`comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l`
+POR_NB_FILE2=`comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l`
 echo
 echo "Reporting step"
 echo "--------------"
@@ -404,7 +412,7 @@ echo
 if [ ${POR_NB_FILE2} -gt 0 ]
 then
 	comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${GEONAME_FILE_MISSING}
-	POR_MISSING_GEONAMES_NB=`wc -l ${GEONAME_FILE_MISSING} | cut -d' ' -f${FIELD_1ST_CHAR}`
+	POR_MISSING_GEONAMES_NB=`${WC_TOOL} -l ${GEONAME_FILE_MISSING} | cut -d' ' -f1`
 	echo
 	echo "Suggestion step"
 	echo "---------------"
@@ -418,7 +426,7 @@ fi
 if [ ${POR_NB_FILE1} -gt 0 ]
 then
 	comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${OPTD_BEST_FILE_MISSING}
-	POR_MISSING_BEST_NB=`wc -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f${FIELD_1ST_CHAR}`
+	POR_MISSING_BEST_NB=`${WC_TOOL} -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f1`
 	echo
 	echo "Suggestion step"
 	echo "---------------"
