@@ -170,11 +170,18 @@ BEGIN {
 # -------
 # ^^^3022309^Cros-de-Cagnes^Cros-de-Cagnes^43.66405^7.1722^FR^^France^Europe^P^PPL^B8^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^061^06027^0^2^19^Europe/Paris^1.0^2.0^1.0^2012-02-27^Cros-de-Cagnes^^|Cros-de-Cagnes|
 #
+# Historical (no longer valid)
+# ----------------------------
+# _TRT^^^5783768^Tremonton^Tremonton^41.71187^-112.16551^US^^United States^North America^P^PPL^UT^Utah^Utah^003^Box Elder County^Box Elder County^^^8227^1318^1318^America/Denver^-7.0^-6.0^-7.0^2017-07-08^TRT^http://en.wikipedia.org/wiki/Tremonton%2C_Utah^post|84337|||bg|Тримънтън||sr|Тремонтон||zh|特里蒙顿|
+#
 # ICAO code
 # ---------
 # ^BGKS^^7730417^Kangersuatsiaq Heliport^Kangersuatsiaq Heliport^72.39667^-55.555^GL^^Greenland^America^S^AIRH^03^^^^^^^^0^^-9999^America/Godthab^-3.0^-2.0^-3.0^2012-02-26^BGKS,KAQ^http://en.wikipedia.org/wiki/Kangersuatsiaq_Heliport
 #
-/^\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,12})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
+/^(|_[A-Z0-9]{3})\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,12})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
+	# IATA code
+	iata_code = $1
+
 	# Geonames ID
 	geo_id = $4
 

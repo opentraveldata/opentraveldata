@@ -394,6 +394,15 @@ function isFeatCodePort(__ifcpParamFeatureCode) {
 }
 
 ##
+# State whether the POR is still valid
+# When the POR has been deprecated (is therefore no longer valid),
+# its IATA code is prefixed by an underscore (_)
+function isCodeHistorical(__ichParamCode) {
+	__resultIsHistorical = match (__ichParamCode, "^_[A-Z]{3}")
+	return __resultIsHistorical
+}
+
+##
 # State whether the POR is travel-related
 function isFeatCodeTvlRtd(__ifctrParamFeatureCode) {
     # Airbase (AIRB), airport (AIRP), airfield (AIRF), sea plane base (AIRS)
