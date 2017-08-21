@@ -1,5 +1,4 @@
 iata_code^tz
-BIX^America/Chicago
 BNQ^Asia/Manila
 BVD^America/Anchorage
 BXC^America/New_York
@@ -27,7 +26,6 @@ FLT^America/Anchorage
 FQQ^Europe/Vienna
 FWL^America/Anchorage
 GBQ^Asia/Bahrain
-GRA^America/Bogota
 HAP^Australia/Brisbane
 HBB^America/Denver
 HBZ^Europe/Berlin
@@ -76,7 +74,6 @@ MHB^Pacific/Auckland
 MMR^America/Chicago
 MMS^America/Chicago
 MOX^America/Chicago
-MOY^America/Bogota
 MPS^America/Chicago
 MQG^Africa/Windhoek
 MSD^America/Denver
@@ -363,7 +360,6 @@ XHL^Europe/Oslo
 XHR^America/Sao_Paulo
 XHS^America/Vancouver
 XHT^Europe/Oslo
-XHW^Australia/Darwin
 XHX^Australia/Adelaide
 XHZ^Europe/London
 XIH^Asia/Baghdad
