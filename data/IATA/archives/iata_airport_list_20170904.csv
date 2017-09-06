@@ -845,6 +845,7 @@ BJP^Braganca Paulista^SP^BR^1^^BJP^Arthur Siqueira^^A
 BJQ^Bahja^^OM^^^BJQ^Bahja^^A
 BJR^Bahar Dar^^ET^^^BJR^Bahar Dar^0536^A
 BJS^Beijing^^CN^^^BJS^Metropolitan Area^^C
+BJS^Beijing^^CN^^^EKG^Bawangfen^^B
 BJS^Beijing^^CN^^^NAY^Nanyuan^^A
 BJS^Beijing^^CN^^^PEK^Capital Intl^3873^A
 BJT^Bentota^^LK^^^BJT^Bentota River SPB^^A
@@ -1600,7 +1601,7 @@ CNJ^Cloncurry^QL^AU^2^B^CNJ^Cloncurry^0989^A
 CNK^Concordia^KS^US^2^^CNK^Blosser Municipal^0990^A
 CNL^Sindal^^DK^^^CNL^Sindal^^A
 CNM^Carlsbad^NM^US^3^^CNM^Cavern City Air Term.^0992^A
-CNN^Kannur^^IN^^^CNN^International^^A
+CNN^Kannur^KL^IN^^^CNN^International^^A
 CNO^Chino^CA^US^4^^CNO^Chino^^A
 CNP^Neerlerit Inaat^^GL^3^^CNP^Neerlerit Inaat^^A
 CNQ^Corrientes^CR^AR^^^CNQ^Corrientes^0994^A
@@ -3217,6 +3218,7 @@ HGA^Hargeisa^^SO^^^HGA^Egal Intl^1927^A
 HGD^Hughenden^QL^AU^2^B^HGD^Hughenden^1928^A
 HGE^Higuerote^^VE^^^HGE^Higuerote^^A
 HGH^Hangzhou^^CN^^^HGH^Xiaoshan Intl^1929^A
+HGH^Hangzhou^^CN^^^HZD^Hangzhoudong^^R
 HGH^Hangzhou^^CN^^^XZH^Econ.&Tech.Dev.Area^^O
 HGI^Higlieg^^SD^^^HGI^Higlieg^^A
 HGL^Helgoland^^DE^^^HGL^Duene^1930^A
@@ -4291,6 +4293,7 @@ KPV^Perryville^AK^US^5^^KPV^Perryville^2585^A
 KPW^Keperveyem^^RU^1^1^KPW^Keperveyem^^A
 KPY^Port Bailey^AK^US^5^^KPY^Sea Plane Base^2586^A
 KQA^Akutan^AK^US^5^^KQA^Akutan^2587^A
+KQH^Kishangarh^RJ^IN^^^KQH^Ajmer^^A
 KQL^Kol^^PG^1^^KQL^Kol^2588^A
 KQR^Karara^WA^AU^4^^KQR^Karara^^A
 KQT^Qurghonteppa^^TJ^^^KQT^International^^A
@@ -6262,6 +6265,7 @@ ONX^Colon^^PA^^^ONX^Enrique Adolfo Jimenez^^A
 ONY^Olney^TX^US^2^^ONY^Municipal^^A
 OOA^Oskaloosa^IA^US^2^^OOA^Municipal^^A
 OOK^Toksook Bay^AK^US^5^^OOK^Toksook Bay^3715^A
+OOL^Gold Coast^QL^AU^2^B^GCQ^Bus Station^^B
 OOL^Gold Coast^QL^AU^2^B^OOL^Coolangatta^3716^A
 OOM^Cooma^NS^AU^2^^OOM^Snowy Mountains^3717^A
 OOR^Mooraberree^QL^AU^2^B^OOR^Mooraberree^3718^A
@@ -7406,6 +7410,7 @@ QSV^Sovata^^RO^^^QSV^Off-line Point^^O
 QSW^As Suwayda^^SY^^^QSW^Off-line Point^^O
 QSX^New Amsterdam^^GY^^^QSX^Off-line Point^^O
 QSY^Ruedesheim^^DE^^^QSY^Off-line Point^^O
+QSZ^Shache^290^CN^^^QSZ^Shache Yeerqiang^^A
 QTA^Atibaia^SP^BR^1^^ZBW^Off-line Point^^O
 QTB^Tubarao^SC^BR^1^^ZHX^Off-line Point^^O
 QTD^Timbauba^PE^BR^1^A^QTD^Off-line Point^^O
@@ -7832,7 +7837,7 @@ RPX^Roundup^MT^US^3^^RPX^Roundup^^A
 RQW^Qayyarah^^IQ^^^RQW^West^^A
 RRA^Ronda^^ES^1^^RRA^Railway Station^^R
 RRE^Marree^SA^AU^3^^RRE^Marree^4300^A
-RRG^Rodrigues Island^^MU^^^RRG^Plaine Corail Airport^4301^A
+RRG^Rodrigues Island^^MU^^^RRG^Plaine Corail^4301^A
 RRI^Barora^^SB^^^RRI^Barora^^A
 RRK^Rourkela^OR^IN^^^RRK^Rourkela^4302^A
 RRL^Merrill^WI^US^2^^RRL^Municipal^^A
