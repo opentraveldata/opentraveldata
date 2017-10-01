@@ -46,7 +46,9 @@ JSO^R^0^1^^^^^JSO used to reference Södertälje, Sweden (SE), Geonames ID: 2676
 JYQ^R^1^0^^^^YDD^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
 KCI^R^0^1^^^^^KCI used to reference Kun Airport, East Timor (TL), but does not exist, Geonames ID: 8521421
 KMD^R^0^1^^^^^KMD used to be Mandji Airport, Gabon (GA), Geonames ID: 8298853
+KWU^R^0^1^^^^^KWU used to be Mansion House, New Zealand (NZ), Geonames ID: 8299249
 LUF^R^0^1^1^^2016-06-02^^LUF used to be Litchfield Park Airport, Arizona (AZ), United States (US), Geonames ID: 7132272
+MJH^R^0^1^^^^^MJH used to be Majima Airport, Saudi Arabia (SA), Geonames ID: 8298769
 MJI^R^1^0^1^^2016-11-30^MJI^As of May 2016, MJI iss in TIP/Tripoli, Libya (LY)
 MKF^R^0^1^1^^2016-08-12^^MKF used to be McKenna AAF, Georgia (GA), United States (US), Geonames ID: 11237559
 MPE^R^0^1^^^^^MPE used to be Madison Griswold Airport, Connecticut (CT), United States (US), Geonames ID: 4835441
@@ -127,6 +129,7 @@ TSO^R^0^1^^^^^TSO used to be Isles of Scilly Tresco Airport, United Kingdom (GB)
 UIQ^R^0^1^^^^^UIQ used to be Quoin Hill Airport, Vanuatu (VU), Geonames ID: 7730722
 UWE^R^1^0^^^^UWE^As of May 2016, UWE is in WIE/Wiesbaden, Germany (DE)
 UZH^R^0^1^^^^^UZH used to be Unayzah Airport, Saudi Arabia (SA), Geonames ID: 100768
+VKB^R^0^1^^^^^VKB used to be Merano, Italy (IT), Geonames ID: 3173577
 VLF^R^0^1^^^^^VLF is supposed to be Newcastle Under Lyme, United Kingdom (GB), but is not referenced by IATA
 VUU^R^1^0^^^^BLZ^As of May 2016, VUU/Mvuu Camp is in VUU/Liwonde, Malawi (MW). BLZ/Blantyre-Chileka is 100km from VUU
 VVE^R^0^1^^^^^VVE is test city 3, France (FR)
@@ -146,6 +149,7 @@ XZH^R^1^0^^^^^As of July 2016, missing from reference data
 YDD^NR^1^0^^^^YDD^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
 YGI^R^1^0^^^^^As of July 2016, missing from reference data
 YKH^NR^1^0^^^^YDD^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
+YPP^R^0^1^^^^^YPP used to be Pine Point, Northwest Territories (NT), Canada (CA), Geonames ID: 6105173
 YWO^R^0^1^^^^^YWO used to be Lupin Mine Airport, Canada (CA), Geonames ID: 8260747
 YZG^NR^1^0^^^^YZG^As of May 2016, YZG/Salluit is in YSW/Salluit, Quebec, Canada (CA). Yes, it seems to be an error of IATA that the airport and the city do not have the same IATA code, though the names and locations are the same
 ZFS^I^0^1^^^^^ZFS corresponds to Sabre Tech, Florida (FL), United States (US)

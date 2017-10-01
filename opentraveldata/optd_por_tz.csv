@@ -14,13 +14,10 @@ DLB^Pacific/Port_Moresby
 DRX^Europe/Berlin
 DUK^Africa/Johannesburg
 DWS^America/New_York
-EFW^America/Chicago
-ELA^America/Chicago
 ETN^America/Chicago
 FBY^America/Chicago
 FCT^America/Los_Angeles
 FQQ^Europe/Vienna
-FWL^America/Anchorage
 GBQ^Asia/Bahrain
 HAP^Australia/Brisbane
 HBB^America/Denver
@@ -28,7 +25,6 @@ HBZ^Europe/Berlin
 HHE^Asia/Tokyo
 HIH^Australia/Brisbane
 HLR^America/Chicago
-HPT^America/Chicago
 HSB^America/Chicago
 IBO^Africa/Maputo
 IMG^Africa/Maputo
@@ -57,10 +53,8 @@ JTO^America/Los_Angeles
 JWC^America/Los_Angeles
 JWH^America/Chicago
 KAM^Asia/Aden
-KBE^America/Anchorage
 KOQ^Europe/Berlin
 KWD^Africa/Bangui
-LKK^America/Anchorage
 LOF^Pacific/Majuro
 MBF^Australia/Sydney
 MDV^Africa/Libreville
@@ -68,10 +62,7 @@ MFW^Africa/Maputo
 MGI^America/Chicago
 MHB^Pacific/Auckland
 MMR^America/Chicago
-MMS^America/Chicago
 MOX^America/Chicago
-MPS^America/Chicago
-MSD^America/Denver
 MUV^America/New_York
 MWS^America/Denver
 NAX^Pacific/Honolulu
@@ -80,7 +71,6 @@ NFF^Asia/Shanghai
 NMG^America/Panama
 NRI^America/Chicago
 NSX^America/Tortola
-NUH^America/Bogota
 NUJ^Asia/Tehran
 OCW^America/New_York
 OEO^America/Chicago
@@ -95,7 +85,6 @@ PLG^Europe/Paris
 PME^Europe/London
 PRT^America/Anchorage
 PRW^America/Chicago
-PSN^America/Chicago
 QAF^Europe/Paris
 QBF^America/Denver
 QBM^Europe/Paris
@@ -284,7 +273,6 @@ QZK^Europe/Helsinki
 QZM^Australia/Brisbane
 QZS^Europe/Oslo
 QZT^Africa/Tripoli
-RCK^America/Chicago
 REE^America/Chicago
 RLR^Indian/Antananarivo
 RON^America/Bogota
@@ -293,11 +281,9 @@ RSE^Australia/Sydney
 RSY^Europe/Paris
 RWP^Asia/Karachi
 SJG^America/Bogota
-SLO^America/Chicago
 SPO^Europe/Madrid
 SPQ^America/Los_Angeles
 SQB^America/Bogota
-SYV^America/New_York
 TFR^Africa/Cairo
 TIS^Pacific/Port_Moresby
 TRP^America/Juneau
@@ -306,7 +292,6 @@ UJN^Asia/Seoul
 UKN^America/Chicago
 UPC^Atlantic/Canary
 URN^Asia/Kabul
-UWA^America/New_York
 WBJ^Asia/Seoul
 WBN^America/New_York
 WCC^America/Los_Angeles
