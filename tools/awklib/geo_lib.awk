@@ -1276,6 +1276,13 @@ function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
 # ORD^KORD^ORD^4887479^Chicago O'Hare International Airport^Chicago O'Hare International Airport^41.97959^-87.90446^US^^United States^North America^S^AIRP^IL^Illinois^Illinois^031^Cook County^Cook County^^^0^201^202^America/Chicago^-6.0^-5.0^-6.0^2016-02-28^Aéroport international O'Hare de Chicago^http://en.wikipedia.org/wiki/O%27Hare_International_Airport^en|Chicago O'Hare International Airport|
 #
 function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
+	#
+	if (__dgplFullLine == "") {
+		print ("Empty line for OPTD location type (" __dgplOPTDLocType \
+			   "): " __dgplFullLine) > error_stream
+		return
+	}
+	
 	# Return string
 	output_line = ""
 
@@ -1467,7 +1474,8 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
 	# ^ US DOT World Area Code (WAC) ^ WAC name
 	world_area_code = getWorldAreaCode(ctry_code, state_code, ctry_code_alt, \
-									   city_code_list, geo_lat, geo_lon)
+									   city_code_list, geo_lat, geo_lon, \
+									   __dgplFullLine)
 	wac_name = getWorldAreaCodeName(world_area_code)
 	output_line = output_line FS world_area_code FS wac_name
 
@@ -1604,6 +1612,15 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 
     # Retrieve the full details of the Geonames POR entry
     geo_full_line = geo_line_list[__dpwpParamGeonamesGeoID]
+
+	# Error
+	if (geo_full_line == "") {
+		print("[" __glGlobalAWKFile "][" __dpwpParamIataCode			\
+			  "] Error: no geo full line entry for Geonames ID "		\
+			  __dpwpParamGeonamesGeoID ". OPTD-loc-type: "				\
+			  __dpwpParamOPTDLocType ", OPTD-Geonames ID: "				\
+			  __dpwpParamOPTDGeoID) > __glGlobalErrorStream
+	}
 
 	# The output line may either be:
 	#  * Primary Key + initial Geonames line.
@@ -2125,7 +2142,7 @@ function registerWACLists(__rwlWorldAreaCode, __rwlThroughDate,			\
 # See also opentraveldata/README.md
 function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 						  __gwacCountryCodeAlt, __gwacCityCodeList, \
-						  __gwacLatStr, __gwacLonStr) {
+						  __gwacLatStr, __gwacLonStr, __gwacFullLine) {
 	# For the US DOT, Washington, D.C., is within the state of District of
 	# Columbia (WAC 32/3201), where as that latter is usually not considered
 	# as a state.
@@ -2140,7 +2157,7 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
 				   "!!! Error at record #" FNR							\
 				   ": the WAC is empty for the given US state ('DC')."	\
-				   " The whole line " $0) > error_stream
+				   " The whole line " __gwacFullLine) > error_stream
 		}
 	}
 
@@ -2156,7 +2173,7 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
 				   "!!! Error at record #" FNR							\
 				   ": the WAC is empty for the given state ('" __gwacStateCode \
-				   "'). The whole line " $0) > error_stream
+				   "'). The whole line " __gwacFullLine) > error_stream
 		}
 	}
 
@@ -2174,7 +2191,7 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 				   "!!! Error at record #" FNR							\
 				   ": the WAC is empty for the given state ('"			\
 				   __gwacCountryCode									\
-				   "'). The whole line " $0) > error_stream
+				   "'). The whole line " __gwacFullLine) > error_stream
 		}
 	}
 
@@ -2196,7 +2213,7 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 				   "!!! Error at record #" FNR							\
 				   ": the WAC is empty for the given US Territory (TT)('" \
 				   __gwacCountryCode									\
-				   "'). The whole line " $0) > error_stream
+				   "'). The whole line " __gwacFullLine) > error_stream
 		}
 	}
 
@@ -2211,7 +2228,8 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
 				   "!!! Error at record #" FNR							\
 				   ": the WAC is empty for Kosovo ('KV' for the US DOT, " \
-				   "XK otherwise). The whole line " $0) > error_stream
+				   "XK otherwise). The whole line " __gwacFullLine)		\
+				> error_stream
 		}
 	}
 
@@ -2227,7 +2245,7 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
 				   "!!! Error at record #" FNR							\
 				   ": the WAC is empty for Israel ('IL'). "				\
-				   "The whole line " $0) > error_stream
+				   "The whole line " __gwacFullLine) > error_stream
 		}
 	}
 
@@ -2265,11 +2283,14 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 	}
 
     # There is no WAC registered for either the state or country code
-	print ("[" awk_file "] !!!! Warning !!!! No World Area Code (WAC) can be" \
+	print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "			\
+		   "!!!! Warning !!!! No World Area Code (WAC) can be"			\
 		   " found for either the state code ("	__gwacStateCode			\
 		   "), the country code (" __gwacCountryCode					\
 		   ") or the alternate country code (" __gwacCountryCodeAlt		\
-		   "). Line: " $0) > error_stream
+		   "). Other parameters: city code list (" __gwacCityCodeList,	\
+		   "), latitude (" __gwacLatStr "), longitude (" __gwacLonStr	\
+		   "). Full line: " __gwacFullLine) > error_stream
 }
 
 ##
