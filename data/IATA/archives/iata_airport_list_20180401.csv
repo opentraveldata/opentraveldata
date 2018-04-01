@@ -2200,7 +2200,7 @@ DXB^Dubai^^AE^^^NHD^Minhad AB^^A
 DXB^Dubai^^AE^^^XEU^Hyatt Rgncy EY Bus Stn^^B
 DXB^Dubai^^AE^^^XHB^NP Bus Station^^B
 DXB^Dubai^^AE^^^XMB^Marina Mall EY Bus Stn^^B
-DXB^Dubai^^AE^^^XNB^Travel Mall EY Bus Stn^^B
+DXB^Dubai^^AE^^^XNB^Etihad Bus Stn^^B
 DXB^Dubai^^AE^^^ZJF^Jebel Ali Free Zone^^O
 DXB^Dubai^^AE^^^ZXZ^Jumeirah Beach Bus St^^B
 DXD^Dixie^QL^AU^2^B^DXD^Dixie^1320^A
@@ -6465,22 +6465,22 @@ PAN^Pattani^^TH^^^PAN^Pattani^3815^A
 PAO^Palo Alto^CA^US^4^^PAO^Santa Clara County^3816^A
 PAP^Port-au-Prince^^HT^^^PAP^Toussaint Louverture^3817^A
 PAQ^Palmer^AK^US^5^^PAQ^Municipal^3818^A
-PAR^san francisco^^FR^^^BVA^Beauvais-Tille^0724^A
-PAR^san francisco^^FR^^^CDG^Charles de Gaulle^0838^A
-PAR^san francisco^^FR^^^JDP^Issy les Moulineaux HP^^H
-PAR^san francisco^^FR^^^JPU^La Defense Heliport^^H
-PAR^san francisco^^FR^^^LBG^Le Bourget^2718^A
-PAR^san francisco^^FR^^^ORY^Orly^3745^A
-PAR^san francisco^^FR^^^PAR^Metropolitan Area^^C
-PAR^san francisco^^FR^^^POX^Pontoise-Cormeilles^^A
-PAR^san francisco^^FR^^^VIY^Villacoublay-Velizy^^A
-PAR^san francisco^^FR^^^XCR^Chalons-Vatry^^A
-PAR^san francisco^^FR^^^XEX^Aerogare des Invalides^^B
-PAR^san francisco^^FR^^^XGB^Montparnasse Bus Stn^^B
-PAR^san francisco^^FR^^^XHP^Gare de l'Est Rail Stn^^R
-PAR^san francisco^^FR^^^XJY^Massy TGV Rail Station^^R
-PAR^san francisco^^FR^^^XPG^Gare du Nord Rail Stn^^R
-PAR^san francisco^^FR^^^XTT^Arc de Triomphe Bus St^^B
+PAR^Paris^^FR^^^BVA^Beauvais-Tille^0724^A
+PAR^Paris^^FR^^^CDG^Charles de Gaulle^0838^A
+PAR^Paris^^FR^^^JDP^Issy les Moulineaux HP^^H
+PAR^Paris^^FR^^^JPU^La Defense Heliport^^H
+PAR^Paris^^FR^^^LBG^Le Bourget^2718^A
+PAR^Paris^^FR^^^ORY^Orly^3745^A
+PAR^Paris^^FR^^^PAR^Metropolitan Area^^C
+PAR^Paris^^FR^^^POX^Pontoise-Cormeilles^^A
+PAR^Paris^^FR^^^VIY^Villacoublay-Velizy^^A
+PAR^Paris^^FR^^^XCR^Chalons-Vatry^^A
+PAR^Paris^^FR^^^XEX^Aerogare des Invalides^^B
+PAR^Paris^^FR^^^XGB^Montparnasse Bus Stn^^B
+PAR^Paris^^FR^^^XHP^Gare de l'Est Rail Stn^^R
+PAR^Paris^^FR^^^XJY^Massy TGV Rail Station^^R
+PAR^Paris^^FR^^^XPG^Gare du Nord Rail Stn^^R
+PAR^Paris^^FR^^^XTT^Arc de Triomphe Bus St^^B
 PAS^Paros^^GR^^^PAS^Paros^^A
 PAT^Patna^BR^IN^^^PAT^Jayaprakash Narayan^3819^A
 PAU^Pauk^^MM^^^PAU^Pauk^3820^A
@@ -8108,7 +8108,7 @@ SEO^Seguela^^CI^^^SEO^Seguela^4440^A
 SEP^Stephenville^TX^US^2^^SEP^Clark Field Regional^4441^A
 SEQ^Bengkalis^^ID^1^^SEQ^Sei Pakning^^A
 SER^Seymour^IN^US^1^^SER^Freeman Municipal^^A
-SET^Serra Talhada^PE^BR^1^A^SET^Serra Talhada^^A
+SET^Serra Talhada^PE^BR^1^A^SET^Santa Magalhaes^^A
 SEU^Seronera^^TZ^^^SEU^Seronera^4444^A
 SEV^Severodonetsk^^UA^^^SEV^Severodonetsk^^A
 SEW^Siwa Oasis^^EG^^^SEW^North^4445^A
@@ -9914,6 +9914,8 @@ XAB^Abbeville^^FR^^^XAB^Off-line Point^^O
 XAC^Arcachon^^FR^^^XAC^Off-line Point^^O
 XAG^Agde^^FR^^^XAG^Off-line Point^^O
 XAH^Silkeborg^^DK^^^XAH^Railway Station^^R
+XAI^Xinyang^^CN^^^XAI^Minggang^^A
+XAI^Xinyang^^CN^^^XYW^East Railway Station^^R
 XAJ^Hirtshals^^DK^^^XAJ^Bus Station^^B
 XAL^Alamos^^MX^2^A^XAL^Alamos^5515^A
 XAM^Amboise^^FR^^^XAM^Off-line Point^^O
@@ -10365,8 +10367,6 @@ XYO^Karlshamn^^SE^^^XYO^Railway Station^^R
 XYP^Avesta^^SE^^^XYP^Krylbo Railway Station^^R
 XYR^Yellow River^^PG^1^^XYR^Edwaki^^A
 XYU^Solvesborg^^SE^^^XYU^Railway Station^^R
-XYW^Xinyang^^CN^^^XAI^Minggang^^A
-XYW^Xinyang^^CN^^^XYW^East Railway Station^^R
 XYX^Sala^^SE^^^XYX^Railway Station^^R
 XYY^Arvika^^SE^^^XYY^Railway Station^^R
 XZA^Zabre^^BF^^^XZA^Zabre^5566^A
@@ -10908,7 +10908,7 @@ ZAC^York Landing^MB^CA^4^^ZAC^York Landing^^A
 ZAD^Zadar^^HR^^^ZAD^Zadar^5806^A
 ZAE^El Eulma^^DZ^^^ZAE^Off-line Point^^O
 ZAF^Arles^^FR^^^ZAF^Railway Station^^R
-ZAG^Zagreb^^HR^^^ZAG^Pleso^5807^A
+ZAG^Zagreb^^HR^^^ZAG^Franjo Tudman^5807^A
 ZAG^Zagreb^^HR^^^ZGC^Bus Station^^B
 ZAH^Zahedan^^IR^^^ZAH^International^5808^A
 ZAI^Embarcacion^SA^AR^^^ZAI^Off-line Point^^O
