@@ -6,10 +6,10 @@ BAR^R^1^0^^^^^As of May 2016, missing from reference data
 BKA^R^0^1^1^^2016-10-01^^BKA used to be Bykovo Airport, Russia (RU), Geonames ID: 7668548
 BVF^R^0^1^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
 BWH^R^1^0^^^^PEN^As of May 2016, BWH is in BWH/Butterworth, Malaysia (MY)
-CGX^R^0^1^^^^^CGX used to be Merrill C. Meigs Field, Illinois (IL), United States (US), Geonames ID: 4902023
-CPQ^R^0^1^^^^^CPQ used to reference Campinas airport, Brazil (BR), but is the same as VCP, Geonames ID: 7730937 / 6300637
+CGX^R^0^1^1^^2017-12-01^^CGX used to be Merrill C. Meigs Field, Illinois (IL), United States (US), Geonames ID: 4902023
+CPQ^R^0^1^1^^2017-12-01^^CPQ used to reference Campinas airport, Brazil (BR), but is the same as VCP, Geonames ID: 7730937 / 6300637
 CYD^R^1^0^^^^CYD^As of May 2016, CYD is in SQS/San Ignacio, Belize (BZ)
-DCR^R^0^1^^^^^DCR used to be Decatur Hi-Way Airport, Indiana (IN), United States (US), Geonames ID: 4919565
+DCR^R^0^1^1^^2017-12-01^^DCR used to be Decatur Hi-Way Airport, Indiana (IN), United States (US), Geonames ID: 4919565
 DDL^I^0^1^^^^^DDL corresponds to ACARS, and there is no specific geographical location associated to it
 DNE^R^0^1^1^^2016-09-08^^DNE used to be Dallas North Airport, Texas (TX), United States (US), Geonames ID: 4697474
 DPC^I^0^1^^^^^DPC corresponds to Data Processing Center, and there is no specific geographical location associated to it
@@ -35,7 +35,7 @@ III^R^0^1^^^^^III is city name test, France (FR)
 ITU^R^1^0^^^^BVV^As of May 2016, ITU and BVV are in ITU/Iturup Island, Sakhalin, Russia
 IUS^R^1^0^^^^IUS^As of May 2016, IUS/Inus, Papua New Guinea (PG), cannot be distinguished from WKN/Wakunai
 JCO^R^0^1^^^^^JCO used to reference Comino Island, Malta (MT), Geonames ID: 2562820
-JHC^R^0^1^^^^^JHC used to reference Garden City Island Heliport, New York (NY), United States (US), but does not exist, Geonames ID: 5118226
+JHC^R^0^1^1^^2017-12-01^^JHC used to reference Garden City Island Heliport, New York (NY), United States (US), but does not exist, Geonames ID: 5118226
 JHE^R^0^1^^^^^JHE used to reference Helsingborg Heliport, Sweden (SE), Geonames ID: 11497265
 JHL^R^1^0^^^^JHL^As of May 2016, JHL is in HZP/Fort MacKay, Alberta, Canada (CA)
 JLD^R^0^1^^^^^JLD used to reference Landskrona, Sweden (SE), Geonames ID: 2697720
@@ -68,8 +68,8 @@ PPO^R^0^1^^^^^PPO used to be Powell Point Airport, Bahamas (BS), Geonames ID: 35
 PQD^R^1^0^^^^PQD^As of May 2016, PQD is in BTC/Batticaloa, Sri Lanka (LK)
 PRE^R^0^1^^^^^PRE used to be Pore Airport, Colombia (CO), Geonames ID: 3671903
 PSM^IR^1^1^^^^^PSM/Portsmouth is located in New Hampshire (NH), but serves the city of BOS/Boston, Massachusetts (MA), Unites States (US), Geonames ID: 5090907
-PST^R^0^1^^^^^PST used to be Preston Airport, Cuba (CU), Geonames ID: 3543522
-PTR^R^0^1^^^^^PTR used to be Pleasant Harbour, Alaska (AK), United States (US), Geonames ID: 8299206
+PST^R^0^1^1^^2017-12-01^^PST used to be Preston Airport, Cuba (CU), Geonames ID: 3543522
+PTR^R^0^1^1^^2017-12-01^^PTR used to be Pleasant Harbour, Alaska (AK), United States (US), Geonames ID: 8299206
 QEN^I^0^1^^^^^QEN corresponds to SITA, Switzerland (CH)
 QES^I^0^1^^^^^QES corresponds to SITA, Switzerland (CH)
 QGW^R^1^0^^^^^As of May 2016, missing from reference data
@@ -105,14 +105,14 @@ QZW^IR^0^1^^^^^QZW is a fictitious point
 QZX^IR^0^1^^^^^QZX is a fictitious point
 QZY^IR^0^1^^^^^QZY is a fictitious point
 RAT^R^0^1^^^^^RAT used to be Raduzhny Airport, Russia (RU), Geonames ID: 7668536
-REH^R^0^1^^^^^REH used to be Rehoboth Beach Airport, Delaware (DE), United States (US), Geonames ID: 4144284
+REH^R^0^1^1^^2017-12-01^^REH used to be Rehoboth Beach Airport, Delaware (DE), United States (US), Geonames ID: 4144284
 REQ^R^1^0^^^^^As of July 2016, missing from reference data
 RSC^R^0^1^^^^^RSC used to be Skulte railway station, Latvia (LV), Geonames ID: 455496. That code is apparently unknown from IATA
 RVH^R^0^1^^^^^RVH used to be Saint Petersburg Rzhevka Airport, Russia (RU), Geonames ID: 7668521
 SBD^R^1^0^1^^2016-05-31^SBT^As of May 2016, SBD is in SBD/San Bernardino, California (CA), United States (US). It corresponds to a change of IATA code in 2015, from SBT to SBD. SBT is now assigned to Sabetta, Yamalo-Nenetskiy Avtonomnyy Okrug, Russia (RU)
 SBP^R^1^0^1^^2016-06-06^CSL^As of May 2016, SBP is in SBP/San Luis Obispo, California (CA), United States (US). CSL is now Camp San Luis Obispo. So, in effect, there has been a change of IATA code for San Luis Obispo, from CSL to SBP, and CSL has been assigned to a new city (and POR), located a few kilometers from SBP
 SES^R^0^1^1^^2016-06-06^^SES used to be Selma Airport, Alabama (AL), United States (US), Geonames ID: 4089114
-SFR^R^0^1^^^^^SFR used to be San Fernando Heliport, California (CA), United States (US), Geonames ID: 5391945
+SFR^R^0^1^1^^2017-12-01^^SFR used to be San Fernando Heliport, California (CA), United States (US), Geonames ID: 5391945
 SGS^R^0^1^^^^^SGS used to be Sanga Sanga Airport, Philippines (PH), Geonames ID: 7668422
 SHP^INR^1^0^^^^^As of July 2016, no longer referenced by anyone, including IATA (though used in flight schedules)
 SPL^R^1^0^^^^SPL^As of May 2016, SPL is in AMS/Amsterdam, Netherlands (NL)
@@ -124,7 +124,7 @@ TEJ^R^1^0^1^^2016-06-06^TEJ^As of May 2016, TEJ/Teruel is in TEV/Teruel, Spain (
 THW^R^1^0^^^^THW^As of May 2016, THW is in TRR/Trincomalee, Sri Lanka (LK)
 TJJ^R^1^0^^^^TJJ^As of December 2016, TJJ is in TSN/Tianjin, Tianjin, China (CN)
 TNQ^R^0^1^^^^^TNQ used to be Teraina Airport, Cuba (CU), Geonames ID: 7521815
-TRT^R^0^1^^^^^TRT used to be Tremonton, Utah (UT), United States (US), Geonames ID: 5783768
+TRT^R^0^1^1^^2017-12-01^^TRT used to be Tremonton, Utah (UT), United States (US), Geonames ID: 5783768
 TSO^R^0^1^^^^^TSO used to be Isles of Scilly Tresco Airport, United Kingdom (GB), Geonames ID: 7670770
 UIQ^R^0^1^^^^^UIQ used to be Quoin Hill Airport, Vanuatu (VU), Geonames ID: 7730722
 UWE^R^1^0^^^^UWE^As of May 2016, UWE is in WIE/Wiesbaden, Germany (DE)

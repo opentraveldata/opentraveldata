@@ -13,7 +13,6 @@ DEO^America/Detroit
 DLB^Pacific/Port_Moresby
 DRX^Europe/Berlin
 DUK^Africa/Johannesburg
-DWS^America/New_York
 ETN^America/Chicago
 FBY^America/Chicago
 FCT^America/Los_Angeles
@@ -38,7 +37,6 @@ JBP^America/Los_Angeles
 JCT^America/Chicago
 JCY^America/Chicago
 JDK^America/New_York
-JDM^America/New_York
 JDX^America/Chicago
 JEV^Europe/Paris
 JGE^Asia/Seoul
@@ -58,13 +56,11 @@ KWD^Africa/Bangui
 LOF^Pacific/Majuro
 MBF^Australia/Sydney
 MDV^Africa/Libreville
-MFW^Africa/Maputo
 MGI^America/Chicago
 MHB^Pacific/Auckland
 MMR^America/Chicago
 MOX^America/Chicago
 MUV^America/New_York
-MWS^America/Denver
 NAX^Pacific/Honolulu
 NBP^America/New_York
 NFF^Asia/Shanghai
@@ -83,7 +79,6 @@ PGC^America/New_York
 PHJ^Australia/Sydney
 PLG^Europe/Paris
 PME^Europe/London
-PRT^America/Anchorage
 PRW^America/Chicago
 QAF^Europe/Paris
 QBF^America/Denver
@@ -288,10 +283,8 @@ TFR^Africa/Cairo
 TIS^Pacific/Port_Moresby
 TRP^America/Juneau
 UCE^America/Chicago
-UJN^Asia/Seoul
 UKN^America/Chicago
 UPC^Atlantic/Canary
-URN^Asia/Kabul
 WBJ^Asia/Seoul
 WBN^America/New_York
 WCC^America/Los_Angeles
@@ -300,7 +293,6 @@ WKM^Africa/Harare
 WLM^America/New_York
 WOB^Europe/London
 WPS^Asia/Tehran
-WWG^Asia/Muscat
 XAK^Europe/Copenhagen
 XBF^Europe/Paris
 XBH^Europe/Paris
@@ -354,7 +346,6 @@ XJE^Europe/Copenhagen
 XJG^Australia/Darwin
 XJP^Europe/Prague
 XJS^Europe/Vienna
-XJV^Europe/Prague
 XKC^Europe/Oslo
 XKI^Europe/Oslo
 XKJ^Europe/Oslo
@@ -463,7 +454,6 @@ ZBZ^Asia/Shanghai
 ZCF^Europe/Berlin
 ZCK^Europe/Berlin
 ZCY^Europe/Berlin
-ZDN^Europe/Prague
 ZDO^Europe/Zurich
 ZDQ^Europe/Zurich
 ZDR^Europe/Zurich
@@ -512,7 +502,6 @@ ZJW^Europe/Zurich
 ZJX^Europe/Rome
 ZKD^Europe/Moscow
 ZKF^Europe/Zurich
-ZKH^Europe/Zurich
 ZKN^Europe/Copenhagen
 ZKO^Europe/Zurich
 ZKR^Europe/Athens
@@ -574,7 +563,6 @@ ZQM^Europe/Berlin
 ZQO^Europe/Berlin
 ZQP^Europe/Berlin
 ZQT^Europe/Berlin
-ZQU^Europe/Berlin
 ZQX^Asia/Jakarta
 ZQY^Europe/Berlin
 ZRC^Europe/Madrid
