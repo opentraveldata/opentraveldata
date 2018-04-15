@@ -40,8 +40,42 @@ $ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 
 Note that the ```por_noiata_YYYYMMDD.csv``` has usually a size of around 1.5 GB.
 
-# Recompute the OPTD-maintained POR file: do 1.1.
+## Add state (administrative level) codes for a given country
+See [OpenTravelData Issue #78](https://github.com/opentraveldata/opentraveldata/issues/78)
+for the example on how to add Russian state codes.
 
+As many other big countries (e.g., USA, Australia, Brazil), Russia has got regions (administrative level 1), which are assigned standard (ISO 3166-2) codes: http://en.wikipedia.org/wiki/ISO_3166-2:RU
+Those codes should be added to the optd_por_public.csv file.
+
+The region codes should first be added to the [``opentraveldata/optd_country_states.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_country_states.csv). They can be derived from the [Geonames ADM1 codes](http://download.geonames.org/export/dump/admin1CodesASCII.txt).
+
+And, then, the [``opentraveldata/optd_state_exceptions.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_state_exceptions.csv) must be amended with the new Russian region codes, in order to reflect that IATA does not reference those regions correctly.
+
+A way to extract the state (administrative level 1) details from the file in order to add them into the file:
+```bash
+$ # To be performed once
+$ mkdir -p ~/dev/geo
+$ cd ~/dev/geo
+$ git clone https://github.com/opentraveldata/opentraveldata.git
+$ #
+$ cd ~/dev/geo/opentraveldata/data/geonames/data/por/data
+$ wget http://download.geonames.org/export/dump/admin1CodesASCII.txt
+$ awk -F '\t' '/^RU/ {state_code = substr ($1, 0, 2); adm1_code = substr ($1, 4); print (state_code "^" $4 "^" adm1_code "^" $2 "^") }' admin1CodesASCII.txt | sort -t'^' -k2,2
+RU^468898^88^Jaroslavl^
+RU^472039^86^Voronezj^
+RU^472454^85^Vologda^
+...
+RU^2125072^92^Kamtsjatka^
+RU^2126099^15^Chukotka^
+RU^7779061^93^Transbaikal Territory^
+```
+
+Just for information, the relevant AWK scripts are:
+* [``tools/awklib/geo_lib.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#L1462)
+* [``tools/make_optd_por_public.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk#L232)
+
+
+# Recompute the OPTD-maintained POR file: do 1.1.
 
 ## Update from reference data
 The reference data has been updated, i.e., the ```dump_from_crb_city.csv```
