@@ -1,7 +1,8 @@
 #!/bin/sh
 
 #URL_CATCH=wget
-URL_CATCH=copy_if_changed.py
+#URL_CATCH=copy_if_changed.py
+URL_CATCH=download_if_newer.py
 UNCOMPRESS="unzip -u -o"
 
 # Retrieve a file from the Geonames.org Web site, and unzip it when needed
@@ -16,7 +17,7 @@ retrieveFiles() {
 	for file in ${FILES};
 	do
 		echo "Checking whether '${file}' must be downloaded from ${BASE_URL}"
-		if ${URL_TARGET_DIR}${URL_CATCH} ${BASE_URL}/${file} ${file};
+		if ${URL_TARGET_DIR}${URL_CATCH} -s ${BASE_URL}/${file} -d ${file};
 		then
 			echo "  Data file '${file}' has been downloaded and updated."
 		fi
