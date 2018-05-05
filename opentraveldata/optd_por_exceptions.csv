@@ -29,7 +29,7 @@ FZO^R^0^1^^^^^FZO used to be Bristol Filton Airport, United Kingdom (GB), Geonam
 GBO^R^1^0^^^^WAS^As of May 2016, GBO is in BWI/Baltimore, Maryland (MD), United States (US)
 GVW^R^0^1^1^^2016-06-06^^GVW used to be Richards-Gebaur Airport, Missouri (MO), United States (US), Geonames ID: 4405533
 HBV^R^1^0^^^^HBV^Âs of May 2016, HBV is in HRB/Harbin, Heilongjiang, China (CN)
-HDQ^IR^0^1^^^^^HDQ means headquarters, and there is no specific geographical location associated to it
+HDQ^IR^1^1^1^^2018-05-04^^HDQ means headquarters, and there is no specific geographical location associated to it. It is however used by a few airlines and other systems, and it has therefore been reactivated in May 2018
 HKP^R^0^1^^^^^HKP used to be Kaanapali Airport, Hawaii (HI), United States (US), Geonames ID: 5856832
 HRD^R^0^1^^^^^HRD used to be Harstad, Norway (NO), which has now been assigned EVE, Geonames ID: 3153823
 IAT^IR^0^1^^^^^IAT corresponds to IATA Traffic Services, and there is no specific geographical location associated to it
@@ -150,6 +150,7 @@ XIE^R^0^1^^^^^XIE used to be Xienglom Airport, Laos (LA), Geonames ID: 8245855
 XLC^I^0^1^^^^^XLC is a fictitious point
 XRV^R^1^0^^^^^As of July 2016, missing from reference data
 XXX^R^0^1^^^^^XXX is a fictitious point
+XXX^IR^1^1^1^^2018-05-04^^XXX is a fictitious point. It is however used by a few airlines and other systems, and it has therefore been reactivated in May 2018
 XZG^R^1^0^^^^^As of July 2016, missing from reference data
 XZH^R^1^0^^^^^As of July 2016, missing from reference data
 YDD^NR^1^0^^^^YDD^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning, China (CN)
