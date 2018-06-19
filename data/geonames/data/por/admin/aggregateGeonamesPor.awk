@@ -16,25 +16,25 @@
 # 1.2. alternateNames.txt
 # -----------------------
 # alternatenameid geonameid isoLanguage alternateName isPreferredName isShortName isColloquial isHistoric
-# 1886047 6299418 icao LFMN    
-# 1888981 6299418 iata NCE    
-# xxxxxxx 6299418 unlc NCE    
-# 1969714 6299418 de Flughafen Nizza    
-# 1969715 6299418 en Nice Côte d'Azur International Airport    
-# 2187822 6299418 es Niza Aeropuerto 1 1  
-# 3032536 6299418 link http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport    
-# 5713800 6299418 fr Aéroport de Nice Côte d'Azur    
-# 7717894 6299418 en Nice Airport  1 
-# 1628019 2990440 en Nice
-# 1628030 2990440 fr Nice
-# 1628021 2990440 es Niza 1 1  
-# 1628023 2990440 ar نيس    
-# 1628031 2990440 he ניס    
-# 1628034 2990440 ja ニース
-# 1628046 2990440 ru Ницца
-# 1633915 2990440 zh-CN 尼斯
-# 2964254 2990440 link http://en.wikipedia.org/wiki/Nice    
-# 3054759 2990440 link http://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D1%86%D1%86%D0%B0
+# 1886047  6299418 icao LFMN    
+# 1888981  6299418 iata NCE    
+# 13721734 6299418 unlc FRNCE    
+# 1969714  6299418 de Flughafen Nizza    
+# 1969715  6299418 en Nice Côte d'Azur International Airport    
+# 2187822  6299418 es Niza Aeropuerto 1 1  
+# 3032536  6299418 link http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport    
+# 5713800  6299418 fr Aéroport de Nice Côte d'Azur    
+# 7717894  6299418 en Nice Airport  1 
+# 1628019  2990440 en Nice
+# 1628030  2990440 fr Nice
+# 1628021  2990440 es Niza 1 1  
+# 1628023  2990440 ar نيس    
+# 1628031  2990440 he ניס    
+# 1628034  2990440 ja ニース
+# 1628046  2990440 ru Ницца
+# 1633915  2990440 zh-CN 尼斯
+# 2964254  2990440 link http://en.wikipedia.org/wiki/Nice    
+# 3054759  2990440 link http://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D1%86%D1%86%D0%B0
 #
 # 1.3. admin1CodesASCII.txt
 # -------------------------
