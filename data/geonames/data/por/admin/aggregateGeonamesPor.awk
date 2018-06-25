@@ -483,7 +483,7 @@ BEGIN {
 				# Notification
 				if (log_level >= 4) {
 					print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
-						   "There is more than one active FAA code for " \
+						   "There is more than one active UN/LOCODE code for " \
 						   "Geonames ID=" geoname_id					\
 						   ": " alt_name_content_old " and " alt_name_content) \
 						> error_stream
