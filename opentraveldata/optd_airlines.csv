@@ -733,7 +733,7 @@ air-itek-air-v1^^^^IKA^GI^420^Itek Air^^^^^^^en|Itek Air|^^air-itek-air^1^^
 air-izhavia-v1^^^^IZA^I8^25^Izhavia^Aboriginalair^^^^^385^en|Izhavia|=en|Aboriginalair|^^air-izhavia^1^^
 air-jal-express-v1^1^1998-07-01^2014-09-30^JEX^JC^0^JAL Express^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^^en|JAL Express|^HND^air-jal-express^1^^
 air-jambojet-v1^^2014-04-01^^KQA^JM^702^Jambojet^^^^^http://en.wikipedia.org/wiki/Jambojet^^en|Jambojet|^NBO^air-jambojet^1^^
-air-japan-air-commuter-v1^^1983-07-01^^JAC^JC^0^Japan Air Commuter^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Japan_Air_Commuter^3090^en|Japan Air Commuter|^KOJ^air-japan-air-commuter^1^^
+air-japan-air-commuter-v1^^1983-07-01^^JAC^JC^0^Japan Air Commuter^^^^^http://en.wikipedia.org/wiki/Japan_Air_Commuter^3090^en|Japan Air Commuter|^KOJ^air-japan-air-commuter^1^^
 air-japan-airlines-v1^^1951-10-25^^JAL^JL^131^Japan Airlines^JAL^OneWorld^Member^^http://en.wikipedia.org/wiki/Japan_Airlines^23964^en|Japan Airlines|=en|JAL|^^air-japan-airlines^1^^
 air-japan-transocean-air-v1^^^^JTA^NU^353^Japan Transocean Air^Japan Transoc^OneWorld^Affiliate^^^2206^en|Japan Transocean Air|=en|Japan Transoc|^^air-japan-transocean-air^1^^
 air-jat-airways-v1^1^2003-08-08^2013-10-25^JAT^JU^0^JAT Airways^^^^^http://de.wikipedia.org/w/index.php?title=JAT_Airways&redirect=no^^en|JAT Airways|^^air-jat-airways^1^^
@@ -836,6 +836,7 @@ air-loganair-v1^^^^^LM^682^Loganair^Livingston^^^^^514^en|Loganair|=en|Livingsto
 air-longjiang-airlines-v1^^2016-08-01^^SNG^LT^867^Longjiang Airlines^^^^^^118^en|Longjiang Airlines|^HRB^air-longjiang-airlines^1^^
 air-lot-v1^^1929-01-01^^LOT^LO^80^LOT Polish Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^8041^en|LOT Polish Airlines|=en|LOT|ps^WAW^air-lot^1^^
 air-lucky-air-v1^^2004-07-01^^LKE^8L^859^Lucky Air^^^^^http://en.wikipedia.org/wiki/Lucky_Air^6764^en|Lucky Air|=en|Shilin Airlines|h=ja|雲南祥鵬航空|i=ko|럭키 에어|=pny|Xiángpéng Hángkōng Gōngsī|=wuu|祥鹏航空大厦|=yue|祥鵬航空大廈|=zh|祥鹏航空公司|^^air-lucky-air^1^^
+air-lufthansa-cargo-v1^^1977-01-01^^GEC^LH^020^Lufthansa Cargo^^^^^http://en.wikipedia.org/wiki/Lufthansa_Cargo^^en|Lufthansa Cargo|^FRA^air-lufthansa-cargo^1^^
 air-lufthansa-cityline-v1^^1958-01-01^^CLH^CL^683^Lufthansa CityLine^^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^^en|Lufthansa CityLine|^FRA=MUC^air-lufthansa-cityline^1^^
 air-lufthansa-v1^^1955-01-01^^DLH^LH^220^Lufthansa^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Lufthansa^41525^ar|لوفتهانزا|=en|Lufthansa|=el|Λουφτχάνσα|=fa|لوفت‌هانزا|=ja|ルフトハンザドイツ航空|=ko|루프트한자|=ru|Люфтганза|=ru|Люфтханза|=th|ลุฟต์ฮันซา|=wuu|汉莎航空|=yue|漢莎航空|^FRA=MUC^air-lufthansa^1^^
 air-lugansk-airlines-v1^^^^LHS^L7^0^Lugansk Airlines^^^^^^^en|Lugansk Airlines|^^air-lugansk-airlines^1^^
@@ -1393,7 +1394,7 @@ air-zambian-airways-v1^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^http
 air-zanair-v1^^^^TAN^B4^698^Zanair^^^^^^628^en|Zanair|^^air-zanair^1^^
 air-zestair-v1^^1995-09-01^^EZD^Z2^457^AirAsia Zest^^^^P^http://en.wikipedia.org/wiki/AirAsia_Zest^2328^en|AirAsia Zest|p=en|Zest Air|^CEB=KLO=MNL^air-zestair^1^^
 air-zhejiang-loong-airlines-v1^^2013-12-29^^CDC^GJ^891^Zhejiang Loong Airlines^Eurofly^^^^http://en.wikipedia.org/wiki/Loong_Air^3270^en|Zhejiang Loong Airlines|=pny|Chánglóng Hángkōng|=sign|HUALONG|=wuu|长龙航空|=yue|長龍航空|^^air-zhejiang-loong-airlines^1^^
-air-zimex-aviation-v1^^^^IMX^XM^0^Zimex Aviation^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/Zimex_Aviation^^en|Zimex Aviation|^^air-zimex-aviation^1^^
+air-zimex-aviation-v1^^^^IMX^XM^0^Zimex Aviation^^^^^http://en.wikipedia.org/wiki/Zimex_Aviation^^en|Zimex Aviation|^^air-zimex-aviation^1^^
 alc-oneworld-v1^^^^^*O^0^Oneworld^^^^^^^en|Oneworld|^^alc-oneworld^1^^
 alc-skyteam-v1^^^^^*S^0^Skyteam^^^^^^^en|Skyteam|^^alc-skyteam^1^^
 alc-star-alliance-v1^^^^^*A^0^Star Alliance^^^^^^^en|Star Alliance|^^alc-star-alliance^1^^
@@ -1412,7 +1413,7 @@ gds-iata-v1^^^^^XB^0^IATA^^^^G^^^en|IATA|^^gds-iata^1^^
 gds-ibs-americas-v1^^^^^V1^0^IBS Software Services Americas^^^^G^^^en|IBS Software Services Americas|^^gds-ibs-americas^1^^
 gds-infini-travel-v1^^^^TTF^1F^788^Infini Travel Information^^^^G^^^en|Infini Travel Information|^^gds-infini-travel^1^^
 gds-ita-v1^^^^^1U^0^ITA Software^Google ITA^^^G^^^en|ITA Software|=en|Google ITA|^^gds-ita^1^^
-gds-lufthansa-systems-v1^^^^^S1^0^Lufthansa Systems^LSY^^^G^^^en|Lufthansa Systems|=en|LSY|^^gds-lufthansa-systems^1^^
+gds-lufthansa-systems-v1^^^^LSY^S1^0^Lufthansa Systems^^^^G^http://en.wikipedia.org/wiki/Lufthansa_Systems^^en|Lufthansa Systems|=en|LSY|^^gds-lufthansa-systems^1^^
 gds-navitaire-new-skies-v1^^^^^1N^892^Navitaire New Skies^^^^G^^^en|Navitaire New Skies|^^gds-navitaire-new-skies^1^^
 gds-navitaire-open-skies-v1^^^^^1L^0^Navitaire Open Skies^^^^G^^^en|Navitaire Open Skies|^^gds-navitaire-open-skies^1^^
 gds-phoenix-systems-dertours-v1^^^^^1O^0^Phoenix Systems Dertours^^^^G^^^en|Phoenix Systems Dertours|^^gds-phoenix-systems-dertours^1^^
@@ -1439,7 +1440,7 @@ trn-g-rail-v1^^^^^9G^0^9G Rail^^^^R^^^en|9G Rail|^^trn-g-rail^1^^
 trn-nuovo-trasporto-viaggiatori-v1^1^2012-04-01^2014-12-31^^2Q^0^Nuovo Trasporto Viaggiatori^^^^^http://en.wikipedia.org/wiki/Nuovo_Trasporto_Viaggiatori^^en|Nuovo Trasporto Viaggiatori|^^trn-nuovo-trasporto-viaggiatori^1^^
 trn-renfe-viajeros-v1^1^1941-01-24^2015-12-31^^4R^0^Renfe Viajeros^^^^^http://en.wikipedia.org/wiki/Renfe_Operadora^^en|Renfe Viajeros|^^trn-renfe-viajeros^1^^
 trn-sncf-v1^^^^^2C^0^SNCF^^^^R^http://en.wikipedia.org/wiki/SNCF^^en|SNCF|^^trn-sncf^1^^
-trn-south-wind-v1^^1940-01-01^^^A4^^South Wind^^^^^http://en.wikipedia.org/wiki/South_Wind_(train)^^en|South Wind|^^trn-south-wind^1^^
+trn-south-wind-v1^1^1940-12-01^1971-11-14^^A4^0^South Wind^^^^^http://en.wikipedia.org/wiki/South_Wind_(train)^^en|South Wind|^^trn-south-wind^1^^
 trn-thalys-v1^^^^^2H^56^Thalys^^^^R^http://en.wikipedia.org/wiki/Thalys^^en|Thalys|^^trn-thalys^1^^
 trn-trenitalia-v1^^2000-01-01^^^7T^0^Trenitalia^^^^R^http://en.wikipedia.org/wiki/Trenitalia^^en|Trenitalia|^^trn-trenitalia^1^^
 trn-via-rail-canada-inc-v1^^1977-01-01^^VRR^2R^830^VIA Rail Canada^^^^R^http://en.wikipedia.org/wiki/Via_Rail^^en|VIA Rail Canada|^^trn-via-rail-canada-inc^1^^

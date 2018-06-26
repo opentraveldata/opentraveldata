@@ -191,7 +191,7 @@ def extractAirlineDetails (global_dict, airline_filepath, verboseFlag):
             airline_pk_list.append (pk)
                 
             # Register all the airline details in the list indexed by pk
-            if not (air_code in airline_all_dict):
+            if not (pk in airline_all_dict):
                 airline_all_dict[pk] = {'pk': pk, 'key': air_key,
                                         'version': air_version,
                                         'env_id': env_id,
@@ -249,9 +249,9 @@ def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
             
             # Browse all the airlines corresponding to that IATA code
             air_code_list = airline_code_list_dict[air_iata_code]
+            found_airline_dict = dict()
             for air_code in air_code_list:
                 pk_list = airline_pk_list_dict[air_code]
-                found_airline_dict = dict()
                 for pk in pk_list:
                     # Retrieve the dictionary with all the airline details
                     airline_dict = airline_all_dict[pk]
@@ -264,30 +264,24 @@ def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
                     air_name_org = airline_dict['name']
                     if (air_name_org == air_name):
                         found_airline_dict = airline_dict
-                    else:
-                        print ("[Warning] The alliance-derived name ('"
-                               + air_name + "'), for that IATA code ('"
-                               + air_iata_code + "'), does not match with "
-                               + "the best known name ('"
-                               + air_name_org + "')")
 
-                # Raise an error when no airline can be found for that
-                # name and IATA code
-                if not found_airline_dict:
-                    print ("[Error] The alliance details file ('"
-                           + def_airline_alliance_filepath
-                           + "') has an airline with name ('" +  air_name
-                           + "') and IATA code ('" + air_iata_code
-                           + "'), which can not be found in the best known POR"
-                           + " details file ('"
-                           + def_airline_bestknown_filepath + "'). "
-                           + "List of searched PK: " + str(pk_list))
+            # Raise an error when no airline can be found for that
+            # name and IATA code
+            if not found_airline_dict:
+                print ("[Error] The alliance details file ('"
+                       + def_airline_alliance_filepath
+                       + "') has an airline with name ('" +  air_name
+                       + "') and IATA code ('" + air_iata_code
+                       + "'), which can not be found in the best known POR"
+                       + " details file ('"
+                       + def_airline_bestknown_filepath + "'). "
+                       + "List of searched PK: " + str(pk_list))
                     
-                    raise Exception
+                raise Exception
                 
-                # Set the alliance name and status on the found airline
-                airline_dict['alliance_code'] = alliance_name
-                airline_dict['alliance_status'] = alliance_type
+            # Set the alliance name and status on the found airline
+            found_airline_dict['alliance_code'] = alliance_name
+            found_airline_dict['alliance_status'] = alliance_type
 
     return
 
