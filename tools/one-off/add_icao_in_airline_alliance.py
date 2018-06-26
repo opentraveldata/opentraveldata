@@ -7,104 +7,9 @@ from collections import OrderedDict, Mapping
 #
 # Default file-paths for input and output data files
 #
-def_airline_bestknown_filepath = '../opentraveldata/optd_airline_best_known_so_far.csv'
-def_airline_no_longer_valid_filepath = '../opentraveldata/optd_airline_no_longer_valid.csv'
-def_airline_alliance_filepath = '../opentraveldata/optd_airline_alliance_membership.csv'
-def_freq_filepath = '../opentraveldata/ref_airline_nb_of_flights.csv'
-def_airline_filepath = '../opentraveldata/optd_airlines.csv'
-
-#
-# Usage
-#
-def usage (script_name):
-    """
-    Display the usage.
-    """
-
-    print ("")
-    print ("Usage: %s [options]" % script_name)
-    print ("")
-    print ("That script derives both PageRank values for POR and flight frequencies for airlines")
-    print ("")
-    print ("Options:")
-    print ("  -h, --help                 : outputs this help and exits")
-    print ("  -v, --verbose              : verbose output (debugging)")
-    print ("  -b, --best-known-airline <OPTD best known airlines file-path> :")
-    print ("\tInput data file of best known airline details")
-    print ("\tDefault: '" + def_airline_bestknown_filepath + "'")
-    print ("  -n, --no-longer-valid-airline <OPTD no longer valid airlines file-path> :")
-    print ("\tInput data file of no longer valid airline details")
-    print ("\tDefault: '" + def_airline_no_longer_valid_filepath + "'")
-    print ("  -l, --alliance <OPTD airline alliance file-path> :")
-    print ("\tInput data file of airline alliance details")
-    print ("\tDefault: '" + def_airline_alliance_filepath + "'")
-    print ("  -f, --freq <Flight frequency file-path> :")
-    print ("\tInput data file of flight frequency values")
-    print ("\tDefault: '" + def_freq_filepath + "'")
-    print ("  -a, --airline <OPTD airline file-path> :")
-    print ("\tOutput data file of airline details")
-    print ("\tDefault: '" + def_airline_filepath + "'")
-    print ("")  
-
-#
-# Command-line arguments
-#
-def handle_opt():
-    """
-    Handle the command-line options
-    """
-
-    try:
-        opts, args = getopt.getopt (sys.argv[1:], "hv:p:a:b:n:l:f:",
-                                    ["help", "verbose", "airline-por", 
-                                     "airline", "best-known-airline",
-                                     "no-longer-valid-airline", "alliance",
-                                     "freq"])
-
-    except (getopt.GetoptError, err):
-        # Print help information and exit. It will print something like
-        # "option -d not recognized"
-        print (str (err))
-        usage (sys.argv[0], usage_doc)
-        sys.exit(2)
-    
-    # Options
-    verboseFlag = False
-    airline_bestknown_filepath = def_airline_bestknown_filepath
-    airline_no_longer_valid_filepath = def_airline_no_longer_valid_filepath
-    airline_alliance_filepath = def_airline_alliance_filepath
-    freq_filepath = def_freq_filepath
-    airline_filepath = def_airline_filepath
-
-    # Handling
-    for o, a in opts:
-        if o in ("-h", "--help"):
-            usage (sys.argv[0])
-            sys.exit()
-        elif o in ("-v", "--verbose"):
-            verboseFlag = True
-        elif o in ("-b", "--best-known-airline"):
-            airline_bestknown_filepath = a
-        elif o in ("-n", "--no-longer-valid-airline"):
-            airline_no_longer_valid_filepath = a
-        elif o in ("-l", "--alliance"):
-            airline_alliance_filepath = a
-        elif o in ("-f", "--freq"):
-            freq_filepath = a
-        elif o in ("-a", "--airline"):
-            airline_filepath = a
-        else:
-            assert False, "Unhandled option"
-
-    # Report the configuration
-    print ("Input data file of best known airline details: '" + airline_bestknown_filepath + "'")
-    print ("Input data file of no longer valid airline details: '" + airline_no_longer_valid_filepath + "'")
-    print ("Input data file of airline alliance details: '" + airline_alliance_filepath + "'")
-    print ("Input data file of flight frequency values: '" + freq_filepath + "'")
-    print ("Output data file of airline details: '" + airline_filepath + "'")
-    return (verboseFlag, airline_bestknown_filepath,
-            airline_no_longer_valid_filepath, airline_alliance_filepath,
-            freq_filepath, airline_filepath)
+airline_bestknown_filepath = '../../opentraveldata/optd_airline_best_known_so_far.csv'
+airline_alliance_filepath = '../../opentraveldata/optd_airline_alliance_membership.csv'
+new_airline_alliance_filepath = '../../opentraveldata/optd_airline_alliance_membership_new.csv'
 
 #
 # Initialize the airline-related dictionaries
@@ -239,19 +144,15 @@ def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
             alliance_type = row['alliance_type']
             air_iata_code = row['airline_iata_code_2c']
             air_name = row['airline_name']
-            alliance_to_date = row['to_date']
             alliance_env_id = row['env_id']
 
             # When the rule is no longer valid, just discard it for now
-            # TODO: complete the alliance details, even for no longer valid
-            #       airlines
-            if (alliance_to_date != ""): continue
+            if (alliance_env_id != ""): continue
             
             # Browse all the airlines corresponding to that IATA code
             air_code_list = airline_code_list_dict[air_iata_code]
             for air_code in air_code_list:
                 pk_list = airline_pk_list_dict[air_code]
-                found_airline_dict = dict()
                 for pk in pk_list:
                     # Retrieve the dictionary with all the airline details
                     airline_dict = airline_all_dict[pk]
@@ -260,34 +161,17 @@ def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
                     air_env_id = airline_dict['env_id']
                     if (air_env_id != ""): continue
 
-                    # Retrieve and compare the airline name
+                    # Sanity check on the name
                     air_name_org = airline_dict['name']
-                    if (air_name_org == air_name):
-                        found_airline_dict = airline_dict
-                    else:
-                        print ("[Warning] The alliance-derived name ('"
-                               + air_name + "'), for that IATA code ('"
-                               + air_iata_code + "'), does not match with "
-                               + "the best known name ('"
-                               + air_name_org + "')")
+                    if (air_name_org != air_name):
+                        print ("[Error] The airline '" + air_iata_code
+                               + "' has different names in the best known and alliance files, resp. '"
+                               + air_name_org + "' and '" + air_name + "'")
+                        raise Exception
 
-                # Raise an error when no airline can be found for that
-                # name and IATA code
-                if not found_airline_dict:
-                    print ("[Error] The alliance details file ('"
-                           + def_airline_alliance_filepath
-                           + "') has an airline with name ('" +  air_name
-                           + "') and IATA code ('" + air_iata_code
-                           + "'), which can not be found in the best known POR"
-                           + " details file ('"
-                           + def_airline_bestknown_filepath + "'). "
-                           + "List of searched PK: " + str(pk_list))
-                    
-                    raise Exception
-                
-                # Set the alliance name and status on the found airline
-                airline_dict['alliance_code'] = alliance_name
-                airline_dict['alliance_status'] = alliance_type
+                    # Set the alliance name and status
+                    airline_dict['alliance_code'] = alliance_name
+                    airline_dict['alliance_status'] = alliance_type
 
     return
 
@@ -477,38 +361,22 @@ def main():
     Main
     """
 
-    # Parse command options
-    (verboseFlag, airline_bestknown_filepath, airline_no_longer_valid_filepath, airline_alliance_filepath, freq_filepath, airline_filepath) = handle_opt()
-
     # Initialize the airline-related dictionaries
     global_dict = initializeAirlineDictionaries()
 
     # Extract the airline details from OpenTravelData (both from the file
     # of best known details and from the file of no longer valid airlines)
-    extractAirlineDetails (global_dict, airline_bestknown_filepath, verboseFlag)
-    extractAirlineDetails (global_dict, airline_no_longer_valid_filepath,
-                           verboseFlag)
+    extractAirlineDetails (global_dict, airline_bestknown_filepath, True)
 
     # Add the alliance details
-    extractAllianceDetails (global_dict, airline_alliance_filepath, verboseFlag)
+    extractAllianceDetails (global_dict, airline_alliance_filepath, True)
     
     # DEBUG
     # from pprint import pprint as pp
     # pp (global_dict)
 
-    # Add the flight frequencies
-    extractFrequencies (global_dict, freq_filepath, verboseFlag)
-
-    # DEBUG
-    # from pprint import pprint as pp
-    # pp (global_dict)
-
-    # Derive the successors (eg, "merged into" or "rebranded as")
-    calculateSuccessors (global_dict, verboseFlag)
-
     # Dump the airline details into the output file
-    dump_airlines (global_dict, airline_filepath, verboseFlag)
-
+    dump_airlines (global_dict, new_airline_alliance_filepath, verboseFlag)
 
 #
 # Main, when launched from a library

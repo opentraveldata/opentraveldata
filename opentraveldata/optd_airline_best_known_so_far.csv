@@ -619,6 +619,7 @@ air-longjiang-airlines-v1^^2016-08-01^^SNG^LT^867^Longjiang Airlines^^^^^^en|Lon
 air-lot-v1^^1929-01-01^^LOT^LO^80^LOT Polish Airlines^^^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^en|LOT Polish Airlines|=en|LOT|ps^WAW^air-lot^1^
 air-lucky-air-v1^^2004-07-01^^LKE^8L^859^Lucky Air^^^^^http://en.wikipedia.org/wiki/Lucky_Air^en|Lucky Air|=en|Shilin Airlines|h=ja|雲南祥鵬航空|i=ko|럭키 에어|=pny|Xiángpéng Hángkōng Gōngsī|=wuu|祥鹏航空大厦|=yue|祥鵬航空大廈|=zh|祥鹏航空公司|^^air-lucky-air^1^
 air-lufthansa-cityline-v1^^1958-01-01^^CLH^CL^683^Lufthansa CityLine^^^Member^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^en|Lufthansa CityLine|^FRA=MUC^air-lufthansa-cityline^1^
+air-lufthansa-cargo-v1^^1977-01-01^^GEC^LH^020^Lufthansa Cargo^^^^^http://en.wikipedia.org/wiki/Lufthansa_Cargo^en|Lufthansa Cargo|^FRA^air-lufthansa-cargo^1^
 air-lufthansa-v1^^1955-01-01^^DLH^LH^220^Lufthansa^^^Member^^http://en.wikipedia.org/wiki/Lufthansa^ar|لوفتهانزا|=en|Lufthansa|=el|Λουφτχάνσα|=fa|لوفت‌هانزا|=ja|ルフトハンザドイツ航空|=ko|루프트한자|=ru|Люфтганза|=ru|Люфтханза|=th|ลุฟต์ฮันซา|=wuu|汉莎航空|=yue|漢莎航空|^FRA=MUC^air-lufthansa^1^
 air-lugansk-airlines-v1^^^^LHS^L7^0^Lugansk Airlines^^^^^^en|Lugansk Airlines|^^air-lugansk-airlines^1^
 air-luxair-v1^^^^LGL^LG^149^Luxair^Luxair^^^^^en|Luxair|=en|Luxair|^^air-luxair^1^
@@ -1075,7 +1076,7 @@ gds-iata-v1^^^^^XB^0^IATA^^^^G^^en|IATA|^^gds-iata^1^
 gds-ibs-americas-v1^^^^^V1^0^IBS Software Services Americas^^^^G^^en|IBS Software Services Americas|^^gds-ibs-americas^1^
 gds-infini-travel-v1^^^^TTF^1F^788^Infini Travel Information^^^^G^^en|Infini Travel Information|^^gds-infini-travel^1^
 gds-ita-v1^^^^^1U^0^ITA Software^Google ITA^^^G^^en|ITA Software|=en|Google ITA|^^gds-ita^1^
-gds-lufthansa-systems-v1^^^^^S1^0^Lufthansa Systems^LSY^^^G^^en|Lufthansa Systems|=en|LSY|^^gds-lufthansa-systems^1^
+gds-lufthansa-systems-v1^^^^LSY^S1^0^Lufthansa Systems^^^^G^http://en.wikipedia.org/wiki/Lufthansa_Systems^en|Lufthansa Systems|=en|LSY|^^gds-lufthansa-systems^1^
 gds-navitaire-new-skies-v1^^^^^1N^892^Navitaire New Skies^^^^G^^en|Navitaire New Skies|^^gds-navitaire-new-skies^1^
 gds-navitaire-open-skies-v1^^^^^1L^0^Navitaire Open Skies^^^^G^^en|Navitaire Open Skies|^^gds-navitaire-open-skies^1^
 gds-phoenix-systems-dertours-v1^^^^^1O^0^Phoenix Systems Dertours^^^^G^^en|Phoenix Systems Dertours|^^gds-phoenix-systems-dertours^1^
