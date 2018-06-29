@@ -602,6 +602,7 @@ air-latam-cargo-brasil-v1^^1995-01-01^^LTG^M3^0^LATAM Cargo Brasil^^^^^http://en
 air-latpass-airlines-v1^^^^LTP^QJ^0^Latpass Airlines^^^^^^en|Latpass Airlines|^^air-latpass-airlines^1^
 air-lc-busre-v1^^1993-01-01^^^W4^107^LC Perú^LC Busre^^^^http://en.wikipedia.org/wiki/LC_Per%C3%BA^en|LC Perú|=en|LC Busre|^^air-lc-busre^1^
 air-lepl-air-costa-v1^^2013-10-15^^^LB^0^Air Costa^^^^^http://en.wikipedia.org/wiki/Air_Costa^en|Air Costa|=en|LEPL Projects Limited|^^air-lepl-air-costa^1^
+air-level-airline-v1^^2017-06-01^^^LV^0^Level^^^^P^http://en.wikipedia.org/wiki/Level_(airline)^en|Level|=ja|レベル|=zh|水平航空|^BCN=ORY=VIE^air-level-airline^1^
 air-lgw-luftfahrtges-walter-v1^^^^^HE^0^LGW Luftfahrtges Walter^^^^^^en|LGW Luftfahrtges Walter|^^air-lgw-luftfahrtges-walter^1^
 air-liat-v1^^^^LIA^LI^140^Liat^^^^^^en|Liat|^^air-liat^1^
 air-libyan-airlines-v1^^1965-01-01^^LAA^LN^148^Libyan Airlines^^^^^http://en.wikipedia.org/wiki/Libyan_Airlines^en|Libyan Airlines|^^air-libyan-airlines^1^
@@ -642,7 +643,6 @@ air-mauritanian-airlines-v1^^^^^L6^495^Mauritanian Airlines Int^^^^^^en|Mauritan
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^en|Mayair|=en|Aeromonterr|^^air-mayair^1^
 air-maya-island-air-v2^^2016-09-01^^MYD^2M^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^en|Maya Island Air|^BZE=TZA^air-maya-island-air^2^
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^en|Med-View Airline|^LOS^air-med-view-airline^1^
-air-mega-maldives-v1^^^^^LV^400^Mega Maldives^^^^P^^en|Mega Maldives|^^air-mega-maldives^1^
 air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^en|Meridiana Fly|^^air-meridiana-fly^1^
 air-mesa-airlines-v1^^1980-10-12^^ASH^YV^533^Mesa Airlines^^^^^http://en.wikipedia.org/wiki/Mesa_Airlines^en|Mesa Airlines|^^air-mesa-airlines^1^
 air-mesaba-airlines-v1^^2014-06-17^^TAX^XJ^0^Thai AirAsia X^Mesaba Air^^^^http://en.wikipedia.org/wiki/Thai_AirAsia_X^en|Thai AirAsia X|=en|Mesaba Air|^^air-mesaba-airlines^1^

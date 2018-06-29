@@ -819,6 +819,7 @@ air-latam-cargo-brasil-v1^^1995-01-01^^LTG^M3^0^LATAM Cargo Brasil^^^^^http://en
 air-latpass-airlines-v1^^^^LTP^QJ^0^Latpass Airlines^^^^^^^en|Latpass Airlines|^^air-latpass-airlines^1^^
 air-lc-busre-v1^^1993-01-01^^^W4^107^LC Perú^LC Busre^^^^http://en.wikipedia.org/wiki/LC_Per%C3%BA^1244^en|LC Perú|=en|LC Busre|^^air-lc-busre^1^^
 air-lepl-air-costa-v1^^2013-10-15^^^LB^0^Air Costa^^^^^http://en.wikipedia.org/wiki/Air_Costa^1056^en|Air Costa|=en|LEPL Projects Limited|^^air-lepl-air-costa^1^^
+air-level-airline-v1^^2017-06-01^^^LV^0^Level^^^^P^http://en.wikipedia.org/wiki/Level_(airline)^275^en|Level|=ja|レベル|=zh|水平航空|^BCN=ORY=VIE^air-level-airline^1^^
 air-lgw-luftfahrtges-walter-v1^^^^^HE^0^LGW Luftfahrtges Walter^^^^^^^en|LGW Luftfahrtges Walter|^^air-lgw-luftfahrtges-walter^1^^
 air-liat-v1^^^^LIA^LI^140^Liat^^^^^^2550^en|Liat|^^air-liat^1^^
 air-libyan-airlines-v1^^1965-01-01^^LAA^LN^148^Libyan Airlines^^^^^http://en.wikipedia.org/wiki/Libyan_Airlines^887^en|Libyan Airlines|^^air-libyan-airlines^1^^
@@ -875,7 +876,7 @@ air-maya-island-air-v1^1^1962-01-01^2016-08-31^MYD^MY^391^Maya Island Air^^^^^ht
 air-maya-island-air-v2^^2016-09-01^^MYD^2M^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^4011^en|Maya Island Air|^BZE=TZA^air-maya-island-air^2^^
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^520^en|Mayair|=en|Aeromonterr|^^air-mayair^1^^
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^600^en|Med-View Airline|^LOS^air-med-view-airline^1^^
-air-mega-maldives-v1^^^^^LV^400^Mega Maldives^^^^P^^275^en|Mega Maldives|^^air-mega-maldives^1^^
+air-mega-maldives-v1^1^2010-12-23^2017-05-02^MEG^LV^400^Mega Maldives^^^^P^http://en.wikipedia.org/wiki/Mega_Maldives^^en|Mega Maldives|=ko|메가 몰디브|=sign|SANDBAR|=zh|美佳航空|^MLE^air-mega-maldives^1^^
 air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^2860^en|Meridiana Fly|^^air-meridiana-fly^1^^
 air-merpati-nusantara-airlines-v1^1^1962-09-06^2014-02-15^MMA^MZ^532^Merpati Nusantara Airlines^^^^^http://en.wikipedia.org/wiki/Merpati_Nusantara_Airlines^^en|Merpati Nusantara Airlines|=ja|メルパチ・ヌサンタラ航空|=ko|메르파티 누산타라 항공|=sign|MERPATI|^^air-merpati-nusantara-airlines^1^^
 air-mesa-airlines-v1^^1980-10-12^^ASH^YV^533^Mesa Airlines^^^^^http://en.wikipedia.org/wiki/Mesa_Airlines^^en|Mesa Airlines|^^air-mesa-airlines^1^^
