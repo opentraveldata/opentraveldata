@@ -1405,6 +1405,9 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	# Alternate names
 	altname_section = $33
 
+	# UN/LOCODE section
+	unlc_list = $34
+	
 	# PageRank value
 	page_rank = getPageRankFromPK(pk)
 
@@ -1484,7 +1487,6 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	output_line = output_line FS ccy_code
 
 	# ^ UN/LOCODE code (potentially a list of)
-	unlc_list = ""
 	output_line = output_line FS unlc_list
 
     #
