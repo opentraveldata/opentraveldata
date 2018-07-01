@@ -88,7 +88,7 @@ GEO_POR_CONC_FILE=${DATA_DIR}${GEO_POR_CONC_FILENAME}
 
 # Reference details for the Nice airport (IATA/ICAO codes: NCE/LFMN,
 # Geoname ID: 6299418, http://www.geonames.org/6299418)
-NCE_POR_REF="NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2018-06-18^Aehroport Nicca Lazurnyj Bereg,Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Nice flygplats,Niza Aeropuerto,frwdgah nys kwt dazwr,koto・dajuru kong gang,mtar nys alryfyra alfrnsy,ni si lan se hai an ji chang,niseu koteudajwileu gonghang,Аэропорт Ницца Лазурный Берег,فرودگاه نیس کوت دازور,مطار نيس الريفيرا الفرنسي,コート・ダジュール空港,尼斯蓝色海岸机场,니스 코트다쥐르 공항^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport|p|es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s|wuu|尼斯蓝色海岸机场||ru|Аэропорт Ницца Лазурный Берег||ja|コート・ダジュール空港||ko|니스 코트다쥐르 공항||fa|فرودگاه نیس کوت دازور||ar|مطار نيس الريفيرا الفرنسي||sv|Nice flygplats|^FRNCE"
+NCE_POR_REF="NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2018-06-18^Aehroport Nicca Lazurnyj Bereg,Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Nice flygplats,Niza Aeropuerto,frwdgah nys kwt dazwr,koto・dajuru kong gang,mtar nys alryfyra alfrnsy,ni si lan se hai an ji chang,niseu koteudajwileu gonghang,Аэропорт Ницца Лазурный Берег,فرودگاه نیس کوت دازور,مطار نيس الريفيرا الفرنسي,コート・ダジュール空港,尼斯蓝色海岸机场,니스 코트다쥐르 공항^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport|p|es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s|wuu|尼斯蓝色海岸机场||ru|Аэропорт Ницца Лазурный Берег||ja|コート・ダジュール空港||ko|니스 코트다쥐르 공항||fa|فرودگاه نیس کوت دازور||ar|مطار نيس الريفيرا الفرنسي||sv|Nice flygplats|^FRNCE|"
 
 ##
 # Usage
@@ -144,15 +144,25 @@ fi
 # grep -n "^\([0-9]\{1,9\}\)<TAB>\([0-9]\{1,9\}\)<TAB>\([a-z]\{0,5\}[_]\{0,1\}[0-9]\{0,4\}\)<TAB>" ${GEO_TZ_FILE} ${GEO_CONT_FILE} ${GEO_POR_FILE}
 
 ##
+# Calculate the number of lines of the main Geoname POR file,
+# so as to report the progress in the next data processing task below.
+NB_POR=`wc -l ${GEO_POR_FILE}|sed -e 's/^\([^0-9]*\)\([0-9]\+\)\([^0-9]\)*$/\2/g'`
+
+##
 # Concatenate the alternate name details, and add them back to the line of
 # details for every Geoname POR.
 AGGREGATOR=aggregateGeonamesPor.awk
 echo
 echo "Aggregating '${GEO_POR_ALT_FILE}' and '${GEO_POR_FILE}' input files..."
-time awk -F'\t' -v log_level=${LOG_LEVEL} -f ${AGGREGATOR} \
-	${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} \
-	${GEO_TZ_FILE} ${GEO_CONT_FILE} \
-	${GEO_POR_ALT_FILE} ${GEO_POR_FILE} > ${GEO_POR_CONC_FILE}
+AWKCMD="awk -F'\t' -v log_level=${LOG_LEVEL} -v nb_por=${NB_POR} \
+	-f ${AGGREGATOR} ${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} \
+	${GEO_TZ_FILE} ${GEO_CONT_FILE} ${GEO_POR_ALT_FILE} ${GEO_POR_FILE}"
+#echo "AWK command to be executed:"
+#echo "${AWKCMD} > ${GEO_POR_CONC_FILE}"
+time awk -F'\t' -v log_level=${LOG_LEVEL} -v nb_por=${NB_POR} -f ${AGGREGATOR} \
+	 ${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} ${GEO_TZ_FILE} \
+	 ${GEO_CONT_FILE} ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} \
+	 > ${GEO_POR_CONC_FILE}	 
 echo "... done"
 echo
 

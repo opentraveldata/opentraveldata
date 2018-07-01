@@ -96,6 +96,18 @@
 #
 
 ##
+# Add the given field content to the given dedicated list.
+# An example of field having potentially several elements is UN/LOCODE (unlc).
+function addFieldToList(__aftlParamPK, __aftlParamList, __aftlParamField) {
+    myTmpString = __aftlParamList[__aftlParamPK]
+    if (myTmpString) {
+		myTmpString = myTmpString __glGlobalSep2nd
+    }
+    myTmpString = myTmpString __aftlParamField
+    __aftlParamList[__aftlParamPK] = myTmpString
+}
+
+##
 # Debugging support function
 function printList(myArray) {
 	printf ("%s", "Size: " length(myArray) "\n") > error_stream
@@ -148,8 +160,20 @@ BEGIN {
 	tz_line = 0
 	cont_line = 0
 	por_line = 0
+	progress_reported = 0
 	alt_line = 0
 
+    # Separators
+	__glGlobalSepTgt = ";"
+	__glGlobalSep1st = "^"
+	__glGlobalSep2nd = "="
+	__glGlobalSep3rd = "|"
+
+	#
+	if (nb_por == "") {
+		nb_por = 1
+	}
+	
 	# Country and continent for special cases (such as Persian Gulf)
 	ctry_list_name["ZZ"] = "Not relevant/available"
 	ctry_list_cont["ZZ"] = "ZZ"
@@ -471,28 +495,51 @@ BEGIN {
 		}
 
 	} else if (alt_name_type == "unlc") {
-		# The alternate name is a UN/LOCODE (UN location code)
-		if (is_historical != "h") {
-			alt_name_content_old = alt_name_list_unlc[geoname_id]
+		# The alternate name is a UN/LOCODE (UN location code).
+		#
+		# Several UN/LOCODE may be attributed to a single POR, for instance
+		# Erlinsbach (Geoname ID: 2659467) with CHERL, CHNBA and CHSZ9.
+		# Some of those UN/LOCODE may be historical. Hence, we build here
+		# a list of UN/LOCODE with their associated qualifiers, much like
+		# for the languages, except that it is always of the unlc type here.
+		# Virtual example: CHERL|p=CHNBA|=CHSZ9|h
+		#
+		unlc_full = alt_name_content __glGlobalSep3rd
 
-			if (alt_name_content_old == "" ||					\
-				substr(alt_name_content_old, 1, 1) == "_") {
-				alt_name_list_unlc[geoname_id] = alt_name_content
+		# Potentially add the historical qualifier
+		if (is_historical == "h") {
+			unlc_full = unlc_full "h"
+		}
 
-			} else {
-				# Notification
-				if (log_level >= 4) {
-					print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
-						   "There is more than one active UN/LOCODE code for " \
-						   "Geonames ID=" geoname_id					\
-						   ": " alt_name_content_old " and " alt_name_content) \
-						> error_stream
-				}
-			}
+		# Potentially add the preferred qualifier
+		is_preferred = $5
+		if (is_preferred == "1") {
+			unlc_full = unlc_full "p"
+		}
 
-		} else {
-			if (alt_name_list_unlc[geoname_id] == "") {
-				alt_name_list_unlc[geoname_id] = "_" alt_name_content
+		# Add the UN/LOCODE, with its potential qualifier (eg, 'h' or 'p')
+		# to the dedicated list
+		addFieldToList(geoname_id, alt_name_list_unlc, unlc_full)
+
+		# Sanity check for extra qualifiers, whcih normally do not apply to
+		# an UN/LOCODE. If the UN/LOCODE is qualified with those, we report
+		# it, so that Geonames may be fixed.
+		is_short = $6
+		if (is_short == "1") {
+			is_short == "s"
+		}
+		is_colloquial = $7
+		if (is_colloquial == "1") {
+			is_colloquial == "c"
+		}
+		if (is_short == "s" || is_colloquial == "c") {
+			# Notification
+			if (log_level >= 4) {
+				print ("[" awk_file "][" FNR "] !!!! Warning !!!! "		\
+					   "The UN/LOCODE code ('" alt_name_content "') for " \
+					   "Geonames ID=" geoname_id " has an extra qualifier ('" \
+					   is_short is_colloquial "'), which is not relevant") \
+					> error_stream
 			}
 		}
 
@@ -575,7 +622,20 @@ BEGIN {
 # current line (for a given Geoname ID), are also integrated.
 #
 /^([0-9]{1,9})\t.*\t([0-9]{4}-[0-9]{2}-[0-9]{2})$/ {
+	# Progress report
 	por_line++
+	progress = int (0.5 + por_line * 100.0 / nb_por)
+	if (progress % 10 == 0) {
+		if (progress_reported == 0) {
+			progress_reported = 1
+			print ("[" awk_file "] " progress "% of the POR have been " \
+				   "processed, ie " por_line " POR over " nb_por " in total") \
+				> error_stream
+		}
+
+	} else {
+		progress_reported = 0
+	}
 
 	# Geoname ID
 	geoname_id = $1
