@@ -90,7 +90,7 @@
 #
 # 2. Sample output lines:
 # -----------------------
-# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country^cc2^ctry_name^fclass^fcode^adm1^adm1_name_utf^adm1_name_ascii^adm2^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_iso^altname_text^un_locode
+# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country^cc2^ctry_name^fclass^fcode^adm1^adm1_name_utf^adm1_name_ascii^adm2^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_iso^altname_text^unlc_list
 # NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^Europe^S^AIRP^B8^06^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE
 # NCE^^^2990440^Nice^Nice^43.70313^7.26608^FR^^Europe^P^PPLA2^B8^06^062^06088^338620^25^18^Europe/Paris^1.0^2.0^1.0^2011-11-02^NCE,Nica,Nicaea,Nicca,Nice,Nicea,Nico,Nisa,Niza,Nizza,Niça,ni si,nisa,nisu,nitsa,nys,Ница,Ницца,ניס,نيس,नीस,ნიცა,ニース,尼斯^http://en.wikipedia.org/wiki/Nice^en|Nice||de|Nizza||es|Niza|ps|af|Nice||ar|نيس||bg|Ница||ca|Niça||da|Nice||eo|Nico||et|Nice||fi|Nizza||fr|Nice||he|ניס||id|Nice||it|Nizza||ja|ニース||la|Nicaea||lad|Nice||lb|Nice||lt|Nica||nb|Nice||nl|Nice||no|Nice||oc|Niça||pl|Nicea||pt|Nice||ro|Nisa||ru|Ницца||sl|Nica||sv|Nice||cy|Nice||eu|Niza||zh|尼斯||ceb|Nice||hi|नीस||ka|ნიცა||lv|Nica||qu|Nice||scn|Nizza||sk|Nice||sr|Ница||post|06100||post|06000|p|post|06200||post|06300|^FRNCE
 #
@@ -136,7 +136,7 @@ function displayPOR() {
 	out_line = out_line "^" alt_names_compact
 	out_line = out_line "^" link_code
 	out_line = out_line	"^" alt_names
-	out_line = out_line	"^" un_locode
+	out_line = out_line	"^" unlc_list
 
 	# Print the output line
 	print (out_line)
@@ -191,7 +191,7 @@ BEGIN {
 	printf ("%s", "^alternatenames")
 	printf ("%s", "^wiki_link")
 	printf ("%s", "^altname_section")
-	printf ("%s", "^un_locode")
+	printf ("%s", "^unlc_list")
 	printf ("%s", "\n")
 }
 
@@ -726,7 +726,7 @@ BEGIN {
 	iata_code_list = alt_name_list_iata[geoname_id]
 	icao_code = alt_name_list_icao[geoname_id]
 	faac_code = alt_name_list_faac[geoname_id]
-	un_locode = alt_name_list_unlc[geoname_id]
+	unlc_list = alt_name_list_unlc[geoname_id]
 	link_code = alt_name_list_link[geoname_id]
 	link2_code = alt_name_list_link2[geoname_id]
 	alt_names = alt_name_list_lang[geoname_id]
