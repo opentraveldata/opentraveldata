@@ -18,8 +18,8 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     __glGlobalNM = 1852
 
     # Debugging support
-    #__glGlobalDebugIataCode = ""
-    __glGlobalDebugIataCode = "ZZZ"
+    __glGlobalDebugIataCode = ""
+    #__glGlobalDebugIataCode = "ZZZ"
     #__glGlobalDebugIataCode = "AAE"
     #__glGlobalDebugIataCode = "RDU"
 
