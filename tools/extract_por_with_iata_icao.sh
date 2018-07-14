@@ -203,7 +203,7 @@ sed -i -e "/^$/d" ${DUMP_NOIATA_FILE}
 
 # Sort the data files
 echo "Sorting ${DUMP_IATA_FILE}..."
-sort -t'^' -k1,1 -k4,4 ${DUMP_IATA_FILE} > ${DUMP_GEO_FILE_TMP}
+sort -t'^' -k1,1 -k4n,4 ${DUMP_IATA_FILE} > ${DUMP_GEO_FILE_TMP}
 cat ${DUMP_GEO_FILE_HDR} ${DUMP_GEO_FILE_TMP} > ${DUMP_IATA_FILE}
 echo "... done"
 echo "Sorting ${DUMP_NOIATA_FILE}..."

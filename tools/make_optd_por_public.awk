@@ -14,10 +14,14 @@
 #
 # Notes:
 # 1. When the POR is existing only in the reference data, the cryptic time-zone
-#    ID is replaced by a more standard time-zone ID. That latter is a simplified
-#    version of the standard time-zone ID (such as the one given by Geonames),
-#    as there is then a single time-zone ID per country; that is obviously
-#    inaccurate for countries such as Russia, Canada, USA, Antartica, Australia.
+#    ID is replaced by a more standard time-zone ID. When the POR is
+#    referenced in the optd_por_tz.csv, the corresponding exact time-zone
+#    is used. Otherwise, a simplified time-zone ID is then derived directly
+#    from the country code. That is obviously inaccurate for countries
+#    such as Russia, Canada, USA, Antartica, Australia.
+#    The best solution is really to add the Geonames ID of the POR to the
+#    optd_por_best_known_so_far.csv file (and to add it to Geonames if needed,
+#    that is, when that latter does not not already reference it).
 # 2. The city (UTF8 and ASCII) names are added afterwards, by another AWK script,
 #    namely add_city_name.awk, located in the very same directory.
 #
@@ -188,10 +192,10 @@ BEGIN {
 
     # Sanity check
     if (iata_code != $2) {
-		print ("[" awk_file "] !!! Error at record #" FNR \
-			   ": the IATA code ('" iata_code			  \
-			   "') should be equal to the field #2 ('" $2 \
-			   "'), but is not. The whole line " $0) > error_stream
+	print ("[" awk_file "] !!! Error at record #" FNR		\
+	       ": the IATA code ('" iata_code				\
+	       "') should be equal to the field #2 ('" $2		\
+	       "'), but is not. The whole line " $0) > error_stream
     }
 
     # PageRank value for the average number of seats
@@ -215,14 +219,14 @@ BEGIN {
 # US^USA^840^US^United States^Washington^9629091^310232863^NA^.us^USD^Dollar^1^#####-####^en-US=es-US=haw=fr^6252001^CA=MX=CU
 #
 /^[A-Z]{2}\^[A-Z]{3}\^[0-9]{1,3}\^[A-Z]{0,2}\^[a-zA-Z., -]{2,50}/ {
-	# Country code
-	country_code = $1
+    # Country code
+    country_code = $1
 
-	# Currency code
-	ccy_code = $11
+    # Currency code
+    ccy_code = $11
 
-	# Geonames ID
-	geo_id = $17
+    # Geonames ID
+    geo_id = $17
 
     # Register the relationship between the country code and the currency code
     ctry_ccy_list[country_code] = ccy_code
@@ -244,12 +248,12 @@ BEGIN {
     # Geonames ID
     geo_id = $2
 
-	# Administrative level 1 (adm1)
-	adm1_code = $3
-	adm1_name = $4
+    # Administrative level 1 (adm1)
+    adm1_code = $3
+    adm1_name = $4
 
-	# Alternate state code (abbreviation)
-	state_code = $5
+    # Alternate state code (abbreviation)
+    state_code = $5
 
     # Register the relationship between the state code and the adm1 code
     ctry_state_list[country_code][adm1_code] = state_code
