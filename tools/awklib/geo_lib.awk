@@ -18,7 +18,8 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     __glGlobalNM = 1852
 
     # Debugging support
-    __glGlobalDebugIataCode = ""
+    #__glGlobalDebugIataCode = ""
+    __glGlobalDebugIataCode = "ZZZ"
     #__glGlobalDebugIataCode = "AAE"
     #__glGlobalDebugIataCode = "RDU"
 
@@ -1660,12 +1661,29 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 
 ##
 # Display the list of Geonames POR entries.
-# Usually, there is no more than one POR entry for a given IATA code
-# and location type.
 #
-# In some rare cases, a travel-related POR serves several cities. For instance,
+# For IATA referenced POR, usually there is no more than one POR entry
+# for a given IATA code and location type. In some rare cases,
+# a travel-related POR serves several cities. For instance,
 # RDU-A-4487056 serves both RDU-C-4464368 (Raleigh) and RDU-C-4487042 (Durham)
 # in North Carolina, USA. In that case, there are two entries for RDU-C.
+# As of July 2018, there are 20,000+ POR referenced by a IATA code.
+# Again, the same IATA code is usually referenced by at least a city
+# and a travel-related POR. So, overall, there are many less distinct
+# IATA codes.
+#
+# On the other hand, the 'ZZZ' (IATA) code is assigned to POR,
+# which are not referenced by IATA. Among those, some are referenced
+# by the optd_por_best_known_so_far.csv file (usually, those having
+# an ICAO code), some have just at least one UN/LOCODE code.
+# As of July 2018, there are 90,000+ POR having at least a UN/LOCODE code,
+# and which are not referenced by IATA. So, adding them all
+# to the optd_por_best_known_so_far.csv file is not so practical.
+# And it is not very usefull too; especially now that Geonames has become
+# the master (provider of so called gold records) for all the new POR.
+# Hence, all the non-IATA-referenced UN/LOCODE-referenced POR can be added
+# to the optd_por_public.csv file, without them to be curated one by one
+# in the optd_por_best_known_so_far.csv file.
 #
 function displayGeonamesPOREntries(__dgpeWAddedPK) {
     # Calculate the number of the Geonames POR entries corresponding to
