@@ -1,5 +1,8 @@
 ##
+# http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk
 #
+# See http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md
+# for more details
 
 ##
 # Function to be called during the BEGIN section
@@ -1662,17 +1665,45 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 ##
 # Display the list of Geonames POR entries.
 #
-# For IATA referenced POR, usually there is no more than one POR entry
-# for a given IATA code and location type. In some rare cases,
-# a travel-related POR serves several cities. For instance,
+# See http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md
+# for more details
+#
+# This function is the main one for processing the Geonames ID export file
+# (dump_from_geonames.csv). At that stage, the OPTD-maintained data file
+# (optd_por_best_known_so_far.csv) has already been parsed and the
+# corresponding details are stored in AWK (optd_por_xxx_list) data structures,
+# for instance optd_por_loctype_list (for the list of OPTD-maintained
+# transport types) and optd_por_geoid_list (for the list of OPTD-maintained
+# Geonames ID per IATA-referenced POR).
+#
+# For most of the IATA referenced POR, the same IATA code is used to reference
+# both the travel-/transport-related record as well as the city one.
+# For instance, San Francisco, California (CA), United States (US):
+# SFO-A-5391989^SFO^37.618972^-122.374889^SFO^
+# SFO-C-5391959^SFO^37.77493^-122.41942^SFO^
+#
+# Some big travel-/transport-related POR, such as the airports of Chicago,
+# London, Paris or Moscow, have their own IATA code, distinct from the one
+# of the city they serve. Example of Chicago, Illinois (IL), United States (US),
+# and its O'Hare airport:
+# CHI-C-4887398^CHI^41.85003^-87.65005^CHI^
+# ORD-A-4887479^ORD^41.978603^-87.904842^CHI^ 
+#
+# Moreover, there is usually no more than one POR entry for a given IATA code
+# and location type. In some rare cases though, a travel-related POR serves
+# several cities. For instance,
 # RDU-A-4487056 serves both RDU-C-4464368 (Raleigh) and RDU-C-4487042 (Durham)
-# in North Carolina, USA. In that case, there are two entries for RDU-C.
+# in North Carolina (NC), United States (US). In that case, there are
+# two entries for RDU-C.
+#
 # As of July 2018, there are 20,000+ POR referenced by a IATA code.
 # Again, the same IATA code is usually referenced by at least a city
 # and a travel-related POR. So, overall, there are many less distinct
-# IATA codes.
+# IATA codes. At of July 2018, OPTD is aware of exactly 11,270 distinct
+# IATA codes. You can run for instance the following command:
+# cut -d'^' -f1,1 ../opentraveldata/optd_por_best_known_so_far.csv | cut -d'-' -f1,1 | uniq | wc -l
 #
-# On the other hand, the 'ZZZ' (IATA) code is assigned to POR,
+# On the other hand, OPTD assigns the 'ZZZ' (IATA) code to POR,
 # which are not referenced by IATA. Among those, some are referenced
 # by the optd_por_best_known_so_far.csv file (usually, those having
 # an ICAO code), some have just at least one UN/LOCODE code.
@@ -1683,7 +1714,52 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 # the master (provider of so called gold records) for all the new POR.
 # Hence, all the non-IATA-referenced UN/LOCODE-referenced POR can be added
 # to the optd_por_public.csv file, without them to be curated one by one
-# in the optd_por_best_known_so_far.csv file.
+# in the optd_por_best_known_so_far.csv file. In any case, they are present
+# in the dump_from_geonames.csv file.
+# Command to see the different Geonames feature codes for those
+# non-IATA-referenced POR:
+# grep '^ZZZ' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
+#
+# Examples of records in optd_por_best_known_so_far.csv (parsed
+# in a previous phase):
+# [OPTD-maintained POR being referenced by IATA]
+# CHI-C-4887398^CHI^41.85003^-87.65005^CHI^
+# ORD-A-4887479^ORD^41.978603^-87.904842^CHI^ 
+# RDU-A-4487056^RDU^35.87946^-78.7871^RDU^
+# RDU-C-4464368^RDU^35.99403^-78.89862^RDU^
+# RDU-C-4487042^RDU^35.7721^-78.63861^RDU^
+# SFO-A-5391989^SFO^37.618972^-122.374889^SFO^
+# SFO-C-5391959^SFO^37.77493^-122.41942^SFO^
+# [...]
+# [OPTD-maintained POR not referenced by IATA, but being referenced
+#  by another organism such as ICAO or UN/LOCODE]
+# ZZZ-A-11258616^ZZZ^14.13518^93.36731^ZZZ^
+# ZZZ-A-11395447^ZZZ^-1.11564^34.48514^ZZZ^
+# ZZZ-A-8131475^ZZZ^4.08268^30.65018^ZZZ^
+#
+# Examples of records in dump_from_geonames.csv (which are the ones
+# currently parsed here):
+# [OPTD-maintained POR being referenced by IATA]
+# RDU^^^4464368^Durham^Durham^35.99403^-78.89862^US^^United States^North America^P^PPLA2^NC^North Carolina^North Carolina^063^Durham County^Durham County^90932^^257636^123^121^America/New_York^-5.0^-4.0^-5.0^2017-05-23^Durham,RDU^http://en.wikipedia.org/wiki/Durham%2C_North_Carolina^de|Durham||en|Durham|p^USDUR|
+# RDU^^^4487042^Raleigh^Raleigh^35.7721^-78.63861^US^^United States^North America^P^PPLA^NC^North Carolina^North Carolina^183^Wake County^Wake County^92612^^451066^96^99^America/New_York^-5.0^-4.0^-5.0^2017-05-23^RDU,Raleigh^http://en.wikipedia.org/wiki/Raleigh%2C_North_Carolina^en|Raleigh|p^USRAG|
+# RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^US^^United States^North America^S^AIRP^NC^North Carolina^North Carolina^183^Wake County^Wake County^90576^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2017-05-23^KRDU,RDU,Raleigh-Durham International Airport^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^en|Raleigh–Durham International Airport|p^USRDU|
+# [...]
+# [OPTD-maintained POR not referenced by IATA, but being referenced
+#  by another organism such as ICAO or UN/LOCODE]
+# ZZZ^VYCI^^11258616^Coco Island Airport^Coco Island Airport^14.13518^93.36731^MM^^Myanmar^Asia^S^AIRP^17^Rangoon^Rangoon^MMR013D003^Yangon South District^Yangon South District^MMR013032^^0^^4^Asia/Yangon^6.5^6.5^6.5^2017-07-20^Coco Island Airport,VYCI^http://en.wikipedia.org/wiki/Coco_Island_Airport^en|Coco Island Airport|^
+# ZZZ^HKMM^^11395447^Migori Airport^Migori Airport^-1.11564^34.48514^KE^^Kenya^Africa^S^AIRP^36^Migori^Migori^^^^^^0^^1407^Africa/Nairobi^3.0^3.0^3.0^2016-12-10^HKMM,Migori Airport^^en|Migori Airport|^
+# ZZZ^HSYE^^8131475^Yei Airport^Yei Airport^4.08268^30.65018^SS^^South Sudan^Africa^S^AIRP^01^^^^^^^^0^^849^Africa/Juba^3.0^3.0^3.0^2012-01-10^HSYE^http://en.wikipedia.org/wiki/Yei_Airport^^
+# [...]
+# [POR not maintained by OPTD (hence as well not referenced by IATA),
+#  but being referenced by another organism such as ICAO or UN/LOCODE]
+# ZZZ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
+# ZZZ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
+# ZZZ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
+#
+# Now that the context has been explained, the following function must
+# retrieve the OPTD-maintained records corresponding to each group of
+# Geonames records referenced by the same IATA code (remember, if the IATA code
+# is ZZZ, it means that those POR are not referenced by IATA).
 #
 function displayGeonamesPOREntries(__dgpeWAddedPK) {
     # Calculate the number of the Geonames POR entries corresponding to

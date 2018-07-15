@@ -1,6 +1,232 @@
-# Use cases
+# Overview
+The [original of that documentation file](http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md)
+is maintained on the [OpenTravelData project](http://github.com/opentraveldata/opentraveldata),
+within the [``tools`` directory](http://github.com/opentraveldata/opentraveldata/blob/master/tools).
 
-## Generate the OPTD-maintained POR (points of reference) file
+# POR (points of reference)
+
+## Data sources
+The two main sources for the geographical points of reference (POR) are:
+* The [OpenTravelData (OPTD) project itself](http://github.com/opentraveldata/opentraveldata),
+  with its manually curated
+  [list of POR (namely ``opentraveldata/optd_por_best_known_so_far.csv``)](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv).
+* The [Geonames project](http://geonames.org), from which a POR data file is
+  derived, namely ``tools/dump_from_geonames.csv``.
+  See the [section below dedicated to getting data from Geonames](#update-from-geonames)
+  for more details.
+
+Various other smaller data sources are used, and maintained by OPTD, such as
+details for time-zones, administrative levels of countries, countries,
+continents, currencies and codes from organisms such as UN/LOCODE or US WAC.
+Those data sources are detailed in
+[dedicated section below](#input-files-for-the-main-optd-maintained-por-data-file-processor).
+
+## IATA referencing
+All the [POR referenced by IATA](http://github.com/opentraveldata/opentraveldata/blob/master/data/IATA/archives)
+are also maintained by OPTD. That is, there should not be any POR referenced
+by IATA which is not also curated by OPTD. If that is not the case, that is,
+if a IATA-referenced POR is missing from OPTD, then please
+[open a bug](http://github.com/opentraveldata/opentraveldata/issues/new).
+
+Very regularly, updates from IATA are reported back into OPTD (those changes
+are usually captured through screen snapshots on various Web sites),
+so that OPTD reflects at least the up-to-date state of IATA. On top of this,
+OPTD brings many quality improvements, in particular with respect to travel
+and city code assignments.
+
+## OPTD-generated POR data file
+The main deliverable of the
+[OpenTravelData project](http://github.com/opentraveldata/opentraveldata)
+is the POR "public" file, namely
+[``opentraveldata/optd_por_public.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_public.csv).
+The "public" qualifier hints that anyone is able to add, on top of that
+POR reference file, his/her own private information.
+
+## OPTD-maintained POR file
+
+### Rationale
+The main curated POR file of the
+[OpenTravelData project](http://github.com/opentraveldata/opentraveldata)
+is the list of "best known details", namely
+[``opentraveldata/optd_por_best_known_so_far.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv).
+It originated (around 2010) from a colection of screen scraped content from
+various Web sites.
+The OPTD people began to spend significant amount of time curating the list
+of POR on various free platforms such as [Geonames](http://geonames.org) and
+[Wikipedia](http://wikipedia.org), and that initial knowledge was then fixed
+in that ``opentraveldata/optd_por_best_known_so_far.csv``, which has been
+continuously curated since then.
+
+### Relationship between a city and its serving POR
+For most of the IATA referenced POR, the same IATA code is used to reference
+both the travel-/transport-related record as well as the city one.
+For instance, San Francisco, California (CA), United States (US):
+```csv
+SFO-A-5391989^SFO^37.618972^-122.374889^SFO^
+SFO-C-5391959^SFO^37.77493^-122.41942^SFO^
+```
+
+Some big travel-/transport-related POR, such as the airports of Chicago,
+London, Paris or Moscow, have their own IATA code, distinct from the one
+of the city they serve. Following is the example for Chicago, Illinois (IL),
+United States (US), and its transport-serving POR:
+```csv
+CHI-C-4887398^CHI^41.85003^-87.65005^CHI^
+DPA-A-4890214^DPA^41.90642^-88.24841^CHI^
+MDW-A-4887472^MDW^41.785972^-87.752417^CHI^
+ORD-A-4887479^ORD^41.978603^-87.904842^CHI^ 
+RFD-A-4894553^RFD^42.20164^-89.09567^CHI,RFD^
+RFD-C-4907959^RFD^42.27113^-89.094^RFD^2016-01-01
+ZUN-R-4914391^ZUN^41.87864^-87.64033^CHI^
+```
+
+Moreover, there is usually no more than one POR entry for a given pair of
+IATA code and location type. In some rare cases though, a travel-related POR
+serves several cities. For instance,
+[``RDU-A-4487056``](http://geonames.org/4487056) serves both
+[``RDU-C-4464368``](http://geonames.org/4464368) (Raleigh, NC, US) and
+[``RDU-C-4487042``](http://geonames.org/4487042) (Durham, NC, US)
+in North Carolina (NC), United States (US).
+In that case, there are two entries for ``RDU-C``. The corresponding entries
+in the [``optd_por_best_known_so_far.csv`` file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv)
+are:
+```csv
+RDU-A-4487056^RDU^35.87946^-78.7871^RDU^
+RDU-C-4464368^RDU^35.99403^-78.89862^RDU^
+RDU-C-4487042^RDU^35.7721^-78.63861^RDU^
+```
+
+As of July 2018, there are over 20,000 POR referenced by a IATA code.
+Again, the same IATA code is usually referenced by at least a city
+and a travel-related POR. So, overall, there are many less distinct
+IATA codes. At of July 2018, OPTD is aware of exactly 11,270 distinct
+IATA codes. To get that number, one can run for instance the following
+command (and subtract 2 to the result, for the header and for the 'ZZZ' code):
+```bash
+$ cut -d'^' -f1,1 ../opentraveldata/optd_por_best_known_so_far.csv | cut -d'-' -f1,1 | uniq | wc -l
+```
+
+### Non-IATA-referenced POR
+On the other hand, OPTD assigns the ``ZZZ`` (IATA) code to POR,
+which are not referenced by IATA. Among those:
+* Some are referenced by the ``optd_por_best_known_so_far.csv`` file
+ (usually, those having an ICAO code).
+* Some have just at least one UN/LOCODE code.
+
+Examples of non-IATA-referenced POR, which are however maintained in OPTD:
+```csv
+ZZZ-A-11258616^ZZZ^14.13518^93.36731^ZZZ^
+ZZZ-A-11395447^ZZZ^-1.11564^34.48514^ZZZ^
+ZZZ-A-8131475^ZZZ^4.08268^30.65018^ZZZ^
+```
+Those examples correspond to:
+* [Coco Island Airport, Myanmar (MM)](http://geonames.org/11258616),
+  referenced by ICAO as ``VYCI``
+* [Migori Airport, Kenya (KE)](http://geonames.org/11395447),
+  referenced by ICAO as ``HKMM``
+* [Yei Airport, South Sudan (SS)](http://geonames.org/8131475),
+  referenced by ICAO as ``HSYE``
+
+As of July 2018, there are over 90,000 POR having at least a UN/LOCODE code,
+and which are not referenced by IATA. So, adding them all
+to the ``optd_por_best_known_so_far.csv`` file is not so practical.
+And it is not very usefull too; especially now that Geonames has become
+the master (provider of so called gold records) for all the new POR.
+Hence, all the non-IATA-referenced UN/LOCODE-referenced POR can be added
+to the ``optd_por_public.csv`` file, without them to be curated one by one
+in the ``optd_por_best_known_so_far.csv`` file first.
+In any case, those POR are present in the ``dump_from_geonames.csv`` file.
+Command to see the different Geonames feature codes for those
+non-IATA-referenced POR:
+```bash
+$ grep '^ZZZ' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
+```
+
+## Geonames-derived POR file
+The [Geonames project](http://geonames.org) dumps every morning the content
+of their production database. The corresponding snapshot data files can be
+downloaded from their [export site](http://download.geonames.org/export/dump/).
+
+OPTD maintains a few scripts to download those Geonames dump data files,
+and to generate in several steps the so-called Geonames data source,
+namely ``dump_from_geonames.csv``.
+
+### Download of the Geonames snapshot data files
+The [``data/geonames/data/getDataFromGeonamesWebsite.sh`` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/getDataFromGeonamesWebsite.sh)
+downloads all the Geonames dump/snapshot data files,
+including among other things:
+* [``allCountries.zip`` (around 350 MB)](http://download.geonames.org/export/dump/allCountries.zip),
+  becoming ``allCountries.txt`` once unzipped, and listing the main details of
+  every single POR known from Geonames (over 12 millions of POR).
+* [``alternateNames.zip`` (around 140 MB)](http://download.geonames.org/export/dump/alternateNames.zip),
+  becoming ``alternateNames.txt`` once unzipped, and listing the alternate
+  names of those POR. Note that the codes (e.g., IATA, ICAO, FAA, TCID,
+  UN/LOCODE) and (Wikipedia) links are alternate names in Geonames parlance.
+
+### Generation of the aggregated Geonames snapshot data file
+The [``data/geonames/data/por/admin/aggregateGeonamesPor.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/admin/aggregateGeonamesPor.awk),
+from the two above-mentioned Geonames snapshot/dump data files,
+generates a combined data file, named ``allCountries_w_alt.txt``, in the
+[``data/geonames/data/por/data`` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),
+next to the downloaded Geonames data files.
+
+
+### Generation of the main OPTD-used Geonames data file
+The [``tools/extract_por_with_iata_icao.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_with_iata_icao.awk),
+from the above-mentioned combined Geonames data file, generates the main
+Geonames POR data file then used by OPTD, namely ``dump_from_geonames.csv``,
+in the
+[``tools`` directory](http://github.com/opentraveldata/opentraveldata/blob/master/tools).
+
+### Examples of records in the main OPTD-used Geoanmes data file
+Examples of records in the ``dump_from_geonames.csv`` data file, echoing
+the the examples shown in the
+[OPTD-maintained POR file section above](#optd-maintained-por-file).
+
+#### Regular relationship between a city and its transport-related POR
+Following the [city of San Francisco](http://geonames.org/5391959) and its
+[main airport](http://geonames.org/5391989):
+```csv
+SFO^^^5391959^San Francisco^San Francisco^37.77493^-122.41942^US^^United States^North America^P^PPLA2^CA^California^California^075^City and County of San Francisco^City and County of San Francisco^^^864816^16^28^America/Los_Angeles^-8.0^-7.0^-8.0^2017-06-15^San Francisco^http://en.wikipedia.org/wiki/San_Francisco^en|San Francisco|p|ru|Сан-Франциско||abbr|SF|^USSFO|
+SFO^KSFO^SFO^5391989^San Francisco International Airport^San Francisco International Airport^37.61882^-122.3758^US^^United States^North America^S^AIRP^CA^California^California^081^San Mateo County^San Mateo County^^^0^5^-2^America/Los_Angeles^-8.0^-7.0^-8.0^2014-07-29^San Francisco International Airport^http://en.wikipedia.org/wiki/San_Francisco_International_Airport^en|San Francisco International Airport|^USSFO|
+```
+
+#### A transport-related POR serving several cities
+Following the [Raleigh-Durham International Airport](http://geonames.org/4487056)
+serving the cities of [Durham](http://geonames.org/4464368) and
+[Raleigh](http://geonames.org/4487042) in North Carolina (NC) in
+the United States (US):
+```csv
+RDU^^^4464368^Durham^Durham^35.99403^-78.89862^US^^United States^North America^P^PPLA2^NC^North Carolina^North Carolina^063^Durham County^Durham County^90932^^257636^123^121^America/New_York^-5.0^-4.0^-5.0^2017-05-23^Durham,RDU^http://en.wikipedia.org/wiki/Durham%2C_North_Carolina^de|Durham||en|Durham|p^USDUR|
+RDU^^^4487042^Raleigh^Raleigh^35.7721^-78.63861^US^^United States^North America^P^PPLA^NC^North Carolina^North Carolina^183^Wake County^Wake County^92612^^451066^96^99^America/New_York^-5.0^-4.0^-5.0^2017-05-23^RDU,Raleigh^http://en.wikipedia.org/wiki/Raleigh%2C_North_Carolina^en|Raleigh|p^USRAG|
+RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^US^^United States^North America^S^AIRP^NC^North Carolina^North Carolina^183^Wake County^Wake County^90576^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2017-05-23^KRDU,RDU,Raleigh-Durham International Airport^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^en|Raleigh–Durham International Airport|p^USRDU|
+```
+
+#### Non-IATA-referenced OPTD-known POR
+
+##### OPTD-known POR
+The following transport-related POR are not referenced by IATA, but known
+from (and maintained by) OPTD. They are normally referenced by another
+organism such as ICAO or UN/LOCODE:
+```csv
+ZZZ^VYCI^^11258616^Coco Island Airport^Coco Island Airport^14.13518^93.36731^MM^^Myanmar^Asia^S^AIRP^17^Rangoon^Rangoon^MMR013D003^Yangon South District^Yangon South District^MMR013032^^0^^4^Asia/Yangon^6.5^6.5^6.5^2017-07-20^Coco Island Airport,VYCI^http://en.wikipedia.org/wiki/Coco_Island_Airport^en|Coco Island Airport|^
+ZZZ^HKMM^^11395447^Migori Airport^Migori Airport^-1.11564^34.48514^KE^^Kenya^Africa^S^AIRP^36^Migori^Migori^^^^^^0^^1407^Africa/Nairobi^3.0^3.0^3.0^2016-12-10^HKMM,Migori Airport^^en|Migori Airport|^
+ZZZ^HSYE^^8131475^Yei Airport^Yei Airport^4.08268^30.65018^SS^^South Sudan^Africa^S^AIRP^01^^^^^^^^0^^849^Africa/Juba^3.0^3.0^3.0^2012-01-10^HSYE^http://en.wikipedia.org/wiki/Yei_Airport^^
+```
+
+##### Non-OPTD-known POR
+The following transport-related POR are not referenced by IATA, and also
+not known from (or maintained by) OPTD. They are normally referenced by another
+organism such as ICAO or UN/LOCODE:
+```csv
+ZZZ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
+ZZZ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
+ZZZ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
+```
+
+## Use cases
+
+### Generate the OPTD-maintained POR (points of reference) file
 ```bash
 $ cd <OPTD_ROOT_DIR>/tools
 $ ./make_optd_por_public.sh && ./make_optd_por_public.sh --clean
@@ -9,7 +235,7 @@ $ git diff --cached optd_por_public.csv
 $ git ci -m "[POR] Integrated the latest updates from Geonames."
 ```
 
-## Update from Geonames
+### Update from Geonames
 The Geonames data may be updated, i.e., new Geonames data files are
 downloaded and the ```allCountries_w_alt.txt``` data file is recomputed:
 ```bash
@@ -40,7 +266,7 @@ $ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 
 Note that the ```por_noiata_YYYYMMDD.csv``` has usually a size of around 1.5 GB.
 
-## Add state (administrative level) codes for a given country
+### Add state (administrative level) codes for a given country
 See [OpenTravelData Issue #78](https://github.com/opentraveldata/opentraveldata/issues/78)
 for the example on how to add Russian state codes.
 
@@ -75,9 +301,9 @@ Just for information, the relevant AWK scripts are:
 * [``tools/make_optd_por_public.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk#L232)
 
 
-# Recompute the OPTD-maintained POR file: do 1.1.
+## Recompute the OPTD-maintained POR file: do 1.1.
 
-## Update from reference data
+### Update from reference data
 The reference data has been updated, i.e., the ```dump_from_crb_city.csv```
 file has been recomputed.
 
@@ -106,9 +332,9 @@ file
 $ git add ../opentraveldata/optd_por_no_geonames.csv
 ```
 
-# Recompute the OPTD-maintained POR file: do 1.1.
+## Recompute the OPTD-maintained POR file: do 1.1.
 
-## Update from Innovata
+### Update from Innovata
 The Innovata data may be updated, i.e., new Innovata data files have been
 downloaded privately, and the dump_from_innovata.csv has to be recomputed.
 That file is just used for private reference purpose: no Innovata data is
@@ -132,7 +358,7 @@ $ git add ../data/Innovata/innovata_stations.dat
 $ git commit -m "[POR] New updates for some sources." ../data/Innovata
 ```
 
-## Update from screen-scraped flight routes
+### Update from screen-scraped flight routes
 ```bash
 $ cd <OPTD_ROOT_DIR>/tools
 ```
@@ -161,7 +387,7 @@ $ git add ../opentraveldata/ref_airport_pageranked.csv
 $ git add ../opentraveldata/optd_por_public.csv
 ```
 
-## Compute the differences among all the POR files
+### Compute the differences among all the POR files
 ```bash
 $ cd <OPTD_ROOT_DIR>/tools
 $ ./compare_por_files.sh && ./compare_por_files.sh --clean
@@ -214,7 +440,7 @@ $ midori http://en.wikipedia.org
 $ midori http://maps.bing.com
 ```
 
-## Geonames has better coordinates for a known POR
+### Geonames has better coordinates for a known POR
 When the geographical details of a given POR are proved better in Geonames
 than in the OPTD-maintained data files, those latters have to be corrected.
 Just update the coordinates within the OPTD-maintained list of best known
@@ -230,7 +456,7 @@ Proceed with the use case 1.1, since the OPTD-maintained list of best known
 coordinates has now better coordinates than the OPTD-maintained list of POR.
 
 
-## Geonames has details for an unknown POR
+### Geonames has details for an unknown POR
 A new POR, still unknown from OPTD, may have been specified within Geonames.
 
 The procedure is exactly the same as in 4.1: manually edit the
@@ -238,23 +464,23 @@ The procedure is exactly the same as in 4.1: manually edit the
 and re-generate the OPTD-maintained POR file (step 1.1).
 
 
-## OPTD-maintained best known coordinates file has better coordinates
+### OPTD-maintained best known coordinates file has better coordinates
 Fix the POR (points of reference) in Geonames and Wikipedia.
 See 3.1 for the URLs.
 
 
-## OPTD-maintained list has got POR unknown from Geonames
+### OPTD-maintained list has got POR unknown from Geonames
 Add the POR in Geonames and Wikipedia. See 2.1 for the URLs.
 
 
-## Generation of the list of POR, specified in IATA, but missing from Geonames
-### Step 1
+### Generation of the list of POR, specified in IATA, but missing from Geonames
+#### Step 1
 Do like in 2.1:
 ```bash
 $ ./compare_por_files.sh
 ```
 
-### Step 2
+#### Step 2
 Then, generate the por_in_iata_but_missing_from_geonames.csv and
 pageranked_por_in_iata_but_missing_from_geonames.csv files:
 ```bash
@@ -265,14 +491,14 @@ If any POR is not in reference data, it will appear and the program
 will exit (no file will be generated); follow the suggestion to remove
 those entries from the dump_from_geonames.csv.missing file.
 
-### Step 3
+#### Step 3
 Send the por_in_iata_but_missing_from_geonames.csv file to Geonames
 ```bash
 $ gzip por_in_iata_but_missing_from_geonames.csv
 $ gzip pageranked_por_in_iata_but_missing_from_geonames.csv
 ```
 
-## Bulk fix the best known coordinates
+### Bulk fix the best known coordinates
 When those are equal to zero and they are known by Geonames and/or
 in reference data. That is the bulk version of 4.1.
 ```bash
@@ -317,45 +543,45 @@ Go to 1.1., as the OPTD-maintained file of best known coordinates
 has been updated
 
 
-## Check issues with Geonames ID on OPTD POR
+### Check issues with Geonames ID on OPTD POR
 ```bash
 $ sh prepare_geonames_dump_file.sh ../ 5
 $ sh prepare_geonames_dump_file.sh --clean
 $ \rm -f wpk_dump_from_geonames.csv
 ```
 
-## Spot POR having distinct IATA codes but having the same Geonames ID
+### Spot POR having distinct IATA codes but having the same Geonames ID
 ```bash
 ./spot_dup_geonameid.sh
 ```
 
-## Spot POR for which Geonames may be improved
+### Spot POR for which Geonames may be improved
 ```bash
 $ ./extract_por_for_geonames.sh
 ```
 
-## Extract POR information from schedules
+### Extract POR information from schedules
 ```bash
 $ ./extract_por_from_schedules.sh
 ```
 
-## Extract airport-related POR missing from Geonames
+### Extract airport-related POR missing from Geonames
 ```bash
 $ ./generate_por_apt_list_for_geonames.sh
 $ wc -l ../opentraveldata/optd_por_apt_for_geonames.csv
 $ less ../opentraveldata/optd_por_apt_for_geonames.csv
 ```
 
-## Extract POR with state details for a given country
+### Extract POR with state details for a given country
 ```bash
 $ ./extract_state_details.sh IN
 $ less ../opentraveldata/optd_country_states.csv.41cty
 $ ./extract_state_details.sh --clean
 ```
 
-# Maintenance
+## Maintenance
 
-## The format of the allCountries_w_alt.txt file changes
+### The format of the allCountries_w_alt.txt file changes
 The format of the data/geonames/data/por/data/allCountries_w_alt.txt
 may change, i.e., when the data/geonames/data/por/admin/aggregateGeonamesPor.*
 (Shell and AWK) scripts are amended. An example of such a change has been
@@ -404,7 +630,7 @@ data_generation/por/make_optd_por_private.awk
 data_generation/por/make_optd_por_private.sh
 ```
 
-## The format of the optd_por_public.csv file changes
+### The format of the optd_por_public.csv file changes
 The format of the data/geonames/data/por/data/allCountries_w_alt.txt
 may change, i.e., when the data/geonames/data/por/admin/aggregateGeonamesPor.*
 (Shell and AWK) scripts are amended. An example of such a change has been
@@ -436,9 +662,119 @@ data_generation/por/make_optd_por_private.awk
 data_generation/por/make_optd_por_private.sh
 ```
 
-## Extract the list of states
+### Extract the list of states
 ```bash
 $ ./extract_states.sh IN
 $ git add ../opentraveldata/optd_states.csv
 $ git commit -m "[States] Updated the list of states"
 ```
+
+
+## Details of some data processing tasks
+
+### Building of the main OPTD-maintained POR data file
+That section provides more details on how the
+[``opentraveldata/optd_por_public.csv`` file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_public.csv)
+is generated.
+
+* The main data processing program is the
+[``tools/make_optd_por_public.sh`` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.sh),
+  which in turn calls the
+[``tools/make_optd_por_public.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk),
+  which in turn calls a few functions from the
+[``tools/awklib/geo_lib.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk).
+  More specifically, for each [input data file](),
+  the [``tools/make_optd_por_public.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk)
+  calls a function named like ``registerXxxLine()`` in the
+  [``tools/awklib/geo_lib.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk).
+
+#### Parsing of the ``optd_por_best_known_so_far.csv`` (OPTD-maintained) file
+The [``registerOPTDLine()`` function](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-registeroptdline)
+is the main one for processing the
+[OPTD-maintained POR file (``opentraveldata/optd_por_best_known_so_far.csv``)](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv).
+
+#### Parsing of the ``dump_from_geonames.csv`` (Genames-derived) file
+The [``displayGeonamesPOREntries()`` function](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-displaygeonamesporentries)
+is the main one for processing the Geonames-derived data file
+(``dump_from_geonames.csv``). At that stage, the OPTD-maintained data file
+([``opentraveldata/optd_por_best_known_so_far.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv))
+has already been parsed and the corresponding details are stored in AWK
+(``optd_por_xxx_list``) data structures, for instance ``optd_por_loctype_list``
+(for the list of OPTD-maintained transport types) and ``optd_por_geoid_list``
+(for the list of OPTD-maintained Geonames ID per IATA-referenced POR).
+
+#### Input files for the main OPTD-maintained POR data file processor
+That AWK script takes as input the following data files:
+* OPTD-maintained lists of:
+  + Best known POR (poins of reference):
+	  [``opentraveldata/optd_por_best_known_so_far.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv)
+  + PageRank values:
+	  [``opentraveldata/ref_airport_pageranked.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/ref_airport_pageranked.csv)
+  + Country-associated time-zones:
+     [``opentraveldata/optd_tz_light.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_tz_light.csv)
+  + Time-zones for a few POR:
+	  [``opentraveldata/optd_por_tz.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_tz.csv)
+  + Country-associated continents:
+	  [``opentraveldata/optd_cont.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_cont.csv)
+  + US DOT World Area Codes (WAC):
+	  [``opentraveldata/optd_usdot_wac.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_usdot_wac.csv)
+  + Country details:
+	  [``opentraveldata/optd_countries.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_countries.csv)
+  + Country states:
+	  [``opentraveldata/optd_country_states.csv``](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_country_states.csv)
+
+* Geonames: ``tools/dump_from_geonames.csv`` temporary data file, generated
+    as explained in the [section above dedicated to getting data from Geonames](#update-from-geonames)
+
+#### Derivation of the time-zone details
+When the POR is listed by OPTD without any associated Geonames ID,
+the time-zone ID is derived from either:
+* The
+  [``opentraveldata/optd_por_tz.csv`` file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_tz.csv),
+  when there is en entry for that POR is that file.
+
+* Its associated country otherwise. In that case, a simplified time-zone ID
+  is derived directly from the country code. That is obviously inaccurate
+  for countries such as Russia (RU), Canada (CA), USA (US), Antartica (AQ)
+  or Australia (AU).
+  The best solution is really to add the Geonames ID of the POR to the
+  [``optd_por_best_known_so_far.csv`` file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv),
+  and to add it (previously) to Geonames if needed, that is,
+  when that latter does not already reference it.
+
+#### Addition of city names
+The city (``UTF8`` and ``ASCII``) names are added afterwards, by another
+AWK script, namely [``tools/add_city_name.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/add_city_name.awk).
+
+#### Sample output lines of ``optd_por_public.csv``
+That sub-section lists a few samples of output records of the
+[``optd_por_public.csv`` generated data file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_public.csv),
+echoing the input data from the
+[OPTD-maintained ``optd_por_best_known_so_far.csv`` file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_best_known_so_far.csv)
+in [the above-mentioned section](#update-from-geonames).
+
+##### Standard transport- and city-related pairs
+* Following are the records for [Nice](http://geonames.org/2990440)
+  and [its airport](http://geonames.org/6299418):
+```csv
+NCE^LFMN^^Y^6299418^^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.658411^7.215872^S^AIRP^0.08188805262796059^^^^FR^^France^Europe^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2018-06-18^NCE^Nice^NCE|2990440|Nice|Nice^^^A^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^en|Nice Côte d'Azur International Airport|p^427^France^EUR^FRNCE|
+NCE^^^Y^2990440^^Nice^Nice^43.70313^7.26608^P^PPLA2^0.08188805262796059^^^^FR^^France^Europe^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^338620^25^18^Europe/Paris^1.0^2.0^1.0^2018-06-18^NCE^Nice^NCE|2990440|Nice|Nice^NCE^^C^http://en.wikipedia.org/wiki/Nice^en|Nice|=post|06100|=yue|尼斯|^427^France^EUR^FRNCE|
+```
+
+##### Cities with several transport-related POR
+```csv
+CHI^^^Y^4887398^^Chicago^Chicago^41.85003^-87.65005^P^PPLA2^0.6133625163311509^^^^US^^United States^North America^IL^Illinois^Illinois^031^Cook County^Cook County^14000^^2720546^179^180^America/Chicago^-6.0^-5.0^-6.0^2017-05-23^CHI^Chicago^CHI|4887398|Chicago|Chicago^DPA,GYY,MDW,ORD,PWK,RFD,ZUN^IL^C^http://en.wikipedia.org/wiki/Chicago^en|Chicago|p=ru|Чикаго|=zh|芝加哥|=post|60601|=|The Windy City|^41^Illinois^USD^USCHI|
+DPA^KDPA^DPA^Y^4890214^^DuPage County Airport^DuPage County Airport^41.90642^-88.24841^S^AIRP^^^^^US^^United States^North America^IL^Illinois^Illinois^043^DuPage County^DuPage County^79410^^0^229^228^America/Chicago^-6.0^-5.0^-6.0^2018-07-15^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^http://en.wikipedia.org/wiki/DuPage_Airport^en|DuPage County Airport|p^41^Illinois^USD^USWOP|
+MDW^KMDW^MDW^Y^4887472^^Chicago Midway International Airport^Chicago Midway International Airport^41.785972^-87.752417^S^AIRP^0.12491579567091372^^^^US^^United States^North America^IL^Illinois^Illinois^031^Cook County^Cook County^14000^^0^185^185^America/Chicago^-6.0^-5.0^-6.0^2018-07-15^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^http://en.wikipedia.org/wiki/Midway_International_Airport^en|Chicago Midway International Airport|p^41^Illinois^USD^USDBD|
+ORD^KORD^ORD^Y^4887479^^Chicago O'Hare International Airport^Chicago O'Hare International Airport^41.978603^-87.904842^S^AIRP^0.4871606262308594^^^^US^^United States^North America^IL^Illinois^Illinois^031^Cook County^Cook County^14000^^0^201^202^America/Chicago^-6.0^-5.0^-6.0^2018-03-29^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^http://en.wikipedia.org/wiki/O%27Hare_International_Airport^en|Chicago O'Hare International Airport|p=ru|Международный аэропорт Чикаго О'Хара|^41^Illinois^USD^USORD|
+ZUN^^^Y^4914391^^Chicago Union Station^Chicago Union Station^41.87864^-87.64033^S^RSTN^^^^^US^^United States^North America^IL^Illinois^Illinois^031^Cook County^Cook County^14000^^0^180^186^America/Chicago^-6.0^-5.0^-6.0^2017-05-23^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^R^http://en.wikipedia.org/wiki/Chicago_Union_Station^en|Chicago Union Station|^41^Illinois^USD^USCHI|
+```
+
+#### Transport-related POR serving several cities
+```csv
+```
+
+# Airlines
+
+# Aircraft equipments
+

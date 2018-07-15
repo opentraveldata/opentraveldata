@@ -116,19 +116,19 @@ BEGIN {
     # IATA code of the POR (it should be the same as the one of the primary key)
     iata_code2 = $2
 
-	# Geographical coordinates
-	por_lat = $3
-	por_lon = $4
+    # Geographical coordinates
+    por_lat = $3
+    por_lon = $4
 
-	# City code (list)
-	srvd_city_code_list = $5
+    # City code (list)
+    srvd_city_code_list = $5
 
-	# Beginning date
-	beg_date = $6
+    # Beginning date
+    beg_date = $6
 
     # Register the POR
-	registerOPTDLine(pk, iata_code2, por_lat, por_lon, srvd_city_code_list, \
-					 beg_date, full_line)
+    registerOPTDLine(pk, iata_code2, por_lat, por_lon, srvd_city_code_list, \
+		     beg_date, full_line)
 }
 
 ##
@@ -365,9 +365,9 @@ BEGIN {
     # Through date
     through_date = $14
 
-	# Register the relationships for that WAC
-	registerWACLists(world_area_code, through_date,				\
-					 country_iso_code, state_code, wac_name)
+    # Register the relationships for that WAC
+    registerWACLists(world_area_code, through_date,		\
+		     country_iso_code, state_code, wac_name)
 }
 
 
