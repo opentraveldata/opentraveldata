@@ -704,14 +704,23 @@ function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, 
 #
 function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 			    __agitolParamGeonamesID, __agitolParamOPTDList) {
-    myTmpString = \
-	__agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType]
-    if (myTmpString) {
-	myTmpString = myTmpString ","
+    if (__agitolParamIataCode == "ZZZ") {
+	# The POR is not referenced by IATA. So, only the Geonames ID
+	# is stored in that case.
+	optd_por_noiata_geoid_list[__agitolParamGeonamesID] = 1
     }
-    myTmpString = myTmpString __agitolParamGeonamesID
-    __agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType] = \
-	myTmpString
+    #} else {
+	# The POR is referenced by IATA, and there may be several POR sharing
+	# the same IATA code. So, the Geonames ID and location type are stored.
+	myTmpString = __agitolParamOPTDList[__agitolParamIataCode,	\
+					    __agitolParamLocationType]
+	if (myTmpString) {
+	    myTmpString = myTmpString ","
+	}
+	myTmpString = myTmpString __agitolParamGeonamesID
+	__agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType] = \
+	    myTmpString
+    #}
 }
 
 ##
@@ -1019,6 +1028,7 @@ function registerDOTLine(__rdlParamIataCode, __rdlParamName, \
 function resetOPTDLineList() {
     delete optd_por_loctype_list
     delete optd_por_geoid_list
+    delete optd_por_noiata_geoid_list
     delete optd_por_idx_list
     delete optd_por_lat_list
     delete optd_por_lon_list
@@ -1556,10 +1566,30 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
     }
 
     # Display the last read POR entry, when:
+    # 0. The current POR entry has a 'ZZZ' IATA code. That case is a special
+    #    one.
     # 1. The current POR entry is not the first one (as the last POR entry
     #    then is not defined).
     # 2. The current POR entry has got a (IATA code, location type) combination
     #    distinct from the last POR entry.
+    if (__rglIataCode == "ZZZ") {
+	if (geo_iata_code != "ZZZ") {
+	    # Display the last Geonames POR entries
+	    #displayGeonamesPOREntries()
+
+	    # Reset the last processed POR tag, so as to not execute again
+	    # displayGeonamesPOREntries() in the next statements below
+	    #geo_iata_code = __rglIataCode
+	}
+
+	# Store the full details of the Geonames POR entry
+	#geo_line_list[__rglGeoID] = __rglParamFullLine
+
+	# Processing of the current record, having a 'ZZZ' IATA code,
+	# meaning that it is not referenced by IATA, and that every record
+	# is distinct and must be processed indepedently
+	#displayNonIataPOREntry(__rglGeoID, __rglFeatCode)
+    }
     if (__rglIataCode == geo_iata_code || __rglParamNbOfPOR == 1) {
 		
     } else {
@@ -1660,6 +1690,22 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
     
     #
     return output_line
+}
+
+##
+# Display the non-IATA-referenced Geonames POR entry.
+#
+function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
+    # Check whether that Geonames ID is known from OPTD
+    optd_por_noiata_geoid_list[__dnipeGeoID]
+
+    # Derive the location type from the feature code.
+    dnipeLocationType = getLocTypeFromFeatCode(__dnipeFeatCode)
+    
+    # Display the full details of the Geonames POR entry
+    output_string = displayGeonamesPORWithPK("ZZZ", dnipeLocationType,	\
+					     __dnipeGeoID, __dnipeGeoID)
+    print (output_string)
 }
 
 ##
