@@ -708,8 +708,8 @@ function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 	# The POR is not referenced by IATA. So, only the Geonames ID
 	# is stored in that case.
 	optd_por_noiata_geoid_list[__agitolParamGeonamesID] = 1
-    }
-    #} else {
+
+    } else {
 	# The POR is referenced by IATA, and there may be several POR sharing
 	# the same IATA code. So, the Geonames ID and location type are stored.
 	myTmpString = __agitolParamOPTDList[__agitolParamIataCode,	\
@@ -720,7 +720,7 @@ function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 	myTmpString = myTmpString __agitolParamGeonamesID
 	__agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType] = \
 	    myTmpString
-    #}
+    }
 }
 
 ##
@@ -1340,18 +1340,36 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # Location type (derived from the Geonames feature code). Not used here.
     # geo_location_type = getLocTypeFromFeatCode(feat_code)
 
-    # Latitude
-    geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
+    # When the Geonames ID is known from OPTD, use the corresponding details
+    # (ie, the coordinates, list of served cities and beginning date)
+    isKnownFromOPTD = optd_por_noiata_geoid_list[geonames_id]
+    if (isKnownFromOPTD) {
+	# Latitude
+	geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
 
-    # Longitude
-    geo_lon = getOPTDPorLongitude(iata_code, __dgplOPTDLocType, geonames_id)
+	# Longitude
+	geo_lon = getOPTDPorLongitude(iata_code, __dgplOPTDLocType, geonames_id)
 
-    # City code (list)
-    city_code_list = getOPTDPorCityCodeList(iata_code, __dgplOPTDLocType, \
-					    geonames_id)
+	# City code (list)
+	city_code_list = getOPTDPorCityCodeList(iata_code, __dgplOPTDLocType, \
+						geonames_id)
 
-    # Beginning date
-    date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
+	# Beginning date
+	date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
+
+    } else {
+	# Latitude
+	geo_lat = $7
+
+	# Longitude
+	geo_lat = $8
+
+	# City code (list)
+	city_code_list = iata_code
+
+	# Beginning date
+	date_from = ""
+    }
 
     # Country code
     ctry_code = $9
@@ -1575,20 +1593,20 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
     if (__rglIataCode == "ZZZ") {
 	if (geo_iata_code != "ZZZ") {
 	    # Display the last Geonames POR entries
-	    #displayGeonamesPOREntries()
+	    displayGeonamesPOREntries()
 
 	    # Reset the last processed POR tag, so as to not execute again
 	    # displayGeonamesPOREntries() in the next statements below
-	    #geo_iata_code = __rglIataCode
+	    geo_iata_code = __rglIataCode
 	}
 
 	# Store the full details of the Geonames POR entry
-	#geo_line_list[__rglGeoID] = __rglParamFullLine
+	geo_line_list[__rglGeoID] = __rglParamFullLine
 
 	# Processing of the current record, having a 'ZZZ' IATA code,
 	# meaning that it is not referenced by IATA, and that every record
 	# is distinct and must be processed indepedently
-	#displayNonIataPOREntry(__rglGeoID, __rglFeatCode)
+	displayNonIataPOREntry(__rglGeoID, __rglFeatCode)
     }
     if (__rglIataCode == geo_iata_code || __rglParamNbOfPOR == 1) {
 		
