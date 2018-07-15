@@ -1340,6 +1340,18 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # Location type (derived from the Geonames feature code). Not used here.
     # geo_location_type = getLocTypeFromFeatCode(feat_code)
 
+    # Latitude
+    geo_lat = $7
+
+    # Longitude
+    geo_lat = $8
+
+    # City code (list)
+    city_code_list = iata_code
+
+    # Beginning date
+    date_from = ""
+
     # When the Geonames ID is known from OPTD, use the corresponding details
     # (ie, the coordinates, list of served cities and beginning date)
     isKnownFromOPTD = optd_por_noiata_geoid_list[geonames_id]
@@ -1356,19 +1368,6 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
 	# Beginning date
 	date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
-
-    } else {
-	# Latitude
-	geo_lat = $7
-
-	# Longitude
-	geo_lat = $8
-
-	# City code (list)
-	city_code_list = iata_code
-
-	# Beginning date
-	date_from = ""
     }
 
     # Country code
