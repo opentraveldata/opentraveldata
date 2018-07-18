@@ -2366,6 +2366,33 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
 	}
     }
 
+    # It is not clear how the United Stes Minor Outlying Islands (country name:
+	# UM) should be classified by the US DOT. Most of the islands are
+	# located in the Pacific Ocean, and it would therefore make sense
+	# to associate them with the U.S. Pacific Trust Territories and
+	# Possessions (US-TT, WAC 5/501).
+	# However, one of them, namely Navassa Island, is located in
+	# the Caribbean Sea, may be considered as part of
+	# the U.S. Virgin Islands (US-VI, WAC 4/401).
+    # See also http://en.wikipedia.org/wiki/Territories_of_the_United_States and
+    #http://en.wikipedia.org/wiki/Unincorporated_territories_of_the_United_States
+	#http://en.wikipedia.org/wiki/United_States_Minor_Outlying_Islands
+	#http://en.wikipedia.org/wiki/Navassa_Island
+	#http://en.wikipedia.org/wiki/United_States_Virgin_Islands
+    if (__gwacCountryCode == "UM") {
+		world_area_code_for_state = wac_by_state_code_list["TT"]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
+
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given US Territory (TT)('" \
+				   __gwacCountryCode									\
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
+    }
+
     # For some reason, the US DOT has got the wrong country code for Kosovo
     # See also http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
     if (__gwacCountryCode == "XK") {
