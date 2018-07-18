@@ -70,7 +70,8 @@ fi
 
 ##
 # Retrieve the latest file
-POR_FILE_PFX=por_noiata
+POR_FILE_PFX=por_iata
+POR_NOIATA_FILE_PFX=por_noiata
 SNPSHT_DATE=`ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.csv 2> /dev/null`
 if [ "${SNPSHT_DATE}" != "" ]
 then
@@ -87,17 +88,18 @@ fi
 
 #
 SNPSHT_DATE_HUMAN=`${DATE_TOOL} -d ${SNPSHT_DATE}`
-POR_FILE="${POR_FILE_PFX}_${SNPSHT_DATE}.csv"
+POR_IATA_FILE="${POR_FILE_PFX}_${SNPSHT_DATE}.csv"
+POR_NOIATA_FILE="${POR_NOIATA_FILE_PFX}_${SNPSHT_DATE}.csv"
 TGT_FILE="${DATA_DIR}optd_por_unlc.csv"
 TMP_TGT_FILE=${TGT_FILE}.tmp
 STD_TGT_FILE=${TGT_FILE}.std
 HDR_TGT_FILE=${TGT_FILE}.hdr
 
 # Processing
-time awk -F'^' '{if ($34 != "") {print ($34 ";" $7 ";" $8)}}' $POR_FILE > $TMP_TGT_FILE
-sed -i -e 's/|//g' $TMP_TGT_FILE
+PROCESSOR="extract_por_unlc.awk"
+time awk -F'^' -f ${PROCESSOR} ${POR_IATA_FILE} ${POR_NOIATA_FILE} > $TMP_TGT_FILE
 sort -t'^' -k1,1 $TMP_TGT_FILE > $STD_TGT_FILE
-echo "unlc_list;lat;lon" > $HDR_TGT_FILE
+echo "unlocode^latitude^longitude" > $HDR_TGT_FILE
 cat $HDR_TGT_FILE $STD_TGT_FILE > $TGT_FILE
 
 # Cleaning
