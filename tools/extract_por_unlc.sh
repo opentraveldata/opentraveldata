@@ -98,7 +98,7 @@ HDR_TGT_FILE=${TGT_FILE}.hdr
 # Processing
 PROCESSOR="extract_por_unlc.awk"
 time awk -F'^' -f ${PROCESSOR} ${POR_IATA_FILE} ${POR_NOIATA_FILE} > $TMP_TGT_FILE
-sort -t'^' -k1,1 $TMP_TGT_FILE > $STD_TGT_FILE
+sort -t'^' -k1,1 $TMP_TGT_FILE | uniq > $STD_TGT_FILE
 echo "unlocode^latitude^longitude" > $HDR_TGT_FILE
 cat $HDR_TGT_FILE $STD_TGT_FILE > $TGT_FILE
 
