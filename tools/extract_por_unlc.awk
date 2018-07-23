@@ -11,8 +11,8 @@ BEGIN {
     error_stream = "/dev/stderr"
     awk_file = "extract_por_unlc.awk"
 
-    # Header
-    hdr_line = "unlc^latitude^longitude"
+    # Header (the master header is in the extract_por_unlc.sh script)
+    hdr_line = "unlocode^latitude^longitude^feat_class^feat_code^geonames_id"
     #print (hdr_line)
 
     #
@@ -34,10 +34,17 @@ BEGIN {
     #
     nb_of_geo_por++
 
+    # Geonames ID
+    geonames_id = $4
+    
     # Coordinates
     geo_lat = $7
     geo_lon = $8
     
+    # Geonames feature class and code
+    feat_class = $13
+    feat_code = $14
+
     # UN/LOCODE
     unlc_list = $34
 
@@ -48,7 +55,7 @@ BEGIN {
 	for (unlc_idx in unlc_array) {
 	    unlc_str = unlc_array[unlc_idx]
 	    unlc = substr (unlc_str, 1, 5)
-	    print (unlc FS geo_lat FS geo_lon)
+	    print (unlc FS geo_lat FS geo_lon FS geonames_id FS feat_class FS feat_code)
 	}
     }
 }
