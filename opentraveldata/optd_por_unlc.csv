@@ -1,4 +1,4 @@
-unlocode^latitude^longitude^feat_class^feat_code^geonames_id
+unlocode^latitude^longitude^geonames_id^feat_class^feat_code
 ADALV^42.50779^1.52109^3041563^P^PPLC
 ADCAN^42.5676^1.59756^3041204^P^PPLA
 ADEAC^42.54643^1.50895^3040601^P^PPL
