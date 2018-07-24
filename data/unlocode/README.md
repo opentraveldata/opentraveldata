@@ -1,12 +1,25 @@
 # References
+
+## OpenTravelData
 * This file on the [OpenTravelData project](http://github.com/opentraveldata/opentraveldata):
   https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode/README.md
 
+## UN/LOCODE
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE
-* Official note, as of December 2017: http://www.unece.org/fileadmin/DAM/cefact/locode/2017-2_UNLOCODE_SecretariatNotes.pdf
+* Official note, as of July 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/2018-1_UNLOCODE_SecretariatNotes.pdf
 * Latest data file: http://www.unece.org/cefact/codesfortrade/codes_index.html
-  - December 2017: http://www.unece.org/fileadmin/DAM/cefact/locode/loc172csv.zip (2 MB)
+  - July 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/loc181csv.zip (2 MB)
 * Online code list by country: http://www.unece.org/cefact/locode/service/location.html
+
+## Country sub-divisions
+In the Zip archive of UN/LOCODE data files, there is a CSV file
+with the administrative sub-divisions per country.
+[That file](https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode/unece-subdivision-codes-2018-1.csv)
+seems to be encoded with various code plans, including ``CP1252``.
+In order to convert the ``CP1252`` part, you can do something like:
+```bash
+$ iconv -f CP1252 -t UTF-8 unece-subdivision-codes-2018-1.csv | less
+```
 
 # Details
 
