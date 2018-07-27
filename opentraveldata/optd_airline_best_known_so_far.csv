@@ -267,7 +267,7 @@ air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^htt
 air-buraq-air-v1^^2001-01-01^^BRQ^UZ^928^Buraq Air^^^^^http://en.wikipedia.org/wiki/Buraq_Air^en|Buraq Air|^^air-buraq-air^1^
 air-business-aviation-centre-v1^^^^^UQ^0^Business Aviation Centre^O Connor^^^^^en|Business Aviation Centre|=en|O Connor|^^air-business-aviation-centre^1^
 air-caicos-express-airways-v1^^2011-01-01^^CXE^9Q^0^Caicos Express Airways^PB Air^^^^http://en.wikipedia.org/wiki/Caicos_Express_Airways^en|Caicos Express Airways|=en|PB Air|^^air-caicos-express-airways^1^
-air-cairo-aviation-v1^^1998-01-01^^CCE^OE^207^Cairo Aviation^^^^^http://en.wikipedia.org/wiki/Cairo_Aviation^en|Cairo Aviation|^^air-cairo-aviation^1^
+air-cairo-aviation-v2^^2018-01-01^^CCE^^207^Cairo Aviation^^^^^http://en.wikipedia.org/wiki/Cairo_Aviation^ar|القاهرة للنقل الجوي|=en|Cairo Aviation|=fa|قاهره اوییشن|=ko|카이로 항공|=zh|開羅航空|^CAI^air-cairo-aviation^2^
 air-calm-air-v1^^^^CAV^MO^622^Calm Air International^^^^^^en|Calm Air International|^^air-calm-air^1^
 air-camair-v1^^2011-03-28^^CRC^QC^40^Camair-Co^^^^^http://en.wikipedia.org/wiki/Camair-Co^en|Camair-Co|ps=en|Cameroon Airlines Corporation|^DLA^air-camair^1^
 air-cambodia-angkor-air-v1^^2009-01-01^^KHV^K6^188^Cambodia Angkor Air^^^^^http://en.wikipedia.org/wiki/Cambodia_Angkor_Air^en|Cambodia Angkor Air|p=en|Cambodia Air|=ja|カンボジア・アンコール航空|=km|កម្ពុជា អង្គរ អ៊ែរ|=ko|캄보디아 앙코르 항공|=sign|CAMBODIA|=zh|柬埔寨吴哥航空|^PNH=REP=SGN^air-cambodia-angkor-air^1^
@@ -600,6 +600,7 @@ air-lao-airlines-v1^^^^LAO^QV^627^Lao Airlines^^^^^^en|Lao Airlines|^^air-lao-ai
 air-lao-skyway-v2^^2014-01-01^^LLL^LK^0^Lao Skyway^^^^^http://en.wikipedia.org/wiki/Lao_Skyway^en|Lao Air|h=en|Lao Skyway|p^VTE^air-lao-skyway^2^
 air-latam-cargo-brasil-v1^^1995-01-01^^LTG^M3^0^LATAM Cargo Brasil^^^^^http://en.wikipedia.org/wiki/LATAM_Cargo_Brasil^en|LATAM Cargo Brasil|p=en|Aerolíneas Brasileiras S.A.|h=abbr|ABSA|h^VCP^air-latam-cargo-brasil^1^
 air-latpass-airlines-v1^^^^LTP^QJ^0^Latpass Airlines^^^^^^en|Latpass Airlines|^^air-latpass-airlines^1^
+air-laudamotion-v1^^2018-03-18^^LDM^OE^0^Laudamotion^^^^^http://en.wikipedia.org/wiki/Laudamotion^en|Laudamotion|p=en|Lauda Motion GmbH|=en|Amira Air|h^DUS=TXL=VIE^air-laudamotion^1^
 air-lc-busre-v1^^1993-01-01^^^W4^107^LC Perú^LC Busre^^^^http://en.wikipedia.org/wiki/LC_Per%C3%BA^en|LC Perú|=en|LC Busre|^^air-lc-busre^1^
 air-lepl-air-costa-v1^^2013-10-15^^^LB^0^Air Costa^^^^^http://en.wikipedia.org/wiki/Air_Costa^en|Air Costa|=en|LEPL Projects Limited|^^air-lepl-air-costa^1^
 air-level-airline-v1^^2017-06-01^^^LV^0^Level^^^^P^http://en.wikipedia.org/wiki/Level_(airline)^en|Level|=ja|レベル|=zh|水平航空|^BCN=ORY=VIE^air-level-airline^1^

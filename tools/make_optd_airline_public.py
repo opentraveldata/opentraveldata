@@ -2,7 +2,7 @@
 
 import getopt, sys, re, csv
 from operator import add
-from collections import OrderedDict, Mapping
+from collections import OrderedDict
 
 #
 # Default file-paths for input and output data files
