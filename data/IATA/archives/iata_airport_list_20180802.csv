@@ -425,6 +425,7 @@ ART^Watertown^NY^US^1^^ART^International^0253^A
 ARU^Aracatuba^SP^BR^1^^ARU^Dario Guarita^^A
 ARV^Minocqua/Woodruff^WI^US^2^^ARV^Lakeland^0255^A
 ARW^Arad^^RO^^^ARW^Arad^0256^A
+ARX^Aracati^^BR^1^^ARX^Dragao do Mar^^A
 ARY^Ararat^VI^AU^2^^ARY^Ararat^0258^A
 ARZ^N'zeto^^AO^^^ARZ^N'zeto^0259^A
 ASA^Assab^^ER^^^ASA^International^0260^A
@@ -481,7 +482,7 @@ ATS^Artesia^NM^US^3^^ATS^Municipal^0291^A
 ATT^Atmautluak^AK^US^5^^ATT^Atmautluak^0292^A
 ATU^Attu Island^AK^US^6^^ATU^Casco Cove CGS^0293^A
 ATV^Ati^^TD^^^ATV^Ati^0294^A
-ATW^Appleton^WI^US^2^^ATW^Outagamie County Rgnl^0295^A
+ATW^Appleton^WI^US^2^^ATW^International^0295^A
 ATX^Atbasar^^KZ^2^^ATX^Atbasar^^A
 ATY^Watertown^SD^US^2^^ATY^Regional^0296^A
 ATZ^Asyut^^EG^^^ATZ^Asyut^^A
@@ -882,6 +883,7 @@ BKR^Bokoro^^TD^^^BKR^Bokoro^0549^A
 BKS^Bengkulu^^ID^1^^BKS^Fatmawati Soekarno^0550^A
 BKT^Blackstone/Ft Pickett^VA^US^1^^BKT^Blackstone AAF^0551^A
 BKU^Betioky^^MG^^^BKU^Betioky^0552^A
+BKV^Damao Banner^040^CN^^^BKV^Bailing^^A
 BKW^Beckley^WV^US^1^^BKW^Raleigh County Mem.^0553^A
 BKX^Brookings^SD^US^2^^BKX^Regional^0554^A
 BKY^Bukavu^^CD^2^^BKY^Kavumu^^A
@@ -893,7 +895,7 @@ BLE^Borlange/Falun^^SE^^^BLE^Dala^0559^A
 BLE^Borlange/Falun^^SE^^^XJF^Falun Bus Station^^B
 BLE^Borlange/Falun^^SE^^^XWF^Falun C Railway Stn^^R
 BLE^Borlange/Falun^^SE^^^XYB^Borlange C Railway Stn^^R
-BLF^Bluefield/Princeton^WV^US^1^^BLF^Mercer County^0560^A
+BLF^Bluefield/Princeton^WV^US^1^^BLF^Bailing^0560^A
 BLG^Belaga^^MY^^^BLG^Belaga^0561^A
 BLH^Blythe^CA^US^4^^BLH^Blythe^0562^A
 BLI^Bellingham^WA^US^4^^BLI^International^0563^A
@@ -1519,7 +1521,10 @@ CKB^Clarksburg^WV^US^1^^CKB^North Central W.V.^0933^A
 CKC^Cherkasy^^UA^^^CKC^International^^A
 CKD^Crooked Creek^AK^US^5^^CKD^Crooked Creek^0934^A
 CKE^Lakeport^CA^US^4^^CKE^Lampson Field^0935^A
+CKG^Chongqing^^CN^^^CKF^Shapinba Railway Stn.^^R
 CKG^Chongqing^^CN^^^CKG^Jiangbei Intl^0936^A
+CKG^Chongqing^^CN^^^CKJ^Xi Railway Station^^R
+CKG^Chongqing^^CN^^^CKP^Chongqingbei Rail Stn.^^R
 CKH^Chokurdakh^^RU^10^^CKH^Chokurdakh^^A
 CKI^Croker Island^NT^AU^3^A^CKI^Croker Island^0937^A
 CKK^Ash Flat^AR^US^2^^CKK^Sharp County Regional^^A
@@ -3675,6 +3680,7 @@ IPN^Ipatinga^MG^BR^1^^IPN^Usiminas^2167^A
 IPT^Williamsport^PA^US^1^^IPT^Regional^2169^A
 IPU^Ipiau^BA^BR^1^A^IPU^Ipiau^^A
 IPW^Ipswich^^GB^^^IPW^Railway Station^^R
+IPZ^San Isidro de El Gener^NA^CR^^^IPZ^San Isidro de el General^^A
 IQA^Al Asad^^IQ^^^IQA^Air Base^^A
 IQM^Qiemo^^CN^^^IQM^Qiemo^^A
 IQN^Qingyang^^CN^^^IQN^Qingyang^^A
@@ -5036,7 +5042,7 @@ LZH^Liuzhou^^CN^^^RLZ^Railway Station^^R
 LZI^Luozi^^CD^1^^LZI^Luozi^2983^A
 LZM^Luzamba^^AO^^^LZM^Luzamba^^A
 LZN^Matsu (Nangan)^^TW^^^LZN^Matsu (Nangan)^^A
-LZO^Luzhou^^CN^^^LZO^Lantian^^A
+LZO^Luzhou^^CN^^^LZO^YUNLONG^^A
 LZR^Lizard Island^QL^AU^2^B^LZR^Lizard Island^2984^A
 LZU^Lawrenceville^GA^US^1^^LZU^Gwinnett County^^A
 LZY^Nyingchi/Linzhi^^CN^^^LZY^Mainling/Milin^^A
@@ -5752,7 +5758,7 @@ MZC^Mitzic^^GA^^^MZC^Mitzic^3455^A
 MZD^Mendez^^EC^1^^MZD^Mendez^3456^A
 MZE^Manatee^^BZ^^^MZE^Manatee^3457^A
 MZF^Mzamba^^ZA^^^MZF^Wild Coast Sun^^A
-MZG^Magong^^TW^^^MZG^Magong^3458^A
+MZG^Penghu^^TW^^^MZG^Penghu^3458^A
 MZH^Amasya^^TR^^^MZH^Merzifon^^A
 MZI^Mopti^^ML^^^MZI^Ambodedjo^3459^A
 MZJ^Marana^AZ^US^3^A^MZJ^Pinal Airpark^^A
@@ -5902,6 +5908,7 @@ NIT^Niort^^FR^^^NIT^Souche^3522^A
 NIU^Niau^^PF^2^^NIU^Niau^^A
 NIX^Nioro du Sahel^^ML^^^NIX^Nioro du Sahel^3523^A
 NJA^Atsugi^^JP^^^NJA^NAF^^A
+NJB^Neijiang^230^CN^^^NJB^Bei Railway Station^^R
 NJC^Nizhnevartovsk^^RU^4^^NJC^Nizhnevartovsk^^A
 NJF^Al Najaf^^IQ^^^NJF^Al-Ashraf Intl^^A
 NKA^Nkan^^GA^^^NKA^Nkan^3524^A
@@ -6446,7 +6453,7 @@ OYN^Ouyen^VI^AU^2^^OYN^Ouyen^^A
 OYO^Tres Arroyos^BA^AR^^^OYO^Tres Arroyos^3801^A
 OYP^St-Georges (Oyapock)^^GF^^^OYP^St-Georges (Oyapock)^^A
 OZA^Ozona^TX^US^2^^OZA^Municipal^^A
-OZC^Ozamis^^PH^^^OZC^Labo^3803^A
+OZC^Ozamiz^^PH^^^OZC^Labo^3803^A
 OZG^Zagora^^MA^^^OZG^Zagora^^A
 OZH^Zaporizhzhia^^UA^^^OZH^Mokraya Intl^3804^A
 OZI^Bobadilla^^ES^1^^OZI^Railway Station^^R
@@ -7873,6 +7880,7 @@ RPN^Rosh Pina^^IL^^^RPN^Ben Ya'akov^4297^A
 RPR^Raipur^CT^IN^^^RPR^Swami Vivekananda^4298^A
 RPV^Roper Valley^NT^AU^3^A^RPV^Roper Valley^4299^A
 RPX^Roundup^MT^US^3^^RPX^Roundup^^A
+RQA^Rouqiang^290^CN^^^RQA^LOULAN^^A
 RQW^Qayyarah^^IQ^^^RQW^West^^A
 RRA^Ronda^^ES^1^^RRA^Railway Station^^R
 RRE^Marree^SA^AU^3^^RRE^Marree^4300^A
@@ -8607,6 +8615,7 @@ SWG^Satwag^^PG^1^^SWG^Satwag^4763^A
 SWH^Swan Hill^VI^AU^2^^SWH^Swan Hill^4764^A
 SWJ^South West Bay^^VU^^^SWJ^South West Bay^^A
 SWK^Segrate^^IT^^^SWK^Off-line Point^^O
+SWL^San Vicente^06^PH^^^SWL^San Vicente^^A
 SWM^Alto Boa Vista^MT^BR^2^^SWM^Suia-Missu^4766^A
 SWN^Sahiwal^^PK^^^SWN^Sahiwal^^A
 SWO^Stillwater^OK^US^2^^SWO^Regional^4767^A
@@ -9914,6 +9923,7 @@ WWT^Newtok^AK^US^5^^WWT^Newtok^5508^A
 WWY^West Wyalong^NS^AU^2^^WWY^West Wyalong^5509^A
 WXF^Watford^^GB^^^WXF^Watford Jct Rail Stn^^R
 WXJ^Wanning^^CN^^^WXJ^Railway Station^^R
+WXN^Wanzhou^^CN^^^WXB^Bei Railway Station^^R
 WXN^Wanzhou^^CN^^^WXN^Wuqiao^^A
 WYA^Whyalla^SA^AU^3^^WYA^Whyalla^5510^A
 WYB^Yes Bay^AK^US^5^^WYB^Yes Bay Lodge SPB^^A
@@ -11318,7 +11328,7 @@ ZSU^Dessau^^DE^^^ZSU^Hbf Railway Station^^R
 ZTA^Tureia^^PF^2^^ZTA^Tureia^^A
 ZTB^Tete-a-la Baleine^QC^CA^2^A^ZTB^Tete-a-la Baleine^5869^A
 ZTF^Stamford^CT^US^1^^ZTF^Railway Station^^R
-ZTH^Zakynthos Island^^GR^^^ZTH^Dionisios Salomos^5870^A
+ZTH^Zakynthos Island^^GR^^^ZTH^Dionisios Solomos^5870^A
 ZTI^Humen^^CN^^^ZTI^Ferry Port^^P
 ZTK^Thun^^CH^^^ZTK^Railway Station^^R
 ZTM^Shamattawa^MB^CA^4^^ZTM^Shamattawa^^A
