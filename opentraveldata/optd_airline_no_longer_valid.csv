@@ -202,6 +202,7 @@ air-isles-of-scilly-skybus-v1^1^1984-03-01^2015-12-31^IOS^5Y^^Isles of Scilly Sk
 air-jal-express-v1^1^1998-07-01^2014-09-30^JEX^JC^0^JAL Express^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/JAL_Express^en|JAL Express|^HND^air-jal-express^1^
 air-jat-airways-v1^1^2003-08-08^2013-10-25^JAT^JU^0^JAT Airways^^^^^http://de.wikipedia.org/w/index.php?title=JAT_Airways&redirect=no^en|JAT Airways|^^air-jat-airways^1^
 air-jatayu-gelang-sejahtera-v1^1^2014-01-25^2016-12-31^JTY^JZ^0^Jatayu Airlines^^^^^http://en.wikipedia.org/wiki/Jatayu_Airlines^en|Jatayu Airlines|=en|Jatayu Gelang Sejahtera|^^air-jatayu-gelang-sejahtera^1^
+air-jetran-air-v1^1^2005-01-01^2013-12-31^MDL^^0^JeTran Air^^^^^http://en.wikipedia.org/wiki/JeTran_Air^en|JeTran Air|=sign|JETRAN AIR|^BBU^air-jetran-air^1^
 air-karthago-airlines-v1^1^2002-01-01^2010-12-31^KAJ^5R^0^Karthago Airlines^^^^^http://en.wikipedia.org/wiki/Nouvelair^en|Nouvelair|p=en|Karthago Airlines|h^DJE^air-karthago-airlines^1^
 air-kartika-airlines-v1^1^2001-05-15^2010-12-31^KAE^3Y^0^Kartika Airlines^^^^^http://en.wikipedia.org/wiki/Kartika_Airlines^en|Kartika Airlines|^HLP^air-kartika-airlines^1^
 air-katmai-air-v1^1^^2015-12-31^^KT^0^Katmai Air^^^^^http://www.katmailand.com/air-services^en|Katmai Air|^BKF^air-katmai-air^1^
@@ -233,6 +234,7 @@ air-mat-macedonian-airlines-v1^1^1994-01-01^2009-09-01^MAK^IN^0^MAT Macedonian A
 air-max-air-nigeria-v1^1^2008-01-01^2015-04-01^NGL^VM^0^Max Air^^^^^http://en.wikipedia.org/wiki/Max_Air^en|Max Air|^^air-max-air-nigeria^1^
 air-maxjet-airways-v1^1^2003-01-01^2007-12-24^MXJ^MY^0^MAXjet Airways^^^^^http://en.wikipedia.org/wiki/MAXjet_Airways^en|MAXjet Airways|^^air-maxjet-airways^1^
 air-maya-island-air-v1^1^1962-01-01^2016-08-31^MYD^MY^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^en|Maya Island Air|^BZE=TZA^air-maya-island-air^1^
+air-medallion-air-v1^1^2009-01-01^2013-06-30^MDP^^0^Medallion Air^^^^^http://en.wikipedia.org/wiki/Medallion_Air^en|Medallion Air|=sign|MEDALS|^BBU^air-medallion-air^1^
 air-mega-maldives-v1^1^2010-12-23^2017-05-02^MEG^LV^400^Mega Maldives^^^^P^http://en.wikipedia.org/wiki/Mega_Maldives^en|Mega Maldives|=ko|메가 몰디브|=sign|SANDBAR|=zh|美佳航空|^MLE^air-mega-maldives^1^
 air-merpati-nusantara-airlines-v1^1^1962-09-06^2014-02-15^MMA^MZ^532^Merpati Nusantara Airlines^^^^^http://en.wikipedia.org/wiki/Merpati_Nusantara_Airlines^en|Merpati Nusantara Airlines|=ja|メルパチ・ヌサンタラ航空|=ko|메르파티 누산타라 항공|=sign|MERPATI|^^air-merpati-nusantara-airlines^1^
 air-mexicana-v1^1^1923-01-01^2010-12-31^MXA^MX^132^Mexicana de Aviación^^^^^http://en.wikipedia.org/wiki/Mexicana_de_Aviaci%C3%B3n^en|Mexicana|s=en|Mexicana de Aviación|^^air-mexicana^1^
@@ -310,6 +312,7 @@ air-swe-fly-v1^1^1994-01-01^2005-09-30^SWV^WV^857^Swe Fly^^^^^http://en.wikipedi
 air-syphax-airlines-sa-v1^^2012-04-29^2015-10-30^SYA^FS^393^Syphax Airlines^^^^^http://en.wikipedia.org/wiki/Syphax_Airlines^en|Syphax Airlines|^^air-syphax-airlines-sa^1^
 air-taba-amazonica-v1^1^1976-01-01^2002-12-31^TAB^T2^0^TABA – Transportes Aéreos da Bacia Amazônica^^^^^http://en.wikipedia.org/wiki/TABA_%E2%80%93_Transportes_A%C3%A9reos_da_Bacia_Amaz%C3%B4nica^en|TABA – Transportes Aéreos da Bacia Amazônica|=abbr|TABA|^BEL^air-taba-amazonica^1^
 air-tavrey-airlines-v1^1^1995-01-01^2008-12-31^TVR^T6^0^Tavrey Airlines^Tavrey Aircompany^^^^http://en.wikipedia.org/wiki/Tavrey_Airlines^en|Tavrey Airlines|=en|Tavrey Aircompany|^^air-tavrey-airlines^1^
+air-ten-airways-v1^1^2009-01-01^2015-01-19^OTJ^X5^0^Ten Airways^^^^^http://en.wikipedia.org/wiki/Ten_Airways^en|Ten Airways|=en|JeTran Air|h^BBU^air-ten-airways^1^merge|air-jetran-air-v1=merge|air-medallion-air-v1
 air-tibet-airlines-v1^1^2010-03-01^2013-12-31^TBA^TV^88^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^1^
 air-tibet-airlines-v2^2^2014-01-01^2014-02-01^TBA^^^Tibet Airlines^^^^^http://en.wikipedia.org/wiki/Tibet_Airlines^en|Tibet Airlines|^CTU=LXA^air-tibet-airlines^2^
 air-tonlesap-airlines-v1^1^2011-01-21^2013-08-31^^K9^443^TonleSap Airlines^^^^^http://en.wikipedia.org/wiki/TonleSap_Airlines^en|TonleSap Airlines|^^air-tonlesap-airlines^1^

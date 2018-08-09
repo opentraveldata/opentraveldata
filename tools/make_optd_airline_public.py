@@ -388,8 +388,17 @@ def calculateSuccessors (global_dict, verboseFlag):
         # Browse the list of parent types and primary keys
         for parent_tuple_str in parent_pk_tuple_list:
             parent_tuple = parent_tuple_str.split("|")
-            parent_type = parent_tuple[0]
-            parent_pk = parent_tuple[1]
+            parent_type = ""
+            parent_pk = ""
+            try:
+                parent_type = parent_tuple[0]
+                parent_pk = parent_tuple[1]
+            except IndexError:
+                print ('For that airline (IATA: {}, ICAO: {}), there is a parsing error for the "parent_pk_list" field ("{}")'.format(iata_code, icao_code, parent_pk_list_str))
+                raise
+            except:
+                print ("Unexpected error: ", sys.exc_info()[0])
+                raise                
             
             # Retrieve the parent airline corresponding to the PK
             parent_airline_dict = airline_all_dict[parent_pk]

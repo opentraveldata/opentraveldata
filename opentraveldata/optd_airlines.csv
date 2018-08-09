@@ -755,6 +755,7 @@ air-jetairfly-v1^^2005-11-23^^JAF^TB^612^TUIfly Belgium^^^^^http://en.wikipedia.
 air-jetblue-airways-v1^^2000-02-11^^JBU^B6^279^JetBlue^^^^^http://en.wikipedia.org/wiki/JetBlue^30241^en|JetBlue|^^air-jetblue-airways^1^^
 air-jetgo-australia-v1^^^^^JG^0^Jetgo Australia^^^^^^367^en|Jetgo Australia|^^air-jetgo-australia^1^^
 air-jetlink-express-v1^^^^^J0^402^Jetlink Express^^^^^^^en|Jetlink Express|^^air-jetlink-express^1^^
+air-jetran-air-v1^1^2005-01-01^2013-12-31^MDL^^0^JeTran Air^^^^^http://en.wikipedia.org/wiki/JeTran_Air^^en|JeTran Air|=sign|JETRAN AIR|^BBU^air-jetran-air^1^^merge|air-ten-airways-v1
 air-jetstar-asia-airways-v1^^2004-12-07^^JSA^3K^375^Jetstar Asia Airways^^^^^http://en.wikipedia.org/wiki/Jetstar_Asia_Airways^2478^ar|خطوط جيتستار آسيا الجوية|=en|Valuair|h=en|Jetstar Asia Airways|=ja|ジェットスター・アジア航空|=ko|제트스타 아시아 항공|=sign|JETSTAR ASIA|=zh|捷星亞洲航空|^SIN^air-jetstar-asia-airways^1^^
 air-jetstar-japan-v1^^^^^GK^798^Jetstar Japan^^^^^^2856^en|Jetstar Japan|^^air-jetstar-japan^1^^
 air-jetstar-pacific-airlines-v1^^^^PIC^BL^550^Jetstar Pacific Airlines^Pacific Air^^^^^3604^en|Jetstar Pacific Airlines|=en|Pacific Air|^^air-jetstar-pacific-airlines^1^^
@@ -878,6 +879,7 @@ air-maya-island-air-v1^1^1962-01-01^2016-08-31^MYD^MY^391^Maya Island Air^^^^^ht
 air-maya-island-air-v2^^2016-09-01^^MYD^2M^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^4011^en|Maya Island Air|^BZE=TZA^air-maya-island-air^2^^
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^520^en|Mayair|=en|Aeromonterr|^^air-mayair^1^^
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^600^en|Med-View Airline|^LOS^air-med-view-airline^1^^
+air-medallion-air-v1^1^2009-01-01^2013-06-30^MDP^^0^Medallion Air^^^^^http://en.wikipedia.org/wiki/Medallion_Air^^en|Medallion Air|=sign|MEDALS|^BBU^air-medallion-air^1^^merge|air-ten-airways-v1
 air-mega-maldives-v1^1^2010-12-23^2017-05-02^MEG^LV^400^Mega Maldives^^^^P^http://en.wikipedia.org/wiki/Mega_Maldives^^en|Mega Maldives|=ko|메가 몰디브|=sign|SANDBAR|=zh|美佳航空|^MLE^air-mega-maldives^1^^
 air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^2860^en|Meridiana Fly|^^air-meridiana-fly^1^^
 air-merpati-nusantara-airlines-v1^1^1962-09-06^2014-02-15^MMA^MZ^532^Merpati Nusantara Airlines^^^^^http://en.wikipedia.org/wiki/Merpati_Nusantara_Airlines^^en|Merpati Nusantara Airlines|=ja|メルパチ・ヌサンタラ航空|=ko|메르파티 누산타라 항공|=sign|MERPATI|^^air-merpati-nusantara-airlines^1^^
@@ -1246,6 +1248,7 @@ air-tata-sia-airlines-v1^^2014-01-01^^VTI^UK^0^Vistara^Tata SIA Airlines^^^^http
 air-tatarstan-air-v1^^^^^U9^966^Tatarstan Air^^^^^^^en|Tatarstan Air|^^air-tatarstan-air^1^^
 air-tavrey-airlines-v1^1^1995-01-01^2008-12-31^TVR^T6^0^Tavrey Airlines^Tavrey Aircompany^^^^http://en.wikipedia.org/wiki/Tavrey_Airlines^^en|Tavrey Airlines|=en|Tavrey Aircompany|^^air-tavrey-airlines^1^^
 air-tectimes-sudamerica-v1^^^^^C1^322^Tectimes Sudamerica^^^^^^^en|Tectimes Sudamerica|^^air-tectimes-sudamerica^1^^
+air-ten-airways-v1^1^2009-01-01^2015-01-19^OTJ^X5^0^Ten Airways^^^^^http://en.wikipedia.org/wiki/Ten_Airways^^en|Ten Airways|=en|JeTran Air|h^BBU^air-ten-airways^1^merge|air-jetran-air-v1=merge|air-medallion-air-v1^
 air-thai-airasia-v1^^2003-12-08^^AIQ^FD^900^Thai AirAsia^^^^^http://en.wikipedia.org/wiki/Thai_AirAsia^9925^en|Thai AirAsia|^^air-thai-airasia^1^^
 air-thai-airways-v1^^1960-01-01^^THA^TG^217^Thai Airways^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Thai_Airways^6609^en|Thai Airways|^^air-thai-airways^1^^
 air-thai-smile-airways-v1^^2012-07-07^^THD^WE^909^Thai Smile Airways^Rheintalflg^^^^http://en.wikipedia.org/wiki/Thai_Smile^3572^en|Thai Smile Airways|=en|Rheintalflg|^^air-thai-smile-airways^1^^
@@ -1299,13 +1302,13 @@ air-tway-air-v1^^2010-09-01^^TWB^TW^722^T'way Air^^^^^http://en.wikipedia.org/wi
 air-twin-jet-v1^^2002-03-01^^TJT^T7^294^Twin Jet^^^^^http://en.wikipedia.org/wiki/Twin_Jet^811^en|Twin Jet|^^air-twin-jet^1^^
 air-tyrolean-airways-v1^1^1978-01-01^2015-03-31^TYR^VO^734^Tyrolean Airways^^^^^http://en.wikipedia.org/wiki/Tyrolean_Airways^^en|Tyrolean Airways|^^air-tyrolean-airways^1^^
 air-ukraine-airlines-v1^^1992-10-01^^AUI^PS^566^Ukraine International Airlines^^^^^http://en.wikipedia.org/wiki/Ukraine_International_Airlines^4105^en|Ukraine International Airlines|^^air-ukraine-airlines^1^^
-air-uld-logistics-v1^^2009-01-01^^^X5^0^Ten Airways^Uld Logistics^^^^http://en.wikipedia.org/wiki/Ten_Airways^^en|Ten Airways|=en|Uld Logistics|^^air-uld-logistics^1^^
 air-um-air-v1^^^^UKM^UF^828^Um Air^^^^^^31^en|Um Air|^^air-um-air^1^^
 air-uni-airways-v1^^^^UIA^B7^525^Uni Airways^^^^^^3821^en|Uni Airways|^^air-uni-airways^1^^
 air-unique-air-v1^1^2014-01-01^2016-09-30^UQA^6U^0^Unique Air^^^^^^^en|Unique Air|^SHJ^air-unique-air^1^^
 air-united-airlines-v1^^1931-03-28^^UAL^UA^16^United Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/United_Airlines^141979^en|United Airlines|^^air-united-airlines^1^^
 air-united-airways-bangladesh-v1^^^^^4H^584^United Airways Bangladesh^Trans Pacific^^^^^178^en|United Airways Bangladesh|=en|Trans Pacific|^^air-united-airways-bangladesh^1^^
 air-universal-airlines-v1^^^^UVG^UW^751^Universal Airlines^^^^^^^en|Universal Airlines|^^air-universal-airlines^1^^
+air-ups-airlines-v1^^1998-01-01^^UPS^5X^406^UPS Airlines^^^^^http://en.wikipedia.org/wiki/UPS_Airlines^^en|UPS Airlines|=sign|UPS|^CGN=HKG=SDF^air-ups-airlines^1^^
 air-ural-airlines-v1^^^^SVR^U6^262^Ural Airlines^^^^^http://en.wikipedia.org/wiki/Ural_Airlines^5425^en|Ural Airlines|^MOW=SVX^air-ural-airlines^1^^
 air-us-airways-v1^^1939-01-01^^AWE^US^37^US Airways^^OneWorld^Affiliate^^http://en.wikipedia.org/wiki/US_Airways^^en|US Airways|^^air-us-airways^1^^
 air-us-bangla-airlines-v1^^2014-07-17^^^BS^0^US-Bangla Airlines^^^^^http://en.wikipedia.org/wiki/US-Bangla_Airlines^943^en|US-Bangla Airlines|^^air-us-bangla-airlines^1^^
