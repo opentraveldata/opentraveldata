@@ -787,8 +787,9 @@ air-robin-hood-aviation-v1^^^^^RH^0^Robin Hood Aviation^^^^^^en|Robin Hood Aviat
 air-romavia-v1^^^^^WQ^0^Romavia^^^^^^en|Romavia|^^air-romavia^1^
 air-rossiya-airlines-v1^^1992-01-01^^SDM^FV^195^Rossiya^^^^^http://en.wikipedia.org/wiki/Rossiya_%28airline%29^en|Rossiya|=en|Rossiya — Russian Airlines|^^air-rossiya-airlines^1^
 air-rotana-jet-v1^^2011-04-18^^RJD^RG^482^Rotana Jet^^^^^http://en.wikipedia.org/wiki/Rotana_Jet^en|Rotana Jet|^^air-rotana-jet^1^
+air-royal-air-charter-service-v1^^2002-08-22^^RYL^RW^0^Royal Air Charter Service^^^^^http://en.wikipedia.org/wiki/Royal_Air_Charter_Service^abbr|RACSI|=en|Royal Air Charter Service|=sign|DOUBLE GOLD|^CRK^air-royal-air-charter-service^1^
 air-royal-air-force-v1^^^^RFR^RR^0^Royal Air Force^RAF NO^^^^^en|Royal Air Force|=en|RAF NO|^^air-royal-air-force^1^
-air-royal-air-maroc-v1^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^^^^http://en.wikipedia.org/wiki/Royal_Air_Maroc^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^^air-royal-air-maroc^1^
+air-royal-air-maroc-v1^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^^^^http://en.wikipedia.org/wiki/Royal_Air_Maroc^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^CMN^air-royal-air-maroc^1^
 air-royal-brunei-v1^^^^RBA^BI^672^Royal Brunei^Royalbrunei^^^^^en|Royal Brunei|=en|Royalbrunei|^^air-royal-brunei^1^
 air-royal-falcon-v1^^^^RFJ^RL^372^Royal Falcon^^^^^^en|Royal Falcon|^^air-royal-falcon^1^
 air-royal-jordanian-v1^^1963-12-09^^RJA^RJ^512^Royal Jordanian^Ryljordania^^Member^^http://en.wikipedia.org/wiki/Royal_Jordanian^en|Royal Jordanian|=en|Ryljordania|^^air-royal-jordanian^1^
