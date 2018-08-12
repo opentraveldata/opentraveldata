@@ -149,6 +149,7 @@ air-air-timor-v1^^^^^6C^586^Air Timor^^^^^^en|Air Timor|^^air-air-timor^1^
 air-air-tindi-v1^^^^TID^8T^744^Air Tindi^^^^^http://en.wikipedia.org/wiki/Air_Tindi^en|Air Tindi|^^air-air-tindi^1^
 air-airtran-airways-v1^^1993-10-26^^TRS^FL^332^Airtran Airways^^^^^http://en.wikipedia.org/wiki/AirTran_Airways^en|Airtran Airways|^^air-airtran-airways^1^
 air-air-transat-v1^^1987-11-14^^TSC^TS^649^Air Transat^^^^^http://en.wikipedia.org/wiki/Air_Transat^en|Air Transat|^YUL^air-air-transat^1^
+air-air-transport-international-v1^^1988-01-01^^ATN^8C^813^Air Transport International^^^^^http://en.wikipedia.org/wiki/Air_Transport_International^en|Air Transport International|=sign|AIR TRANSPORT|^CVG^air-air-transport-international^1^
 air-air-uganda-v1^^^^^U7^926^Air Uganda^Norcanair^^^^^en|Air Uganda|=en|Norcanair|^^air-air-uganda^1^
 air-air-urga-v1^^^^URG^3N^746^Air Urga^Airvantage^^^^^en|Air Urga|=en|Airvantage|^^air-air-urga^1^
 air-air-vallee-v1^^^^^DO^0^Discovery Airways^Air Vallee^^^^^en|Discovery Airways|=en|Air Vallee|^^air-air-vallee^1^
@@ -373,7 +374,6 @@ air-eastern-airways-v1^^1997-01-01^^EZE^T3^467^Eastern Airways^^^^^http://en.wik
 air-eastern-caribbean-airlines-v1^^^^^JI^0^Eastern Caribbean Airlines^^^^^^en|Eastern Caribbean Airlines|^^air-eastern-caribbean-airlines^1^
 air-east-line-v1^^^^^1T^0^East Line^^^^^^en|East Line|^^air-east-line^1^
 air-eastok-avia-v3^^2011-04-01^^EAA^KR^265^Air Bishkek^^^^^http://en.wikipedia.org/wiki/Air_Bishkek^en|Air Bishkek|p=en|Kyrgyz Airways|h=en|Eastok Avia|h^FRU^air-eastok-avia^3^
-air-east-star-v1^^1988-01-01^^ATN^8C^813^Air Transport International^East Star^^^^http://en.wikipedia.org/wiki/Air_Transport_International^en|Air Transport International|=en|East Star|^^air-east-star^1^
 air-easyfly-colombia^^2007-01-01^^EFY^VE^0^EasyFly^^^^^http://en.wikipedia.org/wiki/EasyFly^en|EasyFly|ps=en|Empresa Aérea de Servicios y Facilitación Logística Integral|=sign|EASYFLY|^BGA=BOG=EOH^air-easyfly-colombia^1^
 air-easyjet-switzerland-v1^^1989-03-23^^EZS^DS^0^easyJet Switzerland^^^^^http://en.wikipedia.org/wiki/EasyJet_Switzerland^en|easyJet Switzerland|^^air-easyjet-switzerland^1^
 air-easyjet-v1^^1995-01-01^^EZY^U2^888^easyJet^^^^^http://en.wikipedia.org/wiki/EasyJet^en|easyJet|^^air-easyjet^1^
@@ -890,8 +890,9 @@ air-sprintair-poland-v1^^2008-01-01^^SRN^P8^0^SprintAir^^^^^http://en.wikipedia.
 air-sqiva-sistem-v1^^^^^Q1^0^Sqiva Sistem^^^^^^en|Sqiva Sistem|^^air-sqiva-sistem^1^
 air-srilankan-airlines-v1^^1979-09-01^^ALK^UL^603^SriLankan Airlines^^^Future^^http://en.wikipedia.org/wiki/SriLankan_Airlines^en|SriLankan Airlines|^^air-srilankan-airlines^1^
 air-sriwijaya-air-v1^^2003-11-10^^SJY^SJ^977^Sriwijaya Air^^^^^http://en.wikipedia.org/wiki/Sriwijaya_Air^en|Sriwijaya Air|^^air-sriwijaya-air^1^
-air-star-airways-v1^^^^STB^4S^0^Star Airways^Aerohonduras^^^^^en|Star Airways|=en|Aerohonduras|^^air-star-airways^1^
 air-starbow-v1^^^^IKM^S9^759^Starbow^Starbow^^^^^en|Starbow|=en|Starbow|^^air-starbow^1^
+air-star-airways-v1^^^^STB^4S^0^Star Airways^Aerohonduras^^^^^en|Star Airways|=en|Aerohonduras|^^air-star-airways^1^
+air-star-east-airline-v1^^^^SEK^4R^0^Star East Airline^^^^^http://en.wikipedia.org/wiki/Star_East_Airline^en|Star East Airline|^BBU^air-star-east-airline^1^
 air-star-flyer-v1^^2006-03-16^^SFJ^7G^922^StarFlyer^^^^^http://en.wikipedia.org/wiki/StarFlyer^en|StarFlyer|^^air-star-flyer^1^
 air-star-peru-v1^^1997-05-01^^SRU^2I^156^Star Perú^^^^^http://en.wikipedia.org/wiki/Star_Per%C3%BA^en|Star Perú|^^air-star-peru^1^
 air-sta-travel-v1^^1971-01-01^^^0O^0^STA Travel^^^^^http://en.wikipedia.org/wiki/STA_Travel^en|STA Travel|^^air-sta-travel^1^

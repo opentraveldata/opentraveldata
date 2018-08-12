@@ -186,6 +186,7 @@ air-air-tanzania-v1^^^^ATC^TC^197^Air Tanzania^^^^^^230^en|Air Tanzania|^^air-ai
 air-air-timor-v1^^^^^6C^586^Air Timor^^^^^^^en|Air Timor|^^air-air-timor^1^^
 air-air-tindi-v1^^^^TID^8T^744^Air Tindi^^^^^http://en.wikipedia.org/wiki/Air_Tindi^322^en|Air Tindi|^^air-air-tindi^1^^
 air-air-transat-v1^^1987-11-14^^TSC^TS^649^Air Transat^^^^^http://en.wikipedia.org/wiki/Air_Transat^2635^en|Air Transat|^YUL^air-air-transat^1^^
+air-air-transport-international-v1^^1988-01-01^^ATN^8C^813^Air Transport International^^^^^http://en.wikipedia.org/wiki/Air_Transport_International^^en|Air Transport International|=sign|AIR TRANSPORT|^CVG^air-air-transport-international^1^^
 air-air-uganda-v1^^^^^U7^926^Air Uganda^Norcanair^^^^^^en|Air Uganda|=en|Norcanair|^^air-air-uganda^1^^
 air-air-ukraine-v1^1^1992-01-01^2002-12-31^UKR^6U^0^Air Ukraine^^^^^http://en.wikipedia.org/wiki/Air_Ukraine^^en|Air Ukraine|^KBP^air-air-ukraine^1^^
 air-air-urga-v1^^^^URG^3N^746^Air Urga^Airvantage^^^^^^en|Air Urga|=en|Airvantage|^^air-air-urga^1^^
@@ -503,7 +504,7 @@ air-east-air-v1^^^^ETJ^EG^447^East Air^Japan Asia^^^^^^en|East Air|=en|Japan Asi
 air-east-coast-flight-services-v1^^1991-01-01^^JTM^5E^0^East Coast Flight Services^^^^^^^en|East Coast Flight Services|^ESN^air-east-coast-flight-services^1^^
 air-east-horizon-airlines-v1^1^2013-12-01^2014-12-31^EHN^EA^0^East Horizon Airlines^^^^^http://en.wikipedia.org/wiki/East_Horizon_Airlines^^en|East Horizon Airlines|^HEA=KBL^air-east-horizon-airlines^1^^
 air-east-line-v1^^^^^1T^0^East Line^^^^^^^en|East Line|^^air-east-line^1^^
-air-east-star-v1^^1988-01-01^^ATN^8C^813^Air Transport International^East Star^^^^http://en.wikipedia.org/wiki/Air_Transport_International^^en|Air Transport International|=en|East Star|^^air-east-star^1^^
+air-east-star-airlines-v1^1^2005-01-01^2009-03-15^DXH^8C^0^East Star Airlines^^^^^http://en.wikipedia.org/wiki/East_Star_Airlines^^en|East Star Airlines|^WUH^air-east-star-airlines^1^^
 air-eastar-jet-v1^^^^ESR^ZE^839^Eastar Jet^^^^^^2697^en|Eastar Jet|^^air-eastar-jet^1^^
 air-eastern-air-lines-v1^1^1926-01-01^1991-01-18^EAL^EA^0^East Air Lines^^^^^http://en.wikipedia.org/wiki/Eastern_Air_Lines^^en|East Air Lines|p=en|Pitcairn Aviation|=sign|EASTERN|^MIA^air-eastern-air-lines^1^^
 air-eastern-air-lines-v2^^2015-05-28^^EAL^EA^7^East Air Lines^^^^^http://en.wikipedia.org/wiki/Eastern_Air_Lines_(2015)^132^en|East Air Lines|=sign|EASTERN|^MIA^air-eastern-air-lines^2^^
@@ -1197,6 +1198,7 @@ air-srilankan-airlines-v1^^1979-09-01^^ALK^UL^603^SriLankan Airlines^^OneWorld^M
 air-sriwijaya-air-v1^^2003-11-10^^SJY^SJ^977^Sriwijaya Air^^^^^http://en.wikipedia.org/wiki/Sriwijaya_Air^6319^en|Sriwijaya Air|^^air-sriwijaya-air^1^^
 air-sta-travel-v1^^1971-01-01^^^0O^0^STA Travel^^^^^http://en.wikipedia.org/wiki/STA_Travel^^en|STA Travel|^^air-sta-travel^1^^
 air-star-airways-v1^^^^STB^4S^0^Star Airways^Aerohonduras^^^^^^en|Star Airways|=en|Aerohonduras|^^air-star-airways^1^^
+air-star-east-airline-v1^^^^SEK^4R^0^Star East Airline^^^^^http://en.wikipedia.org/wiki/Star_East_Airline^^en|Star East Airline|^BBU^air-star-east-airline^1^^
 air-star-flyer-v1^^2006-03-16^^SFJ^7G^922^StarFlyer^^^^^http://en.wikipedia.org/wiki/StarFlyer^1762^en|StarFlyer|^^air-star-flyer^1^^
 air-star-peru-v1^^1997-05-01^^SRU^2I^156^Star Perú^^^^^http://en.wikipedia.org/wiki/Star_Per%C3%BA^728^en|Star Perú|^^air-star-peru^1^^
 air-starbow-v1^^^^IKM^S9^759^Starbow^Starbow^^^^^500^en|Starbow|=en|Starbow|^^air-starbow^1^^
