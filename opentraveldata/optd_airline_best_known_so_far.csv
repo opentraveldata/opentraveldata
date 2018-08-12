@@ -877,7 +877,8 @@ air-south-african-airlink-v3^^2011-01-01^^LNK^4Z^749^Airlink^^^^^http://en.wikip
 air-south-african-airways-v1^^1934-02-01^^SAA^SA^83^South African Airways^SAA^^Member^^http://en.wikipedia.org/wiki/South_African_Airways^en|South African Airways|=en|SAA|^^air-south-african-airways^1^
 air-south-african-express-v1^^1994-04-24^^EXY^XZ^29^South African Express^SA Express^^^^http://en.wikipedia.org/wiki/South_African_Express^en|South African Express|=en|SA Express|^^air-south-african-express^1^
 air-south-airlines-v1^^1999-04-19^^OTL^YG^233^South Airlines^^^^^http://en.wikipedia.org/wiki/South_Airlines^en|South Airlines|^^air-south-airlines^1^
-air-southern-air-charter-v1^^^^^PL^0^Southern Air Charter^^^^^^en|Southern Air Charter|^^air-southern-air-charter^1^
+air-southern-air-charter-v1^^1998-10-01^^^PL^0^Southern Air Charter^^^^^http://en.wikipedia.org/wiki/Southern_Air_Charter^en|Southern Air Charter|^NAS^air-southern-air-charter^1^
+air-southern-air-v1^^1998-10-01^^SOO^9S^099^Southern Air^^^^^http://en.wikipedia.org/wiki/Southern_Air^en|Southern Air|^ANC=CVG=LEJ^air-southern-air^1^
 air-southern-airways-express-v1^^2013-01-01^^FDY^9X^504^Southern Airways Express^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^en|Southern Airways|=en|Executive Express Aviation LLC|^DSI=MEM^air-southern-airways-express^1^
 air-southern-star-airlines-v1^^^^^4P^0^Travel Air^^^^^^en|Travel Air|^^air-southern-star-airlines^1^
 air-southwest-airlines-v1^^1971-06-18^^SWA^WN^526^Southwest Airlines^^^^P^http://en.wikipedia.org/wiki/Southwest_Airlines^en|Southwest Airlines|^^air-southwest-airlines^1^
