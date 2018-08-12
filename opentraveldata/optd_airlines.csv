@@ -1020,7 +1020,8 @@ air-plus-ultra-v1^^^^^PU^663^Plus Ultra Líneas Aéreas^^^^^^40^en|Plus Ultra L�
 air-pm-air-v1^^^^^Z3^0^PM Air^^^^P^^^en|PM Air|^^air-pm-air^1^^
 air-pmt-air-v1^1^2003-01-14^2008-12-31^PMT^U4^0^PMTair^^^^^http://en.wikipedia.org/wiki/PMTair^^en|PMTair|s=en|Progress MulTi Air|^^air-pmt-air^1^^
 air-pobeda-v1^^2014-12-01^^^DP^0^Pobeda^^^^^http://en.wikipedia.org/wiki/Pobeda_(airline)^2770^en|Pobeda|^^air-pobeda^1^^
-air-polar-airlines-v1^^^^RKA^PI^545^Polar Airlines^^^^P^^707^en|Polar Airlines|^^air-polar-airlines^1^^
+air-polar-air-cargo-v1^^1993-01-01^^PAC^PO^403^Polar Air Cargo^^^^^http://en.wikipedia.org/wiki/Polar_Air_Cargo^^en|Polar Air Cargo|^ANC=CVG=ICN^air-polar-air-cargo^1^^
+air-polar-airlines-v1^^1997-01-01^^RKA^PI^545^Polar Airlines^^^^P^http://en.wikipedia.org/wiki/Polar_Airlines^707^en|Polar Airlines|=ru|Полярные авиалинии|^YKS^air-polar-airlines^1^^
 air-polet-airlines-v1^1^1988-01-01^2014-11-24^POT^YQ^342^Polet Airlines^^^^^http://en.wikipedia.org/wiki/Polet_Airlines^^en|Polet Airlines|=ru|Авиакомпания Полёт|^^air-polet-airlines^1^^
 air-polynesian-airlines-v1^^1959-01-01^^PAO^OL^162^Polynesian Airlines^^^^^http://en.wikipedia.org/wiki/Polynesian_Airlines^677^en|Polynesian Airlines|^^air-polynesian-airlines^1^^
 air-porter-airlines-v1^^2006-10-23^^POE^PD^451^Porter Airlines^^^^^http://en.wikipedia.org/wiki/Porter_Airlines^5013^en|Porter Airlines|^^air-porter-airlines^1^^

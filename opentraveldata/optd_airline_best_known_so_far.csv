@@ -751,7 +751,8 @@ air-pison-airways-v1^^^^LFM^3I^0^Pison Airways Ltd^Virgin Austra^^^^^en|Pison Ai
 air-plus-ultra-v1^^^^^PU^663^Plus Ultra Líneas Aéreas^^^^^^en|Plus Ultra Líneas Aéreas|^^air-plus-ultra^1^
 air-pm-air-v1^^^^^Z3^0^PM Air^^^^P^^en|PM Air|^^air-pm-air^1^
 air-pobeda-v1^^2014-12-01^^^DP^0^Pobeda^^^^^http://en.wikipedia.org/wiki/Pobeda_(airline)^en|Pobeda|^^air-pobeda^1^
-air-polar-airlines-v1^^^^RKA^PI^545^Polar Airlines^^^^P^^en|Polar Airlines|^^air-polar-airlines^1^
+air-polar-air-cargo-v1^^1993-01-01^^PAC^PO^403^Polar Air Cargo^^^^^http://en.wikipedia.org/wiki/Polar_Air_Cargo^en|Polar Air Cargo|^ANC=CVG=ICN^air-polar-air-cargo^1^
+air-polar-airlines-v1^^1997-01-01^^RKA^PI^545^Polar Airlines^^^^P^http://en.wikipedia.org/wiki/Polar_Airlines^en|Polar Airlines|=ru|Полярные авиалинии|^YKS^air-polar-airlines^1^
 air-polynesian-airlines-v1^^1959-01-01^^PAO^OL^162^Polynesian Airlines^^^^^http://en.wikipedia.org/wiki/Polynesian_Airlines^en|Polynesian Airlines|^^air-polynesian-airlines^1^
 air-porter-airlines-v1^^2006-10-23^^POE^PD^451^Porter Airlines^^^^^http://en.wikipedia.org/wiki/Porter_Airlines^en|Porter Airlines|^^air-porter-airlines^1^
 air-portugalia-v1^^1988-01-01^^PGA^NI^685^Portugalia^Portugália–Companhia Portuguesa de Transportes Aéreos^^^^http://en.wikipedia.org/wiki/Portug%C3%A1lia^en|Portugalia|=en|Portugália–Companhia Portuguesa de Transportes Aéreos|^^air-portugalia^1^
