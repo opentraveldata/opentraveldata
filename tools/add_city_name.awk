@@ -7,7 +7,7 @@
 #  * the second time to write the corresponding fields in that very same
 #    optd_por_public.csv file, which is therefore amended.
 #
-# As of March 2015 (see also the "Fields" part in the BEGIN{} section):
+# As of August 2018 (see also the "Fields" part in the BEGIN{} section):
 #  * The POR IATA code is the field #1
 #  * The POR Geonames ID is the field #5
 #  * The POR UTF8 name is the field #7
@@ -17,6 +17,30 @@
 #  * The (list of) city ASCII name(s) is the field #39
 #  * The list of travel-related POR IATA codes is the field #40
 #  * The location type is the field #42
+#  * The Wikipedia URL is the field #43
+#  * The section of alternative names is the field #44
+#  * The WAC code and WAC name are fields ##45-46
+#  * The currency is the field #47
+#  * The (list of) UN/LOCODE is the field #48
+#
+# Up until (at least) mid-2018, OPTD POR were always assumed to have
+# either a IATA or ICAO code. However, with the introduction of UN/LOCODE,
+# most of the POR have no IATA (neither ICAO) code. Talking about numbers,
+# as of August 2018:
+#  * Around 20,000 POR have a IATA (or ICAO) code, and are curated thanks to
+#    the optd_por_best_known_so_far.csv data file.
+#  * Around 90,000 POR have a UN/LOCODE but no IATA (neither ICAO) code,
+#    and are not curated through the the optd_por_best_known_so_far.csv
+#    data file.
+# For the POR not curated through the optd_por_best_known_so_far.csv data file,
+# the relationship between the transport-/travel-related part and the served
+# city(ies) is not easy. As, by design, all those POR are referenced by Geonames
+# (there may be POR having a UN/LOCODE and not referenced by Geonames, but
+# they are then not appearing in Geonames data dumps and therefore fully escape
+# OPTD's reach), and as Geonames has first added the UN/LOCODE to cities,
+# most of the time, if there is a non-IATA UN/LOCODEd non-city POR in Geonames,
+# then Geonames also have a city POR with the same UN/LOCODE. We could then
+# just pick the city in Geonames having the same UN/LOCODE.
 #
 # * Samples of relevant input POR entries, as manually curated
 #   in the optd_por_best_known_so_far.csv data file:
@@ -30,12 +54,18 @@
 #   - HFD-A-4835842^...^HFD^
 #   - HFD-C-4835797^...^HFD^
 #   - SFY-C-4951788^...^SFY^
+#   - ZZZ-A-8131475^...^ZZZ^
+# * Samples of relevant input POR entries, not manually curated
+#   in the optd_por_best_known_so_far.csv data file:
+#   - ZZZ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|
 #
 # * Samples of output list of city UTF8 names,
 #   with their corresponding travel-related POR entry:
 #   - [IEV-A-6300960] Kiev
 #   - [RDU-A-4487056] Durham=Raleigh
 #   - [BDL-A-5282636] Windsor Locks=Hartford=Springfield
+#   - [ZZZ-A-8131475] N/A (for now, as of August 2018)
+#   - [ZZZ-X-11903578] N/A (for now, as of August 2018)
 #
 # * Samples of output list of city details (IATA code, Geonames ID, 
 #   UTF8 and ASCII names),
@@ -43,6 +73,8 @@
 #   - [IEV-A-6300960] IEV|703448|Kiev|Kiev
 #   - [RDU-A-4487056] RDU|4464368|Durham|Durham=RDU|4487042|Raleigh|Raleigh
 #   - [BDL-A-5282636] BDL|4845926|Windsor Locks|Windsor Locks=HFD|4835797|Hartford|Hartford=SFY|4951788|Springfield|Springfield
+#   - [ZZZ-A-8131475] N/A (for now, as of August 2018)
+#   - [ZZZ-X-11903578] N/A (for now, as of August 2018)
 #
 
 ##
@@ -86,8 +118,8 @@ BEGINFILE {
 
     # Sanity check
     if (idx_file >=3) {
-	print ("[" awk_file "] !!!! Error - The '" FILENAME "' data file " \
-	       "should not be parsed more than twice" ) > error_stream
+		print ("[" awk_file "] !!!! Error - The '" FILENAME "' data file " \
+			   "should not be parsed more than twice" ) > error_stream
     }
 }
 
@@ -95,47 +127,48 @@ BEGINFILE {
 # First parsing - extraction of the city lists
 #
 function extractAndStoreCityNames(porIataCode, porLocType, porGeonamesID, \
-				  porUtfName, porAsciiName) {
+								  porUtfName, porAsciiName) {
     # Parse the location type
     is_city = isLocTypeCity(porLocType)
     # is_tvl = isLocTypeTvlRtd(porLocType)
 
-    # When it is a city:
+    # When it is a city, and when the IATA code is not 'ZZZ' (which means
+	# that that POR is not curated in optd_por_best_known_so_far.csv):
     # 1. Store the UTF8 name.
     # 2. Store the details (IATA code, Geonames ID, UTF8 and ASCII names) 
     #    of the point of reference (POR).
-    if (is_city != 0) {
-	##
-	# 1. UTF8 name only
-	# Retrieve previous UTF8 names, if any
-	cty_list_tmp = cty_list_names[porIataCode]
-	if (cty_list_tmp) {
-	    cty_list_tmp = cty_list_tmp K_2ND_SEP
-	}
+    if (is_city != 0 && porIataCode != "ZZZ") {
+		##
+		# 1. UTF8 name only
+		# Retrieve previous UTF8 names, if any
+		cty_list_tmp = cty_list_names[porIataCode]
+		if (cty_list_tmp) {
+			cty_list_tmp = cty_list_tmp K_2ND_SEP
+		}
 
-	# Add the current city details to the previous ones, if any
-	cty_list_tmp = cty_list_tmp porUtfName
+		# Add the current city details to the previous ones, if any
+		cty_list_tmp = cty_list_tmp porUtfName
 
-	# Register the full list of city UTF8 names
-	cty_list_names[porIataCode] = cty_list_tmp
+		# Register the full list of city UTF8 names
+		cty_list_names[porIataCode] = cty_list_tmp
 
-	##
-	# 2. Full details
-	# Retrieve previous details, if any
-	cty_list_tmp = cty_list_details[porIataCode]
-	if (cty_list_tmp) {
-	    cty_list_tmp = cty_list_tmp K_2ND_SEP
-	}
+		##
+		# 2. Full details
+		# Retrieve previous details, if any
+		cty_list_tmp = cty_list_details[porIataCode]
+		if (cty_list_tmp) {
+			cty_list_tmp = cty_list_tmp K_2ND_SEP
+		}
 
-	# Serialise the current city details.
-	cty_details = porIataCode K_3RD_SEP porGeonamesID \
-	    K_3RD_SEP porUtfName K_3RD_SEP porAsciiName
+		# Serialise the current city details.
+		cty_details = porIataCode K_3RD_SEP porGeonamesID \
+			K_3RD_SEP porUtfName K_3RD_SEP porAsciiName
 
-	# Add the current city details to the previous ones, if any.
-	cty_list_tmp = cty_list_tmp cty_details
+		# Add the current city details to the previous ones, if any.
+		cty_list_tmp = cty_list_tmp cty_details
 
-	# Register the full list of city details
-	cty_list_details[porIataCode] = cty_list_tmp
+		# Register the full list of city details
+		cty_list_details[porIataCode] = cty_list_tmp
     }
 }
 
@@ -146,24 +179,24 @@ function collectTravelPoints(porIataCodePk, porIataCodeServedList, porLocType) {
     # Store the names of the point of reference (POR) when it is not only a city
     if (porLocType != "C") {
 
-	# Split the list of cities
-	# Note: most of the time, that list contains a single IATA code
-	split (porIataCodeServedList, porIataCodeServedArray, ",")
-	for (porIataCodeServedIdx in porIataCodeServedArray) {
-	    porIataCodeServed = porIataCodeServedArray[porIataCodeServedIdx]
+		# Split the list of cities
+		# Note: most of the time, that list contains a single IATA code
+		split (porIataCodeServedList, porIataCodeServedArray, ",")
+		for (porIataCodeServedIdx in porIataCodeServedArray) {
+			porIataCodeServed = porIataCodeServedArray[porIataCodeServedIdx]
 
-	    tvl_por_list = travel_por_list_array[porIataCodeServed]
-	    if (tvl_por_list == "") {
-		travel_por_list_array[porIataCodeServed] = porIataCodePk
+			tvl_por_list = travel_por_list_array[porIataCodeServed]
+			if (tvl_por_list == "") {
+				travel_por_list_array[porIataCodeServed] = porIataCodePk
 
-	    } else {
-		# Add the POR IATA code
-		tvl_por_list_tmp = tvl_por_list "," porIataCodePk
-		# Sort the list of POR IATA codes
-		travel_por_list_array[porIataCodeServed] =	\
-		    sortListStringAplha(tvl_por_list_tmp, ",")
-	    }
-	}
+			} else {
+				# Add the POR IATA code
+				tvl_por_list_tmp = tvl_por_list "," porIataCodePk
+				# Sort the list of POR IATA codes
+				travel_por_list_array[porIataCodeServed] =	\
+					sortListStringAplha(tvl_por_list_tmp, ",")
+			}
+		}
     }
 }
 
@@ -171,7 +204,7 @@ function collectTravelPoints(porIataCodePk, porIataCodeServedList, porLocType) {
 # Second parsing - writing of the city lists.
 #
 function writeCityLists(porIataCode, porLocType, porIataCodeServedList, \
-			porUtfName, porAsciiName) {
+						porUtfName, porAsciiName) {
     # Output separator
     OFS = FS
 
@@ -185,33 +218,33 @@ function writeCityLists(porIataCode, porLocType, porIataCodeServedList, \
     # Note: most of the time, that list contains a single IATA code.
     split (porIataCodeServedList, porIataCodeServedArray, ",")
     for (porIataCodeServedIdx in porIataCodeServedArray) {
-	porIataCodeServed = porIataCodeServedArray[porIataCodeServedIdx]
+		porIataCodeServed = porIataCodeServedArray[porIataCodeServedIdx]
 
-	##
-	# 1. City UTF8 names
-	# Retrieve the list of city UTF8 names for that IATA code
-	ctyListTmp = cty_list_names[porIataCodeServed]
+		##
+		# 1. City UTF8 names
+		# Retrieve the list of city UTF8 names for that IATA code
+		ctyListTmp = cty_list_names[porIataCodeServed]
 
-	# If the global list is not empty, just add the current UTF8 name to it
-	if (porCtyListNames) {
-	    porCtyListNames = porCtyListNames K_2ND_SEP
-	}
+		# If the global list is not empty, just add the current UTF8 name to it
+		if (porCtyListNames) {
+			porCtyListNames = porCtyListNames K_2ND_SEP
+		}
 
-	# Add the current UTF8 name to the global list
-	porCtyListNames = porCtyListNames ctyListTmp
+		# Add the current UTF8 name to the global list
+		porCtyListNames = porCtyListNames ctyListTmp
 
-	##
-	# 2. City details
-	# Retrieve the list of city details for that IATA code
-	ctyListTmp = cty_list_details[porIataCodeServed]
+		##
+		# 2. City details
+		# Retrieve the list of city details for that IATA code
+		ctyListTmp = cty_list_details[porIataCodeServed]
 
-	# If the global list is not empty, just add the current details to it
-	if (porCtyListDetails) {
-	    porCtyListDetails = porCtyListDetails K_2ND_SEP
-	}
+		# If the global list is not empty, just add the current details to it
+		if (porCtyListDetails) {
+			porCtyListDetails = porCtyListDetails K_2ND_SEP
+		}
 
-	# Add the current details to the global list
-	porCtyListDetails = porCtyListDetails ctyListTmp
+		# Add the current details to the global list
+		porCtyListDetails = porCtyListDetails ctyListTmp
     }
 
     # Write the city lists on the POR file row/line
@@ -226,27 +259,27 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
     is_city = isLocTypeCity(porLocType)
 
     if (is_city != 0) {
-	# Output separator
-	OFS = FS
+		# Output separator
+		OFS = FS
 
-	# A city can not serve several other cities. So, the list should be
-	# limited to a single element
-	split (porIataCodeServedList, porIataCodeServedArray, ",")
+		# A city can not serve several other cities. So, the list should be
+		# limited to a single element
+		split (porIataCodeServedList, porIataCodeServedArray, ",")
 
-	# Sanity check
-	if (length (porIataCodeServedArray) != 1) {
-	    print ("[" awk_file "][" FNR "] !!!! Error - "				\
-		   "The list of city codes for " porIataCode "-" porLocType	\
-		   " does not contain a single element: '"				\
-		   porIataCodeServedList "'" ) > error_stream
-	}
+		# Sanity check
+		if (length (porIataCodeServedArray) != 1) {
+			print ("[" awk_file "][" FNR "] !!!! Error - "				\
+				   "The list of city codes for " porIataCode "-" porLocType	\
+				   " does not contain a single element: '"				\
+				   porIataCodeServedList "'" ) > error_stream
+		}
 
-	# Now that the list contains for sure a single element, get it
-	porIataCodeServed = porIataCodeServedArray[1]
+		# Now that the list contains for sure a single element, get it
+		porIataCodeServed = porIataCodeServedArray[1]
 
-	# Travel-related POR list
-	tvl_por_list = travel_por_list_array[porIataCodeServed]
-	$K_TVL_LST = tvl_por_list
+		# Travel-related POR list
+		tvl_por_list = travel_por_list_array[porIataCodeServed]
+		$K_TVL_LST = tvl_por_list
     }
 }
 
@@ -254,7 +287,7 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 # Header
 /^iata_code\^/ {
     if (idx_file == 2) {
-	print ($0)
+		print ($0)
     }
 }
 
@@ -271,70 +304,70 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 /^[A-Z0-9]{3}\^[A-Z0-9]{0,4}\^[A-Z0-9]{0,4}\^/{
 
     if (idx_file == 1) {
-	##
-	# First parsing
+		##
+		# First parsing
 
-	# IATA code of the point of reference (POR) itself
-	iata_code = $K_POR_CDE
+		# IATA code of the point of reference (POR) itself
+		iata_code = $K_POR_CDE
 
-	# Geonames ID
-	geoname_id = $K_POR_GID
+		# Geonames ID
+		geoname_id = $K_POR_GID
 
-	# UTF8 name of the POR itself
-	name_utf = $K_NME_UTF
+		# UTF8 name of the POR itself
+		name_utf = $K_NME_UTF
 
-	# ASCII name of the POR itself
-	name_ascii = $K_NME_ASC
+		# ASCII name of the POR itself
+		name_ascii = $K_NME_ASC
 
-	# Served city IATA code
-	served_city_code_list = $K_SVD_CTY_LST
+		# Served city IATA code
+		served_city_code_list = $K_SVD_CTY_LST
 
-	# IATA location type
-	location_type = $K_LOC_TYP
+		# IATA location type
+		location_type = $K_LOC_TYP
 
-	# Store the POR names for the POR IATA code
-	extractAndStoreCityNames(iata_code, location_type, geoname_id, \
-				 name_utf, name_ascii)
+		# Store the POR names for the POR IATA code
+		extractAndStoreCityNames(iata_code, location_type, geoname_id, \
+								 name_utf, name_ascii)
 
-	# Collect the travel-related POR IATA code
-	collectTravelPoints(iata_code, served_city_code_list, location_type)
+		# Collect the travel-related POR IATA code
+		collectTravelPoints(iata_code, served_city_code_list, location_type)
 
     } else if (idx_file == 2) {
-	##
-	# Second parsing
+		##
+		# Second parsing
 
-	# IATA code of the point of reference (POR) itself
-	iata_code = $K_POR_CDE
+		# IATA code of the point of reference (POR) itself
+		iata_code = $K_POR_CDE
 
-	# Geonames ID
-	geoname_id = $K_POR_GID
+		# Geonames ID
+		geoname_id = $K_POR_GID
 
-	# UTF8 name of the POR itself
-	name_utf = $K_NME_UTF
+		# UTF8 name of the POR itself
+		name_utf = $K_NME_UTF
 
-	# ASCII name of the POR itself
-	name_ascii = $K_NME_ASC
+		# ASCII name of the POR itself
+		name_ascii = $K_NME_ASC
 
-	# IATA code of the city served by that POR
-	city_iata_code_list = $K_SVD_CTY_LST
+		# IATA code of the city served by that POR
+		city_iata_code_list = $K_SVD_CTY_LST
 
-	# IATA location type
-	location_type = $K_LOC_TYP
+		# IATA location type
+		location_type = $K_LOC_TYP
 
-	# Write the city names for that POR
-	writeCityLists(iata_code, location_type, city_iata_code_list, \
-		       name_utf, name_ascii)
+		# Write the city names for that POR
+		writeCityLists(iata_code, location_type, city_iata_code_list, \
+					   name_utf, name_ascii)
 
-	# Write the travel-related points serving a given city
-	writeTravelPORList(iata_code, location_type, city_iata_code_list)
+		# Write the travel-related points serving a given city
+		writeTravelPORList(iata_code, location_type, city_iata_code_list)
 
-	# Write the full line, amended by the call to the writeCityLists()
-	# function
-	print ($0)
+		# Write the full line, amended by the call to the writeCityLists()
+		# function
+		print ($0)
 
     } else {
-	# Sanity check
-	print ("[" awk_file "] !!!! Error - The '" FILENAME "' data file " \
-	       "should not be parsed more than twice" ) > error_stream
+		# Sanity check
+		print ("[" awk_file "] !!!! Error - The '" FILENAME "' data file " \
+			   "should not be parsed more than twice" ) > error_stream
     }
 }
