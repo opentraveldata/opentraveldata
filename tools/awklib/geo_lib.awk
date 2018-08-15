@@ -7,7 +7,7 @@
 ##
 # Function to be called during the BEGIN section
 function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
-		       __igalParamLogLevel) {
+					   __igalParamLogLevel) {
     # Global variables
     __glGlobalAWKFile = __igalParamAWKFile
     __glGlobalErrorStream = __igalParamErrorStream
@@ -22,6 +22,7 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
 
     # Debugging support
     __glGlobalDebugIataCode = ""
+    #__glGlobalDebugIataCode = "AAA"
     #__glGlobalDebugIataCode = "ZZZ"
     #__glGlobalDebugIataCode = "AAE"
     #__glGlobalDebugIataCode = "RDU"
@@ -89,17 +90,17 @@ function finalizeFileGeoAwkLib() {
 function finalizeGeoAwkLib() {
     # Display the last Geonames POR entries, if appropriate
     if (__glGlobalIsForGeonames == 1) {
-	displayGeonamesPOREntries()
+		displayGeonamesPOREntries()
     }
 
     # Display the last reference data POR entries
     if (__glGlobalIsForREF == 1) {
-	displayREFPOREntries()
+		displayREFPOREntries()
     }
 
     # Display the last Innovata POR entries
     if (__glGlobalIsForInnovata == 1) {
-	displayInnovataPOREntries()
+		displayInnovataPOREntries()
     }
 }
 
@@ -114,12 +115,12 @@ function displayOPTDPorPublicHeader(__dopphFullLine) {
 # Display a list
 function displayList(__paramListType, __paramList) {
     if (length(__paramList) == 0) {
-	return
+		return
     }
 
     print (__paramListType ":")
     for (myIdx in __paramList) {
-	print (myIdx " => " __paramList[myIdx])
+		print (myIdx " => " __paramList[myIdx])
     }
 }
 
@@ -127,15 +128,15 @@ function displayList(__paramListType, __paramList) {
 # Display a 2-dimensional list
 function display2dList(__paramListType, __paramList) {
     if (length(__paramList) == 0) {
-	return
+		return
     }
 
     print (__paramListType ":")
     for (myCombIdx in __paramList) {
-	split (myCombIdx, myIdxArray, SUBSEP)
-	myIdx1 = myIdxArray[1]; myIdx2 = myIdxArray[2]
-	print ("[" __paramListType "] " myIdx1 ", " myIdx2 " => "	\
-	       __paramList[myIdx1, myIdx2])
+		split (myCombIdx, myIdxArray, SUBSEP)
+		myIdx1 = myIdxArray[1]; myIdx2 = myIdxArray[2]
+		print ("[" __paramListType "] " myIdx1 ", " myIdx2 " => "	\
+			   __paramList[myIdx1, myIdx2])
     }
 }
 
@@ -182,54 +183,54 @@ function capitaliseWords(__cwInStr) {
     # Loop until there is no more match (on words)
     while (__cwIdx = match (__cwRmgStr, /(\/?[[:alnum:]]+)/)) {
 
-	# Extract a single-character prefix, if any
-	__cwPrefixChar = substr (__cwRmgStr, __cwIdx, 1)
+		# Extract a single-character prefix, if any
+		__cwPrefixChar = substr (__cwRmgStr, __cwIdx, 1)
 
-	# When the word is prefixed by a slash ('/'), it is most probably
-	# a country or state code. In that latter case, it should not be
-	# capitalised.
-	__cwMatchLen = RLENGTH
-	if (__cwPrefixChar == "/") {
-	    __cwIdx++
-	    __cwMatchLen--
-	}
+		# When the word is prefixed by a slash ('/'), it is most probably
+		# a country or state code. In that latter case, it should not be
+		# capitalised.
+		__cwMatchLen = RLENGTH
+		if (__cwPrefixChar == "/") {
+			__cwIdx++
+			__cwMatchLen--
+		}
 
-	# Extract the (matched) word
-	__cwWordStr = substr (__cwRmgStr, __cwIdx, __cwMatchLen)
+		# Extract the (matched) word
+		__cwWordStr = substr (__cwRmgStr, __cwIdx, __cwMatchLen)
 
-	# Insulate the first letter
-	__cwFirstLetter = substr (__cwWordStr, 1, 1)
+		# Insulate the first letter
+		__cwFirstLetter = substr (__cwWordStr, 1, 1)
 
-	# Insulate the remaining letters, if any
-	if (__cwMatchLen >= 2) {
-	    __cwRmgLetters = substr (__cwWordStr, 2)
-	} else {
-	    __cwRmgLetters = ""
-	}
+		# Insulate the remaining letters, if any
+		if (__cwMatchLen >= 2) {
+			__cwRmgLetters = substr (__cwWordStr, 2)
+		} else {
+			__cwRmgLetters = ""
+		}
 
-	# DEBUG
-	# print ("idx=" __cwIdx ", pfx=" __cwPrefixChar ", fl=" __cwFirstLetter \
-	#	   ", rmg=" __cwRmgLetters ", rlen=" __cwMatchLen ", word=" __cwWordStr)
+		# DEBUG
+		# print ("idx=" __cwIdx ", pfx=" __cwPrefixChar ", fl=" __cwFirstLetter \
+		#	   ", rmg=" __cwRmgLetters ", rlen=" __cwMatchLen ", word=" __cwWordStr)
 
-	if (__cwPrefixChar != "/") {
-	    # Capitalise the word
-	    __cwFirstLetter = toupper (__cwFirstLetter)
-	    __cwRmgLetters = tolower (__cwRmgLetters)
-	}
+		if (__cwPrefixChar != "/") {
+			# Capitalise the word
+			__cwFirstLetter = toupper (__cwFirstLetter)
+			__cwRmgLetters = tolower (__cwRmgLetters)
+		}
 
-	# Re-aggregate the (now capitalised) word
-	__cwWordStr = __cwFirstLetter __cwRmgLetters
+		# Re-aggregate the (now capitalised) word
+		__cwWordStr = __cwFirstLetter __cwRmgLetters
 
-	# Add the separator (white space here)
-	if (__cwGenStr != "") {
-	    __cwGenStr = __cwGenStr " "
-	}
+		# Add the separator (white space here)
+		if (__cwGenStr != "") {
+			__cwGenStr = __cwGenStr " "
+		}
 
-	# Add the capitalised work to the target string
-	__cwGenStr = __cwGenStr __cwWordStr
+		# Add the capitalised work to the target string
+		__cwGenStr = __cwGenStr __cwWordStr
 
-	# Remove the match from the current string
-	__cwRmgStr = substr (__cwRmgStr, __cwIdx + __cwMatchLen)
+		# Remove the match from the current string
+		__cwRmgStr = substr (__cwRmgStr, __cwIdx + __cwMatchLen)
     }
 
     return __cwGenStr
@@ -287,7 +288,7 @@ function isLocTypeTvlRtd(__ilttrParamLocationType) {
 
     # Aggregation
     __resultIsTravelRelated = __isAirport + __isHeliport + __isRail + __isBus \
-	+ __isGround + __isPort + __isOffpoint
+		+ __isGround + __isPort + __isOffpoint
 
     return __resultIsTravelRelated
 }
@@ -430,7 +431,7 @@ function isFeatCodeTvlRtd(__ifctrParamFeatureCode) {
 
     # Aggregation
     __resultIsTravelRelated = __isAirport + __isHeliport + __isRail \
-	+ __isBus + __isMetro + __isPort
+		+ __isBus + __isMetro + __isPort
 
     return __resultIsTravelRelated
 }
@@ -442,12 +443,12 @@ function getFeatureClass(__gfcParamLocationType) {
     __resultFeatureClass = "NA"
 
     switch (__gfcParamLocationType) {
-	case "C": case "O":
-	    __resultFeatureClass = "P"
-	    break
-	    case "A": case "H": case "R": case "B": case "P": case "G": \
-		__resultFeatureClass = "S"
-		break
+		case "C": case "O":
+			__resultFeatureClass = "P"
+			break
+			case "A": case "H": case "R": case "B": case "P": case "G": \
+				__resultFeatureClass = "S"
+				break
     }
 
     return __resultFeatureClass
@@ -460,27 +461,27 @@ function getFeatureCode(__gfcParamLocationType) {
     __resultFeatureCode = "NA"
 
     switch (__gfcParamLocationType) {
-	case "C": case "O":
-	    __resultFeatureCode = "PPL"
-	break
-	case "A":
-	    __resultFeatureCode = "AIRP"
-	break
-	case "H":
-	    __resultFeatureCode = "AIRH"
-	break
-	case "R":
-	    __resultFeatureCode = "RSTN"
-	break
-	case "B":
-	    __resultFeatureCode = "BUSTN"
-	break
-	case "G":
-	    __resultFeatureCode = "RSTN"
-	break
-	case "P":
-	    __resultFeatureCode = "FY"
-	break
+		case "C": case "O":
+			__resultFeatureCode = "PPL"
+			break
+			case "A":
+				__resultFeatureCode = "AIRP"
+				break
+				case "H":
+					__resultFeatureCode = "AIRH"
+					break
+					case "R":
+						__resultFeatureCode = "RSTN"
+						break
+						case "B":
+							__resultFeatureCode = "BUSTN"
+							break
+							case "G":
+								__resultFeatureCode = "RSTN"
+								break
+								case "P":
+									__resultFeatureCode = "FY"
+									break
     }
 
     return __resultFeatureCode
@@ -493,29 +494,29 @@ function getLocTypeFromFeatCode(__gltParamFeatureCode) {
     __resultLocationType = "NA"
 
     if (isFeatCodeCity(__gltParamFeatureCode)) {
-	# City
-	__resultLocationType = "C"
+		# City
+		__resultLocationType = "C"
 
     } else if (isFeatCodeAirport(__gltParamFeatureCode)) {
-	# Airport
-	__resultLocationType = "A"
+		# Airport
+		__resultLocationType = "A"
 
     } else if (isFeatCodeHeliport(__gltParamFeatureCode)) {
-	# Heliport
-	__resultLocationType = "H"
+		# Heliport
+		__resultLocationType = "H"
 
     } else if (isFeatCodeRail(__gltParamFeatureCode)) {
-	# Railway station
-	__resultLocationType = "R"
+		# Railway station
+		__resultLocationType = "R"
 
     } else if (isFeatCodeBus(__gltParamFeatureCode)			\
-	       || isFeatCodeMetro(__gltParamFeatureCode)) {
-	# Bus station/stop or metro station
-	__resultLocationType = "B"
+			   || isFeatCodeMetro(__gltParamFeatureCode)) {
+		# Bus station/stop or metro station
+		__resultLocationType = "B"
 
     } else if (isFeatCodePort(__gltParamFeatureCode)) {
-	# Maritime port, ferry, naval base
-	__resultLocationType = "P"
+		# Maritime port, ferry, naval base
+		__resultLocationType = "P"
     }
 
     return __resultLocationType
@@ -541,7 +542,7 @@ function convertLatToStd(__cgcLat) {
     cgcStdLat += (cgcStdLatSec / 6000.0)
 
     if (cgcStdLatSgn == "S") {
-	cgcStdLat = -1 * cgcStdLat
+		cgcStdLat = -1 * cgcStdLat
     }
     return cgcStdLat
 }
@@ -566,7 +567,7 @@ function convertLonToStd(__cgcLon) {
     cgcStdLon += (cgcStdLonSec / 6000.0)
 
     if (cgcStdLonSgn == "W") {
-	cgcStdLon = -1 * cgcStdLon
+		cgcStdLon = -1 * cgcStdLon
     }
     return cgcStdLon
 }
@@ -602,9 +603,9 @@ function getPrimaryKeyAsArray(__gpkaaParamPK, __resultPKArray) {
 ##
 # Generate the primary key from the corresponding fields.
 function getPrimaryKey(__gpkParamIataCode, __gpkParamLocationType,	\
-		       __gpkParamGeonamesID) {
+					   __gpkParamGeonamesID) {
     __resultPK =							\
-	__gpkParamIataCode "-" __gpkParamLocationType "-" __gpkParamGeonamesID
+		__gpkParamIataCode "-" __gpkParamLocationType "-" __gpkParamGeonamesID
     return __resultPK
 }
 
@@ -613,7 +614,7 @@ function getPrimaryKey(__gpkParamIataCode, __gpkParamLocationType,	\
 #
 function sortListStringAplha(__slsParamListString, __slsParamSep) {
     __resultNbOfFields = split (__slsParamListString, __resultArray,	\
-				__slsParamSep)
+								__slsParamSep)
     #
     asort(__resultArray)
 
@@ -621,26 +622,26 @@ function sortListStringAplha(__slsParamListString, __slsParamSep) {
     __resultListString = ""
     delete __resultUniqArray
     for (idx in __resultArray) {
-	__TvlCode = __resultArray[idx]
+		__TvlCode = __resultArray[idx]
 
-	__isAlreadyInArray = __resultUniqArray[__TvlCode]
-	if (__isAlreadyInArray) {
-	    # When the travel-related POR already appears in the list,
-	    # do not add it again
-	    continue
+		__isAlreadyInArray = __resultUniqArray[__TvlCode]
+		if (__isAlreadyInArray) {
+			# When the travel-related POR already appears in the list,
+			# do not add it again
+			continue
 
-	} else {
-	    # Register that that travel-related POR is in the list
-	    __resultUniqArray[__TvlCode] = 1
-	}
+		} else {
+			# Register that that travel-related POR is in the list
+			__resultUniqArray[__TvlCode] = 1
+		}
 
-	# Add the separator when needed
-	if (int(idx) >= 2) {
-	    __resultListString = __resultListString __slsParamSep
-	}
+		# Add the separator when needed
+		if (int(idx) >= 2) {
+			__resultListString = __resultListString __slsParamSep
+		}
 
-	# Add the travel-related POR IATA code to the dedicated list
-	__resultListString = __resultListString __TvlCode
+		# Add the travel-related POR IATA code to the dedicated list
+		__resultListString = __resultListString __TvlCode
     }
     return __resultListString
 }
@@ -652,7 +653,7 @@ function sortListStringAplha(__slsParamListString, __slsParamSep) {
 function addFieldToList(__aftlParamIataCode, __aftlParamList, __aftlParamField) {
     myTmpString = __aftlParamList[__aftlParamIataCode]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __aftlParamField
     __aftlParamList[__aftlParamIataCode] = myTmpString
@@ -663,7 +664,7 @@ function addFieldToList(__aftlParamIataCode, __aftlParamList, __aftlParamField) 
 # and the list correspond to the file of best known coordinates.
 #
 function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, \
-			      __alttolParamOPTDList) {
+							  __alttolParamOPTDList) {
     myTmpString = __alttolParamOPTDList[__alttolParamIataCode]
 
     # If the location type is already listed, do not add it again.
@@ -677,20 +678,20 @@ function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, 
     # See also the addLocTypeToAllGeoList() function below.
     split (myTmpString, alttolOPTDLocTypeArray, ",")
     for (alttolOPTDLocTypeIdx in alttolOPTDLocTypeArray) {
-	alttolOPTDLocType = alttolOPTDLocTypeArray[alttolOPTDLocTypeIdx]
-	if (alttolOPTDLocType == __alttolParamLocationType) {
-	    # DEBUG
-	    #print ("[" __alttolParamIataCode "-" __alttolParamLocationType \
-	    #	   "] already exists. Indeed, the OPTD loc_type list is: " \
-	    #	   myTmpString) > __glGlobalErrorStream
-	    return
-	}
+		alttolOPTDLocType = alttolOPTDLocTypeArray[alttolOPTDLocTypeIdx]
+		if (alttolOPTDLocType == __alttolParamLocationType) {
+			# DEBUG
+			#print ("[" __alttolParamIataCode "-" __alttolParamLocationType \
+			#	   "] already exists. Indeed, the OPTD loc_type list is: " \
+			#	   myTmpString) > __glGlobalErrorStream
+			return
+		}
     }
 
     # By construction, we are now sure that the given location type
     # is not already listed
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
 
     # Add the given location type
@@ -703,23 +704,25 @@ function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, 
 # and the list correspond to the file of best known coordinates.
 #
 function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
-			    __agitolParamGeonamesID, __agitolParamOPTDList) {
-    if (__agitolParamIataCode == "ZZZ") {
-	# The POR is not referenced by IATA. So, only the Geonames ID
-	# is stored in that case.
+							__agitolParamGeonamesID, __agitolParamOPTDList) {
+	# Record that OPTD knows about that Geonames ID
 	optd_por_noiata_geoid_list[__agitolParamGeonamesID] = 1
 
+	if (__agitolParamIataCode == "ZZZ") {
+		# The POR is not referenced by IATA. There is nothing more to be done
+		# at that stage.
+
     } else {
-	# The POR is referenced by IATA, and there may be several POR sharing
-	# the same IATA code. So, the Geonames ID and location type are stored.
-	myTmpString = __agitolParamOPTDList[__agitolParamIataCode,	\
-					    __agitolParamLocationType]
-	if (myTmpString) {
-	    myTmpString = myTmpString ","
-	}
-	myTmpString = myTmpString __agitolParamGeonamesID
-	__agitolParamOPTDList[__agitolParamIataCode, __agitolParamLocationType] = \
-	    myTmpString
+		# The POR is referenced by IATA, and there may be several POR sharing
+		# the same IATA code. So, the Geonames ID and location type are stored.
+		myTmpString = __agitolParamOPTDList[__agitolParamIataCode,	\
+											__agitolParamLocationType]
+		if (myTmpString) {
+			myTmpString = myTmpString ","
+		}
+		myTmpString = myTmpString __agitolParamGeonamesID
+		__agitolParamOPTDList[__agitolParamIataCode,					\
+							  __agitolParamLocationType] = myTmpString
     }
 }
 
@@ -728,10 +731,10 @@ function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 # The Geonames ID and the list correspond to the Geonames data dump.
 #
 function addGeoIDToGeoList(__agitolParamLocationType, __agitolParamGeonamesID, \
-			   __agitolParamGeoList) {
+						   __agitolParamGeoList) {
     myTmpString = __agitolParamGeoList[__agitolParamLocationType]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __agitolParamGeonamesID
     __agitolParamGeoList[__agitolParamLocationType] = myTmpString
@@ -742,11 +745,11 @@ function addGeoIDToGeoList(__agitolParamLocationType, __agitolParamGeonamesID, \
 # The Geonames ID and the list correspond to the Geonames data dump.
 #
 function addLocTypeToGeoList(__alttglParamGeonamesID,	\
-			     __alttglParamLocationType, \
-			     __alttglParamGeoList) {
+							 __alttglParamLocationType, \
+							 __alttglParamGeoList) {
     myTmpString = __alttglParamGeoList[__alttglParamGeonamesID]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __alttglParamLocationType
     __alttglParamGeoList[__alttglParamGeonamesID] = myTmpString
@@ -757,7 +760,7 @@ function addLocTypeToGeoList(__alttglParamGeonamesID,	\
 # or reference data list.
 #
 function addLocTypeToAllGeoList(__alttglParamLocationType,	\
-				__alttglParamGeoString) {
+								__alttglParamGeoString) {
     __resultGeoString = __alttglParamGeoString
 
     # If the location type is already listed, do not add it again.
@@ -769,12 +772,12 @@ function addLocTypeToAllGeoList(__alttglParamLocationType,	\
     # 'C' and 'A' in that example. Hence, the AWK match() function is enough
     # to check that the location type does not already exist.
     if (match (__alttglParamGeoString, __alttglParamLocationType)) {
-	return __resultGeoString
+		return __resultGeoString
     }
 
     # Register the location type
     if (__resultGeoString) {
-	__resultGeoString = __resultGeoString ","
+		__resultGeoString = __resultGeoString ","
     }
     __resultGeoString = __resultGeoString __alttglParamLocationType
     return __resultGeoString
@@ -789,20 +792,20 @@ function addGeoIDToAllGeoList(__alttaglParamGeonamesID,__alttaglParamGeoString) 
 
     # If the Geonames ID is already listed, notify the user
     if (geo_all_geoid_list[__alttaglParamGeonamesID]) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the Geonames ID (" __alttaglParamGeonamesID		\
-	       ") already exists (number of Geonames ID so far: "	\
-	       length(geo_all_geoid_list)				\
-	       "): it is a duplicate. Check the Geonames data dump. By " \
-	       "construction, that should not happen!")			\
-	    > __glGlobalErrorStream
-	return __resultGeoString
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
+			   ", the Geonames ID (" __alttaglParamGeonamesID		\
+			   ") already exists (number of Geonames ID so far: "	\
+			   length(geo_all_geoid_list)				\
+			   "): it is a duplicate. Check the Geonames data dump. By " \
+			   "construction, that should not happen!")			\
+			> __glGlobalErrorStream
+		return __resultGeoString
     }
 
     # Register the Geonames ID
     geo_all_geoid_list[__alttaglParamGeonamesID] = 1
     if (__resultGeoString) {
-	__resultGeoString = __resultGeoString ","
+		__resultGeoString = __resultGeoString ","
     }
     __resultGeoString = __resultGeoString __alttaglParamGeonamesID
     return __resultGeoString
@@ -812,11 +815,11 @@ function addGeoIDToAllGeoList(__alttaglParamGeonamesID,__alttaglParamGeoString) 
 # Add the given IATA code to the given US DOT list of area codes.
 #
 function addDOTFieldToList(__adftlParamIataCode, __adftlParamDOTList, \
-			   __adftlParamDOTAreaCode) {
+						   __adftlParamDOTAreaCode) {
     # Register the details of the US DOT-maintained POR entry for the given field
     myTmpString = __adftlParamDOTList[__adftlParamDOTAreaCode]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __adftlParamIataCode
     __adftlParamDOTList[__adftlParamDOTAreaCode] = myTmpString
@@ -832,18 +835,18 @@ function addDOTFieldToList(__adftlParamIataCode, __adftlParamDOTList, \
 # * Beginning date of the validity range
 #
 function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
-			    __aoftlParamGeoID,				\
-			    __aoftlParamOPTDList, __aoftlParamOPTDField) {
+							__aoftlParamGeoID,				\
+							__aoftlParamOPTDList, __aoftlParamOPTDField) {
     # Register the details of the OPTD-maintained POR entry for the given field
     myTmpString = __aoftlParamOPTDList[__aoftlParamIataCode,	 \
-				       __aoftlParamLocationType, \
-				       __aoftlParamGeoID]
+									   __aoftlParamLocationType, \
+									   __aoftlParamGeoID]
     if (myTmpString) {
-	myTmpString = myTmpString ","
+		myTmpString = myTmpString ","
     }
     myTmpString = myTmpString __aoftlParamOPTDField
     __aoftlParamOPTDList[__aoftlParamIataCode, __aoftlParamLocationType, \
-			 __aoftlParamGeoID] = myTmpString
+						 __aoftlParamGeoID] = myTmpString
 }
 
 ##
@@ -862,9 +865,9 @@ function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
 #         'P', 'G', 'O') or combined (e.g., 'CA', 'CH', 'CR', 'CB', 'CP')
 #
 function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
-			  __rolParamLatitude, __rolParamLongitude,	\
-			  __rolParamServedCityCode, __rolParamBeginDate, \
-			  __rolParamFullLine) {
+						  __rolParamLatitude, __rolParamLongitude,	\
+						  __rolParamServedCityCode, __rolParamBeginDate, \
+						  __rolParamFullLine) {
     # Extract the primary key fields
     getPrimaryKeyAsArray(__rolParamPK, myPKArray)
     rolIataCode = myPKArray[1]
@@ -884,20 +887,20 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
     # Sanity check: the IATA codes of the primary key and of the dedicated field
     #               should be equal.
     if (rolIataCode != __rolParamIataCode2) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	 \
-	       ", the IATA code ('" rolIataCode "') of the primary key " \
-	       "is not the same as the one of the dedicated field ('"	\
-	       __rolParamIataCode2 "') - Full line: " __rolParamFullLine) \
-	    > __glGlobalErrorStream
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	 \
+			   ", the IATA code ('" rolIataCode "') of the primary key " \
+			   "is not the same as the one of the dedicated field ('"	\
+			   __rolParamIataCode2 "') - Full line: " __rolParamFullLine) \
+			> __glGlobalErrorStream
     }
 
     # Sanity check: when the location type is a combined type, one of those
     #               types should be a travel-related POR.
     if (length(rolLocationType) >= 2 && myIsTravel == 0) {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-	       ", the location type ('"	rolLocationType				\
-	       "') is unknown - Full line: " __rolParamFullLine)	\
-	    > __glGlobalErrorStream
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
+			   ", the location type ('"	rolLocationType				\
+			   "') is unknown - Full line: " __rolParamFullLine)	\
+			> __glGlobalErrorStream
     }
 
     # Add the location type to the dedicated list for that IATA code
@@ -906,7 +909,7 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
     # Add the Geonames ID to the dedicated list for that (IATA code, location
     # type)
     addGeoIDToOPTDList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_geoid_list)
+					   optd_por_geoid_list)
 
     # Calculate the index for that IATA code
     optd_por_idx_list[rolIataCode, rolLocationType]++
@@ -914,26 +917,26 @@ function registerOPTDLine(__rolParamPK, __rolParamIataCode2,	\
 
     # Register the details of the OPTD-maintained POR entry for the latitude
     addOPTDFieldToList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_lat_list, __rolParamLatitude)
+					   optd_por_lat_list, __rolParamLatitude)
 
     # Register the details of the OPTD-maintained POR entry for the longitude
     addOPTDFieldToList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_lon_list, __rolParamLongitude)
+					   optd_por_lon_list, __rolParamLongitude)
 
     # Register the details of the OPTD-maintained POR entry for the (list of)
     # served cit(y)(ies)
     addOPTDFieldToList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_cty_list, __rolParamServedCityCode)
+					   optd_por_cty_list, __rolParamServedCityCode)
 
     # Register the details of the OPTD-maintained POR entry for the beg. date
     addOPTDFieldToList(rolIataCode, rolLocationType, rolGeonamesID,	\
-		       optd_por_bdate_list, __rolParamBeginDate)
+					   optd_por_bdate_list, __rolParamBeginDate)
 }
 
 ##
 # Get the field for the given (list, POR IATA code) pair
 function getOPTDFieldFromList(__gofflIataCode, __gofflLocType, __gofflGeoID, \
-			      __gofflList) {
+							  __gofflList) {
     return __gofflList[__gofflIataCode, __gofflLocType, __gofflGeoID]
 }
 
@@ -941,28 +944,28 @@ function getOPTDFieldFromList(__gofflIataCode, __gofflLocType, __gofflGeoID, \
 # Get the geographical latitude for the given POR IATA code
 function getOPTDPorLatitude(__goplIataCode, __goplLocType, __goplGeoID) {
     return getOPTDFieldFromList(__goplIataCode, __goplLocType, __goplGeoID, \
-				optd_por_lat_list)
+								optd_por_lat_list)
 }
 
 ##
 # Get the geographical longitude for the given POR IATA code
 function getOPTDPorLongitude(__goplIataCode, __goplLocType, __goplGeoID) {
     return getOPTDFieldFromList(__goplIataCode, __goplLocType, __goplGeoID, \
-				optd_por_lon_list)
+								optd_por_lon_list)
 }
 
 ##
 # Get the city code (list) for the given POR IATA code
 function getOPTDPorCityCodeList(__goplIataCode, __gopcclLocType, __gopcclGeoID) {
     return getOPTDFieldFromList(__goplIataCode, __gopcclLocType, __gopcclGeoID, \
-				optd_por_cty_list)
+								optd_por_cty_list)
 }
 
 ##
 # Get the beginning date for the given POR IATA code
 function getOPTDPorBegDate(__goplIataCode, __gopbdLocType, __gopbdGeoID) {
     return getOPTDFieldFromList(__goplIataCode, __gopbdLocType, __gopbdGeoID, \
-				optd_por_bdate_list)
+								optd_por_bdate_list)
 }
 
 ##
@@ -974,7 +977,7 @@ function getOPTDPorBegDate(__goplIataCode, __gopbdLocType, __gopbdGeoID) {
 # 4. The number of flights (flight frequency) for that (origin, destination) pair
 #
 function registerPORAirlineLine(__rpalAirline, __rpalPOROrg,	\
-				__rpalPORDst, __rpalFltFreq) {
+								__rpalPORDst, __rpalFltFreq) {
     # DEBUG
     # print ("Airline code=" __rpalAirline ", origin=" __rpalPOROrg		\
     #	   ", destination=" __rpalPORDst ", flight frquency=" __rpalFltFreq	\
@@ -1005,7 +1008,7 @@ function getAirlinePORFltFreq(__gapffAirline, __gapffPOR) {
 # 3. The DOT-maintained area (country) code
 #
 function registerDOTLine(__rdlParamIataCode, __rdlParamName, \
-			 __rdlParamAreaCode, __rdlParamFullLine) {
+						 __rdlParamAreaCode, __rdlParamFullLine) {
     # DEBUG
     # print ("IATA code=" __rdlParamIataCode ", loc_name="				\
     #	   __rdlParamName ", AreaCode=" __rdlParamAreaCode ", awk="		\
@@ -1080,44 +1083,44 @@ function resetPageRankList() {
 ##
 # Suggest a next step for the user: add the given POR entry
 function displayNextStepAdd(__dnsaParamIataCode, __dnsaParamLocationType, \
-			    __dnsaParamGeonamesID) {
+							__dnsaParamGeonamesID) {
     # Calculate the primary key
     dnsaPK = getPrimaryKey(__dnsaParamIataCode, __dnsaParamLocationType, \
-			   __dnsaParamGeonamesID)
+						   __dnsaParamGeonamesID)
 
     #
     print ("[" __glGlobalAWKFile "] Next step: add an entry in the OPTD " \
-	   "file of best known coordinates for the " dnsaPK " primary key") \
-	> __glGlobalErrorStream
+		   "file of best known coordinates for the " dnsaPK " primary key") \
+		> __glGlobalErrorStream
 }
 
 ##
 # Suggest a next step for the user: fix the location type of the given POR entry
 function displayNextStepFixLocType(__dnsfltParamIataCode,	\
-				   __dnsfltParamLocationType,	\
-				   __dnsfltParamGeonamesID) {
+								   __dnsfltParamLocationType,	\
+								   __dnsfltParamGeonamesID) {
     # Calculate the primary key
     dnsfPK = getPrimaryKey(__dnsfltParamIataCode, __dnsfltParamLocationType, \
-			   __dnsfltParamGeonamesID)
+						   __dnsfltParamGeonamesID)
 
     #
     print ("[" __glGlobalAWKFile "] Next step: fix the entry in the OPTD " \
-	   "file of best known coordinates for the " dnsfPK " primary key") \
-	> __glGlobalErrorStream
+		   "file of best known coordinates for the " dnsfPK " primary key") \
+		> __glGlobalErrorStream
 }
 
 ##
 # Suggest a next step for the user: fix the Geonames ID of the given POR entry
 function displayNextStepFixID(__dnsfiParamIataCode, __dnsfiParamLocationType, \
-			      __dnsfiParamGeonamesID) {
+							  __dnsfiParamGeonamesID) {
     # Calculate the primary key
     dnsfPK = getPrimaryKey(__dnsfiParamIataCode, __dnsfiParamLocationType, \
-			   __dnsfiParamGeonamesID)
+						   __dnsfiParamGeonamesID)
 
     #
     print ("[" __glGlobalAWKFile "] Next step: fix the entry in the OPTD " \
-	   "file of best known coordinates for the " dnsfPK " primary key") \
-	> __glGlobalErrorStream
+		   "file of best known coordinates for the " dnsfPK " primary key") \
+		> __glGlobalErrorStream
 }
 
 
@@ -1125,10 +1128,10 @@ function displayNextStepFixID(__dnsfiParamIataCode, __dnsfiParamLocationType, \
 # Calculate an alternate location type
 function getAltLocTypeFromGeo(__galtfgParamLocationType) {
     if (isLocTypeTvlRtd(__galtfgParamLocationType)) {
-	__resultLocationType = "C" __galtfgParamLocationType
+		__resultLocationType = "C" __galtfgParamLocationType
 
     } else if (isLocTypeCity(__galtfgParamLocationType)) {
-	__resultLocationType = "O"
+		__resultLocationType = "O"
     }
     return __resultLocationType
 }
@@ -1161,40 +1164,40 @@ function getAltLocTypeFromGeo(__galtfgParamLocationType) {
 # TVX^...^8411019^AIRP  (should match with OPTD-derived TVX-R-8411019 and notify
 #                        the user as there is a location type mismatch)
 function getMostSimilarLocType(__gmsltParamOPTDLocType, __gmsltParamOPTDGeoID, \
-			       __gmsltParamGeoLocTypeListString,	\
-			       __gmsltParamGeoGeoIDListString) {
+							   __gmsltParamGeoLocTypeListString,	\
+							   __gmsltParamGeoGeoIDListString) {
     __resultMostSimilarLocType = ""
 
     # First, check whether the OPTD-derived Geonames ID is to be found in the
     # Geonames data dump
     isGeoIDKnownToGeonames = match (__gmsltParamGeoGeoIDListString,	\
-				    __gmsltParamOPTDGeoID)
+									__gmsltParamOPTDGeoID)
     if (isGeoIDKnownToGeonames) {
-	# Retrieve the Geonames-derived location type corresponding to that
-	# Geonames-derived Geonames ID. That Geonames-derived location type
-	# will allow to retrieve the right Geonames ID later on.
-	gmsltGeoLocType = geo_line_loctype_list[__gmsltParamOPTDGeoID]
-	__resultMostSimilarLocType = gmsltGeoLocType
-	return __resultMostSimilarLocType
+		# Retrieve the Geonames-derived location type corresponding to that
+		# Geonames-derived Geonames ID. That Geonames-derived location type
+		# will allow to retrieve the right Geonames ID later on.
+		gmsltGeoLocType = geo_line_loctype_list[__gmsltParamOPTDGeoID]
+		__resultMostSimilarLocType = gmsltGeoLocType
+		return __resultMostSimilarLocType
     }
 
     split (__gmsltParamGeoLocTypeListString, gmsltGeoLocTypeArray, ",")
     for (gmsltGeoLocTypeIdx in gmsltGeoLocTypeArray) {
-	gmsltGeoLocType = gmsltGeoLocTypeArray[gmsltGeoLocTypeIdx]
+		gmsltGeoLocType = gmsltGeoLocTypeArray[gmsltGeoLocTypeIdx]
 
-	if (isLocTypeTvlRtd(__gmsltParamOPTDLocType)	\
-	    && isLocTypeTvlRtd(gmsltGeoLocType)) {
-	    __resultMostSimilarLocType = gmsltGeoLocType
-	    break
-	}
+		if (isLocTypeTvlRtd(__gmsltParamOPTDLocType)	\
+			&& isLocTypeTvlRtd(gmsltGeoLocType)) {
+			__resultMostSimilarLocType = gmsltGeoLocType
+			break
+		}
 
-	if ((isLocTypeCity(__gmsltParamOPTDLocType)			\
-	     || match (__gmsltParamOPTDLocType, "O")) &&		\
-	    (isLocTypeCity(gmsltGeoLocType)				\
-	     || match (gmsltGeoLocType, "O"))) {
-	    __resultMostSimilarLocType = gmsltGeoLocType
-	    break
-	}
+		if ((isLocTypeCity(__gmsltParamOPTDLocType)			\
+			 || match (__gmsltParamOPTDLocType, "O")) &&		\
+			(isLocTypeCity(gmsltGeoLocType)				\
+			 || match (gmsltGeoLocType, "O"))) {
+			__resultMostSimilarLocType = gmsltGeoLocType
+			break
+		}
     }
 
     return __resultMostSimilarLocType
@@ -1262,7 +1265,7 @@ function getPageRankFromPK(__gprParamPK) {
 #  2. Specified by a (IATA code, location type) combination
 #
 function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
-				__rprlParamPRFreq) {
+								__rprlParamPRFreq) {
     addFieldToList(__rprlParamPK, optd_pr_seats_list, __rprlParamPRSeats)
 	
     addFieldToList(__rprlParamPK, optd_pr_freq_list, __rprlParamPRFreq)
@@ -1295,9 +1298,9 @@ function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
 function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     #
     if (__dgplFullLine == "") {
-	print ("Empty line for OPTD location type (" __dgplOPTDLocType \
-	       "): " __dgplFullLine) > error_stream
-	return
+		print ("Empty line for OPTD location type (" __dgplOPTDLocType \
+			   "): " __dgplFullLine) > error_stream
+		return
     }
 	
     # Return string
@@ -1344,7 +1347,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     geo_lat = $7
 
     # Longitude
-    geo_lat = $8
+    geo_lon = $8
 
     # City code (list)
     city_code_list = iata_code
@@ -1355,19 +1358,30 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # When the Geonames ID is known from OPTD, use the corresponding details
     # (ie, the coordinates, list of served cities and beginning date)
     isKnownFromOPTD = optd_por_noiata_geoid_list[geonames_id]
+
+    # DEBUG
+    if (__glGlobalDebugIataCode != "" &&		\
+		iata_code == __glGlobalDebugIataCode) {
+		print("[" __glGlobalDebugIataCode "][OPTD: " isKnownFromOPTD	\
+			  "] PK: " pk ", name: " name_utf8							\
+			  ", feature: " feat_Class "/" feat_code ", coord: "		\
+			  geo_lat " - " geo_lon ", city code list: " city_code_list) \
+			> __glGlobalErrorStream
+    }
+	
     if (isKnownFromOPTD) {
-	# Latitude
-	geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
+		# Latitude
+		geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
 
-	# Longitude
-	geo_lon = getOPTDPorLongitude(iata_code, __dgplOPTDLocType, geonames_id)
+		# Longitude
+		geo_lon = getOPTDPorLongitude(iata_code, __dgplOPTDLocType, geonames_id)
 
-	# City code (list)
-	city_code_list = getOPTDPorCityCodeList(iata_code, __dgplOPTDLocType, \
-						geonames_id)
+		# City code (list)
+		city_code_list = getOPTDPorCityCodeList(iata_code, __dgplOPTDLocType, \
+												geonames_id)
 
-	# Beginning date
-	date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
+		# Beginning date
+		date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
     }
 
     # Country code
@@ -1511,8 +1525,8 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
     # ^ US DOT World Area Code (WAC) ^ WAC name
     world_area_code = getWorldAreaCode(ctry_code, state_code, ctry_code_alt, \
-				       city_code_list, geo_lat, geo_lon, \
-				       __dgplFullLine)
+									   city_code_list, geo_lat, geo_lon, \
+									   __dgplFullLine)
     wac_name = getWorldAreaCodeName(world_area_code)
     output_line = output_line FS world_area_code FS wac_name
 
@@ -1536,7 +1550,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 # 2. The OPTD-maintained location type
 # 3. The OPTD-maintained Geonames ID
 function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
-			      __rglParamGeonamesFormat) {
+							  __rglParamGeonamesFormat) {
     # Separator
     saved_fs = FS
     FS = "^"
@@ -1575,11 +1589,11 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
 	
     # Sanity check: the location type should be known
     if (rglLocationType == "NA") {
-	print ("[" __glGlobalAWKFile "] !!!! Error at line #" __rglParamNbOfPOR \
-	       ", the POR with that IATA code ('" __rglIataCode		\
-	       "') has an unknown feature code ('" __rglFeatCode	\
-	       "') - Full line: " __rglParamFullLine) > __glGlobalErrorStream
-	return
+		print ("[" __glGlobalAWKFile "] !!!! Error at line #" __rglParamNbOfPOR \
+			   ", the POR with that IATA code ('" __rglIataCode		\
+			   "') has an unknown feature code ('" __rglFeatCode	\
+			   "') - Full line: " __rglParamFullLine) > __glGlobalErrorStream
+		return
     }
 
     # Display the last read POR entry, when:
@@ -1590,59 +1604,64 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
     # 2. The current POR entry has got a (IATA code, location type) combination
     #    distinct from the last POR entry.
     if (__rglIataCode == "ZZZ") {
-	if (geo_iata_code != "ZZZ") {
-	    # Display the last Geonames POR entries
-	    displayGeonamesPOREntries()
+		if (geo_iata_code != "ZZZ") {
+			# Display the last Geonames POR entries
+			displayGeonamesPOREntries()
 
-	    # Reset the last processed POR tag, so as to not execute again
-	    # displayGeonamesPOREntries() in the next statements below
-	    geo_iata_code = __rglIataCode
-	}
+			# Reset the last processed POR tag, so as to not execute again
+			# displayGeonamesPOREntries() in the next statements below
+			geo_iata_code = __rglIataCode
+		}
 
-	# Store the full details of the Geonames POR entry
-	geo_line_list[__rglGeoID] = __rglParamFullLine
+		# Store the full details of the Geonames POR entry
+		geo_line_list[__rglGeoID] = __rglParamFullLine
 
-	# Processing of the current record, having a 'ZZZ' IATA code,
-	# meaning that it is not referenced by IATA, and that every record
-	# is distinct and must be processed indepedently
-	displayNonIataPOREntry(__rglGeoID, __rglFeatCode)
-    }
-    if (__rglIataCode == geo_iata_code || __rglParamNbOfPOR == 1) {
-		
+		# Processing of the current record, having a 'ZZZ' IATA code,
+		# meaning that it is not referenced by IATA, and that every record
+		# is distinct and must be processed indepedently
+		displayNonIataPOREntry(__rglGeoID, __rglFeatCode)
+
     } else {
-	# Display the last Geonames POR entries
-	displayGeonamesPOREntries()
-    }
+		# The current IATA code is not "ZZZ"
+		if (__rglIataCode == geo_iata_code || __rglParamNbOfPOR == 1) {
+			# That record is either the first one or has got the same IATA code
+			# as the previous record. Hence, nothing more is done at that stage.
+		
+		} else {
+			# Display the last Geonames POR entries (for the previous record)
+			displayGeonamesPOREntries()
+		}
 
-    # Register the Geonames POR entry in the list of last entries
-    # for that IATA code
-    geo_iata_code = __rglIataCode
+		# Register the Geonames POR entry in the list of last entries
+		# for that IATA code
+		geo_iata_code = __rglIataCode
 
-    # DEBUG
-    #print ("[" __glGlobalAWKFile "][" __rglParamNbOfPOR "] iata_code="	\
-    #	   __rglIataCode ", feat_code=" __rglFeatCode	\
-    #	   ", geo_loc_type=" rglLocationType ", GeoID=" __rglGeoID) \
-    #	> __glGlobalErrorStream
+		# DEBUG
+		#print ("[" __glGlobalAWKFile "][" __rglParamNbOfPOR "] iata_code="	\
+		#	   __rglIataCode ", feat_code=" __rglFeatCode				\
+		#	   ", geo_loc_type=" rglLocationType ", GeoID=" __rglGeoID) \
+		#	> __glGlobalErrorStream
 
-    # Add the location type to the dedicated list
-    geo_line_loctype_all_list = addLocTypeToAllGeoList(rglLocationType,	\
-						       geo_line_loctype_all_list)
+		# Add the location type to the dedicated list
+		geo_line_loctype_all_list = addLocTypeToAllGeoList(rglLocationType,	\
+														   geo_line_loctype_all_list)
 
-    # Add the location type to the dedicated list for that Geonames ID
-    addLocTypeToGeoList(__rglGeoID, rglLocationType, geo_line_loctype_list)
+		# Add the location type to the dedicated list for that Geonames ID
+		addLocTypeToGeoList(__rglGeoID, rglLocationType, geo_line_loctype_list)
+		
+		# Add the Geonames ID to the dedicated list
+		geo_line_geoid_all_list = addGeoIDToAllGeoList(__rglGeoID,		\
+													   geo_line_geoid_all_list)
 
-    # Add the Geonames ID to the dedicated list
-    geo_line_geoid_all_list = addGeoIDToAllGeoList(__rglGeoID,		\
-						   geo_line_geoid_all_list)
-
-    # Add the Geonames ID to the dedicated list for that location type
-    addGeoIDToGeoList(rglLocationType, __rglGeoID, geo_line_geoid_list)
-
-    # Store the full details of the Geonames POR entry
-    geo_line_list[__rglGeoID] = __rglParamFullLine
-
-    #
-    FS = saved_fs
+		# Add the Geonames ID to the dedicated list for that location type
+		addGeoIDToGeoList(rglLocationType, __rglGeoID, geo_line_geoid_list)
+		
+		# Store the full details of the Geonames POR entry
+		geo_line_list[__rglGeoID] = __rglParamFullLine
+	}
+		
+	#
+	FS = saved_fs
 }
 
 ##
@@ -1650,36 +1669,36 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
 # corresponding primary key (IATA code, location type, Geonames ID).
 #
 function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
-				  __dpwpParamOPTDGeoID,			\
-				  __dpwpParamGeonamesGeoID) {
+								  __dpwpParamOPTDGeoID,			\
+								  __dpwpParamGeonamesGeoID) {
     # Notification
     if (__dpwpParamGeonamesGeoID != __dpwpParamOPTDGeoID &&	\
-	__glGlobalLogLevel >= 4) {
-	print("[" __glGlobalAWKFile "] !!!! Warning at line #" FNR	\
-	      ", the OPTD-derived POR with that IATA code ('"		\
-	      __dpwpParamIataCode "'), location type ('" __dpwpParamOPTDLocType \
-	      "') has got a different Geonames ID (" __dpwpParamOPTDGeoID \
-	      ") than the Geonames' one (" __dpwpParamGeonamesGeoID		\
-	      "). The retained Geonames ID is " __dpwpParamGeonamesGeoID) \
-	    > __glGlobalErrorStream
-	displayNextStepFixID(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
-			     __dpwpParamOPTDGeoID)
+		__glGlobalLogLevel >= 4) {
+		print("[" __glGlobalAWKFile "] !!!! Warning at line #" FNR	\
+			  ", the OPTD-derived POR with that IATA code ('"		\
+			  __dpwpParamIataCode "'), location type ('" __dpwpParamOPTDLocType \
+			  "') has got a different Geonames ID (" __dpwpParamOPTDGeoID \
+			  ") than the Geonames' one (" __dpwpParamGeonamesGeoID		\
+			  "). The retained Geonames ID is " __dpwpParamGeonamesGeoID) \
+			> __glGlobalErrorStream
+		displayNextStepFixID(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
+							 __dpwpParamOPTDGeoID)
     }
 
     # Build the primary key
     dpwpPK = getPrimaryKey(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
-			   __dpwpParamGeonamesGeoID)
+						   __dpwpParamGeonamesGeoID)
 
     # Retrieve the full details of the Geonames POR entry
     geo_full_line = geo_line_list[__dpwpParamGeonamesGeoID]
 
     # Error
     if (geo_full_line == "") {
-	print("[" __glGlobalAWKFile "][" __dpwpParamIataCode		\
-	      "] Error: no geo full line entry for Geonames ID "	\
-	      __dpwpParamGeonamesGeoID ". OPTD-loc-type: "		\
-	      __dpwpParamOPTDLocType ", OPTD-Geonames ID: "		\
-	      __dpwpParamOPTDGeoID) > __glGlobalErrorStream
+		print("[" __glGlobalAWKFile "][" __dpwpParamIataCode		\
+			  "] Error: no geo full line entry for Geonames ID "	\
+			  __dpwpParamGeonamesGeoID ". OPTD-loc-type: "		\
+			  __dpwpParamOPTDLocType ", OPTD-Geonames ID: "		\
+			  __dpwpParamOPTDGeoID) > __glGlobalErrorStream
     }
 
     # The output line may either be:
@@ -1688,14 +1707,14 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
     #  * Reformatted to conform to optd_por_public.csv.
     #    Typically used by the make_por_public.awk script.
     if (geo_w_pk_display) {
-	# Add the primary key as a prefix
-	output_line = dpwpPK FS geo_full_line
+		# Add the primary key as a prefix
+		output_line = dpwpPK FS geo_full_line
 
     } else {
-	# Parse the full details of the Geonames POR and re-dump them
-	# with the OPTD format
-	output_line = displayGeonamesPORLine(__dpwpParamOPTDLocType, \
-					     geo_full_line)
+		# Parse the full details of the Geonames POR and re-dump them
+		# with the OPTD format
+		output_line = displayGeonamesPORLine(__dpwpParamOPTDLocType, \
+											 geo_full_line)
     }
 
     # DEBUG
@@ -1714,15 +1733,15 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 #
 function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
     # Check whether that Geonames ID is known from OPTD
-    optd_por_noiata_geoid_list[__dnipeGeoID]
+    #isKnownFromOPTD = optd_por_noiata_geoid_list[__dnipeGeoID]
 
-    # Derive the location type from the feature code.
-    dnipeLocationType = getLocTypeFromFeatCode(__dnipeFeatCode)
+	# Derive the location type from the feature code.
+	dnipeLocationType = getLocTypeFromFeatCode(__dnipeFeatCode)
     
-    # Display the full details of the Geonames POR entry
-    output_string = displayGeonamesPORWithPK("ZZZ", dnipeLocationType,	\
-					     __dnipeGeoID, __dnipeGeoID)
-    print (output_string)
+	# Display the full details of the Geonames POR entry
+	output_string = displayGeonamesPORWithPK("ZZZ", dnipeLocationType,	\
+											 __dnipeGeoID, __dnipeGeoID)
+	print (output_string)
 }
 
 ##
@@ -1831,12 +1850,12 @@ function displayGeonamesPOREntries(__dgpeWAddedPK) {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" &&		\
-	geo_iata_code == __glGlobalDebugIataCode) {
-	print("[" __glGlobalDebugIataCode "] " dgpeNbOfGeoPOR		\
-	      " Geonames entries, OPTD loc_type_list: "			\
-	      optd_por_loctype_list[geo_iata_code] ", Geonames loc_type_list: " \
-	      geo_line_loctype_all_list ", Geonames GeoID_list: "	\
-	      geo_line_geoid_all_list) > __glGlobalErrorStream
+		geo_iata_code == __glGlobalDebugIataCode) {
+		print("[" __glGlobalDebugIataCode "] " dgpeNbOfGeoPOR		\
+			  " Geonames entries, OPTD loc_type_list: "			\
+			  optd_por_loctype_list[geo_iata_code] ", Geonames loc_type_list: " \
+			  geo_line_loctype_all_list ", Geonames GeoID_list: "	\
+			  geo_line_geoid_all_list) > __glGlobalErrorStream
     }
 
     # Browse all the location types known by OPTD for that IATA code.
@@ -1846,117 +1865,117 @@ function displayGeonamesPOREntries(__dgpeWAddedPK) {
     dgpeOPTDLocTypeList = optd_por_loctype_list[geo_iata_code]
     split (dgpeOPTDLocTypeList, dgpeOPTDLocTypeArray, ",")
     for (dgpeOPTDLocTypeIdx in dgpeOPTDLocTypeArray) {
-	#
-	dgpeOPTDLocType = dgpeOPTDLocTypeArray[dgpeOPTDLocTypeIdx]
+		#
+		dgpeOPTDLocType = dgpeOPTDLocTypeArray[dgpeOPTDLocTypeIdx]
 
-	# Browse all the Geonames IDs known by OPTD for that
-	# (IATA code, location type) combination
-	dgpeOPTDGeoIDList = optd_por_geoid_list[geo_iata_code, dgpeOPTDLocType]
-	split (dgpeOPTDGeoIDList, dgpeOPTDGeoIDArray, ",")
-	for (dgpeOPTDGeoIDIdx in dgpeOPTDGeoIDArray) {
-	    #
-	    dgpeOPTDGeoID = dgpeOPTDGeoIDArray[dgpeOPTDGeoIDIdx]
+		# Browse all the Geonames IDs known by OPTD for that
+		# (IATA code, location type) combination
+		dgpeOPTDGeoIDList = optd_por_geoid_list[geo_iata_code, dgpeOPTDLocType]
+		split (dgpeOPTDGeoIDList, dgpeOPTDGeoIDArray, ",")
+		for (dgpeOPTDGeoIDIdx in dgpeOPTDGeoIDArray) {
+			#
+			dgpeOPTDGeoID = dgpeOPTDGeoIDArray[dgpeOPTDGeoIDIdx]
 
-	    # Check whether the OPTD-derived location type is to be found
-	    # in the Geonames POR entries for that IATA code.
-	    # Retrieve the list of Geonames ID, if existing/non empty.
-	    dgpeGeoIDList = geo_line_geoid_list[dgpeOPTDLocType]
-	    if (dgpeGeoIDList != "") {
+			# Check whether the OPTD-derived location type is to be found
+			# in the Geonames POR entries for that IATA code.
+			# Retrieve the list of Geonames ID, if existing/non empty.
+			dgpeGeoIDList = geo_line_geoid_list[dgpeOPTDLocType]
+			if (dgpeGeoIDList != "") {
 
-		# DEBUG
-		if (__glGlobalDebugIataCode != "" &&			\
-		    geo_iata_code == __glGlobalDebugIataCode) {
-		    print ("[" __glGlobalDebugIataCode "] OPTD-loctype: " \
-			   dgpeOPTDLocType ", OPTD GeoID: " dgpeOPTDGeoID \
-			   ", Geonames GeoID_list[" dgpeOPTDLocType "]: " \
-			   dgpeGeoIDList) > __glGlobalErrorStream
-		}
+				# DEBUG
+				if (__glGlobalDebugIataCode != "" &&			\
+					geo_iata_code == __glGlobalDebugIataCode) {
+					print ("[" __glGlobalDebugIataCode "] OPTD-loctype: " \
+						   dgpeOPTDLocType ", OPTD GeoID: " dgpeOPTDGeoID \
+						   ", Geonames GeoID_list[" dgpeOPTDLocType "]: " \
+						   dgpeGeoIDList) > __glGlobalErrorStream
+				}
 
-		# Check whether the OPTD-derived Geonames ID exists in the
-		# Geonames data dump. If yes, rely on it. If not, take the
-		# first one of the Geonames-derived list.
-		dgpeIsOPTDGeoIDInGeonames = match (dgpeGeoIDList, dgpeOPTDGeoID)
-		if (dgpeIsOPTDGeoIDInGeonames) {
-		    dgpeGeoID = dgpeOPTDGeoID
+				# Check whether the OPTD-derived Geonames ID exists in the
+				# Geonames data dump. If yes, rely on it. If not, take the
+				# first one of the Geonames-derived list.
+				dgpeIsOPTDGeoIDInGeonames = match (dgpeGeoIDList, dgpeOPTDGeoID)
+				if (dgpeIsOPTDGeoIDInGeonames) {
+					dgpeGeoID = dgpeOPTDGeoID
 
-		} else {
-		    # Extract the first Geonames ID from
-		    # the Geonames-derived list
-		    split (dgpeGeoIDList, dgpeGeoIDArray, ",")
-		    dgpeGeoID = dgpeGeoIDArray[1]
-		}
+				} else {
+					# Extract the first Geonames ID from
+					# the Geonames-derived list
+					split (dgpeGeoIDList, dgpeGeoIDArray, ",")
+					dgpeGeoID = dgpeGeoIDArray[1]
+				}
 
-		# DEBUG
-		if (__glGlobalDebugIataCode != "" &&			\
-		    geo_iata_code == __glGlobalDebugIataCode) {
-		    print ("[" __glGlobalDebugIataCode "] Matching loc type: " \
-			   dgpeOPTDLocType ", Geonames GeoID list: "	\
-			   dgpeGeoIDList ", kept GeoID: " dgpeGeoID)	\
-			> __glGlobalErrorStream
-		}
+				# DEBUG
+				if (__glGlobalDebugIataCode != "" &&			\
+					geo_iata_code == __glGlobalDebugIataCode) {
+					print ("[" __glGlobalDebugIataCode "] Matching loc type: " \
+						   dgpeOPTDLocType ", Geonames GeoID list: "	\
+						   dgpeGeoIDList ", kept GeoID: " dgpeGeoID)	\
+						> __glGlobalErrorStream
+				}
 
-		# Display the full details of the Geonames POR entry
-		output_string = displayGeonamesPORWithPK(geo_iata_code,	\
-							 dgpeOPTDLocType, \
-							 dgpeOPTDGeoID, \
-							 dgpeGeoID)
-		print (output_string)
+				# Display the full details of the Geonames POR entry
+				output_string = displayGeonamesPORWithPK(geo_iata_code,	\
+														 dgpeOPTDLocType, \
+														 dgpeOPTDGeoID, \
+														 dgpeGeoID)
+				print (output_string)
 				
-	    } else {
-		# The OPTD location type is not found in the list of
-		# Geonames-derived location types. Typically, The OPTD location
-		# type may be combined (e.g., 'CA', 'CH', 'CR', 'CB', 'CP')
-		# or correspond to an off-line point (i.e., 'O'), while the
-		# Geonames-derived location types are individual (i.e., either
-		# 'C' or travel-related such 'A', 'H', 'R', 'B', 'P').
-		# In all the cases, there is a single location type in OPTD
-		# and potentially several in Geonames. If they are similar
-		# enough, the Geonames-derived location type is replaced by
-		# OPTD's one.
-		dgpeMostSimilarLocType =				\
-		    getMostSimilarLocType(dgpeOPTDLocType, dgpeOPTDGeoID, \
-					  geo_line_loctype_all_list,	\
-					  geo_line_geoid_all_list)
-		if (dgpeMostSimilarLocType != "") {
-		    # Retrieve the list of Geonames ID corresponding to that
-		    # (Geonames-derived) location type
-		    dgpeGeoIDList = geo_line_geoid_list[dgpeMostSimilarLocType]
+			} else {
+				# The OPTD location type is not found in the list of
+				# Geonames-derived location types. Typically, The OPTD location
+				# type may be combined (e.g., 'CA', 'CH', 'CR', 'CB', 'CP')
+				# or correspond to an off-line point (i.e., 'O'), while the
+				# Geonames-derived location types are individual (i.e., either
+				# 'C' or travel-related such 'A', 'H', 'R', 'B', 'P').
+				# In all the cases, there is a single location type in OPTD
+				# and potentially several in Geonames. If they are similar
+				# enough, the Geonames-derived location type is replaced by
+				# OPTD's one.
+				dgpeMostSimilarLocType =				\
+					getMostSimilarLocType(dgpeOPTDLocType, dgpeOPTDGeoID, \
+										  geo_line_loctype_all_list,	\
+										  geo_line_geoid_all_list)
+				if (dgpeMostSimilarLocType != "") {
+					# Retrieve the list of Geonames ID corresponding to that
+					# (Geonames-derived) location type
+					dgpeGeoIDList = geo_line_geoid_list[dgpeMostSimilarLocType]
 
-		    # Extract the first Geonames ID from the Geonames-derived
-		    # list
-		    split (dgpeGeoIDList, dgpeGeoIDArray, ",")
-		    dgpeGeoID = dgpeGeoIDArray[1]
+					# Extract the first Geonames ID from the Geonames-derived
+					# list
+					split (dgpeGeoIDList, dgpeGeoIDArray, ",")
+					dgpeGeoID = dgpeGeoIDArray[1]
 
-		    # DEBUG
-		    if (__glGlobalDebugIataCode != "" &&		\
-			geo_iata_code == __glGlobalDebugIataCode) {
-			print ("[" __glGlobalDebugIataCode		\
-			       "] Matching similar loc type: " dgpeOPTDLocType \
-			       ", Geonames GeoID list: " dgpeGeoIDList	\
-			       ", kept GeoID: " dgpeGeoID)		\
-			    > __glGlobalErrorStream
-		    }
+					# DEBUG
+					if (__glGlobalDebugIataCode != "" &&		\
+						geo_iata_code == __glGlobalDebugIataCode) {
+						print ("[" __glGlobalDebugIataCode		\
+							   "] Matching similar loc type: " dgpeOPTDLocType \
+							   ", Geonames GeoID list: " dgpeGeoIDList	\
+							   ", kept GeoID: " dgpeGeoID)		\
+							> __glGlobalErrorStream
+					}
 
-		    # Display the full details of the Geonames POR entry
-		    output_string = displayGeonamesPORWithPK(geo_iata_code, \
-							     dgpeOPTDLocType, \
-							     dgpeOPTDGeoID, \
-							     dgpeGeoID)
-		    print (output_string)
+					# Display the full details of the Geonames POR entry
+					output_string = displayGeonamesPORWithPK(geo_iata_code, \
+															 dgpeOPTDLocType, \
+															 dgpeOPTDGeoID, \
+															 dgpeGeoID)
+					print (output_string)
 					
-		} else {
-		    # Notification
-		    if ((__glGlobalLogLevel >= 4 && dgpeOPTDGeoID != 0) || \
-			(__glGlobalLogLevel >= 5 && dgpeOPTDGeoID == 0)) {
-			print ("[" __glGlobalAWKFile "] iata_code="	\
-			       geo_iata_code ", OPTD-loctype=" dgpeOPTDLocType \
-			       ", OPTD-GeoID=" dgpeOPTDGeoID		\
-			       " not found in Geonames. Known Geo ID list: " \
-			       geo_line_geoid_all_list) > __glGlobalErrorStream
-		    }
+				} else {
+					# Notification
+					if ((__glGlobalLogLevel >= 4 && dgpeOPTDGeoID != 0) || \
+						(__glGlobalLogLevel >= 5 && dgpeOPTDGeoID == 0)) {
+						print ("[" __glGlobalAWKFile "] iata_code="	\
+							   geo_iata_code ", OPTD-loctype=" dgpeOPTDLocType \
+							   ", OPTD-GeoID=" dgpeOPTDGeoID		\
+							   " not found in Geonames. Known Geo ID list: " \
+							   geo_line_geoid_all_list) > __glGlobalErrorStream
+					}
+				}
+			}
 		}
-	    }
-	}
     }
 
     # Reset the list for the next turn
@@ -1968,7 +1987,7 @@ function displayGeonamesPOREntries(__dgpeWAddedPK) {
 # 1. The IATA code
 # 2. The OPTD-maintained location type
 function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
-			 __rrlParamFullLine, __rrlParamNbOfPOR) {
+						 __rrlParamFullLine, __rrlParamNbOfPOR) {
     # Register the fact that the AWK script runs on the reference data file
     # (most probably called from the ref_pk_creator.awk file)
     __glGlobalIsForREF = 1
@@ -1981,8 +2000,8 @@ function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
     if (__rrlParamIataCode == geo_iata_code || __rrlParamNbOfPOR == 1) {
 		
     } else {
-	# Display the last Geonames POR entries
-	displayREFPOREntries()
+		# Display the last Geonames POR entries
+		displayREFPOREntries()
     }
 
     # Register the reference data POR entry in the list of last entries
@@ -2006,10 +2025,10 @@ function registerREFLine(__rrlParamIataCode, __rrlParamLocType, \
 # corresponding primary key (IATA code, location type, Geonames ID).
 #
 function displayREFPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
-			     __drpwkParamOPTDGeoID) {
+							 __drpwkParamOPTDGeoID) {
     # Build the primary key
     drpwkPK = getPrimaryKey(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
-			    __drpwkParamOPTDGeoID)
+							__drpwkParamOPTDGeoID)
 
     # Re-write, within the reference data full line:
     #  * The location type (field #2)
@@ -2026,12 +2045,12 @@ function displayREFPORWithPK(__drpwkParamIataCode, __drpwkParamOPTDLocType, \
 
     # Override the airport flag when the POR is not an airport
     if (isLocTypeTvlRtd(__drpwkParamOPTDLocType) == 0) {
-	$9 = "N"
+		$9 = "N"
     }
 
     # Override the commercial flag when the POR is a city only
     if (__drpwkParamOPTDLocType == "C") {
-	$18 = "N"
+		$18 = "N"
     }
     drpwkFullLine = $0
 
@@ -2056,39 +2075,39 @@ function displayREFPOREntries() {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" &&			\
-	geo_iata_code == __glGlobalDebugIataCode) {
-	print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "	\
-	       optd_por_loctype_list[geo_iata_code] ", REF loc_type: "	\
-	       ref_last_loctype) > __glGlobalErrorStream
+		geo_iata_code == __glGlobalDebugIataCode) {
+		print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "	\
+			   optd_por_loctype_list[geo_iata_code] ", REF loc_type: "	\
+			   ref_last_loctype) > __glGlobalErrorStream
     }
 
     # Browse all the location types known by OPTD for that IATA code
     drpeOPTDLocTypeList = optd_por_loctype_list[geo_iata_code]
     split (drpeOPTDLocTypeList, drpeOPTDLocTypeArray, ",")
     for (drpeOPTDLocTypeIdx in drpeOPTDLocTypeArray) {
-	#
-	drpeOPTDLocType = drpeOPTDLocTypeArray[drpeOPTDLocTypeIdx]
+		#
+		drpeOPTDLocType = drpeOPTDLocTypeArray[drpeOPTDLocTypeIdx]
 
-	# Browse all the Geonames IDs known by OPTD for that
-	# (IATA code, location type) combination
-	drpeOPTDGeoIDList = optd_por_geoid_list[geo_iata_code, drpeOPTDLocType]
-	split (drpeOPTDGeoIDList, drpeOPTDGeoIDArray, ",")
-	for (drpeOPTDGeoIDIdx in drpeOPTDGeoIDArray) {
-	    #
-	    drpeOPTDGeoID = drpeOPTDGeoIDArray[drpeOPTDGeoIDIdx]
+		# Browse all the Geonames IDs known by OPTD for that
+		# (IATA code, location type) combination
+		drpeOPTDGeoIDList = optd_por_geoid_list[geo_iata_code, drpeOPTDLocType]
+		split (drpeOPTDGeoIDList, drpeOPTDGeoIDArray, ",")
+		for (drpeOPTDGeoIDIdx in drpeOPTDGeoIDArray) {
+			#
+			drpeOPTDGeoID = drpeOPTDGeoIDArray[drpeOPTDGeoIDIdx]
 
-	    # Display the full details of the reference data POR entry
-	    displayREFPORWithPK(geo_iata_code, drpeOPTDLocType, drpeOPTDGeoID)
+			# Display the full details of the reference data POR entry
+			displayREFPORWithPK(geo_iata_code, drpeOPTDLocType, drpeOPTDGeoID)
 		
-	    # DEBUG
-	    if (__glGlobalDebugIataCode != "" &&	\
-		geo_iata_code == __glGlobalDebugIataCode) {
-		print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
-		       drpeOPTDLocType ", OPTD GeoID: " drpeOPTDGeoID	\
-		       ", REF loc_type list: " ref_last_loctype)		\
-		    > __glGlobalErrorStream
-	    }
-	}
+			# DEBUG
+			if (__glGlobalDebugIataCode != "" &&	\
+				geo_iata_code == __glGlobalDebugIataCode) {
+				print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
+					   drpeOPTDLocType ", OPTD GeoID: " drpeOPTDGeoID	\
+					   ", REF loc_type list: " ref_last_loctype)		\
+					> __glGlobalErrorStream
+			}
+		}
     }
 
     # Reset the list for the next turn
@@ -2100,7 +2119,7 @@ function displayREFPOREntries() {
 # 1. The IATA code
 # 2. The OPTD-maintained location type
 function registerInnovataLine(__rilParamIataCode, __rilParamLocType, \
-			      __rilParamFullLine, __rilParamNbOfPOR) {
+							  __rilParamFullLine, __rilParamNbOfPOR) {
     # Register the fact that the AWK script runs on the Innovata data dump
     # (most probably called from the inn_pk_creator.awk file)
     __glGlobalIsForInnovata = 1
@@ -2113,8 +2132,8 @@ function registerInnovataLine(__rilParamIataCode, __rilParamLocType, \
     if (__rilParamIataCode == geo_iata_code || __rilParamNbOfPOR == 1) {
 		
     } else {
-	# Display the last Geonames POR entries
-	displayInnovataPOREntries()
+		# Display the last Geonames POR entries
+		displayInnovataPOREntries()
     }
 
     # Register the Innovata POR entry in the list of last entries
@@ -2146,40 +2165,40 @@ function displayInnovataPOREntries() {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" && \
-	geo_iata_code == __glGlobalDebugIataCode) {
-	print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "	  \
-	       optd_por_loctype_list[geo_iata_code] ", Innovata loc_type: " \
-	       inn_last_loctype) > __glGlobalErrorStream
+		geo_iata_code == __glGlobalDebugIataCode) {
+		print ("[" __glGlobalDebugIataCode "] OPTD loc_type list: "	  \
+			   optd_por_loctype_list[geo_iata_code] ", Innovata loc_type: " \
+			   inn_last_loctype) > __glGlobalErrorStream
     }
 
     # Browse all the location types known by OPTD for that IATA code
     dipeOPTDLocTypeList = optd_por_loctype_list[geo_iata_code]
     split (dipeOPTDLocTypeList, dipeOPTDLocTypeArray, ",")
     for (dipeOPTDLocTypeIdx in dipeOPTDLocTypeArray) {
-	#
-	dipeOPTDLocType = dipeOPTDLocTypeArray[dipeOPTDLocTypeIdx]
+		#
+		dipeOPTDLocType = dipeOPTDLocTypeArray[dipeOPTDLocTypeIdx]
 
-	# Browse all the Geonames IDs known by OPTD for that
-	# (IATA code, location type) combination
-	dipeOPTDGeoIDList = optd_por_geoid_list[geo_iata_code, dipeOPTDLocType]
-	split (dipeOPTDGeoIDList, dipeOPTDGeoIDArray, ",")
-	for (dipeOPTDGeoIDIdx in dipeOPTDGeoIDArray) {
-	    #
-	    dipeOPTDGeoID = dipeOPTDGeoIDArray[dipeOPTDGeoIDIdx]
+		# Browse all the Geonames IDs known by OPTD for that
+		# (IATA code, location type) combination
+		dipeOPTDGeoIDList = optd_por_geoid_list[geo_iata_code, dipeOPTDLocType]
+		split (dipeOPTDGeoIDList, dipeOPTDGeoIDArray, ",")
+		for (dipeOPTDGeoIDIdx in dipeOPTDGeoIDArray) {
+			#
+			dipeOPTDGeoID = dipeOPTDGeoIDArray[dipeOPTDGeoIDIdx]
 
-	    # Display the full details of the Innovata POR entry
-	    displayInnovataPORWithPK(geo_iata_code, dipeOPTDLocType,	\
-				     dipeOPTDGeoID)
+			# Display the full details of the Innovata POR entry
+			displayInnovataPORWithPK(geo_iata_code, dipeOPTDLocType,	\
+									 dipeOPTDGeoID)
 		
-	    # DEBUG
-	    if (__glGlobalDebugIataCode != "" &&		\
-		geo_iata_code == __glGlobalDebugIataCode) {
-		print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
-		       dipeOPTDLocType ", OPTD GeoID: " dipeOPTDGeoID	\
-		       ", Innovata loc_type list: " inn_last_loctype)	\
-		    > __glGlobalErrorStream
-	    }
-	}
+			# DEBUG
+			if (__glGlobalDebugIataCode != "" &&		\
+				geo_iata_code == __glGlobalDebugIataCode) {
+				print ("[" __glGlobalDebugIataCode "] OPTD-loctype: "	\
+					   dipeOPTDLocType ", OPTD GeoID: " dipeOPTDGeoID	\
+					   ", Innovata loc_type list: " inn_last_loctype)	\
+					> __glGlobalErrorStream
+			}
+		}
     }
 
     # Reset the list for the next turn
@@ -2191,11 +2210,11 @@ function displayInnovataPOREntries() {
 # corresponding primary key (IATA code, location type, Geonames ID).
 #
 function displayInnovataPORWithPK(__dipwkParamIataCode,		\
-				  __dipwkParamOPTDLocType,	\
-				  __dipwkParamOPTDGeoID) {
+								  __dipwkParamOPTDLocType,	\
+								  __dipwkParamOPTDGeoID) {
     # Build the primary key
     dipwkPK = getPrimaryKey(__dipwkParamIataCode, __dipwkParamOPTDLocType, \
-			    __dipwkParamOPTDGeoID)
+							__dipwkParamOPTDGeoID)
 
     # Re-write, within the Innovata full line:
     #  * The location type (field #8)
@@ -2246,34 +2265,34 @@ function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
     # The list of alternate name details is separated by the equal ("=") sign
     split (__gpnflAltNameList, dpnAltNameArray, "=")
     for (dpnAltIdx in dpnAltNameArray) {
-	dpnAltNameDetails = dpnAltNameArray[dpnAltIdx]
+		dpnAltNameDetails = dpnAltNameArray[dpnAltIdx]
 
-	# The list of details is separated by the pipe ("|") sign
-	split (dpnAltNameDetails, dpnAltNameDetailArray, "|")
+		# The list of details is separated by the pipe ("|") sign
+		split (dpnAltNameDetails, dpnAltNameDetailArray, "|")
 
-	# With AWK, the array created by split() begins with the index of 1:
-	# 1. Langauge (e.g., "en", "fa", "ru", "zh")
-	# 2. Name for that language
-	# 3. Qualifier (e.g., "p" for preferred, "s" for short, "h" for
-	#    historical, and "c" for colloquial)
-	AltNameLang = dpnAltNameDetailArray[1]
-	delete EquivalentLangArray
-	EquivalentLangArray[__gpnflLang] = 1
-	if (__gpnflLang == "zh") {
-	    EquivalentLangArray["yue"] = 1
-	    EquivalentLangArray["wuu"] = 1
-	    EquivalentLangArray["pny"] = 1
-	    EquivalentLangArray["zh-CN"] = 1
-	}
-	if (AltNameLang in EquivalentLangArray) {
-	    if (outputNameList != "") {
-		outputNameList = outputNameList outputMainSep
-	    }
-	    outputNameList = outputNameList dpnAltNameDetailArray[2]
-	    if (dpnAltNameDetailArray[3] != "") {
-		outputNameList = outputNameList outputSecSep dpnAltNameDetailArray[3]
-	    }
-	}
+		# With AWK, the array created by split() begins with the index of 1:
+		# 1. Langauge (e.g., "en", "fa", "ru", "zh")
+		# 2. Name for that language
+		# 3. Qualifier (e.g., "p" for preferred, "s" for short, "h" for
+		#    historical, and "c" for colloquial)
+		AltNameLang = dpnAltNameDetailArray[1]
+		delete EquivalentLangArray
+		EquivalentLangArray[__gpnflLang] = 1
+		if (__gpnflLang == "zh") {
+			EquivalentLangArray["yue"] = 1
+			EquivalentLangArray["wuu"] = 1
+			EquivalentLangArray["pny"] = 1
+			EquivalentLangArray["zh-CN"] = 1
+		}
+		if (AltNameLang in EquivalentLangArray) {
+			if (outputNameList != "") {
+				outputNameList = outputNameList outputMainSep
+			}
+			outputNameList = outputNameList dpnAltNameDetailArray[2]
+			if (dpnAltNameDetailArray[3] != "") {
+				outputNameList = outputNameList outputSecSep dpnAltNameDetailArray[3]
+			}
+		}
     }
 
     #
@@ -2283,15 +2302,15 @@ function getPORNameForLang (__gpnflAltNameList, __gpnflLang) {
 ##
 # Register a few relationships for the World Area Code (WAC)
 function registerWACLists(__rwlWorldAreaCode, __rwlThroughDate,			\
-			  __rwlCountryIsoCode, __rwlStateCode, __rwlWACName) {
+						  __rwlCountryIsoCode, __rwlStateCode, __rwlWACName) {
     # Register the WAC associated to that country (e.g., 401 for 'AL'/Albania)
     if (__rwlThroughDate == "" && __rwlCountryIsoCode) {
-	wac_by_ctry_code_list[__rwlCountryIsoCode] = __rwlWorldAreaCode
+		wac_by_ctry_code_list[__rwlCountryIsoCode] = __rwlWorldAreaCode
     }
 
     # Register the WAC associated to that state (e.g., 51 for 'AL'/Alabama)
     if (__rwlThroughDate == "" && __rwlStateCode) {
-	wac_by_state_code_list[__rwlStateCode] = __rwlWorldAreaCode
+		wac_by_state_code_list[__rwlStateCode] = __rwlWorldAreaCode
     }
 
     # Register the WAC name
@@ -2307,40 +2326,40 @@ function registerWACLists(__rwlWorldAreaCode, __rwlThroughDate,			\
 #
 # See also opentraveldata/README.md
 function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
-			  __gwacCountryCodeAlt, __gwacCityCodeList, \
-			  __gwacLatStr, __gwacLonStr, __gwacFullLine) {
+						  __gwacCountryCodeAlt, __gwacCityCodeList, \
+						  __gwacLatStr, __gwacLonStr, __gwacFullLine) {
     # For the US DOT, Washington, D.C., is within the state of District of
     # Columbia (WAC 32/3201), where as that latter is usually not considered
     # as a state.
     # See http://en.wikipedia.org/wiki/District_of_Columbia_statehood_movement
     isCityWashingtonDC = match (__gwacCityCodeList, "WAS")
     if (isCityWashingtonDC) {
-	world_area_code_for_state = wac_by_state_code_list["DC"]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list["DC"]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given US state ('DC')."	\
-		   " The whole line " __gwacFullLine) > error_stream
-	}
+		} else {			
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given US state ('DC')."	\
+				   " The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # For the United States (US) and Canada (CA), the WAC is specified at state
     # level, where as the WAC is specified at country level for every
     # other country.
     if (__gwacCountryCode == "US" || __gwacCountryCode == "CA") {
-	world_area_code_for_state = wac_by_state_code_list[__gwacStateCode]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list[__gwacStateCode]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given state ('" __gwacStateCode \
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {			
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given state ('" __gwacStateCode \
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # Puerto Rico (PR) is considered by the US DOT as a US state, but is
@@ -2348,17 +2367,17 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # See also http://en.wikipedia.org/wiki/Political_status_of_Puerto_Rico
     # and http://en.wikipedia.org/wiki/United_States_Virgin_Islands
     if (__gwacCountryCode == "PR" || __gwacCountryCode == "VI") {
-	world_area_code_for_state = wac_by_state_code_list[__gwacCountryCode]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list[__gwacCountryCode]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given state ('"			\
-		   __gwacCountryCode									\
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {			
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given state ('"			\
+				   __gwacCountryCode									\
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # For the US DOT, the following countries are considered elements of
@@ -2369,18 +2388,18 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # See also http://en.wikipedia.org/wiki/Territories_of_the_United_States and
     #http://en.wikipedia.org/wiki/Unincorporated_territories_of_the_United_States
     if (__gwacCountryCode == "AS"										\
-	|| __gwacCountryCode == "GU" || __gwacCountryCode == "MP") {
-	world_area_code_for_state = wac_by_state_code_list["TT"]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		|| __gwacCountryCode == "GU" || __gwacCountryCode == "MP") {
+		world_area_code_for_state = wac_by_state_code_list["TT"]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given US Territory (TT)('" \
-		   __gwacCountryCode									\
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {			
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given US Territory (TT)('" \
+				   __gwacCountryCode									\
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # It is not clear how the United Stes Minor Outlying Islands (country name:
@@ -2413,33 +2432,33 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # For some reason, the US DOT has got the wrong country code for Kosovo
     # See also http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
     if (__gwacCountryCode == "XK") {
-	world_area_code_for_ctry = wac_by_ctry_code_list["KV"]
-	if (world_area_code_for_ctry) {
-	    return world_area_code_for_ctry
+		world_area_code_for_ctry = wac_by_ctry_code_list["KV"]
+		if (world_area_code_for_ctry) {
+			return world_area_code_for_ctry
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for Kosovo ('KV' for the US DOT, " \
-		   "XK otherwise). The whole line " __gwacFullLine)		\
-		> error_stream
-	}
+		} else {			
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for Kosovo ('KV' for the US DOT, " \
+				   "XK otherwise). The whole line " __gwacFullLine)		\
+				> error_stream
+		}
     }
 
     # The Palestinian Territory (PS) is still not officially recognized
     # as a country by the US DOT
     # See also http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#PS
     if (__gwacCountryCode == "PS") {
-	world_area_code_for_ctry = wac_by_ctry_code_list["IL"]
-	if (world_area_code_for_ctry) {
-	    return world_area_code_for_ctry
+		world_area_code_for_ctry = wac_by_ctry_code_list["IL"]
+		if (world_area_code_for_ctry) {
+			return world_area_code_for_ctry
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for Israel ('IL'). "				\
-		   "The whole line " __gwacFullLine) > error_stream
-	}
+		} else {			
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for Israel ('IL'). "				\
+				   "The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # As per the US DOT, Russia is split in two parts, namely the European
@@ -2449,48 +2468,48 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # 475/47501 - European part of Russia
     # 770/77001 - Asian part of Russia
     if (__gwacCountryCode == "RU") {
-	# The position is considerd in Europe if:
-	#  * At the northwest of 50.66, 55.54 (http://goo.gl/maps/BMSpTNRfbsj)
-	#  * At tje southwest of 50.66, 46.60 (http://goo.gl/maps/URpbJNN68BH2)
-	geo_lat = strtonum(__gwacLatStr); geo_lon = strtonum(__gwacLonStr)
-	if (geo_lat >= 50.6583519 && geo_lon <= 55.5429109		\
-	    || geo_lat < 50.6583519 && geo_lon <= 46.6045507) {
-	    world_area_code_for_ctry = "475"
+		# The position is considerd in Europe if:
+		#  * At the northwest of 50.66, 55.54 (http://goo.gl/maps/BMSpTNRfbsj)
+		#  * At tje southwest of 50.66, 46.60 (http://goo.gl/maps/URpbJNN68BH2)
+		geo_lat = strtonum(__gwacLatStr); geo_lon = strtonum(__gwacLonStr)
+		if (geo_lat >= 50.6583519 && geo_lon <= 55.5429109		\
+			|| geo_lat < 50.6583519 && geo_lon <= 46.6045507) {
+			world_area_code_for_ctry = "475"
 
-	} else {
-	    world_area_code_for_ctry = "770"
-	}
-	return world_area_code_for_ctry
+		} else {
+			world_area_code_for_ctry = "770"
+		}
+		return world_area_code_for_ctry
     }
 
     # Standard country: try to match the country code (as found in Geonames)
     world_area_code_for_ctry = wac_by_ctry_code_list[__gwacCountryCode]
     if (world_area_code_for_ctry) {
-	return world_area_code_for_ctry
+		return world_area_code_for_ctry
     }
 
     # Then, try to match the alternate country code (as found in Geonames)
     world_area_code_for_ctry = wac_by_ctry_code_list[__gwacCountryCodeAlt]
     if (world_area_code_for_ctry) {
-	return world_area_code_for_ctry
+		return world_area_code_for_ctry
     }
 
     # There is no WAC registered for either the state or country code
     print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "			\
-	   "!!!! Warning !!!! No World Area Code (WAC) can be"			\
-	   " found for either the state code ("	__gwacStateCode			\
-	   "), the country code (" __gwacCountryCode					\
-	   ") or the alternate country code (" __gwacCountryCodeAlt		\
-	   "). Other parameters: city code list (" __gwacCityCodeList,	\
-	   "), latitude (" __gwacLatStr "), longitude (" __gwacLonStr	\
-	   "). Full line: " __gwacFullLine) > error_stream
+		   "!!!! Warning !!!! No World Area Code (WAC) can be"			\
+		   " found for either the state code ("	__gwacStateCode			\
+		   "), the country code (" __gwacCountryCode					\
+		   ") or the alternate country code (" __gwacCountryCodeAlt		\
+		   "). Other parameters: city code list (" __gwacCityCodeList,	\
+		   "), latitude (" __gwacLatStr "), longitude (" __gwacLonStr	\
+		   "). Full line: " __gwacFullLine) > error_stream
 }
 
 ##
 # Retrieve the World Area Code (WAC) name for a given WAC
 function getWorldAreaCodeName(__gwacnWAC) {
     if (__gwacnWAC) {
-	wac_name = wac_name_list[__gwacnWAC]
-	return wac_name
+		wac_name = wac_name_list[__gwacnWAC]
+		return wac_name
     }
 }

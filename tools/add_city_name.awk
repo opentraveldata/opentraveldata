@@ -267,7 +267,7 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 		split (porIataCodeServedList, porIataCodeServedArray, ",")
 
 		# Sanity check
-		if (length (porIataCodeServedArray) != 1) {
+		if (length (porIataCodeServedArray) != 1 && porIataCode != "ZZZ") {
 			print ("[" awk_file "][" FNR "] !!!! Error - "				\
 				   "The list of city codes for " porIataCode "-" porLocType	\
 				   " does not contain a single element: '"				\
