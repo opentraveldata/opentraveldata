@@ -8,38 +8,42 @@
 #   London, UK, 'PAR' for Paris, France and 'SFO' for San Francisco, CA, USA).
 #
 # See ../geonames/data/por/admin/aggregateGeonamesPor.sh for more details on
-# the way to derive that file from Geonames original data files.
+# the way to generate the 'allCountries_w_alt.txt' file from Geonames
+# original data dump files.
 #
-# The format of allCountries_w_alt.txt file corresponds to what is expected.
-# So, no further processing has to be done on the format here.
-# However, most of the POR having no IATA code is filtered out.
-# Hence, the remaining of the Shell/AWK scripts, then, can be left untouched.
+# The format of the allCountries_w_alt.txt file is already good and needs
+# no further change.
 #
-# A few airports have no IATA code (see for instance
-# http://github.com/opentraveldata/opentraveldata/issues/15). However,
-# some are used by airlines to be published in schedules. So, a work around
-# to have them in OpenTravelData (in the optd_por_public.csv file) is to use
-# the 'ZZZ' special IATA code, which cannot be used for airports (it is
-# reserved), meaning that that airport has no IATA code. The airport details
-# (e.g., ICAO or FAA code, names, time-zones) then come from Geonames.
-# Sample line from the optd_por_best_known_so_far.csv file.
-# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
+# As explained by the README.md of this directory, most of the POR have
+# no IATA code. However, it is still useful to have them in
+# OpenTravelData (OPTD), as they may appear in some flight schedules and,
+# for those being referenced by UN/LOCODE, in many transport-related systems.
+# As OPTD was originally based on exclusively IATA-referenced POR,
+# a few downstream utilities still need a IATA code. That is why,
+# as a work around, the 'ZZZ' special IATA code is used for those POR
+# not referenced by IATA. 'ZZZ' has been chosen because it is reserved,
+# and therefore no transport-/travel-related POR can have that code.
+# The airport details (e.g., ICAO or FAA code, names, time-zones)
+# then come from Geonames. It means that Geonames has got the gold/master
+# records for those POR. As a reminded, for IATA-referenced POR,
+# OPTD has got the gold/master record for the geographical location
+# and city/transport-related POR relationship.
 #
-# Input data files:
-# * <OPTD root dir>/data/geonames/data/por/data/allCountries_w_alt.txt (generated file)
-# * <OPTD root dir>/opentraveldata/optd_por_best_known_so_far.csv
+# Input data file: <OPTD root dir>/data/geonames/data/por/data/allCountries_w_alt.txt (itself a generated file)
+#
+# Sample lines:
+# -------------
+# * With IATA code (NCE here):
+# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|
+# * With ICAO code (WAOM here) and no IATA code:
+# ^WAOM^^8531905^Muara Teweh Beringin Airport^Muara Teweh Beringin Airport^-0.94238^114.8942^ID^^Indonesia^Asia^S^AIRP^13^Central Kalimantan^Central Kalimantan^^^^^^0^^29^Asia/Pontianak^7.0^7.0^7.0^2013-05-20^Bandar Udara Beringin,WAOM^http://en.wikipedia.org/wiki/Beringin_Airport^id|Bandar Udara Beringin|^IDMUW|
+# * With UN/LOCODE code (MAZSB here) and no IATA code:
+# ^^^2562055^Skhirate^Skhirate^33.8527^-7.03171^MA^^Morocco^Africa^P^PPLA3^04^Rabat-Salé-Kénitra^Rabat-Sale-Kenitra^501^Skhirate-Temara^Skhirate-Temara^1050101051^^44850^^51^Africa/Casablanca^0.0^1.0^0.0^2016-11-29^Ac Ckhirat,Aç Çkhirat,Kasba Skira,Minaret de Skhirat,Skhirat,Skhirate^http://en.wikipedia.org/wiki/Skhirat^|Aç Çkhirat|||Skhirate|||Kasba Skira|||Minaret de Skhirat|||Skhirat|^MAZSB|
 #
 # Input format:
 # -------------
-# Sample lines for the allCountries_w_alt.txt file:
-# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|
-# ^WAOM^^8531905^Muara Teweh Beringin Airport^Muara Teweh Beringin Airport^-0.94238^114.8942^ID^^Indonesia^Asia^S^AIRP^13^Central Kalimantan^Central Kalimantan^^^^^^0^^29^Asia/Pontianak^7.0^7.0^7.0^2013-05-20^Bandar Udara Beringin,WAOM^http://en.wikipedia.org/wiki/Beringin_Airport^id|Bandar Udara Beringin|^IDMUW|
-#
-# Sample lines for the optd_por_best_known_so_far.csv file:
-# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
-#
 # A few examples of Geonames feature codes
-# (field #11 here; see also http://www.geonames.org/export/codes.html):
+# (field #14 here; see also http://www.geonames.org/export/codes.html):
 #  * PPLx:  Populated place (city)
 #  * ADMx:  Administrative division (which may be a city in some cases)
 #  * LCTY:  Locality (e.g., Sdom)
@@ -84,6 +88,7 @@
 #  * MTRO:  Metro station
 #
 # Output format:
+# --------------
 # IATA code, ICAO code, FAA code,
 # Geoname ID, Name, ASCII name, Latitude, Longitude,
 # Country 2-char code, Extra country code, Country name, Continent name,
@@ -95,7 +100,7 @@
 # Time zone, GMT_offset, DST_offset, raw_offset,
 # Modification date, List of all the alternate names without details,
 # English Wikipedia link,
-# (Language ISO code, alternate name, flags)*
+# List of (Language ISO code, alternate name, flags) tuples
 # WAC (World Area Code), WAC name
 # Currency code
 # UN/LOCODE list (there is usually a single UN/LOCODE, but there may be several)
@@ -114,14 +119,13 @@ BEGIN {
 
     #
     por_lines = 0
-    delete optd_no_iata_list
 
     # Output files
     if (iata_file == "") {
-	iata_file = "/dev/stdout"
+		iata_file = "/dev/stdout"
     }
     if (noiata_file == "") {
-	noiata_file = "/dev/stdout"
+		noiata_file = "/dev/stdout"
     }
 }
 
@@ -137,27 +141,6 @@ BEGIN {
     print (hdr_line) > noiata_file
 }
 
-
-##
-# OPTD-maintained list of POR (optd_por_best_known_so_far.csv),
-# for records having no IATA code (ie, the ones having ZZZ as IATA code).
-#
-# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
-#
-/^ZZZ-[A-Z]{1,2}-[0-9]{1,15}\^ZZZ\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^ZZZ\^[0-9-]{0,10}$/ {
-    # Primary key (IATA code and location pseudo-code)
-    pk = $1
-
-    # Geonames ID
-    extractPrimaryKeyDetails(pk)
-    geo_id = epkdGeonamesID
-
-    # Location type
-    por_type = epkdLocationType
-	
-    # Register the POR
-    optd_no_iata_list[geo_id] = por_type
-}
 
 ##
 # POR entries having no IATA code (vast majority of the POR).
@@ -187,6 +170,9 @@ BEGIN {
     # IATA code
     iata_code = $1
 
+	# ICAO code
+	icao_code = $2
+
     # Geonames ID
     geo_id = $4
 
@@ -201,22 +187,22 @@ BEGIN {
     # * Dump the line into the curated list of POR (named "IATA POR"
     #   for historical reasons, though they are not referenced by IATA)
     if (isFeatCodeTvlRtd(fcode) >= 1 || isFeatCodeCity(fcode) >= 1) {
-	print ($0) > noiata_file
+		print ($0) > noiata_file
 
-	# In the following cases, the POR will be assigned the 'ZZZ' IATA code
-	# and added to the file of POR having a IATA code. That allows
-	# to get non-IATA POR in OpenTravelData:
-	# * The POR is referenced in optd_por_best_known_so_far.csv.
-	# * The POR is referenced by UN/LOCODE
-	if (optd_no_iata_list[geo_id] || unlc_list) {
-	    OFS = FS
-	    $1 = "ZZZ"
-	    print ($0) > iata_file
+		# In the following cases, the POR will be assigned the 'ZZZ' IATA code
+		# and added to the file of POR having a IATA code. That allows
+		# to get non-IATA POR in OpenTravelData:
+		# * The POR is referenced by ICAO
+		# * The POR is referenced by UN/LOCODE
+		if (icao_code || unlc_list) {
+			OFS = FS
+			$1 = "ZZZ"
+			print ($0) > iata_file
 
-	    # Reset the IATA code field, otherwise, the line will match
-	    # the next AWK matching rule and action code clause
-	    $1 = ""
-	}
+			# Reset the IATA code field, otherwise, the line will match
+			# the next AWK matching rule and action code clause
+			$1 = iata_code
+		}
     }
 }
 

@@ -1,11 +1,12 @@
 #!/bin/bash
 #
-# That Bash script extracts data from the 'allCountries_w_alt.txt'
-# Geonames-derived data file and exports them into internal
-# standard-formatted data files.
+# That Bash script extracts from the 'allCountries_w_alt.txt' data file
+# (itself a Geonames-derived data file) the POR relevant for
+# OpenTravelData (OPTD).
 #
 # See ../geonames/data/por/admin/aggregateGeonamesPor.sh for more details on
-# the way to derive that file from Geonames original data files.
+# the way to derive the 'allCountries_w_alt.txt' data file from Geonames
+# daily dump data files.
 #
 #set -x
 
@@ -74,11 +75,6 @@ GEO_POR_DATA_DIR=${EXEC_PATH}../data/geonames/data/por/data/
 DATA_DIR=${EXEC_PATH}../opentraveldata/
 
 ##
-# File of best known coordinates
-OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
-OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
-
-##
 # Extract airport/city information from the Geonames data file
 GEO_POR_FILENAME=allCountries_w_alt.txt
 GEO_CTY_FILENAME=countryInfo.txt
@@ -127,9 +123,6 @@ then
 	then
 		echo "  - Latest extraction date: '${LATEST_EXTRACT_DATE}' (${LATEST_EXTRACT_DATE_HUMAN})"
 	fi
-	echo "  - OPTD-maintained input data files from '${DATA_DIR}':"
-	echo "      + File of best known coordinates: '${OPTD_POR_FILE}'"
-	echo
 	echo "  - Geonames input data files from '${GEO_POR_DATA_DIR}':"
 	echo "      + Detailed POR entry data file (~9 millions): '${GEO_POR_FILE}'"
 	echo "      + Detailed country information data file: '${GEO_CTY_FILE}'"
@@ -189,7 +182,7 @@ echo "That operation may take several minutes..."
 IATA_EXTRACTOR=${EXEC_PATH}extract_por_with_iata_icao.awk
 time awk -F'^' \
 	-v iata_file=${DUMP_IATA_FILE} -v noiata_file=${DUMP_NOIATA_FILE} \
-	-f ${IATA_EXTRACTOR} ${OPTD_POR_FILE} ${GEO_POR_FILE}
+	-f ${IATA_EXTRACTOR} ${GEO_POR_FILE}
 echo "... Done"
 echo
 
