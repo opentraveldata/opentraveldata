@@ -23,9 +23,12 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     # Debugging support
     __glGlobalDebugIataCode = ""
     #__glGlobalDebugIataCode = "AAA"
-    #__glGlobalDebugIataCode = "ZZZ"
     #__glGlobalDebugIataCode = "AAE"
     #__glGlobalDebugIataCode = "RDU"
+    #__glGlobalDebugIataCode = "ZZZ"
+	#
+    __glGlobalDebugGeoID = ""
+    #__glGlobalDebugGeoID = "6296722"
 
     # Fields for the list of POR file
     __glGlobalFNIata = 1
@@ -1360,12 +1363,12 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     isKnownFromOPTD = optd_por_noiata_geoid_list[geonames_id]
 
     # DEBUG
-    if (__glGlobalDebugIataCode != "" &&		\
-		iata_code == __glGlobalDebugIataCode) {
-		print("[" __glGlobalDebugIataCode "][OPTD: " isKnownFromOPTD	\
-			  "] PK: " pk ", name: " name_utf8							\
-			  ", feature: " feat_Class "/" feat_code ", coord: "		\
-			  geo_lat " - " geo_lon ", city code list: " city_code_list) \
+    if ((__glGlobalDebugIataCode != "" && iata_code == __glGlobalDebugIataCode) \
+		|| (__glGlobalDebugGeoID != "" && geonames_id == __glGlobalDebugGeoID)) {
+		print("[" __glGlobalDebugIataCode "][" __glGlobalDebugGeoID "][OPTD: " \
+			  isKnownFromOPTD "] PK: " pk ", name: " name_utf8			\
+			  ", feature: " feat_class " / " feat_code ", coord: "		\
+			  geo_lat " " geo_lon ", city code list: " city_code_list) \
 			> __glGlobalErrorStream
     }
 	
