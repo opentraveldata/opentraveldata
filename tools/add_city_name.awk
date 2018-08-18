@@ -54,18 +54,17 @@
 #   - HFD-A-4835842^...^HFD^
 #   - HFD-C-4835797^...^HFD^
 #   - SFY-C-4951788^...^SFY^
-#   - ZZZ-A-8131475^...^ZZZ^
 # * Samples of relevant input POR entries, not manually curated
 #   in the optd_por_best_known_so_far.csv data file:
-#   - ZZZ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|
+#   - ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|
 #
 # * Samples of output list of city UTF8 names,
 #   with their corresponding travel-related POR entry:
 #   - [IEV-A-6300960] Kiev
 #   - [RDU-A-4487056] Durham=Raleigh
 #   - [BDL-A-5282636] Windsor Locks=Hartford=Springfield
-#   - [ZZZ-A-8131475] N/A (for now, as of August 2018)
-#   - [ZZZ-X-11903578] N/A (for now, as of August 2018)
+#   - [-A-8131475] N/A (for now, as of August 2018)
+#   - [-X-11903578] N/A (for now, as of August 2018)
 #
 # * Samples of output list of city details (IATA code, Geonames ID, 
 #   UTF8 and ASCII names),
@@ -73,8 +72,8 @@
 #   - [IEV-A-6300960] IEV|703448|Kiev|Kiev
 #   - [RDU-A-4487056] RDU|4464368|Durham|Durham=RDU|4487042|Raleigh|Raleigh
 #   - [BDL-A-5282636] BDL|4845926|Windsor Locks|Windsor Locks=HFD|4835797|Hartford|Hartford=SFY|4951788|Springfield|Springfield
-#   - [ZZZ-A-8131475] N/A (for now, as of August 2018)
-#   - [ZZZ-X-11903578] N/A (for now, as of August 2018)
+#   - [-A-8131475] N/A (for now, as of August 2018)
+#   - [-X-11903578] N/A (for now, as of August 2018)
 #
 
 ##
@@ -132,12 +131,12 @@ function extractAndStoreCityNames(porIataCode, porLocType, porGeonamesID, \
     is_city = isLocTypeCity(porLocType)
     # is_tvl = isLocTypeTvlRtd(porLocType)
 
-    # When it is a city, and when the IATA code is not 'ZZZ' (which means
+    # When it is a city, and when the IATA code is not empty (which means
 	# that that POR is not curated in optd_por_best_known_so_far.csv):
     # 1. Store the UTF8 name.
     # 2. Store the details (IATA code, Geonames ID, UTF8 and ASCII names) 
     #    of the point of reference (POR).
-    if (is_city != 0 && porIataCode != "ZZZ") {
+    if (is_city != 0 && porIataCode != "") {
 		##
 		# 1. UTF8 name only
 		# Retrieve previous UTF8 names, if any
@@ -267,7 +266,7 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 		split (porIataCodeServedList, porIataCodeServedArray, ",")
 
 		# Sanity check
-		if (length (porIataCodeServedArray) != 1 && porIataCode != "ZZZ") {
+		if (length (porIataCodeServedArray) != 1 && porIataCode != "") {
 			print ("[" awk_file "][" FNR "] !!!! Error - "				\
 				   "The list of city codes for " porIataCode "-" porLocType	\
 				   " does not contain a single element: '"				\
@@ -301,7 +300,7 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 #
 # RDU^KRDU^^Y^4487056^^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^S^AIRP^0.0818187017848^^^^US^^United States^North America^NC^North Carolina^North Carolina^183^Wake County^Wake County^^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2011-12-11^RDU|C|4464368=RDU|C|4487042^Durham=Raleigh^Durham=Raleigh^^NC^A^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^^36^North Carolina^USD^USRDU|
 #
-/^[A-Z0-9]{3}\^[A-Z0-9]{0,4}\^[A-Z0-9]{0,4}\^/{
+/^([A-Z0-9]{3}|)\^[A-Z0-9]{0,4}\^[A-Z0-9]{0,4}\^/{
 
     if (idx_file == 1) {
 		##

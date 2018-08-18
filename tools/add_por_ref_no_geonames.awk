@@ -37,7 +37,7 @@ BEGIN {
 # Sample input lines:
 # UNS^ZZZZ^^Y^8298981^1^Umnak Island Airport^Umnak Island Airport^53.38277^-167.88946^S^AIRP^^^1948-01-01^Air base closed after WWII, in 1947^US^^United States^North America^^^^^^^^^^^^America/USA^^^^-1^UMB^Umnak Island^UMB|5877180|Umnak Island|Umnak Island^^AK^A^http://en.wikipedia.org/wiki/Cape_Field_at_Fort_Glenn^^1^Alska^USD^
 #
-/^[A-Z]{3}\^([A-Z]{4}|)\^([0-9A-Z]{3,4}|)\^(Y|N)\^[0-9]{1,10}\^([0-9]{1,10}|)\^/ {
+/^([A-Z]{3}|)\^([A-Z]{4}|)\^([0-9A-Z]{3,4}|)\^(Y|N)\^[0-9]{1,12}\^([0-9]{1,10}|)\^/ {
 
 	if (NF == 48) {
 		print ($0)

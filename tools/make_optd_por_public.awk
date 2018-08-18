@@ -104,7 +104,6 @@ BEGIN {
 # LON-C-2643743^LON^51.5^-0.1667^LON^       (1 line in OPTD, 1 line in Geonames)
 # NCE-CA-0^NCE^43.658411^7.215872^NCE^      (1 combined line in OPTD
 #                                             2 lines in Geonames)
-# ZZZ-A-8531905^ZZZ^-0.94238^114.8942^ZZZ^
 #
 /^[A-Z]{3}-[A-Z]{1,2}-[0-9]{1,15}\^[A-Z]{3}\^[0-9.+-]{0,16}\^[0-9.+-]{0,16}\^([A-Z]{3},?)+\^([0-9]{4}-[0-9]{2}-[0-9]{2}|)$/ {
     # Store the full line
@@ -267,7 +266,7 @@ BEGIN {
 # country_code^time_zone
 # ES^Europe/Spain
 # RU^Europe/Russia
-/^([A-Z]{2})\^([A-Za-z_\/]+)$/ {
+/^[A-Z]{2}\^[A-Za-z_\/]+$/ {
     # Country code
     country_code = $1
 
@@ -295,7 +294,7 @@ BEGIN {
 # MNP^Pacific/Port_Moresby
 # QSE^America/Sao_Paulo
 #
-/^([A-Z]{3})\^(Africa|America|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/([A-Za-z/_]+)$/ {
+/^[A-Z]{3}\^(Africa|America|Asia|Atlantic|Australia|Europe|Indian|Pacific)\/[A-Za-z/_]+$/ {
     # IATA code
     iata_code = $1
 
@@ -315,7 +314,7 @@ BEGIN {
 # DE^Germany^EU^Europe
 # AG^Antigua and Barbuda^NA^North America
 # PE^Peru^SA^South America
-/^([A-Z]{2})\^([A-Za-z,. \-]+)\^([A-Z]{2})\^([A-Za-z ]+)$/ {
+/^[A-Z]{2}\^[A-Za-z,. \-]+\^[A-Z]{2}\^[A-Za-z ]+$/ {
     # Country code
     country_code = $1
 

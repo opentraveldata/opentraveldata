@@ -1301,8 +1301,9 @@ function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
 function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     #
     if (__dgplFullLine == "") {
-		print ("Empty line for OPTD location type (" __dgplOPTDLocType \
-			   "): " __dgplFullLine) > error_stream
+		print ("[" awk_file "; awklib/geo_lib:displayGeonamesPORLine()] " \
+			   "Empty line for OPTD location type (" __dgplOPTDLocType "): " \
+			   __dgplFullLine) > error_stream
 		return
     }
 	
@@ -1318,6 +1319,14 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
     # IATA code
     iata_code = $1
+
+	# For now, non-IATA POR may still be referenced by the 'ZZZ' code
+	if (iata_code == "ZZZ") {
+		#print ("[" awk_file "; awklib/geo_lib:displayGeonamesPORLine()] " \
+		#	   "Non-IATA POR still referenced with ZZZ. Full line: "	\
+		#	   __dgplFullLine) > error_stream
+		iata_code = ""
+	}
 
     # ICAO code
     icao_code = $2
@@ -1735,6 +1744,9 @@ function displayGeonamesPORWithPK(__dpwpParamIataCode, __dpwpParamOPTDLocType, \
 # Display the non-IATA-referenced Geonames POR entry.
 #
 function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
+	# For non-IATA-referenced POR, an empty code is used
+	non_iata_code = ""
+	
     # Check whether that Geonames ID is known from OPTD
     #isKnownFromOPTD = optd_por_noiata_geoid_list[__dnipeGeoID]
 
@@ -1742,7 +1754,7 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
 	dnipeLocationType = getLocTypeFromFeatCode(__dnipeFeatCode)
     
 	# Display the full details of the Geonames POR entry
-	output_string = displayGeonamesPORWithPK("ZZZ", dnipeLocationType,	\
+	output_string = displayGeonamesPORWithPK(non_iata_code, dnipeLocationType, \
 											 __dnipeGeoID, __dnipeGeoID)
 	print (output_string)
 }
