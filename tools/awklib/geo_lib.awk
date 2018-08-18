@@ -25,7 +25,6 @@ function initGeoAwkLib(__igalParamAWKFile, __igalParamErrorStream, \
     #__glGlobalDebugIataCode = "AAA"
     #__glGlobalDebugIataCode = "AAE"
     #__glGlobalDebugIataCode = "RDU"
-    #__glGlobalDebugIataCode = "ZZZ"
 	#
     __glGlobalDebugGeoID = ""
     #__glGlobalDebugGeoID = "6296722"
@@ -711,7 +710,7 @@ function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 	# Record that OPTD knows about that Geonames ID
 	optd_por_noiata_geoid_list[__agitolParamGeonamesID] = 1
 
-	if (__agitolParamIataCode == "ZZZ") {
+	if (__agitolParamIataCode == "") {
 		# The POR is not referenced by IATA. There is nothing more to be done
 		# at that stage.
 
@@ -795,8 +794,9 @@ function addGeoIDToAllGeoList(__alttaglParamGeonamesID,__alttaglParamGeoString) 
 
     # If the Geonames ID is already listed, notify the user
     if (geo_all_geoid_list[__alttaglParamGeonamesID]) {
-		print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
-			   ", the Geonames ID (" __alttaglParamGeonamesID		\
+		print ("[" __glGlobalAWKFile ";geo_lib:addGeoIDToAllGeoList()] " \
+			   "!!!! Error at line #" FNR								\
+			   ", the Geonames ID (" __alttaglParamGeonamesID			\
 			   ") already exists (number of Geonames ID so far: "	\
 			   length(geo_all_geoid_list)				\
 			   "): it is a duplicate. Check the Geonames data dump. By " \
@@ -1320,14 +1320,6 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # IATA code
     iata_code = $1
 
-	# For now, non-IATA POR may still be referenced by the 'ZZZ' code
-	if (iata_code == "ZZZ") {
-		#print ("[" awk_file "; awklib/geo_lib:displayGeonamesPORLine()] " \
-		#	   "Non-IATA POR still referenced with ZZZ. Full line: "	\
-		#	   __dgplFullLine) > error_stream
-		iata_code = ""
-	}
-
     # ICAO code
     icao_code = $2
 
@@ -1609,14 +1601,14 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
     }
 
     # Display the last read POR entry, when:
-    # 0. The current POR entry has a 'ZZZ' IATA code. That case is a special
+    # 0. The current POR entry has an empty IATA code. That case is a special
     #    one.
     # 1. The current POR entry is not the first one (as the last POR entry
     #    then is not defined).
     # 2. The current POR entry has got a (IATA code, location type) combination
     #    distinct from the last POR entry.
-    if (__rglIataCode == "ZZZ") {
-		if (geo_iata_code != "ZZZ") {
+    if (__rglIataCode == "") {
+		if (geo_iata_code != "") {
 			# Display the last Geonames POR entries
 			displayGeonamesPOREntries()
 
@@ -1628,13 +1620,13 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
 		# Store the full details of the Geonames POR entry
 		geo_line_list[__rglGeoID] = __rglParamFullLine
 
-		# Processing of the current record, having a 'ZZZ' IATA code,
+		# Processing of the current record, having an empty IATA code,
 		# meaning that it is not referenced by IATA, and that every record
 		# is distinct and must be processed indepedently
 		displayNonIataPOREntry(__rglGeoID, __rglFeatCode)
 
     } else {
-		# The current IATA code is not "ZZZ"
+		# The current IATA code is not empty
 		if (__rglIataCode == geo_iata_code || __rglParamNbOfPOR == 1) {
 			# That record is either the first one or has got the same IATA code
 			# as the previous record. Hence, nothing more is done at that stage.
@@ -1655,15 +1647,15 @@ function registerGeonamesLine(__rglParamFullLine, __rglParamNbOfPOR, \
 		#	> __glGlobalErrorStream
 
 		# Add the location type to the dedicated list
-		geo_line_loctype_all_list = addLocTypeToAllGeoList(rglLocationType,	\
-														   geo_line_loctype_all_list)
+		geo_line_loctype_all_list =										\
+			addLocTypeToAllGeoList(rglLocationType, geo_line_loctype_all_list)
 
 		# Add the location type to the dedicated list for that Geonames ID
 		addLocTypeToGeoList(__rglGeoID, rglLocationType, geo_line_loctype_list)
 		
 		# Add the Geonames ID to the dedicated list
-		geo_line_geoid_all_list = addGeoIDToAllGeoList(__rglGeoID,		\
-													   geo_line_geoid_all_list)
+		geo_line_geoid_all_list =										\
+			addGeoIDToAllGeoList(__rglGeoID, geo_line_geoid_all_list)
 
 		# Add the Geonames ID to the dedicated list for that location type
 		addGeoIDToGeoList(rglLocationType, __rglGeoID, geo_line_geoid_list)
@@ -1795,27 +1787,25 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
 #
 # As of July 2018, there are 20,000+ POR referenced by a IATA code.
 # Again, the same IATA code is usually referenced by at least a city
-# and a travel-related POR. So, overall, there are many less distinct
-# IATA codes. At of July 2018, OPTD is aware of exactly 11,270 distinct
-# IATA codes. You can run for instance the following command:
+# and a transport-/travel-related POR. So, overall, there are many less
+# distinct IATA codes. At of July 2018, OPTD is aware of exactly 11,270
+# distinct IATA codes. You can run for instance the following command:
 # cut -d'^' -f1,1 ../opentraveldata/optd_por_best_known_so_far.csv | cut -d'-' -f1,1 | uniq | wc -l
 #
-# On the other hand, OPTD assigns the 'ZZZ' (IATA) code to POR,
-# which are not referenced by IATA. Among those, some are referenced
-# by the optd_por_best_known_so_far.csv file (usually, those having
-# an ICAO code), some have just at least one UN/LOCODE code.
-# As of July 2018, there are 90,000+ POR having at least a UN/LOCODE code,
-# and which are not referenced by IATA. So, adding them all
+# On the other hand, OPTD also keeps track of POR not referenced by IATA,
+# but which have an ICAO or UN/LOCODE code.
+# As of July 2018, there are 90,000+ POR having at least an ICAO or
+# UN/LOCODE code, and which are not referenced by IATA. So, adding them all
 # to the optd_por_best_known_so_far.csv file is not so practical.
 # And it is not very usefull too; especially now that Geonames has become
 # the master (provider of so called gold records) for all the new POR.
-# Hence, all the non-IATA-referenced UN/LOCODE-referenced POR can be added
-# to the optd_por_public.csv file, without them to be curated one by one
-# in the optd_por_best_known_so_far.csv file. In any case, they are present
-# in the dump_from_geonames.csv file.
+# Hence, all the non-IATA-referenced ICAO- or UN/LOCODE-referenced POR
+# can be added to the optd_por_public.csv file, without them to be curated
+# one by one in the optd_por_best_known_so_far.csv file.
+# In any case, they are present in the dump_from_geonames.csv file.
 # Command to see the different Geonames feature codes for those
 # non-IATA-referenced POR:
-# grep '^ZZZ' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
+# grep '^\^' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
 #
 # Examples of records in optd_por_best_known_so_far.csv (parsed
 # in a previous phase):
@@ -1827,12 +1817,6 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
 # RDU-C-4487042^RDU^35.7721^-78.63861^RDU^
 # SFO-A-5391989^SFO^37.618972^-122.374889^SFO^
 # SFO-C-5391959^SFO^37.77493^-122.41942^SFO^
-# [...]
-# [OPTD-maintained POR not referenced by IATA, but being referenced
-#  by another organism such as ICAO or UN/LOCODE]
-# ZZZ-A-11258616^ZZZ^14.13518^93.36731^ZZZ^
-# ZZZ-A-11395447^ZZZ^-1.11564^34.48514^ZZZ^
-# ZZZ-A-8131475^ZZZ^4.08268^30.65018^ZZZ^
 #
 # Examples of records in dump_from_geonames.csv (which are the ones
 # currently parsed here):
@@ -1841,22 +1825,16 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
 # RDU^^^4487042^Raleigh^Raleigh^35.7721^-78.63861^US^^United States^North America^P^PPLA^NC^North Carolina^North Carolina^183^Wake County^Wake County^92612^^451066^96^99^America/New_York^-5.0^-4.0^-5.0^2017-05-23^RDU,Raleigh^http://en.wikipedia.org/wiki/Raleigh%2C_North_Carolina^en|Raleigh|p^USRAG|
 # RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^US^^United States^North America^S^AIRP^NC^North Carolina^North Carolina^183^Wake County^Wake County^90576^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2017-05-23^KRDU,RDU,Raleigh-Durham International Airport^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^en|Raleigh–Durham International Airport|p^USRDU|
 # [...]
-# [OPTD-maintained POR not referenced by IATA, but being referenced
-#  by another organism such as ICAO or UN/LOCODE]
-# ZZZ^VYCI^^11258616^Coco Island Airport^Coco Island Airport^14.13518^93.36731^MM^^Myanmar^Asia^S^AIRP^17^Rangoon^Rangoon^MMR013D003^Yangon South District^Yangon South District^MMR013032^^0^^4^Asia/Yangon^6.5^6.5^6.5^2017-07-20^Coco Island Airport,VYCI^http://en.wikipedia.org/wiki/Coco_Island_Airport^en|Coco Island Airport|^
-# ZZZ^HKMM^^11395447^Migori Airport^Migori Airport^-1.11564^34.48514^KE^^Kenya^Africa^S^AIRP^36^Migori^Migori^^^^^^0^^1407^Africa/Nairobi^3.0^3.0^3.0^2016-12-10^HKMM,Migori Airport^^en|Migori Airport|^
-# ZZZ^HSYE^^8131475^Yei Airport^Yei Airport^4.08268^30.65018^SS^^South Sudan^Africa^S^AIRP^01^^^^^^^^0^^849^Africa/Juba^3.0^3.0^3.0^2012-01-10^HSYE^http://en.wikipedia.org/wiki/Yei_Airport^^
-# [...]
 # [POR not maintained by OPTD (hence as well not referenced by IATA),
 #  but being referenced by another organism such as ICAO or UN/LOCODE]
-# ZZZ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
-# ZZZ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
-# ZZZ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
+# ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
+# ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
+# ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
 #
-# Now that the context has been explained, the following function must
+# All that context being now explained, the following function must
 # retrieve the OPTD-maintained records corresponding to each group of
 # Geonames records referenced by the same IATA code (remember, if the IATA code
-# is ZZZ, it means that those POR are not referenced by IATA).
+# is empty, it means that those POR are not referenced by IATA).
 #
 function displayGeonamesPOREntries(__dgpeWAddedPK) {
     # Calculate the number of the Geonames POR entries corresponding to

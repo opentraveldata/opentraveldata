@@ -45,9 +45,9 @@ SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
 SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
 
 ##
-# Retrieve the latest schedule file
-POR_FILE_PFX1=por_iata
-POR_FILE_PFX2=por_noiata
+# Retrieve the latest dump files, if any
+POR_FILE_PFX1=por_intorg
+POR_FILE_PFX2=por_all
 LATEST_EXTRACT_DATE=`ls ${EXEC_PATH}${POR_FILE_PFX1}_????????.csv 2> /dev/null`
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
@@ -62,8 +62,8 @@ fi
 if [ "${LATEST_EXTRACT_DATE}" != "" \
 	-a "${LATEST_EXTRACT_DATE}" != "${SNAPSHOT_DATE}" ]
 then
-	LATEST_DUMP_IATA_FILENAME=${POR_FILE_PFX1}_${LATEST_EXTRACT_DATE}.csv
-	LATEST_DUMP_NOIATA_FILENAME=${POR_FILE_PFX2}_${LATEST_EXTRACT_DATE}.csv
+	LATEST_DUMP_INTORG_FILENAME=${POR_FILE_PFX1}_${LATEST_EXTRACT_DATE}.csv
+	LATEST_DUMP_ALL_FILENAME=${POR_FILE_PFX2}_${LATEST_EXTRACT_DATE}.csv
 fi
 
 ##
@@ -87,8 +87,8 @@ GEO_CNT_FILE=${GEO_POR_DATA_DIR}${GEO_CNT_FILENAME}
 ##
 # Generated files
 DUMP_GEO_FILENAME=dump_from_geonames.csv
-DUMP_IATA_FILENAME=${POR_FILE_PFX1}_${SNAPSHOT_DATE}.csv
-DUMP_NOIATA_FILENAME=${POR_FILE_PFX2}_${SNAPSHOT_DATE}.csv
+DUMP_INTORG_FILENAME=${POR_FILE_PFX1}_${SNAPSHOT_DATE}.csv
+DUMP_ALL_FILENAME=${POR_FILE_PFX2}_${SNAPSHOT_DATE}.csv
 # Light version of the country-related time-zones
 OPTD_TZ_FILENAME=optd_tz_light.csv
 # Mapping between countries and continents
@@ -96,10 +96,10 @@ OPTD_CNT_FILENAME=optd_cont.csv
 
 #
 DUMP_GEO_FILE=${TMP_DIR}${DUMP_GEO_FILENAME}
-DUMP_IATA_FILE=${TMP_DIR}${DUMP_IATA_FILENAME}
-DUMP_NOIATA_FILE=${TMP_DIR}${DUMP_NOIATA_FILENAME}
-DUMP_GEO_FILE_HDR=${DUMP_IATA_FILE}.hdr
-DUMP_GEO_FILE_TMP=${DUMP_IATA_FILE}.tmp
+DUMP_INTORG_FILE=${TMP_DIR}${DUMP_INTORG_FILENAME}
+DUMP_ALL_FILE=${TMP_DIR}${DUMP_ALL_FILENAME}
+DUMP_GEO_FILE_HDR=${DUMP_INTORG_FILE}.hdr
+DUMP_GEO_FILE_TMP=${DUMP_INTORG_FILE}.tmp
 # OPTD-related data files
 OPTD_TZ_FILE=${DATA_DIR}${OPTD_TZ_FILENAME}
 OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
@@ -109,8 +109,8 @@ OPTD_CNT_FILE_HDR=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.hdr
 
 ##
 # Latest snapshot data files
-LATEST_DUMP_IATA_FILE=${TMP_DIR}${LATEST_DUMP_IATA_FILENAME}
-LATEST_DUMP_NOIATA_FILE=${TMP_DIR}${LATEST_DUMP_NOIATA_FILENAME}
+LATEST_DUMP_INTORG_FILE=${TMP_DIR}${LATEST_DUMP_INTORG_FILENAME}
+LATEST_DUMP_ALL_FILE=${TMP_DIR}${LATEST_DUMP_ALL_FILENAME}
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ]
@@ -129,8 +129,8 @@ then
 	echo "      + Continent information data file: '${GEO_CNT_FILE}'"
 	echo
 	echo "  - Generated (CSV-formatted) data files in '${EXEC_PATH}':"
-	echo "      + '${DUMP_IATA_FILE}'"
-	echo "      + '${DUMP_NOIATA_FILE}'"
+	echo "      + '${DUMP_INTORG_FILE}'"
+	echo "      + '${DUMP_ALL_FILE}'"
 	echo
 	echo "  - Generated (CSV-formatted) data files in '${DATA_DIR}':"
 	echo "      + '${OPTD_TZ_FILE}' (maybe sometimes in the future)"
@@ -155,7 +155,7 @@ then
 fi
 
 ##
-# Data extraction from the Geonames data file
+# Data extraction from the Geonames data files
 
 # For country-related information (continent, for now)
 echo
@@ -173,35 +173,35 @@ sort -t'^' -k1,1 ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE_TMP_SORTED}
 cat ${OPTD_CNT_FILE_HDR} ${OPTD_CNT_FILE_TMP_SORTED} > ${OPTD_CNT_FILE_TMP}
 sed -e "/^$/d" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE}
 
-# For travel-related POR and cities.
+# For transport-/travel-related POR and cities.
 echo
 echo "Extracting travel-related points of reference (POR, i.e., airports, railway stations)"
 echo "and populated place (city) data from the Geonames dump data file."
-echo "The '${GEO_POR_FILE}' input data file allows to generate '${DUMP_IATA_FILE}' and '${DUMP_NOIATA_FILE}' files."
+echo "The '${GEO_POR_FILE}' input data file allows to generate '${DUMP_INTORG_FILE}' and '${DUMP_ALL_FILE}' files."
 echo "That operation may take several minutes..."
-IATA_EXTRACTOR=${EXEC_PATH}extract_por_with_iata_icao.awk
+INTORG_EXTRACTOR=${EXEC_PATH}extract_por_from_geonames.awk
 time awk -F'^' \
-	-v iata_file=${DUMP_IATA_FILE} -v noiata_file=${DUMP_NOIATA_FILE} \
-	-f ${IATA_EXTRACTOR} ${GEO_POR_FILE}
+	-v intorg_file=${DUMP_INTORG_FILE} -v all_file=${DUMP_ALL_FILE} \
+	-f ${INTORG_EXTRACTOR} ${GEO_POR_FILE}
 echo "... Done"
 echo
 
 ##
 # Extract and remove the header
-grep "^iata_code\(.\+\)" ${DUMP_IATA_FILE} > ${DUMP_GEO_FILE_HDR}
-sed -i -e "s/^iata_code\(.\+\)//g" ${DUMP_IATA_FILE}
-sed -i -e "/^$/d" ${DUMP_IATA_FILE}
-sed -i -e "s/^iata_code\(.\+\)//g" ${DUMP_NOIATA_FILE}
-sed -i -e "/^$/d" ${DUMP_NOIATA_FILE}
+grep "^iata_code\(.\+\)" ${DUMP_INTORG_FILE} > ${DUMP_GEO_FILE_HDR}
+sed -i -e "s/^iata_code\(.\+\)//g" ${DUMP_INTORG_FILE}
+sed -i -e "/^$/d" ${DUMP_INTORG_FILE}
+sed -i -e "s/^iata_code\(.\+\)//g" ${DUMP_ALL_FILE}
+sed -i -e "/^$/d" ${DUMP_ALL_FILE}
 
 # Sort the data files
-echo "Sorting ${DUMP_IATA_FILE}..."
-sort -t'^' -k1,1 -k4n,4 ${DUMP_IATA_FILE} > ${DUMP_GEO_FILE_TMP}
-cat ${DUMP_GEO_FILE_HDR} ${DUMP_GEO_FILE_TMP} > ${DUMP_IATA_FILE}
+echo "Sorting ${DUMP_INTORG_FILE}..."
+sort -t'^' -k1,1 -k4n,4 ${DUMP_INTORG_FILE} > ${DUMP_GEO_FILE_TMP}
+cat ${DUMP_GEO_FILE_HDR} ${DUMP_GEO_FILE_TMP} > ${DUMP_INTORG_FILE}
 echo "... done"
-echo "Sorting ${DUMP_NOIATA_FILE}..."
-sort -t'^' -k1,1 -k4,4 ${DUMP_NOIATA_FILE} > ${DUMP_GEO_FILE_TMP}
-cat ${DUMP_GEO_FILE_HDR} ${DUMP_GEO_FILE_TMP} > ${DUMP_NOIATA_FILE}
+echo "Sorting ${DUMP_ALL_FILE}..."
+sort -t'^' -k4n,4 ${DUMP_ALL_FILE} > ${DUMP_GEO_FILE_TMP}
+cat ${DUMP_GEO_FILE_HDR} ${DUMP_GEO_FILE_TMP} > ${DUMP_ALL_FILE}
 echo "... done"
 
 
@@ -213,8 +213,8 @@ echo "Reporting step"
 echo "--------------"
 echo
 echo "From the '${GEO_POR_FILE}' input data file, the following data files have been derived:"
-echo " + '${DUMP_IATA_FILE}'"
-echo " + '${DUMP_NOIATA_FILE}'"
+echo " + '${DUMP_INTORG_FILE}'"
+echo " + '${DUMP_ALL_FILE}'"
 echo
 echo
 echo "Other temporary files have been generated. Just issue the following command to delete them:"
@@ -226,8 +226,8 @@ if [ "${LATEST_EXTRACT_DATE}" != "" \
 	-a "${LATEST_EXTRACT_DATE}" != "${SNAPSHOT_DATE}" ]
 then
 	echo "After having checked that the updates brought by Geonames are legitimate and not disruptive, i.e.:"
-	echo "diff -c ${LATEST_DUMP_IATA_FILE} ${DUMP_IATA_FILE} | less"
-	echo "diff -c ${LATEST_DUMP_NOIATA_FILE} ${DUMP_NOIATA_FILE} | less"
+	echo "diff -c ${LATEST_DUMP_INTORG_FILE} ${DUMP_INTORG_FILE} | less"
+	echo "diff -c ${LATEST_DUMP_ALL_FILE} ${DUMP_ALL_FILE} | less"
 	echo "mkdir -p archives && bzip2 *_${LATEST_EXTRACT_DATE}.csv && mv *_${LATEST_EXTRACT_DATE}.csv.bz2 archives"
 	echo
 	echo "The Geonames data file (dump_from_geonames.csv) may be updated:"
@@ -236,7 +236,7 @@ else
 	echo
 	echo "The Geonames data file (dump_from_geonames.csv) has to set up:"
 fi
-echo "\cp -f ${DUMP_IATA_FILE} ${DUMP_GEO_FILE}"
+echo "\cp -f ${DUMP_INTORG_FILE} ${DUMP_GEO_FILE}"
 echo
 echo
 

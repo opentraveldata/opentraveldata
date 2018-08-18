@@ -101,45 +101,37 @@ Again, the same IATA code is usually referenced by at least a city
 and a travel-related POR. So, overall, there are many less distinct
 IATA codes. At of July 2018, OPTD is aware of exactly 11,270 distinct
 IATA codes. To get that number, one can run for instance the following
-command (and subtract 2 to the result, for the header and for the 'ZZZ' code):
+command (and subtract 1 to the result, for the header):
 ```bash
 $ cut -d'^' -f1,1 ../opentraveldata/optd_por_best_known_so_far.csv | cut -d'-' -f1,1 | uniq | wc -l
 ```
 
 ### Non-IATA-referenced POR
-On the other hand, OPTD assigns the ``ZZZ`` (IATA) code to POR,
-which are not referenced by IATA. Among those:
-* Some are referenced by the ``optd_por_best_known_so_far.csv`` file
- (usually, those having an ICAO code).
-* Some have just at least one UN/LOCODE code.
+On the other hand, there are in OPTD many POR not referenced by IATA.
+Those POR are extracted from Geonames and end up into OPTD if they have
+an ICAO or UN/LOCODE code.
 
-Examples of non-IATA-referenced POR, which are however maintained in OPTD:
-```csv
-ZZZ-A-11258616^ZZZ^14.13518^93.36731^ZZZ^
-ZZZ-A-11395447^ZZZ^-1.11564^34.48514^ZZZ^
-ZZZ-A-8131475^ZZZ^4.08268^30.65018^ZZZ^
-```
-Those examples correspond to:
+Examples of non-IATA-referenced POR, which end up in OPTD:
+* [Yei Airport, South Sudan (SS)](http://geonames.org/8131475),
+  referenced by ICAO as ``HSYE``
 * [Coco Island Airport, Myanmar (MM)](http://geonames.org/11258616),
   referenced by ICAO as ``VYCI``
 * [Migori Airport, Kenya (KE)](http://geonames.org/11395447),
   referenced by ICAO as ``HKMM``
-* [Yei Airport, South Sudan (SS)](http://geonames.org/8131475),
-  referenced by ICAO as ``HSYE``
 
-As of July 2018, there are over 90,000 POR having at least a UN/LOCODE code,
-and which are not referenced by IATA. So, adding them all
+As of July 2018, there are over 90,000 POR having at least an ICAO or
+UN/LOCODE code, and which are not referenced by IATA. So, adding them all
 to the ``optd_por_best_known_so_far.csv`` file is not so practical.
 And it is not very usefull too; especially now that Geonames has become
 the master (provider of so called gold records) for all the new POR.
-Hence, all the non-IATA-referenced UN/LOCODE-referenced POR can be added
-to the ``optd_por_public.csv`` file, without them to be curated one by one
-in the ``optd_por_best_known_so_far.csv`` file first.
+Hence, all the non-IATA-referenced ICAO- or UN/LOCODE-referenced POR
+can be added to the ``optd_por_public.csv`` file, without them to be curated
+one by one in the ``optd_por_best_known_so_far.csv`` file first.
 In any case, those POR are present in the ``dump_from_geonames.csv`` file.
 Command to see the different Geonames feature codes for those
 non-IATA-referenced POR:
 ```bash
-$ grep '^ZZZ' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
+$ grep '^\^' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
 ```
 
 ## Geonames-derived POR file
@@ -161,7 +153,8 @@ including among other things:
 * [``alternateNames.zip`` (around 140 MB)](http://download.geonames.org/export/dump/alternateNames.zip),
   becoming ``alternateNames.txt`` once unzipped, and listing the alternate
   names of those POR. Note that the codes (e.g., IATA, ICAO, FAA, TCID,
-  UN/LOCODE) and (Wikipedia) links are alternate names in Geonames parlance.
+  UN/LOCODE, Wikipedia and Wikidata) links are alternate names
+  in Geonames parlance.
 
 ### Generation of the aggregated Geonames snapshot data file
 The [``data/geonames/data/por/admin/aggregateGeonamesPor.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/admin/aggregateGeonamesPor.awk),
@@ -169,7 +162,6 @@ from the two above-mentioned Geonames snapshot/dump data files,
 generates a combined data file, named ``allCountries_w_alt.txt``, in the
 [``data/geonames/data/por/data`` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),
 next to the downloaded Geonames data files.
-
 
 ### Generation of the main OPTD-used Geonames data file
 The [``tools/extract_por_with_iata_icao.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_with_iata_icao.awk),
@@ -180,7 +172,7 @@ in the
 
 ### Examples of records in the main OPTD-used Geoanmes data file
 Examples of records in the ``dump_from_geonames.csv`` data file, echoing
-the the examples shown in the
+the examples shown in the
 [OPTD-maintained POR file section above](#optd-maintained-por-file).
 
 #### Regular relationship between a city and its transport-related POR
@@ -203,25 +195,13 @@ RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham Internatio
 ```
 
 #### Non-IATA-referenced OPTD-known POR
-
-##### OPTD-known POR
-The following transport-related POR are not referenced by IATA, but known
-from (and maintained by) OPTD. They are normally referenced by another
-organism such as ICAO or UN/LOCODE:
-```csv
-ZZZ^VYCI^^11258616^Coco Island Airport^Coco Island Airport^14.13518^93.36731^MM^^Myanmar^Asia^S^AIRP^17^Rangoon^Rangoon^MMR013D003^Yangon South District^Yangon South District^MMR013032^^0^^4^Asia/Yangon^6.5^6.5^6.5^2017-07-20^Coco Island Airport,VYCI^http://en.wikipedia.org/wiki/Coco_Island_Airport^en|Coco Island Airport|^
-ZZZ^HKMM^^11395447^Migori Airport^Migori Airport^-1.11564^34.48514^KE^^Kenya^Africa^S^AIRP^36^Migori^Migori^^^^^^0^^1407^Africa/Nairobi^3.0^3.0^3.0^2016-12-10^HKMM,Migori Airport^^en|Migori Airport|^
-ZZZ^HSYE^^8131475^Yei Airport^Yei Airport^4.08268^30.65018^SS^^South Sudan^Africa^S^AIRP^01^^^^^^^^0^^849^Africa/Juba^3.0^3.0^3.0^2012-01-10^HSYE^http://en.wikipedia.org/wiki/Yei_Airport^^
-```
-
-##### Non-OPTD-known POR
 The following transport-related POR are not referenced by IATA, and also
 not known from (or maintained by) OPTD. They are normally referenced by another
 organism such as ICAO or UN/LOCODE:
 ```csv
-ZZZ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
-ZZZ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
-ZZZ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
+^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
+^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
+^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
 ```
 
 ## Use cases
@@ -250,34 +230,44 @@ $ cd -
 $ ls -laFh --color por/data/al*
 ```
 
-Back in OPTD, generate two ```por_*iata_YYYYMMDD.csv``` data files:
-* ```por_iata_YYYYMMDD.csv``` references all the POR having a IATA code in Geonames
-* ```por_noiata_YYYYMMDD.csv``` references all the POR having no IATA code (but
+* Back in OPTD, generate two ``por_*intorg_YYYYMMDD.csv`` data files:
+  * ``por_intorg_YYYYMMDD.csv`` references all the POR having a IATA code in Geonames
+  * ``por_nointorg_YYYYMMDD.csv`` references all the POR having no IATA code (but
  which could have one in Geonames)
 ```bash
 $ cd <OPTD_ROOT_DIR>/tools
-$ ./extract_por_with_iata_icao.sh && ./extract_por_with_iata_icao.sh --clean
+$ ./extract_por_from_geonames.sh && ./extract_por_from_geonames.sh --clean
 ```
 
-Copy the generated por_iata_YYYYMMDD.csv file into dump_from_geonames.csv
+* Copy the generated ``por_intorg_YYYYMMDD.csv`` file
+into ``dump_from_geonames.csv``
 ```bash
 $ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
 ```
 
-Note that the ```por_noiata_YYYYMMDD.csv``` has usually a size of around 1.5 GB.
+Note that the ``por_noiata_YYYYMMDD.csv`` has usually a size of around 1.5 GB.
 
 ### Add state (administrative level) codes for a given country
 See [OpenTravelData Issue #78](https://github.com/opentraveldata/opentraveldata/issues/78)
 for the example on how to add Russian state codes.
 
-As many other big countries (e.g., USA, Australia, Brazil), Russia has got regions (administrative level 1), which are assigned standard (ISO 3166-2) codes: http://en.wikipedia.org/wiki/ISO_3166-2:RU
-Those codes should be added to the optd_por_public.csv file.
+As many other big countries (e.g., USA, Australia, Brazil), Russia has got
+regions (administrative level 1), which are assigned standard (ISO 3166-2)
+codes: http://en.wikipedia.org/wiki/ISO_3166-2:RU
+Those codes should be added to the ``optd_por_public.csv`` file.
 
-The region codes should first be added to the [``opentraveldata/optd_country_states.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_country_states.csv). They can be derived from the [Geonames ADM1 codes](http://download.geonames.org/export/dump/admin1CodesASCII.txt).
+The region codes should first be added to the
+[``opentraveldata/optd_country_states.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_country_states.csv).
+They can be derived from the
+[Geonames ADM1 codes](http://download.geonames.org/export/dump/admin1CodesASCII.txt).
 
-And, then, the [``opentraveldata/optd_state_exceptions.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_state_exceptions.csv) must be amended with the new Russian region codes, in order to reflect that IATA does not reference those regions correctly.
+And, then, the
+[``opentraveldata/optd_state_exceptions.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_state_exceptions.csv)
+must be amended with the new Russian region codes, in order to reflect that
+IATA does not reference those regions correctly.
 
-A way to extract the state (administrative level 1) details from the file in order to add them into the file:
+A way to extract the state (administrative level 1) details from the file
+in order to add them into the file:
 ```bash
 $ # To be performed once
 $ mkdir -p ~/dev/geo
@@ -304,7 +294,7 @@ Just for information, the relevant AWK scripts are:
 ## Recompute the OPTD-maintained POR file: do 1.1.
 
 ### Update from reference data
-The reference data has been updated, i.e., the ```dump_from_crb_city.csv```
+The reference data has been updated, i.e., the ``dump_from_crb_city.csv``
 file has been recomputed.
 
 Recompte the light file of reference POR:

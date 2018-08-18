@@ -20,14 +20,17 @@
 # for those being referenced by UN/LOCODE, in many transport-related systems.
 # As OPTD was originally based on exclusively IATA-referenced POR,
 # a few downstream utilities still need a IATA code. That is why,
-# as a work around, the 'ZZZ' special IATA code is used for those POR
-# not referenced by IATA. 'ZZZ' has been chosen because it is reserved,
+# at some point back in time, the 'ZZZ' special IATA code was used
+# for those POR not referenced by IATA. 'ZZZ' was chosen because it is reserved,
 # and therefore no transport-/travel-related POR can have that code.
-# The airport details (e.g., ICAO or FAA code, names, time-zones)
+# From August 2018 onwards, the IATA code is now being left empty
+# when the POR has no such code.
+# The airport details (e.g., ICAO or UN/LOCODE code, names, time-zones)
 # then come from Geonames. It means that Geonames has got the gold/master
-# records for those POR. As a reminded, for IATA-referenced POR,
-# OPTD has got the gold/master record for the geographical location
-# and city/transport-related POR relationship.
+# records for those POR. As a reminder, for IATA-referenced POR,
+# OPTD has got the gold/master record (in the optd_por_best_known_so_far.csv
+# file) for the geographical location and city to transport-related POR
+# relationship.
 #
 # Input data file: <OPTD root dir>/data/geonames/data/por/data/allCountries_w_alt.txt (itself a generated file)
 #
@@ -115,18 +118,26 @@
 BEGIN {
     # Global variables
     error_stream = "/dev/stderr"
-    awk_file = "extract_por_with_iata_icao.awk"
+    awk_file = "extract_por_from_geonames.awk"
 
     #
-    por_lines = 0
+    intorg_por_lines = 0
 
     # Output files
-    if (iata_file == "") {
-		iata_file = "/dev/stdout"
+    if (intorg_file == "") {
+		intorg_file = "/dev/stdout"
     }
-    if (noiata_file == "") {
-		noiata_file = "/dev/stdout"
+    if (all_file == "") {
+		all_file = "/dev/stdout"
     }
+}
+
+##
+# Progress report
+function displayProgress() {
+	print ("[" awk_file "] " FNR " POR have been processed, "		 \
+		   "including " intorg_por_lines " IATA-referenced POR")	 \
+		> error_stream
 }
 
 ##
@@ -137,8 +148,8 @@ BEGIN {
     hdr_line = $0
 
     # Print the header
-    print (hdr_line) > iata_file
-    print (hdr_line) > noiata_file
+    print (hdr_line) > intorg_file
+    print (hdr_line) > all_file
 }
 
 
@@ -149,8 +160,8 @@ BEGIN {
 # Samples:
 # ========
 #
-# No code
-# -------
+# No IATA code
+# ------------
 # ^^^3022309^Cros-de-Cagnes^Cros-de-Cagnes^43.66405^7.1722^FR^^France^Europe^P^PPL^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^061^06027^0^2^19^Europe/Paris^1.0^2.0^1.0^2016-02-18^Cros-de-Cagnes^^|Cros-de-Cagnes|^
 #
 # Historical (no longer referenced by IATA)
@@ -167,6 +178,11 @@ BEGIN {
 # ^^^291068^Port Rashid^Port Rashid^25.26769^55.2825^AE^^United Arab Emirates^Asia^L^PRT^03^Dubai^Dubai^^^^^^0^^-9999^Asia/Dubai^4.0^4.0^4.0^2013-03-05^Mina' Rashid,Mīnā’ Rāshid,Port Rashed,Port Rashid,Rachid Port^http://en.wikipedia.org/wiki/Port_Rashid^|Port Rashid|||Rachid Port||ar|Mīnā’ Rāshid||||Port Rashed|^AEMRP|=AEPRA|
 #
 /^(|_[A-Z0-9]{3})\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,15})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
+	# Progress report
+	if (FNR % 1e6 == 0) {
+		displayProgress()
+	}
+	
     # IATA code
     iata_code = $1
 
@@ -187,21 +203,16 @@ BEGIN {
     # * Dump the line into the curated list of POR (named "IATA POR"
     #   for historical reasons, though they are not referenced by IATA)
     if (isFeatCodeTvlRtd(fcode) >= 1 || isFeatCodeCity(fcode) >= 1) {
-		print ($0) > noiata_file
+		print ($0) > all_file
 
-		# In the following cases, the POR will be assigned the 'ZZZ' IATA code
-		# and added to the file of POR having a IATA code. That allows
-		# to get non-IATA POR in OpenTravelData:
+		# In the following cases, the POR is added to the file of POR
+		# being referenced by an international organization (such as,
+		# for instance, IATA, ICAO or UN/LOCODE). That allows to get
+		# non-IATA POR in OpenTravelData:
 		# * The POR is referenced by ICAO
 		# * The POR is referenced by UN/LOCODE
 		if (icao_code || unlc_list) {
-			OFS = FS
-			$1 = "ZZZ"
-			print ($0) > iata_file
-
-			# Reset the IATA code field, otherwise, the line will match
-			# the next AWK matching rule and action code clause
-			$1 = iata_code
+			print ($0) > intorg_file
 		}
     }
 }
@@ -218,16 +229,21 @@ BEGIN {
 # NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|
 #
 /^[A-Z0-9]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9]{4}-[0-9]{2}-[0-9]{2}\^/ {
+	# Progress report
+	if (FNR % 1e6 == 0) {
+		displayProgress()
+	}
+	
     #
-    por_lines++
+    intorg_por_lines++
 
     #
-    print ($0) > iata_file
+    print ($0) > intorg_file
 }
 
 
 ##
 #
 END {
-    print ("Number of POR lines: " por_lines)
+	displayProgress()
 }

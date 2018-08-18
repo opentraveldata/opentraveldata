@@ -24,7 +24,7 @@ fi
 
 ##
 # Retrieve the latest file
-POR_FILE_PFX=por_noiata
+POR_FILE_PFX=por_all
 SNPSHT_DATE=`ls ${POR_FILE_PFX}_????????.{csv,.csv.bz2} 2> /dev/null`
 if [ "${SNPSHT_DATE}" != "" ]
 then
@@ -51,8 +51,8 @@ echo "time diff -Naur ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY
 echo "bzip2 ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
 echo
 echo "On the local host:"
-echo "scp myuser@remote:~/dev/geo/opentraveldata/tools/{por_iata_${TODAY_DATE}.csv.bz2,${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2} ."
-echo "bunzip2 -k por_iata_${TODAY_DATE}.csv.bz2 && mv por_iata_${TODAY_DATE}.csv dump_from_geonames.csv && mv por_iata_${TODAY_DATE}.csv.bz2 ${ARCH_DIR}"
+echo "scp myuser@remote:~/dev/geo/opentraveldata/tools/{por_intorg_${TODAY_DATE}.csv.bz2,${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2} ."
+echo "bunzip2 -k por_intorg_${TODAY_DATE}.csv.bz2 && mv por_intorg_${TODAY_DATE}.csv dump_from_geonames.csv && mv por_intorg_${TODAY_DATE}.csv.bz2 ${ARCH_DIR}"
 echo "bunzip2 ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2"
 echo "patch -p0 --dry-run < ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
 echo "patch -p0 < ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv && mv ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY_DATE}.csv && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"

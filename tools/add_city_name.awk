@@ -300,7 +300,7 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 #
 # RDU^KRDU^^Y^4487056^^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^S^AIRP^0.0818187017848^^^^US^^United States^North America^NC^North Carolina^North Carolina^183^Wake County^Wake County^^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2011-12-11^RDU|C|4464368=RDU|C|4487042^Durham=Raleigh^Durham=Raleigh^^NC^A^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^^36^North Carolina^USD^USRDU|
 #
-/^([A-Z0-9]{3}|)\^[A-Z0-9]{0,4}\^[A-Z0-9]{0,4}\^/{
+/^([A-Z]{3}|)\^[A-Z0-9]{0,4}\^[A-Z0-9]{0,4}\^/{
 
     if (idx_file == 1) {
 		##
