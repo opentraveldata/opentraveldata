@@ -68,12 +68,14 @@ ORQ^R^0^1^^^^^ORQ used to be Norwalk, Connecticut (CT), United States (US), Geon
 OTO^R^0^1^^^^^OTO used to be Otto Vor Airport, New Mexico (NM), United States (US), Geonames ID: 8299218
 OWZ^R^0^1^^^^^OWZ is a pseudo city
 PFN^R^0^1^1^^2016-06-06^^PFN used to be Panama City, Florida (FL), United States (US), Geonames ID: 4167694
+PMM^R^0^1^^^^^PMM used to be Phanom Sarakham, Thailand (TH), Geonames ID: 1607801
 PPO^R^0^1^^^^^PPO used to be Powell Point Airport, Bahamas (BS), Geonames ID: 3571644
 PQD^R^1^0^^^^PQD^As of May 2016, PQD is in BTC/Batticaloa, Sri Lanka (LK)
 PRE^R^0^1^^^^^PRE used to be Pore Airport, Colombia (CO), Geonames ID: 3671903
 PSM^IR^1^1^^^^^PSM/Portsmouth is located in New Hampshire (NH), but serves the city of BOS/Boston, Massachusetts (MA), Unites States (US), Geonames ID: 5090907
 PST^R^0^1^1^^2017-12-01^^PST used to be Preston Airport, Cuba (CU), Geonames ID: 3543522
 PTR^R^0^1^1^^2017-12-01^^PTR used to be Pleasant Harbour, Alaska (AK), United States (US), Geonames ID: 8299206
+PYX^R^0^1^^^^^PYX used to be Pattaya Airpark, Thailand (TH), Geonames ID: 8299026
 QAF^R^0^1^^^^^QAF is supposedly an offline point, located at (48.82, 2.283), ie, 92 Vanves, France
 QEN^I^0^1^^^^^QEN corresponds to SITA, Switzerland (CH)
 QES^I^0^1^^^^^QES corresponds to SITA, Switzerland (CH)
@@ -133,6 +135,7 @@ TNQ^R^0^1^^^^^TNQ used to be Teraina Airport, Cuba (CU), Geonames ID: 7521815
 TRT^R^0^1^1^^2017-12-01^^TRT used to be Tremonton, Utah (UT), United States (US), Geonames ID: 5783768
 TSO^R^0^1^^^^^TSO used to be Isles of Scilly Tresco Airport, United Kingdom (GB), Geonames ID: 7670770
 UIQ^R^0^1^^^^^UIQ used to be Quoin Hill Airport, Vanuatu (VU), Geonames ID: 7730722
+UTR^R^0^1^^^^^UTR used to be Uttaradit Airport, Thailand (TH), Geonames ID: 6301151
 UWE^R^1^0^^^^UWE^As of May 2016, UWE is in WIE/Wiesbaden, Germany (DE)
 UZH^R^0^1^^^^^UZH used to be Unayzah Airport, Saudi Arabia (SA), Geonames ID: 100768
 VKB^R^0^1^^^^^VKB used to be Merano, Italy (IT), Geonames ID: 3173577
@@ -168,3 +171,4 @@ ZSH^R^1^0^1^^2016-06-06^ZSH^As of May 2016, ZSH/Santa Fe is in SAF/Santa Fe, New
 ZSY^R^1^0^1^^2016-06-06^ZSY^As of June 2016, ZSY/Scottsdale Bus Station is in PHX/Phoenix, Arizona (AZ), United States (US)
 ZUF^R^0^1^^^^^ZUF was Mystery Explorer, New Zealand (NZ)
 ZZW^R^0^1^^^^^ZZW is used for trip mystery in Australia (AU)
+ZZZ^R^0^1^^^^^ZZZ is used for Greenwich mean time, United Kingdom (UK)
