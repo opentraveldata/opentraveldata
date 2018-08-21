@@ -1,4 +1,5 @@
 #!/bin/sh
+#set -x
 
 ##
 # MacOS 'date' vs GNU date
