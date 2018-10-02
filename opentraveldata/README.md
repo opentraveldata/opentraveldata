@@ -81,13 +81,27 @@ A few files are maintained, others are generated.
   There are some (tractable) issues when it comes to country definition,
   for instance with Virgin Islands or Kosovo. A specific mapping from
   the actual country code to the corresponding WAC code is then performed.
-
+* [``optd_country_states.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_country_states.csv)
+  is the mapping between [Geonames administrative-level 1 (ADM1) codes](http://download.geonames.org/export/dump/admin1CodesASCII.txt)
+  and [ISO-3166:2 codes](http://en.wikipedia.org/wiki/ISO_3166-2).
+* [``optd_state_exceptions.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_state_exceptions.csv)
+  is the list of exception rules specifying which regions IATA does not correctly
+  reference. That is for instance used by the
+  [Service Delivery Quality (SDQ) OpenTravelData ``check-por-cmp-optd-it.py`` sample script](http://github.com/service-delivery-quality/quality-assurance/blob/master/samples/opentraveldata/check-por-cmp-optd-it.py).
+  
 ## Generated
 * [``optd_countries.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_countries.csv)
   is a format translation from the Geonames country information data file:
   http://download.geonames.org/export/dump/countryInfo.txt
-* [``optd_por_public.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_countries.csv)
+* [``optd_por_public_all.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_por_public_all.csv)
   is the main POR data file, meant to be used by everyone, with all the details.
+  That data file contains around 120,000 entries as of October 2018,
+  including around 20,000 POR referenced by a IATA code.
+* [``optd_por_public.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_por_public_all.csv)
+  is a sub-set of [``optd_por_public_all.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_por_public_all.csv),
+  described just above, and is made of only the POR referenced by a IATA code.
+  It has been kept for backward compatibility reasons, though one can easily
+  derive it from the bigger data file.
 
 ## Mixed
 * [``optd_por_best_to_reject.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_por_best_to_reject.csv)
