@@ -71,6 +71,138 @@ CA^6115047^10^Quebec^QC
 CA^6141242^11^Saskatchewan^SK
 CA^6185811^12^Yukon^YT
 CA^6354959^05^Newfoundland and Labrador^NL
+CL^3868621^01^Valparaíso^VS
+CL^3870116^15^Tarapacá^TA
+CL^3873544^12^Santiago Metropolitan^RM
+CL^3880306^11^Maule Region^ML
+CL^3881974^14^Los Lagos Region^LL
+CL^3883281^08^O'Higgins Region^LI
+CL^3893623^07^Coquimbo Region^CO
+CL^3898380^06^Biobío^BI
+CL^3899191^05^Atacama^AT
+CL^3899463^04^Araucanía^AR
+CL^3899537^03^Antofagasta^AN
+CL^3900333^02^Aysén^AI
+CL^4036650^10^Region of Magallanes^MA
+CL^6693562^16^Arica y Parinacota^AP
+CL^6693563^17^Los Ríos Region^LR
+CN^1279685^14^Tibet^XZ
+CN^1280239^06^Qinghai^QH
+CN^1529047^13^Xinjiang^XJ
+CN^1784764^02^Zhejiang^ZJ
+CN^1785694^29^Yunnan^YN
+CN^1792943^28^Tianjin^TJ
+CN^1794299^32^Sichuan^SC
+CN^1795912^24^Shanxi^SX
+CN^1796231^23^Shanghai^SH
+CN^1796328^25^Shandong^SD
+CN^1796480^26^Shaanxi^SN
+CN^1799355^21^Ningxia Hui Autonomous Region^NX
+CN^1806222^03^Jiangxi^JX
+CN^1806260^04^Jiangsu^JS
+CN^1806691^11^Hunan^HN
+CN^1806949^12^Hubei^HB
+CN^1808520^09^Henan^HA
+CN^1808773^10^Hebei^HE
+CN^1809054^31^Hainan^HI
+CN^1809445^18^Guizhou^GZ
+CN^1809867^16^Guangxi^GX
+CN^1809935^30^Guangdong^GD
+CN^1810676^15^Gansu^GS
+CN^1811017^07^Fujian^FJ
+CN^1814905^33^Chongqing^CQ
+CN^1818058^01^Anhui^AH
+CN^2035607^20^Inner Mongolia^NM
+CN^2036115^19^Liaoning^LN
+CN^2036500^05^Jilin^JL
+CN^2036965^08^Heilongjiang^HL
+CN^2038349^22^Beijing^BJ
+DE^2822542^TH^Thuringia^TH
+DE^2838632^10^Schleswig-Holstein^SH
+DE^2842565^14^Saxony-Anhalt^ST
+DE^2842566^13^Saxony^SN
+DE^2842635^09^Saarland^SL
+DE^2847618^08^Rheinland-Pfalz^RP
+DE^2861876^07^North Rhine-Westphalia^NW
+DE^2862926^06^Lower Saxony^NI
+DE^2872567^12^Mecklenburg-Vorpommern^MV
+DE^2905330^05^Hesse^HE
+DE^2911297^04^Hamburg^HH
+DE^2944387^03^Bremen^HB
+DE^2945356^11^Brandenburg^BB
+DE^2950157^16^Berlin^BE
+DE^2951839^02^Bavaria^BY
+DE^2953481^01^Baden-Württemberg^BW
+ES^2513413^31^Murcia^MC
+ES^2519582^CE^Ceuta^CE
+ES^2521383^07^Balearic Islands^IB
+ES^2593109^51^Andalusia^AN
+ES^2593110^53^Canary Islands^CN
+ES^2593111^54^Castille-La Mancha^CM
+ES^2593112^57^Extremadura^EX
+ES^2593113^60^Valencia^VC
+ES^3114710^34^Asturias^AS
+ES^3115609^32^Navarre^NC
+ES^3117732^29^Madrid^MD
+ES^3336897^27^La Rioja^RI
+ES^3336898^39^Cantabria^CB
+ES^3336899^52^Aragon^AR
+ES^3336900^55^Castille and León^CL
+ES^3336901^56^Catalonia^CT
+ES^3336902^58^Galicia^GA
+ES^3336903^59^Basque Country^PV
+ES^6362988^ML^Melilla^ML
+FR^11071619^27^Bourgogne-Franche-Comté^BFC
+FR^11071620^75^Nouvelle-Aquitaine^NAQ
+FR^11071621^28^Normandy^NOR
+FR^11071622^44^Grand Est^GES
+FR^11071623^76^Occitanie^OCC
+FR^11071624^32^Hauts-de-France^HDF
+FR^11071625^84^Auvergne-Rhône-Alpes^ARA
+FR^2985244^93^Provence-Alpes-Côte d'Azur^PAC
+FR^2988289^52^Pays de la Loire^PDL
+FR^3012874^11^Île-de-France^IDF
+FR^3023519^94^Corsica^COR
+FR^3027939^24^Centre^CVL
+FR^3030293^53^Brittany^BRE
+GB^2634895^WLS^Wales^WLS
+GB^2638360^SCT^Scotland^SCT
+GB^2641364^NIR^Northern Ireland^NIR
+GB^6269131^ENG^England^ENG
+ID^1213642^26^North Sumatra^SU
+ID^1215638^01^Aceh^AC
+ID^1621176^10^Yogyakarta^YO
+ID^1626196^32^South Sumatra^SS
+ID^1626197^24^West Sumatra^SB
+ID^1626229^31^North Sulawesi^SA
+ID^1626230^22^Southeast Sulawesi^SG
+ID^1626231^21^Central Sulawesi^ST
+ID^1626232^38^South Sulawesi^SN
+ID^1629652^37^Riau^RI
+ID^1633791^18^East Nusa Tenggara^NT
+ID^1633792^17^West Nusa Tenggara^NB
+ID^1636627^28^Maluku^MA
+ID^1638535^15^Lampung^LA
+ID^1641897^14^East Kalimantan^KI
+ID^1641898^13^Central Kalimantan^KT
+ID^1641899^12^South Kalimantan^KS
+ID^1641900^11^West Kalimantan^KB
+ID^1642668^08^East Java^JI
+ID^1642669^07^Central Java^JT
+ID^1642672^30^West Java^JB
+ID^1642856^05^Jambi^JA
+ID^1642907^04^Jakarta^JK
+ID^1643012^36^Papua^PA
+ID^1649147^03^Bengkulu^BE
+ID^1650535^02^Bali^BA
+ID^1923045^33^Banten^BT
+ID^1923046^34^Gorontalo^GO
+ID^1923047^35^Bangka–Belitung Islands^BB
+ID^1958070^29^North Maluku^MU
+ID^1996549^39^West Papua^PB
+ID^1996550^41^West Sulawesi^SR
+ID^1996551^40^Riau Islands^KR
+ID^8604684^42^North Kalimantan^KU
 IN^1252881^28^West Bengal^WB
 IN^1253626^36^Uttar Pradesh^UP
 IN^1254169^26^Tripura^TR
@@ -107,6 +239,46 @@ IN^1278647^01^Andaman and Nicobar^AN
 IN^1444364^37^Chhattisgarh^CT
 IN^1444365^38^Jharkhand^JH
 IN^1444366^39^Uttarakhand^UT
+MX^3514211^31^Yucatán^YUC
+MX^3514780^30^Veracruz^VER
+MX^3515359^29^Tlaxcala^TLA
+MX^3516391^28^Tamaulipas^TAM
+MX^3516458^27^Tabasco^TAB
+MX^3520887^23^Quintana Roo^ROO
+MX^3520914^22^Querétaro^QUE
+MX^3521082^21^Puebla^PUE
+MX^3522509^20^Oaxaca^OAX
+MX^3522542^19^Nuevo León^NLE
+MX^3522961^17^Morelos^MOR
+MX^3523272^15^México^MEX
+MX^3527115^13^Hidalgo^HID
+MX^3527213^12^Guerrero^GRO
+MX^3527646^09^Mexico City^CMX
+MX^3531011^05^Chiapas^CHP
+MX^3531730^04^Campeche^CAM
+MX^3979840^32^Zacatecas^ZAC
+MX^3982846^26^Sonora^SON
+MX^3983035^25^Sinaloa^SIN
+MX^3985605^24^San Luis Potosí^SLP
+MX^3995012^18^Nayarit^NAY
+MX^3995955^16^Michoacán^MIC
+MX^4004156^14^Jalisco^JAL
+MX^4005267^11^Guanajuato^GUA
+MX^4011741^10^Durango^DUR
+MX^4013513^08^Colima^COL
+MX^4013674^07^Coahuila^COA
+MX^4014336^06^Chihuahua^CHH
+MX^4017698^03^Baja California Sur^BCS
+MX^4017700^02^Baja California^BCN
+MX^4019231^01^Aguascalientes^AGU
+PK^1162015^08^Islamabad^IS
+PK^1164807^05^Sindh^SD
+PK^1167710^04^Punjab^PB
+PK^1168873^03^Khyber Pakhtunkhwa^KP
+PK^1168878^07^Gilgit-Baltistan^GB
+PK^1179245^01^FATA^TA
+PK^1183606^02^Balochistan^BA
+PK^1184196^06^Azad Kashmir^JK
 RU^1486462^87^Yamalo-Nenets^YAN
 RU^1488747^78^Tyumenskaya^TYU
 RU^1488873^79^Republic of Tyva^TY

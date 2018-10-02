@@ -249,14 +249,14 @@ Note that the ``por_noiata_YYYYMMDD.csv`` has usually a size of around 1.5 GB.
 
 ### Add state (administrative level) codes for a given country
 See [OpenTravelData Issue #78](https://github.com/opentraveldata/opentraveldata/issues/78)
-for the example on how to add Russian state codes.
+for an example on how to add Russian region/state codes.
 
-As many other big countries (e.g., USA, Australia, Brazil), Russia has got
-regions (administrative level 1), which are assigned standard (ISO 3166-2)
-codes: http://en.wikipedia.org/wiki/ISO_3166-2:RU
-Those codes should be added to the ``optd_por_public.csv`` file.
+As many other big countries (e.g., United States, Australia, Brazil),
+Russia has got regions (administrative level 1), which are assigned
+standard (ISO 3166-2) codes: http://en.wikipedia.org/wiki/ISO_3166-2:RU
+Those codes are to be added to the ``optd_por_public.csv`` file.
 
-The region codes should first be added to the
+The region codes have first to be added to the
 [``opentraveldata/optd_country_states.csv`` CSV file](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_country_states.csv).
 They can be derived from the
 [Geonames ADM1 codes](http://download.geonames.org/export/dump/admin1CodesASCII.txt).
