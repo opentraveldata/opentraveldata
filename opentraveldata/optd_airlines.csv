@@ -65,7 +65,7 @@ air-air-arabia-maroc-v1^^2009-05-01^^MAC^3O^452^Air Arabia Maroc^^^^^http://en.w
 air-air-arabia-v1^^2003-10-28^^ABY^G9^514^Air Arabia^^^^^http://en.wikipedia.org/wiki/Air_Arabia^5294^en|Air Arabia|^^air-air-arabia^1^^
 air-air-armenia-v1^1^2003-01-01^2014-10-31^ARR^QN^907^Air Armenia^^^^^http://en.wikipedia.org/wiki/Air_Armenia^^en|Air Armenia|=fa|ایر آرمنیا|=hy|Էյր Արմենիա|=ru|Эйр Армения|=sign|AIR ARMENIA|=zh|亞美尼亞航空|^^air-air-armenia^1^^
 air-air-asia-india-v1^^2014-06-12^^^I5^0^AirAsia India^^^^^http://en.wikipedia.org/wiki/AirAsia_India^1752^en|AirAsia India|^^air-air-asia-india^1^^
-air-air-asia-indonesia-extra-v1^^2014-12-26^^INX^XT^0^^Indonesia AirAsia X^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia_X^1186^en||=en|Indonesia AirAsia X|^^air-air-asia-indonesia-extra^1^^
+air-air-asia-indonesia-extra-v1^^2014-12-26^^INX^XT^0^Indonesia AirAsia X^^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia_X^1186^en||=en|Indonesia AirAsia X|^^air-air-asia-indonesia-extra^1^^
 air-air-asia-indonesia-v1^^2000-06-22^^AWQ^QZ^975^Indonesia AirAsia^Awair^^^^http://en.wikipedia.org/wiki/Indonesia_AirAsia^3011^en|Indonesia AirAsia|=en|Awair|^^air-air-asia-indonesia^1^^
 air-air-asia-japan-v1^^2012-08-01^^WAJ^DJ^0^AirAsia Japan^^^^^http://en.wikipedia.org/wiki/AirAsia_Japan^^en|AirAsia Japan|=ja|エアアジア・ジャパン株式会社|=ja|Eāajia Japan Kabushiki-Gaisha|^^air-air-asia-japan^1^^
 air-air-asia-philippines-v1^^2010-12-01^^APG^PQ^62^AirAsia Philippines^^^^^http://en.wikipedia.org/wiki/AirAsia_Philippines^^en|AirAsia Philippines|^MNL^air-air-asia-philippines^1^^
@@ -570,7 +570,7 @@ air-executive-airlines-service-v1^1^1993-01-01^2006-07-31^EXW^OW^92^Nicon Airway
 air-executive-airlines-service-v2^2^2007-08-01^2007-12-31^EXW^OW^92^Nicon Airways^^^^^http://en.wikipedia.org/wiki/Nicon_Airways^^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^2^^
 air-executive-airlines-v1^1^2004-01-01^2013-04-01^EXK^OW^92^Executive Airlines^^Oneworld^Affiliate^^http://en.wikipedia.org/wiki/Executive_Airlines^^en|Executive Airlines|^SJU^air-executive-airlines^1^^
 air-executive-express-aviation-v1^^2013-01-01^^LTD^6G^677^Executive Express Aviation^^^^^http://en.wikipedia.org/wiki/Southern_Airways_Express^^en|Southern Airways|=en|Executive Express Aviation LLC|^PIT^air-executive-express-aviation^1^^
-air-exel-nl-v1^1^1991-04-26^2005-01-31^AXT^XT^0^^Air Exel^^^^http://en.wikipedia.org/wiki/Air_Exel^^en||=en|Air Exel|^^air-exel-nl^1^^
+air-exel-nl-v1^1^1991-04-26^2005-01-31^AXT^XT^0^Air Exel^^^^^http://en.wikipedia.org/wiki/Air_Exel^^en||=en|Air Exel|^^air-exel-nl^1^^
 air-express-air-cargo-v1^^^2015-01-01^XRC^7A^336^Express Air Cargo^^^^^http://en.wikipedia.org/wiki/Express_Air_Cargo^^en|Express Air Cargo|^^air-express-air-cargo^1^^
 air-expressjet-airlines-v1^^2001-01-01^^ASQ^EV^862^ExpressJet Airlines^^^^^http://en.wikipedia.org/wiki/ExpressJet^^en|ExpressJet Airlines|p=en|Continental Express|h=en|Bar Harbor Airlines|h=en|Britt Airways|h=en|Rocky Mountain Airways|h=en|ASA - Atlantic Southeast Airlines|h^ATL^air-expressjet-airlines^1^^
 air-eznis-airways-v1^1^^2013-12-31^EZA^EF^646^Eznis Airways^Eznis Airways^^^PC^^^en|Eznis Airways|=en|Eznis Airways|^^air-eznis-airways^1^^
@@ -1168,7 +1168,7 @@ air-skynet-asia-v1^1^1997-01-01^2014-02-28^SNJ^LQ^0^Skynet Asia Airways^^^^^http
 air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^http://en.wikipedia.org/wiki/Solaseed_Air^2068^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^HND^air-skynet-asia^2^^
 air-skypower-express-airways-v1^^1985-01-01^^EAN^NB^0^Skypower Express Airways^^^^P^http://en.wikipedia.org/wiki/Skypower_Express_Airways^^Skypower Express Airways^^p=en^1^^
 air-skyservice-airlines-v1^1^1986-11-01^2010-03-31^SSV^5G^0^Skyservice^^^^^http://en.wikipedia.org/wiki/Skyservice^^en|Skyservice|ps=en|Skyservice Airlines Inc|^YYZ^air-skyservice-airlines^1^^
-air-skystar-airways-v1^1^2007-06-16^2009-01-03^SKT^XT^0^^SkyStar Airways^^^^http://en.wikipedia.org/wiki/SkyStar_Airways^^en||=en|SkyStar Airways|^^air-skystar-airways^1^^
+air-skystar-airways-v1^1^2007-06-16^2009-01-03^SKT^XT^0^SkyStar Airways^^^^^http://en.wikipedia.org/wiki/SkyStar_Airways^^en||=en|SkyStar Airways|^^air-skystar-airways^1^^
 air-skytrans-regional-v1^^^^SKP^Q6^0^Skytrans Regional^Mineralnye Vo^^^P^^292^en|Skytrans Regional|=en|Mineralnye Vo|^^air-skytrans-regional^1^^
 air-skyward-express-v1^^2016-08-01^^SEW^OW^0^Skyward Express^^^^^^415^en|Skyward Express|p=en|Skyward International Aviation|h^WIL^air-skyward-express^1^^
 air-skyways-v1^1^1993-01-01^2012-05-22^SKX^JZ^752^Skyways^^^^^http://en.wikipedia.org/wiki/Skyways_%28airline%29^^en|Skyways|^^air-skyways^1^^
