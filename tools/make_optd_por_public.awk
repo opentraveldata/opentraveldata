@@ -46,22 +46,25 @@ BEGIN {
     ctry_name_list["ZZ"] = "Not relevant/available"
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
-	delete ctry_state_list
-	delete ctry_ccy_list
+    delete ctry_iso31662code_list
+    delete ctry_iso31662name_list
+    delete ctry_state_list
+    delete ctry_ccy_list
 
-	# Header
-	hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
-	hdr_line = hdr_line "^name^asciiname^latitude^longitude^fclass^fcode"
-	hdr_line = hdr_line "^page_rank^date_from^date_until^comment"
-	hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
-	hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
-	hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
-	hdr_line = hdr_line "^adm3_code^adm4_code"
-	hdr_line = hdr_line "^population^elevation^gtopo30"
-	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
-	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
-	hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
-	hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list"
+    # Header
+    hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
+    hdr_line = hdr_line "^name^asciiname^latitude^longitude^fclass^fcode"
+    hdr_line = hdr_line "^page_rank^date_from^date_until^comment"
+    hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
+    hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
+    hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
+    hdr_line = hdr_line "^adm3_code^adm4_code"
+    hdr_line = hdr_line "^population^elevation^gtopo30"
+    hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
+    hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list"
+    hdr_line = hdr_line "^tvl_por_list^iso31662"
+    hdr_line = hdr_line "^location_type^wiki_link^alt_name_section"
+    hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list"
 
     print (hdr_line)
 
@@ -259,7 +262,10 @@ BEGIN {
     # Alternate state code (abbreviation)
     state_code = $6
 
-    # Register the relationship between the state code and the adm1 code
+    # Register the relationship between the adm1 code
+    # and the country subdivion details (name, ISO 3166-2 code, abbr)
+    ctry_iso31662code_list[country_code][adm1_code] = iso31662_code
+    ctry_iso31662name_list[country_code][adm1_code] = name_en
     ctry_state_list[country_code][adm1_code] = state_code
 }
 

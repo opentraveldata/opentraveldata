@@ -1282,6 +1282,44 @@ function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
 }
 
 ##
+# Add the country subdivision details, mainly the ISO 3166-2 code
+# and the common English name (the one used for the Wikipedia articles).
+# See also http://en.wikipedia.org/wiki/ISO_3166-2
+#
+function addCtrySubdivDetails(__acsdCtryCode, __acsdAdm1Code, __acsdFullLine) {
+    #
+    if (__acsdFullLine == "") {
+	print ("[" awk_file "; awklib/geo_lib:addCtrySubdivDetails()] " \
+	       "Empty line: " __acsdFullLine) > error_stream
+	return
+    }
+	
+    # Return string
+    output_line = ""
+
+    # Separator
+    saved_fs = FS
+    FS = "^"
+
+    #
+    $0 = __acsdFullLine
+
+    # ^ ISO 3166-2 country subdivision code
+    iso31662_code = ctry_iso31662code_list[__acsdCtryCode][__acsdAdm1Code]
+    output_line = output_line FS iso31662_code
+
+    # ^ ISO 3166-2 country subdivision name
+    iso31662_name = ctry_iso31662name_list[__acsdCtryCode][__acsdAdm1Code]
+    output_line = output_line FS iso31662_name
+
+    #
+    FS = saved_fs
+
+    # Return
+    return output_line
+}
+
+##
 # Parse and dump the Geonames POR details.
 # Typically, the input format is that of the dump_from_geonames.csv file,
 # while the output format corresponds to the optd_por_public.csv file.
@@ -1301,10 +1339,10 @@ function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
 function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     #
     if (__dgplFullLine == "") {
-		print ("[" awk_file "; awklib/geo_lib:displayGeonamesPORLine()] " \
-			   "Empty line for OPTD location type (" __dgplOPTDLocType "): " \
-			   __dgplFullLine) > error_stream
-		return
+	print ("[" awk_file "; awklib/geo_lib:displayGeonamesPORLine()] " \
+	       "Empty line for OPTD location type (" __dgplOPTDLocType "): " \
+	       __dgplFullLine) > error_stream
+	return
     }
 	
     # Return string
@@ -1365,27 +1403,27 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
     # DEBUG
     if ((__glGlobalDebugIataCode != "" && iata_code == __glGlobalDebugIataCode) \
-		|| (__glGlobalDebugGeoID != "" && geonames_id == __glGlobalDebugGeoID)) {
-		print("[" __glGlobalDebugIataCode "][" __glGlobalDebugGeoID "][OPTD: " \
-			  isKnownFromOPTD "] PK: " pk ", name: " name_utf8			\
-			  ", feature: " feat_class " / " feat_code ", coord: "		\
-			  geo_lat " " geo_lon ", city code list: " city_code_list) \
-			> __glGlobalErrorStream
+	|| (__glGlobalDebugGeoID != "" && geonames_id == __glGlobalDebugGeoID)) {
+	print("[" __glGlobalDebugIataCode "][" __glGlobalDebugGeoID "][OPTD: " \
+	      isKnownFromOPTD "] PK: " pk ", name: " name_utf8		\
+	      ", feature: " feat_class " / " feat_code ", coord: "	\
+	      geo_lat " " geo_lon ", city code list: " city_code_list)	\
+	    > __glGlobalErrorStream
     }
 	
     if (isKnownFromOPTD) {
-		# Latitude
-		geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
+	# Latitude
+	geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
 
-		# Longitude
-		geo_lon = getOPTDPorLongitude(iata_code, __dgplOPTDLocType, geonames_id)
+	# Longitude
+	geo_lon = getOPTDPorLongitude(iata_code, __dgplOPTDLocType, geonames_id)
 
-		# City code (list)
-		city_code_list = getOPTDPorCityCodeList(iata_code, __dgplOPTDLocType, \
-												geonames_id)
+	# City code (list)
+	city_code_list = getOPTDPorCityCodeList(iata_code, __dgplOPTDLocType, \
+						geonames_id)
 
-		# Beginning date
-		date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
+	# Beginning date
+	date_from = getOPTDPorBegDate(iata_code, __dgplOPTDLocType, geonames_id)
     }
 
     # Country code
@@ -1515,9 +1553,12 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     output_line = output_line FS city_code_list FS  FS  FS
 
     # ^ State code
-    # state_code = substr (ctry_state_list[ctry_code][adm1_code], 0, 2)
     state_code = ctry_state_list[ctry_code][adm1_code]
-    output_line = output_line FS state_code
+    #output_line = output_line FS state_code
+
+    # ^ ISO 3166-2 code
+    iso31662_code = ctry_iso31662code_list[ctry_code][adm1_code]
+    output_line = output_line FS iso31662_code
 
     # ^ Location type ^ Wiki link
     output_line = output_line FS __dgplOPTDLocType FS wiki_link
@@ -1529,8 +1570,8 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
     # ^ US DOT World Area Code (WAC) ^ WAC name
     world_area_code = getWorldAreaCode(ctry_code, state_code, ctry_code_alt, \
-									   city_code_list, geo_lat, geo_lon, \
-									   __dgplFullLine)
+				       city_code_list, geo_lat, geo_lon, \
+				       __dgplFullLine)
     wac_name = getWorldAreaCodeName(world_area_code)
     output_line = output_line FS world_area_code FS wac_name
 
@@ -1540,14 +1581,6 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
     # ^ UN/LOCODE code (potentially a list of)
     output_line = output_line FS unlc_list
-
-    # ^ ISO 3166-2 country subdivision code
-    iso31662_code = ctry_iso31662code_list[ctry_code][adm1_code]
-    # output_line = output_line FS iso31662_code
-
-    # ^ ISO 3166-2 country subdivision name
-    iso31662_name = ctry_iso31662name_list[ctry_code][adm1_code]
-    # output_line = output_line FS iso31662_name
 
     #
     FS = saved_fs
