@@ -228,22 +228,28 @@ function displayProgress() {
 # ^^^291068^Port Rashid^Port Rashid^25.26769^55.2825^AE^^United Arab Emirates^Asia^L^PRT^03^Dubai^Dubai^^^^^^0^^-9999^Asia/Dubai^4.0^4.0^4.0^2013-03-05^Mina' Rashid,Mīnā’ Rāshid,Port Rashed,Port Rashid,Rachid Port^http://en.wikipedia.org/wiki/Port_Rashid^|Port Rashid|||Rachid Port||ar|Mīnā’ Rāshid||||Port Rashed|^AEMRP|=AEPRA|
 #
 /^(|_[A-Z0-9]{3})\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,15})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
-	# Progress report
-	if (FNR % 1e6 == 0) {
-		displayProgress()
-	}
+    # Progress report
+    if (FNR % 1e6 == 0) {
+	displayProgress()
+    }
 	
     # IATA code
     iata_code = $1
 
-	# ICAO code
-	icao_code = $2
+    # ICAO code
+    icao_code = $2
 
     # Geonames ID
     geo_id = $4
 
     # Feature code
     fcode = $14
+
+    # Country code
+    country_code = $9
+
+    # Administrative level 1 code
+    adm1_code = $15
 
     # UN/LOCODE code
     unlc_list = $34
@@ -253,17 +259,21 @@ function displayProgress() {
     # * Dump the line into the curated list of POR (named "IATA POR"
     #   for historical reasons, though they are not referenced by IATA)
     if (isFeatCodeTvlRtd(fcode) >= 1 || isFeatCodeCity(fcode) >= 1) {
-		print ($0) > all_file
+	# Add the country subdivision details (codes and name)
+	#augmented_line = addCtrySubdivDetails(country_code, adm1_code, $0)
 
-		# In the following cases, the POR is added to the file of POR
-		# being referenced by an international organization (such as,
-		# for instance, IATA, ICAO or UN/LOCODE). That allows to get
-		# non-IATA POR in OpenTravelData:
-		# * The POR is referenced by ICAO
-		# * The POR is referenced by UN/LOCODE
-		if (icao_code || unlc_list) {
-			print ($0) > intorg_file
-		}
+	#
+	print ($0) > all_file
+
+	# In the following cases, the POR is added to the file of POR
+	# being referenced by an international organization (such as,
+	# for instance, IATA, ICAO or UN/LOCODE). That allows to get
+	# non-IATA POR in OpenTravelData:
+	# * The POR is referenced by ICAO
+	# * The POR is referenced by UN/LOCODE
+	if (icao_code || unlc_list) {
+	    print ($0) > intorg_file
+	}
     }
 }
 
@@ -279,13 +289,22 @@ function displayProgress() {
 # NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|
 #
 /^[A-Z0-9]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9]{4}-[0-9]{2}-[0-9]{2}\^/ {
-	# Progress report
-	if (FNR % 1e6 == 0) {
-		displayProgress()
-	}
-	
+    # Progress report
+    if (FNR % 1e6 == 0) {
+	displayProgress()
+    }
+
     #
     intorg_por_lines++
+
+    # Country code
+    country_code = $9
+
+    # Administrative level 1 code
+    adm1_code = $15
+
+    # Add the country subdivision details (codes and name)
+    #augmented_line = addCtrySubdivDetails(country_code, adm1_code, $0)
 
     #
     print ($0) > intorg_file
