@@ -1541,6 +1541,14 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # ^ UN/LOCODE code (potentially a list of)
     output_line = output_line FS unlc_list
 
+    # ^ ISO 3166-2 country subdivision code
+    iso31662_code = ctry_iso31662code_list[ctry_code][adm1_code]
+    # output_line = output_line FS iso31662_code
+
+    # ^ ISO 3166-2 country subdivision name
+    iso31662_name = ctry_iso31662name_list[ctry_code][adm1_code]
+    # output_line = output_line FS iso31662_name
+
     #
     FS = saved_fs
 

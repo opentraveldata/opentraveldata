@@ -32,7 +32,18 @@
 # file) for the geographical location and city to transport-related POR
 # relationship.
 #
-# Input data file: <OPTD root dir>/data/geonames/data/por/data/allCountries_w_alt.txt (itself a generated file)
+# As Geonames have their own country subdivision encoding (sometimes, FIPS,
+# sometimes ISO 3166-2), OPTD have to maintain a mapping between those
+# Geonames country subdivion codes and ISO 3166-2 codes. Those mappings
+# are manually curated in the optd_country_states.csv (subsidiary) input file.
+# Sample lines:
+# ctry_code^geo_id^adm1_code^name_en^iso31662^abbr
+# BR^3455077^18^Paraná^PR^PR
+# AU^2147291^06^Tasmania^TAS^TAS
+# US^5481136^NM^New Mexico^NM^NM
+#
+#
+# Main input data file: <OPTD root dir>/data/geonames/data/por/data/allCountries_w_alt.txt (itself a generated file)
 #
 # Sample lines:
 # -------------
@@ -123,6 +134,11 @@ BEGIN {
     #
     intorg_por_lines = 0
 
+    # Lists
+    delete ctry_iso31662code_list
+    delete ctry_iso31662name_list
+    delete ctry_state_list
+
     # Output files
     if (intorg_file == "") {
 		intorg_file = "/dev/stdout"
@@ -135,9 +151,9 @@ BEGIN {
 ##
 # Progress report
 function displayProgress() {
-	print ("[" awk_file "] " FNR " POR have been processed, "		 \
-		   "including " intorg_por_lines " IATA-referenced POR")	 \
-		> error_stream
+    print ("[" awk_file "] " FNR " POR have been processed, "		\
+	   "including " intorg_por_lines " IATA-referenced POR")	\
+	> error_stream
 }
 
 ##
@@ -152,6 +168,40 @@ function displayProgress() {
     print (hdr_line) > all_file
 }
 
+
+##
+# File of country subdivisions (optd_country_states.csv)
+#
+# Sample lines:
+# ctry_code^geo_id^adm1_code^name_en^iso31662^abbr
+# BR^3455077^18^Paraná^PR^PR
+# AU^2147291^06^Tasmania^TAS^TAS
+# US^5481136^NM^New Mexico^NM^NM
+/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
+    # Country code
+    country_code = $1
+
+    # Geonames ID
+    geo_id = $2
+
+    # Administrative level 1 (adm1)
+    adm1_code = $3
+
+    # Country subdivision English name (used on the English Wikipedia)
+    name_en = $4
+
+    # ISO 3166-2 code
+    iso31662_code = $5
+
+    # Alternate state code (abbreviation)
+    state_code = $6
+
+    # Register the relationship between the adm1 code
+    # and the country subdivion details (name, ISO 3166-2 code, abbr)
+    ctry_iso31662code_list[country_code][adm1_code] = iso31662_code
+    ctry_iso31662name_list[country_code][adm1_code] = name_en
+    ctry_state_list[country_code][adm1_code] = state_code
+}
 
 ##
 # POR entries having no IATA code (vast majority of the POR).

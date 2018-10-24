@@ -236,11 +236,11 @@ BEGIN {
 # File of country states (optd_country_states.csv)
 #
 # Sample lines:
-# ctry_code^geo_id^adm1_code^adm1_name^abbr
-# BR^3455077^18^Paraná^PR
-# AU^2147291^06^Tasmania^TAS
-# US^5481136^NM^New Mexico^NM
-/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}$/ {
+# ctry_code^geo_id^adm1_code^name_en^iso31662^abbr
+# BR^3455077^18^Paraná^PR^PR
+# AU^2147291^06^Tasmania^TAS^TAS
+# US^5481136^NM^New Mexico^NM^NM
+/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
     # Country code
     country_code = $1
 
@@ -249,10 +249,15 @@ BEGIN {
 
     # Administrative level 1 (adm1)
     adm1_code = $3
-    adm1_name = $4
+
+    # Country subdivision English name (used on the English Wikipedia)
+    name_en = $4
+
+    # ISO 3166-2 code
+    iso31662_code = $5
 
     # Alternate state code (abbreviation)
-    state_code = $5
+    state_code = $6
 
     # Register the relationship between the state code and the adm1 code
     ctry_state_list[country_code][adm1_code] = state_code
