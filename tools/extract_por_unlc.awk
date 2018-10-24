@@ -116,9 +116,10 @@ BEGIN {
 	    unlc_str = unlc_array[unlc_idx]
 	    unlc = substr (unlc_str, 1, 5)
 
-	    #
+	    # Assemble the output line
 	    output_line = unlc FS geo_lat FS geo_lon FS geonames_id
-	    output_line = output_line  FS feat_class FS feat_code
+	    output_line = output_line FS iso31662_code FS iso31662_name
+	    output_line = output_line FS feat_class FS feat_code
 	    
 	    #
 	    print (output_line)
