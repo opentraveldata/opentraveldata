@@ -58,6 +58,11 @@ DATA_DIR=${OPTD_DIR}opentraveldata/
 TOOLS_DIR=${OPTD_DIR}tools/
 
 ##
+# List of state codes for a few countries (e.g., US, CA, AU, AR, BR)
+OPTD_CTRY_STATE_FILENAME=optd_country_states.csv
+OPTD_CTRY_STATE_FILE=${DATA_DIR}${OPTD_CTRY_STATE_FILENAME}
+
+##
 # Sanity check: that (executable) script should be located in the tools/
 # sub-directory of the OpenTravelData project Git clone
 EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
@@ -98,8 +103,8 @@ HDR_TGT_FILE=${TGT_FILE}.hdr
 
 # Processing
 PROCESSOR="extract_por_unlc.awk"
-time awk -F'^' -f ${PROCESSOR} ${POR_INTORG_FILE} ${POR_ALL_FILE} \
-	 > ${TMP_TGT_FILE}
+time awk -F'^' -f ${PROCESSOR} ${OPTD_CTRY_STATE_FILE} \
+     ${POR_INTORG_FILE} ${POR_ALL_FILE} > ${TMP_TGT_FILE}
 sort -t'^' -k1,1 ${TMP_TGT_FILE} | uniq > ${STD_TGT_FILE}
 echo "unlocode^latitude^longitude^geonames_id^feat_class^feat_code" \
 	 > ${HDR_TGT_FILE}

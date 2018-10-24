@@ -11,6 +11,11 @@ BEGIN {
     error_stream = "/dev/stderr"
     awk_file = "extract_por_unlc.awk"
 
+    # Lists
+    delete ctry_iso31662code_list
+    delete ctry_iso31662name_list
+    delete ctry_state_list
+
     # Header (the master header is in the extract_por_unlc.sh script)
     hdr_line = "unlocode^latitude^longitude^geonames_id^feat_class^feat_code"
     #print (hdr_line)
@@ -20,6 +25,50 @@ BEGIN {
     nb_of_geo_por = 0
 }
 
+
+##
+# File of country subdivisions (optd_country_states.csv)
+#
+# As Geonames have their own country subdivision encoding (sometimes, FIPS,
+# sometimes ISO 3166-2), OPTD have to maintain a mapping between those
+# Geonames country subdivion codes and ISO 3166-2 codes. Those mappings
+# are manually curated in the optd_country_states.csv (subsidiary) input file.
+# Sample lines:
+# ctry_code^geo_id^adm1_code^name_en^iso31662^abbr
+# BR^3455077^18^Paraná^PR^PR
+# AU^2147291^06^Tasmania^TAS^TAS
+# US^5481136^NM^New Mexico^NM^NM
+#
+# Sample lines:
+# ctry_code^geo_id^adm1_code^name_en^iso31662^abbr
+# BR^3455077^18^Paraná^PR^PR
+# AU^2147291^06^Tasmania^TAS^TAS
+# US^5481136^NM^New Mexico^NM^NM
+/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
+    # Country code
+    country_code = $1
+
+    # Geonames ID
+    geo_id = $2
+
+    # Administrative level 1 (adm1)
+    adm1_code = $3
+
+    # Country subdivision English name (used on the English Wikipedia)
+    name_en = $4
+
+    # ISO 3166-2 code
+    iso31662_code = $5
+
+    # Alternate state code (abbreviation)
+    state_code = $6
+
+    # Register the relationship between the adm1 code
+    # and the country subdivion details (name, ISO 3166-2 code, abbr)
+    ctry_iso31662code_list[country_code][adm1_code] = iso31662_code
+    ctry_iso31662name_list[country_code][adm1_code] = name_en
+    ctry_state_list[country_code][adm1_code] = state_code
+}
 
 ##
 # Geonames-derived data dump (dump_from_geonames.csv)
@@ -45,6 +94,16 @@ BEGIN {
     feat_class = $13
     feat_code = $14
 
+    # Country code
+    country_code = $9
+
+    # Administrative level 1 code
+    adm1_code = $15
+
+    # Country subdivision details
+    iso31662_code = ctry_iso31662code_list[country_code][adm1_code]
+    iso31662_name = ctry_iso31662name_list[country_code][adm1_code]
+
     # UN/LOCODE
     unlc_list = $34
 
@@ -53,9 +112,16 @@ BEGIN {
 	delete unlc_array
 	split (unlc_list, unlc_array, "=")
 	for (unlc_idx in unlc_array) {
+	    # Extract the UN/LOCODE
 	    unlc_str = unlc_array[unlc_idx]
 	    unlc = substr (unlc_str, 1, 5)
-	    print (unlc FS geo_lat FS geo_lon FS geonames_id FS feat_class FS feat_code)
+
+	    #
+	    output_line = unlc FS geo_lat FS geo_lon FS geonames_id
+	    output_line = output_line  FS feat_class FS feat_code
+	    
+	    #
+	    print (output_line)
 	}
     }
 }
