@@ -174,6 +174,25 @@ function displayLists() {
 }
 
 ##
+# Add thousand separator
+# There is a native AWK method, but it uses locale, and therefore depends
+# on settings not always available on all the platforms that program
+# is run on.
+# Reference:
+# https://unix.stackexchange.com/questions/249116/how-to-use-awk-to-format-numbers-with-a-thousands-separator
+function prettyPrint(__ppNb) {
+    __ppLength = length(__ppNb)
+    __ppGenStr = ""
+    for (i=0; i <= __ppLength; i++) {
+	__ppGenStr = substr(__ppNb, __ppLength-i+1, 1) __ppGenStr
+	if (i > 0 && i < __ppLength && i % 3 == 0) {
+	    __ppGenStr = "," __ppGenStr
+	}
+    }
+    return __ppGenStr
+}
+
+##
 # Support function to capitalise all the words of a given string
 function capitaliseWords(__cwInStr) {
     # Current string

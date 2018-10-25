@@ -152,11 +152,11 @@ function displayPOR() {
 ##
 # Add thousand separator
 # https://unix.stackexchange.com/questions/249116/how-to-use-awk-to-format-numbers-with-a-thousands-separator
-function prettyPrint(_ppNb) {
-    len = length(_ppNb)
+function prettyPrint(__ppNb) {
+    len = length(__ppNb)
     res = ""
     for (i=0; i <= len; i++) {
-	res = substr($0, len-i+1, 1) res
+	res = substr(__ppNb, len-i+1, 1) res
 	if (i > 0 && i < len && i % 3 == 0) {
 	    res = "," res
 	}
@@ -647,7 +647,7 @@ BEGIN {
 	    por_line_str = prettyPrint(por_line)
 	    nb_por_str = prettyPrint(nb_por)
 	    print ("[" awk_file "] " progress "% of the POR have been " \
-		   "processed, ie " por_line " POR over " nb_por \
+		   "processed, ie " por_line_str " POR over " nb_por_str \
 		   " in total")	> error_stream
 	}
 

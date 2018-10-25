@@ -135,8 +135,12 @@ BEGIN {
 ##
 # Progress report
 function displayProgress() {
-    print ("[" awk_file "] " FNR " POR have been processed, "		\
-	   "including " intorg_por_lines " IATA-referenced POR")	\
+    #
+    fnr_str = prettyPrint(FNR)
+    intorg_por_lines_str = prettyPrint(intorg_por_lines)
+    
+    print ("[" awk_file "] " fnr_str " POR have been processed, "	\
+	   "including " intorg_por_lines_str " IATA-referenced POR")	\
 	> error_stream
 }
 
