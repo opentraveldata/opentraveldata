@@ -243,7 +243,7 @@ BEGIN {
 # BR^3455077^18^Paraná^PR^PR
 # AU^2147291^06^Tasmania^TAS^TAS
 # US^5481136^NM^New Mexico^NM^NM
-/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
+/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[^0-9]+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
     # Country code
     country_code = $1
 

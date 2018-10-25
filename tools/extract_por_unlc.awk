@@ -44,7 +44,7 @@ BEGIN {
 # BR^3455077^18^Paraná^PR^PR
 # AU^2147291^06^Tasmania^TAS^TAS
 # US^5481136^NM^New Mexico^NM^NM
-/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[A-Z].+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
+/^[A-Z]{2}\^[0-9]+\^[0-9A-Z]+\^[^0-9]+\^[0-9A-Z]{1,3}\^[0-9A-Z]{1,3}$/ {
     # Country code
     country_code = $1
 
@@ -106,6 +106,15 @@ BEGIN {
 
     # UN/LOCODE
     unlc_list = $34
+
+    # DEBUG
+    unlc_dbg = "" # "VNOCL"
+    if (unlc_dbg != "" && match(unlc_list, unlc_dbg)) {
+	print ("[" awk_file "][" unlc_dbg "] geoid=" geonames_id	\
+	       ", feat=" feat_class "-" feat_code ", ctry=" country_code \
+	       ", adm1=" adm1_code ", iso3166=" iso31662_code "/" iso31662_name \
+	       ", unlc_list=" unlc_list) > error_stream
+    }
 
     if (unlc_list != "") {
 	# Browse the list of UN/LOCODE codes
