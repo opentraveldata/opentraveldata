@@ -1,0 +1,4417 @@
+iso;country;code;name;altname
+AD;Andorra;AD-02;Canillo;
+AD;Andorra;AD-03;Encamp;
+AD;Andorra;AD-04;La Massana;
+AD;Andorra;AD-05;Ordino;
+AD;Andorra;AD-06;Sant Julià de Lòria;
+AD;Andorra;AD-07;Andorra La Vella;
+AD;Andorra;AD-08;Escaldes-Engordany;
+AE;United Arab Emirates;AE-AJ;Ajman;
+AE;United Arab Emirates;AE-AZ;Abu Dhabi;
+AE;United Arab Emirates;AE-DU;Dubai;
+AE;United Arab Emirates;AE-FU;Fujairah;
+AE;United Arab Emirates;AE-RK;Ras Al Khaimah;
+AE;United Arab Emirates;AE-SH;Sharjah;
+AE;United Arab Emirates;AE-UQ;Um Al Quwain;
+AF;Afghanistan;AF-BAL;Balkh;
+AF;Afghanistan;AF-BAM;Bamyan;
+AF;Afghanistan;AF-BDG;Badghis;
+AF;Afghanistan;AF-BDS;Badakhshan;
+AF;Afghanistan;AF-BGL;Baghlan;
+AF;Afghanistan;AF-DAY;Daykundi;
+AF;Afghanistan;AF-FRA;Farah;
+AF;Afghanistan;AF-FYB;Faryab;
+AF;Afghanistan;AF-GHA;Ghazni;
+AF;Afghanistan;AF-GHO;Ghor;
+AF;Afghanistan;AF-HEL;Helmand;
+AF;Afghanistan;AF-HER;Herat;
+AF;Afghanistan;AF-JOW;Jowzjan;
+AF;Afghanistan;AF-KAB;Kabul;
+AF;Afghanistan;AF-KAN;Kandahar;
+AF;Afghanistan;AF-KAP;Kapisa;
+AF;Afghanistan;AF-KDZ;Kunduz;
+AF;Afghanistan;AF-KHO;Khost;
+AF;Afghanistan;AF-KNR;Kunar;
+AF;Afghanistan;AF-LAG;Laghman;
+AF;Afghanistan;AF-LOW;Logar;
+AF;Afghanistan;AF-NAN;Nangarhar;
+AF;Afghanistan;AF-NIM;Nimruz;
+AF;Afghanistan;AF-NUR;Nurestan;
+AF;Afghanistan;AF-ORU;Oruzgan;
+AF;Afghanistan;AF-PAN;Panjshir;
+AF;Afghanistan;AF-PAR;Parwan;
+AF;Afghanistan;AF-PIA;Paktia;
+AF;Afghanistan;AF-PKA;Paktika;
+AF;Afghanistan;AF-SAM;Samangan;
+AF;Afghanistan;AF-SAR;Sar-e Pol;
+AF;Afghanistan;AF-TAK;Takhar;
+AF;Afghanistan;AF-WAR;Wardak;
+AF;Afghanistan;AF-ZAB;Zabul;
+AG;Antigua and Barbuda;AG-03;Saint George;
+AG;Antigua and Barbuda;AG-04;Saint John's;
+AG;Antigua and Barbuda;AG-05;Saint Mary;
+AG;Antigua and Barbuda;AG-06;Saint Paul;
+AG;Antigua and Barbuda;AG-07;Saint Peter;
+AG;Antigua and Barbuda;AG-08;Saint Philip;
+AG;Antigua and Barbuda;AG-10;Barbuda;
+AG;Antigua and Barbuda;AG-11;Redonda;
+AL;Albania;AL-BR;Berat;
+AL;Albania;AL-BU;Bulqizë;
+AL;Albania;AL-DI;Dibër;
+AL;Albania;AL-DL;Delvinë;
+AL;Albania;AL-DR;Durrës;
+AL;Albania;AL-DV;Devoll;
+AL;Albania;AL-EL;Elbasan;
+AL;Albania;AL-ER;Kolonjë;
+AL;Albania;AL-FR;Fier;
+AL;Albania;AL-GJ;Gjirokastër;
+AL;Albania;AL-GR;Gramsh;
+AL;Albania;AL-HA;Has;
+AL;Albania;AL-KA;Kavajë;
+AL;Albania;AL-KB;Kurbin;
+AL;Albania;AL-KC;Kuçovë;
+AL;Albania;AL-KO;Korçë;
+AL;Albania;AL-KR;Krujë;
+AL;Albania;AL-KU;Kukës;
+AL;Albania;AL-LB;Librazhd;
+AL;Albania;AL-LE;Lezhë;
+AL;Albania;AL-LU;Lushnje;
+AL;Albania;AL-MK;Mallakastër;
+AL;Albania;AL-MM;Malësi e Madhe;
+AL;Albania;AL-MR;Mirditë;
+AL;Albania;AL-MT;Mat;
+AL;Albania;AL-PG;Pogradec;
+AL;Albania;AL-PQ;Peqin;
+AL;Albania;AL-PR;Përmet;
+AL;Albania;AL-PU;Pukë;
+AL;Albania;AL-SH;Shkodër;
+AL;Albania;AL-SK;Skrapar;
+AL;Albania;AL-SR;Sarandë;
+AL;Albania;AL-TE;Tepelenë;
+AL;Albania;AL-TP;Tropojë;
+AL;Albania;AL-TR;Tiranë;
+AL;Albania;AL-VL;Vlorë;
+AM;Armenia;AM-AG;Aragatsotn;Արագածոտն
+AM;Armenia;AM-AR;Ararat;Արարատ
+AM;Armenia;AM-AV;Armavir;Արմավիր
+AM;Armenia;AM-ER;Yerevan;Երեվան
+AM;Armenia;AM-GR;Gegharkunik;Գեղարքունիկ
+AM;Armenia;AM-KT;Kotayk;Կոտայք
+AM;Armenia;AM-LO;Lori;Լոռի
+AM;Armenia;AM-SH;Shirak;Շիրակ
+AM;Armenia;AM-SU;Syunik;Սյունիք
+AM;Armenia;AM-TV;Tavush;Տավուշ
+AM;Armenia;AM-VD;Vayots Dzor;Վայոց Ձոր
+AO;Angola;AO-BGO;Bengo;
+AO;Angola;AO-BGU;Benguela;
+AO;Angola;AO-BIE;Bié;
+AO;Angola;AO-CAB;Cabinda;
+AO;Angola;AO-CCU;Cuando Cubango;
+AO;Angola;AO-CNN;Cunene;
+AO;Angola;AO-CNO;Cuanza Norte;
+AO;Angola;AO-CUS;Cuanza Sul;
+AO;Angola;AO-HUA;Huambo;
+AO;Angola;AO-HUI;Huíla;
+AO;Angola;AO-LNO;Lunda Norte;
+AO;Angola;AO-LSU;Lunda Sul;
+AO;Angola;AO-LUA;Luanda;
+AO;Angola;AO-MAL;Malanje;
+AO;Angola;AO-MOX;Moxico;
+AO;Angola;AO-NAM;Namibe;
+AO;Angola;AO-UIG;Uíge;
+AO;Angola;AO-ZAI;Zaire;
+AR;Argentina;AR-A;Salta;
+AR;Argentina;AR-B;Buenos Aires;
+AR;Argentina;AR-C;Capital Federal;
+AR;Argentina;AR-D;San Luis;
+AR;Argentina;AR-E;Entre Ríos;
+AR;Argentina;AR-F;La Rioja;
+AR;Argentina;AR-G;Santiago del Estero;
+AR;Argentina;AR-H;Chaco;
+AR;Argentina;AR-J;San Juan;
+AR;Argentina;AR-K;Catamarca;
+AR;Argentina;AR-L;La Pampa;
+AR;Argentina;AR-M;Mendoza;
+AR;Argentina;AR-N;Misiones;
+AR;Argentina;AR-P;Formosa;
+AR;Argentina;AR-Q;Neuquén;
+AR;Argentina;AR-R;Río Negro;
+AR;Argentina;AR-S;Santa Fe;
+AR;Argentina;AR-T;Tucumán;
+AR;Argentina;AR-U;Chubut;
+AR;Argentina;AR-V;Tierra del Fuego;
+AR;Argentina;AR-W;Corrientes;
+AR;Argentina;AR-X;Córdoba;
+AR;Argentina;AR-Y;Jujuy;
+AR;Argentina;AR-Z;Santa Cruz;
+AT;Austria;AT-1;Burgenland;
+AT;Austria;AT-2;Kärnten;
+AT;Austria;AT-3;Niederösterreich;
+AT;Austria;AT-4;Oberösterreich;
+AT;Austria;AT-5;Salzburg;
+AT;Austria;AT-6;Steiermark;
+AT;Austria;AT-7;Tirol;
+AT;Austria;AT-8;Vorarlberg;
+AT;Austria;AT-9;Wien;
+AU;Australia;AU-ACT;Australian Capital Territory;
+AU;Australia;AU-NSW;New South Wales;
+AU;Australia;AU-NT;Northern Territory;
+AU;Australia;AU-QLD;Queensland;
+AU;Australia;AU-SA;South Australia;
+AU;Australia;AU-TAS;Tasmania;
+AU;Australia;AU-VIC;Victoria;
+AU;Australia;AU-WA;Western Australia;
+AZ;Azerbaijan;AZ-AB;Əli-Bayramlı;
+AZ;Azerbaijan;AZ-ABS;Abşeron;
+AZ;Azerbaijan;AZ-AGA;Ağstafa;
+AZ;Azerbaijan;AZ-AGC;Ağcabədi;
+AZ;Azerbaijan;AZ-AGM;Ağdam;
+AZ;Azerbaijan;AZ-AGS;Ağdaş;
+AZ;Azerbaijan;AZ-AGU;Ağsu;
+AZ;Azerbaijan;AZ-AST;Astara;
+AZ;Azerbaijan;AZ-BA;Bakı;
+AZ;Azerbaijan;AZ-BAB;Babək;
+AZ;Azerbaijan;AZ-BAL;Balakən;
+AZ;Azerbaijan;AZ-BAR;Bərdə;
+AZ;Azerbaijan;AZ-BEY;Beyləqan;
+AZ;Azerbaijan;AZ-BIL;Biləsuvar;
+AZ;Azerbaijan;AZ-CAB;Cəbrayıl;
+AZ;Azerbaijan;AZ-CAL;Cəlilabad;
+AZ;Azerbaijan;AZ-CUL;Culfa;
+AZ;Azerbaijan;AZ-DAS;Daşkəsən;
+AZ;Azerbaijan;AZ-DAV;Dəvəçi;
+AZ;Azerbaijan;AZ-FUZ;Füzuli;
+AZ;Azerbaijan;AZ-GA;Gəncə;
+AZ;Azerbaijan;AZ-GAD;Gədəbəy;
+AZ;Azerbaijan;AZ-GOR;Goranboy;
+AZ;Azerbaijan;AZ-GOY;Göyçay;
+AZ;Azerbaijan;AZ-HAC;Hacıqabul;
+AZ;Azerbaijan;AZ-IMI;İmişli;
+AZ;Azerbaijan;AZ-ISM;İsmayıllı;
+AZ;Azerbaijan;AZ-KAL;Kəlbəcər;
+AZ;Azerbaijan;AZ-KUR;Kürdəmir;
+AZ;Azerbaijan;AZ-LA;Lənkəran city;
+AZ;Azerbaijan;AZ-LAC;Laçın;
+AZ;Azerbaijan;AZ-LAN;Lənkəran;
+AZ;Azerbaijan;AZ-LER;Lerik;
+AZ;Azerbaijan;AZ-MAS;Masallı;
+AZ;Azerbaijan;AZ-MI;Mingəçevir;
+AZ;Azerbaijan;AZ-NA;Naftalan;
+AZ;Azerbaijan;AZ-NEF;Neftçala;
+AZ;Azerbaijan;AZ-NX;Naxçıvan;
+AZ;Azerbaijan;AZ-OGU;Oğuz;
+AZ;Azerbaijan;AZ-ORD;Ordubad;
+AZ;Azerbaijan;AZ-QAB;Qəbələ;
+AZ;Azerbaijan;AZ-QAX;Qax;
+AZ;Azerbaijan;AZ-QAZ;Qazax;
+AZ;Azerbaijan;AZ-QBA;Quba;
+AZ;Azerbaijan;AZ-QBI;Qubadlı;
+AZ;Azerbaijan;AZ-QOB;Qobustan;
+AZ;Azerbaijan;AZ-QUS;Qusar;
+AZ;Azerbaijan;AZ-SA;Şəki city;
+AZ;Azerbaijan;AZ-SAB;Sabirabad;
+AZ;Azerbaijan;AZ-SAD;Sədərək;
+AZ;Azerbaijan;AZ-SAH;Şahbuz;
+AZ;Azerbaijan;AZ-SAK;Şəki;
+AZ;Azerbaijan;AZ-SAL;Salyan;
+AZ;Azerbaijan;AZ-SAR;Şərur;
+AZ;Azerbaijan;AZ-SAT;Saatlı;
+AZ;Azerbaijan;AZ-SIY;Siyəzən;
+AZ;Azerbaijan;AZ-SKR;Şəmkir;
+AZ;Azerbaijan;AZ-SM;Sumqayit;
+AZ;Azerbaijan;AZ-SMI;Şamaxı;
+AZ;Azerbaijan;AZ-SMX;Samux;
+AZ;Azerbaijan;AZ-SS;Şuşa city;
+AZ;Azerbaijan;AZ-SUS;Şuşa;
+AZ;Azerbaijan;AZ-TAR;Tər-Tər;
+AZ;Azerbaijan;AZ-TOV;Tovuz;
+AZ;Azerbaijan;AZ-UCA;Ucar;
+AZ;Azerbaijan;AZ-XA;Xankəndi;
+AZ;Azerbaijan;AZ-XAC;Xaçmaz;
+AZ;Azerbaijan;AZ-XAN;Goygol;
+AZ;Azerbaijan;AZ-XCI;Xocalı;
+AZ;Azerbaijan;AZ-XIZ;Xızı;
+AZ;Azerbaijan;AZ-XVD;Xocavənd;
+AZ;Azerbaijan;AZ-YAR;Yardımlı;
+AZ;Azerbaijan;AZ-YE;Yevlax city;
+AZ;Azerbaijan;AZ-YEV;Yevlax;
+AZ;Azerbaijan;AZ-ZAN;Zəngilan;
+AZ;Azerbaijan;AZ-ZAQ;Zaqatala;
+AZ;Azerbaijan;AZ-ZAR;Zərdab;
+BA;Bosnia-Herzegovina;BA-BIH;Federacija Bosne i Hercegovine;
+BA;Bosnia-Herzegovina;BA-BRC;Brčko Distrikt;
+BA;Bosnia-Herzegovina;BA-SRP;Republika Srpska;
+BB;Barbados;BB-01;Christ Church;
+BB;Barbados;BB-02;Saint Andrew;
+BB;Barbados;BB-03;Saint George;
+BB;Barbados;BB-04;Saint James;
+BB;Barbados;BB-05;Saint John;
+BB;Barbados;BB-06;Saint Joseph;
+BB;Barbados;BB-07;Saint Lucy;
+BB;Barbados;BB-08;Saint Michael;
+BB;Barbados;BB-09;Saint Peter;
+BB;Barbados;BB-10;Saint Philip;
+BB;Barbados;BB-11;Saint Thomas;
+BD;Bangladesh;BD-01;Bandarban;
+BD;Bangladesh;BD-02;Barguna;
+BD;Bangladesh;BD-03;Bogra;
+BD;Bangladesh;BD-04;Brahmanbaria;
+BD;Bangladesh;BD-05;Bagerhat;
+BD;Bangladesh;BD-06;Barisal;
+BD;Bangladesh;BD-07;Bhola;
+BD;Bangladesh;BD-08;Comilla;
+BD;Bangladesh;BD-09;Chandpur;
+BD;Bangladesh;BD-10;Chittagong;
+BD;Bangladesh;BD-11;Cox's Bazar;
+BD;Bangladesh;BD-12;Chuadanga;
+BD;Bangladesh;BD-13;Dhaka;
+BD;Bangladesh;BD-14;Dinajpur;
+BD;Bangladesh;BD-15;Faridpur;
+BD;Bangladesh;BD-16;Feni;
+BD;Bangladesh;BD-17;Gopalganj;
+BD;Bangladesh;BD-18;Gazipur;
+BD;Bangladesh;BD-19;Gaibandha;
+BD;Bangladesh;BD-20;Hobiganj;
+BD;Bangladesh;BD-21;Jamalpur;
+BD;Bangladesh;BD-22;Jessore;
+BD;Bangladesh;BD-23;Jinaidaha;
+BD;Bangladesh;BD-24;Joypurhat;
+BD;Bangladesh;BD-25;Jhalokati;
+BD;Bangladesh;BD-26;Kishoreganj;
+BD;Bangladesh;BD-27;Khulna;
+BD;Bangladesh;BD-28;Kurigram;
+BD;Bangladesh;BD-29;Khagrachari;
+BD;Bangladesh;BD-30;Kustia;
+BD;Bangladesh;BD-31;Lakshmipur;
+BD;Bangladesh;BD-32;Lalmonirhat;
+BD;Bangladesh;BD-33;Manikganj;
+BD;Bangladesh;BD-34;Mymensingh;
+BD;Bangladesh;BD-35;Munshiganj;
+BD;Bangladesh;BD-36;Madaripur;
+BD;Bangladesh;BD-37;Magura;
+BD;Bangladesh;BD-38;Moulvibazar;
+BD;Bangladesh;BD-39;Meherpur;
+BD;Bangladesh;BD-40;Narayanganj;
+BD;Bangladesh;BD-41;Netrakona;
+BD;Bangladesh;BD-42;Narshingdi;
+BD;Bangladesh;BD-43;Narail;
+BD;Bangladesh;BD-44;Natore;
+BD;Bangladesh;BD-45;Chapai Nawabganj;
+BD;Bangladesh;BD-46;Nilphamari;
+BD;Bangladesh;BD-47;Noakhali;
+BD;Bangladesh;BD-48;Naogaon;
+BD;Bangladesh;BD-49;Pabna;
+BD;Bangladesh;BD-50;Pirojpur;
+BD;Bangladesh;BD-51;Potuakhali;
+BD;Bangladesh;BD-52;Panchagarh;
+BD;Bangladesh;BD-53;Rajbari;
+BD;Bangladesh;BD-54;Rajshahi;
+BD;Bangladesh;BD-55;Rangpur;
+BD;Bangladesh;BD-56;Rangamati;
+BD;Bangladesh;BD-57;Sherpur;
+BD;Bangladesh;BD-58;Satkhira;
+BD;Bangladesh;BD-59;Sirajganj;
+BD;Bangladesh;BD-60;Sylhet;
+BD;Bangladesh;BD-61;Sunamganj;
+BD;Bangladesh;BD-62;Shariatpur;
+BD;Bangladesh;BD-63;Tangail;
+BD;Bangladesh;BD-64;Thakurgaon;
+BE;Belgium;BE-BRU;Bruxelles-Capitale;Brussels Hoofdstedelijk Gewest
+BE;Belgium;BE-VAN;Anvers;Antwerpen
+BE;Belgium;BE-VBR;Brabant Flamand;Vlaams-Brabant
+BE;Belgium;BE-VLI;Limbourg;Limburg
+BE;Belgium;BE-VOV;Flandre Orientale;Oost-Vlaanderen
+BE;Belgium;BE-VWV;Flandre Occidentale;West-Vlaanderen
+BE;Belgium;BE-WBR;Brabant Wallon;Waals-Brabant
+BE;Belgium;BE-WHT;Hainaut;Henegouwen
+BE;Belgium;BE-WLG;Liège;Luik
+BE;Belgium;BE-WLX;Luxembourg;Luxemburg
+BE;Belgium;BE-WNA;Namur;Namen
+BF;Burkina Faso;BF-BAL;Balé;
+BF;Burkina Faso;BF-BAM;Bam;
+BF;Burkina Faso;BF-BAN;Banwa;
+BF;Burkina Faso;BF-BAZ;Bazèga;
+BF;Burkina Faso;BF-BGR;Bougouriba;
+BF;Burkina Faso;BF-BLG;Boulgou;
+BF;Burkina Faso;BF-BLK;Boulkiemdé;
+BF;Burkina Faso;BF-COM;Comoé;
+BF;Burkina Faso;BF-GAN;Ganzourgou;
+BF;Burkina Faso;BF-GNA;Gnagna;
+BF;Burkina Faso;BF-GOU;Gourma;
+BF;Burkina Faso;BF-HOU;Houet;
+BF;Burkina Faso;BF-IOB;Ioba;
+BF;Burkina Faso;BF-KAD;Kadiogo;
+BF;Burkina Faso;BF-KEN;Kénédougou;
+BF;Burkina Faso;BF-KMD;Komondjari;
+BF;Burkina Faso;BF-KMP;Kompienga;
+BF;Burkina Faso;BF-KOP;Koulpélogo;
+BF;Burkina Faso;BF-KOS;Kossi;
+BF;Burkina Faso;BF-KOT;Kouritenga;
+BF;Burkina Faso;BF-KOW;Kourwéogo;
+BF;Burkina Faso;BF-LER;Léraba;
+BF;Burkina Faso;BF-LOR;Loroum;
+BF;Burkina Faso;BF-MOU;Mouhoun;
+BF;Burkina Faso;BF-NAM;Namentenga;
+BF;Burkina Faso;BF-NAO;Nahouri;
+BF;Burkina Faso;BF-NAY;Nayala;
+BF;Burkina Faso;BF-NOU;Noumbiel;
+BF;Burkina Faso;BF-OUB;Oubritenga;
+BF;Burkina Faso;BF-OUD;Oudalan;
+BF;Burkina Faso;BF-PAS;Passoré;
+BF;Burkina Faso;BF-PON;Poni;
+BF;Burkina Faso;BF-SEN;Séno;
+BF;Burkina Faso;BF-SIS;Sissili;
+BF;Burkina Faso;BF-SMT;Sanmatenga;
+BF;Burkina Faso;BF-SNG;Sanguié;
+BF;Burkina Faso;BF-SOM;Soum;
+BF;Burkina Faso;BF-SOR;Sourou;
+BF;Burkina Faso;BF-TAP;Tapoa;
+BF;Burkina Faso;BF-TUI;Tui;
+BF;Burkina Faso;BF-YAG;Yagha;
+BF;Burkina Faso;BF-YAT;Yatenga;
+BF;Burkina Faso;BF-ZIR;Ziro;
+BF;Burkina Faso;BF-ZON;Zondoma;
+BF;Burkina Faso;BF-ZOU;Zoundwéogo;
+BG;Bulgaria;BG-01;Благоевград;Blagoevgrad
+BG;Bulgaria;BG-02;Бургас;Burgas
+BG;Bulgaria;BG-03;Варна;Varna
+BG;Bulgaria;BG-04;Велико Търново;Veliko Turnovo
+BG;Bulgaria;BG-05;Видин;Vidin
+BG;Bulgaria;BG-06;Враца;Vratsa
+BG;Bulgaria;BG-07;Габрово;Gabrovo
+BG;Bulgaria;BG-08;Добрич;Dobrich
+BG;Bulgaria;BG-09;Кърджали;Kurdzhali
+BG;Bulgaria;BG-10;Кюстендил;Kjustendil
+BG;Bulgaria;BG-11;Ловеч;Lovech
+BG;Bulgaria;BG-12;Монтана;Montana
+BG;Bulgaria;BG-13;Пазарджик;Pazardzhik
+BG;Bulgaria;BG-14;Перник;Pernik
+BG;Bulgaria;BG-15;Плевен;Pleven
+BG;Bulgaria;BG-16;Пловдив;Plovdiv
+BG;Bulgaria;BG-17;Разград;Razgrad
+BG;Bulgaria;BG-18;Русе;Ruse
+BG;Bulgaria;BG-19;Силистра;Silistra
+BG;Bulgaria;BG-20;Сливен;Sliven
+BG;Bulgaria;BG-21;Смолян;Smoljan
+BG;Bulgaria;BG-22;София-град;Sofia city
+BG;Bulgaria;BG-23;София;Sofia
+BG;Bulgaria;BG-24;Стара Загора;Stara Zagora
+BG;Bulgaria;BG-25;Търговище;Turgovishhe
+BG;Bulgaria;BG-26;Хасково;Khaskovo
+BG;Bulgaria;BG-27;Шумен;Shumen
+BG;Bulgaria;BG-28;Ямбол;Jambol
+BH;Bahrain;BH-13;Capital Governorate;
+BH;Bahrain;BH-14;Southern Governorate;
+BH;Bahrain;BH-15;Muharraq Governorate;
+BH;Bahrain;BH-16;Central Governorate;
+BH;Bahrain;BH-17;Northern Governorate;
+BI;Burundi;BI-BB;Bubanza;
+BI;Burundi;BI-BL;Bujumbura Rural;
+BI;Burundi;BI-BM;Bujumbura Mairie;
+BI;Burundi;BI-BR;Bururi;
+BI;Burundi;BI-CA;Cankuzo;
+BI;Burundi;BI-CI;Cibitoke;
+BI;Burundi;BI-GI;Gitega;
+BI;Burundi;BI-KI;Kirundo;
+BI;Burundi;BI-KR;Karuzi;
+BI;Burundi;BI-KY;Kayanza;
+BI;Burundi;BI-MA;Makamba;
+BI;Burundi;BI-MU;Muramvya;
+BI;Burundi;BI-MW;Mwaro;
+BI;Burundi;BI-MY;Muyinga;
+BI;Burundi;BI-NG;Ngozi;
+BI;Burundi;BI-RT;Rutana;
+BI;Burundi;BI-RY;Ruyigi;
+BJ;Benin;BJ-AK;Atacora;
+BJ;Benin;BJ-AL;Alibori;
+BJ;Benin;BJ-AQ;Atlantique;
+BJ;Benin;BJ-BO;Borgou;
+BJ;Benin;BJ-CO;Collines;
+BJ;Benin;BJ-DO;Donga;
+BJ;Benin;BJ-KO;Couffo;
+BJ;Benin;BJ-LI;Littoral;
+BJ;Benin;BJ-MO;Mono;
+BJ;Benin;BJ-OU;Ouémé;
+BJ;Benin;BJ-PL;Plateau;
+BJ;Benin;BJ-ZO;Zou;
+BN;Brunei;BN-BE;Belait;
+BN;Brunei;BN-BM;Brunei Muara;
+BN;Brunei;BN-TE;Temburong;
+BN;Brunei;BN-TU;Tutong;
+BO;Bolivia;BO-B;Beni;
+BO;Bolivia;BO-C;Cochabamba;
+BO;Bolivia;BO-H;Chuquisaca;
+BO;Bolivia;BO-L;La Paz;
+BO;Bolivia;BO-N;Pando;
+BO;Bolivia;BO-O;Oruro;
+BO;Bolivia;BO-P;Potosí;
+BO;Bolivia;BO-S;Santa Cruz;
+BO;Bolivia;BO-T;Tarija;
+BR;Brazil;BR-AC;Acre;
+BR;Brazil;BR-AL;Alagoas;
+BR;Brazil;BR-AM;Amazonas;
+BR;Brazil;BR-AP;Amapá;
+BR;Brazil;BR-BA;Bahia;
+BR;Brazil;BR-CE;Ceará;
+BR;Brazil;BR-DF;Distrito Federal;
+BR;Brazil;BR-ES;Espírito Santo;
+BR;Brazil;BR-GO;Goiás;
+BR;Brazil;BR-MA;Maranhão;
+BR;Brazil;BR-MG;Minas Gerais;
+BR;Brazil;BR-MS;Mato Grosso do Sul;
+BR;Brazil;BR-MT;Mato Grosso;
+BR;Brazil;BR-PA;Pará;
+BR;Brazil;BR-PB;Paraíba;
+BR;Brazil;BR-PE;Pernambuco;
+BR;Brazil;BR-PI;Piauí;
+BR;Brazil;BR-PR;Paraná;
+BR;Brazil;BR-RJ;Rio de Janeiro;
+BR;Brazil;BR-RN;Rio Grande do Norte;
+BR;Brazil;BR-RO;Rondônia;
+BR;Brazil;BR-RR;Roraima;
+BR;Brazil;BR-RS;Rio Grande do Sul;
+BR;Brazil;BR-SC;Santa Catarina;
+BR;Brazil;BR-SE;Sergipe;
+BR;Brazil;BR-SP;São Paulo;
+BR;Brazil;BR-TO;Tocantins;
+BS;Bahamas;BS-AC;Acklins and Crooked Islands;
+BS;Bahamas;BS-BI;Bimini;
+BS;Bahamas;BS-CI;Cat Island;
+BS;Bahamas;BS-EX;Exuma;
+BS;Bahamas;BS-FC;Fresh Creek;
+BS;Bahamas;BS-FP;Freeport;
+BS;Bahamas;BS-GH;Governor's Harbour;
+BS;Bahamas;BS-GT;Green Turtle Cay;
+BS;Bahamas;BS-HI;Harbour Island;
+BS;Bahamas;BS-HR;High Rock;
+BS;Bahamas;BS-IN;Inagua;
+BS;Bahamas;BS-KB;Kemps Bay;
+BS;Bahamas;BS-LI;Long Island;
+BS;Bahamas;BS-MG;Mayaguana;
+BS;Bahamas;BS-MH;Marsh Harbour;
+BS;Bahamas;BS-NB;Nicholls Town and Berry Islands;
+BS;Bahamas;BS-NP;New Providence;
+BS;Bahamas;BS-RI;Ragged Island;
+BS;Bahamas;BS-RS;Rock Sound;
+BS;Bahamas;BS-SP;Sandy Point;
+BS;Bahamas;BS-SR;San Salvador and Rum Cay;
+BT;Bhutan;BT-11;Paro;
+BT;Bhutan;BT-12;Chhukha;
+BT;Bhutan;BT-13;Ha;
+BT;Bhutan;BT-14;Samtse;
+BT;Bhutan;BT-15;Thimphu;
+BT;Bhutan;BT-21;Tsirang;
+BT;Bhutan;BT-22;Dagana;
+BT;Bhutan;BT-23;Punakha;
+BT;Bhutan;BT-24;Wangdue Phodrang;
+BT;Bhutan;BT-31;Sarpang;
+BT;Bhutan;BT-32;Trongsa;
+BT;Bhutan;BT-33;Bumthang;
+BT;Bhutan;BT-34;Zhemgang;
+BT;Bhutan;BT-41;Trashigang;
+BT;Bhutan;BT-42;Mongar;
+BT;Bhutan;BT-43;Pemagatshel;
+BT;Bhutan;BT-44;Lhuntse;
+BT;Bhutan;BT-45;Samdrup Jongkhar;
+BT;Bhutan;BT-GA;Gasa;
+BT;Bhutan;BT-TY;Trashiyangtse;
+BW;Botswana;BW-CE;Central;
+BW;Botswana;BW-GH;Ghanzi;
+BW;Botswana;BW-KG;Kgalagadi;
+BW;Botswana;BW-KL;Kgatleng;
+BW;Botswana;BW-KW;Kweneng;
+BW;Botswana;BW-NE;North-East;
+BW;Botswana;BW-NW;North-West;
+BW;Botswana;BW-SE;South-East;
+BW;Botswana;BW-SO;Southern;
+BY;Belarus;BY-BR;Брестская область;Brest voblast
+BY;Belarus;BY-HO;Гомельская область;Homiel voblast
+BY;Belarus;BY-HR;Гродненская область;Hrodna voblast
+BY;Belarus;BY-MA;Могилёвская область;Mahilyow voblast
+BY;Belarus;BY-MI;Минская область;Minsk voblast
+BY;Belarus;BY-VI;Витебская область;Vitsebsk voblast
+BZ;Belize;BZ-BZ;Belize;
+BZ;Belize;BZ-CY;Cayo;
+BZ;Belize;BZ-CZL;Corozal;
+BZ;Belize;BZ-OW;Orange Walk;
+BZ;Belize;BZ-SC;Stann Creek;
+BZ;Belize;BZ-TOL;Toledo;
+CA;Canada;CA-AB;Alberta;
+CA;Canada;CA-BC;British Columbia / Colombie Britanique;
+CA;Canada;CA-MB;Manitoba;
+CA;Canada;CA-NB;New Brunswick / Nouveau-Brunswick;
+CA;Canada;CA-NL;Newfoundland & Labrador / Terre-Neuve-et-Labrador;
+CA;Canada;CA-NS;Nova Scotia / Nouvelle-Écosse;
+CA;Canada;CA-NT;Northwest Territories;
+CA;Canada;CA-NU;Nunavut;
+CA;Canada;CA-ON;Ontario;
+CA;Canada;CA-PE;Prince Edward Island / Île-du-Prince-Édouard;
+CA;Canada;CA-QC;Quebec / Québec;
+CA;Canada;CA-SK;Saskatchewan;
+CA;Canada;CA-YT;Yukon;
+CD;Congo D.R.;CD-BC;Bas-Congo;
+CD;Congo D.R.;CD-BN;Bandundu;
+CD;Congo D.R.;CD-EQ;Équateur;
+CD;Congo D.R.;CD-KA;Katanga;
+CD;Congo D.R.;CD-KE;Kasai-Oriental;
+CD;Congo D.R.;CD-KN;Kinshasa;
+CD;Congo D.R.;CD-KW;Kasai-Occidental;
+CD;Congo D.R.;CD-MA;Maniema;
+CD;Congo D.R.;CD-NK;Nord-Kivu;
+CD;Congo D.R.;CD-OR;Orientale;
+CD;Congo D.R.;CD-SK;Sud-Kivu;
+CF;Central African Rep.;CF-AC;Ouham;
+CF;Central African Rep.;CF-BB;Bamingui-Bangoran;
+CF;Central African Rep.;CF-BGF;Bangui;
+CF;Central African Rep.;CF-BK;Basse-Kotto;
+CF;Central African Rep.;CF-HK;Haute-Kotto;
+CF;Central African Rep.;CF-HM;Haut-Mbomou;
+CF;Central African Rep.;CF-HS;Mambéré-Kadéï;
+CF;Central African Rep.;CF-KB;Nana-Grébizi;
+CF;Central African Rep.;CF-KG;Kémo;
+CF;Central African Rep.;CF-LB;Lobaye;
+CF;Central African Rep.;CF-MB;Mbomou;
+CF;Central African Rep.;CF-MP;Ombella-Mpoko;
+CF;Central African Rep.;CF-NM;Nana-Mambéré;
+CF;Central African Rep.;CF-OP;Ouham-Pendé;
+CF;Central African Rep.;CF-SE;Sangha-Mbaéré;
+CF;Central African Rep.;CF-UK;Ouaka;
+CF;Central African Rep.;CF-VK;Vakaga;
+CG;Congo;CG-11;Bouenza;
+CG;Congo;CG-12;Pool;
+CG;Congo;CG-13;Sangha;
+CG;Congo;CG-14;Plateaux;
+CG;Congo;CG-15;Cuvette-Ouest;
+CG;Congo;CG-2;Lékoumou;
+CG;Congo;CG-5;Kouilou;
+CG;Congo;CG-7;Likouala;
+CG;Congo;CG-8;Cuvette;
+CG;Congo;CG-9;Niari;
+CG;Congo;CG-BZV;Brazzaville;
+CH;Switzerland;CH-AG;Aargau;Argovie
+CH;Switzerland;CH-AI;Appenzell Innerrhoden;Appenzell Rhodes-Intérieures
+CH;Switzerland;CH-AR;Appenzell Ausserrhoden;Appenzell Rhodes-Extérieures
+CH;Switzerland;CH-BE;Bern;Berne
+CH;Switzerland;CH-BL;Basel-Landschaft;Bâle-Campagne
+CH;Switzerland;CH-BS;Basel-Stadt;Bâle-Ville
+CH;Switzerland;CH-FR;Freiburg;Fribourg
+CH;Switzerland;CH-GE;Genf;Genève
+CH;Switzerland;CH-GL;Glarus;Glaris
+CH;Switzerland;CH-GR;Graubünden;Grisons
+CH;Switzerland;CH-JU;Jura;Jura
+CH;Switzerland;CH-LU;Luzern;Lucerne
+CH;Switzerland;CH-NE;Neuenburg;Neuchâtel
+CH;Switzerland;CH-NW;Nidwalden;Nidwald
+CH;Switzerland;CH-OW;Obwalden;Obwald
+CH;Switzerland;CH-SG;Sankt Gallen;Saint-Gall
+CH;Switzerland;CH-SH;Schaffhausen;Schaffhouse
+CH;Switzerland;CH-SO;Solothurn;Soleure
+CH;Switzerland;CH-SZ;Schwyz;Schwytz
+CH;Switzerland;CH-TG;Thurgau;Thurgovie
+CH;Switzerland;CH-TI;Ticino;Tessin
+CH;Switzerland;CH-UR;Uri;Uri
+CH;Switzerland;CH-VD;Waadt;Vaud
+CH;Switzerland;CH-VS;Wallis;Valais
+CH;Switzerland;CH-ZG;Zug;Zug
+CH;Switzerland;CH-ZH;Zürich;Zurich
+CI;Côte d'Ivoire;CI-01;Lagunes;
+CI;Côte d'Ivoire;CI-02;Haut-Sassandra;
+CI;Côte d'Ivoire;CI-03;Savanes;
+CI;Côte d'Ivoire;CI-04;Vallée du Bandama;
+CI;Côte d'Ivoire;CI-05;Moyen-Comoé;
+CI;Côte d'Ivoire;CI-06;Dix-huit Montagnes;
+CI;Côte d'Ivoire;CI-07;Lacs;
+CI;Côte d'Ivoire;CI-08;Zanzan;
+CI;Côte d'Ivoire;CI-09;Bas-Sassandra;
+CI;Côte d'Ivoire;CI-10;Denguélé;
+CI;Côte d'Ivoire;CI-11;N'zi-Comoé;
+CI;Côte d'Ivoire;CI-12;Marahoué;
+CI;Côte d'Ivoire;CI-13;Sud-Comoé;
+CI;Côte d'Ivoire;CI-14;Worodougou;
+CI;Côte d'Ivoire;CI-15;Sud-Bandama;
+CI;Côte d'Ivoire;CI-16;Agnéby;
+CI;Côte d'Ivoire;CI-17;Bafing;
+CI;Côte d'Ivoire;CI-18;Fromager;
+CI;Côte d'Ivoire;CI-19;Moyen-Cavally;
+CL;Chile;CL-AI;Aysen del General Carlos Ibáñez del Campo;
+CL;Chile;CL-AN;Antofagasta;
+CL;Chile;CL-AP;Arica y Parinacota;
+CL;Chile;CL-AR;La Araucanía;
+CL;Chile;CL-AT;Atacama;
+CL;Chile;CL-BI;Bío-Bío;
+CL;Chile;CL-CO;Coquimbo;
+CL;Chile;CL-LI;Libertador General Bernardo O'Higgins;
+CL;Chile;CL-LL;Los Lagos;
+CL;Chile;CL-LR;Los Ríos;
+CL;Chile;CL-MA;Magallanes y de La Antártica Chilena;
+CL;Chile;CL-ML;Maule;
+CL;Chile;CL-RM;Región Metropolitana de Santiago;
+CL;Chile;CL-TA;Tarapacá;
+CL;Chile;CL-VS;Valparaíso;
+CM;Cameroon;CM-AD;Adamaoua;
+CM;Cameroon;CM-CE;Centre;
+CM;Cameroon;CM-EN;Extrême-Nord;
+CM;Cameroon;CM-ES;Est;
+CM;Cameroon;CM-LT;Littoral;
+CM;Cameroon;CM-NO;Nord;
+CM;Cameroon;CM-NW;Nord-Ouest;
+CM;Cameroon;CM-OU;Ouest;
+CM;Cameroon;CM-SU;Sud;
+CM;Cameroon;CM-SW;Sud-Ouest;
+CN;China;CN-11;Beijing;北京
+CN;China;CN-12;Tianjin;天津
+CN;China;CN-13;Hebei;河北
+CN;China;CN-14;Shanxi;山西
+CN;China;CN-15;Inner Mongolia;内蒙古
+CN;China;CN-21;Liaoning;辽宁
+CN;China;CN-22;Jilin;吉林
+CN;China;CN-23;Heilongjiang;黑龙江
+CN;China;CN-31;Shanghai;上海
+CN;China;CN-32;Jiangsu;江苏
+CN;China;CN-33;Zhejiang;浙江
+CN;China;CN-34;Anhui;安徽
+CN;China;CN-35;Fujian;福建
+CN;China;CN-36;Jiangxi;江西
+CN;China;CN-37;Shandong;山东
+CN;China;CN-41;Henan;河南
+CN;China;CN-42;Hubei;湖北
+CN;China;CN-43;Hunan;湖南
+CN;China;CN-44;Guangdong;广东
+CN;China;CN-45;Guangxi;广西
+CN;China;CN-46;Hainan;海南
+CN;China;CN-50;Chongqing;重庆
+CN;China;CN-51;Sichuan;四川
+CN;China;CN-52;Guizhou;贵州
+CN;China;CN-53;Yunnan;云南
+CN;China;CN-54;Tibet;西藏
+CN;China;CN-61;Shaanxi;陕西
+CN;China;CN-62;Gansu;甘肃
+CN;China;CN-63;Qinghai;青海
+CN;China;CN-64;Ningxia;宁夏
+CN;China;CN-65;Xinjiang;新疆
+CN;China;CN-91;Hong Kong;香港
+CN;China;CN-92;Macau;澳門
+CO;Colombia;CO-AMA;Amazonas;
+CO;Colombia;CO-ANT;Antioquia;
+CO;Colombia;CO-ARA;Arauca;
+CO;Colombia;CO-ATL;Atlántico;
+CO;Colombia;CO-BOL;Bolívar;
+CO;Colombia;CO-BOY;Boyacá;
+CO;Colombia;CO-CAL;Caldas;
+CO;Colombia;CO-CAQ;Caquetá;
+CO;Colombia;CO-CAS;Casanare;
+CO;Colombia;CO-CAU;Cauca;
+CO;Colombia;CO-CES;Cesar;
+CO;Colombia;CO-CHO;Chocó;
+CO;Colombia;CO-COR;Córdoba;
+CO;Colombia;CO-CUN;Cundinamarca;
+CO;Colombia;CO-DC;Bogotá D.C.;
+CO;Colombia;CO-GUA;Guainía;
+CO;Colombia;CO-GUV;Guaviare;
+CO;Colombia;CO-HUI;Huila;
+CO;Colombia;CO-LAG;La Guajira;
+CO;Colombia;CO-MAG;Magdalena;
+CO;Colombia;CO-MET;Meta;
+CO;Colombia;CO-NAR;Nariño;
+CO;Colombia;CO-NSA;Norte de Santander;
+CO;Colombia;CO-PUT;Putumayo;
+CO;Colombia;CO-QUI;Quindío;
+CO;Colombia;CO-RIS;Risaralda;
+CO;Colombia;CO-SAN;Santander;
+CO;Colombia;CO-SAP;Archipiélago de San Andrés;
+CO;Colombia;CO-SUC;Sucre;
+CO;Colombia;CO-TOL;Tolima;
+CO;Colombia;CO-VAC;Valle del Cauca;
+CO;Colombia;CO-VAU;Vaupés;
+CO;Colombia;CO-VID;Vichada;
+CR;Costa Rica;CR-A;Alajuela;
+CR;Costa Rica;CR-C;Cartago;
+CR;Costa Rica;CR-G;Guanacaste;
+CR;Costa Rica;CR-H;Heredia;
+CR;Costa Rica;CR-L;Limón;
+CR;Costa Rica;CR-P;Puntarenas;
+CR;Costa Rica;CR-SJ;San José;
+CU;Cuba;CU-01;Pinar del Río;
+CU;Cuba;CU-02;La Habana;
+CU;Cuba;CU-03;Ciudad de La Habana;
+CU;Cuba;CU-04;Matanzas;
+CU;Cuba;CU-05;Villa Clara;
+CU;Cuba;CU-06;Cienfuegos;
+CU;Cuba;CU-07;Sancti Spíritus;
+CU;Cuba;CU-08;Ciego de Ávila;
+CU;Cuba;CU-09;Camagüey;
+CU;Cuba;CU-10;Las Tunas;
+CU;Cuba;CU-11;Holguín;
+CU;Cuba;CU-12;Granma;
+CU;Cuba;CU-13;Santiago de Cuba;
+CU;Cuba;CU-14;Guantánamo;
+CU;Cuba;CU-99;Isla de la Juventud;
+CV;Cape Verde;CV-BR;Brava;
+CV;Cape Verde;CV-BV;Boa Vista;
+CV;Cape Verde;CV-CA;Santa Catarina;
+CV;Cape Verde;CV-CF;Santa Catarina do Fogo;
+CV;Cape Verde;CV-CM;São Miguel;
+CV;Cape Verde;CV-CR;Santa Cruz;
+CV;Cape Verde;CV-MA;Maio;
+CV;Cape Verde;CV-MO;Mosteiros;
+CV;Cape Verde;CV-PA;Paúl;
+CV;Cape Verde;CV-PN;Porto Novo;
+CV;Cape Verde;CV-PR;Praia;
+CV;Cape Verde;CV-RB;Ribeira Brava;
+CV;Cape Verde;CV-RG;Ribeira Grande;
+CV;Cape Verde;CV-RS;Ribeira Grande de Santiago;
+CV;Cape Verde;CV-SD;São Domingos;
+CV;Cape Verde;CV-SF;São Filipe;
+CV;Cape Verde;CV-SL;Sal;
+CV;Cape Verde;CV-SO;São Lourenço dos Órgãos;
+CV;Cape Verde;CV-SS;São Salvador do Mundo;
+CV;Cape Verde;CV-SV;São Vicente;
+CV;Cape Verde;CV-TA;Tarrafal;
+CV;Cape Verde;CV-TS;Tarrafal de São Nicolau;
+CY;Cyprus;CY-01;Λευκωσία;Lefkosia
+CY;Cyprus;CY-02;Λεμεσός;Lemesos
+CY;Cyprus;CY-03;Λάρνακα;Larnaka
+CY;Cyprus;CY-04;Αμμόχωστος;Ammochostos
+CY;Cyprus;CY-05;Πάφος;Pafos
+CY;Cyprus;CY-06;Κερύνεια;Keryneia
+CZ;Czech Republic;CZ-JC;Jihočeský kraj;
+CZ;Czech Republic;CZ-JM;Jihomoravský kraj;
+CZ;Czech Republic;CZ-KA;Karlovarský kraj;
+CZ;Czech Republic;CZ-KR;Královéhradecký kraj;
+CZ;Czech Republic;CZ-LI;Liberecký kraj;
+CZ;Czech Republic;CZ-MO;Moravskoslezský kraj;
+CZ;Czech Republic;CZ-OL;Olomoucký kraj;
+CZ;Czech Republic;CZ-PA;Pardubický kraj;
+CZ;Czech Republic;CZ-PL;Plzeňský kraj;
+CZ;Czech Republic;CZ-PR;Hlavní město Praha;
+CZ;Czech Republic;CZ-ST;Středočeský kraj;
+CZ;Czech Republic;CZ-US;Ústecký kraj;
+CZ;Czech Republic;CZ-VY;Vysočina;
+CZ;Czech Republic;CZ-ZL;Zlínský kraj;
+DE;Germany;DE-BB;Brandenburg;
+DE;Germany;DE-BE;Berlin;
+DE;Germany;DE-BW;Baden-Württemberg;
+DE;Germany;DE-BY;Bayern;
+DE;Germany;DE-HB;Bremen;
+DE;Germany;DE-HE;Hessen;
+DE;Germany;DE-HH;Hamburg;
+DE;Germany;DE-MV;Mecklenburg-Vorpommern;
+DE;Germany;DE-NI;Niedersachsen;
+DE;Germany;DE-NW;Nordrhein-Westfalen;
+DE;Germany;DE-RP;Rheinland-Pfalz;
+DE;Germany;DE-SH;Schleswig-Holstein;
+DE;Germany;DE-SL;Saarland;
+DE;Germany;DE-SN;Sachsen;
+DE;Germany;DE-ST;Sachsen-Anhalt;
+DE;Germany;DE-TH;Thüringen;
+DJ;Djibouti;DJ-AR;Arta;
+DJ;Djibouti;DJ-AS;Ali Sabieh;
+DJ;Djibouti;DJ-DI;Dikhil;
+DJ;Djibouti;DJ-DJ;Djibouti;
+DJ;Djibouti;DJ-OB;Obock;
+DJ;Djibouti;DJ-TA;Tadjourah;
+DK;Denmark;DK-81;Nordjylland;
+DK;Denmark;DK-82;Midtjylland;
+DK;Denmark;DK-83;Syddanmark;
+DK;Denmark;DK-84;Hovedstaden;
+DK;Denmark;DK-85;Sjælland;
+DM;Dominica;DM-02;Saint Andrew;
+DM;Dominica;DM-03;Saint David;
+DM;Dominica;DM-04;Saint George;
+DM;Dominica;DM-05;Saint John;
+DM;Dominica;DM-06;Saint Joseph;
+DM;Dominica;DM-07;Saint Luke;
+DM;Dominica;DM-08;Saint Mark;
+DM;Dominica;DM-09;Saint Patrick;
+DM;Dominica;DM-10;Saint Paul;
+DM;Dominica;DM-11;Saint Peter;
+DO;Dominican Republic;DO-01;Distrito Nacional (Santo Domingo);
+DO;Dominican Republic;DO-02;Azua;
+DO;Dominican Republic;DO-03;Bahoruco;
+DO;Dominican Republic;DO-04;Barahona;
+DO;Dominican Republic;DO-05;Dajabón;
+DO;Dominican Republic;DO-06;Duarte;
+DO;Dominican Republic;DO-07;Elías Piña;
+DO;Dominican Republic;DO-08;El Seibo;
+DO;Dominican Republic;DO-09;Espaillat;
+DO;Dominican Republic;DO-10;Independencia;
+DO;Dominican Republic;DO-11;La Altagracia;
+DO;Dominican Republic;DO-12;La Romana;
+DO;Dominican Republic;DO-13;La Vega;
+DO;Dominican Republic;DO-14;María Trinidad Sánchez;
+DO;Dominican Republic;DO-15;Monte Cristi;
+DO;Dominican Republic;DO-16;Pedernales;
+DO;Dominican Republic;DO-17;Peravia;
+DO;Dominican Republic;DO-18;Puerto Plata;
+DO;Dominican Republic;DO-19;Hermanas Mirabal;
+DO;Dominican Republic;DO-20;Samaná;
+DO;Dominican Republic;DO-21;San Cristóbal;
+DO;Dominican Republic;DO-22;San Juan;
+DO;Dominican Republic;DO-23;San Pedro de Macorís;
+DO;Dominican Republic;DO-24;Sánchez Ramírez;
+DO;Dominican Republic;DO-25;Santiago;
+DO;Dominican Republic;DO-26;Santiago Rodríguez;
+DO;Dominican Republic;DO-27;Valverde;
+DO;Dominican Republic;DO-28;Monseñor Nouel;
+DO;Dominican Republic;DO-29;Monte Plata;
+DO;Dominican Republic;DO-30;Hato Mayor;
+DO;Dominican Republic;DO-31;San José de Ocoa;
+DO;Dominican Republic;DO-32;Santo Domingo;
+DZ;Algeria;DZ-01;Adrar;
+DZ;Algeria;DZ-02;Chlef;
+DZ;Algeria;DZ-03;Laghouat;
+DZ;Algeria;DZ-04;Oum-El-Bouaghi;
+DZ;Algeria;DZ-05;Batna;
+DZ;Algeria;DZ-06;Béjaïa;
+DZ;Algeria;DZ-07;Biskra;
+DZ;Algeria;DZ-08;Béchar;
+DZ;Algeria;DZ-09;Blida;
+DZ;Algeria;DZ-10;Bouira;
+DZ;Algeria;DZ-11;Tamanrasset;
+DZ;Algeria;DZ-12;Tébessa;
+DZ;Algeria;DZ-13;Tlemcen;
+DZ;Algeria;DZ-14;Tiaret;
+DZ;Algeria;DZ-15;Tizi-Ouzou;
+DZ;Algeria;DZ-16;Alger;
+DZ;Algeria;DZ-17;Djelfa;
+DZ;Algeria;DZ-18;Jijel;
+DZ;Algeria;DZ-19;Sétif;
+DZ;Algeria;DZ-20;Saida;
+DZ;Algeria;DZ-21;Skikda;
+DZ;Algeria;DZ-22;Sidi-Bel-Abbès;
+DZ;Algeria;DZ-23;Annaba;
+DZ;Algeria;DZ-24;Guelma;
+DZ;Algeria;DZ-25;Constantine;
+DZ;Algeria;DZ-26;Médéa;
+DZ;Algeria;DZ-27;Mostaganem;
+DZ;Algeria;DZ-28;M'Sila;
+DZ;Algeria;DZ-29;Mascara;
+DZ;Algeria;DZ-30;Ouargla;
+DZ;Algeria;DZ-31;Oran;
+DZ;Algeria;DZ-32;El-Bayadh;
+DZ;Algeria;DZ-33;Illizi;
+DZ;Algeria;DZ-34;Bordj-Bou-Arreridj;
+DZ;Algeria;DZ-35;Boumerdès;
+DZ;Algeria;DZ-36;El-Taref;
+DZ;Algeria;DZ-37;Tindouf;
+DZ;Algeria;DZ-38;Tissemsilt;
+DZ;Algeria;DZ-39;El-Oued;
+DZ;Algeria;DZ-40;Khenchela;
+DZ;Algeria;DZ-41;Souk-Ahras;
+DZ;Algeria;DZ-42;Tipaza;
+DZ;Algeria;DZ-43;Mila;
+DZ;Algeria;DZ-44;Aïn-Defla;
+DZ;Algeria;DZ-45;Naâma;
+DZ;Algeria;DZ-46;Aïn-Témouchent;
+DZ;Algeria;DZ-47;Ghardaia;
+DZ;Algeria;DZ-48;Relizane;
+EC;Ecuador;EC-A;Azuay;
+EC;Ecuador;EC-B;Bolívar;
+EC;Ecuador;EC-C;Carchi;
+EC;Ecuador;EC-D;Orellana;
+EC;Ecuador;EC-E;Esmeraldas;
+EC;Ecuador;EC-F;Cañar;
+EC;Ecuador;EC-G;Guayas;
+EC;Ecuador;EC-H;Chimborazo;
+EC;Ecuador;EC-I;Imbabura;
+EC;Ecuador;EC-L;Loja;
+EC;Ecuador;EC-M;Manabí;
+EC;Ecuador;EC-N;Napo;
+EC;Ecuador;EC-O;El Oro;
+EC;Ecuador;EC-P;Pichincha;
+EC;Ecuador;EC-R;Los Ríos;
+EC;Ecuador;EC-S;Morona-Santiago;
+EC;Ecuador;EC-SD;Santo Domingo de los Tsáchilas;
+EC;Ecuador;EC-SE;Santa Elena;
+EC;Ecuador;EC-T;Tungurahua;
+EC;Ecuador;EC-U;Sucumbíos;
+EC;Ecuador;EC-W;Galápagos;
+EC;Ecuador;EC-X;Cotopaxi;
+EC;Ecuador;EC-Y;Pastaza;
+EC;Ecuador;EC-Z;Zamora-Chinchipe;
+EE;Estonia;EE-37;Harjumaa;
+EE;Estonia;EE-39;Hiiumaa;
+EE;Estonia;EE-44;Ida-Virumaa;
+EE;Estonia;EE-49;Jõgevamaa;
+EE;Estonia;EE-51;Järvamaa;
+EE;Estonia;EE-57;Läänemaa;
+EE;Estonia;EE-59;Lääne-Virumaa;
+EE;Estonia;EE-65;Põlvamaa;
+EE;Estonia;EE-67;Pärnumaa;
+EE;Estonia;EE-70;Raplamaa;
+EE;Estonia;EE-74;Saaremaa;
+EE;Estonia;EE-78;Tartumaa;
+EE;Estonia;EE-82;Valgamaa;
+EE;Estonia;EE-84;Viljandimaa;
+EE;Estonia;EE-86;Võrumaa;
+EG;Egypt;EG-ALX;Alexandria;
+EG;Egypt;EG-ASN;Aswan;
+EG;Egypt;EG-AST;Asyut;
+EG;Egypt;EG-BA;Red Sea;
+EG;Egypt;EG-BH;Beheira;
+EG;Egypt;EG-BNS;Beni Suef;
+EG;Egypt;EG-C;Cairo;
+EG;Egypt;EG-DK;Dakahlia;
+EG;Egypt;EG-DT;Damietta;
+EG;Egypt;EG-FYM;Faiyum;
+EG;Egypt;EG-GH;Gharbia;
+EG;Egypt;EG-GZ;Giza;
+EG;Egypt;EG-HU;Hulwan;
+EG;Egypt;EG-IS;Ismailia;
+EG;Egypt;EG-JS;South Sinai;
+EG;Egypt;EG-KB;Qalyubia;
+EG;Egypt;EG-KFS;Kafr el-Sheikh;
+EG;Egypt;EG-KN;Qena;
+EG;Egypt;EG-LX;Luxor;
+EG;Egypt;EG-MN;Minya;
+EG;Egypt;EG-MNF;Monufia;
+EG;Egypt;EG-MT;Matruh;
+EG;Egypt;EG-PTS;Port Said;
+EG;Egypt;EG-SHG;Sohag;
+EG;Egypt;EG-SHR;Sharqia;
+EG;Egypt;EG-SIN;North Sinai;
+EG;Egypt;EG-SU;As Sadis min Uktubar;
+EG;Egypt;EG-SUZ;Suez;
+EG;Egypt;EG-WAD;New Valley;
+EH;Western Sahara;EH-BOD;Boujdour;
+EH;Western Sahara;EH-ESM;Es Semara;
+EH;Western Sahara;EH-LAA;Laayoune;
+EH;Western Sahara;EH-OUD;Oued el Dahab;
+ER;Eritrea;ER-AN;Anseba;
+ER;Eritrea;ER-DK;Southern Red Sea;
+ER;Eritrea;ER-DU;Southern;
+ER;Eritrea;ER-GB;Gash-Barka;
+ER;Eritrea;ER-MA;Central;
+ER;Eritrea;ER-SK;Northern Red Sea;
+ES;Spain;ES-A;Alicante;
+ES;Spain;ES-AB;Albacete;
+ES;Spain;ES-AL;Almería;
+ES;Spain;ES-AV;Ávila;
+ES;Spain;ES-B;Barcelona;
+ES;Spain;ES-BA;Badajoz;
+ES;Spain;ES-BI;Vizcaya;
+ES;Spain;ES-BU;Burgos;
+ES;Spain;ES-C;La Coruña;
+ES;Spain;ES-CA;Cádiz;
+ES;Spain;ES-CC;Cáceres;
+ES;Spain;ES-CE;Ceuta;
+ES;Spain;ES-CO;Córdoba;
+ES;Spain;ES-CR;Ciudad Real;
+ES;Spain;ES-CS;Castellón;
+ES;Spain;ES-CU;Cuenca;
+ES;Spain;ES-GC;Las Palmas;
+ES;Spain;ES-GI;Girona;
+ES;Spain;ES-GR;Granada;
+ES;Spain;ES-GU;Guadalajara;
+ES;Spain;ES-H;Huelva;
+ES;Spain;ES-HU;Huesca;
+ES;Spain;ES-J;Jaén;
+ES;Spain;ES-L;Lleida;
+ES;Spain;ES-LE;León;
+ES;Spain;ES-LO;La Rioja;
+ES;Spain;ES-LU;Lugo;
+ES;Spain;ES-M;Madrid;
+ES;Spain;ES-MA;Málaga;
+ES;Spain;ES-ML;Melilla;
+ES;Spain;ES-MU;Murcia;
+ES;Spain;ES-NA;Navarra;
+ES;Spain;ES-O;Asturias;
+ES;Spain;ES-OR;Ourense;
+ES;Spain;ES-P;Palencia;
+ES;Spain;ES-PM;Islas Baleares;
+ES;Spain;ES-PO;Pontevedra;
+ES;Spain;ES-S;Cantabria;
+ES;Spain;ES-SA;Salamanca;
+ES;Spain;ES-SE;Sevilla;
+ES;Spain;ES-SG;Segovia;
+ES;Spain;ES-SO;Soria;
+ES;Spain;ES-SS;Guipúzcoa;
+ES;Spain;ES-T;Tarragona;
+ES;Spain;ES-TE;Teruel;
+ES;Spain;ES-TF;Santa Cruz de Tenerife;
+ES;Spain;ES-TO;Toledo;
+ES;Spain;ES-V;Valencia;
+ES;Spain;ES-VA;Valladolid;
+ES;Spain;ES-VI;Álava;
+ES;Spain;ES-Z;Zaragoza;
+ES;Spain;ES-ZA;Zamora;
+ET;Ethiopia;ET-AA;Addis Ababa;
+ET;Ethiopia;ET-AF;Afar;
+ET;Ethiopia;ET-AM;Amhara;
+ET;Ethiopia;ET-BE;Benishangul-Gumuz;
+ET;Ethiopia;ET-DD;Dire Dawa;
+ET;Ethiopia;ET-GA;Gambela;
+ET;Ethiopia;ET-HA;Harari;
+ET;Ethiopia;ET-OR;Oromia;
+ET;Ethiopia;ET-SN;Southern Nations;
+ET;Ethiopia;ET-SO;Somali;
+ET;Ethiopia;ET-TI;Tigray;
+FI;Finland;FI-AL;Ahvenanmaan lääni;Ålands län
+FI;Finland;FI-ES;Etelä-Suomen lääni;Södra Finlands län
+FI;Finland;FI-IS;Itä-Suomen lääni;Östra Finlands län
+FI;Finland;FI-LL;Lapin lääni;Lappland län
+FI;Finland;FI-LS;Länsi-Suomen lääni;Västra Finlands län
+FI;Finland;FI-OL;Oulun lääni;Uleåborgs län
+FJ;Fiji;FJ-C;Central;
+FJ;Fiji;FJ-E;Eastern;
+FJ;Fiji;FJ-N;Northern;
+FJ;Fiji;FJ-R;Rotuma;
+FJ;Fiji;FJ-W;Western;
+FM;Micronesia;FM-KSA;Kosrae;
+FM;Micronesia;FM-PNI;Pohnpei;
+FM;Micronesia;FM-TRK;Chuuk;
+FM;Micronesia;FM-YAP;Yap;
+FR;France;FR-01;Ain;
+FR;France;FR-02;Aisne;
+FR;France;FR-03;Allier;
+FR;France;FR-04;Alpes-de-Haute-Provence;
+FR;France;FR-05;Hautes-Alpes;
+FR;France;FR-06;Alpes-Maritimes;
+FR;France;FR-07;Ardèche;
+FR;France;FR-08;Ardennes;
+FR;France;FR-09;Ariège;
+FR;France;FR-10;Aube;
+FR;France;FR-11;Aude;
+FR;France;FR-12;Aveyron;
+FR;France;FR-13;Bouches-du-Rhône;
+FR;France;FR-14;Calvados;
+FR;France;FR-15;Cantal;
+FR;France;FR-16;Charente;
+FR;France;FR-17;Charente-Maritime;
+FR;France;FR-18;Cher;
+FR;France;FR-19;Corrèze;
+FR;France;FR-21;Côte-d'Or;
+FR;France;FR-22;Côtes-d'Armor;
+FR;France;FR-23;Creuse;
+FR;France;FR-24;Dordogne;
+FR;France;FR-25;Doubs;
+FR;France;FR-26;Drôme;
+FR;France;FR-27;Eure;
+FR;France;FR-28;Eure-et-Loir;
+FR;France;FR-29;Finistère;
+FR;France;FR-2A;Corse-du-Sud;
+FR;France;FR-2B;Haute-Corse;
+FR;France;FR-30;Gard;
+FR;France;FR-31;Haute-Garonne;
+FR;France;FR-32;Gers;
+FR;France;FR-33;Gironde;
+FR;France;FR-34;Hérault;
+FR;France;FR-35;Ille-et-Vilaine;
+FR;France;FR-36;Indre;
+FR;France;FR-37;Indre-et-Loire;
+FR;France;FR-38;Isère;
+FR;France;FR-39;Jura;
+FR;France;FR-40;Landes;
+FR;France;FR-41;Loir-et-Cher;
+FR;France;FR-42;Loire;
+FR;France;FR-43;Haute-Loire;
+FR;France;FR-44;Loire-Atlantique;
+FR;France;FR-45;Loiret;
+FR;France;FR-46;Lot;
+FR;France;FR-47;Lot-et-Garonne;
+FR;France;FR-48;Lozère;
+FR;France;FR-49;Maine-et-Loire;
+FR;France;FR-50;Manche;
+FR;France;FR-51;Marne;
+FR;France;FR-52;Haute-Marne;
+FR;France;FR-53;Mayenne;
+FR;France;FR-54;Meurthe-et-Moselle;
+FR;France;FR-55;Meuse;
+FR;France;FR-56;Morbihan;
+FR;France;FR-57;Moselle;
+FR;France;FR-58;Nièvre;
+FR;France;FR-59;Nord;
+FR;France;FR-60;Oise;
+FR;France;FR-61;Orne;
+FR;France;FR-62;Pas-de-Calais;
+FR;France;FR-63;Puy-de-Dôme;
+FR;France;FR-64;Pyrénées-Atlantiques;
+FR;France;FR-65;Hautes-Pyrénées;
+FR;France;FR-66;Pyrénées-Orientales;
+FR;France;FR-67;Bas-Rhin;
+FR;France;FR-68;Haut-Rhin;
+FR;France;FR-69;Rhône;
+FR;France;FR-70;Haute-Saône;
+FR;France;FR-71;Saône-et-Loire;
+FR;France;FR-72;Sarthe;
+FR;France;FR-73;Savoie;
+FR;France;FR-74;Haute-Savoie;
+FR;France;FR-75;Paris;
+FR;France;FR-76;Seine-Maritime;
+FR;France;FR-77;Seine-et-Marne;
+FR;France;FR-78;Yvelines;
+FR;France;FR-79;Deux-Sèvres;
+FR;France;FR-80;Somme;
+FR;France;FR-81;Tarn;
+FR;France;FR-82;Tarn-et-Garonne;
+FR;France;FR-83;Var;
+FR;France;FR-84;Vaucluse;
+FR;France;FR-85;Vendée;
+FR;France;FR-86;Vienne;
+FR;France;FR-87;Haute-Vienne;
+FR;France;FR-88;Vosges;
+FR;France;FR-89;Yonne;
+FR;France;FR-90;Territoire de Belfort;
+FR;France;FR-91;Essonne;
+FR;France;FR-92;Hauts-de-Seine;
+FR;France;FR-93;Seine-Saint-Denis;
+FR;France;FR-94;Val-de-Marne;
+FR;France;FR-95;Val-d'Oise;
+FR;France;FR-BL;Saint-Barthélemy;
+FR;France;FR-GF;Guyane;
+FR;France;FR-GP;Guadeloupe;
+FR;France;FR-MF;Saint-Martin;
+FR;France;FR-MQ;Martinique;
+FR;France;FR-NC;Nouvelle-Calédonie;
+FR;France;FR-PF;Polynésie Française;
+FR;France;FR-PM;Saint-Pierre et Miquelon;
+FR;France;FR-RE;La Réunion;
+FR;France;FR-TF;Terres australes et antarctiques;
+FR;France;FR-WF;Wallis et Futuna;
+FR;France;FR-YT;Mayotte;
+GA;Gabon;GA-1;Estuaire;
+GA;Gabon;GA-2;Haut-Ogooué;
+GA;Gabon;GA-3;Moyen-Ogooué;
+GA;Gabon;GA-4;Ngounié;
+GA;Gabon;GA-5;Nyanga;
+GA;Gabon;GA-6;Ogooué-Ivindo;
+GA;Gabon;GA-7;Ogooué-Lolo;
+GA;Gabon;GA-8;Ogooué-Maritime;
+GA;Gabon;GA-9;Woleu-Ntem;
+GB;United Kingdom;GB-ABD;Aberdeenshire;
+GB;United Kingdom;GB-ABE;Aberdeen City;
+GB;United Kingdom;GB-AGB;Argyll and Bute;
+GB;United Kingdom;GB-AGY;Isle of Anglesey;
+GB;United Kingdom;GB-ANS;Angus;
+GB;United Kingdom;GB-ANT;Antrim;
+GB;United Kingdom;GB-ARD;Ards;
+GB;United Kingdom;GB-ARM;Armagh;
+GB;United Kingdom;GB-BAS;Bath and North East Somerset;
+GB;United Kingdom;GB-BBD;Blackburn with Darwen;
+GB;United Kingdom;GB-BDF;Bedford;
+GB;United Kingdom;GB-BDG;Barking and Dagenham;
+GB;United Kingdom;GB-BEN;Brent;
+GB;United Kingdom;GB-BEX;Bexley;
+GB;United Kingdom;GB-BFS;Belfast City;
+GB;United Kingdom;GB-BGE;Bridgend;
+GB;United Kingdom;GB-BGW;Blaenau Gwent;
+GB;United Kingdom;GB-BIR;Birmingham;
+GB;United Kingdom;GB-BKM;Buckinghamshire;
+GB;United Kingdom;GB-BLA;Ballymena;
+GB;United Kingdom;GB-BLY;Ballymoney;
+GB;United Kingdom;GB-BMH;Bournemouth;
+GB;United Kingdom;GB-BNB;Banbridge;
+GB;United Kingdom;GB-BNE;Barnet;
+GB;United Kingdom;GB-BNH;The City of Brighton and Hove;
+GB;United Kingdom;GB-BNS;Barnsley;
+GB;United Kingdom;GB-BOL;Bolton;
+GB;United Kingdom;GB-BPL;Blackpool;
+GB;United Kingdom;GB-BRC;Bracknell Forest;
+GB;United Kingdom;GB-BRD;Bradford;
+GB;United Kingdom;GB-BRY;Bromley;
+GB;United Kingdom;GB-BST;City of Bristol;
+GB;United Kingdom;GB-BUR;Bury;
+GB;United Kingdom;GB-CAM;Cambridgeshire;
+GB;United Kingdom;GB-CAY;Caerphilly;
+GB;United Kingdom;GB-CBF;Central Bedfordshire;
+GB;United Kingdom;GB-CGN;Ceredigion;
+GB;United Kingdom;GB-CGV;Craigavon;
+GB;United Kingdom;GB-CHE;Cheshire East;
+GB;United Kingdom;GB-CHW;Cheshire West and Chester;
+GB;United Kingdom;GB-CKF;Carrickfergus;
+GB;United Kingdom;GB-CKT;Cookstown;
+GB;United Kingdom;GB-CLD;Calderdale;
+GB;United Kingdom;GB-CLK;Clackmannanshire;
+GB;United Kingdom;GB-CLR;Coleraine;
+GB;United Kingdom;GB-CMA;Cumbria;
+GB;United Kingdom;GB-CMD;Camden;
+GB;United Kingdom;GB-CMN;Carmarthenshire ;
+GB;United Kingdom;GB-CON;Cornwall;
+GB;United Kingdom;GB-COV;Coventry;
+GB;United Kingdom;GB-CRF;Cardiff;
+GB;United Kingdom;GB-CRY;Croydon;
+GB;United Kingdom;GB-CSR;Castlereagh;
+GB;United Kingdom;GB-CWY;Conwy;
+GB;United Kingdom;GB-DAL;Darlington;
+GB;United Kingdom;GB-DBY;Derbyshire;
+GB;United Kingdom;GB-DEN;Denbighshire;
+GB;United Kingdom;GB-DER;City of Derby;
+GB;United Kingdom;GB-DEV;Devon;
+GB;United Kingdom;GB-DGN;Dungannon and South Tyrone;
+GB;United Kingdom;GB-DGY;Dumfries and Galloway;
+GB;United Kingdom;GB-DNC;Doncaster;
+GB;United Kingdom;GB-DND;Dundee City;
+GB;United Kingdom;GB-DOR;Dorset;
+GB;United Kingdom;GB-DOW;Down;
+GB;United Kingdom;GB-DRY;Derry City;
+GB;United Kingdom;GB-DUD;Dudley;
+GB;United Kingdom;GB-DUR;Durham;
+GB;United Kingdom;GB-EAL;Ealing;
+GB;United Kingdom;GB-EAY;East Ayrshire;
+GB;United Kingdom;GB-EDH;City of Edinburgh;
+GB;United Kingdom;GB-EDU;East Dunbartonshire;
+GB;United Kingdom;GB-ELN;East Lothian;
+GB;United Kingdom;GB-ELS;Outer Hebrides;
+GB;United Kingdom;GB-ENF;Enfield;
+GB;United Kingdom;GB-ERW;East Renfrewshire;
+GB;United Kingdom;GB-ERY;East Riding of Yorkshire;
+GB;United Kingdom;GB-ESS;Essex;
+GB;United Kingdom;GB-ESX;East Sussex;
+GB;United Kingdom;GB-FAL;Falkirk;
+GB;United Kingdom;GB-FER;Fermanagh;
+GB;United Kingdom;GB-FIF;Fife;
+GB;United Kingdom;GB-FLN;Flintshire;
+GB;United Kingdom;GB-GAT;Gateshead;
+GB;United Kingdom;GB-GLG;Glasgow City;
+GB;United Kingdom;GB-GLS;Gloucestershire;
+GB;United Kingdom;GB-GRE;Greenwich;
+GB;United Kingdom;GB-GWN;Gwynedd;
+GB;United Kingdom;GB-HAL;Halton;
+GB;United Kingdom;GB-HAM;Hampshire;
+GB;United Kingdom;GB-HAV;Havering;
+GB;United Kingdom;GB-HCK;Hackney;
+GB;United Kingdom;GB-HEF;Herefordshire;
+GB;United Kingdom;GB-HIL;Hillingdon;
+GB;United Kingdom;GB-HLD;Highland;
+GB;United Kingdom;GB-HMF;Hammersmith and Fulham;
+GB;United Kingdom;GB-HNS;Hounslow;
+GB;United Kingdom;GB-HPL;Hartlepool;
+GB;United Kingdom;GB-HRT;Hertfordshire;
+GB;United Kingdom;GB-HRW;Harrow;
+GB;United Kingdom;GB-HRY;Haringey;
+GB;United Kingdom;GB-IOW;Isle of Wight;
+GB;United Kingdom;GB-ISL;Islington;
+GB;United Kingdom;GB-IVC;Inverclyde;
+GB;United Kingdom;GB-KEC;Kensington and Chelsea;
+GB;United Kingdom;GB-KEN;Kent;
+GB;United Kingdom;GB-KHL;Kingston upon Hull;
+GB;United Kingdom;GB-KIR;Kirklees;
+GB;United Kingdom;GB-KTT;Kingston upon Thames;
+GB;United Kingdom;GB-KWL;Knowsley;
+GB;United Kingdom;GB-LAN;Lancashire;
+GB;United Kingdom;GB-LBH;Lambeth;
+GB;United Kingdom;GB-LCE;City of Leicester;
+GB;United Kingdom;GB-LDS;Leeds;
+GB;United Kingdom;GB-LEC;Leicestershire;
+GB;United Kingdom;GB-LEW;Lewisham;
+GB;United Kingdom;GB-LIN;Lincolnshire;
+GB;United Kingdom;GB-LIV;Liverpool;
+GB;United Kingdom;GB-LMV;Limavady;
+GB;United Kingdom;GB-LND;City of London;
+GB;United Kingdom;GB-LRN;Larne;
+GB;United Kingdom;GB-LSB;Lisburn;
+GB;United Kingdom;GB-LUT;Luton;
+GB;United Kingdom;GB-MAN;City of Manchester;
+GB;United Kingdom;GB-MDB;Middlesbrough;
+GB;United Kingdom;GB-MDW;Medway;
+GB;United Kingdom;GB-MFT;Magherafelt;
+GB;United Kingdom;GB-MIK;Milton Keynes;
+GB;United Kingdom;GB-MLN;Midlothian;
+GB;United Kingdom;GB-MON;Monmouthshire;
+GB;United Kingdom;GB-MRT;Merton;
+GB;United Kingdom;GB-MRY;Moray;
+GB;United Kingdom;GB-MTY;Merthyr Tydfil;
+GB;United Kingdom;GB-MYL;Moyle;
+GB;United Kingdom;GB-NAY;North Ayrshire;
+GB;United Kingdom;GB-NBL;Northumberland;
+GB;United Kingdom;GB-NDN;North Down;
+GB;United Kingdom;GB-NEL;North East Lincolnshire;
+GB;United Kingdom;GB-NET;Newcastle upon Tyne;
+GB;United Kingdom;GB-NFK;Norfolk;
+GB;United Kingdom;GB-NGM;City of Nottingham;
+GB;United Kingdom;GB-NLK;North Lanarkshire;
+GB;United Kingdom;GB-NLN;North Lincolnshire;
+GB;United Kingdom;GB-NSM;North Somerset;
+GB;United Kingdom;GB-NTA;Newtownabbey;
+GB;United Kingdom;GB-NTH;Northamptonshire;
+GB;United Kingdom;GB-NTL;Neath Port Talbot;
+GB;United Kingdom;GB-NTT;Nottinghamshire;
+GB;United Kingdom;GB-NTY;North Tyneside;
+GB;United Kingdom;GB-NWM;Newham;
+GB;United Kingdom;GB-NWP;Newport;
+GB;United Kingdom;GB-NYK;North Yorkshire;
+GB;United Kingdom;GB-NYM;Newry and Mourne;
+GB;United Kingdom;GB-OLD;Oldham;
+GB;United Kingdom;GB-OMH;Omagh;
+GB;United Kingdom;GB-ORK;Orkney Islands;
+GB;United Kingdom;GB-OXF;Oxfordshire;
+GB;United Kingdom;GB-PEM;Pembrokeshire;
+GB;United Kingdom;GB-PKN;Perth and Kinross;
+GB;United Kingdom;GB-PLY;City of Plymouth;
+GB;United Kingdom;GB-POL;Poole;
+GB;United Kingdom;GB-POR;City of Portsmouth;
+GB;United Kingdom;GB-POW;Powys;
+GB;United Kingdom;GB-PTE;City of Peterborough;
+GB;United Kingdom;GB-RCC;Redcar and Cleveland;
+GB;United Kingdom;GB-RCH;Rochdale;
+GB;United Kingdom;GB-RCT;Rhondda Cynon Taf;
+GB;United Kingdom;GB-RDB;Redbridge;
+GB;United Kingdom;GB-RDG;Reading;
+GB;United Kingdom;GB-RFW;Renfrewshire;
+GB;United Kingdom;GB-RIC;Richmond upon Thames;
+GB;United Kingdom;GB-ROT;Rotherham;
+GB;United Kingdom;GB-RUT;Rutland;
+GB;United Kingdom;GB-SAW;Sandwell;
+GB;United Kingdom;GB-SAY;South Ayrshire;
+GB;United Kingdom;GB-SCB;Scottish Borders;
+GB;United Kingdom;GB-SFK;Suffolk;
+GB;United Kingdom;GB-SFT;Sefton;
+GB;United Kingdom;GB-SGC;South Gloucestershire;
+GB;United Kingdom;GB-SHF;Sheffield;
+GB;United Kingdom;GB-SHN;St. Helens;
+GB;United Kingdom;GB-SHR;Shropshire;
+GB;United Kingdom;GB-SKP;Stockport;
+GB;United Kingdom;GB-SLF;City of Salford;
+GB;United Kingdom;GB-SLG;Slough;
+GB;United Kingdom;GB-SLK;South Lanarkshire;
+GB;United Kingdom;GB-SND;Sunderland;
+GB;United Kingdom;GB-SOL;Solihull;
+GB;United Kingdom;GB-SOM;Somerset;
+GB;United Kingdom;GB-SOS;Southend-on-Sea;
+GB;United Kingdom;GB-SRY;Surrey;
+GB;United Kingdom;GB-STB;Strabane;
+GB;United Kingdom;GB-STE;City of Stoke-on-Trent;
+GB;United Kingdom;GB-STG;Stirling;
+GB;United Kingdom;GB-STH;City of Southampton;
+GB;United Kingdom;GB-STN;Sutton;
+GB;United Kingdom;GB-STS;Staffordshire;
+GB;United Kingdom;GB-STT;Stockton-on-Tees;
+GB;United Kingdom;GB-STY;South Tyneside;
+GB;United Kingdom;GB-SWA;Swansea;
+GB;United Kingdom;GB-SWD;Swindon;
+GB;United Kingdom;GB-SWK;Southwark;
+GB;United Kingdom;GB-TAM;Tameside;
+GB;United Kingdom;GB-TFW;Telford and Wrekin;
+GB;United Kingdom;GB-THR;Thurrock;
+GB;United Kingdom;GB-TOB;Torbay;
+GB;United Kingdom;GB-TOF;Torfaen;
+GB;United Kingdom;GB-TRF;Trafford;
+GB;United Kingdom;GB-TWH;Tower Hamlets;
+GB;United Kingdom;GB-VGL;Vale of Glamorgan;
+GB;United Kingdom;GB-WAR;Warwickshire;
+GB;United Kingdom;GB-WBK;West Berkshire;
+GB;United Kingdom;GB-WDU;West Dunbartonshire;
+GB;United Kingdom;GB-WFT;Waltham Forest;
+GB;United Kingdom;GB-WGN;Wigan;
+GB;United Kingdom;GB-WIL;Wiltshire;
+GB;United Kingdom;GB-WKF;Wakefield;
+GB;United Kingdom;GB-WLL;Walsall;
+GB;United Kingdom;GB-WLN;West Lothian;
+GB;United Kingdom;GB-WLV;City of Wolverhampton;
+GB;United Kingdom;GB-WND;Wandsworth;
+GB;United Kingdom;GB-WNM;Windsor and Maidenhead;
+GB;United Kingdom;GB-WOK;Wokingham;
+GB;United Kingdom;GB-WOR;Worcestershire;
+GB;United Kingdom;GB-WRL;Wirral;
+GB;United Kingdom;GB-WRT;Warrington;
+GB;United Kingdom;GB-WRX;Wrexham;
+GB;United Kingdom;GB-WSM;City of Westminster;
+GB;United Kingdom;GB-WSX;West Sussex;
+GB;United Kingdom;GB-YOR;York;
+GB;United Kingdom;GB-ZET;Shetland Islands;
+GD;Grenada;GD-01;Saint Andrew;
+GD;Grenada;GD-02;Saint David;
+GD;Grenada;GD-03;Saint George;
+GD;Grenada;GD-04;Saint John;
+GD;Grenada;GD-05;Saint Mark;
+GD;Grenada;GD-06;Saint Patrick;
+GD;Grenada;GD-10;Southern Grenadine Islands;
+GE;Georgia;GE-AB;Abkhazia;
+GE;Georgia;GE-AJ;Adjara;
+GE;Georgia;GE-GU;Guria;
+GE;Georgia;GE-IM;Imereti;
+GE;Georgia;GE-KA;Kakheti;
+GE;Georgia;GE-KK;Kvemo Kartli;
+GE;Georgia;GE-MM;Mtskheta-Mtianeti;
+GE;Georgia;GE-RL;Racha-Lechkhumi and Kvemo Svaneti;
+GE;Georgia;GE-SJ;Samtskhe-Javakheti;
+GE;Georgia;GE-SK;Shida Kartli;
+GE;Georgia;GE-SZ;Samegrelo-Zemo Svaneti;
+GE;Georgia;GE-TB;Tbilisi;
+GH;Ghana;GH-AA;Greater Accra;
+GH;Ghana;GH-AH;Ashanti;
+GH;Ghana;GH-BA;Brong-Ahafo;
+GH;Ghana;GH-CP;Central;
+GH;Ghana;GH-EP;Eastern;
+GH;Ghana;GH-NP;Northern;
+GH;Ghana;GH-TV;Volta;
+GH;Ghana;GH-UE;Upper East;
+GH;Ghana;GH-UW;Upper West;
+GH;Ghana;GH-WP;Western;
+GL;Greenland;GL-KU;Kommune Kujalleq;
+GL;Greenland;GL-QA;Qaasuitsup Kommunia;
+GL;Greenland;GL-QE;Qeqqata Kommunia;
+GL;Greenland;GL-SM;Kommuneqarfik Sermersooq;
+GM;Gambia;GM-B;Banjul;
+GM;Gambia;GM-L;Lower River;
+GM;Gambia;GM-M;MacCarthy Island;
+GM;Gambia;GM-N;North Bank;
+GM;Gambia;GM-U;Upper River;
+GM;Gambia;GM-W;Western;
+GN;Guinea;GN-BE;Beyla;
+GN;Guinea;GN-BF;Boffa;
+GN;Guinea;GN-BK;Boké;
+GN;Guinea;GN-C;Conakry;
+GN;Guinea;GN-CO;Coyah;
+GN;Guinea;GN-DB;Dabola;
+GN;Guinea;GN-DI;Dinguiraye;
+GN;Guinea;GN-DL;Dalaba;
+GN;Guinea;GN-DU;Dubréka;
+GN;Guinea;GN-FA;Faranah;
+GN;Guinea;GN-FO;Forécariah;
+GN;Guinea;GN-FR;Fria;
+GN;Guinea;GN-GA;Gaoual;
+GN;Guinea;GN-GU;Guékédou;
+GN;Guinea;GN-KA;Kankan;
+GN;Guinea;GN-KB;Koubia;
+GN;Guinea;GN-KD;Kindia;
+GN;Guinea;GN-KE;Kérouané;
+GN;Guinea;GN-KN;Koundara;
+GN;Guinea;GN-KO;Kouroussa;
+GN;Guinea;GN-KS;Kissidougou;
+GN;Guinea;GN-LA;Labé;
+GN;Guinea;GN-LE;Lélouma;
+GN;Guinea;GN-LO;Lola;
+GN;Guinea;GN-MC;Macenta;
+GN;Guinea;GN-MD;Mandiana;
+GN;Guinea;GN-ML;Mali;
+GN;Guinea;GN-MM;Mamou;
+GN;Guinea;GN-NZ;Nzérékoré;
+GN;Guinea;GN-PI;Pita;
+GN;Guinea;GN-SI;Siguiri;
+GN;Guinea;GN-TE;Télimélé;
+GN;Guinea;GN-TO;Tougué;
+GN;Guinea;GN-YO;Yomou;
+GQ;Equatorial Guinea;GQ-AN;Annobón;
+GQ;Equatorial Guinea;GQ-BN;Bioko Norte;
+GQ;Equatorial Guinea;GQ-BS;Bioko Sur;
+GQ;Equatorial Guinea;GQ-C;Región Continental;
+GQ;Equatorial Guinea;GQ-CS;Centro Sur;
+GQ;Equatorial Guinea;GQ-I;Región Insular;
+GQ;Equatorial Guinea;GQ-KN;Kie-Ntem;
+GQ;Equatorial Guinea;GQ-LI;Litoral;
+GQ;Equatorial Guinea;GQ-WN;Wele-Nzás;
+GR;Greece;GR-01;Νομός Αιτωλοακαρνανίας;Aetolia-Acarnania
+GR;Greece;GR-03;Νομός Βοιωτίας;Boeotia
+GR;Greece;GR-04;Νομός Εύβοιας;Euboea
+GR;Greece;GR-05;Νομός Ευρυτανίας;Evrytania
+GR;Greece;GR-06;Νομός Φθιώτιδας;Phthiotis
+GR;Greece;GR-07;Νομός Φωκίδας;Phocis
+GR;Greece;GR-11;Νομός Αργολίδας;Argolis
+GR;Greece;GR-12;Νομός Αρκαδίας;Arcadia
+GR;Greece;GR-13;Νομός Αχαΐας;Achaea
+GR;Greece;GR-14;Νομός Ηλείας;Ilia
+GR;Greece;GR-15;Νομός Κορινθίας;Corinthia
+GR;Greece;GR-16;Νομός Λακωνίας;Laconia
+GR;Greece;GR-17;Νομός Μεσσηνίας;Messinia
+GR;Greece;GR-21;Νομός Ζακύνθου;Zakynthos
+GR;Greece;GR-22;Νομός Κέρκυρας;Corfu
+GR;Greece;GR-23;Νομός Κεφαλληνίας;Kefalonia and Ithaca
+GR;Greece;GR-24;Νομός Λευκάδας;Lefkada
+GR;Greece;GR-31;Νομός Άρτας;Arta
+GR;Greece;GR-32;Νομός Θεσπρωτίας;Thesprotia
+GR;Greece;GR-33;Νομός Ιωαννίνων;Ioannina
+GR;Greece;GR-34;Νομός Πρέβεζας;Preveza
+GR;Greece;GR-41;Νομός Καρδίτσας;Karditsa
+GR;Greece;GR-42;Νομός Λάρισας;Larissa
+GR;Greece;GR-43;Νομός Μαγνησίας;Magnesia
+GR;Greece;GR-44;Νομός Τρικάλων;Trikala
+GR;Greece;GR-51;Νομός Γρεβενών;Grevena
+GR;Greece;GR-52;Νομός Δράμας;Drama
+GR;Greece;GR-53;Νομός Ημαθίας;Imathia
+GR;Greece;GR-54;Νομός Θεσσαλονίκης;Thessaloniki
+GR;Greece;GR-55;Νομός Καβάλας;Kavala
+GR;Greece;GR-56;Νομός Καστοριάς;Kastoria
+GR;Greece;GR-57;Νομός Κιλκίς;Kilkis
+GR;Greece;GR-58;Νομός Κοζάνης;Kozani
+GR;Greece;GR-59;Νομός Πέλλας;Pella
+GR;Greece;GR-61;Νομός Πιερίας;Pieria
+GR;Greece;GR-62;Νομός Σερρών;Serres
+GR;Greece;GR-63;Νομός Φλώρινας;Florina
+GR;Greece;GR-64;Νομός Χαλκιδικής;Chalkidiki
+GR;Greece;GR-69;Νομαρχία Πειραιά;Piraeus
+GR;Greece;GR-71;Νομός Έβρου;Evros
+GR;Greece;GR-72;Νομός Ξάνθης;Xanthi
+GR;Greece;GR-73;Νομός Ροδόπης;Rhodope
+GR;Greece;GR-81;Νομός Δωδεκανήσου;Dodecanese
+GR;Greece;GR-82;Νομός Κυκλάδων;Cyclades
+GR;Greece;GR-83;Νομός Λέσβου;Lesbos
+GR;Greece;GR-84;Νομός Σάμου;Samos
+GR;Greece;GR-85;Νομός Χίου;Chios
+GR;Greece;GR-91;Νομός Ηρακλείου;Heraklion
+GR;Greece;GR-92;Νομός Λασιθίου;Lasithi
+GR;Greece;GR-93;Νομός Ρεθύμνου;Rethymno
+GR;Greece;GR-94;Νομός Χανίων;Chania
+GR;Greece;GR-A1;Νομαρχία Αθηνών;Athens
+GR;Greece;GR-Ax;Νομαρχία Δυτικής Αττικής;West Attica
+GR;Greece;GR-Ay;Νομαρχία Ανατολικής Αττικής;East Attica
+GT;Guatemala;GT-AV;Alta Verapaz;
+GT;Guatemala;GT-BV;Baja Verapaz;
+GT;Guatemala;GT-CM;Chimaltenango;
+GT;Guatemala;GT-CQ;Chiquimula;
+GT;Guatemala;GT-ES;Escuintla;
+GT;Guatemala;GT-GU;Guatemala;
+GT;Guatemala;GT-HU;Huehuetenango;
+GT;Guatemala;GT-IZ;Izabal;
+GT;Guatemala;GT-JA;Jalapa;
+GT;Guatemala;GT-JU;Jutiapa;
+GT;Guatemala;GT-PE;Petén;
+GT;Guatemala;GT-PR;El Progreso;
+GT;Guatemala;GT-QC;Quiché;
+GT;Guatemala;GT-QZ;Quetzaltenango;
+GT;Guatemala;GT-RE;Retalhuleu;
+GT;Guatemala;GT-SA;Sacatepéquez;
+GT;Guatemala;GT-SM;San Marcos;
+GT;Guatemala;GT-SO;Sololá;
+GT;Guatemala;GT-SR;Santa Rosa;
+GT;Guatemala;GT-SU;Suchitepéquez;
+GT;Guatemala;GT-TO;Totonicapán;
+GT;Guatemala;GT-ZA;Zacapa;
+GW;Guinea-Bissau;GW-BA;Bafatá;
+GW;Guinea-Bissau;GW-BL;Bolama;
+GW;Guinea-Bissau;GW-BM;Biombo;
+GW;Guinea-Bissau;GW-BS;Bissau;
+GW;Guinea-Bissau;GW-CA;Cacheu;
+GW;Guinea-Bissau;GW-GA;Gabú;
+GW;Guinea-Bissau;GW-OI;Oio;
+GW;Guinea-Bissau;GW-QU;Quinara;
+GW;Guinea-Bissau;GW-TO;Tombali;
+GY;Guyana;GY-BA;Barima-Waini;
+GY;Guyana;GY-CU;Cuyuni-Mazaruni;
+GY;Guyana;GY-DE;Demerara-Mahaica;
+GY;Guyana;GY-EB;East Berbice-Corentyne;
+GY;Guyana;GY-ES;Essequibo Islands-West Demerara;
+GY;Guyana;GY-MA;Mahaica-Berbice;
+GY;Guyana;GY-PM;Pomeroon-Supenaam;
+GY;Guyana;GY-PT;Potaro-Siparuni;
+GY;Guyana;GY-UD;Upper Demerara-Berbice;
+GY;Guyana;GY-UT;Upper Takutu-Upper Essequibo;
+HN;Honduras;HN-AT;Atlántida;
+HN;Honduras;HN-CH;Choluteca;
+HN;Honduras;HN-CL;Colón;
+HN;Honduras;HN-CM;Comayagua;
+HN;Honduras;HN-CP;Copán;
+HN;Honduras;HN-CR;Cortés;
+HN;Honduras;HN-EP;El Paraíso;
+HN;Honduras;HN-FM;Francisco Morazán;
+HN;Honduras;HN-GD;Gracias a Dios;
+HN;Honduras;HN-IB;Islas de la Bahía;
+HN;Honduras;HN-IN;Intibucá;
+HN;Honduras;HN-LE;Lempira;
+HN;Honduras;HN-LP;La Paz;
+HN;Honduras;HN-OC;Ocotepeque;
+HN;Honduras;HN-OL;Olancho;
+HN;Honduras;HN-SB;Santa Bárbara;
+HN;Honduras;HN-VA;Valle;
+HN;Honduras;HN-YO;Yoro;
+HR;Croatia;HR-01;Zagrebačka;
+HR;Croatia;HR-02;Krapinsko-Zagorska;
+HR;Croatia;HR-03;Sisačko-Moslavačka;
+HR;Croatia;HR-04;Karlovačka;
+HR;Croatia;HR-05;Varaždinska;
+HR;Croatia;HR-06;Koprivničko-Križevačka;
+HR;Croatia;HR-07;Bjelovarsko-Bilogorska;
+HR;Croatia;HR-08;Primorsko-Goranska;
+HR;Croatia;HR-09;Ličko-Senjska;
+HR;Croatia;HR-10;Virovitičko-Podravska;
+HR;Croatia;HR-11;Požeško-Slavonska;
+HR;Croatia;HR-12;Brodsko-Posavska;
+HR;Croatia;HR-13;Zadarska;
+HR;Croatia;HR-14;Osječko-Baranjska;
+HR;Croatia;HR-15;Šibensko-Kninska;
+HR;Croatia;HR-16;Vukovarsko-Srijemska;
+HR;Croatia;HR-17;Splitsko-Dalmatinska;
+HR;Croatia;HR-18;Istarska;
+HR;Croatia;HR-19;Dubrovačko-Neretvanska;
+HR;Croatia;HR-20;Međimurska;
+HR;Croatia;HR-21;Grad Zagreb;
+HT;Haiti;HT-AR;Artibonite;
+HT;Haiti;HT-CE;Centre;
+HT;Haiti;HT-GA;Grand'Anse;
+HT;Haiti;HT-ND;Nord;
+HT;Haiti;HT-NE;Nord-Est;
+HT;Haiti;HT-NI;Nippes;
+HT;Haiti;HT-NO;Nord-Ouest;
+HT;Haiti;HT-OU;Ouest;
+HT;Haiti;HT-SD;Sud;
+HT;Haiti;HT-SE;Sud-Est;
+HU;Hungary;HU-BA;Baranya;
+HU;Hungary;HU-BC;Békéscsabai;
+HU;Hungary;HU-BE;Békés;
+HU;Hungary;HU-BK;Bács-Kiskun;
+HU;Hungary;HU-BU;Budapesti;
+HU;Hungary;HU-BZ;Borsod-Abaúj-Zemplén;
+HU;Hungary;HU-CS;Csongrád;
+HU;Hungary;HU-DE;Debreceni;
+HU;Hungary;HU-DU;Dunaújvárosi;
+HU;Hungary;HU-EG;Egri;
+HU;Hungary;HU-ER;Budaörsi;
+HU;Hungary;HU-FE;Fejér;
+HU;Hungary;HU-GS;Győr-Moson-Sopron;
+HU;Hungary;HU-GY;Győri;
+HU;Hungary;HU-HB;Hajdú-Bihar;
+HU;Hungary;HU-HE;Heves;
+HU;Hungary;HU-HV;Hódmezővásárhelyi;
+HU;Hungary;HU-JN;Jász-Nagykun-Szolnok;
+HU;Hungary;HU-KE;Komárom-Esztergom;
+HU;Hungary;HU-KM;Kecskeméti;
+HU;Hungary;HU-KV;Kaposvári;
+HU;Hungary;HU-MI;Miskolci;
+HU;Hungary;HU-NK;Nagykanizsai;
+HU;Hungary;HU-NO;Nógrád;
+HU;Hungary;HU-NY;Nyíregyházai;
+HU;Hungary;HU-PE;Pest;
+HU;Hungary;HU-PS;Pécsi;
+HU;Hungary;HU-SD;Szegedi;
+HU;Hungary;HU-SF;Székesfehérvári;
+HU;Hungary;HU-SH;Szombathelyi;
+HU;Hungary;HU-SK;Szolnoki;
+HU;Hungary;HU-SN;Sopron-Fertődi;
+HU;Hungary;HU-SO;Somogy;
+HU;Hungary;HU-SS;Szekszárdi;
+HU;Hungary;HU-ST;Salgótarjáni;
+HU;Hungary;HU-SZ;Szabolcs-Szatmár-Bereg;
+HU;Hungary;HU-TB;Tatabányai;
+HU;Hungary;HU-TO;Tolna;
+HU;Hungary;HU-VA;Vas;
+HU;Hungary;HU-VE;Veszprém;
+HU;Hungary;HU-VM;Veszprémi;
+HU;Hungary;HU-ZA;Zala;
+HU;Hungary;HU-ZE;Zalaegerszegi;
+ID;Indonesia;ID-AC;Aceh;
+ID;Indonesia;ID-BA;Bali;
+ID;Indonesia;ID-BB;Bangka-Belitung;
+ID;Indonesia;ID-BE;Bengkulu;
+ID;Indonesia;ID-BT;Banten;
+ID;Indonesia;ID-GO;Gorontalo;
+ID;Indonesia;ID-JA;Jambi;
+ID;Indonesia;ID-JB;West Java;
+ID;Indonesia;ID-JI;East Java;
+ID;Indonesia;ID-JK;Jakarta;
+ID;Indonesia;ID-JT;Central Java;
+ID;Indonesia;ID-KB;West Kalimantan;
+ID;Indonesia;ID-KI;East Kalimantan;
+ID;Indonesia;ID-KR;Riau Islands;
+ID;Indonesia;ID-KS;South Kalimantan;
+ID;Indonesia;ID-KT;Central Kalimantan;
+ID;Indonesia;ID-LA;Lampung;
+ID;Indonesia;ID-MA;Maluku;
+ID;Indonesia;ID-MU;North Maluku;
+ID;Indonesia;ID-NB;West Nusa Tenggara;
+ID;Indonesia;ID-NT;East Nusa Tenggara;
+ID;Indonesia;ID-PA;Papua;
+ID;Indonesia;ID-PB;West Papua;
+ID;Indonesia;ID-RI;Riau;
+ID;Indonesia;ID-SA;North Sulawesi;
+ID;Indonesia;ID-SB;West Sumatra;
+ID;Indonesia;ID-SG;South East Sulawesi;
+ID;Indonesia;ID-SN;South Sulawesi;
+ID;Indonesia;ID-SR;West Sulawesi;
+ID;Indonesia;ID-SS;South Sumatra;
+ID;Indonesia;ID-ST;Central Sulawesi;
+ID;Indonesia;ID-SU;North Sumatra;
+ID;Indonesia;ID-YO;Yogyakarta;
+IE;Ireland;IE-C;Cork;
+IE;Ireland;IE-CE;Clare;
+IE;Ireland;IE-CN;Cavan;
+IE;Ireland;IE-CW;Carlow;
+IE;Ireland;IE-D;Dublin;
+IE;Ireland;IE-DL;Donegal;
+IE;Ireland;IE-G;Galway;
+IE;Ireland;IE-KE;Kildare;
+IE;Ireland;IE-KK;Kilkenny;
+IE;Ireland;IE-KY;Kerry;
+IE;Ireland;IE-LD;Longford;
+IE;Ireland;IE-LH;Louth;
+IE;Ireland;IE-LK;Limerick;
+IE;Ireland;IE-LM;Leitrim;
+IE;Ireland;IE-LS;Laois;
+IE;Ireland;IE-MH;Meath;
+IE;Ireland;IE-MN;Monaghan;
+IE;Ireland;IE-MO;Mayo;
+IE;Ireland;IE-OY;Offaly;
+IE;Ireland;IE-RN;Roscommon;
+IE;Ireland;IE-SO;Sligo;
+IE;Ireland;IE-TA;Tipperary;
+IE;Ireland;IE-WD;Waterford;
+IE;Ireland;IE-WH;Westmeath;
+IE;Ireland;IE-WW;Wicklow;
+IE;Ireland;IE-WX;Wexford;
+IL;Israel;IL-D;מחוז הדרום;South
+IL;Israel;IL-HA;מחוז חיפה;Haifa
+IL;Israel;IL-JM;מחוז ירושלים;Jerusalem
+IL;Israel;IL-M;מחוז המרכז;Center
+IL;Israel;IL-TA;מחוז תל אביב;Tel Aviv
+IL;Israel;IL-Z;מחוז הצפון;North
+IN;India;IN-AN;Andaman and Nicobar Islands;
+IN;India;IN-AP;Andhra Pradesh;
+IN;India;IN-AR;Arunachal Pradesh;
+IN;India;IN-AS;Assam;
+IN;India;IN-BR;Bihar;
+IN;India;IN-CH;Chandigarh;
+IN;India;IN-CT;Chhattisgarh;
+IN;India;IN-DD;Daman and Diu;
+IN;India;IN-DL;Delhi;
+IN;India;IN-DN;Dadra and Nagar Haveli;
+IN;India;IN-GA;Goa;
+IN;India;IN-GJ;Gujarat;
+IN;India;IN-HP;Himachal Pradesh;
+IN;India;IN-HR;Haryana;
+IN;India;IN-JH;Jharkhand;
+IN;India;IN-JK;Jammu and Kashmir;
+IN;India;IN-KA;Karnataka;
+IN;India;IN-KL;Kerala;
+IN;India;IN-LD;Lakshadweep;
+IN;India;IN-MH;Maharashtra;
+IN;India;IN-ML;Meghalaya;
+IN;India;IN-MN;Manipur;
+IN;India;IN-MP;Madhya Pradesh;
+IN;India;IN-MZ;Mizoram;
+IN;India;IN-NL;Nagaland;
+IN;India;IN-OR;Orissa;
+IN;India;IN-PB;Punjab;
+IN;India;IN-PY;Puducherry;
+IN;India;IN-RJ;Rajasthan;
+IN;India;IN-SK;Sikkim;
+IN;India;IN-TN;Tamil Nadu;
+IN;India;IN-TR;Tripura;
+IN;India;IN-UL;Uttarakhand;
+IN;India;IN-UP;Uttar Pradesh;
+IN;India;IN-WB;West Bengal;
+IQ;Iraq;IQ-AN;Al Anbar;الأنبار
+IQ;Iraq;IQ-AR;Arbil;أربيل
+IQ;Iraq;IQ-BA;Al Basrah;البصرة
+IQ;Iraq;IQ-BB;Babil;بابل
+IQ;Iraq;IQ-BG;Baghdad;بغداد
+IQ;Iraq;IQ-DA;Dahouk;دهوك
+IQ;Iraq;IQ-DI;Deyala;ديالى
+IQ;Iraq;IQ-DQ;Thi Qar;ذي قار
+IQ;Iraq;IQ-KA;Karbala;كربلاء
+IQ;Iraq;IQ-MA;Maysan;ميسان
+IQ;Iraq;IQ-MU;Al Muthanna;المثنى
+IQ;Iraq;IQ-NA;Al Najaf;النجف
+IQ;Iraq;IQ-NI;Mousl (Nainawa);(نينوى) الموصل
+IQ;Iraq;IQ-QA;Al Quadisiya;القادسية
+IQ;Iraq;IQ-SD;Salah Al Deen;صلاح الدين
+IQ;Iraq;IQ-SU;Al Sulaymaniah;السليمانية
+IQ;Iraq;IQ-TS;Al Ta'amim;التاميم
+IQ;Iraq;IQ-WA;Wasit;واسط
+IR;Iran;IR-01;East Azarbaijan;
+IR;Iran;IR-02;West Azarbaijan;
+IR;Iran;IR-03;Ardabil;
+IR;Iran;IR-04;Isfahan;
+IR;Iran;IR-05;Ilam;
+IR;Iran;IR-06;Bushehr;
+IR;Iran;IR-07;Tehran;
+IR;Iran;IR-08;Chahar Mahaal and Bakhtiari;
+IR;Iran;IR-09;Khorasan;
+IR;Iran;IR-10;Khuzestan;
+IR;Iran;IR-11;Zanjan;
+IR;Iran;IR-12;Semnan;
+IR;Iran;IR-13;Sistan and Baluchestan;
+IR;Iran;IR-14;Fars;
+IR;Iran;IR-15;Kerman;
+IR;Iran;IR-16;Kurdistan;
+IR;Iran;IR-17;Kermanshah;
+IR;Iran;IR-18;Kohgiluyeh and Boyer-Ahmad;
+IR;Iran;IR-19;Gilan;
+IR;Iran;IR-20;Lorestan;
+IR;Iran;IR-21;Mazandaran;
+IR;Iran;IR-22;Markazi;
+IR;Iran;IR-23;Hormozgan;
+IR;Iran;IR-24;Hamadan;
+IR;Iran;IR-25;Yazd;
+IR;Iran;IR-26;Qom;
+IR;Iran;IR-27;Golestan;
+IR;Iran;IR-28;Qazvin;
+IR;Iran;IR-29;South Khorasan;
+IR;Iran;IR-30;Razavi Khorasan;
+IR;Iran;IR-31;North Khorasan;
+IS;Iceland;IS-1;Höfuðborgarsvæði;
+IS;Iceland;IS-2;Suðurnes;
+IS;Iceland;IS-3;Vesturland;
+IS;Iceland;IS-4;Vestfirðir;
+IS;Iceland;IS-5;Norðurland vestra;
+IS;Iceland;IS-6;Norðurland eystra;
+IS;Iceland;IS-7;Austurland;
+IS;Iceland;IS-8;Suðurland;
+IT;Italy;IT-AG;Agrigento;
+IT;Italy;IT-AL;Alessandria;
+IT;Italy;IT-AN;Ancona;
+IT;Italy;IT-AO;Valle d'Aosta;
+IT;Italy;IT-AP;Ascoli Piceno;
+IT;Italy;IT-AQ;L'Aquila;
+IT;Italy;IT-AR;Arezzo;
+IT;Italy;IT-AT;Asti;
+IT;Italy;IT-AV;Avellino;
+IT;Italy;IT-BA;Bari;
+IT;Italy;IT-BG;Bergamo;
+IT;Italy;IT-BI;Biella;
+IT;Italy;IT-BL;Belluno;
+IT;Italy;IT-BN;Benevento;
+IT;Italy;IT-BO;Bologna;
+IT;Italy;IT-BR;Brindisi;
+IT;Italy;IT-BS;Brescia;
+IT;Italy;IT-BT;Barletta-Andria-Trani;
+IT;Italy;IT-BZ;Bolzano;
+IT;Italy;IT-CA;Cagliari;
+IT;Italy;IT-CB;Campobasso;
+IT;Italy;IT-CE;Caserta;
+IT;Italy;IT-CH;Chieti;
+IT;Italy;IT-CI;Carbonia-Iglesias;
+IT;Italy;IT-CL;Caltanissetta;
+IT;Italy;IT-CN;Cuneo;
+IT;Italy;IT-CO;Como;
+IT;Italy;IT-CR;Cremona;
+IT;Italy;IT-CS;Cosenza;
+IT;Italy;IT-CT;Catania;
+IT;Italy;IT-CZ;Catanzaro;
+IT;Italy;IT-EN;Enna;
+IT;Italy;IT-FC;Forlì-Cesena;
+IT;Italy;IT-FE;Ferrara;
+IT;Italy;IT-FG;Foggia;
+IT;Italy;IT-FI;Firenze;
+IT;Italy;IT-FM;Fermo;
+IT;Italy;IT-FR;Frosinone;
+IT;Italy;IT-GE;Genova;
+IT;Italy;IT-GO;Gorizia;
+IT;Italy;IT-GR;Grosseto;
+IT;Italy;IT-IM;Imperia;
+IT;Italy;IT-IS;Isernia;
+IT;Italy;IT-KR;Crotone;
+IT;Italy;IT-LC;Lecco;
+IT;Italy;IT-LE;Lecce;
+IT;Italy;IT-LI;Livorno;
+IT;Italy;IT-LO;Lodi;
+IT;Italy;IT-LT;Latina;
+IT;Italy;IT-LU;Lucca;
+IT;Italy;IT-MB;Monza e della Brianza;
+IT;Italy;IT-MC;Macerata;
+IT;Italy;IT-ME;Messina;
+IT;Italy;IT-MI;Milano;
+IT;Italy;IT-MN;Mantova;
+IT;Italy;IT-MO;Modena;
+IT;Italy;IT-MS;Massa-Carrara;
+IT;Italy;IT-MT;Matera;
+IT;Italy;IT-NA;Napoli;
+IT;Italy;IT-NO;Novara;
+IT;Italy;IT-NU;Nuoro;
+IT;Italy;IT-OG;Ogliastra;
+IT;Italy;IT-OR;Oristano;
+IT;Italy;IT-OT;Olbia-Tempio;
+IT;Italy;IT-PA;Palermo;
+IT;Italy;IT-PC;Piacenza;
+IT;Italy;IT-PD;Padova;
+IT;Italy;IT-PE;Pescara;
+IT;Italy;IT-PG;Perugia;
+IT;Italy;IT-PI;Pisa;
+IT;Italy;IT-PN;Pordenone;
+IT;Italy;IT-PO;Prato;
+IT;Italy;IT-PR;Parma;
+IT;Italy;IT-PT;Pistoia;
+IT;Italy;IT-PU;Pesaro e Urbino;
+IT;Italy;IT-PV;Pavia;
+IT;Italy;IT-PZ;Potenza;
+IT;Italy;IT-RA;Ravenna;
+IT;Italy;IT-RC;Reggio di Calabria;
+IT;Italy;IT-RE;Reggio Nell'Emilia;
+IT;Italy;IT-RG;Ragusa;
+IT;Italy;IT-RI;Rieti;
+IT;Italy;IT-RM;Roma;
+IT;Italy;IT-RN;Rimini;
+IT;Italy;IT-RO;Rovigo;
+IT;Italy;IT-SA;Salerno;
+IT;Italy;IT-SI;Siena;
+IT;Italy;IT-SO;Sondrio;
+IT;Italy;IT-SP;La Spezia;
+IT;Italy;IT-SR;Siracusa;
+IT;Italy;IT-SS;Sassari;
+IT;Italy;IT-SV;Savona;
+IT;Italy;IT-TA;Taranto;
+IT;Italy;IT-TE;Teramo;
+IT;Italy;IT-TN;Trento;
+IT;Italy;IT-TO;Torino;
+IT;Italy;IT-TP;Trapani;
+IT;Italy;IT-TR;Terni;
+IT;Italy;IT-TS;Trieste;
+IT;Italy;IT-TV;Treviso;
+IT;Italy;IT-UD;Udine;
+IT;Italy;IT-VA;Varese;
+IT;Italy;IT-VB;Verbano-Cusio-Ossola;
+IT;Italy;IT-VC;Vercelli;
+IT;Italy;IT-VE;Venezia;
+IT;Italy;IT-VI;Vicenza;
+IT;Italy;IT-VR;Verona;
+IT;Italy;IT-VS;Medio Campidano;
+IT;Italy;IT-VT;Viterbo;
+IT;Italy;IT-VV;Vibo Valentia;
+JM;Jamaica;JM-01;Kingston;
+JM;Jamaica;JM-02;Saint Andrew;
+JM;Jamaica;JM-03;Saint Thomas;
+JM;Jamaica;JM-04;Portland;
+JM;Jamaica;JM-05;Saint Mary;
+JM;Jamaica;JM-06;Saint Ann;
+JM;Jamaica;JM-07;Trelawny;
+JM;Jamaica;JM-08;Saint James;
+JM;Jamaica;JM-09;Hanover;
+JM;Jamaica;JM-10;Westmoreland;
+JM;Jamaica;JM-11;Saint Elizabeth;
+JM;Jamaica;JM-12;Manchester;
+JM;Jamaica;JM-13;Clarendon;
+JM;Jamaica;JM-14;Saint Catherine;
+JO;Jordan;JO-AJ;Ajlun;
+JO;Jordan;JO-AM;Amman;
+JO;Jordan;JO-AQ;Aqaba;
+JO;Jordan;JO-AT;Tafilah;
+JO;Jordan;JO-AZ;Zarqa;
+JO;Jordan;JO-BA;Balqa;
+JO;Jordan;JO-IR;Irbid;
+JO;Jordan;JO-JA;Jarash;
+JO;Jordan;JO-KA;Karak;
+JO;Jordan;JO-MA;Mafraq;
+JO;Jordan;JO-MD;Madaba;
+JO;Jordan;JO-MN;Ma'an;
+JP;Japan;JP-01;Hokkaidō;北海道
+JP;Japan;JP-02;Aomori;青森県
+JP;Japan;JP-03;Iwate;岩手県
+JP;Japan;JP-04;Miyagi;宮城県
+JP;Japan;JP-05;Akita;秋田県
+JP;Japan;JP-06;Yamagata;山形県
+JP;Japan;JP-07;Fukushima;福島県
+JP;Japan;JP-08;Ibaraki;茨城県
+JP;Japan;JP-09;Tochigi;栃木県
+JP;Japan;JP-10;Gunma;群馬県
+JP;Japan;JP-11;Saitama;埼玉県
+JP;Japan;JP-12;Chiba;千葉県
+JP;Japan;JP-13;Tōkyō;東京都
+JP;Japan;JP-14;Kanagawa;神奈川県
+JP;Japan;JP-15;Niigata;新潟県
+JP;Japan;JP-16;Toyama;富山県
+JP;Japan;JP-17;Ishikawa;石川県
+JP;Japan;JP-18;Fukui;福井県
+JP;Japan;JP-19;Yamanashi;山梨県
+JP;Japan;JP-20;Nagano;長野県
+JP;Japan;JP-21;Gifu;岐阜県
+JP;Japan;JP-22;Shizuoka;静岡県
+JP;Japan;JP-23;Aichi;愛知県
+JP;Japan;JP-24;Mie;三重県
+JP;Japan;JP-25;Shiga;滋賀県
+JP;Japan;JP-26;Kyōto;京都府
+JP;Japan;JP-27;Ōsaka;大阪府
+JP;Japan;JP-28;Hyōgo;兵庫県
+JP;Japan;JP-29;Nara;奈良県
+JP;Japan;JP-30;Wakayama;和歌山県
+JP;Japan;JP-31;Tottori;鳥取県
+JP;Japan;JP-32;Shimane;島根県
+JP;Japan;JP-33;Okayama;岡山県
+JP;Japan;JP-34;Hiroshima;広島県
+JP;Japan;JP-35;Yamaguchi;山口県
+JP;Japan;JP-36;Tokushima;徳島県
+JP;Japan;JP-37;Kagawa;香川県
+JP;Japan;JP-38;Ehime;愛媛県
+JP;Japan;JP-39;Kōchi;高知県
+JP;Japan;JP-40;Fukuoka;福岡県
+JP;Japan;JP-41;Saga;佐賀県
+JP;Japan;JP-42;Nagasaki;長崎県
+JP;Japan;JP-43;Kumamoto;熊本県
+JP;Japan;JP-44;Ōita;大分県
+JP;Japan;JP-45;Miyazaki;宮崎県
+JP;Japan;JP-46;Kagoshima;鹿児島県
+JP;Japan;JP-47;Okinawa;沖縄県
+KE;Kenya;KE-110;Nairobi;
+KE;Kenya;KE-200;Central;
+KE;Kenya;KE-300;Coast;
+KE;Kenya;KE-400;Eastern;
+KE;Kenya;KE-500;North-Eastern;
+KE;Kenya;KE-600;Nyanza;
+KE;Kenya;KE-700;Rift Valley;
+KE;Kenya;KE-900;Western;
+KG;Kyrgyzstan;KG-B;Баткенская область;Batken Province
+KG;Kyrgyzstan;KG-C;Чуйская область;Chuy Province
+KG;Kyrgyzstan;KG-GB;Бишкек;Bishkek City
+KG;Kyrgyzstan;KG-J;Жалалабадская область;Jalal-Abad Province
+KG;Kyrgyzstan;KG-N;Нарынская область;Naryn Province
+KG;Kyrgyzstan;KG-O;Ош;Osh City
+KG;Kyrgyzstan;KG-T;Таласская область;Talas Province
+KG;Kyrgyzstan;KG-Y;Иссык-Кульская область;Issyk Kul Province
+KH;Cambodia;KH-1;Banteay Meanchey;
+KH;Cambodia;KH-10;Kratie;
+KH;Cambodia;KH-11;Mondol Kiri;
+KH;Cambodia;KH-12;Phnom Penh;
+KH;Cambodia;KH-13;Preah Vihear;
+KH;Cambodia;KH-14;Prey Veng;
+KH;Cambodia;KH-15;Pursat;
+KH;Cambodia;KH-16;RatanaKiri;
+KH;Cambodia;KH-17;Siem Reap;
+KH;Cambodia;KH-18;Krong Preah Sihanouk;
+KH;Cambodia;KH-19;Stung Treng;
+KH;Cambodia;KH-2;Battambang;
+KH;Cambodia;KH-20;Svay Rieng;
+KH;Cambodia;KH-21;Takeo;
+KH;Cambodia;KH-22;Oudor MeanChey;
+KH;Cambodia;KH-23;Krong Kep;
+KH;Cambodia;KH-24;Krong Pailin;
+KH;Cambodia;KH-3;Kampong Cham;
+KH;Cambodia;KH-4;Kampong Chhnang;
+KH;Cambodia;KH-5;Kampong Speu;
+KH;Cambodia;KH-6;Kampong Thom;
+KH;Cambodia;KH-7;Kampot;
+KH;Cambodia;KH-8;Kandal;
+KH;Cambodia;KH-9;Koh Kong;
+KI;Kiribati;KI-G;Gilbert Islands;
+KI;Kiribati;KI-L;Line Islands;
+KI;Kiribati;KI-P;Phoenix Islands;
+KM;Comoros;KM-A;Anjouan;
+KM;Comoros;KM-G;Grande Comore;
+KM;Comoros;KM-M;Mohéli;
+KN;Saint Kitts and Nevis;KN-01;Christ Church Nichola Town;
+KN;Saint Kitts and Nevis;KN-02;Saint Anne Sandy Point;
+KN;Saint Kitts and Nevis;KN-03;Saint George Basseterre;
+KN;Saint Kitts and Nevis;KN-04;Saint George Gingerland;
+KN;Saint Kitts and Nevis;KN-05;Saint James Windward;
+KN;Saint Kitts and Nevis;KN-06;Saint John Capisterre;
+KN;Saint Kitts and Nevis;KN-07;Saint John Figtree;
+KN;Saint Kitts and Nevis;KN-08;Saint Mary Cayon;
+KN;Saint Kitts and Nevis;KN-09;Saint Paul Capisterre;
+KN;Saint Kitts and Nevis;KN-10;Saint Paul Charlestown;
+KN;Saint Kitts and Nevis;KN-11;Saint Peter Basseterre;
+KN;Saint Kitts and Nevis;KN-12;Saint Thomas Lowland;
+KN;Saint Kitts and Nevis;KN-13;Saint Thomas Middle Island;
+KN;Saint Kitts and Nevis;KN-15;Trinity Palmetto Point;
+KP;North Korea;KP-CHA;Chagang;
+KP;North Korea;KP-HAB;North Hamgyong;
+KP;North Korea;KP-HAN;South Hamgyong;
+KP;North Korea;KP-HWB;North Hwanghae;
+KP;North Korea;KP-HWN;South Hwanghae;
+KP;North Korea;KP-KAE;Kaesong;
+KP;North Korea;KP-KAN;Kangwon;
+KP;North Korea;KP-NAJ;Rason;
+KP;North Korea;KP-NAM;Nampho;
+KP;North Korea;KP-PYB;North Pyongan;
+KP;North Korea;KP-PYN;South Pyongan;
+KP;North Korea;KP-PYO;Pyongyang;
+KP;North Korea;KP-YAN;Ryanggang;
+KR;South Korea;KR-11;Seoul;서울
+KR;South Korea;KR-26;Busan;부산
+KR;South Korea;KR-27;Daegu;대구
+KR;South Korea;KR-28;Incheon;인천
+KR;South Korea;KR-29;Gwangju;광주
+KR;South Korea;KR-30;Daejeon;대전
+KR;South Korea;KR-31;Ulsan;울산
+KR;South Korea;KR-41;Gyeonggi-do;경기
+KR;South Korea;KR-42;Gangwon-do;강원
+KR;South Korea;KR-43;Chungcheongbuk-do;충북
+KR;South Korea;KR-44;Chungcheongnam-do;충남
+KR;South Korea;KR-45;Jeollabuk-do;전북
+KR;South Korea;KR-46;Jeollanam-do;전남
+KR;South Korea;KR-47;Gyeongsangbuk-do;경북
+KR;South Korea;KR-48;Gyeongsangnam-do;경남
+KR;South Korea;KR-49;Jeju-do;제주
+KW;Kuwait;KW-AH;Al Ahmadi;
+KW;Kuwait;KW-FA;Al Farwaniyah;
+KW;Kuwait;KW-HA;Hawalli;
+KW;Kuwait;KW-JA;Al Jahra;
+KW;Kuwait;KW-KU;Al Asimah;
+KW;Kuwait;KW-MU;Mubarak Al-Kabeer;
+KY;Cayman Islands;KY-01;Bodden Town;
+KY;Cayman Islands;KY-02;Cayman Brac;
+KY;Cayman Islands;KY-03;East End;
+KY;Cayman Islands;KY-04;George Town;
+KY;Cayman Islands;KY-05;Little Cayman;
+KY;Cayman Islands;KY-06;North Side;
+KY;Cayman Islands;KY-07;West Bay;
+KZ;Kazakhstan;KZ-AKM;Акмолинская область;Akmola
+KZ;Kazakhstan;KZ-AKT;Актюбинская область;Aktobe
+KZ;Kazakhstan;KZ-ALA;город Алматы;Almaty city
+KZ;Kazakhstan;KZ-ALM;Алматинская область;Almaty region
+KZ;Kazakhstan;KZ-AST;город Астана;Astana city
+KZ;Kazakhstan;KZ-ATY;Атырауская область;Atyrau
+KZ;Kazakhstan;KZ-KAR;Карагандинская область;Karagandy
+KZ;Kazakhstan;KZ-KUS;Костанайская область;Kostanay
+KZ;Kazakhstan;KZ-KZY;Кызылординская область;Kyzylorda
+KZ;Kazakhstan;KZ-MAN;Мангистауская область;Mangystau region
+KZ;Kazakhstan;KZ-PAV;Павлодарская область;Pavlodar
+KZ;Kazakhstan;KZ-SEV;Северо-Казахстанская область;North Kazakhstan
+KZ;Kazakhstan;KZ-VOS;Восточно-Казахстанская область;East Kazakhstan
+KZ;Kazakhstan;KZ-YUZ;Южно-Казахстанская Область;South Kazakhstan
+KZ;Kazakhstan;KZ-ZAP;Западно-Казахстанская область;West Kazakhstan
+KZ;Kazakhstan;KZ-ZHA;Жамбылская область;Zhambyl
+LA;Laos;LA-AT;Attapu;
+LA;Laos;LA-BK;Bokèo;
+LA;Laos;LA-BL;Bolikhamxai;
+LA;Laos;LA-CH;Champasak;
+LA;Laos;LA-HO;Houaphan;
+LA;Laos;LA-KH;Khammouan;
+LA;Laos;LA-LM;Louang Namtha;
+LA;Laos;LA-LP;Louangphabang;
+LA;Laos;LA-OU;Oudômxai;
+LA;Laos;LA-PH;Phôngsali;
+LA;Laos;LA-SL;Salavan;
+LA;Laos;LA-SV;Savannakhét;
+LA;Laos;LA-VI;Vientiane Province;
+LA;Laos;LA-VT;Vientiane Prefecture;
+LA;Laos;LA-XA;Sainyabuli;
+LA;Laos;LA-XE;Sekong;
+LA;Laos;LA-XI;Xiangkhouang;
+LA;Laos;LA-XN;Xaisomboun;
+LB;Lebanon;LB-AS;North;الشمال
+LB;Lebanon;LB-BA;Beirut;محافظة بيروت
+LB;Lebanon;LB-BI;Beqaa;البقاع
+LB;Lebanon;LB-JA;South;محافظة الجنوب
+LB;Lebanon;LB-JL;Mount Lebanon;جبل لبنان
+LB;Lebanon;LB-NA;Nabatieh;النبطية
+LC;Saint Lucia;LC-01;Anse-la-Raye;
+LC;Saint Lucia;LC-02;Castries;
+LC;Saint Lucia;LC-03;Choiseul;
+LC;Saint Lucia;LC-04;Dauphin;
+LC;Saint Lucia;LC-05;Dennery;
+LC;Saint Lucia;LC-06;Gros Islet;
+LC;Saint Lucia;LC-07;Laborie;
+LC;Saint Lucia;LC-08;Micoud;
+LC;Saint Lucia;LC-09;Praslin;
+LC;Saint Lucia;LC-10;Soufrière;
+LC;Saint Lucia;LC-11;Vieux Fort;
+LI;Liechtenstein;LI-01;Balzers;
+LI;Liechtenstein;LI-02;Eschen;
+LI;Liechtenstein;LI-03;Gamprin;
+LI;Liechtenstein;LI-04;Mauren;
+LI;Liechtenstein;LI-05;Planken;
+LI;Liechtenstein;LI-06;Ruggell;
+LI;Liechtenstein;LI-07;Schaan;
+LI;Liechtenstein;LI-08;Schellenberg;
+LI;Liechtenstein;LI-09;Triesen;
+LI;Liechtenstein;LI-10;Triesenberg;
+LI;Liechtenstein;LI-11;Vaduz;
+LK;Sri Lanka;LK-11;Colombo;
+LK;Sri Lanka;LK-12;Gampaha;
+LK;Sri Lanka;LK-13;Kalutara;
+LK;Sri Lanka;LK-21;Kandy;
+LK;Sri Lanka;LK-22;Matale;
+LK;Sri Lanka;LK-23;Nuwara Eliya;
+LK;Sri Lanka;LK-31;Galle;
+LK;Sri Lanka;LK-32;Matara;
+LK;Sri Lanka;LK-33;Hambantota;
+LK;Sri Lanka;LK-41;Jaffna;
+LK;Sri Lanka;LK-42;Kilinochchi;
+LK;Sri Lanka;LK-43;Mannar;
+LK;Sri Lanka;LK-44;Vavuniya;
+LK;Sri Lanka;LK-45;Mullaitivu;
+LK;Sri Lanka;LK-51;Batticaloa;
+LK;Sri Lanka;LK-52;Ampara;
+LK;Sri Lanka;LK-53;Trincomalee;
+LK;Sri Lanka;LK-61;Kurunegala;
+LK;Sri Lanka;LK-62;Puttalam;
+LK;Sri Lanka;LK-71;Anuradhapura;
+LK;Sri Lanka;LK-72;Polonnaruwa;
+LK;Sri Lanka;LK-81;Badulla;
+LK;Sri Lanka;LK-82;Moneragala;
+LK;Sri Lanka;LK-91;Ratnapura;
+LK;Sri Lanka;LK-92;Kegalle;
+LR;Liberia;LR-BG;Bong;
+LR;Liberia;LR-BM;Bomi;
+LR;Liberia;LR-CM;Grand Cape Mount;
+LR;Liberia;LR-GB;Grand Bassa;
+LR;Liberia;LR-GG;Grand Gedeh;
+LR;Liberia;LR-GK;Grand Kru;
+LR;Liberia;LR-GP;Gbarpolu;
+LR;Liberia;LR-LO;Lofa;
+LR;Liberia;LR-MG;Margibi;
+LR;Liberia;LR-MO;Montserrado;
+LR;Liberia;LR-MY;Maryland;
+LR;Liberia;LR-NI;Nimba;
+LR;Liberia;LR-RG;River Gee;
+LR;Liberia;LR-RI;Rivercess;
+LR;Liberia;LR-SI;Sinoe;
+LS;Lesotho;LS-A;Maseru;
+LS;Lesotho;LS-B;Butha-Buthe;
+LS;Lesotho;LS-C;Leribe;
+LS;Lesotho;LS-D;Berea;
+LS;Lesotho;LS-E;Mafeteng;
+LS;Lesotho;LS-F;Mohale's Hoek;
+LS;Lesotho;LS-G;Quthing;
+LS;Lesotho;LS-H;Qacha's Nek;
+LS;Lesotho;LS-J;Mokhotlong;
+LS;Lesotho;LS-K;Thaba-Tseka;
+LT;Lithuania;LT-AL;Alytaus;
+LT;Lithuania;LT-KL;Klaipėdos;
+LT;Lithuania;LT-KU;Kauno;
+LT;Lithuania;LT-MR;Marijampolės;
+LT;Lithuania;LT-PN;Panevėžio;
+LT;Lithuania;LT-SA;Šiaulių;
+LT;Lithuania;LT-TA;Tauragės;
+LT;Lithuania;LT-TE;Telšių;
+LT;Lithuania;LT-UT;Utenos;
+LT;Lithuania;LT-VL;Vilniaus;
+LU;Luxembourg;LU-D;Diekirch;Dikrech
+LU;Luxembourg;LU-G;Grevenmacher;Gréiwemaacher
+LU;Luxembourg;LU-L;Luxembourg;Lëtzebuerg
+LV;Latvia;LV-AI;Aizkraukles;
+LV;Latvia;LV-AL;Alūksnes;
+LV;Latvia;LV-BL;Balvu;
+LV;Latvia;LV-BU;Bauskas;
+LV;Latvia;LV-CE;Cēsu;
+LV;Latvia;LV-DA;Daugavpils;
+LV;Latvia;LV-DGV;Daugavpils;
+LV;Latvia;LV-DO;Dobeles;
+LV;Latvia;LV-GU;Gulbenes;
+LV;Latvia;LV-JEL;Jelgava;
+LV;Latvia;LV-JK;Jēkabpils;
+LV;Latvia;LV-JL;Jelgavas;
+LV;Latvia;LV-JUR;Jūrmala;
+LV;Latvia;LV-KR;Krāslavas;
+LV;Latvia;LV-KU;Kuldīgas;
+LV;Latvia;LV-LE;Liepājas;
+LV;Latvia;LV-LM;Limbažu;
+LV;Latvia;LV-LPX;Liepājas;
+LV;Latvia;LV-LU;Ludzas;
+LV;Latvia;LV-MA;Madonas;
+LV;Latvia;LV-OG;Ogres;
+LV;Latvia;LV-PR;Preiļu;
+LV;Latvia;LV-RE;Rēzeknes;
+LV;Latvia;LV-REZ;Rezekne;
+LV;Latvia;LV-RI;Rīgas;
+LV;Latvia;LV-RIX;Rīga;
+LV;Latvia;LV-SA;Saldus;
+LV;Latvia;LV-TA;Talsu;
+LV;Latvia;LV-TU;Tukuma;
+LV;Latvia;LV-VE;Ventspils;
+LV;Latvia;LV-VEN;Ventspils;
+LV;Latvia;LV-VK;Valkas;
+LV;Latvia;LV-VM;Valmieras;
+LY;Libya;LY-BA;Banghazi;
+LY;Libya;LY-BU;Al Butnan;
+LY;Libya;LY-DR;Darnah;
+LY;Libya;LY-GT;Ghat;
+LY;Libya;LY-JA;Al Jabal al Akhdar;
+LY;Libya;LY-JG;Al Jabal al Gharbi;
+LY;Libya;LY-JI;Al Jifarah;
+LY;Libya;LY-JU;Al Jufrah;
+LY;Libya;LY-KF;Al Kufrah;
+LY;Libya;LY-MB;Al Marqab;
+LY;Libya;LY-MI;Misratah;
+LY;Libya;LY-MJ;Al Marj;
+LY;Libya;LY-MQ;Murzuq;
+LY;Libya;LY-NL;Nalut;
+LY;Libya;LY-NQ;An Nuqat al Khams;
+LY;Libya;LY-SB;Sabha;
+LY;Libya;LY-SR;Surt;
+LY;Libya;LY-TB;Tarabulus;
+LY;Libya;LY-WA;Al Wahat;
+LY;Libya;LY-WD;Wadi Al Hayaa;
+LY;Libya;LY-WS;Wadi ash Shati;
+LY;Libya;LY-ZA;Az Zawiyah;
+MA;Morocco;MA-AGD;Agadir Ida-Outanane;
+MA;Morocco;MA-AOU;Aousserd;
+MA;Morocco;MA-ASZ;Assa-Zag;
+MA;Morocco;MA-AZI;Azilal;
+MA;Morocco;MA-BEM;Beni Mellal;
+MA;Morocco;MA-BER;Berkane;
+MA;Morocco;MA-BES;Ben Slimane;
+MA;Morocco;MA-BOD;Boujdour;
+MA;Morocco;MA-BOM;Boulmane;
+MA;Morocco;MA-CAS;Casablanca;
+MA;Morocco;MA-CHE;Chefchaouen;
+MA;Morocco;MA-CHI;Chichaoua;
+MA;Morocco;MA-CHT;Chtouka-Aït Baha;
+MA;Morocco;MA-ERR;Errachidia;
+MA;Morocco;MA-ESI;Essaouira;
+MA;Morocco;MA-ESM;Es-Semara;
+MA;Morocco;MA-FAH;Fahs-Beni Makada;
+MA;Morocco;MA-FES;Fès-Dar-Dbibegh;
+MA;Morocco;MA-FIG;Figuig;
+MA;Morocco;MA-GUE;Guelmim;
+MA;Morocco;MA-HAJ;El Hajeb;
+MA;Morocco;MA-HAO;Al Haouz;
+MA;Morocco;MA-HOC;Al-Hoceima;
+MA;Morocco;MA-IFR;Ifrane;
+MA;Morocco;MA-INE;Inezgane-Aït Melloul;
+MA;Morocco;MA-JDI;El Jadida;
+MA;Morocco;MA-JRA;Jerada;
+MA;Morocco;MA-KEN;Kénitra;
+MA;Morocco;MA-KES;Kelâat Es-Sraghna;
+MA;Morocco;MA-KHE;Khémisset;
+MA;Morocco;MA-KHN;Khénifra;
+MA;Morocco;MA-KHO;Khouribga;
+MA;Morocco;MA-LAA;Laâyoune;
+MA;Morocco;MA-LAR;Larache;
+MA;Morocco;MA-MED;Médiouna;
+MA;Morocco;MA-MEK;Meknès;
+MA;Morocco;MA-MMD;Marrakech-Médina;
+MA;Morocco;MA-MMN;Marrakech-Ménara;
+MA;Morocco;MA-MOH;Mohammédia;
+MA;Morocco;MA-MOU;Moulay Yacoub;
+MA;Morocco;MA-NAD;Nador;
+MA;Morocco;MA-NOU;Nouaceur;
+MA;Morocco;MA-OUA;Ouarzazate;
+MA;Morocco;MA-OUD;Oued Ed-Dahab-Lagouira;
+MA;Morocco;MA-OUJ;Oujda-Angad;
+MA;Morocco;MA-RAB;Rabat;
+MA;Morocco;MA-SAF;Safi;
+MA;Morocco;MA-SAL;Salé;
+MA;Morocco;MA-SEF;Sefrou;
+MA;Morocco;MA-SET;Settat;
+MA;Morocco;MA-SIK;Sidi Kacem;
+MA;Morocco;MA-SKH;Skhirat-Témara;
+MA;Morocco;MA-SYB;Sidi Youssef Ben Ali;
+MA;Morocco;MA-TAI;Taourirt;
+MA;Morocco;MA-TAO;Taounate;
+MA;Morocco;MA-TAR;Taroudant;
+MA;Morocco;MA-TAT;Tata;
+MA;Morocco;MA-TAZ;Taza;
+MA;Morocco;MA-TET;Tétouan;
+MA;Morocco;MA-TIZ;Tiznit;
+MA;Morocco;MA-TNG;Tanger-Asilah;
+MA;Morocco;MA-TNT;Tan-Tan;
+MA;Morocco;MA-ZAG;Zagora;
+MD;Moldova;MD-AN;Anenii Noi;
+MD;Moldova;MD-BA;Bălţi;
+MD;Moldova;MD-BD;Tighina;
+MD;Moldova;MD-BR;Briceni;
+MD;Moldova;MD-BS;Basarabeasca;
+MD;Moldova;MD-CA;Cahul;
+MD;Moldova;MD-CL;Călăraşi;
+MD;Moldova;MD-CM;Cimişlia;
+MD;Moldova;MD-CR;Criuleni;
+MD;Moldova;MD-CS;Căuşeni;
+MD;Moldova;MD-CT;Cantemir;
+MD;Moldova;MD-CU;Chişinău;
+MD;Moldova;MD-DO;Donduşeni;
+MD;Moldova;MD-DR;Drochia;
+MD;Moldova;MD-DU;Dubăsari;
+MD;Moldova;MD-ED;Edineţ;
+MD;Moldova;MD-FA;Făleşti;
+MD;Moldova;MD-FL;Floreşti;
+MD;Moldova;MD-GA;Gagauzia;
+MD;Moldova;MD-GL;Glodeni;
+MD;Moldova;MD-HI;Hînceşti;
+MD;Moldova;MD-IA;Ialoveni;
+MD;Moldova;MD-LE;Leova;
+MD;Moldova;MD-NI;Nisporeni;
+MD;Moldova;MD-OC;Ocniţa;
+MD;Moldova;MD-OR;Orhei;
+MD;Moldova;MD-RE;Rezina;
+MD;Moldova;MD-RI;Rîşcani;
+MD;Moldova;MD-SD;Şoldăneşti;
+MD;Moldova;MD-SI;Sîngerei;
+MD;Moldova;MD-SO;Soroca;
+MD;Moldova;MD-ST;Străşeni;
+MD;Moldova;MD-SV;Ştefan Vodă;
+MD;Moldova;MD-TA;Taraclia;
+MD;Moldova;MD-TE;Teleneşti;
+MD;Moldova;MD-UN;Ungheni;
+ME;Montenegro;ME-01;Andrijevica;
+ME;Montenegro;ME-02;Bar;
+ME;Montenegro;ME-03;Berane;
+ME;Montenegro;ME-04;Bijelo Polje;
+ME;Montenegro;ME-05;Budva;
+ME;Montenegro;ME-06;Cetinje;
+ME;Montenegro;ME-07;Danilovgrad;
+ME;Montenegro;ME-08;Herceg Novi;
+ME;Montenegro;ME-09;Kolašin;
+ME;Montenegro;ME-10;Kotor;
+ME;Montenegro;ME-11;Mojkovac;
+ME;Montenegro;ME-12;Nikšić;
+ME;Montenegro;ME-13;Plav;
+ME;Montenegro;ME-14;Pljevlja;
+ME;Montenegro;ME-15;Plužine;
+ME;Montenegro;ME-16;Podgorica;
+ME;Montenegro;ME-17;Rožaje;
+ME;Montenegro;ME-18;Šavnik;
+ME;Montenegro;ME-19;Tivat;
+ME;Montenegro;ME-20;Ulcinj;
+ME;Montenegro;ME-21;Žabljak;
+MG;Madagascar;MG-A;Toamasina;
+MG;Madagascar;MG-D;Antsiranana;
+MG;Madagascar;MG-F;Fianarantsoa;
+MG;Madagascar;MG-M;Mahajanga;
+MG;Madagascar;MG-T;Antananarivo;
+MG;Madagascar;MG-U;Toliara;
+MH;Marshall Islands;MH-ALK;Ailuk;
+MH;Marshall Islands;MH-ALL;Ailinglapalap;
+MH;Marshall Islands;MH-ARN;Arno;
+MH;Marshall Islands;MH-AUR;Aur;
+MH;Marshall Islands;MH-EBO;Ebon;
+MH;Marshall Islands;MH-ENI;Eniwetok;
+MH;Marshall Islands;MH-JAL;Jaluit;
+MH;Marshall Islands;MH-KIL;Kili;
+MH;Marshall Islands;MH-KWA;Kwajalein;
+MH;Marshall Islands;MH-LAE;Lae;
+MH;Marshall Islands;MH-LIB;Lib;
+MH;Marshall Islands;MH-LIK;Likiep;
+MH;Marshall Islands;MH-MAJ;Majuro;
+MH;Marshall Islands;MH-MAL;Maloelap;
+MH;Marshall Islands;MH-MEJ;Mejit;
+MH;Marshall Islands;MH-MIL;Mili;
+MH;Marshall Islands;MH-NMK;Namorik;
+MH;Marshall Islands;MH-NMU;Namu;
+MH;Marshall Islands;MH-RON;Rongelap;
+MH;Marshall Islands;MH-UJA;Ujae;
+MH;Marshall Islands;MH-UJL;Ujelang;
+MH;Marshall Islands;MH-UTI;Utirik;
+MH;Marshall Islands;MH-WTH;Wotho;
+MH;Marshall Islands;MH-WTJ;Wotje;
+MK;Macedonia;MK-AD;Aerodrom;Деродром
+MK;Macedonia;MK-AJ;Saraj;Сарај
+MK;Macedonia;MK-AR;Aračinovo;Драчиново
+MK;Macedonia;MK-AV;Kavadarci;Кавадарци
+MK;Macedonia;MK-BG;Bogdanci;Богданци
+MK;Macedonia;MK-BN;Brvenica;Брвеница
+MK;Macedonia;MK-BR;Berovo;Берово
+MK;Macedonia;MK-BS;Bosilovo;Босилово
+MK;Macedonia;MK-BU;Butel;Бутел
+MK;Macedonia;MK-CA;Čaška;Чашка
+MK;Macedonia;MK-CE;Centar;Центар
+MK;Macedonia;MK-CH;Češinovo-Obleševo;Чешиново-Облешево
+MK;Macedonia;MK-CI;Čair;Чаир
+MK;Macedonia;MK-CS;Čučer-Sandevo;Чучер-Сандево
+MK;Macedonia;MK-CZ;Centar Župa;Центар Жупа
+MK;Macedonia;MK-DA;Debarca;Дебарца
+MK;Macedonia;MK-DB;Debar;Дебар
+MK;Macedonia;MK-DE;Dolneni;Долнени
+MK;Macedonia;MK-DK;Demir Kapija;Демир Капија
+MK;Macedonia;MK-DL;Delčevo;Делчево
+MK;Macedonia;MK-DM;Demir Hisar;Демир Хисар
+MK;Macedonia;MK-DR;Drugovo;Другово
+MK;Macedonia;MK-ET;Tetovo;Тетово
+MK;Macedonia;MK-GB;Gazi Baba;Гази Баба
+MK;Macedonia;MK-GP;Gjorče Petrov;Ѓорче Петров
+MK;Macedonia;MK-GR;Gradsko;Градско
+MK;Macedonia;MK-GT;Gostivar;Гостивар
+MK;Macedonia;MK-GV;Gevgelija;Гевгелија
+MK;Macedonia;MK-IL;Ilinden;Илинден
+MK;Macedonia;MK-JG;Jegunovce;Јегуновце
+MK;Macedonia;MK-KB;Karbinci;Карбинци
+MK;Macedonia;MK-KG;Krivogaštani;Кривогаштани
+MK;Macedonia;MK-KH;Kicevo;Кичево
+MK;Macedonia;MK-KN;Konče;Конче
+MK;Macedonia;MK-KS;Kruševo;Крушево
+MK;Macedonia;MK-KX;Karpoš;Карпош
+MK;Macedonia;MK-KY;Kratovo;Кратово
+MK;Macedonia;MK-KZ;Kriva Palanka;Крива Паланка
+MK;Macedonia;MK-LI;Lipkovo;Липково
+MK;Macedonia;MK-LO;Lozovo;Лозово
+MK;Macedonia;MK-MD;Makedonski Brod;Македонски Брод
+MK;Macedonia;MK-MG;Mogila;Могила
+MK;Macedonia;MK-MK;Makedonska Kamenica;Македонска Каменица
+MK;Macedonia;MK-MR;Mavrovo and Rostuša;Маврово и Ростуша
+MK;Macedonia;MK-NA;Staro Nagoričane;Старо Нагоричане
+MK;Macedonia;MK-NG;Negotino;Неготино
+MK;Macedonia;MK-NI;Vinica;Виница
+MK;Macedonia;MK-NS;Novo Selo;Ново Село
+MK;Macedonia;MK-NV;Novaci;Новаци
+MK;Macedonia;MK-OC;Kocani;Кочани
+MK;Macedonia;MK-OD;Ohrid;Охрид
+MK;Macedonia;MK-OS;Oslomej;Осломеј
+MK;Macedonia;MK-PE;Petrovec;Петровец
+MK;Macedonia;MK-PH;Pehčevo;Пехчево
+MK;Macedonia;MK-PN;Plasnica;Пласница
+MK;Macedonia;MK-PP;Prilep;Прилеп
+MK;Macedonia;MK-PT;Probištip;Пробиштип
+MK;Macedonia;MK-RE;Resen;Ресен
+MK;Macedonia;MK-RM;Rosoman;Росоман
+MK;Macedonia;MK-RN;Rankovce;Ранковце
+MK;Macedonia;MK-RU;Strumica;Струмица
+MK;Macedonia;MK-RV;Radoviš;Радовиш
+MK;Macedonia;MK-SD;Doјran;Дојран
+MK;Macedonia;MK-SL;Sveti Nikole;Свети Николе
+MK;Macedonia;MK-SO;Šuto Orizari;Шуто Оризари
+MK;Macedonia;MK-SS;Sopište;Сопиште
+MK;Macedonia;MK-ST;Štip;Штип
+MK;Macedonia;MK-SU;Studeničani;Студеничани
+MK;Macedonia;MK-TL;Bitola;Битола
+MK;Macedonia;MK-TR;Tearce;Теарце
+MK;Macedonia;MK-UG;Struga;Струга
+MK;Macedonia;MK-UM;Kumanovo;Куманово
+MK;Macedonia;MK-VA;Valandovo;Валандово
+MK;Macedonia;MK-VC;Vraneštica;Вранештица
+MK;Macedonia;MK-VD;Kisela Voda;Кисела Вода
+MK;Macedonia;MK-VE;Veles;Велес
+MK;Macedonia;MK-VH;Vrapčište;Врапчиште
+MK;Macedonia;MK-VJ;Bogovinje;Боговиње
+MK;Macedonia;MK-VL;Vasilevo;Василево
+MK;Macedonia;MK-VV;Vevčani;Вевчани
+MK;Macedonia;MK-ZA;Zajas;Зајас
+MK;Macedonia;MK-ZE;Želino;Желино
+MK;Macedonia;MK-ZK;Zelenikovo;Зелениково
+MK;Macedonia;MK-ZR;Zrnovci;Зрновци
+ML;Mali;ML-1;Kayes;
+ML;Mali;ML-2;Koulikoro;
+ML;Mali;ML-3;Sikasso;
+ML;Mali;ML-4;Ségou;
+ML;Mali;ML-5;Mopti;
+ML;Mali;ML-6;Tombouctou;
+ML;Mali;ML-7;Gao;
+ML;Mali;ML-8;Kidal;
+ML;Mali;ML-BKO;Bamako;
+MM;Burma;MM-01;Sagaing;
+MM;Burma;MM-02;Bago;
+MM;Burma;MM-03;Magway;
+MM;Burma;MM-04;Mandalay;
+MM;Burma;MM-05;Tanintharyi;
+MM;Burma;MM-06;Yangon;
+MM;Burma;MM-07;Ayeyarwady;
+MM;Burma;MM-11;Kachin;
+MM;Burma;MM-12;Kayah;
+MM;Burma;MM-13;Kayin;
+MM;Burma;MM-14;Chin;
+MM;Burma;MM-15;Mon;
+MM;Burma;MM-16;Rakhine;
+MM;Burma;MM-17;Shan;
+MN;Mongolia;MN-035;Орхон;Orhon
+MN;Mongolia;MN-037;Дархан-Уул;Darhan-Uul
+MN;Mongolia;MN-039;Хэнтий;Hentii
+MN;Mongolia;MN-041;Хөвсгөл;Huvsgul
+MN;Mongolia;MN-043;Ховд;Hovd
+MN;Mongolia;MN-046;Увс;Uvs
+MN;Mongolia;MN-047;Төв;Tuv
+MN;Mongolia;MN-049;Сэлэнгэ;Selenge
+MN;Mongolia;MN-051;Сүхбаатар;Syhbaatar
+MN;Mongolia;MN-053;Өмнөговь;Umnugovi
+MN;Mongolia;MN-055;Өвөрхангай;Uvurhangai
+MN;Mongolia;MN-057;Завхан;Zavhan
+MN;Mongolia;MN-059;Дундговь;Dundgovi
+MN;Mongolia;MN-061;Дорнод;Dornod
+MN;Mongolia;MN-063;Дорноговь;Dornogovi
+MN;Mongolia;MN-064;Говьсүмбэр;Govisymber
+MN;Mongolia;MN-065;Говь-Алтай;Govi-Altai
+MN;Mongolia;MN-067;Булган;Bulgan
+MN;Mongolia;MN-069;Баянхонгор;Bayunhongor
+MN;Mongolia;MN-071;Баян-Өлгий;Bayun-Ulgii
+MN;Mongolia;MN-073;Архангай;Arhangai
+MN;Mongolia;MN-1;Улаанбаатар;Ulaanbaatar
+MR;Mauritania;MR-01;Hodh ech Chargui;
+MR;Mauritania;MR-02;Hodh el Gharbi;
+MR;Mauritania;MR-03;Assaba;
+MR;Mauritania;MR-04;Gorgol;
+MR;Mauritania;MR-05;Brakna;
+MR;Mauritania;MR-06;Trarza;
+MR;Mauritania;MR-07;Adrar;
+MR;Mauritania;MR-08;Dakhlet Nouâdhibou;
+MR;Mauritania;MR-09;Tagant;
+MR;Mauritania;MR-10;Guidimaka;
+MR;Mauritania;MR-11;Tiris Zemmour;
+MR;Mauritania;MR-12;Inchiri;
+MR;Mauritania;MR-NKC;Nouakchott;
+MT;Malta;MT-01;Attard;
+MT;Malta;MT-02;Balzan;
+MT;Malta;MT-03;Birgu;
+MT;Malta;MT-04;Birkirkara;
+MT;Malta;MT-05;Birzebbuga;
+MT;Malta;MT-06;Bormla;
+MT;Malta;MT-07;Dingli;
+MT;Malta;MT-08;Fgura;
+MT;Malta;MT-09;Floriana;
+MT;Malta;MT-10;Fontana;
+MT;Malta;MT-11;Gudja;
+MT;Malta;MT-12;Gzira;
+MT;Malta;MT-13;Għajnsielem;
+MT;Malta;MT-14;Għarb;
+MT;Malta;MT-15;Għargħur;
+MT;Malta;MT-16;Għasri;
+MT;Malta;MT-17;Għaxaq;
+MT;Malta;MT-18;Ħamrun;
+MT;Malta;MT-19;Iklin;
+MT;Malta;MT-20;Isla;
+MT;Malta;MT-21;Kalkara;
+MT;Malta;MT-22;Kercem;
+MT;Malta;MT-23;Kirkop;
+MT;Malta;MT-24;Lija;
+MT;Malta;MT-25;Luqa;
+MT;Malta;MT-26;Marsa;
+MT;Malta;MT-27;Marsaskala;
+MT;Malta;MT-28;Marsaxlokk;
+MT;Malta;MT-29;Mdina;
+MT;Malta;MT-30;Mellieħa;
+MT;Malta;MT-31;Mgarr;
+MT;Malta;MT-32;Mosta;
+MT;Malta;MT-33;Mqabba;
+MT;Malta;MT-34;Msida;
+MT;Malta;MT-35;Mtarfa;
+MT;Malta;MT-36;Munxar;
+MT;Malta;MT-37;Nadur;
+MT;Malta;MT-38;Naxxar;
+MT;Malta;MT-39;Paola;
+MT;Malta;MT-40;Pembroke;
+MT;Malta;MT-41;Pietà;
+MT;Malta;MT-42;Qala;
+MT;Malta;MT-43;Qormi;
+MT;Malta;MT-44;Qrendi;
+MT;Malta;MT-45;Rabat (Għawdex);
+MT;Malta;MT-46;Rabat (Malta);
+MT;Malta;MT-47;Safi;
+MT;Malta;MT-48;San Ġiljan;
+MT;Malta;MT-49;San Ġwann;
+MT;Malta;MT-50;San Lawrenz;
+MT;Malta;MT-51;San Pawl il-Baħar;
+MT;Malta;MT-52;Sannat;
+MT;Malta;MT-53;Santa Lucija;
+MT;Malta;MT-54;Santa Venera;
+MT;Malta;MT-55;Siggiewi;
+MT;Malta;MT-56;Sliema;
+MT;Malta;MT-57;Swieqi;
+MT;Malta;MT-58;Ta' Xbiex;
+MT;Malta;MT-59;Tarxien;
+MT;Malta;MT-60;Valletta;
+MT;Malta;MT-61;Xagħra;
+MT;Malta;MT-62;Xewkija;
+MT;Malta;MT-63;Xgħajra;
+MT;Malta;MT-64;Żabbar;
+MT;Malta;MT-65;Żebbuġ (Għawdex);
+MT;Malta;MT-66;Żebbuġ (Malta);
+MT;Malta;MT-67;Zejtun;
+MT;Malta;MT-68;Zurrieq;
+MU;Mauritius;MU-AG;Agalega Islands;
+MU;Mauritius;MU-BL;Black River;
+MU;Mauritius;MU-BR;Beau Bassin-Rose Hill;
+MU;Mauritius;MU-CC;Cargados Carajos;
+MU;Mauritius;MU-CU;Curepipe;
+MU;Mauritius;MU-FL;Flacq;
+MU;Mauritius;MU-GP;Grand Port;
+MU;Mauritius;MU-MO;Moka;
+MU;Mauritius;MU-PA;Pamplemousses;
+MU;Mauritius;MU-PL;Port Louis City;
+MU;Mauritius;MU-PU;Port Louis District;
+MU;Mauritius;MU-PW;Plaines Wilhems;
+MU;Mauritius;MU-QB;Quatre Bornes;
+MU;Mauritius;MU-RO;Rodrigues Island;
+MU;Mauritius;MU-RR;Rivière du Rempart;
+MU;Mauritius;MU-SA;Savanne;
+MU;Mauritius;MU-VP;Vacoas-Phoenix;
+MV;Maldives;MV-00;Alif Dhaalu;
+MV;Maldives;MV-01;Seenu;
+MV;Maldives;MV-02;Alif Alif;
+MV;Maldives;MV-03;Lhaviyani;
+MV;Maldives;MV-04;Vaavu;
+MV;Maldives;MV-05;Laamu;
+MV;Maldives;MV-07;Haa Alif;
+MV;Maldives;MV-08;Thaa;
+MV;Maldives;MV-12;Meemu;
+MV;Maldives;MV-13;Raa;
+MV;Maldives;MV-14;Faafu;
+MV;Maldives;MV-17;Dhaalu Atoll;
+MV;Maldives;MV-20;Baa;
+MV;Maldives;MV-23;Haa Dhaalu;
+MV;Maldives;MV-24;Shaviyani;
+MV;Maldives;MV-25;Noonu;
+MV;Maldives;MV-26;Kaafu;
+MV;Maldives;MV-27;Gaafu Alif;
+MV;Maldives;MV-28;Gaafu Dhaalu;
+MV;Maldives;MV-29;Gnaviyani;
+MV;Maldives;MV-MLE;Malé;
+MW;Malawi;MW-BA;Balaka;
+MW;Malawi;MW-BL;Blantyre;
+MW;Malawi;MW-CK;Chikwawa;
+MW;Malawi;MW-CR;Chiradzulu;
+MW;Malawi;MW-CT;Chitipa;
+MW;Malawi;MW-DE;Dedza;
+MW;Malawi;MW-DO;Dowa;
+MW;Malawi;MW-KR;Karonga;
+MW;Malawi;MW-KS;Kasungu;
+MW;Malawi;MW-LI;Lilongwe;
+MW;Malawi;MW-LK;Likoma;
+MW;Malawi;MW-MC;Mchinji;
+MW;Malawi;MW-MG;Mangochi;
+MW;Malawi;MW-MH;Machinga;
+MW;Malawi;MW-MU;Mulanje;
+MW;Malawi;MW-MW;Mwanza;
+MW;Malawi;MW-MZ;Mzimba;
+MW;Malawi;MW-NB;Nkhata Bay;
+MW;Malawi;MW-NE;Neno;
+MW;Malawi;MW-NI;Ntchisi;
+MW;Malawi;MW-NK;Nkhotakota;
+MW;Malawi;MW-NS;Nsanje;
+MW;Malawi;MW-NU;Ntcheu;
+MW;Malawi;MW-PH;Phalombe;
+MW;Malawi;MW-RU;Rumphi;
+MW;Malawi;MW-SA;Salima;
+MW;Malawi;MW-TH;Thyolo;
+MW;Malawi;MW-ZO;Zomba;
+MX;Mexico;MX-AGU;Aguascalientes;
+MX;Mexico;MX-BCN;Baja California;
+MX;Mexico;MX-BCS;Baja California Sur;
+MX;Mexico;MX-CAM;Campeche;
+MX;Mexico;MX-CHH;Chihuahua;
+MX;Mexico;MX-CHP;Chiapas;
+MX;Mexico;MX-COA;Coahuila de Zaragoza;
+MX;Mexico;MX-COL;Colima;
+MX;Mexico;MX-DIF;Distrito Federal;
+MX;Mexico;MX-DUR;Durango;
+MX;Mexico;MX-GRO;Guerrero;
+MX;Mexico;MX-GUA;Guanajuato;
+MX;Mexico;MX-HID;Hidalgo;
+MX;Mexico;MX-JAL;Jalisco;
+MX;Mexico;MX-MEX;México;
+MX;Mexico;MX-MIC;Michoacán de Ocampo;
+MX;Mexico;MX-MOR;Morelos;
+MX;Mexico;MX-NAY;Nayarit;
+MX;Mexico;MX-NLE;Nuevo León;
+MX;Mexico;MX-OAX;Oaxaca;
+MX;Mexico;MX-PUE;Puebla;
+MX;Mexico;MX-QUE;Querétaro Arteaga;
+MX;Mexico;MX-ROO;Quintana Roo;
+MX;Mexico;MX-SIN;Sinaloa;
+MX;Mexico;MX-SLP;San Luís Potosí;
+MX;Mexico;MX-SON;Sonora;
+MX;Mexico;MX-TAB;Tabasco;
+MX;Mexico;MX-TAM;Tamaulipas;
+MX;Mexico;MX-TLA;Tlaxcala;
+MX;Mexico;MX-VER;Veracruz Llave;
+MX;Mexico;MX-YUC;Yucatán;
+MX;Mexico;MX-ZAC;Zacatecas;
+MY;Malaysia;MY-01;Johor;
+MY;Malaysia;MY-02;Kedah;
+MY;Malaysia;MY-03;Kelantan;
+MY;Malaysia;MY-04;Melaka;
+MY;Malaysia;MY-05;Negeri Sembilan;
+MY;Malaysia;MY-06;Pahang;
+MY;Malaysia;MY-07;Pulau Pinang;
+MY;Malaysia;MY-08;Perak;
+MY;Malaysia;MY-09;Perlis;
+MY;Malaysia;MY-10;Selangor;
+MY;Malaysia;MY-11;Terengganu;
+MY;Malaysia;MY-12;Sabah;
+MY;Malaysia;MY-13;Sarawak;
+MY;Malaysia;MY-14;Wilayah Persekutuan Kuala Lumpur;
+MY;Malaysia;MY-15;Wilayah Persekutuan Labuan;
+MY;Malaysia;MY-16;Wilayah Persekutuan Putra Jaya;
+MZ;Mozambique;MZ-A;Niassa;
+MZ;Mozambique;MZ-B;Manica;
+MZ;Mozambique;MZ-G;Gaza;
+MZ;Mozambique;MZ-I;Inhambane;
+MZ;Mozambique;MZ-L;Maputo;
+MZ;Mozambique;MZ-N;Nampula;
+MZ;Mozambique;MZ-P;Cabo Delgado;
+MZ;Mozambique;MZ-Q;Zambézia;
+MZ;Mozambique;MZ-S;Sofala;
+MZ;Mozambique;MZ-T;Tete;
+NA;Namibia;NA-CA;Caprivi;
+NA;Namibia;NA-ER;Erongo;
+NA;Namibia;NA-HA;Hardap;
+NA;Namibia;NA-KA;Karas;
+NA;Namibia;NA-KH;Khomas;
+NA;Namibia;NA-KU;Kunene;
+NA;Namibia;NA-OD;Otjozondjupa;
+NA;Namibia;NA-OH;Omaheke;
+NA;Namibia;NA-OK;Okavango;
+NA;Namibia;NA-ON;Oshana;
+NA;Namibia;NA-OS;Omusati;
+NA;Namibia;NA-OT;Oshikoto;
+NA;Namibia;NA-OW;Ohangwena;
+NE;Niger;NE-1;Agadez;
+NE;Niger;NE-2;Diffa;
+NE;Niger;NE-3;Dosso;
+NE;Niger;NE-4;Maradi;
+NE;Niger;NE-5;Tahoua;
+NE;Niger;NE-6;Tillabéri;
+NE;Niger;NE-7;Zinder;
+NE;Niger;NE-8;Niamey;
+NG;Nigeria;NG-AB;Abia;
+NG;Nigeria;NG-AD;Adamawa;
+NG;Nigeria;NG-AK;Akwa Ibom;
+NG;Nigeria;NG-AN;Anambra;
+NG;Nigeria;NG-BA;Bauchi;
+NG;Nigeria;NG-BE;Benue;
+NG;Nigeria;NG-BO;Borno;
+NG;Nigeria;NG-BY;Bayelsa;
+NG;Nigeria;NG-CR;Cross River;
+NG;Nigeria;NG-DE;Delta;
+NG;Nigeria;NG-EB;Ebonyi;
+NG;Nigeria;NG-ED;Edo;
+NG;Nigeria;NG-EK;Ekiti;
+NG;Nigeria;NG-EN;Enugu;
+NG;Nigeria;NG-FC;Abuja (FCT);
+NG;Nigeria;NG-GO;Gombe;
+NG;Nigeria;NG-IM;Imo;
+NG;Nigeria;NG-JI;Jigawa;
+NG;Nigeria;NG-KD;Kaduna;
+NG;Nigeria;NG-KE;Kebbi;
+NG;Nigeria;NG-KN;Kano;
+NG;Nigeria;NG-KO;Kogi;
+NG;Nigeria;NG-KT;Katsina;
+NG;Nigeria;NG-KW;Kwara;
+NG;Nigeria;NG-LA;Lagos;
+NG;Nigeria;NG-NA;Nasarawa;
+NG;Nigeria;NG-NI;Niger;
+NG;Nigeria;NG-OG;Ogun;
+NG;Nigeria;NG-ON;Ondo;
+NG;Nigeria;NG-OS;Osun;
+NG;Nigeria;NG-OY;Oyo;
+NG;Nigeria;NG-PL;Plateau;
+NG;Nigeria;NG-RI;Rivers;
+NG;Nigeria;NG-SO;Sokoto;
+NG;Nigeria;NG-TA;Taraba;
+NG;Nigeria;NG-YO;Yobe;
+NG;Nigeria;NG-ZA;Zamfara;
+NI;Nicaragua;NI-AN;Atlántico Norte;
+NI;Nicaragua;NI-AS;Atlántico Sur;
+NI;Nicaragua;NI-BO;Boaco;
+NI;Nicaragua;NI-CA;Carazo;
+NI;Nicaragua;NI-CI;Chinandega;
+NI;Nicaragua;NI-CO;Chontales;
+NI;Nicaragua;NI-ES;Estelí;
+NI;Nicaragua;NI-GR;Granada;
+NI;Nicaragua;NI-JI;Jinotega;
+NI;Nicaragua;NI-LE;León;
+NI;Nicaragua;NI-MD;Madriz;
+NI;Nicaragua;NI-MN;Managua;
+NI;Nicaragua;NI-MS;Masaya;
+NI;Nicaragua;NI-MT;Matagalpa;
+NI;Nicaragua;NI-NS;Nueva Segovia;
+NI;Nicaragua;NI-RI;Rivas;
+NI;Nicaragua;NI-SJ;Río San Juan;
+NL;Netherlands;NL-DR;Drenthe;
+NL;Netherlands;NL-FL;Flevoland;
+NL;Netherlands;NL-FR;Friesland;
+NL;Netherlands;NL-GE;Gelderland;
+NL;Netherlands;NL-GR;Groningen;
+NL;Netherlands;NL-LI;Limburg;
+NL;Netherlands;NL-NB;Noord-Brabant;
+NL;Netherlands;NL-NH;Noord-Holland;
+NL;Netherlands;NL-OV;Overijssel;
+NL;Netherlands;NL-UT;Utrecht;
+NL;Netherlands;NL-ZE;Zeeland;
+NL;Netherlands;NL-ZH;Zuid-Holland;
+NO;Norway;NO-01;Østfold;
+NO;Norway;NO-02;Akershus;
+NO;Norway;NO-03;Oslo;
+NO;Norway;NO-04;Hedmark;
+NO;Norway;NO-05;Oppland;
+NO;Norway;NO-06;Buskerud;
+NO;Norway;NO-07;Vestfold;
+NO;Norway;NO-08;Telemark;
+NO;Norway;NO-09;Aust-Agder;
+NO;Norway;NO-10;Vest-Agder;
+NO;Norway;NO-11;Rogaland;
+NO;Norway;NO-12;Hordaland;
+NO;Norway;NO-14;Sogn og Fjordane;
+NO;Norway;NO-15;Møre og Romsdal;
+NO;Norway;NO-16;Sør-Trøndelag;
+NO;Norway;NO-17;Nord-Trøndelag;
+NO;Norway;NO-18;Nordland;
+NO;Norway;NO-19;Troms;
+NO;Norway;NO-20;Finnmark;
+NO;Norway;NO-21;Svalbard;
+NO;Norway;NO-22;Jan Mayen;
+NP;Nepal;NP-BA;Bagmati;
+NP;Nepal;NP-BH;Bheri;
+NP;Nepal;NP-DH;Dhawalagiri;
+NP;Nepal;NP-GA;Gandaki;
+NP;Nepal;NP-JA;Janakpur;
+NP;Nepal;NP-KA;Karnali;
+NP;Nepal;NP-KO;Kosi;
+NP;Nepal;NP-LU;Lumbini;
+NP;Nepal;NP-MA;Mahakali;
+NP;Nepal;NP-ME;Mechi;
+NP;Nepal;NP-NA;Narayani;
+NP;Nepal;NP-RA;Rapti;
+NP;Nepal;NP-SA;Sagarmatha;
+NP;Nepal;NP-SE;Seti;
+NR;Nauru;NR-01;Aiwo;
+NR;Nauru;NR-02;Anabar;
+NR;Nauru;NR-03;Anetan;
+NR;Nauru;NR-04;Anibare;
+NR;Nauru;NR-05;Baiti;
+NR;Nauru;NR-06;Boe;
+NR;Nauru;NR-07;Buada;
+NR;Nauru;NR-08;Denigomodu;
+NR;Nauru;NR-09;Ewa;
+NR;Nauru;NR-10;Ijuw;
+NR;Nauru;NR-11;Meneng;
+NR;Nauru;NR-12;Nibok;
+NR;Nauru;NR-13;Uaboe;
+NR;Nauru;NR-14;Yaren;
+NZ;New Zealand;NZ-AUK;Auckland;
+NZ;New Zealand;NZ-BOP;Bay of Plenty;
+NZ;New Zealand;NZ-CAN;Canterbury;
+NZ;New Zealand;NZ-GIS;Gisborne;
+NZ;New Zealand;NZ-HKB;Hawke's Bay;
+NZ;New Zealand;NZ-MBH;Marlborough;
+NZ;New Zealand;NZ-MWT;Manawatu-Wanganui;
+NZ;New Zealand;NZ-NSN;Nelson;
+NZ;New Zealand;NZ-NTL;Northland;
+NZ;New Zealand;NZ-OTA;Otago;
+NZ;New Zealand;NZ-STL;Southland;
+NZ;New Zealand;NZ-TAS;Tasman;
+NZ;New Zealand;NZ-TKI;Taranaki;
+NZ;New Zealand;NZ-WGN;Wellington;
+NZ;New Zealand;NZ-WKO;Waikato;
+NZ;New Zealand;NZ-WTC;West Coast;
+OM;Oman;OM-BA;Al Batinah;
+OM;Oman;OM-BU;Al Buraymi;
+OM;Oman;OM-DA;Ad Dakhiliyah;
+OM;Oman;OM-MA;Masqat;
+OM;Oman;OM-MU;Musandam;
+OM;Oman;OM-SH;Ash Sharqiyah;
+OM;Oman;OM-WU;Al Wustá;
+OM;Oman;OM-ZA;Az Zahirah;
+OM;Oman;OM-ZU;Zhufar;
+PA;Panama;PA-1;Bocas del Toro;
+PA;Panama;PA-2;Coclé;
+PA;Panama;PA-3;Colón;
+PA;Panama;PA-4;Chiriquí;
+PA;Panama;PA-5;Darién;
+PA;Panama;PA-6;Herrera;
+PA;Panama;PA-7;Los Santos;
+PA;Panama;PA-8;Panamá;
+PA;Panama;PA-9;Veraguas;
+PE;Peru;PE-AMA;Amazonas;
+PE;Peru;PE-ANC;Ancash;
+PE;Peru;PE-APU;Apurimac;
+PE;Peru;PE-ARE;Arequipa;
+PE;Peru;PE-AYA;Ayacucho;
+PE;Peru;PE-CAJ;Cajamarca;
+PE;Peru;PE-CAL;Callao;
+PE;Peru;PE-CUS;Cusco;
+PE;Peru;PE-HUC;Huanuco;
+PE;Peru;PE-HUV;Huancavelica;
+PE;Peru;PE-ICA;Ica;
+PE;Peru;PE-JUN;Junín;
+PE;Peru;PE-LAL;La Libertad;
+PE;Peru;PE-LAM;Lambayeque;
+PE;Peru;PE-LIM;Lima;
+PE;Peru;PE-LOR;Loreto;
+PE;Peru;PE-MDD;Madre de Dios;
+PE;Peru;PE-MOQ;Moquegua;
+PE;Peru;PE-PAS;Pasco;
+PE;Peru;PE-PIU;Piura;
+PE;Peru;PE-PUN;Puno;
+PE;Peru;PE-SAM;San Martin;
+PE;Peru;PE-TAC;Tacna;
+PE;Peru;PE-TUM;Tumbes;
+PE;Peru;PE-UCA;Ucayali;
+PG;Papua New Guinea;PG-CPK;Simbu;
+PG;Papua New Guinea;PG-CPM;Central;
+PG;Papua New Guinea;PG-EBR;East New Britain;
+PG;Papua New Guinea;PG-EHG;Eastern Highlands;
+PG;Papua New Guinea;PG-EPW;Enga;
+PG;Papua New Guinea;PG-ESW;East Sepik;
+PG;Papua New Guinea;PG-GPK;Gulf;
+PG;Papua New Guinea;PG-MBA;Milne Bay;
+PG;Papua New Guinea;PG-MPL;Morobe;
+PG;Papua New Guinea;PG-MPM;Madang;
+PG;Papua New Guinea;PG-MRL;Manus;
+PG;Papua New Guinea;PG-NCD;National Capital District;
+PG;Papua New Guinea;PG-NIK;New Ireland;
+PG;Papua New Guinea;PG-NPP;Oro;
+PG;Papua New Guinea;PG-NSA;North Solomons;
+PG;Papua New Guinea;PG-SAN;Sandaun;
+PG;Papua New Guinea;PG-SHM;Southern Highlands;
+PG;Papua New Guinea;PG-WBK;West New Britain;
+PG;Papua New Guinea;PG-WHM;Western Highlands;
+PG;Papua New Guinea;PG-WPD;Western;
+PH;Philippines;PH-00;National Capital Region (NCR);
+PH;Philippines;PH-01;Ilocos Region (Region I);
+PH;Philippines;PH-02;Cagayan Valley (Region II);
+PH;Philippines;PH-03;Central Luzon (Region III);
+PH;Philippines;PH-05;Bicol Region (Region V);
+PH;Philippines;PH-06;Western Visayas (Region VI);
+PH;Philippines;PH-07;Central Visayas (Region VII);
+PH;Philippines;PH-08;Eastern Visayas (Region VIII);
+PH;Philippines;PH-09;Zamboanga Peninsula (Region IX);
+PH;Philippines;PH-10;Northern Mindanao (Region X);
+PH;Philippines;PH-11;Davao Region (Region XI);
+PH;Philippines;PH-12;Soccsksargen (Region XII);
+PH;Philippines;PH-13;Caraga (Region XIII);
+PH;Philippines;PH-14;Autonomous Region in Muslim Mindanao (ARMM);
+PH;Philippines;PH-15;Cordillera Administrative Region (CAR);
+PH;Philippines;PH-40;Calabarzon (Region IV-A);
+PH;Philippines;PH-41;Mimaropa (Region IV-B);
+PH;Philippines;PH-ABR;Abra;
+PH;Philippines;PH-AGN;Agusan del Norte;
+PH;Philippines;PH-AGS;Agusan del Sur;
+PH;Philippines;PH-AKL;Aklan;
+PH;Philippines;PH-ALB;Albay;
+PH;Philippines;PH-ANT;Antique;
+PH;Philippines;PH-APA;Apayao;
+PH;Philippines;PH-AUR;Aurora;
+PH;Philippines;PH-BAN;Bataan;
+PH;Philippines;PH-BAS;Basilan;
+PH;Philippines;PH-BEN;Benguet;
+PH;Philippines;PH-BIL;Biliran;
+PH;Philippines;PH-BOH;Bohol;
+PH;Philippines;PH-BTG;Batangas;
+PH;Philippines;PH-BTN;Batanes;
+PH;Philippines;PH-BUK;Bukidnon;
+PH;Philippines;PH-BUL;Bulacan;
+PH;Philippines;PH-CAG;Cagayan;
+PH;Philippines;PH-CAM;Camiguin;
+PH;Philippines;PH-CAN;Camarines Norte;
+PH;Philippines;PH-CAP;Capiz;
+PH;Philippines;PH-CAS;Camarines Sur;
+PH;Philippines;PH-CAT;Catanduanes;
+PH;Philippines;PH-CAV;Cavite;
+PH;Philippines;PH-CEB;Cebu;
+PH;Philippines;PH-COM;Compostela Valley;
+PH;Philippines;PH-DAO;Davao Oriental;
+PH;Philippines;PH-DAS;Davao del Sur;
+PH;Philippines;PH-DAV;Davao del Norte;
+PH;Philippines;PH-DIN;Dinagat Islands;
+PH;Philippines;PH-EAS;Eastern Samar;
+PH;Philippines;PH-GUI;Guimaras;
+PH;Philippines;PH-IFU;Ifugao;
+PH;Philippines;PH-ILI;Iloilo;
+PH;Philippines;PH-ILN;Ilocos Norte;
+PH;Philippines;PH-ILS;Ilocos Sur;
+PH;Philippines;PH-ISA;Isabela;
+PH;Philippines;PH-KAL;Kalinga;
+PH;Philippines;PH-LAG;Laguna;
+PH;Philippines;PH-LAN;Lanao del Norte;
+PH;Philippines;PH-LAS;Lanao del Sur;
+PH;Philippines;PH-LEY;Leyte;
+PH;Philippines;PH-LUN;La Union;
+PH;Philippines;PH-MAD;Marinduque;
+PH;Philippines;PH-MAG;Maguindanao;
+PH;Philippines;PH-MAS;Masbate;
+PH;Philippines;PH-MDC;Occidental Mindoro;
+PH;Philippines;PH-MDR;Oriental Mindoro;
+PH;Philippines;PH-MOU;Mountain Province;
+PH;Philippines;PH-MSC;Misamis Occidental;
+PH;Philippines;PH-MSR;Misamis Oriental;
+PH;Philippines;PH-NCO;Cotabato;
+PH;Philippines;PH-NEC;Negros Occidental;
+PH;Philippines;PH-NER;Negros Oriental;
+PH;Philippines;PH-NSA;Northern Samar;
+PH;Philippines;PH-NUE;Nueva Ecija;
+PH;Philippines;PH-NUV;Nueva Vizcaya;
+PH;Philippines;PH-PAM;Pampanga;
+PH;Philippines;PH-PAN;Pangasinan;
+PH;Philippines;PH-PLW;Palawan;
+PH;Philippines;PH-QUE;Quezon;
+PH;Philippines;PH-QUI;Quirino;
+PH;Philippines;PH-RIZ;Rizal;
+PH;Philippines;PH-ROM;Romblon;
+PH;Philippines;PH-SAR;Sarangani;
+PH;Philippines;PH-SCO;South Cotabato;
+PH;Philippines;PH-SIG;Siquijor;
+PH;Philippines;PH-SLE;Southern Leyte;
+PH;Philippines;PH-SLU;Sulu;
+PH;Philippines;PH-SOR;Sorsogon;
+PH;Philippines;PH-SUK;Sultan Kudarat;
+PH;Philippines;PH-SUN;Surigao del Norte;
+PH;Philippines;PH-SUR;Surigao del Sur;
+PH;Philippines;PH-TAR;Tarlac;
+PH;Philippines;PH-TAW;Tawi-Tawi;
+PH;Philippines;PH-WSA;Samar;
+PH;Philippines;PH-ZAN;Zamboanga del Norte;
+PH;Philippines;PH-ZAS;Zamboanga del Sur;
+PH;Philippines;PH-ZMB;Zambales;
+PH;Philippines;PH-ZSI;Zamboanga Sibugay;
+PK;Pakistan;PK-BA;Balochisan;
+PK;Pakistan;PK-IS;Islamabad;
+PK;Pakistan;PK-JK;Azad Kashmir;
+PK;Pakistan;PK-NA;Gilgit-Baltistan;
+PK;Pakistan;PK-NW;Khyber Pakhtunkhwa;
+PK;Pakistan;PK-PB;Punjab;
+PK;Pakistan;PK-SD;Sindh;
+PK;Pakistan;PK-TA;Federally Administered Tribal Areas;
+PL;Poland;PL-DS;Dolnośląskie;
+PL;Poland;PL-KP;Kujawsko-Pomorskie;
+PL;Poland;PL-LB;Lubuskie;
+PL;Poland;PL-LD;Łódzkie;
+PL;Poland;PL-LU;Lubelskie;
+PL;Poland;PL-MA;Małopolskie;
+PL;Poland;PL-MZ;Mazowieckie;
+PL;Poland;PL-OP;Opolskie;
+PL;Poland;PL-PD;Podlaskie;
+PL;Poland;PL-PK;Podkarpackie;
+PL;Poland;PL-PM;Pomorskie;
+PL;Poland;PL-SK;Świętokrzyskie;
+PL;Poland;PL-SL;Śląskie;
+PL;Poland;PL-WN;Warmińsko-Mazurskie;
+PL;Poland;PL-WP;Wielkopolskie;
+PL;Poland;PL-ZP;Zachodniopomorskie;
+PT;Portugal;PT-01;Aveiro;
+PT;Portugal;PT-02;Beja;
+PT;Portugal;PT-03;Braga;
+PT;Portugal;PT-04;Bragança;
+PT;Portugal;PT-05;Castelo Branco;
+PT;Portugal;PT-06;Coimbra;
+PT;Portugal;PT-07;Évora;
+PT;Portugal;PT-08;Faro;
+PT;Portugal;PT-09;Guarda;
+PT;Portugal;PT-10;Leiria;
+PT;Portugal;PT-11;Lisboa;
+PT;Portugal;PT-12;Portalegre;
+PT;Portugal;PT-13;Porto;
+PT;Portugal;PT-14;Santarém;
+PT;Portugal;PT-15;Setúbal;
+PT;Portugal;PT-16;Viana do Castelo;
+PT;Portugal;PT-17;Vila Real;
+PT;Portugal;PT-18;Viseu;
+PT;Portugal;PT-20;Açores;
+PT;Portugal;PT-30;Madeira;
+PW;Palau;PW-002;Aimeliik;
+PW;Palau;PW-004;Airai;
+PW;Palau;PW-010;Angaur;
+PW;Palau;PW-050;Hatobohei;
+PW;Palau;PW-100;Kayangel;
+PW;Palau;PW-150;Koror;
+PW;Palau;PW-212;Melekeok;
+PW;Palau;PW-214;Ngaraard;
+PW;Palau;PW-218;Ngarchelong;
+PW;Palau;PW-222;Ngardmau;
+PW;Palau;PW-224;Ngatpang;
+PW;Palau;PW-226;Ngchesar;
+PW;Palau;PW-227;Ngeremlengui;
+PW;Palau;PW-228;Ngiwal;
+PW;Palau;PW-350;Peleliu;
+PW;Palau;PW-370;Sonsorol;
+PY;Paraguay;PY-1;Concepción;
+PY;Paraguay;PY-10;Alto Paraná;
+PY;Paraguay;PY-11;Central;
+PY;Paraguay;PY-12;Ñeembucú;
+PY;Paraguay;PY-13;Amambay;
+PY;Paraguay;PY-14;Canindeyú;
+PY;Paraguay;PY-15;Presidente Hayes;
+PY;Paraguay;PY-16;Alto Paraguay;
+PY;Paraguay;PY-19;Boquerón;
+PY;Paraguay;PY-2;San Pedro;
+PY;Paraguay;PY-3;Cordillera;
+PY;Paraguay;PY-4;Guairá;
+PY;Paraguay;PY-5;Caaguazú;
+PY;Paraguay;PY-6;Caazapá;
+PY;Paraguay;PY-7;Itapúa;
+PY;Paraguay;PY-8;Misiones;
+PY;Paraguay;PY-9;Paraguarí;
+PY;Paraguay;PY-ASU;Asunción - Distrito Capital;
+QA;Qatar;QA-DA;Ad Dawhah;
+QA;Qatar;QA-GH;Al Ghuwayriyah;
+QA;Qatar;QA-JB;Jariyan al Batnah;
+QA;Qatar;QA-JU;Al Jumayliyah;
+QA;Qatar;QA-KH;Al Khawr;
+QA;Qatar;QA-MS;Madinat ash Shamal;
+QA;Qatar;QA-RA;Ar Rayyan;
+QA;Qatar;QA-US;Umm Salal;
+QA;Qatar;QA-WA;Al Wakrah;
+RO;Romania;RO-AB;Alba;
+RO;Romania;RO-AG;Argeş;
+RO;Romania;RO-AR;Arad;
+RO;Romania;RO-B;Bucureşti;
+RO;Romania;RO-BC;Bacău;
+RO;Romania;RO-BH;Bihor;
+RO;Romania;RO-BN;Bistriţa-Năsăud;
+RO;Romania;RO-BR;Brăila;
+RO;Romania;RO-BT;Botoşani;
+RO;Romania;RO-BV;Braşov;
+RO;Romania;RO-BZ;Buzău;
+RO;Romania;RO-CJ;Cluj;
+RO;Romania;RO-CL;Călăraşi;
+RO;Romania;RO-CS;Caraş-Severin;
+RO;Romania;RO-CT;Constanţa;
+RO;Romania;RO-CV;Covasna;
+RO;Romania;RO-DB;Dâmboviţa;
+RO;Romania;RO-DJ;Dolj;
+RO;Romania;RO-GJ;Gorj;
+RO;Romania;RO-GL;Galaţi;
+RO;Romania;RO-GR;Giurgiu;
+RO;Romania;RO-HD;Hunedoara;
+RO;Romania;RO-HR;Harghita;
+RO;Romania;RO-IF;Ilfov;
+RO;Romania;RO-IL;Ialomiţa;
+RO;Romania;RO-IS;Iaşi;
+RO;Romania;RO-MH;Mehedinţi;
+RO;Romania;RO-MM;Maramureş;
+RO;Romania;RO-MS;Mureş;
+RO;Romania;RO-NT;Neamţ;
+RO;Romania;RO-OT;Olt;
+RO;Romania;RO-PH;Prahova;
+RO;Romania;RO-SB;Sibiu;
+RO;Romania;RO-SJ;Sălaj;
+RO;Romania;RO-SM;Satu Mare;
+RO;Romania;RO-SV;Suceava;
+RO;Romania;RO-TL;Tulcea;
+RO;Romania;RO-TM;Timiş;
+RO;Romania;RO-TR;Teleorman;
+RO;Romania;RO-VL;Valcea;
+RO;Romania;RO-VN;Vrancea;
+RO;Romania;RO-VS;Vaslui;
+RS;Serbia;RS-00;Beograd;
+RS;Serbia;RS-01;Severnobački;
+RS;Serbia;RS-02;Srednje-banatski;
+RS;Serbia;RS-03;Severno-banatski;
+RS;Serbia;RS-04;Južno-Banatski;
+RS;Serbia;RS-05;Zapadno-Bački;
+RS;Serbia;RS-06;Južnobački;
+RS;Serbia;RS-07;Sremski;
+RS;Serbia;RS-08;Mačvanski;
+RS;Serbia;RS-09;Kolubarski;
+RS;Serbia;RS-10;Podunavski;
+RS;Serbia;RS-11;Braničevski;
+RS;Serbia;RS-12;Šumadijski;
+RS;Serbia;RS-13;Pomoravski;
+RS;Serbia;RS-14;Borski;
+RS;Serbia;RS-15;Zaječarski;
+RS;Serbia;RS-16;Zlatiborski;
+RS;Serbia;RS-17;Moravički;
+RS;Serbia;RS-18;Raški;
+RS;Serbia;RS-19;Rasinski;
+RS;Serbia;RS-20;Nišavski;
+RS;Serbia;RS-21;Toplički;
+RS;Serbia;RS-22;Pirotski;
+RS;Serbia;RS-23;Jablanički;
+RS;Serbia;RS-24;Pčinjski;
+RS;Serbia;RS-25;Kosovski;
+RS;Serbia;RS-26;Pećki;
+RS;Serbia;RS-27;Prizrenski;
+RS;Serbia;RS-28;Kosovsko-Mitrovački;
+RS;Serbia;RS-29;Kosovsko-Pomoravski;
+RS;Serbia;RS-KM;Kosovo;
+RS;Serbia;RS-VO;Vojvodina;
+RU;Russia;RU-AD;Адыгея республика;Adygea republic
+RU;Russia;RU-AL;Алтай республика;Altai republic
+RU;Russia;RU-ALT;Алтайский край;Altai krai
+RU;Russia;RU-AMU;Амурская область;Amur oblast
+RU;Russia;RU-ARK;Архангельская область;Arkhangelsk oblast
+RU;Russia;RU-AST;Астраханская область;Astrakhan oblast
+RU;Russia;RU-BA;Башкортостан республика;Bashkortostan republic
+RU;Russia;RU-BEL;Белгородская область;Belgorod oblast
+RU;Russia;RU-BRY;Брянская область;Bryansk oblast
+RU;Russia;RU-BU;Бурятия республика;Buryatia republic
+RU;Russia;RU-CE;Чеченская республика;Chechen republic
+RU;Russia;RU-CHE;Челябинская область;Chelyabinsk oblast
+RU;Russia;RU-CHU;Чукотский АО;Chukotka AO
+RU;Russia;RU-CU;Чувашская республика;Chuvashia republic
+RU;Russia;RU-DA;Дагестан республика;Dagestan republic
+RU;Russia;RU-IN;Ингушетия республика;Ingushetia republic
+RU;Russia;RU-IRK;Иркутская область;Irkutsk oblast
+RU;Russia;RU-IVA;Ивановская область;Ivanovo oblast
+RU;Russia;RU-KAM;Камчатский край;Kamchatka krai
+RU;Russia;RU-KB;Кабардино-Балкарская республика;Kabardino-Balkar republic
+RU;Russia;RU-KC;Карачаево-Черкесская республика;Karachay-Cherkess republic
+RU;Russia;RU-KDA;Краснодарский край;Krasnodar krai
+RU;Russia;RU-KEM;Кемеровская область;Kemerovo oblast
+RU;Russia;RU-KGD;Калининградская область;Kaliningrad oblast
+RU;Russia;RU-KGN;Курганская область;Kurgan oblast
+RU;Russia;RU-KHA;Хабаровский край;Khabarovsk krai
+RU;Russia;RU-KHM;;Khanty-Mansiyskiy avtonomnyy okrug
+RU;Russia;RU-KIR;Кировская область;Kirov oblast
+RU;Russia;RU-KK;Хакасия республика;Khakassia republic
+RU;Russia;RU-KL;Калмыкия республика;Kalmykia republic
+RU;Russia;RU-KLU;Калужская область;Kaluga oblast
+RU;Russia;RU-KO;Коми республика;Komi republic
+RU;Russia;RU-KOS;Костромская область;Kostroma oblast
+RU;Russia;RU-KR;Карелия республика;Karelia republic
+RU;Russia;RU-KRS;Курская область;Kursk oblast
+RU;Russia;RU-KYA;Красноярский край;Krasnoyarsk krai
+RU;Russia;RU-LEN;Ленинградская область;Leningrad oblast
+RU;Russia;RU-LIP;Липецкая область;Lipetsk oblast
+RU;Russia;RU-MAG;Магаданская область;Magadan oblast
+RU;Russia;RU-ME;Марий Эл республика;Mari El republic
+RU;Russia;RU-MO;Мордовия республика;Mordovia republic
+RU;Russia;RU-MOS;Московская область;Moscow oblast
+RU;Russia;RU-MOW;Москва;Moscow
+RU;Russia;RU-MUR;Мурманская область;Murmansk oblast
+RU;Russia;RU-NEN;Ненецкий автономный округ;Nenetskiy avtonomnyy okrug
+RU;Russia;RU-NGR;Новгородская область;Novgorod oblast
+RU;Russia;RU-NIZ;Нижегородская область;Nizhny Novgorod oblast
+RU;Russia;RU-NVS;Новосибирская область;Novosibirsk oblast
+RU;Russia;RU-OMS;Омская область;Omsk oblast
+RU;Russia;RU-ORE;Оренбургская область;Orenburg oblast
+RU;Russia;RU-ORL;Орловская область;Oryol oblast
+RU;Russia;RU-PER;Пермский край;Perm krai
+RU;Russia;RU-PNZ;Пензенская область;Penza oblast
+RU;Russia;RU-PRI;Приморский край;Primorski krai
+RU;Russia;RU-PSK;Псковская область;Pskov oblast
+RU;Russia;RU-ROS;Ростовская область;Rostov oblast
+RU;Russia;RU-RYA;Рязанская область;Ryazan oblast
+RU;Russia;RU-SA;Саха (Якутия) республика;Sakha republic
+RU;Russia;RU-SAK;Сахалинская область;Sakhalin oblast
+RU;Russia;RU-SAM;Самарская область;Samara oblast
+RU;Russia;RU-SAR;Саратовская область;Saratov oblast
+RU;Russia;RU-SE;Северная Осетия-Алания республика;North Ossetia-Alania republic
+RU;Russia;RU-SMO;Смоленская область;Smolensk oblast
+RU;Russia;RU-SPE;Санкт-Петербург;Saint Petersburg
+RU;Russia;RU-STA;Ставропольский край;Stavropol krai
+RU;Russia;RU-SVE;Свердловская область;Sverdlovsk oblast
+RU;Russia;RU-TA;Татарстан республика;Tatarstan republic
+RU;Russia;RU-TAM;Тамбовская область;Tambov oblast
+RU;Russia;RU-TOM;Томская область;Tomsk oblast
+RU;Russia;RU-TUL;Тульская область;Tula oblast
+RU;Russia;RU-TVE;Тверская область;Tver oblast
+RU;Russia;RU-TY;Тыва республика;Tuva republic
+RU;Russia;RU-TYU;Тюменская область;Tyumens oblast
+RU;Russia;RU-UD;Удмуртская республика;Udmurtia republic
+RU;Russia;RU-ULY;Ульяновская область;Ulyanovsk oblast
+RU;Russia;RU-VGG;Волгоградская область;Volgograd oblast
+RU;Russia;RU-VLA;Владимирская область;Vladimir oblast
+RU;Russia;RU-VLG;Вологодская область;Vologda oblast
+RU;Russia;RU-VOR;Воронежская область;Voronezh oblast
+RU;Russia;RU-YAN;;Yamalo-Nenetskiy avtonomnyy okrug
+RU;Russia;RU-YAR;Ярославская область;Yaroslavl oblast
+RU;Russia;RU-YEV;;Yevreyskaya avtonomnaya oblast
+RU;Russia;RU-ZAB;Забайкальский край;Zabaykalsky Krai
+RW;Rwanda;RW-01;Kigali;
+RW;Rwanda;RW-02;Est;
+RW;Rwanda;RW-03;Nord;
+RW;Rwanda;RW-04;Ouest;
+RW;Rwanda;RW-05;Sud;
+SA;Saudi Arabia;SA-01;Al Riyadh;
+SA;Saudi Arabia;SA-02;Makkah;
+SA;Saudi Arabia;SA-03;Al Madinah;
+SA;Saudi Arabia;SA-04;Eastern Province;
+SA;Saudi Arabia;SA-05;Al Qasim;
+SA;Saudi Arabia;SA-06;Ha'il;
+SA;Saudi Arabia;SA-07;Tabuk;
+SA;Saudi Arabia;SA-08;Northern Border;
+SA;Saudi Arabia;SA-09;Jizan;
+SA;Saudi Arabia;SA-10;Najran;
+SA;Saudi Arabia;SA-11;Al Bahah;
+SA;Saudi Arabia;SA-12;Al Jawf;
+SA;Saudi Arabia;SA-14;Asir;
+SB;Solomon Islands;SB-CE;Central;
+SB;Solomon Islands;SB-CH;Choiseul;
+SB;Solomon Islands;SB-CT;Honiara;
+SB;Solomon Islands;SB-GU;Guadalcanal;
+SB;Solomon Islands;SB-IS;Isabel;
+SB;Solomon Islands;SB-MK;Makira;
+SB;Solomon Islands;SB-ML;Malaita;
+SB;Solomon Islands;SB-RB;Rennell and Bellona;
+SB;Solomon Islands;SB-TE;Temotu;
+SB;Solomon Islands;SB-WE;Western;
+SC;Seychelles;SC-01;Anse aux Pins;
+SC;Seychelles;SC-02;Anse Boileau;
+SC;Seychelles;SC-03;Anse Étoile;
+SC;Seychelles;SC-04;Anse Louis;
+SC;Seychelles;SC-05;Anse Royale;
+SC;Seychelles;SC-06;Baie Lazare;
+SC;Seychelles;SC-07;Baie Sainte Anne;
+SC;Seychelles;SC-08;Beau Vallon;
+SC;Seychelles;SC-09;Bel Air;
+SC;Seychelles;SC-10;Bel Ombre;
+SC;Seychelles;SC-11;Cascade;
+SC;Seychelles;SC-12;Glacis;
+SC;Seychelles;SC-13;Grand'Anse (Mahé);
+SC;Seychelles;SC-14;Grand'Anse (Praslin);
+SC;Seychelles;SC-15;La Digue;
+SC;Seychelles;SC-16;La Rivière Anglaise;
+SC;Seychelles;SC-17;Mont Buxton;
+SC;Seychelles;SC-18;Mont Fleuri;
+SC;Seychelles;SC-19;Plaisance;
+SC;Seychelles;SC-20;Pointe La Rue;
+SC;Seychelles;SC-21;Port Glaud;
+SC;Seychelles;SC-22;Saint Louis;
+SC;Seychelles;SC-23;Takamaka;
+SC;Seychelles;SC-24;Les Mamelles;
+SC;Seychelles;SC-25;Roche Caiman;
+SD;Sudan;SD-01;Northern;
+SD;Sudan;SD-02;North Darfur;
+SD;Sudan;SD-03;Khartoum;
+SD;Sudan;SD-04;River Nile;
+SD;Sudan;SD-05;Kassala;
+SD;Sudan;SD-06;Al Qadarif;
+SD;Sudan;SD-07;Al Jazirah;
+SD;Sudan;SD-08;White Nile;
+SD;Sudan;SD-09;North Kurdufan;
+SD;Sudan;SD-10;West Kurdufan;
+SD;Sudan;SD-11;South Darfur;
+SD;Sudan;SD-12;West Darfur;
+SD;Sudan;SD-13;South Kurdufan;
+SD;Sudan;SD-14;West Bahr al Ghazal;
+SD;Sudan;SD-15;North Bahr al Ghazal;
+SD;Sudan;SD-16;West Equatoria;
+SD;Sudan;SD-17;Bahr al Jebel;
+SD;Sudan;SD-18;Lakes;
+SD;Sudan;SD-19;East Equatoria;
+SD;Sudan;SD-20;Jonglei;
+SD;Sudan;SD-21;Warab;
+SD;Sudan;SD-22;Unity;
+SD;Sudan;SD-23;Upper Nile;
+SD;Sudan;SD-24;Blue Nile;
+SD;Sudan;SD-25;Sennar;
+SD;Sudan;SD-26;Red Sea;
+SE;Sweden;SE-AB;Stockholms län;
+SE;Sweden;SE-AC;Västerbottens län;
+SE;Sweden;SE-BD;Norrbottens län;
+SE;Sweden;SE-C;Uppsala län;
+SE;Sweden;SE-D;Södermanlands län;
+SE;Sweden;SE-E;Östergötlands län;
+SE;Sweden;SE-F;Jönköpings län;
+SE;Sweden;SE-G;Kronobergs län;
+SE;Sweden;SE-H;Kalmar län;
+SE;Sweden;SE-I;Gotlands län;
+SE;Sweden;SE-K;Blekinge län;
+SE;Sweden;SE-M;Skåne län;
+SE;Sweden;SE-N;Hallands län;
+SE;Sweden;SE-O;Västra Götalands län;
+SE;Sweden;SE-S;Värmlands län;
+SE;Sweden;SE-T;Örebro län;
+SE;Sweden;SE-U;Västmanlands län;
+SE;Sweden;SE-W;Dalarnas län;
+SE;Sweden;SE-X;Gävleborgs län;
+SE;Sweden;SE-Y;Västernorrlands län;
+SE;Sweden;SE-Z;Jämtlands län;
+SG;Singapore;SG-01;Central Singapore;
+SG;Singapore;SG-02;North-East;
+SG;Singapore;SG-03;North-West;
+SG;Singapore;SG-04;South-East;
+SG;Singapore;SG-05;South-West;
+SH;Saint Helena;SH-AC;Ascension;
+SH;Saint Helena;SH-SH;Saint Helena;
+SH;Saint Helena;SH-TA;Tristan da Cunha;
+SI;Slovenia;SI-001;Ajdovščina;
+SI;Slovenia;SI-002;Beltinci;
+SI;Slovenia;SI-003;Bled;
+SI;Slovenia;SI-004;Bohinj;
+SI;Slovenia;SI-005;Borovnica;
+SI;Slovenia;SI-006;Bovec;
+SI;Slovenia;SI-007;Brda;
+SI;Slovenia;SI-008;Brezovica;
+SI;Slovenia;SI-009;Brežice;
+SI;Slovenia;SI-010;Tišina;
+SI;Slovenia;SI-011;Celje;
+SI;Slovenia;SI-012;Cerklje na Gorenjskem;
+SI;Slovenia;SI-013;Cerknica;
+SI;Slovenia;SI-014;Cerkno;
+SI;Slovenia;SI-015;Črenšovci;
+SI;Slovenia;SI-016;Črna na Koroškem;
+SI;Slovenia;SI-017;Črnomelj;
+SI;Slovenia;SI-018;Destrnik;
+SI;Slovenia;SI-019;Divača;
+SI;Slovenia;SI-020;Dobrepolje;
+SI;Slovenia;SI-021;Dobrova-Polhov Gradec;
+SI;Slovenia;SI-022;Dol pri Ljubljani;
+SI;Slovenia;SI-023;Domžale;
+SI;Slovenia;SI-024;Dornava;
+SI;Slovenia;SI-025;Dravograd;
+SI;Slovenia;SI-026;Duplek;
+SI;Slovenia;SI-027;Gorenja vas-Poljane;
+SI;Slovenia;SI-028;Gorišnica;
+SI;Slovenia;SI-029;Gornja Radgona;
+SI;Slovenia;SI-030;Gornji Grad;
+SI;Slovenia;SI-031;Gornji Petrovci;
+SI;Slovenia;SI-032;Grosuplje;
+SI;Slovenia;SI-033;Šalovci;
+SI;Slovenia;SI-034;Hrastnik;
+SI;Slovenia;SI-035;Hrpelje-Kozina;
+SI;Slovenia;SI-036;Idrija;
+SI;Slovenia;SI-037;Ig;
+SI;Slovenia;SI-038;Ilirska Bistrica;
+SI;Slovenia;SI-039;Ivančna Gorica;
+SI;Slovenia;SI-040;Izola;
+SI;Slovenia;SI-041;Jesenice;
+SI;Slovenia;SI-042;Juršinci;
+SI;Slovenia;SI-043;Kamnik;
+SI;Slovenia;SI-044;Kanal;
+SI;Slovenia;SI-045;Kidričevo;
+SI;Slovenia;SI-046;Kobarid;
+SI;Slovenia;SI-047;Kobilje;
+SI;Slovenia;SI-048;Kočevje;
+SI;Slovenia;SI-049;Komen;
+SI;Slovenia;SI-050;Koper;
+SI;Slovenia;SI-051;Kozje;
+SI;Slovenia;SI-052;Kranj;
+SI;Slovenia;SI-053;Kranjska Gora;
+SI;Slovenia;SI-054;Krško;
+SI;Slovenia;SI-055;Kungota;
+SI;Slovenia;SI-056;Kuzma;
+SI;Slovenia;SI-057;Laško;
+SI;Slovenia;SI-058;Lenart;
+SI;Slovenia;SI-059;Lendava;
+SI;Slovenia;SI-060;Litija;
+SI;Slovenia;SI-061;Ljubljana;
+SI;Slovenia;SI-062;Ljubno;
+SI;Slovenia;SI-063;Ljutomer;
+SI;Slovenia;SI-064;Logatec;
+SI;Slovenia;SI-065;Loška dolina;
+SI;Slovenia;SI-066;Loški Potok;
+SI;Slovenia;SI-067;Luče;
+SI;Slovenia;SI-068;Lukovica;
+SI;Slovenia;SI-069;Majšperk;
+SI;Slovenia;SI-070;Maribor;
+SI;Slovenia;SI-071;Medvode;
+SI;Slovenia;SI-072;Mengeš;
+SI;Slovenia;SI-073;Metlika;
+SI;Slovenia;SI-074;Mežica;
+SI;Slovenia;SI-075;Miren-Kostanjevica;
+SI;Slovenia;SI-076;Mislinja;
+SI;Slovenia;SI-077;Moravče;
+SI;Slovenia;SI-078;Moravske Toplice;
+SI;Slovenia;SI-079;Mozirje;
+SI;Slovenia;SI-080;Murska Sobota;
+SI;Slovenia;SI-081;Muta;
+SI;Slovenia;SI-082;Naklo;
+SI;Slovenia;SI-083;Nazarje;
+SI;Slovenia;SI-084;Nova Gorica;
+SI;Slovenia;SI-085;Novo mesto;
+SI;Slovenia;SI-086;Odranci;
+SI;Slovenia;SI-087;Ormož;
+SI;Slovenia;SI-088;Osilnica;
+SI;Slovenia;SI-089;Pesnica;
+SI;Slovenia;SI-090;Piran;
+SI;Slovenia;SI-091;Pivka;
+SI;Slovenia;SI-092;Podčetrtek;
+SI;Slovenia;SI-093;Podvelka;
+SI;Slovenia;SI-094;Postojna;
+SI;Slovenia;SI-095;Preddvor;
+SI;Slovenia;SI-096;Ptuj;
+SI;Slovenia;SI-097;Puconci;
+SI;Slovenia;SI-098;Rače-Fram;
+SI;Slovenia;SI-099;Radeče;
+SI;Slovenia;SI-100;Radenci;
+SI;Slovenia;SI-101;Radlje ob Dravi;
+SI;Slovenia;SI-102;Radovljica;
+SI;Slovenia;SI-103;Ravne na Koroškem;
+SI;Slovenia;SI-104;Ribnica;
+SI;Slovenia;SI-105;Rogašovci;
+SI;Slovenia;SI-106;Rogaška Slatina;
+SI;Slovenia;SI-107;Rogatec;
+SI;Slovenia;SI-108;Ruše;
+SI;Slovenia;SI-109;Semič;
+SI;Slovenia;SI-110;Sevnica;
+SI;Slovenia;SI-111;Sežana;
+SI;Slovenia;SI-112;Slovenj Gradec;
+SI;Slovenia;SI-113;Slovenska Bistrica;
+SI;Slovenia;SI-114;Slovenske Konjice;
+SI;Slovenia;SI-115;Starše;
+SI;Slovenia;SI-116;Sveti Jurij ob Ščavnici;
+SI;Slovenia;SI-117;Šenčur;
+SI;Slovenia;SI-118;Šentilj;
+SI;Slovenia;SI-119;Šentjernej;
+SI;Slovenia;SI-120;Šentjur;
+SI;Slovenia;SI-121;Škocjan;
+SI;Slovenia;SI-122;Škofja Loka;
+SI;Slovenia;SI-123;Škofljica;
+SI;Slovenia;SI-124;Šmarje pri Jelšah;
+SI;Slovenia;SI-125;Šmartno ob Paki;
+SI;Slovenia;SI-126;Šoštanj;
+SI;Slovenia;SI-127;Štore;
+SI;Slovenia;SI-128;Tolmin;
+SI;Slovenia;SI-129;Trbovlje;
+SI;Slovenia;SI-130;Trebnje;
+SI;Slovenia;SI-131;Tržič;
+SI;Slovenia;SI-132;Turnišče;
+SI;Slovenia;SI-133;Velenje;
+SI;Slovenia;SI-134;Velike Lašče;
+SI;Slovenia;SI-135;Videm;
+SI;Slovenia;SI-136;Vipava;
+SI;Slovenia;SI-137;Vitanje;
+SI;Slovenia;SI-138;Vodice;
+SI;Slovenia;SI-139;Vojnik;
+SI;Slovenia;SI-140;Vrhnika;
+SI;Slovenia;SI-141;Vuzenica;
+SI;Slovenia;SI-142;Zagorje ob Savi;
+SI;Slovenia;SI-143;Zavrč;
+SI;Slovenia;SI-144;Zreče;
+SI;Slovenia;SI-146;Železniki;
+SI;Slovenia;SI-147;Žiri;
+SI;Slovenia;SI-148;Benedikt;
+SI;Slovenia;SI-149;Bistrica ob Sotli;
+SI;Slovenia;SI-150;Bloke;
+SI;Slovenia;SI-151;Braslovče;
+SI;Slovenia;SI-152;Cankova;
+SI;Slovenia;SI-153;Cerkvenjak;
+SI;Slovenia;SI-154;Dobje;
+SI;Slovenia;SI-155;Dobrna;
+SI;Slovenia;SI-156;Dobrovnik;
+SI;Slovenia;SI-157;Dolenjske Toplice;
+SI;Slovenia;SI-158;Grad;
+SI;Slovenia;SI-159;Hajdina;
+SI;Slovenia;SI-160;Hoče-Slivnica;
+SI;Slovenia;SI-161;Hodoš;
+SI;Slovenia;SI-162;Horjul;
+SI;Slovenia;SI-163;Jezersko;
+SI;Slovenia;SI-164;Komenda;
+SI;Slovenia;SI-165;Kostel;
+SI;Slovenia;SI-166;Križevci;
+SI;Slovenia;SI-167;Lovrenc na Pohorju;
+SI;Slovenia;SI-168;Markovci;
+SI;Slovenia;SI-169;Miklavž na Dravskem polju;
+SI;Slovenia;SI-170;Mirna Peč;
+SI;Slovenia;SI-171;Oplotnica;
+SI;Slovenia;SI-172;Podlehnik;
+SI;Slovenia;SI-173;Polzela;
+SI;Slovenia;SI-174;Prebold;
+SI;Slovenia;SI-175;Prevalje;
+SI;Slovenia;SI-176;Razkrižje;
+SI;Slovenia;SI-177;Ribnica na Pohorju;
+SI;Slovenia;SI-178;Selnica ob Dravi;
+SI;Slovenia;SI-179;Sodražica;
+SI;Slovenia;SI-180;Solčava;
+SI;Slovenia;SI-181;Sveta Ana;
+SI;Slovenia;SI-182;Sveti Andraž v Slovenskih goricah;
+SI;Slovenia;SI-183;Šempeter-Vrtojba;
+SI;Slovenia;SI-184;Tabor;
+SI;Slovenia;SI-185;Trnovska vas;
+SI;Slovenia;SI-186;Trzin;
+SI;Slovenia;SI-187;Velika Polana;
+SI;Slovenia;SI-188;Veržej;
+SI;Slovenia;SI-189;Vransko;
+SI;Slovenia;SI-190;Žalec;
+SI;Slovenia;SI-191;Žetale;
+SI;Slovenia;SI-192;Žirovnica;
+SI;Slovenia;SI-193;Žužemberk;
+SI;Slovenia;SI-194;Šmartno pri Litiji;
+SI;Slovenia;SI-195;Apače;
+SI;Slovenia;SI-196;Cirkulane;
+SI;Slovenia;SI-197;Kostanjevica na Krki;
+SI;Slovenia;SI-198;Makole;
+SI;Slovenia;SI-199;Mokronog-Trebelno;
+SI;Slovenia;SI-200;Poljčane;
+SI;Slovenia;SI-201;Renče-Vogrsko;
+SI;Slovenia;SI-202;Središče ob Dravi;
+SI;Slovenia;SI-203;Straža;
+SI;Slovenia;SI-204;Sveta Trojica v Slovenskih goricah;
+SI;Slovenia;SI-205;Sveti Tomaž;
+SI;Slovenia;SI-206;Šmarješke Toplice;
+SI;Slovenia;SI-207;Gorje;
+SI;Slovenia;SI-208;Log-Dragomer;
+SI;Slovenia;SI-209;Rečica ob Savinji;
+SI;Slovenia;SI-210;Sveti Jurij v Slovenskih goricah;
+SI;Slovenia;SI-211;Šentrupert;
+SK;Slovakia;SK-BC;Banskobystrický kraj;
+SK;Slovakia;SK-BL;Bratislavský kraj;
+SK;Slovakia;SK-KI;Košický kraj;
+SK;Slovakia;SK-NI;Nitriansky kraj;
+SK;Slovakia;SK-PV;Prešovský kraj;
+SK;Slovakia;SK-TA;Trnavský kraj;
+SK;Slovakia;SK-TC;Trenčiansky kraj;
+SK;Slovakia;SK-ZI;Žilinský kraj;
+SL;Sierra Leone;SL-E;Eastern;
+SL;Sierra Leone;SL-N;Northern;
+SL;Sierra Leone;SL-S;Southern;
+SL;Sierra Leone;SL-W;Western Area;
+SM;San Marino;SM-01;Acquaviva;
+SM;San Marino;SM-02;Chiesanuova;
+SM;San Marino;SM-03;Domagnano;
+SM;San Marino;SM-04;Faetano;
+SM;San Marino;SM-05;Fiorentino;
+SM;San Marino;SM-06;Borgo Maggiore;
+SM;San Marino;SM-07;San Marino;
+SM;San Marino;SM-08;Montegiardino;
+SM;San Marino;SM-09;Serravalle;
+SN;Senegal;SN-DB;Diourbel;
+SN;Senegal;SN-DK;Dakar;
+SN;Senegal;SN-FK;Fatick;
+SN;Senegal;SN-KA;Kaffrine;
+SN;Senegal;SN-KD;Kolda;
+SN;Senegal;SN-KE;Kédougou;
+SN;Senegal;SN-KL;Kaolack;
+SN;Senegal;SN-LG;Louga;
+SN;Senegal;SN-MT;Matam;
+SN;Senegal;SN-SE;Sédhiou;
+SN;Senegal;SN-SL;Saint-Louis;
+SN;Senegal;SN-TC;Tambacounda;
+SN;Senegal;SN-TH;Thiès;
+SN;Senegal;SN-ZG;Ziguinchor;
+SO;Somalia;SO-AW;Awdal;
+SO;Somalia;SO-BK;Bakool;
+SO;Somalia;SO-BN;Banaadir;
+SO;Somalia;SO-BR;Bari;
+SO;Somalia;SO-BY;Bay;
+SO;Somalia;SO-GA;Galguduud;
+SO;Somalia;SO-GE;Gedo;
+SO;Somalia;SO-HI;Hiiraan;
+SO;Somalia;SO-JD;Jubbada Dhexe;
+SO;Somalia;SO-JH;Jubbada Hoose;
+SO;Somalia;SO-MU;Mudug;
+SO;Somalia;SO-NU;Nugaal;
+SO;Somalia;SO-SA;Sanaag;
+SO;Somalia;SO-SD;Shabeellaha Dhexe;
+SO;Somalia;SO-SH;Shabeellaha Hoose;
+SO;Somalia;SO-SO;Sool;
+SO;Somalia;SO-TO;Togdheer;
+SO;Somalia;SO-WO;Woqooyi Galbeed;
+SR;Suriname;SR-BR;Brokopondo;
+SR;Suriname;SR-CM;Commewijne;
+SR;Suriname;SR-CR;Coronie;
+SR;Suriname;SR-MA;Marowijne;
+SR;Suriname;SR-NI;Nickerie;
+SR;Suriname;SR-PM;Paramaribo;
+SR;Suriname;SR-PR;Para;
+SR;Suriname;SR-SA;Saramacca;
+SR;Suriname;SR-SI;Sipaliwini;
+SR;Suriname;SR-WA;Wanica;
+ST;Sao Tome and Principe;ST-P;Príncipe;
+ST;Sao Tome and Principe;ST-S;São Tomé;
+SV;El Salvador;SV-AH;Ahuachapán;
+SV;El Salvador;SV-CA;Cabañas;
+SV;El Salvador;SV-CH;Chalatenango;
+SV;El Salvador;SV-CU;Cuscatlán;
+SV;El Salvador;SV-LI;La Libertad;
+SV;El Salvador;SV-MO;Morazán;
+SV;El Salvador;SV-PA;La Paz;
+SV;El Salvador;SV-SA;Santa Ana;
+SV;El Salvador;SV-SM;San Miguel;
+SV;El Salvador;SV-SO;Sonsonate;
+SV;El Salvador;SV-SS;San Salvador;
+SV;El Salvador;SV-SV;San Vicente;
+SV;El Salvador;SV-UN;La Unión;
+SV;El Salvador;SV-US;Usulután;
+SY;Syria;SY-DI;Dimashq;
+SY;Syria;SY-DR;Daraa;
+SY;Syria;SY-DY;Deir ez-Zor;
+SY;Syria;SY-HA;Al-Hasakah;
+SY;Syria;SY-HI;Hims;
+SY;Syria;SY-HL;Aleppo;
+SY;Syria;SY-HM;Hama;
+SY;Syria;SY-ID;Idlib;
+SY;Syria;SY-LA;Latakia;
+SY;Syria;SY-QU;Quneitra;
+SY;Syria;SY-RA;Ar-Raqqah;
+SY;Syria;SY-RD;Rif Dimashq;
+SY;Syria;SY-SU;As-Suwayda;
+SY;Syria;SY-TA;Tartus;
+SZ;Swaziland;SZ-HH;Hhohho;
+SZ;Swaziland;SZ-LU;Lubombo;
+SZ;Swaziland;SZ-MA;Manzini;
+SZ;Swaziland;SZ-SH;Shiselweni;
+TD;Chad;TD-BA;Batha;
+TD;Chad;TD-BG;Bahr el Gazel;
+TD;Chad;TD-BO;Borkou;
+TD;Chad;TD-CB;Chari-Baguirmi;
+TD;Chad;TD-EN;Ennedi;
+TD;Chad;TD-GR;Guéra;
+TD;Chad;TD-HL;Hadjer-Lamis;
+TD;Chad;TD-KA;Kanem;
+TD;Chad;TD-LC;Lac;
+TD;Chad;TD-LO;Logone Occidental;
+TD;Chad;TD-LR;Logone Oriental;
+TD;Chad;TD-MA;Mandoul;
+TD;Chad;TD-MC;Moyen-Chari;
+TD;Chad;TD-ME;Mayo-Kébbi Est;
+TD;Chad;TD-MO;Mayo-Kébbi Ouest;
+TD;Chad;TD-ND;N'Djamena;
+TD;Chad;TD-OD;Ouaddaï;
+TD;Chad;TD-SA;Salamat;
+TD;Chad;TD-SI;Sila;
+TD;Chad;TD-TA;Tandjilé;
+TD;Chad;TD-TI;Tibesti;
+TD;Chad;TD-WF;Wadi Fira;
+TF;French Southern Territories;TF-X1;Ile Saint-Paul et Ile Amsterdam;
+TF;French Southern Territories;TF-X2;Crozet Islands;
+TF;French Southern Territories;TF-X3;Kerguelen;
+TF;French Southern Territories;TF-X4;Iles Eparses;
+TG;Togo;TG-C;Centre;
+TG;Togo;TG-K;Kara;
+TG;Togo;TG-M;Région Maritime;
+TG;Togo;TG-P;Plateaux;
+TG;Togo;TG-S;Savannes;
+TH;Thailand;TH-10;Bangkok;กรุงเทพมหานคร
+TH;Thailand;TH-11;Samut Prakan;สมุทรปราการ
+TH;Thailand;TH-12;Nonthaburi;นนทบุรี
+TH;Thailand;TH-13;Pathum Thani;ปทุมธานี
+TH;Thailand;TH-14;Phra Nakhon Si Ayutthaya;พระนครศรีอยุธยา
+TH;Thailand;TH-15;Ang Thong;อ่างทอง
+TH;Thailand;TH-16;Lopburi;ลพบุรี
+TH;Thailand;TH-17;Sing Buri;สิงห์บุรี
+TH;Thailand;TH-18;Chai Nat;ชัยนาท
+TH;Thailand;TH-19;Saraburi;สระบุรี
+TH;Thailand;TH-20;Chonburi;ชลบุรี
+TH;Thailand;TH-21;Rayong;ระยอง
+TH;Thailand;TH-22;Chanthaburi;จันทบุรี
+TH;Thailand;TH-23;Trat;ตราด
+TH;Thailand;TH-24;Chachoengsao;ฉะเชิงเทรา
+TH;Thailand;TH-25;Prachin Buri;ปราจีนบุรี
+TH;Thailand;TH-26;Nakhon Nayok;นครนายก
+TH;Thailand;TH-27;Sa Kaeo;สระแก้ว
+TH;Thailand;TH-30;Nakhon Ratchasima;นครราชสีมา
+TH;Thailand;TH-31;Buri Ram;บุรีรัมย์
+TH;Thailand;TH-32;Surin;สุรินทร์
+TH;Thailand;TH-33;Sisaket;ศรีสะเกษ
+TH;Thailand;TH-34;Ubon Ratchathani;อุบลราชธานี
+TH;Thailand;TH-35;Yasothon;ยโสธร
+TH;Thailand;TH-36;Chaiyaphum;ชัยภูมิ
+TH;Thailand;TH-37;Amnat Charoen;อำนาจเจริญ
+TH;Thailand;TH-39;Nong Bua Lamphu;หนองบัวลำภู
+TH;Thailand;TH-40;Khon Kaen;ขอนแก่น
+TH;Thailand;TH-41;Udon Thani;อุดรธานี
+TH;Thailand;TH-42;Loei;เลย
+TH;Thailand;TH-43;Nong Khai;หนองคาย
+TH;Thailand;TH-44;Maha Sarakham;มหาสารคาม
+TH;Thailand;TH-45;Roi Et;ร้อยเอ็ด
+TH;Thailand;TH-46;Kalasin;กาฬสินธุ์
+TH;Thailand;TH-47;Sakon Nakhon;สกลนคร
+TH;Thailand;TH-48;Nakhon Phanom;นครพนม
+TH;Thailand;TH-49;Mukdahan;มุกดาหาร
+TH;Thailand;TH-50;Chiang Mai;เชียงใหม่
+TH;Thailand;TH-51;Lamphun;ลำพูน
+TH;Thailand;TH-52;Lampang;ลำปาง
+TH;Thailand;TH-53;Uttaradit;อุตรดิตถ์
+TH;Thailand;TH-54;Phrae;แพร่
+TH;Thailand;TH-55;Nan;น่าน
+TH;Thailand;TH-56;Phayao;พะเยา
+TH;Thailand;TH-57;Chiang Rai;เชียงราย
+TH;Thailand;TH-58;Mae Hong Son;แม่ฮ่องสอน
+TH;Thailand;TH-60;Nakhon Sawan;นครสวรรค์
+TH;Thailand;TH-61;Uthai Thani;อุทัยธานี
+TH;Thailand;TH-62;Kamphaeng Phet;กำแพงเพชร
+TH;Thailand;TH-63;Tak;ตาก
+TH;Thailand;TH-64;Sukhothai;สุโขทัย
+TH;Thailand;TH-65;Phitsanulok;พิษณุโลก
+TH;Thailand;TH-66;Phichit;พิจิตร
+TH;Thailand;TH-67;Phetchabun;เพชรบูรณ์
+TH;Thailand;TH-70;Ratchaburi;ราชบุรี
+TH;Thailand;TH-71;Kanchanaburi;กาญจนบุรี
+TH;Thailand;TH-72;Suphan Buri;สุพรรณบุรี
+TH;Thailand;TH-73;Nakhon Pathom;นครปฐม
+TH;Thailand;TH-74;Samut Sakhon;สมุทรสาคร
+TH;Thailand;TH-75;Samut Songkhram;สมุทรสงคราม
+TH;Thailand;TH-76;Phetchaburi;เพชรบุรี
+TH;Thailand;TH-77;Prachuap Khiri Khan;ประจวบคีรีขันธ์
+TH;Thailand;TH-80;Nakhon Si Thammarat;นครศรีธรรมราช
+TH;Thailand;TH-81;Krabi;กระบี่
+TH;Thailand;TH-82;Phang Nga;พังงา
+TH;Thailand;TH-83;Phuket;ภูเก็ต
+TH;Thailand;TH-84;Surat Thani;สุราษฎร์ธานี
+TH;Thailand;TH-85;Ranong;ระนอง
+TH;Thailand;TH-86;Chumphon;ชุมพร
+TH;Thailand;TH-90;Songkhla;สงขลา
+TH;Thailand;TH-91;Satun;สตูล
+TH;Thailand;TH-92;Trang;ตรัง
+TH;Thailand;TH-93;Phatthalung;พัทลุง
+TH;Thailand;TH-94;Pattani;ปัตตานี
+TH;Thailand;TH-95;Yala;ยะลา
+TH;Thailand;TH-96;Narathiwat;นครศรีธรรมราช
+TH;Thailand;TH-S;Pattaya;พัทยา
+TJ;Tajikistan;TJ-GB;Gorno-Badakhshan;
+TJ;Tajikistan;TJ-KT;Khatlon;
+TJ;Tajikistan;TJ-SU;Sughd;
+TL;Timor-Leste;TL-AL;Aileu;
+TL;Timor-Leste;TL-AN;Ainaro;
+TL;Timor-Leste;TL-BA;Baucau;
+TL;Timor-Leste;TL-BO;Bobonaro;
+TL;Timor-Leste;TL-CO;Cova Lima;
+TL;Timor-Leste;TL-DI;Dili;
+TL;Timor-Leste;TL-ER;Ermera;
+TL;Timor-Leste;TL-LA;Lautem;
+TL;Timor-Leste;TL-LI;Liquiça;
+TL;Timor-Leste;TL-MF;Manufahi;
+TL;Timor-Leste;TL-MT;Manatuto;
+TL;Timor-Leste;TL-OE;Oecussi;
+TL;Timor-Leste;TL-VI;Viqueque;
+TM;Turkmenistan;TM-A;Ahal;
+TM;Turkmenistan;TM-B;Balkan;
+TM;Turkmenistan;TM-D;Dasoguz;
+TM;Turkmenistan;TM-L;Lebap;
+TM;Turkmenistan;TM-M;Mary;
+TN;Tunisia;TN-11;Tunis;
+TN;Tunisia;TN-12;Ariana;
+TN;Tunisia;TN-13;Ben Arous;
+TN;Tunisia;TN-14;La Manouba;
+TN;Tunisia;TN-21;Nabeul;
+TN;Tunisia;TN-22;Zaghouan;
+TN;Tunisia;TN-23;Bizerte;
+TN;Tunisia;TN-31;Béja;
+TN;Tunisia;TN-32;Jendouba;
+TN;Tunisia;TN-33;Le Kef;
+TN;Tunisia;TN-34;Siliana;
+TN;Tunisia;TN-41;Kairouan;
+TN;Tunisia;TN-42;Kasserine;
+TN;Tunisia;TN-43;Sidi Bouzid;
+TN;Tunisia;TN-51;Sousse;
+TN;Tunisia;TN-52;Monastir;
+TN;Tunisia;TN-53;Mahdia;
+TN;Tunisia;TN-61;Sfax;
+TN;Tunisia;TN-71;Gafsa;
+TN;Tunisia;TN-72;Tozeur;
+TN;Tunisia;TN-73;Kebili;
+TN;Tunisia;TN-81;Gabes;
+TN;Tunisia;TN-82;Médenine;
+TN;Tunisia;TN-83;Tataouine;
+TO;Tonga;TO-01;Eua;
+TO;Tonga;TO-02;Ha'apai;
+TO;Tonga;TO-03;Niuas;
+TO;Tonga;TO-04;Tongatapu;
+TO;Tonga;TO-05;Vava'u;
+TR;Turkey;TR-01;Adana;
+TR;Turkey;TR-02;Adıyaman;
+TR;Turkey;TR-03;Afyonkarahisar;
+TR;Turkey;TR-04;Ağrı;
+TR;Turkey;TR-05;Amasya;
+TR;Turkey;TR-06;Ankara;
+TR;Turkey;TR-07;Antalya;
+TR;Turkey;TR-08;Artvin;
+TR;Turkey;TR-09;Aydın;
+TR;Turkey;TR-10;Balıkesir;
+TR;Turkey;TR-11;Bilecik;
+TR;Turkey;TR-12;Bingöl;
+TR;Turkey;TR-13;Bitlis;
+TR;Turkey;TR-14;Bolu;
+TR;Turkey;TR-15;Burdur;
+TR;Turkey;TR-16;Bursa;
+TR;Turkey;TR-17;Çanakkale;
+TR;Turkey;TR-18;Çankırı;
+TR;Turkey;TR-19;Çorum;
+TR;Turkey;TR-20;Denizli;
+TR;Turkey;TR-21;Diyarbakır;
+TR;Turkey;TR-22;Edirne;
+TR;Turkey;TR-23;Elazığ;
+TR;Turkey;TR-24;Erzincan;
+TR;Turkey;TR-25;Erzurum;
+TR;Turkey;TR-26;Eskişehir;
+TR;Turkey;TR-27;Gaziantep;
+TR;Turkey;TR-28;Giresun;
+TR;Turkey;TR-29;Gümüşhane;
+TR;Turkey;TR-30;Hakkari;
+TR;Turkey;TR-31;Hatay;
+TR;Turkey;TR-32;Isparta;
+TR;Turkey;TR-33;Mersin;
+TR;Turkey;TR-34;İstanbul;
+TR;Turkey;TR-35;İzmir;
+TR;Turkey;TR-36;Kars;
+TR;Turkey;TR-37;Kastamonu;
+TR;Turkey;TR-38;Kayseri;
+TR;Turkey;TR-39;Kırklareli;
+TR;Turkey;TR-40;Kırşehir;
+TR;Turkey;TR-41;Kocaeli;
+TR;Turkey;TR-42;Konya;
+TR;Turkey;TR-43;Kütahya;
+TR;Turkey;TR-44;Malatya;
+TR;Turkey;TR-45;Manisa;
+TR;Turkey;TR-46;Kahramanmaraş;
+TR;Turkey;TR-47;Mardin;
+TR;Turkey;TR-48;Muğla;
+TR;Turkey;TR-49;Muş;
+TR;Turkey;TR-50;Nevşehir;
+TR;Turkey;TR-51;Niğde;
+TR;Turkey;TR-52;Ordu;
+TR;Turkey;TR-53;Rize;
+TR;Turkey;TR-54;Sakarya;
+TR;Turkey;TR-55;Samsun;
+TR;Turkey;TR-56;Siirt;
+TR;Turkey;TR-57;Sinop;
+TR;Turkey;TR-58;Sivas;
+TR;Turkey;TR-59;Tekirdağ;
+TR;Turkey;TR-60;Tokat;
+TR;Turkey;TR-61;Trabzon;
+TR;Turkey;TR-62;Tunceli;
+TR;Turkey;TR-63;Şanlıurfa;
+TR;Turkey;TR-64;Uşak;
+TR;Turkey;TR-65;Van;
+TR;Turkey;TR-66;Yozgat;
+TR;Turkey;TR-67;Zonguldak;
+TR;Turkey;TR-68;Aksaray;
+TR;Turkey;TR-69;Bayburt;
+TR;Turkey;TR-70;Karaman;
+TR;Turkey;TR-71;Kırıkkale;
+TR;Turkey;TR-72;Batman;
+TR;Turkey;TR-73;Şırnak;
+TR;Turkey;TR-74;Bartın;
+TR;Turkey;TR-75;Ardahan;
+TR;Turkey;TR-76;İğdir;
+TR;Turkey;TR-77;Yalova;
+TR;Turkey;TR-78;Karabük;
+TR;Turkey;TR-79;Kilis;
+TR;Turkey;TR-80;Osmaniye;
+TR;Turkey;TR-81;Düzce;
+TT;Trinidad and Tobago;TT-ARI;Arima;
+TT;Trinidad and Tobago;TT-CHA;Chaguanas;
+TT;Trinidad and Tobago;TT-CTT;Couva-Tabaquite-Talparo;
+TT;Trinidad and Tobago;TT-DMN;Diego Martin;
+TT;Trinidad and Tobago;TT-ETO;Eastern Tobago;
+TT;Trinidad and Tobago;TT-PED;Penal-Debe;
+TT;Trinidad and Tobago;TT-POS;Port of Spain;
+TT;Trinidad and Tobago;TT-PRT;Princes Town;
+TT;Trinidad and Tobago;TT-PTF;Point Fortin;
+TT;Trinidad and Tobago;TT-RCM;Rio Claro-Mayaro;
+TT;Trinidad and Tobago;TT-SFO;San Fernando;
+TT;Trinidad and Tobago;TT-SGE;Sangre Grande;
+TT;Trinidad and Tobago;TT-SIP;Siparia;
+TT;Trinidad and Tobago;TT-SJL;San Juan-Laventille;
+TT;Trinidad and Tobago;TT-TUP;Tunapuna-Piarco;
+TT;Trinidad and Tobago;TT-WTO;Western Tobago;
+TV;Tuvalu;TV-FUN;Funafuti;
+TV;Tuvalu;TV-NIT;Niutao;
+TV;Tuvalu;TV-NIU;Nui;
+TV;Tuvalu;TV-NKF;Nukufetau;
+TV;Tuvalu;TV-NKL;Nukulaelae;
+TV;Tuvalu;TV-NMA;Nanumea;
+TV;Tuvalu;TV-NMG;Nanumanga;
+TV;Tuvalu;TV-VAI;Vaitupu;
+TW;Taiwan;TW-CHA;Changhua County;彰化縣
+TW;Taiwan;TW-CYI;Chiayi City;嘉義市
+TW;Taiwan;TW-CYQ;Chiayi County;嘉義縣
+TW;Taiwan;TW-HSQ;Hsinchu County;新竹縣
+TW;Taiwan;TW-HSZ;Hsinchu City;新竹市
+TW;Taiwan;TW-HUA;Hualien County;花蓮縣
+TW;Taiwan;TW-ILA;Yilan County;宜蘭縣
+TW;Taiwan;TW-KEE;Keelung City;基隆市
+TW;Taiwan;TW-KHH;Kaohsiung City;高雄市
+TW;Taiwan;TW-KHQ;Kaohsiung County;高雄縣
+TW;Taiwan;TW-MIA;Miaoli County;苗栗縣
+TW;Taiwan;TW-na2;Lienchiang County;連江縣
+TW;Taiwan;TW-na3;Nanhai Islands;南海島
+TW;Taiwan;TW-nan;Kinmen County;金門縣
+TW;Taiwan;TW-NAN;Nantou County;南投縣
+TW;Taiwan;TW-PEN;Penghu County;澎湖縣
+TW;Taiwan;TW-PIF;Pingtung County;屏東縣
+TW;Taiwan;TW-TAO;Taoyuan County;桃園縣
+TW;Taiwan;TW-TNN;Tainan City;台南市
+TW;Taiwan;TW-TNQ;Tainan County;台南縣
+TW;Taiwan;TW-TPE;Taipei City;台北市
+TW;Taiwan;TW-TPQ;Taipei County;台北縣
+TW;Taiwan;TW-TTT;Taitung County;台東縣
+TW;Taiwan;TW-TXG;Taichung City;台中市
+TW;Taiwan;TW-TXQ;Taichung County;台中縣
+TW;Taiwan;TW-YUN;Yunlin County;雲林縣
+TZ;Tanzania;TZ-01;Arusha;
+TZ;Tanzania;TZ-02;Dar es Salaam;
+TZ;Tanzania;TZ-03;Dodoma;
+TZ;Tanzania;TZ-04;Iringa;
+TZ;Tanzania;TZ-05;Kagera;
+TZ;Tanzania;TZ-06;Kaskazini Pemba;
+TZ;Tanzania;TZ-07;Kaskazini Unguja;
+TZ;Tanzania;TZ-08;Kigoma;
+TZ;Tanzania;TZ-09;Kilimanjaro;
+TZ;Tanzania;TZ-10;Kusini Pemba;
+TZ;Tanzania;TZ-11;Kusini Unguja;
+TZ;Tanzania;TZ-12;Lindi;
+TZ;Tanzania;TZ-13;Mara;
+TZ;Tanzania;TZ-14;Mbeya;
+TZ;Tanzania;TZ-15;Mjini Magharibi;
+TZ;Tanzania;TZ-16;Morogoro;
+TZ;Tanzania;TZ-17;Mtwara;
+TZ;Tanzania;TZ-18;Mwanza;
+TZ;Tanzania;TZ-19;Pwani;
+TZ;Tanzania;TZ-20;Rukwa;
+TZ;Tanzania;TZ-21;Ruvuma;
+TZ;Tanzania;TZ-22;Shinyanga;
+TZ;Tanzania;TZ-23;Singida;
+TZ;Tanzania;TZ-24;Tabora;
+TZ;Tanzania;TZ-25;Tanga;
+TZ;Tanzania;TZ-26;Manyara;
+UA;Ukraine;UA-05;Вінницька область;Vinnytsia oblast
+UA;Ukraine;UA-07;Волинська область;Volyn oblast
+UA;Ukraine;UA-09;Луганська область;Luhansk oblast
+UA;Ukraine;UA-12;Дніпропетровська область;Dnipropetrovsk oblast
+UA;Ukraine;UA-14;Донецька область;Donetsk oblast
+UA;Ukraine;UA-18;Житомирська область;Zhytomyr oblast
+UA;Ukraine;UA-21;Закарпатська область;Zakarpattia oblast
+UA;Ukraine;UA-23;Запорізька область;Zaporizhia oblast
+UA;Ukraine;UA-26;Івано-Франківська область;Ivano-Frankivsk oblast
+UA;Ukraine;UA-30;Київ;Kiev
+UA;Ukraine;UA-32;Київська область;Kiev oblast
+UA;Ukraine;UA-35;Кіровоградська область;Kirovohrad oblast
+UA;Ukraine;UA-40;Севастополь;Sevastopol
+UA;Ukraine;UA-43;Автономна Республіка Крим;Autonomous Republic of Crimea
+UA;Ukraine;UA-46;Львівська область;Lviv oblast
+UA;Ukraine;UA-48;Миколаївська область;Mykolaiv oblast
+UA;Ukraine;UA-51;Одеська область;Odessa oblast
+UA;Ukraine;UA-53;Полтавська область;Poltava oblast
+UA;Ukraine;UA-56;Рівненська область;Rivne oblast
+UA;Ukraine;UA-59;Сумська область;Sumy oblast
+UA;Ukraine;UA-61;Тернопільська область;Ternopil oblast
+UA;Ukraine;UA-63;Харківська область;Kharkiv oblast
+UA;Ukraine;UA-65;Херсонська область;Kherson oblast
+UA;Ukraine;UA-68;Хмельницька область;Khmelnytskyi oblast
+UA;Ukraine;UA-71;Черкаська область;Cherkasy oblast
+UA;Ukraine;UA-74;Чернігівська область;Chernihiv oblast
+UA;Ukraine;UA-77;Чернівецька область;Chernivtsi oblast
+UG;Uganda;UG-101;Kalangala;
+UG;Uganda;UG-102;Kampala;
+UG;Uganda;UG-103;Kiboga;
+UG;Uganda;UG-104;Luwero;
+UG;Uganda;UG-105;Masaka;
+UG;Uganda;UG-106;Mpigi;
+UG;Uganda;UG-107;Mubende;
+UG;Uganda;UG-108;Mukono;
+UG;Uganda;UG-109;Nakasongola;
+UG;Uganda;UG-110;Rakai;
+UG;Uganda;UG-111;Sembabule;
+UG;Uganda;UG-112;Kayunga;
+UG;Uganda;UG-113;Wakiso;
+UG;Uganda;UG-201;Bugiri;
+UG;Uganda;UG-202;Busia;
+UG;Uganda;UG-203;Iganga;
+UG;Uganda;UG-204;Jinja;
+UG;Uganda;UG-205;Kamuli;
+UG;Uganda;UG-206;Kapchorwa;
+UG;Uganda;UG-207;Katakwi;
+UG;Uganda;UG-208;Kumi;
+UG;Uganda;UG-209;Mbale;
+UG;Uganda;UG-210;Pallisa;
+UG;Uganda;UG-211;Soroti;
+UG;Uganda;UG-212;Tororo;
+UG;Uganda;UG-213;Kaberamaido;
+UG;Uganda;UG-214;Mayuge;
+UG;Uganda;UG-215;Sironko;
+UG;Uganda;UG-301;Adjumani;
+UG;Uganda;UG-302;Apac;
+UG;Uganda;UG-303;Arua;
+UG;Uganda;UG-304;Gulu;
+UG;Uganda;UG-305;Kitgum;
+UG;Uganda;UG-306;Kotido;
+UG;Uganda;UG-307;Lira;
+UG;Uganda;UG-308;Moroto;
+UG;Uganda;UG-309;Moyo;
+UG;Uganda;UG-310;Nebbi;
+UG;Uganda;UG-311;Nakapiripirit;
+UG;Uganda;UG-312;Pader;
+UG;Uganda;UG-313;Yumbe;
+UG;Uganda;UG-401;Bundibugyo;
+UG;Uganda;UG-402;Bushenyi;
+UG;Uganda;UG-403;Hoima;
+UG;Uganda;UG-404;Kabale;
+UG;Uganda;UG-405;Kabarole;
+UG;Uganda;UG-406;Kasese;
+UG;Uganda;UG-407;Kibale;
+UG;Uganda;UG-408;Kisoro;
+UG;Uganda;UG-409;Masindi;
+UG;Uganda;UG-410;Mbarara;
+UG;Uganda;UG-411;Ntungamo;
+UG;Uganda;UG-412;Rukungiri;
+UG;Uganda;UG-413;Kamwenge;
+UG;Uganda;UG-414;Kanungu;
+UG;Uganda;UG-415;Kyenjojo;
+UM;Minor Outlying Islands;UM-67;Johnston Atoll;
+UM;Minor Outlying Islands;UM-71;Midway Islands;
+UM;Minor Outlying Islands;UM-76;Navassa Island;
+UM;Minor Outlying Islands;UM-79;Wake Island;
+UM;Minor Outlying Islands;UM-81;Baker Island;
+UM;Minor Outlying Islands;UM-84;Howland Island;
+UM;Minor Outlying Islands;UM-86;Jarvis Island;
+UM;Minor Outlying Islands;UM-89;Kingman Reef;
+UM;Minor Outlying Islands;UM-95;Palmyra Atoll;
+US;United States;US-AK;Alaska;
+US;United States;US-AL;Alabama;
+US;United States;US-AR;Arkansas;
+US;United States;US-AS;American Samoa;
+US;United States;US-AZ;Arizona;
+US;United States;US-CA;California;
+US;United States;US-CO;Colorado;
+US;United States;US-CT;Connecticut;
+US;United States;US-DC;District Of Columbia;
+US;United States;US-DE;Delaware;
+US;United States;US-FL;Florida;
+US;United States;US-FM;Federated States of Micronesia;
+US;United States;US-GA;Georgia;
+US;United States;US-GU;Guam;
+US;United States;US-HI;Hawaii;
+US;United States;US-IA;Iowa;
+US;United States;US-ID;Idaho;
+US;United States;US-IL;Illinois;
+US;United States;US-IN;Indiana;
+US;United States;US-KS;Kansas;
+US;United States;US-KY;Kentucky;
+US;United States;US-LA;Louisiana;
+US;United States;US-MA;Massachusetts;
+US;United States;US-MD;Maryland;
+US;United States;US-ME;Maine;
+US;United States;US-MH;Marshall Islands;
+US;United States;US-MI;Michigan;
+US;United States;US-MN;Minnesota;
+US;United States;US-MO;Missouri;
+US;United States;US-MP;Northern Mariana Islands;
+US;United States;US-MS;Mississippi;
+US;United States;US-MT;Montana;
+US;United States;US-NC;North Carolina;
+US;United States;US-ND;North Dakota;
+US;United States;US-NE;Nebraska;
+US;United States;US-NH;New Hampshire;
+US;United States;US-NJ;New Jersey;
+US;United States;US-NM;New Mexico;
+US;United States;US-NV;Nevada;
+US;United States;US-NY;New York;
+US;United States;US-OH;Ohio;
+US;United States;US-OK;Oklahoma;
+US;United States;US-OR;Oregon;
+US;United States;US-PA;Pennsylvania;
+US;United States;US-PR;Puerto Rico;
+US;United States;US-PW;Palau;
+US;United States;US-RI;Rhode Island;
+US;United States;US-SC;South Carolina;
+US;United States;US-SD;South Dakota;
+US;United States;US-TN;Tennessee;
+US;United States;US-TX;Texas;
+US;United States;US-UM;Minor Outlying Islands;
+US;United States;US-UT;Utah;
+US;United States;US-VA;Virginia;
+US;United States;US-VI;Virgin Islands;
+US;United States;US-VT;Vermont;
+US;United States;US-WA;Washington;
+US;United States;US-WI;Wisconsin;
+US;United States;US-WV;West Virginia;
+US;United States;US-WY;Wyoming;
+UY;Uruguay;UY-AR;Artigas;
+UY;Uruguay;UY-CA;Canelones;
+UY;Uruguay;UY-CL;Cerro Largo;
+UY;Uruguay;UY-CO;Colonia;
+UY;Uruguay;UY-DU;Durazno;
+UY;Uruguay;UY-FD;Florida;
+UY;Uruguay;UY-FS;Flores;
+UY;Uruguay;UY-LA;Lavalleja;
+UY;Uruguay;UY-MA;Maldonado;
+UY;Uruguay;UY-MO;Montevideo;
+UY;Uruguay;UY-PA;Paysandú;
+UY;Uruguay;UY-RN;Rio Negro;
+UY;Uruguay;UY-RO;Rocha;
+UY;Uruguay;UY-RV;Rivera;
+UY;Uruguay;UY-SA;Salto;
+UY;Uruguay;UY-SJ;San José;
+UY;Uruguay;UY-SO;Soriano;
+UY;Uruguay;UY-TA;Tacuarembó;
+UY;Uruguay;UY-TT;Treinta y tres;
+UZ;Uzbekistan;UZ-AN;Andijan province;Андижанская область
+UZ;Uzbekistan;UZ-BU;Bukhara province;Бухарская область
+UZ;Uzbekistan;UZ-FA;Fergana province;Ферганская область
+UZ;Uzbekistan;UZ-JI;Jizzakh province;Джизакская область
+UZ;Uzbekistan;UZ-NG;Namangan province;Наманганская область
+UZ;Uzbekistan;UZ-NW;Navoiy province;Навоийская область
+UZ;Uzbekistan;UZ-QA;Qashqadaryo province;Кашкадарьинская область
+UZ;Uzbekistan;UZ-QR;Karakalpakstan republic;Республика Каракалпакстан
+UZ;Uzbekistan;UZ-SA;Samarqand province;Самаркандская область
+UZ;Uzbekistan;UZ-SI;Sirdaryo province;Сырдарьинская область
+UZ;Uzbekistan;UZ-SU;Surxondaryo province;Сурхандарьинская область
+UZ;Uzbekistan;UZ-TK;Tashkent city;Ташкент
+UZ;Uzbekistan;UZ-TO;Tashkent province;Ташкентская область
+UZ;Uzbekistan;UZ-XO;Xorazm province;Хорезмская область
+VC;St Vincent & the Grenadines;VC-01;Charlotte;
+VC;St Vincent & the Grenadines;VC-02;Saint Andrew;
+VC;St Vincent & the Grenadines;VC-03;Saint David;
+VC;St Vincent & the Grenadines;VC-04;Saint George;
+VC;St Vincent & the Grenadines;VC-05;Saint Patrick;
+VC;St Vincent & the Grenadines;VC-06;Grenadines;
+VE;Venezuela;VE-A;Caracas;
+VE;Venezuela;VE-B;Anzoátegui;
+VE;Venezuela;VE-C;Apure;
+VE;Venezuela;VE-D;Aragua;
+VE;Venezuela;VE-E;Barinas;
+VE;Venezuela;VE-F;Bolívar;
+VE;Venezuela;VE-G;Carabobo;
+VE;Venezuela;VE-H;Cojedes;
+VE;Venezuela;VE-I;Falcón;
+VE;Venezuela;VE-J;Guárico;
+VE;Venezuela;VE-K;Lara;
+VE;Venezuela;VE-L;Mérida;
+VE;Venezuela;VE-M;Miranda;
+VE;Venezuela;VE-N;Monagas;
+VE;Venezuela;VE-O;Nueva Esparta;
+VE;Venezuela;VE-P;Portuguesa;
+VE;Venezuela;VE-R;Sucre;
+VE;Venezuela;VE-S;Táchira;
+VE;Venezuela;VE-T;Trujillo;
+VE;Venezuela;VE-U;Yaracuy;
+VE;Venezuela;VE-V;Zulia;
+VE;Venezuela;VE-W;Dependencias Federales;
+VE;Venezuela;VE-X;Vargas;
+VE;Venezuela;VE-Y;Delta Amacuro;
+VE;Venezuela;VE-Z;Amazonas;
+VN;Vietnam;VN-01;Lai Châu;
+VN;Vietnam;VN-02;Lào Cai;
+VN;Vietnam;VN-03;Hà Giang;
+VN;Vietnam;VN-04;Cao Bằng;
+VN;Vietnam;VN-05;Sơn La;
+VN;Vietnam;VN-06;Yên Bái;
+VN;Vietnam;VN-07;Tuyên Quang;
+VN;Vietnam;VN-09;Lạng Sơn;
+VN;Vietnam;VN-13;Quảng Ninh;
+VN;Vietnam;VN-14;Hòa Bình;
+VN;Vietnam;VN-15;Hà Tây;
+VN;Vietnam;VN-18;Ninh Bình;
+VN;Vietnam;VN-20;Thái Bình;
+VN;Vietnam;VN-21;Thanh Hóa;
+VN;Vietnam;VN-22;Nghệ An;
+VN;Vietnam;VN-23;Hà Tĩnh;
+VN;Vietnam;VN-24;Quảng Bình;
+VN;Vietnam;VN-25;Quảng Trị;
+VN;Vietnam;VN-26;Thừa Thiên - Huế;
+VN;Vietnam;VN-27;Quảng Nam;
+VN;Vietnam;VN-28;Kon Tum;
+VN;Vietnam;VN-29;Quảng Ngãi;
+VN;Vietnam;VN-30;Gia Lai;
+VN;Vietnam;VN-31;Bình Định;
+VN;Vietnam;VN-32;Phú Yên;
+VN;Vietnam;VN-33;Đắk Lắk;
+VN;Vietnam;VN-34;Khánh Hòa;
+VN;Vietnam;VN-35;Lâm Đồng;
+VN;Vietnam;VN-36;Ninh Thuận;
+VN;Vietnam;VN-37;Tây Ninh;
+VN;Vietnam;VN-39;Đồng Nai;
+VN;Vietnam;VN-40;Bình Thuận;
+VN;Vietnam;VN-41;Long An;
+VN;Vietnam;VN-43;Bà Rịa - Vũng Tàu;
+VN;Vietnam;VN-44;An Giang;
+VN;Vietnam;VN-45;Đồng Tháp;
+VN;Vietnam;VN-46;Tiền Giang;
+VN;Vietnam;VN-47;Kiên Giang;
+VN;Vietnam;VN-48;Cần Thơ;
+VN;Vietnam;VN-49;Vĩnh Long;
+VN;Vietnam;VN-50;Bến Tre;
+VN;Vietnam;VN-51;Trà Vinh;
+VN;Vietnam;VN-52;Sóc Trăng;
+VN;Vietnam;VN-53;Bắc Kạn;
+VN;Vietnam;VN-54;Bắc Giang;
+VN;Vietnam;VN-55;Bạc Liêu;
+VN;Vietnam;VN-56;Bắc Ninh;
+VN;Vietnam;VN-57;Bình Dương;
+VN;Vietnam;VN-58;Bình Phước;
+VN;Vietnam;VN-59;Cà Mau;
+VN;Vietnam;VN-60;Đà Nẵng;
+VN;Vietnam;VN-61;Hải Dương;
+VN;Vietnam;VN-62;Hải Phòng;
+VN;Vietnam;VN-63;Hà Nam;
+VN;Vietnam;VN-64;Hà Nội;
+VN;Vietnam;VN-65;Hồ Chí Minh;
+VN;Vietnam;VN-66;Hưng Yên;
+VN;Vietnam;VN-67;Nam Định;
+VN;Vietnam;VN-68;Phú Thọ;
+VN;Vietnam;VN-69;Thái Nguyên;
+VN;Vietnam;VN-70;Vĩnh Phúc;
+VN;Vietnam;VN-71;Điện Biên;
+VN;Vietnam;VN-72;Đắk Nông;
+VN;Vietnam;VN-73;Hậu Giang;
+VU;Vanuatu;VU-MAP;Malampa;
+VU;Vanuatu;VU-PAM;Pénama;
+VU;Vanuatu;VU-SAM;Sanma;
+VU;Vanuatu;VU-SEE;Shéfa;
+VU;Vanuatu;VU-TAE;Taféa;
+VU;Vanuatu;VU-TOB;Torba;
+WS;Samoa;WS-AA;A'ana;
+WS;Samoa;WS-AL;Aiga-i-le-Tai;
+WS;Samoa;WS-AT;Atua;
+WS;Samoa;WS-FA;Fa'asaleleaga;
+WS;Samoa;WS-GE;Gaga'emauga;
+WS;Samoa;WS-GI;Gagaifomauga;
+WS;Samoa;WS-PA;Palauli;
+WS;Samoa;WS-SA;Satupa'itea;
+WS;Samoa;WS-TU;Tuamasaga;
+WS;Samoa;WS-VF;Va'a-o-Fonoti;
+WS;Samoa;WS-VS;Vaisigano;
+YE;Yemen;YE-AB;Abyan;
+YE;Yemen;YE-AD;'Adan;
+YE;Yemen;YE-AM;'Amran;
+YE;Yemen;YE-BA;Al Bayda';
+YE;Yemen;YE-DA;Ad Dali';
+YE;Yemen;YE-DH;Dhamar;
+YE;Yemen;YE-HD;Hadramaut;
+YE;Yemen;YE-HJ;Hajjah;
+YE;Yemen;YE-HU;Al Hudaydah;
+YE;Yemen;YE-IB;Ibb;
+YE;Yemen;YE-JA;Al Jawf;
+YE;Yemen;YE-LA;Lahij;
+YE;Yemen;YE-MA;Ma'rib;
+YE;Yemen;YE-MR;Al Mahrah;
+YE;Yemen;YE-MW;Al Mahwit;
+YE;Yemen;YE-RA;Raymah;
+YE;Yemen;YE-SD;Sa'dah;
+YE;Yemen;YE-SH;Shabwah;
+YE;Yemen;YE-SN;Sana'a;
+YE;Yemen;YE-TA;Ta'izz;
+ZA;South Africa;ZA-EC;Eastern Cape;
+ZA;South Africa;ZA-FS;Free State;
+ZA;South Africa;ZA-GT;Gauteng;
+ZA;South Africa;ZA-LP;Limpopo;
+ZA;South Africa;ZA-MP;Mpumalanga;
+ZA;South Africa;ZA-NC;Northern Cape;
+ZA;South Africa;ZA-NL;KwaZulu-Natal;
+ZA;South Africa;ZA-NW;North West;
+ZA;South Africa;ZA-WC;Western Cape;
+ZM;Zambia;ZM-01;Western;
+ZM;Zambia;ZM-02;Central;
+ZM;Zambia;ZM-03;Eastern;
+ZM;Zambia;ZM-04;Luapula;
+ZM;Zambia;ZM-05;Northern;
+ZM;Zambia;ZM-06;North-Western;
+ZM;Zambia;ZM-07;Southern;
+ZM;Zambia;ZM-08;Copperbelt;
+ZM;Zambia;ZM-09;Lusaka;
+ZW;Zimbabwe;ZW-BU;Bulawayo;
+ZW;Zimbabwe;ZW-HA;Harare;
+ZW;Zimbabwe;ZW-MA;Manicaland;
+ZW;Zimbabwe;ZW-MC;Mashonaland Central;
+ZW;Zimbabwe;ZW-ME;Mashonaland East;
+ZW;Zimbabwe;ZW-MI;Midlands;
+ZW;Zimbabwe;ZW-MN;Matabeleland North;
+ZW;Zimbabwe;ZW-MS;Matabeleland South;
+ZW;Zimbabwe;ZW-MV;Masvingo;
+ZW;Zimbabwe;ZW-MW;Mashonaland West;

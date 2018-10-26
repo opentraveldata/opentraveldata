@@ -1,0 +1,706 @@
+iso;country;sovereign;level;admin_name;admin_name_en;total
+AD;Andorra;AD;1;Parròquies;Parishes;7
+AE;United Arab Emirates;AE;1;Emirates;Emirates;7
+AF;Afghanistan;AF;1;Wilayats;Provinces;34
+AF;Afghanistan;AF;2;Wolaswalei;Districts;400
+AG;Antigua and Barbuda;AG;1;Dependencies;Dependencies;2
+AG;Antigua and Barbuda;AG;1;Parishes;Parishes;6
+AI;Anguilla;GB;1;Districts;Districts;14
+AL;Albania;AL;1;Qarku;Prefectures;12
+AL;Albania;AL;2;Rrethe;Districts;36
+AL;Albania;AL;3;Komunë;Rural municipalities;311
+AL;Albania;AL;3;Qytet;Urban municipalities;63
+AM;Armenia;AM;1;Marzer;Provinces;11
+AM;Armenia;AM;2;Raions;Raions;41
+AO;Angola;AO;1;Províncias;Provinces;18
+AO;Angola;AO;2;Municípios;Municipalities;163
+AR;Argentina;AR;1;Ciudad autónoma;Autonomous city;1
+AR;Argentina;AR;1;Provincias;Provinces;23
+AR;Argentina;AR;2;Partidos;Divisions;135
+AR;Argentina;AR;2;Comunas;Municipalities;15
+AR;Argentina;AR;2;Departamentos;Departments;378
+AS;American Samoa;US;1;Atolls;Atolls;2
+AS;American Samoa;US;1;Districts;Districts;3
+AS;American Samoa;US;2;Counties;Counties;16
+AT;Austria;AT;1;Bundesländer;States;9
+AT;Austria;AT;2;Landbezirke;Districts;80
+AT;Austria;AT;2;Statutarstädte;Statutory cities;15
+AT;Austria;AT;3;Statutarstadt;Statutory city;15
+AT;Austria;AT;3;Marktgemeinde;Marktgemeinde;766
+AT;Austria;AT;3;Gemeinden;Municipalities;1391
+AT;Austria;AT;3;Stadtgemeinde;Stadtgemeinde;185
+AU;Australia;AU;1;Self-governing territories;Self-governing territories;3
+AU;Australia;AU;1;External territories;External territories;7
+AU;Australia;AU;1;States;States;6
+AU;Australia;AU;2;Regions;Regions;58
+AU;Australia;AU;3;LGAs;LGAs;563
+AW;Aruba;NL;1;Regions;Regions;8
+AX;Åland;FI;1;Sub-regions;Sub-regions;3
+AX;Åland;FI;2;Municipalities;Municipalities;16
+AZ;Azerbaijan;AZ;1;Regions;Regions;9
+AZ;Azerbaijan;AZ;1;Autonomous Republic;Autonomous Republic;1
+AZ;Azerbaijan;AZ;2;Cities;Cities;11
+AZ;Azerbaijan;AZ;2;Rayons;District;66
+BA;Bosnia-Herzegovina;BA;1;Special district;Special district;1
+BA;Bosnia-Herzegovina;BA;1;Regions;Regions;2
+BA;Bosnia-Herzegovina;BA;2;Kantona;Cantons;10
+BA;Bosnia-Herzegovina;BA;3;Opštine;Municipalities;141
+BB;Barbados;BB;1;Parishes;Parishes;11
+BD;Bangladesh;BD;1;Divisions;Bibhag;7
+BD;Bangladesh;BD;2;Zilas;Districts;64
+BD;Bangladesh;BD;3;Upazilas;Subdistricts;472
+BE;Belgium;BE;1;Régions;Regions;3
+BE;Belgium;BE;2;Provinces;Provinces;10
+BE;Belgium;BE;3;Arrondissements;Arrondissements;43
+BE;Belgium;BE;4;Communes;Municipalities;589
+BF;Burkina Faso;BF;1;Regions;Regions;13
+BF;Burkina Faso;BF;2;Provinces;Provinces;45
+BF;Burkina Faso;BF;3;Communes;Communes;351
+BG;Bulgaria;BG;1;Rajoni za planirane;Regions;6
+BG;Bulgaria;BG;2;Oblasti;Provinces;28
+BG;Bulgaria;BG;3;Obshtini;Municipalities;264
+BH;Bahrain;BH;1;Governorates;Governorates;5
+BI;Burundi;BI;1;Provinces;Provinces;17
+BI;Burundi;BI;2;Communes;Communes;129
+BI;Burundi;BI;3;Collines;Collines;2619
+BJ;Benin;BJ;1;Départements;Departments;12
+BJ;Benin;BJ;2;Communes;Municipalities;77
+BM;Bermuda;GB;1;Municipalities;Municipalities;2
+BM;Bermuda;GB;1;Parishes;Parishes;9
+BN;Brunei;BN;1;Daerah-daerah;Districts;4
+BN;Brunei;BN;2;Mukims;Wards;38
+BN;Brunei;BN;2;Capital city;Capital city;1
+BO;Bolivia;BO;1;Departamentos;Departments;9
+BO;Bolivia;BO;2;Provincias;Provinces;112
+BO;Bolivia;BO;3;Municipios;Municipalities;327
+BQ;Caribbean Netherlands;NL;1;Islands;Islands;3
+BR;Brazil;BR;1;Estados;States;26
+BR;Brazil;BR;1;Distrito Federal;Federal district;1
+BR;Brazil;BR;2;Microrregiões;Microregions;557
+BR;Brazil;BR;3;Municípios;Municipalities;5570
+BS;Bahamas;BS;1;Capital city;Capital city;1
+BS;Bahamas;BS;1;Districts;Districts;31
+BT;Bhutan;BT;1;Dzongkhag;Districts;20
+BW;Botswana;BW;1;Districts;Districts;9
+BW;Botswana;BW;2;Sub-districts;Sub-districts;21
+BW;Botswana;BW;2;Town councils;Town councils;7
+BY;Belarus;BY;1;Voblasts;Regions;6
+BY;Belarus;BY;1;Special district;Special district;1
+BY;Belarus;BY;2;Raions;Districts;118
+BY;Belarus;BY;2;Towns;Towns;108
+BY;Belarus;BY;2;Cities;Cities;12
+BY;Belarus;BY;3;Councils;Councils;1547
+BZ;Belize;BZ;1;Districts;Districts;6
+CA;Canada;CA;1;Territories;Territories;3
+CA;Canada;CA;1;Provinces;Provinces;10
+CA;Canada;CA;2;Counties;Counties;156
+CA;Canada;CA;2;Unitary Authorities;Unitary Authorities;9
+CA;Canada;CA;2;Regional municipalities;Regional municipalities;8
+CA;Canada;CA;2;Regional districts;Regional districts;29
+CA;Canada;CA;2;Districts;Districts;10
+CA;Canada;CA;2;Census divisions;Census divisions;81
+CD;Congo D.R.;CD;1;Ville-Province;City-province;1
+CD;Congo D.R.;CD;1;Provinces;Provinces;10
+CD;Congo D.R.;CD;2;Villes;Cities;20
+CD;Congo D.R.;CD;2;Districts;Districts;28
+CD;Congo D.R.;CD;3;Territoires;Territories;145
+CD;Congo D.R.;CD;3;Communes;Communes;43
+CD;Congo D.R.;CD;4;Chefferies;Chefferies;473
+CD;Congo D.R.;CD;4;Secteurs;Secteurs;264
+CF;Central African Rep.;CF;1;Préfectures;Prefectures;14
+CF;Central African Rep.;CF;1;National capital;National capital;1
+CF;Central African Rep.;CF;1;Préfectures économiques;Economic prefectures;2
+CF;Central African Rep.;CF;2;Sous-préfectures;Sub-prefectures;71
+CF;Central African Rep.;CF;2;Arrondissements;Arrondissements;8
+CF;Central African Rep.;CF;3;Communes;Communes;169
+CG;Congo;CG;1;Départements;Departments;12
+CG;Congo;CG;2;Communes;Communes;6
+CG;Congo;CG;2;Districts;Districts;86
+CG;Congo;CG;3;Arrondissements;Arrondissements;13
+CH;Switzerland;CH;1;Kantone;Cantons;26
+CH;Switzerland;CH;2;Bezirke;Districts;147
+CH;Switzerland;CH;3;Gemeinden;Municipalities;2485
+CI;Côte d'Ivoire;CI;1;Régions;Regions;19
+CI;Côte d'Ivoire;CI;2;Départements;Departments;58
+CI;Côte d'Ivoire;CI;3;Sous-préfectures;Sub-prefectures;232
+CK;Cook Islands;NZ;1;Islands Councils;Islands Councils;3
+CL;Chile;CL;1;Regiones;Regions;15
+CL;Chile;CL;2;Provincias;Provinces;54
+CL;Chile;CL;3;Comunas;Communes;346
+CM;Cameroon;CM;1;Régions;Regions;10
+CM;Cameroon;CM;2;Départements;Departments;58
+CN;China;CN;1;Provinces;Provinces;22
+CN;China;CN;1;Municipalities;Municipalities;4
+CN;China;CN;1;Special regions;Special regions;3
+CN;China;CN;1;Autonomous regions;Autonomous regions;5
+CN;China;CN;2;Prefecture-level cities;Prefecture-level cities;286
+CN;China;CN;2;Autonomous prefectures;Autonomous prefectures;30
+CN;China;CN;2;Leagues;Leagues;3
+CN;China;CN;2;Prefectures;Prefectures;14
+CN;China;CN;3;County-level cities;County-level cities;367
+CN;China;CN;3;Forestry area;Forestry area;1
+CN;China;CN;3;Autonomous counties;Autonomous counties;117
+CN;China;CN;3;Ethnic districts;Ethnic districts;4
+CN;China;CN;3;Districts;Districts;855
+CN;China;CN;3;Banners;Banners;49
+CN;China;CN;3;Autonomous banners;Autonomous banners;3
+CN;China;CN;3;Special districts;Special districts;3
+CN;China;CN;3;Counties;Counties;1464
+CO;Colombia;CO;1;Departamentos;Departments;32
+CO;Colombia;CO;1;Distrito Capital;Capital district;1
+CO;Colombia;CO;2;Regiones;Regions;4
+CO;Colombia;CO;2;Subregiones;Subregions;35
+CO;Colombia;CO;2;Distritos;Districts;6
+CO;Colombia;CO;2;Provincias;Provinces;47
+CO;Colombia;CO;3;Municipios;Municipalities;1122
+CR;Costa Rica;CR;1;Provincias;Provinces;7
+CR;Costa Rica;CR;2;Cantones;Cantons;81
+CR;Costa Rica;CR;3;Distritos;Districts;473
+CU;Cuba;CU;1;Provincias;Provinces;15
+CU;Cuba;CU;1;Municipio especial;Special municipality;1
+CU;Cuba;CU;2;Municipios;Municipalities;168
+CV;Cape Verde;CV;1;Concelhos;Municipalities;22
+CV;Cape Verde;CV;2;Freguesias;Parishes;32
+CY;Cyprus;CY;1;Eparchies;Districts;6
+CZ;Czech Republic;CZ;1;Hlavní město;Capital city;1
+CZ;Czech Republic;CZ;1;Kraje;Regions;13
+CZ;Czech Republic;CZ;2;Okresy;Districts;77
+CZ;Czech Republic;CZ;3;Městys;Communes;206
+CZ;Czech Republic;CZ;3;Vojenský újezd;Proving ground;5
+CZ;Czech Republic;CZ;3;Město;Municipalities;594
+CZ;Czech Republic;CZ;3;Obec;Village;5445
+DE;Germany;DE;1;Länder;States;16
+DE;Germany;DE;2;Regierungsbezirke;Counties;29
+DE;Germany;DE;3;Landkreise;Districts;295
+DE;Germany;DE;3;Kreisfreien Städte;District-free towns;107
+DE;Germany;DE;4;Gemeindeverband;Gemeindeverband;4380
+DJ;Djibouti;DJ;1;Capital city;Capital city;1
+DJ;Djibouti;DJ;1;Régions;Regions;5
+DK;Denmark;DK;1;Constituent countries;Constituent countries;2
+DK;Denmark;DK;1;Regioner;Regions;5
+DK;Denmark;DK;2;Kommuner;Municipalities;98
+DM;Dominica;DM;1;Parishes;Parishes;10
+DO;Dominican Republic;DO;1;Distrito nacional;National district;1
+DO;Dominican Republic;DO;1;Provincias;Provinces;31
+DO;Dominican Republic;DO;2;Municipios;Municipalities;152
+DZ;Algeria;DZ;1;Wilayas;Provinces;48
+EC;Ecuador;EC;1;Provincias;Provinces;24
+EC;Ecuador;EC;2;Cantones;Cantons;221
+EE;Estonia;EE;1;Maakonnad;Counties;15
+EE;Estonia;EE;2;Linnad;Urban municipalities;36
+EE;Estonia;EE;2;Vallad;Rural municipalities;190
+EG;Egypt;EG;1;Muhafazat;Governorates;27
+EG;Egypt;EG;2;Markzes;Districts;330
+EH;Western Sahara;EH;1;Régions;Regions;4
+ER;Eritrea;ER;1;Zoba;Regions;6
+ER;Eritrea;ER;2;Districts;Districts;58
+ES;Spain;ES;1;Comunidades Autónomas;Autonomous Communities;17
+ES;Spain;ES;1;Ciudades Autónomas;Autonomous Cities;2
+ES;Spain;ES;2;Provincias;Provinces;50
+ES;Spain;ES;3;Comarcas;Regions;477
+ES;Spain;ES;4;Municipios;Municipalities;8114
+ET;Ethiopia;ET;1;Kililoch;Regions;9
+ET;Ethiopia;ET;1;Astedader akababiwach;Chartered cities;2
+ET;Ethiopia;ET;2;Zones;Zones;74
+ET;Ethiopia;ET;3;Woredas;Districts;683
+FI;Finland;FI;1;Ahvenanmaan maakunta;Autonomous region;1
+FI;Finland;FI;1;Aluehallintovirasto;Regional state agencies;6
+FI;Finland;FI;2;Maakunnat;Regions;19
+FI;Finland;FI;3;Seutukunnat;Sub-regions;70
+FI;Finland;FI;4;Kunta;Municipalities;320
+FJ;Fiji;FJ;1;Divisions;Divisions;4
+FJ;Fiji;FJ;1;Self-governing island;Self-governing island;1
+FJ;Fiji;FJ;2;Provinces;Provinces;14
+FK;Falkland Islands;GB;1;Main Islands;Main Islands;2
+FK;Falkland Islands;GB;2;Small Islands;Small Islands;776
+FM;Micronesia;US;1;States;States;4
+FO;Faroe Islands;DK;1;Regioner;Regions;6
+FO;Faroe Islands;DK;2;Kommuner;Municipalities;30
+FR;France;FR;1;Régions d'Outre-Mer;Overseas regions;5
+FR;France;FR;1;Pays constituants;Constituent countries;2
+FR;France;FR;1;Régions;Regions;22
+FR;France;FR;1;Collectivités d'Outre-Mer;Overseas collectivities;4
+FR;France;FR;1;Dépendances;Dependencies;3
+FR;France;FR;2;Départements;Departments;101
+FR;France;FR;3;Arrondissements;Districts;341
+FR;France;FR;4;Cantons;Cantons;3779
+GA;Gabon;GA;1;Provinces;Provinces;9
+GA;Gabon;GA;2;Départements;Departments;48
+GB;United Kingdom;GB;1;Overseas Territories;Overseas Territories;12
+GB;United Kingdom;GB;1;Constituent countries;Constituent countries;4
+GB;United Kingdom;GB;1;Crown Dependencies;Crown Dependencies;3
+GB;United Kingdom;GB;2;District Council areas;District Council areas;26
+GB;United Kingdom;GB;2;Council areas;Council areas;32
+GB;United Kingdom;GB;2;Regions;Regions;9
+GB;United Kingdom;GB;2;Principal areas;Principal areas;22
+GB;United Kingdom;GB;3;Shire counties;Shire counties;27
+GB;United Kingdom;GB;3;Unitary Authorities;Unitary Authorities;56
+GB;United Kingdom;GB;3;Metropolitan counties;Metropolitan counties;6
+GB;United Kingdom;GB;4;Wards;Wards;2863
+GB;United Kingdom;GB;4;Non-metropolitan districts;Non-metropolitan districts;201
+GB;United Kingdom;GB;4;London boroughs;London boroughs;33
+GB;United Kingdom;GB;4;Metropolitan boroughs;Metropolitan boroughs;36
+GD;Grenada;GD;1;Dependency;Dependency;1
+GD;Grenada;GD;1;Parishes;Parishes;6
+GE;Georgia;GE;1;Mkhare;Regions;9
+GE;Georgia;GE;1;Avtonomiuri respublika;Autonomous Republics;2
+GE;Georgia;GE;1;Capital city;Capital city;1
+GE;Georgia;GE;2;Cities;Cities;6
+GE;Georgia;GE;2;Municipalities;Municipalities;66
+GF;French Guiana;FR;1;Arrondissements;Arrondissements;2
+GF;French Guiana;FR;2;Cantons;Cantons;19
+GG;Guernsey;GB;1;Parishes;Parishes;10
+GG;Guernsey;GB;1;Dependencies;Dependencies;6
+GH;Ghana;GH;1;Regions;Regions;10
+GH;Ghana;GH;2;Districts;Districts;170
+GL;Greenland;DK;1;Kommunia;Municipalities;4
+GM;Gambia;GM;1;Capital city;Capital city;1
+GM;Gambia;GM;1;Divisions;Divisions;5
+GM;Gambia;GM;2;Districts;Districts;37
+GN;Guinea;GN;1;Régions;Regions;8
+GN;Guinea;GN;2;Préfectures;Prefectures;33
+GN;Guinea;GN;2;Communes;Communes;5
+GN;Guinea;GN;3;Sous-préfectures;Sub-prefectures;340
+GP;Guadeloupe;FR;1;Arrondissements;Districts;342
+GP;Guadeloupe;FR;2;Cantons;Cantons;40
+GQ;Equatorial Guinea;GQ;1;Regions;Regions;2
+GQ;Equatorial Guinea;GQ;2;Provincias;Provinces;7
+GQ;Equatorial Guinea;GQ;3;Distritos;Districts;30
+GR;Greece;GR;1;Autonomous area;Autonomous Areas;1
+GR;Greece;GR;1;Periféries;Regions;13
+GR;Greece;GR;2;Dhimí;Municipalities;325
+GT;Guatemala;GT;1;Departamentos;Departments;22
+GT;Guatemala;GT;2;Municipios;Municipalities;334
+GU;Guam;US;1;Villages;Villages;19
+GW;Guinea-Bissau;GW;1;Regiões;Regions;8
+GW;Guinea-Bissau;GW;1;Sector autónomo;Autonomous sector;1
+GW;Guinea-Bissau;GW;2;Setores;Sectors;39
+GY;Guyana;GY;1;Regions;Regions;10
+GY;Guyana;GY;2;NDCs;Neighborhood Councils;118
+HK;Hong Kong;CN;1;Sub-regions;Sub-regions;3
+HN;Honduras;HN;1;Departamentos;Departments;18
+HN;Honduras;HN;2;Municipios;Municipalities;298
+HR;Croatia;HR;1;Capital city;Capital city;1
+HR;Croatia;HR;1;Županije;Counties;20
+HR;Croatia;HR;2;Gradovi;Cities;127
+HR;Croatia;HR;2;Općine;Municipalities;429
+HT;Haiti;HT;1;Départements;Departments;10
+HT;Haiti;HT;2;Arrondissements;Arrondissements;42
+HT;Haiti;HT;3;Communes;Communes;140
+HT;Haiti;HT;4;Sections;Sections;568
+HU;Hungary;HU;1;Regions;Regions;7
+HU;Hungary;HU;2;Főváros;Capital city;1
+HU;Hungary;HU;2;Megyék;Counties;19
+HU;Hungary;HU;3;Kistérségek;Subregions;175
+ID;Indonesia;ID;1;Provinsi;Provinces;33
+ID;Indonesia;ID;2;Kota;Cities;98
+ID;Indonesia;ID;2;Kabupaten;Regencies;403
+ID;Indonesia;ID;3;Kecamatan;Districts;69
+IE;Ireland;IE;1;Provinces;Provinces;4
+IE;Ireland;IE;2;City Councils;City Councils;5
+IE;Ireland;IE;2;County councils;County councils;29
+IL;Israel;IL;1;Mehozot;Districts;6
+IL;Israel;IL;1;Yosh ;Judea and Samaria Area;1
+IL;Israel;IL;2;Nafot;Subdistricts;27
+IM;Isle of Man;GB;1;Regions;Regions;6
+IM;Isle of Man;GB;2;Village districts;Village districts;5
+IM;Isle of Man;GB;2;Town districts;Town districts;4
+IM;Isle of Man;GB;2;Parish districts;Parish districts;15
+IN;India;IN;1;States;States;28
+IN;India;IN;1;Union Territories;Union Territories;7
+IN;India;IN;2;Divisions;Divisions;59
+IN;India;IN;3;Districts;Districts;640
+IN;India;IN;4;Taluks;Taluks;6071
+IQ;Iraq;IQ;1;Muḥāfażah;Governorates;18
+IQ;Iraq;IQ;2;Qadhas;Districts;103
+IR;Iran;IR;1;Ostānhā;Provinces;31
+IS;Iceland;IS;1;Landshlutar;Regions;8
+IS;Iceland;IS;2;Sveitarfélög;Municipalities;74
+IT;Italy;IT;1;Regioni Autonome;Autonomous Regions;5
+IT;Italy;IT;1;Regioni;Regions;15
+IT;Italy;IT;2;Provinces;Provinces;110
+IT;Italy;IT;3;Comuni;Communes;8092
+JE;Jersey;GB;1;Parishes;Parishes;12
+JM;Jamaica;JM;1;Parishes;Parishes;14
+JO;Jordan;JO;1;Muhafazah;Governorates;12
+JO;Jordan;JO;2;Nahias;Districts;52
+JP;Japan;JP;1;Regions;Regions;8
+JP;Japan;JP;2;Prefectures;Prefectures;47
+JP;Japan;JP;3;Special wards;Special wards;23
+JP;Japan;JP;3;Districts;Districts;369
+JP;Japan;JP;3;Core cities;Core cities;41
+JP;Japan;JP;3;Designated cities;Designated cities;20
+JP;Japan;JP;3;Special cities;Special cities;40
+JP;Japan;JP;3;Cities;Cities;686
+JP;Japan;JP;4;Towns;Towns;747
+JP;Japan;JP;4;Villages;Villages;178
+JP;Japan;JP;4;Ku;Wards;170
+KE;Kenya;KE;1;Counties;Counties;47
+KE;Kenya;KE;2;Constituencies;Constituencies;290
+KE;Kenya;KE;3;Councils;Councils;1438
+KG;Kyrgyzstan;KG;1;Shaar;Independent cities;2
+KG;Kyrgyzstan;KG;1;Oblasttar;Provinces;7
+KG;Kyrgyzstan;KG;2;Rayonlar;Raions;40
+KG;Kyrgyzstan;KG;2;Gorkeneš;Towns;13
+KH;Cambodia;KH;1;Capital;Capital;1
+KH;Cambodia;KH;1;Khaet;Provinces;24
+KH;Cambodia;KH;2;Khan;Municipalities;14
+KH;Cambodia;KH;2;Srŏk;Districts;171
+KH;Cambodia;KH;3;Khum;Communes;1511
+KH;Cambodia;KH;3;Sangkat;Quarters;111
+KI;Kiribati;KI;1;Islands;Islands;3
+KI;Kiribati;KI;2;Island Councils;Island Councils;23
+KM;Comoros;KM;1;Autonomous Islands;Autonomous Islands;3
+KN;Saint Kitts and Nevis;KN;1;Parishes;Parishes;14
+KP;North Korea;KP;1;Do;Provinces;9
+KP;North Korea;KP;1;Chikhalsi;Capital city;1
+KP;North Korea;KP;1;Teukbyeolsi;Special city;1
+KP;North Korea;KP;2;Kun;Counties;157
+KP;North Korea;KP;2;Si;Cities;23
+KR;South Korea;KR;1;Gwangyeok-si;Metropolitan cities;6
+KR;South Korea;KR;1;Teukbyeol-jachi-do;Special autonomous province;1
+KR;South Korea;KR;1;Teukbyeol-jachi-si;Special autonomous city;1
+KR;South Korea;KR;1;Teukbyeol-si;Special city;1
+KR;South Korea;KR;1;Do;Provinces;8
+KR;South Korea;KR;2;Gun;Counties;155
+KR;South Korea;KR;2;Si;Cities;94
+KW;Kuwait;KW;1;Muhafazah;Governorates;6
+KW;Kuwait;KW;2;Districts;Districts;75
+KY;Cayman Islands;GB;1;Districts;Districts;6
+KZ;Kazakhstan;KZ;1;Oblystar;Provinces;14
+KZ;Kazakhstan;KZ;1;Qalalar;Cities;2
+KZ;Kazakhstan;KZ;2;Audandar;Districts;170
+KZ;Kazakhstan;KZ;2;Cities;Cities;15
+LA;Laos;LA;1;Kampheng nakhon;Prefectures;1
+LA;Laos;LA;1;Khoueng;Provinces;16
+LA;Laos;LA;2;Muang;Districts;142
+LB;Lebanon;LB;1;Muhafazat;Governorates;6
+LB;Lebanon;LB;2;Aqdya;Districts;26
+LB;Lebanon;LB;3;Municipalities;Municipalities;1517
+LC;Saint Lucia;LC;1;Districts;Districts;10
+LI;Liechtenstein;LI;1;Gemeinden;Municipalities;11
+LK;Sri Lanka;LK;1;Provinces;Provinces;9
+LK;Sri Lanka;LK;2;Districts;Districts;25
+LK;Sri Lanka;LK;3;Divisional secretariats;Divisional secretariats;328
+LR;Liberia;LR;1;Counties;Counties;15
+LR;Liberia;LR;2;Districts;Districts;130
+LR;Liberia;LR;3;Clans;Clans;572
+LS;Lesotho;LS;1;Districts;Districts;10
+LS;Lesotho;LS;2;Community Councils;Community Councils;129
+LT;Lithuania;LT;1;Apskritys;Counties;10
+LT;Lithuania;LT;2;Rajono savivaldybės;District municipalities;43
+LT;Lithuania;LT;2;Miesto savivaldybės;City municipalities;9
+LT;Lithuania;LT;2;Savivaldybės;Municipalities;8
+LT;Lithuania;LT;3;Seniūnijos;Elderships;516
+LT;Lithuania;LT;3;Miestos;Cities;34
+LU;Luxembourg;LU;1;Districts;Districts;3
+LU;Luxembourg;LU;2;Cantons;Cantons;12
+LU;Luxembourg;LU;3;Communes;Municipalities;106
+LV;Latvia;LV;1;Republikas pilsētas;Republican cities;9
+LV;Latvia;LV;1;Novadi;Municipalities;110
+LV;Latvia;LV;2;Pilsētas;Towns;67
+LV;Latvia;LV;2;Pagasti;Parishes;497
+LY;Libya;LY;1;Shabiya;Districts;22
+MA;Morocco;MA;1;Regions;Regions;16
+MA;Morocco;MA;2;Préfectures;Prefectures;13
+MA;Morocco;MA;2;Provinces;Provinces;62
+MD;Moldova;MD;1;Raioane;Districts;31
+MD;Moldova;MD;1;Teritorii Autonome;Autonomous territories;2
+MD;Moldova;MD;1;Municipalitati;Municipalities;3
+MD;Moldova;MD;2;Cities;Cities;10
+ME;Montenegro;ME;1;Opština;Municipalities;21
+MG;Madagascar;MG;1;Faritanin'mizakatena;Provinces;6
+MG;Madagascar;MG;2;Faritra;Regions;22
+MG;Madagascar;MG;3;Districts;Districts;114
+MG;Madagascar;MG;4;Communes;Villages;1578
+MK;Macedonia;MK;1;Regioni;Regions;8
+MK;Macedonia;MK;2;Opštini;Municipalities;84
+ML;Mali;ML;1;Régions;Regions;8
+ML;Mali;ML;1;District;Capital district;1
+ML;Mali;ML;2;Cercle;Circles;49
+ML;Mali;ML;3;Communes;Municipalities;702
+MM;Burma;MM;1;Taing Detha Gyi;Regions;7
+MM;Burma;MM;1;Pyi-Neh;States;7
+MM;Burma;MM;2;Kayaing;Districts;67
+MM;Burma;MM;3;Townships;Townships;325
+MN;Mongolia;MN;1;Aimags;Provinces;21
+MN;Mongolia;MN;1;Niislel;Capital city;1
+MN;Mongolia;MN;2;Düüregs;Municipal districts;6
+MN;Mongolia;MN;2;Sums;Districts;328
+MO;Macau;CN;1;Concelhos;Municipalities;2
+MP;Northern Mariana Islands;US;1;Municipalities;Municipalities;4
+MQ;Martinique;FR;1;Arrondissements;Divisions;4
+MQ;Martinique;FR;3;Cantons;Cantons;45
+MR;Mauritania;MR;1;Wilayas;Regions;12
+MR;Mauritania;MR;1;Capital district;Capital district;1
+MR;Mauritania;MR;2;Moughataa;Departments;53
+MS;Montserrat;GB;1;Parishes;Parishes;3
+MT;Malta;MT;1;Districts;Districts;6
+MT;Malta;MT;2;Kunsilli Lokali;Local Councils;68
+MU;Mauritius;MU;1;Districts;Districts;9
+MU;Mauritius;MU;1;Regions;Regions;1
+MU;Mauritius;MU;1;Dependencies;Dependencies;2
+MV;Maldives;MV;1;Capital;Capital;1
+MV;Maldives;MV;1;Provinces;Provinces;7
+MV;Maldives;MV;2;Atolls;Atolls;20
+MV;Maldives;MV;3;Islands;Islands;287
+MW;Malawi;MW;1;Regions;Regions;3
+MW;Malawi;MW;2;Districts;Districts;28
+MX;Mexico;MX;1;Estados;Estados libres;31
+MX;Mexico;MX;1;Distrito Federal;Federal District;1
+MX;Mexico;MX;2;Municipios;Municipalities;2457
+MY;Malaysia;MY;1;Wilayah Persekutuan;Federal Territories;3
+MY;Malaysia;MY;1;Negeri;States;13
+MY;Malaysia;MY;2;Daerah;Districts;140
+MZ;Mozambique;MZ;1;Provincias;Provinces;10
+MZ;Mozambique;MZ;2;Distritos;Districts;137
+NA;Namibia;NA;1;Regions;Regions;13
+NA;Namibia;NA;2;Constituencies;Constituencies;107
+NC;New Caledonia;FR;1;Provinces;Provinces;3
+NE;Niger;NE;1;Capital district;Capital district;1
+NE;Niger;NE;1;Régions;Regions;7
+NE;Niger;NE;2;Départements;Departments;36
+NE;Niger;NE;3;Communes;Communes;264
+NG;Nigeria;NG;1;States;States;36
+NG;Nigeria;NG;1;Federal Capital Territory;Federal Capital Territory;1
+NG;Nigeria;NG;2;Local Government Areas;Local Government Areas;774
+NG;Nigeria;NG;3;Cities;Cities;78
+NG;Nigeria;NG;3;Districts;Districts;2666
+NI;Nicaragua;NI;1;Regiones Autónomas;Autonomous Regions;2
+NI;Nicaragua;NI;1;Departamentos;Departments;15
+NI;Nicaragua;NI;2;Municipios;Municipalities;153
+NL;Netherlands;NL;1;Provincies;Provinces;12
+NL;Netherlands;NL;1;Gecentral. eenheidsstaat;Centralized unitary state;3
+NL;Netherlands;NL;2;Gemeenten;Municipalities;408
+NL;Netherlands;NL;2;Bijzondere gemeenten;Special municipalities;3
+NO;Norway;NO;1;Overseas Territories;Overseas Territories;2
+NO;Norway;NO;1;Antarctic dependencies;Antarctic dependencies;3
+NO;Norway;NO;1;Fylker;Counties;19
+NO;Norway;NO;2;Kommuner;Municipalities;428
+NP;Nepal;NP;1;Vikas Kshetra;Regions;5
+NP;Nepal;NP;2;Anchal;Zones;14
+NP;Nepal;NP;3;Districts;Districts;75
+NR;Nauru;NR;1;Districts;Districts;14
+NZ;New Zealand;NZ;1;External territories;External territories;4
+NZ;New Zealand;NZ;1;Unitary Authorities;Unitary Authorities;5
+NZ;New Zealand;NZ;1;Regions;Regions;11
+NZ;New Zealand;NZ;2;City Councils;City Councils;13
+NZ;New Zealand;NZ;2;District councils;District councils;53
+OM;Oman;OM;1;Muhafazah;Governorates;11
+OM;Oman;OM;2;Wilaya'at;Provinces;61
+PA;Panama;PA;1;Provincias;Provinces;9
+PA;Panama;PA;1;Comarcas;Regions;5
+PA;Panama;PA;2;Distritos;Districts;75
+PA;Panama;PA;3;Corregimientos;Corregimientos;621
+PE;Peru;PE;1;Regiones;Regions;25
+PE;Peru;PE;2;Provincias;Provinces;195
+PE;Peru;PE;3;Distritos;Districts;1837
+PF;French Polynesia;FR;1;Subdivisions;Subdivisions;5
+PG;Papua New Guinea;PG;1;National Capital District;National Capital District;1
+PG;Papua New Guinea;PG;1;Autonomous province;Autonomous province;1
+PG;Papua New Guinea;PG;1;Provinces;Provinces;20
+PG;Papua New Guinea;PG;2;Districts;Districts;86
+PH;Philippines;PH;1;Rehiyon;Regions;17
+PH;Philippines;PH;2;Lalawigan;Provinces;80
+PH;Philippines;PH;3;Lungsod;Cities;143
+PH;Philippines;PH;3;Bayan;Municipalities;1491
+PK;Pakistan;PK;1;Provinces;Provinces;4
+PK;Pakistan;PK;1;Autonomous Territories;Autonomous Territories;2
+PK;Pakistan;PK;1;Tribal areas;Tribal areas;1
+PK;Pakistan;PK;1;Capital Territory;Capital Territory;1
+PK;Pakistan;PK;2;Zillahs;Districts;144
+PK;Pakistan;PK;3;Tehsils;Sub-districts;470
+PL;Poland;PL;1;Województwa;Voivodeships;16
+PL;Poland;PL;2;Miasta na prawach powiatu;City counties;66
+PL;Poland;PL;2;Powiaty;Land counties;314
+PL;Poland;PL;3;Gminas miejskie;Urban municipalities;2331
+PL;Poland;PL;3;Gminas miejsko-wiejskie;Urban-rural municipalities;99
+PL;Poland;PL;3;Gminas wiejskie;Rural municipalities;99
+PN;Pitcairn Islands;GB;1;Islands;Islands;4
+PR;Puerto Rico;US;1;Municipios;Municipalities;78
+PS;Gaza Strip;PS;1;Districts;Districts;2
+PS;Gaza Strip;PS;2;Governorates;Governorates;16
+PT;Portugal;PT;1;Regiões Autónomas;Autonomous Regions;2
+PT;Portugal;PT;1;Distritos;Districts;18
+PT;Portugal;PT;2;Concelhos;Municipalities;308
+PW;Palau;US;1;States;States;16
+PY;Paraguay;PY;1;Distrito Capital;Capital district;1
+PY;Paraguay;PY;1;Departamentos;Departments;17
+QA;Qatar;QA;1;Baladiyah;Municipalities;7
+RE;Réunion;FR;1;Arrondissements;Districts;4
+RE;Réunion;FR;2;Cantons;Cantons;24
+RO;Romania;RO;1;Regiuni;Regions;8
+RO;Romania;RO;2;Judeţe;Counties;41
+RO;Romania;RO;2;National capital;National capital;1
+RO;Romania;RO;3;Comună;Communes;2862
+RO;Romania;RO;3;Municipiu;Municipalities;103
+RO;Romania;RO;3;Oraş;Towns;214
+RO;Romania;RO;3;Sectoarele municipiului;Municipal sectors;6
+RS;Serbia;RS;1;Autonomne pokrajine;Autonomous Areas;2
+RS;Serbia;RS;1;Provinces;Provinces;1
+RS;Serbia;RS;2;Capital district;Capital district;1
+RS;Serbia;RS;2;Okruga;Districts;29
+RS;Serbia;RS;3;Gradovi;Cities;24
+RS;Serbia;RS;3;Opštine;Municipalities;151
+RU;Russia;RU;1;Autonomous oblast;Jewish Autonomous Oblast;1
+RU;Russia;RU;1;Republics;Republics;21
+RU;Russia;RU;1;Federal cities;Federal cities;2
+RU;Russia;RU;1;Krais;Territories;9
+RU;Russia;RU;1;Autonomous okrugs;Autonomous districts;4
+RU;Russia;RU;1;Oblasts;Provinces;46
+RU;Russia;RU;2;Cities/towns;Cities;614
+RU;Russia;RU;2;Urban-type settlements;Urban;16
+RU;Russia;RU;2;Raions;Districts;1808
+RU;Russia;RU;2;Federal towns;Federal towns;8
+RU;Russia;RU;2;Okrugs;Moscow;35
+RU;Russia;RU;3;Districts (Moscow);Moscow districts;125
+RW;Rwanda;RW;1;Intara;Provinces;5
+RW;Rwanda;RW;2;Uturere;Districts;30
+RW;Rwanda;RW;3;Imirenge;Sectors;416
+SA;Saudi Arabia;SA;1;Manatiq;Regions;13
+SA;Saudi Arabia;SA;2;Muhafazat;Governorates;118
+SA;Saudi Arabia;SA;3;Marakiz;Sub-governorates;1260
+SB;Solomon Islands;SB;1;Capital Territory;Capital Territory;1
+SB;Solomon Islands;SB;1;Provinces;Provinces;9
+SC;Seychelles;SC;1;Districts;Districts;25
+SC;Seychelles;SC;1;Outer islands;Outer islands;1
+SD;Sudan;SD;1;States;States;17
+SD;Sudan;SD;2;Counties;Counties;133
+SE;Sweden;SE;1;län;Counties;21
+SE;Sweden;SE;2;Kommuner;Municipalities;290
+SG;Singapore;SG;1;Regions;Regions;5
+SG;Singapore;SG;2;Districts;Districts;28
+SH;Saint Helena;GB;1;Districts;Districts;8
+SI;Slovenia;SI;1;Statistične regije;Statistical Regions;12
+SI;Slovenia;SI;2;Mestne občine;Urban municipalities;11
+SI;Slovenia;SI;2;Občine;Municipalities;200
+SJ;Svalbard and Jan Mayen;NO;1;Islands;Islands;2
+SK;Slovakia;SK;1;Kraje;Regions;8
+SK;Slovakia;SK;2;Okresy;Districts;79
+SK;Slovakia;SK;3;Obce;Municipalities;2929
+SL;Sierra Leone;SL;1;Provinces;Provinces;3
+SL;Sierra Leone;SL;1;Area;Areas;1
+SL;Sierra Leone;SL;2;Districts;Districts;14
+SL;Sierra Leone;SL;3;Chiefdoms;Chiefdoms;99
+SM;San Marino;SM;1;Castelli;Municipalities;9
+SN;Senegal;SN;1;Régions;Regions;14
+SN;Senegal;SN;2;Départements;Departments;45
+SN;Senegal;SN;3;Arrondissements;Arrondissements;123
+SO;Somalia;SO;1;Gobolada;Regions;18
+SO;Somalia;SO;2;Districts;Districts;90
+SR;Suriname;SR;1;Districten;Districts;10
+SR;Suriname;SR;2;Ressorten;Resorts;62
+SS;South Sudan;SS;1;States;States;10
+SS;South Sudan;SS;2;Counties;Counties;78
+ST;Sao Tome and Principe;ST;1;Concelhos;Provinces;2
+ST;Sao Tome and Principe;ST;2;Distritos;Districts;7
+SV;El Salvador;SV;1;Departamentos;Departments;14
+SY;Syria;SY;1;Muhafazat;Governorates;13
+SY;Syria;SY;1;Capital city;Capital;1
+SY;Syria;SY;2;Manatiq;Districts;60
+SY;Syria;SY;3;Nawahi;Sub-districts;269
+SZ;Swaziland;SZ;1;Tifundza;Districts;4
+SZ;Swaziland;SZ;2;Tinkhundla;Subdivision;55
+TC;Turks and Caicos Islands;GB;1;Island Groups;Island Groups;2
+TC;Turks and Caicos Islands;GB;2;Districts;Districts;6
+TD;Chad;TD;1;Régions;Regions;23
+TD;Chad;TD;2;Départements;Departments;67
+TD;Chad;TD;3;Sous-préfectures;Sub-prefectures;362
+TF;French Southern Territories;FR;1;Territoires;Territories;3
+TG;Togo;TG;1;Régions;Regions;5
+TG;Togo;TG;2;Communes;Communes;1
+TG;Togo;TG;2;Préfectures;Prefectures;31
+TH;Thailand;TH;1;Regions;Regions;6
+TH;Thailand;TH;2;Changwat;Provinces;76
+TH;Thailand;TH;2;Special governed districts;Special governed districts;2
+TH;Thailand;TH;3;Amphoe;Districts;878
+TH;Thailand;TH;3;Khet;Bangkok districts;50
+TJ;Tajikistan;TJ;1;Viloyatho;Provinces;2
+TJ;Tajikistan;TJ;1;Capital city;Capital city;1
+TJ;Tajikistan;TJ;1;Nohijahoi tobei çumhurī;Republican Subordination;1
+TJ;Tajikistan;TJ;1;Viloyati mukhtor;Autonomous province;1
+TJ;Tajikistan;TJ;2;Nohyia;Districts;57
+TJ;Tajikistan;TJ;2;Kuhumati;Cities;16
+TL;Timor-Leste;TL;1;Districts;Districts;13
+TL;Timor-Leste;TL;2;Subdistricts;Subdistricts;65
+TL;Timor-Leste;TL;3;Sucos;Villages;436
+TM;Turkmenistan;TM;1;Welaýat;Provinces;5
+TM;Turkmenistan;TM;1;Capital city;Capital City;1
+TM;Turkmenistan;TM;2;City;Cities;10
+TM;Turkmenistan;TM;2;Adyndaky etrap;Counties;3
+TM;Turkmenistan;TM;2;Etrap;Districts;43
+TN;Tunisia;TN;1;Wilayats;Governorates;24
+TN;Tunisia;TN;2;Mutamadiyat;Deleguations;261
+TO;Tonga;TO;1;Divisions;Divisions;5
+TO;Tonga;TO;2;Districts;Districts;24
+TR;Turkey;TR;1;Coğrafi bölgeleri;Regions;7
+TR;Turkey;TR;2;İller;Provinces;81
+TR;Turkey;TR;3;İlçeler;Districts;970
+TR;Turkey;TR;4;Belde;Towns;3179
+TR;Turkey;TR;4;Köyler;Villages;925
+TT;Trinidad and Tobago;TT;1;Regions;Regions;11
+TT;Trinidad and Tobago;TT;1;Municipalities;Municipalities;5
+TV;Tuvalu;TV;1;Island councils;Island councils;7
+TV;Tuvalu;TV;1;Town councils;Town councils;1
+TW;Taiwan;CN;1;Provincial Cities;Provincial Cities;3
+TW;Taiwan;CN;1;Counties;Counties;14
+TW;Taiwan;CN;1;Special Municipalities;Special Municipalities;5
+TW;Taiwan;CN;1;Disputed islands;Disputed islands;1
+TZ;Tanzania;TZ;1;Mkoa;Regions;30
+TZ;Tanzania;TZ;2;Wilayas;Districts;169
+UA;Ukraine;UA;1;Special municipalities;Special municipalities;2
+UA;Ukraine;UA;1;Autonomous Republic;Autonomous Republic;1
+UA;Ukraine;UA;1;Oblasts;Provinces;24
+UA;Ukraine;UA;2;Municipal raions;Municipal regions;14
+UA;Ukraine;UA;2;Cities;Region level city;178
+UA;Ukraine;UA;2;Raions;Regions;490
+UG;Uganda;UG;1;Regions;Regions;4
+UG;Uganda;UG;2;Districts;Districts;111
+UG;Uganda;UG;2;Capital city;Capital city;1
+UG;Uganda;UG;3;Counties;Counties;164
+UG;Uganda;UG;4;Sub-counties;Sub-counties;947
+UM;Minor Outlying Islands;US;1;Disputed islands;Disputed islands;2
+UM;Minor Outlying Islands;US;1;Atolls/Islands;Islands;9
+US;United States;US;1;Federal District;Federal District;1
+US;United States;US;1;Territories;Territories;6
+US;United States;US;1;States;States;50
+US;United States;US;1;Associated states;Associated states;3
+US;United States;US;2;Counties;Counties;3142
+UY;Uruguay;UY;1;Departamentos;Departments;19
+UZ;Uzbekistan;UZ;1;Viloyatlar;Provinces;12
+UZ;Uzbekistan;UZ;1;Shahar;Independent city;1
+UZ;Uzbekistan;UZ;1;Respublika;Autonomous Republic;1
+UZ;Uzbekistan;UZ;2;Tumanlar;Districts;184
+VC;St Vincent & the Grenadines;VC;1;Parishes;Parishes;6
+VE;Venezuela;VE;1;Dependencias Federales;Federal Dependencies;1
+VE;Venezuela;VE;1;Estados;States;23
+VE;Venezuela;VE;1;Distrito Capital;Capital district;1
+VE;Venezuela;VE;2;Municipios;Municipalities;335
+VE;Venezuela;VE;3;Parroquias;Parishes;1089
+VI;U.S. Virgin Islands;US;1;Districts;Districts;3
+VN;Vietnam;VN;1;Regions;Regions;8
+VN;Vietnam;VN;2;Municipalities;Municipalities;5
+VN;Vietnam;VN;2;Provinces;Provinces;58
+VN;Vietnam;VN;3;Cities;Cities;26
+VN;Vietnam;VN;3;Quận;Urban districts;46
+VN;Vietnam;VN;3;Townships;Townships;78
+VN;Vietnam;VN;3;Huyện;Rural districts;548
+VN;Vietnam;VN;4;Thị Trấn;Town districts;625
+VN;Vietnam;VN;4;Xã;Communes;9145
+VN;Vietnam;VN;4;Phường;Wards;1415
+VU;Vanuatu;VU;1;Provinces;Provinces;6
+WF;Wallis and Futuna;FR;1;Circonscriptions;Kingdoms;3
+WF;Wallis and Futuna;FR;2;Districts;Districts;3
+WS;Samoa;WS;1;Itūmālō;Districts;11
+YE;Yemen;YE;1;Governorates;Governorates;21
+YE;Yemen;YE;2;Districts;Districts;333
+YT;Mayotte;FR;1;Cantons;Cantons;19
+ZA;South Africa;ZA;1;Provinces;Provinces;9
+ZA;South Africa;ZA;2;District Municipalities;District Municipalities;44
+ZA;South Africa;ZA;2;Metropolitan municipalities;Metropolitan municipalities;8
+ZA;South Africa;ZA;3;Local Municipalities;Local Municipalities;226
+ZM;Zambia;ZM;1;Provinces;Provinces;10
+ZM;Zambia;ZM;2;Districts;Districts;74
+ZW;Zimbabwe;ZW;1;Provinces;Provinces;8
+ZW;Zimbabwe;ZW;1;Cities;Cities;2
+ZW;Zimbabwe;ZW;2;Districts;Districts;62
