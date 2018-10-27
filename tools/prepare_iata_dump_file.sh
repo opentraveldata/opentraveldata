@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # One parameter is optional for this script:
-# - the file-path of the data dump file extracted from Innovata.
+# - the file-path of the data dump file extracted from IATA
 #
 
 ##
@@ -33,23 +33,23 @@ fi
 
 ##
 # Snapshot date
-SNAPSHOT_DATE=`$DATE_TOOL "+%y%m%d"`
-SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
+SNAPSHOT_DATE=$($DATE_TOOL "+%y%m%d")
+SNAPSHOT_DATE_HUMAN=$($DATE_TOOL)
 
 ##
 # Temporary path
 TMP_DIR="/tmp/por"
-MYCURDIR=`pwd`
+MYCURDIR=$(pwd)
 
 ##
 # Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
+EXEC_PATH=$(dirname $0)
 # Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
+EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
+EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|')
 #
-CURRENT_DIR=`pwd`
+CURRENT_DIR=$(pwd)
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
 then
     EXEC_PATH="."
@@ -71,7 +71,7 @@ fi
 
 ##
 # OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR=$(dirname ${EXEC_FULL_PATH})
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
@@ -86,7 +86,7 @@ IATA_DIR=${OPTD_DIR}data/IATA/archives/
 ##
 # Sanity check: that (executable) script should be located in the tools/
 # sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
+EXEC_DIR_NAME=$(basename ${EXEC_FULL_PATH})
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
     echo
@@ -98,25 +98,25 @@ fi
 ##
 # Retrieve the latest file
 POR_FILE_PFX=iata_airport_list
-SNPSHT_DATE=`ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.txt 2> /dev/null`
+SNPSHT_DATE=$(ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.txt 2> /dev/null)
 if [ "${SNPSHT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
 	for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-	SNPSHT_DATE=`echo ${myfile} | sed -e "s/${POR_FILE_PFX}_\([0-9]\+\)\.txt/\1/" | xargs basename`
+	SNPSHT_DATE=$(echo ${myfile} | sed -e "s/${POR_FILE_PFX}_\([0-9]\+\)\.txt/\1/" | xargs basename)
 else
 	echo
 	echo "[$0:$LINENO] No IATA-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
-	echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}_YYMMDD_all.txt'"
+	echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}_YYYYMMDD.txt'"
 	echo
 	exit -1
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-	SNPSHT_DATE_HUMAN=`$DATE_TOOL -d ${SNPSHT_DATE}`
+	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} -d ${SNPSHT_DATE})
 else
-	SNPSHT_DATE_HUMAN=`$DATE_TOOL --date='last Thursday' "+%y%m%d"`
-	SNPSHT_DATE_HUMAN=`$DATE_TOOL --date='last Thursday'`
+	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} --date='last Thursday' "+%y%m%d")
+	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} --date='last Thursday')
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
