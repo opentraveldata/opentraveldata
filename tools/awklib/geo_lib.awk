@@ -900,6 +900,7 @@ function getNewLOCODELine(__gnllCtryCode, __gnllNameAsciiRef,		\
 	# Separator
 	saved_fs = FS
 	FS = "^"
+	OFS = FS
 
 	#
 	$0 = output_line

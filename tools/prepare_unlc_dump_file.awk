@@ -279,14 +279,14 @@ BEGIN {
 	       ", full line: " $0) > error_stream
 
 	# Extract the reference names
-	name_utf8_ref = getRightName(name_utf8)
-	name_ascii_ref = getRightName(name_ascii)
+	name_utf8_ref = getLeftName(name_utf8)
+	name_ascii_ref = getLeftName(name_ascii)
 
 	# Extract the new names
-	name_utf8_new = getLeftName(name_utf8)
-	name_ascii_new = getLeftName(name_ascii)
+	name_utf8_new = getRightName(name_utf8)
+	name_ascii_new = getRightName(name_ascii)
 	
-        output_line = getNewLOCODELine(unlc_code, name_ascii_ref,	\
+        output_line = getNewLOCODELine(country_code, name_ascii_ref,	\
 				       name_utf8_new, name_ascii_new)
 
     } else if (unlc_code) {
