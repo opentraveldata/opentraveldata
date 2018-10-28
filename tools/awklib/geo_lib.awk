@@ -872,6 +872,58 @@ function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
 }
 
 ##
+# Register the details of the UN/LOCODE-referenced POR
+#
+function registerLOCODELine(__rllCtryCode, __rllName, __rllFullLine) {
+    myTmpLine = optd_por_unlc_list[__rllCtryCode, __rllName]
+    if (myTmpLine) {
+	# It may happen that there is already a record with the eaxct same
+	# name for that country. For instance, 'Abybro' is listed with at leat
+	# DKAYB and DKKK4 UN/LOCODE codes.
+	#print ("[" __glGlobalAWKFile "] !! Warning at line #" FNR	\
+	#       ". There is already a record for " __rllName " in "	\
+	#       __rllCtryCode ". Existing record: " myTmpLine ". New line: " \
+	#       __rllFullLine) > __glGlobalErrorStream
+
+    } else {
+	optd_por_unlc_list[__rllCtryCode, __rllName] = __rllFullLine
+    }
+}
+
+##
+# Derive the new record from an existing one for a given UN/LOCODE
+#
+function getNewLOCODELine(__gnllCtryCode, __gnllNameUtf8, __gnllNameAscii) {
+    output_line = optd_por_unlc_list[__gnllCtryCode, __gnllNameAscii]
+    if (output_line) {
+	# Separator
+	saved_fs = FS
+	FS = "^"
+
+	#
+	$0 = output_line
+
+	# Replace the names
+	$4 = __gnllNameAscii
+	$5 = __gnllNameUtf8
+
+	#
+	output_line = $0
+	
+	#
+	FS = saved_fs
+
+    } else {
+	print ("[" __glGlobalAWKFile "] !! Error at line #" FNR		\
+	       ". Though the change code is '=', there is no record for " \
+	       __gnllNameAscii " in " __gnllCtryCode ". Full line: " $0) \
+	    > __glGlobalErrorStream
+    }
+
+    return output_line
+}
+
+##
 # Register the details of the OPTD-maintained POR entry. Those details are:
 # 1. The primary key:
 # 1.1. The IATA code

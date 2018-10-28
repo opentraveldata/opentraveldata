@@ -179,6 +179,17 @@ BEGIN {
     awk_file = "prepare_unlc_dump_file.awk"
     SEP = "^"
 
+    # Log level
+    if (!log_level) {
+	log_level = 3
+    }
+	
+    # Initialisation of the Geo library
+    initGeoAwkLib(awk_file, error_stream, log_level)
+
+    # Global lists
+    delete optd_por_unlc_list
+
     # Description of fields: either anything but a comma,
     # or double-quoted strings
     # Reference: http://www.gnu.org/software/gawk/manual/html_node/Splitting-By-Content.html
@@ -240,6 +251,9 @@ BEGIN {
     # UN/LOCODE
     unlc_code = unquote($3)
 
+    # Primary Key (PK), made of the country code plus the country level UN/LOCODE
+    pk = country_code unlc_code
+    
     # UTF8 version of the Name
     name_utf8 = unquote($4)
 
@@ -281,7 +295,7 @@ BEGIN {
     comments = unquote($13)
     
     # Output line
-    output_line = country_code unlc_code SEP country_code SEP unlc_code
+    output_line = pk SEP country_code SEP unlc_code
     output_line = output_line SEP name_utf8 SEP name_ascii
     output_line = output_line SEP state_code
     output_line = output_line SEP isPort SEP isRail SEP isRoad SEP isApt
@@ -291,7 +305,25 @@ BEGIN {
     output_line = output_line SEP iata_code
     output_line = output_line SEP geo_lat SEP geo_lon
     output_line = output_line SEP comments SEP change_code
+
+    # Check whether there is already a record for that UN/LOCODE
+    if (change_code == "=") {
+	# DEBUG
+    	print ("[" awk_file "] Duplicate name. UNLC: " unlc_code	\
+    	       ", UTF8 name: " name_utf8 ", ASCII name: " name_ascii	\
+    	       ", new record: " output_line ", full line: " $0) > error_stream
 	
+    #	output_line = getNewLOCODELine(unlc_code, name_utf8, name_ascii)
+    }
+	# DEBUG
+    #	print ("[" awk_file "] Duplicate name. UNLC: " unlc_code	\
+    #	       ", UTF8 name: " name_utf8 ", ASCII name: " name_ascii	\
+    #	       ", new record: " output_line ", full line: " $0) > error_stream
+
+    #} else {
+    #	registerLOCODELine(country_code, name_ascii, output_line)
+    #}
+    
     # Sanity check
     if (country_code) {
 	print (output_line)
