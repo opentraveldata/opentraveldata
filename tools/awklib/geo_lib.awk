@@ -893,8 +893,9 @@ function registerLOCODELine(__rllCtryCode, __rllName, __rllFullLine) {
 ##
 # Derive the new record from an existing one for a given UN/LOCODE
 #
-function getNewLOCODELine(__gnllCtryCode, __gnllNameUtf8, __gnllNameAscii) {
-    output_line = optd_por_unlc_list[__gnllCtryCode, __gnllNameAscii]
+function getNewLOCODELine(__gnllCtryCode, __gnllNameAsciiRef,		\
+			  __gnllNameUtf8New, __gnllNameAsciiNew) {
+    output_line = optd_por_unlc_list[__gnllCtryCode, __gnllNameAsciiRef]
     if (output_line) {
 	# Separator
 	saved_fs = FS
@@ -904,8 +905,8 @@ function getNewLOCODELine(__gnllCtryCode, __gnllNameUtf8, __gnllNameAscii) {
 	$0 = output_line
 
 	# Replace the names
-	$4 = __gnllNameAscii
-	$5 = __gnllNameUtf8
+	$4 = __gnllNameAsciiNew
+	$5 = __gnllNameUtf8New
 
 	#
 	output_line = $0
@@ -916,7 +917,7 @@ function getNewLOCODELine(__gnllCtryCode, __gnllNameUtf8, __gnllNameAscii) {
     } else {
 	print ("[" __glGlobalAWKFile "] !! Error at line #" FNR		\
 	       ". Though the change code is '=', there is no record for " \
-	       __gnllNameAscii " in " __gnllCtryCode ". Full line: " $0) \
+	       __gnllNameAsciiRef " in " __gnllCtryCode ". Full line: " $0) \
 	    > __glGlobalErrorStream
     }
 

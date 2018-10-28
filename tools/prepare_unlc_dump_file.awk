@@ -241,17 +241,28 @@ BEGIN {
 # Sample output lines:
 #unlc^country_code^unlc_short^name_utf8^name_ascii^state_code^is_port^is_railterm^is_roadterm^is_apt^is_postoff^is_icd^is_fxtpt^is_brdxing^is_unkwn^status^date^iata_code^lat^lon^comments^change_code
 #
-/^(|"."|""),"[A-Z]{2}","[0-9A-Z]{3}"/ {
+# Change codes: "", "!", "#", "+", "=", "X", "¦"
+# /^(|"[#!+=X¦]"|""),"[A-Z]{2}","[0-9A-Z]{3}"/
+// {
+    # Initialize the output line
+    output_line = ""
+    
     # Change code
     change_code = unquote($1)
 
     # Country code
     country_code = unquote($2)
 
+    # Sanity check
+    if (!country_code) {
+	print ("[" awk_file "] !!! Error - Country code empty. " $0) > error_stream
+    }
+
     # UN/LOCODE
     unlc_code = unquote($3)
-
-    # Primary Key (PK), made of the country code plus the country level UN/LOCODE
+	
+    # Primary Key (PK), made of the country code
+    # plus the country level UN/LOCODE
     pk = country_code unlc_code
     
     # UTF8 version of the Name
@@ -260,75 +271,89 @@ BEGIN {
     # ASCII version of the Name
     name_ascii = unquote($5)
 
-    # Country subdivision code
-    state_code = unquote($6)
-
-    # por_type
-    por_type = unquote($7)
-    isUnknwon = getUnknwon(por_type)
-    isPort = 0
-    if (isUnknwon == 0) {
-	isPort = getFlag(por_type, 1)
-    }
-    isRail = getFlag(por_type, 2)
-    isRoad = getFlag(por_type, 3)
-    isApt = getFlag(por_type, 4)
-    isPost = getFlag(por_type, 5)
-    isICD = getFlag(por_type, 6)
-    isFx = getFlag(por_type, 7)
-    isBrdXing = getBoarderXing(por_type)
-
-    # Status
-    status_code = unquote($8)
-    
-    # Date
-    chg_date = getDate($9)
-
-    # Coordinates
-    geo_lat = getLat($11)
-    geo_lon = getLon($11)
-    
-    # IATA code
-    iata_code = unquote($12)
-    
-    # Comments
-    comments = unquote($13)
-    
-    # Output line
-    output_line = pk SEP country_code SEP unlc_code
-    output_line = output_line SEP name_utf8 SEP name_ascii
-    output_line = output_line SEP state_code
-    output_line = output_line SEP isPort SEP isRail SEP isRoad SEP isApt
-    output_line = output_line SEP isPost SEP isICD SEP isFx SEP isBrdXing
-    output_line = output_line SEP isUnknwon
-    output_line = output_line SEP status_code SEP chg_date
-    output_line = output_line SEP iata_code
-    output_line = output_line SEP geo_lat SEP geo_lon
-    output_line = output_line SEP comments SEP change_code
-
     # Check whether there is already a record for that UN/LOCODE
     if (change_code == "=") {
 	# DEBUG
-    	print ("[" awk_file "] Duplicate name. UNLC: " unlc_code	\
-    	       ", UTF8 name: " name_utf8 ", ASCII name: " name_ascii	\
-    	       ", new record: " output_line ", full line: " $0) > error_stream
-	
-    #	output_line = getNewLOCODELine(unlc_code, name_utf8, name_ascii)
-    }
-	# DEBUG
-    #	print ("[" awk_file "] Duplicate name. UNLC: " unlc_code	\
-    #	       ", UTF8 name: " name_utf8 ", ASCII name: " name_ascii	\
-    #	       ", new record: " output_line ", full line: " $0) > error_stream
+    	print ("[" awk_file "] Duplicate name. UTF8 name: " name_utf8	\
+	       ", ASCII name: " name_ascii ", new record: " output_line \
+	       ", full line: " $0) > error_stream
 
-    #} else {
-    #	registerLOCODELine(country_code, name_ascii, output_line)
-    #}
+	# Extract the reference names
+	name_utf8_ref = getRightName(name_utf8)
+	name_ascii_ref = getRightName(name_ascii)
+
+	# Extract the new names
+	name_utf8_new = getLeftName(name_utf8)
+	name_ascii_new = getLeftName(name_ascii)
+	
+        output_line = getNewLOCODELine(unlc_code, name_ascii_ref,	\
+				       name_utf8_new, name_ascii_new)
+
+    } else if (unlc_code) {
+	# Country subdivision code
+	state_code = unquote($6)
+
+	# por_type
+	por_type = unquote($7)
+	isUnknwon = getUnknwon(por_type)
+	isPort = 0
+	if (isUnknwon == 0) {
+	    isPort = getFlag(por_type, 1)
+	}
+	isRail = getFlag(por_type, 2)
+	isRoad = getFlag(por_type, 3)
+	isApt = getFlag(por_type, 4)
+	isPost = getFlag(por_type, 5)
+	isICD = getFlag(por_type, 6)
+	isFx = getFlag(por_type, 7)
+	isBrdXing = getBoarderXing(por_type)
+
+	# Status
+	status_code = unquote($8)
+    
+	# Date
+	chg_date = getDate($9)
+
+	# Coordinates
+	geo_lat = getLat($11)
+	geo_lon = getLon($11)
+    
+	# IATA code
+	iata_code = unquote($12)
+    
+	# Comments
+	comments = unquote($13)
+    
+	# Output line
+	output_line = pk SEP country_code SEP unlc_code
+	output_line = output_line SEP name_utf8 SEP name_ascii
+	output_line = output_line SEP state_code
+	output_line = output_line SEP isPort SEP isRail SEP isRoad SEP isApt
+	output_line = output_line SEP isPost SEP isICD SEP isFx SEP isBrdXing
+	output_line = output_line SEP isUnknwon
+	output_line = output_line SEP status_code SEP chg_date
+	output_line = output_line SEP iata_code
+	output_line = output_line SEP geo_lat SEP geo_lon
+	output_line = output_line SEP comments SEP change_code
+
+	#
+    	registerLOCODELine(country_code, name_ascii, output_line)
+
+    } else {
+	# Sanity check
+	firstCtryChar = substr (name_utf8, 1, 1)
+	if (firstCtryChar != ".") {
+	    # Report
+	    print ("[" awk_file "] Not a country: " $0) > error_stream
+	}
+    }
     
     # Sanity check
     if (country_code) {
 	print (output_line)
 
     } else {
+	# Report
 	print ("[" awk_file "] !!! Error - " $0) > error_stream
     }
 }
