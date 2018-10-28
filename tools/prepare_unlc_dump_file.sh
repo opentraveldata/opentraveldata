@@ -10,7 +10,7 @@ displayLOCODEDetails() {
     echo
     echo "####### Note #######"
     echo "# The data dump from UN/LOCODE has to be obtained from UNECE directly."
-    echo "# The UN/LOCODE dump file ('${LOCODE_TAB_FILENAME}') should be in the ${LOCODE_DIR} directory"
+    echo "# The UN/LOCODE dump file ('${LOCODE_TAB_FILENAME}') should be in the ${TOOLS_DIR} directory"
     echo "#####################"
     echo
 }
@@ -96,30 +96,30 @@ fi
 
 ##
 # Retrieve the latest file
-#unlocode-code-list-2018-1.csv.bz2
+#unlocode-code-list-2018-1.csv
 POR_FILE_PFX="unlocode-code-list"
-SNPSHT_DATE=$(ls ${LOCODE_DIR}${POR_FILE_PFX}-????-?.csv.bz2 2> /dev/null)
+SNPSHT_DATE=$(ls ${TOOLS_DIR}${POR_FILE_PFX}-????-?.csv 2> /dev/null)
 if [ "${SNPSHT_DATE}" != "" ]
 then
     # (Trick to) Extract the latest entry
     for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-    SNPSHT_DATE=$(echo ${myfile} | sed -e "s/${POR_FILE_PFX}-\([0-9\-]\+\)\.csv.bz2/\1/" | xargs basename)
+    SNPSHT_DATE=$(echo ${myfile} | sed -e "s/${POR_FILE_PFX}-\([0-9\-]\+\)\.csv/\1/" | xargs basename)
 else
     echo
-    echo "[$0:$LINENO] No LOCODE-derived POR list CSV dump can be found in the '${LOCODE_DIR}' directory."
-    echo "Expecting a file named like '${LOCODE_DIR}${POR_FILE_PFX}-YYYY-N.csv.bz2'"
+    echo "[$0:$LINENO] No LOCODE-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
+    echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}-YYYY-N.csv'"
     echo
     exit -1
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-    LOCODE_TAB_FILENAME=${POR_FILE_PFX}-${SNPSHT_DATE}.csv.bz2
-    LOCODE_CSV_FILENAME=${POR_FILE_PFX}-${SNPSHT_DATE}-optd.csv
+    LOCODE_TAB_FILENAME=${POR_FILE_PFX}-${SNPSHT_DATE}.csv
+    LOCODE_CSV_FILENAME=${POR_FILE_PFX}-${SNPSHT_DATE}.csv
 fi
 
 ##
 # Input files
-LOCODE_TAB_FILE=${LOCODE_DIR}${LOCODE_TAB_FILENAME}
+LOCODE_TAB_FILE=${TOOLS_DIR}${LOCODE_TAB_FILENAME}
 GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
 #
 GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
@@ -195,13 +195,13 @@ fi
 ##
 # Filter out the POR rules
 # 1. Filter the regular POR
-#bzgrep -v '^\(\|\".\"\|\"\"\),\"[A-Z]\{2\}\",\"[0-9A-Z]\{3\}\"' ${LOCODE_TAB_FILE}
+#grep -v '^\(\|\".\"\|\"\"\),\"[A-Z]\{2\}\",\"[0-9A-Z]\{3\}\"' ${LOCODE_TAB_FILE}
 # 2. Filter the countries
-#bzgrep -v '^,\"[A-Z]\{2\}\",,\"\..\+\"' ${LOCODE_TAB_FILE}
+#grep -v '^,\"[A-Z]\{2\}\",,\"\..\+\"' ${LOCODE_TAB_FILE}
 # 3. Filter the alternate name rules for POR
-#bzgrep -v '^\"=\",\"[A-Z]\{2\}\",\(\|\"\"\),\".\+=.\+\"' ${LOCODE_TAB_FILE}
+#grep -v '^\"=\",\"[A-Z]\{2\}\",\(\|\"\"\),\".\+=.\+\"' ${LOCODE_TAB_FILE}
 # 4. Filter the alternate name rules for countries (only FR apparently)
-#bzgrep -v '^\(\|\"\"\),\"[A-Z]\{2\}\",\(\|\"\"\),\".\+=.\+\"' ${LOCODE_TAB_FILE}
+#grep -v '^\(\|\"\"\),\"[A-Z]\{2\}\",\(\|\"\"\),\".\+=.\+\"' ${LOCODE_TAB_FILE}
 
 ##
 # Convert the format
@@ -209,7 +209,7 @@ fi
 # having the first field empty. We therefore use sed to replace first empty
 # fields by 1-white-space fields.
 CONVERTER=prepare_unlc_dump_file.awk
-bzcat ${LOCODE_TAB_FILE} | sed -e 's/^,/" ",/g' | awk -f ${CONVERTER} > ${LOCODE_CSV_UNSTD_FILE}
+sed -e 's/^,/" ",/g' ${LOCODE_TAB_FILE} | awk -f ${CONVERTER} > ${LOCODE_CSV_UNSTD_FILE}
 
 ##
 # Sort by LOCODE code
