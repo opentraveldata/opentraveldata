@@ -287,8 +287,120 @@ RU^7779061^93^Transbaikal Territory^
 ```
 
 Just for information, the relevant AWK scripts are:
-* [``tools/awklib/geo_lib.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#L1462)
-* [``tools/make_optd_por_public.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk#L232)
+* [``tools/awklib/geo_lib.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-addctrysubdivdetails)
+* [``tools/make_optd_por_public.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk#L239)
+
+
+### Update the UN/LOCODE data file
+OpenTravelData (OPTD) archives snapshots of the
+[UN/LOCODE database](../data/unlocode)
+in a [dedicated directory](../data/unlocode/archives/),
+in a format friendlier for analysis purpose than the original one.
+Also, a few typos are fixed along the way.
+
+#### Typical sequence of commands to clean the downloaded UN/LOCODE data file
+* Set up the project, if not already done:
+```bash
+$ mkdir -p ~/dev/geo
+$ cd ~/dev/geo
+$ git clone https://github.com/opentraveldata/opentraveldata.git
+$ cd ~/dev/geo/opentraveldata/tools
+```
+
+* Download the [latest release of UN/LOCODE files](http://www.unece.org/cefact/codesfortrade/codes_index.html):
+```bash
+$ wget http://www.unece.org/fileadmin/DAM/cefact/locode/loc181csv.zip
+```
+
+* Un-pack, remove the unused parts and re-assemble the UN/LOCODE data file:
+```bash
+$ unzip -x loc181csv.zip && rm -f loc181csv.zip
+Archive:  /Users/darnaud/Downloads/loc181csv.zip
+  inflating: 2018-1 SubdivisionCodes.csv  
+  inflating: 2018-1 UNLOCODE CodeListPart1.csv  
+  inflating: 2018-1 UNLOCODE CodeListPart2.csv  
+  inflating: 2018-1 UNLOCODE CodeListPart3.csv  
+  inflating: 2018-1 UNLOCODE SecretariatNotes.pdf  
+$ rm -f 2018-1\ SubdivisionCodes.csv 2018-1\ UNLOCODE\ SecretariatNotes.pdf 
+$ cat 2018-1\ UNLOCODE\ CodeListPart1.csv 2018-1\ UNLOCODE\ CodeListPart2.csv 2018-1\ UNLOCODE\ CodeListPart3.csv > unlocode-code-list-2018-1-iso.csv
+$ rm -f 2018-1\ UNLOCODE\ CodeListPart1.csv 2018-1\ UNLOCODE\ CodeListPart2.csv 2018-1\ UNLOCODE\ CodeListPart3.csv
+```
+
+* Remove the line-feed characters (convert the file from DOS- to Unix-type):
+```bash
+$ dos2unix unlocode-code-list-2018-1-iso.csv
+```
+
+* Convert the character encoding to friendlier UTF-8
+```bash
+$ iconv -f ISO-8859-1 -t UTF-8 unlocode-code-list-2018-1-iso.csv > unlocode-code-list-2018-1.csv
+$ rm -f unlocode-code-list-2018-1-iso.csv
+```
+
+* You may want to sort the data file, for instance for later comparison:
+```bash
+$ sort -t',' -k2,2 -k3,3 -k4,4 unlocode-code-list-2018-1.csv > unlocode-code-list-2018-1-std.csv
+$ mv unlocode-code-list-2018-1-std.csv unlocode-code-list-2018-1.csv
+```
+
+* Remove (empty) lines with just quotes:
+```bash
+$ grep -v "^\"$" unlocode-code-list-2018-1.csv > unlocode-code-list-2018-1-ftd.csv
+$ mv unlocode-code-list-2018-1-ftd.csv unlocode-code-list-2018-1.csv
+```
+
+* Remove comment fields with just opening quotes (that appears when
+  a carriage return character is inserted within the comment field:
+  the opening quote stays, and an empty line is created with
+  the closing character, which is eliminated in the step above):
+```bash
+$ sed -i -e 's/,\"$/,/g' unlocode-code-list-2018-1.csv
+```
+
+* Add the missing ``E`` (East) character in the geographical coordinates
+  of the ``SA-SAL`` record (you may want to first check that the error
+  is still there):
+```bash
+$ grep --color "\"2444N 05045\"" unlocode-code-list-2018-1.csv
+,"SA","SAL","Salwá","Salwa","04","--3-----","RL","1707",,"2444N 05045",
+$ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-2018-1.csv
+```
+
+* Run the OPTD transformation script, which may report some additional glitches
+  (those glitches would need to be fixed with some well crafted ``sed``
+  commands like above; that is an exercise given to the reader for now):
+```bash
+$ sh prepare_unlc_dump_file.sh
+[prepare_unlc_dump_file.awk] !! Error at line #36179. Though the change code is '=', there is no record for Fuglafirdi in FO. Full line: "=","FO","","Fuglefjord = Fuglafirdi","Fuglefjord = Fuglafirdi",,,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #56603. Though the change code is '=', there is no record for Kangerlussua in GL. Full line: "=","GL","","Sondre Stromfjord = Kangerlussua","Sondre Stromfjord = Kangerlussua","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #56604. Though the change code is '=', there is no record for Manitsoq in GL. Full line: "=","GL","","Sukkertoppen = Manitsoq","Sukkertoppen = Manitsoq","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #83012. Though the change code is '=', there is no record for Nizhny Novgorod in RU. Full line: "=","RU","","Gorkiy = Nizhny Novgorod","Gorkiy = Nizhny Novgorod","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #88219. Though the change code is '=', there is no record for Adak Island in US. Full line: "=","US","","Adak = Adak Island","Adak = Adak Island","",,"",,"","",""
+```
+
+* Tell Git about the new transformed UN/LOCODE data file:
+```bash
+$ pushd ../data/unlocode
+$ git add archives/unlocode-code-list-2018-1.csv
+$ rm -f unlocode-code-list-latest.csv
+$ ln -s archives/unlocode-code-list-2018-1.csv unlocode-code-list-latest.csv
+$ git add unlocode-code-list-latest.csv
+$ git commit -m "[POR] Added the latest UN/LOCODE data file" unlocode-code-list-latest.csv archives/unlocode-code-list-2018-1.csv
+$ popd
+```
+
+* Remove the no longer needed UN/LOCODE raw data file:
+```bash
+$ rm -f unlocode-code-list-2018-1.csv
+```
+
+### See also
+* [OpenTravelData Issue #102](https://github.com/opentraveldata/opentraveldata/issues/102)
+  for an example on how to spot POR in Vietnam (VN) missing in Geonames
+  but present in the UN/LOCODE data file.
+* Relevant AWK scripts:
+  + [``tools/awklib/geo_lib.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-registerlocodeline)
+  + [``tools/prepare_unlc_dump_file.awk``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/prepare_unlc_dump_file.awk)
 
 
 ## Recompute the OPTD-maintained POR file: do 1.1.

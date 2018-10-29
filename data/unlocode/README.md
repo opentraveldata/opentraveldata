@@ -1,8 +1,9 @@
 # References
 
-## OpenTravelData
+## OpenTravelData (OPTD)
 * This file on the [OpenTravelData project](http://github.com/opentraveldata/opentraveldata):
   https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode/README.md
+* See also the [section on how to update UN/LOCODE data in the main ``README``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md#update-the-unlocode-data-file)
 
 ## UN/LOCODE
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE

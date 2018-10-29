@@ -19,7 +19,8 @@ displayLOCODEDetails() {
 # Cleaning
 cleanTempFiles() {
     \rm -f ${LOCODE_CSV_UNSTD_FILE} ${LOCODE_CSV_HDR_FILE} \
-	${LOCODE_CSV_UNSTD_NOHDR_FILE} ${LOCODE_CSV_NOHDR_FILE}
+	${LOCODE_CSV_UNSTD_NOHDR_FILE} ${LOCODE_CSV_NOHDR_FILE} \
+	${LOCODE_CSV_FFNE_FILE}
 }
 
 ##
@@ -130,6 +131,7 @@ LOCODE_CSV_FILE=${LOCODE_DIR}${LOCODE_CSV_FILENAME}
 
 ##
 # Temporary
+LOCODE_CSV_FFNE_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.ffne
 LOCODE_CSV_UNSTD_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.unsorted
 LOCODE_CSV_HDR_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.hdr
 LOCODE_CSV_UNSTD_NOHDR_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.unsorted_nohdr
@@ -204,12 +206,18 @@ fi
 #grep -v '^\(\|\"\"\),\"[A-Z]\{2\}\",\(\|\"\"\),\".\+=.\+\"' ${LOCODE_TAB_FILE}
 
 ##
+# Replace the empty first fields by 1-white-space fields, as AWK FPAT
+# does not seem to be able to recognize records with empty first fields
+sed -e 's/^,/" ",/g' ${LOCODE_TAB_FILE} > ${LOCODE_CSV_FFNE_FILE}
+
+##
 # Convert the format
 # For some reason, the FPAT pattern of the AWK script does not detect lines
 # having the first field empty. We therefore use sed to replace first empty
 # fields by 1-white-space fields.
 CONVERTER=prepare_unlc_dump_file.awk
-sed -e 's/^,/" ",/g' ${LOCODE_TAB_FILE} | awk -f ${CONVERTER} > ${LOCODE_CSV_UNSTD_FILE}
+awk -f ${CONVERTER} ${LOCODE_CSV_FFNE_FILE} ${LOCODE_CSV_FFNE_FILE} \
+    > ${LOCODE_CSV_UNSTD_FILE}
 
 ##
 # Sort by LOCODE code
@@ -224,6 +232,8 @@ sed -i -e "/^$/d" ${LOCODE_CSV_UNSTD_NOHDR_FILE}
 
 # Sort by LOCODE code the header-less file
 sort -t'^' -k1,1 ${LOCODE_CSV_UNSTD_NOHDR_FILE} > ${LOCODE_CSV_NOHDR_FILE}
+# DEBUG (uncomment above and remove below)
+#cp -f ${LOCODE_CSV_UNSTD_NOHDR_FILE} ${LOCODE_CSV_NOHDR_FILE}
 
 # Reinject the header into the sorted file
 cat ${LOCODE_CSV_HDR_FILE} ${LOCODE_CSV_NOHDR_FILE} > ${LOCODE_CSV_FILE}

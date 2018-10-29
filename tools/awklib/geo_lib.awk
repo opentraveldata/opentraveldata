@@ -257,6 +257,24 @@ function capitaliseWords(__cwInStr) {
     return __cwGenStr
 }
 
+# Remove the quote characters around the string
+function unquote(__tString) {
+    gsub (/"/, "", __tString)
+    return __tString
+}
+
+# Trim the white space at the end of the string
+function righttrim(__tString) {
+    gsub ("[ \t]+$", "", __tString)
+    return __tString
+}
+
+# Trim the white space at the beginning of the string
+function lefttrim(__tString) {
+    gsub ("^[ \t]+", "", __tString)
+    return __tString
+}
+
 ##
 # Transform the separator of a given list
 function changeSepInList(__csilList, __csilListOrgSep, __csilListTgtSep) {
@@ -875,18 +893,27 @@ function addOPTDFieldToList(__aoftlParamIataCode, __aoftlParamLocationType, \
 # Register the details of the UN/LOCODE-referenced POR
 #
 function registerLOCODELine(__rllCtryCode, __rllName, __rllFullLine) {
-    myTmpLine = optd_por_unlc_list[__rllCtryCode, __rllName]
+    # Some reference names mention alternate names within parentheses.
+    # The reference name has then to be filtered. For instance:
+    # CA-TRR - "Trois-Rivieres (Three Rivers)", and then:
+    # "=","CA","","Three Rivers = Trois-Rivières","Three Rivers = Trois-Rivieres"
+    # The reference name is here "Trois-Rivieres"
+    split (__rllName, myNameArray, "(")
+    myFilteredName = righttrim(myNameArray[1])
+
+    #
+    myTmpLine = optd_por_unlc_list[__rllCtryCode, myFilteredName]
     if (myTmpLine) {
 	# It may happen that there is already a record with the eaxct same
 	# name for that country. For instance, 'Abybro' is listed with at leat
 	# DKAYB and DKKK4 UN/LOCODE codes.
 	#print ("[" __glGlobalAWKFile "] !! Warning at line #" FNR	\
-	#       ". There is already a record for " __rllName " in "	\
+	#       ". There is already a record for " myFilteredName " in " \
 	#       __rllCtryCode ". Existing record: " myTmpLine ". New line: " \
 	#       __rllFullLine) > __glGlobalErrorStream
 
     } else {
-	optd_por_unlc_list[__rllCtryCode, __rllName] = __rllFullLine
+	optd_por_unlc_list[__rllCtryCode, myFilteredName] = __rllFullLine
     }
 }
 
@@ -895,34 +922,60 @@ function registerLOCODELine(__rllCtryCode, __rllName, __rllFullLine) {
 #
 function getNewLOCODELine(__gnllCtryCode, __gnllNameAsciiRef,		\
 			  __gnllNameUtf8New, __gnllNameAsciiNew) {
-    output_line = optd_por_unlc_list[__gnllCtryCode, __gnllNameAsciiRef]
-    if (output_line) {
-	# Separator
-	saved_fs = FS
-	FS = "^"
-	OFS = FS
+    # Some reference names mention alternate names within parentheses.
+    # The reference name has then to be filtered. For instance:
+    # EG-ALY - "El Iskandariya (Alexandria)", and then:
+    # "=","EG","","Alexandria = El Iskandariya (Alexandria)","Alexandria = El Iskandariya (Alexandria)"
+    # The reference name is here "El Iskandariya"
+    split (__gnllNameAsciiRef, myNameArray, "(")
+    myFilteredName = righttrim(myNameArray[1])
 
-	#
-	$0 = output_line
+    myTmpLine = optd_por_unlc_list[__gnllCtryCode, myFilteredName]
+    if (myTmpLine) {
+	# DEBUG
+	#print ("[" __glGlobalAWKFile "][" FNR "] FS='" FS "', OFS='" OFS \
+	#      "' Ctry code: " __gnllCtryCode ", refname: " myFilteredName \
+	#      ", new UTF8 name: " __gnllNameUtf8New ", new ASCII name: " \
+	#      __gnllNameAsciiNew ", retrieved line: '" myTmpLine	\
+	#      "', full line: " $0) > __glGlobalErrorStream
 
-	# Replace the names
-	$4 = __gnllNameAsciiNew
-	$5 = __gnllNameUtf8New
-
-	#
-	output_line = $0
+	# Rebuild the record details by swapping the names
+	myTmpString = ""
+	mySEP = "^"
 	
-	#
-	FS = saved_fs
-
+	split (myTmpLine, myLineArray, mySEP)
+	for (myLineIdx in myLineArray) {
+	    myField = myLineArray[myLineIdx]
+	    if (myLineIdx == 4) {
+		myField = __gnllNameAsciiNew
+	    } else if (myLineIdx == 5) {
+		myField = __gnllNameUtf8New
+	    } else if (myLineIdx == 22) {
+		myField = "="
+	    }
+	    if (myLineIdx != 1) {
+		myTmpString = myTmpString mySEP
+	    }
+	    myTmpString = myTmpString myField
+	}
+	myTmpLine = myTmpString
+	
+	# DEBUG
+	#print ("[" __glGlobalAWKFile "][" FNR "] FS='" FS "', OFS='" OFS \
+	#      "' Ctry code: " __gnllCtryCode ", refname: " myFilteredName \
+	#      ", new UTF8 name: " __gnllNameUtf8New ", new ASCII name: " \
+	#      __gnllNameAsciiNew ", new output line: '" myTmpLine	\
+	#      "', full line: " $0) > __glGlobalErrorStream
+	
     } else {
+	# Reporting
 	print ("[" __glGlobalAWKFile "] !! Error at line #" FNR		\
 	       ". Though the change code is '=', there is no record for " \
-	       __gnllNameAsciiRef " in " __gnllCtryCode ". Full line: " $0) \
+	       myFilteredName " in " __gnllCtryCode ". Full line: " $0) \
 	    > __glGlobalErrorStream
     }
 
-    return output_line
+    return myTmpLine
 }
 
 ##
@@ -1368,7 +1421,7 @@ function addCtrySubdivDetails(__acsdCtryCode, __acsdAdm1Code, __acsdFullLine) {
     }
 	
     # Return string
-    output_line = ""
+    myTmpString = ""
 
     # Separator
     saved_fs = FS
@@ -1379,17 +1432,17 @@ function addCtrySubdivDetails(__acsdCtryCode, __acsdAdm1Code, __acsdFullLine) {
 
     # ^ ISO 3166-2 country subdivision code
     iso31662_code = ctry_iso31662code_list[__acsdCtryCode][__acsdAdm1Code]
-    output_line = output_line FS iso31662_code
+    myTmpString = myTmpString FS iso31662_code
 
     # ^ ISO 3166-2 country subdivision name
     iso31662_name = ctry_iso31662name_list[__acsdCtryCode][__acsdAdm1Code]
-    output_line = output_line FS iso31662_name
+    myTmpString = myTmpString FS iso31662_name
 
     #
     FS = saved_fs
 
     # Return
-    return output_line
+    return myTmpString
 }
 
 ##
