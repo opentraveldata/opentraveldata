@@ -17,7 +17,9 @@ BEGIN {
     delete ctry_state_list
 
     # Header (the master header is in the extract_por_unlc.sh script)
-    hdr_line = "unlocode^latitude^longitude^geonames_id^feat_class^feat_code"
+    hdr_line = "unlocode^latitude^longitude^geonames_id"
+    hdr_line = hdr_line "^iso31662_code^iso31662_name"
+    hdr_line = hdr_line "^feat_class^feat_code"
     #print (hdr_line)
 
     #

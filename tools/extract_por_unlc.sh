@@ -106,7 +106,7 @@ PROCESSOR="extract_por_unlc.awk"
 time awk -F'^' -f ${PROCESSOR} ${OPTD_CTRY_STATE_FILE} \
      ${POR_INTORG_FILE} ${POR_ALL_FILE} > ${TMP_TGT_FILE}
 sort -t'^' -k1,1 ${TMP_TGT_FILE} | uniq > ${STD_TGT_FILE}
-echo "unlocode^latitude^longitude^geonames_id^feat_class^feat_code" \
+echo "unlocode^latitude^longitude^geonames_id^iso31662_code^iso31662_name^feat_class^feat_code" \
 	 > ${HDR_TGT_FILE}
 cat ${HDR_TGT_FILE} ${STD_TGT_FILE} > ${TGT_FILE}
 
