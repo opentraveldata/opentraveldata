@@ -198,6 +198,11 @@ function processRef() {
     
     # Change code
     change_code = unquote($1)
+    if (change_code == " ") {
+	# The prepare_unlc_dump_file.sh script add a white space in the change
+	# code when that latter is empty, so that AWK FPAT can work correctly
+	change_code = ""
+    }
 
     # Country code
     country_code = unquote($2)
@@ -251,15 +256,15 @@ function processRef() {
 	# Date
 	chg_date = getDate($9)
 
+	# IATA code
+	iata_code = unquote($10)
+    
 	# Coordinates
 	geo_lat = getLat($11)
 	geo_lon = getLon($11)
     
-	# IATA code
-	iata_code = unquote($12)
-    
 	# Comments
-	comments = unquote($13)
+	comments = unquote($12)
     
 	# Output line
 	SEP = "^"
