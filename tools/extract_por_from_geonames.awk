@@ -181,6 +181,10 @@ function displayProgress() {
 # --------------
 # ^^^291068^Port Rashid^Port Rashid^25.26769^55.2825^AE^^United Arab Emirates^Asia^L^PRT^03^Dubai^Dubai^^^^^^0^^-9999^Asia/Dubai^4.0^4.0^4.0^2013-03-05^Mina' Rashid,Mīnā’ Rāshid,Port Rashed,Port Rashid,Rachid Port^http://en.wikipedia.org/wiki/Port_Rashid^|Port Rashid|||Rachid Port||ar|Mīnā’ Rāshid||||Port Rashed|^AEMRP|=AEPRA|
 #
+# UIC code
+# --------
+# ^^^2661113^Genève-Cornavin Railway Station^Geneve-Cornavin Railway Station^46.21055^6.14334^CH^^Switzerland^Europe^S^RSTN^GE^Geneva^Geneva^2500^Geneva^Geneva^6621^^0^^370^Europe/Zurich^1.0^2.0^1.0^2018-11-08^^http://en.wikipedia.org/wiki/Gen%C3%A8ve-Cornavin_railway_station^|Genève-Cornavin|||Gare de Cornavin||de|Bahnhof Genève-Cornavin||en|Genève-Cornavin railway station||es|Estación de Ginebra-Cornavin||fr|Gare de Genève-Cornavin||it|Stazione di Ginevra Cornavin||ja|コルナヴァン駅||ca|Estació de Ginebra-Cornavin||pt|Estação de Genebra-Cornavin||zh|日内瓦科尔纳万车站||nl|Genève Gare de Cornavin||hu|Gare de Genève-Cornavin||abbr|GE|||Genève|ps^CHGVA|^8501008|
+#
 /^(|_[A-Z0-9]{3})\^([A-Z0-9]{4}|)\^([A-Z0-9]{0,4})\^([0-9]{1,15})\^.*\^([0-9]{4}-[0-9]{2}-[0-9]{2})/ {
     # Progress report
     if (FNR % 1e6 == 0) {
@@ -202,6 +206,9 @@ function displayProgress() {
     # UN/LOCODE code
     unlc_list = $34
 
+    # UIC code
+    uic_list = $35
+
     # When the POR is relevant (ie, transport or city related):
     # * Dump the line into the non-IATA POR
     # * Dump the line into the curated list of POR (named "IATA POR"
@@ -212,11 +219,12 @@ function displayProgress() {
 
 	# In the following cases, the POR is added to the file of POR
 	# being referenced by an international organization (such as,
-	# for instance, IATA, ICAO or UN/LOCODE). That allows to get
-	# non-IATA POR in OpenTravelData:
+	# for instance, IATA, ICAO, UN/LOCODE or UIC). That allows
+	# to get non-IATA POR in OpenTravelData:
 	# * The POR is referenced by ICAO
 	# * The POR is referenced by UN/LOCODE
-	if (icao_code || unlc_list) {
+	# * The POR is referenced by UIC
+	if (icao_code || unlc_list || uic_list) {
 	    print ($0) > intorg_file
 	}
     }
@@ -231,7 +239,7 @@ function displayProgress() {
 # some people may find an interest in re-initiating it back to life
 # in the future.
 #
-# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|
+# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|^
 #
 /^[A-Z0-9]{3}\^([A-Z0-9]{4}|)\^[A-Z0-9]{0,4}\^[0-9]{1,15}\^.*\^[0-9]{4}-[0-9]{2}-[0-9]{2}\^/ {
     # Progress report

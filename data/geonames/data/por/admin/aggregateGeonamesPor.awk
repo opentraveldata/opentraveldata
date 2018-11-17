@@ -10,8 +10,9 @@
 # 1.1. allCountries.txt
 # ---------------------
 # geonameid name asciiname alternatenames latitude longitude fclass fcode country cc2 admin1 admin2 admin3 admin4 population elevation gtopo30 timezone moddate
-# 6299418 Nice Côte d'Azur International Airport Nice Cote d'Azur International Airport Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto 43.66272 7.20787 S AIRP FR  B8 06 062 06088 0 3 -9999 Europe/Paris 2012-06-30
+# 6299418	Nice Côte d'Azur International Airport	Nice Cote d'Azur International Airport	Aehroport Nicca Lazurnyj Bereg,Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Nice flygplats,Niza Aeropuerto,frwdgah nys kwt dazwr,koto・dajuru kong gang,mtar nys alryfyra alfrnsy,ni si lan se hai an ji chang,niseu koteudajwileu gonghang,Аэропорт Ницца Лазурный Берег,コート・ダジュール空港,尼斯蓝色海岸机场,니스 코트다쥐르 공항	43.66272	7.20787	S	AIRP	FR		93	06	062	06088	0	3	5	Europe/Paris	2018-06-18
 # 2990440 Nice Nice NCE,Nica,Nicaea,Nicca,Nice,Nicea,Nico,Nisa,Niza,Nizza,Niça,ni si,nisa,nisu,nitsa,nys,Ница,Ницца,ניס,نيس,नीस,ნიცა,ニース,尼斯 43.70313 7.26608 P PPLA2 FR B8 06 062 06088 338620 25 18 Europe/Paris 2011-11-02
+# 8288337	Antibes Railway Station	Antibes Railway Station	87757674,Antibes Railway Station,Bahnhof Antibes,Gare d'Antibes,XAT	43.58588	7.11942	S	RSTN	FR		93	06	06106004	0		13	Europe/Paris	2018-07-12
 #
 # 1.2. alternateNames.txt
 # -----------------------
@@ -25,6 +26,7 @@
 # 3032536  6299418 link http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport    
 # 5713800  6299418 fr Aéroport de Nice Côte d'Azur    
 # 7717894  6299418 en Nice Airport  1 
+# ---
 # 1628019  2990440 en Nice
 # 1628030  2990440 fr Nice
 # 1628021  2990440 es Niza 1 1  
@@ -35,12 +37,20 @@
 # 1633915  2990440 zh-CN 尼斯
 # 2964254  2990440 link http://en.wikipedia.org/wiki/Nice    
 # 3054759  2990440 link http://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D1%86%D1%86%D0%B0
+# ---
+# 8066460	8288337	iata	XAT				
+# 8066461	8288337	en	Antibes Railway Station				
+# 8066462	8288337	link	http://en.wikipedia.org/wiki/Gare_d%27Antibes	
+# 8066463	8288337	fr	Gare d'Antibes				
+# 13857475	8288337	unlc	FRANT				
+# 13857476	8288337	de	Bahnhof Antibes				
+# 13959039	8288337	uicn	87757674
 #
 # 1.3. admin1CodesASCII.txt
 # -------------------------
 # concatenated_codes name asciiname geonameId
 # DE.01 Baden-Württemberg Baden-Wuerttemberg 2953481
-# FR.B8 Provence-Alpes-Côte d'Azur Provence-Alpes-Cote d'Azur 2985244
+# FR.93   Provence-Alpes-Côte d'Azur      Provence-Alpes-Cote d'Azur      2985244
 # GB.ENG England England 6269131
 # RU.84 Volgograd Volgograd 472755
 # US.TX Texas Texas 4736286
@@ -48,11 +58,11 @@
 # 1.4. admin2Codes.txt
 # --------------------
 # concatenated_codes name asciiname geonameId
-# DE.01.084 Regierungsbezirk Tübingen Regierungsbezirk Tubingen 3214106
-# FR.B8.06 Département des Alpes-Maritimes Departement des Alpes-Maritimes 3038049
-# GB.ENG.GLA Greater London Greater London 2648110
-# RU.84.462981 Zhirnovskiy Rayon Zhirnovskiy Rayon 462981
-# US.TX.113 Dallas County Dallas County 4684904
+# DE.01.084       Tübingen Region Tuebingen Region        3214106
+# FR.93.06        Alpes-Maritimes Alpes-Maritimes 3038049
+# GB.ENG.GLA      Greater London  Greater London  2648110
+# RU.84.462981    Zhirnovskiy Rayon       Zhirnovskiy Rayon       462981
+# US.TX.113       Dallas County   Dallas County   4684904
 #
 # 1.5. countryInfo.txt
 # --------------------
@@ -90,9 +100,11 @@
 #
 # 2. Sample output lines:
 # -----------------------
-# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country^cc2^ctry_name^fclass^fcode^adm1^adm1_name_utf^adm1_name_ascii^adm2^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_iso^altname_text^unlc_list
-# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^Europe^S^AIRP^B8^06^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE
-# NCE^^^2990440^Nice^Nice^43.70313^7.26608^FR^^Europe^P^PPLA2^B8^06^062^06088^338620^25^18^Europe/Paris^1.0^2.0^1.0^2011-11-02^NCE,Nica,Nicaea,Nicca,Nice,Nicea,Nico,Nisa,Niza,Nizza,Niça,ni si,nisa,nisu,nitsa,nys,Ница,Ницца,ניס,نيس,नीस,ნიცა,ニース,尼斯^http://en.wikipedia.org/wiki/Nice^en|Nice||de|Nizza||es|Niza|ps|af|Nice||ar|نيس||bg|Ница||ca|Niça||da|Nice||eo|Nico||et|Nice||fi|Nizza||fr|Nice||he|ניס||id|Nice||it|Nizza||ja|ニース||la|Nicaea||lad|Nice||lb|Nice||lt|Nica||nb|Nice||nl|Nice||no|Nice||oc|Niça||pl|Nicea||pt|Nice||ro|Nisa||ru|Ницца||sl|Nica||sv|Nice||cy|Nice||eu|Niza||zh|尼斯||ceb|Nice||hi|नीस||ka|ნიცა||lv|Nica||qu|Nice||scn|Nizza||sk|Nice||sr|Ница||post|06100||post|06000|p|post|06200||post|06300|^FRNCE
+# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country^cc2^ctry_name^fclass^fcode^adm1^adm1_name_utf^adm1_name_ascii^adm2^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_iso^altname_text^unlc_list^uic_list
+# NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^Europe^S^AIRP^B8^06^062^06088^0^3^-9999^Europe/Paris^1.0^2.0^1.0^2012-06-30^Aeroport de Nice Cote d'Azur,Aéroport de Nice Côte d'Azur,Flughafen Nizza,LFMN,NCE,Nice Airport,Nice Cote d'Azur International Airport,Nice Côte d'Azur International Airport,Niza Aeropuerto^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^de|Flughafen Nizza||en|Nice Côte d'Azur International Airport||es|Niza Aeropuerto|ps|fr|Aéroport de Nice Côte d'Azur||en|Nice Airport|s^FRNCE|^
+# NCE^^^2990440^Nice^Nice^43.70313^7.26608^FR^^Europe^P^PPLA2^B8^06^062^06088^338620^25^18^Europe/Paris^1.0^2.0^1.0^2011-11-02^NCE,Nica,Nicaea,Nicca,Nice,Nicea,Nico,Nisa,Niza,Nizza,Niça,ni si,nisa,nisu,nitsa,nys,Ница,Ницца,ניס,نيس,नीस,ნიცა,ニース,尼斯^http://en.wikipedia.org/wiki/Nice^en|Nice||de|Nizza||es|Niza|ps|af|Nice||ar|نيس||bg|Ница||ca|Niça||da|Nice||eo|Nico||et|Nice||fi|Nizza||fr|Nice||he|ניס||id|Nice||it|Nizza||ja|ニース||la|Nicaea||lad|Nice||lb|Nice||lt|Nica||nb|Nice||nl|Nice||no|Nice||oc|Niça||pl|Nicea||pt|Nice||ro|Nisa||ru|Ницца||sl|Nica||sv|Nice||cy|Nice||eu|Niza||zh|尼斯||ceb|Nice||hi|नीस||ka|ნიცა||lv|Nica||qu|Nice||scn|Nizza||sk|Nice||sr|Ница||post|06100||post|06000|p|post|06200||post|06300|^FRNCE|^
+# XAT^^^3037456^Antibes^Antibes^43.56241^7.12777^FR^^France^Europe^P^PPL^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^061^06004^76393^^45^Europe/Paris^1.0^2.0^1.0^2016-02-18^Antib,Antiba,Antibas,Antibes,Antibol,Antipolis,Antíbol,XAT,amtiba,ang di bu,angtibeu,antibu,antyb,Αντίμπ,Антиб,Антіб,Անթիբ,אנטיב,آنتیب,أنتيب,अँतिब,アンティーブ,昂蒂布,앙티브^http://en.wikipedia.org/wiki/Antibes^pl|Antibes||en|Antibes||es|Antibes||de|Antibes||af|Antibes||fi|Antibes||fr|Antibes||it|Antibes||nl|Antibes||no|Antibes||pt|Antibes||sv|Antibes||ceb|Antibes||eo|Antibes||la|Antipolis||lb|Antibes||post|06160|p|ru|Антиб||post|06601 CEDEX||post|06602 CEDEX||post|06603 CEDEX||post|06604 CEDEX||post|06606 CEDEX||post|06607 CEDEX||post|06609 CEDEX||post|06631 CEDEX||post|06632 CEDEX||post|06633 CEDEX||post|06634 CEDEX|||Antibes||post|06600||post|06605 CEDEX||mzn|آنتیب||oc|Antíbol||ar|أنتيب||mk|Антиб||lt|Antibas||ca|Antíbol||lv|Antiba||fa|آنتیب||uk|Антіб||mr|अँतिब||ko|앙티브||el|Αντίμπ||hy|Անթիբ||he|אנטיב||kk|Антиб||bg|Антиб||ja|アンティーブ||sr|Антиб||zh|昂蒂布||br|Antíbol||uz|Antib|^FRANT|^
+# XAT^^^8288337^Antibes Railway Station^Antibes Railway Station^43.58588^7.11942^FR^^France^Europe^S^RSTN^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Alpes-Maritimes^Alpes-Maritimes^061^06004^0^^13^Europe/Paris^1.0^2.0^1.0^2018-07-12^87757674,Antibes Railway Station,Bahnhof Antibes,Gare d'Antibes,XAT^http://en.wikipedia.org/wiki/Gare_d%27Antibes^en|Antibes Railway Station||fr|Gare d'Antibes||de|Bahnhof Antibes|^FRANT|^87757674|
 #
 
 ##
@@ -137,6 +149,7 @@ function displayPOR() {
     out_line = out_line "^" link_code
     out_line = out_line	"^" alt_names
     out_line = out_line	"^" unlc_list
+    out_line = out_line	"^" uic_list
 
     # Print the output line
     print (out_line)
@@ -207,6 +220,7 @@ BEGIN {
     printf ("%s", "^wiki_link")
     printf ("%s", "^altname_section")
     printf ("%s", "^unlc_list")
+    printf ("%s", "^uic_list")
     printf ("%s", "\n")
 }
 
@@ -558,6 +572,55 @@ BEGIN {
 	    }
 	}
 
+    } else if (alt_name_type == "uicn") {
+	# The alternate name is a UIC code
+	#
+	# Though there are no such case yet, in theory several UIC codes
+	# may be attributed to a single POR. In particular,
+	# some of those UIC codes may be historical. Hence, we build here
+	# a list of UIC coes with their associated qualifiers, much like
+	# for the languages, except that it is always of the uicn type here.
+	# Virtual example: 87757674|p=87757673|=87757675|h
+	#
+	uic_full = alt_name_content __glGlobalSep3rd
+
+	# Potentially add the historical qualifier
+	if (is_historical == "h") {
+	    uic_full = uic_full "h"
+	}
+
+	# Potentially add the preferred qualifier
+	is_preferred = $5
+	if (is_preferred == "1") {
+	    uic_full = uic_full "p"
+	}
+
+	# Add the UN/LOCODE, with its potential qualifier (eg, 'h' or 'p')
+	# to the dedicated list
+	addFieldToList(geoname_id, alt_name_list_uic, uic_full)
+
+	# Sanity check for extra qualifiers, whcih normally do not apply to
+	# an UN/LOCODE. If the UN/LOCODE is qualified with those, we report
+	# it, so that Geonames may be fixed.
+	is_short = $6
+	if (is_short == "1") {
+	    is_short == "s"
+	}
+	is_colloquial = $7
+	if (is_colloquial == "1") {
+	    is_colloquial == "c"
+	}
+	if (is_short == "s" || is_colloquial == "c") {
+	    # Notification
+	    if (log_level >= 4) {
+		print ("[" awk_file "][" FNR "] !!!! Warning !!!! "		\
+		       "The UN/LOCODE code ('" alt_name_content "') for " \
+		       "Geonames ID=" geoname_id " has an extra qualifier ('" \
+		       is_short is_colloquial "'), which is not relevant") \
+		    > error_stream
+	    }
+	}
+
     } else if (alt_name_type == "link") {
 	# Check that the Wikipedia link is for English
 	is_en_wiki_link = match (alt_name_content, "http://en.")
@@ -745,6 +808,7 @@ BEGIN {
     icao_code = alt_name_list_icao[geoname_id]
     faac_code = alt_name_list_faac[geoname_id]
     unlc_list = alt_name_list_unlc[geoname_id]
+    uic_list = alt_name_list_uic[geoname_id]
     link_code = alt_name_list_link[geoname_id]
     link2_code = alt_name_list_link2[geoname_id]
     alt_names = alt_name_list_lang[geoname_id]
@@ -754,6 +818,7 @@ BEGIN {
     delete alt_name_list_icao[geoname_id]
     delete alt_name_list_faac[geoname_id]
     delete alt_name_list_unlc[geoname_id]
+    delete alt_name_list_uic[geoname_id]
     delete alt_name_list_link[geoname_id]
     delete alt_name_list_link2[geoname_id]
     delete alt_name_list_lang[geoname_id]
