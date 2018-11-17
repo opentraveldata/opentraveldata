@@ -16,8 +16,8 @@
 #  * POR having wrong time-zone:            optd_por_tz_wrong.csv
 #
 # Sample output lines:
-# AHE^^^N^0^^Ahe PF^Ahe PF^-14.4806^-146.30279^P^PPLC^0.0111037543665^^^^PF^^French Polynesia^Oceania^^^^^^^^^^^^Pacific/Tahiti^^^^-1^AHE^Ahe PF^AHE|0|Ahe PF|Ahe PF^AHE^^C^^^823^French Polynesia^EUR^
-# CGX^^^N^0^^Chicago IL US Merrill C Meigs^Chicago IL US Merrill C Meigs^41.85^-87.6^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^^^41^Illinois^USD^
+# AHE^^^N^0^^Ahe PF^Ahe PF^-14.4806^-146.30279^P^PPLC^0.0111037543665^^^^PF^^French Polynesia^Oceania^^^^^^^^^^^^Pacific/Tahiti^^^^-1^AHE^Ahe PF^AHE|0|Ahe PF|Ahe PF^AHE^^C^^^823^French Polynesia^EUR^^
+# CGX^^^N^0^^Chicago IL US Merrill C Meigs^Chicago IL US Merrill C Meigs^41.85^-87.6^S^AIRP^^^^^US^^United States^North America^^^^^^^^^^^^America/Chicago^^^^-1^CHI^Chicago^CHI|4887398|Chicago|Chicago^^IL^A^^^41^Illinois^USD^^
 #
 
 ##
@@ -78,7 +78,7 @@ BEGIN {
 	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
 	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
 	hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
-	hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list"
+	hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list^uic_list"
 
     print (hdr_line)
 
@@ -613,6 +613,9 @@ function getContinentName(myCountryCode) {
 			out_line = out_line "^" ccy_code
 
 			# ^ UN/LOCODE codes (potentially a list)
+			out_line = out_line "^"
+
+			# ^ UIC codes (potentially a list)
 			out_line = out_line "^"
 
 			#

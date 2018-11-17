@@ -22,11 +22,12 @@
 #  * The WAC code and WAC name are fields ##45-46
 #  * The currency is the field #47
 #  * The (list of) UN/LOCODE is the field #48
+#  * The (list of) UIC code is the filed #49
 #
 # Up until (at least) mid-2018, OPTD POR were always assumed to have
 # either a IATA or ICAO code. However, with the introduction of UN/LOCODE,
-# most of the POR have no IATA (neither ICAO) code. Talking about numbers,
-# as of August 2018:
+# and later of UID codes, most of the POR have no IATA (neither ICAO) code.
+# Talking about numbers, as of August 2018:
 #  * Around 20,000 POR have a IATA (or ICAO) code, and are curated thanks to
 #    the optd_por_best_known_so_far.csv data file.
 #  * Around 90,000 POR have a UN/LOCODE but no IATA (neither ICAO) code,
@@ -56,7 +57,7 @@
 #   - SFY-C-4951788^...^SFY^
 # * Samples of relevant input POR entries, not manually curated
 #   in the optd_por_best_known_so_far.csv data file:
-#   - ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|
+#   - ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|^8003529|
 #
 # * Samples of output list of city UTF8 names,
 #   with their corresponding travel-related POR entry:
