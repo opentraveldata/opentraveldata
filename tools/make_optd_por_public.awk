@@ -64,7 +64,7 @@ BEGIN {
     hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list"
     hdr_line = hdr_line "^tvl_por_list^iso31662"
     hdr_line = hdr_line "^location_type^wiki_link^alt_name_section"
-    hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list"
+    hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list^uic_list"
 
     print (hdr_line)
 
@@ -464,7 +464,7 @@ function generateAltNameSection(myAltNameSection) {
 #
 # Sample input lines (truncated):
 #
-# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country_code^cc2^country_name^continent_name^fclass^fcode^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_section^unlc_list
+# iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country_code^cc2^country_name^continent_name^fclass^fcode^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_section^unlc_list^uic_list
 # CHI^^^4887398^Chicago^Chicago^41.85003^-87.65005^US^^United States^North America^P^PPLA2^IL^Illinois^Illinois^031^Cook County^Cook County^^^2695598^179^180^America/Chicago^-6.0^-5.0^-6.0^2014-10-27^Chicago^http://en.wikipedia.org/wiki/Chicago^en|Chicago|p|es|Chicago|^USCHI|
 # NCE^LFMN^^6299418^Nice Côte d'Azur International Airport^Nice Cote d'Azur International Airport^43.66272^7.20787^FR^^France^Europe^S^AIRP^93^Provence-Alpes-Côte d'Azur^Provence-Alpes-Cote d'Azur^06^Département des Alpes-Maritimes^Departement des Alpes-Maritimes^062^06088^0^3^5^Europe/Paris^1.0^2.0^1.0^2016-02-18^Aéroport de Nice Côte d'Azur^http://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport^en|Nice Côte d'Azur International Airport|p|es|Niza Aeropuerto|ps^FRNCE|
 # ORD^KORD^ORD^4887479^Chicago O'Hare International Airport^Chicago O'Hare International Airport^41.97959^-87.90446^US^^United States^North America^S^AIRP^IL^Illinois^Illinois^031^Cook County^Cook County^^^0^201^202^America/Chicago^-6.0^-5.0^-6.0^2016-02-28^Aéroport international O'Hare de Chicago^http://en.wikipedia.org/wiki/O%27Hare_International_Airport^en|Chicago O'Hare International Airport|^USORD|
