@@ -623,7 +623,7 @@ BEGIN {
 
     } else if (alt_name_type == "link") {
 	# Check that the Wikipedia link is for English
-	is_en_wiki_link = match (alt_name_content, "http://en.")
+	is_en_wiki_link = match (alt_name_content, "(http|https)://en.")
 
 	# The Wikipedia link may have already been set (there are sometimes
 	# multiple distinct English Wikipedia links)
