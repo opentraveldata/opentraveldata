@@ -144,7 +144,7 @@ and to generate in several steps the so-called Geonames data source,
 namely ``dump_from_geonames.csv``.
 
 ### Download of the Geonames snapshot data files
-The [``data/geonames/data/getDataFromGeonamesWebsite.sh`` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/getDataFromGeonamesWebsite.sh)
+The [`tools/getDataFromGeonamesWebsite.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/getDataFromGeonamesWebsite.sh)
 downloads all the Geonames dump/snapshot data files,
 including among other things:
 * [``allCountries.zip`` (around 350 MB)](http://download.geonames.org/export/dump/allCountries.zip),
@@ -156,8 +156,15 @@ including among other things:
   UN/LOCODE, Wikipedia and Wikidata) links are alternate names
   in Geonames parlance.
 
+That [Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/getDataFromGeonamesWebsite.sh)
+relies on a Python script
+([`download_if_newer.py`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/download_if_newer.py)),
+which itself relies on `Pyenv` and `pipenv`. Instructions on how to install
+those Python utilities can be found on
+[GitHub](http://github.com/machine-learning-helpers/induction-python/tree/master/installation/virtual-env).
+
 ### Generation of the aggregated Geonames snapshot data file
-The [``data/geonames/data/por/admin/aggregateGeonamesPor.awk`` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/admin/aggregateGeonamesPor.awk),
+The [`tools/aggregateGeonamesPor.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/aggregateGeonamesPor.awk),
 from the two above-mentioned Geonames snapshot/dump data files,
 generates a combined data file, named ``allCountries_w_alt.txt``, in the
 [``data/geonames/data/por/data`` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),

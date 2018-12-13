@@ -18,13 +18,13 @@ TMP_DIR="/tmp/por"
 
 ##
 # Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
+EXEC_PATH=$(dirname $0)
 # Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
+EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
+EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|')
 #
-CURRENT_DIR=`pwd`
+CURRENT_DIR=$(pwd)
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
 then
 	EXEC_PATH="."
@@ -47,8 +47,8 @@ fi
 ##
 # Sanity check: that (executable) script should be located in the admin/
 # sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "admin" ]
+EXEC_DIR_NAME=$(basename ${EXEC_FULL_PATH})
+if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
 	echo
 	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/geonames/data/por/admin/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
@@ -58,33 +58,33 @@ fi
 
 ##
 # OpenTravelData Geonames-related directory
-GEO_POR_DIR=`dirname ${EXEC_FULL_PATH}`
+GEO_POR_DIR=$(dirname ${EXEC_FULL_PATH})
 GEO_POR_DIR="${GEO_POR_DIR}/"
 
 ##
 # Admin sub-directory
-DATA_DIR=${EXEC_PATH}../data/
+DATA_DIR="${EXEC_PATH}../data/geonames/data/por/data/"
 
 # Input data files
-GEO_ADM1_FILENAME=admin1CodesASCII.txt
-GEO_ADM2_FILENAME=admin2Codes.txt
-GEO_CTRY_FILENAME=countryInfo.txt
-GEO_CONT_FILENAME=continentCodes.txt
-GEO_TZ_FILENAME=timeZones.txt
-GEO_POR_FILENAME=allCountries.txt
-GEO_POR_ALT_FILENAME=alternateNames.txt
+GEO_ADM1_FILENAME="admin1CodesASCII.txt"
+GEO_ADM2_FILENAME="admin2Codes.txt"
+GEO_CTRY_FILENAME="countryInfo.txt"
+GEO_CONT_FILENAME="continentCodes.txt"
+GEO_TZ_FILENAME="timeZones.txt"
+GEO_POR_FILENAME="allCountries.txt"
+GEO_POR_ALT_FILENAME="alternateNames.txt"
 #
-GEO_ADM1_FILE=${DATA_DIR}${GEO_ADM1_FILENAME}
-GEO_ADM2_FILE=${DATA_DIR}${GEO_ADM2_FILENAME}
-GEO_CTRY_FILE=${DATA_DIR}${GEO_CTRY_FILENAME}
-GEO_CONT_FILE=${DATA_DIR}${GEO_CONT_FILENAME}
-GEO_TZ_FILE=${DATA_DIR}${GEO_TZ_FILENAME}
-GEO_POR_FILE=${DATA_DIR}${GEO_POR_FILENAME}
-GEO_POR_ALT_FILE=${DATA_DIR}${GEO_POR_ALT_FILENAME}
+GEO_ADM1_FILE="${DATA_DIR}${GEO_ADM1_FILENAME}"
+GEO_ADM2_FILE="${DATA_DIR}${GEO_ADM2_FILENAME}"
+GEO_CTRY_FILE="${DATA_DIR}${GEO_CTRY_FILENAME}"
+GEO_CONT_FILE="${DATA_DIR}${GEO_CONT_FILENAME}"
+GEO_TZ_FILE="${DATA_DIR}${GEO_TZ_FILENAME}"
+GEO_POR_FILE="${DATA_DIR}${GEO_POR_FILENAME}"
+GEO_POR_ALT_FILE="${DATA_DIR}${GEO_POR_ALT_FILENAME}"
 
 # Output data file
-GEO_POR_CONC_FILENAME=allCountries_w_alt.txt
-GEO_POR_CONC_FILE=${DATA_DIR}${GEO_POR_CONC_FILENAME}
+GEO_POR_CONC_FILENAME="allCountries_w_alt.txt"
+GEO_POR_CONC_FILE="${DATA_DIR}${GEO_POR_CONC_FILENAME}"
 
 # Reference details for the Nice airport (IATA/ICAO codes: NCE/LFMN,
 # Geoname ID: 6299418, http://www.geonames.org/6299418)
@@ -111,6 +111,25 @@ if [ "$1" != "" ]
 then
 	LOG_LEVEL="$1"
 fi
+
+##
+# Check that the Geonames dump data files have been downloaded and
+# uncompressed
+AGG_INPUT_FILES=(${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} \
+				  ${GEO_TZ_FILE} ${GEO_CONT_FILE} \
+				  ${GEO_POR_ALT_FILE} ${GEO_POR_FILE})
+for file in ${AGG_INPUT_FILES[*]}
+do
+    if [ ! -f ${file} ]
+    then
+	echo "The Geonames data dump file ('${file}') does not seem to have been downloaded"
+	echo "Content of the local directory ('${DATA_DIR}') where Geonames data dump files are expected to be downloaded:"
+	ls -laFh ${DATA_DIR}
+	echo "Hint: run ./getDataFromGeonamesWebsite.sh before"
+	exit -1
+    fi
+done
+
 
 ##
 # Check that the line format has not been changed and/or for outliers.
@@ -146,23 +165,21 @@ fi
 ##
 # Calculate the number of lines of the main Geoname POR file,
 # so as to report the progress in the next data processing task below.
-NB_POR=`wc -l ${GEO_POR_FILE}|sed -e 's/^\([^0-9]*\)\([0-9]\+\)\([^0-9]\)*$/\2/g'`
+NB_POR=$(wc -l ${GEO_POR_FILE} | \
+	     sed -e 's/^\([^0-9]*\)\([0-9]\+\)\([^0-9]\)*$/\2/g')
 
 ##
 # Concatenate the alternate name details, and add them back to the line of
 # details for every Geoname POR.
-AGGREGATOR=aggregateGeonamesPor.awk
+AGGREGATOR="aggregateGeonamesPor.awk"
 echo
-echo "Aggregating '${GEO_POR_ALT_FILE}' and '${GEO_POR_FILE}' input files..."
+echo "Aggregating Geonames dump data files (${AGG_INPUT_FILES[*]})..."
 AWKCMD="awk -F'\t' -v log_level=${LOG_LEVEL} -v nb_por=${NB_POR} \
-	-f ${AGGREGATOR} ${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} \
-	${GEO_TZ_FILE} ${GEO_CONT_FILE} ${GEO_POR_ALT_FILE} ${GEO_POR_FILE}"
+	-f ${AGGREGATOR} ${AGG_INPUT_FILES[*]}"
 #echo "AWK command to be executed:"
 #echo "${AWKCMD} > ${GEO_POR_CONC_FILE}"
 time awk -F'\t' -v log_level=${LOG_LEVEL} -v nb_por=${NB_POR} -f ${AGGREGATOR} \
-	 ${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} ${GEO_TZ_FILE} \
-	 ${GEO_CONT_FILE} ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} \
-	 > ${GEO_POR_CONC_FILE}	 
+	 ${AGG_INPUT_FILES[*]} > ${GEO_POR_CONC_FILE}	 
 echo "... done"
 echo
 
@@ -184,7 +201,7 @@ echo
 
 # Check #3
 echo "Simple check #3: grep -n \"^NCE\^LFMN\" ${GEO_POR_CONC_FILE}"
-NCE_POR=`grep "^NCE\^LFMN" ${GEO_POR_CONC_FILE}`
+NCE_POR=$(grep "^NCE\^LFMN" ${GEO_POR_CONC_FILE})
 if [ "${NCE_POR}" = "${NCE_POR_REF}" ]
 then
 	echo "	Strings are equal"
