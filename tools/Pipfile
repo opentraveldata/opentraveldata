@@ -9,6 +9,9 @@ verify_ssl = true
 datetime = "*"
 requests = "*"
 urllib3 = "*"
+neobase = "*"
+networkx = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"

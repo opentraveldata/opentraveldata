@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 from __future__ import with_statement
@@ -30,9 +30,9 @@ def main(source, target, sep, fields, old, new):
 if __name__ == '__main__':
 
     if len(sys.argv) < 6:
-        print 'python %s SOURCE SEPARATOR FIELDS OLD NEW' % sys.argv[0]
-        print 
-        print 'Example: python %s optd_por_best_known_so_far.csv "^" 2,3 0 ""' % sys.argv[0]
+        print ('python {} SOURCE SEPARATOR FIELDS OLD NEW'.format(sys.argv[0]))
+        print
+        print ('Example: python {} optd_por_best_known_so_far.csv "^" 2,3 0 ""'.format(sys.argv[0]))
         exit()
 
     fields = [int(f) for f in sys.argv[3].split(',')]

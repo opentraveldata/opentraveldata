@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import re
 from update_optd_aircraft import *
 
@@ -40,3 +42,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
