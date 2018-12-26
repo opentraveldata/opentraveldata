@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # That script is fairly simple. See extract_por_with_iata_icao.sh for far more
 # options and operations.

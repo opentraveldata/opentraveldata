@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 # That Bash script tells how to extract a POR from:

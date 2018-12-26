@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # That Bash script extracts data from the
 # 'por_schedule_all_uniq_YYYY_MM_to_YYYY_MM.csv.bz2'

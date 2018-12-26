@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 URL_CATCH="download_if_newer.py"

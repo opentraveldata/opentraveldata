@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 
 # That Bash script moves fields for:

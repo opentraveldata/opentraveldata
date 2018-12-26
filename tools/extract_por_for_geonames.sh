@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # That Bash script extracts a POR from:
 # - optd_por_best_known_so_far.csv
