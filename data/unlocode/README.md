@@ -7,9 +7,9 @@
 
 ## UN/LOCODE
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE
-* Official note, as of July 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/2018-1_UNLOCODE_SecretariatNotes.pdf
+* Official note, as of December 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/2018-2_UNLOCODE_SecretariatNotes.pdf
 * Latest data file: http://www.unece.org/cefact/codesfortrade/codes_index.html
-  - July 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/loc181csv.zip (2 MB)
+  - December 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/loc182csv.zip (2.1 MB)
 * Online code list by country: http://www.unece.org/cefact/locode/service/location.html
 
 ## Country sub-divisions

@@ -3,7 +3,7 @@
 set -x
 
 #
-UNLC_VER="2018-1"
+UNLC_VER="2018-2"
 FILE1=${UNLC_VER}\ UNLOCODE\ CodeListPart1.csv
 FILE2=${UNLC_VER}\ UNLOCODE\ CodeListPart2.csv
 FILE3=${UNLC_VER}\ UNLOCODE\ CodeListPart3.csv
