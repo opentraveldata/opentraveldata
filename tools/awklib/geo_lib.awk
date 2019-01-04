@@ -744,8 +744,9 @@ function addLocTypeToOPTDList(__alttolParamIataCode, __alttolParamLocationType, 
 #
 function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 			    __agitolParamGeonamesID, __agitolParamOPTDList) {
-    # Record that OPTD knows about that Geonames ID
-    optd_por_noiata_geoid_list[__agitolParamGeonamesID] = 1
+    # Record the details of how OPTD knows about that Geonames ID
+    optd_por_noiata_geoid_list[__agitolParamGeonamesID] = \
+	__agitolParamIataCode ":" __agitolParamLocationType
 
     if (__agitolParamIataCode == "") {
 	# The POR is not referenced by IATA. There is nothing more to be done
@@ -760,7 +761,7 @@ function addGeoIDToOPTDList(__agitolParamIataCode, __agitolParamLocationType, \
 	    myTmpString = myTmpString ","
 	}
 	myTmpString = myTmpString __agitolParamGeonamesID
-	__agitolParamOPTDList[__agitolParamIataCode,					\
+	__agitolParamOPTDList[__agitolParamIataCode,			\
 			      __agitolParamLocationType] = myTmpString
     }
 }
@@ -1526,17 +1527,17 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # When the Geonames ID is known from OPTD, and it has a IATA code,
     # use the corresponding details (ie, the coordinates, list of served cities
     # and beginning date)
-    isKnownFromOPTD = optd_por_noiata_geoid_list[geonames_id]
+    known_detailed_from_optd = optd_por_noiata_geoid_list[geonames_id]
 
     # Sanity check 1: if the Geonames ID is known from OPTD (it means that it
     # is referenced in OPTD with a IATA code) and the IATA code is empty,
     # then it means that OPTD has wrongly referenced that POR with a IATA code
-    if (iata_code == "" && isKnownFromOPTD == 1) {
+    if (iata_code == "" && known_detailed_from_optd != "") {
 	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
 	       ", the POR (Geonames ID: " geonames_id			\
-	       ") is referenced in OPTD with a IATA code, "		\
-	       "which is unknown from Geonames; feature: " feat_class " / " \
-	       feat_code ". grep '" geonames_id				\
+	       ") is knwon from OPTD (details: " known_detailed_from_optd \
+	       "), but unknown from Geonames; feature: " feat_class " / " \
+	       feat_code ". grep '\\^" geonames_id			\
 	       "\\^' dump_from_geonames.csv  "				\
 	       "../opentraveldata/optd_por_best_known_so_far.csv")	\
 	    > __glGlobalErrorStream
@@ -1546,7 +1547,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # it is not referenced in OPTD) and the IATA code is specified by Geonames,
     # then it means that Geonames has wrongly referenced that POR
     # with that IATA code
-    if (iata_code && isKnownFromOPTD == 0) {
+    if (iata_code && known_detailed_from_optd == "") {
 	print ("[" __glGlobalAWKFile "] !!!! Error at line #" FNR	\
 	       ", the POR (Geonames ID: " geonames_id			\
 	       ") is referenced in Geonames with a IATA code, "		\
@@ -1561,13 +1562,13 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     if ((__glGlobalDebugIataCode != "" && iata_code == __glGlobalDebugIataCode) \
 	|| (__glGlobalDebugGeoID != "" && geonames_id == __glGlobalDebugGeoID)) {
 	print("[" __glGlobalDebugIataCode "][" __glGlobalDebugGeoID "][OPTD: " \
-	      isKnownFromOPTD "] PK: " pk ", name: " name_utf8		\
+	      known_detailed_from_optd "] PK: " pk ", name: " name_utf8	\
 	      ", feature: " feat_class " / " feat_code ", coord: "	\
 	      geo_lat " " geo_lon ", city code list: " city_code_list)	\
 	    > __glGlobalErrorStream
     }
     
-    if (iata_code && isKnownFromOPTD) {
+    if (iata_code && known_detailed_from_optd != "") {
 	# Latitude
 	geo_lat = getOPTDPorLatitude(iata_code, __dgplOPTDLocType, geonames_id)
 
@@ -1956,7 +1957,7 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
     non_iata_code = ""
 	
     # Check whether that Geonames ID is known from OPTD
-    #isKnownFromOPTD = optd_por_noiata_geoid_list[__dnipeGeoID]
+    #known_detailed_from_optd = optd_por_noiata_geoid_list[__dnipeGeoID]
 
     # Derive the location type from the feature code.
     dnipeLocationType = getLocTypeFromFeatCode(__dnipeFeatCode)
