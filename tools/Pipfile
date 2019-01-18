@@ -13,6 +13,7 @@ neobase = "*"
 networkx = "*"
 pandas = "*"
 lxml = "*"
+sparqlwrapper = "*"
 
 [requires]
 python_version = "3.7"
