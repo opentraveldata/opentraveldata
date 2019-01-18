@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests 
 from lxml import html
 import csv
@@ -5,7 +7,7 @@ import csv
 new_rows = [["pk", "2char_code", "name", "website" ]]
 successes = 0
 failures = 0
-with open('optd_airline_best_known_so_far.csv', newline='') as csvfile:
+with open('../opentraveldata/optd_airline_best_known_so_far.csv', newline='') as csvfile:
     rows = csv.reader(csvfile, delimiter='^')
     for row in rows:
         if row[0].startswith('air') and row[5] and row[7]:
@@ -26,7 +28,7 @@ with open('optd_airline_best_known_so_far.csv', newline='') as csvfile:
             new_rows.append([row[0], row[5], row[7], url])
 
 print(successes, 'Successes,', failures, 'failures')                
-with open('optd_airlines_websites.csv', 'w') as csvfile:
+with open('../opentraveldata/optd_airlines_websites.csv', 'w') as csvfile:
     writer = csv.writer(csvfile, delimiter='^')
     writer.writerows(new_rows)
 

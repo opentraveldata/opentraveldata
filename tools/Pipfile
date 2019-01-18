@@ -12,6 +12,7 @@ urllib3 = "*"
 neobase = "*"
 networkx = "*"
 pandas = "*"
+lxml = "*"
 
 [requires]
 python_version = "3.7"
