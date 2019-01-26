@@ -852,9 +852,9 @@ air-loganair-v1^^^^^LM^682^Loganair^Livingston^^^^^514^en|Loganair|=en|Livingsto
 air-longjiang-airlines-v1^^2016-08-01^^SNG^LT^867^Longjiang Airlines^^^^^^118^en|Longjiang Airlines|^HRB^air-longjiang-airlines^1^^
 air-lot-v1^^1929-01-01^^LOT^LO^80^LOT Polish Airlines^^Star Alliance^Member^^http://en.wikipedia.org/wiki/LOT_Polish_Airlines^8041^en|LOT Polish Airlines|=en|LOT|ps^WAW^air-lot^1^^
 air-lucky-air-v1^^2004-07-01^^LKE^8L^859^Lucky Air^^^^^http://en.wikipedia.org/wiki/Lucky_Air^6764^en|Lucky Air|=en|Shilin Airlines|h=ja|雲南祥鵬航空|i=ko|럭키 에어|=pny|Xiángpéng Hángkōng Gōngsī|=wuu|祥鹏航空大厦|=yue|祥鵬航空大廈|=zh|祥鹏航空公司|^^air-lucky-air^1^^
-air-lufthansa-cargo-v1^^1977-01-01^^GEC^LH^020^Lufthansa Cargo^^^^^http://en.wikipedia.org/wiki/Lufthansa_Cargo^^en|Lufthansa Cargo|^FRA^air-lufthansa-cargo^1^^
+air-lufthansa-cargo-v1^^1977-01-01^^GEC^LH^020^Lufthansa Cargo^^^^C^http://en.wikipedia.org/wiki/Lufthansa_Cargo^^en|Lufthansa Cargo|^FRA^air-lufthansa-cargo^1^^
 air-lufthansa-cityline-v1^^1958-01-01^^CLH^CL^683^Lufthansa CityLine^^Star Alliance^Affiliate^^http://en.wikipedia.org/wiki/Lufthansa_CityLine^^en|Lufthansa CityLine|^FRA=MUC^air-lufthansa-cityline^1^^
-air-lufthansa-v1^^1955-01-01^^DLH^LH^220^Lufthansa^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Lufthansa^41525^ar|لوفتهانزا|=en|Lufthansa|=el|Λουφτχάνσα|=fa|لوفت‌هانزا|=ja|ルフトハンザドイツ航空|=ko|루프트한자|=ru|Люфтганза|=ru|Люфтханза|=th|ลุฟต์ฮันซา|=wuu|汉莎航空|=yue|漢莎航空|^FRA=MUC^air-lufthansa^1^^
+air-lufthansa-v1^^1955-01-01^^DLH^LH^220^Lufthansa^^Star Alliance^Member^P^http://en.wikipedia.org/wiki/Lufthansa^41525^ar|لوفتهانزا|=en|Lufthansa|=el|Λουφτχάνσα|=fa|لوفت‌هانزا|=ja|ルフトハンザドイツ航空|=ko|루프트한자|=ru|Люфтганза|=ru|Люфтханза|=th|ลุฟต์ฮันซา|=wuu|汉莎航空|=yue|漢莎航空|^FRA=MUC^air-lufthansa^1^^
 air-lugansk-airlines-v1^^^^LHS^L7^0^Lugansk Airlines^^^^^^^en|Lugansk Airlines|^^air-lugansk-airlines^1^^
 air-luxair-v1^^^^LGL^LG^149^Luxair^Luxair^^^^^2574^en|Luxair|=en|Luxair|^^air-luxair^1^^
 air-lydd-air-v1^^1997-01-01^^LYD^^^LyddAir^^^^^http://en.wikipedia.org/wiki/LyddAir^19^en|LyddAir|^^air-lydd-air^1^^
