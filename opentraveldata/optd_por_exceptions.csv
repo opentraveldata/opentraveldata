@@ -85,6 +85,7 @@ QHX^R^1^0^^^^QHX^As of May 2016, QHX is in BAR/Qionghai, Hainan, China (CN)
 QKC^R^0^1^^^^^QKC used to be Karaj, Iran (IR). It is now assigned PYK, Geonames ID: 128747
 QMX^IR^0^1^^^^^QMX is a fictitious point
 QMY^IR^0^1^^^^^QMY is a fictitious point
+QNX^R^0^1^^^^^QNX used to be assigned to Mâcon, France (FR), Geonames ID: 2996882. Mâcon is now assigned MKD
 QOE^R^1^0^^^^^As of May 2016, missing from reference data
 QQA^R^0^1^^^^^QQA is BritRail Zone A, United Kingdom (GB)
 QQB^R^0^1^^^^^QQB is BritRail Zone B, United Kingdom (GB)
@@ -154,6 +155,8 @@ XFW^R^1^0^^^^XFW^As of May 2016, XFW is in HAM/Hamburg, Germany (DE)
 XIE^R^0^1^^^^^XIE used to be Xienglom Airport, Laos (LA), Geonames ID: 8245855
 XLC^I^0^1^^^^^XLC is a fictitious point
 XRV^R^1^0^^^^^As of July 2016, missing from reference data
+XVF^R^0^1^^^^^XVF used to be assigned to Villefranche-sur-Saône, France (FR), Geonames ID: 2968748. Villefranche-sur-Saône is now assigned VFC
+XVI^R^0^1^^^^^XVF used to be assigned to Vienne, France (FR), Geonames ID: 2969284. Vienne is now assigned VYN
 XXX^R^0^1^^^^^XXX is a fictitious point
 XXX^IR^1^1^1^^2018-05-04^^XXX is a fictitious point. It is however used by a few airlines and other systems, and it has therefore been reactivated in May 2018
 XZG^R^1^0^^^^^As of July 2016, missing from reference data
