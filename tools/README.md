@@ -492,7 +492,7 @@ $ popd
 $ rm -f unlocode-code-list-2018-1.csv
 ```
 
-### See also
+#### See also
 * [OpenTravelData Issue #102](https://github.com/opentraveldata/opentraveldata/issues/102)
   for an example on how to spot POR in Vietnam (VN) missing in Geonames
   but present in the UN/LOCODE data file.
@@ -500,11 +500,33 @@ $ rm -f unlocode-code-list-2018-1.csv
   + [`tools/awklib/geo_lib.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-registerlocodeline)
   + [`tools/prepare_unlc_dump_file.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/prepare_unlc_dump_file.awk)
 
+### Update the OPTD-curated UN/LOCODE extract
+Thanks to the
+[`tools/extract_por_unlc.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_unlc.sh),
+OPTD provides a curated extract of POR having UN/LOCODE codes,
+with their geo-location, Geonames ID and type:
+[`opentraveldata/optd_por_unlc.csv`](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_unlc.csv).
 
-## Recompute the OPTD-maintained POR file: do 1.1.
+That Shell script performs the extraction thanks to the two Geonames-derived
+data sources, namely `dump_from_geonames.csv` (itself a copy of
+`por_intorg_YYYYMMDD.csv`) and `por_all_YYYYMMDD.csv`.
+The OPTD-curated UN/LOCODE extract should therefore be generated as often
+as those two Geonames-derived data sources, _i.e._ every day if possible.
+
+Following is an example of the extraction process log on the console:
+```bash
+$ pushd ~/dev/geo/opentraveldata/tools
+$ ./extract_por_unlc.sh
+The UN/LOCODE POR file ('~/dev/geo/opentraveldata/opentraveldata/optd_por_unlc.csv') has been generated from 'por_intorg_20190424.csv' and 'por_all_20190424.csv'
+There are 99964 records
+$ git diff ../opentraveldata/optd_por_unlc.csv
+$ git add ../opentraveldata/optd_por_unlc.csv
+$ git commit -m "[POR] Updated the UN/LOCODE extract" ../opentraveldata/optd_por_unlc.csv
+$ popd
+```
 
 ### Update from reference data
-The reference data has been updated, i.e., the `dump_from_crb_city.csv`
+The reference data has been updated, _i.e._, the `dump_from_crb_city.csv`
 file has been recomputed.
 
 Recompte the light file of reference POR:
@@ -526,13 +548,11 @@ $ sh prepare_por_no_geonames.sh && sh prepare_por_no_geonames.sh --clean
 Note that the ../opentraveldata/optd_por_exceptions.csv file may need
 to be updated, if the above script reports some errors/warnings.
 
-That script should generate the ``../opentraveldata/optd_por_no_geonames.csv``
+That script should generate the `../opentraveldata/optd_por_no_geonames.csv`
 file
 ```bash
 $ git add ../opentraveldata/optd_por_no_geonames.csv
 ```
-
-## Recompute the OPTD-maintained POR file: do 1.1.
 
 ### Update from Innovata
 The Innovata data may be updated, i.e., new Innovata data files have been
@@ -545,13 +565,13 @@ Typical commands:
 $ cd <OPTD_ROOT_DIR>/tools
 ```
 
-Get the ``stations.dat`` file:
+Get the `stations.dat` file:
 ```bash
 $ dos2unix stations.dat
 $ sh prepare_innovata_dump_file.sh .. stations.dat
 ```
 
-It generates a ``dump_from_innovata.csv`` file:
+It generates a `dump_from_innovata.csv` file:
 ```bash
 $ cp dump_from_innovata.csv ../data/Innovata/innovata_stations.dat
 $ git add ../data/Innovata/innovata_stations.dat
