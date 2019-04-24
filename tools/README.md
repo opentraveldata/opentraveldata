@@ -140,8 +140,34 @@ of their production database. The corresponding snapshot data files can be
 downloaded from their [export site](http://download.geonames.org/export/dump/).
 
 OPTD maintains a few scripts to download those Geonames dump data files,
-and to generate in several steps the so-called Geonames data source,
-namely `dump_from_geonames.csv`.
+and to generate in several steps the so-called Geonames data sources,
+namely `dump_from_geonames.csv` (itself a copy of `por_intorg_YYYYMMDD.csv`)
+and `por_all_YYYYMMDD.csv`.
+
+The full sequence of commands, which can be performed at regular intervals,
+for instance every day, is:
+* Download the Geonames data dump files
+* Generate the Geonames aggregated data file (`allCountries_w_alt.txt` in the
+  `data/geonames/data/por/data` directory)
+* Extract/pre-process the `por_{intorg,all}_YYYYMMDD.csv` files (in
+  the `tools` directory)
+An illustrative example is given below:
+```bash
+$ pushd ~/dev/geo/opentraveldata/tools
+$ time ./getDataFromGeonamesWebsite.sh 
+$ ./aggregateGeonamesPor.sh
+$ ls -laFh ../data/geonames/data/por/data/al*.txt
+-rw-r--r--  1 user  staff   1.5G Apr 24 03:10 ../data/geonames/data/por/data/allCountries.txt
+-rw-r--r--  1 user  staff   2.6G Apr 24 08:18 ../data/geonames/data/por/data/allCountries_w_alt.txt
+-rw-r--r--  1 user  staff   543M Apr 24 03:17 ../data/geonames/data/por/data/alternateNames.txt
+$ ./extract_por_from_geonames.sh && ./extract_por_from_geonames.sh --clean
+$ ls -laFh por_*.csv
+-rw-rw-r--  1 user  staff    45M Apr 24 08:25 por_intorg_20190424.csv
+-rw-r--r--  1 user  staff   1.5G Apr 24 08:39 por_all_20190424.csv
+$ popd
+```
+
+Each step of that process is detailed in a sub-section below.
 
 ### Download of the Geonames snapshot data files
 The [`tools/getDataFromGeonamesWebsite.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/getDataFromGeonamesWebsite.sh)
@@ -164,7 +190,7 @@ those Python utilities can be found on
 [GitHub](http://github.com/machine-learning-helpers/induction-python/tree/master/installation/virtual-env).
 
 The full sequence of commands, in order to download Geonames data dump files
-from scratch, is summarizing in the following examples.
+from scratch, is summarized in the following examples.
 * (To be done once and for all) Clone the 
   [OpenTravelData (OPTD) Git repository](http://github.com/opentraveldata/opentraveldata)
   and install the Python dependencies:
@@ -178,31 +204,27 @@ $ popd
 As mentioned above, the Python dependencies will need `pyenv` and `pipenv` tools
 to be available in the environment.
 
-* (To be done at regular intervals, for instance every day) Download the
-  Geonames data dump files, and generate the aggregated data file:
-```bash
-$ pushd ~/dev/geo/opentraveldata/tools
-$ time ./getDataFromGeonamesWebsite.sh 
-$ ./aggregateGeonamesPor.sh
-$ ls -laFh ../data/geonames/data/por/data/al*.txt
--rw-r--r--  1 user  staff   1.4G Dec 13 02:31 ../data/geonames/data/por/data/allCountries.txt
--rw-r--r--  1 user  staff   2.5G Dec 13 10:18 ../data/geonames/data/por/data/allCountries_w_alt.txt
--rw-r--r--  1 user  staff   532M Dec 13 02:38 ../data/geonames/data/por/data/alternateNames.txt
-$ popd
-```
-
 ### Generation of the aggregated Geonames snapshot data file
-The [`tools/aggregateGeonamesPor.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/aggregateGeonamesPor.awk),
-from the two above-mentioned Geonames snapshot/dump data files,
-generates a combined data file, named `allCountries_w_alt.txt`, in the
+The [`tools/aggregateGeonamesPor.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/aggregateGeonamesPor.sh)
+itself relies on the
+[`tools/aggregateGeonamesPor.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/aggregateGeonamesPor.awk).
+That latter, from the two downloaded Geonames snapshot/dump data files,
+namely `allCountries.txt` (size of 1.5 GB uncompressed, as of April 2019)
+and `alternateNames.txt` (size of 550 MB uncompressed) in the
 [`data/geonames/data/por/data` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),
-next to the downloaded Geonames data files.
+generates a combined data file, namely `allCountries_w_alt.txt` (size
+of 2.6 GB uncompressed), next to the downloaded Geonames data files.
 
 ### Generation of the main OPTD-used Geonames data file
-The [`tools/extract_por_with_iata_icao.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_with_iata_icao.awk),
-from the above-mentioned combined Geonames data file, generates the main
-Geonames POR data file then used by OPTD, namely `dump_from_geonames.csv`,
-in the
+The [`tools/extract_por_from_geonames.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_from_geonames.sh)
+itself relies on the
+[`tools/extract_por_with_iata_icao.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_with_iata_icao.awk).
+That latter, from the combined Geonames data file, namely
+`allCountries_w_alt.txt` in the
+[`data/geonames/data/por/data` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),
+generates the main Geonames POR data files then used by OPTD,
+namely namely `dump_from_geonames.csv` (itself a copy of
+`por_intorg_YYYYMMDD.csv`) and `por_all_YYYYMMDD.csv`, in the
 [`tools` directory](http://github.com/opentraveldata/opentraveldata/blob/master/tools).
 
 ### Examples of records in the main OPTD-used Geoanmes data file
@@ -211,7 +233,8 @@ the examples shown in the
 [OPTD-maintained POR file section above](#optd-maintained-por-file).
 
 #### Regular relationship between a city and its transport-related POR
-Following the [city of San Francisco](http://geonames.org/5391959) and its
+Following are the details for the
+[city of San Francisco](http://geonames.org/5391959) and its
 [main airport](http://geonames.org/5391989):
 ```csv
 SFO^^^5391959^San Francisco^San Francisco^37.77493^-122.41942^US^^United States^North America^P^PPLA2^CA^California^California^075^City and County of San Francisco^City and County of San Francisco^^^864816^16^28^America/Los_Angeles^-8.0^-7.0^-8.0^2017-06-15^San Francisco^http://en.wikipedia.org/wiki/San_Francisco^en|San Francisco|p|ru|Сан-Франциско||abbr|SF|^USSFO|
@@ -238,6 +261,24 @@ organism such as ICAO or UN/LOCODE:
 ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
 ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
 ```
+
+### Process Geonames data remotely and merge locally
+As Geonames data represent roughly half a Giga Byte in size
+(slightly increasing over time), downloading it requires a good Internet
+connection. When the Internet connection is not so good, it is possible
+to download and process Geonames data on a remote machine (_e.g._,
+a container or a virtual machine on the cloud), itself having a good
+Internet bandwidth.
+
+The
+[`tools/remotePORProcessAndLocalMerge.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/remotePORProcessAndLocalMerge.sh)
+gives all the details of the commands to be executed on both the remote
+and local machines.
+That process relies on incremental updates (with the `patch` command),
+and must therefore be initialized by downloading and processing Geonames data
+on both machines (remote and local) the same initial day, so that both
+are `synchronized`, _i.e._, have the same `por_all_YYYYMMDD.csv` files.
+The next day, the incremental update process can start.
 
 ## Use cases
 

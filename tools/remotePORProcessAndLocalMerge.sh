@@ -47,14 +47,23 @@ fi
 
 #
 echo "On the remote host:"
+echo "./getDataFromGeonamesWebsite.sh && ./aggregateGeonamesPor.sh && ./extract_por_from_geonames.sh && ./extract_por_from_geonames.sh --clean && cp -f por_intorg_${TODAY_DATE}.csv dump_from_geonames.csv && bzip2 por_intorg_${TODAY_DATE}.csv"
 echo "time diff -Naur ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY_DATE}.csv > ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
 echo "bzip2 ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
+echo "bzip2 -k ${POR_FILE_PFX}_${TODAY_DATE}.csv"
+echo "ls -laFh --color por*"
 echo
 echo "On the local host:"
-echo "scp myuser@remote:~/dev/geo/opentraveldata/tools/{por_intorg_${TODAY_DATE}.csv.bz2,${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2} ."
+echo "rsync -av myuser@remote:~/dev/geo/opentraveldata/tools/por_intorg_${TODAY_DATE}.csv.bz2 ./"
+echo "rsync -av myuser@remote:~/dev/geo/opentraveldata/tools/${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2 ./"
 echo "bunzip2 -k por_intorg_${TODAY_DATE}.csv.bz2 && mv por_intorg_${TODAY_DATE}.csv dump_from_geonames.csv && ln -s dump_from_geonames.csv por_intorg_${TODAY_DATE}.csv && rm -f por_intorg_${SNPSHT_DATE}.csv && mv por_intorg_${TODAY_DATE}.csv.bz2 ${ARCH_DIR}"
 echo "bunzip2 ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2"
 echo "patch -p0 --dry-run < ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
 echo "patch -p0 < ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv && mv ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY_DATE}.csv && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
+echo "ls -laFh --color por*"
+echo
+echo "On the remote host again:"
+echo "mv por_intorg_${TODAY_DATE}.csv.bz2 archives/2019/ && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2 ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY_DATE}.csv.bz2"
+echo "ls -laFh --color por*"
 
 
