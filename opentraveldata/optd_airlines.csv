@@ -126,7 +126,8 @@ air-air-india-regional-v1^^1996-06-21^^LLR^9I^0^Air India Regional^^Star Allianc
 air-air-india-v1^^1932-10-15^^AIC^AI^98^Air India^^Star Alliance^Member^^http://en.wikipedia.org/wiki/Air_India^12525^en|Air India|^^air-air-india^1^^
 air-air-indus-v1^^^^MPK^I6^315^Air Indus^^^^^^^en|Air Indus|^^air-air-indus^1^^
 air-air-inuit-v1^^1978-11-01^^AIE^3H^466^Air Inuit^^^^^http://en.wikipedia.org/wiki/Air_Inuit^1526^en|Air Inuit|^^air-air-inuit^1^^
-air-air-italy-v1^^2005-05-29^^AEY^I9^67^Air Italy^^^^^http://en.wikipedia.org/wiki/Air_Italy^^en|Air Italy|^^air-air-italy^1^^
+air-air-italy-v1^1^2005-05-29^2018-02-28^AEY^I9^67^Air Italy^^^^^http://en.wikipedia.org/wiki/Air_Italy_(2005%E2%80%932018)^^en|Air Italy|^^air-air-italy^1^^m|air-air-italy-v2
+air-air-italy-v2^^2018-03-01^^ISS^IG^191^Air Italy^^^^^http://en.wikipedia.org/wiki/Air_Italy^2860^en|Air Italy|=sign|AIR ITALY|^MXP^air-air-italy^2^m|air-air-italy-v1=m|air-meridiana-fly-v1^
 air-air-ivoire-v1^1^1960-01-01^2011-12-31^VUN^VU^943^Air Ivoire^^^^^http://en.wikipedia.org/wiki/Air_Ivoire^^en|Air Ivoire|^^air-air-ivoire^1^^
 air-air-jamaica-v1^1^1968-10-01^2015-12-31^BWA^BW^0^Air Jamaica^^^^^http://en.wikipedia.org/wiki/Air_Jamaica^^en|Air Jamaica|^KIN=MBJ^air-air-jamaica^1^^
 air-air-japan-company-v1^^1990-06-29^^AJX^NQ^0^Air Japan^^^^^http://en.wikipedia.org/wiki/Air_Japan^^en|Air Japan|^^air-air-japan-company^1^^
@@ -893,7 +894,7 @@ air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^520^en|Mayair|=en|Aeromonterr|
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^600^en|Med-View Airline|^LOS^air-med-view-airline^1^^
 air-medallion-air-v1^1^2009-01-01^2013-06-30^MDP^^0^Medallion Air^^^^^http://en.wikipedia.org/wiki/Medallion_Air^^en|Medallion Air|=sign|MEDALS|^BBU^air-medallion-air^1^^merge|air-ten-airways-v1
 air-mega-maldives-v1^1^2010-12-23^2017-05-02^MEG^LV^400^Mega Maldives^^^^P^http://en.wikipedia.org/wiki/Mega_Maldives^^en|Mega Maldives|=ko|메가 몰디브|=sign|SANDBAR|=zh|美佳航空|^MLE^air-mega-maldives^1^^
-air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^2860^en|Meridiana Fly|^^air-meridiana-fly^1^^
+air-meridiana-fly-v1^1^1964-01-01^2018-02-28^ISS^IG^191^Meridiana^^^^^http://en.wikipedia.org/wiki/Meridiana^^en|Meridiana|s=en|Meridiana fly|h^^air-meridiana-fly^1^^m|air-air-italy-v2
 air-merpati-nusantara-airlines-v1^1^1962-09-06^2014-02-15^MMA^MZ^532^Merpati Nusantara Airlines^^^^^http://en.wikipedia.org/wiki/Merpati_Nusantara_Airlines^^en|Merpati Nusantara Airlines|=ja|メルパチ・ヌサンタラ航空|=ko|메르파티 누산타라 항공|=sign|MERPATI|^^air-merpati-nusantara-airlines^1^^
 air-mesa-airlines-v1^^1980-10-12^^ASH^YV^533^Mesa Airlines^^^^^http://en.wikipedia.org/wiki/Mesa_Airlines^^en|Mesa Airlines|^^air-mesa-airlines^1^^
 air-mesaba-airlines-v1^^2014-06-17^^TAX^XJ^0^Thai AirAsia X^Mesaba Air^^^^http://en.wikipedia.org/wiki/Thai_AirAsia_X^465^en|Thai AirAsia X|=en|Mesaba Air|^^air-mesaba-airlines^1^^

@@ -101,7 +101,7 @@ air-air-india-regional-v1^^1996-06-21^^LLR^9I^0^Air India Regional^^^^^http://en
 air-air-india-v1^^1932-10-15^^AIC^AI^98^Air India^^^^^http://en.wikipedia.org/wiki/Air_India^en|Air India|^^air-air-india^1^
 air-air-indus-v1^^^^MPK^I6^315^Air Indus^^^^^^en|Air Indus|^^air-air-indus^1^
 air-air-inuit-v1^^1978-11-01^^AIE^3H^466^Air Inuit^^^^^http://en.wikipedia.org/wiki/Air_Inuit^en|Air Inuit|^^air-air-inuit^1^
-air-air-italy-v1^^2005-05-29^^AEY^I9^67^Air Italy^^^^^http://en.wikipedia.org/wiki/Air_Italy^en|Air Italy|^^air-air-italy^1^
+air-air-italy-v2^^2018-03-01^^ISS^IG^191^Air Italy^^^^^http://en.wikipedia.org/wiki/Air_Italy^en|Air Italy|=sign|AIR ITALY|^MXP^air-air-italy^2^m|air-air-italy-v1=m|air-meridiana-fly-v1
 air-air-japan-company-v1^^1990-06-29^^AJX^NQ^0^Air Japan^^^^^http://en.wikipedia.org/wiki/Air_Japan^en|Air Japan|^^air-air-japan-company^1^
 air-air-kbz-v1^^2011-04-02^^KBZ^K7^314^Air KBZ^^^^^http://en.wikipedia.org/wiki/Air_KBZ^en|Air KBZ|^^air-air-kbz^1^
 air-air-kenya-aviation-v1^^^^^QP^0^Air Kenya Aviation^Airkenya Avn^^^^^en|Air Kenya Aviation|=en|Airkenya Avn|^^air-air-kenya-aviation^1^
@@ -653,7 +653,6 @@ air-mauritanian-airlines-v1^^^^^L6^495^Mauritanian Airlines Int^^^^^^en|Mauritan
 air-mayair-v1^^^^MYI^7M^10^Mayair^Aeromonterr^^^^^en|Mayair|=en|Aeromonterr|^^air-mayair^1^
 air-maya-island-air-v2^^2016-09-01^^MYD^2M^391^Maya Island Air^^^^^http://en.wikipedia.org/wiki/Maya_Island_Air^en|Maya Island Air|^BZE=TZA^air-maya-island-air^2^
 air-med-view-airline-v1^^2007-01-01^^MEV^VL^429^Med-View Airline^^^^^http://en.wikipedia.org/wiki/Med-View_Airline^en|Med-View Airline|^LOS^air-med-view-airline^1^
-air-meridiana-fly-v1^^^^ISS^IG^191^Meridiana Fly^^^^^^en|Meridiana Fly|^^air-meridiana-fly^1^
 air-mesa-airlines-v1^^1980-10-12^^ASH^YV^533^Mesa Airlines^^^^^http://en.wikipedia.org/wiki/Mesa_Airlines^en|Mesa Airlines|^^air-mesa-airlines^1^
 air-mesaba-airlines-v1^^2014-06-17^^TAX^XJ^0^Thai AirAsia X^Mesaba Air^^^^http://en.wikipedia.org/wiki/Thai_AirAsia_X^en|Thai AirAsia X|=en|Mesaba Air|^^air-mesaba-airlines^1^
 air-mgc-aviation-v1^^2012-01-01^^^7D^0^MGC Aviation^^^^^^en|MGC Aviation|^^air-mgc-aviation^1^
