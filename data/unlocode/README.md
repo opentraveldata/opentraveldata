@@ -1,13 +1,15 @@
-# References
 
-## OpenTravelData (OPTD)
-* This file on the [OpenTravelData project](http://github.com/opentraveldata/opentraveldata):
-  https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode/README.md
-* See also the [section on how to update UN/LOCODE data in the main ``README``](http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md#update-the-unlocode-data-file)
+# Overview
+The [original of that documentation file](http://github.com/opentraveldata/opentraveldata/blob/master/data/unlocode/README.md)
+is maintained on the [OpenTravelData (OPTD) project](http://github.com/opentraveldata/opentraveldata),
+within the [`data/unlocode` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/unlocode).
+
+See also the [section on how to update UN/LOCODE data in the main
+`README`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md#update-the-unlocode-data-file)
 
 ## UN/LOCODE
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE
-* Official note, as of December 2018: http://www.unece.org/fileadmin/DAM/cefact/locode/2018-2_UNLOCODE_SecretariatNotes.pdf
+* Official note, as of July 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/2019-1_UNLOCODE_SecretariatNotes.pdf
 * Latest data file: http://www.unece.org/cefact/codesfortrade/codes_index.html
   - July 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/loc191csv.zip (2.1 MB)
 * Online code list by country: http://www.unece.org/cefact/locode/service/location.html
@@ -15,12 +17,19 @@
 ## Country sub-divisions
 In the Zip archive of UN/LOCODE data files, there is a CSV file
 with the administrative sub-divisions per country.
-[That file](https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode/unece-subdivision-codes-2018-1.csv)
-seems to be encoded with various code plans, including ``CP1252``.
-In order to convert the ``CP1252`` part, you can do something like:
+[That file](https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode/archives/unece-subdivision-codes-2019-1.csv)
+seems to be encoded with various code plans, including `CP1252`.
+In order to convert the `CP1252` part, you can do something like:
 ```bash
-$ iconv -f CP1252 -t UTF-8 unece-subdivision-codes-2018-1.csv | less
+$ iconv -f CP1252 -t UTF-8 unece-subdivision-codes-2019-1.csv | less
 ```
+However, any conversion will wrongly encode other parts. So, the best
+is not to convert the character encoding of that file.
+
+A simple `dos2unix` conversion is however recommended:
+```bash
+$ dos2unix unece-subdivision-codes-2019-1.csv
+``` 
 
 # Details
 

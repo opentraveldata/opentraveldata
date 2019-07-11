@@ -3,7 +3,7 @@
 set -x
 
 #
-UNLC_VER="2018-2"
+UNLC_VER="2019-1"
 FILE1=${UNLC_VER}\ UNLOCODE\ CodeListPart1.csv
 FILE2=${UNLC_VER}\ UNLOCODE\ CodeListPart2.csv
 FILE3=${UNLC_VER}\ UNLOCODE\ CodeListPart3.csv
@@ -34,7 +34,7 @@ fi
 if [ ! -f "${FILE1}" ]
 then
 	echo
-	echo "There expected data files, namely '${FILE_LIST}' do not seem to have been downloaded."
+	echo "The expected data files, namely '${FILE_LIST}', do not seem to have been downloaded."
 	echo "Please have a look at https://github.com/opentraveldata/opentraveldata/tree/master/data/unlocode"
 	echo
 	exit -1
