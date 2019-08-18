@@ -10,6 +10,7 @@
     + [Relationship between a city and its serving POR](#relationship-between-a-city-and-its-serving-por)
     + [Non-IATA-referenced POR](#non-iata-referenced-por)
   * [Geonames-derived POR file](#geonames-derived-por-file)
+    + [Summary of updating Geonames data regularly](#summary-of-updating-geonames-data-regularly)
     + [Download of the Geonames snapshot data files](#download-of-the-geonames-snapshot-data-files)
     + [Generation of the aggregated Geonames snapshot data file](#generation-of-the-aggregated-geonames-snapshot-data-file)
     + [Generation of the main OPTD-used Geonames data file](#generation-of-the-main-optd-used-geonames-data-file)
@@ -19,7 +20,8 @@
       - [Non-IATA-referenced OPTD-known POR](#non-iata-referenced-optd-known-por)
     + [Process Geonames data remotely and merge locally](#process-geonames-data-remotely-and-merge-locally)
   * [Use cases](#use-cases)
-    + [Generate the OPTD-maintained POR (points of reference) file](##generate-the-optd-maintained-por-points-of-reference-file)
+    + [Amend the OPTD-curated POR files](#amend-the-optd-curated-por-files)
+    + [Generate the OPTD-maintained POR (points of reference) file](#generate-the-optd-maintained-por-points-of-reference-file)
     + [Update from Geonames](#update-from-geonames)
     + [Add state (administrative level) codes for a given country](#add-state-administrative-level-codes-for-a-given-country)
     + [Add a field in Geonames dumps](#add-a-field-in-geonames-dumps)
@@ -262,10 +264,12 @@ $ git pull
 $ pipenv --rm && pipenv install
 ```
 
+### Summary of updating Geonames data regularly
 Once the project has been initialized and/or updated, the sequence of commands
 in order to download Geonames data and to extract the OPTD temporary
 POR data files is something like:
 ```bash
+$ TODAY=$(date +%Y%m%d)
 $ pushd ~/dev/geo/opentraveldata/tools
 $ git pull
 $ pipenv --rm && pipenv install
@@ -277,8 +281,9 @@ $ ls -laFh ../data/geonames/data/por/data/al*.txt
 -rw-r--r--  1 user  staff   543M Apr 24 03:17 ../data/geonames/data/por/data/alternateNames.txt
 $ ./extract_por_from_geonames.sh && ./extract_por_from_geonames.sh --clean
 $ ls -laFh por_*.csv
--rw-rw-r--  1 user  staff    45M Apr 24 08:25 por_intorg_20190424.csv
--rw-r--r--  1 user  staff   1.5G Apr 24 08:39 por_all_20190424.csv
+-rw-rw-r--  1 user  staff    45M Apr 24 08:25 por_intorg_${TODAY}.csv
+-rw-r--r--  1 user  staff   1.5G Apr 24 08:39 por_all_${TODAY}.csv
+$ \cp -f por_intorg_${TODAY}.csv dump_from_geonames.csv
 $ popd
 ```
 
@@ -336,8 +341,8 @@ namely `dump_from_geonames.csv` (itself a copy of
 [`tools` directory](http://github.com/opentraveldata/opentraveldata/blob/master/tools).
 ```bash
 $ ls -laFh ~/dev/geo/opentraveldata/tools/por_*.csv
--rw-rw-r--  1 user  staff    45M Aug 18 14:06 ~/dev/geo/opentraveldata/tools/por_intorg_20190818.csv
--rw-r--r--  1 user  staff   1.6G Aug 18 12:27 ~/dev/geo/opentraveldata/tools/por_all_20190818.csv
+-rw-rw-r--  1 user  staff    45M Aug 18 14:06 ~/dev/geo/opentraveldata/tools/por_intorg_${TODAY}.csv
+-rw-r--r--  1 user  staff   1.6G Aug 18 12:27 ~/dev/geo/opentraveldata/tools/por_all_${TODAY}.csv
 ```
 
 ### Examples of records in the main OPTD-used Geoanmes data file
@@ -349,9 +354,12 @@ the examples shown in the
 Following are the details for the
 [city of San Francisco](http://geonames.org/5391959) and its
 [main airport](http://geonames.org/5391989):
+```bash
+$ grep -e "\^5391959\^" -e "\^5391989\^" ~/dev/geo/opentraveldata/tools/por_*.csv
+```
 ```csv
-SFO^^^5391959^San Francisco^San Francisco^37.77493^-122.41942^US^^United States^North America^P^PPLA2^CA^California^California^075^City and County of San Francisco^City and County of San Francisco^^^864816^16^28^America/Los_Angeles^-8.0^-7.0^-8.0^2017-06-15^San Francisco^http://en.wikipedia.org/wiki/San_Francisco^en|San Francisco|p|ru|Сан-Франциско||abbr|SF|^USSFO|
-SFO^KSFO^SFO^5391989^San Francisco International Airport^San Francisco International Airport^37.61882^-122.3758^US^^United States^North America^S^AIRP^CA^California^California^081^San Mateo County^San Mateo County^^^0^5^-2^America/Los_Angeles^-8.0^-7.0^-8.0^2014-07-29^San Francisco International Airport^http://en.wikipedia.org/wiki/San_Francisco_International_Airport^en|San Francisco International Airport|^USSFO|
+SFO^^^5391959^San Francisco^San Francisco^37.77493^-122.41942^US^^United States^North America^P^PPLA2^CA^California^California^075^City and County of San Francisco^City and County of San Francisco^^^864816^16^28^America/Los_Angeles^-8.0^-7.0^-8.0^2019-02-26^San Francisco^http://en.wikipedia.org/wiki/San_Francisco^en|San Francisco|p|ru|Сан-Франциско||abbr|SF|^USSFO|^
+SFO^KSFO^SFO^5391989^San Francisco International Airport^San Francisco International Airport^37.61882^-122.3758^US^^United States^North America^S^AIRP^CA^California^California^081^San Mateo County^San Mateo County^^^0^5^-2^America/Los_Angeles^-8.0^-7.0^-8.0^2018-07-15^San Francisco International Airport^http://en.wikipedia.org/wiki/San_Francisco_International_Airport^en|San Francisco International Airport|^USSFO|^
 ```
 
 #### A transport-related POR serving several cities
@@ -359,6 +367,9 @@ Following the [Raleigh-Durham International Airport](http://geonames.org/4487056
 serving the cities of [Durham](http://geonames.org/4464368) and
 [Raleigh](http://geonames.org/4487042) in North Carolina (NC) in
 the United States (US):
+```bash
+$ grep -e "\^4464368\^" -e "\^4487042\^" -e "\^4487056\^" ~/dev/geo/opentraveldata/tools/por_*.csv
+```
 ```csv
 RDU^^^4464368^Durham^Durham^35.99403^-78.89862^US^^United States^North America^P^PPLA2^NC^North Carolina^North Carolina^063^Durham County^Durham County^90932^^257636^123^121^America/New_York^-5.0^-4.0^-5.0^2017-05-23^Durham,RDU^http://en.wikipedia.org/wiki/Durham%2C_North_Carolina^de|Durham||en|Durham|p^USDUR|
 RDU^^^4487042^Raleigh^Raleigh^35.7721^-78.63861^US^^United States^North America^P^PPLA^NC^North Carolina^North Carolina^183^Wake County^Wake County^92612^^451066^96^99^America/New_York^-5.0^-4.0^-5.0^2017-05-23^RDU,Raleigh^http://en.wikipedia.org/wiki/Raleigh%2C_North_Carolina^en|Raleigh|p^USRAG|
@@ -369,6 +380,9 @@ RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham Internatio
 The following transport-related POR are not referenced by IATA, and also
 not known from (or maintained by) OPTD. They are normally referenced by another
 organism such as ICAO or UN/LOCODE:
+```bash
+$ grep -e "\^11085\^" -e "\^54392\^" -e "\^531191\^" ~/dev/geo/opentraveldata/tools/por_*.csv
+```
 ```csv
 ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
 ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
@@ -376,7 +390,7 @@ organism such as ICAO or UN/LOCODE:
 ```
 
 ### Process Geonames data remotely and merge locally
-As Geonames data represent roughly half a Giga Byte in size
+As Geonames data represent roughly half a Giga Byte (GB) in size
 (slightly increasing over time), downloading it requires a good Internet
 connection. When the Internet connection is not so good, it is possible
 to download and process Geonames data on a remote machine (_e.g._,
@@ -395,54 +409,37 @@ The next day, the incremental update process can start.
 
 ## Use cases
 
+### Amend the OPTD-curated POR files
+```bash
+$ cd ~/dev/geo/opentraveldata/opentraveldata
+$ vi optd_por_best_known_so_far.csv optd_por_no_longer_valid.csv
+$ git add optd_por_best_known_so_far.csv optd_por_no_longer_valid.csv
+```
+
 ### Generate the OPTD-maintained POR (points of reference) file
+* Once the
+  [Geonames data have been downloaded and updated](#summary-of-updating-geonames-data-regularly),
+  and once the
+  [OPTD-curated POR files have been altered](#amend-the-optd-curated-por-files),
+  the OPTD POR data may be re-computed and delivered:
 ```bash
-$ cd <OPTD_ROOT_DIR>/tools
-$ ./make_optd_por_public.sh && ./make_optd_por_public.sh --clean
-$ git add ../opentraveldata/optd_por_public.csv
-$ git diff --cached optd_por_public.csv
-$ git ci -m "[POR] Integrated the latest updates from Geonames."
+$ cd ~/dev/geo/opentraveldata/tools
+$ ./make_optd_por_public.sh && ./make_optd_por_public.sh --clean && ./extract_por_unlc.sh
+$ pushd ../opentraveldata
+$ git add optd_por_public.csv optd_por_public_all.csv optd_por_unlc.csv
+$ git diff --cached optd_por_public_all.csv
+$ git commit -m "[POR] Integrated the latest updates from Geonames."
+$ popd
 ```
-
-### Update from Geonames
-The Geonames data may be updated, i.e., new Geonames data files are
-downloaded and the ``allCountries_w_alt.txt`` data file is recomputed:
-```bash
-$ cd <OPTD_ROOT_DIR>/data/geonames/data
-$ time ./getDataFromGeonamesWebsite.sh
-$ cd por/data
-$ \rm -f *~ ../../zip/*~
-$ cd -
-$ cd por/admin
-$ ./aggregateGeonamesPor.sh
-$ cd -
-$ ls -laFh --color por/data/al*
-```
-
-* Back in OPTD, generate two `por_*intorg_YYYYMMDD.csv` data files:
-  * `por_intorg_YYYYMMDD.csv` references all the POR having a IATA code in Geonames
-  * `por_nointorg_YYYYMMDD.csv` references all the POR having no IATA code (but
- which could have one in Geonames)
-```bash
-$ cd <OPTD_ROOT_DIR>/tools
-$ ./extract_por_from_geonames.sh && ./extract_por_from_geonames.sh --clean
-```
-
-* Copy the generated `por_intorg_YYYYMMDD.csv` file
-into `dump_from_geonames.csv`
-```bash
-$ cp -f por_iata_YYYYMMDD.csv dump_from_geonames.csv
-```
-
-Note that the `por_noiata_YYYYMMDD.csv` has usually a size of around 1.5 GB.
 
 ### Add state (administrative level) codes for a given country
 See [OpenTravelData Issue #78](https://github.com/opentraveldata/opentraveldata/issues/78)
 for an example on how to add Russian region/state codes.
 
-As many other big countries (e.g., United States, Australia, Brazil),
-Russia has got regions (administrative level 1), which are assigned
-standard (ISO 3166-2) codes: http://en.wikipedia.org/wiki/ISO_3166-2:RU
+As many other big countries (_e.g._, United States (US), Australia (AU),
+Brazil (BR)), Russia (RU) has got regions (administrative level 1),
+which are assigned standard (ISO 3166-2) codes:
+http://en.wikipedia.org/wiki/ISO_3166-2:RU
 Those codes are to be added to the `optd_por_public.csv` file.
 
 The region codes have first to be added to the
@@ -481,8 +478,9 @@ Just for information, the relevant AWK scripts are:
 * [`tools/make_optd_por_public.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/make_optd_por_public.awk#L239)
 
 ### Add a field in Geonames dumps
-Following is the list of scripts to change when a field is added to the Geonames
-dump files (generated by the [`data/geonames/data/por/admin/aggregateGeonamesPor.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/admin/aggregateGeonamesPor.awk)):
+Following is the list of scripts to change when a field is added
+to the Geonames dump files (generated by the
+[`data/geonames/data/por/admin/aggregateGeonamesPor.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/admin/aggregateGeonamesPor.awk)):
 * [`tools/add_city_name.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/add_city_name.awk)
 * [`tools/add_noiata_por.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/add_noiata_por.awk)
 * [`tools/add_por_ref_no_geonames.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/add_por_ref_no_geonames.awk)
@@ -513,8 +511,7 @@ Also, a few typos are fixed along the way.
 * Set up the project, if not already done:
 ```bash
 $ mkdir -p ~/dev/geo
-$ cd ~/dev/geo
-$ git clone https://github.com/opentraveldata/opentraveldata.git
+$ git clone https://github.com/opentraveldata/opentraveldata.git ~/dev/geo/opentraveldata
 $ cd ~/dev/geo/opentraveldata/tools
 ```
 
@@ -669,7 +666,7 @@ $ git add ../opentraveldata/optd_por_no_geonames.csv
 ```
 
 ### Update from Innovata
-The Innovata data may be updated, i.e., new Innovata data files have been
+The Innovata data may be updated, _i.e._, new Innovata data files have been
 downloaded privately, and the dump_from_innovata.csv has to be recomputed.
 That file is just used for private reference purpose: no Innovata data is
 used within the OpenTravelData project.
@@ -787,21 +784,21 @@ $ git add ../opentraveldata/optd_por_best_known_so_far.csv
 For the bulk update, see also
 [Bulk fix best known coordinates](#bulk-fix-the-best-known-coordinates).
 
-Proceed with the use case 1.1, since the OPTD-maintained list of best known
-coordinates has now better coordinates than the OPTD-maintained list of POR.
+Proceed with the
+[Generate the OPTD-maintained POR use case](#generate-the-optd-maintained-por-points-of-reference-file),
+since the OPTD-maintained list of best known coordinates has now better
+coordinates than the OPTD-maintained list of POR.
 
 ### Geonames has details for an unknown POR
 A new POR, still unknown from OPTD, may have been specified within Geonames.
 
 The procedure is exactly the same as in 4.1: manually edit the
-`../opentraveldata/optd_por_best_known_so_far.csv` file
-and re-generate the OPTD-maintained POR file (step 1.1).
-
+`../opentraveldata/optd_por_best_known_so_far.csv` file and
+[re-generate the OPTD-maintained POR file](#generate-the-optd-maintained-por-points-of-reference-file).
 
 ### OPTD-maintained best known coordinates file has better coordinates
 Fix the POR (points of reference) in Geonames and Wikipedia.
 See 3.1 for the URLs.
-
 
 ### OPTD-maintained list has got POR unknown from Geonames
 Add the POR in Geonames and Wikipedia. See 2.1 for the URLs.
@@ -874,8 +871,9 @@ $ git add ../opentraveldata/optd_por_best_known_so_far.csv
 $ git diff --cached ../opentraveldata/optd_por_best_known_so_far.csv
 ```
 
-Go to 1.1., as the OPTD-maintained file of best known coordinates
-has been updated
+Go to
+[Generate the OPTD-maintained POR use case](#generate-the-optd-maintained-por-points-of-reference-file),
+as the OPTD-maintained file of best known coordinates has been updated.
 
 ### Check issues with Geonames ID on OPTD POR
 ```bash
@@ -917,9 +915,10 @@ $ ./extract_state_details.sh --clean
 
 ### The format of the `allCountries_w_alt.txt` file changes
 The format of the `data/geonames/data/por/data/allCountries_w_alt.txt`
-may change, i.e., when the `data/geonames/data/por/admin/aggregateGeonamesPor.*`
-(Shell and AWK) scripts are amended. An example of such a change has been
-implemented by the
+may change, _i.e._, when the
+`data/geonames/data/por/admin/aggregateGeonamesPor.*` (Shell and AWK)
+scripts are amended. An example of such a change has been implemented
+by the
 [28ab958cfcd159 commit](http://github.com/opentraveldata/optd/commit/28ab958cfcd159ea96753177d457cd583019a680)
 (addition of the continent):
 ```bash
@@ -968,9 +967,10 @@ data_generation/por/make_optd_por_private.sh
 
 ### The format of the `optd_por_public.csv` file changes
 The format of the `data/geonames/data/por/data/allCountries_w_alt.txt`
-may change, i.e., when the `data/geonames/data/por/admin/aggregateGeonamesPor.*`
-(Shell and AWK) scripts are amended. An example of such a change has been
-implemented by the
+may change, _i.e._, when the
+`data/geonames/data/por/admin/aggregateGeonamesPor.*` (Shell and AWK)
+scripts are amended. An example of such a change has been implemented
+by the
 [28ab958cfcd1 commit](http://github.com/opentraveldata/optd/commit/28ab958cfcd159ea96753177d457cd583019a680)
 (addition of the continent):
 ```bash
