@@ -792,7 +792,9 @@ coordinates than the OPTD-maintained list of POR.
 ### Geonames has details for an unknown POR
 A new POR, still unknown from OPTD, may have been specified within Geonames.
 
-The procedure is exactly the same as in 4.1: manually edit the
+The procedure is exactly the same as for
+[mending the OPTD-curated POR files](#amend-the-optd-curated-por-files):
+manually edit the
 `../opentraveldata/optd_por_best_known_so_far.csv` file and
 [re-generate the OPTD-maintained POR file](#generate-the-optd-maintained-por-points-of-reference-file).
 
@@ -831,7 +833,8 @@ $ gzip pageranked_por_in_iata_but_missing_from_geonames.csv
 
 ### Bulk fix the best known coordinates
 When those are equal to zero and they are known by Geonames and/or
-in reference data. That is the bulk version of 4.1.
+in reference data. That is the bulk version of
+[amending the OPTD-curated POR files](#amend-the-optd-curated-por-files):
 ```bash
 $ ./fix_best_known_coordinates.sh
 ```
