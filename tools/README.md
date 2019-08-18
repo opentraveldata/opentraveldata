@@ -175,6 +175,7 @@ IATA codes. To get that number, one can run for instance the following
 command (and subtract 1 to the result, for the header):
 ```bash
 $ cut -d'^' -f1,1 ../opentraveldata/optd_por_best_known_so_far.csv | cut -d'-' -f1,1 | uniq | wc -l
+   11298
 ```
 
 ### Non-IATA-referenced POR
@@ -202,7 +203,17 @@ In any case, those POR are present in the `dump_from_geonames.csv` file.
 Command to see the different Geonames feature codes for those
 non-IATA-referenced POR:
 ```bash
-$ grep '^\^' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | less
+$ grep '^\^' dump_from_geonames.csv | cut -d'^' -f14,14 | sort | uniq -c | sort -nr | head
+62987 PPL
+10357 RSTN
+9406 PPLA3
+5624 PPLA2
+4006 PPLA4
+2310 PPLX
+2062 AIRP
+1247 AIRF
+1155 PPLA
+ 595 ADM3
 ```
 
 ## Geonames-derived POR file
@@ -217,15 +228,48 @@ and `por_all_YYYYMMDD.csv`.
 
 The full sequence of commands, which can be performed at regular intervals,
 for instance every day, is:
-* Download the Geonames data dump files
-* Generate the Geonames aggregated data file (`allCountries_w_alt.txt` in the
-  `data/geonames/data/por/data` directory)
-* Extract/pre-process the `por_{intorg,all}_YYYYMMDD.csv` files (in
-  the `tools` directory)
-An illustrative example is given below:
+* [Download the Geonames data dump files](#download-of-the-geonames-snapshot-data-files)
+* [Generate the Geonames aggregated data file](#generation-of-the-aggregated-geonames-snapshot-data-file)
+  (`allCountries_w_alt.txt` in the `data/geonames/data/por/data` directory)
+* [Extract/pre-process and generate the `por_{intorg,all}_YYYYMMDD.csv` files](#generation-of-the-main-optd-used-geonames-data-file)
+  (in the `tools` directory)
+
+The [Geonames downloader Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/getDataFromGeonamesWebsite.sh)
+relies on a Python script
+([`download_if_newer.py`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/download_if_newer.py)),
+which itself relies on `Pyenv` and `pipenv`. Instructions on how to install
+those Python utilities can be found on
+[GitHub](http://github.com/machine-learning-helpers/induction-python/tree/master/installation/virtual-env).
+
+The initialization of the
+[OpenTravelData (OPTD) project](http://github.com/opentraveldata/opentraveldata)
+(to be done once and for all) is therefore something like:
+```bash
+$ mkdir -p ~/dev/geo
+$ git clone https://github.com/opentraveldata/opentraveldata.git ~/dev/geo/opentraveldata
+$ cd ~/dev/geo/opentraveldata/tools
+$ pipenv install
+```
+
+As mentioned above, the Python dependencies will need `pyenv` and `pipenv` tools
+to be available in the environment.
+
+If the project has already been initialized, it can be updated with something
+like:
+```bash
+$ cd ~/dev/geo/opentraveldata/tools
+$ git pull
+$ pipenv --rm && pipenv install
+```
+
+Once the project has been initialized and/or updated, the sequence of commands
+in order to download Geonames data and to extract the OPTD temporary
+POR data files is something like:
 ```bash
 $ pushd ~/dev/geo/opentraveldata/tools
-$ time ./getDataFromGeonamesWebsite.sh 
+$ git pull
+$ pipenv --rm && pipenv install
+$ ./getDataFromGeonamesWebsite.sh 
 $ ./aggregateGeonamesPor.sh
 $ ls -laFh ../data/geonames/data/por/data/al*.txt
 -rw-r--r--  1 user  staff   1.5G Apr 24 03:10 ../data/geonames/data/por/data/allCountries.txt
@@ -238,53 +282,46 @@ $ ls -laFh por_*.csv
 $ popd
 ```
 
-Each step of that process is detailed in a sub-section below.
+A few more details for each of those steps are given in dedicated sub-sections
+below.
 
 ### Download of the Geonames snapshot data files
 The [`tools/getDataFromGeonamesWebsite.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/getDataFromGeonamesWebsite.sh)
 downloads all the Geonames dump/snapshot data files,
 including among other things:
-* [`allCountries.zip` (around 350 MB)](http://download.geonames.org/export/dump/allCountries.zip),
-  becoming `allCountries.txt` once unzipped, and listing the main details of
-  every single POR known from Geonames (over 12 millions of POR).
-* [`alternateNames.zip` (around 140 MB)](http://download.geonames.org/export/dump/alternateNames.zip),
-  becoming `alternateNames.txt` once unzipped, and listing the alternate
-  names of those POR. Note that the codes (e.g., IATA, ICAO, FAA, TCID,
-  UN/LOCODE, Wikipedia and Wikidata) links are alternate names
+* [`allCountries.zip`](http://download.geonames.org/export/dump/allCountries.zip)
+  (around 350 MB), becoming `allCountries.txt` once unzipped, and listing
+  the main details of every single POR known from Geonames
+  (over 12 millions of POR).
+* [`alternateNames.zip`](http://download.geonames.org/export/dump/alternateNames.zip)
+  (around 140 MB), becoming `alternateNames.txt` once unzipped, and listing
+  the alternate names of those POR. Note that the codes (_e.g._, IATA, ICAO,
+  FAA, TCID, UN/LOCODE, Wikipedia and Wikidata) links are alternate names
   in Geonames parlance.
-
-That [Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/getDataFromGeonamesWebsite.sh)
-relies on a Python script
-([`download_if_newer.py`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/download_if_newer.py)),
-which itself relies on `Pyenv` and `pipenv`. Instructions on how to install
-those Python utilities can be found on
-[GitHub](http://github.com/machine-learning-helpers/induction-python/tree/master/installation/virtual-env).
-
-The full sequence of commands, in order to download Geonames data dump files
-from scratch, is summarized in the following examples.
-* (To be done once and for all) Clone the 
-  [OpenTravelData (OPTD) Git repository](http://github.com/opentraveldata/opentraveldata)
-  and install the Python dependencies:
 ```bash
-$ mkdir -p ~/dev/geo
-$ git clone https://github.com/opentraveldata/opentraveldata.git ~/dev/geo/opentraveldata
-$ pushd ~/dev/geo/opentraveldata/tools
-$ pipenv install
-$ popd
+$ ls -laFh ~/dev/geo/opentraveldata/data/geonames/data/por/data/{allCountries,alternateNames}.{zip,txt}
+-rw-r--r--  1 user  staff   344M Aug 18 03:50 ~/dev/geo/opentraveldata/data/geonames/data/por/data/allCountries.zip
+-rw-r--r--  1 user  staff   1.4G Aug 18 03:42 ~/dev/geo/opentraveldata/data/geonames/data/por/data/allCountries.txt
+-rw-r--r--  1 user  staff   150M Aug 18 01:52 ~/dev/geo/opentraveldata/data/geonames/data/por/data/alternateNames.zip
+-rw-r--r--  1 user  staff   545M Aug 18 03:50 ~/dev/geo/opentraveldata/data/geonames/data/por/data/alternateNames.txt
 ```
-As mentioned above, the Python dependencies will need `pyenv` and `pipenv` tools
-to be available in the environment.
 
 ### Generation of the aggregated Geonames snapshot data file
 The [`tools/aggregateGeonamesPor.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/aggregateGeonamesPor.sh)
 itself relies on the
 [`tools/aggregateGeonamesPor.awk` AWK script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/aggregateGeonamesPor.awk).
 That latter, from the two downloaded Geonames snapshot/dump data files,
-namely `allCountries.txt` (size of 1.5 GB uncompressed, as of April 2019)
+namely `allCountries.txt` (size of 1.4 GB uncompressed, as of August 2019)
 and `alternateNames.txt` (size of 550 MB uncompressed) in the
 [`data/geonames/data/por/data` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),
 generates a combined data file, namely `allCountries_w_alt.txt` (size
-of 2.6 GB uncompressed), next to the downloaded Geonames data files.
+of 2.5 GB uncompressed), next to the downloaded Geonames data files.
+```bash
+$ ls -laFh ~/dev/geo/opentraveldata/data/geonames/data/por/data/al*.txt
+-rw-r--r--  1 user  staff   1.4G Aug 18 03:42 ~/dev/geo/opentraveldata/data/geonames/data/por/data/allCountries.txt
+-rw-r--r--  1 user  staff   545M Aug 18 03:50 ~/dev/geo/opentraveldata/data/geonames/data/por/data/alternateNames.txt
+-rw-r--r--  1 user  staff   2.5G Aug 18 12:19 ~/dev/geo/opentraveldata/data/geonames/data/por/data/allCountries_w_alt.txt
+```
 
 ### Generation of the main OPTD-used Geonames data file
 The [`tools/extract_por_from_geonames.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_from_geonames.sh)
@@ -294,9 +331,14 @@ That latter, from the combined Geonames data file, namely
 `allCountries_w_alt.txt` in the
 [`data/geonames/data/por/data` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/geonames/data/por/data),
 generates the main Geonames POR data files then used by OPTD,
-namely namely `dump_from_geonames.csv` (itself a copy of
+namely `dump_from_geonames.csv` (itself a copy of
 `por_intorg_YYYYMMDD.csv`) and `por_all_YYYYMMDD.csv`, in the
 [`tools` directory](http://github.com/opentraveldata/opentraveldata/blob/master/tools).
+```bash
+$ ls -laFh ~/dev/geo/opentraveldata/tools/por_*.csv
+-rw-rw-r--  1 user  staff    45M Aug 18 14:06 ~/dev/geo/opentraveldata/tools/por_intorg_20190818.csv
+-rw-r--r--  1 user  staff   1.6G Aug 18 12:27 ~/dev/geo/opentraveldata/tools/por_all_20190818.csv
+```
 
 ### Examples of records in the main OPTD-used Geoanmes data file
 Examples of records in the `dump_from_geonames.csv` data file, echoing
