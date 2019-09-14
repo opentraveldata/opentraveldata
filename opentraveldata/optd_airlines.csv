@@ -41,7 +41,7 @@ air-aeromar-v1^^1987-01-01^^TAO^VW^942^Aeromar^^^^^https://en.wikipedia.org/wiki
 air-aeromexico-v1^^^^AMX^AM^139^AeroMexico^AeroMexico^Skyteam^Member^^https://en.wikipedia.org/wiki/Aerom%C3%A9xico^19659^en|AeroMexico|=en|AeroMexico|^^air-aeromexico^1^^
 air-aeropelican-air-services-v1^1^1971-07-01^2013-12-31^PEL^OT^0^Aeropelican Air Services^^^^^https://en.wikipedia.org/wiki/Aeropelican_Air_Services^^en|Aeropelican Air Services|^^air-aeropelican-air-services^1^^
 air-aeroperlas-v1^1^1970-01-01^2012-02-29^APP^WL^54^Aeroperlas^^^^^https://en.wikipedia.org/wiki/Aeroperlas^^en|Aeroperlas|=es|Aerolíneas Islas de Las Perlas|^DAV=PAC^air-aeroperlas^1^^
-air-aeropostal-v1^^^^^VH^152^Aeropostal^^^^^^629^en|Aeropostal|^^air-aeropostal^1^^
+air-aeropostal-v1^^^2017-09-24^^VH^152^Aeropostal^^^^^^629^en|Aeropostal|^^air-aeropostal^1^^
 air-aerosur-v1^1^1992-01-01^2012-12-31^RSU^5L^275^AeroSur^^^^^https://en.wikipedia.org/wiki/AeroSur^^en|AeroSur|^^air-aerosur^1^^
 air-aerosvit-airlines-v1^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^https://en.wikipedia.org/wiki/Aerosvit_Airlines^^en|AeroSvit Airlines|^^air-aerosvit-airlines^1^^
 air-aerovias-dap-v1^^^^DAP^V5^0^Aerovias DAP^^^^^https://en.wikipedia.org/wiki/Aerov%C3%ADas_DAP^270^en|Aerovias DAP|^^air-aerovias-dap^1^^
@@ -1364,7 +1364,8 @@ air-virgin-australia-v2^^2013-01-01^^VOZ^VA^856^Virgin Australia^^^^^https://en.
 air-vision-airlines-v1^^^^RBY^V2^0^Vision Airlines^^^^^^^en|Vision Airlines|^^air-vision-airlines^1^^
 air-vista-georgia-v1^1^2014-08-04^2015-05-31^AJD^GT^0^flyvista^^^^^https://en.wikipedia.org/wiki/Flyvista^^en|flyvista|p=en|Vista Georgia|^TBS^air-vista-georgia^1^^
 air-viva-air-peru-v1^^2017-05-09^^VPE^VV^343^Viva Airlines Peru^^^^^https://en.wikipedia.org/wiki/Viva_Air_Peru^^en|Viva Air Peru|ps=en|Viva Airlines Peru S.A.C|=en|VivaAir.com|=sign|VIVA PERU|^LIM^air-viva-air-peru^1^^
-air-viva-colombia-v1^^2012-12-25^^VVC^FC^641^Viva Colombia^^^^^https://en.wikipedia.org/wiki/VivaColombia^2565^en|Viva Colombia|p=en|Fast Colombia S.A.S|^MDE^air-viva-colombia^1^^
+air-viva-colombia-v1^1^2012-12-25^2019-01-28^VVC^FC^641^Viva Colombia^^^^^https://en.wikipedia.org/wiki/VivaColombia^^en|Viva Colombia|p=en|Fast Colombia S.A.S|^MDE^air-viva-colombia^1^^
+air-viva-colombia-v2^^2019-01-29^^VVC^VH^641^Viva Air Colombia^^^^^https://en.wikipedia.org/wiki/VivaColombia^2565^en|Viva Colombia|Viva Air Colombia|p=en|Fast Colombia S.A.S|^MDE^air-viva-colombia^2^^
 air-vladivostok-air-v1^^^^VLK^XF^277^Vladivostok Air^^^^^^^en|Vladivostok Air|^^air-vladivostok-air^1^^
 air-vlm-airlines-slovenia-v1^^2017-07-01^^WLM^VO^333^VLM Airlines Slovenia^^^^^https://en.wikipedia.org/wiki/VLM_Airlines_Slovenia^^en|VLM Airlines d.d.|=en|VLM Airlines Slovenia|=sign|RIBICA|^MBX^air-vlm-airlines-slovenia^1^^
 air-vlm-airlines-v1^^2017-10-01^^VLM^VG^0^VLM Airlines^^^^^https://en.wikipedia.org/wiki/VLM_Airlines^396^en|VLM Airlines|p=en|SHS Antwerp Aviation N.V.|=sign|RUBENS|^ANR^air-vlm-airlines^1^^
