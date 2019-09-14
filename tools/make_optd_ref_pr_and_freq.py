@@ -3,14 +3,14 @@
 import getopt, sys, re, csv
 import networkx as nx
 from operator import add
-from collections import OrderedDict, Mapping
+import collections
 from itertools import chain
 
 #
 # Default file-paths for input and output data files
 #
 def_por_airline_filepath = '../opentraveldata/optd_airline_por_rcld.csv'
-def_por_filepath = '../opentraveldata/optd_por_public.csv'
+def_por_filepath = '../opentraveldata/optd_por_public_all.csv'
 def_airline_bestknown_filepath = '../opentraveldata/optd_airline_best_known_so_far.csv'
 def_pr_out_filepath = '../opentraveldata/ref_airport_pageranked.csv'
 def_freq_out_filepath = '../opentraveldata/ref_airline_nb_of_flights.csv'
@@ -117,7 +117,7 @@ def flattenDict (d, join = add, lift = lambda x: x):
     def visit (subdict, results, partialKey):
         for k,v in subdict.items():
             newKey = lift(k) if partialKey==_FLAG_FIRST else join(partialKey, lift(k))
-            if isinstance (v,Mapping):
+            if isinstance (v, collections.Mapping):
                 visit (v, results, newKey)
             else:
                 results.append ((newKey, v))
@@ -223,9 +223,13 @@ def isCityOnlyFromPK (por_pk):
 #
 def getTypeFromPK (por_pk):
     # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
-    pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
+    pk_re = re.compile ("^(|[A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
     pk_match = pk_re.match (por_pk)
-    por_type = pk_match.group (2)
+    try:
+        por_type = pk_match.group (2)
+    except:
+        print ("No location type in the primary key {}".format(por_pk))
+        raise
     return por_type
 
 #
@@ -234,27 +238,31 @@ def getTypeFromPK (por_pk):
 #
 def getIataCodeFromPK (por_pk):
     # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
-    pk_regexp = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
+    pk_regexp = re.compile ("^(|[A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
     pk_match = pk_regexp.match (por_pk)
-    por_code = pk_match.group (1)
+    try:
+        por_code = pk_match.group (1)
+    except:
+        print ("No IATA code in the primary key {}".format(por_pk))
+        raise
     return por_code
 
 #
 # Retrieve the POR code (eg, 'EWR', 'WRLM') thanks to the primary key
-# (eg, respecively 'EWR-A-5101809', 'ZZZ-A-8531915').
-# When the IATA code is 'ZZZ', the POR code is the ICAO code,
+# (eg, respecively 'EWR-A-5101809', '-A-8533855').
+# When the IATA code is empty, the POR code is the ICAO code,
 # and has to be retrieved from the por_all_dict dictionary.
 #
-def getCodeFromPK (por_all_dict, por_pk_4_zzz_dict, por_pk):
+def getCodeFromPK (por_all_dict, por_pk_noiata_dict, por_pk):
     # First, retrieve the IATA code, first element of the primary key
     por_code = getIataCodeFromPK (por_pk)
 
     # When the POR has no IATA code, retrieve ICAO code instead
-    if (por_code == "ZZZ"):
+    if (por_code == ""):
         try:
-            por_code = por_pk_4_zzz_dict[por_pk]
+            por_code = por_pk_noiata_dict[por_pk]
         except:
-            print ("No entry can be found in the POR dictionary for '" + str(por_pk) + "'; key_list: " + str(key_list))
+            print ("No entry can be found in the POR dictionary for '{}'; key_list: {}".format (str(por_pk), str(key_list)))
             raise KeyError
 
     return por_code
@@ -368,7 +376,8 @@ def getCityPKList (por_all_dict, por_code, por_pk):
 #
 # Store the POR details
 #
-def storePOR (por_all_dict, por_code, por_iata_code, por_type, por_geoid, por_cty_code_list):
+def storePOR (por_all_dict, por_code, por_iata_code, por_type, por_geoid, \
+              por_cty_code_list):
     # Initialize the per-POR dictionary when needed
     if (not por_code in por_all_dict):
         por_all_dict[por_code] = dict()
@@ -385,45 +394,57 @@ def storePOR (por_all_dict, por_code, por_iata_code, por_type, por_geoid, por_ct
 #
 # Extract the details of POR from the OpenTravelData CSV file
 #
-# iata_code^icao_code^geoname_id^envelope_id^city_code_list^location_type
+# iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id^...^latitude^longitude^...^date_from^...^city_code_list^...^location_type^...
 #
-def extractPOR (por_all_dict, por_pk_4_zzz_dict, por_filepath, verboseFlag):
+def extractPOR (por_all_dict, por_pk_noiata_dict, por_filepath, verboseFlag):
     """
     Derive a dictionary of all the POR referenced within the OpenTravelData
     project as public POR (Points Of Reference)
     """
     # Browse the input file.
     # Regular expression for the primary key (pk): (IATA code, type, Geonames ID)
-    pk_re = re.compile ("^([A-Z]{3})-([A-Z]{1,2})-([0-9]{1,20})$")
     with open (por_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
-        for line in file_reader:
+        for row in file_reader:
 
             # Filter out the no longer valid POR
-            por_env_id = line['envelope_id']
+            por_env_id = row['envelope_id']
             if (por_env_id != ""): continue
 
-            # Retrieve the POR details
-            por_iata_code = line['iata_code']
-            por_icao_code = line['icao_code']
-            por_type = line['location_type']
-            por_geo_id = line['geoname_id']
+            # Retrieve the IATA and ICAO codes
+            por_iata_code = row['iata_code']
+            por_icao_code = row['icao_code']
 
-            # Derive a unique code.
-            # If there is no IATA code, then pick the ICAO code, and register
-            # that mapping; for instance, 'ZZZ-A-8531884' maps to 'WRLE'.
+            # Filter out the POR having no IATA nor ICAO code
+            if (por_iata_code == "" and por_icao_code == ""): continue
+                        
+            # Retrieve the POR details
+            por_type = row['location_type']
+            por_geo_id = row['geoname_id']
+            por_coord_lat = row['latitude']
+            por_coord_lon = row['longitude']
+            por_date_from = row['date_from']
+            por_city_code_list_str = row['city_code_list']
+
+            # Derive a unique code, to be either IATA or ICAO
             por_code = por_iata_code
-            if (por_code == "ZZZ"):
+            if (por_code == ""):
                 por_code = por_icao_code
                 por_pk = buildPK (por_iata_code, por_type, por_geo_id)
-                por_pk_4_zzz_dict[por_pk] = por_code
-      
+                por_pk_noiata_dict[por_pk] = por_code
+                
+                # Normally, the list of cities is empty too.
+                # For the PageRank algorithm, an entry for cities is needed,
+                # so it is set to the ICAO code too
+                if (por_city_code_list_str == ""):
+                    por_city_code_list_str = por_icao_code
+
             # Extract the list of city codes
-            por_city_code_list_str = line['city_code_list']
             por_city_code_list = por_city_code_list_str.split (',')
 
             # Store the POR
-            storePOR (por_all_dict, por_code, por_iata_code, por_type, por_geo_id, por_city_code_list)
+            storePOR (por_all_dict, por_code, por_iata_code, por_type,
+                      por_geo_id, por_city_code_list)
 
     return (por_all_dict)
 
@@ -487,7 +508,7 @@ def extractBksfAirline (airline_all_dict, airline_bestknown_filepath,
 #  2. POR-based number of seats and flight frequencies, collected into
 #     two dedicated NetworkX directional graphs (dg_seats and dg_freq)
 #
-def analyzeAirlinePOR (por_all_dict, por_pk_4_zzz_dict,
+def analyzeAirlinePOR (por_all_dict, por_pk_noiata_dict,
                        airline_all_dict, airline_por_filepath, verboseFlag):
     """
     Derive two NetworkX directional graphs from the given input file:
@@ -615,7 +636,7 @@ def analyzeAirlinePOR (por_all_dict, por_pk_4_zzz_dict,
             apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
 
             # Extract the corresponding IATA codes. Most of the time,
-            # the POR code is the IATA code. When the IATA is "ZZZ",
+            # the POR code is the IATA code. When the IATA is empty,
             # the POR code is then the ICAO code instead.
             apt_org_iata_code = getIataCodeFromPK (apt_org_tvl_pk)
             apt_dst_iata_code = getIataCodeFromPK (apt_dst_tvl_pk)
@@ -665,8 +686,9 @@ def sortPORDict (unsorted_dict):
         except KeyError:
             return 0
     
-    sorted_dict = OrderedDict (sorted (unsorted_dict.items(),
-                                       key=sort_function, reverse=True))
+    sorted_dict = collections.OrderedDict (sorted (unsorted_dict.items(),
+                                                   key=sort_function,
+                                                   reverse = True))
     return sorted_dict
 
 #
@@ -681,7 +703,9 @@ def sortAirlineDict (unsorted_dict):
         except KeyError:
             return 0
     
-    sorted_dict = OrderedDict (sorted (unsorted_dict.items(), key = sort_function, reverse=True))
+    sorted_dict = collections.OrderedDict (sorted (unsorted_dict.items(),
+                                                   key = sort_function,
+                                                   reverse = True))
 
     # DEBUG
     # from pprint import pprint as pp
@@ -778,7 +802,7 @@ def filterOutAirlineFields (airline_dict, fieldnames):
 #
 # Normalize the PageRank values, and store them into the global POR dictionary
 #
-def normalizePR (por_all_dict, por_pk_4_zzz_dict, prTypeStr, pr_dict,
+def normalizePR (por_all_dict, por_pk_noiata_dict, prTypeStr, pr_dict,
                  verboseFlag):
     """
     Store the PageRank values into the global POR dictionary
@@ -807,7 +831,7 @@ def normalizePR (por_all_dict, por_pk_4_zzz_dict, prTypeStr, pr_dict,
         normalised_page_rank = page_rank / rank_max
 
         # Store the normalized PageRank value
-        idx_por = getCodeFromPK (por_all_dict, por_pk_4_zzz_dict, idx_por_pk)
+        idx_por = getCodeFromPK (por_all_dict, por_pk_noiata_dict, idx_por_pk)
         por_all_dict[idx_por][idx_por_pk][prTypeStr] = normalised_page_rank
 
     return
@@ -815,7 +839,7 @@ def normalizePR (por_all_dict, por_pk_4_zzz_dict, prTypeStr, pr_dict,
 #
 # Print the PageRank values into the given file
 #
-def dump_page_ranked_por (por_all_dict, por_pk_4_zzz_dict,
+def dump_page_ranked_por (por_all_dict, por_pk_noiata_dict,
                           prdict_seats, prdict_freq,
                           output_filepath, verboseFlag):
     """
@@ -826,9 +850,9 @@ def dump_page_ranked_por (por_all_dict, por_pk_4_zzz_dict,
     
     # Normalize the PageRank values, and store them in the global POR
     # dictionary ('por_all_dict')
-    normalizePR (por_all_dict, por_pk_4_zzz_dict, "pr_seats", prdict_seats,
+    normalizePR (por_all_dict, por_pk_noiata_dict, "pr_seats", prdict_seats,
                  verboseFlag)
-    normalizePR (por_all_dict, por_pk_4_zzz_dict, "pr_freq", prdict_freq,
+    normalizePR (por_all_dict, por_pk_noiata_dict, "pr_freq", prdict_freq,
                  verboseFlag)
 
     def flattenDict(d):
@@ -916,8 +940,8 @@ def main():
 
     # Extract the POR details from OpenTravelData
     por_all_dict = dict()
-    por_pk_4_zzz_dict = dict()
-    extractPOR (por_all_dict, por_pk_4_zzz_dict, por_filepath, verboseFlag)
+    por_pk_noiata_dict = dict()
+    extractPOR (por_all_dict, por_pk_noiata_dict, por_filepath, verboseFlag)
 
     # DEBUG
     # from pprint import pprint as pp
@@ -935,7 +959,8 @@ def main():
     # Build directional graphs from the file of flight schedule:
     # - One with, as weight, the monthly average number of seats
     # - One with, as weight, the monthly flight frequency
-    (dict_seats, dict_freq) = analyzeAirlinePOR (por_all_dict, por_pk_4_zzz_dict,
+    (dict_seats, dict_freq) = analyzeAirlinePOR (por_all_dict,
+                                                 por_pk_noiata_dict,
                                                  airline_all_dict,
                                                  por_airline_filepath,
                                                  verboseFlag)
@@ -953,7 +978,7 @@ def main():
     # print (str(prdict_freq))
 
     # Dump the PageRank values for POR into the output file
-    dump_page_ranked_por (por_all_dict, por_pk_4_zzz_dict,
+    dump_page_ranked_por (por_all_dict, por_pk_noiata_dict,
                           prdict_seats, prdict_freq,
                           pr_out_filepath, verboseFlag)
 
