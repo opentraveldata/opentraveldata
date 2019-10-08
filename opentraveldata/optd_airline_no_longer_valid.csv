@@ -1,6 +1,7 @@
 pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type^wiki_link^alt_names^bases^key^version^parent_pk_list
 air-abakan-avia-v1^1^1992-01-01^2014-07-10^ABG^4R^^Abakan-Avia^^^^^https://en.wikipedia.org/wiki/Abakan-Avia^en|Royal Flight|p=en|Abakan-Avia|h=ru|Авиакомпания «Роял Флайт»|p=ru|Авиакомпания «Абакан-Авиа»|h^ABA^air-royal-flight^1^
 air-act-airlines-v1^1^2004-01-01^2010-12-31^RUN^9T^556^ACT Airlines^^^^^https://en.wikipedia.org/wiki/MyCargo_Airlines^en|ACT Airlines|h=en|ACT Havayollari|h=en|MyCargo Airlines|p^IST^air-act-airlines^1^
+air-adria-airways-v1^1^1961-03-14^2019-09-30^ADR^JP^165^Adria Airways^^^Member^^https://en.wikipedia.org/wiki/Adria_Airways^en|Adria Airways|=en|Inex-Adria Aviopromet|h=en|Inex-Adria Airways|h=sign|ADRIA|^LJU^air-adria-airways^1^
 air-aero-california-v1^1^1960-01-01^2008-07-23^SER^JR^0^Aero California^^^^^https://en.wikipedia.org/wiki/Aero_California^en|Aero California|p=en|AeroCal|s=sign|AEROCALIFORNIA|^^air-aero-california^1^
 air-aero-cuahonte-v1^1^1957-11-01^2007-12-31^CUO^5G^0^Aero Cuahonte^^^^^https://en.wikipedia.org/wiki/Aero_Cuahonte^en|Aero Cuahonte|^UPN^air-aero-cuahonte^1^
 air-aero-flight-v1^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^https://en.wikipedia.org/wiki/Aero_Flight^en|Aero Flight|^^air-aero-flight^1^
@@ -17,6 +18,7 @@ air-air-alps-aviation-v1^1^1999-01-01^2014-03-01^LPV^A6^527^Air Alps Aviation^^^
 air-air-armenia-v1^1^2003-01-01^2014-10-31^ARR^QN^907^Air Armenia^^^^^https://en.wikipedia.org/wiki/Air_Armenia^en|Air Armenia|=fa|ایر آرمنیا|=hy|Էյր Արմենիա|=ru|Эйр Армения|=sign|AIR ARMENIA|=zh|亞美尼亞航空|^^air-air-armenia^1^
 air-air-azul-v1^1^2007-01-01^2008-12-31^LOC^ZQ^0^JetAmerica^^^^^https://en.wikipedia.org/wiki/JetAmerica^en|JetAmerica|p=en|Air Azul|=en|Sun America|^^air-air-azul^1^
 air-air-bashkortostan-v1^1^2006-04-10^2013-10-09^^ZU^894^Air Bashkortostan^^^^^https://en.wikipedia.org/wiki/Air_Bashkortostan^en|Air Bashkortostan|^^air-air-bashkortostan^1^
+air-air-berlin-v1^1^1979-01-01^2017-10-28^BER^AB^745^Air Berlin^^^Member^^https://en.wikipedia.org/wiki/Air_Berlin^en|Air Berlin|^TXL^air-air-berlin^1^
 air-air-burundi-v1^1^1971-01-01^2009-12-31^PBU^8Y^0^Air Burundi^^^^^https://en.wikipedia.org/wiki/Air_Burundi^en|Air Burundi|^^air-air-burundi^1^
 air-air-cargo-carriers-v1^1^1986-01-01^2003-12-31^SNC^2Q^0^Air Cargo Carriers^^^^C^https://en.wikipedia.org/wiki/Air_Cargo_Carriers^en|Air Cargo Carriers|^^air-air-cargo-carriers^1^
 air-air-cargo-germany-v1^1^2009-01-01^2013-12-31^ACX^6U^0^Air Cargo Germany^^^^C^https://en.wikipedia.org/wiki/Air_Cargo_Germany^en|Air Cargo Germany|p=abbr|ACG|^HHN^air-air-cargo-germany^1^
@@ -71,6 +73,7 @@ air-amadeus-seven-n-v1^1^2011-01-25^2014-06-01^^7N^^Amadeus 7N^^^^D^^en|Amadeus 
 air-amadeus-seven-x-v1^1^^2014-06-01^XYC^7X^791^Amadeus 7X^^^^D^^en|Amadeus 7X|^^air-amadeus-seven-x^1^
 air-amadeus-six-v1^1^^2014-06-01^XYB^6X^172^Amadeus 6X^^^^D^^en|Amadeus 6X|^^air-amadeus-six^1^
 air-amadeus-two-v1^1^^2014-06-01^XYA^2X^799^Amadeus 2X^^^^D^^en|Amadeus 2X|^^air-amadeus-two^1^
+air-amira-air-v1^1^2004-01-01^2018-03-17^LDM^OE^0^Amira Air^^^^^https://en.wikipedia.org/wiki/Lauda_(airline)^en|Lauda|p=en|Lauda Motion GmbH|=en|Laudamotion|=en|Amira Air|h=sign|LAUDA MOTION|^DUS=TXL=VIE^air-amira-air^1^
 air-angkor-airways-v1^1^2007-01-01^2008-12-31^AKW^G6^0^Angkor Airways^^^^^https://en.wikipedia.org/wiki/Angkor_Airways^en|Angkor Airways|^PNH^air-angkor-airways^1^
 air-arctic-circle-air-v1^1^1953-01-01^2009-12-31^CIR^5F^0^Arctic Circle Air^^^^^https://en.wikipedia.org/wiki/Arctic_Circle_Air^en|Arctic Circle Air|^SPN^air-arctic-circle-air^1^
 air-armavia-v1^1^1996-01-01^2013-04-01^RNV^U8^669^Armavia^^^^^https://en.wikipedia.org/wiki/Armavia^en|Armavia|=en|Armenian International Airways|h=hy|Արմավիա|^^air-armavia^1^
@@ -263,10 +266,12 @@ air-nayzak-air-v1^1^2006-01-01^2009-12-31^NZA^M4^0^Nayzak Air^^^^^https://en.wik
 air-new-livingston-v1^1^2012-01-01^2014-10-07^NLV^JN^401^New Livingston^^^^^https://en.wikipedia.org/wiki/Livingston_Compagnia_Aerea^en|New Livingston|p=en|Livingston Airline|=it|Livingston_Compagnia_Aerea|^MXP=RMI=TIA^air-new-livingston^1^
 air-nice-helicopteres-v1^1^^2014-12-31^^JX^179^Nice Helicopteres^^^^^^en|Nice Helicopteres|^^air-nice-helicopteres^1^
 air-nigeria-airways-v1^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^https://en.wikipedia.org/wiki/Nigeria_Airways^en|Nigeria Airways|^^air-nigeria-airways^1^
+air-niki-v1^1^2003-01-01^2017-12-14^NLY^HG^0^Niki^^^Affiliate^^https://en.wikipedia.org/wiki/Niki_%28airline%29^en|Niki|p=en|flyNiki|=en|NIKI Luftfahrt GmbH|=sign|FLYNIKI|^^air-niki^1^
 air-nordic-global-airlines-v1^1^2011-04-01^2015-05-31^NGB^NJ^0^Nordic Global Airlines^^^^C^https://en.wikipedia.org/wiki/Nordic_Global_Airlines^en|Nordic Global Airlines|^^air-nordic-global-airlines^1^
 air-norfolk-air-v1^1^2006-05-01^2012-02-26^NLK^N5^0^Norfolk Air^^^^^https://en.wikipedia.org/wiki/Norfolk_Air^en|Norfolk Air|^^air-norfolk-air^1^
 air-north-adria-aviation-v1^1^1993-01-01^2006-01-01^NAI^^^North Adria Aviation^^^^^https://www.ch-aviation.com/portal/airline/NAI^en|North Adria Aviation^LDPV^air-north-adria-aviation^1^
 air-north-american-airlines-v1^1^1989-01-01^2014-06-09^NAO^NA^455^North American Airlines^^^^^https://en.wikipedia.org/wiki/North_American_Airlines^en|North American Airlines|=sign|NORTH AMERICAN|^BWI=JFK^air-north-american-airlines^1^
+air-oceanair-v1^1^1998-01-01^2019-06-24^ONE^O6^247^Avianca Brasil^^^^^https://en.wikipedia.org/wiki/Avianca_Brasil_S.A.^en|Avianca Brasil|p=en|Oceanair Linhas Aéreas S/A|=en|Oceanair|h^GRU^air-oceanair^1^
 air-odessa-airlines-v1^1^1996-01-01^2006-12-31^ODS^5K^0^Odessa Airlines^^^^^https://en.wikipedia.org/wiki/Odessa_Airlines^en|Odessa Airlines|^^air-odessa-airlines^1^
 air-olt-express-germany-v1^1^1958-01-01^2013-01-30^OLT^OL^704^OLT Express Germany^^^^^https://en.wikipedia.org/wiki/OLT_Express_Germany^en|OLT Express Germany|^^air-olt-express-germany^1^
 air-orenair-v1^1^1992-01-01^2016-06-30^ORB^R2^291^Orenburg Airlines^^^^^https://en.wikipedia.org/wiki/Orenair^en|Orenburg Airlines|p=en|Orenair|=ru|Оренбургские авиалинии|^REN^air-orenair^1^
@@ -349,6 +354,7 @@ air-west-air-sweden-v1^1^1955-01-01^2015-04-01^SWN^PT^0^West Air Sweden^^^^^http
 air-westcoast-air-v1^1^1996-01-01^2010-03-31^YWZ^8O^^Westcoast Air^^^^^https://en.wikipedia.org/wiki/Westcoast_Air^en|Westcoast Air|^YVR^air-westcoast-air^1^
 air-wizz-air-bulgaria-v1^1^2005-01-01^2011-12-31^WVL^8Z^0^Wizz Air Bulgaria^^^^^https://en.wikipedia.org/wiki/Wizz_Air_Bulgaria^en|Wizz Air Bulgaria|^^air-wizz-air-bulgaria^1^
 air-wizz-air-ukraine-v1^1^2008-01-01^2015-04-20^WAU^WU^0^Wizz Air Ukraine^^^^^https://en.wikipedia.org/wiki/Wizz_Air_Ukraine^en|Wizz Air Ukraine|=uk|Товариство з обмеженою відповідальністю|^^air-wizz-air-ukraine^1^
+air-xl-airways-france-v1^1^1995-12-22^2019-09-23^XLF^SE^473^XL Airways France^^^^^https://en.wikipedia.org/wiki/XL_Airways_France^en|XL Airways France|=en|Star Airlines|=sign|STARWAY|^CDG^air-xl-airways-france^1^
 air-zagros-airlines-v1^1^2005-01-01^2014-11-30^IZG^ZV^0^Zagros Airlines^^^^^https://en.wikipedia.org/wiki/Zagros_Airlines^en|Zagros Airlines|^ABD^air-zagros-airlines^1^
 air-zambian-airways-v1^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^https://en.wikipedia.org/wiki/Zambian_Airways^en|Zambian Airways|^^air-zambian-airways^1^
 air-zambia-skyways-v1^1^1999-01-01^2010-12-31^ZAK^K8^241^Zambia Skyways^^^^^https://en.wikipedia.org/wiki/Zambia_Skyways^en|Zambia Skyways|^LUN^air-zambia-skyways^1^

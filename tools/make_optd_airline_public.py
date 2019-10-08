@@ -345,8 +345,9 @@ def extractFrequencies (global_dict, freq_filepath, verboseFlag):
                 # Sanity checks
                 if (nbOfActiveAirlines == 0):
                     print ("[Error] The airline '" + iata_code + "/" + icao_code
-                           + "' has no active record. List of PK: "
-                           + str(pk_list))
+                           + "' has no active record. However, it is referenced "
+                           + "in the frequency file (" + freq_filepath
+                           + "). List of PK: " + str(pk_list))
                     raise KeyError
                 if (nbOfActiveAirlines >= 2):
                     print ("[Warning] The airline '" + iata_code + "/"
