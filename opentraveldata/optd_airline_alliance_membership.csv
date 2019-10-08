@@ -1,6 +1,6 @@
 alliance_name^alliance_type^airline_iata_code_2c^airline_name^from_date^to_date^env_id
-OneWorld^Member^AB^Air Berlin^2012-03-20^^
-OneWorld^Affiliate^HG^Niki^2012-03-20^^
+OneWorld^Member^AB^Air Berlin^2012-03-20^2017-10-28^
+OneWorld^Affiliate^HG^Niki^2012-03-20^2017-10-28^
 OneWorld^Member^AA^American Airlines^1999-02-01^^
 OneWorld^Affiliate^MQ^Envoy Air^1999-02-01^^
 OneWorld^Affiliate^AX^Trans States Airlines^1999-02-01^^
@@ -84,7 +84,7 @@ Star Alliance^Member^ET^Ethiopian Airlines^2011-12-01^^
 Star Alliance^Affiliate^HO^Juneyao Airlines^2017-05-23^^
 Star Alliance^Member^JJ^TAM Linhas Aereas^2010-05-01^2014-03-31^1
 Star Alliance^Member^JK^Spanair^2003-05-01^2012-01-27^1
-Star Alliance^Member^JP^Adria Airways^2004-11-01^^
+Star Alliance^Member^JP^Adria Airways^2004-11-01^2019-09-30^
 Star Alliance^Member^KF^Blue1^2004-11-03^2012-11-30^1
 Star Alliance^Member^LH^Lufthansa^1999-05-01^^
 Star Alliance^Member^LO^LOT Polish Airlines^2003-10-01^^
@@ -92,7 +92,7 @@ Star Alliance^Member^LX^Swiss International Air Lines^2006-04-01^^
 Star Alliance^Member^MS^EgyptAir^2008-06-01^^
 Star Alliance^Member^NH^All Nippon Airways^1999-10-01^^
 Star Alliance^Member^NZ^Air New Zealand^1999-03-01^^
-Star Alliance^Member^O6^Avianca Brasil^2015-07-22^^
+Star Alliance^Member^O6^Avianca Brasil^2015-07-22^2019-08-31^
 Star Alliance^Member^OS^Austrian Airlines^2000-03-01^^
 Star Alliance^Member^OU^Croatia Airlines^2004-11-01^^
 Star Alliance^Member^OZ^Asiana Airlines^2003-03-01^^
