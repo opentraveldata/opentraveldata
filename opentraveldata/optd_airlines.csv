@@ -505,7 +505,8 @@ air-dragonair-v1^^1985-07-01^^HDA^KA^43^Cathay Dragon^^OneWorld^Affiliate^^https
 air-dreamjet-v1^^2014-01-01^^DJT^B0^2^La Compagnie^Dreamjet^^^^https://en.wikipedia.org/wiki/La_Compagnie^101^en|La Compagnie|=en|Dreamjet|^^air-dreamjet^1^^
 air-druk-air-v1^^1983-02-11^^DRK^KB^787^Druk Air^^^^^https://en.wikipedia.org/wiki/Druk_Air^429^en|Druk Air|^^air-druk-air^1^^
 air-dutch-antilles-express-v1^1^2005-01-01^2013-09-19^DNL^9H^0^Dutch Antilles Express^Dae^^^^https://en.wikipedia.org/wiki/Dutch_Antilles_Express^^en|Dutch Antilles Express|==abbr|dae|^^air-dutch-antilles-express^1^^
-air-dynamic-air-v1^^2010-10-01^^DYA^2D^54^Dynamic Airways^^^^T^https://en.wikipedia.org/wiki/Dynamic_Airways^202^en|Dynamic Airways|^^air-dynamic-air^1^^
+air-dynamic-airways-v1^1^2010-10-01^2018-03-31^DYA^2D^54^Eastern Airlines, LLC^^^^^https://en.wikipedia.org/wiki/Eastern_Airlines,_LLC^^en|Eastern Airlines, LLC|p=en|Dynamic Airways|h=en|Dynamic International Airways|=sign|EASTERN|p=sign|DYNAMIC AIR|h^MIA^air-dynamic-airways^1^^m|air-dynamic-airways-v2
+air-dynamic-airways-v2^^2018-04-01^^EAL^2D^54^Eastern Airlines, LLC^^^^^https://en.wikipedia.org/wiki/Eastern_Airlines,_LLC^202^en|Eastern Airlines, LLC|p=en|Dynamic Airways|h=en|Dynamic International Airways|=sign|EASTERN|p=sign|DYNAMIC AIR|h^MIA^air-dynamic-airways^2^m|air-dynamic-airways-v1=m|air-eastern-air-lines-v2^
 air-e-savtravel-v1^^^^^L1^0^E Savtravel^^^^^^^en|E Savtravel|^^air-e-savtravel^1^^
 air-eagle-air-v1^^^^EGU^H7^0^Eagle Air^^^^^^93^en|Eagle Air|^^air-eagle-air^1^^
 air-eagle-atlantic-airlines-v1^1^2013-10-31^2014-12-31^EAB^E2^0^Eagle Atlantic Airlines^^^^P^https://en.wikipedia.org/wiki/Eagle_Atlantic_Airlines^^en|Eagle Atlantic Airlines|^ACC^air-eagle-atlantic-airlines^1^^
@@ -517,7 +518,7 @@ air-east-line-v1^^^^^1T^0^East Line^^^^^^^en|East Line|^^air-east-line^1^^
 air-east-star-airlines-v1^1^2005-01-01^2009-03-15^DXH^8C^0^East Star Airlines^^^^^https://en.wikipedia.org/wiki/East_Star_Airlines^^en|East Star Airlines|^WUH^air-east-star-airlines^1^^
 air-eastar-jet-v1^^^^ESR^ZE^839^Eastar Jet^^^^^^2697^en|Eastar Jet|^^air-eastar-jet^1^^
 air-eastern-air-lines-v1^1^1926-01-01^1991-01-18^EAL^EA^0^East Air Lines^^^^^https://en.wikipedia.org/wiki/Eastern_Air_Lines^^en|East Air Lines|p=en|Pitcairn Aviation|=sign|EASTERN|^MIA^air-eastern-air-lines^1^^
-air-eastern-air-lines-v2^^2015-05-28^^EAL^EA^7^East Air Lines^^^^^https://en.wikipedia.org/wiki/Eastern_Air_Lines_(2015)^132^en|East Air Lines|=sign|EASTERN|^MIA^air-eastern-air-lines^2^^
+air-eastern-air-lines-v2^1^2015-05-28^2017-09-30^EAL^EA^7^East Air Lines^^^^^https://en.wikipedia.org/wiki/Eastern_Air_Lines_(2015)^^en|East Air Lines|=sign|EASTERN|^MIA^air-eastern-air-lines^2^^m|air-dynamic-airways-v2
 air-eastern-airways-v1^^1997-01-01^^EZE^T3^467^Eastern Airways^^^^^https://en.wikipedia.org/wiki/Eastern_Airways^1289^en|Eastern Airways|^ABZ^air-eastern-airways^1^^
 air-eastern-caribbean-airlines-v1^^^^^JI^0^Eastern Caribbean Airlines^^^^^^379^en|Eastern Caribbean Airlines|^^air-eastern-caribbean-airlines^1^^
 air-eastok-avia-v1^1^2006-06-01^2010-04-30^EAA^E4^265^Eastok Avia^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^^en|Eastok Avia|p^FRU^air-eastok-avia^1^^
