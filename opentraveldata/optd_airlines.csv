@@ -249,8 +249,9 @@ air-amadeus-seven-x-v1^1^^2014-06-01^XYC^7X^791^Amadeus 7X^^^^D^^^en|Amadeus 7X|
 air-amadeus-six-v1^1^^2014-06-01^XYB^6X^172^Amadeus 6X^^^^D^^^en|Amadeus 6X|^^air-amadeus-six^1^^
 air-amadeus-two-v1^1^^2014-06-01^XYA^2X^799^Amadeus 2X^^^^D^^^en|Amadeus 2X|^^air-amadeus-two^1^^
 air-amakusa-airlines-v1^^2000-03-23^^AHX^MZ^0^Amakusa Airlines^^^^^https://en.wikipedia.org/wiki/Amakusa_Airlines^302^en|Amakusa Airlines|=ja|天草エアライン株式会社|=ko|아마쿠사 항공|=sign|AMAKUSA AIR|=zh|天草航空|^^air-amakusa-airlines^1^^
-air-amaszonas-del-paraguay-v1^^^^^ZP^0^Amaszonas Del Paraguay^^^^^^^en|Amaszonas Del Paraguay|^^air-amaszonas-del-paraguay^1^^
-air-amaszonas-v1^^1998-10-01^^AZN^Z8^464^Línea Aérea Amaszonas^Amaszonas^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Amaszonas^1856^en|Línea Aérea Amaszonas|=en|Amaszonas|^^air-amaszonas^1^^
+air-amaszonas-paraguay-v1^^2015-09-23^^AZP^ZP^445^Paranair^^^^^https://en.wikipedia.org/wiki/Paranair^^en|Paranair|p=en|Compania de Aviacion Paraguaya|=en|Amaszonas Paraguay|h=sign|GUARANI|^ASU^air-amaszonas-paraguay^1^m|air-bqb-v1^
+air-amaszonas-uruguay-v1^^2015-01-01^^AUZ^Z7^455^Amaszonas Uruguay^^^^^https://en.wikipedia.org/wiki/Amaszonas_Uruguay^^en|Amaszonas Uruguay|=en|Cristalux SA|=sign|URUGUAYA|^MVD^air-amaszonas-uruguay^1^^
+air-amaszonas-v1^^1998-10-01^^AZN^Z8^464^Línea Aérea Amaszonas^^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Amaszonas^1856^en|Línea Aérea Amaszonas|=en|Amaszonas|s=en|Compania de Servicios de Transporte Aereo Amaszonas|=sign|AMASZONAS|^LPB^air-amaszonas^1^^
 air-american-airlines-v1^^1934-01-01^^AAL^AA^1^American Airlines^^OneWorld^Member^^https://en.wikipedia.org/wiki/American_Airlines^194587^en|American Airlines|^^air-american-airlines^1^^
 air-american-eagle-v1^^1998-01-01^^ENY^MQ^93^Envoy Air^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Envoy_Air^^en|Envoy Air|^^air-american-eagle^1^^
 air-amerijet-international-v1^^1974-01-01^^AJT^M6^810^Amerijet International^^^^^https://en.wikipedia.org/wiki/Amerijet_International^^en|Amerijet International|=sign|AMERIJET|^MIA=POS^air-amerijet-international^1^^
@@ -352,7 +353,7 @@ air-bluebird-cargo-v1^^2001-03-01^^BBD^BO^290^Bluebird Nordic^^^^C^https://en.wi
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^https://en.wikipedia.org/wiki/BMI_Regional^1842^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1^^
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^https://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^3473^abbr|BoA|=en|Boliviana de Aviación|^^air-boliviana-de-aviacion^1^^
 air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^https://en.wikipedia.org/wiki/Boutique_Air^2938^en|Boutique Air|^SFO^air-boutique-air^1^^
-air-bqb-v1^^^^BQB^5Q^567^BQB Líneas Aéreas^^^^P^https://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^^en|BQB Líneas Aéreas|^^air-bqb^1^^
+air-bqb-v1^1^2010-01-01^2015-04-30^BQB^5Q^567^BQB Líneas Aéreas^^^^P^https://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^^en|BQB Líneas Aéreas|=en|BQB Airlines|^MVD^air-bqb^1^^m|air-amaszonas-paraguay-v1
 air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^https://en.wikipedia.org/wiki/Braathens_Regional_Aviation^74^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1^^
 air-branson-air-express-v1^^2010-05-17^^^1X^0^Branson Air Express^^^^^https://en.wikipedia.org/wiki/Branson_Air_Express^86^en|Branson Air Express|=en|FlyBranson Travel|^SFB^air-branson-air-express^1^^
 air-brindabella-airlines-v1^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^https://en.wikipedia.org/wiki/Brindabella_Airlines^^en|Brindabella Airlines|^^air-brindabella-airlines^1^^
@@ -609,7 +610,7 @@ air-fly540-ghana-v1^1^2011-11-01^2014-05-31^FOX^5G^0^Fly540 Ghana^^^^^https://en
 air-fly540-tanzania-v1^^2011-01-01^^FTZ^FN^334^Fastjet^^^^^https://en.wikipedia.org/wiki/Fastjet_Tanzania^863^en|Fastjet|p=en|Fastjet Tanzania|h=en|Fastjet Airlines Limited|=en|Fly540 Tanzania|h^DAR^air-fly540-tanzania^1^^
 air-fly540-v1^^2006-01-01^^FFV^5H^540^Five Fourty Aviation^^^^^https://en.wikipedia.org/wiki/Fly540^1203^en|Five Fourty Aviation|=en|Fly540|ps^NBO^air-fly540^1^^
 air-flyadeal-v1^^2017-09-23^^FAD^F3^0^Flyadeal^^^^^https://en.wikipedia.org/wiki/Flyadeal^^ar|طيران أديل‎)|=en|Flyadeal|^JED^air-flyadeal^1^^
-air-flyafrica-zimbabwe-v1^^2014-07-17^^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^https://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^61^en|Zimbabwe flyafrica.com|^^air-flyafrica-zimbabwe^1^^
+air-flyafrica-zimbabwe-v1^1^2014-07-17^2015-10-31^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^https://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^^en|Zimbabwe flyafrica.com|^HRE^air-flyafrica-zimbabwe^1^^
 air-flybaghdad-v1^^2015-06-15^^FBA^IF^0^FlyBaghdad^^^^^https://en.wikipedia.org/wiki/FlyBaghdad^592^en|FlyBaghdad|^^air-flybaghdad^1^^
 air-flybe-v1^^1979-01-01^^BEE^BE^267^Flybe^Brit Europ^^^^https://en.wikipedia.org/wiki/Flybe^17592^en|Flybe|=en|Brit Europ|^^air-flybe^1^^
 air-flycongo-v1^1^2012-03-24^2013-10-31^ALX^EO^663^FlyCongo^^^^^https://en.wikipedia.org/wiki/FlyCongo^^en|FlyCongo|^FIH^air-flycongo^1^^

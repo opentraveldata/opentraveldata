@@ -175,8 +175,9 @@ air-alpha-air-transport-v1^^2014-01-01^^^7U^428^Alpha Air Transport^^^^^^en|Alph
 air-alpine-air-v1^^^^^N6^0^Nomad Aviation^Aerocontinent^^^^^en|Nomad Aviation|=en|Aerocontinent|^^air-alpine-air^1^
 air-als-v1^^^^^K4^0^ALS^^^^^^en|ALS|^^air-als^1^
 air-amakusa-airlines-v1^^2000-03-23^^AHX^MZ^0^Amakusa Airlines^^^^^https://en.wikipedia.org/wiki/Amakusa_Airlines^en|Amakusa Airlines|=ja|天草エアライン株式会社|=ko|아마쿠사 항공|=sign|AMAKUSA AIR|=zh|天草航空|^^air-amakusa-airlines^1^
-air-amaszonas-del-paraguay-v1^^^^^ZP^0^Amaszonas Del Paraguay^^^^^^en|Amaszonas Del Paraguay|^^air-amaszonas-del-paraguay^1^
-air-amaszonas-v1^^1998-10-01^^AZN^Z8^464^Línea Aérea Amaszonas^Amaszonas^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Amaszonas^en|Línea Aérea Amaszonas|=en|Amaszonas|^^air-amaszonas^1^
+air-amaszonas-paraguay-v1^^2015-09-23^^AZP^ZP^445^Paranair^^^^^https://en.wikipedia.org/wiki/Paranair^en|Paranair|p=en|Compania de Aviacion Paraguaya|=en|Amaszonas Paraguay|h=sign|GUARANI|^ASU^air-amaszonas-paraguay^1^m|air-bqb-v1
+air-amaszonas-uruguay-v1^^2015-01-01^^AUZ^Z7^455^Amaszonas Uruguay^^^^^https://en.wikipedia.org/wiki/Amaszonas_Uruguay^en|Amaszonas Uruguay|=en|Cristalux SA|=sign|URUGUAYA|^MVD^air-amaszonas-uruguay^1^
+air-amaszonas-v1^^1998-10-01^^AZN^Z8^464^Línea Aérea Amaszonas^^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Amaszonas^en|Línea Aérea Amaszonas|=en|Amaszonas|s=en|Compania de Servicios de Transporte Aereo Amaszonas|=sign|AMASZONAS|^LPB^air-amaszonas^1^
 air-american-airlines-v1^^1934-01-01^^AAL^AA^1^American Airlines^^^Member^^https://en.wikipedia.org/wiki/American_Airlines^en|American Airlines|^^air-american-airlines^1^
 air-american-eagle-v1^^1998-01-01^^ENY^MQ^93^Envoy Air^^^^^https://en.wikipedia.org/wiki/Envoy_Air^en|Envoy Air|^^air-american-eagle^1^
 air-amerijet-international-v1^^1974-01-01^^AJT^M6^810^Amerijet International^^^^^https://en.wikipedia.org/wiki/Amerijet_International^en|Amerijet International|=sign|AMERIJET|^MIA=POS^air-amerijet-international^1^
@@ -257,7 +258,6 @@ air-blue-panorama-airlines-v1^^^^BPA^BV^4^Blue Panorama Airlines^Blue Panorama^^
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^https://en.wikipedia.org/wiki/BMI_Regional^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1^
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^https://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^abbr|BoA|=en|Boliviana de Aviación|^^air-boliviana-de-aviacion^1^
 air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^https://en.wikipedia.org/wiki/Boutique_Air^en|Boutique Air|^SFO^air-boutique-air^1^
-air-bqb-v1^^^^BQB^5Q^567^BQB Líneas Aéreas^^^^P^https://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^en|BQB Líneas Aéreas|^^air-bqb^1^
 air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^https://en.wikipedia.org/wiki/Braathens_Regional_Aviation^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1^
 air-branson-air-express-v1^^2010-05-17^^^1X^0^Branson Air Express^^^^^https://en.wikipedia.org/wiki/Branson_Air_Express^en|Branson Air Express|=en|FlyBranson Travel|^SFB^air-branson-air-express^1^
 air-bringer-air-cargo-v1^^^^^E6^417^Bringer Air Cargo^^^^C^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1^
@@ -426,7 +426,6 @@ air-flair-airlines-v1^^2005-01-01^^FLE^F8^0^Flair Airlines^^^^^https://en.wikipe
 air-flexflight-v1^^^^FXT^W2^365^Flexflight^Flexflight^^^^^en|Flexflight|=en|Flexflight|^^air-flexflight^1^
 air-fly540-tanzania-v1^^2011-01-01^^FTZ^FN^334^Fastjet^^^^^https://en.wikipedia.org/wiki/Fastjet_Tanzania^en|Fastjet|p=en|Fastjet Tanzania|h=en|Fastjet Airlines Limited|=en|Fly540 Tanzania|h^DAR^air-fly540-tanzania^1^
 air-fly540-v1^^2006-01-01^^FFV^5H^540^Five Fourty Aviation^^^^^https://en.wikipedia.org/wiki/Fly540^en|Five Fourty Aviation|=en|Fly540|ps^NBO^air-fly540^1^
-air-flyafrica-zimbabwe-v1^^2014-07-17^^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^https://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^en|Zimbabwe flyafrica.com|^^air-flyafrica-zimbabwe^1^
 air-fly-all-ways-airlines-v1^^2016-01-22^^EDR^8W^0^Fly All Ways Airlines^^^^^https://en.wikipedia.org/wiki/Fly_All_Ways^en|Fly All Ways Airlines|^PBM^air-fly-all-ways-airlines^1^
 air-fly-art-v1^^2016-07-01^^FLB^T2^0^Fly Art^^^^^^en|Fly Art|^^air-fly-art^1^
 air-flybaghdad-v1^^2015-06-15^^FBA^IF^0^FlyBaghdad^^^^^https://en.wikipedia.org/wiki/FlyBaghdad^en|FlyBaghdad|^^air-flybaghdad^1^
