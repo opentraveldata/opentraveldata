@@ -59,7 +59,7 @@ to be done in order to automate most of the steps, though.
 
 # Legacy
 This is the master repository of the Open Travel Data (OPTD) project.
-For backwards compatability reasons, all changes are synchronized back to the
+For backwards compatibility reasons, all changes are synchronized back to the
 [old repository](http://github.com/opentraveldata/optd).
 
 # Licensing
