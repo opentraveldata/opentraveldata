@@ -6,7 +6,7 @@ import requests
 
 successes = 0
 failures = 0
-with open('../opentraveldata/optd_airlines_websites_wkdt.csv', newline='') as csvfile:
+with open('../opentraveldata/optd_airlines_websites.csv', newline='') as csvfile:
     rows = csv.reader(csvfile, delimiter='^')
     for row in rows:
         iata_code = row[1]
