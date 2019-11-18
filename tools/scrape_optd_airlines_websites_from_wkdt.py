@@ -3,24 +3,28 @@
 # pip install sparqlwrapper
 # https://rdflib.github.io/sparqlwrapper/
 
-# Code generated from SPARQL query: http://tinyurl.com/y7l9acas
+# Code generated from SPARQL queries:
+# * http://tinyurl.com/y7l9acas
+# * https://w.wiki/CJ9
 
 import csv
 from SPARQLWrapper import SPARQLWrapper, JSON
 
 endpoint_url = "https://query.wikidata.org/sparql"
 
-query = """SELECT ?airlineLabel ?IATA_airline_designator ?ICAO_airline_designator ?official_website WHERE {
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+query = """SELECT ?airlineLabel ?IATA_airline_designator ?ICAO_airline_designator ?official_website ?logo_image WHERE {
   ?airline wdt:P31 wd:Q46970.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
   OPTIONAL { ?airline wdt:P856 ?official_website. }
+  OPTIONAL { ?airline wdt:P154 ?logo_image. }
   OPTIONAL { ?airline wdt:P229 ?IATA_airline_designator. }
   OPTIONAL { ?airline wdt:P230 ?ICAO_airline_designator. }
 }
+LIMIT 10000
 """
 
 # 
-airline_list = [('3char_code', '2char_code', 'name', 'website')]
+airline_list = [('3char_code', '2char_code', 'name', 'website', 'logo')]
 
 def get_results(endpoint_url, query):
     sparql = SPARQLWrapper(endpoint_url)
@@ -49,9 +53,12 @@ if __name__ == '__main__':
         website = ''
         if 'official_website' in airline:
             website = airline['official_website']['value']
+        logo = ''
+        if 'logo_image' in airline:
+            logo = airline['logo_image']['value']
 
         #
-        record_struct = [icao_code, iata_code, name, website]
+        record_struct = [icao_code, iata_code, name, website, logo]
         airline_list.append (record_struct)
 
 # Write the results into a CSV
