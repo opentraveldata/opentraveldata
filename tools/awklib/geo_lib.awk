@@ -359,6 +359,7 @@ function isFeatCodeCity(__ifccParamFeatureCode) {
     __resultIsCity += match (__ifccParamFeatureCode, "^MILB")
     __resultIsCity += match (__ifccParamFeatureCode, "^PRK")
     __resultIsCity += match (__ifccParamFeatureCode, "^RES")
+    __resultIsCity += match (__ifccParamFeatureCode, "^FRST")
     __resultIsCity += match (__ifccParamFeatureCode, "^AMUS")
     __resultIsCity += match (__ifccParamFeatureCode, "^CAPE")
     __resultIsCity += match (__ifccParamFeatureCode, "^PT")
@@ -405,6 +406,7 @@ function isFeatCodeHeliport(__ifchParamFeatureCode) {
 function isFeatCodeRail(__ifcrParamFeatureCode) {
     # Railway station
     __resultIsRail = match (__ifcrParamFeatureCode, "RSTN")
+    __resultIsRail += match (__ifcrParamFeatureCode, "RSTP")
 
     return __resultIsRail
 }
