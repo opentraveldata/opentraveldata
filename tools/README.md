@@ -640,12 +640,12 @@ $ popd
 The reference data has been updated, _i.e._, the `dump_from_crb_city.csv`
 file has been recomputed.
 
-Recompte the light file of reference POR:
+Recompute the light file of reference POR:
 ```bash
 $ sh prepare_por_ref_light.sh && sh prepare_por_ref_light.sh --clean
 ```
 
-It should generate the ../opentraveldata/optd_por_ref.csv file. That latter
+It should generate the `../opentraveldata/optd_por_ref.csv` file. That latter
 is not used: it is kept just for reference (hence the name).
 ```bash
 $ git add ../opentraveldata/optd_por_ref.csv

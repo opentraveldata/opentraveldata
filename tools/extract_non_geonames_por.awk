@@ -37,53 +37,53 @@ BEGIN {
     ctry_cont_code_list["ZZ"] = "ZZ"
     ctry_cont_name_list["ZZ"] = "Not relevant/available"
 
-	# Fix the reference data: list of POR known to be valid in
-	# the reference data, but not valid in OPTD.
-	# Also, IATA references a few "fictitious" or other "test" POR.
-	# All those POR should not be used in any production online systems.
-	# So, it is better to remove them from OpenTravelData,
-	# so that, if they are referenced within a flight schedule or a booking,
-	# it is most probably an error (eg, mispelling), and it must be reported.
-	# Keeping those POR in OpenTravelData would increase the difficulty of
-	# detecting those simple errors.
-	#
-	# optd_por_wrong_tz_file set by the caller Shell script to
-	#                        "../opentraveldata/optd_por_tz_wrong.csv"
-	hdr_line = "iata_code^loc_type^por_name^por_name2^por_name3^por_name4^cty_name^cty_code^is_apt^state_code^ctry_code^rgn_code^cnt_code^tz_grp^lat^lon^nmc_code^is_cml"
-	print (hdr_line) > optd_por_wrong_tz_file
+    # Fix the reference data: list of POR known to be valid in
+    # the reference data, but not valid in OPTD.
+    # Also, IATA references a few "fictitious" or other "test" POR.
+    # All those POR should not be used in any production online systems.
+    # So, it is better to remove them from OpenTravelData,
+    # so that, if they are referenced within a flight schedule or a booking,
+    # it is most probably an error (eg, mispelling), and it must be reported.
+    # Keeping those POR in OpenTravelData would increase the difficulty of
+    # detecting those simple errors.
+    #
+    # optd_por_wrong_tz_file set by the caller Shell script to
+    #                        "../opentraveldata/optd_por_tz_wrong.csv"
+    hdr_line = "iata_code^loc_type^por_name^por_name2^por_name3^por_name4^cty_name^cty_code^is_apt^state_code^ctry_code^rgn_code^cnt_code^tz_grp^lat^lon^nmc_code^is_cml"
+    print (hdr_line) > optd_por_wrong_tz_file
 
-	# 
-	delete optd_por_tz_list
-	optd_por_tz_list_file = "optd_por_tz.csv"
+    # 
+    delete optd_por_tz_list
+    optd_por_tz_list_file = "optd_por_tz.csv"
 
-	# 
-	delete optd_por_ref_dpctd_list
-	optd_por_ref_dpctd_list_file = "optd_por_exceptions.csv"
+    # 
+    delete optd_por_ref_dpctd_list
+    optd_por_ref_dpctd_list_file = "optd_por_exceptions.csv"
 
     # Separators
-	K_TGT_SEP = ";"
+    K_TGT_SEP = ";"
     K_1ST_SEP = "^"
     K_2ND_SEP = "="
     K_3RD_SEP = "|"
 
     # Header
     hdr_line = "iata_code^icao_code^faa_code^is_geonames^geoname_id^envelope_id"
-	hdr_line = hdr_line "^name^asciiname^latitude^longitude^fclass^fcode"
-	hdr_line = hdr_line "^page_rank^date_from^date_until^comment"
-	hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
-	hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
-	hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
-	hdr_line = hdr_line "^adm3_code^adm4_code"
-	hdr_line = hdr_line "^population^elevation^gtopo30"
-	hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
-	hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
-	hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
-	hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list^uic_list"
+    hdr_line = hdr_line "^name^asciiname^latitude^longitude^fclass^fcode"
+    hdr_line = hdr_line "^page_rank^date_from^date_until^comment"
+    hdr_line = hdr_line "^country_code^cc2^country_name^continent_name"
+    hdr_line = hdr_line "^adm1_code^adm1_name_utf^adm1_name_ascii"
+    hdr_line = hdr_line "^adm2_code^adm2_name_utf^adm2_name_ascii"
+    hdr_line = hdr_line "^adm3_code^adm4_code"
+    hdr_line = hdr_line "^population^elevation^gtopo30"
+    hdr_line = hdr_line "^timezone^gmt_offset^dst_offset^raw_offset^moddate"
+    hdr_line = hdr_line "^city_code_list^city_name_list^city_detail_list^tvl_por_list"
+    hdr_line = hdr_line "^state_code^location_type^wiki_link^alt_name_section"
+    hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list^uic_list"
 
     print (hdr_line)
 
-	# List of flags stating whether the POR are referenced by Geonames
-	delete optd_por_geoname_list
+    # List of flags stating whether the POR are referenced by Geonames
+    delete optd_por_geoname_list
 
     #
     today_date = mktime ("YYYY-MM-DD")
@@ -100,16 +100,16 @@ BEGIN {
 # File of rules for no longer valid (deprecated), but still referenced, POR
 #
 # Sample lines:
-# por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^comment
-# AFW^R^1^0^^^^DFW^As of May 2016, AFW has been moved to FTW/Fort Worth, Texas (TX), USA
-# AIY^R^0^1^1^^2016-06-06^^AIY used to be Atlantic City, New Jersey (NJ), USA, Geonames ID: 4500546
-# BVF^R^0^1^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
-/^[A-Z]{3}\^[INO]{0,3}R[INO]{0,3}\^0\^1\^\^\^\^\^[^^]*$/ {
+# por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^reason_code^comment
+# AFW^R^1^0^^^^DFW^^As of May 2016, AFW has been moved to FTW/Fort Worth, Texas (TX), United States (US)
+# AIY^R^0^1^1^^2016-06-06^^^AIY used to be Atlantic City, New Jersey (NJ), United States (US), Geonames ID: 4500546
+# BVF^R^0^1^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
+/^[A-Z]{3}\^[INO]{0,3}R[INO]{0,3}\^0\^1\^\^\^\^\^\^[^^]*$/ {
     # IATA code
     iata_code = $1
 
-	# Register the fact that that POR is deprecated but still referenced
-	optd_por_ref_dpctd_list[iata_code] = 1
+    # Register the fact that that POR is deprecated but still referenced
+    optd_por_ref_dpctd_list[iata_code] = 1
 }
 
 
@@ -125,15 +125,15 @@ BEGIN {
 # [PR]   To: 2013-05-22
 /^# \[PR\] Generation date: ([0-9]{4}-[0-9]{2}-[0-9]{2})$/ {
     pr_date_generation = gensub ("^([^0-9]+)([0-9]{4}-[0-9]{2}-[0-9]{2})$", \
-								 "\\2", "g", $0)
+				 "\\2", "g", $0)
 }
 /^# \[PR\]   From: ([0-9]{4}-[0-9]{2}-[0-9]{2})$/ {
     pr_date_from = gensub ("^([^0-9]+)([0-9]{4}-[0-9]{2}-[0-9]{2})$", \
-						   "\\2", "g", $0)
+			   "\\2", "g", $0)
 }
 /^# \[PR\]   To: ([0-9]{4}-[0-9]{2}-[0-9]{2})$/ {
     pr_date_to = gensub ("^([^0-9]+)([0-9]{4}-[0-9]{2}-[0-9]{2})$", \
-						 "\\2", "g", $0)
+			 "\\2", "g", $0)
 }
 
 
@@ -147,14 +147,14 @@ BEGIN {
 # US^USA^840^US^United States^Washington^9629091^310232863^NA^.us^USD^Dollar^1^#####-####^en-US=es-US=haw=fr^6252001^CA=MX=CU
 #
 /^[A-Z]{2}\^[A-Z]{3}\^[0-9]{1,3}\^[A-Z]{0,2}\^[a-zA-Z., -]{2,50}/ {
-	# Country code
-	country_code = $1
+    # Country code
+    country_code = $1
 
-	# Currency code
-	ccy_code = $11
+    # Currency code
+    ccy_code = $11
 
-	# Geonames ID
-	geo_id = $17
+    # Geonames ID
+    geo_id = $17
 
     # Register the relationship between the country code and the currency code
     ctry_ccy_list[country_code] = ccy_code
@@ -198,10 +198,10 @@ BEGIN {
 
     # Sanity check
     if (iata_code != $2) {
-		print ("[" awk_file "] !!! Error at record #" FNR \
-			   ": the IATA code ('" iata_code			  \
-			   "') should be equal to the field #2 ('" $2 \
-			   "'), but is not. The whole line " $0) > error_stream
+	print ("[" awk_file "] !!! Error at record #" FNR \
+	       ": the IATA code ('" iata_code			  \
+	       "') should be equal to the field #2 ('" $2 \
+	       "'), but is not. The whole line " $0) > error_stream
     }
 
     # PageRank value for the average number of seats
@@ -237,7 +237,7 @@ BEGIN {
 
     # Extract the primary key fields
     #getPrimaryKeyAsArray(pk, myPKArray)
-	split (pk, myPKArray, "-")
+    split (pk, myPKArray, "-")
     iata_code = myPKArray[1]
     location_type = myPKArray[2]
     geonames_id = myPKArray[3]
@@ -245,23 +245,23 @@ BEGIN {
     # IATA code of the POR (it should be the same as the one of the primary key)
     iata_code2 = $2
 
-	# Geographical coordinates
-	coord_lat = $3
-	coord_lon = $4
+    # Geographical coordinates
+    coord_lat = $3
+    coord_lon = $4
 
-	# Beginning date of the validity range
-	date_from = $6
+    # Beginning date of the validity range
+    date_from = $6
 
     # Register the POR (only) when it is not in Geonames
-	if (geonames_id == "0") {
-		optd_loc_type_list[iata_code] = location_type
-		optd_por_lat_list[iata_code] = coord_lat
-		optd_por_lon_list[iata_code] = coord_lon
-		optd_date_from_list[iata_code] = date_from
-		optd_por_geoname_list[iata_code] = -1
-	} else {
-		optd_por_geoname_list[iata_code] = 1
-	}
+    if (geonames_id == "0") {
+	optd_loc_type_list[iata_code] = location_type
+	optd_por_lat_list[iata_code] = coord_lat
+	optd_por_lon_list[iata_code] = coord_lon
+	optd_date_from_list[iata_code] = date_from
+	optd_por_geoname_list[iata_code] = -1
+    } else {
+	optd_por_geoname_list[iata_code] = 1
+    }
 }
 
 
@@ -369,9 +369,9 @@ BEGIN {
     # Through date
     through_date = $14
 
-	# Register the relationships for that WAC
-	registerWACLists(world_area_code, through_date,				\
-					 country_iso_code, state_code, wac_name)
+    # Register the relationships for that WAC
+    registerWACLists(world_area_code, through_date,				\
+		     country_iso_code, state_code, wac_name)
 }
 
 
@@ -380,10 +380,10 @@ BEGIN {
 function getTimeZoneFromIATACode(myIATACode) {
     tz_id = optd_por_tz_list[myIATACode]
 
-	# Delete the record, so as to keep track of the ones not used
-	delete optd_por_tz_list[iata_code]
+    # Delete the record, so as to keep track of the ones not used
+    delete optd_por_tz_list[iata_code]
 
-	#
+    #
     return tz_id
 }
 
@@ -427,204 +427,204 @@ function getContinentName(myCountryCode) {
     # IATA code
     iata_code = $1
 
-	# Check that the POR is not known to be an exception
-	if (!(iata_code in optd_por_ref_dpctd_list)) {
+    # Check that the POR is not known to be an exception
+    if (!(iata_code in optd_por_ref_dpctd_list)) {
 
-		# Keep only if not in Geonames
-		isGeonames = optd_por_geoname_list[iata_code]
+	# Keep only if not in Geonames
+	isGeonames = optd_por_geoname_list[iata_code]
 
-		#
-		if (isGeonames != 1) {
-			# Feature code
-			if (isGeonames == -1) {
-				# Retrieved from the best known details
-				location_type = optd_loc_type_list[iata_code]
+	#
+	if (isGeonames != 1) {
+	    # Feature code
+	    if (isGeonames == -1) {
+		# Retrieved from the best known details
+		location_type = optd_loc_type_list[iata_code]
 
-			} else {
-				# Retrieved from reference data
-				location_type = $2
-			}
+	    } else {
+		# Retrieved from reference data
+		location_type = $2
+	    }
 
-			# Primary key
-			pk = $1
+	    # Primary key
+	    pk = $1
 
-			# Geonames ID
-			geonameID = "0"
-			isGeonamesStr = "N"
+	    # Geonames ID
+	    geonameID = "0"
+	    isGeonamesStr = "N"
 
-			# PageRank value
-			page_rank = getPageRankFromCodeAndLocType(iata_code, location_type)
+	    # PageRank value
+	    page_rank = getPageRankFromCodeAndLocType(iata_code, location_type)
 
-			# Name and ASCII name
-			name_utf8 = capitaliseWords($6)
-			name_ascii = name_utf8
+	    # Name and ASCII name
+	    name_utf8 = capitaliseWords($6)
+	    name_ascii = name_utf8
 		
-			# Geographical coordinates
-			if (isGeonames == -1) {
-				# Retrieved from the best known details
-				coord_lat = optd_por_lat_list[iata_code]
-				coord_lon = optd_por_lon_list[iata_code]
+	    # Geographical coordinates
+	    if (isGeonames == -1) {
+		# Retrieved from the best known details
+		coord_lat = optd_por_lat_list[iata_code]
+		coord_lon = optd_por_lon_list[iata_code]
 
-			} else {
-				# Retrieved from the reference data
-				coord_lat = $15
-				coord_lon = $16
-			}
+	    } else {
+		# Retrieved from the reference data
+		coord_lat = $15
+		coord_lon = $16
+	    }
 
-			# City code
-			city_code = $8
+	    # City code
+	    city_code = $8
 
-			# Envelope ID
-			envelope_id = ""
+	    # Envelope ID
+	    envelope_id = ""
 
-			# IATA code ^ ICAO code ^ FAA
-			out_line = iata_code "^^"
+	    # IATA code ^ ICAO code ^ FAA
+	    out_line = iata_code "^^"
 
-			# ^ Is in Geonames ^ GeonameID ^ Envelope ID
-			out_line = out_line "^" isGeonamesStr "^" geonameID "^" envelope_id
+	    # ^ Is in Geonames ^ GeonameID ^ Envelope ID
+	    out_line = out_line "^" isGeonamesStr "^" geonameID "^" envelope_id
 
-			# ^ Name ^ ASCII name
-			out_line = out_line "^" name_utf8 "^" name_ascii
+	    # ^ Name ^ ASCII name
+	    out_line = out_line "^" name_utf8 "^" name_ascii
 
-			# ^ Latitude ^ Longitude
-			out_line = out_line "^" coord_lat "^" coord_lon
+	    # ^ Latitude ^ Longitude
+	    out_line = out_line "^" coord_lat "^" coord_lon
 
-			# ^ Feat. class ^ Feat. code
-			is_city = isLocTypeCity(location_type)
-			is_offpoint = match (location_type, "O")
-			is_airport = isLocTypeAirport(location_type)
-			is_heliport = match (location_type, "H")
-			is_railway = match (location_type, "R")
-			is_bus = match (location_type, "B")
-			is_port = match (location_type, "P")
-			is_ground = match (location_type, "G")
-			if (is_airport != 0) {
-				# The POR is an airport. Note that it takes precedence over the
-				# city, when the POR is both an airport and a city. 
-				out_line = out_line "^S^AIRP"
-			} else if (is_heliport != 0) {
-				# The POR is an heliport
-				out_line = out_line "^S^AIRH"
-			} else if (is_railway != 0) {
-				# The POR is a railway station
-				out_line = out_line "^S^RSTN"
-			} else if (is_bus != 0) {
-				# The POR is a bus station
-				out_line = out_line "^S^BUSTN"
-			} else if (is_port != 0) {
-				# The POR is a (maritime) port
-				out_line = out_line "^S^PRT"
-			} else if (is_ground != 0) {
-				# The POR is a ground station
-				out_line = out_line "^S^XXXX"
-			} else if (is_city != 0) {
-				# The POR is (only) a city
-				out_line = out_line "^P^PPLC"
-			} else if (is_offpoint != 0) {
-				# The POR is an off-line point, which could be
-				# a bus/railway station, or even a city/village.
-				out_line = out_line "^X^XXXX"
-			} else {
-				# The location type can not be determined
-				out_line = out_line "^Z^ZZZZ"
-				print ("[" awk_file "] !!!! Warning !!!! The location type " \
-					   "cannot be determined for the record #" FNR ":")	\
-					> error_stream
-				print ($0) > error_stream
-			}
+	    # ^ Feat. class ^ Feat. code
+	    is_city = isLocTypeCity(location_type)
+	    is_offpoint = match (location_type, "O")
+	    is_airport = isLocTypeAirport(location_type)
+	    is_heliport = match (location_type, "H")
+	    is_railway = match (location_type, "R")
+	    is_bus = match (location_type, "B")
+	    is_port = match (location_type, "P")
+	    is_ground = match (location_type, "G")
+	    if (is_airport != 0) {
+		# The POR is an airport. Note that it takes precedence over the
+		# city, when the POR is both an airport and a city. 
+		out_line = out_line "^S^AIRP"
+	    } else if (is_heliport != 0) {
+		# The POR is an heliport
+		out_line = out_line "^S^AIRH"
+	    } else if (is_railway != 0) {
+		# The POR is a railway station
+		out_line = out_line "^S^RSTN"
+	    } else if (is_bus != 0) {
+		# The POR is a bus station
+		out_line = out_line "^S^BUSTN"
+	    } else if (is_port != 0) {
+		# The POR is a (maritime) port
+		out_line = out_line "^S^PRT"
+	    } else if (is_ground != 0) {
+		# The POR is a ground station
+		out_line = out_line "^S^XXXX"
+	    } else if (is_city != 0) {
+		# The POR is (only) a city
+		out_line = out_line "^P^PPLC"
+	    } else if (is_offpoint != 0) {
+		# The POR is an off-line point, which could be
+		# a bus/railway station, or even a city/village.
+		out_line = out_line "^X^XXXX"
+	    } else {
+		# The location type can not be determined
+		out_line = out_line "^Z^ZZZZ"
+		print ("[" awk_file "] !!!! Warning !!!! The location type " \
+		       "cannot be determined for the record #" FNR ":")	\
+		    > error_stream
+		print ($0) > error_stream
+	    }
 
-			# ^ PageRank value
-			out_line = out_line "^" page_rank
+	    # ^ PageRank value
+	    out_line = out_line "^" page_rank
 
-			# ^ Valid from date ^ Valid until date ^ Comment
-			date_from = optd_date_from_list[iata_code]
-			out_line = out_line "^" date_from "^^"
+	    # ^ Valid from date ^ Valid until date ^ Comment
+	    date_from = optd_date_from_list[iata_code]
+	    out_line = out_line "^" date_from "^^"
 
-			# State code
-			state_code = $10
+	    # State code
+	    state_code = $10
 
-			# ^ Country code ^ Alt. country codes ^ Country name
-			country_code = $11
-			country_code_alt = ""
-			country_name = getCountryName(country_code)
-			out_line = out_line "^" country_code "^^" country_name
+	    # ^ Country code ^ Alt. country codes ^ Country name
+	    country_code = $11
+	    country_code_alt = ""
+	    country_name = getCountryName(country_code)
+	    out_line = out_line "^" country_code "^^" country_name
 
-			# ^ Continent name
-			time_zone_id = getTimeZoneFromIATACode(iata_code)
-			if (time_zone_id == "") {
-				time_zone_id = getTimeZoneFromCountryCode(country_code)
+	    # ^ Continent name
+	    time_zone_id = getTimeZoneFromIATACode(iata_code)
+	    if (time_zone_id == "") {
+		time_zone_id = getTimeZoneFromCountryCode(country_code)
 
-				# Reporting
-				print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
-					   "for the record #" FNR " - Default time-zone: "	\
-					   time_zone_id ". Record: " $0)					\
-					> error_stream
-				print ($0) > optd_por_wrong_tz_file
-			}
-			continent_name = getContinentName(country_code)
-			# continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
-			out_line = out_line "^" continent_name
+		# Reporting
+		print ("[" awk_file "] !!!! Warning !!!! No time-zone " \
+		       "for the record #" FNR " - Default time-zone: "	\
+		       time_zone_id ". Record: " $0)					\
+		    > error_stream
+		print ($0) > optd_por_wrong_tz_file
+	    }
+	    continent_name = getContinentName(country_code)
+	    # continent_name = gensub ("/[A-Za-z_]+", "", "g", time_zone_id)
+	    out_line = out_line "^" continent_name
 
-			# ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
-			out_line = out_line "^^^"
-			# ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
-			out_line = out_line "^^^"
-			# ^ Admin3 code ^ Admin4 code
-			out_line = out_line "^^"
+	    # ^ Admin1 code ^ Admin1 UTF8 name ^ Admin1 ASCII name
+	    out_line = out_line "^^^"
+	    # ^ Admin2 code ^ Admin2 UTF8 name ^ Admin2 ASCII name
+	    out_line = out_line "^^^"
+	    # ^ Admin3 code ^ Admin4 code
+	    out_line = out_line "^^"
 
-			# ^ Population ^ Elevation ^ gtopo30
-			out_line = out_line "^^^"
+	    # ^ Population ^ Elevation ^ gtopo30
+	    out_line = out_line "^^^"
 
-			# ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
-			out_line = out_line "^" time_zone_id "^^^"
+	    # ^ Time-zone ^ GMT offset ^ DST offset ^ Raw offset
+	    out_line = out_line "^" time_zone_id "^^^"
 
-			# ^ Modification date
-			out_line = out_line "^" today_date
+	    # ^ Modification date
+	    out_line = out_line "^" today_date
 
-			# ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-rltd list
-			# Notes:
-			#   1. The actual name values are added by the add_city_name.awk
-			#      script.
-			#   2. The city code is the one from the file of best known POR,
-			#      not the one from reference data (as it is sometimes
-			#      inaccurate).
-			out_line = out_line "^" city_code "^"  "^"  "^"
+	    # ^ City code ^ City UTF8 name ^ City ASCII name ^ Travel-rltd list
+	    # Notes:
+	    #   1. The actual name values are added by the add_city_name.awk
+	    #      script.
+	    #   2. The city code is the one from the file of best known POR,
+	    #      not the one from reference data (as it is sometimes
+	    #      inaccurate).
+	    out_line = out_line "^" city_code "^"  "^"  "^"
 
-			# ^ State code
-			out_line = out_line "^" state_code
+	    # ^ State code
+	    out_line = out_line "^" state_code
 
-			# ^ Location type
-			out_line = out_line "^" location_type
+	    # ^ Location type
+	    out_line = out_line "^" location_type
 
-			# ^ Wiki link (empty here)
-			out_line = out_line "^"
+	    # ^ Wiki link (empty here)
+	    out_line = out_line "^"
 
-			# ^ Section of alternate names (empty here)
-			out_line = out_line "^"
+	    # ^ Section of alternate names (empty here)
+	    out_line = out_line "^"
 
-			# ^ US DOT World Area Code (WAC) ^ WAC name
-			world_area_code = getWorldAreaCode(country_code, state_code, \
-											   country_code_alt)
-			wac_name = getWorldAreaCodeName(world_area_code)
-			out_line = out_line "^" world_area_code "^" wac_name
+	    # ^ US DOT World Area Code (WAC) ^ WAC name
+	    world_area_code = getWorldAreaCode(country_code, state_code, \
+					       country_code_alt)
+	    wac_name = getWorldAreaCodeName(world_area_code)
+	    out_line = out_line "^" world_area_code "^" wac_name
 
-			# ^ Currency code
-			ccy_code = ctry_ccy_list[country_code]
-			out_line = out_line "^" ccy_code
+	    # ^ Currency code
+	    ccy_code = ctry_ccy_list[country_code]
+	    out_line = out_line "^" ccy_code
 
-			# ^ UN/LOCODE codes (potentially a list)
-			out_line = out_line "^"
+	    # ^ UN/LOCODE codes (potentially a list)
+	    out_line = out_line "^"
 
-			# ^ UIC codes (potentially a list)
-			out_line = out_line "^"
+	    # ^ UIC codes (potentially a list)
+	    out_line = out_line "^"
 
-			#
-			print (out_line)
-		}
-
-	} else {
-		delete optd_por_ref_dpctd_list[iata_code]
+	    #
+	    print (out_line)
 	}
+
+    } else {
+	delete optd_por_ref_dpctd_list[iata_code]
+    }
 }
 
 
@@ -632,19 +632,19 @@ function getContinentName(myCountryCode) {
 #
 END {
     # Reporting
-	for (myIdx in optd_por_ref_dpctd_list) {
-		print ("[" awk_file "] !!!! Warning: " myIdx					\
-			   " code is still referenced in the '"						\
-			   optd_por_ref_dpctd_list_file "' file, "					\
-			   "but has disappeared from reference data.") > error_stream
-	}
+    for (myIdx in optd_por_ref_dpctd_list) {
+	print ("[" awk_file "] !!!! Warning: " myIdx					\
+	       " code is still referenced in the '"						\
+	       optd_por_ref_dpctd_list_file "' file, "					\
+	       "but has disappeared from reference data.") > error_stream
+    }
 
-	asorti(optd_por_tz_list, optd_por_tz_list_sorted)
-	for (myIdx in optd_por_tz_list_sorted) {
-		print ("[" awk_file "] !!!! Warning: " optd_por_tz_list_sorted[myIdx] \
-			   " code is still referenced in the '"						\
-			   optd_por_tz_list_file "' file, but is now in Geonames "	\
-			   "or has disappeared from reference data.") > error_stream
-	}
+    asorti(optd_por_tz_list, optd_por_tz_list_sorted)
+    for (myIdx in optd_por_tz_list_sorted) {
+	print ("[" awk_file "] !!!! Warning: " optd_por_tz_list_sorted[myIdx] \
+	       " code is still referenced in the '"						\
+	       optd_por_tz_list_file "' file, but is now in Geonames "	\
+	       "or has disappeared from reference data.") > error_stream
+    }
 }
 
