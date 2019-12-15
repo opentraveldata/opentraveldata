@@ -7,7 +7,8 @@ BKA^R^0^1^1^^2016-10-01^^^BKA used to be Bykovo Airport, Russia (RU), Geonames I
 BVF^R^0^1^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
 BXC^R^0^1^^^^^^BXC used to be Boxborough, Massachusetts (MA), United States (US), Geonames ID: 4931105
 BWH^R^1^0^^^^PEN^^As of May 2016, BWH is in BWH/Butterworth, Malaysia (MY)
-CCB^O^1^1^^^^^CC^CCB is assigned to Cable Airport and Upland, California (CA), United States (US); LAX/Los Angeles is a big city nearby, but CCB cannot reasonably be added to the airports serving it, otherwise dozens of other airports around LAX should also be added to that list
+CCB^O^1^1^^^^LAX^CC^CCB is assigned to Cable Airport (Geonames ID: 5332414) and Upland (Geonames ID: 5404915), California (CA), United States (US); LAX/Los Angeles is a big city nearby, but CCB cannot reasonably be added to the airports serving it, otherwise dozens of other airports around LAX should also be added to that list
+CCR^O^1^1^^^^SFO^CC^CCR is assigned to Buchanan Field Airport (Geonames ID: 5331283) and Concord (Geonames ID: 5339111), California (CA), United States (US); SFO/San Francisco is a big city nearby, but CCR cannot reasonably be added to the airports serving it, otherwise dozens of other airports around SFO should also be added to that list
 CGX^R^0^1^1^^2017-12-01^^^CGX used to be Merrill C. Meigs Field, Illinois (IL), United States (US), Geonames ID: 4902023
 CPQ^R^0^1^1^^2017-12-01^^^CPQ used to reference Campinas airport, Brazil (BR), but is the same as VCP, Geonames ID: 7730937 / 6300637
 CYD^R^1^0^^^^CYD^^As of May 2016, CYD is in SQS/San Ignacio, Belize (BZ)
