@@ -33,7 +33,7 @@ fi
 
 # To be altered with the new target directories
 export TODAY_DATE="$(date +%Y-%m-%d)"
-export DATA_DIR="${DATA_DIR_BASE}/${TODAY_DATE}"
+export DATA_QA_DIR="${DATA_DIR_BASE}/qa/${TODAY_DATE}"
 
 #
 echo "Injecting a few host keys into ~/.ssh/known_hosts"
@@ -57,23 +57,23 @@ syncToTITsc() {
         echo
 
         #
-        echo "Creating ${DATA_DIR} on to qa@${TITSC_SVR}..."
-        ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} "mkdir -p ${DATA_DIR}"
+        echo "Creating ${DATA_QA_DIR} on to qa@${TITSC_SVR}..."
+        ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} "mkdir -p ${DATA_QA_DIR}"
         echo "... done"
 
         #
         echo "Synchronizing ${OPTD_QA_DIR}/results onto qa@${TITSC_SVR}..."
-        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${OPTD_QA_DIR}/results qa@${TITSC_SVR}:${DATA_DIR}/
+        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${OPTD_QA_DIR}/results qa@${TITSC_SVR}:${DATA_QA_DIR}/
         echo "... done"
 
         #
         echo "Synchronizing ${OPTD_QA_DIR}/to_be_checked onto qa@${TITSC_SVR}..."
-        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${OPTD_QA_DIR}/to_be_checked qa@${TITSC_SVR}:${DATA_DIR}/
+        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${OPTD_QA_DIR}/to_be_checked qa@${TITSC_SVR}:${DATA_QA_DIR}/
         echo "... done"
 
         #
         echo "Compressing all the CSV files in to_be_checked/ on qa@${TITSC_SVR}..."
-        time ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} "bzip2 ${DATA_DIR}/to_be_checked/*.csv"
+        time ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} "bzip2 ${DATA_QA_DIR}/to_be_checked/*.csv"
         echo "... done"
 
         #
