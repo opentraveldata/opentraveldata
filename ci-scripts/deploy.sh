@@ -21,6 +21,9 @@
 #
 
 #
+export OPTD_QA_DIR="/tmp/opentraveldata-qa"
+
+#
 echo "DATA_DIR_BASE=${DATA_DIR_BASE}"
 
 if [ "${DATA_DIR_BASE}" == "" ]
@@ -48,6 +51,7 @@ chmod 600 ~/.ssh/known_hosts
 syncToTITsc() {
         #
         echo
+	echo "==== Uploading to ${TITSC_SVR} ===="
         echo "Synchronization of the CSV data files onto ${TITSC_SVR}"
         echo
 
@@ -58,12 +62,12 @@ syncToTITsc() {
 
         #
         echo "Synchronizing results/ onto qa@${TITSC_SVR}..."
-        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" results qa@${TITSC_SVR}:${DATA_DIR}/
+        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${OPTD_QA_DIR}/results qa@${TITSC_SVR}:${DATA_DIR}/
         echo "... done"
 
         #
         echo "Synchronizing results/ onto qa@${TITSC_SVR}..."
-        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" to_be_checked qa@${TITSC_SVR}:${DATA_DIR}/
+        time rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${OPTD_QA_DIR}/to_be_checked qa@${TITSC_SVR}:${DATA_DIR}/
         echo "... done"
 
         #
@@ -73,17 +77,17 @@ syncToTITsc() {
 
         #
         echo
-        echo "========"
+        echo "==== Done uploading to ${TITSC_SVR} ===="
         echo
 }
 
 # Clone the Quality Assurance (QA) repository
 echo
-echo "Cloning https://github.com/opentraveldata/quality-assurance..."
-git clone https://github.com/opentraveldata/quality-assurance.git /tmp/opentraveldata-qa
+echo "Cloning https://github.com/opentraveldata/quality-assurance into ${OPTD_QA_DIR}..."
+git clone https://github.com/opentraveldata/quality-assurance.git ${OPTD_QA_DIR}
 echo "... done"
 echo "==== Run the QA checkers ===="
-pushd /tmp/opentraveldata-qa
+pushd ${OPTD_QA_DIR}
 pip install -r requirements.txt
 make PY_EXEC=python checkers
 popd
