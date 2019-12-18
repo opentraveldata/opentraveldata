@@ -157,38 +157,38 @@ cat ci-scripts/titsc_delivery_map.csv | while read line ; do
   tgt_rmt_dir="${DATA_DIR_BASE}/cicd/${tgt_dir}/${ts_year}/${ts_month}/${ts_day}/${ts_time}"
 
   # Create the remote target directories, if necessary
-  echo "Creating ${tgt_rmt_dir} on to cicd@${TITSC_SVR} and cicd@${TITSCNEW_SVR}..."
-  ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} "mkdir -p ${tgt_rmt_dir}"
-  ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} "mkdir -p ${DATA_QA_DIR}/to_be_checked"
-  ssh -o StrictHostKeyChecking=no cicd@${TITSCNEW_SVR} "mkdir -p ${tgt_rmt_dir}"
-  ssh -o StrictHostKeyChecking=no qa@${TITSCNEW_SVR} "mkdir -p ${DATA_QA_DIR}/to_be_checked"
+  echo "Creating ${tgt_rmt_dir} on to cicd@titsc and cicd@titscnew..."
+  ssh -o StrictHostKeyChecking=no cicd@titsc "mkdir -p ${tgt_rmt_dir}"
+  ssh -o StrictHostKeyChecking=no qa@titsc "mkdir -p ${DATA_QA_DIR}/to_be_checked"
+  ssh -o StrictHostKeyChecking=no cicd@titscnew "mkdir -p ${tgt_rmt_dir}"
+  ssh -o StrictHostKeyChecking=no qa@titscnew "mkdir -p ${DATA_QA_DIR}/to_be_checked"
   echo "... done"
 
   # Upload both transport-search.org servers
-  echo "Synchronizing ${csv_file} onto cicd@${TITSC_SVR} and cicd@${TITSCNEW_SVR} in ${tgt_rmt_dir}..."
-  rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${csv_file} cicd@${TITSC_SVR}:${tgt_rmt_dir}/
-  rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${csv_file} cicd@${TITSCNEW_SVR}:${tgt_rmt_dir}/
+  echo "Synchronizing ${csv_file} onto cicd@titsc and cicd@titscnew in ${tgt_rmt_dir}..."
+  rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${csv_file} cicd@titsc:${tgt_rmt_dir}/
+  rsync -rav --del -e "ssh -o StrictHostKeyChecking=no" ${csv_file} cicd@titscnew:${tgt_rmt_dir}/
   echo "... done"
 
   # Compress the remote data files
-  echo "Compressing ${tgt_rmt_dir}/${csv_filename} on to cicd@${TITSC_SVR} and cicd@${TITSCNEW_SVR}..."
-  time ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} "bzip2 ${tgt_rmt_dir}/${csv_filename}"
-  time ssh -o StrictHostKeyChecking=no cicd@${TITSCNEW_SVR} "bzip2 ${tgt_rmt_dir}/${csv_filename}"
+  echo "Compressing ${tgt_rmt_dir}/${csv_filename} on to cicd@titsc and cicd@titscnew..."
+  time ssh -o StrictHostKeyChecking=no cicd@titsc "bzip2 ${tgt_rmt_dir}/${csv_filename}"
+  time ssh -o StrictHostKeyChecking=no cicd@titscnew "bzip2 ${tgt_rmt_dir}/${csv_filename}"
   echo "... done"
 
   # Create a symbolic link remotely
-  echo "Creating a symbolic between ${tgt_rmt_dir}/${csv_filename}.bz2 and ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2 on to qa@${TITSC_SVR} and qa@${TITSCNEW_SVR}..."
-  ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} "ln -sf ${tgt_rmt_dir}/${csv_filename}.bz2 ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2"
-  ssh -o StrictHostKeyChecking=no qa@${TITSCNEW_SVR} "ln -sf ${tgt_rmt_dir}/${csv_filename}.bz2 ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2"
+  echo "Creating a symbolic between ${tgt_rmt_dir}/${csv_filename}.bz2 and ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2 on to qa@titsc and qa@titscnew..."
+  ssh -o StrictHostKeyChecking=no qa@titsc "ln -sf ${tgt_rmt_dir}/${csv_filename}.bz2 ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2"
+  ssh -o StrictHostKeyChecking=no qa@titscnew "ln -sf ${tgt_rmt_dir}/${csv_filename}.bz2 ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2"
   echo "... done"
 
 done
 
-# https://transport-search.org/data/optd/qa
+# https://transport-search.org/data/optd/{qa,cicd}
 TITSC_SVR="titsc"
 syncToTITsc
 
-# https://www2.transport-search.org/data/optd/qa
+# https://www2.transport-search.org/data/optd/{qa,cicd}
 TITSC_SVR="titscnew"
 syncToTITsc
 
