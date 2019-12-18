@@ -22,6 +22,7 @@
 
 #
 export OPTD_QA_DIR="/tmp/opentraveldata-qa"
+export OPTD_MAP_FILE="ci-scripts/titsc_delivery_map.csv"
 
 #
 echo "DATA_DIR_BASE=${DATA_DIR_BASE}"
@@ -82,16 +83,19 @@ extractTimeStamp() {
 #
 syncOPTDFileToTITsc() {
 	# Extract the details of OPTD data files
-	org_dir="$(echo ${map_line} | cut -d'^' -f1)"
-	csv_filename="$(echo ${map_line} | cut -d'^' -f2)"
-	tgt_dir="$(echo ${map_line} | cut -d'^' -f3)"
+	org_dir="$(echo ${optd_map_line} | cut -d'^' -f1)"
+	csv_filename="$(echo ${optd_map_line} | cut -d'^' -f2)"
+	tgt_dir="$(echo ${optd_map_line} | cut -d'^' -f3)"
 
+	# Index
+	idx=$((idx+1))
+	
 	#
 	csv_file="${org_dir}/${csv_filename}"
 	if [ ! -f "${csv_file}" ]
 	then
 		echo "\n#####"
-		echo "In ci-scripts/titsc_delivery_map.csv:$n"
+		echo "In ci-scripts/titsc_delivery_map.csv:${idx}"
 		echo "\$org_dir=${org_dir}"
 		echo "\$csv_filename=${csv_filename}"
 		echo "\$tgt_dir=${tgt_dir}"
@@ -99,7 +103,7 @@ syncOPTDFileToTITsc() {
 		echo "It is expected to upload it to ${TITSC_SVR} into " \
 			 "'${DATA_DIR_BASE}/cicd/${tgt_dir}'"
 		echo "If that file has been removed from the OPTD repository, " \
-			 "please update ci-scripts/titsc_delivery_map.csv"
+			 "please update ${OPTD_MAP_FILE}"
 		echo "#####\n"
 		exit 1
 	fi
@@ -110,7 +114,7 @@ syncOPTDFileToTITsc() {
 
 	# Reporting
 	echo
-	echo "---- [${TITSC_SVR}][$n] OPTD data file: ${csv_file} - " \
+	echo "---- [${TITSC_SVR}][${idx}] OPTD data file: ${csv_file} - " \
 		 "Last update date-time: ${ts_date} ${ts_time} ----"
 	echo
 
@@ -151,7 +155,7 @@ syncOPTDFileToTITsc() {
 	
 	# Reporting
 	echo
-	echo "---- [${TITSC_SVR}][$n] OPTD data file: ${csv_file} - Done ----"
+	echo "---- [${TITSC_SVR}][${idx}] OPTD data file: ${csv_file} - Done ----"
 	echo
 }
 
@@ -161,15 +165,13 @@ syncOPTDToTITsc() {
     echo "==== Uploading OPTD data files onto ${TITSC_SVR} ===="
     echo
 	echo "OPTD data files:"
-	cat ci-scripts/titsc_delivery_map.csv
+	cat ${OPTD_MAP_FILE}
 	echo
-    n=0
-    while read -r map_line
+    idx=0
+    while read -r optd_map_line
 	do
-		# Index
-	    n=$((n+1))
 		syncOPTDFileToTITsc
-	done < ci-scripts/titsc_delivery_map.csv
+	done < ${OPTD_MAP_FILE}
 
     echo
     echo "==== Done uploading OPTD data files onto ${TITSC_SVR} ===="
