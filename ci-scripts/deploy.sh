@@ -84,20 +84,20 @@ extractTimeStamp() {
 syncOPTDFileToTITsc() {
 	# Extract the details of OPTD data files
 	org_dir="$(echo ${optd_map_line} | cut -d'^' -f1)"
-	csv_filename="$(echo ${optd_map_line} | cut -d'^' -f2)"
+	csv_stated_filename="$(echo ${optd_map_line} | cut -d'^' -f2)"
 	tgt_dir="$(echo ${optd_map_line} | cut -d'^' -f3)"
 
 	# Index
 	idx=$((idx+1))
 	
 	#
-	csv_stated_file="${org_dir}/${csv_filename}"
+	csv_stated_file="${org_dir}/${csv_stated_filename}"
 	if [ ! -f "${csv_stated_file}" ]
 	then
 		echo "\n#####"
 		echo "In ci-scripts/titsc_delivery_map.csv:${idx}"
 		echo "\$org_dir=${org_dir}"
-		echo "\$csv_filename=${csv_filename}"
+		echo "\$csv_stated_filename=${csv_stated_filename}"
 		echo "\$tgt_dir=${tgt_dir}"
 		echo "The origin CSV data file '${csv_stated_file}' is missing "\
 			 "in this repo"
@@ -115,9 +115,11 @@ syncOPTDFileToTITsc() {
 	then
 		# The file is actually a symbolic link
 		csv_file=$(realpath ${csv_stated_file})
+		csv_filename=$(basename ${csv_file})
 	else
 		# The file is an actual data file
 		csv_file="${csv_stated_file}"
+		csv_filename="${csv_stated_filename}"
 	fi
 		
 	#
