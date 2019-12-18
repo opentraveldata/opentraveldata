@@ -80,89 +80,93 @@ extractTimeStamp() {
 }
 
 #
+syncOPTDFileToTITsc() {
+	# Extract the details of OPTD data files
+	org_dir="$(echo ${map_line} | cut -d'^' -f1)"
+	csv_filename="$(echo ${map_line} | cut -d'^' -f2)"
+	tgt_dir="$(echo ${map_line} | cut -d'^' -f3)"
+
+	#
+	csv_file="${org_dir}/${csv_filename}"
+	if [ ! -f "${csv_file}" ]
+	then
+		echo "\n#####"
+		echo "In ci-scripts/titsc_delivery_map.csv:$n"
+		echo "\$org_dir=${org_dir}"
+		echo "\$csv_filename=${csv_filename}"
+		echo "\$tgt_dir=${tgt_dir}"
+		echo "The origin CSV data file '${csv_file}' is missing in this repo"
+		echo "It is expected to upload it to ${TITSC_SVR} into " \
+			 "'${DATA_DIR_BASE}/cicd/${tgt_dir}'"
+		echo "If that file has been removed from the OPTD repository, " \
+			 "please update ci-scripts/titsc_delivery_map.csv"
+		echo "#####\n"
+		exit 1
+	fi
+
+	#
+	git_file="${csv_file}"
+	extractTimeStamp
+
+	# Reporting
+	echo
+	echo "---- [${TITSC_SVR}][$n] OPTD data file: ${csv_file} - " \
+		 "Last update date-time: ${ts_date} ${ts_time} ----"
+	echo
+
+	# Specify the target remote directory.
+	# Example with opentraveldata/optd_por_ref.csv:
+	# /var/www/data/optd/cicd/por/2017/12/11/00:01:11
+	tgt_rmt_dir="${DATA_DIR_BASE}/cicd/${tgt_dir}/${ts_year}/${ts_month}/${ts_day}/${ts_time}"
+
+	# Create the remote target directories, if necessary
+	echo "Creating ${tgt_rmt_dir} on to cicd@${TITSC_SVR}..."
+	ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} \
+		"mkdir -p ${tgt_rmt_dir}"
+	ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} \
+		"mkdir -p ${DATA_QA_DIR}/to_be_checked"
+	
+	# Upload to [www|www2].transport-search.org server
+	echo "Synchronizing ${csv_file} onto cicd@${TITSC_SVR} " \
+		 "in ${tgt_rmt_dir}..."
+	rsync -rav -e "ssh -o StrictHostKeyChecking=no" \
+		  ${csv_file} cicd@${TITSC_SVR}:${tgt_rmt_dir}/
+	echo "... done"
+	
+	# Compress the remote data files
+	echo "Compressing ${tgt_rmt_dir}/${csv_filename} " \
+		 "on to cicd@${TITSC_SVR}..."
+	time ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} \
+		 "bzip2 ${tgt_rmt_dir}/${csv_filename}"
+	echo "... done"
+	
+	# Create a symbolic link remotely
+	echo "Creating a symbolic between ${tgt_rmt_dir}/${csv_filename}.bz2 " \
+		 "and ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2 " \
+		 "on to qa@${TITSC_SVR}..."
+	ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} \
+		"ln -sf ${tgt_rmt_dir}/${csv_filename}.bz2 " \
+		"${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2"
+	echo "... done"
+	
+	# Reporting
+	echo
+	echo "---- [${TITSC_SVR}][$n] OPTD data file: ${csv_file} - Done ----"
+	echo
+}
+
+#
 syncOPTDToTITsc() {
     echo
     echo "==== Uploading OPTD data files onto ${TITSC_SVR} ===="
     echo
     n=0
     cat ci-scripts/titsc_delivery_map.csv | \
-	while read line
+	while read map_line
 	do
 		# Index
 	    n=$((n+1))
-
-		# Extract the details of OPTD data files
-	    org_dir="$(echo ${line} | cut -d'^' -f1)"
-	    csv_filename="$(echo ${line} | cut -d'^' -f2)"
-	    tgt_dir="$(echo ${line} | cut -d'^' -f3)"
-
-		#
-	    csv_file="${org_dir}/${csv_filename}"
-	    if [ ! -f "${csv_file}" ]
-	    then
-			echo "\n#####"
-			echo "In ci-scripts/titsc_delivery_map.csv:$n"
-			echo "\$org_dir=${org_dir}"
-			echo "\$csv_filename=${csv_filename}"
-			echo "\$tgt_dir=${tgt_dir}"
-			echo "The origin CSV data file '${csv_file}' is missing in this repo"
-			echo "It is expected to upload it to ${TITSC_SVR} into " \
-				 "'${DATA_DIR_BASE}/cicd/${tgt_dir}'"
-			echo "If that file has been removed from the OPTD repository, " \
-				 "please update ci-scripts/titsc_delivery_map.csv"
-			echo "#####\n"
-			exit 1
-	    fi
-
-	    #
-	    git_file="${csv_file}"
-	    extractTimeStamp
-
-		# Reporting
-		echo
-		echo "---- [$n] OPTD data file: ${csv_file} - " \
-			 "Last update date-time: ${ts_date} ${ts_time} ----"
-		echo
-
-	    # Specify the target remote directory.
-		# Example with opentraveldata/optd_por_ref.csv:
-	    # /var/www/data/optd/cicd/por/2017/12/11/00:01:11
-	    tgt_rmt_dir="${DATA_DIR_BASE}/cicd/${tgt_dir}/${ts_year}/${ts_month}/${ts_day}/${ts_time}"
-
-	    # Create the remote target directories, if necessary
-	    echo "Creating ${tgt_rmt_dir} on to cicd@${TITSC_SVR}..."
-	    ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} \
-			"mkdir -p ${tgt_rmt_dir}"
-	    ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} \
-			"mkdir -p ${DATA_QA_DIR}/to_be_checked"
-
-	    # Upload to [www|www2].transport-search.org server
-	    echo "Synchronizing ${csv_file} onto cicd@${TITSC_SVR} " \
-			 "in ${tgt_rmt_dir}..."
-	    rsync -rav -e "ssh -o StrictHostKeyChecking=no" \
-			  ${csv_file} cicd@${TITSC_SVR}:${tgt_rmt_dir}/
-	    echo "... done"
-
-	    # Compress the remote data files
-	    echo "Compressing ${tgt_rmt_dir}/${csv_filename} " \
-			 "on to cicd@${TITSC_SVR}..."
-	    time ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} \
-			 "bzip2 ${tgt_rmt_dir}/${csv_filename}"
-	    echo "... done"
-	    
-	    # Create a symbolic link remotely
-	    echo "Creating a symbolic between ${tgt_rmt_dir}/${csv_filename}.bz2 " \
-			 "and ${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2 " \
-			 "on to qa@${TITSC_SVR}..."
-	    ssh -o StrictHostKeyChecking=no qa@${TITSC_SVR} \
-			"ln -sf ${tgt_rmt_dir}/${csv_filename}.bz2 " \
-			"${DATA_QA_DIR}/to_be_checked/${csv_filename}.bz2"
-	    echo "... done"
-
-		# Reporting
-		echo
-		echo "---- [$n] OPTD data file: ${csv_file} - Done ----"
-		echo
+		syncOPTDFileToTITsc
 	done
 
     echo
