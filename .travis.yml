@@ -1,6 +1,8 @@
 language: python
 python:
 - 3.7-dev
+git:
+  depth: false
 addons:
   ssh_known_hosts:
   - proxy8.transport-intelligence.com:9022
