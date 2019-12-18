@@ -91,15 +91,16 @@ syncOPTDFileToTITsc() {
 	idx=$((idx+1))
 	
 	#
-	csv_file="${org_dir}/${csv_filename}"
-	if [ ! -f "${csv_file}" ]
+	csv_stated_file="${org_dir}/${csv_filename}"
+	if [ ! -f "${csv_stated_file}" ]
 	then
 		echo "\n#####"
 		echo "In ci-scripts/titsc_delivery_map.csv:${idx}"
 		echo "\$org_dir=${org_dir}"
 		echo "\$csv_filename=${csv_filename}"
 		echo "\$tgt_dir=${tgt_dir}"
-		echo "The origin CSV data file '${csv_file}' is missing in this repo"
+		echo "The origin CSV data file '${csv_stated_file}' is missing "\
+			 "in this repo"
 		echo "It is expected to upload it to ${TITSC_SVR} into " \
 			 "'${DATA_DIR_BASE}/cicd/${tgt_dir}'"
 		echo "If that file has been removed from the OPTD repository, " \
@@ -108,6 +109,17 @@ syncOPTDFileToTITsc() {
 		exit 1
 	fi
 
+	# If the file is actually a symbolic link, we must first get to the actual
+	# data file
+	if [ -L "${csv_stated_file}" ]
+	then
+		# The file is actually a symbolic link
+		csv_file=$(realpath ${csv_stated_file})
+	else
+		# The file is an actual data file
+		csv_file="${csv_stated_file}"
+	fi
+		
 	#
 	git_file="${csv_file}"
 	extractTimeStamp
