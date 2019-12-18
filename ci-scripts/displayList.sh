@@ -14,7 +14,12 @@ extractTimeStamp() {
 	fi
 
     # Extract the date and time from the Git time-stamp for that file
-    declare -a ts_array=($(git log -1 --pretty=""format:%ci"" ${git_file} | cut -d' ' -f1,2))
+	git_log_full="$(git log -1 --pretty=""format:%ci"" ${git_file})"
+	git_log_date_time="$(echo ${git_log_full} | cut -d' ' -f1,2)"
+	#echo "${git_file}: last update time-stamp on OPTD Git: ${git_log_full}"
+
+	# Extract the date and time
+    declare -a ts_array=(${git_log_date_time})
     ts_date="${ts_array[0]}"
     ts_time="${ts_array[1]}"
     #echo "Date: ${ts_date} - Timee: ${ts_time}"
