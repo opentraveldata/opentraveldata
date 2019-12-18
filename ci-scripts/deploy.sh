@@ -160,14 +160,16 @@ syncOPTDToTITsc() {
     echo
     echo "==== Uploading OPTD data files onto ${TITSC_SVR} ===="
     echo
+	echo "OPTD data files:"
+	cat ci-scripts/titsc_delivery_map.csv
+	echo
     n=0
-    cat ci-scripts/titsc_delivery_map.csv | \
-	while read map_line
+    while read -r map_line
 	do
 		# Index
 	    n=$((n+1))
 		syncOPTDFileToTITsc
-	done
+	done < ci-scripts/titsc_delivery_map.csv
 
     echo
     echo "==== Done uploading OPTD data files onto ${TITSC_SVR} ===="
