@@ -1,9 +1,13 @@
 #!/bin/bash
 
+displayItem() {
+	idx=$((idx+1))
+	printf '[%s] %s\n' "${idx}" "${optd_map_line}"
+}
+
 n=0
-while read -r map_line
+while IFS="" read -r -u3 optd_map_line
 do
-	n=$((n+1))
-	printf '[%s] %s\n' "${n}" "${map_line}"
-done < ci-scripts/titsc_delivery_map.csv
+	displayItem
+done 3< ci-scripts/titsc_delivery_map.csv
 

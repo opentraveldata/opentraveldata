@@ -168,10 +168,12 @@ syncOPTDToTITsc() {
 	cat ${OPTD_MAP_FILE}
 	echo
     idx=0
-    while read -r optd_map_line
+	# The -u3 allows to use another file descriptor than the standard (input) one
+	# as that latter may be used by the syncOPTDFileToTITsc function
+    while IFS="" read -r -u3 optd_map_line
 	do
 		syncOPTDFileToTITsc
-	done < ${OPTD_MAP_FILE}
+	done 3< ${OPTD_MAP_FILE}
 
     echo
     echo "==== Done uploading OPTD data files onto ${TITSC_SVR} ===="
