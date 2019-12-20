@@ -86,6 +86,31 @@ extractTimeStamp() {
 }
 
 #
+syncOPTDDocToTITsc() {
+	# Documentation file to be uploaded on titsc/titscnew
+	doc_file="ci-scripts/README.md"
+
+	# Remote directory, usually /var/www/data/optd
+	tgt_rmt_dir="${DATA_DIR_BASE}"
+
+	# If the remote target directory is missing, something important is going on
+	echo "Checking ${tgt_rmt_dir} on cicd@${TITSC_SVR}..."
+	ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} \
+		"test -d ${tgt_rmt_dir} " \
+		"&& echo \"Notification: ${tgt_rmt_dir} is existing on ${TITSC_SVR} - " \
+		"everything seems good so far\" " \
+		"|| echo \"Error: ${tgt_rmt_dir} does not exist on ${TITSC_SVR} - " \
+		"something bad is going on\""
+	
+	# Upload to [www|www2].transport-search.org server
+	echo "Synchronizing ${doc_file} onto cicd@${TITSC_SVR} " \
+		 "in ${tgt_rmt_dir}..."
+	rsync -rav -e "ssh -o StrictHostKeyChecking=no" \
+		  ${doc_file} cicd@${TITSC_SVR}:${tgt_rmt_dir}/
+	echo "... done"	
+}
+
+#
 syncOPTDFileToTITsc() {
 	# Extract the details of OPTD data files
 	org_dir="$(echo ${optd_map_line} | cut -d'^' -f1)"
@@ -183,12 +208,19 @@ syncOPTDToTITsc() {
     echo
     echo "==== Uploading OPTD data files onto ${TITSC_SVR} ===="
     echo
+
+	# Documentation
+	syncOPTDDocToTITsc
+
+	#
 	echo "OPTD data files:"
 	cat ${OPTD_MAP_FILE}
 	echo
-    idx=0
-	# The -u3 allows to use another file descriptor than the standard (input) one
-	# as that latter may be used by the syncOPTDFileToTITsc function
+
+	#
+	idx=0
+	# The -u3 allows to use another file descriptor than the standard (input)
+	# one, as that latter may be used by the syncOPTDFileToTITsc function
     while IFS="" read -r -u3 optd_map_line
 	do
 		syncOPTDFileToTITsc

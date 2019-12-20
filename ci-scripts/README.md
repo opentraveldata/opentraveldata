@@ -15,4 +15,14 @@ OPTD produces (at least) two kinds of (mainly CSV) data files:
 * Results from the [Quality Assurance (QA)](https://github.com/opentraveldata/quality-assurance)
   [checking/monitoring processes](https://github.com/opentraveldata/quality-assurance/tree/master/checkers)
 
+## References
+* [OpenTravelData (OPTD) organization on GitHub](https://github.com/opentraveldata)
+  + [OPTD Data Management](https://github.com/opentraveldata/opentraveldata)
+  + [OPTD Quality Assurance (QA)](https://github.com/opentraveldata/quality-assurance)
+* Python wrappers/tools
+  + [Neobase](https://github.com/alexprengere/neobase) (all-in-one, light, modern version of GeoBases)
+  + [GeoBases](http://opentraveldata.github.com/geobases)
+* Documentation format online helper tool
+  + [Dillinger](https://dillinger.io)
+
 
