@@ -108,6 +108,12 @@ syncOPTDDocToTITsc() {
 	rsync -rav -e "ssh -o StrictHostKeyChecking=no" \
 		  ${doc_file} cicd@${TITSC_SVR}:${tgt_rmt_dir}/
 	echo "... done"	
+
+	echo "Generating the documentation in HTML in ${tgt_rmt_dir} " \
+		 "on cicd@${TITSC_SVR}..."
+	ssh -o StrictHostKeyChecking=no cicd@${TITSC_SVR} \
+		"pandoc ${tgt_rmt_dir}/README.md >  ${tgt_rmt_dir}/README.html"
+	echo "... done"
 }
 
 #
