@@ -216,8 +216,9 @@ air-airwing-v1^^2004-01-01^^NWG^^^Airwing^^^^^https://en.wikipedia.org/wiki/Airw
 air-ais-airlines-v1^^2009-01-01^^PNX^IS^0^AIS Airlines^^^^^https://en.wikipedia.org/wiki/AIS_Airlines^853^en|AIS Airlines|^^air-ais-airlines^1^^
 air-ak-bars-aero-v1^1^2010-01-01^2015-01-12^BGM^2B^441^Ak Bars Aero^^^^P^https://en.wikipedia.org/wiki/Ak_Bars_Aero^^en|Ak Bars Aero|^KZN=UUA^air-ak-bars-aero^1^^
 air-aklak-air-v1^^^^AKK^6L^709^Aklak Air^^^^^^288^en|Aklak Air|^^air-aklak-air^1^^
-air-al-naser-airlines-v1^1^2009-02-01^2013-12-31^MHK^6N^503^Al Naser Airlines^^^^^https://en.wikipedia.org/wiki/Al-Naser_Airlines^^en|Al Naser Airlines|^^air-al-naser-airlines^1^^
-air-al-naser-airlines-v2^^2015-04-01^^^NR^0^Al-Naser Airlines^^^^^https://en.wikipedia.org/wiki/Al-Naser_Airlines^188^en|Al-Naser Airlines|^^air-al-naser-airlines^2^^
+air-al-naser-airlines-v1^1^2009-02-01^2013-12-31^MHK^6N^503^Al Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-airlines^1^^
+air-al-naser-airlines-v2^1^2015-04-01^2018-06-30^^NR^0^Al-Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-airlines^2^^
+air-al-naser-airlines-v3^1^2018-07-01^2019-04-30^NAD^NG^708^Al Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-wings-airlines^3^^
 air-aladia-airlines-v1^^^^^9A^0^Aladia Airlines^Airatlantic^^^^^^en|Aladia Airlines|=en|Airatlantic|^^air-aladia-airlines^1^^
 air-alajnihah-air-transport-v1^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^https://en.wikipedia.org/wiki/Alajnihah_Airways^^en|Alajnihah Airways|^^air-alajnihah-air-transport^1^^
 air-alas-uruguay-v1^^2015-02-01^^ALY^YZ^570^Alas Uruguay^^^^^https://en.wikipedia.org/wiki/Alas_Uruguay^140^en|Alas Uruguay|^^air-alas-uruguay^1^^
@@ -964,7 +965,7 @@ air-nice-helicopteres-v1^1^^2014-12-31^^JX^179^Nice Helicopteres^^^^^^^en|Nice H
 air-niger-airlines-v1^^2014-01-01^^NIN^6N^720^Niger Airlines^^^^^^39^en|Niger Airlines|^NIM^air-niger-airlines^1^^
 air-niger-airways-v1^^2016-08-01^^^NJ^0^Niger Airways^^^^^^175^en|Niger Airways|^NIM^air-niger-airways^1^^
 air-nigeria-airways-v1^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^https://en.wikipedia.org/wiki/Nigeria_Airways^^en|Nigeria Airways|^^air-nigeria-airways^1^^
-air-nigerian-eagle-v1^^1959-01-01^^NIG^NG^708^Aero Contractors^^^^^https://en.wikipedia.org/wiki/Aero_Contractors_(Nigeria)^1242^en|Aero Contractors|^LOS^air-nigerian-eagle^1^^
+air-nigerian-eagle-v1^1^1959-01-01^2016-03-31^NIG^NG^708^Aero Contractors^^^^^https://en.wikipedia.org/wiki/Aero_Contractors_(Nigeria)^^en|Aero Contractors|=sign|AEROLINE|^LOS^air-nigerian-eagle^1^^
 air-niki-v1^1^2003-01-01^2017-12-14^NLY^HG^0^Niki^^^Affiliate^^https://en.wikipedia.org/wiki/Niki_%28airline%29^^en|Niki|p=en|flyNiki|=en|NIKI Luftfahrt GmbH|=sign|FLYNIKI|^^air-niki^1^^m|air-laudamotion-v1
 air-nile-air-v1^^^^NIA^NP^325^Nile Air^Nile Air^^^^^881^en|Nile Air|=en|Nile Air|^^air-nile-air^1^^
 air-nippon-cargo-airlines-v1^^1985-01-01^^NCA^KZ^933^Nippon Cargo Airlines^^^^^https://en.wikipedia.org/wiki/Nippon_Cargo_Airlines^^abbr|NCA|=en|Nippon Cargo Airlines|=ja|日本貨物航空株式会社|=ja|Nippon Kamotsu Kōkū Kabushiki-gaisha|=sign|NIPPON CARGO|^KIX=OKA=NRT^air-nippon-cargo-airlines^1^^

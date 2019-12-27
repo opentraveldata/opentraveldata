@@ -63,7 +63,9 @@ air-ak-bars-aero-v1^1^2010-01-01^2015-01-12^BGM^2B^441^Ak Bars Aero^^^^P^https:/
 air-alajnihah-air-transport-v1^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^https://en.wikipedia.org/wiki/Alajnihah_Airways^en|Alajnihah Airways|^^air-alajnihah-air-transport^1^
 air-albastar-spain-v1^1^2010-07-31^2014-10-30^LAV^^374^AlbaStar^^^^^https://en.wikipedia.org/wiki/AlbaStar^en|AlbaStar|^PMI^air-albastar-spain^1^
 air-alidaunia-v1^1^^2015-12-31^LID^D4^0^Alidaunia^^^^^^en|Alidaunia|^^air-alidaunia^1^
-air-al-naser-airlines-v1^1^2009-02-01^2013-12-31^MHK^6N^503^Al Naser Airlines^^^^^https://en.wikipedia.org/wiki/Al-Naser_Airlines^en|Al Naser Airlines|^^air-al-naser-airlines^1^
+air-al-naser-airlines-v1^1^2009-02-01^2013-12-31^MHK^6N^503^Al Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-airlines^1^
+air-al-naser-airlines-v2^1^2015-04-01^2018-06-30^^NR^0^Al-Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-airlines^2^
+air-al-naser-airlines-v3^1^2018-07-01^2019-04-30^NAD^NG^708^Al Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-wings-airlines^3^
 air-alpi-eagles-v1^1^1979-01-01^2007-12-31^ELG^E8^0^Alpi Eagles^^^^^https://en.wikipedia.org/wiki/Alpi_Eagles^en|Alpi Eagles|^^air-alpi-eagles^1^
 air-amadeus-eight-x-v1^1^^2014-06-01^XYD^8X^794^Amadeus 8X^^^^D^^en|Amadeus 8X|^^air-amadeus-eight-x^1^
 air-amadeus-eight-z-v1^1^^2014-06-01^^8Z^0^Amadeus 8Z^^^^D^^en|Amadeus 8Z|^^air-amadeus-eight-z^1^
@@ -276,6 +278,7 @@ air-nayzak-air-v1^1^2006-01-01^2009-12-31^NZA^M4^0^Nayzak Air^^^^^https://en.wik
 air-new-livingston-v1^1^2012-01-01^2014-10-07^NLV^JN^401^New Livingston^^^^^https://en.wikipedia.org/wiki/Livingston_Compagnia_Aerea^en|New Livingston|p=en|Livingston Airline|=it|Livingston_Compagnia_Aerea|^MXP=RMI=TIA^air-new-livingston^1^
 air-nice-helicopteres-v1^1^^2014-12-31^^JX^179^Nice Helicopteres^^^^^^en|Nice Helicopteres|^^air-nice-helicopteres^1^
 air-nigeria-airways-v1^1^1958-10-01^2003-12-31^NGA^WT^0^Nigeria Airways^^^^^https://en.wikipedia.org/wiki/Nigeria_Airways^en|Nigeria Airways|^^air-nigeria-airways^1^
+air-nigerian-eagle-v1^1^1959-01-01^2016-03-31^NIG^NG^708^Aero Contractors^^^^^https://en.wikipedia.org/wiki/Aero_Contractors_(Nigeria)^en|Aero Contractors|=sign|AEROLINE|^LOS^air-nigerian-eagle^1^
 air-niki-v1^1^2003-01-01^2017-12-14^NLY^HG^0^Niki^^^Affiliate^^https://en.wikipedia.org/wiki/Niki_%28airline%29^en|Niki|p=en|flyNiki|=en|NIKI Luftfahrt GmbH|=sign|FLYNIKI|^^air-niki^1^
 air-nordic-global-airlines-v1^1^2011-04-01^2015-05-31^NGB^NJ^0^Nordic Global Airlines^^^^C^https://en.wikipedia.org/wiki/Nordic_Global_Airlines^en|Nordic Global Airlines|^^air-nordic-global-airlines^1^
 air-norfolk-air-v1^1^2006-05-01^2012-02-26^NLK^N5^0^Norfolk Air^^^^^https://en.wikipedia.org/wiki/Norfolk_Air^en|Norfolk Air|^^air-norfolk-air^1^
