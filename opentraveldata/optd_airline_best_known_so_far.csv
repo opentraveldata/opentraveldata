@@ -9,7 +9,6 @@ air-aegean-airlines-v1^^1999-05-28^^AEE^A3^390^Aegean Airlines^^^Member^^https:/
 air-aer-arann-v1^^1970-01-01^^STK^RE^743^Stobart Air^Aer Arann^^^^https://en.wikipedia.org/wiki/Stobart_Air^en|Stobart Air|=en|Aer Arann|^^air-aer-arann^1^
 air-aer-lingus-v1^^1936-05-27^^EIN^EI^53^Aer Lingus^^^^^https://en.wikipedia.org/wiki/Aer_Lingus^en|Aer Lingus|^^air-aer-lingus^1^
 air-aero4m-v1^^2015-01-01^^AEH^H4^0^Aero4M^^^^^^en|Aero4M|^^air-aero4m^1^
-air-aero-airlines-v1^^^^^EE^350^Aero Airlines^^^^^^en|Aero Airlines|^^air-aero-airlines^1^
 air-aero-benin-v1^^^^^EM^282^Aero Benin^^^^^^en|Aero Benin|^^air-aero-benin^1^
 air-aero-calafia-v1^^1993-01-01^^CFV^A7^0^Aéreo Calafia^Aereo Calafia^^^^https://en.wikipedia.org/wiki/A%C3%A9reo_Calafia^en|Aéreo Calafia|=sign|CALAFIA|^CSL^air-aero-calafia^1^
 air-aero-caribbean-v1^^^^CRN^7L^164^Aero Caribbean^^^^^^en|Aero Caribbean|^^air-aero-caribbean^1^
@@ -698,6 +697,7 @@ air-non-iata-codeshare-carrier-v1^^^^^XH^0^Non Iata Codeshare Carrier^^^^^^en|No
 air-nordavia-v1^^^^AUL^5N^316^Jsc Nordavia^Jsc Nordavia^^^^^en|Jsc Nordavia|=en|Jsc Nordavia|^^air-nordavia^1^
 air-nordic-regional-airlines-v1^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^Norra^^^^https://en.wikipedia.org/wiki/Nordic_Regional_Airlines^en|Nordic Regional Airlines|=en|Norra|^^air-nordic-regional-airlines^1^
 air-nord-wind-v1^^^^NWS^N4^0^Nord Wind^^^^^^en|Nord Wind|^^air-nord-wind^1^
+air-nordica-estonia-v1^^2015-11-01^^EST^EE^0^Nordica^^^^^https://en.wikipedia.org/wiki/Nordica_(airline)^en|Nordica|=sign|REVAL|^TLL^air-nordica-estonia^1^
 air-north-flying-v1^^2014-01-01^^NFA^^0^North Flying^^^^^https://en.wikipedia.org/wiki/North_Flying^en|North Flying|^AAL^air-north-flying^1^
 air-northwest-airlines-v1^^^^^NW^0^Northwest Airlines^Nwest Airlines^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1^
 air-northwestern-air-lease-v1^^^^PLR^J3^0^Northwestern Air Lease^Nw Air Lease^^^^^en|Northwestern Air Lease|=en|Nw Air Lease|^^air-northwestern-air-lease^1^

@@ -2,6 +2,7 @@ pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^al
 air-abakan-avia-v1^1^1992-01-01^2014-07-10^ABG^4R^^Abakan-Avia^^^^^https://en.wikipedia.org/wiki/Abakan-Avia^en|Royal Flight|p=en|Abakan-Avia|h=ru|Авиакомпания «Роял Флайт»|p=ru|Авиакомпания «Абакан-Авиа»|h^ABA^air-royal-flight^1^
 air-act-airlines-v1^1^2004-01-01^2010-12-31^RUN^9T^556^ACT Airlines^^^^^https://en.wikipedia.org/wiki/MyCargo_Airlines^en|ACT Airlines|h=en|ACT Havayollari|h=en|MyCargo Airlines|p^IST^air-act-airlines^1^
 air-adria-airways-v1^1^1961-03-14^2019-09-30^ADR^JP^165^Adria Airways^^^Member^^https://en.wikipedia.org/wiki/Adria_Airways^en|Adria Airways|=en|Inex-Adria Aviopromet|h=en|Inex-Adria Airways|h=sign|ADRIA|^LJU^air-adria-airways^1^
+air-aero-airlines-estonia-v1^1^2002-01-01^2008-01-31^EAY^EE^350^Aero Airlines^^^^^https://en.wikipedia.org/wiki/Aero_Airlines^en|Aero Airlines|=sign|REVAL|^TLL^air-aero-airlines-estonia^1^
 air-aero-california-v1^1^1960-01-01^2008-07-23^SER^JR^0^Aero California^^^^^https://en.wikipedia.org/wiki/Aero_California^en|Aero California|p=en|AeroCal|s=sign|AEROCALIFORNIA|^^air-aero-california^1^
 air-aero-cuahonte-v1^1^1957-11-01^2007-12-31^CUO^5G^0^Aero Cuahonte^^^^^https://en.wikipedia.org/wiki/Aero_Cuahonte^en|Aero Cuahonte|^UPN^air-aero-cuahonte^1^
 air-aero-flight-v1^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^https://en.wikipedia.org/wiki/Aero_Flight^en|Aero Flight|^^air-aero-flight^1^
@@ -148,6 +149,7 @@ air-eastern-air-lines-v1^1^1926-01-01^1991-01-18^EAL^EA^0^East Air Lines^^^^^htt
 air-eastern-air-lines-v2^1^2015-05-28^2017-09-30^EAL^EA^7^East Air Lines^^^^^https://en.wikipedia.org/wiki/Eastern_Air_Lines_(2015)^en|East Air Lines|=sign|EASTERN|^MIA^air-eastern-air-lines^2^
 air-east-horizon-airlines-v1^1^2013-12-01^2014-12-31^EHN^EA^0^East Horizon Airlines^^^^^https://en.wikipedia.org/wiki/East_Horizon_Airlines^en|East Horizon Airlines|^HEA=KBL^air-east-horizon-airlines^1^
 air-east-star-airlines-v1^1^2005-01-01^2009-03-15^DXH^8C^0^East Star Airlines^^^^^https://en.wikipedia.org/wiki/East_Star_Airlines^en|East Star Airlines|^WUH^air-east-star-airlines^1^
+air-eastern-skyjets-dubai-v1^1^2008-02-01^2015-10-31^ESJ^EE^0^Eastern SkyJets^^^^^https://en.wikipedia.org/wiki/Eastern_SkyJets^en|Eastern SkyJets|=sign|EASTERN SKYJETS|^DXB^air-eastern-skyjets-dubai^1^
 air-eastok-avia-v1^1^2006-06-01^2010-04-30^EAA^E4^265^Eastok Avia^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^en|Eastok Avia|p^FRU^air-eastok-avia^1^
 air-eastok-avia-v2^2^2010-05-01^2011-03-31^EAA^KR^265^Kyrgyz Airways^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^en|Kyrgyz Airways|p=en|Eastok Avia|h^FRU^air-eastok-avia^2^
 air-elysair-v1^1^2007-01-03^2009-04-04^AVI^A0^0^L'Avion^^^^^https://en.wikipedia.org/wiki/L%27Avion^en|OpenSkies|=en|L'Avion|h=en|Elysair SAS|h=sign|MISTRAL|=sign|ELYSAIR|h^ORY^air-elysair^1^

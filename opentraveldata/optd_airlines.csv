@@ -11,7 +11,7 @@ air-adria-airways-v1^1^1961-03-14^2019-09-30^ADR^JP^165^Adria Airways^^^Member^^
 air-aegean-airlines-v1^^1999-05-28^^AEE^A3^390^Aegean Airlines^^Star Alliance^Member^^https://en.wikipedia.org/wiki/Aegean_Airlines^6701^en|Aegean Airlines|^^air-aegean-airlines^1^^
 air-aer-arann-v1^^1970-01-01^^STK^RE^743^Stobart Air^Aer Arann^^^^https://en.wikipedia.org/wiki/Stobart_Air^^en|Stobart Air|=en|Aer Arann|^^air-aer-arann^1^^
 air-aer-lingus-v1^^1936-05-27^^EIN^EI^53^Aer Lingus^^^^^https://en.wikipedia.org/wiki/Aer_Lingus^9210^en|Aer Lingus|^^air-aer-lingus^1^^
-air-aero-airlines-v1^^^^^EE^350^Aero Airlines^^^^^^^en|Aero Airlines|^^air-aero-airlines^1^^
+air-aero-airlines-estonia-v1^1^2002-01-01^2008-01-31^EAY^EE^350^Aero Airlines^^^^^https://en.wikipedia.org/wiki/Aero_Airlines^^en|Aero Airlines|=sign|REVAL|^TLL^air-aero-airlines-estonia^1^^
 air-aero-benin-v1^^^^^EM^282^Aero Benin^^^^^^^en|Aero Benin|^^air-aero-benin^1^^
 air-aero-calafia-v1^^1993-01-01^^CFV^A7^0^Aéreo Calafia^Aereo Calafia^^^^https://en.wikipedia.org/wiki/A%C3%A9reo_Calafia^978^en|Aéreo Calafia|=sign|CALAFIA|^CSL^air-aero-calafia^1^^
 air-aero-california-v1^1^1960-01-01^2008-07-23^SER^JR^0^Aero California^^^^^https://en.wikipedia.org/wiki/Aero_California^^en|Aero California|p=en|AeroCal|s=sign|AEROCALIFORNIA|^^air-aero-california^1^^
@@ -524,6 +524,7 @@ air-eastern-air-lines-v1^1^1926-01-01^1991-01-18^EAL^EA^0^East Air Lines^^^^^htt
 air-eastern-air-lines-v2^1^2015-05-28^2017-09-30^EAL^EA^7^East Air Lines^^^^^https://en.wikipedia.org/wiki/Eastern_Air_Lines_(2015)^^en|East Air Lines|=sign|EASTERN|^MIA^air-eastern-air-lines^2^^m|air-dynamic-airways-v2
 air-eastern-airways-v1^^1997-01-01^^EZE^T3^467^Eastern Airways^^^^^https://en.wikipedia.org/wiki/Eastern_Airways^1289^en|Eastern Airways|^ABZ^air-eastern-airways^1^^
 air-eastern-caribbean-airlines-v1^^^^^JI^0^Eastern Caribbean Airlines^^^^^^379^en|Eastern Caribbean Airlines|^^air-eastern-caribbean-airlines^1^^
+air-eastern-skyjets-dubai-v1^1^2008-02-01^2015-10-31^ESJ^EE^0^Eastern SkyJets^^^^^https://en.wikipedia.org/wiki/Eastern_SkyJets^^en|Eastern SkyJets|=sign|EASTERN SKYJETS|^DXB^air-eastern-skyjets-dubai^1^^
 air-eastok-avia-v1^1^2006-06-01^2010-04-30^EAA^E4^265^Eastok Avia^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^^en|Eastok Avia|p^FRU^air-eastok-avia^1^^
 air-eastok-avia-v2^2^2010-05-01^2011-03-31^EAA^KR^265^Kyrgyz Airways^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^^en|Kyrgyz Airways|p=en|Eastok Avia|h^FRU^air-eastok-avia^2^^
 air-eastok-avia-v3^^2011-04-01^^EAA^KR^265^Air Bishkek^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^104^en|Air Bishkek|p=en|Kyrgyz Airways|h=en|Eastok Avia|h^FRU^air-eastok-avia^3^^
@@ -975,6 +976,7 @@ air-nord-wind-v1^^^^NWS^N4^0^Nord Wind^^^^^^^en|Nord Wind|^^air-nord-wind^1^^
 air-nordavia-v1^^^^AUL^5N^316^Jsc Nordavia^Jsc Nordavia^^^^^1193^en|Jsc Nordavia|=en|Jsc Nordavia|^^air-nordavia^1^^
 air-nordic-global-airlines-v1^1^2011-04-01^2015-05-31^NGB^NJ^0^Nordic Global Airlines^^^^C^https://en.wikipedia.org/wiki/Nordic_Global_Airlines^^en|Nordic Global Airlines|^^air-nordic-global-airlines^1^^
 air-nordic-regional-airlines-v1^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^Norra^^^^https://en.wikipedia.org/wiki/Nordic_Regional_Airlines^^en|Nordic Regional Airlines|=en|Norra|^^air-nordic-regional-airlines^1^^
+air-nordica-estonia-v1^^2015-11-01^^EST^EE^0^Nordica^^^^^https://en.wikipedia.org/wiki/Nordica_(airline)^^en|Nordica|=sign|REVAL|^TLL^air-nordica-estonia^1^^
 air-norfolk-air-v1^1^2006-05-01^2012-02-26^NLK^N5^0^Norfolk Air^^^^^https://en.wikipedia.org/wiki/Norfolk_Air^^en|Norfolk Air|^^air-norfolk-air^1^^
 air-north-adria-aviation-v1^1^1993-01-01^2006-01-01^NAI^^^North Adria Aviation^^^^^https://www.ch-aviation.com/portal/airline/NAI^^en|North Adria Aviation^LDPV^air-north-adria-aviation^1^^
 air-north-american-airlines-v1^1^1989-01-01^2014-06-09^NAO^NA^455^North American Airlines^^^^^https://en.wikipedia.org/wiki/North_American_Airlines^^en|North American Airlines|=sign|NORTH AMERICAN|^BWI=JFK^air-north-american-airlines^1^^
