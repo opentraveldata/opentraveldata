@@ -11,7 +11,7 @@ See also the [section on how to update UN/LOCODE data in the main
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE
 * Official note, as of July 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/2019-1_UNLOCODE_SecretariatNotes.pdf
 * Latest data file: http://www.unece.org/cefact/codesfortrade/codes_index.html
-  - July 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/loc191csv.zip (2.1 MB)
+  - Deecember 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/loc192csv.zip (2.1 MB)
 * Online code search: http://locode.info
 * Online code list by country: http://www.unece.org/cefact/locode/service/location.html
 

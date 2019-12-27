@@ -523,16 +523,18 @@ $ wget http://www.unece.org/fileadmin/DAM/cefact/locode/loc191csv.zip
 
 * Un-pack, remove the unused parts and re-assemble the UN/LOCODE data file:
 ```bash
-$ unzip -x loc191csv.zip && rm -f loc191csv.zip
-Archive:  loc191csv.zip
-  inflating: 2019-1 SubdivisionCodes.csv  
-  inflating: 2019-1 UNLOCODE CodeListPart1.csv  
-  inflating: 2019-1 UNLOCODE CodeListPart2.csv  
-  inflating: 2019-1 UNLOCODE CodeListPart3.csv  
-  inflating: 2019-1 UNLOCODE SecretariatNotes.pdf  
-$ rm -f 2019-1\ SubdivisionCodes.csv 2019-1\ UNLOCODE\ SecretariatNotes.pdf
-$ cat 2019-1\ UNLOCODE\ CodeListPart1.csv 2019-1\ UNLOCODE\ CodeListPart2.csv 2019-1\ UNLOCODE\ CodeListPart3.csv > unlocode-code-list-2019-1-iso.csv
-$ rm -f 2019-1\ UNLOCODE\ CodeListPart1.csv 2019-1\ UNLOCODE\ CodeListPart2.csv 2019-1\ UNLOCODE\ CodeListPart3.csv
+$ unzip -x loc192csv.zip && rm -f loc192csv.zip
+Archive:  loc192csv.zip
+  inflating: 2019-2 SubdivisionCodes.csv  
+  inflating: 2019-2 UNLOCODE CodeListPart1.csv  
+  inflating: 2019-2 UNLOCODE CodeListPart2.csv  
+  inflating: 2019-2 UNLOCODE CodeListPart3.csv  
+  inflating: 2019-2 UNLOCODE SecretariatNotes.pdf  
+$ dos2unix 2019-2*.csv
+$ mv 2019-2\ SubdivisionCodes.csv ../data/unlocode/archives/unece-subdivision-codes-2019-2.csv
+$ mv 2019-2\ UNLOCODE\ SecretariatNotes.pdf ../data/unlocode/unlocode-secretarial-notes-2019-2.pdf
+$ cat 2019-2\ UNLOCODE\ CodeListPart1.csv 2019-2\ UNLOCODE\ CodeListPart2.csv 2019-2\ UNLOCODE\ CodeListPart3.csv > unlocode-code-list-2019-2-iso.csv
+$ rm -f 2019-2\ UNLOCODE\ CodeListPart1.csv 2019-2\ UNLOCODE\ CodeListPart2.csv 2019-2\ UNLOCODE\ CodeListPart3.csv
 ```
 
 * Remove the line-feed characters (convert the file from DOS- to Unix-type):
@@ -542,20 +544,20 @@ $ dos2unix unlocode-code-list-2019-1-iso.csv
 
 * Convert the character encoding to friendlier UTF-8
 ```bash
-$ iconv -f ISO-8859-1 -t UTF-8 unlocode-code-list-2019-1-iso.csv > unlocode-code-list-2019-1.csv
-$ rm -f unlocode-code-list-2019-1-iso.csv
+$ iconv -f ISO-8859-1 -t UTF-8 unlocode-code-list-2019-2-iso.csv > unlocode-code-list-2019-2.csv
+$ rm -f unlocode-code-list-2019-2-iso.csv
 ```
 
 * You may want to sort the data file, for instance for later comparison:
 ```bash
-$ sort -t',' -k2,2 -k3,3 -k4,4 unlocode-code-list-2019-1.csv > unlocode-code-list-2019-1-std.csv
-$ mv unlocode-code-list-2019-1-std.csv unlocode-code-list-2019-1.csv
+$ sort -t',' -k2,2 -k3,3 -k4,4 unlocode-code-list-2019-2.csv > unlocode-code-list-2019-2-std.csv
+$ mv unlocode-code-list-2019-2-std.csv unlocode-code-list-2019-2.csv
 ```
 
 * Remove (empty) lines with just quotes:
 ```bash
-$ grep -v "^\"$" unlocode-code-list-2019-1.csv > unlocode-code-list-2019-1-ftd.csv
-$ mv unlocode-code-list-2019-1-ftd.csv unlocode-code-list-2019-1.csv
+$ grep -v "^\"$" unlocode-code-list-2019-2.csv > unlocode-code-list-2019-2-ftd.csv
+$ mv unlocode-code-list-2019-2-ftd.csv unlocode-code-list-2019-2.csv
 ```
 
 * Remove comment fields with just opening quotes (that appears when
@@ -563,16 +565,16 @@ $ mv unlocode-code-list-2019-1-ftd.csv unlocode-code-list-2019-1.csv
   the opening quote stays, and an empty line is created with
   the closing character, which is eliminated in the step above):
 ```bash
-$ sed -i -e 's/,\"$/,/g' unlocode-code-list-2019-1.csv
+$ sed -i -e 's/,\"$/,/g' unlocode-code-list-2019-2.csv
 ```
 
 * Add the missing `E` (East) character in the geographical coordinates
   of the `SA-SAL` record (you may want to first check that the error
   is still there):
 ```bash
-$ grep --color "\"2444N 05045\"" unlocode-code-list-2019-1.csv
+$ grep --color "\"2444N 05045\"" unlocode-code-list-2019-2.csv
 ,"SA","SAL","Salwá","Salwa","04","--3-----","RL","1707",,"2444N 05045",
-$ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-2019-1.csv
+$ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-2019-2.csv
 ```
 
 * Run the OPTD transformation script, which may report some additional glitches
@@ -580,27 +582,27 @@ $ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-2019-1.csv
   commands like above; that is an exercise given to the reader for now):
 ```bash
 $ sh prepare_unlc_dump_file.sh
-[prepare_unlc_dump_file.awk] !! Error at line #36263. Though the change code is '=', there is no record for Fuglafirdi in FO. Full line: "=","FO","","Fuglefjord = Fuglafirdi","Fuglefjord = Fuglafirdi",,,"",,"","",""
-[prepare_unlc_dump_file.awk] !! Error at line #56781. Though the change code is '=', there is no record for Kangerlussua in GL. Full line: "=","GL","","Sondre Stromfjord = Kangerlussua","Sondre Stromfjord = Kangerlussua","",,"",,"","",""
-[prepare_unlc_dump_file.awk] !! Error at line #56782. Though the change code is '=', there is no record for Manitsoq in GL. Full line: "=","GL","","Sukkertoppen = Manitsoq","Sukkertoppen = Manitsoq","",,"",,"","",""
-[prepare_unlc_dump_file.awk] !! Error at line #83840. Though the change code is '=', there is no record for Nizhny Novgorod in RU. Full line: "=","RU","","Gorkiy = Nizhny Novgorod","Gorkiy = Nizhny Novgorod","",,"",,"","",""
-[prepare_unlc_dump_file.awk] !! Error at line #89064. Though the change code is '=', there is no record for Adak Island in US. Full line: "=","US","","Adak = Adak Island","Adak = Adak Island","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #36302. Though the change code is '=', there is no record for Fuglafirdi in FO. Full line: "=","FO","","Fuglefjord = Fuglafirdi","Fuglefjord = Fuglafirdi",,,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #56739. Though the change code is '=', there is no record for Kangerlussua in GL. Full line: "=","GL","","Sondre Stromfjord = Kangerlussua","Sondre Stromfjord = Kangerlussua","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #56740. Though the change code is '=', there is no record for Manitsoq in GL. Full line: "=","GL","","Sukkertoppen = Manitsoq","Sukkertoppen = Manitsoq","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #83827. Though the change code is '=', there is no record for Nizhny Novgorod in RU. Full line: "=","RU","","Gorkiy = Nizhny Novgorod","Gorkiy = Nizhny Novgorod","",,"",,"","",""
+[prepare_unlc_dump_file.awk] !! Error at line #89052. Though the change code is '=', there is no record for Adak Island in US. Full line: "=","US","","Adak = Adak Island","Adak = Adak Island","",,"",,"","",""
 ```
 
 * Tell Git about the new transformed UN/LOCODE data file:
 ```bash
 $ pushd ../data/unlocode
-$ git add archives/unlocode-code-list-2019-1.csv
+$ git add archives/unlocode-code-list-2019-2.csv
 $ unlink unlocode-code-list-latest.csv
-$ ln -s archives/unlocode-code-list-2019-1.csv unlocode-code-list-latest.csv
+$ ln -s archives/unlocode-code-list-2019-2.csv unlocode-code-list-latest.csv
 $ git add unlocode-code-list-latest.csv
-$ git commit -m "[POR] Added the latest UN/LOCODE data file" unlocode-code-list-latest.csv archives/unlocode-code-list-2019-1.csv
+$ git commit -m "[POR] Added the latest UN/LOCODE data file (2019-2)" unlocode-code-list-latest.csv archives/unlocode-code-list-2019-2.csv
 $ popd
 ```
 
 * Remove the no longer needed UN/LOCODE raw data file:
 ```bash
-$ rm -f unlocode-code-list-2019-1.csv
+$ rm -f unlocode-code-list-2019-2.csv
 ```
 
 #### See also
