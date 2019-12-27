@@ -630,7 +630,6 @@ air-freedom-air-v1^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^https://en
 air-freedom-airline-express-v1^^2019-05-01^^FDT^4F^0^Freedom Airline Express^^^^^https://en.wikipedia.org/wiki/Freedom_Airline_Express^^en|Freedom Airline Express|^WIL^air-freedom-airline-express^1^^
 air-freedom-airlines-v1^1^2002-01-01^2010-12-31^FRL^F8^0^Freedom Airlines^Air Montreal^^^^https://en.wikipedia.org/wiki/Freedom_Airlines^^en|Freedom Airlines|=en|Air Montreal|^^air-freedom-airlines^1^^
 air-french-blue-v1^^2016-01-01^^FBU^BF^396^French Bee^^^^^https://en.wikipedia.org/wiki/French_Bee^27^en|French Bee|p=en|French Blue|h=sign|FRENCH BEE|^ORY^air-french-blue^1^^
-air-french-military-force-v1^^^^^RD^0^French Military Force^Ryan^^^^^^en|French Military Force|=en|Ryan|^^air-french-military-force^1^^
 air-freshair-v1^1^^2013-12-31^FZW^Z7^0^Freshair^Easeon Air^^^^^^en|Freshair|=en|Easeon Air|^^air-freshair^1^^
 air-frontier-airlines-v1^^1994-07-05^^FTT^F9^422^Frontier Airlines^^^^^https://en.wikipedia.org/wiki/Frontier_Airlines^9999^en|Frontier Airlines|^^air-frontier-airlines^1^^
 air-frontier-flying-service-v1^1^1950-01-01^2014-12-31^FTA^2F^0^Frontier Flying Service^^^^^https://en.wikipedia.org/wiki/Frontier_Flying_Service^^en|Ravn Alaska|p=en|Corvus Airlines|=en|Frontier Flying Service|h=en|Frontier Alaska|h=en|Hageland Aviation|h=en|Era Alaska|h=en|Era Aviation|h=sign|Raven Flight|^FAI^air-frontier-flying-service^1^^
@@ -1105,7 +1104,8 @@ air-ruili-airlines-v1^^^^^DR^0^Ruili Airlines^Air Link^^^^^2083^en|Ruili Airline
 air-rusline-v1^^1999-01-01^^RLU^7R^362^RusLine^^^^^https://en.wikipedia.org/wiki/RusLine^1776^en|RusLine|=ko|러스라인|=ru|Авиакомпания «РусЛайн»|=ru|РусЛайн|s^^air-rusline^1^^
 air-rutaca-airlines-v1^^1974-01-01^^RUC^5R^765^RUTACA Airlines^^^^^https://en.wikipedia.org/wiki/RUTACA_Airlines^510^en|RUTACA Airlines|p=en|Rutas Aereas C.A.|^CCS^air-rutaca-airlines^1^^
 air-rwandair-express-v1^^2003-04-27^^RWD^WB^459^Rwandair^^^^^https://en.wikipedia.org/wiki/RwandAir^1355^en|Rwandair|=en|Rwandair Express|hs=ja|ルワンダ航空|=ko|르완다 에어|^^air-rwandair-express^1^^
-air-ryanair-arctic-transportation-v1^^^^RYA^7S^^Ryan Air Services^Arctic Transportation Services^^^C^https://en.wikipedia.org/wiki/Ryan_Air_Services^286^en|Ryan Air Services|=en|Arctic Transportation Services|^^air-ryanair-arctic-transportation^1^^
+air-ryan-air-srvices-v1^1^1953-01-01^2012-12-31^RYA^7S^^Ryan Air Services^^^^^https://en.wikipedia.org/wiki/Ryan_Air_Services^^en|Ryan Air Services|=en|Artic Transportation|h=en|Unalakleet Air Taxi|=sign|RYAN AIR|^ANI=BET=EMK=KSM=OME=OTZ=UNK^air-ryan-air-srvices^1^^
+air-ryan-international-airlines-v1^1^1972-01-01^2013-01-31^RYN^RD^0^Ryan International Airlines^^^^^https://en.wikipedia.org/wiki/Ryan_International_Airlines^^en|Ryan International Airlines|=sign|RYAN|^RFD=SFB^air-ryan-international-airlines^1^^
 air-ryanair-v1^^1985-07-08^^RYR^FR^0^Ryanair^^^^^https://en.wikipedia.org/wiki/Ryanair^63285^en|Ryanair|^^air-ryanair^1^^
 air-sabaidee-airways-v1^^2012-07-01^^VGO^E3^0^New Gen Airways^Sabaidee Airways^^^^https://en.wikipedia.org/wiki/New_Gen_Airways^981^en|New Gen Airways|=en|Sabaidee Airways|^^air-sabaidee-airways^1^^
 air-saereo-v1^1^1994-01-01^2013-12-31^SRO^MZ^0^SAEREO^^^^^https://en.wikipedia.org/wiki/SAEREO^^en|SAEREO|p=en|Servicios Aéreos Ejecutivos Saereo S.A.|=sign|SAEREO|^^air-saereo^1^^
@@ -1192,7 +1192,11 @@ air-skywest-airlines-v1^^1972-01-01^^SKW^OO^0^SkyWest Airlines^^^^^https://en.wi
 air-skywise-v1^^2015-02-11^^SWZ^C9^0^Skywise^Cabolor^^^^https://en.wikipedia.org/wiki/Skywise_%28airline%29^^en|Skywise|=en|Cabolor|^^air-skywise^1^^
 air-skywork-airlines-v1^^1983-01-01^^SRK^SX^772^SkyWork Airlines^^^^^https://en.wikipedia.org/wiki/SkyWork_Airlines^580^en|SkyWork Airlines|^^air-skywork-airlines^1^^
 air-slok-air-v1^^^^OKS^S0^503^Slok Air International^^^^^^^en|Slok Air International|^^air-slok-air^1^^
-air-small-planet-airline-v1^^^^LLP^P7^0^Small Planet Airline^East Line Air^^^^^136^en|Small Planet Airline|=en|East Line Air|^^air-small-planet-airline^1^^
+air-small-planet-airlines-cambodia-v1^1^2017-11-01^2018-11-09^LKH^RD^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines_(Cambodia)^^en|Small Planet Airlines|=sign|SKY PLANET|^REP^air-small-planet-airlines-cambodia^1^^
+air-small-planet-airlines-germany-v1^1^2016-05-01^2018-10-31^LLX^5P^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines_(Germany)^^en|Small Planet Airlines|=sign|GERMANJET|^AMS=CGN=DUS=HAJ=HAM^air-small-planet-airlines-germany^1^^
+air-small-planet-airlines-italy-v1^1^2010-01-01^2014-01-31^LLI^P2^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines_(Italy)^^en|Small Planet Airlines|=sign|AURIGA|^BGY=FCO^air-small-planet-airlines-italy^1^^
+air-small-planet-airlines-lithuania-v1^1^2008-01-01^2018-11-28^LLC^S5^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines^^en|Small Planet Airlines|=sign|SMALL PLANET|^VNO^air-small-planet-airlines-lithuania^1^^
+air-small-planet-airlines-poland-v1^1^2009-11-25^2018-11-09^LLP^P7^0^Small Planet Airline^^^^^^^en|Small Planet Airline|^GDN=KTW=WAW^air-small-planet-airlines-poland^1^^
 air-smart-aviation-v1^1^2007-05-03^2015-12-31^SME^M4^334^Smart Aviation^^^^^https://en.wikipedia.org/wiki/Smart_Aviation_Company^^en|Smart Aviation|^^air-smart-aviation^1^^
 air-smartlynx-airlines-v1^^1993-01-01^^ART^6Y^0^SmartLynx Airlines^^^^T^https://en.wikipedia.org/wiki/SmartLynx_Airlines^54^en|SmartLynx Airlines|^^air-smartlynx-airlines^1^^
 air-smartwings-v1^^2008-01-01^^TVS^QS^797^Smartwings^Travel Service^^^^https://en.wikipedia.org/wiki/SmartWings^2243^en|Smartwings|=en|Travel Service|^^air-smartwings^1^^

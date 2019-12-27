@@ -381,7 +381,16 @@ def calculateSuccessors (global_dict, verboseFlag):
 
         # Retrieve the list of parents
         parent_pk_list_str = airline_dict['parent_pk_list']
-        parent_pk_tuple_list = parent_pk_list_str.split("=")
+        try:
+            parent_pk_tuple_list = parent_pk_list_str.split("=")
+        except AttributeError:
+            print ('For that airline (IATA: {}, ICAO: {}), ' \
+            'there is a parsing error for the "parent_pk_list" field ' \
+            '("{}")'.format(iata_code, icao_code, parent_pk_list_str))
+            raise
+        except:
+            print ("Unexpected error: ", sys.exc_info()[0])
+            raise                
 
         # Filter out the records having no specified parent (most of the cases)
         if len(parent_pk_list_str) == 0: continue
@@ -395,7 +404,9 @@ def calculateSuccessors (global_dict, verboseFlag):
                 parent_type = parent_tuple[0]
                 parent_pk = parent_tuple[1]
             except IndexError:
-                print ('For that airline (IATA: {}, ICAO: {}), there is a parsing error for the "parent_pk_list" field ("{}")'.format(iata_code, icao_code, parent_pk_list_str))
+                print ('For that airline (IATA: {}, ICAO: {}), ' \
+                'there is a parsing error for the "parent_pk_list" field ' \
+                '("{}")'.format(iata_code, icao_code, parent_pk_list_str))
                 raise
             except:
                 print ("Unexpected error: ", sys.exc_info()[0])

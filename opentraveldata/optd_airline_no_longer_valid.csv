@@ -304,6 +304,8 @@ air-rak-airways-v1^1^2007-01-01^2014-01-01^RKM^RT^0^RAK Airways^^^^^https://en.w
 air-rheintalflug-v1^1^^2013-12-31^^WE^0^Rheintal flug^^^^^^en|Rheintal flug|^^air-rheintalflug^1^
 air-rio-sul-v1^1^1979-01-01^2002-12-31^RSL^SL^310^Rio Sul^^^^^https://en.wikipedia.org/wiki/Rio_Sul_Servi%C3%A7os_A%C3%A9reos_Regionais^en|Rio Sul|^CGH=POA=SDU^air-rio-sul^1^
 air-royal-air-cambodge-v1^1^1994-01-01^2001-10-16^RAC^VJ^0^Royal Air Cambodge^^^^^https://en.wikipedia.org/wiki/Royal_Air_Cambodge^en|Royal Air Cambodge|=en|Air Cambodge|h=km|អាកាសចរណ៍ភូមិន្ទ កម្ពុជា|^PNH^air-royal-air-cambodge^1^
+air-ryan-air-srvices-v1^1^1953-01-01^2012-12-31^RYA^7S^^Ryan Air Services^^^^^https://en.wikipedia.org/wiki/Ryan_Air_Services^en|Ryan Air Services|=en|Artic Transportation|h=en|Unalakleet Air Taxi|=sign|RYAN AIR|^ANI=BET=EMK=KSM=OME=OTZ=UNK^air-ryan-air-srvices^1^
+air-ryan-international-airlines-v1^1^1972-01-01^2013-01-31^RYN^RD^0^Ryan International Airlines^^^^^https://en.wikipedia.org/wiki/Ryan_International_Airlines^en|Ryan International Airlines|=sign|RYAN|^RFD=SFB^air-ryan-international-airlines^1^
 air-saereo-v1^1^1994-01-01^2013-12-31^SRO^MZ^0^SAEREO^^^^^https://en.wikipedia.org/wiki/SAEREO^en|SAEREO|p=en|Servicios Aéreos Ejecutivos Saereo S.A.|=sign|SAEREO|^^air-saereo^1^
 air-salsa-d-haiti-v1^1^2008-01-01^2015-04-01^SLC^SO^340^Salsa d'Haiti^^^^^https://en.wikipedia.org/wiki/Salsa_d%27Ha%C3%AFti^en|Salsa d'Haiti|^^air-salsa-d-haiti^1^
 air-samara-airlines-v1^1^1992-01-01^2008-12-31^BRZ^E5^0^Samara Airlines^^^^^https://en.wikipedia.org/wiki/Samara_Airlines^en|Samara Airlines|^^air-samara-airlines^1^
@@ -327,6 +329,11 @@ air-skyservice-airlines-v1^1^1986-11-01^2010-03-31^SSV^5G^0^Skyservice^^^^^https
 air-skystar-airways-v1^1^2007-06-16^2009-01-03^SKT^XT^0^SkyStar Airways^^^^^https://en.wikipedia.org/wiki/SkyStar_Airways^en||=en|SkyStar Airways|^^air-skystar-airways^1^
 air-skyways-v1^1^1993-01-01^2012-05-22^SKX^JZ^752^Skyways^^^^^https://en.wikipedia.org/wiki/Skyways_%28airline%29^en|Skyways|^^air-skyways^1^
 air-sky-wings-airlines-v1^1^2006-06-01^2012-12-31^GSW^ND^171^Sky Wings Airlines^Intair Inc^^^^https://en.wikipedia.org/wiki/Sky_Wings_Airlines^en|Sky Wings Airlines|=en|Intair Inc|^^air-sky-wings-airlines^1^
+air-small-planet-airlines-lithuania-v1^1^2008-01-01^2018-11-28^LLC^S5^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines^en|Small Planet Airlines|=sign|SMALL PLANET|^VNO^air-small-planet-airlines-lithuania^1^
+air-small-planet-airlines-cambodia-v1^1^2017-11-01^2018-11-09^LKH^RD^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines_(Cambodia)^en|Small Planet Airlines|=sign|SKY PLANET|^REP^air-small-planet-airlines-cambodia^1^
+air-small-planet-airlines-germany-v1^1^2016-05-01^2018-10-31^LLX^5P^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines_(Germany)^en|Small Planet Airlines|=sign|GERMANJET|^AMS=CGN=DUS=HAJ=HAM^air-small-planet-airlines-germany^1^
+air-small-planet-airlines-italy-v1^1^2010-01-01^2014-01-31^LLI^P2^0^Small Planet Airlines^^^^^https://en.wikipedia.org/wiki/Small_Planet_Airlines_(Italy)^en|Small Planet Airlines|=sign|AURIGA|^BGY=FCO^air-small-planet-airlines-italy^1^
+air-small-planet-airlines-poland-v1^1^2009-11-25^2018-11-09^LLP^P7^0^Small Planet Airline^^^^^^en|Small Planet Airline|^GDN=KTW=WAW^air-small-planet-airlines-poland^1^
 air-smart-aviation-v1^1^2007-05-03^2015-12-31^SME^M4^334^Smart Aviation^^^^^https://en.wikipedia.org/wiki/Smart_Aviation_Company^en|Smart Aviation|^^air-smart-aviation^1^
 air-south-african-airlink-v1^1^1978-01-01^2009-12-31^LNK^4Z^749^South African Airlink^^^^^https://en.wikipedia.org/wiki/Airlink^en|Airlink|p=en|South African Airlink|h^^air-south-african-airlink^1^
 air-south-african-airlink-v2^2^2010-01-01^2010-12-31^^4Z^^TTA Airlink^^^^P^https://en.wikipedia.org/wiki/TTA_Airlink^en|TTA Airlink|^^air-south-african-airlink^2^
