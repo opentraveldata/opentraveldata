@@ -224,8 +224,7 @@ air-aviator-aviation-v1^^^^^T9^0^Aviator Aviation^^^^^^en|Aviator Aviation|^^air
 air-avia-traffic-v1^^^^^YK^511^Avia Traffic Company^Avia Traffic^^^^^en|Avia Traffic Company|=en|Avia Traffic|^^air-avia-traffic^1^
 air-avies-v1^^^^AIA^U3^0^Avies^^^^^^en|Avies|^^air-avies^1^
 air-avion-express-v1^^^^NVD^X9^0^Avion Express^City Star Air^^^^^en|Avion Express|=en|City Star Air|^^air-avion-express^1^
-air-avior-airlines-v1^^1994-01-01^^ROI^9V^742^Avior Airlines^^^^^https://en.wikipedia.org/wiki/Avior_Airlines^en|Avior Airlines|^BLA^air-avior-airlines^1^
-air-avior-regional-v1^^2013-01-01^^RGR^3R^0^Avior Regional^^^^^https://en.wikipedia.org/wiki/Avior_Airlines^en|Avior Regional|^CCS^air-avior-regional^1^
+air-avior-airlines-v1^^1994-01-01^^ROI^9V^742^Avior Airlines^^^^^https://en.wikipedia.org/wiki/Avior_Airlines^en|Avior Airlines|=en|Avior Regional|^BLA^air-avior-airlines^1^
 air-axess-v1^^^^^1J^0^Axess International^^^^^^en|Axess International|^^air-axess^1^
 air-azerbaijan-airlines-v1^^^^AHY^J2^771^Azerbaijan Airlines^^^^^^en|Azerbaijan Airlines|^^air-azerbaijan-airlines^1^
 air-azimuth-airlines-v1^^2017-02-01^^^A4^222^Azimuth^^^^^https://en.wikipedia.org/wiki/Azimuth_(airline)^en|Azimuth|s=en|JSC Azimuth Airlines|=ru|АО «Азuмуm»|p=ru|АО «Авиакомпания АЗИМУТ»|=sign|IGAVIA|=zh|方位角航空|^KRR=ROV^air-azimuth-airlines^1^
@@ -357,6 +356,7 @@ air-delux-public-charter-v1^^2015-01-01^^JSX^XE^0^Delux Public Charter^^^^^^en|D
 air-denim-air-v2^^2016-04-01^^DNM^G6^0^Denim Air^^^^^https://en.wikipedia.org/wiki/Denim_Air^en|Denim Air|^AMS=MST^air-denim-air^2^
 air-dhl-air-uk-v1^^1982-01-01^^DHK^D0^936^DHL Air UK^^^^^https://en.wikipedia.org/wiki/DHL_Air_UK^en|DHL Air UK|=en|DHL Air Limited|=en|DHL Air Ltd|=sign|WORLD EXPRESS|^CVG=EMA^air-dhl-air-uk^1^
 air-dhl-international-aviation-me-v1^^1979-01-01^^DHX^ES^155^DHL International Aviation ME^^^^^https://en.wikipedia.org/wiki/DHL_International_Aviation_ME^abbr|SNAS/DHL|=en|DHL International Aviation ME|=en|DHL Aviation EEMEA B.S.C.|=sign|DILMUN|^BAH^air-dhl-international-aviation-me^1^
+air-divi-divi-air-v1^^2002-01-01^^DVR^3R^742^Divi Divi Air^^^^^https://en.wikipedia.org/wiki/Divi_Divi_Air^en|Divi Divi Air|^BON=CUR^air-divi-divi-air^1^
 air-djibouti-air-v1^^^^^DZ^893^Donghai Airlines^^^^^^en|Donghai Airlines|^^air-djibouti-air^1^
 air-dniproavia-v1^^1996-01-01^^UDN^Z6^181^Dniproavia^^^^^https://en.wikipedia.org/wiki/Dniproavia^en|Dniproavia|^^air-dniproavia^1^
 air-dobrolet-v1^^2013-01-01^^DOB^QD^0^Dobrolet Airlines^^^^^https://en.wikipedia.org/wiki/Dobrolet_Airlines^en|Dobrolet Airlines|^^air-dobrolet^1^

@@ -320,14 +320,14 @@ def extractFrequencies (global_dict, freq_filepath, verboseFlag):
                            + def_airline_no_longer_valid_filepath + "'). "
                            + "Referenced airline(s) for that IATA code: "
                            + str(air_code_list)
-                           + ". You may to re-run make_optd_ref_pr_and_freq.py")
+                           + ". You may want to re-run make_optd_ref_pr_and_freq.py")
                 else:
                     print ("[Error] The airline '" + iata_code + "/" + icao_code
                            + "' cannot be found in the OPTD airline data files ('"
                            + def_airline_bestknown_filepath + "' and '"
                            + def_airline_no_longer_valid_filepath + "'). "
                            + "There is no airline with that IATA code."
-                           + ". You may to re-run make_optd_ref_pr_and_freq.py")
+                           + ". You may want to re-run make_optd_ref_pr_and_freq.py")
                 raise KeyError
             else:
                 # Retrieve only the active airline
