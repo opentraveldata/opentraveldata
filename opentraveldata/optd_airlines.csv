@@ -842,7 +842,7 @@ air-lao-skyway-v2^^2014-01-01^^LLL^LK^0^Lao Skyway^^^^^https://en.wikipedia.org/
 air-latam-cargo-brasil-v1^^1995-01-01^^LTG^M3^0^LATAM Cargo Brasil^^^^^https://en.wikipedia.org/wiki/LATAM_Cargo_Brasil^70^en|LATAM Cargo Brasil|p=en|Aerolíneas Brasileiras S.A.|h=abbr|ABSA|h^VCP^air-latam-cargo-brasil^1^^
 air-latpass-airlines-v1^^^^LTP^QJ^0^Latpass Airlines^^^^^^^en|Latpass Airlines|^^air-latpass-airlines^1^^
 air-laudamotion-v1^^2018-03-18^^LDM^OE^0^Lauda^^^^^https://en.wikipedia.org/wiki/Lauda_(airline)^89^en|Lauda|p=en|Lauda Motion GmbH|=en|Laudamotion|=en|Amira Air|h=sign|LAUDA MOTION|^DUS=TXL=VIE^air-laudamotion^1^m|air-amira-air-v1=m|air-niki-v1^
-air-lc-busre-v1^^1993-01-01^^^W4^107^LC Perú^LC Busre^^^^https://en.wikipedia.org/wiki/LC_Per%C3%BA^1244^en|LC Perú|=en|LC Busre|^^air-lc-busre^1^^
+air-lc-busre-v1^1^1993-01-01^2018-12-31^LCB^W4^107^LC Perú^^^^^https://en.wikipedia.org/wiki/LC_Per%C3%BA^^en|LC Perú|=en|LC Busre|h=sign|BUSRE|^LIM^air-lc-busre^1^^
 air-lepl-air-costa-v1^^2013-10-15^^^LB^0^Air Costa^^^^^https://en.wikipedia.org/wiki/Air_Costa^1056^en|Air Costa|=en|LEPL Projects Limited|^^air-lepl-air-costa^1^^
 air-level-airline-v1^^2017-06-01^^^LV^0^Level^^^^P^https://en.wikipedia.org/wiki/Level_(airline)^275^en|Level|=ja|レベル|=zh|水平航空|^BCN=ORY=VIE^air-level-airline^1^^
 air-lgw-luftfahrtges-walter-v1^^^^^HE^0^LGW Luftfahrtges Walter^^^^^^^en|LGW Luftfahrtges Walter|^^air-lgw-luftfahrtges-walter^1^^
