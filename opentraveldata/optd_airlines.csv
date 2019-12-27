@@ -16,7 +16,7 @@ air-aero-benin-v1^^^^^EM^282^Aero Benin^^^^^^^en|Aero Benin|^^air-aero-benin^1^^
 air-aero-calafia-v1^^1993-01-01^^CFV^A7^0^Aéreo Calafia^Aereo Calafia^^^^https://en.wikipedia.org/wiki/A%C3%A9reo_Calafia^978^en|Aéreo Calafia|=sign|CALAFIA|^CSL^air-aero-calafia^1^^
 air-aero-california-v1^1^1960-01-01^2008-07-23^SER^JR^0^Aero California^^^^^https://en.wikipedia.org/wiki/Aero_California^^en|Aero California|p=en|AeroCal|s=sign|AEROCALIFORNIA|^^air-aero-california^1^^
 air-aero-caribbean-v1^^^^CRN^7L^164^Aero Caribbean^^^^^^^en|Aero Caribbean|^^air-aero-caribbean^1^^
-air-aero-charter-v1^^^^UCR^DW^187^Aero Charter^Helicopter Sh^^^^^^en|Aero Charter|=en|Helicopter Sh|^^air-aero-charter^1^^
+air-aero-charter-v1^1^^2014-12-31^UCR^DW^187^Aero Charter^^^^^^^en|Aero Charter|^^air-aero-charter^1^^
 air-aero-cuahonte-v1^1^1957-11-01^2007-12-31^CUO^5G^0^Aero Cuahonte^^^^^https://en.wikipedia.org/wiki/Aero_Cuahonte^^en|Aero Cuahonte|^UPN^air-aero-cuahonte^1^^
 air-aero-flight-v1^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^https://en.wikipedia.org/wiki/Aero_Flight^^en|Aero Flight|^^air-aero-flight^1^^
 air-aero-mongolia-v1^^^^MNG^M0^719^Aero Mongolia^^^^^^197^en|Aero Mongolia|^^air-aero-mongolia^1^^
@@ -660,6 +660,7 @@ air-gol-transportes-aereos-v1^^2001-01-15^^GLO^G3^127^Gol Transportes Aéreos^^^
 air-golden-myanmar-airlines-v1^^^^^Y5^509^Golden Myanmar Airlines^^^^^^1023^en|Golden Myanmar Airlines|^^air-golden-myanmar-airlines^1^^
 air-grand-china-air-v1^^2007-01-01^^GDC^CN^895^Grand China Air^^^^^https://en.wikipedia.org/wiki/Grand_China_Air^450^abbr|GCA|=en|Grand China Air|=pny|Dà Xīn Huá Hángkōng|=sign|GRAND CHINA|=wuu|大新华航空|=yue|大新華航空|^^air-grand-china-air^1^^
 air-grant-aviation-v1^^1993-01-01^^SWV^GV^0^Grant Aviation^^^^^https://en.wikipedia.org/wiki/Grant_Aviation^^en|Grant Aviation|^AKN=ANC=BET^air-grant-aviation^1^^
+air-great-dane-airlines-v1^^2019-06-01^^GDE^DW^0^Great Dane Airlines^^^^^https://en.wikipedia.org/wiki/Great_Dane_Airlines^^en|Great Dane Airlines|^AAL^air-great-dane-airlines^1^^
 air-great-lakes-aviation-v1^^1977-04-05^^GLA^ZK^846^Great Lakes Airlines^^^^^https://en.wikipedia.org/wiki/Great_Lakes_Airlines^2522^en|Great Lakes Airlines|^^air-great-lakes-aviation^1^^
 air-groznyy-avia-v1^^^^GOZ^ZG^24^Groznyy Avia^^^^^^204^en|Groznyy Avia|^^air-groznyy-avia^1^^
 air-gryphon-airline-v1^^2007-03-01^^VOS^Y3^0^Gryphon Airlines^^^^^https://en.wikipedia.org/wiki/Gryphon_Airlines^^en|Gryphon Airlines|^^air-gryphon-airline^1^^
