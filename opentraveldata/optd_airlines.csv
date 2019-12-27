@@ -96,7 +96,7 @@ air-air-cargo-germany-v1^1^2009-01-01^2013-12-31^ACX^6U^0^Air Cargo Germany^^^^C
 air-air-carnival-v1^^2016-07-18^^^2S^0^Air Carnival^^^^^https://en.wikipedia.org/wiki/Air_Carnival^278^en|Air Carnival|^CJB^air-air-carnival^1^^
 air-air-caucasus-v1^1^2013-01-01^2014-12-31^CSG^UY^49^Air Caucasus^^^^^https://en.wikipedia.org/wiki/Air_Caucasus^^en|Air Caucasus|^TBS^air-air-caucasus^1^^
 air-air-china-v1^^1988-01-01^^CCA^CA^999^Air China^^Star Alliance^Member^^https://en.wikipedia.org/wiki/Air_China^38896^en|Air China|^^air-air-china^1^^
-air-air-city-v1^^^^ECE^4F^0^Air City^^^^^^^en|Air City|^^air-air-city^1^^
+air-air-city-v1^1^2015-10-01^2015-12-31^ECE^4F^0^Air City^^^^^^^en|Air City|^FRA^air-air-city^1^^
 air-air-comet-v1^1^1996-01-01^2009-12-21^MPD^A7^0^Air Comet^^^^^https://en.wikipedia.org/wiki/Air_Comet^^en|Air Comet|=en|Air Plus Comet|h^MAD^air-air-comet^1^^
 air-air-corsica-v1^^2010-01-01^^CCM^XK^146^Air Corsica^^^^^https://en.wikipedia.org/wiki/Air_Corsica^1856^en|Air Corsica|^AJA^air-air-corsica^1^^
 air-air-cote-d-ivoire-v1^^^^^HF^483^Air Cote D Ivoire^Aircoteivoire^^^^^1210^en|Air Cote D Ivoire|=en|Aircoteivoire|^^air-air-cote-d-ivoire^1^^
@@ -623,6 +623,7 @@ air-fmi-air-v1^^2012-09-01^^FMI^ND^0^FMI Air^^^^^https://en.wikipedia.org/wiki/F
 air-forty-mile-air-v1^^^^MLA^Q5^0^Forty Mile Air^^^^^^144^en|Forty Mile Air|^^air-forty-mile-air^1^^
 air-freebird-airlines-v1^^^^FHY^FH^0^Freebird Airlines^Futura Intl^^^^^^en|Freebird Airlines|=en|Futura Intl|^^air-freebird-airlines^1^^
 air-freedom-air-v1^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^https://en.wikipedia.org/wiki/Freedom_Air_(Guam)^^en|Freedom Air|^^air-freedom-air^1^^
+air-freedom-airline-express-v1^^2019-05-01^^FDT^4F^0^Freedom Airline Express^^^^^https://en.wikipedia.org/wiki/Freedom_Airline_Express^^en|Freedom Airline Express|^WIL^air-freedom-airline-express^1^^
 air-freedom-airlines-v1^1^2002-01-01^2010-12-31^FRL^F8^0^Freedom Airlines^Air Montreal^^^^https://en.wikipedia.org/wiki/Freedom_Airlines^^en|Freedom Airlines|=en|Air Montreal|^^air-freedom-airlines^1^^
 air-french-blue-v1^^2016-01-01^^FBU^BF^396^French Bee^^^^^https://en.wikipedia.org/wiki/French_Bee^27^en|French Bee|p=en|French Blue|h=sign|FRENCH BEE|^ORY^air-french-blue^1^^
 air-french-military-force-v1^^^^^RD^0^French Military Force^Ryan^^^^^^en|French Military Force|=en|Ryan|^^air-french-military-force^1^^
