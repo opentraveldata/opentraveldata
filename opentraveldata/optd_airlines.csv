@@ -47,7 +47,7 @@ air-aerosvit-airlines-v1^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^
 air-aerovias-dap-v1^^^^DAP^V5^0^Aerovias DAP^^^^^https://en.wikipedia.org/wiki/Aerov%C3%ADas_DAP^270^en|Aerovias DAP|^^air-aerovias-dap^1^^
 air-afghan-jet-v1^^^^^HN^714^Afghan Jet International^^^^^^^en|Afghan Jet International|^^air-afghan-jet^1^^
 air-afric-aviation-v1^^2011-01-01^^^L8^348^Afric Aviation^^^^^https://en.wikipedia.org/wiki/Afric_Aviation^400^en|Afric Aviation|^^air-afric-aviation^1^^
-air-africa-west-cargo-v1^^^^^FK^0^Africa West Cargo Ghd^^^^C^^^en|Africa West Cargo Ghd|^^air-africa-west-cargo^1^^
+air-africa-west-cargo-v1^1^^2013-12-31^^FK^0^Africa West Cargo^^^^C^^^en|Africa West Cargo|^LFW^air-africa-west-cargo^1^^
 air-africa-world-airlines-v1^^2012-09-21^^AFW^AW^394^Africa World Airlines^^^^^https://en.wikipedia.org/wiki/Africa_World_Airlines^791^abbr|AWA|=en|Africa World Airlines|^ACC^air-africa-world-airlines^1^^
 air-african-express-airways-v1^^^^^XU^0^African Express Airways^Link Airways^^^P^^158^en|African Express Airways|=en|Link Airways|^^air-african-express-airways^1^^
 air-afrijet-airlines-v1^1^2000-01-01^2008-12-31^FRJ^6F^0^Afrijet Airlines^^^^^https://en.wikipedia.org/wiki/Afrijet_Airlines^^en|Afrijet Airlines|^LOS^air-afrijet-airlines^1^^
@@ -77,6 +77,8 @@ air-air-azul-v1^1^2007-01-01^2008-12-31^LOC^ZQ^0^JetAmerica^^^^^https://en.wikip
 air-air-bagan-v1^^^^^W9^17^Air Bagan^^^^^^^en|Air Bagan|^^air-air-bagan^1^^
 air-air-baltic-v1^^1995-01-01^^BTI^BT^657^airBaltic^^^^^https://en.wikipedia.org/wiki/AirBaltic^3782^en|airBaltic|^^air-air-baltic^1^^
 air-air-bashkortostan-v1^1^2006-04-10^2013-10-09^^ZU^894^Air Bashkortostan^^^^^https://en.wikipedia.org/wiki/Air_Bashkortostan^^en|Air Bashkortostan|^^air-air-bashkortostan^1^^
+air-air-belgium-v1^1^1979-05-01^2000-10-31^ABB^AJ^0^Air Belgium^^^^^https://en.wikipedia.org/wiki/Air_Belgium_(1979-2000)^^en|Air Belgium|^BRU^air-air-belgium^1^^
+air-air-belgium-v2^^2018-06-01^^ABB^KF^142^Air Belgium^^^^^https://en.wikipedia.org/wiki/Air_Belgium_(since_2016)^^en|Air Belgium|^^air-air-belgium^2^^
 air-air-berlin-v1^1^1979-01-01^2017-10-28^BER^AB^745^Air Berlin^^^Member^^https://en.wikipedia.org/wiki/Air_Berlin^^en|Air Berlin|^TXL^air-air-berlin^1^^
 air-air-botswana-v1^^^^BOT^BP^636^Air Botswana^^^^^^653^en|Air Botswana|^^air-air-botswana^1^^
 air-air-bretagne-v1^^^^OMQ^3E^0^Multi Aero^Air Bretagne^^^^^1691^en|Multi Aero|=en|Air Bretagne|^^air-air-bretagne^1^^
@@ -346,7 +348,7 @@ air-bismilah-airlines-v1^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^ht
 air-blue-air-airline-v1^^2004-12-01^^BMS^0B^0^Blue Air^^^^^https://en.wikipedia.org/wiki/Blue_Air^2700^en|Blue Air|^^air-blue-air-airline^1^^
 air-blue-islands-v1^^1999-01-01^^BCI^SI^821^Blue Islands^^^^^https://en.wikipedia.org/wiki/Blue_Islands^607^en|Blue Islands|^GCI=JER^air-blue-islands^1^^
 air-blue-panorama-airlines-v1^^^^BPA^BV^4^Blue Panorama Airlines^Blue Panorama^^^^^1120^en|Blue Panorama Airlines|=en|Blue Panorama|^^air-blue-panorama-airlines^1^^
-air-blue1-v1^^1988-01-01^^BLF^KF^142^Blue1^^^^^https://en.wikipedia.org/wiki/Blue1^^en|Blue1|^^air-blue1^1^^
+air-blue1-v1^1^1988-01-01^2016-12-31^BLF^KF^142^Blue1^^^^^https://en.wikipedia.org/wiki/Blue1^^en|Blue1|^HEL^air-blue1^1^^
 air-bluebird-airways-v1^^2008-01-01^^BBG^BZ^0^Bluebird Airways^^^^^https://en.wikipedia.org/wiki/Bluebird_Airways^^en|Bluebird Airways|^^air-bluebird-airways^1^^
 air-bluebird-cargo-v1^^2001-03-01^^BBD^BO^290^Bluebird Nordic^^^^C^https://en.wikipedia.org/wiki/Bluebird_Nordic^^en|Bluebird Nordic|p=en|Bluebird Cargo|h=sign|BLUE CARGO|^KEF^air-bluebird-cargo^1^^
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^https://en.wikipedia.org/wiki/BMI_Regional^1842^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1^^
@@ -798,6 +800,7 @@ air-kaya-airlines-v1^1^1991-01-01^2015-12-31^KYY^IK^0^Kaya Airlines^^^^^https://
 air-kd-avia-v1^1^1945-10-08^2009-09-08^KNI^KD^0^KD Avia^^^^^https://en.wikipedia.org/wiki/KD_Avia^^en|KD Avia|=ru|КД авиа|=sign|KALININGRAD AIR|^KGD^air-kd-avia^1^^
 air-kd-v1^1^1990-01-01^2013-09-30^KDC^XC^0^KD Air^^^^^https://en.wikipedia.org/wiki/KD_Air^^en|KD Air|=sign|KAYDEE|^YVR^air-kd^1^^
 air-kd-v2^^2013-10-01^^KDC^^0^KD Air^^^^^https://en.wikipedia.org/wiki/KD_Air^718^en|KD Air|=sign|KAYDEE|^YVR^air-kd^2^^
+air-kelowna-flightcraft-air-charter-v1^^2015-01-01^^KFA^FK^0^Kelowna Flightcraft Air Charter^^^^^https://en.wikipedia.org/wiki/KF_Cargo^^en|Kelowna Flightcraft Air Charter|=en|KF Cargo|s=en|Kelowna Flightcraft|=en|KF Maintenance and Engineering|=sign|FLIGHTCRAFT|^YHM=YLW^air-kelowna-flightcraft-air-charter^1^^
 air-kenmore-air-v1^^^^KEN^M5^763^Kenmore Air^^^^^^1012^en|Kenmore Air|^^air-kenmore-air^1^^
 air-kenn-borek-air-v1^^^^KBA^4K^0^Kenn Borek Air^^^^^^18^en|Kenn Borek Air|^^air-kenn-borek-air^1^^
 air-kenya-airways-v1^^1977-02-04^^KQA^KQ^706^Kenya Airways^^Skyteam^Member^^https://en.wikipedia.org/wiki/Kenya_Airways^4461^en|Kenya Airways|^^air-kenya-airways^1^^

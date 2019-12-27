@@ -12,6 +12,7 @@ air-aeropostal-v1^1^1929-07-03^2017-09-24^ALV^VH^152^Aeropostal Alas de Venezuel
 air-aerosur-v1^1^1992-01-01^2012-12-31^RSU^5L^275^AeroSur^^^^^https://en.wikipedia.org/wiki/AeroSur^en|AeroSur|^^air-aerosur^1^
 air-aerosvit-airlines-v1^1^1994-04-01^2013-01-31^AEW^VV^870^AeroSvit Airlines^^^^^https://en.wikipedia.org/wiki/Aerosvit_Airlines^en|AeroSvit Airlines|^^air-aerosvit-airlines^1^
 air-aero-vip-argentina-v1^1^1999-06-23^2010-08-31^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^https://en.wikipedia.org/wiki/Aero_VIP_(Argentina)^en|Aero VIP (Argentina)|=en|Aero VIP (Argentina)|^^air-aero-vip-argentina^1^
+air-africa-west-cargo-v1^1^^2013-12-31^^FK^0^Africa West Cargo^^^^C^^en|Africa West Cargo|^LFW^air-africa-west-cargo^1^
 air-afrijet-airlines-v1^1^2000-01-01^2008-12-31^FRJ^6F^0^Afrijet Airlines^^^^^https://en.wikipedia.org/wiki/Afrijet_Airlines^en|Afrijet Airlines|^LOS^air-afrijet-airlines^1^
 air-afrinat-international-airlines-v1^1^2004-01-01^2004-01-01^AFU^Q9^0^Afrinat International Airlines^^^^^https://en.wikipedia.org/wiki/Afrinat_International_Airlines^en|Afrinat International Airlines|^BJL^air-afrinat-international-airlines^1^
 air-air-alps-aviation-v1^1^1999-01-01^2014-03-01^LPV^A6^527^Air Alps Aviation^^^^^https://en.wikipedia.org/wiki/Air_Alps^en|Air Alps Aviation|^^air-air-alps-aviation^1^
@@ -91,10 +92,12 @@ air-aviaprad-v1^1^1996-01-01^2008-02-05^VID^WR^0^Aviaprad^^^^^https://en.wikiped
 air-avitrans-nordic-v1^1^2004-01-01^2010-12-31^ETS^2Q^0^Avitrans Nordic^^^^T^https://en.wikipedia.org/wiki/Avitrans^en|Avitrans Nordic|^^air-avitrans-nordic^1^
 air-axis-lines-v1^1^2005-01-01^2006-01-01^^O8^0^Axis International Lines^^^^^https://en.wikipedia.org/wiki/Axis_Lines_International^en|Axis International Lines|^^air-axis-lines^1^
 air-batavia-air-v1^1^2002-01-01^2013-01-31^BTV^Y6^0^Batavia Air^^^^^https://en.wikipedia.org/wiki/Batavia_Air^en|Batavia Air|^CGK^air-batavia-air^1^
+air-air-belgium-v1^1^1979-05-01^2000-10-31^ABB^AJ^0^Air Belgium^^^^^https://en.wikipedia.org/wiki/Air_Belgium_(1979-2000)^en|Air Belgium|^BRU^air-air-belgium^1^
 air-belle-air-company-v1^1^2005-01-01^2013-11-24^LBY^LZ^379^Belle Air^^^^^https://en.wikipedia.org/wiki/Belle_Air^en|Belle Air Sh.p.k.|=en|belleair|^TIA^air-belle-air-company^1^
 air-benin-golf-v1^1^2002-01-01^2012-07-31^BGL^A8^0^Benin Golf Air^^^^^https://en.wikipedia.org/wiki/Benin_Golf_Air^en|Benin Golf Air|^^air-benin-golf^1^
 air-bh-airlines-v1^1^1994-01-01^2015-07-02^BON^JA^995^B&H Airlines^^^^^https://en.wikipedia.org/wiki/B%26H_Airlines^en|B&H Airlines|p=en|Air Bosna|h=he|B&H איירליינס|=ja|B&H航空|=ko|B&H 항공|=sign|AIR BOSNA|^SJJ^air-bh-airlines^1^
 air-bismilah-airlines-v1^1^1998-01-01^2015-01-01^^5Z^0^Bismillah Airlines^^^^^https://en.wikipedia.org/wiki/Bismillah_Airlines^en|Bismillah Airlines|^^air-bismilah-airlines^1^
+air-blue1-v1^1^1988-01-01^2016-12-31^BLF^KF^142^Blue1^^^^^https://en.wikipedia.org/wiki/Blue1^en|Blue1|^HEL^air-blue1^1^
 air-bqb-v1^1^2010-01-01^2015-04-30^BQB^5Q^567^BQB Líneas Aéreas^^^^P^https://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^en|BQB Líneas Aéreas|=en|BQB Airlines|^MVD^air-bqb^1^
 air-brindabella-airlines-v1^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^https://en.wikipedia.org/wiki/Brindabella_Airlines^en|Brindabella Airlines|^^air-brindabella-airlines^1^
 air-british-mediterranean-airways-v1^1^1994-01-01^2007-12-31^LAJ^KJ^994^British Mediterranean Airways^^^^^https://en.wikipedia.org/wiki/British_Mediterranean_Airways^en|British Mediterranean Airways|=abbr|BMED|^LHR^air-british-mediterranean-airways^1^
