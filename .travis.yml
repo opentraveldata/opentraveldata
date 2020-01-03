@@ -15,8 +15,10 @@ before_script:
   -in .travis/id_rsa.enc -out .travis/id_rsa -d
 install:
 - pip install -r ci-scripts/requirements.txt
-script: /bin/sh .travis/hooks/all
-script: /bin/bash ci-scripts/displayList.sh
+script:
+    - >
+      /bin/sh .travis/hooks/all
+      /bin/bash ci-scripts/displayList.sh
 before_deploy:
 - openssl aes-256-cbc -K $encrypted_dd7324fa5dde_key -iv $encrypted_dd7324fa5dde_iv
   -in ci-scripts/id_rsa.travis-ci-deploy.enc -out /tmp/id_rsa.travis-ci-deploy -d
