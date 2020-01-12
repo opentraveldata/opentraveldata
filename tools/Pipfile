@@ -14,6 +14,7 @@ networkx = "*"
 pandas = "*"
 lxml = "*"
 sparqlwrapper = "*"
+common = "*"
 
 [requires]
 python_version = "3.7"

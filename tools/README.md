@@ -1011,6 +1011,15 @@ $ git add ../opentraveldata/optd_states.csv
 $ git commit -m "[States] Updated the list of states"
 ```
 
+### Extract the information from airline routes
+* Airline routes may also be named flight schedules sometimes
+```bash
+$ pipenv run ./extract_oag_schedule.py \
+    --output-csv=../data/OAG/archives/processed/oag_schedule_200112.csv \
+	--ssim7-files=../data/OAG/archives/prcessed/airline-routes-ssim7.gz
+$ git add ../opentraveldata/optd_states.csv
+$ git commit -m "[Routes] Updated the list of routes"
+```
 
 ## Details of some data processing tasks
 
