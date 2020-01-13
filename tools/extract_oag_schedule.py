@@ -146,7 +146,7 @@ def flex_open (filename, option):
   if flag_gz:
     return gzip.open (filename, option)
   elif flag_bz2:
-    return bz2.BZ2File (filename, option)
+    return bz2.open (filename, option)
   else:
     return open (filename, option)
 
@@ -637,7 +637,7 @@ def main():
   #txt_output_file = output_file
   #if flag_gz_output: txt_output_file = output_file[:-2]
   try:
-    f_output = flex_open (output_file, 'w')
+    f_output = flex_open (output_file, 'wt')
   except (Exception, e):
     raise myException ("output file %s could not be created".format(output_file))
   
