@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
+# GNU tools have the priority when existing
+DATE_TOOL="date"
+if command -v gdate 1>/dev/null 2>&1
 then
-	DATE_TOOL=gdate
+        DATE_TOOL="gdate"
 fi
 
 ##
@@ -24,13 +24,13 @@ fi
 
 ##
 # Retrieve the latest file
-POR_FILE_PFX=por_all
-SNPSHT_DATE=$(ls ${POR_FILE_PFX}_????????.{csv,.csv.bz2} 2> /dev/null)
+POR_FILE_PFX="por_all"
+SNPSHT_DATE="$(ls ${POR_FILE_PFX}_????????.{csv,.csv.bz2} 2> /dev/null)"
 if [ "${SNPSHT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
 	for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-	SNPSHT_DATE=$(echo ${myfile} | sed -e "s/${POR_FILE_PFX}_\([0-9]\+\)\.csv.*/\1/" | xargs basename)
+	SNPSHT_DATE="$(echo ${myfile} | sed -E "s/${POR_FILE_PFX}_([0-9]+)\.csv.*/\1/" | xargs basename)"
 else
 	echo
 	echo "[$0:$LINENO] No Geonames-derived POR list CSV dump can be found."
@@ -40,9 +40,9 @@ else
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} -d ${SNPSHT_DATE})
+	SNPSHT_DATE_HUMAN="$(${DATE_TOOL} -d ${SNPSHT_DATE})"
 else
-	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} --date='yesterday')
+	SNPSHT_DATE_HUMAN="$(${DATE_TOOL} --date='yesterday')"
 fi
 
 #
