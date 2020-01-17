@@ -43,7 +43,7 @@ EXEC_PATH=`dirname $0`
 pushd ${EXEC_PATH} > /dev/null
 EXEC_FULL_PATH=`popd`
 popd > /dev/null
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -324,12 +324,12 @@ OPTD_POR_FILE_HEADER=${OPTD_POR_FILE}.tmp.hdr
 grep "^iata_code\(.\+\)" ${OPTD_POR_WITH_NO_CTY_NAME} > ${OPTD_POR_FILE_HEADER}
 
 # Remove the headers
-sed -e "s/^iata_code\(.\+\)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
+sed -E "s/^iata_code(.+)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
 	> ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
-sed -i -e "/^$/d" ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
+sed -i "" -E "/^$/d" ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
 
-sed -e "s/^iata_code\(.\+\)//g" ${OPTD_NOIATA_FILE} > ${OPTD_NOIATA_WITH_NOHD}
-sed -i -e "/^$/d" ${OPTD_NOIATA_WITH_NOHD}
+sed -E "s/^iata_code(.+)//g" ${OPTD_NOIATA_FILE} > ${OPTD_NOIATA_WITH_NOHD}
+sed -i "" -E "/^$/d" ${OPTD_NOIATA_WITH_NOHD}
 
 
 ##
