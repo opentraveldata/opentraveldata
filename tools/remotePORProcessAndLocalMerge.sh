@@ -50,7 +50,6 @@ echo "On the remote host:"
 echo "./getDataFromGeonamesWebsite.sh && ./aggregateGeonamesPor.sh && ./extract_por_from_geonames.sh && ./extract_por_from_geonames.sh --clean && cp -f por_intorg_${TODAY_DATE}.csv dump_from_geonames.csv && bzip2 por_intorg_${TODAY_DATE}.csv"
 echo "time diff -Naur ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY_DATE}.csv > ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
 echo "bzip2 ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv"
-echo "bzip2 -k ${POR_FILE_PFX}_${TODAY_DATE}.csv"
 echo "ls -laFh --color por*"
 echo
 echo "On the local host:"
@@ -63,7 +62,7 @@ echo "patch -p0 < ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv && mv ${POR_F
 echo "ls -laFh --color por*"
 echo
 echo "On the remote host again:"
-echo "mv por_intorg_${TODAY_DATE}.csv.bz2 archives/2019/ && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2 ${POR_FILE_PFX}_${SNPSHT_DATE}.csv ${POR_FILE_PFX}_${TODAY_DATE}.csv.bz2"
+echo "mv por_intorg_${TODAY_DATE}.csv.bz2 archives/2019/ && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2 ${POR_FILE_PFX}_${SNPSHT_DATE}.csv"
 echo "ls -laFh --color por*"
 
 
