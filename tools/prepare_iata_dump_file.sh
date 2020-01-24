@@ -47,7 +47,7 @@ EXEC_PATH=$(dirname $0)
 # Trick to get the actual full-path
 EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
 EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|')
+EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|')
 #
 CURRENT_DIR=$(pwd)
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -103,7 +103,7 @@ if [ "${SNPSHT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
 	for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-	SNPSHT_DATE=$(echo ${myfile} | sed -e "s/${POR_FILE_PFX}_\([0-9]\+\)\.txt/\1/" | xargs basename)
+	SNPSHT_DATE=$(echo ${myfile} | sed -E "s|${POR_FILE_PFX}_([0-9]+)\.txt|\1|" | xargs basename)
 else
 	echo
 	echo "[$0:$LINENO] No IATA-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
@@ -216,9 +216,9 @@ awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
 grep "^city_code\(.\+\)" ${IATA_CSV_UNSTD_FILE} > ${IATA_CSV_HDR_FILE}
 
 # Remove the header from the unsorted file
-sed -e "s/^city_code\(.\+\)//g" ${IATA_CSV_UNSTD_FILE} \
+sed -E "s|^city_code(.+)||g" ${IATA_CSV_UNSTD_FILE} \
 	> ${IATA_CSV_UNSTD_NOHDR_FILE}
-sed -i -e "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
+sed -i -E "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
 
 # Sort by IATA code the header-less file
 sort -t'^' -k1,1 ${IATA_CSV_UNSTD_NOHDR_FILE} > ${IATA_CSV_NOHDR_FILE}
