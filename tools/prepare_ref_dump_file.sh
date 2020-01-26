@@ -69,7 +69,7 @@ EXEC_PATH=`dirname $0`
 # Trick to get the actual full-path
 EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
 EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -286,8 +286,8 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 ##
 # Remove the header (first line) of the geographical file
 GEO_REF_WPK_FILE_TMP=${GEO_REF_WPK_FILE}.tmp
-sed -e "s/^pk\(.\+\)//g" ${GEO_REF_WPK_FILE} > ${GEO_REF_WPK_FILE_TMP}
-sed -i -e "/^$/d" ${GEO_REF_WPK_FILE_TMP}
+sed -E "s|^pk(.+)||g" ${GEO_REF_WPK_FILE} > ${GEO_REF_WPK_FILE_TMP}
+sed -i "" -E "/^$/d" ${GEO_REF_WPK_FILE_TMP}
 
 
 ##

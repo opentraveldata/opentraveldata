@@ -218,7 +218,7 @@ grep "^city_code\(.\+\)" ${IATA_CSV_UNSTD_FILE} > ${IATA_CSV_HDR_FILE}
 # Remove the header from the unsorted file
 sed -E "s|^city_code(.+)||g" ${IATA_CSV_UNSTD_FILE} \
 	> ${IATA_CSV_UNSTD_NOHDR_FILE}
-sed -i -E "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
+sed -i "" -E "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
 
 # Sort by IATA code the header-less file
 sort -t'^' -k1,1 ${IATA_CSV_UNSTD_NOHDR_FILE} > ${IATA_CSV_NOHDR_FILE}
