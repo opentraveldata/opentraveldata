@@ -32,7 +32,7 @@ EXEC_PATH=`dirname $0`
 # Trick to get the actual full-path
 EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
 EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -182,8 +182,8 @@ awk -F'^' -v log_level=${LOG_LEVEL} \
 
 ##
 # First, remove the header (first line)
-sed -e "s/^pk\(.\+\)//g" ${OPTD_WPK_FILE} > ${OPTD_WPK_FILE_TMP2}
-sed -i -e "/^$/d" ${OPTD_WPK_FILE_TMP2}
+sed -E "s/^pk(.+)//g" ${OPTD_WPK_FILE} > ${OPTD_WPK_FILE_TMP2}
+sed -i "" -E "/^$/d" ${OPTD_WPK_FILE_TMP2}
 
 
 ##

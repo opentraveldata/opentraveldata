@@ -23,7 +23,7 @@ EXEC_PATH=`dirname $0`
 pushd ${EXEC_PATH} > /dev/null
 EXEC_FULL_PATH=`popd`
 popd > /dev/null
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -165,11 +165,11 @@ awk -F'^' -v tgt_ctry_code="${CTRY_CODE}" -v log_level="${LOG_LEVEL}" \
 ##
 # Extract the header into a temporary file
 OPTD_CTRY_STATE_FILE_HEADER=${OPTD_CTRY_STATE_FILE}.hdr
-grep "^ctry_code\(.\+\)" ${OPTD_CTRY_STATE_FILE_41_CTRY} > ${OPTD_CTRY_STATE_FILE_HEADER}
+grep -E "^ctry_code(.+)" ${OPTD_CTRY_STATE_FILE_41_CTRY} > ${OPTD_CTRY_STATE_FILE_HEADER}
 
 # Remove the headers
-sed -e "s/^ctry_code\(.\+\)//g" ${OPTD_CTRY_STATE_FILE_41_CTRY} > ${OPTD_CTRY_STATE_FILE_NSTD}
-sed -i -e "/^$/d" ${OPTD_CTRY_STATE_FILE_NSTD}
+sed -E "s/^ctry_code(.+)//g" ${OPTD_CTRY_STATE_FILE_41_CTRY} > ${OPTD_CTRY_STATE_FILE_NSTD}
+sed -i "" -E "/^$/d" ${OPTD_CTRY_STATE_FILE_NSTD}
 
 ##
 # Sort the state details

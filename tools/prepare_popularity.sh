@@ -119,8 +119,8 @@ fi
 ##
 # First, remove the header (first line)
 AIRPORT_POP_TMP=${AIRPORT_POP}.tmp
-sed -e "s/^region_code\(.\+\)//g" ${AIRPORT_POP} > ${AIRPORT_POP_TMP}
-sed -i -e "/^$/d" ${AIRPORT_POP_TMP}
+sed -E "s/^region_code(.+)//g" ${AIRPORT_POP} > ${AIRPORT_POP_TMP}
+sed -i "" -E "/^$/d" ${AIRPORT_POP_TMP}
 
 
 ##

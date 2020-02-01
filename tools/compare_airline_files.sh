@@ -184,13 +184,13 @@ awk -F'^' -f ${REDUCER} ${OPTD_AIR_FILE} ${REF_CAP_FILE} \
 
 ##
 # Extract the header into temporary files
-grep "^code\(.\+\)" ${OPTD_AIR_PUBLIC_UNSORTED_FILE} > ${OPTD_AIR_HEADER}
+grep -E "^code(.+)" ${OPTD_AIR_PUBLIC_UNSORTED_FILE} > ${OPTD_AIR_HEADER}
 
 ##
 # Remove the header
-sed -e "s/^code\(.\+\)//g" ${OPTD_AIR_PUBLIC_UNSORTED_FILE} \
+sed -E "s/^code(.+)//g" ${OPTD_AIR_PUBLIC_UNSORTED_FILE} \
 	> ${OPTD_AIR_WITH_NOHD}
-sed -i -e "/^$/d" ${OPTD_AIR_WITH_NOHD}
+sed -i "" -E "/^$/d" ${OPTD_AIR_WITH_NOHD}
 
 ##
 # Sort on the code

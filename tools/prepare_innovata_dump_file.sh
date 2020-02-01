@@ -42,7 +42,7 @@ EXEC_PATH=`dirname $0`
 # Trick to get the actual full-path
 EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
 EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -248,8 +248,8 @@ cut -d'^' -f 2- ${INN_WPK_FILE} > ${INN_DMP_FILE}
 ##
 # Remove the header (first line)
 INN_WPK_FILE_TMP=${INN_WPK_FILE}.tmp
-sed -e "s/^pk\(.\+\)//g" ${INN_WPK_FILE} > ${INN_WPK_FILE_TMP}
-sed -i -e "/^$/d" ${INN_WPK_FILE_TMP}
+sed -E "s/^pk(.+)//g" ${INN_WPK_FILE} > ${INN_WPK_FILE_TMP}
+sed -i "" -E "/^$/d" ${INN_WPK_FILE_TMP}
 
 ##
 # That version of the Innovata dump file (without primary key) is sorted

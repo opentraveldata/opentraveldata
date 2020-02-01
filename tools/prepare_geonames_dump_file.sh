@@ -64,7 +64,7 @@ EXEC_PATH=`dirname $0`
 # Trick to get the actual full-path
 EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
 EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -223,13 +223,13 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 ##
 # Save the header
 GEO_WPK_FILE_HEADER=${GEO_WPK_FILE}.tmp.hdr
-grep "^pk\(.\+\)" ${GEO_WPK_FILE} > ${GEO_WPK_FILE_HEADER}
+grep -E "^pk(.+)" ${GEO_WPK_FILE} > ${GEO_WPK_FILE_HEADER}
 
 ##
 # Remove the header (first line)
 GEO_WPK_FILE_TMP=${GEO_WPK_FILE}.tmp
-sed -i -e "s/^pk\(.\+\)//g" ${GEO_WPK_FILE}
-sed -i -e "/^$/d" ${GEO_WPK_FILE}
+sed -i "" -E "s/^pk(.+)//g" ${GEO_WPK_FILE}
+sed -i "" -E "/^$/d" ${GEO_WPK_FILE}
 
 ##
 # Sort the file
@@ -247,7 +247,7 @@ cut -d'^' -f 1,2,8,9 ${SORTED_GEO_WPK_FILE} > ${SORTED_CUT_GEO_WPK_FILE}
 ##
 # Re-add the header
 cat ${GEO_WPK_FILE_HEADER} ${GEO_WPK_FILE} > ${GEO_WPK_FILE_TMP}
-sed -i -e "/^$/d" ${GEO_WPK_FILE_TMP}
+sed -i "" -E "/^$/d" ${GEO_WPK_FILE_TMP}
 \mv -f ${GEO_WPK_FILE_TMP} ${GEO_WPK_FILE}
 \rm -f ${GEO_WPK_FILE_HEADER}
 

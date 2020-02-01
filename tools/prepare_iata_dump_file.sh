@@ -213,7 +213,7 @@ awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
 # Sort by IATA code
 
 # Extract the header into a temporary file
-grep "^city_code\(.\+\)" ${IATA_CSV_UNSTD_FILE} > ${IATA_CSV_HDR_FILE}
+grep -E "^city_code(.+)" ${IATA_CSV_UNSTD_FILE} > ${IATA_CSV_HDR_FILE}
 
 # Remove the header from the unsorted file
 sed -E "s|^city_code(.+)||g" ${IATA_CSV_UNSTD_FILE} \

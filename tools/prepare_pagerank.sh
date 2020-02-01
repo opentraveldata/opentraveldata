@@ -11,7 +11,7 @@ displayPopularityDetails() {
 	fi
 	if [ -z "${MYCURDIR}" ]
 	then
-		export MYCURDIR=`pwd`
+		export MYCURDIR=$(pwd)
 	fi
 	echo
 	echo "The data dump for PageRanked airports can be obtained from this project (OpenTravelData:"
@@ -42,8 +42,8 @@ TMP_DIR="/tmp/por"
 
 ##
 # Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-CURRENT_DIR=`pwd`
+EXEC_PATH=$(dirname $0)
+CURRENT_DIR=$(pwd)
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
 then
 	EXEC_PATH="."
@@ -95,7 +95,7 @@ fi
 if [ "$1" != "" ];
 then
 	AIRPORT_PR="$1"
-	AIRPORT_PR_FILENAME=`basename ${AIRPORT_PR}`
+	AIRPORT_PR_FILENAME=$(basename ${AIRPORT_PR})
 	AIRPORT_PR_SORTED=sorted_${AIRPORT_PR_FILENAME}
 	AIRPORT_PR_SORTED_CUT=cut_sorted_${AIRPORT_PR_FILENAME}
 	if [ "${AIRPORT_PR}" = "${DATA_DIR}${AIRPORT_PR_FILENAME}" ]
@@ -121,8 +121,8 @@ fi
 AIRPORT_PR_TMP=${AIRPORT_PR}.tmp
 # As of now (June 2012), there is no header.
 \cp -f ${AIRPORT_PR} ${AIRPORT_PR_TMP}
-#sed -e "s/^region_code\(.\+\)//g" ${AIRPORT_PR} > ${AIRPORT_PR_TMP}
-#sed -i -e "/^$/d" ${AIRPORT_PR_TMP}
+#sed -E "s/^region_code(.+)//g" ${AIRPORT_PR} > ${AIRPORT_PR_TMP}
+#sed -i "" -E "/^$/d" ${AIRPORT_PR_TMP}
 
 
 ##

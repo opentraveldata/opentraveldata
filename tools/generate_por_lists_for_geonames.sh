@@ -66,7 +66,7 @@ EXEC_PATH=`dirname $0`
 # Trick to get the actual full-path
 EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
 EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
+EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
 #
 CURRENT_DIR=`pwd`
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -275,11 +275,11 @@ HDR_2="${HDR_1}^page_rank"
 
 ##
 # Extract the header into a temporary file
-grep "^iata_code\(.\+\)" ${REF_CAP_FILE} > ${REF_RAW_HEADER_FILE}
+grep -E "^iata_code(.+)" ${REF_CAP_FILE} > ${REF_RAW_HEADER_FILE}
 
 # Remove the header
-sed -i -e "s/^iata_code\(.\+\)//g" ${REF_CAP_FILE}
-sed -i -e "/^$/d" ${REF_CAP_FILE}
+sed -i "" -E "s/^iata_code(.+)//g" ${REF_CAP_FILE}
+sed -i "" -E "/^$/d" ${REF_CAP_FILE}
 
 ##
 # Extract only the IATA code from the file

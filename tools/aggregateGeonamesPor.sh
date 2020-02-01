@@ -115,12 +115,12 @@ fi
 ##
 # Check that the Geonames dump data files have been downloaded and
 # uncompressed
-AGG_INPUT_FILES=(${GEO_ADM1_FILE} ${GEO_ADM2_FILE} ${GEO_CTRY_FILE} \
-				  ${GEO_TZ_FILE} ${GEO_CONT_FILE} \
-				  ${GEO_POR_ALT_FILE} ${GEO_POR_FILE})
-for file in ${AGG_INPUT_FILES[*]}
+declare -a AGG_INPUT_FILES=("${GEO_ADM1_FILE}" "${GEO_ADM2_FILE}" \
+	"${GEO_CTRY_FILE}" "${GEO_TZ_FILE}" "${GEO_CONT_FILE}" \
+	"${GEO_POR_ALT_FILE}" "${GEO_POR_FILE}")
+for file in "${AGG_INPUT_FILES[@]}"
 do
-    if [ ! -f ${file} ]
+    if [ ! -f "${file}" ]
     then
 	echo "The Geonames data dump file ('${file}') does not seem to have been downloaded"
 	echo "Content of the local directory ('${DATA_DIR}') where Geonames data dump files are expected to be downloaded:"
@@ -165,21 +165,21 @@ done
 ##
 # Calculate the number of lines of the main Geoname POR file,
 # so as to report the progress in the next data processing task below.
-NB_POR=$(wc -l ${GEO_POR_FILE} | \
-	     sed -e 's/^\([^0-9]*\)\([0-9]\+\)\([^0-9]\)*$/\2/g')
+NB_POR="$(wc -l ${GEO_POR_FILE} | \
+	     sed -E 's/^([^0-9]*)([0-9]+)([^0-9])*$/\2/g')"
 
 ##
 # Concatenate the alternate name details, and add them back to the line of
 # details for every Geoname POR.
 AGGREGATOR="aggregateGeonamesPor.awk"
 echo
-echo "Aggregating Geonames dump data files (${AGG_INPUT_FILES[*]})..."
-AWKCMD="awk -F'\t' -v log_level=${LOG_LEVEL} -v nb_por=${NB_POR} \
-	-f ${AGGREGATOR} ${AGG_INPUT_FILES[*]}"
+echo "Aggregating Geonames dump data files (${AGG_INPUT_FILES[@]})..."
+AWKCMD="awk -F'\t' -v log_level="${LOG_LEVEL}" -v nb_por="${NB_POR}" \
+	-f ${AGGREGATOR} ${AGG_INPUT_FILES[@]}"
 #echo "AWK command to be executed:"
 #echo "${AWKCMD} > ${GEO_POR_CONC_FILE}"
-time awk -F'\t' -v log_level=${LOG_LEVEL} -v nb_por=${NB_POR} -f ${AGGREGATOR} \
-	 ${AGG_INPUT_FILES[*]} > ${GEO_POR_CONC_FILE}	 
+time awk -F'\t' -v log_level="${LOG_LEVEL}" -v nb_por="${NB_POR}" \
+	-f ${AGGREGATOR} ${AGG_INPUT_FILES[@]} > ${GEO_POR_CONC_FILE}
 echo "... done"
 echo
 
@@ -216,3 +216,4 @@ echo
 
 #
 echo
+

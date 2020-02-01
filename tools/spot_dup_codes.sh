@@ -94,24 +94,24 @@ fi
 displayReaggregateIATA() {
 	echo
 	echo "cat por_all_iata_${SNAPSHOT_DATE}.csv por_all_noicao_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}"
-	echo "sed -i -e \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo "sort -t'^' -k1,1 -k2,2 ${GEO_ALL_FILE} > ${GEO_ALL_FILE}.tmp"
 	echo "\mv -f ${GEO_ALL_FILE}.tmp ${GEO_ALL_FILE}"
-	echo "sed -i -e \"s/^iata\(.\+\)//g\" ${GEO_ALL_FILE}"
-	echo "sed -i -e \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"s/^iata(.+)//g\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo
 }
 #
 displayReaggregateICAO() {
 	echo
-	echo "sed -e \"s/^\([A-Z0-9][A-Z0-9][A-Z0-9]\)\^NULL\^\(.\+\)//g\" por_all_iata_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}.tmp"
+	echo "sed -E \"s/^([A-Z0-9][A-Z0-9][A-Z0-9])\^NULL\^(.+)//g\" por_all_iata_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}.tmp"
 	echo "cat ${GEO_ALL_FILE}.tmp por_all_icao_only_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}"
-	echo "sed -i -e \"s/^NULL\^\(.\+\)/nul\^\1/g\" ${GEO_ALL_FILE}"
-	echo "sed -i -e \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"s/^NULL\^(.+)/nul\^\1/g\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo "sort -t'^' -k2,2 -k1,1 ${GEO_ALL_FILE} > ${GEO_ALL_FILE}.tmp"
 	echo "\mv -f ${GEO_ALL_FILE}.tmp ${GEO_ALL_FILE}"
-	echo "sed -i -e \"s/^iata\(.\+\)//g\" ${GEO_ALL_FILE}"
-	echo "sed -i -e \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"s/^iata(.+)//g\" ${GEO_ALL_FILE}"
+	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo
 }
 

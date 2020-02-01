@@ -234,11 +234,11 @@ fi
 ##
 # Extract the header into a temporary file
 OPTD_BEST_FILE_HEADER=${OPTD_BEST_FILE}.tmp.hdr
-grep "^pk\(.\+\)" ${OPTD_BEST_FILE} > ${OPTD_BEST_FILE_HEADER}
+grep -E "^pk(.+)" ${OPTD_BEST_FILE} > ${OPTD_BEST_FILE_HEADER}
 
 # Remove the header
-sed -e "s/^pk\(.\+\)//g" ${OPTD_BEST_FILE} > ${OPTD_BEST_WITH_NOHD}
-sed -i -e "/^$/d" ${OPTD_BEST_WITH_NOHD}
+sed -E "s/^pk(.+)//g" ${OPTD_BEST_FILE} > ${OPTD_BEST_WITH_NOHD}
+sed -i "" -E "/^$/d" ${OPTD_BEST_WITH_NOHD}
 
 ##
 # The two files contain only four fields (the primary key, the IATA code and
@@ -393,7 +393,7 @@ then
 	fi
 else
 	# Not MacOS, so, supposedly GNU wc
-	WC_TOOL=wc
+	WC_TOOL="wc"
 fi
 #echo "comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"

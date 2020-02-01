@@ -47,7 +47,7 @@ EXEC_PATH=$(dirname $0)
 # Trick to get the actual full-path
 EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
 EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|')
+EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|')
 #
 CURRENT_DIR=$(pwd)
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
@@ -104,7 +104,7 @@ if [ "${SNPSHT_DATE}" != "" ]
 then
     # (Trick to) Extract the latest entry
     for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-    SNPSHT_DATE=$(echo ${myfile} | sed -e "s/${POR_FILE_PFX}-\([0-9\-]\+\)\.csv/\1/" | xargs basename)
+    SNPSHT_DATE=$(echo ${myfile} | sed -E "s/${POR_FILE_PFX}-([0-9\-]+)\.csv/\1/" | xargs basename)
 else
     echo
     echo "[$0:$LINENO] No LOCODE-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
@@ -208,7 +208,7 @@ fi
 ##
 # Replace the empty first fields by 1-white-space fields, as AWK FPAT
 # does not seem to be able to recognize records with empty first fields
-sed -e 's/^,/" ",/g' ${LOCODE_TAB_FILE} > ${LOCODE_CSV_FFNE_FILE}
+sed -E 's/^,/" ",/g' ${LOCODE_TAB_FILE} > ${LOCODE_CSV_FFNE_FILE}
 
 ##
 # Convert the format
@@ -223,12 +223,12 @@ awk -f ${CONVERTER} ${LOCODE_CSV_FFNE_FILE} ${LOCODE_CSV_FFNE_FILE} \
 # Sort by LOCODE code
 
 # Extract the header into a temporary file
-grep "^unlc\(.\+\)" ${LOCODE_CSV_UNSTD_FILE} > ${LOCODE_CSV_HDR_FILE}
+grep -E "^unlc(.+)" ${LOCODE_CSV_UNSTD_FILE} > ${LOCODE_CSV_HDR_FILE}
 
 # Remove the header from the unsorted file
-sed -e "s/^unlc\(.\+\)//g" ${LOCODE_CSV_UNSTD_FILE} \
+sed -E "s/^unlc(.+)//g" ${LOCODE_CSV_UNSTD_FILE} \
     > ${LOCODE_CSV_UNSTD_NOHDR_FILE}
-sed -i -e "/^$/d" ${LOCODE_CSV_UNSTD_NOHDR_FILE}
+sed -i "" -E "/^$/d" ${LOCODE_CSV_UNSTD_NOHDR_FILE}
 
 # Sort by LOCODE code the header-less file
 sort -t'^' -k1,1 ${LOCODE_CSV_UNSTD_NOHDR_FILE} > ${LOCODE_CSV_NOHDR_FILE}

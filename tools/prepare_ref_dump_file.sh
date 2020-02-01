@@ -54,24 +54,24 @@ displayRefDetails() {
 
 ##
 # Input file names
-AIR_REF_FILENAME=dump_from_ref_airline.csv
-GEO_REF_FILENAME=dump_from_ref_city.csv
-GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
+AIR_REF_FILENAME="dump_from_ref_airline.csv"
+GEO_REF_FILENAME="dump_from_ref_city.csv"
+GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
 
 ##
 # Temporary path
 TMP_DIR="/tmp/por"
-MYCURDIR=`pwd`
+MYCURDIR="$(pwd)"
 
 ##
 # Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
+EXEC_PATH=$(dirname $0)
 # Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
+EXEC_FULL_PATH="$(pushd ${EXEC_PATH})"
+EXEC_FULL_PATH="$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)"
+EXEC_FULL_PATH="$(echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|')"
 #
-CURRENT_DIR=`pwd`
+CURRENT_DIR="$(pwd)"
 if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
 then
 	EXEC_PATH="."
@@ -94,7 +94,7 @@ fi
 ##
 # Sanity check: that (executable) script should be located in the tools/
 # sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
+EXEC_DIR_NAME="$(basename ${EXEC_FULL_PATH})"
 if [ "${EXEC_DIR_NAME}" != "tools" ]
 then
 	echo
@@ -105,14 +105,14 @@ fi
 
 ##
 # OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
-REF_DIR=${TOOLS_DIR}
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
+REF_DIR="${TOOLS_DIR}"
 
 ##
 # Log level
@@ -120,23 +120,23 @@ LOG_LEVEL=4
 
 ##
 # Input files
-AIR_REF_FILE=${TOOLS_DIR}${AIR_REF_FILENAME}
-GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
-GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+AIR_REF_FILE="${TOOLS_DIR}${AIR_REF_FILENAME}"
+GEO_REF_FILE="${TOOLS_DIR}${GEO_REF_FILENAME}"
+GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 
 ##
 # Reference data
-AIR_REF_CAP_FILENAME=cap_${AIR_REF_FILENAME}
-GEO_REF_CAP_FILENAME=cap_${GEO_REF_FILENAME}
-GEO_REF_WPK_FILENAME=wpk_${GEO_REF_FILENAME}
-SORTED_GEO_REF_WPK_FILENAME=sorted_${GEO_REF_WPK_FILENAME}
-SORTED_CUT_GEO_REF_WPK_FILENAME=cut_${SORTED_GEO_REF_WPK_FILENAME}
+AIR_REF_CAP_FILENAME="cap_${AIR_REF_FILENAME}"
+GEO_REF_CAP_FILENAME="cap_${GEO_REF_FILENAME}"
+GEO_REF_WPK_FILENAME="wpk_${GEO_REF_FILENAME}"
+SORTED_GEO_REF_WPK_FILENAME="sorted_${GEO_REF_WPK_FILENAME}"
+SORTED_CUT_GEO_REF_WPK_FILENAME="cut_${SORTED_GEO_REF_WPK_FILENAME}"
 #
-AIR_REF_CAP_FILE=${TMP_DIR}${AIR_REF_CAP_FILENAME}
-GEO_REF_CAP_FILE=${TMP_DIR}${GEO_REF_CAP_FILENAME}
-GEO_REF_WPK_FILE=${TMP_DIR}${GEO_REF_WPK_FILENAME}
-SORTED_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_GEO_REF_WPK_FILENAME}
-SORTED_CUT_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_REF_WPK_FILENAME}
+AIR_REF_CAP_FILE="${TMP_DIR}${AIR_REF_CAP_FILENAME}"
+GEO_REF_CAP_FILE="${TMP_DIR}${GEO_REF_CAP_FILENAME}"
+GEO_REF_WPK_FILE="${TMP_DIR}${GEO_REF_WPK_FILENAME}"
+SORTED_GEO_REF_WPK_FILE="${TMP_DIR}${SORTED_GEO_REF_WPK_FILENAME}"
+SORTED_CUT_GEO_REF_WPK_FILE="${TMP_DIR}${SORTED_CUT_GEO_REF_WPK_FILENAME}"
 
 
 ##
@@ -195,13 +195,13 @@ then
 		echo
 		exit -1
 	fi
-	OPTD_DIR_DIR=`dirname $1`
-	OPTD_DIR_BASE=`basename $1`
+	OPTD_DIR_DIR="$(dirname $1)"
+	OPTD_DIR_BASE="$(basename $1)"
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-	DATA_DIR=${OPTD_DIR}opentraveldata/
-	TOOLS_DIR=${OPTD_DIR}tools/
-	REF_DIR=${TOOLS_DIR}
-	GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+	DATA_DIR="${OPTD_DIR}opentraveldata/"
+	TOOLS_DIR="${OPTD_DIR}tools/"
+	REF_DIR="${TOOLS_DIR}"
+	GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 fi
 
 if [ ! -f "${GEO_OPTD_FILE}" ]
@@ -263,7 +263,7 @@ fi
 
 ##
 # Capitalise the names of the airline dump file, if existing
-REF_CAPITILISER=ref_capitalise.awk
+REF_CAPITILISER="ref_capitalise.awk"
 if [ -f "${AIR_REF_FILE}" ]
 then
 	awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${AIR_REF_FILE} \
@@ -278,14 +278,14 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${GEO_REF_FILE} \
 ##
 # Generate a second version of the geographical file with the OPTD primary key
 # (integrating the location type)
-OPTD_PK_ADDER=${TOOLS_DIR}ref_pk_creator.awk
+OPTD_PK_ADDER="${TOOLS_DIR}ref_pk_creator.awk"
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 	${GEO_OPTD_FILE} ${GEO_REF_CAP_FILE} > ${GEO_REF_WPK_FILE}
 #sort -t'^' -k1,1 ${GEO_REF_WPK_FILE}
 
 ##
 # Remove the header (first line) of the geographical file
-GEO_REF_WPK_FILE_TMP=${GEO_REF_WPK_FILE}.tmp
+GEO_REF_WPK_FILE_TMP="${GEO_REF_WPK_FILE}.tmp"
 sed -E "s|^pk(.+)||g" ${GEO_REF_WPK_FILE} > ${GEO_REF_WPK_FILE_TMP}
 sed -i "" -E "/^$/d" ${GEO_REF_WPK_FILE_TMP}
 

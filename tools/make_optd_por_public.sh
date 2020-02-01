@@ -321,7 +321,7 @@ awk -F'^' -f ${CITY_WRITER} \
 ##
 # Extract the header into a temporary file
 OPTD_POR_FILE_HEADER=${OPTD_POR_FILE}.tmp.hdr
-grep "^iata_code\(.\+\)" ${OPTD_POR_WITH_NO_CTY_NAME} > ${OPTD_POR_FILE_HEADER}
+grep -E "^iata_code(.+)" ${OPTD_POR_WITH_NO_CTY_NAME} > ${OPTD_POR_FILE_HEADER}
 
 # Remove the headers
 sed -E "s/^iata_code(.+)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
