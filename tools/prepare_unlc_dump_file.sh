@@ -1,8 +1,23 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the data dump file extracted from UN/LOCODE
 #
+
+##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
+# Directories
+source setDirs.sh "$0" || exit -1
 
 ##
 #
@@ -24,118 +39,66 @@ cleanTempFiles() {
 }
 
 ##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-    DATE_TOOL=gdate
-fi
-
-##
 # Snapshot date
-SNAPSHOT_DATE=$($DATE_TOOL "+%y%m%d")
-SNAPSHOT_DATE_HUMAN=$($DATE_TOOL)
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-MYCURDIR=$(pwd)
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=$(dirname $0)
-# Trick to get the actual full-path
-EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|')
-#
-CURRENT_DIR=$(pwd)
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-    EXEC_PATH="."
-    TMP_DIR="."
-fi
-# If the LOCODE dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${LOCODE_TAB_FILENAME} ]
-then
-    TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-    \mkdir -p ${TMP_DIR}
-fi
+SNAPSHOT_DATE="$(${DATE_TOOL} +%y%m%d)"
+SNAPSHOT_DATE_HUMAN="$($DATE_TOOL)"
 
 ##
 # OpenTravelData directory
-OPTD_DIR=$(dirname ${EXEC_FULL_PATH})
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
 
 ##
 # LOCODE sub-directory
-LOCODE_DIR=${OPTD_DIR}data/unlocode/archives/
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=$(basename ${EXEC_FULL_PATH})
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-    echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-    echo
-    exit -1
-fi
+LOCODE_DIR="${OPTD_DIR}data/unlocode/archives/"
 
 ##
 # Retrieve the latest file
 #unlocode-code-list-2018-1.csv
 POR_FILE_PFX="unlocode-code-list"
-SNPSHT_DATE=$(ls ${TOOLS_DIR}${POR_FILE_PFX}-????-?.csv 2> /dev/null)
+SNPSHT_DATE="$(ls ${TOOLS_DIR}${POR_FILE_PFX}-????-?.csv 2> /dev/null)"
 if [ "${SNPSHT_DATE}" != "" ]
 then
     # (Trick to) Extract the latest entry
     for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-    SNPSHT_DATE=$(echo ${myfile} | sed -E "s/${POR_FILE_PFX}-([0-9\-]+)\.csv/\1/" | xargs basename)
+    SNPSHT_DATE="$(echo ${myfile} | ${SED_TOOL} -E 's/${POR_FILE_PFX}-([0-9\-]+)\.csv/\1/' | xargs basename)"
 else
     echo
-    echo "[$0:$LINENO] No LOCODE-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
+    echo "[$0:$LINENO] No LOCODE-derived POR list CSV dump can be found " \
+		 "in the '${TOOLS_DIR}' directory."
     echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}-YYYY-N.csv'"
     echo
     exit -1
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-    LOCODE_TAB_FILENAME=${POR_FILE_PFX}-${SNPSHT_DATE}.csv
-    LOCODE_CSV_FILENAME=${POR_FILE_PFX}-${SNPSHT_DATE}.csv
+    LOCODE_TAB_FILENAME="${POR_FILE_PFX}-${SNPSHT_DATE}.csv"
+    LOCODE_CSV_FILENAME="${POR_FILE_PFX}-${SNPSHT_DATE}.csv"
 fi
 
 ##
 # Input files
-LOCODE_TAB_FILE=${TOOLS_DIR}${LOCODE_TAB_FILENAME}
-GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
+LOCODE_TAB_FILE="${TOOLS_DIR}${LOCODE_TAB_FILENAME}"
+GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
 #
-GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 
 ##
 # Output files
-LOCODE_CSV_FILE=${LOCODE_DIR}${LOCODE_CSV_FILENAME}
+LOCODE_CSV_FILE="${LOCODE_DIR}${LOCODE_CSV_FILENAME}"
 
 ##
 # Temporary
-LOCODE_CSV_FFNE_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.ffne
-LOCODE_CSV_UNSTD_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.unsorted
-LOCODE_CSV_HDR_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.hdr
-LOCODE_CSV_UNSTD_NOHDR_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.unsorted_nohdr
-LOCODE_CSV_NOHDR_FILE=${TMP_DIR}${LOCODE_CSV_FILENAME}.nohdr
+LOCODE_CSV_FFNE_FILE="${TMP_DIR}${LOCODE_CSV_FILENAME}.ffne"
+LOCODE_CSV_UNSTD_FILE="${TMP_DIR}${LOCODE_CSV_FILENAME}.unsorted"
+LOCODE_CSV_HDR_FILE="${TMP_DIR}${LOCODE_CSV_FILENAME}.hdr"
+LOCODE_CSV_UNSTD_NOHDR_FILE="${TMP_DIR}${LOCODE_CSV_FILENAME}.unsorted_nohdr"
+LOCODE_CSV_NOHDR_FILE="${TMP_DIR}${LOCODE_CSV_FILENAME}.nohdr"
 
 ##
 #
@@ -208,14 +171,14 @@ fi
 ##
 # Replace the empty first fields by 1-white-space fields, as AWK FPAT
 # does not seem to be able to recognize records with empty first fields
-sed -E 's/^,/" ",/g' ${LOCODE_TAB_FILE} > ${LOCODE_CSV_FFNE_FILE}
+${SED_TOOL} -E 's/^,/" ",/g' ${LOCODE_TAB_FILE} > ${LOCODE_CSV_FFNE_FILE}
 
 ##
 # Convert the format
 # For some reason, the FPAT pattern of the AWK script does not detect lines
 # having the first field empty. We therefore use sed to replace first empty
 # fields by 1-white-space fields.
-CONVERTER=prepare_unlc_dump_file.awk
+CONVERTER="prepare_unlc_dump_file.awk"
 awk -f ${CONVERTER} ${LOCODE_CSV_FFNE_FILE} ${LOCODE_CSV_FFNE_FILE} \
     > ${LOCODE_CSV_UNSTD_FILE}
 
@@ -226,9 +189,9 @@ awk -f ${CONVERTER} ${LOCODE_CSV_FFNE_FILE} ${LOCODE_CSV_FFNE_FILE} \
 grep -E "^unlc(.+)" ${LOCODE_CSV_UNSTD_FILE} > ${LOCODE_CSV_HDR_FILE}
 
 # Remove the header from the unsorted file
-sed -E "s/^unlc(.+)//g" ${LOCODE_CSV_UNSTD_FILE} \
+${SED_TOOL} -E "s/^unlc(.+)//g" ${LOCODE_CSV_UNSTD_FILE} \
     > ${LOCODE_CSV_UNSTD_NOHDR_FILE}
-sed -i "" -E "/^$/d" ${LOCODE_CSV_UNSTD_NOHDR_FILE}
+${SED_TOOL} -i"" -E "/^$/d" ${LOCODE_CSV_UNSTD_NOHDR_FILE}
 
 # Sort by LOCODE code the header-less file
 sort -t'^' -k1,1 ${LOCODE_CSV_UNSTD_NOHDR_FILE} > ${LOCODE_CSV_NOHDR_FILE}

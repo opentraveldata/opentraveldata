@@ -1,8 +1,23 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the data dump file extracted from IATA
 #
+
+##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
+# Directories
+source setDirs.sh "$0" || exit -1
 
 ##
 #
@@ -24,86 +39,33 @@ cleanTempFiles() {
 }
 
 ##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
-
-##
 # Snapshot date
-SNAPSHOT_DATE=$($DATE_TOOL "+%y%m%d")
-SNAPSHOT_DATE_HUMAN=$($DATE_TOOL)
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-MYCURDIR=$(pwd)
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=$(dirname $0)
-# Trick to get the actual full-path
-EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|')
-#
-CURRENT_DIR=$(pwd)
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-    EXEC_PATH="."
-    TMP_DIR="."
-fi
-# If the IATA dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${IATA_TAB_FILENAME} ]
-then
-    TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-    \mkdir -p ${TMP_DIR}
-fi
+SNAPSHOT_DATE="$(${DATE_TOOL} +%y%m%d)"
+SNAPSHOT_DATE_HUMAN="$(${DATE_TOOL})"
 
 ##
 # OpenTravelData directory
-OPTD_DIR=$(dirname ${EXEC_FULL_PATH})
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
 
 ##
 # IATA sub-directory
-IATA_DIR=${OPTD_DIR}data/IATA/archives/
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=$(basename ${EXEC_FULL_PATH})
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-    echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-    echo
-    exit -1
-fi
+IATA_DIR="${OPTD_DIR}data/IATA/archives/"
 
 ##
 # Retrieve the latest file
-POR_FILE_PFX=iata_airport_list
-SNPSHT_DATE=$(ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.txt 2> /dev/null)
+POR_FILE_PFX="iata_airport_list"
+SNPSHT_DATE="$(ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.txt 2> /dev/null)"
 if [ "${SNPSHT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
 	for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-	SNPSHT_DATE=$(echo ${myfile} | sed -E "s|${POR_FILE_PFX}_([0-9]+)\.txt|\1|" | xargs basename)
+	SNPSHT_DATE="$(echo ${myfile} | ${SED_TOOL} -E "s|${POR_FILE_PFX}_([0-9]+)\.txt|\1|" | xargs basename)"
 else
 	echo
 	echo "[$0:$LINENO] No IATA-derived POR list CSV dump can be found in the '${TOOLS_DIR}' directory."
@@ -113,34 +75,34 @@ else
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} -d ${SNPSHT_DATE})
+	SNPSHT_DATE_HUMAN="$(${DATE_TOOL} -d ${SNPSHT_DATE})"
 else
-	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} --date='last Thursday' "+%y%m%d")
-	SNPSHT_DATE_HUMAN=$(${DATE_TOOL} --date='last Thursday')
+	SNPSHT_DATE_HUMAN="$(${DATE_TOOL} --date='last Thursday' +%y%m%d)"
+	SNPSHT_DATE_HUMAN="$(${DATE_TOOL} --date='last Thursday')"
 fi
 if [ "${SNPSHT_DATE}" != "" ]
 then
-	IATA_TAB_FILENAME=${POR_FILE_PFX}_${SNPSHT_DATE}.txt
-	IATA_CSV_FILENAME=${POR_FILE_PFX}_${SNPSHT_DATE}.csv
+	IATA_TAB_FILENAME="${POR_FILE_PFX}_${SNPSHT_DATE}.txt"
+	IATA_CSV_FILENAME="${POR_FILE_PFX}_${SNPSHT_DATE}.csv"
 fi
 
 ##
 # Input files
-IATA_TAB_FILE=${TOOLS_DIR}${IATA_TAB_FILENAME}
-GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
+IATA_TAB_FILE="${TOOLS_DIR}${IATA_TAB_FILENAME}"
+GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
 #
-GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 
 ##
 # Output files
-IATA_CSV_FILE=${IATA_DIR}${IATA_CSV_FILENAME}
+IATA_CSV_FILE="${IATA_DIR}${IATA_CSV_FILENAME}"
 
 ##
 # Temporary
-IATA_CSV_UNSTD_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.unsorted
-IATA_CSV_HDR_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.hdr
-IATA_CSV_UNSTD_NOHDR_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.unsorted_nohdr
-IATA_CSV_NOHDR_FILE=${TMP_DIR}${IATA_CSV_FILENAME}.nohdr
+IATA_CSV_UNSTD_FILE="${TMP_DIR}${IATA_CSV_FILENAME}.unsorted"
+IATA_CSV_HDR_FILE="${TMP_DIR}${IATA_CSV_FILENAME}.hdr"
+IATA_CSV_UNSTD_NOHDR_FILE="${TMP_DIR}${IATA_CSV_FILENAME}.unsorted_nohdr"
+IATA_CSV_NOHDR_FILE="${TMP_DIR}${IATA_CSV_FILENAME}.nohdr"
 
 ##
 #
@@ -204,9 +166,9 @@ fi
 
 ##
 # Convert the format
-CONVERTER=prepare_iata_dump_file.awk
+CONVERTER="prepare_iata_dump_file.awk"
 awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
-#CONVERTER=prepare_iata_dump_file_from_tsv.awk
+#CONVERTER="prepare_iata_dump_file_from_tsv.awk"
 #awk -F'\t' -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
 
 ##
@@ -216,9 +178,9 @@ awk -f ${CONVERTER} ${IATA_TAB_FILE} > ${IATA_CSV_UNSTD_FILE}
 grep -E "^city_code(.+)" ${IATA_CSV_UNSTD_FILE} > ${IATA_CSV_HDR_FILE}
 
 # Remove the header from the unsorted file
-sed -E "s|^city_code(.+)||g" ${IATA_CSV_UNSTD_FILE} \
+${SED_TOOL} -E "s|^city_code(.+)||g" ${IATA_CSV_UNSTD_FILE} \
 	> ${IATA_CSV_UNSTD_NOHDR_FILE}
-sed -i "" -E "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
+${SED_TOOL} -i"" -E "/^$/d" ${IATA_CSV_UNSTD_NOHDR_FILE}
 
 # Sort by IATA code the header-less file
 sort -t'^' -k1,1 ${IATA_CSV_UNSTD_NOHDR_FILE} > ${IATA_CSV_NOHDR_FILE}

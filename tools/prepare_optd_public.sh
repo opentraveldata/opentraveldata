@@ -1,9 +1,25 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the data dump file extracted from Reference Data.
 #
 
+##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
+# Directories
+source setDirs.sh "$0" || exit -1
+
+#
 displayOriDetails() {
 	echo
 	echo "For this script ($0) to work properly, OPTD-maintained data and tools need"
@@ -20,54 +36,16 @@ displayOriDetails() {
 
 ##
 # Input file
-OPTD_RAW_FILENAME=optd_por_public.csv
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-# Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
-#
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone.
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-	echo
-	exit -1
-fi
+OPTD_RAW_FILENAME="optd_por_public.csv"
 
 ##
 # OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
+DATA_DIR="${OPTD_DIR}opentraveldata/"
 
 ##
 # Log level
@@ -75,19 +53,19 @@ LOG_LEVEL=4
 
 ##
 #
-OPTD_WPK_FILENAME=wpk_${OPTD_RAW_FILENAME}
-SORTED_OPTD_WPK_FILENAME=sorted_${OPTD_WPK_FILENAME}
-SORTED_CUT_OPTD_WPK_FILENAME=cut_sorted_${OPTD_WPK_FILENAME}
+OPTD_WPK_FILENAME="wpk_${OPTD_RAW_FILENAME}"
+SORTED_OPTD_WPK_FILENAME="sorted_${OPTD_WPK_FILENAME}"
+SORTED_CUT_OPTD_WPK_FILENAME="cut_sorted_${OPTD_WPK_FILENAME}"
 #
-OPTD_RAW_FILE=${DATA_DIR}${OPTD_RAW_FILENAME}
-OPTD_WPK_FILE=${TMP_DIR}${OPTD_WPK_FILENAME}
-SORTED_OPTD_WPK_FILE=${SORTED_OPTD_WPK_FILENAME}
-SORTED_CUT_OPTD_WPK_FILE=${SORTED_CUT_OPTD_WPK_FILENAME}
+OPTD_RAW_FILE="${DATA_DIR}${OPTD_RAW_FILENAME}"
+OPTD_WPK_FILE="${TMP_DIR}${OPTD_WPK_FILENAME}"
+SORTED_OPTD_WPK_FILE="${SORTED_OPTD_WPK_FILENAME}"
+SORTED_CUT_OPTD_WPK_FILE="${SORTED_CUT_OPTD_WPK_FILENAME}"
 
 ##
 # Temporary files
-OPTD_WPK_FILE_TMP=${OPTD_WPK_FILE}.tmp
-OPTD_WPK_FILE_TMP2=${OPTD_WPK_FILE}.tmp2
+OPTD_WPK_FILE_TMP="${OPTD_WPK_FILE}.tmp"
+OPTD_WPK_FILE_TMP2="${OPTD_WPK_FILE}.tmp2"
 
 
 ##
@@ -139,18 +117,18 @@ then
 		echo
 		exit -1
 	fi
-	OPTD_DIR_DIR=`dirname $1`
-	OPTD_DIR_BASE=`basename $1`
+	OPTD_DIR_DIR="$(dirname $1)"
+	OPTD_DIR_BASE="$(basename $1)"
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-	DATA_DIR=${OPTD_DIR}opentraveldata/
-	OPTD_EXEC_PATH=${OPTD_DIR}tools/
-	OPTD_RAW_FILE=${DATA_DIR}${OPTD_RAW_FILENAME}
+	DATA_DIR="${OPTD_DIR}opentraveldata/"
+	OPTD_EXEC_PATH="${OPTD_DIR}tools/"
+	OPTD_RAW_FILE="${DATA_DIR}${OPTD_RAW_FILENAME}"
 fi
-OPTD_WPK_FILE=${TMP_DIR}${OPTD_WPK_FILENAME}
-SORTED_OPTD_WPK_FILE=${TMP_DIR}${SORTED_OPTD_WPK_FILENAME}
-SORTED_CUT_OPTD_WPK_FILE=${TMP_DIR}${SORTED_CUT_OPTD_WPK_FILENAME}
-OPTD_WPK_FILE_TMP=${OPTD_WPK_FILE}.tmp
-OPTD_WPK_FILE_TMP2=${OPTD_WPK_FILE}.tmp2
+OPTD_WPK_FILE="${TMP_DIR}${OPTD_WPK_FILENAME}"
+SORTED_OPTD_WPK_FILE="${TMP_DIR}${SORTED_OPTD_WPK_FILENAME}"
+SORTED_CUT_OPTD_WPK_FILE="${TMP_DIR}${SORTED_CUT_OPTD_WPK_FILENAME}"
+OPTD_WPK_FILE_TMP="${OPTD_WPK_FILE}.tmp"
+OPTD_WPK_FILE_TMP2="${OPTD_WPK_FILE}.tmp2"
 
 if [ ! -f "${OPTD_RAW_FILE}" ]
 then
@@ -173,17 +151,17 @@ fi
 ##
 # Generate a second version of the file with the OPTD primary key (integrating
 # the location type)
-OPTD_PK_ADDER=${EXEC_PATH}optd_pk_creator.awk
+OPTD_PK_ADDER="${EXEC_PATH}optd_pk_creator.awk"
 \cp -f ${OPTD_RAW_FILE} ${OPTD_WPK_FILE_TMP}
-awk -F'^' -v log_level=${LOG_LEVEL} \
+awk -F'^' -v log_level="${LOG_LEVEL}" \
 	-f ${OPTD_PK_ADDER} ${OPTD_WPK_FILE_TMP} > ${OPTD_WPK_FILE}
 #sort -t'^' -k1,1 ${OPTD_WPK_FILE}
 #echo "head -3 ${OPTD_WPK_FILE_TMP} ${OPTD_WPK_FILE}"
 
 ##
 # First, remove the header (first line)
-sed -E "s/^pk(.+)//g" ${OPTD_WPK_FILE} > ${OPTD_WPK_FILE_TMP2}
-sed -i "" -E "/^$/d" ${OPTD_WPK_FILE_TMP2}
+${SED_TOOL} -E "s/^pk(.+)//g" ${OPTD_WPK_FILE} > ${OPTD_WPK_FILE_TMP2}
+${SED_TOOL} -i"" -E "/^$/d" ${OPTD_WPK_FILE_TMP2}
 
 
 ##

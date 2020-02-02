@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 # Compare the best known airline details with reference data
 # - optd_airline_best_known_so_far.csv
 # - dump_from_ref_airline.csv
@@ -8,53 +14,12 @@
 #
 
 ##
-# Temporary path
-TMP_DIR="/tmp/por"
-
-##
 # GNU tools, including on MacOS
 source setGnuTools.sh || exit -1
 
 ##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH="$(dirname $0)"
-# Trick to get the actual full-path
-pushd ${EXEC_PATH} > /dev/null
-EXEC_FULL_PATH="$(popd)"
-popd > /dev/null
-EXEC_FULL_PATH="$(echo ${EXEC_FULL_PATH} | ${SED_TOOL} -e 's|~|'${HOME}'|')"
-#
-CURRENT_DIR="$(pwd)"
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-# If the Geonames dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${GEO_RAW_FILENAME} ]
-then
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the
-# tools/ sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-	echo
-	exit -1
-fi
+# Directories
+source setDirs.sh "$0" || exit -1
 
 ##
 # OpenTravelData directory
@@ -74,7 +39,7 @@ LOG_LEVEL=3
 # File of best known airline details (future)
 OPTD_AIR_FILENAME="optd_airline_best_known_so_far.csv"
 #
-OPTD_AIR_FILE=${DATA_DIR}${OPTD_AIR_FILENAME}
+OPTD_AIR_FILE="${DATA_DIR}${OPTD_AIR_FILENAME}"
 
 ##
 # REF (to be found, as temporary files, within the ../tools directory)
@@ -182,7 +147,7 @@ fi
 
 ##
 # Re-format the aggregated entries. See ${REDUCER} for more details and samples.
-REDUCER=compare_airline_files.awk
+REDUCER="compare_airline_files.awk"
 awk -F'^' -f ${REDUCER} ${OPTD_AIR_FILE} ${REF_CAP_FILE} \
 	> ${OPTD_AIR_PUBLIC_UNSORTED_FILE}
 
@@ -215,5 +180,5 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "wc -l ${OPTD_AIR_REF_DIFF_FILE}"
+echo "${WC_TOOL} -l ${OPTD_AIR_REF_DIFF_FILE}"
 echo

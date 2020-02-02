@@ -1,13 +1,29 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the data dump file extracted from Geonames.
 #
 
+##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
+# Directories
+source setDirs.sh "$0" || exit -1
+
+#
 displayGeonamesDetails() {
     if [ -z "${OPTDDIR}" ]
     then
-		export OPTDDIR=~/dev/geo/optdgit
+		export OPTDDIR="~/dev/geo/optdgit"
     fi
     echo
     echo "The data dump from Geonames can be obtained from the OpenTravelData project"
@@ -38,75 +54,23 @@ displayGeonamesDetails() {
 
 ##
 # Input file names
-GEO_RAW_FILENAME=dump_from_geonames.csv
-GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
-
-##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
+GEO_RAW_FILENAME="dump_from_geonames.csv"
+GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
 
 ##
 # Snapshot date
-SNAPSHOT_DATE=`$DATE_TOOL "+%y%m%d"`
-SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-# Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
-#
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-# If the Geonames dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${GEO_RAW_FILENAME} ]
-then
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the tools/ sub-directory
-# of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-	echo
-	exit -1
-fi
+SNAPSHOT_DATE="$(${DATE_TOOL} +%y%m%d)"
+SNAPSHOT_DATE_HUMAN="$(${DATE_TOOL})"
 
 ##
 # OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
 
 ##
 # Log level
@@ -114,18 +78,18 @@ LOG_LEVEL=4
 
 ##
 # Input files
-GEO_RAW_FILE=${TOOLS_DIR}${GEO_RAW_FILENAME}
-GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+GEO_RAW_FILE="${TOOLS_DIR}${GEO_RAW_FILENAME}"
+GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 
 ##
 # Output (generated) files
-GEO_WPK_FILENAME=wpk_${GEO_RAW_FILENAME}
-SORTED_GEO_WPK_FILENAME=sorted_${GEO_WPK_FILENAME}
-SORTED_CUT_GEO_WPK_FILENAME=cut_sorted_${GEO_WPK_FILENAME}
+GEO_WPK_FILENAME="wpk_${GEO_RAW_FILENAME}"
+SORTED_GEO_WPK_FILENAME="sorted_${GEO_WPK_FILENAME}"
+SORTED_CUT_GEO_WPK_FILENAME="cut_sorted_${GEO_WPK_FILENAME}"
 #
-GEO_WPK_FILE=${TMP_DIR}${GEO_WPK_FILENAME}
-SORTED_GEO_WPK_FILE=${TMP_DIR}${SORTED_GEO_WPK_FILENAME}
-SORTED_CUT_GEO_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_WPK_FILENAME}
+GEO_WPK_FILE="${TMP_DIR}${GEO_WPK_FILENAME}"
+SORTED_GEO_WPK_FILE="${TMP_DIR}${SORTED_GEO_WPK_FILENAME}"
+SORTED_CUT_GEO_WPK_FILE="${TMP_DIR}${SORTED_CUT_GEO_WPK_FILENAME}"
 #
 
 ##
@@ -137,7 +101,7 @@ then
 		\rm -rf ${TMP_DIR}
 	else
 		\rm -f ${SORTED_GEO_WPK_FILE} ${SORTED_CUT_GEO_WPK_FILE}
-		#\rm -f ${GEO_WPK_FILE}
+		\rm -f ${GEO_WPK_FILE}
 	fi
 	exit
 fi
@@ -172,13 +136,13 @@ fi
 # the Geonames data dump.
 if [ "$1" != "" ]
 then
-	OPTD_DIR_DIR=`dirname $1`
-	OPTD_DIR_BASE=`basename $1`
+	OPTD_DIR_DIR="$(dirname $1)"
+	OPTD_DIR_BASE="$(basename $1)"
 	if [ "${OPTD_DIR_DIR}" = "." ]
 	then
 		OPTD_DIR_DIR=""
 	else
-		OPTD_DIR_DIR=${OPTD_DIR_DIR}/
+		OPTD_DIR_DIR="${OPTD_DIR_DIR}/"
 	fi
 	OPTD_DIR="${OPTD_DIR_DIR}${OPTD_DIR_BASE}/"
 	if [ ! -d ${OPTD_DIR} ]
@@ -188,10 +152,10 @@ then
 		echo
 		exit -1
 	fi
-	DATA_DIR=${OPTD_DIR}opentraveldata/
-	TOOLS_DIR=${OPTD_DIR}tools/
-	GEO_RAW_FILE=${TOOLS_DIR}${GEO_RAW_FILENAME}
-	GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+	DATA_DIR="${OPTD_DIR}opentraveldata/"
+	TOOLS_DIR="${OPTD_DIR}tools/"
+	GEO_RAW_FILE="${TOOLS_DIR}${GEO_RAW_FILENAME}"
+	GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 fi
 
 if [ ! -f "${GEO_RAW_FILE}" ]
@@ -216,7 +180,7 @@ fi
 ##
 # Generate a second version of the file with the OPTD primary key (integrating
 # the location type)
-OPTD_PK_ADDER=${TOOLS_DIR}geo_pk_creator.awk
+OPTD_PK_ADDER="${TOOLS_DIR}geo_pk_creator.awk"
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 	${GEO_OPTD_FILE} ${GEO_RAW_FILE} > ${GEO_WPK_FILE}
 
@@ -227,9 +191,9 @@ grep -E "^pk(.+)" ${GEO_WPK_FILE} > ${GEO_WPK_FILE_HEADER}
 
 ##
 # Remove the header (first line)
-GEO_WPK_FILE_TMP=${GEO_WPK_FILE}.tmp
-sed -i "" -E "s/^pk(.+)//g" ${GEO_WPK_FILE}
-sed -i "" -E "/^$/d" ${GEO_WPK_FILE}
+GEO_WPK_FILE_TMP="${GEO_WPK_FILE}.tmp"
+${SED_TOOL} -i"" -E "s/^pk(.+)//g" ${GEO_WPK_FILE}
+${SED_TOOL} -i"" -E "/^$/d" ${GEO_WPK_FILE}
 
 ##
 # Sort the file
@@ -247,7 +211,7 @@ cut -d'^' -f 1,2,8,9 ${SORTED_GEO_WPK_FILE} > ${SORTED_CUT_GEO_WPK_FILE}
 ##
 # Re-add the header
 cat ${GEO_WPK_FILE_HEADER} ${GEO_WPK_FILE} > ${GEO_WPK_FILE_TMP}
-sed -i "" -E "/^$/d" ${GEO_WPK_FILE_TMP}
+${SED_TOOL} -i"" -E "/^$/d" ${GEO_WPK_FILE_TMP}
 \mv -f ${GEO_WPK_FILE_TMP} ${GEO_WPK_FILE}
 \rm -f ${GEO_WPK_FILE_HEADER}
 

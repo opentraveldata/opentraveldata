@@ -1,22 +1,30 @@
 #!/bin/bash
 
-##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
 
+##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
+# Directories
+source setDirs.sh "$0" || exit -1
+
+#
 displayRefDetails() {
     ##
     # Snapshot date
-	SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
-	SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
+	SNAPSHOT_DATE="$(${DATE_TOOL} +%Y%m%d)"
+	SNAPSHOT_DATE_HUMAN="$($DATE_TOOL)"
 	echo
 	echo "####### Note #######"
 	echo "# Additional data files may be obtained from this project"
-	echo "# (http://<gitorious/bitbucket>/dataanalysis/dataanalysis.git). For instance:"
+	echo "# (http://<gitorious/bitbucket>/dataanalysis/dataanalysis.git)." \
+		 "For instance:"
 	echo "DAREF=~/dev/dataanalysis/dataanalysisgit/data_generation"
 	echo "mkdir -p ~/dev/dataanalysis"
 	echo "cd ~/dev/dataanalysis"
@@ -25,8 +33,10 @@ displayRefDetails() {
 	echo "# The following script fetches a SQLite file, holding reference data,"
 	echo "# and translates it into three MySQL-compatible SQL files:"
 	echo "./fetch_sqlite_ref.sh # it may take several minutes"
-	echo "# It produces three create_*_ref_*${SNAPSHOT_DATE}.sql files, which are then"
-	echo "# used by the following script, in order to load the reference data into MySQL:"
+	echo "# It produces three create_*_ref_*${SNAPSHOT_DATE}.sql files," \
+		 "which are then"
+	echo "# used by the following script, in order to load the reference data" \
+		 "into MySQL:"
 	echo "./create_ref_user.sh"
 	echo "./create_ref_db.sh"
 	echo "./create_all_tables.sh geo ref_ref ${SNAPSHOT_DATE}"
@@ -49,66 +59,21 @@ displayRefDetails() {
 
 ##
 # Input file names
-REF_RAW_FILENAME=dump_from_ref_city.csv
-GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
-GEONAMES_FILENAME=dump_from_geonames.csv
-PR_OPTD_FILENAME=ref_airport_pageranked.csv
-FOR_GEONAMES_FILENAME=por_in_iata_but_missing_from_geonames.csv
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-MYCURDIR=`pwd`
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-# Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
-#
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-# If the REF dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${REF_RAW_FILENAME} ]
-then
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-	echo
-	exit -1
-fi
+REF_RAW_FILENAME="dump_from_ref_city.csv"
+GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
+GEONAMES_FILENAME="dump_from_geonames.csv"
+PR_OPTD_FILENAME="ref_airport_pageranked.csv"
+FOR_GEONAMES_FILENAME="por_in_iata_but_missing_from_geonames.csv"
 
 ##
 # OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
 
 ##
 # Log level
@@ -116,38 +81,38 @@ LOG_LEVEL=4
 
 ##
 # Input files
-REF_RAW_FILE=${TOOLS_DIR}${REF_RAW_FILENAME}
-GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
-GEONAMES_FILE=${TMP_DIR}${GEONAMES_FILENAME}
-PR_OPTD_FILE=${DATA_DIR}${PR_OPTD_FILENAME}
+REF_RAW_FILE="${TOOLS_DIR}${REF_RAW_FILENAME}"
+GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
+GEONAMES_FILE="${TMP_DIR}${GEONAMES_FILENAME}"
+PR_OPTD_FILE="${DATA_DIR}${PR_OPTD_FILENAME}"
 
 ##
 # Reference data files
-REF_CAP_FILENAME=cap_${REF_RAW_FILENAME}
-REF_RAW_HEADER_FILENAME=${REF_RAW_FILENAME}.tmp.hdr
+REF_CAP_FILENAME="cap_${REF_RAW_FILENAME}"
+REF_RAW_HEADER_FILENAME="${REF_RAW_FILENAME}.tmp.hdr"
 #
-REF_CAP_FILE=${TMP_DIR}${REF_CAP_FILENAME}
-REF_RAW_HEADER_FILE=${TMP_DIR}${REF_RAW_HEADER_FILENAME}
+REF_CAP_FILE="${TMP_DIR}${REF_CAP_FILENAME}"
+REF_RAW_HEADER_FILE="${TMP_DIR}${REF_RAW_HEADER_FILENAME}"
 
 ##
 # OPTD
-SORTED_PR_OPTD_FILENAME=sorted_${PR_OPTD_FILENAME}
+SORTED_PR_OPTD_FILENAME="sorted_${PR_OPTD_FILENAME}"
 #
-SORTED_PR_OPTD_FILE=${TMP_DIR}${SORTED_PR_OPTD_FILENAME}
+SORTED_PR_OPTD_FILE="${TMP_DIR}${SORTED_PR_OPTD_FILENAME}"
 
 ##
 # Combination of Geonames and reference data
-GEO_COMB_FILENAME=${GEONAMES_FILENAME}.withref
-CUT_GEO_COMB_FILENAME=${GEO_COMB_FILENAME}.cut
-GEO_COMB_FILE=${TMP_DIR}${GEO_COMB_FILENAME}
-CUT_GEO_COMB_FILE=${TMP_DIR}${CUT_GEO_COMB_FILENAME}
+GEO_COMB_FILENAME="${GEONAMES_FILENAME}.withref"
+CUT_GEO_COMB_FILENAME="${GEO_COMB_FILENAME}.cut"
+GEO_COMB_FILE="${TMP_DIR}${GEO_COMB_FILENAME}"
+CUT_GEO_COMB_FILE="${TMP_DIR}${CUT_GEO_COMB_FILENAME}"
 
 ##
 # Geonames
-GEONAMES_FILE_MISSING=${TMP_DIR}wpk_${GEONAMES_FILENAME}.missing
-GEONAMES_FILE_TMP=${TMP_DIR}${GEONAMES_FILENAME}.tmp
-FOR_GEONAMES_FILE=${TMP_DIR}${FOR_GEONAMES_FILENAME}
-FOR_GEONAMES_PR_FILE=${TMP_DIR}pageranked_${FOR_GEONAMES_FILENAME}
+GEONAMES_FILE_MISSING="${TMP_DIR}wpk_${GEONAMES_FILENAME}.missing"
+GEONAMES_FILE_TMP="${TMP_DIR}${GEONAMES_FILENAME}.tmp"
+FOR_GEONAMES_FILE="${TMP_DIR}${FOR_GEONAMES_FILENAME}"
+FOR_GEONAMES_PR_FILE="${TMP_DIR}pageranked_${FOR_GEONAMES_FILENAME}"
 
 ##
 # Cleaning
@@ -202,12 +167,12 @@ then
 		echo
 		exit -1
 	fi
-	OPTD_DIR_DIR=`dirname $1`
-	OPTD_DIR_BASE=`basename $1`
+	OPTD_DIR_DIR="$(dirname $1)"
+	OPTD_DIR_BASE="$(basename $1)"
 	OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-	DATA_DIR=${OPTD_DIR}opentraveldata/
-	TOOLS_DIR=${OPTD_DIR}tools/
-	GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+	DATA_DIR="${OPTD_DIR}opentraveldata/"
+	TOOLS_DIR="${OPTD_DIR}tools/"
+	GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 fi
 
 if [ ! -f "${GEO_OPTD_FILE}" ]
@@ -264,8 +229,8 @@ fi
 
 ##
 # Capitalise the names
-REF_CAPITILISER=${EXEC_PATH}ref_capitalise.awk
-awk -F'^' -v log_level=${LOG_LEVEL} -f ${REF_CAPITILISER} ${REF_RAW_FILE} \
+REF_CAPITILISER="${EXEC_PATH}ref_capitalise.awk"
+awk -F'^' -v log_level="${LOG_LEVEL}" -f ${REF_CAPITILISER} ${REF_RAW_FILE} \
 	> ${REF_CAP_FILE}
 
 ##
@@ -278,8 +243,8 @@ HDR_2="${HDR_1}^page_rank"
 grep -E "^iata_code(.+)" ${REF_CAP_FILE} > ${REF_RAW_HEADER_FILE}
 
 # Remove the header
-sed -i "" -E "s/^iata_code(.+)//g" ${REF_CAP_FILE}
-sed -i "" -E "/^$/d" ${REF_CAP_FILE}
+${SED_TOOL} -i"" -E "s/^iata_code(.+)//g" ${REF_CAP_FILE}
+${SED_TOOL} -i"" -E "/^$/d" ${REF_CAP_FILE}
 
 ##
 # Extract only the IATA code from the file
@@ -292,7 +257,7 @@ join -t'^' -a 2 ${REF_CAP_FILE} ${GEONAMES_FILE_MISSING} > ${GEO_COMB_FILE}
 awk -F'^' '{if (NF != 18) {printf ($0 "\n")}}' ${GEO_COMB_FILE} \
 	> ${CUT_GEO_COMB_FILE}
 # If there are any non-referenced entries, suggest to remove them.
-NB_NON_REF_ROWS=`wc -l ${CUT_GEO_COMB_FILE} | cut -d' ' -f1`
+NB_NON_REF_ROWS="$(${WC_TOOL} -l ${CUT_GEO_COMB_FILE} | cut -d' ' -f1)"
 if [ ${NB_NON_REF_ROWS} -gt 0 ]
 then
 	echo
@@ -307,12 +272,13 @@ fi
 ##
 # Generate the file for Geonames
 join -t'^' -a 2 ${REF_CAP_FILE} ${GEONAMES_FILE_MISSING} > ${FOR_GEONAMES_FILE}
-NB_ROWS=`wc -l ${FOR_GEONAMES_FILE} | cut -d' ' -f1`
+NB_ROWS="$(${WC_TOOL} -l ${FOR_GEONAMES_FILE} | cut -d' ' -f1)"
 
 ##
 # Generate a version with the PageRanked POR
 sort -t'^' -k1,1 ${PR_OPTD_FILE} > ${SORTED_PR_OPTD_FILE}
-join -t'^' -a 1 ${FOR_GEONAMES_FILE} ${SORTED_PR_OPTD_FILE} > ${GEONAMES_FILE_TMP}
+join -t'^' -a 1 ${FOR_GEONAMES_FILE} ${SORTED_PR_OPTD_FILE} \
+	 > ${GEONAMES_FILE_TMP}
 awk -F'^' '{printf ($0); if (NF == 18) {print ("^0.01")} else {print ("")}}' \
 	${GEONAMES_FILE_TMP} > ${FOR_GEONAMES_PR_FILE}
 #echo "head -3 ${GEONAMES_FILE_TMP} ${FOR_GEONAMES_PR_FILE}"

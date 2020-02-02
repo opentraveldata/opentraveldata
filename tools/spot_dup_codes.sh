@@ -1,50 +1,35 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - whether the code is IATA, ICAO or FAA (that latter is not supported yet)
 #
 
 ##
-# Temporary path
-TMP_DIR="/tmp/por"
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
 ##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
+# Directories
+source setDirs.sh "$0" || exit -1
 
 ##
 # For each airport/city code, calculate the distance between the two
 # geographical coordinate sets.
-AWK_DIST=${EXEC_PATH}distance.awk
+AWK_DIST="${EXEC_PATH}distance.awk"
 CODE_TYPE="iata"
 #
-GEO_ALL_FILE_FILENAME=dump_from_geonames.csv.all
-GEO_ALL_FILE=${TMP_DIR}${GEO_ALL_FILE_FILENAME}
-
-##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
-
+GEO_ALL_FILE_FILENAME="dump_from_geonames.csv.all"
+GEO_ALL_FILE="${TMP_DIR}${GEO_ALL_FILE_FILENAME}"
 
 # Snapshot date
-SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
+SNAPSHOT_DATE="$(${DATE_TOOL} +%Y%m%d)"
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ];
@@ -94,24 +79,24 @@ fi
 displayReaggregateIATA() {
 	echo
 	echo "cat por_all_iata_${SNAPSHOT_DATE}.csv por_all_noicao_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo "sort -t'^' -k1,1 -k2,2 ${GEO_ALL_FILE} > ${GEO_ALL_FILE}.tmp"
 	echo "\mv -f ${GEO_ALL_FILE}.tmp ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"s/^iata(.+)//g\" ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"s/^iata(.+)//g\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo
 }
 #
 displayReaggregateICAO() {
 	echo
-	echo "sed -E \"s/^([A-Z0-9][A-Z0-9][A-Z0-9])\^NULL\^(.+)//g\" por_all_iata_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}.tmp"
+	echo "${SED_TOOL} -E \"s/^([A-Z0-9][A-Z0-9][A-Z0-9])\^NULL\^(.+)//g\" por_all_iata_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}.tmp"
 	echo "cat ${GEO_ALL_FILE}.tmp por_all_icao_only_${SNAPSHOT_DATE}.csv > ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"s/^NULL\^(.+)/nul\^\1/g\" ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"s/^NULL\^(.+)/nul\^\1/g\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo "sort -t'^' -k2,2 -k1,1 ${GEO_ALL_FILE} > ${GEO_ALL_FILE}.tmp"
 	echo "\mv -f ${GEO_ALL_FILE}.tmp ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"s/^iata(.+)//g\" ${GEO_ALL_FILE}"
-	echo "sed -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"s/^iata(.+)//g\" ${GEO_ALL_FILE}"
+	echo "${SED_TOOL} -i\"\" -E \"/^$/d\" ${GEO_ALL_FILE}"
 	echo
 }
 
@@ -133,20 +118,20 @@ fi
 
 ##
 #
-GEO_WORK_BASE=mydump.csv
-GEO_WORK_TMP=${GEO_WORK_BASE}.tmp
+GEO_WORK_BASE="mydump.csv"
+GEO_WORK_TMP="${GEO_WORK_BASE}.tmp"
 # dump1
-GEO_DUP_ALL_FILE=${GEO_WORK_BASE}.tmp.dup
+GEO_DUP_ALL_FILE="${GEO_WORK_BASE}.tmp.dup"
 # dump2x
-GEO_DUP_FILE_1=${GEO_WORK_BASE}.tmp.dup.1
-GEO_DUP_FILE_2=${GEO_WORK_BASE}.tmp.dup.2
+GEO_DUP_FILE_1="${GEO_WORK_BASE}.tmp.dup.1"
+GEO_DUP_FILE_2="${GEO_WORK_BASE}.tmp.dup.2"
 # dump3x
-GEO_DUP_CUT_FILE_1=${GEO_WORK_BASE}.tmp.dup.cut.1
-GEO_DUP_CUT_FILE_2=${GEO_WORK_BASE}.tmp.dup.cut.2
+GEO_DUP_CUT_FILE_1="${GEO_WORK_BASE}.tmp.dup.cut.1"
+GEO_DUP_CUT_FILE_2="${GEO_WORK_BASE}.tmp.dup.cut.2"
 # dump4
-GEO_COORD_FILE=${GEO_WORK_BASE}.tmp.coord
+GEO_COORD_FILE="${GEO_WORK_BASE}.tmp.coord"
 # dump5
-GEO_DIST_FILE=${GEO_WORK_BASE}.tmp.dist
+GEO_DIST_FILE="${GEO_WORK_BASE}.tmp.dist"
 
 #  1.1. Extract only the entries having duplicated code.
 if [ "${CODE_TYPE}" = "iata" ]
@@ -183,10 +168,11 @@ fi
 #  4.2. Re-order the fields/columns (put the coordinate sets at the beginning
 #       of the row, after the code), so that ${AWK_DIST} (e.g., distance.awk)
 #       can process it (see below the step #5).
-awk -F '^' '{print $1 "^" $5 "^" $6 "^" $10 "^" $11 "^" $2 "^" $3 "^" $4 "^" $7 "^" $8 "^" $9}' ${GEO_WORK_TMP} > ${GEO_COORD_FILE}
+awk -F'^' '{print $1 "^" $5 "^" $6 "^" $10 "^" $11 "^" $2 "^" $3 "^" $4 \
+ "^" $7 "^" $8 "^" $9}' ${GEO_WORK_TMP} > ${GEO_COORD_FILE}
 
 #  5. Calculate the distances (in km)
-awk -F '^' -f ${AWK_DIST} ${GEO_COORD_FILE} > ${GEO_WORK_TMP}
+awk -F'^' -f ${AWK_DIST} ${GEO_COORD_FILE} > ${GEO_WORK_TMP}
 
 #  6. Sort by distances (in km)
 sort -t'^' -k2,2nr ${GEO_WORK_TMP} > ${GEO_DIST_FILE}

@@ -1,4 +1,11 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # Four parameters are optional for this script:
 # - the Geonames data dump file, only for its geographical coordinates
@@ -8,33 +15,16 @@
 #
 
 ##
-# Temporary path
-TMP_DIR="/tmp/por"
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
 ##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
+# Directories
+source setDirs.sh "$0" || exit -1
 
 ##
 # Log level
 LOG_LEVEL=3
-
-##
-# GNU tools, including on MacOS
-source setGnuTools.sh || exit -1
 
 ##
 # Data path

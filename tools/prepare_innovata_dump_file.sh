@@ -1,17 +1,25 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the data dump file extracted from Innovata.
 #
 
 ##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
+##
+# Directories
+source setDirs.sh "$0" || exit -1
+
+#
 displayInnovataDetails() {
     ##
     # Snapshot date
@@ -28,67 +36,22 @@ displayInnovataDetails() {
 
 ##
 # Input file names
-INN_RAW_FILENAME=innovata_stations.dat
-GEO_OPTD_FILENAME=optd_por_best_known_so_far.csv
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-MYCURDIR=`pwd`
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-# Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|'`
-#
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-    EXEC_PATH="."
-    TMP_DIR="."
-fi
-# If the Innovata dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${INN_RAW_FILENAME} ]
-then
-    TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-    \mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-    echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-    echo
-    exit -1
-fi
+INN_RAW_FILENAME="innovata_stations.dat"
+GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
 
 ##
 # OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
 OPTD_DIR="${OPTD_DIR}/"
 
 ##
 # OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
 
 ##
 # Innovata sub-directory
-INN_DIR=${OPTD_DIR}data/Innovata/
+INN_DIR="${OPTD_DIR}data/Innovata/"
 
 ##
 # Log level
@@ -96,22 +59,22 @@ LOG_LEVEL=4
 
 ##
 # Input files
-INN_RAW_FILE=${INN_DIR}${INN_RAW_FILENAME}
-GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+INN_RAW_FILE="${INN_DIR}${INN_RAW_FILENAME}"
+GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 
 ##
 # Innovata
-INN_RAW_BASE_FILENAME=`basename ${INN_RAW_FILENAME} .dat`
-INN_RAW_CSV_FILENAME=${INN_RAW_BASE_FILENAME}.csv
-INN_DMP_FILENAME=dump_from_innovata.csv
-INN_WPK_FILENAME=wpk_${INN_DMP_FILENAME}
-SORTED_INN_WPK_FILENAME=sorted_${INN_WPK_FILENAME}
-SORTED_CUT_INN_WPK_FILENAME=cut_${SORTED_INN_WPK_FILENAME}
+INN_RAW_BASE_FILENAME="$(basename ${INN_RAW_FILENAME} .dat)"
+INN_RAW_CSV_FILENAME="${INN_RAW_BASE_FILENAME}.csv"
+INN_DMP_FILENAME="dump_from_innovata.csv"
+INN_WPK_FILENAME="wpk_${INN_DMP_FILENAME}"
+SORTED_INN_WPK_FILENAME="sorted_${INN_WPK_FILENAME}"
+SORTED_CUT_INN_WPK_FILENAME="cut_${SORTED_INN_WPK_FILENAME}"
 #
-INN_DMP_FILE=${TMP_DIR}${INN_DMP_FILENAME}
-INN_WPK_FILE=${TMP_DIR}${INN_WPK_FILENAME}
-SORTED_INN_WPK_FILE=${TMP_DIR}${SORTED_INN_WPK_FILENAME}
-SORTED_CUT_INN_WPK_FILE=${TMP_DIR}${SORTED_CUT_INN_WPK_FILENAME}
+INN_DMP_FILE="${TMP_DIR}${INN_DMP_FILENAME}"
+INN_WPK_FILE="${TMP_DIR}${INN_WPK_FILENAME}"
+SORTED_INN_WPK_FILE="${TMP_DIR}${SORTED_INN_WPK_FILENAME}"
+SORTED_CUT_INN_WPK_FILE="${TMP_DIR}${SORTED_CUT_INN_WPK_FILENAME}"
 
 
 ##
@@ -167,12 +130,12 @@ then
 		echo
 		exit -1
     fi
-    OPTD_DIR_DIR=`dirname $1`
-    OPTD_DIR_BASE=`basename $1`
+    OPTD_DIR_DIR="$(dirname $1)"
+    OPTD_DIR_BASE="$(basename $1)"
     OPTD_DIR="${OPTD_DIR_DIR}/${OPTD_DIR_BASE}/"
-    DATA_DIR=${OPTD_DIR}opentraveldata/
-    TOOLS_DIR=${OPTD_DIR}tools/
-    GEO_OPTD_FILE=${DATA_DIR}${GEO_OPTD_FILENAME}
+    DATA_DIR="${OPTD_DIR}opentraveldata/"
+    TOOLS_DIR="${OPTD_DIR}tools/"
+    GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 fi
 
 if [ ! -f "${GEO_OPTD_FILE}" ]
@@ -188,19 +151,19 @@ fi
 if [ "$2" != "" ]
 then
     INN_RAW_FILE="$2"
-    INN_RAW_BASE_FILENAME=`basename ${INN_RAW_FILE} .dat`
-    INN_RAW_CSV_FILENAME=${INN_RAW_BASE_FILENAME}.csv
-    INN_WPK_FILENAME=wpk_${INN_RAW_CSV_FILENAME}
-    SORTED_INN_WPK_FILENAME=sorted_${INN_WPK_FILENAME}
-    SORTED_CUT_INN_WPK_FILENAME=cut_${SORTED_INN_WPK_FILENAME}
+    INN_RAW_BASE_FILENAME="$(basename ${INN_RAW_FILE} .dat)"
+    INN_RAW_CSV_FILENAME="${INN_RAW_BASE_FILENAME}.csv"
+    INN_WPK_FILENAME="wpk_${INN_RAW_CSV_FILENAME}"
+    SORTED_INN_WPK_FILENAME="sorted_${INN_WPK_FILENAME}"
+    SORTED_CUT_INN_WPK_FILENAME="cut_${SORTED_INN_WPK_FILENAME}"
     if [ "${INN_RAW_FILE}" = "${INN_RAW_FILENAME}" ]
     then
 		INN_RAW_FILE="${TMP_DIR}${INN_RAW_FILE}"
     fi
 fi
-INN_WPK_FILE=${TMP_DIR}${INN_WPK_FILENAME}
-SORTED_INN_WPK_FILE=${TMP_DIR}${SORTED_INN_WPK_FILENAME}
-SORTED_CUT_INN_WPK_FILE=${TMP_DIR}${SORTED_CUT_INN_WPK_FILENAME}
+INN_WPK_FILE="${TMP_DIR}${INN_WPK_FILENAME}"
+SORTED_INN_WPK_FILE="${TMP_DIR}${SORTED_INN_WPK_FILENAME}"
+SORTED_CUT_INN_WPK_FILE="${TMP_DIR}${SORTED_CUT_INN_WPK_FILENAME}"
 
 if [ ! -f "${INN_RAW_FILE}" ]
 then
@@ -223,8 +186,7 @@ fi
 
 ##
 # Dos to Unix format (in place) translation
-DOESDOS2UNIXEXIST=`type dos2unix 2>&1 | grep -q "not found" && echo "N" || echo "Y"`
-if [ "$DOESDOS2UNIXEXIST" = "Y" ]
+if [ $(command -v dos2unix) ]
 then
 	dos2unix ${INN_RAW_FILE}
 else
@@ -235,7 +197,7 @@ fi
 ##
 # Generate a second version of the file with the OPTD primary key
 # (integrating the location type)
-OPTD_PK_ADDER=${TOOLS_DIR}inn_pk_creator.awk
+OPTD_PK_ADDER="${TOOLS_DIR}inn_pk_creator.awk"
 awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
     ${GEO_OPTD_FILE} ${INN_RAW_FILE} > ${INN_WPK_FILE}
 #sort -t'^' -k1,1 ${INN_WPK_FILE}
@@ -247,9 +209,9 @@ cut -d'^' -f 2- ${INN_WPK_FILE} > ${INN_DMP_FILE}
 
 ##
 # Remove the header (first line)
-INN_WPK_FILE_TMP=${INN_WPK_FILE}.tmp
-sed -E "s/^pk(.+)//g" ${INN_WPK_FILE} > ${INN_WPK_FILE_TMP}
-sed -i "" -E "/^$/d" ${INN_WPK_FILE_TMP}
+INN_WPK_FILE_TMP="${INN_WPK_FILE}.tmp"
+${SED_TOOL} -E "s/^pk(.+)//g" ${INN_WPK_FILE} > ${INN_WPK_FILE_TMP}
+${SED_TOOL} -i"" -E "/^$/d" ${INN_WPK_FILE_TMP}
 
 ##
 # That version of the Innovata dump file (without primary key) is sorted
@@ -268,6 +230,8 @@ cut -d'^' -f 1,2,8,9 ${SORTED_INN_WPK_FILE} > ${SORTED_CUT_INN_WPK_FILE}
 echo
 echo "Preparation step"
 echo "----------------"
-echo "The '${INN_DMP_FILE}', '${INN_WPK_FILE}', '${SORTED_INN_WPK_FILE}' and '${SORTED_CUT_INN_WPK_FILE}' files have been derived from '${INN_RAW_FILE}'."
+echo "The '${INN_DMP_FILE}', '${INN_WPK_FILE}', '${SORTED_INN_WPK_FILE}' " \
+	 "and '${SORTED_CUT_INN_WPK_FILE}' files have been derived " \
+	 "from '${INN_RAW_FILE}'."
 echo
 

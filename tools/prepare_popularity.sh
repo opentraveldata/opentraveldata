@@ -1,13 +1,29 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the data dump file for airport popularity.
 #
 
+##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
+# Directories
+source setDirs.sh "$0" || exit -1
+
+#
 displayPopularityDetails() {
 	if [ -z "${OPTDDIR}" ]
 	then
-		export OPTDDIR=~/dev/geo/optdgit/refdata
+		export OPTDDIR="~/dev/geo/optdgit/refdata"
 	fi
 	if [ -z "${MYCURDIR}" ]
 	then
@@ -34,45 +50,18 @@ displayPopularityDetails() {
 
 ##
 #
-AIRPORT_POP_FILENAME=ref_airport_popularity.csv
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-# If the airport popularity file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${AIRPORT_POP_FILENAME} ]
-then
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
+AIRPORT_POP_FILENAME="ref_airport_popularity.csv"
 
 ##
 # OPTD path
-DATA_DIR=${EXEC_PATH}../opentraveldata/
+DATA_DIR="${EXEC_PATH}../opentraveldata/"
 
 ##
 #
-AIRPORT_POP_SORTED=sorted_${AIRPORT_POP_FILENAME}
-AIRPORT_POP_SORTED_CUT=cut_sorted_${AIRPORT_POP_FILENAME}
+AIRPORT_POP_SORTED="sorted_${AIRPORT_POP_FILENAME}"
+AIRPORT_POP_SORTED_CUT="cut_sorted_${AIRPORT_POP_FILENAME}"
 #
-AIRPORT_POP=${DATA_DIR}${AIRPORT_POP_FILENAME}
+AIRPORT_POP="${DATA_DIR}${AIRPORT_POP_FILENAME}"
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ];
@@ -95,16 +84,16 @@ fi
 if [ "$1" != "" ];
 then
 	AIRPORT_POP="$1"
-	AIRPORT_POP_FILENAME=`basename ${AIRPORT_POP}`
-	AIRPORT_POP_SORTED=sorted_${AIRPORT_POP_FILENAME}
-	AIRPORT_POP_SORTED_CUT=cut_sorted_${AIRPORT_POP_FILENAME}
+	AIRPORT_POP_FILENAME="$(basename ${AIRPORT_POP})"
+	AIRPORT_POP_SORTED="sorted_${AIRPORT_POP_FILENAME}"
+	AIRPORT_POP_SORTED_CUT="cut_sorted_${AIRPORT_POP_FILENAME}"
 	if [ "${AIRPORT_POP}" = "${AIRPORT_POP_FILENAME}" ]
 	then
 		AIRPORT_POP="${TMP_DIR}${AIRPORT_POP}"
 	fi
 fi
-AIRPORT_POP_SORTED=${TMP_DIR}${AIRPORT_POP_SORTED}
-AIRPORT_POP_SORTED_CUT=${TMP_DIR}${AIRPORT_POP_SORTED_CUT}
+AIRPORT_POP_SORTED="${TMP_DIR}${AIRPORT_POP_SORTED}"
+AIRPORT_POP_SORTED_CUT="${TMP_DIR}${AIRPORT_POP_SORTED_CUT}"
 
 if [ ! -f "${AIRPORT_POP}" ]
 then
@@ -118,9 +107,9 @@ fi
 
 ##
 # First, remove the header (first line)
-AIRPORT_POP_TMP=${AIRPORT_POP}.tmp
-sed -E "s/^region_code(.+)//g" ${AIRPORT_POP} > ${AIRPORT_POP_TMP}
-sed -i "" -E "/^$/d" ${AIRPORT_POP_TMP}
+AIRPORT_POP_TMP="${AIRPORT_POP}.tmp"
+${SED_TOOL} -E "s/^region_code(.+)//g" ${AIRPORT_POP} > ${AIRPORT_POP_TMP}
+${SED_TOOL} -i"" -E "/^$/d" ${AIRPORT_POP_TMP}
 
 
 ##

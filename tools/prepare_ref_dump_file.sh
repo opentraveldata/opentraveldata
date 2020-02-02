@@ -1,23 +1,30 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the dump file extracted from the reference data.
 #
 
 ##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
+##
+# Directories
+source setDirs.sh "$0" || exit -1
 
+#
 displayRefDetails() {
     ##
     # Snapshot date
-	SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
-	SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
+	SNAPSHOT_DATE="$(${DATE_TOOL} +%Y%m%d)"
+	SNAPSHOT_DATE_HUMAN="$(${DATE_TOOL})"
 	echo
 	echo "####### Note #######"
 	echo "# The data dump from reference data can be obtained from this project"
@@ -57,51 +64,6 @@ displayRefDetails() {
 AIR_REF_FILENAME="dump_from_ref_airline.csv"
 GEO_REF_FILENAME="dump_from_ref_city.csv"
 GEO_OPTD_FILENAME="optd_por_best_known_so_far.csv"
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-MYCURDIR="$(pwd)"
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=$(dirname $0)
-# Trick to get the actual full-path
-EXEC_FULL_PATH="$(pushd ${EXEC_PATH})"
-EXEC_FULL_PATH="$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)"
-EXEC_FULL_PATH="$(echo ${EXEC_FULL_PATH} | sed -E 's|~|'${HOME}'|')"
-#
-CURRENT_DIR="$(pwd)"
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-# If the reference data file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${GEO_REF_FILENAME} ]
-then
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME="$(basename ${EXEC_FULL_PATH})"
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-	echo
-	exit -1
-fi
 
 ##
 # OpenTravelData directory
@@ -217,18 +179,18 @@ fi
 if [ "$2" != "" ]
 then
 	REF_DIR="$2"
-	AIR_REF_FILE=${REF_DIR}${AIR_REF_FILENAME}
-	GEO_REF_FILE=${REF_DIR}${GEO_REF_FILENAME}
+	AIR_REF_FILE="${REF_DIR}${AIR_REF_FILENAME}"
+	GEO_REF_FILE="${REF_DIR}${GEO_REF_FILENAME}"
 	if [ "${GEO_REF_FILE}" = "${GEO_REF_FILENAME}" ]
 	then
 		GEO_REF_FILE="${TMP_DIR}${GEO_REF_FILE}"
 	fi
 fi
-AIR_REF_CAP_FILE=${TMP_DIR}${AIR_REF_CAP_FILENAME}
-GEO_REF_CAP_FILE=${TMP_DIR}${GEO_REF_CAP_FILENAME}
-GEO_REF_WPK_FILE=${TMP_DIR}${GEO_REF_WPK_FILENAME}
-SORTED_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_GEO_REF_WPK_FILENAME}
-SORTED_CUT_GEO_REF_WPK_FILE=${TMP_DIR}${SORTED_CUT_GEO_REF_WPK_FILENAME}
+AIR_REF_CAP_FILE="${TMP_DIR}${AIR_REF_CAP_FILENAME}"
+GEO_REF_CAP_FILE="${TMP_DIR}${GEO_REF_CAP_FILENAME}"
+GEO_REF_WPK_FILE="${TMP_DIR}${GEO_REF_WPK_FILENAME}"
+SORTED_GEO_REF_WPK_FILE="${TMP_DIR}${SORTED_GEO_REF_WPK_FILENAME}"
+SORTED_CUT_GEO_REF_WPK_FILE="${TMP_DIR}${SORTED_CUT_GEO_REF_WPK_FILENAME}"
 
 if [ ! -f "${GEO_REF_FILE}" ]
 then
@@ -286,8 +248,8 @@ awk -F'^' -v log_level=${LOG_LEVEL} -f ${OPTD_PK_ADDER} \
 ##
 # Remove the header (first line) of the geographical file
 GEO_REF_WPK_FILE_TMP="${GEO_REF_WPK_FILE}.tmp"
-sed -E "s|^pk(.+)||g" ${GEO_REF_WPK_FILE} > ${GEO_REF_WPK_FILE_TMP}
-sed -i "" -E "/^$/d" ${GEO_REF_WPK_FILE_TMP}
+${SED_TOOL} -E "s|^pk(.+)||g" ${GEO_REF_WPK_FILE} > ${GEO_REF_WPK_FILE_TMP}
+${SED_TOOL} -i"" -E "/^$/d" ${GEO_REF_WPK_FILE_TMP}
 
 
 ##
