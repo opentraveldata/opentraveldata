@@ -33,53 +33,57 @@ fi
 LOG_LEVEL=3
 
 ##
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
+
+##
 # Data path
-OPTD_DIR=${EXEC_PATH}../
-DATA_DIR=${OPTD_DIR}opentraveldata/
+OPTD_DIR="${EXEC_PATH}../"
+DATA_DIR="${OPTD_DIR}opentraveldata/"
 
 ##
 # Geonames data dump file
-GEONAME_FILE_RAW_FILENAME=dump_from_geonames.csv
-GEONAME_FILENAME=wpk_${GEONAME_FILE_RAW_FILENAME}
-GEONAME_FILE_SORTED=sorted_${GEONAME_FILENAME}
-GEONAME_FILE_SORTED_CUT=cut_${GEONAME_FILE_SORTED}
+GEONAME_FILE_RAW_FILENAME="dump_from_geonames.csv"
+GEONAME_FILENAME="wpk_${GEONAME_FILE_RAW_FILENAME}"
+GEONAME_FILE_SORTED="sorted_${GEONAME_FILENAME}"
+GEONAME_FILE_SORTED_CUT="cut_${GEONAME_FILE_SORTED}"
 #
-GEONAME_FILE_RAW=${TMP_DIR}${GEONAME_FILE_RAW_FILENAME}
-GEONAME_FILE=${TMP_DIR}${GEONAME_FILENAME}
+GEONAME_FILE_RAW="${TMP_DIR}${GEONAME_FILE_RAW_FILENAME}"
+GEONAME_FILE="${TMP_DIR}${GEONAME_FILENAME}"
 
 ##
 # OPTD-maintained list of "best known" POR (points of reference)
-OPTD_BEST_FILENAME=optd_por_best_known_so_far.csv
+OPTD_BEST_FILENAME="optd_por_best_known_so_far.csv"
 #
-OPTD_BEST_FILE=${DATA_DIR}${OPTD_BEST_FILENAME}
+OPTD_BEST_FILE="${DATA_DIR}${OPTD_BEST_FILENAME}"
 
 ##
 # OPTD-maintained list of POR importance (i.e., PageRank) figures
-AIRPORT_PR_FILENAME=ref_airport_pageranked.csv
-AIRPORT_PR_SORTED=sorted_${AIRPORT_PR_FILENAME}
-AIRPORT_PR_SORTED_CUT=cut_sorted_${AIRPORT_PR_FILENAME}
+AIRPORT_PR_FILENAME="ref_airport_pageranked.csv"
+AIRPORT_PR_SORTED="sorted_${AIRPORT_PR_FILENAME}"
+AIRPORT_PR_SORTED_CUT="cut_sorted_${AIRPORT_PR_FILENAME}"
 #
-AIRPORT_PR_FILE=${DATA_DIR}${AIRPORT_PR_FILENAME}
+AIRPORT_PR_FILE="${DATA_DIR}${AIRPORT_PR_FILENAME}"
 
 ##
 # Comparison files
-POR_MAIN_DIFF_FILENAME=optd_por_diff_w_geonames.csv
+POR_MAIN_DIFF_FILENAME="optd_por_diff_w_geonames.csv"
 #
-POR_MAIN_DIFF=${DATA_DIR}${POR_MAIN_DIFF_FILENAME}
+POR_MAIN_DIFF="${DATA_DIR}${POR_MAIN_DIFF_FILENAME}"
 
 # Minimal distance triggering a difference (in km)
 COMP_MIN_DIST=10
 
 ##
 # Missing POR
-GEONAME_FILE_MISSING=${GEONAME_FILE}.missing
-OPTD_BEST_FILE_MISSING=${OPTD_BEST_FILE}.missing
+GEONAME_FILE_MISSING="${GEONAME_FILE}.missing"
+OPTD_BEST_FILE_MISSING="${OPTD_BEST_FILE}.missing"
 
 
 ##
 # Temporary files
-OPTD_BEST_WITH_NOHD=${TMP_DIR}${OPTD_BEST_FILENAME}.wohd
-GEO_COMBINED_TMP_FILE=geo_combined_file.csv.tmp
+OPTD_BEST_WITH_NOHD="${TMP_DIR}${OPTD_BEST_FILENAME}.wohd"
+GEO_COMBINED_TMP_FILE="geo_combined_file.csv.tmp"
 
 
 ##
@@ -138,9 +142,9 @@ then
 		GEONAME_FILE_RAW="${TMP_DIR}${GEONAME_FILE_RAW_FILENAME}"
 	fi
 fi
-GEONAME_FILE=${TMP_DIR}${GEONAME_FILENAME}
-GEONAME_FILE_SORTED=${TMP_DIR}${GEONAME_FILE_SORTED}
-GEONAME_FILE_SORTED_CUT=${TMP_DIR}${GEONAME_FILE_SORTED_CUT}
+GEONAME_FILE="${TMP_DIR}${GEONAME_FILENAME}"
+GEONAME_FILE_SORTED="${TMP_DIR}${GEONAME_FILE_SORTED}"
+GEONAME_FILE_SORTED_CUT="${TMP_DIR}${GEONAME_FILE_SORTED_CUT}"
 
 if [ ! -f "${GEONAME_FILE_RAW}" ]
 then
@@ -237,8 +241,8 @@ OPTD_BEST_FILE_HEADER=${OPTD_BEST_FILE}.tmp.hdr
 grep -E "^pk(.+)" ${OPTD_BEST_FILE} > ${OPTD_BEST_FILE_HEADER}
 
 # Remove the header
-sed -E "s/^pk(.+)//g" ${OPTD_BEST_FILE} > ${OPTD_BEST_WITH_NOHD}
-sed -i "" -E "/^$/d" ${OPTD_BEST_WITH_NOHD}
+${SED_TOOL} -E "s/^pk(.+)//g" ${OPTD_BEST_FILE} > ${OPTD_BEST_WITH_NOHD}
+${SED_TOOL} -i"" -E "/^$/d" ${OPTD_BEST_WITH_NOHD}
 
 ##
 # The two files contain only four fields (the primary key, the IATA code and
@@ -268,7 +272,7 @@ sed -i "" -E "/^$/d" ${OPTD_BEST_WITH_NOHD}
 #  * 4 fields: the primary key, IATA code and both coordinates of the Geonames
 #    dump file.
 #
-GEONAME_MASTER=${GEO_COMBINED_TMP_FILE}.geomst
+GEONAME_MASTER="${GEO_COMBINED_TMP_FILE}.geomst"
 join -t'^' -a 1 -1 1 -2 1 -e NULL \
 	${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} > ${GEONAME_MASTER}
 #echo "head -3 ${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} ${GEONAME_MASTER}"
@@ -320,7 +324,7 @@ fi
 #    best known coordinates, followed by the IATA code of its served city,
 #    ended by the from validity date.
 #
-OPTD_BEST_MASTER=${GEO_COMBINED_TMP_FILE}.bstmst
+OPTD_BEST_MASTER="${GEO_COMBINED_TMP_FILE}.bstmst"
 join -t'^' -a 2 -1 1 -2 1 -e NULL \
 	${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} > ${OPTD_BEST_MASTER}
 #echo "head -3 ${GEONAME_FILE_SORTED_CUT} ${OPTD_BEST_WITH_NOHD} ${OPTD_BEST_MASTER}"
@@ -378,29 +382,12 @@ sort ${OPTD_BEST_MASTER} > ${OPTD_BEST_MASTER}.dup
 #    the entries of the OPTD-maintained list of best known geographical
 #    coordinates (optd_por_best_known_so_far.csv)
 #
-# On MacOS, wc adds a 5 white spaces before writing the number of lines
-if [ -f /usr/bin/sw_vers ]
-then
-	# MacOS detected
-	WC_TOOL=`which gwc`
-	if [ ! -x ${WC_TOOL} ]
-	then
-		echo
-		echo "Error. On MacOS, the GNU version of wc (gwc) must be installed."
-		echo "With HomeBrew, just type 'brew install coreutils'"
-		echo
-		exit -1
-	fi
-else
-	# Not MacOS, so, supposedly GNU wc
-	WC_TOOL="wc"
-fi
 #echo "comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
 #echo "comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | less"
-POR_NB_COMMON=`comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l`
-POR_NB_FILE1=`comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l`
-POR_NB_FILE2=`comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l`
+POR_NB_COMMON="$(comm -12 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l)"
+POR_NB_FILE1="$(comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l)"
+POR_NB_FILE2="$(comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} | ${WC_TOOL} -l)"
 echo
 echo "Reporting step"
 echo "--------------"
@@ -412,7 +399,7 @@ echo
 if [ ${POR_NB_FILE2} -gt 0 ]
 then
 	comm -13 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${GEONAME_FILE_MISSING}
-	POR_MISSING_GEONAMES_NB=`${WC_TOOL} -l ${GEONAME_FILE_MISSING} | cut -d' ' -f1`
+	POR_MISSING_GEONAMES_NB="$(${WC_TOOL} -l ${GEONAME_FILE_MISSING} | cut -d' ' -f1)"
 	echo
 	echo "Suggestion step"
 	echo "---------------"
@@ -426,7 +413,7 @@ fi
 if [ ${POR_NB_FILE1} -gt 0 ]
 then
 	comm -23 ${GEONAME_MASTER} ${OPTD_BEST_MASTER} > ${OPTD_BEST_FILE_MISSING}
-	POR_MISSING_BEST_NB=`${WC_TOOL} -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f1`
+	POR_MISSING_BEST_NB="$(${WC_TOOL} -l ${OPTD_BEST_FILE_MISSING} | cut -d' ' -f1)"
 	echo
 	echo "Suggestion step"
 	echo "---------------"

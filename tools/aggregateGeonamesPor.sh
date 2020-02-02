@@ -13,52 +13,16 @@
 LOG_LEVEL=4
 
 ##
-# Temporary path
-TMP_DIR="/tmp/por"
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
 ##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=$(dirname $0)
-# Trick to get the actual full-path
-EXEC_FULL_PATH=$(pushd ${EXEC_PATH})
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | cut -d' ' -f1)
-EXEC_FULL_PATH=$(echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|')
-#
-CURRENT_DIR=$(pwd)
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-# If the Geonames dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${GEO_RAW_FILENAME} ]
-then
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the admin/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=$(basename ${EXEC_FULL_PATH})
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-	echo
-	echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the refdata/geonames/data/por/admin/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-	echo
-	exit -1
-fi
+# Directories
+source setDirs.sh || exit -1
 
 ##
 # OpenTravelData Geonames-related directory
-GEO_POR_DIR=$(dirname ${EXEC_FULL_PATH})
+GEO_POR_DIR="$(dirname ${EXEC_FULL_PATH})"
 GEO_POR_DIR="${GEO_POR_DIR}/"
 
 ##
@@ -122,11 +86,13 @@ for file in "${AGG_INPUT_FILES[@]}"
 do
     if [ ! -f "${file}" ]
     then
-	echo "The Geonames data dump file ('${file}') does not seem to have been downloaded"
-	echo "Content of the local directory ('${DATA_DIR}') where Geonames data dump files are expected to be downloaded:"
-	ls -laFh ${DATA_DIR}
-	echo "Hint: run ./getDataFromGeonamesWebsite.sh before"
-	exit -1
+		echo "The Geonames data dump file ('${file}') does not seem " \
+			 "to have been downloaded"
+		echo "Content of the local directory ('${DATA_DIR}') where Geonames " \
+			 "data dump files are expected to be downloaded:"
+		ls -laFh ${DATA_DIR}
+		echo "Hint: run ./getDataFromGeonamesWebsite.sh before"
+		exit -1
     fi
 done
 
@@ -165,8 +131,8 @@ done
 ##
 # Calculate the number of lines of the main Geoname POR file,
 # so as to report the progress in the next data processing task below.
-NB_POR="$(wc -l ${GEO_POR_FILE} | \
-	     sed -E 's/^([^0-9]*)([0-9]+)([^0-9])*$/\2/g')"
+NB_POR="$(${WC_TOOL} -l ${GEO_POR_FILE} | \
+	     ${SED_TOOL} -E 's/^([^0-9]*)([0-9]+)([^0-9])*$/\2/g')"
 
 ##
 # Concatenate the alternate name details, and add them back to the line of
@@ -186,22 +152,26 @@ echo
 ##
 # Reporting
 echo
-echo "The '${GEO_POR_CONC_FILE}' file has been generated from both the '${GEO_POR_ALT_FILE}' and '${GEO_POR_FILE}' input files."
+echo "The '${GEO_POR_CONC_FILE}' file has been generated from both " \
+	 "the '${GEO_POR_ALT_FILE}' and '${GEO_POR_FILE}' input files."
 echo
 
 # Check #1
-echo "Simple check #1 (the size of the output file should be roughly equal to the sum of the sizes of the input files): ls -lh ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}"
+echo "Simple check #1 (the size of the output file should be roughly " \
+	 "equal to the sum of the sizes of the input files): " \
+	 "ls -lh ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}"
 ls -lh ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}
 echo
 
 # Check #2
-echo "Simple check #2: wc -l ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}"
-wc -l ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}
+echo "Simple check #2: " \
+	 "${WC_TOOL} -l ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}"
+${WC_TOOL} -l ${GEO_POR_ALT_FILE} ${GEO_POR_FILE} ${GEO_POR_CONC_FILE}
 echo
 
 # Check #3
 echo "Simple check #3: grep -n \"^NCE\^LFMN\" ${GEO_POR_CONC_FILE}"
-NCE_POR=$(grep "^NCE\^LFMN" ${GEO_POR_CONC_FILE})
+NCE_POR="$(grep "^NCE\^LFMN" ${GEO_POR_CONC_FILE})"
 if [ "${NCE_POR}" = "${NCE_POR_REF}" ]
 then
 	echo "	Strings are equal"

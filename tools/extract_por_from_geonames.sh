@@ -1,5 +1,9 @@
 #!/bin/bash
 #
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
 # That Bash script extracts from the 'allCountries_w_alt.txt' data file
 # (itself a Geonames-derived data file) the POR relevant for
 # OpenTravelData (OPTD).
@@ -11,106 +15,85 @@
 #set -x
 
 ##
-# Temporary path
-TMP_DIR="/tmp/por"
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
 ##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-	EXEC_PATH="."
-	TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-	\mkdir -p ${TMP_DIR}
-fi
-
-##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
+# Directories
+source setDirs.sh "$0" || exit -1
 
 ##
 # Snapshot date
-SNAPSHOT_DATE=`$DATE_TOOL "+%Y%m%d"`
-SNAPSHOT_DATE_HUMAN=`$DATE_TOOL`
+SNAPSHOT_DATE="$(${DATE_TOOL} +%Y%m%d)"
+SNAPSHOT_DATE_HUMAN="$(${DATE_TOOL})"
 
 ##
 # Retrieve the latest dump files, if any
-POR_FILE_PFX1=por_intorg
-POR_FILE_PFX2=por_all
-LATEST_EXTRACT_DATE=`ls ${EXEC_PATH}${POR_FILE_PFX1}_????????.csv 2> /dev/null`
+POR_FILE_PFX1="por_intorg"
+POR_FILE_PFX2="por_all"
+declare -a LATEST_EXTRACT_DATE="$(ls ${EXEC_PATH}${POR_FILE_PFX1}_????????.csv 2> /dev/null)"
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
-	for myfile in ${LATEST_EXTRACT_DATE}; do echo > /dev/null; done
-	LATEST_EXTRACT_DATE=`echo ${myfile} | sed -E "s/${POR_FILE_PFX1}_([0-9]+)\.csv/\1/" | xargs basename`
+	for myfile in "${LATEST_EXTRACT_DATE[@]}"; do echo > /dev/null; done
+	LATEST_EXTRACT_DATE="$(echo ${myfile} | ${SED_TOOL} -E "s/${POR_FILE_PFX1}_([0-9]+)\.csv/\1/" | xargs basename)"
 fi
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
-	LATEST_EXTRACT_DATE_HUMAN=`$DATE_TOOL -d ${LATEST_EXTRACT_DATE}`
+	LATEST_EXTRACT_DATE_HUMAN="$($DATE_TOOL -d ${LATEST_EXTRACT_DATE})"
 fi
 if [ "${LATEST_EXTRACT_DATE}" != "" \
 	-a "${LATEST_EXTRACT_DATE}" != "${SNAPSHOT_DATE}" ]
 then
-	LATEST_DUMP_INTORG_FILENAME=${POR_FILE_PFX1}_${LATEST_EXTRACT_DATE}.csv
-	LATEST_DUMP_ALL_FILENAME=${POR_FILE_PFX2}_${LATEST_EXTRACT_DATE}.csv
+	LATEST_DUMP_INTORG_FILENAME="${POR_FILE_PFX1}_${LATEST_EXTRACT_DATE}.csv"
+	LATEST_DUMP_ALL_FILENAME="${POR_FILE_PFX2}_${LATEST_EXTRACT_DATE}.csv"
 fi
 
 ##
 # Geonames data store
-GEO_POR_DATA_DIR=${EXEC_PATH}../data/geonames/data/por/data/
+GEO_POR_DATA_DIR="${EXEC_PATH}../data/geonames/data/por/data/"
 
 ##
 # OPTD directory
-DATA_DIR=${EXEC_PATH}../opentraveldata/
+DATA_DIR="${EXEC_PATH}../opentraveldata/"
 
 ##
 # Extract airport/city information from the Geonames data file
-GEO_POR_FILENAME=allCountries_w_alt.txt
-GEO_CTY_FILENAME=countryInfo.txt
-GEO_CNT_FILENAME=continentCodes.txt
+GEO_POR_FILENAME="allCountries_w_alt.txt"
+GEO_CTY_FILENAME="countryInfo.txt"
+GEO_CNT_FILENAME="continentCodes.txt"
 #
-GEO_POR_FILE=${GEO_POR_DATA_DIR}${GEO_POR_FILENAME}
-GEO_CTY_FILE=${GEO_POR_DATA_DIR}${GEO_CTY_FILENAME}
-GEO_CNT_FILE=${GEO_POR_DATA_DIR}${GEO_CNT_FILENAME}
+GEO_POR_FILE="${GEO_POR_DATA_DIR}${GEO_POR_FILENAME}"
+GEO_CTY_FILE="${GEO_POR_DATA_DIR}${GEO_CTY_FILENAME}"
+GEO_CNT_FILE="${GEO_POR_DATA_DIR}${GEO_CNT_FILENAME}"
 
 ##
 # Generated files
-DUMP_GEO_FILENAME=dump_from_geonames.csv
-DUMP_INTORG_FILENAME=${POR_FILE_PFX1}_${SNAPSHOT_DATE}.csv
-DUMP_ALL_FILENAME=${POR_FILE_PFX2}_${SNAPSHOT_DATE}.csv
+DUMP_GEO_FILENAME="dump_from_geonames.csv"
+DUMP_INTORG_FILENAME="${POR_FILE_PFX1}_${SNAPSHOT_DATE}.csv"
+DUMP_ALL_FILENAME="${POR_FILE_PFX2}_${SNAPSHOT_DATE}.csv"
 # Light version of the country-related time-zones
-OPTD_TZ_FILENAME=optd_tz_light.csv
+OPTD_TZ_FILENAME="optd_tz_light.csv"
 # Mapping between countries and continents
-OPTD_CNT_FILENAME=optd_cont.csv
+OPTD_CNT_FILENAME="optd_cont.csv"
 
 #
-DUMP_GEO_FILE=${TMP_DIR}${DUMP_GEO_FILENAME}
-DUMP_INTORG_FILE=${TMP_DIR}${DUMP_INTORG_FILENAME}
-DUMP_ALL_FILE=${TMP_DIR}${DUMP_ALL_FILENAME}
-DUMP_GEO_FILE_HDR=${DUMP_INTORG_FILE}.hdr
-DUMP_GEO_FILE_TMP=${DUMP_INTORG_FILE}.tmp
+DUMP_GEO_FILE="${TMP_DIR}${DUMP_GEO_FILENAME}"
+DUMP_INTORG_FILE="${TMP_DIR}${DUMP_INTORG_FILENAME}"
+DUMP_ALL_FILE="${TMP_DIR}${DUMP_ALL_FILENAME}"
+DUMP_GEO_FILE_HDR="${DUMP_INTORG_FILE}.hdr"
+DUMP_GEO_FILE_TMP="${DUMP_INTORG_FILE}.tmp"
 # OPTD-related data files
-OPTD_TZ_FILE=${DATA_DIR}${OPTD_TZ_FILENAME}
-OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
-OPTD_CNT_FILE_TMP=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp
-OPTD_CNT_FILE_TMP_SORTED=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.sorted
-OPTD_CNT_FILE_HDR=${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.hdr
+OPTD_TZ_FILE="${DATA_DIR}${OPTD_TZ_FILENAME}"
+OPTD_CNT_FILE="${DATA_DIR}${OPTD_CNT_FILENAME}"
+OPTD_CNT_FILE_TMP="${TMP_DIR}${OPTD_CNT_FILENAME}.tmp"
+OPTD_CNT_FILE_TMP_SORTED="${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.sorted"
+OPTD_CNT_FILE_HDR="${TMP_DIR}${OPTD_CNT_FILENAME}.tmp.hdr"
 
 ##
 # Latest snapshot data files
-LATEST_DUMP_INTORG_FILE=${TMP_DIR}${LATEST_DUMP_INTORG_FILENAME}
-LATEST_DUMP_ALL_FILE=${TMP_DIR}${LATEST_DUMP_ALL_FILENAME}
+LATEST_DUMP_INTORG_FILE="${TMP_DIR}${LATEST_DUMP_INTORG_FILENAME}"
+LATEST_DUMP_ALL_FILE="${TMP_DIR}${LATEST_DUMP_ALL_FILENAME}"
 
 #
 if [ "$1" = "-h" -o "$1" = "--help" ]
@@ -160,18 +143,18 @@ fi
 # For country-related information (continent, for now)
 echo
 echo "Extracting country-related information from '${GEO_CTY_FILE}'"
-CONT_EXTRACTOR=${EXEC_PATH}extract_continent_mapping.awk
+CONT_EXTRACTOR="${EXEC_PATH}extract_continent_mapping.awk"
 awk -F'\t' -f ${CONT_EXTRACTOR} ${GEO_CNT_FILE} ${GEO_CTY_FILE} \
 	> ${OPTD_CNT_FILE_TMP}
 # Extract and remove the header
 grep -E "^country_code(.+)" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE_HDR}
-sed -i "" -E "s/^country_code(.+)//g" ${OPTD_CNT_FILE_TMP}
-sed -i "" -E "/^$/d" ${OPTD_CNT_FILE_TMP}
+${SED_TOOL} -i"" -E "s/^country_code(.+)//g" ${OPTD_CNT_FILE_TMP}
+${SED_TOOL} -i"" -E "/^$/d" ${OPTD_CNT_FILE_TMP}
 # Sort by country code
 sort -t'^' -k1,1 ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE_TMP_SORTED}
 # Re-add the header
 cat ${OPTD_CNT_FILE_HDR} ${OPTD_CNT_FILE_TMP_SORTED} > ${OPTD_CNT_FILE_TMP}
-sed -E "/^$/d" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE}
+${SED_TOOL} -E "/^$/d" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE}
 
 # For transport-/travel-related POR and cities.
 echo
@@ -179,7 +162,7 @@ echo "Extracting travel-related points of reference (POR, i.e., airports, railwa
 echo "and populated place (city) data from the Geonames dump data file."
 echo "The '${GEO_POR_FILE}' input data file allows to generate '${DUMP_INTORG_FILE}' and '${DUMP_ALL_FILE}' files."
 echo "That operation may take several minutes..."
-INTORG_EXTRACTOR=${EXEC_PATH}extract_por_from_geonames.awk
+INTORG_EXTRACTOR="${EXEC_PATH}extract_por_from_geonames.awk"
 time awk -F'^' \
 	-v intorg_file=${DUMP_INTORG_FILE} -v all_file=${DUMP_ALL_FILE} \
 	-f ${INTORG_EXTRACTOR} ${GEO_POR_FILE}
@@ -189,10 +172,10 @@ echo
 ##
 # Extract and remove the header
 grep -E "^iata_code(.+)" ${DUMP_INTORG_FILE} > ${DUMP_GEO_FILE_HDR}
-sed -i "" -E "s/^iata_code(.+)//g" ${DUMP_INTORG_FILE}
-sed -i "" -E "/^$/d" ${DUMP_INTORG_FILE}
-sed -i "" -E "s/^iata_code(.+)//g" ${DUMP_ALL_FILE}
-sed -i "" -E "/^$/d" ${DUMP_ALL_FILE}
+${SED_TOOL} -i"" -E "s/^iata_code(.+)//g" ${DUMP_INTORG_FILE}
+${SED_TOOL} -i"" -E "/^$/d" ${DUMP_INTORG_FILE}
+${SED_TOOL} -i"" -E "s/^iata_code(.+)//g" ${DUMP_ALL_FILE}
+${SED_TOOL} -i"" -E "/^$/d" ${DUMP_ALL_FILE}
 
 # Sort the data files
 echo "Sorting ${DUMP_INTORG_FILE}..."
