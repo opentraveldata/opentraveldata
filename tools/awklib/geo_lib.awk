@@ -385,6 +385,8 @@ function isFeatCodeAirport(__ifcaParamFeatureCode) {
     __resultIsAirport += match (__ifcaParamFeatureCode, "AIRF")
     # Airbase (AIRB)
     __resultIsAirport += match (__ifcaParamFeatureCode, "AIRB")
+    # Airport terminal (e.g., Cross Border Express, TJX, 12128613)
+    __resultIsAirport += match (__ifcaParamFeatureCode, "AIRT")
     # Sea plane base (AIRS), a.k.a. SPB
     __resultIsAirport += match (__ifcaParamFeatureCode, "AIRS")
     # Abandonned airport (AIRQ)
