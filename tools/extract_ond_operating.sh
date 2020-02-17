@@ -269,7 +269,6 @@ cat ${OPTD_AIR_POR_FILE_HDR} ${OPTD_AIR_POR_FILE_TMP2} > ${OPTD_AIR_POR_FILE}
 echo
 echo "Generated ${OPTD_AIR_POR_FILE}"
 echo
-exit
 
 ##
 # Add the cities
@@ -348,12 +347,12 @@ echo
 echo
 echo "Cleaning"
 echo "--------"
-echo "\\rm -f ${CSV_OUT_APT_PAL_FILE_TMP} ${CSV_OUT_APT_PAL_FILE_TMP2}"
-echo "\\rm -f ${SPE_CSV_OUT_APT_PAL_FILE}"
-echo "\\rm -f ${CSV_OUT_ALL_PAL_FILE_TMP} ${CSV_OUT_ALL_CTED_FILE_TMP}"
-echo "\\rm -f ${SPE_CSV_OUT_ALL_PAL_FILE}"
-echo "\\rm -f ${SORTED_OPTD_POR_FILE} ${SORTED_CUT_OPTD_POR_FILE}"
-echo "\\rm -f ${CSV_OUT_APT_MGD_FILE_TMP} ${CSV_OUT_ALL_MGD_FILE_TMP}"
-echo "\\rm -f ${CSV_OUT_APT_MGD_FILE_TMP2} ${CSV_OUT_ALL_MGD_FILE_TMP2}"
-echo "\\rm -f ${CSV_OUT_APT_MGD_FILE_TMP3} ${CSV_OUT_ALL_MGD_FILE_TMP3}"
+echo "\\\rm -f ${CSV_OUT_APT_PAL_FILE_TMP} ${CSV_OUT_APT_PAL_FILE_TMP2}"
+echo "\\\rm -f ${SPE_CSV_OUT_APT_PAL_FILE}"
+echo "\\\rm -f ${CSV_OUT_ALL_PAL_FILE_TMP} ${CSV_OUT_ALL_CTED_FILE_TMP}"
+echo "\\\rm -f ${SPE_CSV_OUT_ALL_PAL_FILE}"
+echo "\\\rm -f ${SORTED_OPTD_POR_FILE} ${SORTED_CUT_OPTD_POR_FILE}"
+echo "\\\rm -f ${CSV_OUT_APT_MGD_FILE_TMP} ${CSV_OUT_ALL_MGD_FILE_TMP}"
+echo "\\\rm -f ${CSV_OUT_APT_MGD_FILE_TMP2} ${CSV_OUT_ALL_MGD_FILE_TMP2}"
+echo "\\\rm -f ${CSV_OUT_APT_MGD_FILE_TMP3} ${CSV_OUT_ALL_MGD_FILE_TMP3}"
 echo

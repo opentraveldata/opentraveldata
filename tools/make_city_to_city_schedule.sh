@@ -111,7 +111,7 @@ SPE_CSV_OUT_ALL_FILE="${CSV_OUT_ALL_FILE}.cut"
 CSV_OUT_ALL_FILE_TMP="${CSV_OUT_ALL_FILE}.tmp"
 
 # Retrieve the latest schedule file
-LATEST_EXTRACT_DATA="$(ls ${EXEC_PATH} | grep "${SCH_FILE_PFX}" | tail -1 | ${SED_TOOL} -E 's/${SCH_FILE_PFX}([0-9]+)_${AIRLINE_LOWER}\.csv/\1/')"
+LATEST_EXTRACT_DATA="$(ls ${EXEC_PATH} | grep "${SCH_FILE_PFX}" | tail -1 | ${SED_TOOL} -E "s/${SCH_FILE_PFX}([0-9]+)_${AIRLINE_LOWER}\.csv/\1/")"
 
 ##
 # Clean
@@ -121,10 +121,10 @@ then
 	then
 		if [ ! -f ${CSV_SCH_FILE} ]
 		then
-			SNAPSHOT_DATE=${LATEST_EXTRACT_DATA}
-			CSV_OUT_ALL_FILE=${TMP_DIR}${CSV_OUT_ALL_PREFIX}${SNAPSHOT_DATE}.csv
-			SPE_CSV_OUT_ALL_FILE=${CSV_OUT_ALL_FILE}.cut
-			CSV_OUT_ALL_FILE_TMP=${CSV_OUT_ALL_FILE}.tmp
+			SNAPSHOT_DATE="${LATEST_EXTRACT_DATA}"
+			CSV_OUT_ALL_FILE="${TMP_DIR}${CSV_OUT_ALL_PREFIX}${SNAPSHOT_DATE}.csv"
+			SPE_CSV_OUT_ALL_FILE="${CSV_OUT_ALL_FILE}.cut"
+			CSV_OUT_ALL_FILE_TMP="${CSV_OUT_ALL_FILE}.tmp"
 		fi
 		\rm -f ${CSV_OUT_ALL_FILE_TMP} ${SPE_CSV_OUT_ALL_FILE}
 		# \rm -f ${SORTED_OPTD_POR_FILE} ${SORTED_CUT_OPTD_POR_FILE}
@@ -141,7 +141,8 @@ then
 	echo "[$0] The '${CSV_SCH_FILENAME}' schedule file does not exist."
 	if [ ! -z "${LATEST_EXTRACT_DATA}" ]
 	then
-		echo "Apparently, ${LATEST_EXTRACT_DATA} seems to be the latest extraction date."
+		echo "Apparently, ${LATEST_EXTRACT_DATA} seems to be " \
+			 "the latest extraction date."
 	fi
 	echo
 	exit -1
@@ -192,7 +193,8 @@ then
 	echo
 	echo "Reporting"
 	echo "---------"
-	echo "Generated a schedule file with cities (and airports) from ${CSV_SCH_FILE} into the ${CSV_OUT_ALL_FILE} CSV file."
+	echo "Generated a schedule file with cities (and airports) " \
+		 "from ${CSV_SCH_FILE} into the ${CSV_OUT_ALL_FILE} CSV file."
 	echo
 fi
 
@@ -204,6 +206,7 @@ then
 	echo
 	echo "Cleaning"
 	echo "--------"
-	echo "\rm -f ${CSV_OUT_ALL_FILE_TMP} ${SPE_CSV_OUT_ALL_FILE} ${SORTED_OPTD_POR_FILE} ${SORTED_CUT_OPTD_POR_FILE}"
+	echo "\\\rm -f ${CSV_OUT_ALL_FILE_TMP} ${SPE_CSV_OUT_ALL_FILE} " \
+		 "${SORTED_OPTD_POR_FILE} ${SORTED_CUT_OPTD_POR_FILE}"
 	echo
 fi
