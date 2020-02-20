@@ -1404,7 +1404,7 @@ function getPageRankFromPK(__gprParamPK) {
 #  2. Specified by a (IATA code, location type) combination
 #
 function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
-				__rprlParamPRFreq) {
+								__rprlParamPRFreq) {
     addFieldToList(__rprlParamPK, optd_pr_seats_list, __rprlParamPRSeats)
 	
     addFieldToList(__rprlParamPK, optd_pr_freq_list, __rprlParamPRFreq)
@@ -1414,7 +1414,13 @@ function registerPageRankValues(__rprlParamPK, __rprlParamPRSeats,	\
     __rprlIataCode = myPKArray[1]
     __rprlLocationType = myPKArray[2]
     __rprlKey = __rprlIataCode "-" __rprlLocationType
-    addFieldToList(__rprlKey, optd_pr_list, __rprlParamPRSeats)
+
+	# Store the PageRank value
+	__rprlPageRank = __rprlParamPRSeats
+	if (__rprlPageRank == 0) {
+		__rprlPageRank = __rprlParamPRFreq
+	}
+    addFieldToList(__rprlKey, optd_pr_list, __rprlPageRank)
 }
 
 ##
