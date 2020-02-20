@@ -1391,6 +1391,9 @@ function getPageRankFromCodeAndLocType(__gprParamIataCode, __gprParamLocType) {
 #
 function getPageRankFromPK(__gprParamPK) {
     __gprPR = optd_pr_seats_list[__gprParamPK]
+	if (__gprPR == 0) {
+		__gprPR = optd_pr_freq_list[__gprParamPK]
+	}
     return __gprPR
 }
 
