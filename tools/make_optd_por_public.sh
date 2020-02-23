@@ -144,7 +144,8 @@ GEONAME_RAW_FILE_TMP="${GEONAME_RAW_FILE}.alt"
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
 	echo
-	echo "That script generates the public version of the OPTD-maintained list of POR (points of reference)"
+	echo "That script generates the public version of the OPTD-maintained " \
+		 "list of POR (points of reference)"
 	echo
 	echo "Usage: $0 [<log level (0: quiet; 5: verbose)>]"
 	echo " - Default log level (from 0 to 5): ${LOG_LEVEL}"
@@ -152,14 +153,19 @@ then
 	echo "* Input data files"
 	echo "------------------"
 	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
-	echo " - OPTD-maintained file of non longer valid IATA POR: '${OPTD_NOIATA_FILE}'"
+	echo " - OPTD-maintained file of non longer valid IATA POR: " \
+		 "'${OPTD_NOIATA_FILE}'"
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
-	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
+	echo " - OPTD-maintained file of country-related time-zones: " \
+		 "'${OPTD_TZ_CNT_FILE}'"
 	echo " - OPTD-maintained file of country details: '${OPTD_CTRY_DTLS_FILE}'"
 	echo " - OPTD-maintained file of country states: '${OPTD_CTRY_STATE_FILE}'"
-	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"
-	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
-	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): '${OPTD_USDOT_FILE}'"
+	echo " - OPTD-maintained file of POR-related time-zones: " \
+		 "'${OPTD_TZ_POR_FILE}'"
+	echo " - OPTD-maintained file of country-continent mapping: " \
+		 "'${OPTD_CNT_FILE}'"
+	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): " \
+		 "'${OPTD_USDOT_FILE}'"
 	echo " - Geonames data dump file: '${GEONAME_RAW_FILE}'"
 	echo
 	echo "* Output data file"
@@ -217,7 +223,7 @@ echo
 echo "Merge Step"
 echo "----------"
 echo
-REDUCER=make_optd_por_public.awk
+REDUCER="make_optd_por_public.awk"
 awk -F'^' -v log_level="${LOG_LEVEL}" -f ${REDUCER} \
 	${OPTD_PR_FILE} ${OPTD_CTRY_DTLS_FILE} ${OPTD_CTRY_STATE_FILE} \
 	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
@@ -264,9 +270,8 @@ awk -F'^' -f ${CITY_WRITER} \
 #echo "awk -F'^' -f ${CITY_WRITER} \
 #	${OPTD_POR_PUBLIC_W_NOGEONAMES} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 #	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}"
-#exit
-
 #echo "less ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
+#echo "less ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}"
 #exit
 
 ##
@@ -279,7 +284,8 @@ ${SED_TOOL} -E "s/^iata_code(.+)//g" ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} \
 	> ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
 ${SED_TOOL} -i"" -E "/^$/d" ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}
 
-${SED_TOOL} -E "s/^iata_code(.+)//g" ${OPTD_NOIATA_FILE} > ${OPTD_NOIATA_WITH_NOHD}
+${SED_TOOL} -E "s/^iata_code(.+)//g" ${OPTD_NOIATA_FILE} \
+			> ${OPTD_NOIATA_WITH_NOHD}
 ${SED_TOOL} -i"" -E "/^$/d" ${OPTD_NOIATA_WITH_NOHD}
 
 
@@ -293,6 +299,13 @@ NOIATA_ADDER="add_noiata_por.awk"
 awk -F'^' -f ${NOIATA_ADDER} \
 	${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_NOIATA_WITH_NOHD} \
 	> ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD}
+#echo "awk -F'^' -f ${NOIATA_ADDER} \
+#	${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_NOIATA_WITH_NOHD} \
+#	> ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD}"
+#echo "less ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}"
+#echo "less ${OPTD_NOIATA_WITH_NOHD}"
+#echo "less ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD}"
+#exit
 
 ##
 # Extract and sort the IATA-referenced file
@@ -334,5 +347,10 @@ echo
 echo "Reporting Step"
 echo "--------------"
 echo
-echo "${WC_TOOL} -l ${OPTD_POR_FILE} ${OPTD_POR_PUBLIC_FILE} ${OPTD_POR_PUBLIC_ALL_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_STD_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_WITH_GEO} ${OPTD_POR_WITH_NO_CTY_NAME}"
+echo "${WC_TOOL} -l ${OPTD_POR_FILE} ${OPTD_POR_PUBLIC_FILE} " \
+	 "${OPTD_POR_PUBLIC_ALL_FILE} ${OPTD_POR_PUBLIC_W_NOIATA_STD_FILE} " \
+	 "${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD} " \
+	 "${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} " \
+	 "${OPTD_POR_PUBLIC_WO_NOIATA_FILE} ${OPTD_POR_WITH_GEO} " \
+	 "${OPTD_POR_WITH_NO_CTY_NAME}"
 echo

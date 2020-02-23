@@ -2,6 +2,7 @@ por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^reas
 AFW^R^1^0^^^^DFW^^As of May 2016, AFW has been moved to FTW/Fort Worth, Texas (TX), United States (US)
 AIY^R^0^1^1^^2016-06-06^^^AIY used to be Atlantic City, New Jersey (NJ), United States (US), Geonames ID: 4500546
 ASS^I^1^0^1^^2016-07-31^^^As of July 2016, not referenced by IATA (though used in flight schedules). Introduced in IATA in August 2016
+AYE^R^0^1^^^^^^AYE used to be Fort Devens, Massachusetts (MA), United States (US), Geonames ID: 7257567
 BAR^R^1^0^^^^^^As of May 2016, BAR is in BAR/Qionghai, China (CN)
 BKA^R^0^1^1^^2016-10-01^^^BKA used to be Bykovo Airport, Russia (RU), Geonames ID: 7668548
 BVF^R^0^1^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
@@ -153,6 +154,7 @@ WDS^R^1^0^^^^EJQ^^As of May 2016, WDS is in WDS/Shiyan, Hubei, China (CN)
 WIE^R^1^0^^^^UWE^^As of May 2016, WIE is in WIE/Wiesbaden, Germany (DE)
 WKM^R^0^1^^^^^^WKM corresponds to Wankie Rhodesia, Zimbabwe(ZW). It is unknown from IATA
 XCA^IR^0^1^^^^^^XCA is a fictitious point
+XCL^R^0^1^^^^^^XCL used to be Cluff Lake Airport, Saskatchewan (SK), CCanada (CA), ID: 8260797
 XFW^R^1^0^^^^XFW^^As of May 2016, XFW is in HAM/Hamburg, Germany (DE)
 XIE^R^0^1^^^^^^XIE used to be Xienglom Airport, Laos (LA), Geonames ID: 8245855
 XLC^I^0^1^^^^^^XLC is a fictitious point

@@ -1,4 +1,11 @@
 #!/bin/bash
+
+#
+# OpenTravelData (OPTD) utility
+# Git repository:
+#   https://github.com/opentraveldata/opentraveldata/tree/master/tools
+#
+
 #
 # One parameter is optional for this script:
 # - the file-path of the dump file extracted from the reference data.
@@ -17,13 +24,29 @@
 # => optd_por_no_geonames.csv and optd_por_tz_wrong.csv
 
 ##
-# MacOS 'date' vs GNU date
-DATE_TOOL=date
-if [ -f /usr/bin/sw_vers ]
-then
-	DATE_TOOL=gdate
-fi
+# GNU tools, including on MacOS
+source setGnuTools.sh || exit -1
 
+##
+# Directories
+source setDirs.sh "$0" || exit -1
+
+##
+# OpenTravelData directory
+OPTD_DIR="$(dirname ${EXEC_FULL_PATH})"
+OPTD_DIR="${OPTD_DIR}/"
+
+##
+# OPTD sub-directories
+DATA_DIR="${OPTD_DIR}opentraveldata/"
+TOOLS_DIR="${OPTD_DIR}tools/"
+REF_DIR="${TOOLS_DIR}"
+
+##
+# Log level
+LOG_LEVEL=4
+
+#
 displayRefDetails() {
     ##
     # Snapshot date
@@ -66,125 +89,65 @@ displayRefDetails() {
 
 ##
 # REF (to be found, as temporary files, within the ../tools directory)
-GEO_REF_FILENAME=dump_from_ref_city.csv
+GEO_REF_FILENAME="dump_from_ref_city.csv"
 
 ##
 # File of best known coordinates
-OPTD_POR_FILENAME=optd_por_best_known_so_far.csv
+OPTD_POR_FILENAME="optd_por_best_known_so_far.csv"
 
 ##
 # File of exceptions for POR, referencing known issues
 # For instance, when the POR is still referenced but no longer valid
-OPTD_REF_DPCTD_FILENAME=optd_por_exceptions.csv
+OPTD_REF_DPCTD_FILENAME="optd_por_exceptions.csv"
 
 ##
 # PageRank values
-OPTD_PR_FILENAME=ref_airport_pageranked.csv
+OPTD_PR_FILENAME="ref_airport_pageranked.csv"
 
 ##
 # Light (and inaccurate) version of the country-related time-zones
-OPTD_TZ_CNT_FILENAME=optd_tz_light.csv
+OPTD_TZ_CNT_FILENAME="optd_tz_light.csv"
 # Time-zones derived from the closest city in Geonames: more accurate,
 # only when the geographical coordinates are themselves accurate of course
-OPTD_TZ_POR_FILENAME=optd_por_tz.csv
+OPTD_TZ_POR_FILENAME="optd_por_tz.csv"
 
 ##
 # List of country details
-OPTD_CTRY_DTLS_FILENAME=optd_countries.csv
+OPTD_CTRY_DTLS_FILENAME="optd_countries.csv"
 
 ##
 # Mapping between the Countries and their corresponding continent
-OPTD_CNT_FILENAME=optd_cont.csv
+OPTD_CNT_FILENAME="optd_cont.csv"
 
 ##
 # US DOT World Area Codes (WAC) for countries and states
-OPTD_USDOT_FILENAME=optd_usdot_wac.csv
+OPTD_USDOT_FILENAME="optd_usdot_wac.csv"
 
 ##
 # Output file names
-REF_NO_GEO_FILENAME=optd_por_no_geonames.csv
-OPTD_POR_WRONG_TZ_FILENAME=optd_por_tz_wrong.csv
-
-##
-# Temporary path
-TMP_DIR="/tmp/por"
-MYCURDIR=`pwd`
-
-##
-# Path of the executable: set it to empty when this is the current directory.
-EXEC_PATH=`dirname $0`
-# Trick to get the actual full-path
-EXEC_FULL_PATH=`pushd ${EXEC_PATH}`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | cut -d' ' -f1`
-EXEC_FULL_PATH=`echo ${EXEC_FULL_PATH} | sed -e 's|~|'${HOME}'|'`
-#
-CURRENT_DIR=`pwd`
-if [ ${CURRENT_DIR} -ef ${EXEC_PATH} ]
-then
-    EXEC_PATH="."
-    TMP_DIR="."
-fi
-# If the reference data dump file is in the current directory, then the current
-# directory is certainly intended to be the temporary directory.
-if [ -f ${GEO_REF_FILENAME} ]
-then
-    TMP_DIR="."
-fi
-EXEC_PATH="${EXEC_PATH}/"
-TMP_DIR="${TMP_DIR}/"
-
-if [ ! -d ${TMP_DIR} -o ! -w ${TMP_DIR} ]
-then
-    \mkdir -p ${TMP_DIR}
-fi
-
-##
-# Sanity check: that (executable) script should be located in the tools/
-# sub-directory of the OpenTravelData project Git clone
-EXEC_DIR_NAME=`basename ${EXEC_FULL_PATH}`
-if [ "${EXEC_DIR_NAME}" != "tools" ]
-then
-    echo
-    echo "[$0:$LINENO] Inconsistency error: this script ($0) should be located in the tools/ sub-directory of the OpenTravelData project Git clone, but apparently is not. EXEC_FULL_PATH=\"${EXEC_FULL_PATH}\""
-    echo
-    exit -1
-fi
-
-##
-# OpenTravelData directory
-OPTD_DIR=`dirname ${EXEC_FULL_PATH}`
-OPTD_DIR="${OPTD_DIR}/"
-
-##
-# OPTD sub-directory
-DATA_DIR=${OPTD_DIR}opentraveldata/
-TOOLS_DIR=${OPTD_DIR}tools/
-REF_DIR=${TOOLS_DIR}
-
-##
-# Log level
-LOG_LEVEL=4
+REF_NO_GEO_FILENAME="optd_por_no_geonames.csv"
+OPTD_POR_WRONG_TZ_FILENAME="optd_por_tz_wrong.csv"
 
 ##
 # Input files
-GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
-OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
-OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
-OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
-OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
-OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
-OPTD_CTRY_DTLS_FILE=${DATA_DIR}${OPTD_CTRY_DTLS_FILENAME}
-OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
-OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
+GEO_REF_FILE="${TOOLS_DIR}${GEO_REF_FILENAME}"
+OPTD_POR_FILE="${DATA_DIR}${OPTD_POR_FILENAME}"
+OPTD_REF_DPCTD_FILE="${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}"
+OPTD_PR_FILE="${DATA_DIR}${OPTD_PR_FILENAME}"
+OPTD_TZ_CNT_FILE="${DATA_DIR}${OPTD_TZ_CNT_FILENAME}"
+OPTD_TZ_POR_FILE="${DATA_DIR}${OPTD_TZ_POR_FILENAME}"
+OPTD_CTRY_DTLS_FILE="${DATA_DIR}${OPTD_CTRY_DTLS_FILENAME}"
+OPTD_CNT_FILE="${DATA_DIR}${OPTD_CNT_FILENAME}"
+OPTD_USDOT_FILE="${DATA_DIR}${OPTD_USDOT_FILENAME}"
 
 ##
 # Output files
-REF_NO_GEO_FILE=${DATA_DIR}${REF_NO_GEO_FILENAME}
-OPTD_POR_WRONG_TZ_FILE=${DATA_DIR}${OPTD_POR_WRONG_TZ_FILENAME}
+REF_NO_GEO_FILE="${DATA_DIR}${REF_NO_GEO_FILENAME}"
+OPTD_POR_WRONG_TZ_FILE="${DATA_DIR}${OPTD_POR_WRONG_TZ_FILENAME}"
 
 ##
 # Temporary
-REF_NO_GEO_WO_CTY_NAME_FILE=${OPTD_POR_FILE}.withnoctyname
+REF_NO_GEO_WO_CTY_NAME_FILE="${OPTD_POR_FILE}.withnoctyname"
 
 
 ##
@@ -206,12 +169,16 @@ fi
 if [ "$1" = "-h" -o "$1" = "--help" ]
 then
     echo
-	echo "Usage: $0 [<root directory of the OpenTravelData (OPTD) project Git clone> [<Reference data directory for data dump files> [<log level>]]]"
+	echo "Usage: $0 [<root directory of the OpenTravelData (OPTD) project " \
+		 "Git clone> [<Reference data directory for data dump files> " \
+		 "[<log level>]]]"
 	echo
 	echo " - Default log level: ${LOG_LEVEL}"
-	echo "   + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; 5: Verbose"
+	echo "   + 0: No log; 1: Critical; 2: Error; 3; Notification; 4: Debug; " \
+		 "5: Verbose"
 	echo
-	echo " - Default root directory for the OPTD project Git clone: '${OPTD_DIR}'"
+	echo " - Default root directory for the OPTD project Git clone: " \
+		 "'${OPTD_DIR}'"
 	echo " - Default directory for the reference data file: '${REF_DIR}'"
 	echo
 	echo "* Input data files"
@@ -219,18 +186,23 @@ then
 	echo " - OPTD-maintained file of best known coordinates: '${OPTD_POR_FILE}'"
 	echo " - OPTD-maintained file of exceptions: '${OPTD_REF_DPCTD_FILE}'"
 	echo " - OPTD-maintained file of PageRanked POR: '${OPTD_PR_FILE}'"
-	echo " - OPTD-maintained file of country-related time-zones: '${OPTD_TZ_CNT_FILE}'"
-	echo " - OPTD-maintained file of POR-related time-zones: '${OPTD_TZ_POR_FILE}'"
+	echo " - OPTD-maintained file of country-related time-zones: " \
+		 "'${OPTD_TZ_CNT_FILE}'"
+	echo " - OPTD-maintained file of POR-related time-zones: " \
+		 "'${OPTD_TZ_POR_FILE}'"
 	echo " - OPTD-maintained file of country details: '${OPTD_CTRY_DTLS_FILE}'"
-	echo " - OPTD-maintained file of country-continent mapping: '${OPTD_CNT_FILE}'"
-	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): '${OPTD_USDOT_FILE}'"
+	echo " - OPTD-maintained file of country-continent mapping: " \
+		 "'${OPTD_CNT_FILE}'"
+	echo " - OPTD-maintained file of US DOT World Area Codes (WAC): " \
+		 "'${OPTD_USDOT_FILE}'"
 
 	echo " - Reference data file: '${GEO_REF_FILE}'"
 	echo
 	echo "* Output data file"
 	echo "------------------"
 	echo " - OPTD-maintained list of non-IATA/outlier POR: '${REF_NO_GEO_FILE}'"
-	echo " - OPTD-maintained list of POR with wrong time-zones: '${OPTD_POR_WRONG_TZ_FILE}'"
+	echo " - OPTD-maintained list of POR with wrong time-zones: " \
+		 "'${OPTD_POR_WRONG_TZ_FILE}'"
     echo
     exit
 fi
@@ -243,25 +215,27 @@ then
     if [ ! -d $1 ]
     then
 		echo
-		echo "[$0:$LINENO] The first parameter ('$1') should point to the root directory of the OpenTravelData project Git clone. It is not accessible here."
+		echo "[$0:$LINENO] The first parameter ('$1') should point to " \
+			 "the root directory of the OpenTravelData project Git clone. " \
+			 "It is not accessible here."
 		echo
 		exit -1
     fi
     OPTD_DIR="$1/"
-    DATA_DIR=${OPTD_DIR}opentraveldata/
-    TOOLS_DIR=${OPTD_DIR}tools/
-	REF_DIR=${TOOLS_DIR}
-	REF_NO_GEO_FILE=${DATA_DIR}${REF_NO_GEO_FILENAME}
-	OPTD_POR_WRONG_TZ_FILE=${DATA_DIR}${OPTD_POR_WRONG_TZ_FILENAME}
-	GEO_REF_FILE=${TOOLS_DIR}${GEO_REF_FILENAME}
-	OPTD_POR_FILE=${DATA_DIR}${OPTD_POR_FILENAME}
-	OPTD_REF_DPCTD_FILE=${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}
-	OPTD_PR_FILE=${DATA_DIR}${OPTD_PR_FILENAME}
-	OPTD_TZ_CNT_FILE=${DATA_DIR}${OPTD_TZ_CNT_FILENAME}
-	OPTD_TZ_POR_FILE=${DATA_DIR}${OPTD_TZ_POR_FILENAME}
-	OPTD_CTRY_DTLS_FILE=${DATA_DIR}${OPTD_CTRY_DTLS_FILENAME}
-	OPTD_CNT_FILE=${DATA_DIR}${OPTD_CNT_FILENAME}
-	OPTD_USDOT_FILE=${DATA_DIR}${OPTD_USDOT_FILENAME}
+    DATA_DIR="${OPTD_DIR}opentraveldata/"
+    TOOLS_DIR="${OPTD_DIR}tools/"
+	REF_DIR="${TOOLS_DIR}"
+	REF_NO_GEO_FILE="${DATA_DIR}${REF_NO_GEO_FILENAME}"
+	OPTD_POR_WRONG_TZ_FILE="${DATA_DIR}${OPTD_POR_WRONG_TZ_FILENAME}"
+	GEO_REF_FILE="${TOOLS_DIR}${GEO_REF_FILENAME}"
+	OPTD_POR_FILE="${DATA_DIR}${OPTD_POR_FILENAME}"
+	OPTD_REF_DPCTD_FILE="${DATA_DIR}${OPTD_REF_DPCTD_FILENAME}"
+	OPTD_PR_FILE="${DATA_DIR}${OPTD_PR_FILENAME}"
+	OPTD_TZ_CNT_FILE="${DATA_DIR}${OPTD_TZ_CNT_FILENAME}"
+	OPTD_TZ_POR_FILE="${DATA_DIR}${OPTD_TZ_POR_FILENAME}"
+	OPTD_CTRY_DTLS_FILE="${DATA_DIR}${OPTD_CTRY_DTLS_FILENAME}"
+	OPTD_CNT_FILE="${DATA_DIR}${OPTD_CNT_FILENAME}"
+	OPTD_USDOT_FILE="${DATA_DIR}${OPTD_USDOT_FILENAME}"
 fi
 
 ##
@@ -269,7 +243,7 @@ fi
 if [ "$2" != "" ]
 then
 	REF_DIR="$2"
-	GEO_REF_FILE=${REF_DIR}${GEO_REF_FILENAME}
+	GEO_REF_FILE="${REF_DIR}${GEO_REF_FILENAME}"
 	if [ "${GEO_REF_FILE}" = "${GEO_REF_FILENAME}" ]
 	then
 		GEO_REF_FILE="${TMP_DIR}${GEO_REF_FILE}"
@@ -300,9 +274,9 @@ fi
 ##
 # Generate a second version of the file with the OPTD primary key
 # (integrating the location type)
-REF_NO_GEO_EXTRACTOR=${TOOLS_DIR}extract_non_geonames_por.awk
+REF_NO_GEO_EXTRACTOR="${TOOLS_DIR}extract_non_geonames_por.awk"
 awk -F'^' -v log_level=${LOG_LEVEL} \
-	-v optd_por_wrong_tz_file=${OPTD_POR_WRONG_TZ_FILE} \
+	-v optd_por_wrong_tz_file="${OPTD_POR_WRONG_TZ_FILE}" \
 	-f ${REF_NO_GEO_EXTRACTOR} \
     ${OPTD_REF_DPCTD_FILE} ${OPTD_POR_FILE} ${OPTD_CTRY_DTLS_FILE} \
 	${OPTD_PR_FILE} ${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} \
@@ -317,7 +291,7 @@ echo
 echo "City addition Step"
 echo "------------------"
 echo
-CITY_WRITER=add_city_name.awk
+CITY_WRITER="add_city_name.awk"
 time awk -F'^' -f ${CITY_WRITER} \
 	${REF_NO_GEO_WO_CTY_NAME_FILE} ${REF_NO_GEO_WO_CTY_NAME_FILE} \
 	> ${REF_NO_GEO_FILE}

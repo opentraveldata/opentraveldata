@@ -1528,10 +1528,12 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # geo_location_type = getLocTypeFromFeatCode(feat_code)
 
     # Latitude
-    geo_lat = $7
+	geoname_lat = $7
+    geo_lat = geoname_lat
 
     # Longitude
-    geo_lon = $8
+    geoname_lon = $8
+    geo_lon = geoname_lon
 
     # City code (list)
     city_code_list = iata_code
@@ -1579,7 +1581,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 	print("[" __glGlobalDebugIataCode "][" __glGlobalDebugGeoID "][OPTD: " \
 	      known_detailed_from_optd "] PK: " pk ", name: " name_utf8	\
 	      ", feature: " feat_class " / " feat_code ", coord: "	\
-	      geo_lat " " geo_lon ", city code list: " city_code_list)	\
+	      geoname_lat " " geoname_lon ", city code list: " city_code_list)	\
 	    > __glGlobalErrorStream
     }
     
@@ -1685,7 +1687,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     # ^ Alternate names
     # output_line = output_line FS altname_list
 
-    # ^ Latitude ^ Longitude
+    # ^ OPTD Latitude ^ OPTD Longitude
     output_line = output_line FS geo_lat FS geo_lon
 
     # ^ Feat. class ^ Feat. code
@@ -1759,6 +1761,12 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
 
     # ^ UIC code (potentially a list of)
     output_line = output_line FS uic_list
+
+    # ^ Geoanmes Latitude ^ Geonames Longitude (only if different from OPTD ones)
+	if (geoname_lat == geo_lat && geoname_lon == geo_lon) {
+		geoname_lat = "" ; geoname_lon = ""
+	}
+    output_line = output_line FS geoname_lat FS geoname_lon
 
     #
     FS = saved_fs

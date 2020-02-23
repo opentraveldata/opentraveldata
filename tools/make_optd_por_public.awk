@@ -65,6 +65,7 @@ BEGIN {
     hdr_line = hdr_line "^tvl_por_list^iso31662"
     hdr_line = hdr_line "^location_type^wiki_link^alt_name_section"
     hdr_line = hdr_line "^wac^wac_name^ccy_code^unlc_list^uic_list"
+    hdr_line = hdr_line "^geoname_lat^geoname_lon"
 
     print (hdr_line)
 
