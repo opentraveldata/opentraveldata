@@ -5,6 +5,7 @@ opentraveldata^optd_airline_best_known_so_far.csv^aln
 opentraveldata^optd_airline_no_longer_valid.csv^aln
 opentraveldata^optd_airlines_websites_wkdt.csv^aln
 opentraveldata^optd_airlines.csv^aln
+opentraveldata^ref_airline_nb_of_flights.csv^aln
 opentraveldata^optd_por_best_known_so_far.csv^por
 opentraveldata^optd_por_no_longer_valid.csv^por
 opentraveldata^optd_por_ref.csv^por
@@ -14,7 +15,6 @@ opentraveldata^optd_state_exceptions.csv^por
 opentraveldata^optd_por_unlc.csv^por
 opentraveldata^optd_por_public.csv^por
 opentraveldata^optd_por_public_all.csv^por
-opentraveldata/ref_airline_nb_of_flights.csv
-opentraveldata/ref_airport_pageranked.csv
+opentraveldata^ref_airport_pageranked.csv^por
 data/unlocode^unlocode-code-list-latest.csv^por
 data/IATA^iata_airport_list_latest.csv^por
