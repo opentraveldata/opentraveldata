@@ -22,6 +22,7 @@ air-aero-flight-v1^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^https://en.w
 air-aero-mongolia-v1^^^^MNG^M0^719^Aero Mongolia^^^^^^1978^en|Aero Mongolia|^^air-aero-mongolia^1^^
 air-aero-republica-v1^^2010-10-06^^RPB^P5^845^Copa Airlines Colombia^AeroRepública^^^^https://en.wikipedia.org/wiki/Copa_Airlines_Colombia^8530^en|Copa Airlines Colombia|=en|AeroRepública|^^air-aero-republica^1^^
 air-aero-transporte-atsa-v1^^2014-01-01^^AMP^4A^212^Aero Transporte^ATSA^^^^^^en|Aero Transporte|=en|ATSA|^^air-aero-transporte-atsa^1^^
+air-aero-tropics-air-services-v1^1^2000-02-01^2008-10-31^ATI^HC^0^Aero-Tropics Air Services^^^^^https://en.wikipedia.org/wiki/Aero-Tropics_Air_Services^^en|Aero-Tropics Air Services|=en|Lip-Air Pty Ltd|=abbr|ATAS|^CNS=HID^air-aero-tropics-air-services^1^^
 air-aero-vip-argentina-v1^1^1999-06-23^2010-08-31^AOG^2D^592^Aero VIP (Argentina)^Aero VIP (Argentina)^^^P^https://en.wikipedia.org/wiki/Aero_VIP_(Argentina)^^en|Aero VIP (Argentina)|=en|Aero VIP (Argentina)|^^air-aero-vip-argentina^1^^
 air-aero-vip-portugal-v1^^2014-01-01^^RVP^WV^0^Aero VIP^^^^^https://en.wikipedia.org/wiki/Aero_VIP_(Portugal)^843^en|Aero VIP|^^air-aero-vip-portugal^1^^
 air-aero4m-v1^^2015-01-01^^AEH^H4^0^Aero4M^^^^^^^en|Aero4M|^^air-aero4m^1^^
@@ -176,6 +177,7 @@ air-air-peace-limited-v1^^2013-01-01^^APK^P4^710^Air Peace^^^^^https://en.wikipe
 air-air-pegasus-v1^^2015-04-12^^PPL^OP^0^Air Pegasus^^^^^https://en.wikipedia.org/wiki/Air_Pegasus^5214^en|Air Pegasus|^^air-air-pegasus^1^^
 air-air-rarotonga-v1^^^^^GZ^755^Air Rarotonga^^^^^^2312^en|Air Rarotonga|^^air-air-rarotonga^1^^
 air-air-saint-pierre-v1^^^^^PJ^638^Air Saint Pierre^^^^^^832^en|Air Saint Pierre|^^air-air-saint-pierre^1^^
+air-air-senegal-v1^^2018-05-14^^SZN^HC^490^Air Senegal^^^^^https://en.wikipedia.org/wiki/Air_Senegal^8986^en|Air Senegal|=sign|SENSA|^DSS^air-air-senegal^1^^
 air-air-seoul-v1^^2016-07-11^^ASV^RS^820^Air Seoul^^^^^https://en.wikipedia.org/wiki/Air_Seoul^7354^en|Air Seoul|=ja|エアソウル|=ko|에어서울|=zh|首爾航空|^ICN^air-air-seoul^1^^
 air-air-serbia-v1^^2013-10-26^^ASL^JU^115^Air Serbia^^^^^https://en.wikipedia.org/wiki/Air_Serbia^27632^en|Air Serbia|p=en|Jat Airways|h^BEG^air-air-serbia^1^^
 air-air-service-liege-v1^^^^^L4^0^Air Service Liege (ASL)^^^^^^^en|Air Service Liege (ASL)|^^air-air-service-liege^1^^
@@ -704,7 +706,7 @@ air-highland-airways-v1^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Al
 air-himalaya-airlines-v1^^2015-04-01^^HIM^H9^769^Himalaya Airlines^^^^^https://en.wikipedia.org/wiki/Himalaya_Airlines^1177^en|Himalaya Airlines|=sign|HIMALAYA|^KTM^air-himalaya-airlines^1^^
 air-hokkaido-air-system-v1^^1997-09-30^^NTH^^^Hokkaido Air System^^^^^https://en.wikipedia.org/wiki/Hokkaido_Air_System^^en|Hokkaido Air System|=jp|株式会社北海道エアシステム|^^air-hokkaido-air-system^1^^
 air-hokkaido-v1^^1998-05-12^^ADO^HD^0^Air Do^Hokkaido International Airlines^^^^https://en.wikipedia.org/wiki/Air_Do^43883^en|Air Do|=en|Hokkaido International Airlines|^^air-hokkaido^1^^
-air-holidays-czech-airlines-v1^^^^^HC^0^Holidays Czech Airlines^Aero Tropics^^^^^8986^en|Holidays Czech Airlines|=en|Aero Tropics|^^air-holidays-czech-airlines^1^^
+air-holidays-czech-airlines-v1^1^2010-08-01^2014-07-31^HCC^HC^0^Holidays Czech Airlines^^^^^https://en.wikipedia.org/wiki/Holidays_Czech_Airlines^^en|Holidays Czech Airlines|=en|Aero Tropics|=sign|CZECH HOLIDAYS|^PRG^air-holidays-czech-airlines^1^^
 air-homer-air-service-v1^1^1973-01-01^2015-12-31^^HB^^Homer Air^^^^^^^en|Homer Air|^HOM^air-homer-air-service^1^^
 air-hong-kong-airlines-v1^^^^CRK^HX^851^Hong Kong Airlines^^^^^^30214^en|Hong Kong Airlines|^^air-hong-kong-airlines^1^^
 air-hong-kong-express-airways-v1^^^^HKE^UO^128^Hong Kong Express Airways^^^^^^24770^en|Hong Kong Express Airways|^^air-hong-kong-express-airways^1^^
