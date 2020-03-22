@@ -460,9 +460,14 @@ BEGIN {
 	    alt_name_list_iata[geoname_id] =				\
 		alt_name_content_old "," alt_name_content
 
-	    # Report that situation, just in case it is illigetimate
+	    # Report that situation, just in case it is illigetimate.
+	    # 6299466 as Geonames ID corresponds to Basel/Mulhouse/EuroAirport,
+	    # where IATA wrongly assigns on one hand BSL and MLH to the airport
+	    # itself (named EuroAirport), and on the other hand the same EAP
+	    # code to both cities
 	    if (substr(alt_name_content_old, 1, 1) != "_"		\
 		&& substr(alt_name_content, 1, 1) != "_"		\
+		&& geoname_id != "6299466"				\
 		&& log_level >= 4) {
 		print ("[" awk_file "][" FNR "] There is more than one " \
 		       "active IATA code for Geonames ID=" geoname_id	\
@@ -482,10 +487,12 @@ BEGIN {
 
 	    } else {
 		# Notification
-		if (log_level >= 4) {
+		# See comment above about 6299466 as Geonames ID
+		if (geoname_id != "6299466"	\
+		    && log_level >= 4) {
 		    print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
 			   "There is more than one active ICAO code for " \
-			   "Geonames ID=" geoname_id					\
+			   "Geonames ID=" geoname_id			\
 			   ": " alt_name_content_old " and " alt_name_content) \
 			> error_stream
 		}
