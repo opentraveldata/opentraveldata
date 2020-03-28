@@ -213,18 +213,25 @@ function getContinentName(myCountryCode) {
 # iata_code^icao_code^faac_code^geonameid^name^asciiname^latitude^longitude^country_code^cc2^country_name^continent_name^fclass^fcode^adm1_code^adm1_name_utf^adm1_name_ascii^adm2_code^adm2_name_utf^adm2_name_ascii^adm3^adm4^population^elevation^gtopo30^timezone^GMT_offset^DST_offset^raw_offset^moddate^alternatenames^wiki_link^altname_section^unlc_list^uic_list
 # ^MYX7^^3571565^Rudder Cut Cay Airport^Rudder Cut Cay Airport^23.88333^-76.25^BS^^Bahamas^North America^S^AIRF^36^Black Point^Black Point^^^^^^0^^7^America/Nassau^-5.0^-4.0^-5.0^2017-10-28^MYX7^https://en.wikipedia.org/wiki/Rudder_Cut_Cay_Airport^^^
 #
-/^\^[A-Z]{3}[0-9]{1}/ {
+/^\^[a-zA-Z0-9]{1,10}\^/ {
     #
-    nb_of_geo_por++
+	icao_code = $2
+	is_icao_code_four_letters = match (icao_code, /([[:alpha:]]{4})/)
 
-    # Full line
-    full_line = $0
+    # Report only the POR having an ICAO code which is not made of exactly
+	# four letters
+	if (!is_icao_code_four_letters) {
+		nb_of_geo_por++
 
-    # The output format should be the one for OPTD, not Geonames' one
-    geonames_format_flag = 0
+		# Full line
+		full_line = $0
 
-    # Parse and dump the full details
-    registerGeonamesLine(full_line, nb_of_geo_por, geonames_format_flag)
+		# The output format should be the one for OPTD, not Geonames' one
+		geonames_format_flag = 0
+
+		# Parse and dump the full details
+		registerGeonamesLine(full_line, nb_of_geo_por, geonames_format_flag)
+	}
 }
 
 
