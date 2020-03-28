@@ -15,6 +15,7 @@ opentraveldata^optd_state_exceptions.csv^por
 opentraveldata^optd_por_unlc.csv^por
 opentraveldata^optd_por_public.csv^por
 opentraveldata^optd_por_public_all.csv^por
+opentraveldata^optd_por_wrong_icao.csv^por
 opentraveldata^ref_airport_pageranked.csv^por
 data/unlocode^unlocode-code-list-latest.csv^por
 data/IATA^iata_airport_list_latest.csv^por

@@ -419,48 +419,6 @@ function getContinentName(myCountryCode) {
 
 
 ##
-#
-function generateAltNameSection(myAltNameSection) {
-	# Returned string
-	__pansString = ""
-
-    # Archive the full line and the separator
-    full_line = $0
-    fs_org = FS
-
-    # Change the separator in order to parse the section of alternate names
-    FS = "|"
-    $0 = myAltNameSection
-
-    # Print the alternate names
-	__pansString = __pansString "^"
-    for (fld = 1; fld <= NF; fld++) {
-		__pansString = __pansString $fld
-
-		# Separate the details of a given alternate name with the equal (=) sign
-		# and the alternate name blocks with the pipe (|) sign.
-		if (fld != NF) {
-
-			idx = fld % 3
-			if (idx == 0) {
-				__pansString = __pansString "="
-
-			} else {
-				__pansString = __pansString "|"
-			}
-		}
-    }
-
-    # Restore the initial separator (and full line, if needed)
-    FS = fs_org
-	#$0 = full_line
-
-	# Return the string
-	return __pansString
-}
-
-
-##
 # Geonames-derived data dump (dump_from_geonames.csv)
 #
 # Sample input lines (truncated):

@@ -1462,6 +1462,46 @@ function addCtrySubdivDetails(__acsdCtryCode, __acsdAdm1Code, __acsdFullLine) {
 }
 
 ##
+#
+function generateAltNameSection(__gansAltNameSection) {
+    # Return string
+	__gansString = ""
+
+    # Archive the full line and the separator
+	__gansFullLine = $0
+    saved_fs = FS
+
+    # Change the separator in order to parse the section of alternate names
+    FS = "|"
+    $0 = __gansAltNameSection
+
+    # Print the alternate names
+    for (fld = 1; fld <= NF; fld++) {
+		__gansString = __gansString $fld
+
+		# Separate the details of a given alternate name with the equal (=) sign
+		# and the alternate name blocks with the pipe (|) sign.
+		if (fld != NF) {
+
+			idx = fld % 3
+			if (idx == 0) {
+				__gansString = __gansString "="
+
+			} else {
+				__gansString = __gansString "|"
+			}
+		}
+    }
+
+    # Restore the initial separator (and full line, if needed)
+    FS = saved_fs
+    $0 = __gansFullLine
+	
+    # Return
+    return __gansString
+}
+
+##
 # Parse and dump the Geonames POR details.
 # Typically, the input format is that of the dump_from_geonames.csv file,
 # while the output format corresponds to the optd_por_public.csv file.
@@ -1743,7 +1783,7 @@ function displayGeonamesPORLine(__dgplOPTDLocType, __dgplFullLine) {
     ##
     # ^ Section of alternate names
     altname_list_str = generateAltNameSection(altname_section)
-    output_line = output_line altname_list_str
+    output_line = output_line FS altname_list_str
 
     # ^ US DOT World Area Code (WAC) ^ WAC name
     world_area_code = getWorldAreaCode(ctry_code, state_code, ctry_code_alt, \
