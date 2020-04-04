@@ -4,6 +4,7 @@ AIY^R^0^1^1^^2016-06-06^^^AIY used to be Atlantic City, New Jersey (NJ), United 
 ASS^I^1^0^1^^2016-07-31^^^As of July 2016, not referenced by IATA (though used in flight schedules). Introduced in IATA in August 2016
 AYE^R^0^1^^^^^^AYE used to be Fort Devens, Massachusetts (MA), United States (US), Geonames ID: 7257567
 BAR^R^1^0^^^^^^As of May 2016, BAR is in BAR/Qionghai, China (CN)
+BBF^R^0^1^^^^^^BBF used to be Burlington, Massachusetts (MA), United States (US), Geonames ID: 4931737
 BKA^R^0^1^1^^2016-10-01^^^BKA used to be Bykovo Airport, Russia (RU), Geonames ID: 7668548
 BVF^R^0^1^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
 BXC^R^0^1^^^^^^BXC used to be Boxborough, Massachusetts (MA), United States (US), Geonames ID: 4931105
@@ -46,6 +47,7 @@ JHE^R^0^1^^^^^^JHE used to reference Helsingborg Heliport, Sweden (SE), Geonames
 JHL^R^1^0^^^^JHL^^As of May 2016, JHL is in HZP/Fort MacKay, Alberta, Canada (CA)
 JLD^R^0^1^^^^^^JLD used to reference Landskrona, Sweden (SE), Geonames ID: 2697720
 JMM^R^0^1^^^^^^JMM used to reference Malmö Harbour Heliport, Sweden (SE), Geonames ID: 9035250
+JNJ^R^0^1^^^^^^JNJ used to reference Duqm Jaaluni Airport, Oman (OM), Geonames ID: 8986307
 JQJ^R^1^0^^^^JIQ^^As of May 2016, JQJ is in JQJ/Qianjiang, Hubei, China (CN), not in JIQ/Qianjiang, Chongqing, China (CN), 404km from each other
 JSJ^R^1^0^^^^^^As of August 2016, missing from reference data
 JSO^R^0^1^^^^^^JSO used to reference Södertälje, Sweden (SE), Geonames ID: 2676176
@@ -128,11 +130,12 @@ SFR^R^0^1^1^^2017-12-01^^^SFR used to be San Fernando Heliport, California (CA),
 SGS^R^0^1^^^^^^SGS used to be Sanga Sanga Airport, Philippines (PH), Geonames ID: 7668422
 SHP^INR^1^0^^^^^^As of July 2016, no longer referenced by anyone, including IATA (though used in flight schedules)
 SPL^R^1^0^^^^SPL^^As of May 2016, SPL is in AMS/Amsterdam, Netherlands (NL)
-SUZ^INOR^1^0^^^^SUZ^^As of May 2016, SUZ/Suria and HEO/Haelogo, Papua New Guinea (PG), are at the same location. Since Haelogo exists, but Suria does not seem so, it is logical to consider that SUZ airport is in HEO. Ultimately, IATA should fix that duplication issue
+SUZ^INOR^0^1^^^^^^As of May 2016, SUZ/Suria and HEO/Haelogo, Papua New Guinea (PG), are at the same location. Since Haelogo exists, but Suria does not seem so, it is logical to consider that SUZ airport is in HEO. Ultimately, IATA should fix that duplication issue
 SWI^R^0^1^^^^^^SWI used to be Swindon, United Kingdom (GB), Geonames ID: 2636389. XWS is the new IATA code for Swindon
 SZQ^R^0^1^^^^^^SZQ used to be Saenz Pena, Argentina (AR), Geonames ID: 7731531
 TAJ^R^1^0^^^^TAJ^^As of May 2016, TAJ/Tadji is in ATP/Aitape, Papua New Guinea (PG)
 TEJ^R^1^0^1^^2016-06-06^TEJ^^As of May 2016, TEJ/Teruel is in TEV/Teruel, Spain (ES). Teruel was referenced twice with two different codes (TEJ and TEV). IATA has fixed that in 2015
+TEW^R^0^1^^^^^^TEW used to be Tohid, Iran (IR), Geonames ID: 8298952
 THW^R^1^0^^^^THW^^As of May 2016, THW is in TRR/Trincomalee, Sri Lanka (LK)
 TJJ^R^1^0^^^^TJJ^^As of December 2016, TJJ is in TSN/Tianjin, Tianjin, China (CN)
 TNQ^R^0^1^^^^^^TNQ used to be Teraina Airport, Cuba (CU), Geonames ID: 7521815
@@ -171,6 +174,7 @@ YKH^NR^1^0^^^^YDD^^As of May 2016, JYQ, YDD and YKH are in YKH/Yingkou, Liaoning
 YPP^R^0^1^^^^^^YPP used to be Pine Point, Northwest Territories (NT), Canada (CA), Geonames ID: 6105173
 YWO^R^0^1^^^^^^YWO used to be Lupin Mine Airport, Canada (CA), Geonames ID: 8260747
 YZG^NR^1^0^^^^YZG^^As of May 2016, YZG/Salluit is in YSW/Salluit, Quebec, Canada (CA). Yes, it seems to be an error of IATA that the airport and the city do not have the same IATA code, though the names and locations are the same
+YZL^R^0^1^^^^^^YZL used to be Liard River Airport, British Columbia (BC), Canada (CA), Geonames ID: 8299122
 ZFS^I^0^1^^^^^^ZFS corresponds to Sabre Tech, Florida (FL), United States (US)
 ZMD^R^0^1^^^^^^ZMD used to be Sena Madureira Airfield, Brazil (BR), Geonames ID: 8260768
 ZME^R^1^0^^^^ZME^^As of June 2016, ZME is in EWR/Newark/Isilin, New Jersey (NJ), United States (US)

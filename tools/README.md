@@ -658,8 +658,20 @@ Recompute the file of POR not present in Geonames:
 $ sh prepare_por_no_geonames.sh && sh prepare_por_no_geonames.sh --clean
 ```
 
-Note that the ../opentraveldata/optd_por_exceptions.csv file may need
-to be updated, if the above script reports some errors/warnings.
+Note that the 
+[`../opentraveldata/optd_por_exceptions.csv`](https://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_exceptions.csv)
+and
+[`../opentraveldata/optd_por_tz.csv`](https://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_tz.csv)
+files may need to be updated, if the above script reports some errors/warnings.
+Examples of entries:
+* To be added in `../opentraveldata/optd_por_exceptions.csv`:
+```csv
+BVF^R^0^1^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
+```
+* To be removed from `../opentraveldata/optd_por_tz.csv`:
+```csv
+ZJF^Asia/Dubai
+```
 
 That script should generate the `../opentraveldata/optd_por_no_geonames.csv`
 file
