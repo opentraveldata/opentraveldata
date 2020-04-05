@@ -101,21 +101,21 @@ BEGIN {
 # File of rules for no longer valid (deprecated), but still referenced, POR
 #
 # Sample lines:
-# por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^reason_code^comment
-# AFW^R^1^0^^^^DFW^^As of May 2016, AFW has been moved to FTW/Fort Worth, Texas (TX), United States (US)
-# AIY^R^0^1^1^^2016-06-06^^^AIY used to be Atlantic City, New Jersey (NJ), United States (US), Geonames ID: 4500546
-# BVF^R^0^1^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
-/^[A-Z]{3}\^[INO]{0,3}R[INO]{0,3}\^0\^1\^\^\^\^\^\^[^^]*$/ {
+# por_code^source^actv_in_optd^actv_in_src^env_id^date_from^date_to^city_code^state_code^reason_code^comment
+# AFW^R^1^0^^^^DFW^^^As of May 2016, AFW has been moved to FTW/Fort Worth, Texas (TX), United States (US)
+# AIY^R^0^1^1^^2016-06-06^^^^AIY used to be Atlantic City, New Jersey (NJ), United States (US), Geonames ID: 4500546
+# BVF^R^0^1^^^^^^^BVF used to be Bua Airport, Fiji (FJ), Geonames ID: 8298792
+/^[A-Z]{3}\^[INO]{0,3}R[INO]{0,3}\^0\^1\^\^\^\^\^\^\^[^^]*$/ {
     # IATA code
     iata_code = $1
 
     # Register the fact that that POR is deprecated but still referenced
     optd_por_ref_dpctd_list[iata_code] = 1
 
-	#
-	if (iata_code == "AYE") {
-		print $0
-	}
+	# DEBUG
+	#if (iata_code == "AYE") {
+	#	print $0
+	#}
 }
 
 
