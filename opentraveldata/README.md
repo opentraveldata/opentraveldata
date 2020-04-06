@@ -52,10 +52,23 @@ A few files are maintained, others are generated.
     at the corresponding location, and decide to suppress the referencing.
     The code may then be re-used later for another POR.
 * [``optd_por_exceptions.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_por_exceptions.csv)
-  is a list of exception rules, describing POR being
-  valid for some sources while not/no longer valid for some other sources.
-  Those exception rules allow to silent quality assurance scripts on already
-  known (and tracked) issues.
+  is a list of exception rules at POR level.
+
+   * There are various types of rules. Mainly, those rules refer to known
+     cases where the active status (whether or not a POR is still
+	 referenced/active) is not consistent between OPTD and another source;
+	 that latter is specified in the `source` field (_e.g._, `O` means OPTD
+	 and `I` IATA).
+   * Other rules specify that the POR is not referenced with the proper city
+     and/or state (administratove level 1).
+   * The rules themselves may become obsolete. As for the main OPTD-curated
+     data files, there is an non-empty envelope ID (and validity dates) as soon
+     as the rule becomes obsolete. Those rules are kept for the same reason
+     as with the other OPTD-curated data files: we should be able to go back
+     in time and understand and reproduce what happened in the past.
+   * Those exception rules allow to silent quality assurance scripts
+     on already known (and tracked) issues. See for instance the
+     [`check-por-cmp-optd-it.py` checker script](http://github.com/opentraveldata/quality-assurance/blob/master/checkers/check-por-cmp-optd-it.py).
 * [``optd_regions.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_regions.csv)
   and [``optd_region_details.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_region_details.csv)
   are the list of regions and sub-regions from various projects
@@ -87,7 +100,7 @@ A few files are maintained, others are generated.
 * [``optd_state_exceptions.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_state_exceptions.csv)
   is the list of exception rules specifying which regions IATA does not correctly
   reference. That is for instance used by the
-  [Service Delivery Quality (SDQ) OpenTravelData ``check-por-cmp-optd-it.py`` sample script](http://github.com/service-delivery-quality/quality-assurance/blob/master/samples/opentraveldata/check-por-cmp-optd-it.py).
+  [`check-por-cmp-optd-it.py` checker script](http://github.com/opentraveldata/quality-assurance/blob/master/checkers/check-por-cmp-optd-it.py).
   
 ## Generated
 * [``optd_countries.csv``](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata/optd_countries.csv)
