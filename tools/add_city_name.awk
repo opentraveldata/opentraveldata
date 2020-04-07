@@ -23,10 +23,12 @@
 #  * The currency is the field #47
 #  * The (list of) UN/LOCODE is the field #48
 #  * The (list of) UIC code is the filed #49
+#  * Latitude and longitude of the Geonames POR, if different
+#    from the OPTD one, are fileds ##50-51
 #
 # Up until (at least) mid-2018, OPTD POR were always assumed to have
 # either a IATA or ICAO code. However, with the introduction of UN/LOCODE,
-# and later of UID codes, most of the POR have no IATA (neither ICAO) code.
+# and later of UIC codes, most of the POR have no IATA (neither ICAO) code.
 # Talking about numbers, as of August 2018:
 #  * Around 20,000 POR have a IATA (or ICAO) code, and are curated thanks to
 #    the optd_por_best_known_so_far.csv data file.
@@ -55,9 +57,10 @@
 #   - HFD-A-4835842^...^HFD^
 #   - HFD-C-4835797^...^HFD^
 #   - SFY-C-4951788^...^SFY^
+#
 # * Samples of relevant input POR entries, not manually curated
 #   in the optd_por_best_known_so_far.csv data file:
-#   - ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|^8003529|
+#   - ^^^Y^11903578^^Velbert-Langenberg Railway Station^...^DELBB|^8003529|^^
 #
 # * Samples of output list of city UTF8 names,
 #   with their corresponding travel-related POR entry:
@@ -94,10 +97,12 @@ BEGIN {
     K_POR_GID = 5
     K_NME_UTF = 7
     K_NME_ASC = 8
+	K_POR_CTY = 17
     K_SVD_CTY_LST = 37
     K_CTY_UTF_LST = 38
     K_CTY_ASC_LST = 39
     K_TVL_LST = 40
+	K_POR_STE = 41
     K_LOC_TYP = 42
 
     # Separators
@@ -127,13 +132,14 @@ BEGINFILE {
 # First parsing - extraction of the city lists
 #
 function extractAndStoreCityNames(porIataCode, porLocType, porGeonamesID, \
-								  porUtfName, porAsciiName) {
+								  porUtfName, porAsciiName,				\
+								  porCountryCode, porStateCode) {
     # Parse the location type
     is_city = isLocTypeCity(porLocType)
     # is_tvl = isLocTypeTvlRtd(porLocType)
 
     # When it is a city, and when the IATA code is not empty (which means
-	# that that POR is not curated in optd_por_best_known_so_far.csv):
+	# that that POR is curated in optd_por_best_known_so_far.csv):
     # 1. Store the UTF8 name.
     # 2. Store the details (IATA code, Geonames ID, UTF8 and ASCII names) 
     #    of the point of reference (POR).
@@ -161,8 +167,9 @@ function extractAndStoreCityNames(porIataCode, porLocType, porGeonamesID, \
 		}
 
 		# Serialise the current city details.
-		cty_details = porIataCode K_3RD_SEP porGeonamesID \
-			K_3RD_SEP porUtfName K_3RD_SEP porAsciiName
+		cty_details = porIataCode K_3RD_SEP porGeonamesID	\
+			K_3RD_SEP porUtfName K_3RD_SEP porAsciiName		\
+			K_3RD_SEP porCountryCode K_3RD_SEP porStateCode
 
 		# Add the current city details to the previous ones, if any.
 		cty_list_tmp = cty_list_tmp cty_details
@@ -319,6 +326,12 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 		# ASCII name of the POR itself
 		name_ascii = $K_NME_ASC
 
+		# Country code (ISO3166-1)
+		country_code = $K_POR_CTY
+
+		# ISO3166-2 code (aka state)
+		state_code = $K_POR_STE	
+
 		# Served city IATA code
 		served_city_code_list = $K_SVD_CTY_LST
 
@@ -326,8 +339,9 @@ function writeTravelPORList(porIataCode, porLocType, porIataCodeServedList) {
 		location_type = $K_LOC_TYP
 
 		# Store the POR names for the POR IATA code
-		extractAndStoreCityNames(iata_code, location_type, geoname_id, \
-								 name_utf, name_ascii)
+		extractAndStoreCityNames(iata_code, location_type, geoname_id,	\
+								 name_utf, name_ascii,					\
+								 country_code, state_code)
 
 		# Collect the travel-related POR IATA code
 		collectTravelPoints(iata_code, served_city_code_list, location_type)

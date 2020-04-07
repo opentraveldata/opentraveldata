@@ -2039,8 +2039,8 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
 # See http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md
 # for more details
 #
-# This function is the main one for processing the Geonames ID export file
-# (dump_from_geonames.csv). At that stage, the OPTD-maintained data file
+# This function is the main one for processing the Geonames file extracted by
+# OPTD (dump_from_geonames.csv). At that stage, the OPTD-maintained data file
 # (optd_por_best_known_so_far.csv) has already been parsed and the
 # corresponding details are stored in AWK (optd_por_xxx_list) data structures,
 # for instance optd_por_loctype_list (for the list of OPTD-maintained
@@ -2103,20 +2103,20 @@ function displayNonIataPOREntry(__dnipeGeoID, __dnipeFeatCode) {
 # Examples of records in dump_from_geonames.csv (which are the ones
 # currently parsed here):
 # [OPTD-maintained POR being referenced by IATA]
-# RDU^^^4464368^Durham^Durham^35.99403^-78.89862^US^^United States^North America^P^PPLA2^NC^North Carolina^North Carolina^063^Durham County^Durham County^90932^^257636^123^121^America/New_York^-5.0^-4.0^-5.0^2017-05-23^Durham,RDU^http://en.wikipedia.org/wiki/Durham%2C_North_Carolina^de|Durham||en|Durham|p^USDUR|
-# RDU^^^4487042^Raleigh^Raleigh^35.7721^-78.63861^US^^United States^North America^P^PPLA^NC^North Carolina^North Carolina^183^Wake County^Wake County^92612^^451066^96^99^America/New_York^-5.0^-4.0^-5.0^2017-05-23^RDU,Raleigh^http://en.wikipedia.org/wiki/Raleigh%2C_North_Carolina^en|Raleigh|p^USRAG|
-# RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^US^^United States^North America^S^AIRP^NC^North Carolina^North Carolina^183^Wake County^Wake County^90576^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2017-05-23^KRDU,RDU,Raleigh-Durham International Airport^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^en|Raleigh–Durham International Airport|p^USRDU|
+# RDU^^^4464368^Durham^Durham^35.99403^-78.89862^US^^United States^North America^P^PPLA2^NC^North Carolina^North Carolina^063^Durham County^Durham County^90932^^257636^123^121^America/New_York^-5.0^-4.0^-5.0^2017-05-23^Durham,RDU^http://en.wikipedia.org/wiki/Durham%2C_North_Carolina^de|Durham||en|Durham|p^USDUR|^
+# RDU^^^4487042^Raleigh^Raleigh^35.7721^-78.63861^US^^United States^North America^P^PPLA^NC^North Carolina^North Carolina^183^Wake County^Wake County^92612^^451066^96^99^America/New_York^-5.0^-4.0^-5.0^2017-05-23^RDU,Raleigh^http://en.wikipedia.org/wiki/Raleigh%2C_North_Carolina^en|Raleigh|p^USRAG|^
+# RDU^KRDU^^4487056^Raleigh-Durham International Airport^Raleigh-Durham International Airport^35.87946^-78.7871^US^^United States^North America^S^AIRP^NC^North Carolina^North Carolina^183^Wake County^Wake County^90576^^0^126^124^America/New_York^-5.0^-4.0^-5.0^2017-05-23^KRDU,RDU,Raleigh-Durham International Airport^http://en.wikipedia.org/wiki/Raleigh%E2%80%93Durham_International_Airport^en|Raleigh–Durham International Airport|p^USRDU|^
 # [...]
 # [POR not maintained by OPTD (hence as well not referenced by IATA),
 #  but being referenced by another organism such as ICAO or UN/LOCODE]
-# ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|
-# ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|
-# ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|
+# ^^^11085^Bīsheh Kolā^Bisheh Kola^36.18604^53.16789^IR^^Iran^Asia^P^PPL^35^Māzandarān^Mazandaran^^^^^^0^^1168^Asia/Tehran^3.5^4.5^3.5^2012-01-16^Bisheh Kola^^fa|Bīsheh Kolā|^IRBSM|^
+# ^^^54392^Malable^Malable^2.17338^45.58548^SO^^Somalia^Africa^L^PRT^13^Middle Shabele^Middle Shabele^^^^^^0^^1^Africa/Mogadishu^3.0^3.0^3.0^2012-01-16^Malable^^|Malable|^SOELM|^
+# ^^^531191^Mal’chevskaya^Mal'chevskaya^49.0565^40.36541^RU^^Russia^Europe^S^RSTN^61^Rostov^Rostov^^^^^^0^^199^Europe/Moscow^3.0^3.0^3.0^2017-10-03^Mal’chevskaya^^en|Mal’chevskaya|^RUMAA|^
 #
-# All that context being now explained, the following function must
-# retrieve the OPTD-maintained records corresponding to each group of
-# Geonames records referenced by the same IATA code (remember, if the IATA code
-# is empty, it means that those POR are not referenced by IATA).
+# All that context now explained, the following function must retrieve
+# the OPTD-maintained records corresponding to each group of Geonames records
+# referenced by the same IATA code (remember, if the IATA code is empty,
+# it means that those POR are not referenced by IATA).
 #
 function displayGeonamesPOREntries(__dgpeWAddedPK) {
     # Calculate the number of the Geonames POR entries corresponding to
@@ -2125,12 +2125,12 @@ function displayGeonamesPOREntries(__dgpeWAddedPK) {
 
     # DEBUG
     if (__glGlobalDebugIataCode != "" &&		\
-	geo_iata_code == __glGlobalDebugIataCode) {
-	print("[" __glGlobalDebugIataCode "] " dgpeNbOfGeoPOR		\
-	      " Geonames entries, OPTD loc_type_list: "			\
-	      optd_por_loctype_list[geo_iata_code] ", Geonames loc_type_list: " \
-	      geo_line_loctype_all_list ", Geonames GeoID_list: "	\
-	      geo_line_geoid_all_list) > __glGlobalErrorStream
+		geo_iata_code == __glGlobalDebugIataCode) {
+		print("[" __glGlobalDebugIataCode "] " dgpeNbOfGeoPOR	\
+			  " Geonames entries, OPTD loc_type_list: "					\
+			  optd_por_loctype_list[geo_iata_code] ", Geonames loc_type_list: " \
+			  geo_line_loctype_all_list ", Geonames GeoID_list: "		\
+			  geo_line_geoid_all_list) > __glGlobalErrorStream
     }
 
     # Browse all the location types known by OPTD for that IATA code.
