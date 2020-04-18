@@ -1,5 +1,4 @@
 iata_code^tz
-BVD^America/Anchorage
 BZF^America/Los_Angeles
 CCD^America/Los_Angeles
 CGG^Asia/Manila
@@ -163,7 +162,6 @@ QNT^Indian/Antananarivo
 QNZ^Asia/Tokyo
 QOD^Indian/Antananarivo
 QOG^Europe/Berlin
-QOH^Europe/Kiev
 QOI^Indian/Antananarivo
 QOK^Europe/Oslo
 QOM^Asia/Tokyo
