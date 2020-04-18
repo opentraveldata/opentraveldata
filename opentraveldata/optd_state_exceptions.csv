@@ -28,6 +28,7 @@ AU-QLD^QLD^2152274^IR^^^^^QL^State code in source seems to be limited to 2 chara
 AU-NSW^NSW^2155400^IR^^^^^NS^State code in source seems to be limited to 2 characters. References: https://en.wikipedia.org/wiki/ISO_3166-2:AU, https://en.wikipedia.org/wiki/States_and_territories_of_Australia^
 AU-TAS^TAS^2147291^IR^^^^^TS^State code in source seems to be limited to 2 characters. References: https://en.wikipedia.org/wiki/ISO_3166-2:AU, https://en.wikipedia.org/wiki/States_and_territories_of_Australia^
 AU-VIC^VIC^2145234^IR^^^^^VI^State code in source seems to be limited to 2 characters. References: https://en.wikipedia.org/wiki/ISO_3166-2:AU, https://en.wikipedia.org/wiki/States_and_territories_of_Australia^
+CN-CQ^CQ^1814905^IR^^^^^320^State code in source does not reflect any of the known standards (be it ISO 3166-2 or IATA codes), but seems to correspond to the phonetic initials. References: https://en.wikipedia.org/wiki/ISO_3166-2:CN, https://en.wikipedia.org/wiki/Provinces_of_China^
 CN-GZ^GZ^1809445^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:CN, https://en.wikipedia.org/wiki/Provinces_of_China^
 CN-GX^GX^1809867^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:CN, https://en.wikipedia.org/wiki/Autonomous_prefecture^
 CN-XJ^XJ^1529047^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:CN, https://en.wikipedia.org/wiki/Autonomous_prefecture^
@@ -45,5 +46,5 @@ MX-COA^COA^4013674^IR^^^^^^State code in source is empty. References: https://en
 MX-GRO^GRO^3527213^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:MX, https://en.wikipedia.org/wiki/Administrative_divisions_of_Mexico^
 RU-KDA^KDA^542415^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
 RU-KYA^KYA^1502020^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
-RU-PRI^PRI^2017623^IR^^^^^25^State code in source seems to be numeric. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
+RU-PRI^PRI^2017623^IR^1^^2020-04-15^^25^State code in source seems to be numeric. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
 RU-SA^SA^2013162^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
