@@ -39,6 +39,7 @@ ES-CM^CM^2593111^IR^^^^^^State code in source is empty. References: https://en.w
 ES-CN^CN^2593110^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:ES, https://en.wikipedia.org/wiki/Autonomous_communities_of_Spain^
 GB-ENG^ENG^0^IR^^^^^^Country and state codes in source are empty. At least one POR corresponds is like that, namely HDQ, usually literally meaning headquarters^
 GB-SCT^SCT^2638360^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:GB, https://en.wikipedia.org/wiki/Countries_of_the_United_Kingdom^
+ID-LA^LA^1638535^IR^^^^^13^State code in source does not reflect any of the known standards (be it ISO 3166-2 or IATA codes), but seems to correspond to the phonetic initials. References: https://en.wikipedia.org/wiki/ISO_3166-2:ID, https://en.wikipedia.org/wiki/Provinces_of_Indonesia^
 ID-NT^NT^1633791^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:ID, https://en.wikipedia.org/wiki/Provinces_of_Indonesia^
 ID-PA^PA^1643012^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:ID, https://en.wikipedia.org/wiki/Provinces_of_Indonesia^
 ID-SS^SS^1626196^IR^^^^^11^State code in source does not reflect any of the known standards (be it ISO 3166-2 or IATA codes). References: https://en.wikipedia.org/wiki/ISO_3166-2:ID, https://en.wikipedia.org/wiki/Provinces_of_Indonesia^
@@ -52,3 +53,4 @@ RU-KYA^KYA^1502020^IR^^^^^^State code in source is empty. References: https://en
 RU-PRI^PRI^2017623^IR^1^^2020-04-15^^25^State code in source seems to be numeric. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
 RU-SA^SA^2013162^IR^^^^^^State code in source is empty. References: https://en.wikipedia.org/wiki/ISO_3166-2:RU, https://en.wikipedia.org/wiki/Federal_subjects_of_Russia^
 SA-19^19^101627^IR^^^^^NA^State code in source does not reflect any of the known standards (be it ISO 3166-2 or IATA codes). References: https://en.wikipedia.org/wiki/ISO_3166-2:SA, https://en.wikipedia.org/wiki/Regions_of_Saudi_Arabia^
+SE-10^10^2699767^IR^^^^^002^State code in source does not reflect any of the known standards (be it ISO 3166-2 or IATA codes). References: https://en.wikipedia.org/wiki/ISO_3166-2:CN, https://en.wikipedia.org/wiki/Provinces_of_China^
