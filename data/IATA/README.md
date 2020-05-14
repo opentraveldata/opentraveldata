@@ -33,13 +33,13 @@ Location identifiers Web download (as of June 2010)
 
 Location type legend:
 ---------------------
-1 — Off-Line Point  
-2 — Metropolitan Area  
-3 — Airport  
-4 — Bus Station  
-5 — Railway Station  
-6 — Heliport  
-7 — Ferry Port  
+O — Off-Line Point  
+C — Metropolitan Area  
+A — Airport  
+B — Bus Station  
+R — Railway Station  
+H — Heliport  
+P — Ferry Port  
 
 Document reference: Form No. T3537-2 (30/06/05)
 
