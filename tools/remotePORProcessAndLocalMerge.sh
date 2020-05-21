@@ -62,7 +62,7 @@ echo "patch -p0 < ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv && mv ${POR_F
 echo "ls -laFh --color por*"
 echo
 echo "On the remote host again:"
-echo "mv por_intorg_${TODAY_DATE}.csv.bz2 archives/2019/ && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2 ${POR_FILE_PFX}_${SNPSHT_DATE}.csv"
+echo "mv por_intorg_${TODAY_DATE}.csv.bz2 ${ARCH_DIR}/ && rm -f ${POR_FILE_PFX}_${SNPSHT_DATE}_${TODAY_DATE}.csv.bz2 ${POR_FILE_PFX}_${SNPSHT_DATE}.csv"
 echo "ls -laFh --color por*"
 
 
