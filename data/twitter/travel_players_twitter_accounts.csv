@@ -29,6 +29,7 @@ shia_cgk,airport,CGK
 chattairport,airport,CHA
 choairport,airport,CHO
 iflychs,airport,CHS
+fly_BUR,airport,BUR
 fly_cid,airport,CID
 CKGAirport,airport,CKG
 CLTAirport,airport,CLT
@@ -48,6 +49,7 @@ dtweetin,airport,DTW
 DublinAirport,airport,DUB
 askDUBairport,airport,DUB
 DubaiAirports,airport,DXB
+IASIairport,airport,IAS
 iflybeaches,airport,ECP
 flyvail,airport,EGE
 lorraineairport,airport,ETZ
@@ -324,3 +326,18 @@ SunExpress,airline,XQ
 SunExpress_Int,airline,XQ
 flyvolaris,airline,Y4
 Monarch,airline,ZB
+SNCF,railway_company,2C
+RER_A,railway_company,
+RER_B,railway_company,
+Renfe,railway_company,
+CGTAIRFRANCE,airline_union,AF
+HeiderijkG,airport_union,CDG
+eurocontrol,authority,
+PANYNJ,authority,
+NJTRANSIT,authority,
+icao,authority,
+laairportpd,authority,LAX
+EssexPoliceSTN,authority,STN
+EnvibusOfficiel,bus_company,
+lignesdazur,bus_company,
+VilledeNice,city,NCE
