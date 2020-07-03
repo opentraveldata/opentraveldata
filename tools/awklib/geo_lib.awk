@@ -412,6 +412,7 @@ function isFeatCodeRail(__ifcrParamFeatureCode) {
     # Railway station
     __resultIsRail = match (__ifcrParamFeatureCode, "RSTN")
     __resultIsRail += match (__ifcrParamFeatureCode, "RSTP")
+    __resultIsRail += match (__ifcrParamFeatureCode, "RSD")
 
     return __resultIsRail
 }
@@ -509,26 +510,26 @@ function getFeatureCode(__gfcParamLocationType) {
 
     switch (__gfcParamLocationType) {
 	case "C": case "O":
-	    __resultFeatureCode = "PPL"
-	    break
-	    case "A":
-		__resultFeatureCode = "AIRP"
-		break
-		case "H":
-		    __resultFeatureCode = "AIRH"
-		    break
-		    case "R":
-			__resultFeatureCode = "RSTN"
-			break
-			case "B":
-			    __resultFeatureCode = "BUSTN"
-			    break
-			    case "G":
-				__resultFeatureCode = "RSTN"
-				break
-				case "P":
-				    __resultFeatureCode = "FY"
-				    break
+	__resultFeatureCode = "PPL"
+	break
+	case "A":
+	__resultFeatureCode = "AIRP"
+	break
+	case "H":
+	__resultFeatureCode = "AIRH"
+	break
+	case "R":
+	__resultFeatureCode = "RSTN"
+	break
+	case "B":
+	__resultFeatureCode = "BUSTN"
+	break
+	case "G":
+	__resultFeatureCode = "RSTN"
+	break
+	case "P":
+	__resultFeatureCode = "FY"
+	break
     }
 
     return __resultFeatureCode
