@@ -518,46 +518,47 @@ $ cd ~/dev/geo/opentraveldata/tools
 * Download the
   [latest release of UN/LOCODE files](http://www.unece.org/cefact/codesfortrade/codes_index.html):
 ```bash
-$ wget http://www.unece.org/fileadmin/DAM/cefact/locode/loc191csv.zip
+$ UNLCVER="201"; UNLCLVER="2020-1"
+$ wget http://www.unece.org/fileadmin/DAM/cefact/locode/loc${UNLCVER}csv.zip
 ```
 
 * Un-pack, remove the unused parts and re-assemble the UN/LOCODE data file:
 ```bash
-$ unzip -x loc192csv.zip && rm -f loc192csv.zip
-Archive:  loc192csv.zip
-  inflating: 2019-2 SubdivisionCodes.csv  
-  inflating: 2019-2 UNLOCODE CodeListPart1.csv  
-  inflating: 2019-2 UNLOCODE CodeListPart2.csv  
-  inflating: 2019-2 UNLOCODE CodeListPart3.csv  
-  inflating: 2019-2 UNLOCODE SecretariatNotes.pdf  
-$ dos2unix 2019-2*.csv
-$ mv 2019-2\ SubdivisionCodes.csv ../data/unlocode/archives/unece-subdivision-codes-2019-2.csv
-$ mv 2019-2\ UNLOCODE\ SecretariatNotes.pdf ../data/unlocode/unlocode-secretarial-notes-2019-2.pdf
-$ cat 2019-2\ UNLOCODE\ CodeListPart1.csv 2019-2\ UNLOCODE\ CodeListPart2.csv 2019-2\ UNLOCODE\ CodeListPart3.csv > unlocode-code-list-2019-2-iso.csv
-$ rm -f 2019-2\ UNLOCODE\ CodeListPart1.csv 2019-2\ UNLOCODE\ CodeListPart2.csv 2019-2\ UNLOCODE\ CodeListPart3.csv
+$ unzip -x loc${UNLCVER}csv.zip && rm -f loc${UNLCVER}csv.zip
+Archive:  loc${UNLCVER}csv.zip
+  inflating: ${UNLCLVER} SubdivisionCodes.csv
+  inflating: ${UNLCLVER} UNLOCODE CodeListPart1.csv
+  inflating: ${UNLCLVER} UNLOCODE CodeListPart2.csv
+  inflating: ${UNLCLVER} UNLOCODE CodeListPart3.csv
+  inflating: ${UNLCLVER} UNLOCODE SecretariatNotes.pdf
+$ dos2unix ${UNLCLVER}*.csv
+$ mv ${UNLCLVER}\ SubdivisionCodes.csv ../data/unlocode/archives/unece-subdivision-codes-${UNLCLVER}.csv
+$ mv ${UNLCLVER}\ UNLOCODE\ SecretariatNotes.pdf ../data/unlocode/unlocode-secretarial-notes-${UNLCLVER}.pdf
+$ cat ${UNLCLVER}\ UNLOCODE\ CodeListPart1.csv ${UNLCLVER}\ UNLOCODE\ CodeListPart2.csv ${UNLCLVER}\ UNLOCODE\ CodeListPart3.csv > unlocode-code-list-${UNLCLVER}-iso.csv
+$ rm -f ${UNLCLVER}\ UNLOCODE\ CodeListPart1.csv ${UNLCLVER}\ UNLOCODE\ CodeListPart2.csv ${UNLCLVER}\ UNLOCODE\ CodeListPart3.csv
 ```
 
 * Remove the line-feed characters (convert the file from DOS- to Unix-type):
 ```bash
-$ dos2unix unlocode-code-list-2019-1-iso.csv
+$ dos2unix unlocode-code-list-${UNLCLVER}-iso.csv
 ```
 
 * Convert the character encoding to friendlier UTF-8
 ```bash
-$ iconv -f ISO-8859-1 -t UTF-8 unlocode-code-list-2019-2-iso.csv > unlocode-code-list-2019-2.csv
-$ rm -f unlocode-code-list-2019-2-iso.csv
+$ iconv -f ISO-8859-1 -t UTF-8 unlocode-code-list-${UNLCLVER}-iso.csv > unlocode-code-list-${UNLCLVER}.csv
+$ rm -f unlocode-code-list-${UNLCLVER}-iso.csv
 ```
 
 * You may want to sort the data file, for instance for later comparison:
 ```bash
-$ sort -t',' -k2,2 -k3,3 -k4,4 unlocode-code-list-2019-2.csv > unlocode-code-list-2019-2-std.csv
-$ mv unlocode-code-list-2019-2-std.csv unlocode-code-list-2019-2.csv
+$ sort -t',' -k2,2 -k3,3 -k4,4 unlocode-code-list-${UNLCLVER}.csv > unlocode-code-list-${UNLCLVER}-std.csv
+$ mv unlocode-code-list-${UNLCLVER}-std.csv unlocode-code-list-${UNLCLVER}.csv
 ```
 
 * Remove (empty) lines with just quotes:
 ```bash
-$ grep -v "^\"$" unlocode-code-list-2019-2.csv > unlocode-code-list-2019-2-ftd.csv
-$ mv unlocode-code-list-2019-2-ftd.csv unlocode-code-list-2019-2.csv
+$ grep -v "^\"$" unlocode-code-list-${UNLCLVER}.csv > unlocode-code-list-${UNLCLVER}-ftd.csv
+$ mv unlocode-code-list-${UNLCLVER}-ftd.csv unlocode-code-list-${UNLCLVER}.csv
 ```
 
 * Remove comment fields with just opening quotes (that appears when
@@ -565,16 +566,16 @@ $ mv unlocode-code-list-2019-2-ftd.csv unlocode-code-list-2019-2.csv
   the opening quote stays, and an empty line is created with
   the closing character, which is eliminated in the step above):
 ```bash
-$ sed -i -e 's/,\"$/,/g' unlocode-code-list-2019-2.csv
+$ sed -i -e 's/,\"$/,/g' unlocode-code-list-${UNLCLVER}.csv
 ```
 
 * Add the missing `E` (East) character in the geographical coordinates
   of the `SA-SAL` record (you may want to first check that the error
   is still there):
 ```bash
-$ grep --color "\"2444N 05045\"" unlocode-code-list-2019-2.csv
+$ grep --color "\"2444N 05045\"" unlocode-code-list-${UNLCLVER}.csv
 ,"SA","SAL","Salwá","Salwa","04","--3-----","RL","1707",,"2444N 05045",
-$ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-2019-2.csv
+$ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-${UNLCLVER}.csv
 ```
 
 * Run the OPTD transformation script, which may report some additional glitches
@@ -592,17 +593,18 @@ $ sh prepare_unlc_dump_file.sh
 * Tell Git about the new transformed UN/LOCODE data file:
 ```bash
 $ pushd ../data/unlocode
-$ git add archives/unlocode-code-list-2019-2.csv
+$ git add archives/unlocode-code-list-${UNLCLVER}.csv
 $ unlink unlocode-code-list-latest.csv
-$ ln -s archives/unlocode-code-list-2019-2.csv unlocode-code-list-latest.csv
+$ ln -s archives/unlocode-code-list-${UNLCLVER}.csv unlocode-code-list-latest.csv
 $ git add unlocode-code-list-latest.csv
-$ git commit -m "[POR] Added the latest UN/LOCODE data file (2019-2)" unlocode-code-list-latest.csv archives/unlocode-code-list-2019-2.csv
+$ git add unlocode-secretarial-notes-${UNLCLVER}.pdf
+$ git commit -m "[POR] Added the latest UN/LOCODE data file (${UNLCLVER})" unlocode-code-list-latest.csv archives/unlocode-code-list-${UNLCLVER}.csv
 $ popd
 ```
 
 * Remove the no longer needed UN/LOCODE raw data file:
 ```bash
-$ rm -f unlocode-code-list-2019-2.csv
+$ rm -f unlocode-code-list-${UNLCLVER}.csv
 ```
 
 #### See also
@@ -610,15 +612,15 @@ $ rm -f unlocode-code-list-2019-2.csv
   for an example on how to spot POR in Vietnam (VN) missing in Geonames
   but present in the UN/LOCODE data file.
 * Relevant AWK scripts:
-  + [`tools/awklib/geo_lib.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-registerlocodeline)
-  + [`tools/prepare_unlc_dump_file.awk`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/prepare_unlc_dump_file.awk)
+  + [`tools/awklib/geo_lib.awk`](https://github.com/opentraveldata/opentraveldata/blob/master/tools/awklib/geo_lib.awk#function-registerlocodeline)
+  + [`tools/prepare_unlc_dump_file.awk`](https://github.com/opentraveldata/opentraveldata/blob/master/tools/prepare_unlc_dump_file.awk)
 
 ### Update the OPTD-curated UN/LOCODE extract
 Thanks to the
-[`tools/extract_por_unlc.sh` Shell script](http://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_unlc.sh),
+[`tools/extract_por_unlc.sh` Shell script](https://github.com/opentraveldata/opentraveldata/blob/master/tools/extract_por_unlc.sh),
 OPTD provides a curated extract of POR having UN/LOCODE codes,
 with their geo-location, Geonames ID and type:
-[`opentraveldata/optd_por_unlc.csv`](http://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_unlc.csv).
+[`opentraveldata/optd_por_unlc.csv`](https://github.com/opentraveldata/opentraveldata/blob/master/opentraveldata/optd_por_unlc.csv).
 
 That Shell script performs the extraction thanks to the two Geonames-derived
 data sources, namely `dump_from_geonames.csv` (itself a copy of
@@ -630,7 +632,7 @@ Following is an example of the extraction process log on the console:
 ```bash
 $ pushd ~/dev/geo/opentraveldata/tools
 $ ./extract_por_unlc.sh
-The UN/LOCODE POR file ('~/dev/geo/opentraveldata/opentraveldata/optd_por_unlc.csv') has been generated from 'por_intorg_20190424.csv' and 'por_all_20190424.csv'
+The UN/LOCODE POR file ('~/dev/geo/opentraveldata/opentraveldata/optd_por_unlc.csv') has been generated from 'por_intorg_20200713.csv' and 'por_all_20200713.csv'
 There are 99964 records
 $ git diff ../opentraveldata/optd_por_unlc.csv
 $ git add ../opentraveldata/optd_por_unlc.csv

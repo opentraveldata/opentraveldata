@@ -1,19 +1,25 @@
 
 # Overview
-The [original of that documentation file](http://github.com/opentraveldata/opentraveldata/blob/master/data/unlocode/README.md)
-is maintained on the [OpenTravelData (OPTD) project](http://github.com/opentraveldata/opentraveldata),
-within the [`data/unlocode` directory](http://github.com/opentraveldata/opentraveldata/blob/master/data/unlocode).
+The
+[original of that documentation file](https://github.com/opentraveldata/opentraveldata/blob/master/data/unlocode/README.md)
+is maintained on the
+[OpenTravelData (OPTD) project](https://github.com/opentraveldata/opentraveldata),
+within the
+[`data/unlocode` directory](https://github.com/opentraveldata/opentraveldata/blob/master/data/unlocode).
 
-See also the [section on how to update UN/LOCODE data in the main
-`README`](http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md#update-the-unlocode-data-file)
+See also the
+[section in the main `README` file on how to update UN/LOCODE data](https://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md#update-the-unlocode-data-file)
 
 ## UN/LOCODE
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE
-* Official note, as of July 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/2019-1_UNLOCODE_SecretariatNotes.pdf
-* Latest data file: http://www.unece.org/cefact/codesfortrade/codes_index.html
-  - Deecember 2019: http://www.unece.org/fileadmin/DAM/cefact/locode/loc192csv.zip (2.1 MB)
-* Online code search: http://locode.info
-* Online code list by country: http://www.unece.org/cefact/locode/service/location.html
+* Official note, as of July 2020:
+  https://www.unece.org/fileadmin/DAM/cefact/locode/2020-1_UNLOCODE_SecretariatNotes.pdf
+* Latest data file: https://www.unece.org/cefact/codesfortrade/codes_index.html
+  - July 2020:
+  https://www.unece.org/fileadmin/DAM/cefact/locode/loc201csv.zip (2.1 MB)
+* Online code search: https://locode.info
+* Online code list by country:
+  https://www.unece.org/cefact/locode/service/location.html
 
 ## Country sub-divisions
 In the Zip archive of UN/LOCODE data files, there is a CSV file

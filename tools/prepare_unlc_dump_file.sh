@@ -59,19 +59,19 @@ LOCODE_DIR="${OPTD_DIR}data/unlocode/archives/"
 
 ##
 # Retrieve the latest file
-#unlocode-code-list-2018-1.csv
+#unlocode-code-list-2020-1.csv
 POR_FILE_PFX="unlocode-code-list"
-SNPSHT_DATE="$(ls ${TOOLS_DIR}${POR_FILE_PFX}-????-?.csv 2> /dev/null)"
-if [ "${SNPSHT_DATE}" != "" ]
+SNPSHT_FILES="$(ls ${TOOLS_DIR}${POR_FILE_PFX}-????-?.csv 2> /dev/null)"
+if [ "${SNPSHT_FILES}" != "" ]
 then
     # (Trick to) Extract the latest entry
-    for myfile in ${SNPSHT_DATE}; do echo > /dev/null; done
-    SNPSHT_DATE="$(echo ${myfile} | ${SED_TOOL} -E 's/${POR_FILE_PFX}-([0-9\-]+)\.csv/\1/' | xargs basename)"
+    for myfile in ${SNPSHT_FILES}; do echo > /dev/null; done
+    SNPSHT_DATE="$(echo ${myfile} | ${SED_TOOL} -E "s/${POR_FILE_PFX}-([0-9\-]+)\.csv/\1/" | xargs basename)"
 else
     echo
-    echo "[$0:$LINENO] No LOCODE-derived POR list CSV dump can be found " \
+    echo "[$0:$LINENO] - No LOCODE-derived POR list CSV dump can be found " \
 		 "in the '${TOOLS_DIR}' directory."
-    echo "Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}-YYYY-N.csv'"
+    echo "[$0:$LINENO] - Expecting a file named like '${TOOLS_DIR}${POR_FILE_PFX}-YYYY-N.csv'"
     echo
     exit -1
 fi
@@ -79,6 +79,14 @@ if [ "${SNPSHT_DATE}" != "" ]
 then
     LOCODE_TAB_FILENAME="${POR_FILE_PFX}-${SNPSHT_DATE}.csv"
     LOCODE_CSV_FILENAME="${POR_FILE_PFX}-${SNPSHT_DATE}.csv"
+else
+	echo
+    echo "[$0:$LINENO] - There seems to be UN/LOCODE snapshot files " \
+		 "(${SNPSHT_FILES})"
+	echo "[$0:$LINENO] - However, for some reason, the extraction time-stamp " \
+		 "cannot be properly extracted; check for potential errors above (e.g., with sed/gsed)"
+	echo
+	exit -1
 fi
 
 ##
@@ -91,6 +99,12 @@ GEO_OPTD_FILE="${DATA_DIR}${GEO_OPTD_FILENAME}"
 ##
 # Output files
 LOCODE_CSV_FILE="${LOCODE_DIR}${LOCODE_CSV_FILENAME}"
+
+##
+# Reporting
+echo "Source: ${LOCODE_TAB_FILE}"
+echo "Target: ${LOCODE_CSV_FILE}"
+echo
 
 ##
 # Temporary
