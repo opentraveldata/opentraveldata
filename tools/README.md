@@ -718,11 +718,14 @@ $ ./make_optd_ref_pr_and_freq.py
 It should generate two files:
 * Importance of airlines (by flight frequency): `ref_airline_nb_of_flights.csv`
 * PageRank values of POR: `ref_airport_pageranked.csv`
+```bash
+$ git add ../opentraveldata/ref_airline_nb_of_flights.csv
+$ git add ../opentraveldata/ref_airport_pageranked.csv
+```
 
 Recalculate the OPTD file of airlines:
 ```bash
-$ ./make_optd_airline_public.sh && ./make_optd_airline_public.sh --clean
-$ git add ../opentraveldata/ref_airline_nb_of_flights.csv
+$ ./make_optd_airline_public.py
 $ git add ../opentraveldata/optd_airlines.csv
 $ git commit -m "[Airlines] Updated the flight frequencies" ../opentraveldata/ref_airline_nb_of_flights.csv ../opentraveldata/optd_airlines.csv
 ```
@@ -730,8 +733,8 @@ $ git commit -m "[Airlines] Updated the flight frequencies" ../opentraveldata/re
 Recalculate the OPTD file of POR:
 ```bash
 $ ./make_optd_por_public.sh && ./make_optd_por_public.sh --clean
-$ git add ../opentraveldata/ref_airport_pageranked.csv
 $ git add ../opentraveldata/optd_por_public.csv
+$ git commit -m "[POR] Updated the PageRank values" ../opentraveldata/ref_airport_pageranked.csv ../opentraveldata/optd_por_public.csv
 ```
 
 ### Compute the differences among all the POR files
