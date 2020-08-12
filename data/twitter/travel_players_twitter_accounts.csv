@@ -65,6 +65,7 @@ AirportGrenoble,airport,GNB
 FlyGPT,airport,GPT
 flyfrompti,airport,GSO
 GeneveAeroport,airport,GVA
+HamburgAirport,airport,HAM
 HelsinkiAirport,airport,HEL
 Haneda_official,airport,HND
 hobbyairport,airport,HOU
@@ -83,7 +84,9 @@ MY_Airports,airport,KUL
 flylansing,airport,LAN
 lasairport,airport,LAS
 flyLAXairport,airport,LAX
+ldnlutonairport,airport,LDN
 lgaairport,airport,LGA
+Gatwick_Airport,airport,LGW
 HeathrowAirport,airport,LHR
 Aeroport_Lille,airport,LIL
 lyonaeroports,airport,LYS
@@ -139,7 +142,7 @@ flySEA,airport,SEA
 sfb_airport,airport,SFB
 flysfo,airport,SFO
 flysgf,airport,SGF
-hangiAirport,airport,SIN
+changiAirport,airport,SIN
 flysjc,airport,SJC
 slcairport,airport,SLC
 flystl,airport,STL
@@ -151,7 +154,7 @@ flystillwaterok,airport,SWO
 aeroport_sxb,airport,SXB
 SydneyAirport,airport,SYD
 syracuseairport,airport,SYR
-iflytallahassee,airport,TLH
+tlhairport,airport,TLH
 aeroport_tls,airport,TLS
 flytpa,airport,TPA
 taoyuanairport,airport,TPE
