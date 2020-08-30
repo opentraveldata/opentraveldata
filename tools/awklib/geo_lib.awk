@@ -340,6 +340,7 @@ function isFeatCodeCity(__ifccParamFeatureCode) {
     __resultIsCity += match (__ifccParamFeatureCode, "^ADM")
     __resultIsCity += match (__ifccParamFeatureCode, "^LCTY")
     __resultIsCity += match (__ifccParamFeatureCode, "^PCL")
+    __resultIsCity += match (__ifccParamFeatureCode, "^TERR")
     __resultIsCity += match (__ifccParamFeatureCode, "^RGN")
     __resultIsCity += match (__ifccParamFeatureCode, "^AREA")
     __resultIsCity += match (__ifccParamFeatureCode, "^HMSD")
