@@ -18,7 +18,7 @@ Aeroport_BOD,airport,BOD
 iflyboise,airport,BOI
 CSMIA_Official,airport,BOM
 bostonlogan,airport,BOS
-british_airways,airport,BRI
+AeroportiPuglia,airport,BRI
 BrusselsAirport,airport,BRU
 bufairport,airport,BUF
 aerportbeauvais,airport,BVA
@@ -34,7 +34,7 @@ fly_cid,airport,CID
 CKGAirport,airport,CKG
 CLTAirport,airport,CLT
 columbusairport,airport,CMH
-cnnbrk,airport,CNN
+airportCNN,airport,CNN
 cosairport,airport,COS
 CPHAirports,airport,CPH
 flydab,airport,DAB
@@ -57,11 +57,9 @@ flyeug,airport,EUG
 ewrairport,airport,EWR
 flyfayairport,airport,FAY
 fllflyer,airport,FLL
-Forums4airports,airport,FOR
 Airport_FRA,airport,FRA
 GLA_Airport,airport,GLA
-gmanews,airport,GMA
-AirportGrenoble,airport,GNB
+AirportGrenoble,airport,GNBF
 FlyGPT,airport,GPT
 flyfrompti,airport,GSO
 GeneveAeroport,airport,GVA
@@ -79,7 +77,6 @@ igairport,airport,IST
 jaxairport,airport,JAX
 jfkairport,airport,JFK
 jimcramer,airport,JIM
-komonews,airport,KOM
 MY_Airports,airport,KUL
 flylansing,airport,LAN
 lasairport,airport,LAS
@@ -112,7 +109,6 @@ flyneworleans,airport,MSY
 FlyMontrose,airport,MTJ
 MUC_Airport,airport,MUC
 MWAAHQ,airport,MWA
-nbcsnl,airport,NBC
 AeroportNice,airport,NCE
 AeroportNantes,airport,NTE
 iflyoakland,airport,OAK
