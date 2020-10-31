@@ -2611,32 +2611,32 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # See http://en.wikipedia.org/wiki/District_of_Columbia_statehood_movement
     isCityWashingtonDC = match (__gwacCityCodeList, "WAS")
     if (isCityWashingtonDC) {
-	world_area_code_for_state = wac_by_state_code_list["DC"]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list["DC"]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given US state ('DC')."	\
-		   " The whole line " __gwacFullLine) > error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given US state ('DC')."	\
+				   " The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # For the United States (US) and Canada (CA), the WAC is specified at state
     # level, where as the WAC is specified at country level for every
     # other country.
     if (__gwacCountryCode == "US" || __gwacCountryCode == "CA") {
-	world_area_code_for_state = wac_by_state_code_list[__gwacStateCode]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list[__gwacStateCode]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given state ('" __gwacStateCode \
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given state ('" __gwacStateCode \
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # Puerto Rico (PR) is considered by the US DOT as a US state, but is
@@ -2644,17 +2644,17 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # See also http://en.wikipedia.org/wiki/Political_status_of_Puerto_Rico
     # and http://en.wikipedia.org/wiki/United_States_Virgin_Islands
     if (__gwacCountryCode == "PR" || __gwacCountryCode == "VI") {
-	world_area_code_for_state = wac_by_state_code_list[__gwacCountryCode]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list[__gwacCountryCode]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given state ('"			\
-		   __gwacCountryCode									\
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given state ('"			\
+				   __gwacCountryCode									\
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # For the US DOT, the following countries are considered elements of
@@ -2665,18 +2665,18 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # See also http://en.wikipedia.org/wiki/Territories_of_the_United_States and
     #http://en.wikipedia.org/wiki/Unincorporated_territories_of_the_United_States
     if (__gwacCountryCode == "AS"										\
-	|| __gwacCountryCode == "GU" || __gwacCountryCode == "MP") {
-	world_area_code_for_state = wac_by_state_code_list["TT"]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		|| __gwacCountryCode == "GU" || __gwacCountryCode == "MP") {
+		world_area_code_for_state = wac_by_state_code_list["TT"]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given US Territory (TT)('" \
-		   __gwacCountryCode									\
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given US Territory (TT)('" \
+				   __gwacCountryCode									\
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # It is not clear how the United Stes Minor Outlying Islands (country name:
@@ -2693,49 +2693,49 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     #http://en.wikipedia.org/wiki/Navassa_Island
     #http://en.wikipedia.org/wiki/United_States_Virgin_Islands
     if (__gwacCountryCode == "UM") {
-	world_area_code_for_state = wac_by_state_code_list["TT"]
-	if (world_area_code_for_state) {
-	    return world_area_code_for_state
+		world_area_code_for_state = wac_by_state_code_list["TT"]
+		if (world_area_code_for_state) {
+			return world_area_code_for_state
 
-	} else {
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for the given US Territory (TT)('" \
-		   __gwacCountryCode									\
-		   "'). The whole line " __gwacFullLine) > error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] " \
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for the given US Territory (TT)('" \
+				   __gwacCountryCode									\
+				   "'). The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # For some reason, the US DOT has got the wrong country code for Kosovo
     # See also http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#XK
     if (__gwacCountryCode == "XK") {
-	world_area_code_for_ctry = wac_by_ctry_code_list["KV"]
-	if (world_area_code_for_ctry) {
-	    return world_area_code_for_ctry
+		world_area_code_for_ctry = wac_by_ctry_code_list["KV"]
+		if (world_area_code_for_ctry) {
+			return world_area_code_for_ctry
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for Kosovo ('KV' for the US DOT, " \
-		   "XK otherwise). The whole line " __gwacFullLine)		\
-		> error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for Kosovo ('KV' for the US DOT, " \
+				   "XK otherwise). The whole line " __gwacFullLine)		\
+				> error_stream
+		}
     }
 
     # The Palestinian Territory (PS) is still not officially recognized
     # as a country by the US DOT
     # See also http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#PS
     if (__gwacCountryCode == "PS") {
-	world_area_code_for_ctry = wac_by_ctry_code_list["IL"]
-	if (world_area_code_for_ctry) {
-	    return world_area_code_for_ctry
+		world_area_code_for_ctry = wac_by_ctry_code_list["IL"]
+		if (world_area_code_for_ctry) {
+			return world_area_code_for_ctry
 
-	} else {			
-	    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
-		   "!!! Error at record #" FNR							\
-		   ": the WAC is empty for Israel ('IL'). "				\
-		   "The whole line " __gwacFullLine) > error_stream
-	}
+		} else {
+			print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "	\
+				   "!!! Error at record #" FNR							\
+				   ": the WAC is empty for Israel ('IL'). "				\
+				   "The whole line " __gwacFullLine) > error_stream
+		}
     }
 
     # As per the US DOT, Russia is split in two parts, namely the European
@@ -2745,34 +2745,34 @@ function getWorldAreaCode(__gwacCountryCode, __gwacStateCode,		\
     # 475/47501 - European part of Russia
     # 770/77001 - Asian part of Russia
     if (__gwacCountryCode == "RU") {
-	# The position is considerd in Europe if:
-	#  * At the northwest of 50.66, 55.54 (http://goo.gl/maps/BMSpTNRfbsj)
-	#  * At tje southwest of 50.66, 46.60 (http://goo.gl/maps/URpbJNN68BH2)
-	geo_lat = strtonum(__gwacLatStr); geo_lon = strtonum(__gwacLonStr)
-	if (geo_lat >= 50.6583519 && geo_lon <= 55.5429109		\
-	    || geo_lat < 50.6583519 && geo_lon <= 46.6045507) {
-	    world_area_code_for_ctry = "475"
+		# The position is considerd in Europe if:
+		#  * At the northwest of 50.66, 55.54 (http://goo.gl/maps/BMSpTNRfbsj)
+		#  * At tje southwest of 50.66, 46.60 (http://goo.gl/maps/URpbJNN68BH2)
+		geo_lat = strtonum(__gwacLatStr); geo_lon = strtonum(__gwacLonStr)
+		if (geo_lat >= 50.6583519 && geo_lon <= 55.5429109	\
+			|| geo_lat < 50.6583519 && geo_lon <= 46.6045507) {
+			world_area_code_for_ctry = "475"
 
-	} else {
-	    world_area_code_for_ctry = "770"
-	}
-	return world_area_code_for_ctry
+		} else {
+			world_area_code_for_ctry = "770"
+		}
+		return world_area_code_for_ctry
     }
 
     # Standard country: try to match the country code (as found in Geonames)
     world_area_code_for_ctry = wac_by_ctry_code_list[__gwacCountryCode]
     if (world_area_code_for_ctry) {
-	return world_area_code_for_ctry
+		return world_area_code_for_ctry
     }
 
     # Then, try to match the alternate country code (as found in Geonames)
     world_area_code_for_ctry = wac_by_ctry_code_list[__gwacCountryCodeAlt]
     if (world_area_code_for_ctry) {
-	return world_area_code_for_ctry
+		return world_area_code_for_ctry
     }
 
     # There is no WAC registered for either the state or country code
-    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "			\
+    print ("[" awk_file "; awklib/geo_lib:getWorldAreaCode()] "		\
 	   "!!!! Warning !!!! No World Area Code (WAC) can be"			\
 	   " found for either the state code ("	__gwacStateCode			\
 	   "), the country code (" __gwacCountryCode					\
