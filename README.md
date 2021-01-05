@@ -14,7 +14,7 @@ Flat/data files are used with hat (^) separated columns,
 so that it should be easy to use with your own tools of choice.
 
 # Directory structure
-* All the data sets, whcih are directly curated and maintained by OPTD,
+* All the data sets, which are directly curated and maintained by OPTD,
   are located in the
   [``opentraveldata`` directory](https://github.com/opentraveldata/opentraveldata/tree/master/opentraveldata).
 * The [``data``](https://github.com/opentraveldata/opentraveldata/tree/master/data)
