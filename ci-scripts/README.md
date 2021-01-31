@@ -34,6 +34,51 @@ specified in the [`.travis.yml` YAML file](https://github.com/opentraveldata/ope
 ## Content
 * [`cicd/`](cicd/)
 * [`qa/`](qa/)
-* [`por/`](por/}
+* [`por/`](por/)
+
+## Upgrade Python dependencies
+
+* If not already done so, clone the OPTD and
+  OPTD Quality Assurance (QA) reporitories:
+```bash
+$ mkdir -p ~/dev/geo && \
+  git clone https://github.com/opentraveldata/quality-assurance.git ~/dev/geo/opentraveldata-qa &&
+  git clone https://github.com/opentraveldata/opentraveldata.git ~/dev/geo/opentraveldata
+```
+
+* When using PyEnv installed in the home directory, update it:
+```bash
+$ pushd ~/.pyenv && git pull && popd
+```
+
+* Re-initialize the Python virtual environment, potentially upgrading
+  to the latest Python version (check `.python-version` and `Pipfile`):
+```bash
+$ cd ~/dev/geo/opentraveldata-qa
+$ pyenv local 3.9.1 # for instance (as of January 2021)
+$ pipenv --rm ; rm -f Pipfile.lock ; pipenv install
+```
+
+* Re-generate the `requirements.txt` Python dependency file:
+```bash
+$ pipenv lock -r > requirements.txt
+```
+
+* If all is successful, add to Git and commit:
+```bash
+$ git diff
+$ git add .python-version Pipfile Pipfile.lock requirements.txt
+$ git commit -m "[Python] Upgraded the dependencies"
+```
+
+* Copy the Python dependency file into the OPTD project,
+  in the `ci-scripts/` directory:
+```bash
+$ cp requirements.txt ~/dev/geo/opentraveldata/ci-scripts/
+$ pushd ~/dev/geo/opentraveldata && \
+  git add requirements.txt && \
+  git commit -m "[Python] Upgraded the dependencies" && \
+  popd
+```
 
 
