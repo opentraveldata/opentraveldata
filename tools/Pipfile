@@ -11,11 +11,10 @@ requests = "*"
 urllib3 = "*"
 neobase = "*"
 networkx = "*"
-scipy = "*"
 pandas = "*"
 lxml = "*"
 sparqlwrapper = "*"
 common = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
