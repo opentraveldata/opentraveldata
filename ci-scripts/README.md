@@ -55,7 +55,7 @@ $ pushd ~/.pyenv && git pull && popd
   to the latest Python version (check `.python-version` and `Pipfile`):
 ```bash
 $ cd ~/dev/geo/opentraveldata-qa
-$ pyenv local 3.9.1 # for instance (as of January 2021)
+$ pyenv local 3.9.2 # for instance (as of February 2021)
 $ pipenv --rm ; rm -f Pipfile.lock ; pipenv install
 ```
 
