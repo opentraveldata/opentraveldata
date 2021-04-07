@@ -100,6 +100,7 @@ air-avitrans-nordic-v1^1^2004-01-01^2010-12-31^ETS^2Q^0^Avitrans Nordic^^^^T^htt
 air-axis-lines-v1^1^2005-01-01^2006-01-01^^O8^0^Axis International Lines^^^^^https://en.wikipedia.org/wiki/Axis_Lines_International^en|Axis International Lines|^^air-axis-lines^1^
 air-batavia-air-v1^1^2002-01-01^2013-01-31^BTV^Y6^0^Batavia Air^^^^^https://en.wikipedia.org/wiki/Batavia_Air^en|Batavia Air|^CGK^air-batavia-air^1^
 air-air-belgium-v1^1^1979-05-01^2000-10-31^ABB^AJ^0^Air Belgium^^^^^https://en.wikipedia.org/wiki/Air_Belgium_(1979-2000)^en|Air Belgium|^BRU^air-air-belgium^1^
+air-bahrain-air-v1^1^2008-02-01^2013-02-12^BAB^BN^937^Bahrain Air^^^^^https://en.wikipedia.org/wiki/Bahrain_Air^en|Bahrain Air|=sign|BAHRAIN AIR|^BAH^air-bahrain-air^1^
 air-belle-air-company-v1^1^2005-01-01^2013-11-24^LBY^LZ^379^Belle Air^^^^^https://en.wikipedia.org/wiki/Belle_Air^en|Belle Air Sh.p.k.|=en|belleair|^TIA^air-belle-air-company^1^
 air-benin-golf-v1^1^2002-01-01^2012-07-31^BGL^A8^0^Benin Golf Air^^^^^https://en.wikipedia.org/wiki/Benin_Golf_Air^en|Benin Golf Air|^^air-benin-golf^1^
 air-bh-airlines-v1^1^1994-01-01^2015-07-02^BON^JA^995^B&H Airlines^^^^^https://en.wikipedia.org/wiki/B%26H_Airlines^en|B&H Airlines|p=en|Air Bosna|h=he|B&H איירליינס|=ja|B&H航空|=ko|B&H 항공|=sign|AIR BOSNA|^SJJ^air-bh-airlines^1^
@@ -184,10 +185,11 @@ air-finncomm-airlines-v1^1^1993-01-01^2011-12-31^FCM^FC^216^Finncomm Airlines^^^
 air-florida-coastal-airlines-v1^1^1995-01-01^2014-06-06^FCL^PA^0^Florida Coastal Airlines^^^^P^https://en.wikipedia.org/wiki/Florida_Coastal_Airlines^en|Florida Coastal Airlines|^^air-florida-coastal-airlines^1^
 air-fly540-angola-v1^1^2011-01-01^2014-05-31^^F5^0^Fly540 Angola^^^^^https://en.wikipedia.org/wiki/Fly540_Angola^en|Fly540 Angola|^LAD^air-fly540-angola^1^
 air-fly540-ghana-v1^1^2011-11-01^2014-05-31^FOX^5G^0^Fly540 Ghana^^^^^https://en.wikipedia.org/wiki/Royal_Fly-GH^en|Fly540 Ghana|h=en|Royal_Fly-GH|=en|Fly-GH|s^ACC^air-fly540-ghana^1^
-air-flycongo-v1^1^2012-03-24^2013-10-31^ALX^EO^663^FlyCongo^^^^^https://en.wikipedia.org/wiki/FlyCongo^en|FlyCongo|^FIH^air-flycongo^1^
+air-fly540-tanzania-v1^1^2011-01-01^2019-11-30^FTZ^FN^334^Fastjet^^^^^https://en.wikipedia.org/wiki/Fastjet_Tanzania^en|Fastjet|p=en|Fastjet Tanzania|h=en|Fastjet Airlines Limited|=en|Fly540 Tanzania|h^DAR^air-fly540-tanzania^1^
 air-fly-excellent-v1^1^2007-01-01^2008-12-31^FXL^F3^0^Fly Excellent^^^^^^en|Fly Excellent|^ARN^air-fly-excellent^1^
 air-fly-georgia-v1^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^https://en.wikipedia.org/wiki/Fly_Georgia^en|Fly Georgia|^^air-fly-georgia^1^
 air-flyafrica-zimbabwe-v1^1^2014-07-17^2015-10-31^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^https://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^en|Zimbabwe flyafrica.com|^HRE^air-flyafrica-zimbabwe^1^
+air-flycongo-v1^1^2012-03-24^2013-10-31^ALX^EO^663^FlyCongo^^^^^https://en.wikipedia.org/wiki/FlyCongo^en|FlyCongo|^FIH^air-flycongo^1^
 air-flywell-airlines-v1^1^1995-01-01^2003-12-12^FEM^YZ^0^Zimbabwe Airlink^Flywell Airlines^^^P^https://en.wikipedia.org/wiki/Zimbabwe_Airlink^en|Zimbabwe Airlink|=en|Flywell Airlines|^^air-flywell-airlines^1^
 air-freedom-airlines-v1^1^2002-01-01^2010-12-31^FRL^F8^0^Freedom Airlines^Air Montreal^^^^https://en.wikipedia.org/wiki/Freedom_Airlines^en|Freedom Airlines|=en|Air Montreal|^^air-freedom-airlines^1^
 air-freedom-air-v1^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^https://en.wikipedia.org/wiki/Freedom_Air_(Guam)^en|Freedom Air|^^air-freedom-air^1^
@@ -214,6 +216,7 @@ air-hesa-airlines-v1^1^2010-01-01^2015-12-31^SPN^H8^0^HESA Airlines^^^^^https://
 air-highland-airways-v1^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Alba^^^^https://en.wikipedia.org/wiki/Highland_Airways^en|Highland Airways|=en|Air Alba|^^air-highland-airways^1^
 air-holidays-czech-airlines-v1^1^2010-08-01^2014-07-31^HCC^HC^0^Holidays Czech Airlines^^^^^https://en.wikipedia.org/wiki/Holidays_Czech_Airlines^en|Holidays Czech Airlines|=en|Aero Tropics|=sign|CZECH HOLIDAYS|^PRG^air-holidays-czech-airlines^1^
 air-homer-air-service-v1^1^1973-01-01^2015-12-31^^HB^^Homer Air^^^^^^en|Homer Air|^HOM^air-homer-air-service^1^
+air-horizon-airlines-australia-v1^1^1973-01-01^2004-03-31^HZA^BN^0^Horizon Airlines^^^^^https://en.wikipedia.org/wiki/Horizon_Airlines_(Australia)^en|Horizon Airlines|^SYD^air-horizon-airlines-australia^1^
 air-imair-airlines-v1^1^1994-01-01^2009-11-23^ITX^IK^0^Imair Airlines^^^^^https://en.wikipedia.org/wiki/Imair_Airlines^en|Imair Airlines|p=en|Improtex|h^GYD^air-imair-airlines^1^
 air-indonesia-air-transport-v1^1^1968-01-01^2015-12-31^IDA^I7^0^Indonesia Air Transport^^^^^https://en.wikipedia.org/wiki/Indonesia_Air_Transport^abbr|IAT|=en|Indonesia Air Transport|=sign|INTRA|^^air-indonesia-air-transport^1^
 air-inter-airlines-v1^1^1999-12-17^2008-11-18^INX^6K^0^Inter Airlines^^^^^https://en.wikipedia.org/wiki/Inter_Airlines^en|Inter Airlines|^^air-inter-airlines^1^

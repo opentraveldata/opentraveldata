@@ -224,7 +224,7 @@ air-al-naser-airlines-v3^1^2018-07-01^2019-04-30^NAD^NG^708^Al Naser Wings Airli
 air-aladia-airlines-v1^^^^^9A^0^Aladia Airlines^Airatlantic^^^^^^en|Aladia Airlines|=en|Airatlantic|^^air-aladia-airlines^1^^
 air-alajnihah-air-transport-v1^1^^2015-04-01^ANH^2T^311^Alajnihah Airways^^^^^https://en.wikipedia.org/wiki/Alajnihah_Airways^^en|Alajnihah Airways|^^air-alajnihah-air-transport^1^^
 air-alas-uruguay-v1^^2015-02-01^^ALY^YZ^570^Alas Uruguay^^^^^https://en.wikipedia.org/wiki/Alas_Uruguay^^en|Alas Uruguay|^^air-alas-uruguay^1^^
-air-alaska-airlines-v1^^1944-06-06^^ASA^AS^27^Alaska Airlines^^^^^https://en.wikipedia.org/wiki/Alaska_Airlines^292333^en|Alaska Airlines|^^air-alaska-airlines^1^^
+air-alaska-airlines-v1^^1944-06-06^^ASA^AS^27^Alaska Airlines^^OneWorld^Member^^https://en.wikipedia.org/wiki/Alaska_Airlines^292333^en|Alaska Airlines|=sign|ALASKA|^ANC=LAX=PDX=SEA=SFO^air-alaska-airlines^1^^
 air-alaska-seaplane-service-v1^^^^^J5^0^Alaska Seaplane Service^Stock Sochi^^^^^30048^en|Alaska Seaplane Service|=en|Stock Sochi|^^air-alaska-seaplane-service^1^^
 air-albastar-spain-v1^1^2010-07-31^2014-10-30^LAV^^374^AlbaStar^^^^^https://en.wikipedia.org/wiki/AlbaStar^^en|AlbaStar|^PMI^air-albastar-spain^1^^
 air-albastar-spain-v2^^2014-11-01^^LAV^AP^374^AlbaStar^^^^^https://en.wikipedia.org/wiki/AlbaStar^84^en|AlbaStar|^PMI^air-albastar-spain^2^^
@@ -330,7 +330,7 @@ air-aztec-worldwide-airlines-v1^^^^^AJ^0^Aztec Worldwide Airlines^Aerocontracto^
 air-azul-v1^^2008-01-01^^AZU^AD^577^Azul Brazilian Airlines^Azul Linhas Aéreas Brasileiras^^^^https://en.wikipedia.org/wiki/Azul_Brazilian_Airlines^310004^en|Azul Brazilian Airlines|=en|Azul Linhas Aéreas Brasileiras|^^air-azul^1^^
 air-ba-cityflyer-v1^^^^CFE^CJ^0^BA CityFlyer^China North^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/BA_CityFlyer^40155^en|BA CityFlyer|=en|China North|^^air-ba-cityflyer^1^^
 air-bahamasair-v1^^^^BHS^UP^111^Bahamasair^^^^^^20236^en|Bahamasair|^^air-bahamasair^1^^
-air-bahrain-air-v1^^^^^BN^937^Bahrain Air^Horizon Airli^^^^^^en|Bahrain Air|=en|Horizon Airli|^^air-bahrain-air^1^^
+air-bahrain-air-v1^1^2008-02-01^2013-02-12^BAB^BN^937^Bahrain Air^^^^^https://en.wikipedia.org/wiki/Bahrain_Air^^en|Bahrain Air|=sign|BAHRAIN AIR|^BAH^air-bahrain-air^1^^
 air-bangkok-airways-v1^^1968-01-01^^BKP^PG^829^Bangkok Airways^^^^^https://en.wikipedia.org/wiki/Bangkok_Airways^69326^en|Bangkok Airways|^^air-bangkok-airways^1^^
 air-bassaka-air-v1^^2013-01-01^^BSX^5B^590^Bassaka Air^^^^^https://en.wikipedia.org/wiki/Bassaka_Air^^en|Bassaka Air|^^air-bassaka-air^1^^
 air-batavia-air-v1^1^2002-01-01^2013-01-31^BTV^Y6^0^Batavia Air^^^^^https://en.wikipedia.org/wiki/Batavia_Air^^en|Batavia Air|^CGK^air-batavia-air^1^^
@@ -616,7 +616,7 @@ air-fly-one-moldova-v1^^2013-01-01^^FIA^5F^130^Fly One^^^^^https://en.wikipedia.
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^https://en.wikipedia.org/wiki/Fly_Salone^382^en|Fly Salone|^^air-fly-salone^1^^
 air-fly540-angola-v1^1^2011-01-01^2014-05-31^^F5^0^Fly540 Angola^^^^^https://en.wikipedia.org/wiki/Fly540_Angola^^en|Fly540 Angola|^LAD^air-fly540-angola^1^^
 air-fly540-ghana-v1^1^2011-11-01^2014-05-31^FOX^5G^0^Fly540 Ghana^^^^^https://en.wikipedia.org/wiki/Royal_Fly-GH^^en|Fly540 Ghana|h=en|Royal_Fly-GH|=en|Fly-GH|s^ACC^air-fly540-ghana^1^^
-air-fly540-tanzania-v1^^2011-01-01^^FTZ^FN^334^Fastjet^^^^^https://en.wikipedia.org/wiki/Fastjet_Tanzania^4694^en|Fastjet|p=en|Fastjet Tanzania|h=en|Fastjet Airlines Limited|=en|Fly540 Tanzania|h^DAR^air-fly540-tanzania^1^^
+air-fly540-tanzania-v1^1^2011-01-01^2019-11-30^FTZ^FN^334^Fastjet^^^^^https://en.wikipedia.org/wiki/Fastjet_Tanzania^^en|Fastjet|p=en|Fastjet Tanzania|h=en|Fastjet Airlines Limited|=en|Fly540 Tanzania|h^DAR^air-fly540-tanzania^1^^
 air-fly540-v1^^2006-01-01^^FFV^5H^540^Five Fourty Aviation^^^^^https://en.wikipedia.org/wiki/Fly540^7309^en|Five Fourty Aviation|=en|Fly540|ps^NBO^air-fly540^1^^
 air-flyadeal-v1^^2017-09-23^^FAD^F3^0^Flyadeal^^^^^https://en.wikipedia.org/wiki/Flyadeal^5530^ar|طيران أديل‎)|=en|Flyadeal|^JED^air-flyadeal^1^^
 air-flyafrica-zimbabwe-v1^1^2014-07-17^2015-10-31^FZW^Z7^0^Zimbabwe flyafrica.com^^^^^https://en.wikipedia.org/wiki/Zimbabwe_flyafrica.com^^en|Zimbabwe flyafrica.com|^HRE^air-flyafrica-zimbabwe^1^^
@@ -714,7 +714,8 @@ air-hop-airlinair-v1^^^^RLA^AN^0^HOP Airlinair^^^^^https://en.wikipedia.org/wiki
 air-hop-brit-air-v1^^1975-01-01^^BZH^DB^750^HOP Brit Air^^^^^https://en.wikipedia.org/wiki/Brit_Air^^en|HOP Brit Air|^^air-hop-brit-air^1^^
 air-hop-regional-v1^^2001-01-01^^RAE^YS^0^Regional^Régional Compagnie Aérienne Européenne^^^^https://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^^en|Regional|=en|Régional Compagnie Aérienne Européenne|^^air-hop-regional^1^^
 air-hop-v1^^2013-03-31^^HOP^A5^163^HOP!^^Skyteam^Affiliate^P^https://en.wikipedia.org/wiki/HOP!^124465^en|HOP!|^^air-hop^1^^
-air-horizon-air-v1^^1981-09-01^^QXE^QX^481^Horizon Air^^^^^https://en.wikipedia.org/wiki/Horizon_Air^141424^en|Horizon Air|^^air-horizon-air^1^^
+air-horizon-air-v1^^1981-09-01^^QXE^QX^481^Horizon Air^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Horizon_Air^141424^en|Horizon Air|p=en|Horizon Air Industries|=sign|HORIZON AIR|^PDX=SEA^air-horizon-air^1^^
+air-horizon-airlines-australia-v1^1^1973-01-01^2004-03-31^HZA^BN^0^Horizon Airlines^^^^^https://en.wikipedia.org/wiki/Horizon_Airlines_(Australia)^^en|Horizon Airlines|^SYD^air-horizon-airlines-australia^1^^
 air-hs-aviation-v1^^^^APF^HP^0^Amapola Flyg^^^^^^11300^en|Amapola Flyg|^^air-hs-aviation^1^^
 air-hunnu-air-v1^^^^MML^MR^861^Hunnu Air^Mongolian Air^^^^^2404^en|Hunnu Air|=en|Mongolian Air|^^air-hunnu-air^1^^
 air-ibc-airways-v1^^1991-01-01^^CSQ^II^175^IBC Airways^^^^^https://en.wikipedia.org/wiki/IBC_Airways^104^en|IBC Airways|^^air-ibc-airways^1^^
@@ -1103,7 +1104,8 @@ air-rotana-jet-v1^^2011-04-18^^RJD^RG^482^Rotana Jet^^^^^https://en.wikipedia.or
 air-royal-air-cambodge-v1^1^1994-01-01^2001-10-16^RAC^VJ^0^Royal Air Cambodge^^^^^https://en.wikipedia.org/wiki/Royal_Air_Cambodge^^en|Royal Air Cambodge|=en|Air Cambodge|h=km|អាកាសចរណ៍ភូមិន្ទ កម្ពុជា|^PNH^air-royal-air-cambodge^1^^
 air-royal-air-charter-service-v1^^2002-08-22^^RYL^RW^0^Royal Air Charter Service^^^^^https://en.wikipedia.org/wiki/Royal_Air_Charter_Service^358^abbr|RACSI|=en|Royal Air Charter Service|=sign|DOUBLE GOLD|^CRK^air-royal-air-charter-service^1^^
 air-royal-air-force-v1^^^^RFR^RR^0^Royal Air Force^RAF NO^^^^^^en|Royal Air Force|=en|RAF NO|^^air-royal-air-force^1^^
-air-royal-air-maroc-v1^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^^^^https://en.wikipedia.org/wiki/Royal_Air_Maroc^78450^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^CMN^air-royal-air-maroc^1^^
+air-royal-air-maroc-express-v1^^2020-01-01^^RXP^FN^147^Royal Air Maroc Express^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Royal_Air_Maroc_Express^^en|Royal Air Maroc Express|^CMN^air-royal-air-maroc-express^1^^
+air-royal-air-maroc-v1^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^OneWorld^Member^^https://en.wikipedia.org/wiki/Royal_Air_Maroc^78450^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^CMN^air-royal-air-maroc^1^^
 air-royal-brunei-v1^^^^RBA^BI^672^Royal Brunei^Royalbrunei^^^^^13597^en|Royal Brunei|=en|Royalbrunei|^^air-royal-brunei^1^^
 air-royal-falcon-v1^^^^RFJ^RL^372^Royal Falcon^^^^^^1666^en|Royal Falcon|^^air-royal-falcon^1^^
 air-royal-jordanian-v1^^1963-12-09^^RJA^RJ^512^Royal Jordanian^Ryljordania^OneWorld^Member^^https://en.wikipedia.org/wiki/Royal_Jordanian^37232^en|Royal Jordanian|=en|Ryljordania|^^air-royal-jordanian^1^^
