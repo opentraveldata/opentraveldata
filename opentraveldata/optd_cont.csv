@@ -52,11 +52,11 @@ CO^Colombia^SA^South America
 CR^Costa Rica^NA^North America
 CS^Serbia and Montenegro^EU^Europe
 CU^Cuba^NA^North America
-CV^Cape Verde^AF^Africa
+CV^Cabo Verde^AF^Africa
 CW^Curacao^NA^North America
-CX^Christmas Island^AS^Asia
+CX^Christmas Island^OC^Oceania
 CY^Cyprus^EU^Europe
-CZ^Czech Republic^EU^Europe
+CZ^Czechia^EU^Europe
 DE^Germany^EU^Europe
 DJ^Djibouti^AF^Africa
 DK^Denmark^EU^Europe
@@ -144,7 +144,7 @@ ME^Montenegro^EU^Europe
 MF^Saint Martin^NA^North America
 MG^Madagascar^AF^Africa
 MH^Marshall Islands^OC^Oceania
-MK^Macedonia^EU^Europe
+MK^North Macedonia^EU^Europe
 ML^Mali^AF^Africa
 MM^Myanmar^AS^Asia
 MN^Mongolia^AS^Asia
@@ -213,7 +213,7 @@ ST^Sao Tome and Principe^AF^Africa
 SV^El Salvador^NA^North America
 SX^Sint Maarten^NA^North America
 SY^Syria^AS^Asia
-SZ^Swaziland^AF^Africa
+SZ^Eswatini^AF^Africa
 TC^Turks and Caicos Islands^NA^North America
 TD^Chad^AF^Africa
 TF^French Southern Territories^AN^Antarctica
@@ -221,7 +221,7 @@ TG^Togo^AF^Africa
 TH^Thailand^AS^Asia
 TJ^Tajikistan^AS^Asia
 TK^Tokelau^OC^Oceania
-TL^East Timor^OC^Oceania
+TL^Timor Leste^OC^Oceania
 TM^Turkmenistan^AS^Asia
 TN^Tunisia^AF^Africa
 TO^Tonga^OC^Oceania
