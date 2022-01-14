@@ -710,7 +710,7 @@ $ git commit -m "[POR] New updates for some sources." ../data/Innovata
 $ cd <OPTD_ROOT_DIR>/tools
 ```
 
-The following Python script uses `optd_airline_por_rcld.csv`:
+The following Python script uses `optd_airline_por.csv`:
 ```bash
 $ ./make_optd_ref_pr_and_freq.py
 ```
@@ -1033,8 +1033,10 @@ $ git commit -m "[States] Updated the list of states"
 ```bash
 $ pipenv run ./extract_oag_schedule.py \
     --output-csv=../data/OAG/archives/processed/oag_schedule_200112.csv \
-	--ssim7-files=../data/OAG/archives/prcessed/airline-routes-ssim7.gz
-$ git add ../opentraveldata/optd_states.csv
+    --ssim7-files=../data/OAG/archives/prcessed/airline-routes-ssim7.gz
+$ bzip2 oag_schedule_200112.csv
+$ ./extract_ond_operating.sh . 200112
+$ git add ../opentraveldata/optd_airline_por.csv
 $ git commit -m "[Routes] Updated the list of routes"
 ```
 
