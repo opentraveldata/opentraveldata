@@ -709,6 +709,12 @@ def analyzeAirlinePOR (por_all_dict, por_pk_noiata_dict,
             apt_org_tvl_pk = getTravelPK (apt_org_dict_list)
             apt_dst_tvl_pk = getTravelPK (apt_dst_dict_list)
 
+            # Happens when location type is C
+            if apt_org_tvl_pk is None:
+                continue
+            if apt_dst_tvl_pk is None:
+                continue
+
             # Extract the corresponding IATA codes. Most of the time,
             # the POR code is the IATA code. When the IATA is empty,
             # the POR code is then the ICAO code instead.
