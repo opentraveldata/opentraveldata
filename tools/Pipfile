@@ -15,6 +15,7 @@ pandas = "*"
 lxml = "*"
 sparqlwrapper = "*"
 common = "*"
+scipy = "*"
 
 [requires]
 python_version = "3.9"
