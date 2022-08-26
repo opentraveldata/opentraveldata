@@ -9,12 +9,17 @@ iata_code^manufacturer^model^iata_group^iata_category^icao_code^nb_engines^aircr
 14Y^BAe^146 Freighter (-200QT & QC)^14F^4J^B462^4^J
 14Z^BAe^146 Freighter (-300QT & QC)^14F^4J^B463^4^J
 19D^Airbus^A319^^^^^
+221^Airbus^A220-100^220^^BCS1^^
+223^Airbus^A220-200^220^^BCS3^^
+290^Embraer^E190-E2^^^E290^^
+295^Embraer^E195-E2^^^E295^^
 310^Airbus^A310^^^^^
 312^Airbus^A310-200^310^2J^A310^2^J
 313^Airbus^A310-300^310^2J^A310^2^J
 318^Airbus^A318^32S^2J^A318^2^J
 319^Airbus^A319^32S^2J^A319^2^J
 31F^Airbus^A310F^^^^^
+31N^Airbus^A319 Neo^32S^2J^A19N^2^J
 31W^Airbus^A319 (Sharklets)^^^^^
 31X^Airbus^A310-200F^31F^2J^A310^2^J
 31Y^Airbus^A310-300F^31F^2J^A310^2^J
@@ -25,10 +30,15 @@ iata_code^manufacturer^model^iata_group^iata_category^icao_code^nb_engines^aircr
 32C^Airbus^A318 (sharklets)^^^^^
 32D^Airbus^A319 (sharklets)^^^^^
 32F^Airbus^A320 Freighter^32F^2J^A320^2^J
+32N^Airbus^A320-200 Neo^32S^2J^A20N^2^J
+32Q^Airbus^A321-200 Neo^32S^2J^A21N^2^J
+32S^Airbus^A318/319/320/321^32S^2J^^2^J
 32X^Airbus^A321 Freighter^32X^2J^A321^2^J
 330^Airbus^A330^^^^^
 332^Airbus^A330-200^330^2J^A332^2^J
 333^Airbus^A330-300^330^2J^A333^2^J
+338^Airbus^A330-800 Neo^330^2J^A338^2^J
+339^Airbus^A330-900 Neo^330^2J^A339^2^J
 33F^Airbus^A330 Freighter^^^^^
 33X^Airbus^A330-200 Freighter^33F^2J^A332^2^J
 340^Airbus^A340^^^^^
@@ -92,6 +102,7 @@ iata_code^manufacturer^model^iata_group^iata_category^icao_code^nb_engines^aircr
 743^Boeing^747-300^747^4J^B743^4^J
 744^Boeing^747-400^747^4J^B744^4^J
 747^Boeing^747^^^^^
+748^Boeing^747-8 pax^747^4J^B748^4^J
 74B^Boeing^747-400 Swingtail Freighter^74F^4J^B744^4^J
 74C^Boeing^747-200 Combi^74M^4J^B742^4^J
 74D^Boeing^747-300 Combi^74M^4J^B743^4^J
@@ -131,10 +142,15 @@ iata_code^manufacturer^model^iata_group^iata_category^icao_code^nb_engines^aircr
 77L^Boeing^777-200LR^777^2J^B772^2^J
 77W^Boeing^777-300ER^777^2J^B77W^2^J
 77X^Boeing^777-200F Freighter^77F^2J^B772^2^J
+781^Boeing^787-10 pax^787^2J^B78X^2^J
 783^Boeing^787-3^787^2J^B783^2^J
 787^Boeing^787^^^^^
 788^Boeing^787-8^787^2J^B788^2^J
 789^Boeing^787-9^787^2J^B789^2^J
+7M7^Boeing^737 MAX 7 pax^737^2J^B37M^2^J
+7M8^Boeing^737 MAX 8 pax^737^2J^B38M^2^J
+7M9^Boeing^737 MAX 9 pax^737^2J^B39M^2^J
+7MJ^Boeing^737 MAX 10 pax^737^2J^B3XM^2^J
 A22^Antonov^An-22^A22^4T^AN22^4^T
 A26^Antonow / Antonov^An-26^AN6^2T^AN26^2^T
 A28^Antonow / Antonov^An-28 / PZL Mielec M-28^A28^2T^AN28^2^T
@@ -172,6 +188,7 @@ AR1^BAe^Avro RJ100^ARJ^4J^RJ1H^4^J
 AR7^BAe^Avro RJ70^ARJ^4J^RJ70^4^J
 AR8^BAe^Avro RJ85^ARJ^4J^RJ85^4^J
 ARJ^BAe^Avro RJ70 / RJ85 / RJ100^^^^^
+ARX^Avro^RJX85 / RJX100^^^^^
 AT4^ATR^ATR 42-300 / 320^ATR^2T^AT43^2^T
 AT5^ATR^ATR 42-500^ATR^2T^AT45^2^T
 AT7^ATR^ATR 72^ATR^2T^AT72^2^T
@@ -181,6 +198,8 @@ ATP^BAe^ATP^ATP^2T^ATP^2^T
 ATR^ATR^ATR 42 / ATR 72^^^^^
 ATZ^ATR^ATR 42 Freighter^ATZ^2T^*^2^T
 AWH^AgustaWestland^AW139^AWH^2T^A139^2^T
+AX1^Avro^RJX100^^^RX1H^^
+AX8^Avro^RJX85^^^RX85^^
 B11^BAC^One Eleven^^^^^
 B12^BAC^One Eleven 200^B11^2J^BA11^2^J
 B13^BAC^One Eleven 300^B11^2J^BA11^2^J
@@ -338,6 +357,7 @@ F28^Fokker^F28 Fellowship^^^^^
 F50^Fokker^50^F50^2T^F50^2^T
 F5F^Fokker^50 Freighter^F5F^2T^F50^2^T
 F70^Fokker^70^F70^2J^F70^2^J
+FA7^Dornier^728JET^^^^^
 FK7^Fairchild-Hiller^FH-227^FK7^2T^F27^2^T
 FR3^Dornier^328JET^^^^^
 FR4^Dornier^428JET^^^^^
@@ -456,23 +476,3 @@ YK4^Yakovlev / Jakovlev^Yak 40^YK4^3J^YK40^3^J
 YN2^HAMC / Harbin^Y12^YN2^2T^Y12^2^T
 YN7^Xian^Yunshuji Y7^YN7^2T^AN24^2^T
 YS1^NAMC^YS-11^YS1^2T^YS11^2^T
-290^Embraer^E190-E2^^^E290^^
-295^Embraer^E195-E2^^^E295^^
-221^Airbus^A220-100^220^^BCS1^^
-223^Airbus^A220-200^220^^BCS3^^
-31N^Airbus^A319 Neo^32S^2J^A19N^2^J
-32N^Airbus^A320-200 Neo^32S^2J^A20N^2^J
-32Q^Airbus^A321-200 Neo^32S^2J^A21N^2^J
-32S^Airbus^A318/319/320/321^32S^2J^^2^J
-338^Airbus^A330-800 Neo^330^2J^A338^2^J
-339^Airbus^A330-900 Neo^330^2J^A339^2^J
-748^Boeing^747-8 pax^747^4J^B748^4^J
-781^Boeing^787-10 pax^787^2J^B78X^2^J
-7M7^Boeing^737 MAX 7 pax^737^2J^B37M^2^J
-7M8^Boeing^737 MAX 8 pax^737^2J^B38M^2^J
-7M9^Boeing^737 MAX 9 pax^737^2J^B39M^2^J
-7MJ^Boeing^737 MAX 10 pax^737^2J^B3XM^2^J
-ARX^Avro^RJX85 / RJX100^^^^^
-AX1^Avro^RJX100^^^RX1H^^
-AX8^Avro^RJX85^^^RX85^^
-FA7^Dornier^728JET^^^^^
