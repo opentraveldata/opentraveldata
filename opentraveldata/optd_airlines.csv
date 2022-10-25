@@ -1014,7 +1014,7 @@ air-north-adria-aviation-v1^1^1993-01-01^2006-01-01^NAI^^^North Adria Aviation^^
 air-north-american-airlines-v1^1^1989-01-01^2014-06-09^NAO^NA^455^North American Airlines^^^^^https://en.wikipedia.org/wiki/North_American_Airlines^^en|North American Airlines|=sign|NORTH AMERICAN|^BWI=JFK^air-north-american-airlines^1^^
 air-north-flying-v1^^2014-01-01^^NFA^^0^North Flying^^^^^https://en.wikipedia.org/wiki/North_Flying^^en|North Flying|^AAL^air-north-flying^1^^
 air-north-wright-air-v1^^^^^HW^0^North Wright Air^North Wright^^^^^5028^en|North Wright Air|=en|North Wright|^^air-north-wright-air^1^^
-air-northwest-airlines-v1^^^^^NW^0^Northwest Airlines^Nwest Airlines^^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1^^
+air-northwest-airlines-v1^^^2010-31-01^^NW^0^Northwest Airlines^Nwest Airlines^^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1^^
 air-northwestern-air-lease-v1^^^^PLR^J3^0^Northwestern Air Lease^Nw Air Lease^^^^^1992^en|Northwestern Air Lease|=en|Nw Air Lease|^^air-northwestern-air-lease^1^^
 air-norwegian-air-argentina-v1^^2018-10-16^^NAA^DN^323^Norwegian Air Argentina^^^^^https://en.wikipedia.org/wiki/Norwegian_Air_Argentina^976^en|Norwegian Air Argentina|p=en|Norwegian Air Argentina S.A.U.|=sign|NORUEGA|=zh|阿根廷挪威航空|^AEP=COR^air-norwegian-air-argentina^1^^
 air-norwegian-air-international-v1^^2012-01-01^^IBK^D8^0^Norwegian Air International^^^^^https://en.wikipedia.org/wiki/Norwegian_Air_International^^en|Norwegian Air International|^OSL^air-norwegian-air-international^1^^
@@ -1423,7 +1423,7 @@ air-villa-air-v1^^^^VQI^VP^0^Villa Air^^^^^^3660^en|Villa Air|^^air-villa-air^1^
 air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^https://en.wikipedia.org/wiki/VIM_Airlines^^en|Vim Airlines|^^air-vim-airlines^1^^
 air-vincent-aviation-v1^1^1992-01-01^2014-10-24^VIN^BF^0^Vincent Aviation^^^^P^https://en.wikipedia.org/wiki/Vincent_Aviation^^en|Vincent Aviation|^WLG^air-vincent-aviation^1^^
 air-vip-wings-v1^1^2000-05-23^2013-11-20^VPA^V5^0^Danube Wings^VIP Wings^^^^https://en.wikipedia.org/wiki/Danube_Wings^^en|Danube Wings|=en|VIP Wings|^^air-vip-wings^1^^
-air-virgin-america-v1^^2007-08-08^^VRD^VX^984^Virgin America^^^^^https://en.wikipedia.org/wiki/Virgin_America^^en|Virgin America|^^air-virgin-america^1^^
+air-virgin-america-v1^^2007-08-08^2018-04-24^VRD^VX^984^Virgin America^^^^^https://en.wikipedia.org/wiki/Virgin_America^^en|Virgin America|^^air-virgin-america^1^^
 air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^https://en.wikipedia.org/wiki/Virgin_Atlantic^23274^en|Virgin Atlantic|^^air-virgin-atlantic^1^^
 air-virgin-australia-int-v1^1^2009-02-27^2011-12-07^VAU^VA^795^Virgin Australia International^^^^^https://en.wikipedia.org/wiki/V_Australia^^en|Virgin Australia International|=en|V Australia|^^air-virgin-australia-int^1^^m|air-virgin-australia-v2
 air-virgin-australia-regional-v1^1^1963-01-01^2000-08-30^VOZ^DJ^608^Virgin Australia Regional^^^^^https://en.wikipedia.org/wiki/Virgin_Australia_Regional_Airlines^^en|Virgin Australia Regional|=en|SkyWest|^^air-virgin-australia-regional^1^^m|air-virgin-australia-v2=m|air-virgin-australia-v1
