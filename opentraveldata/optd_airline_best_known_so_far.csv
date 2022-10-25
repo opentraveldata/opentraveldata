@@ -719,7 +719,7 @@ air-nordic-regional-airlines-v1^^2011-10-20^^WBA^N7^0^Nordic Regional Airlines^N
 air-nord-wind-v1^^^^NWS^N4^0^Nord Wind^^^^^^en|Nord Wind|^^air-nord-wind^1^
 air-norse-atlantic-airways-v1^^^^NBT^N0^^Norse Atlantic Airways^^^^^^^^air-norse-atlantic-airways^1^
 air-north-flying-v1^^2014-01-01^^NFA^^0^North Flying^^^^^https://en.wikipedia.org/wiki/North_Flying^en|North Flying|^AAL^air-north-flying^1^
-air-northwest-airlines-v1^^^^^NW^0^Northwest Airlines^Nwest Airlines^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1^
+air-northwest-airlines-v1^^^2010-01-31^^NW^0^Northwest Airlines^Nwest Airlines^^^^^en|Northwest Airlines|=en|Nwest Airlines|^^air-northwest-airlines^1^
 air-northwestern-air-lease-v1^^^^PLR^J3^0^Northwestern Air Lease^Nw Air Lease^^^^^en|Northwestern Air Lease|=en|Nw Air Lease|^^air-northwestern-air-lease^1^
 air-north-wright-air-v1^^^^^HW^0^North Wright Air^North Wright^^^^^en|North Wright Air|=en|North Wright|^^air-north-wright-air^1^
 air-norwegian-air-argentina-v1^^2018-10-16^^NAA^DN^323^Norwegian Air Argentina^^^^^https://en.wikipedia.org/wiki/Norwegian_Air_Argentina^en|Norwegian Air Argentina|p=en|Norwegian Air Argentina S.A.U.|=sign|NORUEGA|=zh|阿根廷挪威航空|^AEP=COR^air-norwegian-air-argentina^1^
@@ -1045,7 +1045,7 @@ air-vietnam-airlines-v1^^1956-01-01^^HVN^VN^738^Vietnam Airlines^^^Member^^https
 air-vietnam-air-service-v2^^2016-05-01^^VFC^0V^338^Vietnam Air Services Company^^^^^https://en.wikipedia.org/wiki/Vietnam_Air_Services_Company^abbr|VASCO|h=en|SkyViet Aviation|h=en|Vietnam Air Services Company|p=ja|ベトナムエアサービス|=ko|바스코 항공|=vi|Công ty bay dịch vụ hàng không|=sign|VASCO AIR|=zh|越南航空服務公司|^HAN=PQC=SGN^air-vietnam-air-service^2^
 air-villa-air-v1^^^^VQI^VP^0^Villa Air^^^^^^en|Villa Air|^^air-villa-air^1^
 air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^https://en.wikipedia.org/wiki/VIM_Airlines^en|Vim Airlines|^^air-vim-airlines^1^
-air-virgin-america-v1^^2007-08-08^^VRD^VX^984^Virgin America^^^^^https://en.wikipedia.org/wiki/Virgin_America^en|Virgin America|^^air-virgin-america^1^
+air-virgin-america-v1^^2007-08-08^2018-04-24^VRD^VX^984^Virgin America^^^^^https://en.wikipedia.org/wiki/Virgin_America^en|Virgin America|^^air-virgin-america^1^
 air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^https://en.wikipedia.org/wiki/Virgin_Atlantic^en|Virgin Atlantic|^^air-virgin-atlantic^1^
 air-virgin-australia-v2^^2013-01-01^^VOZ^VA^856^Virgin Australia^^^^^https://en.wikipedia.org/wiki/Virgin_Australia^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^AKL=BNE=MEL=SYD^air-virgin-australia^2^m|air-virgin-australia-int-v1=m|air-virgin-australia-regional-v1
 air-vision-airlines-v1^^^^RBY^V2^0^Vision Airlines^^^^^^en|Vision Airlines|^^air-vision-airlines^1^
