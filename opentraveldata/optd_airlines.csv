@@ -277,6 +277,7 @@ air-antrak-air-v1^^^^^O4^916^Antrak Air^^^^^^^en|Antrak Air|^^air-antrak-air^1^^
 air-apex-airline-v1^^2015-04-01^^^SO^0^Apex Airline^^^^^^^en|Apex Airline|^^air-apex-airline^1^^
 air-apg-airlines-v1^^2016-01-01^^RIV^GP^275^APG Airlines^^^^^^152^en|APG Airlines|^NCE^air-apg-airlines^1^^
 air-apg-distribution-system^^^^^A1^^APG Distribution System^^^^^^^^^air-apg-distribution-system^1^^
+air-arajet-v1^^2022-09-10^^DWI^DM^^Arajet^^^^^https://en.wikipedia.org/wiki/Arajet^^^^air-arajet^1^^
 air-arctic-circle-air-v1^1^1953-01-01^2009-12-31^CIR^5F^0^Arctic Circle Air^^^^^https://en.wikipedia.org/wiki/Arctic_Circle_Air^^en|Arctic Circle Air|^SPN^air-arctic-circle-air^1^^
 air-arctic-transportation-services-v1^^1953-01-01^^RYA^7S^0^Ryan Air Services^^^^^https://en.wikipedia.org/wiki/Ryan_Air_Services^12034^en|Arctic Transportation Services|=en|Ryan Air Services|=en|Unalakleet Air Taxi|hsign|RYAN AIR|^ANI^air-arctic-transportation-services^1^^
 air-ariana-afghan-airlines-v1^^^^AFG^FG^255^Ariana Afghan Airlines^Ariana^^^^^46^en|Ariana Afghan Airlines|=en|Ariana|^^air-ariana-afghan-airlines^1^^
@@ -1276,7 +1277,7 @@ air-star-flyer-v1^^2006-03-16^^SFJ^7G^922^StarFlyer^^^^^https://en.wikipedia.org
 air-star-peru-v1^^1997-05-01^^SRU^2I^156^Star Perú^^^^^https://en.wikipedia.org/wiki/Star_Per%C3%BA^8052^en|Star Perú|^^air-star-peru^1^^
 air-starbow-v1^^^^IKM^S9^759^Starbow^Starbow^^^^^2824^en|Starbow|=en|Starbow|^^air-starbow^1^^
 air-sterling-air-v1^^1962-01-01^2008-10-29^SNB^NB^373^Sterling Airlines^^^^^https://en.wikipedia.org/wiki/Sterling_Airlines^218^en|Sterling Airlines|^^air-sterling-air^1^^
-air-sterling-blue-v1^^^^DEX^DM^0^Asian Air^Sterling Blue^^^^^^en|Asian Air|=en|Sterling Blue|^^air-sterling-blue^1^^
+air-sterling-blue-v1^^^2022-09-09^DEX^DM^0^Asian Air^Sterling Blue^^^^^^en|Asian Air|=en|Sterling Blue|^^air-sterling-blue^1^^
 air-stp-airways-v1^^^^STP^8F^470^STP Airways^^^^^^42^en|STP Airways|^^air-stp-airways^1^^
 air-strategic-airlines-v1^1^2008-01-01^2012-02-17^AGC^VC^471^Strategic Airlines^Air Australia^^^^https://en.wikipedia.org/wiki/Air_Australia^^en|Strategic Airlines|=en|Air Australia|^^air-strategic-airlines^1^^
 air-sudan-airways-v1^^^^SUD^SD^200^Sudan Airways^^^^^^^en|Sudan Airways|^^air-sudan-airways^1^^
