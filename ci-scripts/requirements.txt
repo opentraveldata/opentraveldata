@@ -7,7 +7,7 @@
 
 -i https://pypi.org/simple
 attrs==21.4.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'
-certifi==2021.10.8
+certifi==2022.12.7
 click-plugins==1.1.1
 click==8.0.3; python_version >= '3.6'
 cligj==0.7.2; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2' and python_version < '4'
