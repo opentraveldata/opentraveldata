@@ -238,7 +238,7 @@ air-albawings-v1^^2016-01-01^^AWT^2B^0^Albawings^^^^^https://en.wikipedia.org/wi
 air-alianza-glancelot^^^^^G0^^Alianza Glancelot^^^^^^^^^air-alianza-glancelot^1^^
 air-alidaunia-v1^1^^2015-12-31^LID^D4^0^Alidaunia^^^^^^^en|Alidaunia|^^air-alidaunia^1^^
 air-alitalia-cityliner-v1^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^Skyteam^Affiliate^^https://en.wikipedia.org/wiki/Alitalia_CityLiner^30019^en|Alitalia CityLiner|=en|Air One CityLiner|^^air-alitalia-cityliner^1^^
-air-alitalia-v1^^1999-03-01^2021-10-15^AZA^AZ^55^Alitalia^Alitalia S.A.I.^Skyteam^Member^^https://en.wikipedia.org/wiki/Alitalia^^en|Alitalia|=en|Alitalia S.A.I.|^^air-alitalia^1^^
+air-alitalia-v1^^1999-03-01^2021-10-15^AZA^AZ^55^Alitalia^Alitalia S.A.I.^^Member^^https://en.wikipedia.org/wiki/Alitalia^^en|Alitalia|=en|Alitalia S.A.I.|^^air-alitalia^1^^
 air-all-nippon-airways-v1^^1952-12-27^^ANA^NH^205^All Nippon Airways^ANA^Star Alliance^Member^^https://en.wikipedia.org/wiki/All_Nippon_Airways^186104^en|All Nippon Airways|=en|ANA|^^air-all-nippon-airways^1^^
 air-allegiant-air-v1^^1998-06-01^^AAY^G4^268^Allegiant Air^^^^^https://en.wikipedia.org/wiki/Allegiant_Air^64666^en|Allegiant Air|^^air-allegiant-air^1^^
 air-alliance-airlines-v1^^^^FWQ^QQ^0^Alliance Airlines^^^^PT^^4579^en|Alliance Airlines|^^air-alliance-airlines^1^^
@@ -777,7 +777,7 @@ air-islas-airways-v1^1^2003-02-01^2012-10-15^ISW^IF^0^Islas Airways^^^^^https://
 air-islena-airlines-v1^^^^ISV^WC^506^Islena Airlines^Islena Air^^^^^94^en|Islena Airlines|=en|Islena Air|^^air-islena-airlines^1^^
 air-isles-of-scilly-skybus-v1^1^1984-03-01^2015-12-31^IOS^5Y^^Isles of Scilly Skybus^^^^^https://en.wikipedia.org/wiki/Isles_of_Scilly_Skybus^^en|Isles of Scilly Skybus|=sign|SCILLONIA|^PZE^air-isles-of-scilly-skybus^1^^
 air-israir-airlines-v1^^^^ISR^6H^818^Israir Airlines^Israir Airlin^^^^^2155^en|Israir Airlines|=en|Israir Airlin|^^air-israir-airlines^1^^
-air-ita-v1^^2021-10-15^^ITY^AZ^55^ITA Airways^Italia Trasporto Aereo S.p.A. dba ITA S.p.A^^Member^^https://en.wikipedia.org/wiki/ITA_Airways^90611^^^air-ita^1^^
+air-ita-v1^^2021-10-15^^ITY^AZ^55^ITA Airways^Italia Trasporto Aereo S.p.A. dba ITA S.p.A^Skyteam^Member^^https://en.wikipedia.org/wiki/ITA_Airways^90611^^^air-ita^1^^
 air-ital-v1^^^^^1Q^0^Joint Stock Company Ital^^^^^^^en|Joint Stock Company Ital|^^air-ital^1^^
 air-itek-air-v1^^^^IKA^GI^420^Itek Air^^^^^^^en|Itek Air|^^air-itek-air^1^^
 air-izhavia-v1^^^^IZA^I8^25^Izhavia^Aboriginalair^^^^^895^en|Izhavia|=en|Aboriginalair|^^air-izhavia^1^^
@@ -1434,7 +1434,7 @@ air-vim-airlines-v1^^2000-01-01^^MOV^NN^823^Vim Airlines^^^^^https://en.wikipedi
 air-vincent-aviation-v1^1^1992-01-01^2014-10-24^VIN^BF^0^Vincent Aviation^^^^P^https://en.wikipedia.org/wiki/Vincent_Aviation^^en|Vincent Aviation|^WLG^air-vincent-aviation^1^^
 air-vip-wings-v1^1^2000-05-23^2013-11-20^VPA^V5^0^Danube Wings^VIP Wings^^^^https://en.wikipedia.org/wiki/Danube_Wings^^en|Danube Wings|=en|VIP Wings|^^air-vip-wings^1^^
 air-virgin-america-v1^^2007-08-08^2018-04-24^VRD^VX^984^Virgin America^^^^^https://en.wikipedia.org/wiki/Virgin_America^^en|Virgin America|^^air-virgin-america^1^^
-air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^^^^https://en.wikipedia.org/wiki/Virgin_Atlantic^23274^en|Virgin Atlantic|^^air-virgin-atlantic^1^^
+air-virgin-atlantic-v1^^1984-06-22^^VIR^VS^932^Virgin Atlantic^^Skyteam^Member^^https://en.wikipedia.org/wiki/Virgin_Atlantic^23274^en|Virgin Atlantic|^^air-virgin-atlantic^1^^
 air-virgin-australia-int-v1^1^2009-02-27^2011-12-07^VAU^VA^795^Virgin Australia International^^^^^https://en.wikipedia.org/wiki/V_Australia^^en|Virgin Australia International|=en|V Australia|^^air-virgin-australia-int^1^^m|air-virgin-australia-v2
 air-virgin-australia-regional-v1^1^1963-01-01^2000-08-30^VOZ^DJ^608^Virgin Australia Regional^^^^^https://en.wikipedia.org/wiki/Virgin_Australia_Regional_Airlines^^en|Virgin Australia Regional|=en|SkyWest|^^air-virgin-australia-regional^1^^m|air-virgin-australia-v2=m|air-virgin-australia-v1
 air-virgin-australia-v1^1^2000-08-31^2012-12-31^VOZ^DJ^856^Virgin Australia^^^^^https://en.wikipedia.org/wiki/Virgin_Australia^^en|Virgin Australia|=en|Virgin Blue|h=en|Pacific Blue|h=en|Virgin Australia Regional|h=en|SkyWest|h^^air-virgin-australia^1^m|air-virgin-australia-regional-v1^
