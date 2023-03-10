@@ -264,6 +264,7 @@ air-amakusa-airlines-v1^^2000-03-23^^AHX^MZ^0^Amakusa Airlines^^^^^https://en.wi
 air-amaszonas-paraguay-v1^^2015-09-23^^AZP^ZP^445^Paranair^^^^^https://en.wikipedia.org/wiki/Paranair^^en|Paranair|p=en|Compania de Aviacion Paraguaya|=en|Amaszonas Paraguay|h=sign|GUARANI|^ASU^air-amaszonas-paraguay^1^m|air-bqb-v1^
 air-amaszonas-uruguay-v1^^2015-01-01^^AUZ^Z7^455^Amaszonas Uruguay^^^^^https://en.wikipedia.org/wiki/Amaszonas_Uruguay^^en|Amaszonas Uruguay|=en|Cristalux SA|=sign|URUGUAYA|^MVD^air-amaszonas-uruguay^1^^
 air-amaszonas-v1^^1998-10-01^^AZN^Z8^464^Línea Aérea Amaszonas^^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Amaszonas^18066^en|Línea Aérea Amaszonas|=en|Amaszonas|s=en|Compania de Servicios de Transporte Aereo Amaszonas|=sign|AMASZONAS|^LPB^air-amaszonas^1^^
+air-amelia-v1^^2020-02-01^^AIA^8R^300^Amelia^^^^^https://en.wikipedia.org/wiki/Sol_L%C3%ADneas_A%C3%A9reas^^en|Amelia|^^air-amelia^1^^
 air-american-airlines-v1^^1934-01-01^^AAL^AA^1^American Airlines^^OneWorld^Member^^https://en.wikipedia.org/wiki/American_Airlines^1242078^en|American Airlines|^^air-american-airlines^1^^
 air-american-eagle-v1^^1998-01-01^^ENY^MQ^93^Envoy Air^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Envoy_Air^379128^en|Envoy Air|^^air-american-eagle^1^^
 air-amerijet-international-v1^^1974-01-01^^AJT^M6^810^Amerijet International^^^^^https://en.wikipedia.org/wiki/Amerijet_International^^en|Amerijet International|=sign|AMERIJET|^MIA=POS^air-amerijet-international^1^^
@@ -1251,7 +1252,7 @@ air-smartlynx-airlines-v1^^1993-01-01^^ART^6Y^0^SmartLynx Airlines^^^^T^https://
 air-smartwings-v1^^2008-01-01^^TVS^QS^797^Smartwings^Travel Service^^^^https://en.wikipedia.org/wiki/SmartWings^10052^en|Smartwings|=en|Travel Service|^^air-smartwings^1^^
 air-smokey-bay-air-v1^^^^EIX^2E^0^Smokey Bay Air^Ei Air Export^^^^^17568^en|Smokey Bay Air|=en|Ei Air Export|^^air-smokey-bay-air^1^^
 air-sol-aviation-v1^^^^^ZS^0^Kazaviaspas^^^^^https://en.wikipedia.org/wiki/Kazaviaspas^^en|Kazaviaspas|^^air-sol-aviation^1^^
-air-sol-lineas-aereas-v1^^2005-01-01^^OLS^8R^300^Sol Líneas Aéreas^^^^^https://en.wikipedia.org/wiki/Sol_L%C3%ADneas_A%C3%A9reas^^en|Sol Líneas Aéreas|^^air-sol-lineas-aereas^1^^
+air-sol-lineas-aereas-v1^^2005-01-01^2020-01-01^OLS^8R^300^Sol Líneas Aéreas^^^^^https://en.wikipedia.org/wiki/Sol_L%C3%ADneas_A%C3%A9reas^^en|Sol Líneas Aéreas|^^air-sol-lineas-aereas^1^^
 air-sol-sa-lineas-aereas-dba-flyest-lineas-aereas)^^^^^FQ^^SOL SA LINEAS AEREAS (DBA Flyest Lineas Aereas)^^^^^^^^^air-sol-sa-lineas-aereas-dba-flyest-lineas-aereas)^1^^
 air-solomon-airlines-v1^^^^SOL^IE^193^Solomon Airlines^Solomon Air^^^^^5279^en|Solomon Airlines|=en|Solomon Air|^^air-solomon-airlines^1^^
 air-somon-air-v1^^2008-02-01^^SMR^SZ^413^Somon Air^^^^P^https://en.wikipedia.org/wiki/Somon_Air^693^en|Somon Air|^^air-somon-air^1^^
