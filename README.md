@@ -53,7 +53,7 @@ So, do not hesitate to contribute, for instance just for the fun of it.
 
 # Data Quality
 An independent
-[Service Delivery Quality (SDQ) project](http://github.com/service-delivery-quality/quality-assurance/tree/master/samples/opentraveldata)
+[Quality Assurance (QA) project](https://github.com/opentraveldata/quality-assurance)
 aims at monitoring the quality of data provide by OPTD. There is still some work
 to be done in order to automate most of the steps, though.
 
