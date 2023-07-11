@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/opentraveldata/opentraveldata.svg?branch=master)](https://travis-ci.org/opentraveldata/opentraveldata)
+[![Build Status](https://travis-ci.com/opentraveldata/opentraveldata.svg?branch=master)](https://travis-ci.com/opentraveldata/opentraveldata)
 
 # Overview
 Open Travel Data (OPTD) provides a collection of transport, travel and leisure
