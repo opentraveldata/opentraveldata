@@ -1,8 +1,8 @@
-dist: focal
+dist: jammy
 os: linux
 language: python
 python:
-- 3.9
+- 3.11
 git:
   depth: false
 addons:
