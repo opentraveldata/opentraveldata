@@ -14,7 +14,7 @@ Open Travel Data (OPTD) - Tools - Maintenance
     * [Non\-IATA\-referenced POR](#non-iata-referenced-por)
   * [Geonames\-derived POR file](#geonames-derived-por-file)
     * [Summary of updating Geonames data regularly](#summary-of-updating-geonames-data-regularly)
-      * [[WI] New way](#wi-new-way)
+      * [[WIP] New way](#wip-new-way)
       * [Legacy way](#legacy-way)
     * [Download of the Geonames snapshot data files](#download-of-the-geonames-snapshot-data-files)
     * [Generation of the aggregated Geonames snapshot data file](#generation-of-the-aggregated-geonames-snapshot-data-file)
@@ -270,7 +270,7 @@ $ pipenv --rm && pipenv install
 
 ### Summary of updating Geonames data regularly
 
-#### [WI] New way
+#### [WIP] New way
 DuckDB allows to process and analyze rather big data files on local
 computers or rather small virtual machines (VM).
 
@@ -282,13 +282,50 @@ $ ls -lFh ../data/geonames/data/por/data/al*.txt
 -rw-r--r-- 1 user group 587M Jul 15 04:19 ../data/geonames/data/por/data/alternateNames.txt
 ```
 
-* Parse the CSV and transform into Parquet files
+* Parse the CSV, transform into Parquet files and create views
   (the size is around 900 MB, which is a gain of 2.5 times)
 ```bash
 $ ./elt-geonames.py
 ls -lFh ../data/geonames/data/por/parquet/*.parquet
 -rw-r--r-- 1 user group 649M Jul 15 16:33 ../data/geonames/data/por/parquet/allCountries.parquet
 -rw-r--r-- 1 user group 245M Jul 15 16:54 ../data/geonames/data/por/parquet/alternateNames.parquet
+```
+
+* Note that the DuckDB itself is not big, at the storage is relying on the
+  Parquet files:
+```bash
+$ ls -lFh db.duckdb 
+-rw-r--r-- 1 user group 2.8M Jul 15 17:50 db.duckdb
+```
+
+* Check that everything goes well, by launching DuckDB:
+```bash
+$ duckdb db.duckdb
+```
+```sql
+D select count(*)/1e6 as nb from allcountries
+union all
+select count(*)/1e6 as nb from altnames;
+┌───────────┐
+│    nb     │
+│  double   │
+├───────────┤
+│ 12.400442 │
+│ 15.892911 │
+└───────────┘
+D .quit
+```
+
+* Attempt to denormalize
+  ([GitHub - DuckDB - `array_agg()` fucntion](https://github.com/duckdb/duckdb/issues/2607)):
+```sql
+D select any_value(ac) as geoname_struct, array_agg(an.isoLanguage), array_agg(an.alternateName) altname_section from allcountries ac join altnames an on ac.geonameid=an.geonameid limit 10;
+──────────────────────┬──────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│    geoname_struct    │ array_agg(an.isoLa…  │                             altname_section                                                    │
+│ struct(geonameid b…  │      varchar[]       │                                varchar[]                                                       │
+├──────────────────────┼──────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ {'geonameid': 2072…  │ [NULL, en, wkdt, N…  │ [Egret Island, Q21893333, Eglinton Rock, Q21893331, https://en.wikipedia.org/wiki/Egg_Island…  │
+└──────────────────────┴──────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Legacy way

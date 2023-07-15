@@ -41,7 +41,7 @@ geoname_allctry_cln = {
         "moddate": "date"
         }
 
-geoname_allctry_query: str = f"""
+geoname_allctry_elt_query: str = f"""
 COPY (
   SELECT *
   FROM read_csv_auto("{geoname_allctry_csv}",
@@ -55,6 +55,7 @@ COPY (
   TO '{geoname_allctry_pqt}' (FORMAT 'parquet')
 """
 
+geoname_allctry_view_query: str = f"drop view if exists allcountries; create view allcountries as select * from '{geoname_allctry_pqt}'"
 
 # Alternate names
 geoname_altname_fn: str = "alternateNames"
@@ -72,7 +73,7 @@ geoname_altname_cln = {
         "isHistoric": "smallint"
         }
 
-geoname_altname_query: str = f"""
+geoname_altname_elt_query: str = f"""
 COPY (
   SELECT *
   FROM read_csv_auto("{geoname_altname_csv}",
@@ -86,9 +87,87 @@ COPY (
   TO '{geoname_altname_pqt}' (FORMAT 'parquet')
 """
 
-# CSV to Parquet for allCountries
-conn.execute(geoname_allctry_query)
+geoname_altname_view_query: str = f"drop view if exists altnames; create view altnames as select * from '{geoname_altname_pqt}'"
 
-# CSV to Parquet for alternateNames
-conn.execute(geoname_altname_query)
+# Joint of allCountries and altNames on the GeonameID
+geoname_joint_fn: str = "geonames"
+geoname_joint_pqt: str = f"{geoname_pqt_dir}/{geoname_joint_fn}.parquet"
+
+geoname_join_view_query: str = f"""
+drop view if exists geoanames;
+
+create view geonames as
+  select *
+  from allcountries ac
+  join altnames an
+    on ac.geonameid = an.geonameid;
+
+copy geonames to '{geoname_joint_pqt}'
+"""
+
+geoame_nce_query: str = "select * from geonames where isoLanguage='iata' and alternateName='NCE'"
+
+def eltCSVToParquet():
+    """
+    Parse CSV files into Parquet
+    """
+    # CSV to Parquet for allCountries
+    conn.execute(geoname_allctry_elt_query)
+
+    # CSV to Parquet for alternateNames
+    conn.execute(geoname_altname_elt_query)
+
+def createViews():
+    """
+    Create DuckDB views
+    """
+    # allCountries
+    conn.execute(geoname_allctry_view_query)
+
+    # alternateNames
+    conn.execute(geoname_altname_view_query)
+
+def joinViews():
+    """
+    Join allCountries with altNames on the GeonameID
+    """
+    conn.execute(geoname_join_view_query)
+
+def countRows():
+    """
+    Check that everything goes right
+    """
+    count_query: str = """
+    select count(*)/1e6 as nb from allcountries
+    union all
+    select count(*)/1e6 as nb from altnames
+    union all
+    select count(*)/1e6 as nb from geonames
+    """
+
+    nb_list = conn.execute(count_query).fetchall()
+    return nb_list
+
+def getNCErows():
+    """
+    Retrieve all the records featuring NCE as the IATA code
+    """
+    nce_recs = conn.execute(geoame_nce_query).fetchall()
+    return nce_recs
+
+# Main
+#eltCSVToParquet()
+
+#createViews()
+
+#joinViews()
+
+nb_list = countRows()
+print(f"Number of rows: {nb_list}")
+
+nce_recs = getNCErows()
+print("List of records featuring NCE as the IATA code:")
+for nce_rec in nce_recs:
+    print(nce_rec)
+
 
