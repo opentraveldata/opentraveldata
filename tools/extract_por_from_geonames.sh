@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 # OpenTravelData (OPTD) utility
 # Git repository:
@@ -144,7 +144,7 @@ fi
 echo
 echo "Extracting country-related information from '${GEO_CTY_FILE}'"
 CONT_EXTRACTOR="${EXEC_PATH}extract_continent_mapping.awk"
-awk -F'\t' -f ${CONT_EXTRACTOR} ${GEO_CNT_FILE} ${GEO_CTY_FILE} \
+${AWK_TOOL} -F'\t' -f ${CONT_EXTRACTOR} ${GEO_CNT_FILE} ${GEO_CTY_FILE} \
 	> ${OPTD_CNT_FILE_TMP}
 # Extract and remove the header
 grep -E "^country_code(.+)" ${OPTD_CNT_FILE_TMP} > ${OPTD_CNT_FILE_HDR}
@@ -163,7 +163,7 @@ echo "and populated place (city) data from the Geonames dump data file."
 echo "The '${GEO_POR_FILE}' input data file allows to generate '${DUMP_INTORG_FILE}' and '${DUMP_ALL_FILE}' files."
 echo "That operation may take several minutes..."
 INTORG_EXTRACTOR="${EXEC_PATH}extract_por_from_geonames.awk"
-time awk -F'^' \
+time ${AWK_TOOL} -F'^' \
 	-v intorg_file=${DUMP_INTORG_FILE} -v all_file=${DUMP_ALL_FILE} \
 	-f ${INTORG_EXTRACTOR} ${GEO_POR_FILE}
 echo "... Done"

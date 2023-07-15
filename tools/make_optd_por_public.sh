@@ -224,13 +224,13 @@ echo "Merge Step"
 echo "----------"
 echo
 REDUCER="make_optd_por_public.awk"
-awk -F'^' -v log_level="${LOG_LEVEL}" -f ${REDUCER} \
+${AWK_TOOL} -F'^' -v log_level="${LOG_LEVEL}" -f ${REDUCER} \
 	${OPTD_PR_FILE} ${OPTD_CTRY_DTLS_FILE} ${OPTD_CTRY_STATE_FILE} \
 	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
 	${OPTD_USDOT_FILE} ${OPTD_POR_FILE} ${GEONAME_RAW_FILE} \
 	> ${OPTD_POR_WITH_NO_CTY_NAME}
 
-#echo "awk -F'^' -v log_level=\"${LOG_LEVEL}\" -f ${REDUCER} \
+#echo "${AWK_TOOL} -F'^' -v log_level=\"${LOG_LEVEL}\" -f ${REDUCER} \
 #	${OPTD_PR_FILE} ${OPTD_CTRY_DTLS_FILE} ${OPTD_CTRY_STATE_FILE} \
 #	${OPTD_TZ_CNT_FILE} ${OPTD_TZ_POR_FILE} ${OPTD_CNT_FILE} \
 #	${OPTD_USDOT_FILE} ${OPTD_POR_FILE} ${GEONAME_RAW_FILE} \
@@ -246,10 +246,10 @@ echo "Non Geonames Step"
 echo "-----------------"
 echo
 NOGEONAMES_ADDER="add_por_ref_no_geonames.awk"
-awk -F'^' -f ${NOGEONAMES_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
+${AWK_TOOL} -F'^' -f ${NOGEONAMES_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
 	${OPTD_NOGEONAMES_FILE} > ${OPTD_POR_PUBLIC_W_NOGEONAMES}
 
-#echo "awk -F'^' -f ${NOGEONAMES_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
+#echo "${AWK_TOOL} -F'^' -f ${NOGEONAMES_ADDER} ${OPTD_POR_WITH_NO_CTY_NAME} \
 #	${OPTD_NOGEONAMES_FILE} > ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
 
 #echo "less ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
@@ -263,11 +263,11 @@ echo "City addition Step"
 echo "------------------"
 echo
 CITY_WRITER="add_city_name.awk"
-awk -F'^' -f ${CITY_WRITER} \
+${AWK_TOOL} -F'^' -f ${CITY_WRITER} \
 	${OPTD_POR_PUBLIC_W_NOGEONAMES} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}
 
-#echo "awk -F'^' -f ${CITY_WRITER} \
+#echo "${AWK_TOOL} -F'^' -f ${CITY_WRITER} \
 #	${OPTD_POR_PUBLIC_W_NOGEONAMES} ${OPTD_POR_PUBLIC_W_NOGEONAMES} \
 #	> ${OPTD_POR_PUBLIC_WO_NOIATA_FILE}"
 #echo "less ${OPTD_POR_PUBLIC_W_NOGEONAMES}"
@@ -296,10 +296,10 @@ echo "No longer valid IATA Step"
 echo "-------------------------"
 echo
 NOIATA_ADDER="add_noiata_por.awk"
-awk -F'^' -f ${NOIATA_ADDER} \
+${AWK_TOOL} -F'^' -f ${NOIATA_ADDER} \
 	${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_NOIATA_WITH_NOHD} \
 	> ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD}
-#echo "awk -F'^' -f ${NOIATA_ADDER} \
+#echo "${AWK_TOOL} -F'^' -f ${NOIATA_ADDER} \
 #	${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD} ${OPTD_NOIATA_WITH_NOHD} \
 #	> ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD}"
 #echo "less ${OPTD_POR_PUBLIC_WO_NOIATA_WITH_NOHD}"
@@ -315,11 +315,11 @@ echo "--------------"
 echo
 grep -E "^[A-Z]{3}" ${OPTD_POR_PUBLIC_W_NOIATA_USTD_WOHD} \
 	 > ${OPTD_POR_IATA_USTD_WOHD}
-awk -F'^' '{OFS=FS; if ($42 == "C") {$42 = "Z"}; print $0}' \
+${AWK_TOOL} -F'^' '{OFS=FS; if ($42 == "C") {$42 = "Z"}; print $0}' \
 	${OPTD_POR_IATA_USTD_WOHD} > ${OPTD_POR_IATA_USTD_WZ}
 sort -t'^' -k1,1 -k42,42 -k5n,5 ${OPTD_POR_IATA_USTD_WZ} \
 	 > ${OPTD_POR_IATA_STD_WOHD}
-awk -F'^' '{OFS=FS; if ($42 == "Z") {$42 = "C"}; print $0}' \
+${AWK_TOOL} -F'^' '{OFS=FS; if ($42 == "Z") {$42 = "C"}; print $0}' \
 	${OPTD_POR_IATA_STD_WOHD} > ${OPTD_POR_IATA_STD_FILE}
 cat ${OPTD_POR_FILE_HEADER} ${OPTD_POR_IATA_STD_FILE} \
 	> ${OPTD_POR_PUBLIC_FILE}
