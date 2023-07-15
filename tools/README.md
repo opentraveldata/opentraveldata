@@ -1,80 +1,84 @@
-# Table of content
-- [Table of content](#table-of-content)
-- [Overview](#overview)
-- [POR (points of reference)](#por-points-of-reference)
+Open Travel Data (OPTD) - Tools - Maintenance
+=============================================
+
+# Table of content (ToC)
+* [Open Travel Data (OPTD) \- Tools \- Maintenance](#open-travel-data-optd---tools---maintenance)
+* [Overview](#overview)
+* [POR (points of reference)](#por-points-of-reference)
   * [Data sources](#data-sources)
   * [IATA referencing](#iata-referencing)
-  * [OPTD-generated POR data file](#optd-generated-por-data-file)
-  * [OPTD-maintained POR file](#optd-maintained-por-file)
-    + [Rationale](#rationale)
-    + [Relationship between a city and its serving POR](#relationship-between-a-city-and-its-serving-por)
-    + [Non-IATA-referenced POR](#non-iata-referenced-por)
-  * [Geonames-derived POR file](#geonames-derived-por-file)
-    + [Summary of updating Geonames data regularly](#summary-of-updating-geonames-data-regularly)
-    + [Download of the Geonames snapshot data files](#download-of-the-geonames-snapshot-data-files)
-    + [Generation of the aggregated Geonames snapshot data file](#generation-of-the-aggregated-geonames-snapshot-data-file)
-    + [Generation of the main OPTD-used Geonames data file](#generation-of-the-main-optd-used-geonames-data-file)
-    + [Examples of records in the main OPTD-used Geoanmes data file](#examples-of-records-in-the-main-optd-used-geoanmes-data-file)
-      - [Regular relationship between a city and its transport-related POR](#regular-relationship-between-a-city-and-its-transport-related-por)
-      - [A transport-related POR serving several cities](#a-transport-related-por-serving-several-cities)
-      - [Non-IATA-referenced OPTD-known POR](#non-iata-referenced-optd-known-por)
-    + [Process Geonames data remotely and merge locally](#process-geonames-data-remotely-and-merge-locally)
+  * [OPTD\-generated POR data file](#optd-generated-por-data-file)
+  * [OPTD\-maintained POR file](#optd-maintained-por-file)
+    * [Rationale](#rationale)
+    * [Relationship between a city and its serving POR](#relationship-between-a-city-and-its-serving-por)
+    * [Non\-IATA\-referenced POR](#non-iata-referenced-por)
+  * [Geonames\-derived POR file](#geonames-derived-por-file)
+    * [Summary of updating Geonames data regularly](#summary-of-updating-geonames-data-regularly)
+      * [[WI] New way](#wi-new-way)
+      * [Legacy way](#legacy-way)
+    * [Download of the Geonames snapshot data files](#download-of-the-geonames-snapshot-data-files)
+    * [Generation of the aggregated Geonames snapshot data file](#generation-of-the-aggregated-geonames-snapshot-data-file)
+    * [Generation of the main OPTD\-used Geonames data file](#generation-of-the-main-optd-used-geonames-data-file)
+    * [Examples of records in the main OPTD\-used Geoanmes data file](#examples-of-records-in-the-main-optd-used-geoanmes-data-file)
+      * [Regular relationship between a city and its transport\-related POR](#regular-relationship-between-a-city-and-its-transport-related-por)
+      * [A transport\-related POR serving several cities](#a-transport-related-por-serving-several-cities)
+      * [Non\-IATA\-referenced OPTD\-known POR](#non-iata-referenced-optd-known-por)
+    * [Process Geonames data remotely and merge locally](#process-geonames-data-remotely-and-merge-locally)
   * [Use cases](#use-cases)
-    + [Amend the OPTD-curated POR files](#amend-the-optd-curated-por-files)
-    + [Generate the OPTD-maintained POR (points of reference) file](#generate-the-optd-maintained-por-points-of-reference-file)
-    + [Update from Geonames](#update-from-geonames)
-    + [Add state (administrative level) codes for a given country](#add-state-administrative-level-codes-for-a-given-country)
-    + [Add a field in Geonames dumps](#add-a-field-in-geonames-dumps)
-    + [Update the UN/LOCODE data file](#update-the-un-locode-data-file)
-      - [Typical sequence of commands to clean the downloaded UN/LOCODE data file](#typical-sequence-of-commands-to-clean-the-downloaded-un-locode-data-file)
-      - [See also](#see-also)
-    + [Update the OPTD-curated UN/LOCODE extract](#update-the-optd-curated-un-locode-extract)
-    + [Update from reference data](#update-from-reference-data)
-    + [Update from Innovata](#update-from-innovata)
-    + [Update from screen-scraped flight routes](#update-from-screen-scraped-flight-routes)
-    + [Compute the differences among all the POR files](#compute-the-differences-among-all-the-por-files)
-    + [Geonames has better coordinates for a known POR](#geonames-has-better-coordinates-for-a-known-por)
-    + [Geonames has details for an unknown POR](#geonames-has-details-for-an-unknown-por)
-    + [OPTD-maintained best known coordinates file has better coordinates](#optd-maintained-best-known-coordinates-file-has-better-coordinates)
-    + [OPTD-maintained list has got POR unknown from Geonames](#optd-maintained-list-has-got-por-unknown-from-geonames)
-    + [Generation of the list of POR, specified in IATA, but missing from Geonames](#generation-of-the-list-of-por-specified-in-iata-but-missing-from-geonames)
-      - [Step 1](#step-1)
-      - [Step 2](#step-2)
-      - [Step 3](#step-3)
-    + [Bulk fix the best known coordinates](#bulk-fix-the-best-known-coordinates)
-    + [Check issues with Geonames ID on OPTD POR](#check-issues-with-geonames-id-on-optd-por)
-    + [Spot POR having distinct IATA codes but having the same Geonames ID](#spot-por-having-distinct-iata-codes-but-having-the-same-geonames-id)
-    + [Spot POR for which Geonames may be improved](#spot-por-for-which-geonames-may-be-improved)
-    + [Extract POR information from schedules](#extract-por-information-from-schedules)
-    + [Extract airport-related POR missing from Geonames](#extract-airport-related-por-missing-from-geonames)
-    + [Extract POR with state details for a given country](#extract-por-with-state-details-for-a-given-country)
+    * [Amend the OPTD\-curated POR files](#amend-the-optd-curated-por-files)
+    * [Generate the OPTD\-maintained POR (points of reference) file](#generate-the-optd-maintained-por-points-of-reference-file)
+    * [Add state (administrative level) codes for a given country](#add-state-administrative-level-codes-for-a-given-country)
+    * [Add a field in Geonames dumps](#add-a-field-in-geonames-dumps)
+    * [Update the UN/LOCODE data file](#update-the-unlocode-data-file)
+      * [Typical sequence of commands to clean the downloaded UN/LOCODE data file](#typical-sequence-of-commands-to-clean-the-downloaded-unlocode-data-file)
+      * [See also](#see-also)
+    * [Update the OPTD\-curated UN/LOCODE extract](#update-the-optd-curated-unlocode-extract)
+    * [Update from reference data](#update-from-reference-data)
+    * [Update from Innovata](#update-from-innovata)
+    * [Update from screen\-scraped flight routes](#update-from-screen-scraped-flight-routes)
+    * [Compute the differences among all the POR files](#compute-the-differences-among-all-the-por-files)
+    * [Geonames has better coordinates for a known POR](#geonames-has-better-coordinates-for-a-known-por)
+    * [Geonames has details for an unknown POR](#geonames-has-details-for-an-unknown-por)
+    * [OPTD\-maintained best known coordinates file has better coordinates](#optd-maintained-best-known-coordinates-file-has-better-coordinates)
+    * [OPTD\-maintained list has got POR unknown from Geonames](#optd-maintained-list-has-got-por-unknown-from-geonames)
+    * [Generation of the list of POR, specified in IATA, but missing from Geonames](#generation-of-the-list-of-por-specified-in-iata-but-missing-from-geonames)
+      * [Step 1](#step-1)
+      * [Step 2](#step-2)
+      * [Step 3](#step-3)
+    * [Bulk fix the best known coordinates](#bulk-fix-the-best-known-coordinates)
+    * [Check issues with Geonames ID on OPTD POR](#check-issues-with-geonames-id-on-optd-por)
+    * [Spot POR having distinct IATA codes but having the same Geonames ID](#spot-por-having-distinct-iata-codes-but-having-the-same-geonames-id)
+    * [Spot POR for which Geonames may be improved](#spot-por-for-which-geonames-may-be-improved)
+    * [Extract POR information from schedules](#extract-por-information-from-schedules)
+    * [Extract airport\-related POR missing from Geonames](#extract-airport-related-por-missing-from-geonames)
+    * [Extract POR with state details for a given country](#extract-por-with-state-details-for-a-given-country)
   * [Maintenance](#maintenance)
-    + [The format of the `allCountries_w_alt.txt` file changes](#the-format-of-the-allcountries_w_alttxt-file-changes)
-    + [The format of the `optd_por_public.csv` file changes](#the-format-of-the-optd_por_publiccsv-file-changes)
-    + [Extract the list of states](#extract-the-list-of-states)
+    * [The format of the allCountries\_w\_alt\.txt file changes](#the-format-of-the-allcountries_w_alttxt-file-changes)
+    * [The format of the optd\_por\_public\.csv file changes](#the-format-of-the-optd_por_publiccsv-file-changes)
+    * [Extract the list of states](#extract-the-list-of-states)
+    * [Extract the information from airline routes](#extract-the-information-from-airline-routes)
   * [Details of some data processing tasks](#details-of-some-data-processing-tasks)
-    + [Building of the main OPTD-maintained POR data file](#building-of-the-main-optd-maintained-por-data-file)
-      - [Parsing of the `optd_por_best_known_so_far.csv` (OPTD-maintained) file](#parsing-of-the-optd_por_best_known_so_farcsv-optd-maintained-file)
-      - [Parsing of the `dump_from_geonames.csv` (Genames-derived) file](#parsing-of-the-dump_from_geonamescsv-genames-derived-file)
-      - [Input files for the main OPTD-maintained POR data file processor](#input-files-for-the-main-optd-maintained-por-data-file-processor)
-      - [Derivation of the time-zone details](#derivation-of-the-time-zone-details)
-      - [Addition of city names](#addition-of-city-names)
-      - [Sample output lines of `optd_por_public.csv`](#sample-output-lines-of-optd_por_publiccsv)
-        * [Standard transport- and city-related pairs](#standard-transport--and-city-related-pairs)
-        * [Cities with several transport-related POR](#cities-with-several-transport-related-por)
-      - [Transport-related POR serving several cities](#transport-related-por-serving-several-cities)
-      - [IATA oddicities](#iata-oddicities)
-- [Airlines](#airlines)
-- [Aircraft equipments](#aircraft-equipments)
+    * [Building of the main OPTD\-maintained POR data file](#building-of-the-main-optd-maintained-por-data-file)
+      * [Parsing of the optd\_por\_best\_known\_so\_far\.csv (OPTD\-maintained) file](#parsing-of-the-optd_por_best_known_so_farcsv-optd-maintained-file)
+      * [Parsing of the dump\_from\_geonames\.csv (Genames\-derived) file](#parsing-of-the-dump_from_geonamescsv-genames-derived-file)
+      * [Input files for the main OPTD\-maintained POR data file processor](#input-files-for-the-main-optd-maintained-por-data-file-processor)
+      * [Derivation of the time\-zone details](#derivation-of-the-time-zone-details)
+      * [Addition of city names](#addition-of-city-names)
+      * [Sample output lines of optd\_por\_public\.csv](#sample-output-lines-of-optd_por_publiccsv)
+        * [Standard transport\- and city\-related pairs](#standard-transport--and-city-related-pairs)
+        * [Cities with several transport\-related POR](#cities-with-several-transport-related-por)
+      * [Transport\-related POR serving several cities](#transport-related-por-serving-several-cities)
+      * [IATA oddicities](#iata-oddicities)
+* [Airlines](#airlines)
+* [Aircraft equipments](#aircraft-equipments)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # Overview
 The [original of that documentation file](http://github.com/opentraveldata/opentraveldata/blob/master/tools/README.md)
 is maintained on the
 [OpenTravelData project](http://github.com/opentraveldata/opentraveldata),
 within the [`tools` directory](http://github.com/opentraveldata/opentraveldata/blob/master/tools).
-
-## See also
-- Table of content generator: http://ecotrust-canada.github.io/markdown-toc
 
 # POR (points of reference)
 
@@ -265,6 +269,29 @@ $ pipenv --rm && pipenv install
 ```
 
 ### Summary of updating Geonames data regularly
+
+#### [WI] New way
+DuckDB allows to process and analyze rather big data files on local
+computers or rather small virtual machines (VM).
+
+* Check that the CSV input data files have been downloaded
+  (the size, uncompressed, is around 2.2 GB):
+```bash
+$ ls -lFh ../data/geonames/data/por/data/al*.txt
+-rw-r--r-- 1 user group 1.6G Jul 15 15:49 ../data/geonames/data/por/data/allCountries.txt
+-rw-r--r-- 1 user group 587M Jul 15 04:19 ../data/geonames/data/por/data/alternateNames.txt
+```
+
+* Parse the CSV and transform into Parquet files
+  (the size is around 900 MB, which is a gain of 2.5 times)
+```bash
+$ ./elt-geonames.py
+ls -lFh ../data/geonames/data/por/parquet/*.parquet
+-rw-r--r-- 1 user group 649M Jul 15 16:33 ../data/geonames/data/por/parquet/allCountries.parquet
+-rw-r--r-- 1 user group 245M Jul 15 16:54 ../data/geonames/data/por/parquet/alternateNames.parquet
+```
+
+#### Legacy way
 Once the project has been initialized and/or updated, the sequence of commands
 in order to download Geonames data and to extract the OPTD temporary
 POR data files is something like:
