@@ -317,15 +317,42 @@ D .quit
 ```
 
 * Attempt to denormalize
-  ([GitHub - DuckDB - `array_agg()` fucntion](https://github.com/duckdb/duckdb/issues/2607)):
+  ([GitHub - DuckDB - `array_agg()` fucntion](https://github.com/duckdb/duckdb/issues/2607))
+  + Retrieve all the records corresponding to a specific IATA code:
 ```sql
-D select any_value(ac) as geoname_struct, array_agg(an.isoLanguage), array_agg(an.alternateName) altname_section from allcountries ac join altnames an on ac.geonameid=an.geonameid limit 10;
-──────────────────────┬──────────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────┐
-│    geoname_struct    │ array_agg(an.isoLa…  │                             altname_section                                                    │
-│ struct(geonameid b…  │      varchar[]       │                                varchar[]                                                       │
-├──────────────────────┼──────────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ {'geonameid': 2072…  │ [NULL, en, wkdt, N…  │ [Egret Island, Q21893333, Eglinton Rock, Q21893331, https://en.wikipedia.org/wiki/Egg_Island…  │
-└──────────────────────┴──────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────┘
+D select distinct ac.geonameid,
+         string_agg(an.isoLanguage || '|' || an.alternateName, '=') altname_section
+  from allcountries ac
+  join altnames an
+    on ac.geonameid=an.geonameid
+  where an.isoLanguage='iata'
+    and an.alternateName='NCE'
+  group by ac.geonameid;
+┌───────────┬─────────────────┐
+│ geonameid │ altname_section │
+│   int64   │     varchar     │
+├───────────┼─────────────────┤
+│   2990440 │ iata|NCE        │
+│   6299418 │ iata|NCE        │
+└───────────┴─────────────────┘
+```
+  + Retrieve the corresponding alternate names:
+```sql
+D select distinct ac.geonameid,
+         any_value(ac) geoname_core,
+         string_agg(an.isoLanguage || '|' || an.alternateName, '=') altname_section
+  from allcountries ac
+  join altnames an
+    on ac.geonameid=an.geonameid
+  where ac.geonameid in (2990440, 6299418)
+  group by ac.geonameid;
+┌───────────┬──────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ geonameid │     geoname_core     │                                                                                                    altname_section                                                                            │
+│   int64   │ struct(geonameid b…  │                                                                                                        varchar                                                                                │
+├───────────┼──────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│   6299418 │ {'geonameid': 6299…  │ icao|LFMN=iata|NCE=en|Nice Côte d'Azur International Airport=es|Niza Aeropuerto=link|https://en.wikipedia.org/wiki/Nice_C%C3%B4te_d%27Azur_Airport=fr|Aéroport de Nice Côte d'Azur=en|Nice …  │
+│   2990440 │ {'geonameid': 2990…  │ en|Nice=es|Niza=ar|نيس==ca|Niça=da|Nice=eo|Nico=et|Nice=fi|Nizza=fr|Nice=he|ניס=id|Nice=it|Nizza=ja|ニース=la|Nicaea=lad|Nisa=lb|Nice=lt|Nica=nb|Nice=nl|Nice=no|Nice=oc|Niça=pl|Nicea=pt|N…  │
+└───────────┴──────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 #### Legacy way
