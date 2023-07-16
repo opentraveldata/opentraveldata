@@ -106,13 +106,16 @@ done
 # <CTRL-v TAB> sequence in the Shell command-line.
 #
 # Test 1 - Count the lines with the given regex
-# The following three commands:
+# The following commands:
 # grep "^\([A-Z]\{2\}\)<TAB>.*<TAB>\([0-9.-]*\)<TAB>\([0-9.-]*\)<TAB>\([0-9.-]*\)$" ${GEO_TZ_FILE} | wc -l
 # grep "^\([A-Z]\{2\}\)<TAB>\([A-Za-z ]\+\)<TAB>\([0-9]\{1,9\}\)$" ${GEO_CONT_FILE} | wc -l
 # grep "^\([0-9]\{1,9\}\)<TAB>.*<TAB>\([0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}\)$" ${GEO_POR_FILE} | wc -l
 # grep "^\([0-9]\{1,9\}\)<TAB>\([0-9]\{1,9\}\)<TAB>\([a-z]\{0,5\}[_]\{0,1\}[0-9]\{0,4\}\)<TAB>" ${GEO_POR_ALT_FILE} | wc -l
 # should give the same result as:
 # wc -l ${GEO_TZ_FILE} ${GEO_CONT_FILE} ${GEO_POR_FILE} ${GEO_POR_ALT_FILE}
+# Note that for some POR UTF-8 alternate names, e.g., the Korean version of Nice Airport (Geonames ID: 6299418),
+# the "^" sequence (spotting the beginning of the string) does not seem to work on Linux
+# (it works on MacOS).
 #
 # Test 2 - Output the lines not matching the regex
 # The following commands should yield empty results:
