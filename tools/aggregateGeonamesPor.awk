@@ -113,7 +113,7 @@
 function addFieldToList(__aftlParamPK, __aftlParamList, __aftlParamField) {
     myTmpString = __aftlParamList[__aftlParamPK]
     if (myTmpString) {
-	myTmpString = myTmpString __glGlobalSep2nd
+		myTmpString = myTmpString __glGlobalSep2nd
     }
     myTmpString = myTmpString __aftlParamField
     __aftlParamList[__aftlParamPK] = myTmpString
@@ -124,7 +124,7 @@ function addFieldToList(__aftlParamPK, __aftlParamList, __aftlParamField) {
 function printList(myArray) {
     printf ("%s", "Size: " length(myArray) "\n") > error_stream
     for (idx in myArray) {
-	printf ("%s", idx "^" myArray[idx] "; ") > error_stream
+		printf ("%s", idx "^" myArray[idx] "; ") > error_stream
     }
     printf ("%s", "\n") > error_stream
 }
@@ -152,13 +152,13 @@ function displayPOR() {
     out_line = out_line	"^" uic_list
 
     # Print the output line
-    print (out_line)
+    printf ("%s", out_line)
 
     # Notification when multiple English Wikipedia links for a single POR
     if (link2_code != "" && iata_code != "" && log_level >= 5) {
-	print ("[" awk_file "][" FNR "] !!!! There are duplicated English " \
-	       "Wikipedia links, i.e., at least " link2_code " and "	\
-	       link_code ". The Geoname ID is " geoname_id) > error_stream
+		print ("[" awk_file "][" FNR "] !!!! There are duplicated English " \
+			   "Wikipedia links, i.e., at least " link2_code " and "	\
+			   link_code ". The Geoname ID is " geoname_id) > error_stream
     }
 }
 
@@ -169,10 +169,10 @@ function prettyPrint(__ppNb) {
     len = length(__ppNb)
     res = ""
     for (i=0; i <= len; i++) {
-	res = substr(__ppNb, len-i+1, 1) res
-	if (i > 0 && i < len && i % 3 == 0) {
-	    res = "," res
-	}
+		res = substr(__ppNb, len-i+1, 1) res
+		if (i > 0 && i < len && i % 3 == 0) {
+			res = "," res
+		}
     }
     return res
 }
@@ -199,7 +199,7 @@ BEGIN {
 
     #
     if (nb_por == "") {
-	nb_por = 1
+		nb_por = 1
     }
 	
     # Country and continent for special cases (such as Persian Gulf)
@@ -431,271 +431,271 @@ BEGIN {
     # Whether that alternate name is historical
     is_historical = $8
     if (is_historical == "1") {
-	is_historical = "h"
+		is_historical = "h"
     }
 
     if (alt_name_type == "iata") {
-	# The alternate name is a IATA code
-	alt_name_content_old = alt_name_list_iata[geoname_id]
+		# The alternate name is a IATA code
+		alt_name_content_old = alt_name_list_iata[geoname_id]
 
-	# Add an underscore ("_") in front of historical IATA codes
-	if (is_historical == "h") {
-	    alt_name_content = "_" alt_name_content
-	}
+		# Add an underscore ("_") in front of historical IATA codes
+		if (is_historical == "h") {
+			alt_name_content = "_" alt_name_content
+		}
 
-	# Check whether the POR is the first one with that IATA code
-	if (alt_name_content_old == "") {
-	    # First POR with that IATA code
-	    alt_name_list_iata[geoname_id] = alt_name_content
+		# Check whether the POR is the first one with that IATA code
+		if (alt_name_content_old == "") {
+			# First POR with that IATA code
+			alt_name_list_iata[geoname_id] = alt_name_content
 
-	} else {
-	    # New POR with that IATA code.
-	    # Add the new IATA code in the dedicated list for that
-	    # Geonames ID. That situation occurs, for instance,
-	    # for the Mulhouse/Basel airport: MLH and BSL are both
-	    # legitimate.
-	    # However, it should be very rare. When a POR has got more
-	    # than a single IATA code, it is most often a sign of
-	    # corrupted data. So, it will be reported as well.
-	    alt_name_list_iata[geoname_id] =				\
-		alt_name_content_old "," alt_name_content
+		} else {
+			# New POR with that IATA code.
+			# Add the new IATA code in the dedicated list for that
+			# Geonames ID. That situation occurs, for instance,
+			# for the Mulhouse/Basel airport: MLH and BSL are both
+			# legitimate.
+			# However, it should be very rare. When a POR has got more
+			# than a single IATA code, it is most often a sign of
+			# corrupted data. So, it will be reported as well.
+			alt_name_list_iata[geoname_id] =		\
+				alt_name_content_old "," alt_name_content
 
-	    # Report that situation, just in case it is illigetimate.
-	    # 6299466 as Geonames ID corresponds to Basel/Mulhouse/EuroAirport,
-	    # where IATA wrongly assigns on one hand BSL and MLH to the airport
-	    # itself (named EuroAirport), and on the other hand the same EAP
-	    # code to both cities
-	    if (substr(alt_name_content_old, 1, 1) != "_"		\
-		&& substr(alt_name_content, 1, 1) != "_"		\
-		&& geoname_id != "6299466"				\
-		&& log_level >= 4) {
-		print ("[" awk_file "][" FNR "] There is more than one " \
-		       "active IATA code for Geonames ID=" geoname_id	\
-		       ": " alt_name_content_old " and " alt_name_content) \
-		    > error_stream
-	    }
-	}
+			# Report that situation, just in case it is illigetimate.
+			# 6299466 as Geonames ID corresponds to Basel/Mulhouse/EuroAirport,
+			# where IATA wrongly assigns on one hand BSL and MLH to the airport
+			# itself (named EuroAirport), and on the other hand the same EAP
+			# code to both cities
+			if (substr(alt_name_content_old, 1, 1) != "_"	\
+				&& substr(alt_name_content, 1, 1) != "_"	\
+				&& geoname_id != "6299466"					\
+				&& log_level >= 4) {
+				print ("[" awk_file "][" FNR "] There is more than one " \
+					   "active IATA code for Geonames ID=" geoname_id	\
+					   ": " alt_name_content_old " and " alt_name_content) \
+					> error_stream
+			}
+		}
 
     } else if (alt_name_type == "icao") {
-	# The alternate name is a ICAO code
-	if (is_historical != "h") {
-	    alt_name_content_old = alt_name_list_icao[geoname_id]
+		# The alternate name is a ICAO code
+		if (is_historical != "h") {
+			alt_name_content_old = alt_name_list_icao[geoname_id]
 
-	    if (alt_name_content_old == "" ||					\
-		substr(alt_name_content_old, 1, 1) == "_") {
-		alt_name_list_icao[geoname_id] = alt_name_content
+			if (alt_name_content_old == "" ||				\
+				substr(alt_name_content_old, 1, 1) == "_") {
+				alt_name_list_icao[geoname_id] = alt_name_content
 
-	    } else {
-		# Notification
-		# See comment above about 6299466 as Geonames ID
-		if (geoname_id != "6299466"	\
-		    && log_level >= 4) {
-		    print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
-			   "There is more than one active ICAO code for " \
-			   "Geonames ID=" geoname_id			\
-			   ": " alt_name_content_old " and " alt_name_content) \
-			> error_stream
+			} else {
+				# Notification
+				# See comment above about 6299466 as Geonames ID
+				if (geoname_id != "6299466"		\
+					&& log_level >= 4) {
+					print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
+						   "There is more than one active ICAO code for " \
+						   "Geonames ID=" geoname_id					\
+						   ": " alt_name_content_old " and " alt_name_content) \
+						> error_stream
+				}
+			}
+
+		} else {
+			if (alt_name_list_icao[geoname_id] == "") {
+				alt_name_list_icao[geoname_id] = "_" alt_name_content
+			}
 		}
-	    }
-
-	} else {
-	    if (alt_name_list_icao[geoname_id] == "") {
-		alt_name_list_icao[geoname_id] = "_" alt_name_content
-	    }
-	}
 
     } else if (alt_name_type == "faac") {
-	# The alternate name is a FAA code
-	if (is_historical != "h") {
-	    alt_name_content_old = alt_name_list_faac[geoname_id]
+		# The alternate name is a FAA code
+		if (is_historical != "h") {
+			alt_name_content_old = alt_name_list_faac[geoname_id]
 
-	    if (alt_name_content_old == "" ||					\
-		substr(alt_name_content_old, 1, 1) == "_") {
-		alt_name_list_faac[geoname_id] = alt_name_content
+			if (alt_name_content_old == "" ||				\
+				substr(alt_name_content_old, 1, 1) == "_") {
+				alt_name_list_faac[geoname_id] = alt_name_content
 
-	    } else {
-		# Notification
-		if (log_level >= 4) {
-		    print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
-			   "There is more than one active FAA code for " \
-			   "Geonames ID=" geoname_id					\
-			   ": " alt_name_content_old " and " alt_name_content) \
-			> error_stream
+			} else {
+				# Notification
+				if (log_level >= 4) {
+					print ("[" awk_file "][" FNR "] !!!! Error !!!! "	\
+						   "There is more than one active FAA code for " \
+						   "Geonames ID=" geoname_id					\
+						   ": " alt_name_content_old " and " alt_name_content) \
+						> error_stream
+				}
+			}
+
+		} else {
+			if (alt_name_list_faac[geoname_id] == "") {
+				alt_name_list_faac[geoname_id] = "_" alt_name_content
+			}
 		}
-	    }
-
-	} else {
-	    if (alt_name_list_faac[geoname_id] == "") {
-		alt_name_list_faac[geoname_id] = "_" alt_name_content
-	    }
-	}
 
     } else if (alt_name_type == "unlc") {
-	# The alternate name is a UN/LOCODE (UN location code).
-	#
-	# Several UN/LOCODE may be attributed to a single POR, for instance
-	# Erlinsbach (Geoname ID: 2659467) with CHERL, CHNBA and CHSZ9.
-	# Some of those UN/LOCODE may be historical. Hence, we build here
-	# a list of UN/LOCODE with their associated qualifiers, much like
-	# for the languages, except that it is always of the unlc type here.
-	# Virtual example: CHERL|p=CHNBA|=CHSZ9|h
-	#
-	unlc_full = alt_name_content __glGlobalSep3rd
+		# The alternate name is a UN/LOCODE (UN location code).
+		#
+		# Several UN/LOCODE may be attributed to a single POR, for instance
+		# Erlinsbach (Geoname ID: 2659467) with CHERL, CHNBA and CHSZ9.
+		# Some of those UN/LOCODE may be historical. Hence, we build here
+		# a list of UN/LOCODE with their associated qualifiers, much like
+		# for the languages, except that it is always of the unlc type here.
+		# Virtual example: CHERL|p=CHNBA|=CHSZ9|h
+		#
+		unlc_full = alt_name_content __glGlobalSep3rd
 
-	# Potentially add the historical qualifier
-	if (is_historical == "h") {
-	    unlc_full = unlc_full "h"
-	}
+		# Potentially add the historical qualifier
+		if (is_historical == "h") {
+			unlc_full = unlc_full "h"
+		}
 
-	# Potentially add the preferred qualifier
-	is_preferred = $5
-	if (is_preferred == "1") {
-	    unlc_full = unlc_full "p"
-	}
+		# Potentially add the preferred qualifier
+		is_preferred = $5
+		if (is_preferred == "1") {
+			unlc_full = unlc_full "p"
+		}
 
-	# Add the UN/LOCODE, with its potential qualifier (eg, 'h' or 'p')
-	# to the dedicated list
-	addFieldToList(geoname_id, alt_name_list_unlc, unlc_full)
+		# Add the UN/LOCODE, with its potential qualifier (eg, 'h' or 'p')
+		# to the dedicated list
+		addFieldToList(geoname_id, alt_name_list_unlc, unlc_full)
 
-	# Sanity check for extra qualifiers, whcih normally do not apply to
-	# an UN/LOCODE. If the UN/LOCODE is qualified with those, we report
-	# it, so that Geonames may be fixed.
-	is_short = $6
-	if (is_short == "1") {
-	    is_short == "s"
-	}
-	is_colloquial = $7
-	if (is_colloquial == "1") {
-	    is_colloquial == "c"
-	}
-	if (is_short == "s" || is_colloquial == "c") {
-	    # Notification
-	    if (log_level >= 4) {
-		print ("[" awk_file "][" FNR "] !!!! Warning !!!! "		\
-		       "The UN/LOCODE code ('" alt_name_content "') for " \
-		       "Geonames ID=" geoname_id " has an extra qualifier ('" \
-		       is_short is_colloquial "'), which is not relevant") \
-		    > error_stream
-	    }
-	}
+		# Sanity check for extra qualifiers, whcih normally do not apply to
+		# an UN/LOCODE. If the UN/LOCODE is qualified with those, we report
+		# it, so that Geonames may be fixed.
+		is_short = $6
+		if (is_short == "1") {
+			is_short == "s"
+		}
+		is_colloquial = $7
+		if (is_colloquial == "1") {
+			is_colloquial == "c"
+		}
+		if (is_short == "s" || is_colloquial == "c") {
+			# Notification
+			if (log_level >= 4) {
+				print ("[" awk_file "][" FNR "] !!!! Warning !!!! "	\
+					   "The UN/LOCODE code ('" alt_name_content "') for " \
+					   "Geonames ID=" geoname_id " has an extra qualifier ('" \
+					   is_short is_colloquial "'), which is not relevant") \
+					> error_stream
+			}
+		}
 
     } else if (alt_name_type == "uicn") {
-	# The alternate name is a UIC code
-	#
-	# Though there are no such case yet, in theory several UIC codes
-	# may be attributed to a single POR. In particular,
-	# some of those UIC codes may be historical. Hence, we build here
-	# a list of UIC coes with their associated qualifiers, much like
-	# for the languages, except that it is always of the uicn type here.
-	# Virtual example: 87757674|p=87757673|=87757675|h
-	#
-	uic_full = alt_name_content __glGlobalSep3rd
+		# The alternate name is a UIC code
+		#
+		# Though there are no such case yet, in theory several UIC codes
+		# may be attributed to a single POR. In particular,
+		# some of those UIC codes may be historical. Hence, we build here
+		# a list of UIC coes with their associated qualifiers, much like
+		# for the languages, except that it is always of the uicn type here.
+		# Virtual example: 87757674|p=87757673|=87757675|h
+		#
+		uic_full = alt_name_content __glGlobalSep3rd
 
-	# Potentially add the historical qualifier
-	if (is_historical == "h") {
-	    uic_full = uic_full "h"
-	}
+		# Potentially add the historical qualifier
+		if (is_historical == "h") {
+			uic_full = uic_full "h"
+		}
 
-	# Potentially add the preferred qualifier
-	is_preferred = $5
-	if (is_preferred == "1") {
-	    uic_full = uic_full "p"
-	}
+		# Potentially add the preferred qualifier
+		is_preferred = $5
+		if (is_preferred == "1") {
+			uic_full = uic_full "p"
+		}
 
-	# Add the UN/LOCODE, with its potential qualifier (eg, 'h' or 'p')
-	# to the dedicated list
-	addFieldToList(geoname_id, alt_name_list_uic, uic_full)
+		# Add the UN/LOCODE, with its potential qualifier (eg, 'h' or 'p')
+		# to the dedicated list
+		addFieldToList(geoname_id, alt_name_list_uic, uic_full)
 
-	# Sanity check for extra qualifiers, whcih normally do not apply to
-	# an UN/LOCODE. If the UN/LOCODE is qualified with those, we report
-	# it, so that Geonames may be fixed.
-	is_short = $6
-	if (is_short == "1") {
-	    is_short == "s"
-	}
-	is_colloquial = $7
-	if (is_colloquial == "1") {
-	    is_colloquial == "c"
-	}
-	if (is_short == "s" || is_colloquial == "c") {
-	    # Notification
-	    if (log_level >= 4) {
-		print ("[" awk_file "][" FNR "] !!!! Warning !!!! "		\
-		       "The UN/LOCODE code ('" alt_name_content "') for " \
-		       "Geonames ID=" geoname_id " has an extra qualifier ('" \
-		       is_short is_colloquial "'), which is not relevant") \
-		    > error_stream
-	    }
-	}
+		# Sanity check for extra qualifiers, whcih normally do not apply to
+		# an UN/LOCODE. If the UN/LOCODE is qualified with those, we report
+		# it, so that Geonames may be fixed.
+		is_short = $6
+		if (is_short == "1") {
+			is_short == "s"
+		}
+		is_colloquial = $7
+		if (is_colloquial == "1") {
+			is_colloquial == "c"
+		}
+		if (is_short == "s" || is_colloquial == "c") {
+			# Notification
+			if (log_level >= 4) {
+				print ("[" awk_file "][" FNR "] !!!! Warning !!!! "	\
+					   "The UN/LOCODE code ('" alt_name_content "') for " \
+					   "Geonames ID=" geoname_id " has an extra qualifier ('" \
+					   is_short is_colloquial "'), which is not relevant") \
+					> error_stream
+			}
+		}
 
     } else if (alt_name_type == "link") {
-	# Check that the Wikipedia link is for English
-	is_en_wiki_link = match (alt_name_content, "(http|https)://en.")
+		# Check that the Wikipedia link is for English
+		is_en_wiki_link = match (alt_name_content, "(http|https)://en.")
+		
+		# The Wikipedia link may have already been set (there are sometimes
+		# multiple distinct English Wikipedia links)
+		alt_name_link = alt_name_list_link[geoname_id]
 
-	# The Wikipedia link may have already been set (there are sometimes
-	# multiple distinct English Wikipedia links)
-	alt_name_link = alt_name_list_link[geoname_id]
-
-	if (is_en_wiki_link != 0 && is_historical != "h") {
-	    # Register the link
-	    alt_name_list_link[geoname_id] = alt_name_content
-
-	    # Handle any override of the Wikipedia link. If any, the
-	    # notification will be issued later, when the type of the POR
-	    # will be known for sure (as we want to notify only for IATA
-	    # known POR).
-	    if (alt_name_link != "") {
-		alt_name_list_link2[geoname_id] = alt_name_link
-	    }
-	}
+		if (is_en_wiki_link != 0 && is_historical != "h") {
+			# Register the link
+			alt_name_list_link[geoname_id] = alt_name_content
+			
+			# Handle any override of the Wikipedia link. If any, the
+			# notification will be issued later, when the type of the POR
+			# will be known for sure (as we want to notify only for IATA
+			# known POR).
+			if (alt_name_link != "") {
+				alt_name_list_link2[geoname_id] = alt_name_link
+			}
+		}
 
     } else {
-	# Check whether the type is language-related
-	is_lang_related = match (alt_name_type, "[a-z]{0,5}[_]{0,1}[0-9]{0,4}")
-	if (alt_name_type == "") {
-	    is_lang_related = 1
-	}
+		# Check whether the type is language-related
+		is_lang_related = match (alt_name_type, "[a-z]{0,5}[_]{0,1}[0-9]{0,4}")
+		if (alt_name_type == "") {
+			is_lang_related = 1
+		}
+		
+		# When it is language related
+		if (is_lang_related == 1) {
+			# Whether that alternate name is the preferred one in that language
+			is_preferred = $5
+			if (is_preferred == "1") {
+				is_preferred = "p"
+			}
+			
+			# Whether that alternate name is the short version in that language
+			is_short = $6
+			if (is_short == "1") {
+				is_short = "s"
+			}
 
-	# When it is language related
-	if (is_lang_related == 1) {
-	    # Whether that alternate name is the preferred one in that language
-	    is_preferred = $5
-	    if (is_preferred == "1") {
-		is_preferred = "p"
-	    }
+			# Whether that alternate name is colloquial in that language
+			is_colloquial = $7
+			if (is_colloquial == "1") {
+				is_colloquial = "c"
+			}
 
-	    # Whether that alternate name is the short version in that language
-	    is_short = $6
-	    if (is_short == "1") {
-		is_short = "s"
-	    }
+			# Retrieve the concatenated string of the language-related
+			# alternate names for that Geoname ID, if any.
+			alt_name_lang_full = alt_name_list_lang[geoname_id]
+			if (alt_name_lang_full != "") {
+				alt_name_lang_full = alt_name_lang_full "|"
+			}
 
-	    # Whether that alternate name is colloquial in that language
-	    is_colloquial = $7
-	    if (is_colloquial == "1") {
-		is_colloquial = "c"
-	    }
-
-	    # Retrieve the concatenated string of the language-related
-	    # alternate names for that Geoname ID, if any.
-	    alt_name_lang_full = alt_name_list_lang[geoname_id]
-	    if (alt_name_lang_full != "") {
-		alt_name_lang_full = alt_name_lang_full "|"
-	    }
-
-	    # Concatenate the new alternate name, and (re-)register it.
-	    alt_name_list_lang[geoname_id] = alt_name_lang_full alt_name_type \
-		"|" alt_name_content \
-		"|" is_preferred is_short is_colloquial is_historical
-
-	} else {
-	    # Notification
-	    if (log_level >= 5) {
-		print ("[" awk_file "][" FNR "] !!!! The type of the " \
-		       "alternate name ('" alt_name_type "') is unknown. " \
-		       "The Geoname ID is " geoname_id) > error_stream
-	    }
-	}
+			# Concatenate the new alternate name, and (re-)register it.
+			alt_name_list_lang[geoname_id] = alt_name_lang_full alt_name_type \
+				"|" alt_name_content									\
+				"|" is_preferred is_short is_colloquial is_historical
+			
+		} else {
+			# Notification
+			if (log_level >= 5) {
+				print ("[" awk_file "][" FNR "] !!!! The type of the "	\
+					   "alternate name ('" alt_name_type "') is unknown. " \
+					   "The Geoname ID is " geoname_id) > error_stream
+			}
+		}
     }
 }
 
@@ -711,18 +711,18 @@ BEGIN {
     por_line++
     progress = int (0.5 + por_line * 100.0 / nb_por)
     if (progress % 10 == 0) {
-	if (progress_reported == 0) {
-	    progress_reported = 1
+		if (progress_reported == 0) {
+			progress_reported = 1
 
-	    por_line_str = prettyPrint(por_line)
-	    nb_por_str = prettyPrint(nb_por)
-	    print ("[" awk_file "] " progress "% of the POR have been " \
-		   "processed, ie " por_line_str " POR over " nb_por_str \
-		   " in total")	> error_stream
-	}
+			por_line_str = prettyPrint(por_line)
+			nb_por_str = prettyPrint(nb_por)
+			print ("[" awk_file "] " progress "% of the POR have been " \
+				   "processed, ie " por_line_str " POR over " nb_por_str \
+				   " in total")	> error_stream
+		}
 
     } else {
-	progress_reported = 0
+		progress_reported = 0
     }
 
     # Geoname ID
@@ -762,7 +762,7 @@ BEGIN {
 	}
 
     } else {
-	ctry_name = ctry_list_name[ctry_code]
+		ctry_name = ctry_list_name[ctry_code]
     }
 
     # Continent
@@ -771,13 +771,13 @@ BEGIN {
 
     # Sanity check: at that point, the continent name should not be empty
     if (cont_name == "") {
-	if (log_level >= 5) {
-	    print ("[" awk_file "][" FNR "] The '" ctry_code		\
-		   "' country has no associated continent for " utf8_name \
-		   " (GeoID = " geoname_id "). Known continent list: ")	\
-		> error_stream
-	    printList(cont_list)
-	}
+		if (log_level >= 5) {
+			print ("[" awk_file "][" FNR "] The '" ctry_code	  \
+				   "' country has no associated continent for " utf8_name \
+				   " (GeoID = " geoname_id "). Known continent list: ")	\
+				> error_stream
+			printList(cont_list)
+		}
     }
 
     # Codes and names for administrative levels
@@ -831,20 +831,20 @@ BEGIN {
     delete alt_name_list_lang[geoname_id]
 
     if (iata_code_list) {
-	# When the list of IATA codes is not empty, iterate on it.
-	# Note that normally, there is at most one IATA code.
-	split (iata_code_list, iata_code_array, ",")
-	for (iata_code_idx in iata_code_array) {
-	    iata_code = iata_code_array[iata_code_idx]
+		# When the list of IATA codes is not empty, iterate on it.
+		# Note that normally, there is at most one IATA code.
+		split (iata_code_list, iata_code_array, ",")
+		for (iata_code_idx in iata_code_array) {
+			iata_code = iata_code_array[iata_code_idx]
 	    
-	    displayPOR()
-	}
+			displayPOR()
+		}
 
     } else {
-	# The POR has no IATA code. It corresponds to the vast majority
-	# of the cases
-	iata_code = ""
-	displayPOR()
+		# The POR has no IATA code. It corresponds to the vast majority
+		# of the cases
+		iata_code = ""
+		displayPOR()
     }
 }
 

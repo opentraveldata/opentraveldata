@@ -50,7 +50,7 @@ retrieveFiles() {
 # Geonames database
 BASE_URL="http://download.geonames.org/export/dump"
 file_list=("admin1CodesASCII.txt" "admin2Codes.txt" "allCountries.zip" \
-	"alternateNames.zip" "cities1000.zip" "cities5000.zip" \
+	"alternateNamesV2.zip" "alternateNames.zip" "cities1000.zip" "cities5000.zip" \
 	"cities15000.zip" "countryInfo.txt" "featureCodes_en.txt" \
 	"featureCodes_ru.txt" "iso-languagecodes.txt" "hierarchy.zip" \
        "no-country.zip" "timeZones.txt" "userTags.zip")
