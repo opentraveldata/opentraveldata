@@ -156,11 +156,11 @@ def getNCErows():
     return nce_recs
 
 # Main
-#eltCSVToParquet()
+eltCSVToParquet()
 
-#createViews()
+createViews()
 
-#joinViews()
+joinViews()
 
 nb_list = countRows()
 print(f"Number of rows: {nb_list}")
