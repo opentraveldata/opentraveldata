@@ -115,7 +115,7 @@ done
 # wc -l ${GEO_TZ_FILE} ${GEO_CONT_FILE} ${GEO_POR_FILE} ${GEO_POR_ALT_FILE}
 # Note that for some POR UTF-8 alternate names, e.g., the Korean version of Nice Airport (Geonames ID: 6299418),
 # the "^" sequence (spotting the beginning of the string) does not seem to work on Linux
-# (it works on MacOS).
+# (it works on MacOS, even with gawk).
 #
 # Test 2 - Output the lines not matching the regex
 # The following commands should yield empty results:
@@ -143,11 +143,11 @@ NB_POR="$(${WC_TOOL} -l ${GEO_POR_FILE} | \
 AGGREGATOR="aggregateGeonamesPor.awk"
 echo
 echo "Aggregating Geonames dump data files (${AGG_INPUT_FILES[@]})..."
-AWKCMD="awk -F'\t' -v log_level="${LOG_LEVEL}" -v nb_por="${NB_POR}" \
+AWKCMD="${AWK_TOOL} -F'\t' -v log_level="${LOG_LEVEL}" -v nb_por="${NB_POR}" \
 	-f ${AGGREGATOR} ${AGG_INPUT_FILES[@]}"
 #echo "AWK command to be executed:"
 #echo "${AWKCMD} > ${GEO_POR_CONC_FILE}"
-time awk -F'\t' -v log_level="${LOG_LEVEL}" -v nb_por="${NB_POR}" \
+time ${AWK_TOOL} -F'\t' -v log_level="${LOG_LEVEL}" -v nb_por="${NB_POR}" \
 	-f ${AGGREGATOR} ${AGG_INPUT_FILES[@]} > ${GEO_POR_CONC_FILE}
 echo "... done"
 echo
