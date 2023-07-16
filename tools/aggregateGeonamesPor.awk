@@ -152,7 +152,7 @@ function displayPOR() {
     out_line = out_line	"^" uic_list
 
     # Print the output line
-    printf ("%s", out_line)
+    printf ("%s\n", out_line)
 
     # Notification when multiple English Wikipedia links for a single POR
     if (link2_code != "" && iata_code != "" && log_level >= 5) {
