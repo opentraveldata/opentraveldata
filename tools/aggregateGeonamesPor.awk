@@ -152,7 +152,7 @@ function displayPOR() {
     out_line = out_line	"^" uic_list
 
     # Print the output line
-    printf ("%s\n", out_line)
+    printf ("%s", out_line "\n")
 
     # Notification when multiple English Wikipedia links for a single POR
     if (link2_code != "" && iata_code != "" && log_level >= 5) {
@@ -425,8 +425,9 @@ BEGIN {
     # Alternate name type (IATA, ICAO, FAA, Wikipedia link, language code)
     alt_name_type = $3
 
-    # Alternate name
-    alt_name_content = $4
+    # Alternate name (the spintf() function is used to prevent the "NAN" string
+	# (which is a valid IATA code) to be interpreted as not-a-number)
+    alt_name_content = sprintf("%s", $4)
 
     # Whether that alternate name is historical
     is_historical = $8
