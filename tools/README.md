@@ -609,8 +609,8 @@ $ cd ~/dev/geo/opentraveldata/tools
 * Download the
   [latest release of UN/LOCODE files](http://www.unece.org/cefact/codesfortrade/codes_index.html):
 ```bash
-$ UNLCVER="201"; UNLCLVER="2020-1"
-$ wget http://www.unece.org/fileadmin/DAM/cefact/locode/loc${UNLCVER}csv.zip
+$ UNLCVER="222"; UNLCLVER="2022-2"
+$ wget https://service.unece.org/trade/locode/loc${UNLCVER}csv.zip
 ```
 
 * Un-pack, remove the unused parts and re-assemble the UN/LOCODE data file:
@@ -657,7 +657,7 @@ $ mv unlocode-code-list-${UNLCLVER}-ftd.csv unlocode-code-list-${UNLCLVER}.csv
   the opening quote stays, and an empty line is created with
   the closing character, which is eliminated in the step above):
 ```bash
-$ sed -i -e 's/,\"$/,/g' unlocode-code-list-${UNLCLVER}.csv
+$ gsed -i -e 's/,\"$/,/g' unlocode-code-list-${UNLCLVER}.csv
 ```
 
 * Add the missing `E` (East) character in the geographical coordinates
@@ -666,7 +666,7 @@ $ sed -i -e 's/,\"$/,/g' unlocode-code-list-${UNLCLVER}.csv
 ```bash
 $ grep --color "\"2444N 05045\"" unlocode-code-list-${UNLCLVER}.csv
 ,"SA","SAL","Salwá","Salwa","04","--3-----","RL","1707",,"2444N 05045",
-$ sed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-${UNLCLVER}.csv
+$ gsed -i -e 's/\"2444N 05045\"/\"2444N 05045E\"/g' unlocode-code-list-${UNLCLVER}.csv
 ```
 
 * Run the OPTD transformation script, which may report some additional glitches

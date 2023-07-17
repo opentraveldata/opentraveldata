@@ -12,14 +12,23 @@ See also the
 
 ## UN/LOCODE
 * Wikipedia article: https://en.wikipedia.org/wiki/UN%2FLOCODE
-* Official note, as of July 2020:
-  https://www.unece.org/fileadmin/DAM/cefact/locode/2020-1_UNLOCODE_SecretariatNotes.pdf
-* Latest data file: https://www.unece.org/cefact/codesfortrade/codes_index.html
-  - July 2020:
-  https://www.unece.org/fileadmin/DAM/cefact/locode/loc201csv.zip (2.1 MB)
-* Online code search: https://locode.info
+
+### UN/LOCODE official site
+* United Nations Code for Trade and Transport Locations (UN/LOCODE) home page:
+  https://unece.org/trade/uncefact/unlocode
+
+* Secretariat notes, as of July 2023:
+  https://service.unece.org/trade/locode/2022-2%20UNLOCODE%20SecretariatNotes.pdf
+  Latest data file: https://unece.org/trade/cefact/UNLOCODE-Download
+  - December 2022:
+  https://service.unece.org/trade/locode/loc222csv.zip (2.2 MB)
 * Online code list by country:
-  https://www.unece.org/cefact/locode/service/location.html
+  https://unece.org/trade/cefact/unlocode-code-list-country-and-territory
+* Online list of subdivisions:
+  https://service.unece.org/trade/locode/2022-2%20SubdivisionCodes.htm
+* UN/LOCODE work documents:
+  https://unece.org/trade/documents/2023/04/agendas/2023unlocode
+* Online code search (it may not be maintained): https://locode.info
 
 ## Country sub-divisions
 In the Zip archive of UN/LOCODE data files, there is a CSV file

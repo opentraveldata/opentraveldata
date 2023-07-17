@@ -193,7 +193,7 @@ ${SED_TOOL} -E 's/^,/" ",/g' ${LOCODE_TAB_FILE} > ${LOCODE_CSV_FFNE_FILE}
 # having the first field empty. We therefore use sed to replace first empty
 # fields by 1-white-space fields.
 CONVERTER="prepare_unlc_dump_file.awk"
-awk -f ${CONVERTER} ${LOCODE_CSV_FFNE_FILE} ${LOCODE_CSV_FFNE_FILE} \
+${AWK_TOOL} -f ${CONVERTER} ${LOCODE_CSV_FFNE_FILE} ${LOCODE_CSV_FFNE_FILE} \
     > ${LOCODE_CSV_UNSTD_FILE}
 
 ##
