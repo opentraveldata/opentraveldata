@@ -38,11 +38,11 @@ OPTD_CTRY_STATE_FILE="${DATA_DIR}${OPTD_CTRY_STATE_FILENAME}"
 # Retrieve the latest file
 POR_FILE_PFX="por_intorg"
 POR_ALL_FILE_PFX="por_all"
-SNPSHT_DATE="$(ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.csv 2> /dev/null)"
+declare -a SNPSHT_DATE="$(ls ${TOOLS_DIR}${POR_FILE_PFX}_????????.csv 2> /dev/null)"
 if [ "${SNPSHT_DATE}" != "" ]
 then
         # (Trick to) Extract the latest entry
-        for myfile in ${SNPSHT_DATE}
+        for myfile in ${SNPSHT_DATE[@]}
 	do
 		echo > /dev/null
 	done

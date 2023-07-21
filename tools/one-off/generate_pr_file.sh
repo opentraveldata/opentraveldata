@@ -63,11 +63,11 @@ POR_FILE_PFX1="oag_schedule"
 POR_FILE_PFX2="oag_schedule_opt"
 POR_FILE_PFX3="oag_schedule_with_cities"
 POR_FILE_PFX4="oag_schedule_air"
-LST_EXTRACT_DATE="$(ls ${POR_FILE_PFX1}_??????.csv.bz2 2> /dev/null)"
+declare -a LST_EXTRACT_DATE="$(ls ${POR_FILE_PFX1}_??????.csv.bz2 2> /dev/null)"
 if [ "${LST_EXTRACT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
-	for myfile in "${LST_EXTRACT_DATE}"; do echo > /dev/null; done
+	for myfile in ${LST_EXTRACT_DATE[@]}; do echo > /dev/null; done
 	LST_EXTRACT_DATE="$(echo ${myfile} | ${SED_TOOL} -E "s/${POR_FILE_PFX1}_([0-9]+)\.csv\.bz2/\1/" | xargs basename)"
 else
 	echo

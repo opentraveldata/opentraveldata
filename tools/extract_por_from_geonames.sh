@@ -35,12 +35,12 @@ declare -a LATEST_EXTRACT_DATE="$(ls ${EXEC_PATH}${POR_FILE_PFX1}_????????.csv 2
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
 	# (Trick to) Extract the latest entry
-	for myfile in "${LATEST_EXTRACT_DATE[@]}"; do echo > /dev/null; done
+	for myfile in ${LATEST_EXTRACT_DATE[@]}; do echo > /dev/null; done
 	LATEST_EXTRACT_DATE="$(echo ${myfile} | ${SED_TOOL} -E "s/${POR_FILE_PFX1}_([0-9]+)\.csv/\1/" | xargs basename)"
 fi
 if [ "${LATEST_EXTRACT_DATE}" != "" ]
 then
-	LATEST_EXTRACT_DATE_HUMAN="$($DATE_TOOL -d ${LATEST_EXTRACT_DATE})"
+	LATEST_EXTRACT_DATE_HUMAN="$(${DATE_TOOL} -d ${LATEST_EXTRACT_DATE})"
 fi
 if [ "${LATEST_EXTRACT_DATE}" != "" \
 	-a "${LATEST_EXTRACT_DATE}" != "${SNAPSHOT_DATE}" ]
@@ -211,13 +211,13 @@ then
 	echo "After having checked that the updates brought by Geonames are legitimate and not disruptive, i.e.:"
 	echo "diff -c ${LATEST_DUMP_INTORG_FILE} ${DUMP_INTORG_FILE} | less"
 	echo "diff -c ${LATEST_DUMP_ALL_FILE} ${DUMP_ALL_FILE} | less"
-	echo "mkdir -p archives && bzip2 *_${LATEST_EXTRACT_DATE}.csv && mv *_${LATEST_EXTRACT_DATE}.csv.bz2 archives"
+	echo "mkdir -p archives && bzip2 por_*_${LATEST_EXTRACT_DATE}.csv && mv por_*_${LATEST_EXTRACT_DATE}.csv.bz2 archives/"
 	echo
 	echo "The Geonames data file (dump_from_geonames.csv) may be updated:"
 else
 	echo "Today (${SNAPSHOT_DATE}), the Geonames data has already been extracted."
 	echo
-	echo "The Geonames data file (dump_from_geonames.csv) has to set up:"
+	echo "The Geonames data file (dump_from_geonames.csv) has to be set up:"
 fi
 echo "\cp -f ${DUMP_INTORG_FILE} ${DUMP_GEO_FILE}"
 echo
