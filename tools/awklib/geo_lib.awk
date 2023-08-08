@@ -437,6 +437,15 @@ function isFeatCodeMetro(__ifcmParamFeatureCode) {
 }
 
 ##
+# State whether the POR is a bridge
+function isFeatCodeBridge(__ifcbParamFeatureCode) {
+    # Bridge
+    __resultIsBridge = match (__ifcbParamFeatureCode, "BDG")
+
+    return __resultIsBridge
+}
+
+##
 # State whether the POR is a maritime port or ferry or naval base
 function isFeatCodePort(__ifcpParamFeatureCode) {
     # Naval base (NVB), maritime port (PRT), ferry (FY)
@@ -474,13 +483,16 @@ function isFeatCodeTvlRtd(__ifctrParamFeatureCode) {
     # Metro station
     __isMetro = isFeatCodeMetro(__ifctrParamFeatureCode)
 
+    # Bridge
+    __isBridge = isFeatCodeBridge(__ifctrParamFeatureCode)
+
     # Naval base, maritime port or ferry
     __isPort  = isFeatCodePort(__ifctrParamFeatureCode)
 
 
     # Aggregation
     __resultIsTravelRelated = __isAirport + __isHeliport + __isRail \
-	+ __isBus + __isMetro + __isPort
+	+ __isBus + __isMetro + __isBridge + __isPort
 
     return __resultIsTravelRelated
 }
@@ -559,8 +571,9 @@ function getLocTypeFromFeatCode(__gltParamFeatureCode) {
 	__resultLocationType = "R"
 
     } else if (isFeatCodeBus(__gltParamFeatureCode)			\
-	       || isFeatCodeMetro(__gltParamFeatureCode)) {
-	# Bus station/stop or metro station
+	       || isFeatCodeMetro(__gltParamFeatureCode)                \
+	       || isFeatCodeBridge(__gltParamFeatureCode)) {
+	# Bus station/stop or metro station or bridge
 	__resultLocationType = "B"
 
     } else if (isFeatCodePort(__gltParamFeatureCode)) {
