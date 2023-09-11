@@ -117,7 +117,7 @@ air-air-explore-v1^^^^AXE^ED^0^Air Explore^Airblue^^^^^52^en|Air Explore|=en|Air
 air-air-finland-v1^1^2003-01-01^2012-06-26^FIF^OF^442^Air Finland^^^^^https://en.wikipedia.org/wiki/Air_Finland^^en|Air Finland|=sign|AIR FINLAND|^HEL^air-air-finland^1^^
 air-air-flamenco-v1^^^^WAF^F4^0^Air Flamenco^Air Flamenco^^^^^3772^en|Air Flamenco|=en|Air Flamenco|^^air-air-flamenco^1^^
 air-air-france-v1^^1933-10-07^^AFR^AF^57^Air France^^Skyteam^Member^^https://en.wikipedia.org/wiki/Air_France^240643^en|Air France|^CDG=ORY^air-air-france^1^^
-air-air-freight-nz-v1^^1989-07-01^^AFN^OG^0^Air Freight NZ^^^^^https://en.wikipedia.org/wiki/Air_Freight_NZ^4692^en|Air Freight NZ|^^air-air-freight-nz^1^^
+air-air-freight-nz-v1^^1989-07-01^2016-07-01^AFN^OG^0^Air Freight NZ^^^^^https://en.wikipedia.org/wiki/Air_Freight_NZ^^en|Air Freight NZ|^^air-air-freight-nz^1^^
 air-air-gabon-v1^1^1951-01-01^2006-12-31^AGN^GN^185^Air Gabon^^^^^https://en.wikipedia.org/wiki/Air_Gabon^^en|Air Gabon|^LBV^air-air-gabon^1^^
 air-air-georgia-v1^^^^GEO^DA^0^Air Georgia^Air Georgia^^^^^^en|Air Georgia|=en|Air Georgia|^^air-air-georgia^1^^
 air-air-go-egypt-v1^^2014-01-01^^AGY^EO^0^Air Go Egypt^^^^^^5378^en|Air Go Egypt|^^air-air-go-egypt^1^^
@@ -373,6 +373,7 @@ air-bluebird-airways-v1^^2008-01-01^^BBG^BZ^0^Bluebird Airways^^^^^https://en.wi
 air-bluebird-cargo-v1^^2001-03-01^2012-09-12^BBD^BO^290^Bluebird Nordic^^^^C^https://en.wikipedia.org/wiki/Bluebird_Nordic^^en|Bluebird Nordic|p=en|Bluebird Cargo|h=sign|BLUE CARGO|^KEF^air-bluebird-cargo^1^^
 air-bmi-regional-v1^^1987-01-01^^BMR^BM^480^bmi regional^British Midland Regional Limited^^^^https://en.wikipedia.org/wiki/BMI_Regional^68^en|bmi regional|=en|British Midland Regional Limited|^^air-bmi-regional^1^^
 air-boliviana-de-aviacion-v1^^2007-10-24^^BOV^OB^930^Boliviana de Aviación (BoA)^^^^^https://en.wikipedia.org/wiki/Boliviana_de_Aviaci%C3%B3n^28999^abbr|BoA|=en|Boliviana de Aviación|^^air-boliviana-de-aviacion^1^^
+air-bonza-v1^^2023-01-31^^BNZ^AB^^Bonza^^^^^https://en.wikipedia.org/wiki/Bonza_(airline)^^^^air-bonza^1^^
 air-boutique-air-v1^^2013-01-01^^BTQ^4B^184^Boutique Air^^^^^https://en.wikipedia.org/wiki/Boutique_Air^13255^en|Boutique Air|^SFO^air-boutique-air^1^^
 air-bqb-v1^1^2010-01-01^2015-04-30^BQB^5Q^567^BQB Líneas Aéreas^^^^P^https://en.wikipedia.org/wiki/BQB_L%C3%ADneas_A%C3%A9reas^^en|BQB Líneas Aéreas|=en|BQB Airlines|^MVD^air-bqb^1^^m|air-amaszonas-paraguay-v1
 air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional^^^^P^https://en.wikipedia.org/wiki/Braathens_Regional_Aviation^^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-airways^1^^
@@ -633,6 +634,7 @@ air-fly-georgia-v1^1^2011-01-01^2013-12-31^FGE^9Y^671^Fly Georgia^^^^^https://en
 air-fly-jamaica-airways-v1^^2013-02-14^^FJM^OJ^266^Fly Jamaica Airways^^^^^https://en.wikipedia.org/wiki/Fly_Jamaica_Airways^^en|Fly Jamaica Airways|^KIN^air-fly-jamaica-airways^1^^
 air-fly-kiss-v1^^2016-01-01^^^KT^0^Fly Kiss^^^^^https://www.fly-kiss.com^258^en|Fly Kiss|^BES=CFE^air-fly-kiss^1^^
 air-fly-one-moldova-v1^^2013-01-01^^FIA^5F^130^Fly One^^^^^https://en.wikipedia.org/wiki/Fly_One_S.R.L.^1504^en|Fly One|^KIV^air-fly-one-moldova^1^^
+air-fly-play-v1^^2021-06-24^^FPY^OG^224^Fly Play^^^^^https://en.wikipedia.org/wiki/Play_(airline)^4692^^^air-fly-play^1^^
 air-fly-salone-v1^^2015-12-11^^^5L^0^Fly Salone^^^^^https://en.wikipedia.org/wiki/Fly_Salone^^en|Fly Salone|^^air-fly-salone^1^^
 air-fly2sky-v1^^^^VAW^F6^^Fly2sky^^^^^^^^^air-fly2sky^1^^
 air-fly540-angola-v1^1^2011-01-01^2014-05-31^^F5^0^Fly540 Angola^^^^^https://en.wikipedia.org/wiki/Fly540_Angola^^en|Fly540 Angola|^LAD^air-fly540-angola^1^^
@@ -724,7 +726,7 @@ air-helvetic-airways-v1^^^^OAW^2L^102^Helvetic Airways^2L Helvetic^^^^^13944^en|
 air-hennan-airlines-v1^^^^^VD^981^Hennan Airlines^^^^^^^en|Hennan Airlines|^^air-hennan-airlines^1^^
 air-hermes-airlines-v1^1^2011-08-01^2015-02-15^HRM^H3^490^Hermes Airlines^^^^^https://en.wikipedia.org/wiki/Hermes_Airlines^^en|Hermes Airlines|^ATH^air-hermes-airlines^1^^
 air-hesa-airlines-v1^1^2010-01-01^2015-12-31^SPN^H8^0^HESA Airlines^^^^^https://en.wikipedia.org/wiki/Sepahan_Airlines^^en|HESA Airlines|^IFH^air-hesa-airlines^1^^
-air-hevi-lift-v1^^1994-01-01^^ASN^IU^0^Hevilift^Air Straubing^^^^https://en.wikipedia.org/wiki/Hevilift^^en|Hevilift|=en|Air Straubing|^^air-hevi-lift^1^^
+air-hevi-lift-v1^^1994-01-01^2021-08-05^ASN^IU^0^Hevilift^Air Straubing^^^^https://en.wikipedia.org/wiki/Hevilift^^en|Hevilift|=en|Air Straubing|^^air-hevi-lift^1^^
 air-hex-air-v1^^^^HER^UD^848^Hex Air^^^^^^1249^en|Hex Air|^^air-hex-air^1^^
 air-hi-fly-transportes-aereo-v1^^2006-01-01^^HFY^5K^654^Hi Fly^^^^^https://en.wikipedia.org/wiki/Hi_Fly_%28airline%29^^en|Hi Fly|^^air-hi-fly-transportes-aereo^1^^
 air-highland-airways-v1^1^1991-01-01^2010-03-24^HWY^8H^0^Highland Airways^Air Alba^^^^https://en.wikipedia.org/wiki/Highland_Airways^^en|Highland Airways|=en|Air Alba|^^air-highland-airways^1^^
@@ -1303,6 +1305,7 @@ air-sundair-v1^^^^SDR^SR^^SundAir^^^^^^3824^^^air-sundair^1^^
 air-sunny-airways-v1^1^2011-08-16^2012-12-31^SUW^2S^0^Sunny Airways^^^^^https://en.wikipedia.org/wiki/Sunny_Airways^^en|Sunny Airways|^BKK^air-sunny-airways^1^^
 air-sunrise-airways-v1^^^^SNR^S6^0^Sunrise Airways^^^^^^1461^en|Sunrise Airways|^^air-sunrise-airways^1^^
 air-sunwing-airlines-v1^^^^SWG^WG^292^Sunwing Airlines^Sunwing Airlines^^^^^1958^en|Sunwing Airlines|=en|Sunwing Airlines|^^air-sunwing-airlines^1^^
+air-super-air-jet-v1^^2021-08-06^^SJV^IU^920^Super Air Jet^Super Air Jet^^^^https://en.wikipedia.org/wiki/Super_Air_Jet^^^^air-super-air-jet^1^^
 air-surinam-airways-v1^^^^SLM^PY^192^Surinam Airways^Surinam Air^^^^^1728^en|Surinam Airways|=en|Surinam Air|^^air-surinam-airways^1^^
 air-sutra-v1^^^^^1K^0^Sutra^Southern^^^^^^en|Sutra|=en|Southern|^^air-sutra^1^^
 air-svenska-direktflyg-v1^1^2000-10-01^2015-12-31^HSV^HS^198^Direktflyg^^^^^https://en.wikipedia.org/wiki/Direktflyg^^en|Direktflyg|p=en|Svenska Direktflyg AB|=en|Sundsvall Aero|h^^air-svenska-direktflyg^1^^
