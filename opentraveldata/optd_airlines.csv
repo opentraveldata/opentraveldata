@@ -19,6 +19,7 @@ air-aero-caribbean-v1^^^^CRN^7L^164^Aero Caribbean^^^^^^^en|Aero Caribbean|^^air
 air-aero-charter-v1^1^^2014-12-31^UCR^DW^187^Aero Charter^^^^^^^en|Aero Charter|^^air-aero-charter^1^^
 air-aero-cuahonte-v1^1^1957-11-01^2007-12-31^CUO^5G^0^Aero Cuahonte^^^^^https://en.wikipedia.org/wiki/Aero_Cuahonte^^en|Aero Cuahonte|^UPN^air-aero-cuahonte^1^^
 air-aero-flight-v1^1^2004-01-01^2005-12-31^ARF^GV^0^Aero Flight^^^^^https://en.wikipedia.org/wiki/Aero_Flight^^en|Aero Flight|^^air-aero-flight^1^^
+air-aero-k-v1^^2021-04-15^^EOK^RF^711^Aero K^^^^^https://en.wikipedia.org/wiki/Aero_K^^^^air-aero-k^1^^
 air-aero-mongolia-v1^^^^MNG^M0^719^Aero Mongolia^^^^^^^en|Aero Mongolia|^^air-aero-mongolia^1^^
 air-aero-republica-v1^^2010-10-06^^RPB^P5^845^Copa Airlines Colombia^AeroRepública^^^^https://en.wikipedia.org/wiki/Copa_Airlines_Colombia^^en|Copa Airlines Colombia|=en|AeroRepública|^^air-aero-republica^1^^
 air-aero-transporte-atsa-v1^^2014-01-01^^AMP^4A^212^Aero Transporte^ATSA^^^^^694^en|Aero Transporte|=en|ATSA|^^air-aero-transporte-atsa^1^^
@@ -1055,7 +1056,7 @@ air-onur-air-v1^^1992-04-14^^OHY^8Q^66^Onur Air^^^^^https://en.wikipedia.org/wik
 air-openskies-v1^^2008-03-01^2020-07-31^BOS^LV^284^OpenSkies^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/OpenSkies^^en|OpenSkies|=en|L'Avion|h=en|Elysair SAS|h=sign|MISTRAL|=sign|ELYSAIR|h^ORY^air-openskies^1^^
 air-orange2fly^^2015-09-01^2021-09-30^^O4^^Orange2fly^^^^^^^^^air-orange2fly^1^^
 air-orbest-v1^^2007-01-01^^OBS^6O^0^Orbest^^^^^https://en.wikipedia.org/wiki/Orbest^186^en|Orbest|^^air-orbest^1^^
-air-ord-air-charter-v1^^^^^RF^0^Ord Air Charter^^^^^^^en|Ord Air Charter|^^air-ord-air-charter^1^^
+air-ord-air-charter-v1^^^1998-12-31^^RF^0^Ord Air Charter^^^^^^^en|Ord Air Charter|^^air-ord-air-charter^1^^
 air-orenair-v1^1^1992-01-01^2016-06-30^ORB^R2^291^Orenburg Airlines^^^^^https://en.wikipedia.org/wiki/Orenair^^en|Orenburg Airlines|p=en|Orenair|=ru|Оренбургские авиалинии|^REN^air-orenair^1^^
 air-orenburg-region-airlines-v1^^^^^O7^0^Orenburg Region Airlines^^^^^^^en|Orenburg Region Airlines|^^air-orenburg-region-airlines^1^^
 air-orient-thai-airlines-v1^^1995-01-01^^OEA^OX^578^Orient Thai Airlines^^^^^https://en.wikipedia.org/wiki/Orient_Thai_Airlines^368^en|Orient Thai Airlines|^^air-orient-thai-airlines^1^^
@@ -1130,7 +1131,7 @@ air-rayani-air-v1^^2015-12-20^^RKT^RN^639^Rayani Air^^^^^https://en.wikipedia.or
 air-real-tonga-v1^^2019-09-30^^RLT^R4^448^Real Tonga^^^^^https://en.wikipedia.org/wiki/Real_Tonga^^en|Real Tonga|=en|Our Kingdom Airline|=sign|REAL TONGA|^TBU^air-real-tonga^1^^
 air-red-wings-airlines-v1^^^^RWZ^WZ^309^Red Wings Airlines^^^^^^15715^en|Red Wings Airlines|^^air-red-wings-airlines^1^^
 air-redemption-v1^^^^RNE^2O^0^Redemption^^^^^^2213^en|Redemption|^^air-redemption^1^^
-air-regent-airways-v1^^^^^RX^652^Regent Airways^^^^^^^en|Regent Airways|^^air-regent-airways^1^^
+air-regent-airways-v1^^2010-11-10^2020-03-01^RGE^RX^652^Regent Airways^^^^^^^en|Regent Airways|^^air-regent-airways^1^^
 air-region-airline-v1^^^^^RK^0^Region Airline^^^^^^1037^en|Region Airline|^^air-region-airline^1^^
 air-regional-air-services-v1^^^^REG^8N^0^Regional Air Services^^^^^^11014^en|Regional Air Services|^^air-regional-air-services^1^^
 air-regional-express-v1^^2002-01-01^^RXA^ZL^899^Regional Express^^^^^https://en.wikipedia.org/wiki/Regional_Express_Airlines^69084^en|Regional Express|^^air-regional-express^1^^
