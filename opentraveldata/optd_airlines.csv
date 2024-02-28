@@ -683,7 +683,7 @@ air-gazpromavia-v1^^^^GZP^4G^579^Gazpromavia^^^^^^244^en|Gazpromavia|^^air-gazpr
 air-gb-airways-v1^1^1931-01-01^2008-03-30^^GT^0^GB Airways^^^^^https://en.wikipedia.org/wiki/GB_Airways^^en|GB Airways|^LGW^air-gb-airways^1^^
 air-genghis-khan-airlines-v1^^^^NMG^9D^^Genghis Khan Airlines^^^^^^1216^^^air-genghis-khan-airlines^1^^
 air-georgian-airways-v1^^^^^A9^606^Georgian Airways^Arizena Air^^^^^1456^en|Georgian Airways|=en|Arizena Air|^^air-georgian-airways^1^^
-air-germania-flug-v1^^2015-03-26^2019-06-11^GSW^GM^581^Germania Flug^^^^^https://en.wikipedia.org/wiki/Germania_Flug^651^en|Germania Flug|^^air-germania-flug^1^^
+air-germania-flug-v1^^2015-03-26^2019-02-05^GSW^GM^^Germania Flug^^^^^https://en.wikipedia.org/wiki/Germania_Flug^651^en|Germania Flug|^^air-germania-flug^1^^
 air-germania-v1^^1978-01-01^^GMI^ST^246^Germania^^^^^https://en.wikipedia.org/wiki/Germania_%28airline%29^^en|Germania|^^air-germania^1^^
 air-germanwings-v1^^1997-01-01^^GWI^4U^51^Germanwings^^^^^https://en.wikipedia.org/wiki/Germanwings^^en|Germanwings|^^air-germanwings^1^^
 air-ghadames-air-transport-v1^1^2004-01-01^2006-12-31^GHT^G6^0^Ghadames Air Transport^^^^^https://en.wikipedia.org/wiki/Ghadames_Air_Transport^^en|Ghadames Air Transport|^^air-ghadames-air-transport^1^^
@@ -1331,7 +1331,7 @@ air-taag-v1^^^^DTA^DT^118^Taag^^^^^^3331^en|Taag|^^air-taag^1^^
 air-taba-amazonica-v1^1^1976-01-01^2002-12-31^TAB^T2^0^TABA – Transportes Aéreos da Bacia Amazônica^^^^^https://en.wikipedia.org/wiki/TABA_%E2%80%93_Transportes_A%C3%A9reos_da_Bacia_Amaz%C3%B4nica^^en|TABA – Transportes Aéreos da Bacia Amazônica|=abbr|TABA|^BEL^air-taba-amazonica^1^^
 air-taban-airlines-v1^^^^TBM^HH^283^Taban Airlines^^^^^^^en|Taban Airlines|^^air-taban-airlines^1^^
 air-taca-airlines-v1^^1931-01-01^^TAI^TA^202^Avianca El Salvador^TACA Airlines^^^^https://en.wikipedia.org/wiki/Avianca_El_Salvador^21913^en|Avianca El Salvador|=en|TACA Airlines|^^air-taca-airlines^1^^
-air-taca-peru-v1^^1999-07-01^^TPU^T0^530^Avianca Perú^TACA Peru^^^^https://en.wikipedia.org/wiki/Avianca_Peru^^en|Avianca Perú|=en|TACA Peru|^^air-taca-peru^1^^
+air-taca-peru-v1^^1999-07-01^2020-05-10^TPU^T0^530^Avianca Perú^TACA Peru^^^^https://en.wikipedia.org/wiki/Avianca_Peru^^en|Avianca Perú|=en|TACA Peru|^^air-taca-peru^1^^
 air-tacv-cabo-verde-airlines-v1^^^^TCV^VR^696^Tacv Cabo Verde Airlines^TACV^^^^^^en|Tacv Cabo Verde Airlines|=en|TACV|^^air-tacv-cabo-verde-airlines^1^^
 air-taf-linhas-aereas-v1^^^^TSD^R9^418^TAF Linhas Aereas^Air Charter^^^^^^en|TAF Linhas Aereas|=en|Air Charter|^^air-taf-linhas-aereas^1^^
 air-tailwind-hava-yollari-as-v1^^^^TWI^TI^0^Tailwind Hava Yollari As^Baltic Int^^^^^499^en|Tailwind Hava Yollari As|=en|Baltic Int|^^air-tailwind-hava-yollari-as^1^^
@@ -1398,7 +1398,7 @@ air-transwest-air-v1^1^1955-01-01^1999-12-31^^9T^^Athabaska Airways^^^^^https://
 air-transwest-air-v2^^2000-01-01^2010-12-31^ABS^9T^^Transwest Air^^^^^https://en.wikipedia.org/wiki/Transwest_Air^^en|Transwest Air|p=en|Athabaska Airways|h^YPA=YXE^air-transwest-air^2^^
 air-travel-service-hungary-v1^^2001-01-01^^TVL^7O^0^Travel Service Hungary^^^^^https://en.wikipedia.org/wiki/Travel_Service_%28Hungary%29^^en|Travel Service Hungary|^^air-travel-service-hungary^1^^
 air-travel-service-polska-v1^^2012-05-01^^TVP^3Z^0^Travel Service Polska^^^^T^https://en.wikipedia.org/wiki/Travel_Service_Polska^^en|Travel Service Polska|^^air-travel-service-polska^1^^
-air-travel-service-slovensko-v1^^2010-01-01^^TVQ^6D^0^Travel Service Slovensko^^^^T^https://en.wikipedia.org/wiki/Travel_Service_%28Slovakia%29^^en|Travel Service Slovensko|^BTS^air-travel-service-slovensko^1^^
+air-travel-service-slovensko-v1^^2010-01-01^^TVQ^6D^0^Travel Service Slovensko^Smartwings Slovakia^^^T^https://en.wikipedia.org/wiki/Travel_Service_%28Slovakia%29^^en|Travel Service Slovensko|^BTS^air-travel-service-slovensko^1^^
 air-trigana-air-v1^^2014-01-01^^^IL^0^Trigana Air Service^Istanbul Air^^^^^5082^en|Trigana Air Service|=en|Istanbul Air|^^air-trigana-air^1^^
 air-trip-v1^^^^^T4^661^Trip^^^^^^^en|Trip|^^air-trip^1^^
 air-tropic-air-v1^^1979-01-01^^TOS^9N^789^Tropic Air^^^^PC^https://en.wikipedia.org/wiki/Tropic_Air^30692^en|Tropic Air|^^air-tropic-air^1^^
