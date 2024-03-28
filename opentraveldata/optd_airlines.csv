@@ -412,7 +412,7 @@ air-cambodia-bayon-v1^^2014-09-01^^BYC^BD^688^Cambodia Bayon Airlines^^^^^https:
 air-canadian-airlines-v1^1^1987-01-01^2000-12-31^CDN^CP^0^Canadian Airlines^^^^^https://en.wikipedia.org/wiki/Canadian_Airlines^^en|Canadian Airlines|^^air-canadian-airlines^1^^
 air-canadian-north-v1^^1989-01-01^^MPE^5T^518^Canadian North^^^^^https://en.wikipedia.org/wiki/Canadian_North^13320^en|Canadian North|^^air-canadian-north^1^^
 air-canary-fly-v1^^2010-01-01^^CNF^PM^496^Canaryfly^^^^^https://en.wikipedia.org/wiki/Canaryfly^11690^en|Canaryfly|^^air-canary-fly^1^^
-air-canjet-airlines-v1^^^^CJA^C6^0^Canjet Airlines^Bright Airlines^^^^^^en|Canjet Airlines|=en|Bright Airlines|^^air-canjet-airlines^1^^
+air-canjet-airlines-v1^^^2015-09-01^CJA^C6^0^Canjet Airlines^Bright Airlines^^^^^^en|Canjet Airlines|=en|Bright Airlines|^^air-canjet-airlines^1^^
 air-cape-air-v1^^1989-01-01^^KAP^9K^306^Cape Air^^^^^https://en.wikipedia.org/wiki/Cape_Air^100416^en|Cape Air|^^air-cape-air^1^^
 air-cargologicair-v1^^^^CLU^P3^560^CargoLogicAir^^^^^https://en.wikipedia.org/wiki/CargoLogicAir^^en|CargoLogicAir|=ko|카고 로직 에어|=sign|FIREBIRD|^STN^air-cargologicair^1^^
 air-cargolux-italia-v1^1^^2013-12-31^^C8^0^Cargolux Italia^^^^C^^^en|Cargolux Italia|^^air-cargolux-italia^1^^
@@ -433,6 +433,7 @@ air-central-air-transport-services-v1^1^2008-01-01^2015-12-31^^ZO^0^Central Air 
 air-central-mountain-air-v1^^^^GLR^9M^634^Central Mountain Air^^^^^^6073^en|Central Mountain Air|^^air-central-mountain-air^1^^
 air-centralwings-v1^^^^CLW^C0^0^Centralwings^^^^^^^en|Centralwings|^^air-centralwings^1^^
 air-centre-avia-v1^1^2000-01-01^2010-12-31^CVC^J7^0^Centre-Avia^^^^^https://en.wikipedia.org/wiki/Centre-Avia^^en|Centre-Avia|=ru|Авиакомпания «ЦЕНТР-АВИА»|^BKA^air-centre-avia^1^^
+air-centrum-air-v1^^2023-02-15^^MFX^C6^^Centrum Air^^^^^^^^^air-centrum-air^1^^
 air-chair-airlines-v1^^2019-06-11^^GSW^GM^581^Chair Airlines^^^^^https://en.wikipedia.org/wiki/Chair_Airlines^^^^air-chair-airlines^1^^
 air-chalair-aviation-v1^^^^CLG^CE^980^Chalair Aviation^Chalair^^^^^1486^en|Chalair Aviation|=en|Chalair|^^air-chalair-aviation^1^^
 air-challenge-aero-be-v1^^^^CHG^X7^^Challenge Aero^^^^T^^^en|Challenge Aero|^^air-challenge-aero-be^1^^
