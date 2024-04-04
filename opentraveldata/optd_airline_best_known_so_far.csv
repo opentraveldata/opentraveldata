@@ -396,7 +396,7 @@ air-east-coast-flight-services-v1^^1991-01-01^^JTM^^0^East Coast Flight Services
 air-eastern-airways-v1^^1997-01-01^^EZE^T3^467^Eastern Airways^^^^^https://en.wikipedia.org/wiki/Eastern_Airways^en|Eastern Airways|^ABZ^air-eastern-airways^1^
 air-eastern-caribbean-airlines-v1^^^^^JI^0^Eastern Caribbean Airlines^^^^^^en|Eastern Caribbean Airlines|^^air-eastern-caribbean-airlines^1^
 air-east-line-v1^^^^^1T^0^East Line^^^^^^en|East Line|^^air-east-line^1^
-air-eastok-avia-v3^^2011-04-01^^EAA^KR^265^Air Bishkek^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^en|Air Bishkek|p=en|Kyrgyz Airways|h=en|Eastok Avia|h^FRU^air-eastok-avia^3^
+air-eastok-avia-v3^^2011-04-01^2016-07-07^EAA^KR^265^Air Bishkek^^^^^https://en.wikipedia.org/wiki/Air_Bishkek^en|Air Bishkek|p=en|Kyrgyz Airways|h=en|Eastok Avia|h^FRU^air-eastok-avia^3^
 air-easyfly-colombia^^2007-01-01^^EFY^VE^0^EasyFly^^^^^https://en.wikipedia.org/wiki/EasyFly^en|EasyFly|ps=en|Empresa Aérea de Servicios y Facilitación Logística Integral|=sign|EASYFLY|^BGA=BOG=EOH^air-easyfly-colombia^1^
 air-easyjet-europe-v1^^2017-07-18^^EJU^EC^0^easyJet Europe^^^^^https://en.wikipedia.org/wiki/EasyJet_Europe^en|easyJet Europe|^^air-easyjet-europe^1^
 air-easyjet-switzerland-v1^^1989-03-23^^EZS^DS^0^easyJet Switzerland^^^^^https://en.wikipedia.org/wiki/EasyJet_Switzerland^en|easyJet Switzerland|^^air-easyjet-switzerland^1^
@@ -1175,3 +1175,4 @@ trn-sncf-v1^^^^^2C^0^SNCF^^^^R^https://en.wikipedia.org/wiki/SNCF^en|SNCF|^^trn-
 trn-thalys-v1^^^^^2H^56^Thalys^^^^R^https://en.wikipedia.org/wiki/Thalys^en|Thalys|^^trn-thalys^1^
 trn-trenitalia-v1^^2000-01-01^^^7T^0^Trenitalia^^^^R^https://en.wikipedia.org/wiki/Trenitalia^en|Trenitalia|^^trn-trenitalia^1^
 trn-via-rail-canada-inc-v1^^1977-01-01^^VRR^2R^830^VIA Rail Canada^^^^R^https://en.wikipedia.org/wiki/Via_Rail^en|VIA Rail Canada|^^trn-via-rail-canada-inc^1^
+air-cambodia-airways-v1^^2017-09-11^^KME^KR^265^Cambodia Airways^^^^^https://en.wikipedia.org/wiki/Cambodia_Airways^en|Cambodia Airways|^PNH^air-cambodia-airways^1^
