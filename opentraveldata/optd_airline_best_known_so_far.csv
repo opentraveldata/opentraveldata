@@ -116,7 +116,8 @@ air-airlines-png-v1^^1987-01-01^^TOK^CG^626^PNG Air^^^^^https://en.wikipedia.org
 air-airline-taimyr-v1^^2009-01-01^^TYA^Y7^476^NordStar^^^^^https://en.wikipedia.org/wiki/NordStar^en|NordStar|ps=en|Taimyr Air Company|=ru|Авиакомпания «Таймыр»|=sign|TAIMYR|^KJA=NSK^air-airline-taimyr^1^
 air-air-macau-v1^^1995-11-09^^AMU^NX^675^Air Macau^^^^^https://en.wikipedia.org/wiki/Air_Macau^en|Air Macau|=pny|Àomén Hángkōng|=wuu|澳门航空|=yue|澳門航空|^^air-air-macau^1^
 air-air-madagascar-v1^^^^MDG^MD^258^Air Madagascar^^^^^^en|Air Madagascar|^^air-air-madagascar^1^
-air-air-malta-v1^^^^AMC^KM^643^Air Malta^^^^^^en|Air Malta|^^air-air-malta^1^
+air-air-malta-v1^^^2024-03-30^AMC^KM^643^Air Malta^^^^^^en|Air Malta|^^air-air-malta^1^
+air-km-malta-airlines-v1^^2024-03-31^^KMM^KM^643^KM Malta Airlines^^^^^https://fr.wikipedia.org/wiki/KM_Malta_Airlines^en|KM Malta Airlines|^^air-km-malta-airlines^1^
 air-air-mandalay-v1^^^^^6T^373^Air Mandalay^^^^^^en|Air Mandalay|^^air-air-mandalay^1^
 air-air-mauritius-v1^^^^MAU^MK^239^Air Mauritius^^^^^^en|Air Mauritius|^^air-air-mauritius^1^
 air-air-mediterranean-v1^^^^MAR^MV^^Air Mediterranean^^^^^^^^air-air-mediterranean^1^
@@ -880,7 +881,8 @@ air-servant-air-v1^^^1997-01-01^^8D^0^Servant Air^^^^^^en|Servant Air|^^air-serv
 air-servicios-aereos-andes-v1^^2014-01-01^^AND^^323^Servicios Aéreos de los Andes^Servicios Aereos de los Andes^^^^^en|Servicios Aéreos de los Andes|=en|Andes Air|s^^air-servicios-aereos-andes^1^
 air-servicios-aereos-profesionales-v1^^^^PSV^5S^0^Servicios Aereos Profesionales^^^^^^en|Servicios Aereos Profesionales|^^air-servicios-aereos-profesionales^1^
 air-severstal-aircompany-v1^^^^SSF^D2^103^Severstal Air Company^^^^^https://en.wikipedia.org/wiki/Severstal_Air_Company^en|Severstal Air Company|^^air-severstal-aircompany^1^
-air-shaheen-air-v1^^^^SAI^NL^740^Shaheen Air^^^^^^en|Shaheen Air|^^air-shaheen-air^1^
+air-shaheen-air-v1^^^2018-10-08^SAI^NL^740^Shaheen Air^^^^^^en|Shaheen Air|^^air-shaheen-air^1^
+air-amelia-international-v1^^2022-01-01^^AEH^NL^0^Amelia International^^^^^^en|Amelia International|^^air-amelia-international^1^
 air-shandong-airlines-v1^^1994-01-01^^CDG^SC^324^Shandong Airlines^^^^^https://en.wikipedia.org/wiki/Shandong_Airlines^en|Shandong Airlines|^^air-shandong-airlines^1^
 air-shanghai-airlines-v1^^1985-01-01^^CSH^FM^774^Shanghai Airlines^^^Affiliate^^https://en.wikipedia.org/wiki/Shanghai_Airlines^en|Shanghai Airlines|^^air-shanghai-airlines^1^
 air-sharp-aviation-v1^^^^^SH^0^Sharp Aviation^Fly Me^^^^^en|Sharp Aviation|=en|Fly Me|^^air-sharp-aviation^1^
