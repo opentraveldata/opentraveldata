@@ -155,7 +155,7 @@ air-air-macau-v1^^1995-11-09^^AMU^NX^675^Air Macau^^^^^https://en.wikipedia.org/
 air-air-madagascar-v1^^^^MDG^MD^258^Air Madagascar^^^^^^3777^en|Air Madagascar|^^air-air-madagascar^1^^
 air-air-malawi-v1^1^1964-03-01^2013-02-28^AML^QM^167^Air Malawi^^^^^https://en.wikipedia.org/wiki/Air_Malawi^^en|Air Malawi|^^air-air-malawi^1^^
 air-air-mali-v1^1^2005-01-01^2012-08-01^CMM^I5^261^Air Mali^^^^^https://en.wikipedia.org/wiki/Air_Mali_(2005)^^en|Air Mali|^^air-air-mali^1^^
-air-air-malta-v1^^^^AMC^KM^643^Air Malta^^^^^^8680^en|Air Malta|^^air-air-malta^1^^
+air-air-malta-v1^^^2024-03-30^AMC^KM^643^Air Malta^^^^^^^en|Air Malta|^^air-air-malta^1^^
 air-air-mandalay-v1^^^^^6T^373^Air Mandalay^^^^^^^en|Air Mandalay|^^air-air-mandalay^1^^
 air-air-marshall-islands-v1^1^1980-01-01^2015-12-31^MRS^CW^0^Air Marshall Islands^^^^^https://en.wikipedia.org/wiki/Air_Marshall_Islands^^en|Air Marshall Islands|=ja|マーシャル諸島航空|=zh|馬紹爾群島航空|^MAJ^air-air-marshall-islands^1^^
 air-air-mauritius-v1^^^^MAU^MK^239^Air Mauritius^^^^^^4342^en|Air Mauritius|^^air-air-mauritius^1^^
@@ -267,6 +267,7 @@ air-amakusa-airlines-v1^^2000-03-23^^AHX^MZ^0^Amakusa Airlines^^^^^https://en.wi
 air-amaszonas-paraguay-v1^^2015-09-23^^AZP^ZP^445^Paranair^^^^^https://en.wikipedia.org/wiki/Paranair^^en|Paranair|p=en|Compania de Aviacion Paraguaya|=en|Amaszonas Paraguay|h=sign|GUARANI|^ASU^air-amaszonas-paraguay^1^m|air-bqb-v1^
 air-amaszonas-uruguay-v1^^2015-01-01^^AUZ^Z7^455^Amaszonas Uruguay^^^^^https://en.wikipedia.org/wiki/Amaszonas_Uruguay^^en|Amaszonas Uruguay|=en|Cristalux SA|=sign|URUGUAYA|^MVD^air-amaszonas-uruguay^1^^
 air-amaszonas-v1^^1998-10-01^^AZN^Z8^464^Línea Aérea Amaszonas^^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Amaszonas^18066^en|Línea Aérea Amaszonas|=en|Amaszonas|s=en|Compania de Servicios de Transporte Aereo Amaszonas|=sign|AMASZONAS|^LPB^air-amaszonas^1^^
+air-amelia-international-v1^^2022-01-01^^AEH^NL^0^Amelia International^^^^^^6560^en|Amelia International|^^air-amelia-international^1^^
 air-amelia-v1^^2020-02-01^^AIA^8R^942^Amelia^^^^^https://en.wikipedia.org/wiki/Sol_L%C3%ADneas_A%C3%A9reas^^en|Amelia|^^air-amelia^1^^
 air-american-airlines-v1^^1934-01-01^^AAL^AA^1^American Airlines^^OneWorld^Member^^https://en.wikipedia.org/wiki/American_Airlines^1242078^en|American Airlines|^^air-american-airlines^1^^
 air-american-eagle-v1^^1998-01-01^^ENY^MQ^93^Envoy Air^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Envoy_Air^379128^en|Envoy Air|^^air-american-eagle^1^^
@@ -860,6 +861,7 @@ air-kingfisher-airlines-v1^1^2004-01-01^2012-10-20^KFR^IT^^Kingfisher Airlines^^
 air-kish-airlines-v1^^^^IRK^Y9^780^Kish Airlines^Trans Air^^^^^^en|Kish Airlines|=en|Trans Air|^^air-kish-airlines^1^^
 air-klm-cityhopper-v1^^1991-04-01^^KLC^WA^0^KLM Cityhopper^^^^^https://en.wikipedia.org/wiki/KLM_Cityhopper^104^en|KLM Cityhopper|^^air-klm-cityhopper^1^^
 air-klm-v1^^1919-10-07^^KLM^KL^74^KLM^KLM Royal Dutch Airlines^Skyteam^Member^^https://en.wikipedia.org/wiki/KLM^244708^en|KLM|=en|KLM Royal Dutch Airlines|^^air-klm^1^^
+air-km-malta-airlines-v1^^2024-03-31^^KMM^KM^643^KM Malta Airlines^^^^^https://fr.wikipedia.org/wiki/KM_Malta_Airlines^8680^en|KM Malta Airlines|^^air-km-malta-airlines^1^^
 air-kogalymavia-airlines-v1^^^^^7K^0^Kogalymavia Airlines^^^^^^^en|Kogalymavia Airlines|^^air-kogalymavia-airlines^1^^
 air-komiaviatrans-v1^^2016-07-01^^KMA^KO^0^Komiaviatrans^^^^^https://en.wikipedia.org/wiki/Komiaviatrans^540^en|Komiaviatrans|ps=en|OJSC Komiaviatrans|=ru|Комиавиатранс|^SCW^air-komiaviatrans^1^^
 air-korean-air-v1^^1969-03-01^^KAL^KE^180^Korean Air^^Skyteam^Member^^https://en.wikipedia.org/wiki/Korean_Air^123181^en|Korean Air|^^air-korean-air^1^^
@@ -1207,7 +1209,7 @@ air-servant-air-v1^^^1997-01-01^^8D^0^Servant Air^^^^^^314^en|Servant Air|^^air-
 air-servicios-aereos-andes-v1^^2014-01-01^^AND^^323^Servicios Aéreos de los Andes^Servicios Aereos de los Andes^^^^^^en|Servicios Aéreos de los Andes|=en|Andes Air|s^^air-servicios-aereos-andes^1^^
 air-servicios-aereos-profesionales-v1^^^^PSV^5S^0^Servicios Aereos Profesionales^^^^^^^en|Servicios Aereos Profesionales|^^air-servicios-aereos-profesionales^1^^
 air-severstal-aircompany-v1^^^^SSF^D2^103^Severstal Air Company^^^^^https://en.wikipedia.org/wiki/Severstal_Air_Company^4130^en|Severstal Air Company|^^air-severstal-aircompany^1^^
-air-shaheen-air-v1^^^^SAI^NL^740^Shaheen Air^^^^^^6560^en|Shaheen Air|^^air-shaheen-air^1^^
+air-shaheen-air-v1^^^2018-10-08^SAI^NL^740^Shaheen Air^^^^^^^en|Shaheen Air|^^air-shaheen-air^1^^
 air-shandong-airlines-v1^^1994-01-01^^CDG^SC^324^Shandong Airlines^^^^^https://en.wikipedia.org/wiki/Shandong_Airlines^92383^en|Shandong Airlines|^^air-shandong-airlines^1^^
 air-shanghai-airlines-v1^^1985-01-01^^CSH^FM^774^Shanghai Airlines^^Skyteam^Affiliate^^https://en.wikipedia.org/wiki/Shanghai_Airlines^113650^en|Shanghai Airlines|^^air-shanghai-airlines^1^^
 air-shanxi-airlines-v1^1^2001-07-06^2009-12-31^CXI^8C^0^Shanxi Airlines^^^^^https://en.wikipedia.org/wiki/Shanxi_Airlines^^en|Shanxi Airlines|=sign|SHANXI|^^air-shanxi-airlines^1^^
