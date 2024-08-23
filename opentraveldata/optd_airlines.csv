@@ -1145,7 +1145,7 @@ air-real-tonga-v1^^2019-09-30^^RLT^R4^448^Real Tonga^^^^^https://en.wikipedia.or
 air-red-wings-airlines-v1^^^^RWZ^WZ^309^Red Wings Airlines^^^^^^15715^en|Red Wings Airlines|^^air-red-wings-airlines^1^^
 air-redemption-v1^^^^RNE^2O^0^Redemption^^^^^^2213^en|Redemption|^^air-redemption^1^^
 air-regent-airways-v1^^2010-11-10^2020-03-01^RGE^RX^652^Regent Airways^^^^^^^en|Regent Airways|^^air-regent-airways^1^^
-air-region-airline-v1^^^^^RK^0^Region Airline^^^^^^1037^en|Region Airline|^^air-region-airline^1^^
+air-region-airline-v1^^^2011-01-1^^RK^0^Region Airline^^^^^^^en|Region Airline|^^air-region-airline^1^^
 air-regional-air-services-v1^^^^REG^8N^0^Regional Air Services^^^^^^11014^en|Regional Air Services|^^air-regional-air-services^1^^
 air-regional-express-v1^^2002-01-01^^RXA^ZL^899^Regional Express^^^^^https://en.wikipedia.org/wiki/Regional_Express_Airlines^69084^en|Regional Express|^^air-regional-express^1^^
 air-regionsair-v1^^2003-01-01^2014-01-01^^3C^507^Calima Aviacion^Corporate Exp^^^^^5723^en|Calima Aviacion|=en|Corporate Exp|^^air-regionsair^1^^
@@ -1172,6 +1172,7 @@ air-rutaca-airlines-v1^^1974-01-01^^RUC^5R^765^RUTACA Airlines^^^^^https://en.wi
 air-rwandair-express-v1^^2003-04-27^^RWD^WB^459^Rwandair^^^^^https://en.wikipedia.org/wiki/RwandAir^11281^en|Rwandair|=en|Rwandair Express|hs=ja|ルワンダ航空|=ko|르완다 에어|^^air-rwandair-express^1^^
 air-ryan-air-srvices-v1^1^1953-01-01^2012-12-31^RYA^7S^^Ryan Air Services^^^^^https://en.wikipedia.org/wiki/Ryan_Air_Services^^en|Ryan Air Services|=en|Artic Transportation|h=en|Unalakleet Air Taxi|=sign|RYAN AIR|^ANI=BET=EMK=KSM=OME=OTZ=UNK^air-ryan-air-srvices^1^^
 air-ryan-international-airlines-v1^1^1972-01-01^2013-01-31^RYN^RD^0^Ryan International Airlines^^^^^https://en.wikipedia.org/wiki/Ryan_International_Airlines^^en|Ryan International Airlines|=sign|RYAN|^RFD=SFB^air-ryan-international-airlines^1^^
+air-ryanair-uk-v1^^^^^RK^0^Ryanair UK^^^^^https://en.wikipedia.org/wiki/Ryanair_UK^1037^en|Ryanair UK|^^air-ryanair-uk^1^^
 air-ryanair-v1^^1985-07-08^^RYR^FR^0^Ryanair^^^^^https://en.wikipedia.org/wiki/Ryanair^^en|Ryanair|^^air-ryanair^1^^
 air-sabaidee-airways-v1^^2012-07-01^^VGO^E3^0^New Gen Airways^Sabaidee Airways^^^^https://en.wikipedia.org/wiki/New_Gen_Airways^2043^en|New Gen Airways|=en|Sabaidee Airways|^^air-sabaidee-airways^1^^
 air-saereo-v1^1^1994-01-01^2013-12-31^SRO^MZ^0^SAEREO^^^^^https://en.wikipedia.org/wiki/SAEREO^^en|SAEREO|p=en|Servicios Aéreos Ejecutivos Saereo S.A.|=sign|SAEREO|^^air-saereo^1^^
