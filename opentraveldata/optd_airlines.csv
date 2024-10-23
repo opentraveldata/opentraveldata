@@ -902,6 +902,7 @@ air-lgw-luftfahrtges-walter-v1^^^^^HE^0^LGW Luftfahrtges Walter^^^^^^^en|LGW Luf
 air-liat-v1^^1974-01-01^^LIA^LI^140^LIAT^^^^^https://en.wikipedia.org/wiki/LIAT^^abbr|LIAT|=en|LIAT|ps=en|Leeward Islands Air Transport|=sign|LIAT|^ANU=BGI=POS^air-liat^1^^
 air-libyan-airlines-v1^^1965-01-01^^LAA^LN^148^Libyan Airlines^^^^^https://en.wikipedia.org/wiki/Libyan_Airlines^2616^en|Libyan Airlines|^^air-libyan-airlines^1^^
 air-libyan-wings-v1^^2015-04-01^^LWA^YL^0^Libyan Wings^^^^^^1348^en|Libyan Wings|^^air-libyan-wings^1^^
+air-lift-airline-v1^^2020-10-01^^GBB^GE^170^Lift Airline^^^^^https://en.wikipedia.org/wiki/LIFT_(airline)^2028^en|Lift Airline|^^air-lift-airline^1^^
 air-linea-aerea-cuencana-v1^1^2012-01-01^2015-01-01^LAC^L5^0^Línea Aerea Cuencana^^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_A%C3%A9rea_Cuencana^^en|Línea Aerea Cuencana|^^air-linea-aerea-cuencana^1^^
 air-linea-aerea-de-servicio-v1^^^^LER^QL^782^Linea Aerea De Servicio^^^^^^6844^en|Linea Aerea De Servicio|^^air-linea-aerea-de-servicio^1^^
 air-linea-tristica-aereotuy-v1^^1982-01-01^^TUY^^^Línea Turística Aereotuy^Linea Turistica Aereotuy^^^^https://en.wikipedia.org/wiki/L%C3%ADnea_Tur%C3%ADstica_Aereotuy^^abbr|LTA|=en|Línea Turística Aereotuy|=es|Línea Turística Aereotuy|=sign|AEROTUY|^^air-linea-tristica-aereotuy^1^^
@@ -1394,7 +1395,7 @@ air-trans-caribbean-air-exportimport^^^^^CB^^Trans Caribbean Air ExportImport^^^
 air-trans-states-airlines-v1^^1982-01-01^^LOF^AX^414^Trans States Airlines^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Trans_States_Airlines^^en|Trans States Airlines|^^air-trans-states-airlines^1^^
 air-transaero-airlines-v1^^1990-01-01^^TSO^UN^670^Transaero Airlines^^^^^https://en.wikipedia.org/wiki/Transaero^^en|Transaero Airlines|^^air-transaero-airlines^1^^
 air-transair-v1^^^^GTS^R2^^Transair^^^^^^1466^^^air-transair^1^^
-air-transasia-airways-v1^^1951-05-21^^TNA^GE^170^TransAsia Airways^^^^^https://en.wikipedia.org/wiki/TransAsia_Airways^2028^en|TransAsia Airways|^KHH=TPE=TSA^air-transasia-airways^1^^
+air-transasia-airways-v1^^1951-05-21^2016-22-11^TNA^GE^170^TransAsia Airways^^^^^https://en.wikipedia.org/wiki/TransAsia_Airways^^en|TransAsia Airways|^KHH=TPE=TSA^air-transasia-airways^1^^
 air-transavia-airlines-v1^^^^TRA^HV^979^Transavia Airlines^^^^^^37883^en|Transavia Airlines|^^air-transavia-airlines^1^^
 air-transavia-denmark-v1^^^^^PH^0^Transavia Denmark^Polynesian^^^^^^en|Transavia Denmark|=en|Polynesian|^^air-transavia-denmark^1^^
 air-transavia-france-v1^^^^TVF^TO^0^Transavia France^President Air^^^^^35354^en|Transavia France|=en|President Air|^^air-transavia-france^1^^
