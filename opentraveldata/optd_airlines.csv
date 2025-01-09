@@ -103,7 +103,7 @@ air-air-cargo-carriers-v2^^2015-01-01^^SNC^2Q^0^Air Cargo Carriers^^^^C^https://
 air-air-cargo-germany-v1^1^2009-01-01^2013-12-31^ACX^6U^0^Air Cargo Germany^^^^C^https://en.wikipedia.org/wiki/Air_Cargo_Germany^^en|Air Cargo Germany|p=abbr|ACG|^HHN^air-air-cargo-germany^1^^
 air-air-carnival-v1^^2016-07-18^^^2S^0^Air Carnival^^^^^https://en.wikipedia.org/wiki/Air_Carnival^^en|Air Carnival|^CJB^air-air-carnival^1^^
 air-air-caucasus-v1^1^2013-01-01^2014-12-31^CSG^UY^49^Air Caucasus^^^^^https://en.wikipedia.org/wiki/Air_Caucasus^^en|Air Caucasus|^TBS^air-air-caucasus^1^^
-air-air-century-sa-v1^^2022-11-15^^CEY^Y2^^Air Century, S.A.^^^^^https://en.wikipedia.org/wiki/Air_Century^^^^^1^^
+air-air-century-sa-v1^^2022-11-15^^CEY^Y2^^Air Century, S.A.^^^^^https://en.wikipedia.org/wiki/Air_Century^^^^air-air-century-sa^1^^
 air-air-china-v1^^1988-01-01^^CCA^CA^999^Air China^^Star Alliance^Member^^https://en.wikipedia.org/wiki/Air_China^414012^en|Air China|^^air-air-china^1^^
 air-air-city-v1^1^2015-10-01^2015-12-31^ECE^4F^0^Air City^^^^^^^en|Air City|^FRA^air-air-city^1^^
 air-air-comet-v1^1^1996-01-01^2009-12-21^MPD^A7^0^Air Comet^^^^^https://en.wikipedia.org/wiki/Air_Comet^^en|Air Comet|=en|Air Plus Comet|h^MAD^air-air-comet^1^^
@@ -494,7 +494,7 @@ air-congo-airways-v1^^2016-09-01^^CGA^8Z^0^Congo Airways^^^^^https://en.wikipedi
 air-congo-express-v1^1^2010-01-01^2014-01-01^CXR^9X^0^Congo Express^New Axis Air^^^^https://en.wikipedia.org/wiki/Congo_Express^^en|Congo Express|=en|New Axis Air|^^air-congo-express^1^^
 air-continental-airlines-v1^1^^2012-03-03^COA^CO^5^Continental Airlines^Continental^^^^https://fr.wikipedia.org/wiki/Continental_Airlines^^en|Continental Airlines|=en|Continental|^^air-continental-airlines^1^^
 air-continental-micronesia-v1^1^1968-05-16^2010-12-22^CMI^CS^0^Continental Micronesia^^^^^https://en.wikipedia.org/wiki/Continental_Micronesia^^en|Continental Micronesia|^^air-continental-micronesia^1^^
-air-contour-airlines-v1^^2016-01-01^^VTE^LF^522^Contour Airlines^^^^^https://en.wikipedia.org/wiki/Contour_Airlines^6263^en|Contour Airlines|^^contour-airlines^1^^
+air-contour-airlines-v1^^2016-01-01^^VTE^LF^522^Contour Airlines^^^^^https://en.wikipedia.org/wiki/Contour_Airlines^6263^en|Contour Airlines|^^air-contour-airlines^1^^
 air-conviasa-v1^^^^VCV^V0^308^Conviasa^Conviasa^^^^^3337^en|Conviasa|=en|Conviasa|^^air-conviasa^1^^
 air-copa-airlines-v1^^1947-08-15^^CMP^CM^230^Copa Airlines^Compañía Panameña de Aviación^Star Alliance^Member^^https://en.wikipedia.org/wiki/Copa_Airlines^114648^en|Copa Airlines|=en|Compañía Panameña de Aviación|^^air-copa-airlines^1^^
 air-corendon-airlines-europe-v1^^^^CXI^XR^^Corendon Airlines Europe^^^^^^7485^^^air-corendon-airlines-europe^1^^
@@ -1153,7 +1153,7 @@ air-real-tonga-v1^^2019-09-30^^RLT^R4^448^Real Tonga^^^^^https://en.wikipedia.or
 air-red-wings-airlines-v1^^^^RWZ^WZ^309^Red Wings Airlines^^^^^^15715^en|Red Wings Airlines|^^air-red-wings-airlines^1^^
 air-redemption-v1^^^^RNE^2O^0^Redemption^^^^^^2213^en|Redemption|^^air-redemption^1^^
 air-regent-airways-v1^^2010-11-10^2020-03-01^RGE^RX^652^Regent Airways^^^^^^^en|Regent Airways|^^air-regent-airways^1^^
-air-region-airline-v1^^^2011-01-1^^RK^0^Region Airline^^^^^^^en|Region Airline|^^air-region-airline^1^^
+air-region-airline-v1^^^2011-01-01^^RK^0^Region Airline^^^^^^^en|Region Airline|^^air-region-airline^1^^
 air-regional-air-services-v1^^^^REG^8N^0^Regional Air Services^^^^^^11014^en|Regional Air Services|^^air-regional-air-services^1^^
 air-regional-express-v1^^2002-01-01^^RXA^ZL^899^Regional Express^^^^^https://en.wikipedia.org/wiki/Regional_Express_Airlines^69084^en|Regional Express|^^air-regional-express^1^^
 air-regionsair-v1^^2003-01-01^2014-01-01^^3C^507^Calima Aviacion^Corporate Exp^^^^^5723^en|Calima Aviacion|=en|Corporate Exp|^^air-regionsair^1^^
@@ -1260,7 +1260,7 @@ air-skyking-v1^^1990-01-01^^SGB^6K^0^Songbird Airways^^^^^https://en.wikipedia.o
 air-skymark-airlines-v1^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^https://en.wikipedia.org/wiki/Skymark_Airlines^31246^en|Skymark Airlines|^^air-skymark-airlines^1^^
 air-skynet-asia-v1^1^1997-01-01^2014-02-28^SNJ^LQ^0^Skynet Asia Airways^^^^^https://en.wikipedia.org/wiki/List_of_defunct_airlines_of_Japan^^en|Skynet Asia Airways|^HND^air-skynet-asia^1^^
 air-skynet-asia-v2^^2002-01-01^^^6J^0^Solaseed Air^^^^^https://en.wikipedia.org/wiki/Solaseed_Air^39782^en|Solaseed Air|p=en|Skynet Asia Airways|h=ja|ソラシドエア|=ko|솔라시드 항공|=sign|NEWSKY|==zh|亞洲天網航空|^HND^air-skynet-asia^2^^
-air-skypower-express-airways-v1^^1985-01-01^^EAN^NB^0^Skypower Express Airways^^^^P^https://en.wikipedia.org/wiki/Skypower_Express_Airways^^Skypower Express Airways^^p=en^1^^
+air-skypower-express-airways-v1^^1985-01-01^^EAN^NB^0^Skypower Express Airways^^^^P^https://en.wikipedia.org/wiki/Skypower_Express_Airways^^Skypower Express Airways^^air-skypower-express-airways^1^^
 air-skyservice-airlines-v1^1^1986-11-01^2010-03-31^SSV^5G^0^Skyservice^^^^^https://en.wikipedia.org/wiki/Skyservice^^en|Skyservice|ps=en|Skyservice Airlines Inc|^YYZ^air-skyservice-airlines^1^^
 air-skystar-airways-v1^1^2007-06-16^2009-01-03^SKT^XT^0^SkyStar Airways^^^^^https://en.wikipedia.org/wiki/SkyStar_Airways^^en||=en|SkyStar Airways|^^air-skystar-airways^1^^
 air-skytrans-regional-v1^^^^SKP^QN^0^Skytrans Regional^Mineralnye Vo^^^P^^12307^en|Skytrans Regional|=en|Mineralnye Vo|^^air-skytrans-regional^1^^
@@ -1402,7 +1402,7 @@ air-trans-caribbean-air-exportimport^^^^^CB^^Trans Caribbean Air ExportImport^^^
 air-trans-states-airlines-v1^^1982-01-01^^LOF^AX^414^Trans States Airlines^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Trans_States_Airlines^^en|Trans States Airlines|^^air-trans-states-airlines^1^^
 air-transaero-airlines-v1^^1990-01-01^^TSO^UN^670^Transaero Airlines^^^^^https://en.wikipedia.org/wiki/Transaero^^en|Transaero Airlines|^^air-transaero-airlines^1^^
 air-transair-v1^^^^GTS^R2^^Transair^^^^^^1466^^^air-transair^1^^
-air-transasia-airways-v1^^1951-05-21^2016-22-11^TNA^GE^170^TransAsia Airways^^^^^https://en.wikipedia.org/wiki/TransAsia_Airways^^en|TransAsia Airways|^KHH=TPE=TSA^air-transasia-airways^1^^
+air-transasia-airways-v1^^1951-05-21^2016-11-22^TNA^GE^170^TransAsia Airways^^^^^https://en.wikipedia.org/wiki/TransAsia_Airways^^en|TransAsia Airways|^KHH=TPE=TSA^air-transasia-airways^1^^
 air-transavia-airlines-v1^^^^TRA^HV^979^Transavia Airlines^^^^^^37883^en|Transavia Airlines|^^air-transavia-airlines^1^^
 air-transavia-denmark-v1^^^^^PH^0^Transavia Denmark^Polynesian^^^^^^en|Transavia Denmark|=en|Polynesian|^^air-transavia-denmark^1^^
 air-transavia-france-v1^^^^TVF^TO^0^Transavia France^President Air^^^^^35354^en|Transavia France|=en|President Air|^^air-transavia-france^1^^
