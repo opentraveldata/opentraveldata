@@ -405,6 +405,7 @@ air-bulgarian-air-charter-v1^^2000-12-14^^BUC^H6^0^Bulgarian Air Charter^^^^^htt
 air-buraq-air-v1^^2001-01-01^^BRQ^UZ^928^Buraq Air^^^^^https://en.wikipedia.org/wiki/Buraq_Air^106^en|Buraq Air|^^air-buraq-air^1^^
 air-business-air-v1^1^2009-12-01^2015-01-16^BCC^8B^0^Intira Airlines^Business Air^^^^https://en.wikipedia.org/wiki/Intira_Airlines^^en|Intira Airlines|=en|Business Air|^^air-business-air^1^^
 air-business-aviation-centre-v1^^^^^UQ^0^Business Aviation Centre^O Connor^^^^^7798^en|Business Aviation Centre|=en|O Connor|^^air-business-aviation-centre^1^^
+air-buzz^^^^RYS^RR^0^Buzz^^2018-01-02^^^https://en.wikipedia.org/wiki/Buzz_(Ryanair)^^en|Buzz|^^air-buzz^1^^
 air-bvi-airways-v1^1^2010-05-05^2014-09-30^BVI^XV^0^BVI Airways^^^^^https://en.wikipedia.org/wiki/BVI_Airways^^en|BVI Airways|^^air-bvi-airways^1^^
 air-cai-first-v1^1^1997-10-01^2009-01-13^SMX^XM^0^CAI First^^^^^https://en.wikipedia.org/wiki/C.A.I._First^^en|C.A.I. First|h=en|Alitalia Express|^LIN^air-cai-first^1^^
 air-cai-second-v1^1^^2009-01-12^VLE^VE^0^CAI Second^Volare^^^^https://en.wikipedia.org/wiki/CAI_Second^^en|CAI Second|=en|Volare|^^air-cai-second^1^^
@@ -1019,6 +1020,7 @@ air-national-jet-systems-v1^1^1990-07-01^2009-02-28^NJS^NC^0^National Jet System
 air-national-jet-systems-v2^^2009-03-01^^JTE^NC^0^Cobham Aviation Services Australia^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^2^^
 air-nature-air-v1^^^^^5C^0^Nature Air^^^^^^^en|Nature Air|^^air-nature-air^1^^
 air-naturelink-aviation-v1^1^1997-01-01^2011-12-31^NRK^^0^Naturelink Aviation^^^^^https://en.wikipedia.org/wiki/National_Airways_Corporation^^abbr|NAC|=en|NAC Charter|ps=en|National Airways Corporation|=en|Naturelink Aviation|h^PRY^air-naturelink-aviation^1^^
+air-naysa-v1^^1969-05-07^2018-01-01^NAY^ZN^595^Naysa^Air Bourbon^^^^https://en.wikipedia.org/wiki/Navegacion_y_Servicios_A%C3%A9reos_Canarios^^en|Naysa|=en|Air Bourbon|^^air-naysa^1^^
 air-nayzak-air-v1^1^2006-01-01^2009-12-31^NZA^M4^0^Nayzak Air^^^^^https://en.wikipedia.org/wiki/Nayzak_Air_Transport^^ar|النيزك للنقل الجوي|=en|Nayzak Air|^^air-nayzak-air^1^^
 air-nego-airline-one-v1^^^^^YA^0^Nego Airline One^^^^^^^en|Nego Airline One|^^air-nego-airline-one^1^^
 air-neos-v1^^2002-03-08^^NOS^NO^703^Neos^^^^^https://en.wikipedia.org/wiki/Neos_(airline)^7145^en|Neos|^^air-neos^1^^
@@ -1175,7 +1177,7 @@ air-rossiya-airlines-v1^^1992-01-01^^SDM^FV^195^Rossiya^^^^^https://en.wikipedia
 air-rotana-jet-v1^^2011-04-18^^RJD^RG^482^Rotana Jet^^^^^https://en.wikipedia.org/wiki/Rotana_Jet^858^en|Rotana Jet|^^air-rotana-jet^1^^
 air-royal-air-cambodge-v1^1^1994-01-01^2001-10-16^RAC^VJ^0^Royal Air Cambodge^^^^^https://en.wikipedia.org/wiki/Royal_Air_Cambodge^^en|Royal Air Cambodge|=en|Air Cambodge|h=km|អាកាសចរណ៍ភូមិន្ទ កម្ពុជា|^PNH^air-royal-air-cambodge^1^^
 air-royal-air-charter-service-v1^^2002-08-22^^RYL^RW^0^Royal Air Charter Service^^^^^https://en.wikipedia.org/wiki/Royal_Air_Charter_Service^44^abbr|RACSI|=en|Royal Air Charter Service|=sign|DOUBLE GOLD|^CRK^air-royal-air-charter-service^1^^
-air-royal-air-force-v1^^^^RFR^RR^0^Royal Air Force^RAF NO^^^^^^en|Royal Air Force|=en|RAF NO|^^air-royal-air-force^1^^
+air-royal-air-force-v1^^^2018-01-01^RFR^RR^0^Royal Air Force^RAF NO^^^^^^en|Royal Air Force|=en|RAF NO|^^air-royal-air-force^1^^
 air-royal-air-maroc-express-v1^^2020-01-01^^RXP^FN^147^Royal Air Maroc Express^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Royal_Air_Maroc_Express^2708^en|Royal Air Maroc Express|^CMN^air-royal-air-maroc-express^1^^
 air-royal-air-maroc-v1^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^OneWorld^Member^^https://en.wikipedia.org/wiki/Royal_Air_Maroc^44442^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^CMN^air-royal-air-maroc^1^^
 air-royal-brunei-v1^^^^RBA^BI^672^Royal Brunei^Royalbrunei^^^^^7927^en|Royal Brunei|=en|Royalbrunei|^^air-royal-brunei^1^^
@@ -1545,7 +1547,7 @@ air-yute-air-alaska-v1^^1950-01-01^2017-03-04^TUD^4Y^0^Flight Alaska^Yute Air Al
 air-zagros-air-v1^^2005-10-01^^GZQ^Z4^541^Zagrosjet^^^^^https://en.wikipedia.org/wiki/Zagrosjet^^en|Zagrosjet|p=en|Zagros Air|h^EBL^air-zagros-air^1^^
 air-zagros-airlines-v1^1^2005-01-01^2014-11-30^IZG^ZV^0^Zagros Airlines^^^^^https://en.wikipedia.org/wiki/Zagros_Airlines^^en|Zagros Airlines|^ABD^air-zagros-airlines^1^^
 air-zambezi-airlines-v1^^^^ZMA^ZJ^707^Zambezi Airlines^^^^^^^en|Zambezi Airlines|^^air-zambezi-airlines^1^^
-air-zambia-airways-v1^^1964-04-01^^AZB^ZN^^Zambia^^^^^https://en.wikipedia.org/wiki/Zambia_Airways^^en|Zambia|=en|Zambia Airways|^^air-zambia^1^^
+air-zambia-airways-v1^^1964-04-01^^AZB^ZN^^Zambia Airways^^^^^https://en.wikipedia.org/wiki/Zambia_Airways^^en|Zambia|=en|Zambia Airways|^^air-zambia^1^^
 air-zambia-skyways-v1^1^1999-01-01^2010-12-31^ZAK^K8^241^Zambia Skyways^^^^^https://en.wikipedia.org/wiki/Zambia_Skyways^^en|Zambia Skyways|^LUN^air-zambia-skyways^1^^
 air-zambian-airways-v1^1^1948-01-01^2009-12-31^MBN^Q3^0^Zambian Airways^^^^^https://en.wikipedia.org/wiki/Zambian_Airways^^en|Zambian Airways|^^air-zambian-airways^1^^
 air-zanair-v1^^^^TAN^B4^698^Zanair^^^^^^3424^en|Zanair|^^air-zanair^1^^
