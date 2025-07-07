@@ -1411,7 +1411,7 @@ air-tradewind-aviation-v1^^2001-01-01^^GPD^TJ^492^Tradewind Aviation^^^^^https:/
 air-trans-air-congo-v1^^^^TSG^Q8^223^Trans Air Congo^^^^^^^en|Trans Air Congo|^^air-trans-air-congo^1^^
 air-trans-caribbean-air-exportimport^^^^^CB^^Trans Caribbean Air ExportImport^^^^^^^^^air-trans-caribbean-air-exportimport^1^^
 air-trans-states-airlines-v1^^1982-01-01^^LOF^AX^414^Trans States Airlines^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Trans_States_Airlines^^en|Trans States Airlines|^^air-trans-states-airlines^1^^
-air-transaero-airlines-v1^^1990-01-01^^TSO^UN^670^Transaero Airlines^^^^^https://en.wikipedia.org/wiki/Transaero^^en|Transaero Airlines|^^air-transaero-airlines^1^^
+air-transaero-airlines-v1^^1990-01-01^26-10-2015^TSO^UN^670^Transaero Airlines^^^^^https://en.wikipedia.org/wiki/Transaero^^en|Transaero Airlines|^^air-transaero-airlines^1^^
 air-transair-v1^^^^GTS^R2^^Transair^^^^^^1466^^^air-transair^1^^
 air-transasia-airways-v1^^1951-05-21^2016-11-22^TNA^GE^170^TransAsia Airways^^^^^https://en.wikipedia.org/wiki/TransAsia_Airways^^en|TransAsia Airways|^KHH=TPE=TSA^air-transasia-airways^1^^
 air-transavia-airlines-v1^^^^TRA^HV^979^Transavia Airlines^^^^^^37883^en|Transavia Airlines|^^air-transavia-airlines^1^^
@@ -1448,6 +1448,7 @@ air-uni-top-airlines-v1^1^2009-01-01^2019-11-30^UTP^UW^0^Uni-Top Airlines^^^^^ht
 air-unique-air-v1^1^2014-01-01^2016-09-30^UQA^6U^0^Unique Air^^^^^^^en|Unique Air|^SHJ^air-unique-air^1^^
 air-united-airlines-v1^^1931-03-28^^UAL^UA^16^United Airlines^^Star Alliance^Member^^https://en.wikipedia.org/wiki/United_Airlines^759508^en|United Airlines|^^air-united-airlines^1^^
 air-united-airways-bangladesh-v1^^^^^4H^584^United Airways Bangladesh^Trans Pacific^^^^^284^en|United Airways Bangladesh|=en|Trans Pacific|^^air-united-airways-bangladesh^1^^
+air-united-nigeria-airlines-v1^^2021-02-01^^UNA^UN^570^United Nigeria Airlines Company Ltd^^^^^https://en.wikipedia.org/wiki/United_Nigeria_Airlines^^^ENU^air-united-nigeria-airlines^1^^
 air-universal-airlines-guyana-v1^1^2001-01-01^2005-12-31^UVG^UW^751^Universal Airlines^^^^^https://en.wikipedia.org/wiki/Universal_Airlines_(Guyana)^^en|Universal Airlines|^^air-universal-airlines-guyana^1^^
 air-ups-airlines-v1^^1998-01-01^^UPS^5X^406^UPS Airlines^^^^^https://en.wikipedia.org/wiki/UPS_Airlines^^en|UPS Airlines|=sign|UPS|^CGN=HKG=SDF^air-ups-airlines^1^^
 air-ural-airlines-v1^^^^SVR^U6^262^Ural Airlines^^^^^https://en.wikipedia.org/wiki/Ural_Airlines^48814^en|Ural Airlines|^MOW=SVX^air-ural-airlines^1^^
