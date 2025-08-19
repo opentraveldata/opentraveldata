@@ -143,7 +143,7 @@ air-air-japan-company-v1^^1990-06-29^^AJX^NQ^0^Air Japan^^^^^https://en.wikipedi
 air-air-jet-v1^1^2015-01-01^2015-12-31^^7A^0^Air Jet^^^^^^^en|Air Jet|^^air-air-jet^1^^
 air-air-juan-aviation-v1^^^^^AO^^Air Juan Aviation^^^^^^^^^air-air-juan-aviation^1^^
 air-air-kbz-v1^^2011-04-02^^KBZ^K7^314^Air KBZ^^^^^https://en.wikipedia.org/wiki/Air_KBZ^1802^en|Air KBZ|^^air-air-kbz^1^^
-air-air-kenya-aviation-v1^^^^^QP^0^Air Kenya Aviation^Airkenya Avn^^^^^^en|Air Kenya Aviation|=en|Airkenya Avn|^^air-air-kenya-aviation^1^^
+air-air-kenya-aviation-v1^^^^KQA^KQ^0^Air Kenya Aviation^Airkenya Avn^^^^^^en|Air Kenya Aviation|=en|Airkenya Avn|^^air-air-kenya-aviation^1^^
 air-air-kenya-express-v1^^1987-01-01^^XAK^P2^0^Airkenya Express^^^^^https://en.wikipedia.org/wiki/Airkenya_Express^29217^en|Airkenya Express|^WIL^air-air-kenya-express^1^^
 air-air-kiribati-v1^^1995-04-01^^AKL^IK^0^Air Kiribati^^^^^https://en.wikipedia.org/wiki/Air_Kiribati^^en|Air Kiribati|^TRW^air-air-kiribati^1^^
 air-air-koryo-v1^^^^KOR^JS^120^Air Koryo^Kor Air Dpr^^^^^^en|Air Koryo|=en|Kor Air Dpr|^^air-air-koryo^1^^
@@ -226,6 +226,7 @@ air-airwing-v1^^2004-01-01^^NWG^^^Airwing^^^^^https://en.wikipedia.org/wiki/Airw
 air-ais-airlines-v1^^2009-01-01^^PNX^IS^0^AIS Airlines^^^^^https://en.wikipedia.org/wiki/AIS_Airlines^^en|AIS Airlines|^^air-ais-airlines^1^^
 air-ajet-v1^^2024-03-12^^TKJ^VF^^AJet^^^^^https://en.wikipedia.org/wiki/AJet^^en|AJet|^SAW^air-ajet^1^^
 air-ak-bars-aero-v1^1^2010-01-01^2015-01-12^BGM^2B^441^Ak Bars Aero^^^^P^https://en.wikipedia.org/wiki/Ak_Bars_Aero^^en|Ak Bars Aero|^KZN=UUA^air-ak-bars-aero^1^^
+air-akasa-air-v1^^2021-12-22^^AKJ^QP^0^Akasa Air^^^^^https://en.wikipedia.org/wiki/Akasa_Air^^en|Akasa Air|=en|Akasa Air|^^air-akasa-air^1^^
 air-aklak-air-v1^^^^AKK^6L^709^Aklak Air^^^^^^^en|Aklak Air|^^air-aklak-air^1^^
 air-al-naser-airlines-v1^1^2009-02-01^2013-12-31^MHK^6N^503^Al Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-airlines^1^^
 air-al-naser-airlines-v2^1^2015-04-01^2018-06-30^MHK^NR^0^Al Naser Wings Airlines^^^^^https://en.wikipedia.org/wiki/Al_Naser_Wings_Airlines^^en|Al Naser Wings Airlines|=en|Al-Naser Airlines|=en|Al Naser Airlines|h=sign|AL-NASER|^BGW^air-al-naser-airlines^2^^
@@ -632,6 +633,7 @@ air-fair-aviation-v1^^2016-11-01^^FAV^2F^0^Fair Aviation^^^^^^10720^en|Fair Avia
 air-far-eastern-v1^^1957-01-01^^FEA^FE^436^Far Eastern Air Transport^^^^^https://en.wikipedia.org/wiki/Far_Eastern_Air_Transport^^abbr|FAT|=en|Far Eastern Air Transport|=pny|Yuǎndōng Hángkōng Gǔfènyǒuxiàngōngsī|=wuu|远东航空股份有限公司|=yue|遠東航空股份有限公司|^^air-far-eastern^1^^
 air-farnair-switzerland-v1^1^1984-01-01^2015-03-01^FAT^FT^0^Farnair Switzerland^^^^^https://en.wikipedia.org/wiki/Farnair_Switzerland^^en|Farnair Switzerland|^^air-farnair-switzerland^1^^
 air-fars-qeshm-airlines-v1^^^^QFZ^QE^721^Fars Qeshm Airlines^Crossair Eur^^^^^^en|Fars Qeshm Airlines|=en|Crossair Eur|^^air-fars-qeshm-airlines^1^^
+air-fastjet-zimbabwe-v1^^2015-01-01^^FJW^FN^334^Fastjet Zimbabwe^^^^^https://en.wikipedia.org/wiki/Fastjet_Zimbabwe^2708^en|Fastjet Zimbabwe|^HRE^fastjet-zimbabwe^1^^
 air-federal-airlines-v1^^^^^7V^739^Federal Airlines^Federal Airlines^^^^^^en|Federal Airlines|=en|Federal Airlines|^^air-federal-airlines^1^^
 air-fedex-v1^^^^FDX^FX^0^Fedex^Express Air^^^^^^en|Fedex|=en|Express Air|^^air-fedex^1^^
 air-felix-airways-v1^^^^FXX^FO^569^Felix Airways^^^^^^2881^en|Felix Airways|^^air-felix-airways^1^^
@@ -1178,7 +1180,7 @@ air-rotana-jet-v1^^2011-04-18^^RJD^RG^482^Rotana Jet^^^^^https://en.wikipedia.or
 air-royal-air-cambodge-v1^1^1994-01-01^2001-10-16^RAC^VJ^0^Royal Air Cambodge^^^^^https://en.wikipedia.org/wiki/Royal_Air_Cambodge^^en|Royal Air Cambodge|=en|Air Cambodge|h=km|អាកាសចរណ៍ភូមិន្ទ កម្ពុជា|^PNH^air-royal-air-cambodge^1^^
 air-royal-air-charter-service-v1^^2002-08-22^^RYL^RW^0^Royal Air Charter Service^^^^^https://en.wikipedia.org/wiki/Royal_Air_Charter_Service^44^abbr|RACSI|=en|Royal Air Charter Service|=sign|DOUBLE GOLD|^CRK^air-royal-air-charter-service^1^^
 air-royal-air-force-v1^^^2018-01-01^RFR^RR^0^Royal Air Force^RAF NO^^^^^^en|Royal Air Force|=en|RAF NO|^^air-royal-air-force^1^^
-air-royal-air-maroc-express-v1^^2020-01-01^^RXP^FN^147^Royal Air Maroc Express^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Royal_Air_Maroc_Express^2708^en|Royal Air Maroc Express|^CMN^air-royal-air-maroc-express^1^^
+air-royal-air-maroc-express-v1^^^2014-12-31^RXP^FN^147^Royal Air Maroc Express^^OneWorld^Affiliate^^https://fr.wikipedia.org/wiki/Royal_Air_Maroc_Express^^en|Royal Air Maroc Express|^CMN^air-royal-air-maroc-express^1^^
 air-royal-air-maroc-v1^^1957-01-01^^RAM^AT^147^Royal Air Maroc^^OneWorld^Member^^https://en.wikipedia.org/wiki/Royal_Air_Maroc^44442^abbr|RAM|=en|RAM|ps=en|Royal Air Maroc|^CMN^air-royal-air-maroc^1^^
 air-royal-brunei-v1^^^^RBA^BI^672^Royal Brunei^Royalbrunei^^^^^7927^en|Royal Brunei|=en|Royalbrunei|^^air-royal-brunei^1^^
 air-royal-falcon-v1^^^2014-07-10^RFJ^RL^372^Royal Falcon^^^^^^1329^en|Royal Falcon|^^air-royal-falcon^1^^
