@@ -158,7 +158,8 @@ air-air-uganda-v1^^^^^U7^926^Air Uganda^Norcanair^^^^^en|Air Uganda|=en|Norcanai
 air-air-urga-v1^^^^URG^3N^746^Air Urga^Airvantage^^^^^en|Air Urga|=en|Airvantage|^^air-air-urga^1^
 air-air-vallee-v1^^^^^DO^0^Discovery Airways^Air Vallee^^^^^en|Discovery Airways|=en|Air Vallee|^^air-air-vallee^1^
 air-air-vanuatu-v1^^1981-01-01^^AVN^NF^218^Air Vanuatu^^^^^https://en.wikipedia.org/wiki/Air_Vanuatu^en|Air Vanuatu|^NUS=SON=TAH=VLI^air-air-vanuatu^1^
-air-air-via-v1^^1990-01-01^^VIM^VL^0^Air VIA^^^^^https://en.wikipedia.org/wiki/Air_VIA^en|Air VIA|^BOJ=SOF=VAR^air-air-via^1^
+air-air-via-v1^^1990-01-01^2016-01-01^VIM^VL^0^Air VIA^^^^^https://en.wikipedia.org/wiki/Air_VIA^en|Air VIA|^BOJ=SOF=VAR^air-air-via^1^
+air-lufthansa-city-airlines-gmbh-v1^^2022-01-01^^VIM^VL^0^Lufthansa City Airlines GmbH^^^^^https://en.wikipedia.org/wiki/Lufthansa_City_Airlines^en|Lufthansa City Airlines GmbH|^BOJ=SOF=VAR^air-lufthansa-city-airlines-gmbh^1^
 air-airwing-v1^^2004-01-01^^NWG^^^Airwing^^^^^https://en.wikipedia.org/wiki/Airwing^en|Airwing|^^air-airwing^1^
 air-air-wisconsin-v1^^1965-08-23^^AWI^ZW^303^Air Wisconsin^^^^^https://en.wikipedia.org/wiki/Air_Wisconsin^en|Air Wisconsin|^^air-air-wisconsin^1^
 air-air-zimbabwe-v1^^1980-04-02^^AZW^UM^168^Air Zimbabwe^^^^^https://en.wikipedia.org/wiki/Air_Zimbabwe^en|Air Zimbabwe|^^air-air-zimbabwe^1^
@@ -807,7 +808,7 @@ air-pegasus-asia-v1^^2006-01-01^^MBB^ZM^887^Pegasus Asia^Air Manas^^^^https://en
 air-pelican-airlines-v1^^2016-01-01^^^FP^0^Pelican Airlines^^^^^^en|Pelican Airlines|^^air-pelican-airlines^1^
 air-penair-v1^^^^PEN^KS^339^Penair^Pen Air^^^^^en|Penair|=en|Pen Air|^^air-penair^1^
 air-peoples-viennaline-v1^^^^PEV^PE^335^Peoples Viennaline^^^^^^en|Peoples Viennaline|^^air-peoples-viennaline^1^
-air-perimeter-aviation-v1^^1960-01-01^^PAG^YP^0^Perimeter Aviation^^^^^https://en.wikipedia.org/wiki/Perimeter_Aviation^en|Perimeter Aviation|^YWG^air-perimeter-aviation^1^
+air-premia-v1^^2017-07-17^^PAG^YP^0^Air Premia^^^^^https://fr.wikipedia.org/wiki/Air_Premia^en|Air Premia|^YWG^air-premia^1^
 air-peruvian-air-lines-v1^^2008-10-29^^PVN^P9^602^Peruvian Airlines^^^^^https://en.wikipedia.org/wiki/Peruvian_Airlines^en|Peruvian Airlines|^^air-peruvian-air-lines^1^
 air-petra-airlines-v1^^^2018-04-01^PTR^9P^311^Air Arabia Jordan^Petra Airlines^^^^https://en.wikipedia.org/wiki/Air_Arabia_Jordan^en|Air Arabia Jordan|=en|Petra Airlines|^^air-petra-airlines^1^
 air-fly-jinnah-v1^^2022-10-01^^JAD^9P^0^Fly Jinnah^^^^^https://en.wikipedia.org/wiki/Fly_Jinnah^en|Fly Jinnah|^^air-fly-jinnah^1^
@@ -997,7 +998,7 @@ air-swiss-global-air-lines-v1^^2005-01-01^2018-04-19^SWU^LZ^0^Swiss Global Air L
 air-sylt-air-v1^^^^AWU^7E^0^Sylt Air^^^^^^en|Sylt Air|^^air-sylt-air^1^
 air-syrian-arab-airlines-v1^^^^SYR^RB^70^Syrian Arab Airlines^^^^^^en|Syrian Arab Airlines|^^air-syrian-arab-airlines^1^
 air-taag-v1^^^^DTA^DT^118^Taag^^^^^^en|Taag|^^air-taag^1^
-air-taban-airlines-v1^^^^TBM^HH^283^Taban Airlines^^^^^^en|Taban Airlines|^^air-taban-airlines^1^
+air-qanot-sharq-airlines-v1^^^^TBM^HH^283^Qanot Sharq^^^^^https://en.wikipedia.org/wiki/Qanot_Sharq^en|Qanot Sharq|^^air-qanot-sharq-airlines^1^
 air-taca-airlines-v1^^1931-01-01^^TAI^TA^202^Avianca El Salvador^TACA Airlines^^^^https://en.wikipedia.org/wiki/Avianca_El_Salvador^en|Avianca El Salvador|=en|TACA Airlines|^^air-taca-airlines^1^
 air-taca-peru-v1^^1999-07-01^2020-05-10^TPU^T0^530^Avianca Perú^TACA Peru^^^^https://en.wikipedia.org/wiki/Avianca_Peru^en|Avianca Perú|=en|TACA Peru|^^air-taca-peru^1^
 air-tacv-cabo-verde-airlines-v1^^^^TCV^VR^696^Tacv Cabo Verde Airlines^TACV^^^^^en|Tacv Cabo Verde Airlines|=en|TACV|^^air-tacv-cabo-verde-airlines^1^
