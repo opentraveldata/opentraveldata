@@ -2,7 +2,8 @@ pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^al
 air-9-air-v1^^2015-01-01^^^AQ^902^9 Air^^^^^https://en.wikipedia.org/wiki/9_Air^en|9 Air|^^air-9-air^1^
 air-abakan-avia-v2^^2014-07-11^^ABG^RL^^Royal Flight^^^^^https://en.wikipedia.org/wiki/Royal_Flight_%28airline%29^en|Royal Flight|p=en|Abakan-Avia|h=ru|Авиакомпания «Роял Флайт»|p=ru|Авиакомпания «Абакан-Авиа»|h^VKO^air-royal-flight^2^
 air-ab-aviation-v1^^2013-01-01^^AYD^Y6^0^AB Aviation^^^^^https://en.wikipedia.org/wiki/AB_Aviation^en|AB Aviation|^HAH^air-ab-aviation^1^
-air-abc-aerolineas-v1^^2005-12-01^^AIJ^4O^837^Interjet^^^^^https://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|=en|Interjet|ps^MEX=TLC^air-abc-aerolineas^1^
+air-montenegro-v1^^2020-10-02^^MNE^4O^400^Air Montenegro^^^^^https://fr.wikipedia.org/wiki/Air_Montenegro^en|Air Montenegro|^^air-montenegro^1^
+air-abc-aerolineas-v1^^2005-12-01^2020-10-01^AIJ^4O^837^Interjet^^^^^https://en.wikipedia.org/wiki/Interjet^en|Interjet|=en|ABC Aerolíneas|=en|Interjet|ps^MEX=TLC^air-abc-aerolineas^1^
 air-abx-air-v1^^1980-01-01^^ABX^GB^832^ABX Air^^^^^https://en.wikipedia.org/wiki/ABX_Air^en|ABX Air|^CVG=MIA^air-abx-air^1^
 air-act-airlines-v2^^2011-01-01^^RUN^9T^556^MyCargo Airlines^^^^^https://en.wikipedia.org/wiki/MyCargo_Airlines^en|ACT Airlines|h=en|ACT Havayollari|h=en|MyCargo Airlines|p^IST^air-act-airlines^2^
 air-aegean-airlines-v1^^1999-05-28^^AEE^A3^390^Aegean Airlines^^^Member^^https://en.wikipedia.org/wiki/Aegean_Airlines^en|Aegean Airlines|^^air-aegean-airlines^1^
@@ -13,7 +14,8 @@ air-aero4m-v1^^2015-01-01^2021-12-31^AEH^NL^0^Aero4M^^^^^^en|Aero4M|^^air-aero4m
 air-aero-benin-v1^^^^^EM^282^Aero Benin^^^^^^en|Aero Benin|^^air-aero-benin^1^
 air-aero-calafia-v1^^1993-01-01^^CFV^A7^0^Aéreo Calafia^Aereo Calafia^^^^https://en.wikipedia.org/wiki/A%C3%A9reo_Calafia^en|Aéreo Calafia|=sign|CALAFIA|^CSL^air-aero-calafia^1^
 air-aero-caribbean-v1^^^^CRN^7L^164^Aero Caribbean^^^^^^en|Aero Caribbean|^^air-aero-caribbean^1^
-air-aeroenlaces-nacionales-v1^^^^VIV^VB^0^Aeroenlaces Nacionales^^^^^^en|Aeroenlaces Nacionales|^^air-aeroenlaces-nacionales^1^
+air-viva-aerobus-v1^^2025-10-01^^VIV^VB^0^Viva Aerobus^^^^^https://en.wikipedia.org/wiki/Viva_(airline)^en|Viva Aerobus|^^air-viva-aerobus^1^
+air-aeroenlaces-nacionales-v1^^^2025-09-30^VIV^VB^0^Aeroenlaces Nacionales^^^^^^en|Aeroenlaces Nacionales|^^air-aeroenlaces-nacionales^1^
 air-aeroflot-v1^^1923-07-15^^AFL^SU^555^Aeroflot^^^Member^^https://en.wikipedia.org/wiki/Aeroflot^en|Aeroflot|s=en|Aeroflot – Russian Airlines|=ru|Аэрофлот—Российские авиалинии|=ru|Аэрофлот|s^^air-aeroflot^1^
 air-aerogaviota-v1^^^^GTV^KG^854^Aerogaviota^King Island^^^^^en|Aerogaviota|=en|King Island|^^air-aerogaviota^1^
 air-aero-k-v1^^2021-04-15^^EOK^RF^711^Aero K^^^^^https://en.wikipedia.org/wiki/Aero_K^^^air-aero-k^1^
