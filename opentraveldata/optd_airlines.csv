@@ -618,7 +618,7 @@ air-eva-air-v1^^1989-03-01^^EVA^BR^695^EVA Air^^Star Alliance^Member^^https://en
 air-evelop-airlines-v1^^2013-01-01^^EVE^E9^783^Evelop Airlines^^^^^https://en.wikipedia.org/wiki/Evelop_Airlines^830^en|evelop!|p=en|Evelop Airlines|^MAD^air-evelop-airlines^1^^
 air-everts-v1^^^^^5V^840^Everts^Lviv Airlines^^^^^2932^en|Everts|=en|Lviv Airlines|^^air-everts^1^^
 air-ewa-air-v1^^^^EWR^ZD^732^Ewa Air^Flying Dandy^^^^^1394^en|Ewa Air|=en|Flying Dandy|^^air-ewa-air^1^^
-air-exec-air-v1^^^^^X7^0^Exec Air^Air Service^^^^^^en|Exec Air|=en|Air Service|^^air-exec-air^1^^
+air-exec-air-v1^^^2017-12-31^^X7^0^Exec Air^Air Service^^^^^^en|Exec Air|=en|Air Service|^^air-exec-air^1^^
 air-executive-airlines-service-v1^1^1993-01-01^2006-07-31^EXW^OW^92^Nicon Airways^^^^^https://en.wikipedia.org/wiki/EAS_Airlines^^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^1^^
 air-executive-airlines-service-v2^2^2007-08-01^2007-12-31^EXW^OW^92^Nicon Airways^^^^^https://en.wikipedia.org/wiki/Nicon_Airways^^en|Nicon Airways|=en|EAS Airlines|h=en|Executive Airlines Services|h^LOS^air-executive-airlines-service^2^^
 air-executive-airlines-v1^1^2004-01-01^2013-04-01^EXK^OW^92^Executive Airlines^^Oneworld^Affiliate^^https://en.wikipedia.org/wiki/Executive_Airlines^^en|Executive Airlines|^SJU^air-executive-airlines^1^^
@@ -1021,7 +1021,7 @@ air-national-airways-gabon-v1^1^2002-01-01^2015-12-31^NRG^^0^Nationale Regionale
 air-national-airways-v1^^^^NAE^9Y^^National Airways^^^^^^^^^air-national-airways^1^^
 air-national-jet-systems-v1^1^1990-07-01^2009-02-28^NJS^NC^0^National Jet Systems^^Oneworld^Affiliate^^https://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^1^^
 air-national-jet-systems-v2^^2009-03-01^^JTE^NC^0^Cobham Aviation Services Australia^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Cobham_Aviation_Services_Australia^^en|Cobham Aviation Services Australia|p=en|National Jet Systems|h^^air-national-jet-systems^2^^
-air-nature-air-v1^^^^^5C^0^Nature Air^^^^^^^en|Nature Air|^^air-nature-air^1^^
+air-nature-air-v1^^^2017-12-31^^5C^0^Nature Air^^^^^^^en|Nature Air|^^air-nature-air^1^^
 air-naturelink-aviation-v1^1^1997-01-01^2011-12-31^NRK^^0^Naturelink Aviation^^^^^https://en.wikipedia.org/wiki/National_Airways_Corporation^^abbr|NAC|=en|NAC Charter|ps=en|National Airways Corporation|=en|Naturelink Aviation|h^PRY^air-naturelink-aviation^1^^
 air-naysa-v1^^1969-05-07^2018-01-01^NAY^ZN^595^Naysa^Air Bourbon^^^^https://en.wikipedia.org/wiki/Navegacion_y_Servicios_A%C3%A9reos_Canarios^^en|Naysa|=en|Air Bourbon|^^air-naysa^1^^
 air-nayzak-air-v1^1^2006-01-01^2009-12-31^NZA^M4^0^Nayzak Air^^^^^https://en.wikipedia.org/wiki/Nayzak_Air_Transport^^ar|النيزك للنقل الجوي|=en|Nayzak Air|^^air-nayzak-air^1^^
