@@ -375,6 +375,7 @@ function isFeatCodeCity(__ifccParamFeatureCode) {
     __resultIsCity += match (__ifccParamFeatureCode, "^CNYN")
     __resultIsCity += match (__ifccParamFeatureCode, "^MN")
     __resultIsCity += match (__ifccParamFeatureCode, "^INSM")
+    __resultIsCity += match (__ifccParamFeatureCode, "^STNB")
 
     return __resultIsCity
 }
