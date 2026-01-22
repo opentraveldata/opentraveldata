@@ -543,10 +543,12 @@ air-hokkaido-v1^^1998-05-12^^ADO^HD^0^Air Do^Hokkaido International Airlines^^^^
 air-holiday-europe-v1^^2019-08-01^^HES^HL^^^Holiday Europe^^^^https://en.wikipedia.org/wiki/Holiday_Europe^^^air-holiday-europe^1^
 air-hong-kong-airlines-v1^^^^CRK^HX^851^Hong Kong Airlines^^^^^^en|Hong Kong Airlines|^^air-hong-kong-airlines^1^
 air-hong-kong-express-airways-v1^^2005-09-03^^HKE^UO^128^Hong Kong Express Airways^^^^^^en|Hong Kong Express Airways|^^air-hong-kong-express-airways^1^
-air-hop-airlinair-v1^^^^RLA^AN^0^HOP Airlinair^^^^^https://en.wikipedia.org/wiki/Airlinair^en|HOP Airlinair|^^air-hop-airlinair^1^
+air-hop-airlinair-v1^2020-01-01^2026-01-22^^RLA^AN^0^HOP Airlinair^^^^^https://en.wikipedia.org/wiki/Airlinair^en|HOP Airlinair|^^air-hop-airlinair^1^
+air-advanced-air-v1^2026-01-22^^^RLA^AN^0^Advanced Air^^^^^https://en.wikipedia.org/wiki/Advanced_Air^en|Advanced Air|^^air-advanced-air^1^
 air-hop-brit-air-v1^^1975-01-01^^BZH^DB^750^HOP Brit Air^^^^^https://en.wikipedia.org/wiki/Brit_Air^en|HOP Brit Air|^^air-hop-brit-air^1^
 air-hop-regional-v1^^2001-01-01^^RAE^YS^0^Regional^Régional Compagnie Aérienne Européenne^^^^https://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^en|Regional|=en|Régional Compagnie Aérienne Européenne|^^air-hop-regional^1^
-air-hop-v1^^2013-03-31^^HOP^A5^163^HOP!^^^^P^https://en.wikipedia.org/wiki/HOP!^en|HOP!|^^air-hop^1^
+air-hop-v1^^2013-03-31^2026-01-22^HOP^A5^163^HOP!^^^^P^https://en.wikipedia.org/wiki/HOP!^en|HOP!|^^air-hop^1^
+air-air-france-hop-v1^^2026-01-22^^HOP^A5^163^Air France HOP^^^^P^https://en.wikipedia.org/wiki/Air_France_Hop^en|Air France HOP|^^air-france-hop^1^
 air-horizon-air-v1^^1981-09-01^^QXE^QX^481^Horizon Air^^^^^https://en.wikipedia.org/wiki/Horizon_Air^en|Horizon Air|p=en|Horizon Air Industries|=sign|HORIZON AIR|^PDX=SEA^air-horizon-air^1^
 air-hs-aviation-v1^^^2023-08-30^APF^HP^0^Amapola Flyg^^^^^^en|Amapola Flyg|^^air-hs-aviation^1^
 air-hs-populair-v1^^2023-08-31^^APF^HP^415^PopulAir^^^^^^en|PopulAir|^^air-hs-populair^1^
