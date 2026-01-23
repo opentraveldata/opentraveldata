@@ -8,6 +8,7 @@ air-abx-air-v1^^1980-01-01^^ABX^GB^832^ABX Air^^^^^https://en.wikipedia.org/wiki
 air-act-airlines-v1^1^2004-01-01^2010-12-31^RUN^9T^556^ACT Airlines^^^^^https://en.wikipedia.org/wiki/MyCargo_Airlines^^en|ACT Airlines|h=en|ACT Havayollari|h=en|MyCargo Airlines|p^IST^air-act-airlines^1^^
 air-act-airlines-v2^^2011-01-01^^RUN^9T^556^MyCargo Airlines^^^^^https://en.wikipedia.org/wiki/MyCargo_Airlines^^en|ACT Airlines|h=en|ACT Havayollari|h=en|MyCargo Airlines|p^IST^air-act-airlines^2^^
 air-adria-airways-v1^1^1961-03-14^2019-09-30^ADR^JP^165^Adria Airways^^^Member^^https://en.wikipedia.org/wiki/Adria_Airways^^en|Adria Airways|=en|Inex-Adria Aviopromet|h=en|Inex-Adria Airways|h=sign|ADRIA|^LJU^air-adria-airways^1^^
+air-advanced-air-v1^2026-01-22^^^RLA^AN^0^Advanced Air^^^^^https://en.wikipedia.org/wiki/Advanced_Air^^en|Advanced Air|^^air-advanced-air^1^^
 air-aegean-airlines-v1^^1999-05-28^^AEE^A3^390^Aegean Airlines^^Star Alliance^Member^^https://en.wikipedia.org/wiki/Aegean_Airlines^54048^en|Aegean Airlines|^^air-aegean-airlines^1^^
 air-aer-arann-v1^^1970-01-01^^STK^RE^743^Stobart Air^Aer Arann^^^^https://en.wikipedia.org/wiki/Stobart_Air^27842^en|Stobart Air|=en|Aer Arann|^^air-aer-arann^1^^
 air-aer-lingus-v1^^1936-05-27^^EIN^EI^53^Aer Lingus^^^^^https://en.wikipedia.org/wiki/Aer_Lingus^52022^en|Aer Lingus|^^air-aer-lingus^1^^
@@ -119,6 +120,7 @@ air-air-excursions-v1^^^^^X4^0^Air Excursions^^^^^^7518^en|Air Excursions|^^air-
 air-air-explore-v1^^^^AXE^ED^0^Air Explore^Airblue^^^^^52^en|Air Explore|=en|Airblue|^^air-air-explore^1^^
 air-air-finland-v1^1^2003-01-01^2012-06-26^FIF^OF^442^Air Finland^^^^^https://en.wikipedia.org/wiki/Air_Finland^^en|Air Finland|=sign|AIR FINLAND|^HEL^air-air-finland^1^^
 air-air-flamenco-v1^^^^WAF^F4^0^Air Flamenco^Air Flamenco^^^^^3772^en|Air Flamenco|=en|Air Flamenco|^^air-air-flamenco^1^^
+air-air-france-hop-v1^^2026-01-22^^HOP^A5^163^Air France HOP^^^^P^https://en.wikipedia.org/wiki/Air_France_Hop^77483^en|Air France HOP|^^air-france-hop^1^^
 air-air-france-v1^^1933-10-07^^AFR^AF^57^Air France^^Skyteam^Member^^https://en.wikipedia.org/wiki/Air_France^240643^en|Air France|^CDG=ORY^air-air-france^1^^
 air-air-freight-nz-v1^^1989-07-01^2016-07-01^AFN^OG^0^Air Freight NZ^^^^^https://en.wikipedia.org/wiki/Air_Freight_NZ^^en|Air Freight NZ|^^air-air-freight-nz^1^^
 air-air-gabon-v1^1^1951-01-01^2006-12-31^AGN^GN^185^Air Gabon^^^^^https://en.wikipedia.org/wiki/Air_Gabon^^en|Air Gabon|^LBV^air-air-gabon^1^^
@@ -766,10 +768,10 @@ air-holidays-czech-airlines-v1^1^2010-08-01^2014-07-31^HCC^HC^0^Holidays Czech A
 air-homer-air-service-v1^1^1973-01-01^2015-12-31^^HB^^Homer Air^^^^^^^en|Homer Air|^HOM^air-homer-air-service^1^^
 air-hong-kong-airlines-v1^^^^CRK^HX^851^Hong Kong Airlines^^^^^^7826^en|Hong Kong Airlines|^^air-hong-kong-airlines^1^^
 air-hong-kong-express-airways-v1^^2005-09-03^^HKE^UO^128^Hong Kong Express Airways^^^^^^17634^en|Hong Kong Express Airways|^^air-hong-kong-express-airways^1^^
-air-hop-airlinair-v1^^^^RLA^AN^0^HOP Airlinair^^^^^https://en.wikipedia.org/wiki/Airlinair^1770^en|HOP Airlinair|^^air-hop-airlinair^1^^
+air-hop-airlinair-v1^2020-01-01^2026-01-22^^RLA^AN^0^HOP Airlinair^^^^^https://en.wikipedia.org/wiki/Airlinair^^en|HOP Airlinair|^^air-hop-airlinair^1^^
 air-hop-brit-air-v1^^1975-01-01^^BZH^DB^750^HOP Brit Air^^^^^https://en.wikipedia.org/wiki/Brit_Air^^en|HOP Brit Air|^^air-hop-brit-air^1^^
 air-hop-regional-v1^^2001-01-01^^RAE^YS^0^Regional^Régional Compagnie Aérienne Européenne^^^^https://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^^en|Regional|=en|Régional Compagnie Aérienne Européenne|^^air-hop-regional^1^^
-air-hop-v1^^2013-03-31^^HOP^A5^163^HOP!^^Skyteam^Affiliate^P^https://en.wikipedia.org/wiki/HOP!^77483^en|HOP!|^^air-hop^1^^
+air-hop-v1^^2013-03-31^2026-01-22^HOP^A5^163^HOP!^^Skyteam^Affiliate^P^https://en.wikipedia.org/wiki/HOP!^^en|HOP!|^^air-hop^1^^
 air-horizon-air-v1^^1981-09-01^^QXE^QX^481^Horizon Air^^OneWorld^Affiliate^^https://en.wikipedia.org/wiki/Horizon_Air^173866^en|Horizon Air|p=en|Horizon Air Industries|=sign|HORIZON AIR|^PDX=SEA^air-horizon-air^1^^
 air-horizon-airlines-australia-v1^1^1973-01-01^2004-03-31^HZA^BN^0^Horizon Airlines^^^^^https://en.wikipedia.org/wiki/Horizon_Airlines_(Australia)^^en|Horizon Airlines|^SYD^air-horizon-airlines-australia^1^^
 air-hs-aviation-v1^^^2023-08-30^APF^HP^0^Amapola Flyg^^^^^^^en|Amapola Flyg|^^air-hs-aviation^1^^
