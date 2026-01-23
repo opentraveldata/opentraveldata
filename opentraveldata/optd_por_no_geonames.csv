@@ -400,7 +400,7 @@ ZBH^^^N^0^^Severac Le FR Railway Station^Severac Le FR Railway Station^44.33^3.0
 ZBN^^^N^0^^Bolzano Bozen IT Bus Station^Bolzano Bozen IT Bus Station^46.52^11.37^S^BUSTN^^^^^IT^^Italy^Europe^^^^^^^^^^^^Europe/Rome^^^^-1^BZO^^^^^B^^^450^Italy^EUR^^^^
 ZBQ^^^N^0^^Odense DK Railway Station^Odense DK Railway Station^55.62^12.65^S^RSTN^^^^^DK^^Denmark^Europe^^^^^^^^^^^^Europe/Copenhagen^^^^-1^ODE^^^^^R^^^419^Denmark^DKK^^^^
 ZBV^^^N^0^^Beaver Creek CO US Bus Stn^Beaver Creek CO US Bus Stn^38.37^-105^S^BUSTN^^^^^US^^United States^North America^^^^^^^^^^^^America/Denver^^^^-1^EGE^Eagle^ZBV|0|Beaver Creek CO US Bus Stn|Beaver Creek CO US Bus Stn|US|CO^ZBV^CO^B^^^82^Colorado^USD^^^^
-ZBZ^^^N^0^^Xinhui CN Ferry Port^Xinhui CN Ferry Port^22.52^113^S^BUSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^ZBZ^Xinhui CN Ferry Port^ZBZ|0|Xinhui CN Ferry Port|Xinhui CN Ferry Port|CN|^ZBZ^^CB^^^713^China^CNY^^^^
+ZBZ^^^N^0^^Xinhui CN Ferry Port^Xinhui CN Ferry Port^22.52^113^S^BUSTN^^^^^CN^^China^Asia^^^^^^^^^^^^Asia/Shanghai^^^^-1^ZBZ^Xinhui CN Ferry Port^ZBZ|0|Xinhui CN Ferry Port|Xinhui CN Ferry Port|CN|^ZBZ^^CP^^^713^China^CNY^^^^
 ZCF^^^N^0^^Bergheim DE Off^Bergheim DE Off^50.95^-6.63333^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCF^Bergheim DE Off^ZCF|0|Bergheim DE Off|Bergheim DE Off|DE|^ZCF^^O^^^429^Germany^EUR^^^^
 ZCK^^^N^0^^Bruehl DE Off^Bruehl DE Off^50.8167^-6.9^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCK^Bruehl DE Off^ZCK|0|Bruehl DE Off|Bruehl DE Off|DE|^ZCK^^O^^^429^Germany^EUR^^^^
 ZCY^^^N^0^^Dueren DE Off^Dueren DE Off^42.3167^5.9^P^PPLC^^^^^DE^^Germany^Europe^^^^^^^^^^^^Europe/Berlin^^^^-1^ZCY^Dueren DE Off^ZCY|0|Dueren DE Off|Dueren DE Off|DE|^ZCY^^O^^^429^Germany^EUR^^^^
