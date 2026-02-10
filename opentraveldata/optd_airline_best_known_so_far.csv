@@ -284,7 +284,7 @@ air-braathens-regional-airways-v1^^1993-08-15^^BRX^DC^215^Braathens Regional Air
 air-braathens-regional-aviation-v1^^1981-01-01^2020-12-31^SCW^TF^215^Braathens Regional Aviation^^^^P^https://en.wikipedia.org/wiki/Braathens_Regional_Aviation^en|Braathens Regional|p=en|Golden Air|h^AGH=BMA^air-braathens-regional-aviation^1^
 air-branson-air-express-v1^^2010-05-17^^^1X^0^Branson Air Express^^^^^https://en.wikipedia.org/wiki/Branson_Air_Express^en|Branson Air Express|=en|FlyBranson Travel|^SFB^air-branson-air-express^1^
 air-breeze-airways-v1^^2021-05-27^^MXY^MX^0^Breeze Airways^^^^^https://en.wikipedia.org/wiki/Breeze_Airways^en|Breeze Airways|^^air-breeze-airways^1^
-air-bringer-air-cargo-v1^^^^^E6^417^Bringer Air Cargo^^^^C^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1^
+air-bringer-air-cargo-v1^^^^^^417^Bringer Air Cargo^^^^C^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1^
 air-british-airways-v1^^1974-03-31^^BAW^BA^125^British Airways^^^Member^^https://en.wikipedia.org/wiki/British_Airways^en|British Airways|^LGW=LHR^air-british-airways^1^
 air-brussels-airlines-v1^^2007-03-25^^BEL^SN^82^Brussels Airlines^^^Member^^https://en.wikipedia.org/wiki/Brussels_Airlines^en|Brussels Airlines|^^air-brussels-airlines^1^
 air-buddha-air-v1^^1997-01-01^^BHA^U4^0^Buddha Air^^^^^https://en.wikipedia.org/wiki/Buddha_Air^en|Buddha Air|ps=en|Buddha Air Pvt. Ltd|^^air-buddha-air^1^
@@ -433,7 +433,7 @@ air-euroatlantic-airways-v1^^1993-08-25^^MMZ^YU^551^Euroatlantic Airways^^^^^htt
 air-europe-airpost-v1^^1991-01-01^^FPO^5O^558^ASL Airlines France^^^^^https://en.wikipedia.org/wiki/ASL_Airlines_France^en|ASL Airlines France|=en|Europe Airpost|h^^air-europe-airpost^1^
 air-european-air-transport-v1^^^^^QY^0^European Air Transport^^^^^^en|European Air Transport|^^air-european-air-transport^1^
 air-european-coastal-airlines-v1^^2014-08-27^^ECB^WL^0^European Coastal Airlines^^^^^https://en.wikipedia.org/wiki/European_Coastal_Airlines^en|European Coastal Airlines|^SPU^air-european-coastal-airlines^1^
-air-eurowings-europe-v1^^2016-07-01^^EWE^E2^0^Eurowings Europe^^^^^https://en.wikipedia.org/wiki/Eurowings^en|Eurowings Europe|^VIE^air-eurowings-europe^1^
+air-eurowings-europe-v1^^2016-07-01^^EWE^E6^0^Eurowings Europe^^^^^https://en.wikipedia.org/wiki/Eurowings^en|Eurowings Europe|^VIE^air-eurowings-europe^1^
 air-eurowings-v1^^1994-01-01^^EWG^EW^104^Eurowings^^^^^https://en.wikipedia.org/wiki/Eurowings^en|Eurowings|^CGN=DUS=HAM=TXL^air-eurowings^1^
 air-eva-air-v1^^1989-03-01^^EVA^BR^695^EVA Air^^^^^https://en.wikipedia.org/wiki/EVA_Air^en|EVA Air|^^air-eva-air^1^
 air-evelop-airlines-v1^^2013-01-01^^EVE^E9^783^Evelop Airlines^^^^^https://en.wikipedia.org/wiki/Evelop_Airlines^en|evelop!|p=en|Evelop Airlines|^MAD^air-evelop-airlines^1^
@@ -925,6 +925,7 @@ air-sirena-travel-v1^^^^^1H^446^Sirena Travel^^^^^^en|Sirena Travel|^^air-sirena
 air-sirena-v1^^^^^1M^0^Sirena Jsc^Sertel^^^^^en|Sirena Jsc|=en|Sertel|^^air-sirena^1^
 air-skippers-aviation-v2^^2016-01-01^^^HK^0^Skippers Aviation^^^^^https://en.wikipedia.org/wiki/Skippers_Aviation^en|Skippers Aviation|^^air-skippers-aviation^2^
 air-sky-airline-v1^^2001-12-01^^SKU^H2^605^Sky Airline^^^^^https://en.wikipedia.org/wiki/Sky_Airline^en|Sky Airline|^^air-sky-airline^1^
+air-skyalps-v1^^2021-06-17^^SWU^BQ^^SkyAlps^^^^^https://en.wikipedia.org/wiki/Sky_Alps^en|SkyAlps|^^sky-alps^1^
 air-sky-bahamas-airlines-v1^^^^SBM^Q7^0^Sky Bahamas Airlines^^^^^^en|Sky Bahamas Airlines|^^air-sky-bahamas-airlines^1^
 air-sky-express-greece-v1^^2005-07-01^^SEH^GQ^633^Sky Express^^^^^https://en.wikipedia.org/wiki/Sky_Express_%28Greece%29^en|Sky Express|=en|Cretan Aeronautical Exploitations|h^HER=MJT=RHO^air-sky-express-greece^1^
 air-sky-gabon-v1^^2006-01-01^2019-12-31^SKG^GV^536^Sky Gabon^^^^C^https://en.wikipedia.org/wiki/Sky_Gabon^en|Sky Gabon|^LBV^air-sky-gabon^1^
