@@ -397,7 +397,7 @@ air-braathens-regional-aviation-v1^^1981-01-01^2020-12-31^SCW^TF^215^Braathens R
 air-branson-air-express-v1^^2010-05-17^^^1X^0^Branson Air Express^^^^^https://en.wikipedia.org/wiki/Branson_Air_Express^^en|Branson Air Express|=en|FlyBranson Travel|^SFB^air-branson-air-express^1^^
 air-breeze-airways-v1^^2021-05-27^^MXY^MX^0^Breeze Airways^^^^^https://en.wikipedia.org/wiki/Breeze_Airways^^en|Breeze Airways|^^air-breeze-airways^1^^
 air-brindabella-airlines-v1^1^^2013-12-14^^FQ^0^Brindabella Airlines^^^^P^https://en.wikipedia.org/wiki/Brindabella_Airlines^^en|Brindabella Airlines|^^air-brindabella-airlines^1^^
-air-bringer-air-cargo-v1^^^^^E6^417^Bringer Air Cargo^^^^C^^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1^^
+air-bringer-air-cargo-v1^^^^^^417^Bringer Air Cargo^^^^C^^^en|Bringer Air Cargo|^^air-bringer-air-cargo^1^^
 air-british-airways-v1^^1974-03-31^^BAW^BA^125^British Airways^^OneWorld^Member^^https://en.wikipedia.org/wiki/British_Airways^260943^en|British Airways|^LGW=LHR^air-british-airways^1^^
 air-british-mediterranean-airways-v1^1^1994-01-01^2007-12-31^LAJ^KJ^994^British Mediterranean Airways^^^^^https://en.wikipedia.org/wiki/British_Mediterranean_Airways^^en|British Mediterranean Airways|=abbr|BMED|^LHR^air-british-mediterranean-airways^1^^
 air-british-midland-international-v1^1^1938-01-01^2012-10-27^BMA^BD^236^British Midland International^^^^^https://en.wikipedia.org/wiki/British_Midland_International^^en|British Midland International|^^air-british-midland-international^1^^
@@ -616,7 +616,7 @@ air-europe-airpost-v1^^1991-01-01^^FPO^5O^558^ASL Airlines France^^^^^https://en
 air-european-air-transport-v1^^^^^QY^0^European Air Transport^^^^^^^en|European Air Transport|^^air-european-air-transport^1^^
 air-european-coastal-airlines-v1^^2014-08-27^^ECB^WL^0^European Coastal Airlines^^^^^https://en.wikipedia.org/wiki/European_Coastal_Airlines^^en|European Coastal Airlines|^SPU^air-european-coastal-airlines^1^^
 air-european-executive-express-v1^1^1997-01-01^2005-12-31^EXC^RY^0^European Executive Express^^^^^https://en.wikipedia.org/wiki/European_Executive_Express^^en|European Executive Express|^^air-european-executive-express^1^^
-air-eurowings-europe-v1^^2016-07-01^^EWE^E2^0^Eurowings Europe^^^^^https://en.wikipedia.org/wiki/Eurowings^15398^en|Eurowings Europe|^VIE^air-eurowings-europe^1^^
+air-eurowings-europe-v1^^2016-07-01^^EWE^E6^0^Eurowings Europe^^^^^https://en.wikipedia.org/wiki/Eurowings^^en|Eurowings Europe|^VIE^air-eurowings-europe^1^^
 air-eurowings-v1^^1994-01-01^^EWG^EW^104^Eurowings^^^^^https://en.wikipedia.org/wiki/Eurowings^146386^en|Eurowings|^CGN=DUS=HAM=TXL^air-eurowings^1^^
 air-eva-air-v1^^1989-03-01^^EVA^BR^695^EVA Air^^Star Alliance^Member^^https://en.wikipedia.org/wiki/EVA_Air^58033^en|EVA Air|^^air-eva-air^1^^
 air-evelop-airlines-v1^^2013-01-01^^EVE^E9^783^Evelop Airlines^^^^^https://en.wikipedia.org/wiki/Evelop_Airlines^830^en|evelop!|p=en|Evelop Airlines|^MAD^air-evelop-airlines^1^^
@@ -1275,6 +1275,7 @@ air-sky-taxi-v1^^2000-01-01^^IGA^TE^0^Sky Taxi^^^^^https://en.wikipedia.org/wiki
 air-sky-wings-airlines-v1^1^2006-06-01^2012-12-31^GSW^ND^171^Sky Wings Airlines^Intair Inc^^^^https://en.wikipedia.org/wiki/Sky_Wings_Airlines^^en|Sky Wings Airlines|=en|Intair Inc|^^air-sky-wings-airlines^1^^
 air-sky-wings-asia-airlines-v1^^2011-06-13^^SWM^ZA^969^Sky Angkor Airlines^Skywings Asia Airlines^^^^https://en.wikipedia.org/wiki/Sky_Angkor_Airlines^210^en|Sky Angkor Airlines|=en|Skywings Asia Airlines|^^air-sky-wings-asia-airlines^1^^
 air-skyair-v1^1^2010-01-26^2016-09-30^^S8^0^SkyAir^^^^^https://en.wikipedia.org/wiki/SkyAir^^en|SkyAir|p=en|Sky Capital Airlines|^DAC^air-skyair^1^^
+air-skyalps-v1^^2021-06-17^^SWU^BQ^^SkyAlps^^^^^https://en.wikipedia.org/wiki/Sky_Alps^^en|SkyAlps|^^sky-alps^1^^
 air-skyking-v1^^1990-01-01^^SGB^6K^0^Songbird Airways^^^^^https://en.wikipedia.org/wiki/Songbird_Airways^^en|Songbird Airways|p=en|Skyking|h^MIA^air-skyking^1^^
 air-skymark-airlines-v1^^1998-09-19^^SKY^BC^0^Skymark Airlines^^^^^https://en.wikipedia.org/wiki/Skymark_Airlines^31246^en|Skymark Airlines|^^air-skymark-airlines^1^^
 air-skynet-asia-v1^1^1997-01-01^2014-02-28^SNJ^LQ^0^Skynet Asia Airways^^^^^https://en.wikipedia.org/wiki/List_of_defunct_airlines_of_Japan^^en|Skynet Asia Airways|^HND^air-skynet-asia^1^^
