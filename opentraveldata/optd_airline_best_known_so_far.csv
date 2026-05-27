@@ -1212,5 +1212,7 @@ trn-sncf-v1^^^^^2C^0^SNCF^^^^R^https://en.wikipedia.org/wiki/SNCF^en|SNCF|^^trn-
 trn-thalys-v1^^^^^2H^56^Thalys^^^^R^https://en.wikipedia.org/wiki/Thalys^en|Thalys|^^trn-thalys^1^
 trn-trenitalia-v1^^2000-01-01^^^7T^0^Trenitalia^^^^R^https://en.wikipedia.org/wiki/Trenitalia^en|Trenitalia|^^trn-trenitalia^1^
 trn-via-rail-canada-inc-v1^^1977-01-01^^VRR^2R^830^VIA Rail Canada^^^^R^https://en.wikipedia.org/wiki/Via_Rail^en|VIA Rail Canada|^^trn-via-rail-canada-inc^1^
+trn-ouigo-for-accesrail-v1^^^^^9B^450^OUIGO for AccesRail^^^^R^^en|OUIGO for AccesRail|^^trn-ouigo-for-accesrail^1^
+trn-sncf-for-accesrail-v1^^^^^9B^450^SNCF Inoui for AccesRail^^^^R^^en|SNCF Inoui for AccesRail|^^trn-sncf-for-accesrail^1^
 air-cambodia-airways-v1^^2017-09-11^^KME^KR^265^Cambodia Airways^^^^^https://en.wikipedia.org/wiki/Cambodia_Airways^en|Cambodia Airways|^PNH^air-cambodia-airways^1^
 air-worldticket-v1^^2002-01-01^^^W1^0^WorldTicket^^^^^https://en.wikipedia.org/wiki/WorldTicket^en|WorldTicket|^^air-worldticket^1^
