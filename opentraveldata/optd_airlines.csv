@@ -1601,14 +1601,16 @@ tec-fantasia-v1^^^^APD^1Z^0^Fantasia Info Network^Asia Pacific^^^^^^en|Fantasia 
 tec-map-management-planning-v1^1^^2015-01-01^MPJ^AQ^0^Map Management Planning^^^^^^^en|Map Management Planning|^^tec-map-management-planning^1^^
 tec-oag-worldwide-v1^^^^^CR^0^OAG Worldwide^^^^^https://en.wikipedia.org/wiki/Official_Airline_Guide^^en|OAG Worldwide|^^tec-oag-worldwide^1^^
 tec-travel-technology-interactive-v1^^^^^Y1^392^Travel Technology Interactive^^^^^https://en.wikipedia.org/wiki/Travel_Technology_Interactive^^en|Travel Technology Interactive|^^tec-travel-technology-interactive^1^^
-trn-accesrail-v1^^^^^9B^450^AccesRail^^^^R^https://en.wikipedia.org/wiki/9B^1898246^en|AccesRail|^^trn-accesrail^1^^
+trn-accesrail-v1^^^^^9B^450^AccesRail^^^^R^https://en.wikipedia.org/wiki/9B^^en|AccesRail|^^trn-accesrail^1^^
 trn-amtrak-v1^^^^^2V^554^Amtrak^^^^R^https://en.wikipedia.org/wiki/Amtrak^^en|Amtrak|^^trn-amtrak^1^^
 trn-deutsche-bahn-v1^^^^DBB^2A^0^Deutsche Bahn^^^^R^https://en.wikipedia.org/wiki/Deutsche_Bahn^364596^en|Deutsche Bahn|^^trn-deutsche-bahn^1^^
 trn-eurostar-v1^^1994-01-01^^^9F^814^Eurostar^^^^R^https://en.wikipedia.org/wiki/Eurostar^2037^en|Eurostar|^^trn-eurostar^1^^
 trn-express-rail-link-malaysia-v1^1^^2014-06-01^^5Y^0^Express Rail Link^^^^R^https://en.wikipedia.org/wiki/Express_Rail_Link^^en|Express Rail Link|^^trn-express-rail-link-malaysia^1^^
 trn-g-rail-v1^^^^^9G^0^9G Rail^^^^R^^^en|9G Rail|^^trn-g-rail^1^^
 trn-nuovo-trasporto-viaggiatori-v1^1^2012-04-01^2014-12-31^^2Q^0^Nuovo Trasporto Viaggiatori^^^^^https://en.wikipedia.org/wiki/Nuovo_Trasporto_Viaggiatori^^en|Nuovo Trasporto Viaggiatori|^^trn-nuovo-trasporto-viaggiatori^1^^
+trn-ouigo-for-accesrail-v1^^^^^9B^450^OUIGO for AccesRail^^^^R^^^en|OUIGO for AccesRail|^^trn-ouigo-for-accesrail^1^^
 trn-renfe-viajeros-v1^1^1941-01-24^2015-12-31^^4R^0^Renfe Viajeros^^^^^https://en.wikipedia.org/wiki/Renfe_Operadora^^en|Renfe Viajeros|^^trn-renfe-viajeros^1^^
+trn-sncf-for-accesrail-v1^^^^^9B^450^SNCF Inoui for AccesRail^^^^R^^1898246^en|SNCF Inoui for AccesRail|^^trn-sncf-for-accesrail^1^^
 trn-sncf-v1^^^^^2C^0^SNCF^^^^R^https://en.wikipedia.org/wiki/SNCF^171403^en|SNCF|^^trn-sncf^1^^
 trn-south-wind-v1^1^1940-12-01^1971-11-14^^A4^0^South Wind^^^^^https://en.wikipedia.org/wiki/South_Wind_(train)^^en|South Wind|^^trn-south-wind^1^^
 trn-thalys-v1^^^^^2H^56^Thalys^^^^R^https://en.wikipedia.org/wiki/Thalys^11503^en|Thalys|^^trn-thalys^1^^
