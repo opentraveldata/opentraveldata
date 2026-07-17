@@ -549,6 +549,7 @@ air-advanced-air-v1^^2026-01-22^^RLA^AN^0^Advanced Air^^^^^https://en.wikipedia.
 air-hop-brit-air-v1^^1975-01-01^^BZH^DB^750^HOP Brit Air^^^^^https://en.wikipedia.org/wiki/Brit_Air^en|HOP Brit Air|^^air-hop-brit-air^1^
 air-hop-regional-v1^^2001-01-01^^RAE^YS^0^Regional^Régional Compagnie Aérienne Européenne^^^^https://en.wikipedia.org/wiki/R%C3%A9gional_Compagnie_A%C3%A9rienne_Europ%C3%A9enne^en|Regional|=en|Régional Compagnie Aérienne Européenne|^^air-hop-regional^1^
 air-hop-v1^^2013-03-31^2026-01-22^HOP^A5^163^HOP!^^^^P^https://en.wikipedia.org/wiki/HOP!^en|HOP!|^^air-hop^1^
+air-hopscotch-air-v1^^^^^O2^0^Hopscotch Air, Inc^Hopscotch Air, Inc^^^^^en|Hopscotch Air, Inc|=en|Hopscotch Air, Inc|^^air-hopscotch-air^1^
 air-air-france-hop-v1^^2026-01-22^^HOP^A5^163^Air France HOP^^^^P^https://en.wikipedia.org/wiki/Air_France_Hop^en|Air France HOP|^^air-france-hop^1^
 air-horizon-air-v1^^1981-09-01^^QXE^QX^481^Horizon Air^^^^^https://en.wikipedia.org/wiki/Horizon_Air^en|Horizon Air|p=en|Horizon Air Industries|=sign|HORIZON AIR|^PDX=SEA^air-horizon-air^1^
 air-hs-aviation-v1^^^2023-08-30^APF^HP^0^Amapola Flyg^^^^^^en|Amapola Flyg|^^air-hs-aviation^1^
@@ -596,7 +597,6 @@ air-jet2-v1^^2003-02-12^^EXS^LS^949^Jet2.com^^^^^https://en.wikipedia.org/wiki/J
 air-jet-4-you-v1^^^^ECO^8J^0^Línea Aerea Eco Jet^^^^^^en|Línea Aerea Eco Jet|^^air-jet-4-you^1^
 air-jetair-caribbean-v1^^2022-11-15^2024-06-18^JRC^4J^^JetAir Caribbean^^^^^https://nl.wikipedia.org/wiki/Jetair_Caribbean^^^^1^
 air-jetairfly-v1^^2005-11-23^^JAF^TB^612^TUIfly Belgium^^^^^https://en.wikipedia.org/wiki/TUI_fly_Belgium^en|TUIfly Belgium|p=en|Jetairfly|h=en|TUI Airlines Belgium|h^BRU^air-jetairfly^1^
-air-jet-air-v1^^^^^O2^0^Jet Air^Jet Air^^^^^en|Jet Air|=en|Jet Air|^^air-jet-air^1^
 air-jet-airways-v1^^1993-05-05^^JAI^9W^589^Jet Airways^^^^^https://en.wikipedia.org/wiki/Jet_Airways^en|Jet Airways|^AMS=BLR=BOM=CCU=DEL=MAA^air-jet-airways^1^
 air-jet-asia-airways-v1^^2009-02-01^^JAA^JF^884^Jet Asia Airways^^^^^https://en.wikipedia.org/wiki/Jet_Asia_Airways^en|Jet Asia Airways|=he|ג'ט אסיה איירווייז|=ja|ジェットアジア・エアウェイズ|=ko|제트 아시아 항공|=th|สายการบินเจ็ทเอเซีย|=zh|捷特亚洲航空|^^air-jet-asia-airways^1^
 air-jet-aviation-business-v1^^^^PJS^PP^0^Jet Aviation Business^^^^^^en|Jet Aviation Business|^^air-jet-aviation-business^1^
