@@ -98,7 +98,7 @@ air-air-guilin-v1^^2016-01-01^^CGH^GT^730^Air Guilin^^^^^https://en.wikipedia.or
 air-air-iceland-v1^^1997-01-01^^FXI^NY^882^Air Iceland^^^^^https://en.wikipedia.org/wiki/Air_Iceland^en|Air Iceland|=is|Flugfélag Íslands|=sign|FAXI|^RKV^air-air-iceland^1^
 air-air-incheon-v1^^2013-01-01^^IAH^KJ^994^Air Incheon^^^^^https://en.wikipedia.org/wiki/Air_Incheon^en|Air Incheon|^ICN^air-air-incheon^1^
 air-air-india-charters-v1^^2005-04-29^^AXB^IX^0^Air India Express^^^^^https://en.wikipedia.org/wiki/Air_India_Express^en|Air India Express|p=en|Air India Charters Limited|=abbr|AICL|^BOM=CCJ=COK=TRV^air-air-india-charters^1^
-air-air-india-regional-v1^^1996-06-21^^LLR^9I^0^Air India Regional^^^^^https://en.wikipedia.org/wiki/Air_India_Regional^en|Air India Regional|=en|Alliance Air|h=en|Airline Allied Services Limited|^BOM^air-air-india-regional^1^
+air-air-india-regional-v1^^1996-06-21^2022-04-14^LLR^9I^0^Air India Regional^^^^^https://en.wikipedia.org/wiki/Air_India_Regional^en|Air India Regional|=en|Alliance Air|h=en|Airline Allied Services Limited|^BOM^air-air-india-regional^1^
 air-air-india-v1^^1932-10-15^^AIC^AI^98^Air India^^^^^https://en.wikipedia.org/wiki/Air_India^en|Air India|^^air-air-india^1^
 air-air-indus-v1^^^^MPK^I6^315^Air Indus^^^^^^en|Air Indus|^^air-air-indus^1^
 air-air-inuit-v1^^1978-11-01^^AIE^3H^466^Air Inuit^^^^^https://en.wikipedia.org/wiki/Air_Inuit^en|Air Inuit|^^air-air-inuit^1^
@@ -177,6 +177,7 @@ air-alianza-glancelot-v1^^^^^G0^^Alianza Glancelot^^^^^^^^air-alianza-glancelot^
 air-alitalia-cityliner-v1^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityLiner^^Affiliate^^https://en.wikipedia.org/wiki/Alitalia_CityLiner^en|Alitalia CityLiner|=en|Air One CityLiner|^^air-alitalia-cityliner^1^
 air-alitalia-v1^^1999-03-01^2021-10-15^AZA^AZ^55^Alitalia^Alitalia S.A.I.^^Member^^https://en.wikipedia.org/wiki/Alitalia^en|Alitalia|=en|Alitalia S.A.I.|^^air-alitalia^1^
 air-allegiant-air-v1^^1998-06-01^^AAY^G4^268^Allegiant Air^^^^^https://en.wikipedia.org/wiki/Allegiant_Air^en|Allegiant Air|^^air-allegiant-air^1^
+air-alliance-air-v1^^2022-04-15^^LLR^9I^0^Alliance Air^Alliance Air Aviation Limited^^^^^https://en.wikipedia.org/wiki/Alliance_Air_(India)^en|Alliance Air|=en|Alliance Air Aviation Limited|=en|Air India Regional|h^BOM^air-alliance-air^1^
 air-alliance-airlines-v1^^^^FWQ^QQ^0^Alliance Airlines^^^^PT^^en|Alliance Airlines|^^air-alliance-airlines^1^
 air-all-nippon-airways-v1^^1952-12-27^^ANA^NH^205^All Nippon Airways^ANA^^Member^^https://en.wikipedia.org/wiki/All_Nippon_Airways^en|All Nippon Airways|=en|ANA|^^air-all-nippon-airways^1^
 air-alma-de-mexico-v1^^^^^C4^665^Alma De Mexico^^^^^^en|Alma De Mexico|^^air-alma-de-mexico^1^
