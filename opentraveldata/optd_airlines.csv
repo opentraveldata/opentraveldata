@@ -133,7 +133,7 @@ air-air-horizons-v1^1^1962-01-01^2005-11-30^EUH^RN^0^Air Horizons^^^^^https://en
 air-air-iceland-v1^^1997-01-01^^FXI^NY^882^Air Iceland^^^^^https://en.wikipedia.org/wiki/Air_Iceland^^en|Air Iceland|=is|Flugfélag Íslands|=sign|FAXI|^RKV^air-air-iceland^1^^
 air-air-incheon-v1^^2013-01-01^^IAH^KJ^994^Air Incheon^^^^^https://en.wikipedia.org/wiki/Air_Incheon^^en|Air Incheon|^ICN^air-air-incheon^1^^
 air-air-india-charters-v1^^2005-04-29^^AXB^IX^0^Air India Express^^Star Alliance^Affiliate^^https://en.wikipedia.org/wiki/Air_India_Express^17926^en|Air India Express|p=en|Air India Charters Limited|=abbr|AICL|^BOM=CCJ=COK=TRV^air-air-india-charters^1^^
-air-air-india-regional-v1^^1996-06-21^^LLR^9I^0^Air India Regional^^Star Alliance^Affiliate^^https://en.wikipedia.org/wiki/Air_India_Regional^34039^en|Air India Regional|=en|Alliance Air|h=en|Airline Allied Services Limited|^BOM^air-air-india-regional^1^^
+air-air-india-regional-v1^^1996-06-21^2022-04-14^LLR^9I^0^Air India Regional^^Star Alliance^Affiliate^^https://en.wikipedia.org/wiki/Air_India_Regional^^en|Air India Regional|=en|Alliance Air|h=en|Airline Allied Services Limited|^BOM^air-air-india-regional^1^^
 air-air-india-v1^^1932-10-15^^AIC^AI^98^Air India^^Star Alliance^Member^^https://en.wikipedia.org/wiki/Air_India^111267^en|Air India|^^air-air-india^1^^
 air-air-indus-v1^^^^MPK^I6^315^Air Indus^^^^^^^en|Air Indus|^^air-air-indus^1^^
 air-air-inuit-v1^^1978-11-01^^AIE^3H^466^Air Inuit^^^^^https://en.wikipedia.org/wiki/Air_Inuit^12230^en|Air Inuit|^^air-air-inuit^1^^
@@ -248,6 +248,7 @@ air-alitalia-cityliner-v1^^2006-06-07^^CYL^CT^0^Alitalia CityLiner^Air One CityL
 air-alitalia-v1^^1999-03-01^2021-10-15^AZA^AZ^55^Alitalia^Alitalia S.A.I.^^Member^^https://en.wikipedia.org/wiki/Alitalia^^en|Alitalia|=en|Alitalia S.A.I.|^^air-alitalia^1^^
 air-all-nippon-airways-v1^^1952-12-27^^ANA^NH^205^All Nippon Airways^ANA^Star Alliance^Member^^https://en.wikipedia.org/wiki/All_Nippon_Airways^186104^en|All Nippon Airways|=en|ANA|^^air-all-nippon-airways^1^^
 air-allegiant-air-v1^^1998-06-01^^AAY^G4^268^Allegiant Air^^^^^https://en.wikipedia.org/wiki/Allegiant_Air^64666^en|Allegiant Air|^^air-allegiant-air^1^^
+air-alliance-air-v1^^2022-04-15^^LLR^9I^0^Alliance Air^Alliance Air Aviation Limited^^^^https://en.wikipedia.org/wiki/Alliance_Air_(India)^34039^en|Alliance Air|=en|Alliance Air Aviation Limited|=en|Air India Regional|h^BOM^air-alliance-air^1^^
 air-alliance-airlines-v1^^^^FWQ^QQ^0^Alliance Airlines^^^^PT^^4579^en|Alliance Airlines|^^air-alliance-airlines^1^^
 air-alma-de-mexico-v1^^^^^C4^665^Alma De Mexico^^^^^^^en|Alma De Mexico|^^air-alma-de-mexico^1^^
 air-almasria-universal-airlines-v1^^2008-01-01^^LMU^UJ^110^AlMasria Universal Airlines^^^^^https://en.wikipedia.org/wiki/AlMasria_Universal_Airlines^^ar|المصرية العالمية للطيران|=en|AlMasria Universal Airlines|^^air-almasria-universal-airlines^1^^
@@ -683,6 +684,7 @@ air-flyr-v1^^^2023-01-31^FOX^FS^^Flyr^^^^^^^^^air-flyr^1^^
 air-flywell-airlines-v1^1^1995-01-01^2003-12-12^FEM^YZ^0^Zimbabwe Airlink^Flywell Airlines^^^P^https://en.wikipedia.org/wiki/Zimbabwe_Airlink^^en|Zimbabwe Airlink|=en|Flywell Airlines|^^air-flywell-airlines^1^^
 air-fmi-air-v1^^2012-09-01^^FMI^ND^0^FMI Air^^^^^https://en.wikipedia.org/wiki/FMI_Air^260^en|FMI Air|^^air-fmi-air^1^^
 air-forty-mile-air-v1^^^^MLA^Q5^0^Forty Mile Air^^^^^^1676^en|Forty Mile Air|^^air-forty-mile-air^1^^
+air-fox-air-v1^^2024-01-01^^^6F^0^Fox Air^Fox Aircraft LLC^^^^^^en|Fox Air|^BET^air-fox-air^1^^
 air-freebird-airlines-v1^^^^FHY^FH^0^Freebird Airlines^Futura Intl^^^^^^en|Freebird Airlines|=en|Futura Intl|^^air-freebird-airlines^1^^
 air-freedom-air-v1^1^1974-01-01^2015-03-01^FRE^FP^224^Freedom Air^^^^^https://en.wikipedia.org/wiki/Freedom_Air_(Guam)^^en|Freedom Air|^^air-freedom-air^1^^
 air-freedom-airline-express-somalia-v1^^2019-05-01^^SMK^4K^0^Freedom Airline Express (Somalia)^^^^^^^^^air-freedom-airline-express-somalia^1^^
@@ -1149,7 +1151,7 @@ air-premia-v1^^2017-07-17^^PAG^YP^0^Air Premia^^^^^https://fr.wikipedia.org/wiki
 air-premier-trans-aire-v1^^^^^3X^435^Premier Trans Aire^^^^C^https://de.wikipedia.org/wiki/Premier_Trans_Aire^^^HNL^air-premier-trans-aire^1^^
 air-premium-jet-v1^^^^^0J^254^Premium Jet AG^^^^^^^en|Premium Jet AG|^^air-premium-jet^1^^
 air-prima-air-v1^1^1996-01-01^1996-12-31^^QG^0^Prima Air^^^^^https://en.wikipedia.org/wiki/Prima_Air^^en|Prima Air|^^air-prima-air^1^^
-air-primera-air-nordic-v1^^2015-04-01^^PRW^6F^0^Primera Air Nordic^^^^^^^en|Primera Air Nordic|^RIX^air-primera-air-nordic^1^^
+air-primera-air-nordic-v1^^2015-04-01^2018-10-02^PRW^6F^0^Primera Air Nordic^^^^^^^en|Primera Air Nordic|^RIX^air-primera-air-nordic^1^^
 air-primera-air-scandinavia-v1^1^2003-01-01^2007-12-31^JXX^GX^0^JetX^^^^^https://en.wikipedia.org/wiki/Primera_Air^^en|Primera Air Scandinavia|p=en|Primera Air|h=en|JetX|h^KEF^air-primera-air-scandinavia^1^^
 air-primera-air-scandinavia-v2^2^2008-01-01^2008-12-31^JXX^GX^834^Primera Air^^^^^https://en.wikipedia.org/wiki/Primera_Air^^en|Primera Air Scandinavia|p=en|Primera Air|h=en|JetX|h^KEF^air-primera-air-scandinavia^2^^
 air-primera-air-scandinavia-v3^^2009-01-01^^PRI^PF^0^Primera Air Scandinavia^^^^^https://en.wikipedia.org/wiki/Primera_Air^2128^en|Primera Air Scandinavia|p=en|Primera Air|h=en|JetX|h^BLL^air-primera-air^3^^
