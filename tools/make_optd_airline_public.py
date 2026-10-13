@@ -134,6 +134,28 @@ def initializeAirlineDictionaries ():
     return global_dict
 
 #
+# Validate parsed CSV rows
+#
+def validateCsvRow (csv_filepath, file_reader, row):
+    """
+    Ensure the row has the same number of columns as the CSV header.
+    """
+
+    expected_nb_of_columns = len(file_reader.fieldnames)
+    extra_column_values = row.get(None, [])
+    missing_nb_of_columns = len([value for value in row.values()
+                                 if value is None])
+    found_nb_of_columns = expected_nb_of_columns \
+        + len(extra_column_values) - missing_nb_of_columns
+
+    if (found_nb_of_columns != expected_nb_of_columns):
+        raise ValueError (
+            "Malformed CSV row in '{}', line {}: expected {} columns, "
+            "found {} columns".format(csv_filepath, file_reader.line_num,
+                                      expected_nb_of_columns,
+                                      found_nb_of_columns))
+
+#
 # Extract the details of airlines from the OpenTravelData CSV files
 #
 # pk^env_id^validity_from^validity_to^3char_code^2char_code^num_code^name^name2^alliance_code^alliance_status^type^wiki_link^alt_names^bases^key^version^parent_pk_list
@@ -153,6 +175,8 @@ def extractAirlineDetails (global_dict, airline_filepath, verboseFlag):
     with open (airline_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for row in file_reader:
+            validateCsvRow (airline_filepath, file_reader, row)
+
             pk = row['pk']
             env_id = row['env_id']
             validity_from = row['validity_from']
@@ -235,6 +259,8 @@ def extractAllianceDetails (global_dict, alliance_filepath, verboseFlag):
     with open (alliance_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for row in file_reader:
+            validateCsvRow (alliance_filepath, file_reader, row)
+
             alliance_name = row['alliance_name']
             alliance_type = row['alliance_type']
             air_iata_code = row['airline_iata_code_2c']
@@ -304,6 +330,8 @@ def extractFrequencies (global_dict, freq_filepath, verboseFlag):
     with open (freq_filepath, newline='') as csvfile:
         file_reader = csv.DictReader (csvfile, delimiter='^')
         for row in file_reader:
+            validateCsvRow (freq_filepath, file_reader, row)
+
             iata_code = row['iata_code']
             icao_code = row['icao_code']
             if (icao_code == "ZZZ"): icao_code = ""
