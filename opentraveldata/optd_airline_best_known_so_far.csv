@@ -63,6 +63,7 @@ air-wizz-uk-v1^^2017-09-26^^^W9^17^Wizz Air^^^^^https://en.wikipedia.org/wiki/Wi
 air-air-baltic-v1^^1995-01-01^^BTI^BT^657^airBaltic^^^^^https://en.wikipedia.org/wiki/AirBaltic^en|airBaltic|^^air-air-baltic^1^
 air-air-belgium-v2^^2018-06-01^^ABB^KF^142^Air Belgium^^^^^https://en.wikipedia.org/wiki/Air_Belgium_(since_2016)^en|Air Belgium|^^air-air-belgium^2^
 air-airblue-v1^^2004-06-18^^ABQ^PA^84^Airblue^Florida Coast^^^P^https://en.wikipedia.org/wiki/Airblue^en|Airblue|=en|Florida Coast|^^air-airblue^1^
+air-airborneo-v1^^2026-01-01^^MWG^MY^819^AirBorneo^Airborneo Airways Sdn. Bhd.^^^^https://en.wikipedia.org/wiki/AirBorneo^en|AirBorneo|=en|Airborneo Airways Sdn. Bhd.|=en|MASwings|h^KCH=MYY^air-airborneo^1^
 air-air-botswana-v1^^^^BOT^BP^636^Air Botswana^^^^^^en|Air Botswana|^^air-air-botswana^1^
 air-air-bretagne-v1^^^^OMQ^3E^0^Multi Aero^Air Bretagne^^^^^en|Multi Aero|=en|Air Bretagne|^^air-air-bretagne^1^
 air-air-bridge-cargo-v1^^^^SKI^RU^0^Air Bridge Cargo^Tci Skyking^^^C^^en|Air Bridge Cargo|=en|Tci Skyking|^^air-air-bridge-cargo^1^
@@ -703,7 +704,7 @@ air-mann-yadanarpon-v1^^2014-02-01^^MYP^7Y^0^Mann Yadanarpon Airlines^^^^^https:
 air-manta-air-v1^^2019-02-01^^MAV^NR^0^Manta Air^^^^^https://en.wikipedia.org/wiki/Manta_Air^en|Manta Air|^DDD^air-manta-air^1^
 air-manx-v1^^^^^NM^0^Manx^^^^^^en|Manx|^^air-manx^1^
 air-martinair-v1^^^^MPH^MP^129^Martinair^^^^^^en|Martinair|^^air-martinair^1^
-air-maswings-v1^^2007-10-01^^MWG^MY^819^MASwings^^^^^https://en.wikipedia.org/wiki/MASwings^en|MASwings|p=en|MASwings Sendirian Berhad|^BKI=KCH=MYY^air-maswings^1^
+air-maswings-v1^^2007-10-01^2025-12-31^MWG^MY^819^MASwings^^^^^https://en.wikipedia.org/wiki/MASwings^en|MASwings|p=en|MASwings Sendirian Berhad|^BKI=KCH=MYY^air-maswings^1^
 air-mauritania-airways-v1^^^^^YD^0^Mauritania Airways^^^^^^en|Mauritania Airways|^^air-mauritania-airways^1^
 air-mauritanian-airlines-v1^^^^^L6^495^Mauritanian Airlines Int^^^^^^en|Mauritanian Airlines Int|^^air-mauritanian-airlines^1^
 air-max-air-v1^^^^NGL^VM^^Max Air^^^^^^^^air-max-air^1^
