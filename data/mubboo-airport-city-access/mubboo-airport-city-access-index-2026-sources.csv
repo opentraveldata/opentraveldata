@@ -1,0 +1,536 @@
+city,metric,source_url,retrieved_at_utc,capture_method,sha256
+Abu Dhabi,centrePoint,https://www.dmt.gov.ae/en/ContactUs,2026-09-26T02:26:31Z,curl,7e32b8432b4d50c4bd8ce89caedff1a1471b41095d478e061f6d7a13c4c635e2
+Abu Dhabi,m1,https://admobility.gov.ae/ckfinder/userfiles/files/BusServiceA1.pdf,2026-09-26T02:20:04Z,curl,4abf8ffa5aae10732c76c32ab5fd1a736f25e3b0c533274fda2c1fba36acd1f4
+Abu Dhabi,m2cheap,https://admobility.gov.ae/en/pb-bus-service/hafilat-public-buses-fees,2026-09-26T02:20:04Z,curl,d07205e66c0eb7e572e0d3e67d05c133f15506a7ccb805e47f4ef79d339495e6
+Abu Dhabi,m2fast,https://admobility.gov.ae/en/pb-bus-service/hafilat-public-buses-fees,2026-09-26T02:20:04Z,curl,d07205e66c0eb7e572e0d3e67d05c133f15506a7ccb805e47f4ef79d339495e6
+Abu Dhabi,m3bTariff,https://admobility.gov.ae/en/taxi-fares,2026-09-26T02:24:54Z,curl,a43b9b1e426b0af98cd9e522682ff32769f584d1beaad45e8efdf6328daca696
+Abu Dhabi,m4,https://admobility.gov.ae/ckfinder/userfiles/files/BusServiceA1.pdf,2026-09-26T02:20:04Z,curl,4abf8ffa5aae10732c76c32ab5fd1a736f25e3b0c533274fda2c1fba36acd1f4
+Abu Dhabi,m5,https://admobility.gov.ae/en/people-of-determination,2026-09-26T02:31:20Z,curl,3c8e18fa5f7b3be860a685b423187fc32bfdcd6da9e6f0f3546437bb84009550
+Abu Dhabi,m6,https://admobility.gov.ae/ckfinder/userfiles/files/BusServiceA1.pdf,2026-09-26T02:20:04Z,curl,4abf8ffa5aae10732c76c32ab5fd1a736f25e3b0c533274fda2c1fba36acd1f4
+Amsterdam,centrePoint,https://api.pdok.nl/bzk/locatieserver/search/v3_1/free?q=Amstel%201%201011PN%20Amsterdam&rows=1,2026-09-26T02:08:49Z,curl,7179e7ad0114db328ccb1f185839af486d5d70e45e586047e567b74aab488c89
+Amsterdam,m1,https://www.ns.nl/en/travel-information/special-routes/taking-the-train-to-the-airport.html,2026-09-26T02:05:57Z,curl,4751271b9a3292a3736361878e6c615c485a0a887c35227b41bebc039414c49c
+Amsterdam,m2cheap,https://www.ns.nl/en/travel-information/special-routes/taking-the-train-to-the-airport.html,2026-09-26T02:05:57Z,curl,4751271b9a3292a3736361878e6c615c485a0a887c35227b41bebc039414c49c
+Amsterdam,m2fast,https://www.ns.nl/en/travel-information/special-routes/taking-the-train-to-the-airport.html,2026-09-26T02:05:57Z,curl,4751271b9a3292a3736361878e6c615c485a0a887c35227b41bebc039414c49c
+Amsterdam,m3bTariff,https://www.rijksoverheid.nl/vraag-en-antwoord/taxi/wat-zijn-de-kosten-voor-een-taxi,2026-09-26T02:05:59Z,curl,8b95d39eb4f58c87384ab24e4f8649246d466098d4590e13b79ebeedd7e109e5
+Amsterdam,m4,https://www.ns.nl/en/travel-information/special-routes/night-trains.html,2026-09-26T02:07:00Z,curl,bf92d9caef4dbce13ebbf28f43f76e6166f1cf31a55319c9deb0eb91cc007f6b
+Amsterdam,m5,https://www.ns.nl/en/travel-information/special-routes/taking-the-train-to-the-airport.html,2026-09-26T02:05:57Z,curl,4751271b9a3292a3736361878e6c615c485a0a887c35227b41bebc039414c49c
+Amsterdam,m6,https://www.ns.nl/en/travel-information/special-routes/taking-the-train-to-the-airport.html,2026-09-26T02:05:57Z,curl,4751271b9a3292a3736361878e6c615c485a0a887c35227b41bebc039414c49c
+Antalya,primaryAirport,https://www.dhmi.gov.tr/Lists/Istatislikler/Attachments/429/YOLCU.pdf,2026-09-26T02:04:11Z,curl,35aa9b90561c8cea90b117d0ee2b1307f530072e01f565f88ff6edfb8f1dcdd1
+Antalya,centrePoint,https://www.antalya.bel.tr/iletisim,2026-09-26T02:01:06Z,curl,b1009181ba94a2293648781f98cf6a31be7326d38968393da4084da3530146d3
+Antalya,m1,"https://ulasim.antalya.bel.tr/Home/TarifeListesi (POST selDay=2 [Salı], selDirection=1 [Gidiş], selRoute=9020 [T1A], selStop=15185)",2026-09-27T01:22:36Z,curl,0a1a3d09a61c76db606251da01920209171c9887ace77913085ea280d65d446b
+Antalya,m2cheap,https://www.antalyakart.com.tr/Page/Faqs,2026-09-26T02:03:24Z,curl,34695d6ea25af549120b5f37e607e7c2a1dd415a13f9c212c5057149a222c6f2
+Antalya,m3a,https://www.antalya-airport.aero/yolcu-ve-ziyaretciler/ulasim/taksiler,2026-09-26T02:01:06Z,curl,79d34f46c1d697a74da09806d0c551e482fd593466294cb08781a49a33a73d6b
+Antalya,m4,"https://online.antalyakart.com.tr/#/routes (Hatlar > T1A FATİH-HAVALİMANI, direction HAVALİMANI DURAĞI - FATİH DURAĞI > Hareket Saatleri > Haftaiçi)",2026-09-27T01:18:38Z,browser-text,1ad0ed0f6bcde19f3dbb5e89a64160154d16034f3ea0c4e82a8a3bf899717b60
+Antalya,m5,https://www.antalya-airport.aero/yolcu-ve-ziyaretciler/ulasim/otobusler-ve-toplu-tasima,2026-09-26T02:01:06Z,curl,c20b95381532059368a2f317a9835984336bf649ede99090661b3c4fae2a54b1
+Antalya,m6,"https://online.antalyakart.com.tr/#/routes (Hatlar > T1A FATİH-HAVALİMANI, direction HAVALİMANI DURAĞI - FATİH DURAĞI > Hareket Saatleri > Haftaiçi)",2026-09-27T01:18:38Z,browser-text,1ad0ed0f6bcde19f3dbb5e89a64160154d16034f3ea0c4e82a8a3bf899717b60
+Athens,m1,https://data.gov.gr/dataset/4e897a75-975a-4ce7-af65-f32ea01f93b9/resource/5e3858ee-d9ba-48c2-9015-744ea160976d/download/stasy_gtfs.rar,2026-09-26T02:59:44Z,text-extract,73ed9f25b87c611a040999b358d77f8f9dacbfa005451ae11c06669def352017
+Athens,m2cheap,https://www.oasa.gr/en/tickets/prices-of-products/,2026-09-26T02:54:48Z,curl,419515a6945504695c595f0e5938407fc0427f4a0ed914cfa373b7da6d60b516
+Athens,m2fast,https://www.oasa.gr/en/tickets/prices-of-products/,2026-09-26T02:54:48Z,curl,419515a6945504695c595f0e5938407fc0427f4a0ed914cfa373b7da6d60b516
+Athens,m4,https://www.oasa.gr/en/visit-athens/airport-express-bus-lines/,2026-09-26T02:54:44Z,curl,c72e5b5a727ad5849044e6bab358008f7a6925a3231265f355928d9e7afc2d12
+Athens,m5,https://data.gov.gr/dataset/4e897a75-975a-4ce7-af65-f32ea01f93b9/resource/5e3858ee-d9ba-48c2-9015-744ea160976d/download/stasy_gtfs.rar,2026-09-26T02:59:44Z,text-extract,73ed9f25b87c611a040999b358d77f8f9dacbfa005451ae11c06669def352017
+Athens,m6,https://data.gov.gr/dataset/4e897a75-975a-4ce7-af65-f32ea01f93b9/resource/5e3858ee-d9ba-48c2-9015-744ea160976d/download/stasy_gtfs.rar,2026-09-26T02:59:44Z,text-extract,73ed9f25b87c611a040999b358d77f8f9dacbfa005451ae11c06669def352017
+Bangkok,primaryAirport,https://www.airportthai.co.th/wp-content/uploads/2026/06/ANNUAL-REPORT-2025.pdf,2026-09-27T01:21:44Z,curl,dad30b545d3bf32887c34cf2729064f892a162b88cc0bcfd0bcdff405f4f202d
+Bangkok,m1,https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Transportation_BKK,2026-09-26T02:54:50Z,curl,3ac3a033a12fb0b1a180b5f049a699c844ae2a3affbc048dc5ae92f97cb62c5a
+Bangkok,m2cheap,https://suvarnabhumi.airportthai.co.th/service/transportation/detail/317,2026-09-27T01:18:38Z,curl,601bea03ec37e52d7aadf66c05984dfdb2b101a141d0cbb0abbb68c2496c1079
+Bangkok,m3a,https://suvarnabhumi.airportthai.co.th/service/transportation/detail/304,2026-09-26T02:51:33Z,curl,a7795293210084b21b8745390f5a3f8d7729d208510790e982bf1be1ede026ad
+Bangkok,m3bTariff,https://qrverify.dlt.go.th/_nuxt/swaUx7D9.js,2026-09-26T02:57:27Z,curl,c91351bff6ff84f8998fe0cd5635daa1a3bbdfafe9f1f41bc7eeecbfad50367f
+Bangkok,m4,https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/Transportation_BKK,2026-09-26T02:54:50Z,curl,3ac3a033a12fb0b1a180b5f049a699c844ae2a3affbc048dc5ae92f97cb62c5a
+Barcelona,centrePoint,https://guia.barcelona.cat/en/agenda/detall/ajuntament-de-barcelona_92086028701.html,2026-09-26T02:38:19Z,curl,4bf9e615412473a8eba0d1dc3f1f0f0c3c5865fa2d07e1e3939edfbb91ac7457
+Barcelona,m1,https://aerobusbarcelona.es/faqs/,2026-09-26T02:27:33Z,curl,51479fbca618c3dd7052a6934a915391907082755a3f84394158639f76528858
+Barcelona,m2cheap,https://www.tmb.cat/en/barcelona-fares-metro-bus/aeroport-ticket,2026-09-26T02:23:57Z,curl,1cb2e28cfdd6e2556fb4ce7ff945cf055e4ba3e8f50d3c55d08ad61246e7e4fb
+Barcelona,m2fast,https://aerobusbarcelona.es/en/guia-de-viaje/find-out-about-the-new-aerobus-fares/,2026-09-26T02:26:11Z,curl,1c783ad282dfa5dd473a061bbc54bcf3e1c1e499d5854005e7c92bb6da469eaa
+Barcelona,m3a,https://taxi.amb.cat/es/imet/actualitat/noticies/detall/-/noticiataxi/tarifes-urbanes-del-taxi-per-al-2026/29760500/956832,2026-09-26T02:24:11Z,curl,dcf1858a159d17e82e9964be3504e59f8f671219155bc7f3abec038cfcaea40b
+Barcelona,m3bTariff,https://taxi.amb.cat/usuari/tarifes,2026-09-26T02:24:05Z,curl,11779c1f7ace8d4f5c2d055d16d8a94a23762077f5f96ce1bdaadd03393fd30f
+Barcelona,m4,https://aerobusbarcelona.es/faqs/,2026-09-26T02:27:33Z,curl,51479fbca618c3dd7052a6934a915391907082755a3f84394158639f76528858
+Barcelona,m5,https://aerobusbarcelona.es/faqs/,2026-09-26T02:27:33Z,curl,51479fbca618c3dd7052a6934a915391907082755a3f84394158639f76528858
+Barcelona,m6,https://aerobusbarcelona.es/lineas-paradas-y-horarios/linea-a1-ida/,2026-09-26T02:27:37Z,curl,ea134c5b1560bdddd52f0dfcff3670dbb28f9b1fb1c91f7e3ffe609b261b130b
+Bogotá,centrePoint,https://nominatim.openstreetmap.org/search?q=Palacio+Li%C3%A9vano%2C+Bogot%C3%A1&format=jsonv2&limit=3,2026-09-26T02:49:19Z,curl,a3dc920058f440254608270badad50cbf03ac05f3bf047fd60c5c211b8fb6302
+Bogotá,m1,https://buscador-rutas.transmilenio.gov.co/rutas/697/1/TransMilenio/Universidades?color=%23E1A2AC,2026-09-27T01:16:00Z,browser-text,87efaae5176482172e52ef763524c9bce9ea2077636a2fb9327e5e89b4859669
+Bogotá,m2cheap,https://www.transmilenio.gov.co/viaje-en-transmi/medios-de-pago/tarifas-del-sistema-transmilenio,2026-09-26T02:46:54Z,curl,94c138f49593b7de749a2a9808c5988cb3063eb658372a6f9467b829463c7c12
+Bogotá,m4,https://buscador-rutas.transmilenio.gov.co/rutas/2560/16-14/TransMilenio/Aeropuerto?color=%23009944,2026-09-27T01:15:05Z,browser-text,4d001beb660e4ca9618317234e23c2cb68c373fbc713e165ad0c31a584e4c98e
+Budapest,centrePoint,https://budapest.hu/kapcsolat,2026-09-26T02:39:25Z,curl,f55f67f8ed23a08a3d910a657aa35f22c556cd63a67a24d7b3757b6a4ea71ec6
+Budapest,m1,https://go.bkk.hu/api/static/v1/public-gtfs/budapest_gtfs.zip,2026-09-26T02:42:17Z,text-extract,994a0cadd4037f22cd3d9a7f13bdada00927ed56de459a1bb2edfd14b4f88e2d
+Budapest,m2cheap,https://budapest.hu/hirek/2025/09/30/oktober-1-tol-a-berleteseknek-olcsobb-lesz-a-repteri-100e-busz,2026-09-26T02:40:34Z,curl,0d2e057f8778bce66ad82bf96af6be6bd62834c853d0df67d1c55d73a20acb4a
+Budapest,m2fast,https://budapest.hu/hirek/2025/09/30/oktober-1-tol-a-berleteseknek-olcsobb-lesz-a-repteri-100e-busz,2026-09-26T02:40:34Z,curl,0d2e057f8778bce66ad82bf96af6be6bd62834c853d0df67d1c55d73a20acb4a
+Budapest,m3a,https://www.bud.hu/en/parking-transport/transportation/taxi-uber/taxi/fotaxi.html,2026-09-26T02:42:57Z,text-extract,e4d71ef13dcac0df7f2deea3a8a41817f46e580f7959e11ba0d61fe550a2760a
+Budapest,m3bTariff,https://www.bud.hu/en/parking-transport/transportation/taxi-uber/taxi/fotaxi.html,2026-09-26T02:42:57Z,text-extract,e4d71ef13dcac0df7f2deea3a8a41817f46e580f7959e11ba0d61fe550a2760a
+Budapest,m4,https://go.bkk.hu/api/static/v1/public-gtfs/budapest_gtfs.zip,2026-09-26T02:42:17Z,text-extract,994a0cadd4037f22cd3d9a7f13bdada00927ed56de459a1bb2edfd14b4f88e2d
+Budapest,m5,https://go.bkk.hu/api/static/v1/public-gtfs/budapest_gtfs.zip,2026-09-26T02:42:17Z,text-extract,994a0cadd4037f22cd3d9a7f13bdada00927ed56de459a1bb2edfd14b4f88e2d
+Budapest,m6,https://go.bkk.hu/api/static/v1/public-gtfs/budapest_gtfs.zip,2026-09-26T02:42:17Z,text-extract,994a0cadd4037f22cd3d9a7f13bdada00927ed56de459a1bb2edfd14b4f88e2d
+Buenos Aires,primaryAirport,https://datos.transporte.gob.ar/dataset/21038a1a-c3c7-4494-b76a-3a2a8fbb83b5/resource/0706775f-bed9-46e7-aac5-726d7e72e429/download/202512-informe-ministerio-actualizado-dic-final.csv,2026-09-26T02:42:57Z,curl,02544b9be747bc0b7de7e0d543c11b610f4a83acb5b33464f45ae2023a717e38
+Buenos Aires,centrePoint,https://nominatim.openstreetmap.org/search?q=Palacio+Municipal%2C+Bol%C3%ADvar+1%2C+Buenos+Aires&format=jsonv2&limit=3,2026-09-26T02:44:50Z,curl,7f40858fd8549f43b8c8634d841c89e6d84b2fa5a9e352da7e0c3abb9135eee6
+Buenos Aires,m1,https://tiendaleon.com/,2026-09-26T02:32:22Z,curl,28d6a2aaebf1ece0ff8edfae72c8addf4a4b19a1bc86d6ac5f690ba1b2817b43
+Buenos Aires,m2fast,https://tiendaleon.com/,2026-09-26T02:32:22Z,curl,28d6a2aaebf1ece0ff8edfae72c8addf4a4b19a1bc86d6ac5f690ba1b2817b43
+Cairo,centrePoint,https://www.cairo.gov.eg/ar/panorama/contact-us/,2026-09-26T02:43:14Z,curl,9d07a3cc213a5f92a0e9bf18d3cc7b1067a4f5613eb7aea606e0f8825b392f7b
+Cairo,m1,https://www.cairo-airport.com/en-us/Services/Passenger-Guide/Move-From-To-Airport,2026-09-26T02:42:31Z,curl,d3e04c96f9602666cb42dc2bd0fdf55fb8047da6579620cf2eb89fb58e454ea1
+Cairo,m3a,https://www.cairo-airport.com/en-us/Services/Passenger-Guide/Move-From-To-Airport,2026-09-26T02:42:31Z,curl,d3e04c96f9602666cb42dc2bd0fdf55fb8047da6579620cf2eb89fb58e454ea1
+Cairo,m5,https://www.cairo-airport.com/en-us/Services/Passenger-Guide/Move-From-To-Airport,2026-09-26T02:42:31Z,curl,d3e04c96f9602666cb42dc2bd0fdf55fb8047da6579620cf2eb89fb58e454ea1
+Cancún,centrePoint,https://caribemexicano.travel/destino/cancun/,2026-09-26T02:10:50Z,curl,0c4fc5ded49add97cb75d7576880678cbaec066a1c9ea96254394bd405f15d3b
+Cape Town,centrePoint,https://www.capetown.gov.za/General/Contact-us,2026-09-26T02:38:43Z,curl,f586b5f0290646515f6de820bb96bf2da8b30bba92879c11cbab6cfd47d18bac
+Cape Town,m1,https://www.myciti.org.za/en/routes-stops/airport-services/,2026-09-26T02:33:54Z,curl,b2e085b7d0eda467385d29de990fa4a4298a834fd3c845078eea0b36d75e5cf9
+Cape Town,m2cheap,https://www.myciti.org.za/en/routes-stops/airport-services/,2026-09-26T02:33:54Z,curl,b2e085b7d0eda467385d29de990fa4a4298a834fd3c845078eea0b36d75e5cf9
+Cape Town,m3a,https://www.airports.co.za/airports/cape-town-international-airport/transport/public-transport,2026-09-26T02:26:18Z,curl,750dcda32625f3b82a0154fe2b17b1f9297ded98a70c1d71dbacf3e360a9c4de
+Cape Town,m4,https://www.myciti.org.za/en/routes-stops/airport-services/,2026-09-26T02:33:54Z,curl,b2e085b7d0eda467385d29de990fa4a4298a834fd3c845078eea0b36d75e5cf9
+Cape Town,m5,https://www.myciti.org.za/en/routes-stops/airport-services/,2026-09-26T02:33:54Z,curl,b2e085b7d0eda467385d29de990fa4a4298a834fd3c845078eea0b36d75e5cf9
+Cape Town,m6,https://www.myciti.org.za/en/routes-stops/airport-services/,2026-09-26T02:33:54Z,curl,b2e085b7d0eda467385d29de990fa4a4298a834fd3c845078eea0b36d75e5cf9
+Casablanca,centrePoint,https://www.casablancacity.ma/fr/categorie/495/contact,2026-09-26T03:01:44Z,curl,ec96f0180031dbda51398eecddab032ad7e4c3b29817f88ce701576e16cbdd63
+Casablanca,m1,https://www.oncf.ma/content/download/134011/3128421/file/Casa%20-%20A%C3%A9roport%20phase%202.pdf,2026-09-26T03:01:02Z,curl,cccc20f34fc5dc3d5bb3862e29008f68224f91e83d9eb6de0bf10980763a0c61
+Casablanca,m2cheap,https://www.casabus.ma/titres-de-transport/tarifs/,2026-09-26T03:03:50Z,curl,a17aef780cf454368e30d6fd7ff668647fd680466a71043ce3e0249958cf69d5
+Casablanca,m2fast,https://www.oncf.ma/fr/Voyageurs/Services/Train-aeroport-mohammed-v,2026-09-26T02:58:48Z,curl,3865c556c04c5f27847e98c5ea57cc768af1cc22046356b7b35c06e1f734d020
+Casablanca,m4,https://www.oncf.ma/content/download/134011/3128421/file/Casa%20-%20A%C3%A9roport%20phase%202.pdf,2026-09-26T03:01:02Z,curl,cccc20f34fc5dc3d5bb3862e29008f68224f91e83d9eb6de0bf10980763a0c61
+Casablanca,m5,https://www.oncf.ma/fr/Voyageurs/Services/Personnes-a-mobilite-reduite,2026-09-26T02:58:51Z,curl,7d1f8ea38d4db3e92f11d977fbebb93e4ea8a753a486f2f6f0296fd6aeed96eb
+Casablanca,m6,https://www.oncf.ma/fr/Voyageurs/Services/Train-aeroport-mohammed-v,2026-09-26T02:58:48Z,curl,3865c556c04c5f27847e98c5ea57cc768af1cc22046356b7b35c06e1f734d020
+Chicago,primaryAirport,https://www.flychicago.com/SiteCollectionDocuments/Business/ArchivedPDFs/FactsandFigures/AirTraffic/1225%20MDW%20SUMMARY.pdf,2026-09-26T02:13:16Z,curl,51ce21b75ea2a0d2a4c552be27ea92ec04b724421a6657a95128127de9445558
+Chicago,primaryAirport,https://www.flychicago.com/SiteCollectionDocuments/Business/AccessiblePDFs/FactsandFigures/AirTraffic/1225%20ORD%20SUMMARY%20REVISED.pdf,2026-09-26T02:13:12Z,curl,1149d663aeb3cdd079c9bdd23842066d380743d52df34409eacac364fedb244f
+Chicago,centrePoint,https://www.chicago.gov/city/en/depts/fin.html,2026-09-26T02:19:56Z,curl,439f26e9489938ec687bea835eac8af0fec8aa695a2a004cea2fd9ff276ea64c
+Chicago,m1,https://www.transitchicago.com/assets/1/6/rail-tt_blue.pdf,2026-09-26T02:15:31Z,curl,f48a1d5276c2a62c74eddfe5fb8ca413b2e23c5dbaeb83475b024d6c642ec84d
+Chicago,m2cheap,https://www.transitchicago.com/fares/,2026-09-26T02:11:46Z,curl,f4772785429c081500eee2fff80760a8f84ebb9d8bf7dc35a92ddc1a72099bb7
+Chicago,m2fast,https://www.transitchicago.com/fares/,2026-09-26T02:11:46Z,curl,f4772785429c081500eee2fff80760a8f84ebb9d8bf7dc35a92ddc1a72099bb7
+Chicago,m3a,https://www.chicago.gov/content/dam/city/depts/bacp/publicvehicleinfo/medallionowners/chicagotaxifarerateseffjuly12026.pdf,2026-09-26T02:18:00Z,curl,576965321fc9526cb618ea1bd0f46d54689d750094e9b58e00df313be48fd3e9
+Chicago,m3bTariff,https://www.chicago.gov/content/dam/city/depts/bacp/publicvehicleinfo/medallionowners/chicagotaxifarerateseffjuly12026.pdf,2026-09-26T02:18:00Z,curl,576965321fc9526cb618ea1bd0f46d54689d750094e9b58e00df313be48fd3e9
+Chicago,m4,https://www.transitchicago.com/assets/1/6/rail-tt_blue.pdf,2026-09-26T02:15:31Z,curl,f48a1d5276c2a62c74eddfe5fb8ca413b2e23c5dbaeb83475b024d6c642ec84d
+Chicago,m5,https://www.transitchicago.com/blueline/,2026-09-26T02:11:46Z,curl,ab5df6900702896f3efc9a2ba6510310b310f9ba84c1b2d2c3270cd51b69ce97
+Chicago,m6,https://www.transitchicago.com/assets/1/6/rail-tt_blue.pdf,2026-09-26T02:15:31Z,curl,f48a1d5276c2a62c74eddfe5fb8ca413b2e23c5dbaeb83475b024d6c642ec84d
+Copenhagen,centrePoint,https://www.kk.dk/brug-byen/raadhuset/brug-af-raadhuset,2026-09-26T02:52:40Z,curl,f34ff1c2c99810c12e51a401725e60d6555f44a33be5ceb4e1d3646b33b766f9
+Copenhagen,m1,https://www.rejseplanen.info/labs/GTFS.zip,2026-09-26T02:51:46Z,text-extract,d832bd98e58cdd3d771559de6aea22c9186b7d0e2c619e966373d7efc2b6c941
+Copenhagen,m2cheap,https://dinoffentligetransport.dk/media/wlfdfnbo/dot-takstblad-2026-a.pdf,2026-09-26T02:49:57Z,curl,b85180a8b757b830210ea954993bfa1e6c3480bf9d8acc943e3b82e8910d5f41
+Copenhagen,m2fast,https://dinoffentligetransport.dk/media/wlfdfnbo/dot-takstblad-2026-a.pdf,2026-09-26T02:49:57Z,curl,b85180a8b757b830210ea954993bfa1e6c3480bf9d8acc943e3b82e8910d5f41
+Copenhagen,m3bTariff,https://www.fstyr.dk/erhverv/taxi/koerselskontorer/takster-for-prisloft,2026-09-26T02:53:03Z,curl,3c3868f32ab52a5d68330db8bad88f774f0970c916c19338dee583a73cd4045d
+Copenhagen,m4,https://www.rejseplanen.info/labs/GTFS.zip,2026-09-26T02:51:46Z,text-extract,d832bd98e58cdd3d771559de6aea22c9186b7d0e2c619e966373d7efc2b6c941
+Copenhagen,m5,https://www.dsb.dk/trafikinformation/stationer/kobenhavns-lufthavn-kastrup/,2026-09-26T02:45:37Z,curl,da8fdd6e80f2039dc552cf578c91fc36b21daffb3513d1a385a9bcee178a7a66
+Copenhagen,m6,https://www.rejseplanen.info/labs/GTFS.zip,2026-09-26T02:51:46Z,text-extract,d832bd98e58cdd3d771559de6aea22c9186b7d0e2c619e966373d7efc2b6c941
+Delhi,centrePoint,https://nominatim.openstreetmap.org/search?q=Shyama+Prasad+Mukherjee+Civic+Centre&countrycodes=in&format=jsonv2&limit=5,2026-09-26T03:04:51Z,curl,4faf42e8bbb372273f761bf8282be1d13d7a910631009fcb6a980822c1ef14c8
+Delhi,m1,https://backend.delhimetrorail.com/api/v2/en/station_route/APOT/SJSU/least-distance/2026-09-29%2010:00:00.000000,2026-09-26T03:04:16Z,curl,0b3fea4528fe26660b24f5eb954a8fb963544b2bed5f220eb1e8c06db6d22f34
+Delhi,m2cheap,https://www.newdelhiairport.in/to-and-from-airport/bus/,2026-09-26T03:07:56Z,curl,8b4db04c2adf8c1f9c012779a4abad8e85dbf542934a677cca62bb91b9faf036
+Delhi,m2fast,https://backend.delhimetrorail.com/api/v2/en/station_route/APOT/SJSU/least-distance/2026-09-29%2010:00:00.000000,2026-09-26T03:04:16Z,curl,0b3fea4528fe26660b24f5eb954a8fb963544b2bed5f220eb1e8c06db6d22f34
+Delhi,m4,https://www.newdelhiairport.in/to-and-from-airport/bus/,2026-09-26T03:07:56Z,curl,8b4db04c2adf8c1f9c012779a4abad8e85dbf542934a677cca62bb91b9faf036
+Delhi,m5,https://backend.delhimetrorail.com/api/v2/en/station_by_keyword/all/shivaji,2026-09-26T03:04:18Z,curl,e082c7fded419bd4a1570808a6d763660515a02f74c600d7efa752c8eafc0668
+Doha,m3a,https://dohahamadairport.com/airport-guide/to-from-the-airport/taxi,2026-09-26T02:34:07Z,curl,c3f58393ffb199d3e1551cffefc581ed075189b3793580971146a5695ea451f8
+Doha,m3bTariff,https://www.mowasalat.com/our-service/taxi-limousine/,2026-09-26T02:37:52Z,curl,e0b6cd42db6948b9e355d4b18b30268d20822e2a50143bbfb5f8959cce4b1510
+Doha,m5,https://dohahamadairport.com/airport-guide/to-from-the-airport/metro,2026-09-26T02:34:07Z,curl,8cac1e803b503842571c51379ce5685bd71dd3ff9e73891dbaeccd3fe42353f3
+Dubai,primaryAirport,https://media.dubaiairports.ae/dxb-sets-global-benchmark-as-record-traffic-become-the-norm/,2026-09-26T02:12:52Z,curl,0e053596ed4778f71977314c6ae1f5875f97c428e93545e02e67808122dfb828
+Dubai,centrePoint,https://www.dm.gov.ae/contact/service-centers/,2026-09-26T02:08:54Z,curl,57b58f732fc5e74d095260ea13f86749abf5adc16741c890efc749a5a638ce82
+Dubai,m1,https://www.rta.ae/links/rail/rta-metro-tram-timings.pdf,2026-09-26T02:05:57Z,curl,73ec109139e4ac775827feb923608b28efc5b71b56effc88a45d3caadf5c01d1
+Dubai,m2cheap,https://www.rta.ae/wps/portal/rta/ae/public-transport/Nol-Fares,2026-09-26T02:05:03Z,curl,e50a82c05cc429978e39ccf6aeef8c59312a767b07c58e1d48de408e4661925d
+Dubai,m2fast,https://www.rta.ae/wps/portal/rta/ae/public-transport/Nol-Fares,2026-09-26T02:05:03Z,curl,e50a82c05cc429978e39ccf6aeef8c59312a767b07c58e1d48de408e4661925d
+Dubai,m3a,https://dubaiairports.ae/transport/taxi,2026-09-26T02:04:29Z,curl,3161352923ba0eecef33f0eabd54a083bd3ea20ae71d10338d065e444c91415f
+Dubai,m3bTariff,https://www.dubaitaxi.ae/en/our-services/airport-taxi,2026-09-27T01:09:32Z,browser-text,023b363af8e92efae954f653469c213afa43e2378b846092ab908213f760d855
+Dubai,m4,https://www.rta.ae/links/rail/rta-metro-tram-timings.pdf,2026-09-26T02:05:57Z,curl,73ec109139e4ac775827feb923608b28efc5b71b56effc88a45d3caadf5c01d1
+Dubai,m5,https://www.rta.ae/wps/portal/rta/ae/public-transport/metro/about-metro,2026-09-26T02:05:03Z,curl,1a91f0524899060c840a3c485aaf51d91fa88108a1ad1c0ce688b00eda8e31b8
+Dublin,centrePoint,https://www.dublincity.ie/business-and-events/hire-venue-or-park-event/city-hall,2026-09-26T02:52:09Z,curl,8894a4d63539898a1270246a5b9934547534d98f5cb65a13ded5c78dbe649b18
+Dublin,m1,https://www.dublinexpress.ie/timetable,2026-09-26T02:48:55Z,curl,69c3e15afdc225c29922d0f2f51786eb2524cb56bd2c0295419501726e8d7587
+Dublin,m2cheap,https://www.transportforireland.ie/fares/bus-fares/,2026-09-26T02:47:45Z,curl,a9e7cd85d9881b998952a1eaadb4d479bfbb6e9b35bb4563eb43d9d93e4e340a
+Dublin,m2fast,https://www.dublinexpress.ie/faq,2026-09-26T02:48:58Z,curl,d3ad34fe1f59667eda726d99bab519d071b98022b6a8abf53a372a7fab41cc0d
+Dublin,m3a,https://www.dublinairport.com/to-from-the-airport/by-taxi,2026-09-26T02:47:06Z,curl,25aeb49d1f5110e249d5499b23b985194d866fd58679feb35b3a59e398a74bcc
+Dublin,m3bTariff,https://www.transportforireland.ie/fares/taxi-fares/,2026-09-26T02:51:14Z,curl,e322600ca0d500614a330f40ecade58b0689b75194f8b0c318bc8d4bde75ac65
+Dublin,m4,https://www.dublinexpress.ie/timetable,2026-09-26T02:48:55Z,curl,69c3e15afdc225c29922d0f2f51786eb2524cb56bd2c0295419501726e8d7587
+Dublin,m5,https://www.dublinexpress.ie/faq,2026-09-26T02:48:58Z,curl,d3ad34fe1f59667eda726d99bab519d071b98022b6a8abf53a372a7fab41cc0d
+Dublin,m6,https://www.dublinexpress.ie/timetable,2026-09-26T02:48:55Z,curl,69c3e15afdc225c29922d0f2f51786eb2524cb56bd2c0295419501726e8d7587
+Edinburgh,centrePoint,https://www.edinburgh.gov.uk/venues/city-chambers-conference-event-facilities,2026-09-26T02:49:18Z,curl,a5293ab3e3c6031a43252645808f500f00810974ac3322fe539d06704dc5d76d
+Edinburgh,m1,https://www.edinburghairport.com/transport-links/buses-and-coaches/edinburgh-city-bus-links,2026-09-26T02:48:23Z,curl,65b7507273a3ff3df5a900f85eb858fbca485aec5fb60659816ba567b427ff9d
+Edinburgh,m2cheap,https://www.lothianbuses.com/our-services/airport-buses/,2026-09-26T02:48:20Z,curl,21ae95e87e76c0d90127c73e29f215e24acf6609e663def7cb0c200648731d7a
+Edinburgh,m2fast,https://www.lothianbuses.com/our-services/airport-buses/,2026-09-26T02:48:20Z,curl,21ae95e87e76c0d90127c73e29f215e24acf6609e663def7cb0c200648731d7a
+Edinburgh,m3a,https://www.edinburghairport.com/transport-links/taxis,2026-09-26T02:50:05Z,curl,330ba43bfa9492dccf622255419b14f58c304ee55e547ed57e6b9dfbd3fcd62f
+Edinburgh,m3bTariff,https://www.edinburgh.gov.uk/downloads/file/40420/taxi-fare-table-from-25-july-2026,2026-09-26T02:49:44Z,curl,f6c6e43b6f4b36b8b3039aa2072b223fa27f14ceb8e78e3cb684fc0b8f2dd428
+Edinburgh,m4,https://www.lothianbuses.com/our-services/airport-buses/,2026-09-26T02:48:20Z,curl,21ae95e87e76c0d90127c73e29f215e24acf6609e663def7cb0c200648731d7a
+Edinburgh,m5,https://www.lothianbuses.com/accessibility/,2026-09-26T02:51:00Z,curl,592af16a2f41007c89d2704218cc38b980c3349b2dbfd1bb76523535bcc801aa
+Edinburgh,m6,https://www.lothianbuses.com/our-services/airport-buses/,2026-09-26T02:48:20Z,curl,21ae95e87e76c0d90127c73e29f215e24acf6609e663def7cb0c200648731d7a
+Florence,secondary:FLR:m1,https://www.gestramvia.it/aeroporto/,2026-09-26T02:51:26Z,curl,627897883e9b7f1d1d917fab6a7ca8f8b39c07a0c64e6576c6dece471cb0b52d
+Florence,secondary:FLR:m2cheap,https://www.gestramvia.it/biglietti/,2026-09-26T02:51:29Z,curl,573b18685120f847fe60ada9277023afbcb6761ab3c51be4f7ecafb0ebac55bf
+Florence,primaryAirport,https://www.enac.gov.it/app/uploads/2026/05/Dati-di-traffico-2025-v.0.7.pdf,2026-09-26T01:51:21Z,curl,f86868665a5a4208db343c55425ab3306d1179aef49ae39392e043ad6a414729
+Florence,centrePoint,https://www.comune.fi.it/,2026-09-26T02:07:05Z,curl,ca7c2ee1e4a10bae8252c575409b4fb4a711831ef5a3370bcb170000c211a860
+Florence,m1,https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions,2026-09-26T02:51:15Z,curl,c3906a03c1999c948d0f1f5c0c13c6492acff54dd45170dd3f3f1cb8fd467261
+Florence,m2cheap,https://www.trenitalia.com/it/regionale/collegamenti-regionale/collegamenti-con-l-aeroporto-galileo-galilei-di-pisa.html,2026-09-26T02:06:32Z,curl,9bf70bb2ce07f7aaa9a319cd830dc32ca74ba49407e77ea7bd401779002dc40b
+Florence,m2cheap,https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions,2026-09-26T02:51:19Z,curl,09215fab5fc4bdcf3768e92fddce2098be1287eec8aa364062ca741ddc197c52
+Florence,m2fast,https://www.trenitalia.com/it/regionale/collegamenti-regionale/collegamenti-con-l-aeroporto-galileo-galilei-di-pisa.html,2026-09-26T02:06:32Z,curl,9bf70bb2ce07f7aaa9a319cd830dc32ca74ba49407e77ea7bd401779002dc40b
+Florence,m2fast,https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions,2026-09-26T02:51:19Z,curl,09215fab5fc4bdcf3768e92fddce2098be1287eec8aa364062ca741ddc197c52
+Florence,m3bTariff,https://www.comune.pisa.it/Novita/Comunicati/Taxi-nuove-tariffe-adeguate-all-indice-ISTAT-di-incremento-del-costo-della-vita,2026-09-26T02:51:43Z,curl,436a2fdb6895bc36d87cef954a37e0cbd17b6199ba4780461c628af9c307bd44
+Florence,m4,https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions,2026-09-26T02:51:23Z,curl,1581e784d63877b3918c52d6f8c77af003c9b88be68667725a2bea714be08e40
+Florence,m5,https://www.rfi.it/it/stazioni/firenze-santa-maria-novella.html,2026-09-26T02:51:38Z,curl,c06a0a03a90833223f2ecad309bb7f99fce3b97103dd34fbddb5d8299bc006f0
+Frankfurt,centrePoint,https://frankfurt.de/impressum,2026-09-26T02:40:44Z,curl,51e0d5d458ec6fff1566b6be4f4885100a10111add3f6968558a44929202340c
+Frankfurt,m1,https://www.rmv.de/c/fileadmin/import/timetable/RMV_Linienfahrplan_S8-S9_ab_14.12.25_bis_12.12.26.pdf,2026-09-26T02:33:15Z,curl,9a9242e8783474a72affc0c6c87b73b3363f0f2b44296c9622c5e835bb2fe41e
+Frankfurt,m2cheap,https://www.rmv.de/c/fileadmin/documents/PDFs/_RMV_DE/Infomaterial/Fahrkarten-_und_Tarifinformationen/Preisliste.pdf,2026-09-26T02:26:52Z,curl,6c1c136ce531dd26831dd0972a3bea59ef7ceb635afbaf6426dfb239c7b1042d
+Frankfurt,m2fast,https://www.rmv.de/c/fileadmin/documents/PDFs/_RMV_DE/Infomaterial/Fahrkarten-_und_Tarifinformationen/Preisliste.pdf,2026-09-26T02:26:52Z,curl,6c1c136ce531dd26831dd0972a3bea59ef7ceb635afbaf6426dfb239c7b1042d
+Frankfurt,m3a,https://frankfurt.de/-/media/frankfurtde/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/fuehrerscheinstelle/pdf/taxentarif_mit_anlagen.pdf,2026-09-26T02:38:37Z,curl,d5d37f06fdfe18685e9bb15ab95aa9586006dd90239cdc2d376e73c33138696c
+Frankfurt,m3bTariff,https://frankfurt.de/-/media/frankfurtde/service-und-rathaus/verwaltung/aemter-und-institutionen/ordnungsamt/fuehrerscheinstelle/pdf/taxentarif_mit_anlagen.pdf,2026-09-26T02:38:37Z,curl,d5d37f06fdfe18685e9bb15ab95aa9586006dd90239cdc2d376e73c33138696c
+Frankfurt,m4,https://www.rmv.de/c/fileadmin/import/timetable/RMV_Linienfahrplan_S8-S9_ab_14.12.25_bis_12.12.26.pdf,2026-09-26T02:33:15Z,curl,9a9242e8783474a72affc0c6c87b73b3363f0f2b44296c9622c5e835bb2fe41e
+Frankfurt,m5,https://www.rmv.de/c/de/fahrplan/linien-netze/bahnhoefe-haltestellen/stationsbeschreibungen/frankfurt-hauptwache,2026-09-26T02:42:40Z,curl,b36209664b6457e25cfe2f09e7a648556a5a72c0efe0af26fe5d490fb78bf7c0
+Frankfurt,m6,https://www.rmv.de/c/fileadmin/import/timetable/RMV_Linienfahrplan_S8-S9_ab_14.12.25_bis_12.12.26.pdf,2026-09-26T02:33:15Z,curl,9a9242e8783474a72affc0c6c87b73b3363f0f2b44296c9622c5e835bb2fe41e
+Hong Kong,centrePoint,https://www.cmab.gov.hk/en/contact/index.htm,2026-09-26T02:53:44Z,curl,f8b5329b37cfdd8740b0b35ab74e00bb8ebb645683e87182e757da0e65439f63
+Hong Kong,m1,https://www.hongkongairport.com/en/transport/to-from-airport/airport-express.page,2026-09-26T02:49:30Z,text-extract,e20b0c8f919aae1a8f4209e257094a4c13ded998fba9a6ed27ec88b42d798e29
+Hong Kong,m2cheap,https://www.hongkongairport.com/en/transport/to-from-airport/public-buses.page,2026-09-26T02:50:11Z,text-extract,b08495963bcca3c34f49c07d1001cab6ed7748cad8e787d80ad47981c9d29647
+Hong Kong,m2fast,https://www.hongkongairport.com/en/transport/to-from-airport/airport-express.page,2026-09-26T02:49:30Z,text-extract,e20b0c8f919aae1a8f4209e257094a4c13ded998fba9a6ed27ec88b42d798e29
+Hong Kong,m3a,https://www.hongkongairport.com/en/transport/to-from-airport/taxis.page,2026-09-26T02:48:29Z,curl,aee80745964c6adf4daed5e9d506505cf6bb25610574e91843d133f005ce1433
+Hong Kong,m3bTariff,https://www.td.gov.hk/en/transport_in_hong_kong/public_transport/taxi/taxi_fare_of_hong_kong/index.html,2026-09-26T02:48:35Z,curl,01e7b50f5976b059c1a8afe4507785583e5336db5bce6acaf136e111736b424c
+Hong Kong,m4,https://www.hongkongairport.com/en/transport/to-from-airport/airport-express.page,2026-09-26T02:49:30Z,text-extract,e20b0c8f919aae1a8f4209e257094a4c13ded998fba9a6ed27ec88b42d798e29
+Hong Kong,m6,https://www.hongkongairport.com/en/transport/to-from-airport/airport-express.page,2026-09-26T02:49:30Z,text-extract,e20b0c8f919aae1a8f4209e257094a4c13ded998fba9a6ed27ec88b42d798e29
+Honolulu,centrePoint,https://www.honolulu.gov/council/,2026-09-26T02:54:51Z,curl,31fbc4e4216977ba1e63bfc183e83b7d0e624b9ac92f4ae9c7258d3c6982ca05
+Honolulu,m1,https://www.thebus.org/Route/HTMLversion/WLine_files/sheet001.htm,2026-09-26T02:52:37Z,curl,33d45d66a1ef2024ba993de97ea21c44b074cfde7292e1fd9a194a6756775daa
+Honolulu,m2cheap,https://www.thebus.org/Fare/FareAndPasses.asp,2026-09-26T02:51:21Z,curl,135f8f558c07330132434b8750c92dfa16bbca94570318f2421c5f57c065effa
+Honolulu,m2fast,https://www.thebus.org/Fare/FareAndPasses.asp,2026-09-26T02:51:21Z,curl,135f8f558c07330132434b8750c92dfa16bbca94570318f2421c5f57c065effa
+Honolulu,m3a,https://airports.hawaii.gov/hnl/getting-to-from/ground-transportation/taxicab/,2026-09-26T02:50:42Z,curl,3d1b4eb0b61eea91b4c10c4b49fbc84ba50410a6e6b35417249d129bfb57b37d
+Honolulu,m3bTariff,https://www.honolulu.gov/csd/wp-content/uploads/sites/6/2025/05/CSD_Administrative_Rules_Re_Taxi_Fares_Eff._01_22_2023.pdf,2026-09-26T02:56:35Z,curl,ae83370a7b90bb0588df962aa54a999c85e8b5010358bbba1aaafbb7909a97a9
+Honolulu,m4,https://www.thebus.org/Route/HTMLversion/WLine_files/sheet001.htm,2026-09-26T02:52:37Z,curl,33d45d66a1ef2024ba993de97ea21c44b074cfde7292e1fd9a194a6756775daa
+Honolulu,m5,https://airports.hawaii.gov/hnl/the-bus-and-skyline/,2026-09-26T02:50:40Z,curl,892c8b57912953bdea4c6a4ddcbb54864200f78adcaa2dcd34faa63122ebff3b
+Honolulu,m6,https://airports.hawaii.gov/hnl/the-bus-and-skyline/,2026-09-26T02:50:40Z,curl,892c8b57912953bdea4c6a4ddcbb54864200f78adcaa2dcd34faa63122ebff3b
+Istanbul,primaryAirport,https://www.dhmi.gov.tr/Lists/Istatislikler/Attachments/429/YOLCU.pdf,2026-09-26T01:52:33Z,curl,35aa9b90561c8cea90b117d0ee2b1307f530072e01f565f88ff6edfb8f1dcdd1
+Istanbul,m1,https://www.hava.ist/sefer-saatleri.php,2026-09-26T01:55:30Z,text-extract,2b1bada30b390dde9317253ae515b899b054464a7c31746da771688f964cce8f
+Istanbul,m2cheap,https://www.hava.ist/sefer-saatleri.php,2026-09-26T01:55:30Z,text-extract,2b1bada30b390dde9317253ae515b899b054464a7c31746da771688f964cce8f
+Istanbul,m2fast,https://www.hava.ist/sefer-saatleri.php,2026-09-26T01:55:30Z,text-extract,2b1bada30b390dde9317253ae515b899b054464a7c31746da771688f964cce8f
+Istanbul,m3a,https://www.istairport.com/en/airport/airport-transportation/urban-transportation/public-transportation,2026-09-26T01:50:09Z,curl,50c6ab1760f1f7cdbbfdee9893e8287c26e17006c21a74756a8c0844eeafb37d
+Istanbul,m3bTariff,https://tuhim.ibb.gov.tr/media/27494/taksi-ta%C5%9F%C4%B1mac%C4%B1l%C4%B1%C4%9F%C4%B1-%C3%BCcret-tarifesi.pdf,2026-09-26T03:03:30Z,curl,eea48e2ca82f5f9a73e207c40cb77eac894e6862fef45a0c0ff33a512ade1631
+Istanbul,m4,https://www.hava.ist/sefer-saatleri.php,2026-09-26T01:55:30Z,text-extract,2b1bada30b390dde9317253ae515b899b054464a7c31746da771688f964cce8f
+Istanbul,m5,https://www.istairport.com/en/airport/airport-transportation/urban-transportation/public-transportation,2026-09-26T01:50:09Z,curl,50c6ab1760f1f7cdbbfdee9893e8287c26e17006c21a74756a8c0844eeafb37d
+Istanbul,m6,https://www.hava.ist/sefer-saatleri.php,2026-09-26T01:55:30Z,text-extract,2b1bada30b390dde9317253ae515b899b054464a7c31746da771688f964cce8f
+Jakarta,centrePoint,https://www.jakarta.go.id/,2026-09-26T03:08:41Z,curl,b44760f0cea7417256ca45592aafcfb9e97a13e9b45c3aaabe06cb897f98df3e
+Jakarta,m1,https://soekarnohatta.injourneyairports.id/information/transportation-parking/b3fe2ac1-8479-4294-aa76-1bb95b71bcfd,2026-09-26T03:05:58Z,text-extract,9d237c744196a1a5402b8ae5df7859103332269af876195556aa6c7223de3f23
+Jakarta,m2cheap,https://soekarnohatta.injourneyairports.id/information/transportation-parking/b3fe2ac1-8479-4294-aa76-1bb95b71bcfd,2026-09-26T03:05:58Z,text-extract,9d237c744196a1a5402b8ae5df7859103332269af876195556aa6c7223de3f23
+Jakarta,m2fast,https://soekarnohatta.injourneyairports.id/information/transportation-parking/b3fe2ac1-8479-4294-aa76-1bb95b71bcfd,2026-09-26T03:05:58Z,text-extract,9d237c744196a1a5402b8ae5df7859103332269af876195556aa6c7223de3f23
+Jakarta,m3a,https://soekarnohatta.injourneyairports.id/information/transportation-parking/9e02385a-4b8f-4a2b-a63a-306a01ed1042,2026-09-26T03:08:16Z,text-extract,53290ea50e117e57e12dae890d29a75ce703104a81f190348535c8aaf1e82530
+Jakarta,m3bTariff,https://soekarnohatta.injourneyairports.id/information/transportation-parking/9e02385a-4b8f-4a2b-a63a-306a01ed1042,2026-09-26T03:08:16Z,text-extract,53290ea50e117e57e12dae890d29a75ce703104a81f190348535c8aaf1e82530
+Jakarta,m4,https://soekarnohatta.injourneyairports.id/information/transportation-parking/b3fe2ac1-8479-4294-aa76-1bb95b71bcfd,2026-09-26T03:05:58Z,text-extract,9d237c744196a1a5402b8ae5df7859103332269af876195556aa6c7223de3f23
+Jakarta,m5,https://soekarnohatta.injourneyairports.id/information/transportation-parking/b3fe2ac1-8479-4294-aa76-1bb95b71bcfd,2026-09-26T03:05:58Z,text-extract,9d237c744196a1a5402b8ae5df7859103332269af876195556aa6c7223de3f23
+Jakarta,m6,https://soekarnohatta.injourneyairports.id/information/transportation-parking/b3fe2ac1-8479-4294-aa76-1bb95b71bcfd,2026-09-26T03:05:58Z,text-extract,9d237c744196a1a5402b8ae5df7859103332269af876195556aa6c7223de3f23
+Johannesburg,centrePoint,https://joburg.org.za/play_/Documents/Tourism%20Advice%20Link%20Docs/directions%20to%20city%20of%20johannesburg%20offices%20metro%20centre.pdf,2026-09-26T02:50:40Z,curl,8271d09be863a697b5bea704e50c40c6d21a1e6ee0815a3f4ff727edfe13feb0
+Johannesburg,m1,https://bombelacontent.s3.eu-west-1.amazonaws.com/15305+BOMBELA+FARE+GUIDE+BROCHURE+-+2025+Prices++Schules.pdf,2026-09-26T02:45:17Z,curl,2ce8aa5c1d23426a206b4d7f8faf08c666a1baf15fe233b966ce7e2a6f1618c4
+Johannesburg,m2cheap,https://bombelacontent.s3.eu-west-1.amazonaws.com/15305+BOMBELA+FARE+GUIDE+BROCHURE+-+2025+Digital.pdf,2026-09-26T02:43:24Z,curl,9345df148a1477a1dd5e801fe116e68240a468038263db5a4d7ef5687a503c6e
+Johannesburg,m2fast,https://bombelacontent.s3.eu-west-1.amazonaws.com/15305+BOMBELA+FARE+GUIDE+BROCHURE+-+2025+Digital.pdf,2026-09-26T02:43:24Z,curl,9345df148a1477a1dd5e801fe116e68240a468038263db5a4d7ef5687a503c6e
+Johannesburg,m3a,https://www.airports.co.za/airports/or-tambo-international-airport/transport/public-transport,2026-09-26T02:26:29Z,curl,54979374348c1cfbff66345c103336cedba30bf128ce57464701e6d886e7ec1f
+Johannesburg,m4,https://bombelacontent.s3.eu-west-1.amazonaws.com/15305+BOMBELA+FARE+GUIDE+BROCHURE+-+2025+Prices++Schules.pdf,2026-09-26T02:45:17Z,curl,2ce8aa5c1d23426a206b4d7f8faf08c666a1baf15fe233b966ce7e2a6f1618c4
+Johannesburg,m5,https://www.gautrain.co.za/commuter/generalinformation?tab=2,2026-09-26T02:43:28Z,curl,82b0658483b56858ff00c425b7674009372a6fef73e745631292ef134e38e685
+Johannesburg,m6,https://www.gautrain.co.za/commuter/generalinformation?tab=2,2026-09-26T02:43:28Z,curl,82b0658483b56858ff00c425b7674009372a6fef73e745631292ef134e38e685
+Kuala Lumpur,centrePoint,https://www.dbkl.gov.my/,2026-09-26T02:49:22Z,curl,de73ea7d20fa5dd37cbda82fba7f604395f25d3f86ed31392f335fa07eee6219
+Kuala Lumpur,m1,https://www.kliaekspres.com/products-fares/klia-ekspres/,2026-09-26T02:46:25Z,curl,7dd98b6a65e6cf3cd904c734382ff4b8e03b6e2207ce08962bc63340f1009989
+Kuala Lumpur,m2cheap,https://www.skybus.com.my/,2026-09-26T02:48:45Z,curl,9949b6fd93b7d92d51a10f3e5aa8996abada12a4bbbbf61bf806e659f5b73b24
+Kuala Lumpur,m2fast,https://www.kliaekspres.com/products-fares/klia-ekspres/,2026-09-26T02:46:25Z,curl,7dd98b6a65e6cf3cd904c734382ff4b8e03b6e2207ce08962bc63340f1009989
+Kuala Lumpur,m3a,https://airports.malaysiaairports.com.my/en/klia1/air-travel/public-transport,2026-09-26T02:46:30Z,curl,78c04493f650419abdc4c6988a6138b0532e36b3408d9f5ee37a0d9e9721403e
+Kuala Lumpur,m3bTariff,https://www.apad.gov.my/sumber-maklumat1/pekeliling/pekeliling-teksi/251-kadar-tambang-baharu-bagi-perkhidmatan-kenderaan-perkhidmatan-awam-kelas-teksi-dan-kereta-sewa/file,2026-09-26T02:51:03Z,curl,825d48653284e78b9cbffb6d33d04dbbe0a32df13d996b0dd98916fce4fd3739
+Kuala Lumpur,m4,https://www.kliaekspres.com/products-fares/klia-ekspres/,2026-09-26T02:46:25Z,curl,7dd98b6a65e6cf3cd904c734382ff4b8e03b6e2207ce08962bc63340f1009989
+Kuala Lumpur,m5,https://www.kliaekspres.com/help-centre/,2026-09-26T02:50:38Z,curl,eb71e1c732c5259c803633ca0ec6d0da057c16dfbef9efb36b83b07e5111393a
+Kuala Lumpur,m6,https://www.kliaekspres.com/products-fares/klia-ekspres/,2026-09-26T02:46:25Z,curl,7dd98b6a65e6cf3cd904c734382ff4b8e03b6e2207ce08962bc63340f1009989
+Kyoto,primaryAirport,https://www.mlit.go.jp/koku/content/002016480.xlsx,2026-09-26T02:04:24Z,curl,0cd693d9b7dcc8b4c279608f6bb21468ededc8013a62754a3530b46bd34e988e
+Kyoto,centrePoint,https://www.city.kyoto.lg.jp/,2026-09-26T02:04:26Z,curl,4f0e638753ca906c37afb3dd44415fc514329cf1b591ee6fa2792fb794212f9e
+Kyoto,m1,https://timetable.jr-odekake.net/train-timetable/257171?date=20260929,2026-09-27T01:07:00Z,browser-text,6beccf4c112b59b72c1696e364433702578e1d37f03cc41ee2affc9da83f973e
+Kyoto,m2cheap,https://www.keihan.co.jp/traffic/station/assets/pdf/fare/010.pdf,2026-09-26T02:52:09Z,curl,eca542bf1429c46d36566c308c54cc312397dae246676903b5af6138f4c294b2
+Kyoto,m2cheap,https://kensaku.nankai.co.jp/sp/U2?uid=23789&dir=57&path=20260926114757733&b_sf=&b_st=&USR=SP&sf=%8A%D6%90%BC%8B%F3%8D%60&lf=0&st=%82%C8%82%F1%82%CE&lt=0,2026-09-26T02:48:36Z,curl,e23b74f35596f3869f7b2ac21cbb3467706dc6f18efb509cc08c440f5b540a4d
+Kyoto,m2cheap,https://kensaku.osakametro.co.jp/route/ja/web/dia/result?val_from=%E3%81%AA%E3%82%93%E3%81%B0&val_to=%E6%B7%80%E5%B1%8B%E6%A9%8B&val_yyyymm=202609&val_dd=29&val_hh=11&val_mm=00&exp_type=departure&search_target=subway&transfer_time=2,2026-09-26T02:47:06Z,curl,c83d6070d9376cb37ac86ec209e5ca9b997199ac00703f6ae3673e8317cac6e4
+Kyoto,m2fast,"https://unchinkensaku.jre-maas.com/#/search (改定後運賃: 乗車駅 関西空港(鉄道), 降車駅 京都)",2026-09-26T02:51:48Z,text-extract,096e1a32e88164209df144c3900dd6840ed640832f976f5042738868af0360a1
+Kyoto,m3a,https://www.kansai-airport.or.jp/access/to-airport/taxi (redirected from https://www.kansai-airport.or.jp/access/taxi; article textContent incl. tab panels),2026-09-26T02:49:28Z,text-extract,b92f017a4a46fde779ed0cff0c0852294bd35a8b30f2a3f6ee611b815dcabd1a
+Kyoto,m3bTariff,https://wwwtb.mlit.go.jp/kinki/content/000353887.pdf,2026-09-26T02:50:12Z,curl,ae0bbc4736fddb59a99d3ea16009f52b33b5558eae42864e743d09312a70de05
+Kyoto,m4,https://www.kate.co.jp/timetable/detail/UM,2026-09-26T02:54:09Z,curl,ceb595de3d4e705c9f386e375da06ef0d01a27788ecc15d0b65b6a66d06e8e2d
+Kyoto,m4,https://www.kate.co.jp/timetable/detail/KY,2026-09-26T02:04:29Z,curl,7bb650ff9ae397286ebd8811752ec3d930185aa624a7c1f5d8a50086efe902f1
+Kyoto,m4,https://timetable.jr-odekake.net/station-timetable/3162069001?date=20260929,2026-09-27T01:06:30Z,browser-text,f356eebb2e5500135c478eae29c4ff705fcd4cce96a168ffcd8fc4bef3aadd8d
+Kyoto,m4,https://www.nankai.co.jp/en_railway/access-timetable/,2026-09-26T01:59:53Z,curl,3e9de8a68c16b9abe943f2a9472d762a21c3571f8ad7301ac40a3bfe1efd4cef
+Kyoto,m5,https://www.jr-odekake.net/eki/barrierfree?id=0622602,2026-09-26T02:53:03Z,curl,1047ef8a428575817f2ac661665c3453cb4abd6bd4fce872ffc255e5fa1ebc8b
+Kyoto,m5,https://www.jr-odekake.net/eki/barrierfree?id=0610116,2026-09-26T02:53:05Z,curl,0fde35fe2cc5e8939ddd702d1d3eb460d6f56ab724c33f0a61cbe98e7045ef38
+Kyoto,m6,https://timetable.jr-odekake.net/station-timetable/3162069001?date=20260929,2026-09-27T01:06:30Z,browser-text,f356eebb2e5500135c478eae29c4ff705fcd4cce96a168ffcd8fc4bef3aadd8d
+Las Vegas,centrePoint,https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%5Btimeout%3A60%5D%3Bway%5B%22name%22%3D%22South%20Las%20Vegas%20Boulevard%22%5D%2836.105%2C-115.185%2C36.125%2C-115.160%29-%3E.a%3Bway%5B%22name%22~%22%5E%28East%7CWest%29%20Flamingo%20Road%24%22%5D%2836.105%2C-115.185%2C36.125%2C-115.160%29-%3E.b%3Bnode%28w.a%29%28w.b%29%3Bout%3B,2026-09-26T02:47:27Z,curl,8764547968d7c921974caacfbff295b2e4da7f69979127239cbd9cd4dd5aff9e
+Las Vegas,m1,http://rtcws.rtcsnv.com/routePDF/108.pdf,2026-09-26T02:38:08Z,curl,a99d66e63787ed766dc1b61c1b228a548153b255d3decd65bcdc67b42b9e49f0
+Las Vegas,m3a,https://taxi.nv.gov/passenger-info/approximate-fare-information/,2026-09-26T02:32:19Z,curl,abade05e522d40d0dd20bb317988b91e240f808ff2645156c505d1f00a0be04d
+Las Vegas,m3bTariff,https://taxi.nv.gov/passenger-info/approximate-fare-information/,2026-09-26T02:32:19Z,curl,abade05e522d40d0dd20bb317988b91e240f808ff2645156c505d1f00a0be04d
+Las Vegas,m4,http://rtcws.rtcsnv.com/routePDF/108.pdf,2026-09-26T02:38:08Z,curl,a99d66e63787ed766dc1b61c1b228a548153b255d3decd65bcdc67b42b9e49f0
+Las Vegas,m5,https://www.harryreidairport.com/busses-shuttles/public-bus,2026-09-26T02:26:38Z,curl,aa4369a216af5fbe57a7cf9c855df463753994d261078b5f49c4889df6ffe799
+Las Vegas,m6,http://rtcws.rtcsnv.com/routePDF/108.pdf,2026-09-26T02:38:08Z,curl,a99d66e63787ed766dc1b61c1b228a548153b255d3decd65bcdc67b42b9e49f0
+Lisbon,centrePoint,https://informacoeseservicos.lisboa.pt/contactos/diretorio-da-cidade/pacos-do-concelho,2026-09-27T01:25:59Z,browser-text,3a47ee749c5c3d279d19b1d69fba833625873fc3f35a7adef9c1f29e06833dcd
+Lisbon,m1,https://www.lisbonairport.pt/en/lis/access-parking/getting-to-and-from-the-airport/public-transportation,2026-09-27T01:24:56Z,browser-text,b46dcf276638528f98251262d9470fded60930fc8c3064ee13b6386cabedb7db
+Lisbon,m2cheap,https://www.metrolisboa.pt/comprar/,2026-09-26T02:42:29Z,curl,58d3417752b223608d073eb5b0dd4d2bd500c95f03d3ab6768db9130623d1a8c
+Lisbon,m3bTariff,https://www.gov.pt/servicos/consultar-o-tarifario-de-taxis,2026-09-26T02:45:11Z,curl,51879a7a0a2e5ab2d1b41bc87f2e09004937e36186557751a1266188122a3412
+Lisbon,m4,https://www.metrolisboa.pt/viajar/horarios-e-frequencias/,2026-09-26T02:42:35Z,curl,64060281a61d3381b66f5e8b71113775bf62d4e1a6739c77f2050054bf8009cb
+Lisbon,m5,https://www.metrolisboa.pt/viajar/horarios-e-frequencias/,2026-09-26T02:42:35Z,curl,64060281a61d3381b66f5e8b71113775bf62d4e1a6739c77f2050054bf8009cb
+Lisbon,m6,https://www.metrolisboa.pt/viajar/horarios-e-frequencias/,2026-09-26T02:42:35Z,curl,64060281a61d3381b66f5e8b71113775bf62d4e1a6739c77f2050054bf8009cb
+London,primaryAirport,https://www.caa.co.uk/Documents/Download/24007/87fb7670-4e10-4aeb-942d-509238aa25a1/17552,2026-09-26T01:53:51Z,curl,b5bd7de954bfb1c3bac6ae2471375366f1a57dd86f22627b185ef75a9ae17cba
+London,centrePoint,https://www.cityoflondon.gov.uk/footer/contact-the-city-corporation,2026-09-26T02:13:31Z,curl,aeff0dae3c261eb111dd9a10c64271584d0003aa65e1e7afdb5eff344f771aaa
+London,m1,https://www.heathrow.com/transport-and-directions/by-rail-or-train/heathrow-express,2026-09-26T01:49:36Z,curl,3d12546a16b7be4f5c40af4692ba5126e89628957c2650660635529656fefa84
+London,m1,https://api.tfl.gov.uk/Journey/JourneyResults/910GPADTLL/to/910GTOTCTRD?date=20260929&time=1100&timeIs=Departing&mode=elizabeth-line,2026-09-27T14:29:39Z,curl,9faf5f118ed71ccd822817880cc95f473dd015ced0439dbb34c5eb3ad8aedc80
+London,m2cheap,https://api.tfl.gov.uk/StopPoint/940GZZLUHRC/FareTo/940GZZLULVT,2026-09-26T02:21:25Z,curl,3ba4d454f5c1fadf5fc49e4cbf162957933a672d89721820f330e38cf450e44a
+London,m2fast,https://api.tfl.gov.uk/StopPoint/910GHTRWAPT/FareTo/910GPADTON,2026-09-26T02:21:23Z,curl,bac5ab81bf512f88c6f8382bc996cf00281c9f562fad79c946e54192b221a69c
+London,m2fast,https://api.tfl.gov.uk/Stoppoint/910GPADTLL/FareTo/910GTOTCTRD,2026-09-27T14:29:39Z,curl,76d9bf638915d3397727006a0588f23055324082024712353f543ecc8be6adef
+London,m3a,https://tfl.gov.uk/modes/taxis-and-minicabs/taxi-fares,2026-09-26T01:49:51Z,curl,2919e65031d3d3a0903700d2b6d5bdd64f5647888ecad0e95a6889cf7025be3b
+London,m3bTariff,https://tfl.gov.uk/modes/taxis-and-minicabs/taxi-fares/tariffs,2026-09-26T02:19:39Z,curl,d6ae62c5b9df9e41443b4d948f7e2c050480a4007658f79126feedc1415b8a84
+London,m4,https://api.tfl.gov.uk/Line/n9/Timetable/4900801619?direction=inbound,2026-09-26T01:54:50Z,curl,1cffc696418c14b29ce6589c35cae9548577da5e83de9b050e317cf4df59888b
+London,m5,https://www.heathrowexpress.com/accessibility,2026-09-26T01:55:32Z,curl,aa701cbdf41197ad833e2b605045af181e213683d6e238bebf1cd679a771de9d
+London,m6,https://www.heathrow.com/transport-and-directions/by-rail-or-train/heathrow-express,2026-09-26T01:49:36Z,curl,3d12546a16b7be4f5c40af4692ba5126e89628957c2650660635529656fefa84
+Los Angeles,primaryAirport,https://www.hollywoodburbankairport.com/wp-content/uploads/2026/01/PAX-Stats-12-2025_Final.pdf,2026-09-26T02:13:28Z,curl,57174eec55392ad8c42a6947233c2ea899fce7c0f21f136cd7304669a6e1200d
+Los Angeles,primaryAirport,https://www.lawa.org/sites/lawa/files/2026-01/Tcom%201225.pdf,2026-09-26T01:56:48Z,curl,8c82cf67ad3507b1c64c211a4ac68a9a5e5cb4ff42a9b46784d8af3454f356c9
+Los Angeles,primaryAirport,https://www.longbeach.gov/link/a9e49fd924c24e1e8bf0e7414c46cd0a.aspx,2026-09-27T01:08:56Z,curl,ac0a48bd23870c9cf0bc669829456730f9526f26d09a2586a448c56135069f18
+Los Angeles,primaryAirport,https://www.prnewswire.com/news-releases/surge-in-international-travel-propelled-ontario-international-airport-to-record-year-in-2025-302668541.html,2026-09-26T02:16:14Z,curl,a1a7431def12472fabdb9a7f112750f44e2a136cb90d6e8cc3e13d77252a9448
+Los Angeles,primaryAirport,https://www.ocair.com/news/2026/01/22/statistics-december-2025/,2026-09-26T02:13:57Z,curl,a9e5def97c5ba75ab7a5d7583c222ec9ab296477087534b8e5278475c980228a
+Los Angeles,centrePoint,https://clerk.lacity.gov/,2026-09-26T02:02:44Z,curl,598707d53b685132ae92c0783b3451f061d355867b99a1586b1c810cae6acab3
+Los Angeles,m1,https://www.flylax.com/flyaway-bus/faqs,2026-09-27T01:07:35Z,browser-text,44dd4f3164996f8b902f4467d1b555a09048875b99bf423ad51059c5b940471e
+Los Angeles,m2cheap,https://www.metro.net/destinations/lax/,2026-09-26T01:54:30Z,curl,4394215894712bf7d05cccbdfd710b7e84a79a1afd5728ef30f17848d1344cf2
+Los Angeles,m2fast,https://www.flylax.com/flyaway-bus/fares-tickets,2026-09-27T01:07:51Z,browser-text,aba9b1405ced71074994ee96c1e5369af86fd6a149661f56260f43f80db9abfb
+Los Angeles,m3a,https://ladot.lacity.gov/sites/default/files/documents/taxicab-rates-2023.pdf,2026-09-26T02:00:22Z,curl,50b842a4be4a49012c4d8731277fe9ac9ab7634afd236e84cf5fdaa9a244631a
+Los Angeles,m3bTariff,https://ladot.lacity.gov/sites/default/files/documents/taxicab-rates-2023.pdf,2026-09-26T02:00:22Z,curl,50b842a4be4a49012c4d8731277fe9ac9ab7634afd236e84cf5fdaa9a244631a
+Los Angeles,m4,https://www.flylax.com/flyaway-bus/union-station,2026-09-27T01:06:22Z,browser-text,4941277e77d44dafd21c2bf121352a2d0e5e9a8dedc4d5ed4b861c18258aee24
+Los Angeles,m5,https://www.flylax.com/flyaway-bus/faqs,2026-09-27T01:07:35Z,browser-text,44dd4f3164996f8b902f4467d1b555a09048875b99bf423ad51059c5b940471e
+Los Angeles,m6,https://www.flylax.com/flyaway-bus/union-station,2026-09-27T01:06:22Z,browser-text,4941277e77d44dafd21c2bf121352a2d0e5e9a8dedc4d5ed4b861c18258aee24
+Madrid,centrePoint,https://patrimonioypaisaje.madrid.es/portales/monumenta/es/Monumentos-y-Edificios-Singulares/Edificios-singulares/Palacio-de-Comunicaciones-Palacio-de-Cibeles-Ayuntamiento-de-Madrid-/?vgnextfmt=default&vgnextoid=4128f7d9560a4510f7d9560a45102e085a0aRCRD&vgnextchannel=83bc3cb702aa4510VgnVCM1000008a4a900aRCRD,2026-09-26T02:15:36Z,curl,5e8068836147077bac0a6083eed4ab69e535dca85ab73aee7bbdc7810f4d6e8c
+Madrid,m1,https://www.emtmadrid.es/Aeropuerto,2026-09-26T02:12:30Z,curl,12dfe08ce9e3d994cf2003a8f67bd163ece7a3b37a45a78e22b589864f620f54
+Madrid,m2cheap,https://www.emtmadrid.es/Aeropuerto,2026-09-26T02:12:30Z,curl,12dfe08ce9e3d994cf2003a8f67bd163ece7a3b37a45a78e22b589864f620f54
+Madrid,m2fast,https://www.emtmadrid.es/Aeropuerto,2026-09-26T02:12:30Z,curl,12dfe08ce9e3d994cf2003a8f67bd163ece7a3b37a45a78e22b589864f620f54
+Madrid,m3a,https://www.aena.es/es/adolfo-suarez-madrid-barajas/como-llegar/taxi.html,2026-09-26T02:11:30Z,curl,682e117db83c2b3bc219941e0a6b71dfea8b1da222c00ff2ccebf89e60f8d890
+Madrid,m3bTariff,https://datos.madrid.es/dataset/300171-0-taxi-recursos/resource/300171-1-taxi-recursos-csv/download/300171-1-taxi-recursos-csv.csv,2026-09-26T02:18:35Z,curl,9860a6d0d12d152005021c12eba70e4f1c704945219ce971ba5fa6a363c9768d
+Madrid,m4,https://www.emtmadrid.es/Aeropuerto,2026-09-26T02:12:30Z,curl,12dfe08ce9e3d994cf2003a8f67bd163ece7a3b37a45a78e22b589864f620f54
+Madrid,m5,https://www.emtmadrid.es/Aeropuerto,2026-09-26T02:12:30Z,curl,12dfe08ce9e3d994cf2003a8f67bd163ece7a3b37a45a78e22b589864f620f54
+Madrid,m6,https://www.emtmadrid.es/Aeropuerto,2026-09-26T02:12:30Z,curl,12dfe08ce9e3d994cf2003a8f67bd163ece7a3b37a45a78e22b589864f620f54
+Melbourne,primaryAirport,https://www.bitre.gov.au/sites/default/files/documents/WebAirport_CY_1985-2025.xlsx,2026-09-26T02:54:35Z,curl,82a5d05bff15063b0e39e82c90aff44b86ebf0c4fca996d50198a264d0438671
+Melbourne,centrePoint,https://whatson.melbourne.vic.gov.au/things-to-do/melbourne-town-hall,2026-09-26T02:53:50Z,curl,9b8826c7e3ff1f52a03f3e1b60a93ff014df8a3843b62551ad7278efb57cdd12
+Melbourne,m1,https://paueasasskybusgtfs.blob.core.windows.net/gtfs-live/VIC/gtfs.zip,2026-09-26T03:10:34Z,text-extract,1a014efaaff1517c243e67d6fde6293fb0616bc80fd81dfe0bc8f90f3fd0becd
+Melbourne,m2cheap,https://www.ptv.vic.gov.au/tickets/fares/metropolitan-fares/,2026-09-26T02:51:33Z,curl,0d089204e4994a4cdeecd6d812253e6014b056c657dfa8f0e6959bbaa35db4fc
+Melbourne,m2fast,https://www.skybus.com.au/melbourne-city-express/fares/,2026-09-26T02:48:31Z,curl,45cba77f74ca404b93d55a0ef678a9c5206077a30a483f2799882c0ce9349029
+Melbourne,m3bTariff,https://www.esc.vic.gov.au/transport/commercial-passenger-vehicle-prices/maximum-taxi-fares,2026-09-26T02:53:09Z,curl,fcc4c2c37e447d61e3de94c8c7d0ad199284c91ae7ef7780c454354dd6db21d9
+Melbourne,m4,https://paueasasskybusgtfs.blob.core.windows.net/gtfs-live/VIC/gtfs.zip,2026-09-26T03:10:34Z,text-extract,1a014efaaff1517c243e67d6fde6293fb0616bc80fd81dfe0bc8f90f3fd0becd
+Melbourne,m5,https://www.skybus.com.au/melbourne-city-express/mobility-access/,2026-09-26T02:48:33Z,curl,d5577f1a69d2d42f983df6ccc61258f46d2e73bedae368b6391685e733997713
+Melbourne,m6,https://paueasasskybusgtfs.blob.core.windows.net/gtfs-live/VIC/gtfs.zip,2026-09-26T03:10:34Z,text-extract,1a014efaaff1517c243e67d6fde6293fb0616bc80fd81dfe0bc8f90f3fd0becd
+Melbourne,m2cheap:label,https://www.vic.gov.au/half-price-travel,2026-09-28T09:25:36Z,curl,a8bacae7b86708539524dbd7b590ea738422453106cba3e16941a1fdd8d94dcc
+Mexico City,primaryAirport,https://www.aicm.com.mx/acercadelaicm/archivos/files/Estadisticas/Estadisticas2025.pdf,2026-09-26T02:26:19Z,curl,3cace6948662d357c5d03bca5b98af8441307779622fbe4721165468ea26ad79
+Mexico City,centrePoint,https://nominatim.openstreetmap.org/search?q=Antiguo+Palacio+del+Ayuntamiento%2C+Ciudad+de+M%C3%A9xico&format=jsonv2&limit=3,2026-09-26T02:06:20Z,curl,5ed808c44b68f8446b657fd4e3121bbf1393fd5e9b7fe484b7cb5e855127dfc6
+Mexico City,m2cheap,https://www.aicm.com.mx/wp-json/wp/v2/pages/26804,2026-09-26T02:48:56Z,curl,e02fde5b8db3081e29f8fce0ad5a6864bfae5df5082788436b2918637a8ac81d
+Mexico City,m3a,https://www.aicm.com.mx/wp-content/uploads/2024/12/ReglasDeOperacionComplementariasGeneral2024.pdf,2026-09-26T02:04:59Z,curl,3fb758024ea8fce1a37ed1ca1c9e63693c18b0d895655cab564d1bef6f3a42a2
+Mexico City,m4,https://www.aicm.com.mx/wp-json/wp/v2/pages/1534,2026-09-26T02:02:21Z,curl,953fdba8bf3cc3c2a32d0d0336d103f0cc9850c9fa5fe0e18d2e0a34fd06708c
+Miami,primaryAirport,https://www.miami-airport.com/library/pdfdoc/Traffic%20Reports/Year-End%202025%20Traffic%20Report.pdf,2026-09-26T02:42:00Z,curl,70264b5108b6d8efb9eb70f1a5066926e210d961aea5d509e0603d6b28e9e1c9
+Miami,centrePoint,https://www.miamidade.gov/global/government/mayor/contact.page,2026-09-26T03:49:30Z,curl,0613f410faec0cc6844c0297e12b835309b180caaab5b865c9931bfc7082bbe8
+Miami,m1,https://www.miamidade.gov/transit/googletransit/current/google_transit.zip,2026-09-26T02:45:42Z,text-extract,cbe048b513053f1f48345b7d6d8ec0a9ce936c51c9360cc83dcd69f93dbd4044
+Miami,m2cheap,https://www.miamidade.gov/global/transportation/metrorail.page,2026-09-26T02:40:38Z,curl,ff805aa6ed11b6b59a59ded3865aec5216e7cc094dda2426cdd1232a97e2fa86
+Miami,m2fast,https://www.miamidade.gov/global/transportation/metrorail.page,2026-09-26T02:40:38Z,curl,ff805aa6ed11b6b59a59ded3865aec5216e7cc094dda2426cdd1232a97e2fa86
+Miami,m3a,https://www.miami-airport.com/taxicabs-shuttles.asp,2026-09-26T02:42:08Z,curl,f9a849fc86244e4b4a0bb81d57122a38c7372ca66a57b588a6b9a8bccb6f2029
+Miami,m3bTariff,https://www.miami-airport.com/taxicabs-shuttles.asp,2026-09-26T02:42:08Z,curl,f9a849fc86244e4b4a0bb81d57122a38c7372ca66a57b588a6b9a8bccb6f2029
+Miami,m4,https://www.miamidade.gov/transit/googletransit/current/google_transit.zip,2026-09-26T02:45:42Z,text-extract,cbe048b513053f1f48345b7d6d8ec0a9ce936c51c9360cc83dcd69f93dbd4044
+Miami,m5,https://www.miamidade.gov/global/transportation/metrorail.page,2026-09-26T02:40:38Z,curl,ff805aa6ed11b6b59a59ded3865aec5216e7cc094dda2426cdd1232a97e2fa86
+Miami,m6,https://www.miamidade.gov/global/transportation/metrorail.page,2026-09-26T02:40:38Z,curl,ff805aa6ed11b6b59a59ded3865aec5216e7cc094dda2426cdd1232a97e2fa86
+Milan,primaryAirport,https://www.enac.gov.it/app/uploads/2026/05/Dati-di-traffico-2025-v.0.7.pdf,2026-09-26T01:51:21Z,curl,f86868665a5a4208db343c55425ab3306d1179aef49ae39392e043ad6a414729
+Milan,centrePoint,https://www.comune.milano.it/,2026-09-26T02:01:35Z,curl,13527fb422fe9fd97019cbde21c8092232f337d25a52a79a8a902a2660dda61a
+Milan,m1,https://www.malpensaexpress.it/en/lines-and-timetable/how-to-reach-malpensa/reaching-terminal-1/,2026-09-26T01:58:41Z,curl,737dd359f2172edbb8e2bb6211dbe319cd05b1252464ef11ecb8bc04cd3096fb
+Milan,m2cheap,https://www.caronte.eu/linee/linee-aeroportuali/milano-staz-centrale-malpensa/,2026-09-26T02:01:09Z,curl,45b96b422245cefcaa6f8f3bb88729e3656188cbbef03b340c58d3bc248c563a
+Milan,m2fast,https://www.malpensaexpress.it/en/tickets/travel-documents/prices/,2026-09-26T01:58:44Z,curl,645fa7c80ce190023057c94515d2608bed1aa3e6fdb4dd3aab2e464d488add65
+Milan,m3a,https://www.milanomalpensa-airport.com/en/from-to/by-taxi,2026-09-26T01:59:44Z,curl,c9eb9a9a65db07a1f8112494e4f6e7286cbeb2481a9e5565ec09f37501e081be
+Milan,m4,https://www.milanomalpensa-airport.com/en/from-to/by-bus,2026-09-26T01:59:41Z,curl,0eb5bc317bdb77ca040090e5fe1caf7ddd020bdb366667dd7dbc1dbda242f15c
+Milan,m5,https://www.malpensaexpress.it/en/tickets/discounts-and-extras/travellers-with-disabilities/,2026-09-26T01:58:47Z,curl,5e5dfac0a79c460495d6315606329c878fdbcd9943d675284c3d453c5779fd89
+Milan,m6,https://www.malpensaexpress.it/en/lines-and-timetable/how-to-reach-malpensa/reaching-terminal-1/,2026-09-26T01:58:41Z,curl,737dd359f2172edbb8e2bb6211dbe319cd05b1252464ef11ecb8bc04cd3096fb
+Nairobi,centrePoint,https://nairobiassembly.go.ke/contact-us/,2026-09-26T02:56:32Z,curl,c64fced2b38e7e62a05c47a5c7b9632fb9fcd9b2b47db0a61ceb2030300fb145
+Nairobi,m1,https://www.transport.go.ke/launch-new-bus-routes-jkia-main-locations-nairobi,2026-09-26T02:52:53Z,curl,d99185cff538efe2aaf831c1ceca112810bfab9f08bb4f339449fc37722b3a85
+Nairobi,m5,https://www.transport.go.ke/launch-new-bus-routes-jkia-main-locations-nairobi,2026-09-26T02:52:53Z,curl,d99185cff538efe2aaf831c1ceca112810bfab9f08bb4f339449fc37722b3a85
+New York,primaryAirport,https://www.panynj.gov/content/dam/airports/statistics/statistics-general-info/annual-atr/ATR_2024.pdf,2026-09-26T01:49:53Z,curl,0f28d133faa2b4347e4bbc98d1e2eff6b1ea065ca4d97e8a9773319e4b493b59
+New York,centrePoint,https://www.nyc.gov/site/dcas/business/dcasmanagedbuildings/city-hall.page,2026-09-26T01:52:58Z,curl,5e818460a4a42c9c4382db7465b5a75652fc2dc377e0ec0c06ea17add28a80dc
+New York,m1,https://www.jfkairport.com/transportation/public-transport,2026-09-26T01:49:06Z,curl,ded192806eab463b1f7b1988525b395b283dfa82f8b32f53185fab9529722f01
+New York,m1,http://web.mta.info/developers/data/nyct/subway/google_transit.zip,2026-09-26T02:48:03Z,text-extract,3fc82ea6e59f1e5eda80edbd13bc35a7273fa2a8960d2e90596d78941afd5930
+New York,m2cheap,https://www.jfkairport.com/transportation/public-transport,2026-09-26T01:49:06Z,curl,ded192806eab463b1f7b1988525b395b283dfa82f8b32f53185fab9529722f01
+New York,m2fast,https://www.jfkairport.com/transportation/public-transport,2026-09-26T01:49:06Z,curl,ded192806eab463b1f7b1988525b395b283dfa82f8b32f53185fab9529722f01
+New York,m3a,https://www.nyc.gov/site/tlc/passengers/taxi-fare.page,2026-09-26T01:49:05Z,curl,1ba25640f59c56a8749026af13074f3d9bfe2bdfd9bd6d1687efc20fca8b6e27
+New York,m3bTariff,https://www.nyc.gov/site/tlc/passengers/taxi-fare.page,2026-09-26T01:49:05Z,curl,1ba25640f59c56a8749026af13074f3d9bfe2bdfd9bd6d1687efc20fca8b6e27
+New York,m5,https://www.jfkairport.com/transportation/airtrain,2026-09-26T01:49:06Z,curl,555d2b9ad1ba0226653b922db90274b9321788fcf12f39cca4a4d6c12d126231
+Orlando,primaryAirport,https://assets.ctfassets.net/qiecpoxp4bka/5awMt17Z3Jh0cEH3H7NVMy/e2f63579f35562f38582d3fab00e6dae/trfccy2025.pdf,2026-09-26T02:55:20Z,curl,8292998ad212436f724e7b32b05d74b13085f663bc82be519e66649b17b17c4f
+Orlando,centrePoint,https://www.visitorlando.com/blog/post/international-drive-orlando/,2026-09-26T02:51:15Z,curl,a43fac3cb2b54b64593cb086675273e519f9976540163eada10ea61840de3fa5
+Orlando,m1,https://www.golynx.com/resources/pdf/lynx_sched-book_may11-2026_web.pdf,2026-09-26T02:51:51Z,curl,e297ac725c19ab4b266ed8eaaa3cf17b09b9143c2638b5d159ebe624e2e38550
+Orlando,m2cheap,https://www.golynx.com/fares-passes/,2026-09-26T02:49:53Z,curl,0019aff25bcc7ac7fc9134549e5bc240d4b81ed871db66c07b4f9f2f1c649c4f
+Orlando,m2fast,https://flymco.com/ground-transportation/local-bus/,2026-09-26T02:50:20Z,curl,3cba45fdca6cb4f3591ad2f777f2ee198e254da6c13029e7bc6eb09df16e7be6
+Orlando,m3a,https://flymco.com/ground-transportation/taxi-cabs/,2026-09-26T02:50:23Z,curl,e42c050f200dc4e92b0e92d9eb5b8c557ab532cd7dcb9cf1c79961f5f9174695
+Orlando,m4,https://www.golynx.com/resources/pdf/lynx_sched-book_may11-2026_web.pdf,2026-09-26T02:51:51Z,curl,e297ac725c19ab4b266ed8eaaa3cf17b09b9143c2638b5d159ebe624e2e38550
+Orlando,m5,https://www.golynx.com/resources/pdf/lynx_sched-book_may11-2026_web.pdf,2026-09-26T02:51:51Z,curl,e297ac725c19ab4b266ed8eaaa3cf17b09b9143c2638b5d159ebe624e2e38550
+Orlando,m6,https://www.golynx.com/resources/pdf/lynx_sched-book_may11-2026_web.pdf,2026-09-26T02:51:51Z,curl,e297ac725c19ab4b266ed8eaaa3cf17b09b9143c2638b5d159ebe624e2e38550
+Osaka,primaryAirport,https://www.mlit.go.jp/koku/content/002016480.xlsx,2026-09-26T01:58:08Z,curl,0cd693d9b7dcc8b4c279608f6bb21468ededc8013a62754a3530b46bd34e988e
+Osaka,centrePoint,https://www.city.osaka.lg.jp/,2026-09-26T01:58:27Z,curl,4aac2d908f669982de04e5a3a0af08d067923a48939bfb84b8463bdc63961efb
+Osaka,m1,https://www.nankai.co.jp/en_railway/rapit/,2026-09-26T02:01:11Z,curl,62a680648f2b77e44b2abfa123bfe73fa1307546bd42cbfaf72e84ed0d4a19e6
+Osaka,m1,https://kensaku.osakametro.co.jp/route/ja/web/dia/result?val_from=%E3%81%AA%E3%82%93%E3%81%B0&val_to=%E6%B7%80%E5%B1%8B%E6%A9%8B&val_yyyymm=202609&val_dd=29&val_hh=11&val_mm=00&exp_type=departure&search_target=subway&transfer_time=2,2026-09-26T02:47:06Z,curl,c83d6070d9376cb37ac86ec209e5ca9b997199ac00703f6ae3673e8317cac6e4
+Osaka,m2cheap,https://kensaku.nankai.co.jp/sp/U2?uid=23789&dir=57&path=20260926114757733&b_sf=&b_st=&USR=SP&sf=%8A%D6%90%BC%8B%F3%8D%60&lf=0&st=%82%C8%82%F1%82%CE&lt=0,2026-09-26T02:48:36Z,curl,e23b74f35596f3869f7b2ac21cbb3467706dc6f18efb509cc08c440f5b540a4d
+Osaka,m2cheap,https://kensaku.osakametro.co.jp/route/ja/web/dia/result?val_from=%E3%81%AA%E3%82%93%E3%81%B0&val_to=%E6%B7%80%E5%B1%8B%E6%A9%8B&val_yyyymm=202609&val_dd=29&val_hh=11&val_mm=00&exp_type=departure&search_target=subway&transfer_time=2,2026-09-26T02:47:06Z,curl,c83d6070d9376cb37ac86ec209e5ca9b997199ac00703f6ae3673e8317cac6e4
+Osaka,m2fast,https://kensaku.nankai.co.jp/sp/U2?uid=23789&dir=57&path=20260926114757733&b_sf=&b_st=&USR=SP&sf=%8A%D6%90%BC%8B%F3%8D%60&lf=0&st=%82%C8%82%F1%82%CE&lt=0,2026-09-26T02:48:36Z,curl,e23b74f35596f3869f7b2ac21cbb3467706dc6f18efb509cc08c440f5b540a4d
+Osaka,m2fast,https://www.nankai.co.jp/traffic/express/rapit.html,2026-09-26T01:58:09Z,curl,5c609a740e1e2ca39c18705cf8c59e1449c40f2163816e205536699cf2321930
+Osaka,m2fast,https://kensaku.osakametro.co.jp/route/ja/web/dia/result?val_from=%E3%81%AA%E3%82%93%E3%81%B0&val_to=%E6%B7%80%E5%B1%8B%E6%A9%8B&val_yyyymm=202609&val_dd=29&val_hh=11&val_mm=00&exp_type=departure&search_target=subway&transfer_time=2,2026-09-26T02:47:06Z,curl,c83d6070d9376cb37ac86ec209e5ca9b997199ac00703f6ae3673e8317cac6e4
+Osaka,m3a,https://www.kansai-airport.or.jp/access/to-airport/taxi (redirected from https://www.kansai-airport.or.jp/access/taxi; article textContent incl. tab panels),2026-09-26T02:49:28Z,text-extract,b92f017a4a46fde779ed0cff0c0852294bd35a8b30f2a3f6ee611b815dcabd1a
+Osaka,m3bTariff,https://wwwtb.mlit.go.jp/kinki/content/000359487.pdf,2026-09-26T02:50:10Z,curl,247cecc044dabb7df550073c737fb284245600ae1c807d3cfd3c7ed3507216c3
+Osaka,m4,https://www.kate.co.jp/timetable/detail/UM,2026-09-26T02:54:09Z,curl,ceb595de3d4e705c9f386e375da06ef0d01a27788ecc15d0b65b6a66d06e8e2d
+Osaka,m5,https://www.nankai.co.jp/community/station/kansaiairport.html,2026-09-26T01:58:45Z,curl,eb521ea68150cdf733a3595cd83bb2b54108abc7c0a27718e7d3f19f60edda69
+Osaka,m5,https://subway.osakametro.co.jp/station_guide/M/m20/index.php,2026-09-26T02:45:03Z,curl,fe2fb46b571596c1e2d91b7fe90007dc0156a3aea1608fdf7a4242d36920b9d4
+Osaka,m5,https://subway.osakametro.co.jp/station_guide/M/m17/index.php,2026-09-26T02:53:32Z,curl,92034f90bacc740b4a4ff92d4280892b6431aca6bba60a0c769791755b9cd4b2
+Osaka,m6,https://www.nankai.co.jp/en_railway/access-timetable/,2026-09-26T01:59:53Z,curl,3e9de8a68c16b9abe943f2a9472d762a21c3571f8ad7301ac40a3bfe1efd4cef
+Paris,primaryAirport,https://www.ecologie.gouv.fr/sites/default/files/documents/Bulletin_Statistiques_transport_aerien_2025.pdf,2026-09-26T02:24:57Z,curl,0378d3d3d8cb14e245daef185f716cb07dbed617df092cfe48edda8125c20837
+Paris,centrePoint,https://www.paris.fr/pages/contact-232,2026-09-26T02:02:33Z,curl,64df896072f6c9a695e729cf6902d7a3b51e55ae1030a8e5babdd787f36fda83
+Paris,m1,https://maligneb.fr/wp-content/uploads/2026/09/Fiche-horaires-RER-B-28-septembre-au-1-octobre-Robinson-St-Remy-LBJOCHARLINE_US_2637v2.pdf.pdf,2026-09-26T02:37:12Z,curl,ec82d0508f5905d4d8b72bff3eeac648d9f204f32f45c1ff6380e6c55708561e
+Paris,m2cheap,https://data.iledefrance-mobilites.fr/api/explore/v2.1/catalog/datasets/titres-et-tarifs/records?limit=50,2026-09-26T02:31:43Z,curl,c800e26f4eef1c18889846257acd3321320394e7df3ffdaa377bafefaf298cf8
+Paris,m2fast,https://data.iledefrance-mobilites.fr/api/explore/v2.1/catalog/datasets/titres-et-tarifs/records?limit=50,2026-09-26T02:31:43Z,curl,c800e26f4eef1c18889846257acd3321320394e7df3ffdaa377bafefaf298cf8
+Paris,m3a,https://www.service-public.gouv.fr/particuliers/actualites/A15396,2026-09-26T02:00:42Z,curl,9f5f83e5d616baeffe40204dd68d36e9bdcd2a9243d2e664e6b56a3c1ebc891a
+Paris,m4,https://www.transilien.com/fr/page-deplacements/les-aeroports-de-paris,2026-09-26T02:01:17Z,curl,1acf952fdf9ee06877589e5509a0d18c0092d6f1f87ca609f71487c07f293af9
+Paris,m5,https://data.iledefrance-mobilites.fr/api/explore/v2.1/catalog/datasets/accessibilite-en-gare/records?where=search(%22Ch%C3%A2telet%22)%20or%20search(%22Charles%20de%20Gaulle%22)&limit=10,2026-09-26T02:44:18Z,curl,1a22ca4760f3858d308dfaba437aba1190b61270673e208b9dc886c28fc15ee0
+Paris,m6,https://www.transilien.com/fr/page-deplacements/les-aeroports-de-paris,2026-09-26T02:01:17Z,curl,1acf952fdf9ee06877589e5509a0d18c0092d6f1f87ca609f71487c07f293af9
+Prague,centrePoint,https://mf.gov.cz/assets/attachments/2026-05-14_Cenovy-vestnik-33-2026.pdf,2026-09-26T03:02:18Z,curl,0f44cc98ae60363b88cf153790e6ced6a9ff92b954b4e90eecee44823d6fa021
+Prague,m1,https://www.dpp.cz/cestovani/doprava-na-letiste/linka-ae,2026-09-26T02:52:47Z,curl,1dcf16d0d52e41a687c9b05be3485689bc0bc58b5b86c8483792df0dada699fd
+Prague,m2cheap,https://www.dpp.cz/jizdne/cenik-jizdneho,2026-09-26T02:52:50Z,curl,af23ca87f17cf131b8d1763fedea25523bbc663b5c0278aae99025324918a195
+Prague,m2fast,https://www.dpp.cz/cestovani/doprava-na-letiste/linka-ae,2026-09-26T02:52:47Z,curl,1dcf16d0d52e41a687c9b05be3485689bc0bc58b5b86c8483792df0dada699fd
+Prague,m3a,https://www.prg.aero/en/taxi,2026-09-26T02:50:44Z,curl,eb70697c09673c2d69b0578d8b3037bf120aeb7ea9055bd22fa7348e4ba36e56
+Prague,m3bTariff,https://mf.gov.cz/assets/attachments/2026-05-14_Cenovy-vestnik-33-2026.pdf,2026-09-26T03:02:18Z,curl,0f44cc98ae60363b88cf153790e6ced6a9ff92b954b4e90eecee44823d6fa021
+Prague,m4,https://www.dpp.cz/cestovani/doprava-na-letiste/linka-ae,2026-09-26T02:52:47Z,curl,1dcf16d0d52e41a687c9b05be3485689bc0bc58b5b86c8483792df0dada699fd
+Prague,m5,https://www.dpp.cz/cestovani/doprava-na-letiste/linka-ae,2026-09-26T02:52:47Z,curl,1dcf16d0d52e41a687c9b05be3485689bc0bc58b5b86c8483792df0dada699fd
+Prague,m6,https://www.dpp.cz/cestovani/doprava-na-letiste/linka-ae,2026-09-26T02:52:47Z,curl,1dcf16d0d52e41a687c9b05be3485689bc0bc58b5b86c8483792df0dada699fd
+Reykjavík,primaryAirport,https://eu-assets.contentstack.com/v3/assets/bltde8e98ee10782d85/blt393753f46d40688b/6960d71fca52e07741f23880/12_DES_2025_t%C3%B6lur_fyrir_vefs%C3%AD%C3%B0una.pdf,2026-09-26T02:53:38Z,curl,dcbc9312ad4f6abc310da6ed191eafee70fb33715d1f5d36b08e1cc627d3227d
+Reykjavík,centrePoint,https://reykjavik.is/radhus-reykjavikur,2026-09-26T02:56:01Z,curl,f3ab25a46d93b11617a392007c25d4dbecd83de44a4f141523e9d7752f6c467f
+Reykjavík,m1,https://flybus.is/keflavik-reykjavik-airport-transfer/,2026-09-26T02:54:06Z,curl,7c151493172f129282597ceef296f238f66671aeb5513465abc3211c1ac45f28
+Reykjavík,m2cheap,https://www.straeto.is/en/route-planner/bus-kefairport,2026-09-26T02:52:56Z,curl,eb6db1464941d94899cf87cda8ef1bdf7c1fe7d2c4b8838ad5a1734e714b8302
+Reykjavík,m2fast,https://flybus.is/plan-your-trip/prices/,2026-09-26T02:54:55Z,curl,53457549645ba9f37117a80069e2ee00329c77345ab756b92fa5c6dcc2efed4c
+Reykjavík,m3a,https://www.kefairport.com/taxi,2026-09-26T02:56:00Z,curl,291496ee593153771cc4a7b3ade60c0bbbf8bb92e9fde09e2e38f5d291b758df
+Reykjavík,m3bTariff,https://www.kefairport.com/taxi,2026-09-26T02:56:00Z,curl,291496ee593153771cc4a7b3ade60c0bbbf8bb92e9fde09e2e38f5d291b758df
+Reykjavík,m4,https://flybus.is/faq/,2026-09-26T02:55:28Z,curl,3b946a4539e78bdc86613a60e8556751e5338080badd9c9cf46faf1f85de93e1
+Reykjavík,m5,https://flybus.is/plan-your-trip/accessibility/,2026-09-26T02:55:30Z,curl,2ae3aeb0156e21abdbe60c7c49ac0e3b44f8138b07115bc62745db029dff3dc1
+Reykjavík,m6,https://flybus.is/faq/,2026-09-26T02:55:28Z,curl,3b946a4539e78bdc86613a60e8556751e5338080badd9c9cf46faf1f85de93e1
+Rome,primaryAirport,https://www.enac.gov.it/app/uploads/2026/05/Dati-di-traffico-2025-v.0.7.pdf,2026-09-26T01:51:21Z,curl,f86868665a5a4208db343c55425ab3306d1179aef49ae39392e043ad6a414729
+Rome,centrePoint,https://www.comune.roma.it/web/it/welcome.page,2026-09-26T01:56:05Z,curl,a7a611d4d60d1a8023bad44f8aea8ae97ae487ca69d47a835e42e8ece6ea4144
+Rome,m1,https://www.trenitalia.com/en/connections/leonardo-express.html,2026-09-26T01:53:20Z,curl,ea958d7ee698acf40b70e58284c7a8814aae3ea6878d7228a57f720034b8f95d
+Rome,m2cheap,https://www.sitbusshuttle.com/en/transfer-fiumicino-airport/,2026-09-26T01:55:38Z,curl,e88e17d4006c26a04ab65296770fb329251521c942b2705ec7f14002c109936c
+Rome,m2fast,https://www.adr.it/web/aeroporti-di-roma-en/pax-fco-train,2026-09-26T01:53:12Z,curl,1e454f0870eded9abe3d3af69912e1b1f18e1ec640e9e041d0ba81f7666ba2c2
+Rome,m3a,https://romamobilita.it/muoversi-a-roma/taxi/,2026-09-26T01:57:05Z,curl,6de3971f435df47ea1ad607e2d4efbf5a3200beca02259a7a020c8c03361d7ae
+Rome,m3bTariff,https://romamobilita.it/muoversi-a-roma/taxi/,2026-09-26T01:57:05Z,curl,6de3971f435df47ea1ad607e2d4efbf5a3200beca02259a7a020c8c03361d7ae
+Rome,m4,https://www.adr.it/web/aeroporti-di-roma-en/pax-fco-bus,2026-09-26T01:53:26Z,curl,c38fbbb9242f46d9a74697a821d7180b6a438afc39752ae7aee0e12eb2099ec9
+Rome,m5,https://www.rfi.it/it/stazioni/roma-termini.html,2026-09-26T01:57:32Z,curl,5c5c389498c2f3acea0266fb1814a9a6d7271bc5ba4f667df814e7bede80c39c
+Rome,m6,https://www.trenitalia.com/en/connections/leonardo-express.html,2026-09-26T01:53:20Z,curl,ea958d7ee698acf40b70e58284c7a8814aae3ea6878d7228a57f720034b8f95d
+San Francisco,primaryAirport,https://www.flysfo.com/sites/default/files/2026-02/Dec%202025%20and%20CYTD%20SFO%20Air%20Traffic%20Summary.pdf,2026-09-26T02:08:24Z,curl,761cc9417a157aee055ecf4596ce6039dc660a932ac694f5bb5ee20111d20d16
+San Francisco,m1,https://api.bart.gov/api/sched.aspx?cmd=depart&orig=SFIA&dest=CIVC&date=09/29/2026&time=10:00am&b=0&a=4&key=MW9S-E7SL-26DU-VV8V&json=y,2026-09-26T02:04:41Z,curl,a22867d5d1a8c24760465e0df680f51ab9bb73d2a8299897f5f35b7a33d686c9
+San Francisco,m2cheap,https://www.samtrans.com/fares,2026-09-26T02:05:44Z,curl,ae68fb2f02a8b2fb976afc5f59117cf716119e2047a5919700bc9bd77b85b014
+San Francisco,m2fast,https://api.bart.gov/api/sched.aspx?cmd=fare&orig=SFIA&dest=CIVC&key=MW9S-E7SL-26DU-VV8V&json=y,2026-09-26T02:04:41Z,curl,1c535ee7131b0ff466aecf381c8301de27a0c3321458194353c0dab4b3d463b3
+San Francisco,m3a,https://www.sfmta.com/getting-around/taxi/taxi-fares,2026-09-26T02:06:46Z,curl,d77fa473c3d433e15a9df805ae9cf9ef87bc30efb236629463946c2caf75b3cf
+San Francisco,m3bTariff,https://www.sfmta.com/getting-around/taxi/taxi-fares,2026-09-26T02:06:46Z,curl,d77fa473c3d433e15a9df805ae9cf9ef87bc30efb236629463946c2caf75b3cf
+San Francisco,m4,https://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=SFIA&date=09/29/2026&key=MW9S-E7SL-26DU-VV8V&json=y,2026-09-26T02:05:02Z,curl,db224dbe3ef3352dd5e679085f0ec844ce6b283dd6e6fd53913a23a15b6d3785
+San Francisco,m5,https://www.bart.gov/guide/airport/inbound_sfo,2026-09-26T02:03:58Z,curl,de18c797675feeeb84b236bcce98e0de93ec9b91cb77831336fc38982a33dd2b
+San Francisco,m6,https://api.bart.gov/api/sched.aspx?cmd=stnsched&orig=SFIA&date=09/29/2026&key=MW9S-E7SL-26DU-VV8V&json=y,2026-09-26T02:05:02Z,curl,db224dbe3ef3352dd5e679085f0ec844ce6b283dd6e6fd53913a23a15b6d3785
+Santiago,centrePoint,https://nominatim.openstreetmap.org/search?q=Municipalidad+de+Santiago%2C+Plaza+de+Armas%2C+Santiago%2C+Chile&format=jsonv2&limit=5,2026-09-26T03:01:00Z,curl,8bd20860a19a0eb9eef407ec9103219de63323389710e33e7bfeb1a2b8ddf5d9
+Santiago,m1,https://www.centropuerto.cl/landing/checkout?departureStation=CLSCLTFU&arrivalStation=CLSCLSLH&retailerPartnerNumber=447901&locale=es&currency=CLP&departureDate=2026-09-29&departureTime=13%3A15&arrivalDate=2026-09-29&arrivalTime=14%3A03&fareClass=FARE-1,2026-09-27T01:12:40Z,browser-text,9f3fc82a8227beb82baba700095d3225927598dd32227d64772b6d8a6aca307c
+Santiago,m2cheap,https://www.aeropuertosantiagodechile.cl/es/servicios/centropuerto,2026-09-26T02:56:47Z,curl,35562f76482e7fcf5e9a705eaebbbc46ee8225bb72fb0eb38237025e0fcac63f
+Santiago,m2fast,https://www.aeropuertosantiagodechile.cl/es/servicios/centropuerto,2026-09-26T02:56:47Z,curl,35562f76482e7fcf5e9a705eaebbbc46ee8225bb72fb0eb38237025e0fcac63f
+Santiago,m4,https://www.aeropuertosantiagodechile.cl/es/servicios/centropuerto,2026-09-26T02:56:47Z,curl,35562f76482e7fcf5e9a705eaebbbc46ee8225bb72fb0eb38237025e0fcac63f
+Santiago,m6,https://www.aeropuertosantiagodechile.cl/es/servicios/centropuerto,2026-09-26T02:56:47Z,curl,35562f76482e7fcf5e9a705eaebbbc46ee8225bb72fb0eb38237025e0fcac63f
+Seoul,primaryAirport,https://www.airport.kr/co_ko/651/subview.do,2026-09-26T02:21:27Z,curl,878bb0fa45c94207d58eb799f51b724d9beea508b1e2c99c32d8c23dd8b63cba
+Seoul,centrePoint,https://www.seoul.go.kr/main/index.jsp,2026-09-26T02:08:26Z,curl,3734e564161482e253313e69eb0a2e3328c47f24e0a4b73a8e5cfaa5f320fa3e
+Seoul,m1,https://www.airportrailroad.com/train/express/introduce,2026-09-26T02:12:20Z,curl,1f1b6224933eb1a916cc54f487bdb7e495c80b2b97fb273f2f863602058244f9
+Seoul,m2cheap,https://www.airportrailroad.com/train/normal/fare,2026-09-26T02:12:24Z,curl,4c394b42f0688b89444787a669c1abe9a123ed6b977644205d357ddc9737df16
+Seoul,m2fast,https://www.airportrailroad.com/train/express/introduce,2026-09-26T02:12:20Z,curl,1f1b6224933eb1a916cc54f487bdb7e495c80b2b97fb273f2f863602058244f9
+Seoul,m3a,https://www.airport.kr/ap_ko/987/subview.do,2026-09-26T02:15:39Z,curl,474b5912b581418a9f4ea0afb591812d74d3d15fa4f41f3fc299c5c180c8320c
+Seoul,m3bTariff,https://www.airport.kr/ap_ko/987/subview.do,2026-09-26T02:15:39Z,curl,474b5912b581418a9f4ea0afb591812d74d3d15fa4f41f3fc299c5c180c8320c
+Seoul,m4,https://www.airport.kr/ap_ko/979/subview.do,2026-09-26T02:16:43Z,curl,cff1feb314bdbe618ae751aca016869ae2c89192b08827710579b1dd0c11bc23
+Seoul,m5,https://www.airportrailroad.com/train/normal/service,2026-09-26T02:12:33Z,curl,d04fbb0c2319e0e54034193ff9d9885e4bfeddc62796adac62d9812f5b1e5713
+Seoul,m6,https://www.airportrailroad.com/train/express/info,2026-09-26T02:12:16Z,curl,09bb1ccc1184c1f7666a5ce3520dc0a8a26b3ee8d8e4ad89e45be2fc08b0276c
+Singapore,primaryAirport,https://www.changiairport.com/en/corporate/our-media-hub/newsroom/2026/2025-operating-indicators.html,2026-09-26T02:45:35Z,curl,63a7802d22f270e50de4101e34fc3f49e502eefc3f9aef7a6dc7c299fe58d670
+Singapore,centrePoint,https://www.roots.gov.sg/places/places-landing/Places/national-monuments/former-city-hall,2026-09-26T02:44:05Z,curl,14089288727fc66107065952f338972ea84d0f77dd3df69c131ce3af864dddf4
+Singapore,m1,https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html,2026-09-26T02:24:53Z,curl,ca72df8f99ca6caa806e4a284ed195c97ab1d927761f565f02751209c4eb0971
+Singapore,m2cheap,https://www.lta.gov.sg/content/ltagov/en/map/fare-calculator.html (Adult; MRT/LRT; Changi Airport (CG2) -> City Hall (NS25 / EW13)),2026-09-27T01:09:00Z,browser-text,c1be8085f0a9188ba08f41b6e7168db9475e150d1de7cf1c0b1ef1f58b756b21
+Singapore,m2fast,https://www.lta.gov.sg/content/ltagov/en/map/fare-calculator.html (Adult; MRT/LRT; Changi Airport (CG2) -> City Hall (NS25 / EW13)),2026-09-27T01:09:00Z,browser-text,c1be8085f0a9188ba08f41b6e7168db9475e150d1de7cf1c0b1ef1f58b756b21
+Singapore,m3bTariff,https://www.lta.gov.sg/content/ltagov/en/getting_around/point_to_point_transport_and_cross_border_services/taxi_fares_payment_methods.html,2026-09-26T02:42:30Z,curl,3938ff018b2753bf2898b1cab4799e0149e95111d2a45f7413db261de035e756
+Singapore,m4,https://www.lta.gov.sg/map/busService/bus_route_xml/36.xml,2026-09-27T01:13:52Z,curl,e9c2f50df67a157f55bcec1f194e72ca6aa214b1a12970aa48f40b3d320292a1
+Singapore,m4,https://www.lta.gov.sg/map/busService/busstops_info/95109.xml,2026-09-27T01:13:52Z,curl,98076562bf7380d9634f22a141d7084ac0ce3fd3f25764195df4007ddc93e545
+Singapore,m4,https://www.lta.gov.sg/map/busService/bus_stops.xml,2026-09-27T01:14:35Z,curl,4fcc3af661aded4a8ffaeabe8bc76c23d6bb60c94ea8010782bbea9cf2d96eb6
+Singapore,m4,https://www.lta.gov.sg/map/mrt/EWL/CG2.html,2026-09-27T01:15:26Z,curl,4f1e39e35efb039ab9f9a7457d212b51517ffcc774110d2697e2572b07336a28
+Singapore,m5,https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/a_better_public_transport_experience/an_inclusive_public_transport_system.html,2026-09-26T02:43:28Z,curl,3405d8e9664d4c7ccaad0088a0dbcd4c7dee94266184bff508085966e13f8594
+Singapore,m6,https://www.lta.gov.sg/map/mrt/EWL/CG2.html,2026-09-27T01:15:26Z,curl,4f1e39e35efb039ab9f9a7457d212b51517ffcc774110d2697e2572b07336a28
+Sydney,primaryAirport,https://www.bitre.gov.au/sites/default/files/documents/WebAirport_CY_1985-2025.xlsx,2026-09-26T02:54:35Z,curl,82a5d05bff15063b0e39e82c90aff44b86ebf0c4fca996d50198a264d0438671
+Sydney,centrePoint,https://www.sydneytownhall.com.au/,2026-09-26T02:40:47Z,curl,7f411cf370f47fd0b2383191bc889ded55504bc64e18c8dc4e404224ee83fc05
+Sydney,m1,https://www.sydneyairport.com.au/info-sheet/transport-options,2026-09-26T02:26:55Z,curl,0512a115de3c5f66b0bc16f9fbf8738d3b1e48f9078d2905ff77662eba139077
+Sydney,m2cheap,https://www.airportlink.com.au/trip-information/price/,2026-09-26T02:29:42Z,curl,2cb84c7914ef019776ba3a8054fc1aeea203093f9d07ede5e18941fd093af159
+Sydney,m2fast,https://www.airportlink.com.au/trip-information/price/,2026-09-26T02:29:42Z,curl,2cb84c7914ef019776ba3a8054fc1aeea203093f9d07ede5e18941fd093af159
+Sydney,m3a,https://www.pointtopoint.nsw.gov.au/safety-and-compliance/fixed-fare-trial,2026-09-26T02:29:54Z,curl,223296a09c29e18bc5def293f5745ae9d5e9df8c2ab5fca51984bc81c35386db
+Sydney,m3bTariff,https://transportnsw.info/travel-info/ways-to-get-around/taxi-hire-vehicle/rank-hail-taxi-fares-charges,2026-09-26T02:38:47Z,curl,dc877dbb6d2b06884cd0181c70fa491536d767efa098a0e0d6a5881f68d3c9a1
+Sydney,m4,https://www.airportlink.com.au/timetables/,2026-09-26T02:29:45Z,curl,befef073a15a84e475db7991371bced3003d46c4b53bfd4687c5a8a12dbb53e6
+Sydney,m5,https://transportnsw.info/travel-info/airport-travel/getting-to-from-sydney-airport,2026-09-26T02:44:42Z,curl,1e365d5037e77aa3d5d14b1fa0340216f864653c07d2044944f36bb7917f761c
+Sydney,m6,https://www.airportlink.com.au/timetables/,2026-09-26T02:29:45Z,curl,befef073a15a84e475db7991371bced3003d46c4b53bfd4687c5a8a12dbb53e6
+São Paulo,primaryAirport,https://sistemas.anac.gov.br/dadosabertos/Voos%20e%20opera%C3%A7%C3%B5es%20a%C3%A9reas/Dados%20Estat%C3%ADsticos%20do%20Transporte%20A%C3%A9reo/Dados_Estatisticos_2021_a_2030.json,2026-09-26T02:15:13Z,curl,d04a0d1ab6de873e8fe1bb91f79c8b3bab27a0887a049fb7f7654cab654a0a83
+São Paulo,centrePoint,https://prefeitura.sp.gov.br/,2026-09-26T02:24:14Z,curl,2c536b10b72d5ab7954209cc62e2e7c1b052c42ba4a9a1a68160eac37132fa63
+São Paulo,m1,https://www.cptm.sp.gov.br/dx/api/dam/v1/collections/05321fd9-3791-4689-a8ac-9e2adde39c4b/items/bdfdcc63-cee4-43a2-bb91-70dd75adae0d/renditions/b3fca1ea-5b3c-4133-8c87-e1f7ac3efac0?binary=true,2026-09-27T01:05:06Z,curl,4b8eee87f53ada31bf986e73da527d64e8b162dfb829fe15b7df8247280dc741
+São Paulo,m2cheap,https://www.cptm.sp.gov.br/cptm/sua-viagem/aeroporto-guarulhos,2026-09-26T02:19:40Z,curl,2e742f1f45f498aaba9ded109f1bf473da3a45237aa25d914e8b3f7da9c53a05
+São Paulo,m3a,https://www.gru.com.br/en/passenger/to-from-gru-airport/taxi,2026-09-26T02:15:38Z,curl,10701b006bfefac8d2a5351a817d9eebdd5ae43a7ee1fe9cd40d6156df5c6a0f
+São Paulo,m4,https://www.cptm.sp.gov.br/dx/api/dam/v1/collections/05321fd9-3791-4689-a8ac-9e2adde39c4b/items/bdfdcc63-cee4-43a2-bb91-70dd75adae0d/renditions/b3fca1ea-5b3c-4133-8c87-e1f7ac3efac0?binary=true,2026-09-27T01:05:06Z,curl,4b8eee87f53ada31bf986e73da527d64e8b162dfb829fe15b7df8247280dc741
+São Paulo,m5,https://www.triviatrens.com.br/sua-viagem/planeje-sua-viagem,2026-09-27T01:10:20Z,browser-text,15723093b13b73c63fc9996178dadf9c94263841996a6eb0499d0f043c3ecd9e
+São Paulo,m6,https://www.triviatrens.com.br/linhas,2026-09-27T01:09:30Z,browser-text,2d4743f43d61731683e75a21a07fe5fcc8d4bd55659e6d5acf1ea30b611cffd2
+Taipei,primaryAirport,https://www.caa.gov.tw/FileAtt.ashx?lang=1&id=39666,2026-09-26T02:45:57Z,curl,654df585ba6ab07037d3adb404a4340d0d7885b942d86dadf905fdcf3d998636
+Taipei,centrePoint,https://www.gov.taipei/,2026-09-26T02:26:04Z,curl,044dae52825dc9529413fe892ba50c173781bf8379f5f5f8c8685837cf44d654
+Taipei,m3a,https://www.taoyuan-airport.com/transportation,2026-09-26T02:38:17Z,text-extract,3ca68d5e86643cb78b3a0defafb3b471f7e2b7cd530ab6ee49a9e7b8d7a5e565
+Taipei,m4,https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A12,2026-09-26T02:29:48Z,curl,e924ef08d5e9bc164a2fa55d65de5fb8f9783059981a309c7db63b31e58c0765
+Taipei,m5,https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/accessible.html,2026-09-26T02:26:52Z,curl,0e870ab85a2119ecbb8d021ef721ff23609800ed9c4ae746680709e0b8bfe8f6
+Taipei,m6,https://www.tymetro.com.tw/tymetro-new/tw/_pages/travel-guide/timetable-A12,2026-09-26T02:29:48Z,curl,e924ef08d5e9bc164a2fa55d65de5fb8f9783059981a309c7db63b31e58c0765
+Tokyo,primaryAirport,https://www.mlit.go.jp/koku/content/002016480.xlsx,2026-09-26T01:49:52Z,curl,0cd693d9b7dcc8b4c279608f6bb21468ededc8013a62754a3530b46bd34e988e
+Tokyo,centrePoint,https://www.metro.tokyo.lg.jp/about/chosha,2026-09-26T01:55:21Z,curl,0135a3612ca7308aed5cb5d9a5bdc535ca42ec30e007d639d7bf7a04b269096a
+Tokyo,m1,https://timetables.jreast.co.jp/2610/train/000/000711.html,2026-09-26T02:20:59Z,curl,13441abece47d8a43eba5d67ec4ff818acb2606e6294aad09a5326a8bd4b2b24
+Tokyo,m1,https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/skyliner/,2026-09-26T01:51:39Z,curl,1435a41b90fab58fa4558668edfe5639bcc811dec19b8e53118eaf4d10b237c6
+Tokyo,m2cheap,"https://unchinkensaku.jre-maas.com/#/search (改定後運賃: 乗車駅 日暮里, 降車駅 新宿)",2026-09-26T02:26:41Z,text-extract,6698cf990e01f9cb381ab4b0299d3db8416416d5accb4ff1a9dd36ee349b2042
+Tokyo,m2cheap,https://www.keisei.co.jp/keisei/tetudou/fare/pdf/103.pdf,2026-09-26T02:27:33Z,curl,60d1e67b276a5410b431b32d05f0e643f42dd6044192edca19ef6e01acaa6fc1
+Tokyo,m2fast,"https://unchinkensaku.jre-maas.com/#/search (改定後運賃: 乗車駅 日暮里, 降車駅 新宿)",2026-09-26T02:26:41Z,text-extract,6698cf990e01f9cb381ab4b0299d3db8416416d5accb4ff1a9dd36ee349b2042
+Tokyo,m2fast,https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/skyliner/ticket.php,2026-09-26T01:51:35Z,curl,47a061297e30baab568d1785c1d9dfb70c87ee73af2532b13f6b879432643169
+Tokyo,m3a,https://www.narita-airport.jp/ja/access/taxi/,2026-09-26T01:53:56Z,curl,bc50a8cdfe0c457ff93ace54508efdfdffd36438d1e22cd75864620491db2ea3
+Tokyo,m3bTariff,https://wwwtb.mlit.go.jp/kanto/content/000369955.pdf,2026-09-26T02:38:31Z,curl,01540adace8e1aee451abd1ff3ec056100608769f987882a22269e70354d4dc6
+Tokyo,m4,https://timetables.jreast.co.jp/2610/timetable/tt1130/1130010.html,2026-09-26T02:17:53Z,curl,ede1f03fd776143394727bdedc57fa751f6f2810b1d61b7b577234925c143b9d
+Tokyo,m5,https://www.keisei.co.jp/keisei/tetudou/accessj/vmap/index.php,2026-09-26T02:41:54Z,curl,221e23d564d60bd55739cb9525e144ec897e8f2e0b2a7419eba91b05e2461bd8
+Tokyo,m6,https://www.keisei.co.jp/keisei/tetudou/skyliner/jp/traffic/skyliner_timetable.php,2026-09-26T01:51:37Z,curl,c75cb794dc47d770da26c4ed9c617d1c617cba2cb6234af299c19732fb567ce7
+Toronto,primaryAirport,https://www150.statcan.gc.ca/n1/tbl/csv/23100253-eng.zip,2026-09-26T02:58:59Z,curl,e1ec751bc1b2453a17f71063959c38b40435f928180323d048d882af9c838327
+Toronto,centrePoint,https://www.toronto.ca/news/canada-day-media-availability-at-toronto-city-hall/,2026-09-26T03:03:46Z,curl,cf0317de5aa217aceba895cd5edce0d41f1d2497c20157089f3f75bd77afaf2c
+Toronto,m1,https://www.upexpress.com/en/up-express-stations/pearson-station,2026-09-26T03:00:52Z,curl,70d50392a70f9a63cc146bf33224858a1ba13d126732fccb1900f2a976f942a1
+Toronto,m2cheap,https://www.ttc.ca/Fares-and-passes,2026-09-26T03:01:28Z,curl,02adfa2beda54e33872ef7cd75eb0e84110a4dc75dc64bf9cfce91527b74a329
+Toronto,m2fast,https://www.upexpress.com/en/ways-to-pay/presto-fares,2026-09-26T03:01:57Z,curl,3588e647c0a28c1732ff72d7ba83223afd8d3cf3daf8153c23170de0a0dd8350
+Toronto,m3bTariff,https://www.toronto.ca/legdocs/municode/toronto-code-546.pdf,2026-09-26T03:02:48Z,curl,22f7deb1ac7c119c5933b19f10a78b8ca66994ec212958f2240eb9edb8d48565
+Toronto,m4,https://www.upexpress.com/en/up-express-stations/pearson-station,2026-09-26T03:00:52Z,curl,70d50392a70f9a63cc146bf33224858a1ba13d126732fccb1900f2a976f942a1
+Toronto,m5,https://www.upexpress.com/en/customer-services/accessibility,2026-09-26T03:01:29Z,curl,bdf0d40084cc653106323c411724603f550e5c2ea6ba4c89add7829cd82e1126
+Toronto,m6,https://www.upexpress.com/en,2026-09-26T03:00:11Z,curl,5259392529ef38b1e40cc44467169b3c14e92f3d24fa89279888accc26c8ce70
+Vancouver,centrePoint,https://nominatim.openstreetmap.org/search?q=Vancouver+City+Hall%2C+453+West+12th+Avenue%2C+Vancouver&format=jsonv2&limit=3,2026-09-26T01:56:20Z,curl,816ac81dba156588fd32e48941b36537b5c9c83c0c52ae818c8eaf036deeff36
+Vancouver,m1,https://www.translink.ca/-/media/translink/documents/schedules-and-maps/skytrain/skytrain_station_travel_times.pdf,2026-09-26T01:51:34Z,curl,892457d2d02a52bb6b83c873d4ea436437135ebe3a87577437af4c69a6ea2eb8
+Vancouver,m2cheap,https://www.translink.ca/transit-fares/pricing-and-fare-zones,2026-09-26T01:49:35Z,curl,a1f106c610d8c1952d634c65ae614c1a6c1ace96e488a8c685d3ba0c4ca0a516
+Vancouver,m2fast,https://www.translink.ca/transit-fares/pricing-and-fare-zones,2026-09-26T01:49:35Z,curl,a1f106c610d8c1952d634c65ae614c1a6c1ace96e488a8c685d3ba0c4ca0a516
+Vancouver,m3a,https://www.ptboard.bc.ca/rule-9-common-rate-metro-vancouver,2026-09-26T01:54:16Z,curl,36a614cc83776e4b4c40bb100fef66e850fa5176d32dc0efed3fd234a6178991
+Vancouver,m3bTariff,https://www.ptboard.bc.ca/rule-9-common-rate-metro-vancouver,2026-09-26T01:54:16Z,curl,36a614cc83776e4b4c40bb100fef66e850fa5176d32dc0efed3fd234a6178991
+Vancouver,m4,https://www.translink.ca/schedules-and-maps/skytrain,2026-09-26T01:49:40Z,curl,48acf92f5dc58fd365137db826d498ad9f968d896526a8ba75ff5bd3b1b140f1
+Vancouver,m5,https://www.translink.ca/rider-guide/transit-accessibility/how-to-use-accessible-transit,2026-09-26T01:56:05Z,curl,578f55713024a048dc396945133d62f1c59e249ee3051bc5a6ac32c326514fbf
+Vancouver,m6,https://www.translink.ca/schedules-and-maps/skytrain,2026-09-26T01:49:40Z,curl,48acf92f5dc58fd365137db826d498ad9f968d896526a8ba75ff5bd3b1b140f1
+Venice,primaryAirport,https://www.enac.gov.it/app/uploads/2026/05/Dati-di-traffico-2025-v.0.7.pdf,2026-09-26T01:51:21Z,curl,f86868665a5a4208db343c55425ab3306d1179aef49ae39392e043ad6a414729
+Venice,m1,https://www.atvo.it/assets/bus_routes/035_01.02.26-.pdf,2026-09-26T02:11:56Z,curl,0cdecd1b91d64b90399947b1f261bb0ed3362d3362e2107b9cadf8cc3f9982f7
+Venice,m2cheap,https://www.atvo.it/assets/bus_routes/035_01.02.26-.pdf,2026-09-26T02:11:56Z,curl,0cdecd1b91d64b90399947b1f261bb0ed3362d3362e2107b9cadf8cc3f9982f7
+Venice,m2fast,https://www.atvo.it/assets/bus_routes/035_01.02.26-.pdf,2026-09-26T02:11:56Z,curl,0cdecd1b91d64b90399947b1f261bb0ed3362d3362e2107b9cadf8cc3f9982f7
+Venice,m4,https://www.atvo.it/assets/bus_routes/035_01.02.26-.pdf,2026-09-26T02:11:56Z,curl,0cdecd1b91d64b90399947b1f261bb0ed3362d3362e2107b9cadf8cc3f9982f7
+Venice,m5,https://www.atvo.it/en/services-provided/airport-services/venice-airport-bus-express,2026-09-26T02:10:13Z,curl,797dcb859242cb186ef7204617f500c1e142e78294f6c2beab90bbb885453d9e
+Venice,m6,https://www.atvo.it/assets/bus_routes/035_01.02.26-.pdf,2026-09-26T02:11:56Z,curl,0cdecd1b91d64b90399947b1f261bb0ed3362d3362e2107b9cadf8cc3f9982f7
+Vienna,centrePoint,https://www.wien.gv.at/verkehr/taxi,2026-09-26T02:23:56Z,curl,037ef0e0a131edd5bcc1957cf9e1bfa3c60f71e2b6a81db0b73491e2fdaa9964
+Vienna,m1,https://www.cityairporttrain.com/en,2026-09-26T02:17:09Z,curl,ba8abf3be74007385f79f3549652da7d336c2692ae93bb1473004835d91d021d
+Vienna,m2cheap,https://www.viennaairportbus.com/de/informationen/tickets-und-preise,2026-09-26T02:18:51Z,curl,009aa62f485c7601bd9e3bb19c595f54f037f1b38e33cabeca1649e1fa57dafc
+Vienna,m2fast,https://www.cityairporttrain.com/en/tickets-offers/information-about-cat-tickets/,2026-09-26T02:21:24Z,curl,d6365d6c891520880c015fa414f5c93ad68cad6bd74e7dacd2827d3a821ece9a
+Vienna,m3bTariff,https://www.wien.gv.at/verkehr/taxi,2026-09-26T02:23:56Z,curl,037ef0e0a131edd5bcc1957cf9e1bfa3c60f71e2b6a81db0b73491e2fdaa9964
+Vienna,m4,https://www.viennaairportbus.com/de/dam/jcr:f2c24e7d-d3d7-44e9-9329-0112a136099e/fahrplan-vab2.pdf,2026-09-26T02:19:40Z,curl,be1d151d93e736aed3a05e0231ebae0ac03a8a61f1be0483c6504ce25f94c335
+Vienna,m5,https://www.cityairporttrain.com/en,2026-09-26T02:17:09Z,curl,ba8abf3be74007385f79f3549652da7d336c2692ae93bb1473004835d91d021d
+Vienna,m6,https://www.cityairporttrain.com/en,2026-09-26T02:17:09Z,curl,ba8abf3be74007385f79f3549652da7d336c2692ae93bb1473004835d91d021d
+"Washington, D.C.",primaryAirport,https://bwiairport.com/wp-content/uploads/statistics/Dec2025.pdf,2026-09-26T02:34:11Z,curl,c297fc6d4c342f9bab81d917cff492582242bc2078a5ada739f06bd79e9bdaf5
+"Washington, D.C.",primaryAirport,https://www.mwaa.com/sites/mwaa.com/files/2026-03/12-25%20ATS%20%282.12.26%29.pdf,2026-09-26T02:30:53Z,curl,28872ad2d0d7e5350574937044deae0f8a8fd972a17a756e5c2b2e80101c049a
+"Washington, D.C.",centrePoint,https://dccouncil.gov/,2026-09-26T02:38:40Z,curl,348abf2f55ec9fd8bdc46bce62844c2fe2174112bbb4e886d0bd19bdd4844191
+"Washington, D.C.",m1,https://www.wmata.com/ridertools/itineraries/a49eb9305e7e926fb516fe08e34dc7f274353e712ab1745c3d3cd5b739cd6b29/itinerary,2026-09-27T01:15:42Z,browser-text,35ec3a6191a994243d6b14b16bef8cb60b4029a34bd0b28baa0bea50ac11b742
+"Washington, D.C.",m2cheap,https://www.flydulles.com/parking-transportation/silver-line-metrorail/silver-line-faqs,2026-09-26T02:22:26Z,curl,0c75249dca3627c4e6e958c598af269b7159053feeb613455e3bee000a008566
+"Washington, D.C.",m2fast,https://www.wmata.com/ridertools/itineraries/a49eb9305e7e926fb516fe08e34dc7f274353e712ab1745c3d3cd5b739cd6b29/itinerary,2026-09-27T01:15:42Z,browser-text,35ec3a6191a994243d6b14b16bef8cb60b4029a34bd0b28baa0bea50ac11b742
+"Washington, D.C.",m3a,https://www.flydulles.com/sites/flydulles.com/files/2024-01/2024_washington_taxi_bro_updates.pdf,2026-09-26T02:26:27Z,curl,4b03cabf5b91c8199b4c85efee5fd79c30fd92251341695f7495a13735f4e1c3
+"Washington, D.C.",m3bTariff,https://www.flydulles.com/sites/flydulles.com/files/2024-01/2024_washington_taxi_rate_updates_map-web.pdf,2026-09-26T02:27:25Z,curl,3a5964e24096d5cfa7319fa6d7a0a2e21a8b4d1d542264d14d05a166b128c36a
+"Washington, D.C.",m4,https://www.wmata.com/ridertools/station/washington-dulles-international-airport,2026-09-27T01:10:42Z,browser-text,37798e6646e3056c59fcfac8929ae64e560015a8b361d8a075bd7979f1c1bda8
+"Washington, D.C.",m5,https://www.flydulles.com/parking-transportation/silver-line-metrorail/silver-line-faqs,2026-09-26T02:22:26Z,curl,0c75249dca3627c4e6e958c598af269b7159053feeb613455e3bee000a008566
+"Washington, D.C.",m6,https://www.wmata.com/ridertools/station/washington-dulles-international-airport/schedule/1790690400,2026-09-27T01:16:46Z,browser-text,32e49555065237823bae86a5e0573267c6a1a9d2e5c5e15d32f3f94d771ec666
+Zurich,centrePoint,https://www.stadt-zuerich.ch/misc/de/mitteilungsarchiv/medienmitteilungen/2010/11/101104a1.html,2026-09-26T02:45:47Z,curl,d61867a5f4265783cb488e4bcfff9dcf8885f4b2c07f2397ed1a13a266568784
+Zurich,m1,https://www.flughafen-zuerich.ch/en/passengers/practical/parking-and-transport/train-tram-and-bus,2026-09-26T02:40:44Z,curl,29920ce92eda37651eede4e9e1f5ef8733c045d2472493baf80d995315bb398b
+Zurich,m2cheap,https://www.zvv.ch/en/travelcards-and-tickets/tickets/single-tickets.html,2026-09-26T02:47:02Z,curl,a8e3ff763043134ce987f056eb7a47fb2bc3c96f50533ee07dc632e96358c6a4
+Zurich,m2fast,https://www.zvv.ch/en/travelcards-and-tickets/tickets/single-tickets.html,2026-09-26T02:47:02Z,curl,a8e3ff763043134ce987f056eb7a47fb2bc3c96f50533ee07dc632e96358c6a4
+Zurich,m3a,https://www.flughafen-zuerich.ch/en/passengers/practical/parking-and-transport/taxi-und-limousinen,2026-09-26T02:44:08Z,curl,360ff54f96a964a47feb42c2ea8d47cc820cb10f31662091a95e593f01465fb4
+Zurich,m3bTariff,https://www.stadt-zuerich.ch/dam/web/de/politik-verwaltung/politik-recht/amtliche-sammlung/935/440/935.440_Taxitarif%20V3.pdf,2026-09-26T02:44:54Z,curl,979a0ead3e3eb9f56b3dd8fa94556f7247d9c0d8105b543384a50a025499b491
+Zurich,m4,https://www.zvv.ch/content/dam/zvv/publikationen/info/tickets/tickets-und-preise-de.pdf,2026-09-26T02:47:00Z,curl,0b4fcf13dc2f93977ff4a1c760a597834dbc109a945e8919953c82467a0a9432
+Zurich,m5,https://www.flughafen-zuerich.ch/en/passengers/practical/parking-and-transport/train-tram-and-bus,2026-09-26T02:40:44Z,curl,29920ce92eda37651eede4e9e1f5ef8733c045d2472493baf80d995315bb398b
+Zurich,m6,https://www.flughafen-zuerich.ch/en/passengers/practical/parking-and-transport/train-tram-and-bus,2026-09-26T02:40:44Z,curl,29920ce92eda37651eede4e9e1f5ef8733c045d2472493baf80d995315bb398b
+(exchange rate AED),fx,https://u.ae/en/about-the-uae/fact-sheet,2026-09-26T04:02:08Z,central-bank-via-usd,16674f682c974a55920b54dcb2d5701a512a17699b41f56ff8be17096710ac5f
+(exchange rate AUD),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate BRL),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate CAD),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate CHF),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate CLP),fx,https://si3.bcentral.cl/Indicadoressiete/secure/Serie.aspx?gcode=PRE_TCO&param=RABmAFYAWQB3AGYAaQBuAEkALQAzADUAbgBNAGgAaAAkADUAVwBQAC4AbQBYADAARwBOAGUAYwBjACMAQQBaAHAARgBhAGcAUABTAGUAdwA1ADQAMQA0AE0AawBLAF8AdQBDACQASABzAG0AXwA2AHQAawBvAFcAZwBKAEwAegBzAF8AbgBMAHIAYgBDAC4ARQA3AFUAVwB4AFIAWQBhAEEAOABkAHkAZwAxAEEARAA=,2026-09-26T03:59:41Z,central-bank-via-usd,a563c9cf170d05c6eebaf662c2bfbb18a6093b243548eb7ca28c1f72c36e4547
+(exchange rate COP),fx,https://www.datos.gov.co/resource/32sa-8pi3.json,2026-09-27T01:36:28Z,central-bank-via-usd,820ea7991f9e5ff3a38bacb1f38df65b818fdfbe566fb78181790dddd7567221
+(exchange rate CZK),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate DKK),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate GBP),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate HKD),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate HUF),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate IDR),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate INR),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate ISK),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate JPY),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate KRW),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate MAD),fx,https://www.bkam.ma/Marches/Principaux-indicateurs/Marche-des-changes/Cours-de-change/Cours-de-reference,2026-09-26T04:02:02Z,central-bank-via-usd,1fcef842ab417084e379b48266959eabdc51bad5c68b3469db15b4000058af30
+(exchange rate MXN),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate MYR),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate SGD),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate THB),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate TRY),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate USD),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
+(exchange rate ZAR),fx,https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml,2026-09-26T03:47:54Z,ecb,2df818b9dabacdddb4408d24c00abd03fabab9dc2d9b6e261497450e4017bbce
