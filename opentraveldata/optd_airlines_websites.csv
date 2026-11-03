@@ -161,6 +161,7 @@ air-albastar-spain-v2^AP^AlbaStar^http://www.albastar.es/
 air-albawings-v1^2B^Albawings^https://albawings.com/en
 air-alitalia-cityliner-v1^CT^Alitalia CityLiner^http://www.alitalia.com
 air-alitalia-v1^AZ^Alitalia^https://www.alitalia.com/
+air-ita-v1^AZ^ITA Airways^https://www.ita-airways.com/
 air-allegiant-air-v1^G4^Allegiant Air^https://www.allegiantair.com
 air-alliance-airlines-v1^QQ^Alliance Airlines^
 air-all-nippon-airways-v1^NH^All Nippon Airways^https://www.ana.co.jp/
@@ -411,7 +412,7 @@ air-fars-qeshm-airlines-v1^QE^Fars Qeshm Airlines^
 air-federal-airlines-v1^7V^Federal Airlines^
 air-fedex-v1^FX^Fedex^
 air-felix-airways-v1^FO^Felix Airways^
-air-fiji-airways-v1^FJ^Fiji Airways^
+air-fiji-airways-v1^FJ^Fiji Airways^https://www.fijiairways.com/
 air-finnair-v1^AY^Finnair^http://www.finnair.com
 air-first-air-v1^7F^First Air^
 air-flair-airlines-v1^F8^Flair Airlines^https://flyflair.com/
@@ -969,6 +970,7 @@ air-turkish-airlines-v1^TK^Turkish Airlines^https://www.turkishairlines.com/
 air-turkmenistan-airlines-v1^T5^Turkmenistan Airlines^https://turkmenistanairlines.tm
 air-tus-airways-v1^U8^Tus Airways^http://tusairways.com/
 air-tway-air-v1^TW^T'way Air^http://www.twayair.com/
+air-trinity-airways-v1^TW^Trinity Airways^https://www.trinityairways.com/
 air-twin-jet-v1^T7^Twin Jet^http://www.twinjet.fr
 air-ukraine-airlines-v1^PS^Ukraine International Airlines^https://www.flyuia.com/
 air-um-air-v1^UF^Um Air^
