@@ -4,9 +4,10 @@ OneWorld^Affiliate^HG^Niki^2012-03-20^2017-10-28^
 OneWorld^Member^AA^American Airlines^1999-02-01^^
 OneWorld^Affiliate^MQ^Envoy Air^1999-02-01^^
 OneWorld^Affiliate^AX^Trans States Airlines^1999-02-01^^
-OneWorld^Affiliate^US^US Airways^2014-04-01^^
+OneWorld^Affiliate^US^US Airways^2014-04-01^2015-10-17^
 OneWorld^Member^BA^British Airways^1999-02-01^^
 OneWorld^Affiliate^CJ^BA CityFlyer^1999-02-01^^
+OneWorld^Affiliate^A0^BA EuroFlyer^2022-03-29^^
 OneWorld^Affiliate^MN^Comair^1999-02-01^^
 OneWorld^Affiliate^LV^OpenSkies^1999-02-01^^
 OneWorld^Affiliate^EZ^Sun Air of Scandinavia^1999-02-01^^
@@ -19,18 +20,19 @@ OneWorld^Affiliate^I2^Iberia Express^2012-03-25^^
 OneWorld^Member^JL^Japan Airlines^2007-04-01^^
 OneWorld^Affiliate^XM^Zimex Aviation^2007-04-01^2012-12-31^
 OneWorld^Affiliate^JC^Japan Air Commuter^2007-04-01^2014-09-30^
+OneWorld^Affiliate^JC^Japan Air Commuter^2020-10-25^^
 OneWorld^Affiliate^NU^Japan Transocean Air^2007-04-01^^
-OneWorld^Member^LA^LATAM Chile^2000-06-01^^
-OneWorld^Affiliate^4M^LATAM Argentina^2007-04-01^^
-OneWorld^Affiliate^4C^LATAM Colombia^2013-10-01^^
-OneWorld^Affiliate^XL^LATAM Ecuador^2007-04-01^^
-OneWorld^Affiliate^LU^LAN Express^2000-06-01^^
-OneWorld^Affiliate^LP^LATAM Perú^2000-06-01^^
-OneWorld^Member^JJ^LATAM Brasil^2014-04-01^^
+OneWorld^Member^LA^LATAM Chile^2000-06-01^2020-04-30^
+OneWorld^Affiliate^4M^LATAM Argentina^2007-04-01^2020-04-30^
+OneWorld^Affiliate^4C^LATAM Colombia^2013-10-01^2020-04-30^
+OneWorld^Affiliate^XL^LATAM Ecuador^2007-04-01^2020-04-30^
+OneWorld^Affiliate^LU^LAN Express^2000-06-01^2020-04-30^
+OneWorld^Affiliate^LP^LATAM Perú^2000-06-01^2020-04-30^
+OneWorld^Member^JJ^LATAM Brasil^2014-04-01^2020-04-30^
 OneWorld^Member^QF^Qantas^1999-02-01^^
 OneWorld^Affiliate^NC^Cobham Aviation Services Australia^2005-06-01^^
 OneWorld^Member^RJ^Royal Jordanian^2007-04-01^^
-OneWorld^Member^S7^Siberia Airlines^2010-11-15^^
+OneWorld^Member^S7^Siberia Airlines^2010-11-15^2022-04-18^
 OneWorld^Affiliate^GH^Globus^2008-12-01^^
 OneWorld^Member^QR^Qatar Airways^2013-10-30^^
 OneWorld^Member^UL^SriLankan Airlines^2014-05-01^^
@@ -40,6 +42,9 @@ OneWorld^Member^AT^Royal Air Maroc^2020-04-01^^
 OneWorld^Affiliate^FN^Royal Air Maroc Express^2020-04-01^^
 OneWorld^Member^AS^Alaska Airlines^2021-03-31^^
 OneWorld^Affiliate^QX^Horizon Air^2021-03-31^^
+OneWorld^Member^FJ^Fiji Airways^2025-04-01^^
+OneWorld^Member^WY^Oman Air^2025-06-30^^
+OneWorld^Member^HA^Hawaiian Airlines^2026-04-22^^
 Skyteam^Member^SU^Aeroflot^2006-04-14^^
 Skyteam^Affiliate^D9^Donavia^2006-04-14^^
 Skyteam^Member^AR^Aerolíneas Argentinas^2012-08-29^^
@@ -52,8 +57,8 @@ Skyteam^Affiliate^A5^HOP!^2013-03-31^^
 Skyteam^Affiliate^DB^HOP Brit Air^2000-06-22^2013-03-30^1
 Skyteam^Affiliate^WX^CityJet^2000-06-22^^
 Skyteam^Affiliate^YS^HOP Regional^2000-06-22^2013-03-30^1
-Skyteam^Member^AZ^ITA Airways^2001-07-27^^
-Skyteam^Affiliate^CT^Alitalia CityLiner^2006-06-01^^
+Skyteam^Member^AZ^ITA Airways^2001-07-27^2025-04-30^
+Skyteam^Affiliate^CT^Alitalia CityLiner^2006-06-01^2021-10-15^
 Skyteam^Member^CI^China Airlines^2011-09-28^^
 Skyteam^Affiliate^AE^Mandarin Airlines^2011-09-28^^
 Skyteam^Member^MU^China Eastern Airlines^2011-06-21^^
@@ -73,6 +78,7 @@ Skyteam^Member^VN^Vietnam Airlines^2010-06-10^^
 Skyteam^Member^MF^XiamenAir^2012-11-21^^
 Skyteam^Member^GA^Garuda Indonesia^2014-03-05^^
 Skyteam^Member^VS^Virgin Atlantic^2023-03-02^^
+Skyteam^Member^SK^Scandinavian Airlines^2024-09-01^^
 Star Alliance^Member^A3^Aegean Airlines^2010-06-01^^
 Star Alliance^Affiliate^OA^Olympic Air^2013-10-01^^
 Star Alliance^Member^AC^Air Canada^1997-05-01^^
@@ -92,6 +98,7 @@ Star Alliance^Member^JK^Spanair^2003-05-01^2012-01-27^1
 Star Alliance^Member^JP^Adria Airways^2004-11-01^2019-09-30^
 Star Alliance^Member^KF^Blue1^2004-11-03^2012-11-30^1
 Star Alliance^Member^LH^Lufthansa^1999-05-01^^
+Star Alliance^Affiliate^VL^Lufthansa City Airlines GmbH^2025-09-09^^
 Star Alliance^Member^LO^LOT Polish Airlines^2003-10-01^^
 Star Alliance^Member^LX^Swiss International Air Lines^2006-04-01^^
 Star Alliance^Member^MS^EgyptAir^2008-06-01^^
@@ -102,7 +109,7 @@ Star Alliance^Member^OS^Austrian Airlines^2000-03-01^^
 Star Alliance^Member^OU^Croatia Airlines^2004-11-01^^
 Star Alliance^Member^OZ^Asiana Airlines^2003-03-01^^
 Star Alliance^Member^SA^South African Airways^2006-04-01^^
-Star Alliance^Member^SK^Scandinavian Airlines^1997-05-01^^
+Star Alliance^Member^SK^Scandinavian Airlines^1997-05-01^2024-08-31^
 Star Alliance^Member^SN^Brussels Airlines^2009-12-01^^
 Star Alliance^Member^SQ^Singapore Airlines^2000-04-01^^
 Star Alliance^Member^TA^TACA International Airlines^2012-06-01^2013-05-21^1
@@ -112,4 +119,4 @@ Star Alliance^Member^TP^TAP Portugal^2005-03-01^^
 Star Alliance^Member^UA^United Airlines^1997-05-01^^
 Star Alliance^Member^US^US Airways^2004-05-01^2014-03-31^1
 Star Alliance^Member^ZH^Shenzhen Airlines^2012-11-01^^
-Star Alliance^Member^4Y^Discover Airlines^2021-07-24^^
+Star Alliance^Member^AZ^ITA Airways^2026-04-01^^
